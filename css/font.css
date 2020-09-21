@@ -1,0 +1,27 @@
+@font-face {
+	font-family: "line";
+	font-style: normal;
+	font-weight: 400;
+	src: url("fonts/regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "line";
+	font-style: normal;
+	font-weight: 500;
+	src: url("fonts/medium.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "line";
+	font-style: normal;
+	font-weight: 700;
+	src: url("fonts/bold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "icon";
+	font-style: normal;
+	font-weight: 400;
+	src: url("fonts/icon-regular.woff2") format("woff2");
+}

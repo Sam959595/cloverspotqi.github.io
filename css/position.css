@@ -1,0 +1,71 @@
+@media screen and (min-width: 1600px) {}
+
+/* ipad pro */
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: 2.5cm;
+
+        grid-template-rows: 0 45% 55%;
+        grid-template-columns: 100%;
+        grid-template-areas: "g" "a" "n";
+    }
+    .line-progress {
+        align-self: flex-start;
+    }
+}
+
+/* ipad/ipad mini */
+
+@media screen and (max-width: 768px) {}
+
+/* iphone 6/7/8 plus */
+
+@media screen and (min-width: 414px) {
+    ul a:hover {
+        background: var(--nav-box);
+    
+        fill: var(--nav-hover);
+        color: var(--nav-hover);
+    }
+}
+@media screen and (max-width: 414px) {
+    header {
+        height: 3cm;
+    }
+    nav {
+        height: 100%;
+    }
+    a {
+        padding: 2px 8px 2px 4px;
+    }
+    .lockup button {
+        backdrop-filter: none; -webkit-backdrop-filter: none;
+    }
+    footer {
+        margin-bottom: 3.5cm;
+    }
+}
+@media handheld and (max-width: 414px) {
+    header {
+        background-color: rgba(255,255,255,0.72);
+    }
+}
+
+@media screen and (max-width: 411px) {}
+
+/* iphone 6/7/8/x */
+
+@media screen and (max-width: 375px) {}
+
+/* lumia 950 */
+
+@media screen and (max-width: 360px) {}
+
+/* iphone 4 */
+
+@media screen and (max-width: 320px) {}
+
+/* galaxy fold */
+
+@media screen and (max-width: 280px) {}
