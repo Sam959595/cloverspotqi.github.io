@@ -20,10 +20,10 @@ body {
 *, a, html, body, img, svg, h1, h2, h3, h4, h5, h6, p {
 	user-select: none;
 }
-*, a, img, svg, h1, h2, h3, h4, h5, h6, p {
+img, svg, h1, h2, h3, h4, h5, h6, p {
 	cursor: default;
 }
-img, svg, h1, h2, h3, h4, h5, h6, p {
+img, svg, h1, h2, h3, h4, h5, h6, p, .active {
 	pointer-events: none;
 }
 a, button, .user, .line-progress {
@@ -134,7 +134,7 @@ header {
 	z-index: 9;
 }
 
-/* - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - */
 
 .line-progress {
 	grid-area: g;
@@ -159,7 +159,7 @@ header {
 	transition: width 1s ease 0s;
 }
 
-/* - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - */
 
 .switch {
 	grid-area: a;
@@ -183,7 +183,7 @@ header {
 	color: var(--tag-executor);
 }
 
-/* - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - */
 
 nav {
 	grid-area: n;
@@ -194,6 +194,7 @@ ul {
 	display: flex;
 	justify-content: space-evenly;
 }
+/* ul a:hover */
 a {
 	display: flex;
 	align-items: center;
@@ -207,19 +208,13 @@ a {
 	fill: var(--nav);
 	color: var(--nav);
 }
-ul a:active {
-	background: var(--background-link-a-active);
-}
+/* ul a:active */
 
-.left {
-	padding-left: 3px;
-}
+/* left */
 
 .active {
 	fill: var(--theme);
 	color: var(--theme);
-
-	pointer-events: none;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
