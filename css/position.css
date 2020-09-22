@@ -44,26 +44,28 @@
 /* iphone 6/7/8 plus */
 
 @media screen and (max-width: 414px) {
-    header {
-        height: 2cm;
+    .logo {
+        padding: 0.5cm 1.7em 0;
+    }
+    .tape {
+        padding-left: 1.7em;
+    }
 
-        grid-template-rows: 80% 20%;
+    header {
+        height: 2.2cm;
+
+        grid-template-rows: 75% 25%;
         grid-template-columns: 100%;
         grid-template-areas: "n" ".";
 
-        background-color: rgba(255, 255, 255, 0.72);
+        background-color: rgba(225, 225, 225, 0.72);
         backdrop-filter: saturate(0) blur(20px);
     }
     .line-progress {
         align-self: center;
     }
-
-    .logo {
-        padding: 0.5cm 1.7em 0;
-    }
-
-    .tape {
-        padding-left: 1.7em;
+    a p {
+        font-size: 11px;
     }
 
     .title-block, .top {
@@ -77,8 +79,8 @@
         padding: 0;
     }
     a svg {
-        width: 28px;
-        height: 28px;
+        width: 30px;
+        height: 30px;
     }
 
     .lockup button {
