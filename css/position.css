@@ -1,6 +1,6 @@
-@media handheld and (min-width: 1600px) {
+@media handheld and (max-width: 1600px) {
     header {
-        background-color: rgba(255,255,255,0.72);
+        background-color: rgba(255, 255, 255, 0.72);
     }
 }
 
@@ -8,6 +8,11 @@
 
 /* ipad pro */
 
+@media screen and (min-width: 1024px) {
+    .switch {
+        border-right: 2px solid var(--border);
+    }
+}
 @media screen and (max-width: 1024px) {
     header {
         height: 2.5cm;

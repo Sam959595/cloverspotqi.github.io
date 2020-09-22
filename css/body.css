@@ -165,10 +165,6 @@ header {
 	grid-area: a;
 
 	width: 100%;
-
-	border-inline-end-style: solid;
-	border-inline-end-width: 2px;
-	border-inline-end-color: var(--border);
 }
 .tags {
 	display: flex;
