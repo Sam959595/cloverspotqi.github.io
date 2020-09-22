@@ -1,3 +1,9 @@
+@media handheld {
+    header {
+        background-color: rgba(255,255,255,0.72);
+    }
+}
+
 @media screen and (min-width: 1600px) {}
 
 /* ipad pro */
@@ -44,11 +50,6 @@
     }
     footer {
         margin-bottom: 3.5cm;
-    }
-}
-@media handheld and (max-width: 414px) {
-    header {
-        background-color: rgba(255,255,255,0.72);
     }
 }
 
