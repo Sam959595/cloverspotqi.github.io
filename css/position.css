@@ -60,10 +60,6 @@
     header {
         height: 3cm;
     }
-
-    a > p {
-        text-align: 10px !important;
-    }
     nav {
         grid-area: n;
         height: 100%;
@@ -76,10 +72,9 @@
     
         padding: 0;
     }
-
     a svg {
-        width: 23px;
-        height: 23px;
+        width: 28px;
+        height: 28px;
     }
 
     .lockup button {
