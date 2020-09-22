@@ -36,14 +36,20 @@
     }
 }
 @media screen and (max-width: 414px) {
+    .logo {
+        padding: 0.5cm 1.7em 0;
+    }
+    .tape {
+        padding-left: 1.7em;
+    }
+    .title-block, .top {
+        padding: 2cm 0 0.4cm 1.2em;
+    }
     header {
         height: 3cm;
     }
     nav {
         height: 100%;
-    }
-    a {
-        padding: 2px 8px 2px 4px;
     }
     .lockup button {
         backdrop-filter: none; -webkit-backdrop-filter: none;
