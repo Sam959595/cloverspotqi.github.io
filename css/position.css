@@ -1,4 +1,4 @@
-@media handheld {
+@media handheld and (min-width: 1600px) {
     header {
         background-color: rgba(255,255,255,0.72);
     }
