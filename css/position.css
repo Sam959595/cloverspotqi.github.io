@@ -1,14 +1,10 @@
 @media screen and (min-width: 1600px) {}
 
-/* before */
-
 @media screen and (min-width: 1024px) {
     .switch {
         border-right: 2px solid var(--border);
     }
 }
-
-/* - - */
 
 @media screen and (max-width: 1024px) {
     header {
@@ -25,12 +21,10 @@
 
 @media screen and (max-width: 768px) {}
 
-/* before */
-
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 419px) {
     ul a:hover {
         background: var(--nav-box);
-    
+        
         fill: var(--nav-hover);
         color: var(--nav-hover);
     }
@@ -42,7 +36,8 @@
     }
 }
 
-/* - - */
+@media (min-width: 768px) and (max-width: 414px) {
+}
 
 @media screen and (max-width: 414px) {
     .logo {
@@ -73,10 +68,10 @@
         padding: 2cm 0 0.4cm 1.2em;
     }
     .max.lockup::after {
-        border-radius: 20px;
+        border-radius: 15px;
     }
     .img-url, .img-url::before, .img-new {
-        border-radius: 20px 20px 0 0;
+        border-radius: 15px 15px 0 0;
     }
     a {
         display: grid;
