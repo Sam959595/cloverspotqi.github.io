@@ -1,23 +1,17 @@
 @media screen and (max-width: 1600px) {
     section.details {
-        padding: 22px 5cm 0;
+        padding: 22px 5cm 1cm;
     }
 }
 
 @media screen and (max-width: 1024px) {
     section.details {
-        padding: 22px 2cm 0;
-    }
-    footer {
-        padding-top: 2cm;
+        padding: 22px 2cm 1cm;
     }
 
 @media screen and (max-width: 908px) {
     section.details {
-        padding: 22px 22px 0;
-    }
-    footer {
-        padding-top: 1.5cm;
+        padding: 22px 22px 1cm;
     }
 }
 
@@ -26,10 +20,7 @@
 
 @media screen and (max-width: 414px) {
     section.details {
-        padding: 16px 16px 0;
-    }
-    footer {
-        padding-top: 1cm;
+        padding: 16px 16px 1cm;
     }
 }
 
