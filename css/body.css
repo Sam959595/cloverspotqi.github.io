@@ -257,7 +257,7 @@ a {
 	color: var(--details-top);
 }
 
-.img-new {
+.img-new, .img-url, .img-url::before {
 	border-radius: 10px 10px 0 0;/* - - */
 }
 
@@ -286,7 +286,6 @@ a {
 	left: 0;
 	right: 0;
 
-	border-radius: 10px 10px 0 0;/* - - */
 	backdrop-filter: saturate(100%) blur(20px); -webkit-backdrop-filter: saturate(100%) blur(20px);
 
 	background-color: var(--img-url);
