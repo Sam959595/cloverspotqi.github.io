@@ -26,7 +26,7 @@
 
 /* before */
 
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 415px) {
     ul a:hover {
         background: var(--nav-box);
     
@@ -35,6 +35,9 @@
     }
     ul a:active {
         background: var(--background-link-a-active);
+    }
+    .left {
+        padding-left: 3px;
     }
 }
 
