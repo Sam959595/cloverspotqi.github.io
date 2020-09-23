@@ -91,13 +91,16 @@ section.item {
 }
 
 section.details {
-	background-color: #f5f5f7;
+	background-color: var(--details);
 }
 .details ol {
 	list-style: outside decimal;
 	padding: 0 17px;
 }
 .details li {
-	color: #86868b;
+	color: var(--description);
 	padding-bottom: 0.8em;
+}
+li a {
+	color: var(--link)
 }
