@@ -86,8 +86,19 @@ button {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-section.item {
-	height: 5cm;
+
+.control {
+	height: 10cm;
+}
+.span {
+	background-color: #fafafa;
+}
+.item {
+	background-color: #f2f2f2;
+}
+
+.padding {
+	margin-bottom: 15px;
 }
 
 section.details {
