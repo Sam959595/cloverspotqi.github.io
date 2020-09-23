@@ -1,12 +1,15 @@
 @media screen and (min-width: 1600px) {}
 
-/* ipad pro */
+/* before */
 
 @media screen and (min-width: 1024px) {
     .switch {
         border-right: 2px solid var(--border);
     }
 }
+
+/* - - */
+
 @media screen and (max-width: 1024px) {
     header {
         height: 2.5cm;
@@ -20,13 +23,11 @@
     }
 }
 
-/* ipad/ipad mini */
-
 @media screen and (max-width: 768px) {}
 
 /* before */
 
-@media screen and (min-width: 415px) {
+@media screen and (min-width: 500px) {
     ul a:hover {
         background: var(--nav-box);
     
@@ -41,7 +42,7 @@
     }
 }
 
-/* iphone 6/7/8 plus */
+/* - - */
 
 @media screen and (max-width: 414px) {
     .logo {
@@ -50,7 +51,6 @@
     .tape {
         padding-left: 1.7em;
     }
-
     header {
         height: 2.2cm;
 
@@ -58,8 +58,8 @@
         grid-template-columns: 100%;
         grid-template-areas: "n" ".";
 
-        background-color: rgba(255, 255, 255, 0.8);
-        backdrop-filter: saturate(0) blur(20px);
+        background-color: rgba(245, 245, 245, 0.72);
+        backdrop-filter: saturate(80%) blur(20px); -webkit-backdrop-filter: saturate(80%) blur(20px);
 
         border-top: 1px solid var(--border);
     }
@@ -69,11 +69,12 @@
     a p {
         font-size: 11px;
     }
-
     .title-block, .top {
         padding: 2cm 0 0.4cm 1.2em;
     }
-
+    .max.lockup::after {
+        border-radius: 20px;
+    }
     a {
         display: grid;
         place-items: center;
@@ -84,11 +85,9 @@
         width: 30px;
         height: 30px;
     }
-
     .lockup button {
         backdrop-filter: none; -webkit-backdrop-filter: none;
     }
-
     footer {
         margin-bottom: 2.9cm;
     }
@@ -96,18 +95,10 @@
 
 @media screen and (max-width: 411px) {}
 
-/* iphone 6/7/8/x */
-
 @media screen and (max-width: 375px) {}
-
-/* lumia 950 */
 
 @media screen and (max-width: 360px) {}
 
-/* iphone 4 */
-
 @media screen and (max-width: 320px) {}
-
-/* galaxy fold */
 
 @media screen and (max-width: 280px) {}
