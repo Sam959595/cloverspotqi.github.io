@@ -41,9 +41,6 @@ ul, ol {
 ::-webkit-scrollbar {
 	display: none;
 }
-::-webkit-scrollbar:horizontal {
-	display: none;
-}
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
@@ -72,16 +69,30 @@ button {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.details ul+ol li a {
-	color: var(--link);
+
+
+
+
+
+
+.lockup {
+	display: flex;
+	align-items: center;
+	height: 3cm;
+	padding: 0.5cm;
 }
-.details ul+ol+ul li a {
-	color: #499dff;
+.overflow {
+	text-align: center;
 }
+
+
+
+
+
 
 .span ul li a img {
 	width: 100%;
-	border-radius: 10px 10px 0 0;
+	border-radius: 15px 15px 0 0;
 }
 section.span {
 	background-color: var(--span);
@@ -109,14 +120,12 @@ section.span {
 	display: block;
 	width: 8cm;
 	height: auto;
-	background-color: #aaaaaa;
-	border-radius: 10px;
-}
-.lockup {
-	padding: 0.5cm;
+	background-color: #ffffff;
+	border-radius: 15px;
 }
 .overflow h1 {
-	font-size: 17px;
+	text-align: center;
+	font-size: 12px;
 	font-weight: 700;
 }
 
@@ -132,10 +141,16 @@ section.details {
 	background-color: var(--details);
 }
 .details ol {
-	list-style: outside decimal !important;
+	list-style: outside decimal;
 	padding: 0 17px;
 }
 .details li {
-	color: var(--description);
 	padding-bottom: 0.8em;
+	color: var(--description);
+}
+.details ul+ol li a {
+	color: var(--link);
+}
+.details ul+ol+ul li a {
+	color: #499dff;
 }
