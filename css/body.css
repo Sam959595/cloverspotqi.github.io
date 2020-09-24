@@ -221,6 +221,9 @@ a, .title-block, .tags, .details-top, .details-bottom {
 .span {
 	background-color: var(--span);
 }
+.padding {
+	margin-bottom: 1cm;
+}
 
 
 /*
