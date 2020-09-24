@@ -40,23 +40,9 @@ ul, ol {
 
 ::-webkit-scrollbar {
 	display: none;
-	width: 9px;
 }
 ::-webkit-scrollbar:horizontal {
 	display: none;
-}
-::-webkit-scrollbar-thumb {
-	border: 2px solid transparent;
-    background-clip: padding-box;
-    border-radius: 0.4em;
-    background-color: #cacaca;
-}
-::-webkit-scrollbar-button {
-	display: none;
-}
-::-webkit-scrollbar-thumb:vertical:active {
-	background: #aaaaaa;
-	background-clip: padding-box;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -71,7 +57,7 @@ ul, ol {
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 }
-a, .title-block, .tags, .details-top, .details-bottom {
+a {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
@@ -86,15 +72,19 @@ button {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+.details ul+ol li a {
+	color: var(--link);
+}
+.details ul+ol+ul li a {
+	color: #499dff;
+}
+
 .span ul li a img {
 	width: 100%;
 	border-radius: 10px 10px 0 0;
 }
-.lockup {
-	height: 4cm;
-}
 section.span {
-	background-color: #fafafa;
+	background-color: var(--span);
 }
 .span ul {
 	display: grid;
@@ -122,6 +112,13 @@ section.span {
 	background-color: #aaaaaa;
 	border-radius: 10px;
 }
+.lockup {
+	padding: 0.5cm;
+}
+.overflow h1 {
+	font-size: 17px;
+	font-weight: 700;
+}
 
 .item {
 	background-color: #f2f2f2;
@@ -141,7 +138,4 @@ section.details {
 .details li {
 	color: var(--description);
 	padding-bottom: 0.8em;
-}
-li a {
-	color: var(--link)
 }
