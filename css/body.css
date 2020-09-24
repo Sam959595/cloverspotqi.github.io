@@ -72,7 +72,9 @@ button {
 
 
 .coffin {
-    grid-template-columns: repeat(10, 220px);
+	grid-template-columns: repeat(10, 220px);
+
+	padding-bottom: 1.5cm;
 }
 .tape {
     display: grid;
@@ -100,7 +102,10 @@ button {
     align-items: center;
     position: relative;
     height: 68px;
-    padding: 0 0.5cm;
+	padding: 0 0.5cm;
+	
+	background-color: white;
+	border-radius: 0 0 10px 10px;
 }
 .img-url, .img-url::before {
     content: "";
@@ -124,7 +129,6 @@ button {
 .overflow {
 	font-weight: 500;
 	text-align: center;
-	background-color: white;
     color: black;
     z-index: 1;
 }
@@ -262,10 +266,6 @@ a, .title-block, .tags, .details-top, .details-bottom {
 
 .item {
 	background-color: #f2f2f2;
-}
-
-.padding {
-	margin-bottom: 1cm;
 }
 
 section.details {
