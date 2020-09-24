@@ -86,6 +86,13 @@ button {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+.span ul li a img {
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
+.lockup {
+	height: 4cm;
+}
 section.span {
 	background-color: #fafafa;
 }
@@ -93,15 +100,13 @@ section.span {
 	display: grid;
 	grid-auto-flow: column;
 	grid-column-gap: 20px;
-	grid-auto-columns: calc((100% - 3 * 1)/ 4);
 
-	overflow-x: auto;
+	overflow-x: scroll;
 	overflow-y: hidden;
 
 	scroll-snap-type: x mandatory;
 	scroll-snap-align: center;
 	scroll-padding: 50%;
-	-webkit-overflow-scrolling: touch;
 }
 .span ul li:first-child, .title-block {
     padding-left: 1cm;
@@ -113,8 +118,9 @@ section.span {
 .span ul li a {
 	display: block;
 	width: 8cm;
-	height: 5.5cm;
+	height: auto;
 	background-color: #aaaaaa;
+	border-radius: 10px;
 }
 
 .item {
