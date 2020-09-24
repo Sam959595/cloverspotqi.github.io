@@ -89,12 +89,14 @@ button {
 
 
 
-
+.span {
+	padding: 2cm 0;
+}
 .span ul li a img {
 	width: 100%;
 	border-radius: 15px 15px 0 0;
 }
-section.span {
+.span {
 	background-color: var(--span);
 }
 .span ul {
