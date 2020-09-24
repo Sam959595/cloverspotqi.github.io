@@ -71,19 +71,148 @@ button {
 
 
 
-
-
-
-
+.coffin {
+    grid-template-columns: repeat(10, 220px);
+}
+.tape {
+    display: grid;
+    grid-column-gap: 1.7em;
+    overflow-x: scroll;
+    padding-left: 1cm;
+}
+.details-new {
+    word-spacing: 2px;
+    font-size: 14px;
+    padding-bottom: 0.8em;
+    color: var(--details-top);
+}
 .lockup {
-	display: flex;
-	align-items: center;
-	height: 3cm;
-	padding: 0.5cm;
+    position: relative;
+}
+.lockup:not(.min) > img {
+    width: 100%;
+}
+.img-new, .img-url, .img-url::before {
+    border-radius: 10px 10px 0 0;
+}
+.img-bottom-new {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 68px;
+    padding: 0 0.5cm;
+}
+.img-url, .img-url::before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: saturate(100%) blur(20px);
+    -webkit-backdrop-filter: saturate(100%) blur(20px);
+    background-color: var(--img-url);
+    position: absolute;
+}
+.img-url {
+    background-size: cover;
+    background-position: bottom;
+    transform: scaleY(-1);
+}
+.img-new, .img-url, .img-url::before {
+    border-radius: 10px 10px 0 0;
 }
 .overflow {
+	font-weight: 500;
 	text-align: center;
+	background-color: white;
+    color: black;
+    z-index: 1;
 }
+.overflow {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.center button {
+    bottom: 1.8cm;
+}
+.lockup button {
+    opacity: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: var(--button-cover);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 0.5s linear 0s;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+.max.lockup::after {
+    border-radius: 10px;
+}
+.lockup::after {
+    display: block;
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s linear 0s;
+    box-shadow: inset 0 0 0 1px var(--box-shadow);
+}
+.indent:last-child {
+	margin-right: -1cm;
+    padding-right: 1cm;
+}
+a, .title-block, .tags, .details-top, .details-bottom {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.title-block, .top {
+    margin-top: 1em;
+    padding: 2cm 0 0.4cm 1cm;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.005em;
+    position: relative;
+    color: var(--title);
+}
+.title-block:not(.top)::before {
+    content: "";
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--lines-bottom);
+    position: absolute;
+}
+.img-url, .img-url::before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: saturate(100%) blur(20px);
+    -webkit-backdrop-filter: saturate(100%) blur(20px);
+    background-color: var(--img-url);
+    position: absolute;
+}
+.img-new, .img-url, .img-url::before {
+    border-radius: 10px 10px 0 0;
+}
+
+
+
+
+
+
 
 
 
