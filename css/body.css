@@ -214,19 +214,18 @@ a, .title-block, .tags, .details-top, .details-bottom {
 
 
 
+.span {
+	background-color: var(--span);
+}
 
 
-
-
+/*
 .span {
 	padding: 2cm 0;
 }
 .span ul li a img {
 	width: 100%;
 	border-radius: 15px 15px 0 0;
-}
-.span {
-	background-color: var(--span);
 }
 .span ul {
 	display: grid;
@@ -259,6 +258,7 @@ a, .title-block, .tags, .details-top, .details-bottom {
 	font-size: 12px;
 	font-weight: 700;
 }
+*/
 
 .item {
 	background-color: #f2f2f2;
