@@ -83,8 +83,10 @@ ul, ol {
 
 .cassette > h1 {
 	font-size: 19px;
-	font-weight: 600;
+	font-weight: 700;
 	padding-bottom: 0.5cm;
+
+	color: #a5a5a5;
 }
 .cassette {
 	background-color: #f5f5f7;

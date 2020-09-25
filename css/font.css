@@ -41,3 +41,9 @@
 	font-weight: 400;
 	src: url("fonts/icon-regular.woff2") format("woff2");
 }
+@font-face {
+	font-family: "icon";
+	font-style: normal;
+	font-weight: 600;
+	src: url("fonts/icon-semibold.woff2") format("woff2");
+}
