@@ -77,9 +77,6 @@ a {
 .last ul li:last-child {
 	padding-right: 1.7em;
 }
-.fillet div {
-	border-radius: 1.4em;
-}
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
@@ -94,16 +91,21 @@ a {
 
 	overflow-x: scroll;
 }
-.cassette div {
+.includes {
 	width: 8.5cm;
 	height: auto;
-	background-color: rgb(0, 194, 16);
+
+	border-radius: 15px 15px 0 0;
+
+	background-color: white;
 
 	overflow: hidden;
 }
 .cassette img {
 	width: 100%;
 	height: auto;
+
+	border-radius: 0 0 15px 15px;
 }
 .cassette h1 {
 	padding: 0.8cm 0.5cm 4cm;
