@@ -1,16 +1,16 @@
 @media screen and (max-width: 1600px) {
-    section.details {
+    .details {
         padding: 22px 5cm 1cm;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    section.details {
+    .details {
         padding: 22px 2cm 1cm;
     }
 
 @media screen and (max-width: 908px) {
-    section.details {
+    .details {
         padding: 22px 22px 1cm;
     }
 }
@@ -19,7 +19,7 @@
 }
 
 @media screen and (max-width: 414px) {
-    section.details {
+    .details {
         padding: 16px 16px 1cm;
     }
 }
