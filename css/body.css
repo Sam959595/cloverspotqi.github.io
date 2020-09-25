@@ -45,7 +45,7 @@ ul, ol {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 *, h1, h2, h3, h4, h5, h6, p {
-	font: normal 400 12px/1.33337 line;
+	font: normal 400 12px/1.33337 line, icon;
 	letter-spacing: -0.01em;
 }
 .includes h1 {
@@ -103,6 +103,9 @@ ul, ol {
 .cassette div {
 	width: 8.5cm;
 }
+.cassette a:focus {
+	border-radius: 10px;
+}
 .includes {
 	height: 4cm;
 
@@ -134,6 +137,8 @@ ul, ol {
 	height: 8.5cm;
 
 	border-radius: 0 0 15px 15px;
+
+	margin-bottom: 5px;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
