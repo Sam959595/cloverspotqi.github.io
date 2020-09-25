@@ -81,7 +81,7 @@ ul, ol {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .cassette > h1 {
-	font-size: 17px;
+	font-size: 19px;
 	font-weight: 700;
 	padding-bottom: 0.5cm;
 }
@@ -121,8 +121,12 @@ ul, ol {
 	padding: 0.8cm 0 0.2cm;
 }
 .includes h1 {
+	color: #1d1d1f;
+
 	font-size: 17px;
-	font-weight: 700;
+    line-height: 1.21053;
+    font-weight: 700;
+    letter-spacing: .012em;
 }
 .fillet {
 	background-size: cover;
