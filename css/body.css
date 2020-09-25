@@ -16,6 +16,7 @@ body {
 	vertical-align: top;
 
 	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
 }
 *, a, html, body, img, svg, h1, h2, h3, h4, h5, h6, p {
 	user-select: none;
@@ -103,8 +104,8 @@ ul, ol {
 .cassette div {
 	width: 8.5cm;
 }
-.cassette a:focus {
-	border-radius: 10px;
+.cassette a {
+	display: block;
 }
 .includes {
 	height: 4cm;
@@ -137,8 +138,6 @@ ul, ol {
 	height: 8.5cm;
 
 	border-radius: 0 0 15px 15px;
-
-	margin-bottom: 5px;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
