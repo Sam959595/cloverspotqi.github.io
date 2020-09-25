@@ -71,48 +71,56 @@ a {
 .padding {
 	padding: 86px 0;
 }
-.first ul li:first-child {
+.first ul li:first-child, .description {
 	padding-left: 1.7em;
 }
 .last ul li:last-child {
-	margin-right: 1.7em;
 	padding-right: 1.7em;
 }
-.fillet ul li {
+.fillet div {
 	border-radius: 15px;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .cassette {
-	background-color: #46464677;
+	background-color: #f5f5f7;
 }
 .cassette ul {
 	display: grid;
 	grid-auto-flow: column;
-	grid-template-columns: repeat(10, 8cm);
+
 	grid-column-gap: 1.7em;
 
 	overflow-x: scroll;
 }
-.cassette ul li {
-	height: 12cm;
+.cassette div {
+	width: 9cm;
+	height: auto;
+	background-color: white;
 
-	background-color: #5767;
+	overflow: hidden;
+}
+.cassette img {
+	width: 100%;
+	height: auto;
+}
+.cassette h1 {
+	padding: 0.8cm 0.5cm 3cm;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .details {
-	background-color: #a1a1a1;
-}
-.details ol {
-	padding: 0 17px;
-	list-style: outside decimal;
+	background-color: #f5f5f7;
 }
 .details li {
 	padding-bottom: 0.8em;
 	color: var(--description);
+}
+.details ol {
+	padding: 0 17px;
+	list-style: outside decimal;
 }
 .details ul+ol li a {
 	color: var(--link);
