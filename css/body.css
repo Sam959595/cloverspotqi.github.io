@@ -78,7 +78,7 @@ a {
 	padding-right: 1.7em;
 }
 .fillet div {
-	border-radius: 15px;
+	border-radius: 1.4em;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -95,7 +95,7 @@ a {
 	overflow-x: scroll;
 }
 .cassette div {
-	width: 8cm;
+	width: 8.5cm;
 	height: auto;
 	background-color: rgb(0, 194, 16);
 
@@ -106,7 +106,7 @@ a {
 	height: auto;
 }
 .cassette h1 {
-	padding: 0.8cm 0.5cm 3cm;
+	padding: 0.8cm 0.5cm 4cm;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
