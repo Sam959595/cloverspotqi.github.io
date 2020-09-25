@@ -90,14 +90,14 @@ a {
 	display: grid;
 	grid-auto-flow: column;
 
-	grid-column-gap: 1.7em;
+	grid-column-gap: 1em;
 
 	overflow-x: scroll;
 }
 .cassette div {
-	width: 9cm;
+	width: 8cm;
 	height: auto;
-	background-color: white;
+	background-color: rgb(0, 194, 16);
 
 	overflow: hidden;
 }
