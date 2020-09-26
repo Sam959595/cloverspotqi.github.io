@@ -73,16 +73,6 @@ ul, ol {
 	padding: 1.5cm 0;
 }
 
-.dark {
-	background-color: black !important;
-}
-.dark .conclusion p {
-	color: #7a7a7a !important;
-}
-.dark .conclusion h1 {
-	color: #fdfdfd !important;
-}
-
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .includes > h1 {
@@ -147,6 +137,16 @@ ul, ol {
 	letter-spacing: 0.012em;
 	
 	color: #1d1d1f;
+}
+
+.dark {
+	background-color: black !important;
+}
+.dark .conclusion p {
+	color: #7a7a7a !important;
+}
+.dark .conclusion h1 {
+	color: #fdfdfd !important;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
