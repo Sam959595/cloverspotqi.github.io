@@ -96,6 +96,8 @@ ul, ol {
 	grid-auto-flow: column;
 	grid-column-gap: 1em;
 
+	padding-bottom: 1.5cm;
+
 	overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
@@ -166,7 +168,7 @@ ul, ol {
 .line img {
 	width: 100%;
 
-	border-radius: 15px 15px 0 0;
+	border-radius: 0 0 15px 15px;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
