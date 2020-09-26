@@ -79,6 +79,10 @@ ul, ol {
 
 	color: #a5a5a5;
 }
+.includes sup {
+	font-size: 10px;
+	font-weight: 700;
+}
 
 .includes {
 	background-color: var(--includes);
