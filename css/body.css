@@ -92,8 +92,7 @@ ul, ol {
 	grid-column-gap: 1em;
 
 	overflow-x: scroll;
-
-	will-change: contents;
+	padding-bottom: 1.5cm;
 
 	scroll-snap-type: x mandatory;
 }
