@@ -91,12 +91,9 @@ ul, ol {
 	grid-auto-flow: column;
 	grid-column-gap: 1em;
 
-	overflow-y: auto;
-	overflow-x: scroll;
+	
 
 	scroll-snap-type: x mandatory;
-	
-	
 }
 .includes li {
 	scroll-snap-align: center;
@@ -136,7 +133,7 @@ ul, ol {
 	color: #1d1d1f;
 }
 .conclusion p {
-	padding: 0.8cm 0 0.2cm;
+	padding: 0.5cm 0 0.2cm;
 
 	color: #9e9e9e;
 }
