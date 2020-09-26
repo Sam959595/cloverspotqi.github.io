@@ -51,7 +51,7 @@ ul, ol {
 }
 .conclusion h1 {
 	display: -webkit-box;
-	-webkit-line-clamp: 3;
+	-webkit-line-clamp: 4;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 }
@@ -75,7 +75,7 @@ ul, ol {
 .includes > h1 {
 	font-size: 15px;
 	font-weight: 700;
-	padding: 0.6cm 1cm 1.2cm;
+	padding: 0.7cm 1cm 1cm;
 
 	color: #a5a5a5;
 }
