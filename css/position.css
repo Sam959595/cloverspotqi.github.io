@@ -8,6 +8,7 @@
     .details {
         padding: 22px 2cm 1cm;
     }
+}
 
 @media screen and (max-width: 908px) {
     .details {

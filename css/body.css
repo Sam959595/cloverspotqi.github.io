@@ -75,9 +75,7 @@ ul, ol {
 .includes > h1 {
 	font-size: 15px;
 	font-weight: 700;
-	padding: 0.5cm 0 1cm;
-
-	text-align: center;
+	padding: 1cm;
 
 	color: #a5a5a5;
 }
@@ -141,13 +139,13 @@ ul, ol {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .dark {
-	background-color: black !important;
+	background-color: black;
 }
 .dark .conclusion p {
-	color: #7a7a7a !important;
+	color: #7a7a7a;
 }
 .dark .conclusion h1 {
-	color: #fdfdfd !important;
+	color: #fdfdfd;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
