@@ -75,7 +75,7 @@ ul, ol {
 .includes > h1 {
 	font-size: 15px;
 	font-weight: 700;
-	padding: 0.6cm 1cm 1.4cm;
+	padding: 0.6cm 1cm 1.2cm;
 
 	color: #a5a5a5;
 }
@@ -122,10 +122,10 @@ ul, ol {
 .conclusion {
 	height: 4cm;
 
-	padding: 0 0.5cm;
+	padding: 0.5cm 0.5cm 0;
 }
 .conclusion p {
-	padding: 0.5cm 0 0.2cm;
+	padding: 0 0 0.2cm;
 
 	color: var(--conclusion-p);
 }
