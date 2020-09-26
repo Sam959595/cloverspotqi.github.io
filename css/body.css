@@ -110,6 +110,8 @@ ul, ol {
 	width: 8.5cm;
 
 	border-radius: 15px;
+
+	background-color: var(--fillet);
 }
 .fillet img {
 	width: 100%;
@@ -124,23 +126,17 @@ ul, ol {
 }
 .conclusion p {
 	padding: 0 0 0.2cm;
+
+	color: var(--conclusion-p);
 }
 .conclusion h1 {
 	font: normal 700 19px/1.21053 "line";
 	letter-spacing: 0.012em;
+
+	color: var(--conclusion-h);
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
-
-.dark {
-	background-color: black;
-}
-.dark .conclusion p {
-	color: #7a7a7a;
-}
-.dark .conclusion h1 {
-	color: #fdfdfd;
-}
 
 .light {
 	background-color: white;
@@ -150,6 +146,16 @@ ul, ol {
 }
 .light .conclusion h1 {
 	color: #1d1d1f;
+}
+
+.dark {
+	background-color: black;
+}
+.dark .conclusion p {
+	color: #7a7a7a;
+}
+.dark .conclusion h1 {
+	color: #fdfdfd;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
