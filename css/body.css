@@ -160,15 +160,13 @@ ul, ol {
 .lockup h1 {
 	color: #1d1d1f;
 
-	font-size: 17px;
-    line-height: 1.21053;
-    font-weight: 700;
+	font: normal 700 19px/1.21053 "line";
     letter-spacing: 0.012em;
 }
 .line img {
 	width: 100%;
 
-	border-radius: 0 0 15px 15px;
+	border-radius: 15px 15px 0 0;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
