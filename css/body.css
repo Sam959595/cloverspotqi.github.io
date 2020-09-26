@@ -91,7 +91,7 @@ ul, ol {
 	grid-auto-flow: column;
 	grid-column-gap: 1em;
 
-	overflow-x: auto;
+	overflow-x: scroll;
 
 	scroll-snap-type: x mandatory;
 }
@@ -121,6 +121,30 @@ ul, ol {
 
 	border-radius: 0 0 15px 15px;
 }
+.fillet {
+	position: relative;
+}
+.fillet::after {
+	display: block;
+	content: "";
+	
+	top: 0;
+	
+    width: 100%;
+	height: 100%;
+
+	border-radius: 15px;
+	
+	position: absolute;
+	
+	transition: all 0.5s linear 0s;
+}
+.fillet:hover::after {
+	background-color: #00000034;
+
+	transition: all 0.3s linear 0s;
+}
+
 .conclusion {
 	height: 4cm;
 
