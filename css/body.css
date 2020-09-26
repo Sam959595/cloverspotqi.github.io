@@ -93,7 +93,7 @@ ul, ol {
 
 	overflow-x: scroll;
 
-	will-change: scroll-position;
+	will-change: contents;
 
 	scroll-snap-type: x mandatory;
 }
