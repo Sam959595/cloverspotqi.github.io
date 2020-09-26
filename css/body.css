@@ -69,16 +69,15 @@ ul, ol {
 .margin {
 	margin-bottom: 15px;
 }
-.padding {
-	padding: 1.5cm 0;
-}
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .includes > h1 {
-	font-size: 19px;
+	font-size: 15px;
 	font-weight: 700;
-	padding-bottom: 0.5cm;
+	padding: 0.5cm 0 1cm;
+
+	text-align: center;
 
 	color: #a5a5a5;
 }
@@ -100,7 +99,7 @@ ul, ol {
 .includes li {
 	scroll-snap-align: center;
 }
-.includes li:first-child, .includes > h1 {
+.includes li:first-child {
 	padding-left: 0.5cm;
 }
 .includes li:last-child {
