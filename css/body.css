@@ -91,7 +91,7 @@ ul, ol {
 	grid-auto-flow: column;
 	grid-column-gap: 1em;
 
-	
+	overflow-x: overlay;
 
 	scroll-snap-type: x mandatory;
 }
