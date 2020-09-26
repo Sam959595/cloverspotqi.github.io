@@ -75,7 +75,7 @@ ul, ol {
 .includes > h1 {
 	font-size: 15px;
 	font-weight: 700;
-	padding: 1cm;
+	padding: 0.6cm 1cm 1.4cm;
 
 	color: #a5a5a5;
 }
