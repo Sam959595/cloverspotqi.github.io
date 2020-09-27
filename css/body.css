@@ -28,16 +28,16 @@ img, svg, h1, h2, h3, h4, h5, h6, p {
 }
 a, button {
 	cursor: pointer;
-	outline: none;
+	
 	text-decoration: none;
 	border: none
 }
 ul, ol {
 	list-style: none
 }
-:focus {
-	outline: 4px solid olivedrab;
-	outline-offset: 2px
+:active {
+	outline: 2px solid #00b938;
+	border-radius: 15px;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
