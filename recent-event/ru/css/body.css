@@ -62,10 +62,12 @@ ul, ol {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .details p {
-	color:var(--conclusion-p)
+	padding-bottom: 0.5cm;
+
+	color: var(--conclusion-p)
 }
 .details h1 {
-	font: normal 700 19px/1.21053 "line";
+	font: normal 600 25px/1.21053 "line";
 	letter-spacing: 0.012em;
 
 	color: var(--conclusion-h)
@@ -79,8 +81,8 @@ ul, ol {
 .content {
 	background-color: var(--includes)
 }
-.content li, a {
-	font: normal 400 13px/1.47059 "line-text";
+.content li, .content a {
+	font: normal 400 14px/1.47059 "line-text";
 	letter-spacing: normal
 }
 .content li {
@@ -90,7 +92,7 @@ ul, ol {
 	color: var(--link-footer)
 }
 .content sup {
-	font-size: 9px;
+	font-size: 10px;
 }
 .content li:last-child {
 	padding-bottom: 22px
