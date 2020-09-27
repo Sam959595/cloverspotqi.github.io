@@ -47,6 +47,9 @@ ul, ol {
 	letter-spacing: -0.01em;
 	-webkit-font-smoothing: antialiased
 }
+strong {
+	font-weight: 600
+}
 .con {
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -62,7 +65,7 @@ ul, ol {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .media img {
-	padding: 0 22px;
+	padding: 0 16px
 }
 .media img {
 	width: 100%
@@ -71,10 +74,12 @@ ul, ol {
 	display: flex;
 	justify-content: space-between;
 
-	padding: 0 22px 1cm
+	padding: 0 16px 1cm
 }
 .download p {
 	font-size: 11px;
+	
+	width: 90%;
 
 	color: var(--media)
 }
@@ -132,9 +137,7 @@ ul, ol {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 footer {
-	background-color: var(--footer);
-
-	border-top: 1px solid var(--border)
+	background-color: var(--footer)
 }
 footer li {
 	padding-bottom: 0.8em;

@@ -47,6 +47,9 @@ ul, ol {
 	letter-spacing: -0.01em;
 	-webkit-font-smoothing: antialiased
 }
+strong {
+	font-weight: 600
+}
 .conclusion h1 {
 	display: -webkit-box;
 	-webkit-line-clamp: 4;
