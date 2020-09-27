@@ -26,7 +26,7 @@ img, svg, h1, h2, h3, h4, h5, h6, p {
 img, svg, h1, h2, h3, h4, h5, h6, p {
 	pointer-events: none;
 }
-a, button, .user {
+a, button {
 	cursor: pointer;
 	outline: none;
 	text-decoration: none;
@@ -121,6 +121,9 @@ ul, ol {
 	width: 100%;
 
 	border-radius: 0 0 15px 15px;
+}
+a.fillet:focus {
+	outline: none;
 }
 
 .conclusion {
