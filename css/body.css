@@ -35,9 +35,26 @@ a, button {
 ul, ol {
 	list-style: none
 }
-:active {
-	outline: 2px solid #00b938;
-	border-radius: 15px;
+
+a,.link {
+    color: #76d24d;
+    letter-spacing: inherit
+}
+
+a:link,a:visited,.link:link,.link:visited {
+    text-decoration: none
+}
+
+a:hover,.link:hover {
+    text-decoration: underline
+}
+
+a:active,.link:active {
+    text-decoration: none
+}
+
+a:disabled,.link:disabled {
+    opacity: .32
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
