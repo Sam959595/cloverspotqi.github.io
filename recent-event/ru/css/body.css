@@ -1,6 +1,6 @@
 .lazy {
 	opacity: 0;
-	transition: opacity 0.5s ease 0s;
+	transition: opacity 0.5s ease 0s
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -10,36 +10,36 @@ body {
 }
 *, html, body, button {
 	margin: 0;
-	padding: 0;
+	padding: 0
 }
 *, html, body {
 	vertical-align: top;
 
-	box-sizing: border-box;
+	box-sizing: border-box
 }
 *, a, html, body, img, svg, h1, h2, h3, h4, h5, h6, p {
-	user-select: none;
+	user-select: none
 }
 img, svg, h1, h2, h3, h4, h5, h6, p {
-	cursor: default;
+	cursor: default
 }
 img, svg, h1, h2, h3, h4, h5, h6, p {
-	pointer-events: none;
+	pointer-events: none
 }
-a, button, .user {
+a, button {
 	cursor: pointer;
-	outline: none;
+	
 	text-decoration: none;
-	border: none;
+	border: none
 }
 ul, ol {
-	list-style: none;
+	list-style: none
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 ::-webkit-scrollbar {
-	display: none;
+	display: none
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -47,27 +47,27 @@ ul, ol {
 *, h1, h2, h3, h4, h5, h6, p {
 	font: normal 400 12px/1.33337 "line-text", "line", "icon";
 	letter-spacing: -0.01em;
-	-webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased
 }
 .conclusion h1 {
 	display: -webkit-box;
 	-webkit-line-clamp: 4;
 	-webkit-box-orient: vertical;
-	overflow: hidden;
+	overflow: hidden
 }
 .includes > h1, .conclusion p {
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	overflow: hidden;
+	overflow: hidden
 }
 .line {
-	-webkit-mask: linear-gradient(to left, transparent, black 1cm);
+	-webkit-mask: linear-gradient(to left, transparent, black 1cm)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .margin {
-	margin-bottom: 15px;
+	margin-bottom: 15px
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -77,15 +77,15 @@ ul, ol {
 	font-weight: 700;
 	padding: 0.7cm 1cm 1cm;
 
-	color: #a5a5a5;
+	color: #a5a5a5
 }
 .includes sup {
 	font-size: 10px;
-	font-weight: 700;
+	font-weight: 700
 }
 
 .includes {
-	background-color: var(--includes);
+	background-color: var(--includes)
 }
 .includes ul {
 	display: grid;
@@ -96,70 +96,62 @@ ul, ol {
 
 	scroll-snap-type: x mandatory;
 
-	padding-bottom: 2cm;
+	padding-bottom: 2cm
 }
 .includes li {
-	scroll-snap-align: center;
+	scroll-snap-align: center
 }
 .includes li:first-child {
-	padding-left: 0.5cm;
+	padding-left: 0.5cm
 }
 .includes li:last-child {
-	padding-right: 0.5cm;
+	padding-right: 0.5cm
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.fillet {
+.includes a {
+	display: block;
+
 	width: 8.5cm;
 
 	border-radius: 15px;
 
-	background-color: var(--fillet);
+	background-color: var(--fillet)
 }
-.fillet img {
+.includes img {
 	width: 100%;
 
-	border-radius: 0 0 15px 15px;
+	border-radius: 0 0 15px 15px
 }
 
 .conclusion {
 	height: 4cm;
 
-	padding: 0.5cm 0.5cm 0;
+	padding: 0.5cm 0.5cm 0
 }
 .conclusion p {
 	padding: 0 0 0.2cm;
 
-	color: var(--conclusion-p);
+	color: var(--conclusion-p)
 }
 .conclusion h1 {
 	font: normal 700 19px/1.21053 "line";
 	letter-spacing: 0.012em;
 
-	color: var(--conclusion-h);
+	color: var(--conclusion-h)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.light {
-	background-color: white;
-}
-.light .conclusion p {
-	color: #9e9e9e;
-}
-.light .conclusion h1 {
-	color: #1d1d1f;
-}
-
 .dark {
-	background-color: black;
+	background-color: black !important
 }
 .dark .conclusion p {
-	color: #7a7a7a;
+	color: #7a7a7a
 }
 .dark .conclusion h1 {
-	color: #fdfdfd;
+	color: #fdfdfd
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -169,15 +161,15 @@ ul, ol {
 }
 .details li {
 	padding-bottom: 0.8em;
-	color: var(--description);
+	color: var(--description)
 }
 .details ol {
 	padding: 0 17px;
-	list-style: outside decimal;
+	list-style: outside decimal
 }
 .details ul+ol li a {
-	color: var(--link);
+	color: var(--link)
 }
 .details ul+ol+ul li a {
-	color: var(--link-footer);
+	color: var(--link-footer)
 }
