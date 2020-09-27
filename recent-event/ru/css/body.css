@@ -62,19 +62,18 @@ ul, ol {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .details p {
-	padding-bottom: 0.5cm;
+	padding-bottom: 10px;
 
 	color: var(--conclusion-p)
 }
 .details h1 {
-	font: normal 600 25px/1.21053 "line";
+	font: normal 600 19px/1.21053 "line";
 	letter-spacing: 0.012em;
 
 	color: var(--conclusion-h)
 }
 
-.media {
-	display: inline-block;
+.media img {
 	width: 100%
 }
 
@@ -107,7 +106,7 @@ footer li {
 	padding-bottom: 0.8em;
 	color: var(--description)
 }
-footer ol {
+footer ol, .content ol {
 	padding: 0 17px;
 	list-style: outside decimal
 }
