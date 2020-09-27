@@ -61,6 +61,10 @@ ul, ol {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+.media img {
+	width: 100%
+}
+
 .details p {
 	padding-bottom: 10px;
 
@@ -71,10 +75,6 @@ ul, ol {
 	letter-spacing: 0.012em;
 
 	color: var(--conclusion-h)
-}
-
-.media img {
-	width: 100%
 }
 
 .content {
@@ -90,8 +90,15 @@ ul, ol {
 .content a {
 	color: var(--link-footer)
 }
+.content ol {
+	padding: 0 17px;
+	list-style: outside disc
+}
+.content ol li {
+	font-size: 12px
+}
 .content sup {
-	font-size: 10px;
+	font-size: 10px
 }
 .content li:last-child {
 	padding-bottom: 22px
@@ -106,7 +113,7 @@ footer li {
 	padding-bottom: 0.8em;
 	color: var(--description)
 }
-footer ol, .content ol {
+footer ol {
 	padding: 0 17px;
 	list-style: outside decimal
 }
