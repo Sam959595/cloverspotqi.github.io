@@ -16,7 +16,6 @@ body {
 	vertical-align: top;
 
 	box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
 }
 *, a, html, body, img, svg, h1, h2, h3, h4, h5, h6, p {
 	user-select: none;
@@ -48,6 +47,7 @@ ul, ol {
 *, h1, h2, h3, h4, h5, h6, p {
 	font: normal 400 12px/1.33337 "line-text", "line", "icon";
 	letter-spacing: -0.01em;
+	-webkit-font-smoothing: antialiased;
 }
 .conclusion h1 {
 	display: -webkit-box;
@@ -60,7 +60,7 @@ ul, ol {
 	text-overflow: ellipsis;
 	overflow: hidden;
 }
-.tag, .tag-executor {
+.line {
 	-webkit-mask: linear-gradient(to left, transparent, black 1cm);
 }
 
