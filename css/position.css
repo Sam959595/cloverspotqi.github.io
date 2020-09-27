@@ -17,10 +17,10 @@
 }
 
 @media screen and (min-width: 768px) {
-    .fillet {
+    .includes a {
         position: relative;
     }
-    .fillet::after {
+    .includes a::after {
         display: block;
         content: "";
         
@@ -35,7 +35,7 @@
         
         transition: all 0.5s linear 0s;
     }
-    .fillet:hover::after {
+    .includes a:hover::after {
         background-color: #00000034;
     
         transition: all 0.3s linear 0s;
