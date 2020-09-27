@@ -62,6 +62,9 @@ ul, ol {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .media img {
+	padding: 0 22px;
+}
+.media img {
 	width: 100%
 }
 .download {
@@ -78,7 +81,7 @@ ul, ol {
 .download a::after {
 	content: "";
 
-	font-size: 15px;
+	font-size: 1.5em;
 
 	color: var(--link-footer)
 }
@@ -126,28 +129,12 @@ ul, ol {
 	padding-bottom: 22px
 }
 
-.share {
-	background-color: var(--includes);
-	text-align: center;
-	cursor: pointer;
-
-	border-top: 1px solid var(--border);
-	border-bottom: 1px solid var(--border);
-
-	margin: 1cm 0;
-	padding: 1.2em 0
-}
-.share span {
-	font-size: 13px;
-	font-weight: 600;
-
-	color: var(--link-footer)
-}
-
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 footer {
-	background-color: var(--footer)
+	background-color: var(--footer);
+
+	border-top: 1px solid var(--border)
 }
 footer li {
 	padding-bottom: 0.8em;
