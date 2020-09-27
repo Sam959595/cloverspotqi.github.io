@@ -168,7 +168,7 @@ a:link, a:visited, .link:link, .link:visited {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border-radius: 7px;
+    border-radius: 70px;
     overflow: hidden;
 }
 a, .link {
