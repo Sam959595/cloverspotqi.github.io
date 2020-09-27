@@ -61,7 +61,7 @@
 
 @media screen and (max-width: 414px) {
     .details {
-        padding: 1cm 16px 0
+        padding: 16px 16px 1cm
     }
     .content {
         padding: 16px 16px 0
