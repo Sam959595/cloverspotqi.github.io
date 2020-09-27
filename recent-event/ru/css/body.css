@@ -64,6 +64,24 @@ ul, ol {
 .media img {
 	width: 100%
 }
+.download {
+	display: flex;
+	justify-content: space-between;
+
+	padding: 0 22px 1cm
+}
+.download p {
+	font-size: 11px;
+
+	color: var(--media)
+}
+.download a::after {
+	content: "";
+
+	font-size: 15px;
+
+	color: var(--link-footer)
+}
 
 .details p {
 	padding-bottom: 10px;
@@ -95,13 +113,35 @@ ul, ol {
 	list-style: outside disc
 }
 .content ol li {
-	font-size: 12px
+	font-size: 12px;
+
+	padding-bottom: 5px;
+
+	color: var(--details)
 }
 .content sup {
 	font-size: 10px
 }
 .content li:last-child {
 	padding-bottom: 22px
+}
+
+.share {
+	background-color: var(--includes);
+	text-align: center;
+	cursor: pointer;
+
+	border-top: 1px solid var(--border);
+	border-bottom: 1px solid var(--border);
+
+	margin: 1cm 0;
+	padding: 1.2em 0
+}
+.share span {
+	font-size: 13px;
+	font-weight: 600;
+
+	color: var(--link-footer)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
