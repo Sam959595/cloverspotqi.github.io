@@ -1,21 +1,38 @@
 @media screen and (max-width: 1600px) {
     .details {
-        padding: 22px 5cm 1cm;
+        padding: 4cm 5cm 0
+    }
+    .content {
+        padding: 22px 5cm 0
+    }
+    footer {
+        padding: 22px 5cm 1cm
     }
 }
 
 @media screen and (max-width: 1024px) {
     .details {
-        padding: 22px 2cm 1cm;
+        padding: 3cm 2cm 0
+    }
+    .content {
+        padding: 22px 2cm 0
+    }
+    footer {
+        padding: 22px 2cm 1cm
     }
 }
 
-@media screen and (max-width: 908px) {
+@media screen and (max-width: 768px) {
     .details {
-        padding: 22px 22px 1cm;
+        padding: 2cm 22px 0
+    }
+    .content {
+        padding: 22px 22px 0
+    }
+    footer {
+        padding: 22px 22px 1cm
     }
 }
-
 @media screen and (min-width: 768px) {
     .includes a {
         position: relative;
@@ -33,18 +50,24 @@
         
         position: absolute;
         
-        transition: all 0.5s linear 0s;
+        transition: all 0.5s linear 0s
     }
     .includes a:hover::after {
         background-color: #00000034;
     
-        transition: all 0.3s linear 0s;
+        transition: all 0.3s linear 0s
     }
 }
 
 @media screen and (max-width: 414px) {
     .details {
-        padding: 16px 16px 1cm;
+        padding: 1cm 16px 0
+    }
+    .content {
+        padding: 16px 16px 0
+    }
+    footer {
+        padding: 16px 16px 1cm
     }
 }
 

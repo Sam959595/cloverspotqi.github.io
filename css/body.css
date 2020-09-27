@@ -36,8 +36,6 @@ ul, ol {
 	list-style: none
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - */
-
 ::-webkit-scrollbar {
 	display: none
 }
@@ -156,20 +154,20 @@ ul, ol {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.details {
-	background-color: var(--details);
+footer {
+	background-color: var(--footer)
 }
-.details li {
+footer li {
 	padding-bottom: 0.8em;
 	color: var(--description)
 }
-.details ol {
+footer ol {
 	padding: 0 17px;
 	list-style: outside decimal
 }
-.details ul+ol li a {
+footer ul+ol li a {
 	color: var(--link)
 }
-.details ul+ol+ul li a {
+footer ul+ol+ul li a {
 	color: var(--link-footer)
 }

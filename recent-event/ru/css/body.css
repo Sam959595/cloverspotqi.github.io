@@ -36,8 +36,6 @@ ul, ol {
 	list-style: none
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - */
-
 ::-webkit-scrollbar {
 	display: none
 }
@@ -49,19 +47,10 @@ ul, ol {
 	letter-spacing: -0.01em;
 	-webkit-font-smoothing: antialiased
 }
-.conclusion h1 {
-	display: -webkit-box;
-	-webkit-line-clamp: 4;
-	-webkit-box-orient: vertical;
-	overflow: hidden
-}
-.includes > h1, .conclusion p {
+.con {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden
-}
-.line {
-	-webkit-mask: linear-gradient(to left, transparent, black 1cm)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -72,104 +61,51 @@ ul, ol {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.includes > h1 {
-	font-size: 15px;
-	font-weight: 700;
-	padding: 0.7cm 1cm 1cm;
-
-	color: #a5a5a5
-}
-.includes sup {
-	font-size: 10px;
-	font-weight: 700
-}
-
-.includes {
-	background-color: var(--includes)
-}
-.includes ul {
-	display: grid;
-	grid-auto-flow: column;
-	grid-column-gap: 1em;
-
-	overflow-x: scroll;
-
-	scroll-snap-type: x mandatory;
-
-	padding-bottom: 2cm
-}
-.includes li {
-	scroll-snap-align: center
-}
-.includes li:first-child {
-	padding-left: 0.5cm
-}
-.includes li:last-child {
-	padding-right: 0.5cm
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-.includes a {
-	display: block;
-
-	width: 8.5cm;
-
-	border-radius: 15px;
-
-	background-color: var(--fillet)
-}
-.includes img {
-	width: 100%;
-
-	border-radius: 0 0 15px 15px
-}
-
-.conclusion {
-	height: 4cm;
-
-	padding: 0.5cm 0.5cm 0
-}
-.conclusion p {
-	padding: 0 0 0.2cm;
-
-	color: var(--conclusion-p)
-}
-.conclusion h1 {
+.details h1 {
 	font: normal 700 19px/1.21053 "line";
 	letter-spacing: 0.012em;
 
 	color: var(--conclusion-h)
 }
 
+.media {
+	display: inline-block;
+	width: 100%;
+}
+
+.content {
+	background-color: var(--includes)
+}
+.content li, a {
+	font: normal 400 13px/1.47059 "line-text";
+	letter-spacing: normal
+}
+.content li {
+	color: var(--text)
+}
+.content a {
+	color: var(--link-footer)
+}
+.content li:last-child {
+	padding-bottom: 22px
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.dark {
-	background-color: black !important
+footer {
+	background-color: var(--footer)
 }
-.dark .conclusion p {
-	color: #7a7a7a
-}
-.dark .conclusion h1 {
-	color: #fdfdfd
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-.details {
-	background-color: var(--details);
-}
-.details li {
+footer li {
 	padding-bottom: 0.8em;
 	color: var(--description)
 }
-.details ol {
+footer ol {
 	padding: 0 17px;
 	list-style: outside decimal
 }
-.details ul+ol li a {
+footer ul+ol li a {
 	color: var(--link)
 }
-.details ul+ol+ul li a {
+footer ul+ol+ul li a {
 	color: var(--link-footer)
 }

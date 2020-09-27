@@ -4,6 +4,8 @@
 
         /* - */
 
+        --text: #1d1d1f;
+
         --includes: #f5f5f7;
 
         --fillet: white;
@@ -12,7 +14,7 @@
 
         /* - */
 
-        --details: #f5f5f7;
+        --footer: #f5f5f7;
         --description: #86868b;
 
         --link: #515154;
@@ -26,6 +28,8 @@
 
         /* - */
 
+        --text: #b2b2be;
+
         --includes: #131314;
 
         --fillet: black;
@@ -34,7 +38,7 @@
 
         /* - */
 
-        --details: #1d1d1f;
+        --footer: #1d1d1f;
         --description: #6e6e73;
 
         --link: #a1a1a6;
