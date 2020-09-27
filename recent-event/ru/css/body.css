@@ -61,6 +61,9 @@ ul, ol {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+.details p {
+	color:var(--conclusion-p)
+}
 .details h1 {
 	font: normal 700 19px/1.21053 "line";
 	letter-spacing: 0.012em;
@@ -70,7 +73,7 @@ ul, ol {
 
 .media {
 	display: inline-block;
-	width: 100%;
+	width: 100%
 }
 
 .content {
@@ -85,6 +88,9 @@ ul, ol {
 }
 .content a {
 	color: var(--link-footer)
+}
+.content sup {
+	font-size: 9px;
 }
 .content li:last-child {
 	padding-bottom: 22px
