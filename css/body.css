@@ -96,7 +96,7 @@ ul, ol {
 
 	scroll-snap-type: x mandatory;
 
-	padding-bottom: 2cm
+	
 }
 .includes li {
 	scroll-snap-align: center
