@@ -45,6 +45,7 @@ ul, ol {
 *, h1, h2, h3, h4, h5, h6, p {
 	font: normal 400 12px/1.33337 "line-text", "line", "icon";
 	letter-spacing: -0.01em;
+	
 	-webkit-font-smoothing: antialiased
 }
 a, strong {

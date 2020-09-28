@@ -45,7 +45,6 @@ ul, ol {
 *, h1, h2, h3, h4, h5, h6, p {
 	font: normal 400 12px/1.33337 "line-text", "line", "icon";
 	letter-spacing: -0.01em;
-	color: var(--text);
 
 	-webkit-font-smoothing: antialiased
 }
@@ -112,6 +111,9 @@ strong {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+.content, .description {
+	color: var(--text)
+}
 .content h1 {
 	font: normal 600 21px/1.19048 "line";
 	letter-spacing: 0.011em;
