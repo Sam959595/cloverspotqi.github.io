@@ -2,7 +2,7 @@
     .details {
         padding: 4cm 5cm 0
     }
-    .content {
+    .content, .description {
         padding: 22px 5cm 0
     }
     footer {
@@ -14,7 +14,7 @@
     .details {
         padding: 3cm 2cm 0
     }
-    .content {
+    .content, .description {
         padding: 22px 2cm 0
     }
     footer {
@@ -24,9 +24,9 @@
 
 @media screen and (max-width: 768px) {
     .details {
-        padding: 2cm 22px 0
+        padding: 2cm 28px 0
     }
-    .content {
+    .content, .description {
         padding: 22px 22px 0
     }
     footer {
@@ -61,10 +61,10 @@
 
 @media screen and (max-width: 414px) {
     .details {
-        padding: 1cm 16px 0
+        padding: 1cm 28px 0
     }
-    .content {
-        padding: 16px 16px 0
+    .content, .description {
+        padding: 16px 28px 0
     }
     footer {
         padding: 16px 16px 1cm

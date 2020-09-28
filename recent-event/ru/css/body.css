@@ -6,7 +6,7 @@
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 body {
-	background-color: var(--body);
+	background-color: var(--body)
 }
 *, html, body, button {
 	margin: 0;
@@ -45,6 +45,8 @@ ul, ol {
 *, h1, h2, h3, h4, h5, h6, p {
 	font: normal 400 12px/1.33337 "line-text", "line", "icon";
 	letter-spacing: -0.01em;
+	color: var(--text);
+
 	-webkit-font-smoothing: antialiased
 }
 a, strong {
@@ -53,7 +55,10 @@ a, strong {
 strong {
 	font-weight: 600
 }
-.con {
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+.line {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden
@@ -63,33 +68,6 @@ strong {
 
 .margin {
 	margin-bottom: 15px
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-.media img {
-	padding: 0 16px
-}
-.media img {
-	width: 100%
-}
-.download {
-	display: flex;
-	justify-content: space-between;
-
-	padding: 8px 16px 1cm
-}
-.download p {
-	width: 90%;
-
-	color: var(--media)
-}
-.download a::after {
-	content: "";
-
-	font-size: 1.5em;
-
-	color: var(--link-footer)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -108,6 +86,32 @@ strong {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+.media img {
+	width: 100%;
+
+	padding: 0 28px
+}
+.download {
+	display: flex;
+	justify-content: space-between;
+
+	padding: 8px 28px 1cm
+}
+.download p {
+	width: 90%;
+
+	color: var(--media)
+}
+.download a::after {
+	content: "";
+
+	font-size: 1.5em;
+
+	color: var(--link-footer)
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
 .content h1 {
 	font: normal 600 21px/1.19048 "line";
 	letter-spacing: 0.011em;
@@ -118,26 +122,34 @@ strong {
 	font: normal 400 17px/1.47059 "line-text";
 	letter-spacing: -0.022em
 }
-.content li {
-	color: var(--text)
-}
 .content a {
 	color: var(--link-footer)
 }
 .content ol {
-	padding: 0 20px;
+	padding-left: 20px;
 	list-style: outside disc
 }
 .content ol li {
-	padding-bottom: 1em;
-
-	color: var(--details)
+	padding-bottom: 1em
 }
 .content sup {
 	font-size: 11px
 }
 .content li:last-child {
 	padding-bottom: 22px
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+.description h1, .description li {
+	font: normal 400 14px/1.42859 "line-text";
+	letter-spacing: -0.016em;
+
+	padding-bottom: 1.47em
+}
+.description ol {
+	padding-left: 1.28em;
+	list-style: outside disc
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
