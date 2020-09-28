@@ -48,6 +48,7 @@ ul, ol {
 	-webkit-font-smoothing: antialiased
 }
 strong {
+	font: inherit;
 	font-weight: 600
 }
 .con {
@@ -77,8 +78,6 @@ strong {
 	padding: 0 16px 1cm
 }
 .download p {
-	font-size: 11px;
-	
 	width: 90%;
 
 	color: var(--media)
@@ -97,8 +96,8 @@ strong {
 	color: var(--conclusion-p)
 }
 .details h1 {
-	font: normal 600 19px/1.21053 "line";
-	letter-spacing: 0.012em;
+	font: normal 600 32px/1.125 "line";
+	letter-spacing: 0.004em;
 
 	color: var(--conclusion-h)
 }
@@ -107,8 +106,8 @@ strong {
 	background-color: var(--includes)
 }
 .content li, .content a {
-	font: normal 400 14px/1.47059 "line-text";
-	letter-spacing: normal
+	font: normal 400 17px/1.47059 "line-text";
+	letter-spacing: -0.022em
 }
 .content li {
 	color: var(--text)
@@ -121,14 +120,14 @@ strong {
 	list-style: outside disc
 }
 .content ol li {
-	font-size: 12px;
+	font-size: 14px;
 
-	padding-bottom: 5px;
+	padding-bottom: 1em;
 
 	color: var(--details)
 }
 .content sup {
-	font-size: 10px
+	font-size: 12px
 }
 .content li:last-child {
 	padding-bottom: 22px

@@ -48,6 +48,7 @@ ul, ol {
 	-webkit-font-smoothing: antialiased
 }
 strong {
+	font: inherit;
 	font-weight: 600
 }
 .conclusion h1 {
