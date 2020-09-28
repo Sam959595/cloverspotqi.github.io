@@ -111,7 +111,7 @@ strong {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.content, .description {
+.content {
 	color: var(--text)
 }
 .content h1 {
