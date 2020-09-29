@@ -5,16 +5,12 @@
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-body {
-	background-color: var(--body)
-}
 *, html, body, button {
 	margin: 0;
 	padding: 0
 }
 *, html, body {
 	vertical-align: top;
-
 	box-sizing: border-box
 }
 *, html, body, img, svg, a, h1, h2, h3, h4, h5, h6, p {
@@ -28,7 +24,6 @@ svg, h1, h2, h3, h4, h5, h6, p {
 }
 a, button {
 	cursor: pointer;
-	
 	text-decoration: none;
 	border: none
 }
@@ -41,6 +36,10 @@ a, sup, strong, em {
 
 ::-webkit-scrollbar {
 	display: none
+}
+
+body {
+	background-color: var(--body)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -131,6 +130,9 @@ picture img {
 }
 .content ol li {
 	padding-bottom: 1em
+}
+.content li {
+	padding-bottom: 0.5em
 }
 .content li:last-child {
 	padding-bottom: 1.5em

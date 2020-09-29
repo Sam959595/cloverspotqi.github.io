@@ -2,7 +2,7 @@
     .details {
         padding: 4cm 5cm 0
     }
-    .content, .description {
+    .content {
         padding: 22px 5cm 0
     }
     footer {
@@ -14,7 +14,7 @@
     .details {
         padding: 3cm 2cm 0
     }
-    .content, .description {
+    .content {
         padding: 22px 2cm 0
     }
     footer {
@@ -26,7 +26,7 @@
     .details {
         padding: 2cm 28px 0
     }
-    .content, .description {
+    .content {
         padding: 22px 22px 0
     }
     footer {
@@ -34,9 +34,6 @@
     }
 }
 @media screen and (min-width: 768px) {
-    img {
-        pointer-events: none
-    }
     .includes a {
         position: relative
     }
@@ -66,7 +63,7 @@
     .details {
         padding: 1cm 28px 0
     }
-    .content, .description {
+    .content {
         padding: 16px 28px 0
     }
     footer {
