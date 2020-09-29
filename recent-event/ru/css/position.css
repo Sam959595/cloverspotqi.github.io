@@ -10,6 +10,12 @@
     }
 }
 
+@media screen and (min-width: 414px) {
+    img {
+        pointer-events: none
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .details {
         padding: 3cm 2cm 0
@@ -68,11 +74,6 @@
     }
     footer {
         padding: 16px 16px 1cm
-    }
-}
-@media screen and (min-width: 414px) {
-    img {
-        pointer-events: none
     }
 }
 
