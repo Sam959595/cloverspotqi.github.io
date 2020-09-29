@@ -34,8 +34,11 @@
     }
 }
 @media screen and (min-width: 768px) {
+    img {
+        pointer-events: none
+    }
     .includes a {
-        position: relative;
+        position: relative
     }
     .includes a::after {
         display: block;
@@ -68,11 +71,6 @@
     }
     footer {
         padding: 16px 16px 1cm
-    }
-}
-@media screen and (min-width: 414px) {
-    img {
-        pointer-events: none
     }
 }
 
