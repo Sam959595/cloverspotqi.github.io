@@ -129,9 +129,6 @@ picture img {
 	padding-bottom: 1em
 }
 .content li {
-	padding-bottom: 0.5em
-}
-.content li:last-child {
 	padding-bottom: 1.5em
 }
 
