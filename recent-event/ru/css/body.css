@@ -35,6 +35,9 @@ a, button {
 ul, ol {
 	list-style: none
 }
+a, strong, em {
+	font: inherit
+}
 
 ::-webkit-scrollbar {
 	display: none
@@ -48,11 +51,11 @@ ul, ol {
 
 	-webkit-font-smoothing: antialiased
 }
-a, strong {
-	font: inherit
-}
 strong {
 	font-weight: 600
+}
+em {
+	font-style: italic
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -85,7 +88,7 @@ strong {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.media img {
+picture img {
 	width: 100%;
 
 	padding: 0 28px
@@ -138,7 +141,7 @@ strong {
 	font-size: 11px
 }
 .content li:last-child {
-	padding-bottom: 22px
+	padding-bottom: 1.5em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -147,7 +150,7 @@ strong {
 	font: normal 400 14px/1.42859 "line-text";
 	letter-spacing: -0.016em;
 
-	padding-bottom: 1.47em
+	padding-bottom: 1.5em
 }
 .description ol {
 	padding-left: 1.28em;

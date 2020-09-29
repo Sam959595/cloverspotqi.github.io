@@ -35,6 +35,9 @@ a, button {
 ul, ol {
 	list-style: none
 }
+a, strong, em {
+	font: inherit
+}
 
 ::-webkit-scrollbar {
 	display: none
@@ -48,11 +51,11 @@ ul, ol {
 
 	-webkit-font-smoothing: antialiased
 }
-a, strong {
-	font: inherit
-}
 strong {
 	font-weight: 600
+}
+em {
+	font-style: italic
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
