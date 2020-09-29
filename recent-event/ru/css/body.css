@@ -35,7 +35,7 @@ a, button {
 ul, ol {
 	list-style: none
 }
-a, strong, em {
+a, sup, strong, em {
 	font: inherit
 }
 
@@ -51,19 +51,14 @@ a, strong, em {
 
 	-webkit-font-smoothing: antialiased
 }
+sup {
+	font-size: 11px
+}
 strong {
 	font-weight: 600
 }
 em {
 	font-style: italic
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-.line {
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -136,9 +131,6 @@ picture img {
 }
 .content ol li {
 	padding-bottom: 1em
-}
-.content sup {
-	font-size: 11px
 }
 .content li:last-child {
 	padding-bottom: 1.5em
