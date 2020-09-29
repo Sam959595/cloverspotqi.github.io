@@ -19,9 +19,6 @@
 img, svg, h1, h2, h3, h4, h5, h6, p {
 	cursor: default
 }
-svg, h1, h2, h3, h4, h5, h6, p {
-	pointer-events: none
-}
 a, button {
 	cursor: pointer;
 	text-decoration: none;
