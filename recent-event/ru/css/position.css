@@ -59,6 +59,21 @@
     }
 }
 
+@media screen and (min-width: 414px) {
+    img {
+        pointer-events: none
+    }
+
+    .details {
+        padding: 1cm 28px 0
+    }
+    .content, .description {
+        padding: 16px 28px 0
+    }
+    footer {
+        padding: 16px 16px 1cm
+    }
+}
 @media screen and (max-width: 414px) {
     .details {
         padding: 1cm 28px 0
