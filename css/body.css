@@ -17,7 +17,7 @@ body {
 
 	box-sizing: border-box
 }
-*, a, html, body, img, svg, h1, h2, h3, h4, h5, h6, p {
+*, html, body, img, svg, a, h1, h2, h3, h4, h5, h6, p {
 	user-select: none
 }
 img, svg, h1, h2, h3, h4, h5, h6, p {
