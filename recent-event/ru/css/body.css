@@ -131,8 +131,6 @@ picture img {
 .description h1, .description li {
 	font: normal 400 14px/1.42859 "line-text";
 	letter-spacing: -0.016em;
-
-	padding-bottom: 1.5em
 }
 .description ol {
 	padding-left: 1.28em;
