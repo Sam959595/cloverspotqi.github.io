@@ -6,17 +6,19 @@
         margin: 0 auto;
         width: 576px
     }
+    .details {
+        margin-top: 2cm
+    }
+    .content {
+        padding-top: 1cm
+    }
 }
 @media screen and (min-width: 1024px) {
     .details {
         margin-top: 2cm
     }
-    .details h1 {
-        font: normal 600 48px/1.08349 "line";
-        letter-spacing: -.003em
-    }
     .content {
-        padding-top: 16px
+        padding-top: 1cm
     }
     .content h1 {
         font: normal 600 24px/1.16667 "line";
@@ -34,6 +36,10 @@
     }
     .details {
         padding-top: 1cm
+    }
+    .details h1 {
+        font: normal 600 32px/1.125 "line";
+        letter-spacing: .004em
     }
     .content {
         padding-top: 22px
