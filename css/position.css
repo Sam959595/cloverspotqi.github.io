@@ -2,15 +2,8 @@
     footer {
         padding: 22px 5cm 1cm
     }
-}
-
-@media screen and (max-width: 1024px) {
-    footer {
-        padding: 22px 2cm 1cm
-    }
-
     .includes a {
-        position: relative;
+        position: relative
     }
     .includes a::after {
         display: block;
@@ -33,6 +26,12 @@
         background-color: #00000034;
     
         transition: all 0.3s linear 0s
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    footer {
+        padding: 22px 2cm 1cm
     }
 }
 

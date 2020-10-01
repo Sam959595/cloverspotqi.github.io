@@ -134,6 +134,10 @@ em {
 	border-radius: 0 0 18px 18px
 }
 
+.light {
+	background-color: white !important
+}
+
 .conclusion {
 	height: 4cm;
 
