@@ -124,14 +124,14 @@ em {
 
 	width: 8.5cm;
 
-	border-radius: 15px;
+	border-radius: 18px;
 
 	background-color: var(--fillet)
 }
 .includes img {
 	width: 100%;
 
-	border-radius: 0 0 15px 15px
+	border-radius: 0 0 18px 18px
 }
 
 .conclusion {
