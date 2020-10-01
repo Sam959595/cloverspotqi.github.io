@@ -8,24 +8,7 @@
     footer {
         padding: 22px 2cm 1cm
     }
-}
 
-@media screen and (max-width: 768px) {
-    footer {
-        padding: 22px 22px 1cm
-    }
-}
-@media screen and (min-width: 768px) {
-    
-}
-
-@media screen and (max-width: 414px) {
-    footer {
-        padding: 16px 16px 1cm
-    }
-}
-
-@media screen and (max-width: 411px) {
     .includes a {
         position: relative;
     }
@@ -51,6 +34,24 @@
     
         transition: all 0.3s linear 0s
     }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 22px 22px 1cm
+    }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (max-width: 414px) {
+    footer {
+        padding: 16px 16px 1cm
+    }
+}
+
+@media screen and (max-width: 411px) {
 }
 
 @media screen and (max-width: 375px) {
