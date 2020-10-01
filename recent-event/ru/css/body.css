@@ -43,7 +43,7 @@ body {
 
 *, h1, h2, h3, h4, h5, h6, p {
 	font: normal 400 12px/1.33337 "line-text", "line", "icon";
-	letter-spacing: -0.01em;
+	letter-spacing: -.01em;
 
 	-webkit-font-smoothing: antialiased
 }
@@ -59,6 +59,13 @@ em {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+.margin {
+	margin: 0 auto;
+	width: 653px
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
 .details p {
 	padding-bottom: 10px;
 
@@ -66,23 +73,24 @@ em {
 }
 .details h1 {
 	font: normal 600 32px/1.125 "line";
-	letter-spacing: 0.004em;
+	letter-spacing: .004em;
 
 	color: var(--conclusion-h)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+picture {
+	display: block;
+}
 picture img {
-	width: 100%;
-
-	padding: 0 28px
+	width: 100%
 }
 .download {
 	display: flex;
 	justify-content: space-between;
 
-	padding: 8px 28px 1cm
+	padding: 8px 0 1cm
 }
 .download p {
 	width: 90%;
@@ -104,13 +112,13 @@ picture img {
 }
 .content h1 {
 	font: normal 600 21px/1.19048 "line";
-	letter-spacing: 0.011em;
+	letter-spacing: .011em;
 
 	padding-bottom: 16px
 }
 .content li {
 	font: normal 400 17px/1.47059 "line-text";
-	letter-spacing: -0.022em
+	letter-spacing: -.022em
 }
 .content a {
 	color: var(--link-footer)
@@ -128,9 +136,19 @@ picture img {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+.separation {
+	border-top: 1px solid var(--separation)
+}
+.separation ul {
+	padding-top: 1cm;
+
+	display: flex;
+	justify-content: space-between
+}
+
 .description h1, .description li {
 	font: normal 400 14px/1.42859 "line-text";
-	letter-spacing: -0.016em;
+	letter-spacing: -.016em
 }
 .description ol {
 	padding-left: 1.28em;
@@ -140,12 +158,12 @@ picture img {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 footer {
-	margin-top: 0.5cm;
+	margin-top: .5cm;
 
 	background-color: var(--footer)
 }
 footer li {
-	padding-bottom: 0.8em;
+	padding-bottom: .8em;
 	color: var(--description)
 }
 footer ol {

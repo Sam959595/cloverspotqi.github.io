@@ -46,7 +46,7 @@ body {
 
 *, h1, h2, h3, h4, h5, h6, p {
 	font: normal 400 12px/1.33337 "line-text", "line", "icon";
-	letter-spacing: -0.01em;
+	letter-spacing: -.01em;
 
 	-webkit-font-smoothing: antialiased
 }
@@ -88,7 +88,7 @@ em {
 .includes > h1 {
 	font-size: 15px;
 	font-weight: 700;
-	padding: 0.7cm 1cm 1cm;
+	padding: .7cm 1cm 1cm;
 
 	color: #a5a5a5
 }
@@ -111,10 +111,10 @@ em {
 	scroll-snap-align: center
 }
 .includes li:first-child {
-	padding-left: 0.5cm
+	padding-left: .5cm
 }
 .includes li:last-child {
-	padding-right: 0.5cm
+	padding-right: .5cm
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -137,16 +137,16 @@ em {
 .conclusion {
 	height: 4cm;
 
-	padding: 0.5cm 0.5cm 0
+	padding: .5cm .5cm 0
 }
 .conclusion p {
-	padding: 0 0 0.2cm;
+	padding: 0 0 .2cm;
 
 	color: var(--conclusion-p)
 }
 .conclusion h1 {
 	font: normal 700 19px/1.21053 "line";
-	letter-spacing: 0.012em;
+	letter-spacing: .012em;
 
 	color: var(--conclusion-h)
 }
@@ -169,7 +169,7 @@ footer {
 	background-color: var(--footer)
 }
 footer li {
-	padding-bottom: 0.8em;
+	padding-bottom: .8em;
 	color: var(--description)
 }
 footer ol {

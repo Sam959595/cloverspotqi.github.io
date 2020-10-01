@@ -1,33 +1,42 @@
 @media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1024px) {
+    .margin {
+        margin: 0 auto;
+        width: 576px
+    }
+}
+@media screen and (min-width: 1024px) {
     .details {
-        padding: 4cm 5cm 0
+        margin-top: 2cm
+    }
+    .details h1 {
+        font: normal 600 48px/1.08349 "line";
+        letter-spacing: -.003em
     }
     .content {
-        padding: 22px 5cm 0
+        padding-top: 16px
+    }
+    .content h1 {
+        font: normal 600 24px/1.16667 "line";
+        letter-spacing: .009em
     }
     footer {
         padding: 22px 5cm 1cm
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 734px) {
+    .margin {
+        margin: 0 auto;
+        width: 87.5%
+    }
     .details {
-        padding: 3cm 2cm 0
+        padding-top: 1cm
     }
     .content {
-        padding: 22px 2cm 0
-    }
-    footer {
-        padding: 22px 2cm 1cm
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .details {
-        padding: 2cm 28px 0
-    }
-    .content {
-        padding: 22px 22px 0
+        padding-top: 22px
     }
     footer {
         padding: 22px 22px 1cm
@@ -63,11 +72,8 @@
 }
 
 @media screen and (max-width: 414px) {
-    .details {
-        padding: 1cm 28px 0
-    }
     .content {
-        padding: 16px 28px 0
+        padding-top: 16px
     }
     footer {
         padding: 16px 16px 1cm
