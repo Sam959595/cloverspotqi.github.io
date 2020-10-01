@@ -141,7 +141,7 @@ picture img {
 }
 
 .description h1, .description li {
-	font: normal 400 14px/1.42859 "line-text";
+	font: normal 400 14px/1.42859 "line-text" !important;
 	letter-spacing: -.016em
 }
 .description ol {
