@@ -59,7 +59,7 @@ em {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.margin, footer ul, footer ol {
+.margin {
 	margin: 0 auto;
 	width: 653px
 }

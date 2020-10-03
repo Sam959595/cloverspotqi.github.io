@@ -153,18 +153,6 @@ em {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.dark {
-	background-color: black !important
-}
-.dark .conclusion p {
-	color: #7a7a7a
-}
-.dark .conclusion h1 {
-	color: #fdfdfd
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
 footer {
 	background-color: var(--footer)
 }
