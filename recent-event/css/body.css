@@ -91,7 +91,9 @@ picture {
 	display: block
 }
 picture img {
-	width: 100%
+	width: 100%;
+
+	background-color: var(--image)
 }
 .download {
 	display: flex;
