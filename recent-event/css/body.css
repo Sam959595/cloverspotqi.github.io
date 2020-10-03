@@ -105,7 +105,7 @@ picture img {
 	color: var(--media)
 }
 .download a::after {
-	content: "";
+	content: "\f32b";
 
 	font-size: 1.5em;
 
