@@ -30,18 +30,12 @@ a, button {
 ul, ol {
 	list-style: none
 }
-a, sup, strong, em {
+a, sup, strong, q, em {
 	font: inherit
 }
 
 ::-webkit-scrollbar {
 	display: none
-}
-:lang(ru) {
-	quotes: "«" "»"
-}
-:lang(en-US) {
-	quotes: "“" "”"
 }
 
 body {
@@ -49,6 +43,13 @@ body {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
+
+:lang(ru) {
+	quotes: "«" "»"
+}
+:lang(en-US) {
+	quotes: "“" "”"
+}
 
 *, h1, h2, h3, h4, h5, h6, p {
 	font: normal 400 12px/1.33337 "line-text", "line", "icon";
