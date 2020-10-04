@@ -43,6 +43,9 @@
         margin: 0 auto;
         width: 87.5%
     }
+    nav {
+        height: 48px
+    }
     nav > a {
         font-size: 19px
     }
