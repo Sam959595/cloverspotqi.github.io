@@ -9,13 +9,22 @@
     .details {
         margin-top: 4cm
     }
+    nav {
+        padding: 0 22px
+    }
     .content {
         padding-top: 1cm
+    }
+    footer {
+        padding: 22px 22px 1cm
     }
 }
 @media screen and (min-width: 1024px) {
     .details {
         margin-top: 4cm
+    }
+    nav {
+        padding: 0 5cm
     }
     .content {
         padding-top: 1cm
@@ -25,7 +34,7 @@
         letter-spacing: .009em
     }
     footer {
-        padding: 22px 0 1cm
+        padding: 22px 5cm 1cm
     }
 }
 
@@ -33,6 +42,9 @@
     .margin {
         margin: 0 auto;
         width: 87.5%
+    }
+    nav > a {
+        font-size: 19px
     }
     .details {
         padding-top: 3cm
@@ -75,6 +87,9 @@
 }
 
 @media screen and (max-width: 414px) {
+    nav {
+        padding: 0 16px
+    }
     .content {
         padding-top: 16px
     }
