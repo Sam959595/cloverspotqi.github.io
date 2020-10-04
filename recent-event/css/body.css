@@ -74,6 +74,10 @@ em {
 	width: 653px
 }
 
+.numbering ol {
+	list-style: outside decimal !important
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .details p {
