@@ -156,7 +156,7 @@ picture img {
 	border-top: 1px solid var(--footer)
 }
 
-.description h1, .description li {
+.description li {
 	font: normal 400 14px/1.42859 "line-text" !important;
 	letter-spacing: -.016em
 }
@@ -166,7 +166,7 @@ picture img {
 }
 
 .description p {
-	color: #9c9c9c;
+	color: #9c9c9c
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
