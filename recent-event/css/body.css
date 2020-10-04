@@ -165,6 +165,10 @@ picture img {
 	list-style: outside disc
 }
 
+.description p {
+	color: #9c9c9c;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 footer {
