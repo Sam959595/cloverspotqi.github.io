@@ -1,6 +1,7 @@
 @media screen and (prefers-color-scheme: no-preference), (prefers-color-scheme: light) {
     :root {
         /* --body */
+        --nav: rgba(255, 255, 255, 0.7);
 
         /* - */
 
@@ -25,6 +26,7 @@
 @media screen and (prefers-color-scheme: dark) {
     :root {
         --body: black;
+        --nav: rgba(29, 29, 31, 0.7);
 
         /* - */
 

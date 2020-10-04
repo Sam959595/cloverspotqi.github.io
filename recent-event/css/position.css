@@ -7,7 +7,7 @@
         width: 576px
     }
     .details {
-        margin-top: 2cm
+        margin-top: 4cm
     }
     .content {
         padding-top: 1cm
@@ -15,7 +15,7 @@
 }
 @media screen and (min-width: 1024px) {
     .details {
-        margin-top: 2cm
+        margin-top: 4cm
     }
     .content {
         padding-top: 1cm
@@ -35,7 +35,7 @@
         width: 87.5%
     }
     .details {
-        padding-top: 1cm
+        padding-top: 3cm
     }
     .details h1 {
         font: normal 600 32px/1.125 "line";
