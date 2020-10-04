@@ -1,6 +1,6 @@
 @media screen and (prefers-color-scheme: no-preference), (prefers-color-scheme: light) {
     :root {
-        --body: white;
+        /* --body */
 
         /* - */
 
@@ -30,7 +30,7 @@
 
         --text: #f5f5f7;
         --media: #a1a1a6;
-        --image: #121213;
+        /* --image */
 
         --fillet: black;
         --conclusion-p: #c4c4c4;
