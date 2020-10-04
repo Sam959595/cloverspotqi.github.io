@@ -19,6 +19,9 @@
 img, svg, h1, h2, h3, h4, h5, h6, p {
 	cursor: default
 }
+img, svg, h1, h2, h3, h4, h5, h6, p {
+	pointer-events: none
+}
 a, button {
 	cursor: pointer;
 	text-decoration: none;
@@ -109,7 +112,7 @@ picture img {
 .download a::after {
 	content: "\f32b";
 
-	font-size: 1.5em;
+	font-size: 1.8em;
 
 	color: var(--link-footer)
 }

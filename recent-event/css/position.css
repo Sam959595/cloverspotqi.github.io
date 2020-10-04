@@ -49,9 +49,6 @@
     }
 }
 @media screen and (min-width: 768px) {
-    img {
-        pointer-events: none
-    }
     .includes a {
         position: relative
     }
