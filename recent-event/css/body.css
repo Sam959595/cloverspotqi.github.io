@@ -201,7 +201,7 @@ picture img {
 }
 
 .description p {
-	color: #a1a1a6
+	color: var(--link)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
