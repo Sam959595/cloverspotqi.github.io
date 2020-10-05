@@ -33,6 +33,9 @@ ul, ol {
 a, sup, strong, q, em {
 	font: inherit
 }
+a::after {
+	-webkit-tap-highlight-color: none
+}
 
 ::-webkit-scrollbar {
 	display: none
