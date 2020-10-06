@@ -72,9 +72,6 @@ em {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-input {
-	display: none;
-}
 #search:checked ~ label {
 	z-index: 10;
 
