@@ -33,6 +33,10 @@
         font: normal 600 24px/1.16667 "line";
         letter-spacing: .009em
     }
+    .additionally h1 {
+        font: normal 400 24px/1.33341 "line";
+        letter-spacing: .009em
+    }
     footer {
         padding: 22px 5cm 1cm
     }

@@ -127,7 +127,9 @@ nav a {
 nav span::after {
 	content: "\f303";
 
-	font-size: 19px;
+	font-size: 1.8em;
+
+	cursor: pointer;
 
 	color: var(--link-footer)
 }
@@ -155,6 +157,18 @@ nav span::after {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+.additionally {
+	padding-top: 1em
+}
+.additionally h1 {
+	font: normal 400 19px/1.21053 "line";
+	letter-spacing: .012em;
+
+	color: var(--media)
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
 picture {
 	display: block
 }
@@ -177,7 +191,7 @@ picture img {
 .download a::after {
 	content: "\f32b";
 
-	font-size: 19px;
+	font-size: 1.8em;
 
 	color: var(--link-footer)
 }
