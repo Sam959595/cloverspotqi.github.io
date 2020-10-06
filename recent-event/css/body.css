@@ -72,6 +72,9 @@ em {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+input {
+	display: none;
+}
 #search:checked ~ label {
 	z-index: 10;
 
@@ -122,9 +125,9 @@ nav a {
 }
 
 nav span::after {
-	content: "\f307";
+	content: "\f303";
 
-	font-size: 1.5em;
+	font-size: 19px;
 
 	color: var(--link-footer)
 }
