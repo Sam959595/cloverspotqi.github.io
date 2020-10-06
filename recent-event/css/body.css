@@ -121,6 +121,14 @@ nav a {
 	color: var(--conclusion-h)
 }
 
+nav span::after {
+	content: "\f307";
+
+	font-size: 1.5em;
+
+	color: var(--link-footer)
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .margin {
@@ -166,7 +174,7 @@ picture img {
 .download a::after {
 	content: "\f32b";
 
-	font-size: 1.8em;
+	font-size: 19px;
 
 	color: var(--link-footer)
 }
