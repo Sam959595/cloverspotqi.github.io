@@ -5,8 +5,16 @@
 }
 
 @media screen and (max-width: 1024px) {
+    nav {
+        padding: 0 22px
+    }
     footer {
         padding: 22px 2cm 1cm
+    }
+}
+@media screen and (min-width: 1024px) {
+    nav {
+        padding: 0 5cm
     }
 }
 
@@ -16,6 +24,12 @@
     }
 }
 @media screen and (min-width: 768px) {
+    nav {
+        height: 48px
+    }
+    nav > a {
+        font-size: 19px
+    }
     .includes a {
         position: relative
     }
@@ -42,6 +56,9 @@
 }
 
 @media screen and (max-width: 414px) {
+    nav {
+        padding: 0 16px
+    }
     footer {
         padding: 16px 16px 1cm
     }
