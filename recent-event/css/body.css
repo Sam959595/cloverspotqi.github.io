@@ -72,24 +72,6 @@ em {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-#search:checked ~ label {
-	z-index: 10;
-
-	top: 0;
-	bottom: 0;
-
-	left: 0;
-	right: 0;
-
-	transition: background-color 0.5s ease;
-	transition-property: background-color, backdrop-filter;
-}
-label {
-	position: fixed;
-
-	background-color: black
-}
-
 nav {
 	position: fixed;
 	z-index: 9;
@@ -265,6 +247,6 @@ footer ol {
 footer ul+ol li a {
 	color: var(--link)
 }
-footer ul+ol+ul li a {
+footer ul:last-child li a {
 	color: var(--link-footer)
 }

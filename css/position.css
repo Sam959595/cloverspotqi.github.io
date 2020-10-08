@@ -59,6 +59,9 @@
     nav {
         padding: 0 16px
     }
+    .includes li:first-child {
+        padding-left: .5cm
+    }
     footer {
         padding: 16px 16px 1cm
     }
