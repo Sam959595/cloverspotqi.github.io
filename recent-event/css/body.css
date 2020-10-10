@@ -84,7 +84,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 
-	place-items: center;
+	align-items: center;
 
 	backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
 	background-color: var(--nav)

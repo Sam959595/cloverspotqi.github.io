@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 768px) {
     footer {
-        padding: 22px 22px 1cm
+        padding: 22px 22px 17px
     }
 }
 @media screen and (min-width: 768px) {
