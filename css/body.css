@@ -33,9 +33,6 @@ ul, ol {
 a, sup, strong, q, em {
 	font: inherit
 }
-a {
-	-webkit-tap-highlight-color: none
-}
 
 ::-webkit-scrollbar {
 	display: none
@@ -84,7 +81,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 
-	place-items: center;
+	align-items: center;
 
 	backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
 	background-color: var(--nav)
@@ -110,7 +107,9 @@ nav span::after {
 
 	cursor: pointer;
 
-	color: var(--link-footer)
+	color: var(--link-footer);
+
+	-webkit-tap-highlight-color: none
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -152,7 +151,6 @@ nav span::after {
 .includes ul {
 	display: grid;
 	grid-auto-flow: column;
-	grid-column-gap: 1em;
 
 	overflow-x: scroll;
 
@@ -161,13 +159,7 @@ nav span::after {
 	padding-bottom: 2cm
 }
 .includes li {
-	scroll-snap-align: center
-}
-.includes li:first-child {
-	padding-left: .5cm
-}
-.includes li:last-child {
-	padding-right: .5cm
+	scroll-snap-align: start
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */

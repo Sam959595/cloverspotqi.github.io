@@ -1,24 +1,6 @@
 @media screen and (max-width: 1600px) {
 }
 
-@media screen and (max-width: 1024px) {
-    .margin {
-        margin: 0 auto;
-        width: 576px
-    }
-    .details {
-        margin-top: 2.5cm
-    }
-    nav {
-        padding: 0 22px
-    }
-    .content {
-        padding-top: 1cm
-    }
-    footer {
-        padding: 22px 22px 1cm
-    }
-}
 @media screen and (min-width: 1024px) {
     .details {
         margin-top: 3cm
@@ -41,32 +23,25 @@
         padding: 22px 5cm 1cm
     }
 }
-
-@media screen and (max-width: 734px) {
+@media screen and (max-width: 1024px) {
     .margin {
         margin: 0 auto;
-        width: 87.5%
-    }
-    nav {
-        height: 48px
-    }
-    nav > a {
-        font-size: 19px
+        width: 576px
     }
     .details {
-        padding-top: 2cm
+        margin-top: 2.5cm
     }
-    .details h1 {
-        font: normal 600 32px/1.125 "line";
-        letter-spacing: .004em
+    nav {
+        padding: 0 22px
     }
     .content {
-        padding-top: 22px
+        padding-top: 1cm
     }
     footer {
-        padding: 22px 22px 17px
+        padding: 22px 22px 1cm
     }
 }
+
 @media screen and (min-width: 768px) {
     .includes a {
         position: relative
@@ -92,6 +67,31 @@
         transition: all 0.3s linear 0s
     }
 }
+@media screen and (max-width: 734px) {
+    .margin {
+        margin: 0 auto;
+        width: 87.5%
+    }
+    nav {
+        height: 48px
+    }
+    nav > a {
+        font-size: 19px
+    }
+    .details {
+        padding-top: 2cm
+    }
+    .details h1 {
+        font: normal 600 32px/1.125 "line";
+        letter-spacing: .004em
+    }
+    .content {
+        padding-top: 22px
+    }
+    footer {
+        padding: 22px 22px 17px
+    }
+}
 
 @media screen and (max-width: 414px) {
     nav {
@@ -101,7 +101,7 @@
         padding-top: 16px
     }
     footer {
-        padding: 17px 16px 17px
+        padding: 17px 16px 19px
     }
 }
 

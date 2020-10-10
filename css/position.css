@@ -4,6 +4,14 @@
     }
 }
 
+@media screen and (min-width: 1024px) {
+    nav {
+        padding: 0 5cm
+    }
+    .includes ul {
+        margin: 0 5cm
+    }
+}
 @media screen and (max-width: 1024px) {
     nav {
         padding: 0 22px
@@ -12,23 +20,25 @@
         padding: 22px 2cm 1cm
     }
 }
-@media screen and (min-width: 1024px) {
-    nav {
-        padding: 0 5cm
-    }
-}
 
-@media screen and (max-width: 768px) {
-    footer {
-        padding: 22px 22px 17px
-    }
-}
 @media screen and (min-width: 768px) {
-    nav {
-        height: 48px
+    .includes ul {
+        margin: 0 2cm
     }
-    nav > a {
-        font-size: 19px
+    .includes ul {
+        -webkit-mask: linear-gradient(to left, transparent, black 2em, black calc(100% - 2em), transparent 100%)
+    }
+    .includes a {
+        width: 7cm
+    }
+    .includes li:first-child {
+        padding-left: 2em
+    }
+    .includes li:last-child {
+        padding-right: 2em
+    }
+    .includes li {
+        padding-left: 2em
     }
     .includes a {
         position: relative
@@ -54,6 +64,38 @@
         transition: all 0.3s linear 0s
     }
 }
+@media screen and (max-width: 768px) {
+    nav {
+        height: 48px
+    }
+    nav > a {
+        font-size: 19px
+    }
+    .includes ul {
+        margin: 0 1cm
+    }
+    .includes ul {
+        grid-column-gap: 1em
+    }
+    .includes li {
+        scroll-snap-align: center
+    }
+    .includes li:first-child {
+        padding-left: .5cm
+    }
+    .includes li:last-child {
+        padding-right: .5cm
+    }
+    footer {
+        padding: 22px 22px 17px
+    }
+}
+
+@media screen and (max-width: 548px) {
+    .includes ul {
+        margin: 0
+    }
+}
 
 @media screen and (max-width: 414px) {
     nav {
@@ -63,7 +105,7 @@
         padding-left: .5cm
     }
     footer {
-        padding: 17px 16px 17px
+        padding: 17px 16px 1cm
     }
 }
 
