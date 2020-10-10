@@ -33,7 +33,7 @@ ul, ol {
 a, sup, strong, q, em {
 	font: inherit
 }
-a::after {
+a {
 	-webkit-tap-highlight-color: none
 }
 

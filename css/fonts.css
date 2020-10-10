@@ -44,8 +44,20 @@
 @font-face {
 	font-family: "line-text";
 	font-style: normal;
+	font-weight: 500;
+	src: url("fonts/line-text/medium.woff2") format("woff2")
+}
+@font-face {
+	font-family: "line-text";
+	font-style: normal;
 	font-weight: 600;
 	src: url("fonts/line-text/semibold.woff2") format("woff2")
+}
+@font-face {
+	font-family: "line-text";
+	font-style: normal;
+	font-weight: 700;
+	src: url("fonts/line-text/bold.woff2") format("woff2")
 }
 
 @font-face {
@@ -59,6 +71,12 @@
 	font-style: normal;
 	font-weight: 400;
 	src: url("fonts/icon/regular.woff2") format("woff2")
+}
+@font-face {
+	font-family: "icon";
+	font-style: normal;
+	font-weight: 500;
+	src: url("fonts/icon/medium.woff2") format("woff2")
 }
 @font-face {
 	font-family: "icon";
