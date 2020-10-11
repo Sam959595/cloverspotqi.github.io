@@ -75,6 +75,9 @@
     nav {
         height: 48px
     }
+    nav {
+        padding: 0 16px
+    }
     nav > a {
         font-size: 19px
     }
@@ -89,14 +92,11 @@
         padding-top: 22px
     }
     footer {
-        padding: 22px 22px 17px
+        padding: 22px 16px 19px
     }
 }
 
 @media screen and (max-width: 414px) {
-    nav {
-        padding: 0 16px
-    }
     .content {
         padding-top: 16px
     }
