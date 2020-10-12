@@ -229,7 +229,7 @@ picture img {
 	color: var(--media)
 }
 .separation figure::after {
-	content: "\f301";
+	content: "\f32e";
 
 	font-size: 1.8em
 }
