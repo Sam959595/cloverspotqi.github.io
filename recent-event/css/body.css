@@ -212,14 +212,14 @@ picture img {
 
 	height: 1.3cm;
 
-	border-radius: 13px;
+	border-radius: 11px;
 
 	padding: 0 1.5em;
 
-	background-color: var(--footer)
+	background-color: var(--separation)
 }
 .separation p {
-	font: normal 600 14px "line";
+	font: normal 500 14px "line";
 
 	color: var(--text)
 }
