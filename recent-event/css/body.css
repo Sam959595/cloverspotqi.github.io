@@ -219,14 +219,16 @@ picture img {
 	background-color: var(--footer)
 }
 .separation p {
-	font-size: 13px
+	font: normal 600 14px "line";
+
+	color: var(--text)
 }
 .separation p+p {
-	font-size: 11px;
+	font: normal 400 11px "line-text";
 
 	color: var(--media)
 }
-.separatio {
+.separation figure::after {
 	content: "\f301";
 
 	font-size: 1.8em
