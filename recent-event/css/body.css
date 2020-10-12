@@ -198,14 +198,6 @@ picture img {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.time p {
-	padding-bottom: 1em;
-
-	color: var(--media)
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
 .numbering ol {
 	list-style: outside decimal
 }
