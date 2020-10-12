@@ -218,16 +218,14 @@ picture img {
 .conclusion {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 
-	padding: .6em 1.2em
+	height: 100%;
+
+	padding: 0 1.2em
 }
 .conclusion p {
-	font: normal 500 14px "line";
-
-	color: var(--text)
-}
-.conclusion p+p {
-	font: normal 400 11px "line-text";
+	font: normal 500 14px "line-text";
 
 	color: var(--media)
 }
