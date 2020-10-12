@@ -101,7 +101,7 @@ nav a {
 }
 
 nav span::after {
-	content: "\f303";
+	content: "\ea1d";
 
 	font-size: 1.8em;
 
@@ -205,8 +205,25 @@ picture img {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .separation {
-	border-top: 1px solid var(--footer)
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	height: 1cm;
+
+	border-radius: 10px;
+
+	padding: 0 1em;
+
+	background-color: var(--footer)
 }
+.separation a::after {
+	content: "\f35b";
+
+	font-size: 1.5em
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
 
 .description li {
 	font: normal 400 14px/1.42859 "line-text" !important;
