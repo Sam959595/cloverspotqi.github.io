@@ -233,7 +233,9 @@ picture img {
 .conclusion figure::after {
 	content: "\f32e";
 
-	font-size: 1.8em
+	font-size: 1.8em;
+
+	color: var(--link-footer)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -254,7 +256,7 @@ picture img {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 footer {
-	margin-top: 3cm;
+	margin-top: 2cm;
 
 	background-color: var(--footer)
 }
