@@ -24,15 +24,14 @@
     }
 }
 @media screen and (max-width: 1024px) {
+    nav {
+        padding: 0 22px
+    }
     .margin {
-        margin: 0 auto;
         width: 576px
     }
     .details {
         margin-top: 2.5cm
-    }
-    nav {
-        padding: 0 22px
     }
     .content {
         padding-top: 1cm
@@ -69,7 +68,6 @@
 }
 @media screen and (max-width: 734px) {
     .margin {
-        margin: 0 auto;
         width: 87.5%
     }
     nav {
@@ -83,7 +81,7 @@
         letter-spacing: .012em
     }
     .details {
-        padding-top: 2.7cm
+        margin-top: 2.7cm
     }
     .details h1 {
         font: normal 600 32px/1.125 "line";
