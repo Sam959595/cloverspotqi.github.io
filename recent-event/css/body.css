@@ -211,9 +211,9 @@ picture img {
 
 	height: 1.2cm;
 
-	border-radius: 10px;
+	border-radius: 13px;
 
-	padding: 0 1em;
+	padding: 0 1.2em;
 
 	background-color: var(--footer)
 }
