@@ -214,9 +214,12 @@ picture img {
 
 	background-color: var(--separation)
 }
+
 .conclusion {
 	display: flex;
 	justify-content: space-between;
+
+	padding: .6em 1.2em
 }
 .conclusion p {
 	font: normal 500 14px "line";
@@ -228,6 +231,7 @@ picture img {
 
 	color: var(--media)
 }
+
 .conclusion figure::after {
 	content: "\f32e";
 
