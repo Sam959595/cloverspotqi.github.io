@@ -205,30 +205,30 @@ picture img {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.separation {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.separation a {
+	display: block;
 
-	height: 1.3cm;
+	height: 1.2cm;
 
 	border-radius: 11px;
 
-	padding: 0 1.5em;
-
 	background-color: var(--separation)
 }
-.separation p {
+.conclusion {
+	display: flex;
+	justify-content: space-between;
+}
+.conclusion p {
 	font: normal 500 14px "line";
 
 	color: var(--text)
 }
-.separation p+p {
+.conclusion p+p {
 	font: normal 400 11px "line-text";
 
 	color: var(--media)
 }
-.separation figure::after {
+.conclusion figure::after {
 	content: "\f32e";
 
 	font-size: 1.8em
