@@ -99,15 +99,16 @@ nav li {
 nav a {
 	color: var(--conclusion-h)
 }
+span::after, a::after {
+	-webkit-tap-highlight-color: none
+}
 
 nav span::after {
 	content: "\ea1d";
 
 	font-size: 1.8em;
 
-	color: var(--link-footer);
-
-	-webkit-tap-highlight-color: none
+	color: var(--link-footer)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -209,11 +210,11 @@ picture img {
 	justify-content: space-between;
 	align-items: center;
 
-	height: 1.2cm;
+	height: 1.3cm;
 
 	border-radius: 13px;
 
-	padding: 0 1.2em;
+	padding: 0 1.5em;
 
 	background-color: var(--footer)
 }
@@ -225,10 +226,10 @@ picture img {
 
 	color: var(--media)
 }
-.separation a::after {
-	content: "\f35b";
+.separatio {
+	content: "\f301";
 
-	font-size: 1.5em
+	font-size: 1.8em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
