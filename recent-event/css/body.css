@@ -227,7 +227,7 @@ picture img {
 .conclusion p {
 	font: normal 500 14px "line-text";
 
-	color: var(--media)
+	color: var(--link-footer)
 }
 
 .conclusion figure::after {
@@ -236,6 +236,15 @@ picture img {
 	font-size: 1.8em;
 
 	color: var(--link-footer)
+}
+
+.response {
+	margin-top: 1em;
+
+	padding: 0 1.2em
+}
+.response p {
+	color: var(--description)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
