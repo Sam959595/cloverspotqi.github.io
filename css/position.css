@@ -11,10 +11,16 @@
     .includes ul {
         margin: 0 5cm
     }
+    .includes > h1 {
+        padding: 2cm 6.1cm 1cm
+    }
 }
 @media screen and (max-width: 1024px) {
     nav {
         padding: 0 22px
+    }
+    .includes ul {
+        margin: 0 2cm
     }
     footer {
         padding: 22px 2cm 1cm
@@ -22,9 +28,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    .includes ul {
-        margin: 0 2cm
-    }
     .includes ul {
         -webkit-mask: linear-gradient(to left, transparent, black 2em, black calc(100% - 2em), transparent 100%)
     }
