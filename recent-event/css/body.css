@@ -254,7 +254,7 @@ picture img {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 footer {
-	margin-top: .5cm;
+	margin-top: 3cm;
 
 	background-color: var(--footer)
 }
