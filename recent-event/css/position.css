@@ -79,7 +79,7 @@
         padding: 0 16px
     }
     nav > a {
-        font: normal 600 19px/1.26316 "line";
+        font: normal 600 19px "line";
         letter-spacing: .012em
     }
     .details {
