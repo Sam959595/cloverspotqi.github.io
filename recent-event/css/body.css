@@ -209,13 +209,21 @@ picture img {
 	justify-content: space-between;
 	align-items: center;
 
-	height: 1cm;
+	height: 1.2cm;
 
 	border-radius: 10px;
 
 	padding: 0 1em;
 
 	background-color: var(--footer)
+}
+.separation p {
+	font-size: 13px
+}
+.separation p+p {
+	font-size: 11px;
+
+	color: var(--media)
 }
 .separation a::after {
 	content: "\f35b";
