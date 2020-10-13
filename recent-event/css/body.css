@@ -227,13 +227,13 @@ picture img {
 	color: var(--link-footer)
 }
 .conclusion p {
-	font: normal 500 15px "line-text"
+	font: normal 500 16px "line-text"
 }
 
 .conclusion figure::after {
 	content: "\f32a";
 
-	font-size: 1.8em
+	font-size: 1.7em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */

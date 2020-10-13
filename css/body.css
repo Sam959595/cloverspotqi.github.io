@@ -35,7 +35,17 @@ a, sup, strong, q, em {
 }
 
 ::-webkit-scrollbar {
-	display: none
+	width: 0
+}
+::-webkit-scrollbar:horizontal {
+	height: 5px
+}
+::-webkit-scrollbar-button {
+	display: none;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #353535;
 }
 
 body {
