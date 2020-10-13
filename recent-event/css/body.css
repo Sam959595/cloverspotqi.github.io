@@ -225,7 +225,7 @@ picture img {
 	padding: 0 1.2em
 }
 .conclusion p {
-	font: normal 500 14px "line-text";
+	font: normal 400 16px "line-text";
 
 	color: var(--link-footer)
 }
@@ -244,7 +244,7 @@ picture img {
 	padding: 0 1.2em
 }
 .response p {
-	color: var(--description)
+	color: #98989f
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
