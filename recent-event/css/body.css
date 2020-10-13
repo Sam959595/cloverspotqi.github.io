@@ -238,15 +238,6 @@ picture img {
 	color: var(--link-footer)
 }
 
-.response {
-	margin-top: 1em;
-
-	padding: 0 1.2em
-}
-.response p {
-	color: #6e6e73
-}
-
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .description li {
