@@ -222,20 +222,18 @@ picture img {
 
 	height: 100%;
 
-	padding: 0 1.2em
-}
-.conclusion p {
-	font: normal 500 15px "line-text";
+	padding: 0 1.2em;
 
 	color: var(--link-footer)
+}
+.conclusion p {
+	font: normal 500 15px "line-text"
 }
 
 .conclusion figure::after {
-	content: "\f32e";
+	content: "\f32a";
 
-	font-size: 1.8em;
-
-	color: var(--link-footer)
+	font-size: 1.8em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
