@@ -214,6 +214,16 @@ picture img {
 
 	background-color: var(--separation)
 }
+.separation a+a {
+	margin-top: 1em
+}
+.separation > p {
+	margin: 1em 1.2em 0;
+
+	font: normal 400 11px/1.42859 "line-text";
+
+	color: var(--media)
+}
 
 .conclusion {
 	display: flex;
