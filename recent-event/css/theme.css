@@ -38,14 +38,14 @@
         --fillet: black;
         --conclusion-h: #fdfdfd;
 
-        --separation: #161617;
+        --separation: #1d1d1f;
 
         /* - */
 
-        --footer: #1d1d1f;
+        --footer: #222;
         --description: #6e6e73;
 
         --link: #a1a1a6;
-        --link-footer: #0584ff;
+        --link-footer: #4693ff;
     }
 }
