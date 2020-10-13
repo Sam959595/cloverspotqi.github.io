@@ -225,7 +225,7 @@ picture img {
 	padding: 0 1.2em
 }
 .conclusion p {
-	font: normal 400 15px/1 "line-text";
+	font: normal 400 15px/1px "line-text";
 
 	color: var(--link-footer)
 }
