@@ -261,7 +261,7 @@ footer {
 	background-color: var(--footer)
 }
 footer li {
-	padding-bottom: .8em;
+	padding-bottom: 2em;
 	color: var(--description)
 }
 footer ol {
