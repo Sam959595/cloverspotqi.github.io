@@ -149,18 +149,18 @@ picture img {
 
 	background-color: var(--image)
 }
-.download {
+picture div {
 	display: flex;
 	justify-content: space-between;
 
 	padding: 8px 0 1cm
 }
-.download p {
+picture p {
 	width: 90%;
 
 	color: var(--media)
 }
-.download a::after {
+picture a::after {
 	content: "\f32b";
 
 	font-size: 1.8em;
@@ -217,19 +217,8 @@ picture img {
 .separation a+a {
 	margin-top: 1em
 }
-.separation > p {
-	margin: 1em 1.2em 0;
 
-	font: normal 400 11px/1.36364 "line-text";
-	letter-spacing: -.008em;
-
-	color: #5d5d61
-}
-.separation > p a {
-	color: var(--link-footer)
-}
-
-.conclusion {
+.separation a div {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -240,14 +229,25 @@ picture img {
 
 	color: var(--link-footer)
 }
-.conclusion p {
+.separation p {
 	font: normal 500 16px "line-text"
 }
-
-.conclusion figure::after {
+.separation figure::after {
 	content: "\f32a";
 
 	font-size: 1.7em
+}
+
+.separation ul {
+	margin: 1em 1.2em 0;
+
+	font: normal 400 11px/1.36364 "line-text";
+	letter-spacing: -.008em;
+
+	color: #5d5d61
+}
+.separation li a {
+	color: var(--link-footer)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
