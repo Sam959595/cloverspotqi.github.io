@@ -241,7 +241,7 @@ picture a::after {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .indications ul {
-	margin: .8em 1.4em 0;
+	margin: .5em 1.4em 0;
 
 	font: normal 400 11px/1.36364 "line-text";
 	letter-spacing: -.008em;
