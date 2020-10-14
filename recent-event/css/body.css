@@ -232,23 +232,27 @@ picture a::after {
 .separation p {
 	font: normal 500 16px "line-text"
 }
-.separation figure::after {
-	content: "\f32a";
-
+.separation figure {
 	font-size: 1.7em
+}
+.separation a:nth-child(1) figure::after {
+	content: "\f32a"
+}
+.separation a:nth-child(3) figure::after {
+	content: "\f32b"
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .indications li {
-	margin: .5em 1.4em 0;
+	margin: .5em 1.4em;
 
 	font: normal 400 11px/1.36364 "line-text";
 	letter-spacing: -.008em;
 
-	color: #7e7e86
+	color: #9d9da7
 }
-.indications a {
+.indications span {
 	color: var(--link-footer)
 }
 
