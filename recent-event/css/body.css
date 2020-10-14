@@ -205,7 +205,7 @@ picture a::after {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.separation a:not(.not) {
+.separation a {
 	display: block;
 
 	height: 1.2cm;
@@ -238,15 +238,17 @@ picture a::after {
 	font-size: 1.7em
 }
 
-.separation ul {
-	margin: 1em 1.2em 0;
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+.indications ul {
+	margin: .8em 1.4em 0;
 
 	font: normal 400 11px/1.36364 "line-text";
 	letter-spacing: -.008em;
 
-	color: #5d5d61
+	color: #56565f
 }
-.separation li a {
+.indications li a {
 	color: var(--link-footer)
 }
 
