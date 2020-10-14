@@ -246,7 +246,7 @@ picture a::after {
 	font: normal 400 11px/1.36364 "line-text";
 	letter-spacing: -.008em;
 
-	color: #56565f
+	color: #7e7e86
 }
 .indications a {
 	color: var(--link-footer)
