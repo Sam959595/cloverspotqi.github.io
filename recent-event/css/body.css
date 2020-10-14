@@ -1,4 +1,4 @@
-.lazy {
+nav, section, picture, footer {
 	opacity: 0;
 	transition: opacity 0.5s ease 0s
 }
@@ -217,6 +217,9 @@ picture a::after {
 .separation a+a {
 	margin-top: 1em
 }
+.separation a {
+	color: var(--link-footer)
+}
 
 .separation div {
 	display: flex;
@@ -226,8 +229,6 @@ picture a::after {
 	height: 100%;
 
 	padding: 0 1.2em;
-
-	color: var(--link-footer)
 }
 .separation p {
 	font: normal 500 16px "line-text"
@@ -239,19 +240,17 @@ picture a::after {
 	content: "\f32a"
 }
 .separation a:nth-child(3) figure::after {
-	content: "\f32b"
+	content: "\f315"
 }
 
 .separation li {
-	margin: .5em 1.4em;
+	margin: .5em 0;
+	padding: 0 1.4em;
 
 	font: normal 400 11px/1.36364 "line-text";
 	letter-spacing: -.008em;
 
 	color: #9d9da7
-}
-.separation li a {
-	color: var(--link-footer)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
