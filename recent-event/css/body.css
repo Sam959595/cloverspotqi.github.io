@@ -205,7 +205,7 @@ picture a::after {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.separation a {
+.separation > a {
 	display: block;
 
 	height: 1.2cm;
@@ -242,9 +242,7 @@ picture a::after {
 	content: "\f32b"
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-.indications li {
+.separation li {
 	margin: .5em 1.4em;
 
 	font: normal 400 11px/1.36364 "line-text";
@@ -252,7 +250,7 @@ picture a::after {
 
 	color: #9d9da7
 }
-.indications span {
+.separation li a {
 	color: var(--link-footer)
 }
 
