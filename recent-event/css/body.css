@@ -73,6 +73,58 @@ span::after, a::after {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+.margin {
+	margin: 0 auto;
+	width: 653px
+}
+
+.app {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	margin: 0 2em 2em;
+	padding: 0 1.5em;
+
+	position: fixed;
+
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	border-radius: 15px;
+
+	height: 1.5cm;
+
+	backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
+	background-color: #222224bd;
+
+	animation: call-to-active-appear .4s ease-in-out 0s;
+	animation: call-to-active-face .4s ease-in-out 0s;
+	animation-fill-mode: forwards;
+
+	transition: scalc-x(1, 5, 5);
+}
+.app h1 {
+	font: normal 600 15px "line";
+	color: var(--link-footer)
+}
+.app p {
+	color: #64676e;
+}
+.app span {
+	font: normal 600 12px "line";
+
+	border-radius: 15px;
+
+	background-color: var(--link-footer);
+	color: #000000;
+
+	padding: 4px 8px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
 nav {
 	position: fixed;
 	z-index: 9;
@@ -108,13 +160,6 @@ nav span::after {
 	font-size: 1.8em;
 
 	color: var(--link-footer)
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-.margin {
-	margin: 0 auto;
-	width: 653px
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
