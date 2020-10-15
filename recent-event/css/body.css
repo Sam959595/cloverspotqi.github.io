@@ -94,7 +94,7 @@ span::after, a::after {
 	right: 0;
 	bottom: 0;
 
-	border-radius: 13px;
+	border-radius: 15px;
 
 	height: 1.6cm;
 
@@ -108,20 +108,19 @@ span::after, a::after {
 	transition: scalc-x(1, 5, 5);
 }
 .app h1 {
-	font: normal 600 13px "line-text";
+	font: normal 600 14px "line-text";
 	letter-spacing: .011em;
 
 	color: #fff
 }
 .app p {
-	font: normal 600 13px "line-text";
+	font: normal 400 13px "line-text";
 	color: #64676e;
 }
 .app span {
-	margin-left: 8px;
 	padding: 6px 10px;
 
-	font: normal 600 12px "line";
+	font: normal 600 12px "line-text";
 	letter-spacing: .015em;
 
 	border-radius: 15px;
@@ -135,7 +134,8 @@ span::after, a::after {
 .app div+div p {
 	margin: 6px;
 
-	font-size: 9px;
+	font: normal 400 9px "line";
+	letter-spacing: .017em;
 	text-align: center;
 }
 
