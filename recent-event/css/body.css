@@ -85,7 +85,7 @@ span::after, a::after {
 	align-items: center;
 	justify-content: space-between;
 
-	margin: 0 16px 2em;
+	margin: 0 10px 2em;
 	padding: 0 1.2em;
 
 	position: fixed;
@@ -94,9 +94,9 @@ span::after, a::after {
 	right: 0;
 	bottom: 0;
 
-	border-radius: 15px;
+	border-radius: 10px;
 
-	height: 1.5cm;
+	height: 1.6cm;
 
 	backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
 	background-color: #252529bd;
@@ -114,6 +114,7 @@ span::after, a::after {
 	color: #fff
 }
 .app p {
+	padding-top: 4px;
 	color: #64676e;
 }
 .app span {
@@ -121,10 +122,19 @@ span::after, a::after {
 
 	border-radius: 15px;
 
-	background-color: #4b4e579f;
+	background-color: #4143475b;
 	color: var(--link-footer);
 
 	padding: 6px 10px;
+}
+.app div+div {
+	padding-top: 1em;
+}
+.app div+div p {
+	margin: 2px;
+
+	font-size: 11px;
+	text-align: center;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
