@@ -94,7 +94,7 @@ span::after, a::after {
 	right: 0;
 	bottom: 0;
 
-	border-radius: 10px;
+	border-radius: 13px;
 
 	height: 1.6cm;
 
@@ -108,32 +108,34 @@ span::after, a::after {
 	transition: scalc-x(1, 5, 5);
 }
 .app h1 {
-	font: normal 600 13px "line";
+	font: normal 600 13px "line-text";
 	letter-spacing: .011em;
 
 	color: #fff
 }
 .app p {
-	padding-top: 4px;
+	font: normal 600 13px "line-text";
 	color: #64676e;
 }
 .app span {
+	margin-left: 8px;
+	padding: 6px 10px;
+
 	font: normal 600 12px "line";
+	letter-spacing: .015em;
 
 	border-radius: 15px;
 
 	background-color: #4143475b;
-	color: var(--link-footer);
-
-	padding: 6px 10px;
+	color: #3358ff;
 }
 .app div+div {
 	padding-top: 1em;
 }
 .app div+div p {
-	margin: 2px;
+	margin: 6px;
 
-	font-size: 11px;
+	font-size: 9px;
 	text-align: center;
 }
 
