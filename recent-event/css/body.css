@@ -79,12 +79,14 @@ span::after, a::after {
 }
 
 .app {
+	z-index: 8;
+
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 
-	margin: 0 2em 2em;
-	padding: 0 1.5em;
+	margin: 0 16px 2em;
+	padding: 0 1.2em;
 
 	position: fixed;
 
@@ -97,7 +99,7 @@ span::after, a::after {
 	height: 1.5cm;
 
 	backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
-	background-color: #222224bd;
+	background-color: #252529bd;
 
 	animation: call-to-active-appear .4s ease-in-out 0s;
 	animation: call-to-active-face .4s ease-in-out 0s;
@@ -106,8 +108,10 @@ span::after, a::after {
 	transition: scalc-x(1, 5, 5);
 }
 .app h1 {
-	font: normal 600 15px "line";
-	color: var(--link-footer)
+	font: normal 600 13px "line";
+	letter-spacing: .011em;
+
+	color: #fff
 }
 .app p {
 	color: #64676e;
@@ -117,10 +121,10 @@ span::after, a::after {
 
 	border-radius: 15px;
 
-	background-color: var(--link-footer);
-	color: #000000;
+	background-color: #4b4e579f;
+	color: var(--link-footer);
 
-	padding: 4px 8px;
+	padding: 6px 10px;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
