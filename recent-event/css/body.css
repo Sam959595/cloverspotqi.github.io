@@ -78,67 +78,6 @@ span::after, a::after {
 	width: 653px
 }
 
-.app {
-	z-index: 8;
-
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-
-	margin: 0 10px 2em;
-	padding: 0 1.2em;
-
-	position: fixed;
-
-	left: 0;
-	right: 0;
-	bottom: 0;
-
-	border-radius: 15px;
-
-	height: 1.6cm;
-
-	backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
-	background-color: #252529bd;
-
-	animation: call-to-active-appear .4s ease-in-out 0s;
-	animation: call-to-active-face .4s ease-in-out 0s;
-	animation-fill-mode: forwards;
-
-	transition: scalc-x(1, 5, 5);
-}
-.app h1 {
-	font: normal 600 14px "line-text";
-	letter-spacing: .011em;
-
-	color: #fff
-}
-.app p {
-	font: normal 400 13px "line-text";
-	color: #64676e;
-}
-.app span {
-	padding: 6px 10px;
-
-	font: normal 600 12px "line-text";
-	letter-spacing: .015em;
-
-	border-radius: 15px;
-
-	background-color: #4143475b;
-	color: #3358ff;
-}
-.app div+div {
-	padding-top: 1em;
-}
-.app div+div p {
-	margin: 6px;
-
-	font: normal 400 9px "line";
-	letter-spacing: .017em;
-	text-align: center;
-}
-
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 nav {
