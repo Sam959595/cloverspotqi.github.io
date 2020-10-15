@@ -41,11 +41,11 @@ a, sup, strong, q, em {
 	height: 5px
 }
 ::-webkit-scrollbar-button {
-	display: none;
+	display: none
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 2px;
-    background-color: #353535;
+    background-color: #353535
 }
 
 body {

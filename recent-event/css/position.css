@@ -3,7 +3,7 @@
 
 @media screen and (min-width: 1024px) {
     .details {
-        margin-top: 3cm
+        padding-top: 3cm
     }
     nav {
         padding: 0 5cm
@@ -31,7 +31,7 @@
         width: 576px
     }
     .details {
-        margin-top: 2.5cm
+        padding-top: 2.5cm
     }
     .content {
         padding-top: 1cm
@@ -81,7 +81,7 @@
         letter-spacing: .012em
     }
     .details {
-        margin-top: 2.7cm
+        padding-top: 2.7cm
     }
     .details h1 {
         font: normal 600 32px/1.125 "line";
