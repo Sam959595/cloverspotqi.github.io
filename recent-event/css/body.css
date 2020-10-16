@@ -269,6 +269,9 @@ picture a::after {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+.distribution strong {
+	color: var(--strong)
+}
 .distribution h2 {
 	font: normal 600 28px/1.14286 "line";
 	letter-spacing: .007em;
