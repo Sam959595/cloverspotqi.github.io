@@ -143,6 +143,9 @@ nav span::after {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+picture {
+	padding: 1cm 0
+}
 picture, picture img {
 	display: block
 }
@@ -153,7 +156,7 @@ picture div {
 	display: flex;
 	justify-content: space-between;
 
-	padding: 8px 0 1cm
+	padding-top: 8px
 }
 picture p {
 	width: 90%;
