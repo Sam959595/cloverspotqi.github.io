@@ -146,6 +146,9 @@ nav span::after {
 picture, picture img {
 	display: block
 }
+picture img {
+	width: 238px
+}
 picture div {
 	display: flex;
 	justify-content: space-between;
