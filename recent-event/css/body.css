@@ -269,6 +269,12 @@ picture a::after {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+.distribution h2 {
+	font: normal 600 28px/1.14286 "line";
+	letter-spacing: .007em;
+
+	padding-bottom: 1em
+}
 .distribution h3 {
 	font: normal 600 24px/1.16667 "line";
 	letter-spacing: .009em;
