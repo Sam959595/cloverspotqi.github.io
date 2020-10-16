@@ -61,7 +61,8 @@ sup {
 	font-size: 11px
 }
 strong {
-	font-weight: 600
+	font-weight: 600;
+	letter-spacing: 0
 }
 em {
 	font-style: italic
@@ -131,7 +132,7 @@ nav span::after {
 .additionally {
 	padding-top: 1em
 }
-.additionally h1 {
+.additionally h3 {
 	font: normal 400 19px/1.21053 "line";
 	letter-spacing: .012em;
 
@@ -172,7 +173,7 @@ picture a::after {
 .content {
 	color: var(--text)
 }
-.content h1 {
+.content h2 {
 	font: normal 600 21px/1.19048 "line";
 	letter-spacing: .011em;
 
@@ -190,7 +191,7 @@ picture a::after {
 	list-style: outside disc
 }
 .content ol li {
-	padding-bottom: 1em
+	padding-bottom: .5em
 }
 .content li, .description h1 {
 	padding-bottom: 1.47059em
@@ -227,7 +228,7 @@ picture a::after {
 
 	height: 100%;
 
-	padding: 0 1.2em;
+	padding: 0 1.2em
 }
 .separation p {
 	font: normal 500 16px "line-text"
@@ -259,12 +260,23 @@ picture a::after {
 	letter-spacing: -.016em
 }
 .description ol {
-	padding-left: 1.28em;
-	list-style: outside disc
+	padding-left: 1.17647em
 }
 
 .description p {
 	color: var(--media)
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+.distribution h3 {
+	font: normal 600 24px/1.16667 "line";
+	letter-spacing: .009em;
+
+	padding-bottom: .8em
+}
+.distribution li {
+	padding-bottom: 1.25em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
