@@ -2,13 +2,12 @@
     :root {
         --body: #fafafa;
         --strong: black;
-        --nav: rgba(250, 250, 250, 0.7);
+        --nav: rgba(250, 250, 250, .7);
 
         /* - */
 
         --text: #1d1d1f;
         --media: #8b8b94;
-        --image: #fafafa;
 
         --fillet: white;
         --conclusion-h: #1d1d1f;
@@ -29,13 +28,12 @@
     :root {
         --body: black;
         /* --strong */
-        --nav: rgba(29, 29, 31, 0.7);
+        --nav: rgba(29, 29, 31, .7);
 
         /* - */
 
         --text: #f5f5f7;
         --media: #a1a1a6;
-        --image: #0b0b0c;
 
         --fillet: black;
         --conclusion-h: #fdfdfd;

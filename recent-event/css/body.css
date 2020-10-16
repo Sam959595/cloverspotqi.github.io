@@ -71,10 +71,13 @@ span::after, a::after {
 	-webkit-tap-highlight-color: none
 }
 
+.margin, picture img {
+	margin: 0 auto
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .margin {
-	margin: 0 auto;
 	width: 653px
 }
 
@@ -140,13 +143,8 @@ nav span::after {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-picture {
+picture, picture img {
 	display: block
-}
-picture img {
-	width: 100%;
-
-	background-color: var(--image)
 }
 picture div {
 	display: flex;
