@@ -61,8 +61,7 @@ sup {
 	font-size: 11px
 }
 strong {
-	font-weight: 600;
-	letter-spacing: 0
+	font-weight: 600
 }
 em {
 	font-style: italic
@@ -269,9 +268,6 @@ picture a::after {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.distribution strong {
-	color: var(--strong)
-}
 .distribution h2 {
 	font: normal 600 28px/1.14286 "line";
 	letter-spacing: .007em;
@@ -286,6 +282,10 @@ picture a::after {
 }
 .distribution li {
 	padding-bottom: 1.25em
+}
+.distribution strong {
+	letter-spacing: 0;
+	color: var(--strong)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
