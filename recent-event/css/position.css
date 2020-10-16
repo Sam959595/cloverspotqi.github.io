@@ -27,7 +27,7 @@
     nav {
         padding: 0 22px
     }
-    .margin {
+    section, picture {
         width: 576px
     }
     .details {
@@ -67,13 +67,11 @@
     }
 }
 @media screen and (max-width: 734px) {
-    .margin {
+    section, picture {
         width: 87.5%
     }
     nav {
-        height: 48px
-    }
-    nav {
+        height: 48px;
         padding: 0 16px
     }
     nav > a {
