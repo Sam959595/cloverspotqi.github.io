@@ -146,30 +146,19 @@ nav span::after {
 picture {
 	padding: 1cm 0
 }
-picture, picture img {
+picture {
 	display: block
 }
 picture img {
+	display: inherit;
 	width: 238px
 }
-picture div {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	padding-top: 8px
-}
 picture p {
-	width: 90%;
+	text-align: center;
+
+	padding-top: 8px;
 
 	color: var(--media)
-}
-picture a::after {
-	content: "\f32b";
-
-	font-size: 1.8em;
-
-	color: var(--link-footer)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
