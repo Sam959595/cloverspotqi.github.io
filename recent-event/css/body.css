@@ -71,13 +71,13 @@ span::after, a::after {
 	-webkit-tap-highlight-color: none
 }
 
-section, picture, picture img {
+section, picture, picture img, footer ul, footer ol {
 	margin: 0 auto
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-section, picture {
+section, picture, footer ul {
 	width: 653px
 }
 

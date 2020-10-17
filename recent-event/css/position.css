@@ -19,15 +19,12 @@
         font: normal 400 24px/1.33341 "line";
         letter-spacing: .009em
     }
-    footer {
-        padding: 22px 5cm 1cm
-    }
 }
 @media screen and (max-width: 1024px) {
     nav {
         padding: 0 22px
     }
-    section, picture {
+    section, picture, footer ul, footer ol {
         width: 576px
     }
     .details {
@@ -35,9 +32,6 @@
     }
     .content {
         padding-top: 1cm
-    }
-    footer {
-        padding: 22px 22px 1cm
     }
 }
 
@@ -67,7 +61,7 @@
     }
 }
 @media screen and (max-width: 734px) {
-    section, picture {
+    section, picture, footer ul, footer ol {
         width: 87.5%
     }
     nav {
@@ -88,17 +82,11 @@
     .content {
         padding-top: 22px
     }
-    footer {
-        padding: 22px 16px 22px
-    }
 }
 
 @media screen and (max-width: 414px) {
     .content {
         padding-top: 16px
-    }
-    footer {
-        padding: 17px 16px 19px
     }
 }
 
