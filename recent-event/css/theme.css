@@ -2,7 +2,7 @@
     :root {
         --body: #fafafa;
         --strong: black;
-        --nav: rgba(250, 250, 250, .7);
+        --nav: #fafafab3;
 
         /* - */
 
@@ -17,7 +17,7 @@
         /* - */
 
         --footer: #f2f2f7;
-        --description: #8e8e93;
+        --description: #86868b;
 
         --link: #515154;
         --link-footer: #06c;
