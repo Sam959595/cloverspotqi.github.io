@@ -288,12 +288,11 @@ blockquote p {
 	border-radius: 11px;
 
 	margin: .75em 0 2em;
-	padding: .7em 1em
+	padding: 1em 1.2em
 }
 blockquote p {
 	font: normal 400 14px/1.4 "line-text";
-	letter-spacing: -.022em;
-	text-align: center
+	letter-spacing: -.022em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
