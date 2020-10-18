@@ -230,9 +230,6 @@ picture p {
 	font-size: 1.7em
 }
 .separation a:nth-child(1) figure::after {
-	content: "\f32a"
-}
-.separation a:nth-child(3) figure::after {
 	content: "\f315"
 }
 
@@ -291,6 +288,9 @@ footer {
 }
 footer ul:first-child li:first-child {
 	padding-top: 2em
+}
+footer ul:last-child {
+	padding-bottom: 2em
 }
 footer li {
 	padding-bottom: 2em;

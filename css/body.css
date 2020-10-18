@@ -86,7 +86,9 @@ em {
 	align-items: center;
 	justify-content: space-between;
 
-	margin: 0 10px 2em;
+	max-width: 10.2cm;
+
+	margin: 0 auto 2em;
 	padding: 0 1.2em;
 
 	position: fixed;
