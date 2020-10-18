@@ -285,7 +285,6 @@ blockquote {
 	margin: .75em 0 2em;
 	padding: 1em 1.2em;
 
-	border: 1px solid #cbcbd8;
 	border-radius: 11px;
 
 	background-color: var(--footer)
