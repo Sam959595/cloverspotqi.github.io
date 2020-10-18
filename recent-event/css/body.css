@@ -282,17 +282,19 @@ picture p {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 blockquote {
-	background-color: var(--blockquote);
+	margin: .75em 0 2em;
+	padding: 1em 1.2em;
 
-	border: 1px solid var(--blockquote-border);
+	border: 1px solid #cbcbd8;
 	border-radius: 11px;
 
-	margin: .75em 0 2em;
-	padding: 1em 1.2em
+	background-color: var(--footer)
 }
 blockquote p {
 	font: normal 400 14px/1.4 "line-text", "icon";
-	letter-spacing: -.022em
+	letter-spacing: -.022em;
+
+	color: var(--description)
 }
 blockquote p::before {
 	content: "\f32a"
