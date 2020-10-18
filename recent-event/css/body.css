@@ -281,6 +281,23 @@ picture p {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+blockquote p {
+	background-color: #00000008;
+
+	border: 1px solid #00000014;
+	border-radius: 11px;
+
+	margin: .75em 0 2em;
+	padding: .7em 1em
+}
+blockquote p {
+	font: normal 400 14px/1.4 "line-text";
+	letter-spacing: -.022em;
+	text-align: center
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
 footer {
 	margin-top: 2cm;
 
@@ -290,7 +307,7 @@ footer ul:first-child li:first-child {
 	padding-top: 2em
 }
 footer ul:last-child {
-	padding-bottom: 2em
+	padding-bottom: 1em
 }
 footer li {
 	padding-bottom: 2em;
