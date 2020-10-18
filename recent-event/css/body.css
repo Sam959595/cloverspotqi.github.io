@@ -71,13 +71,13 @@ span::after, a::after {
 	-webkit-tap-highlight-color: none
 }
 
-section, picture, picture img, footer ul, footer ol {
+section, picture, picture img, footer > * {
 	margin: 0 auto
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-section, picture, footer ul {
+section, picture, footer > * {
 	width: 653px
 }
 
@@ -289,12 +289,15 @@ footer {
 
 	background-color: var(--footer)
 }
+footer ul:first-child li:first-child {
+	padding-top: 2em
+}
 footer li {
 	padding-bottom: 2em;
 	color: var(--description)
 }
 footer ol {
-	padding: 0 17px;
+	padding-left: 17px;
 	list-style: outside decimal
 }
 footer ul+ol li a {

@@ -24,7 +24,7 @@
     nav {
         padding: 0 22px
     }
-    section, picture, footer ul, footer ol {
+    section, picture, footer > * {
         width: 576px
     }
     .details {
@@ -61,7 +61,7 @@
     }
 }
 @media screen and (max-width: 734px) {
-    section, picture, footer ul, footer ol {
+    section, picture, footer > * {
         width: 87.5%
     }
     nav {
