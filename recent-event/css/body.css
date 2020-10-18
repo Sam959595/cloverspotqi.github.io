@@ -281,7 +281,7 @@ picture p {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-blockquote p {
+blockquote {
 	background-color: #00000008;
 
 	border: 1px solid #00000014;
@@ -291,8 +291,11 @@ blockquote p {
 	padding: 1em 1.2em
 }
 blockquote p {
-	font: normal 400 14px/1.4 "line-text";
+	font: normal 400 14px/1.4 "line-text", "icon";
 	letter-spacing: -.022em
+}
+blockquote p::before {
+	content: "\f32a"
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
