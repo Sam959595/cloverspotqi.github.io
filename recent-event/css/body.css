@@ -151,12 +151,12 @@ picture {
 }
 picture img {
 	display: inherit;
-	width: 238px
+	width: 238px;
+
+	padding-bottom: 8px
 }
 picture p {
 	text-align: center;
-
-	padding-top: 8px;
 
 	color: var(--media)
 }
@@ -198,6 +198,9 @@ picture p {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+.separation {
+	max-width: 10cm
+}
 .separation > a {
 	display: block;
 
@@ -282,20 +285,24 @@ picture p {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 blockquote {
+	display: flex;
+	justify-content: space-between;
+
 	margin: .75em 0 2em;
-	padding: 1em 1.2em;
+	padding: 1em;
 
 	border-radius: 11px;
 
-	background-color: var(--footer)
+	background-color: var(--footer);
+	color: var(--description)
 }
 blockquote p {
 	font: normal 400 14px/1.4 "line-text", "icon";
-	letter-spacing: -.022em;
-
-	color: var(--description)
+	letter-spacing: -.022em
 }
-blockquote p::before {
+blockquote figure::after {
+	padding-right: .2em;
+	font-size: 14px;
 	content: "\f32a"
 }
 
