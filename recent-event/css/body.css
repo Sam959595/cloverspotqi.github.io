@@ -272,7 +272,7 @@ picture p {
 	font: normal 600 24px/1.16667 "line";
 	letter-spacing: .009em;
 
-	padding-bottom: .8em
+	padding: 3em 0 .8em
 }
 .distribution li {
 	padding-bottom: 1.25em
@@ -286,23 +286,42 @@ picture p {
 
 blockquote {
 	margin: .75em 0 2em;
-	padding: .8em 1.2em 1em;
+	padding: 1em 1.2em;
 
 	border-radius: 11px;
 
 	background-color: var(--footer);
-	color: var(--description)
 }
 blockquote p {
 	font: normal 400 14px/1.4 "line-text", "icon";
-	letter-spacing: -.022em
+	letter-spacing: -.022em;
+
+	color: var(--description)
 }
-blockquote figure {
-	padding-bottom: .5em
-}
-blockquote figure::after {
-	font-size: 1.2em;
+blockquote p::before {
 	content: "\f32a"
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+figcaption {
+	display: flex;
+	align-items: center;
+	padding: .5em 0;
+}
+figcaption img {
+	margin-right: 1em
+}
+figcaption h4, figcaption a {
+	font: normal 600 14px/1.42859 "line-text", "icon"
+}
+figcaption p {
+	padding-bottom: .8em;
+	color: var(--media)
+}
+figcaption a::before {
+	padding-right: .3em;
+	content: "\f32b"
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
