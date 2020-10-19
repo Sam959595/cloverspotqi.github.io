@@ -285,11 +285,8 @@ picture p {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 blockquote {
-	display: flex;
-	justify-content: space-between;
-
 	margin: .75em 0 2em;
-	padding: 1em;
+	padding: .8em 1.2em 1em;
 
 	border-radius: 11px;
 
@@ -300,9 +297,11 @@ blockquote p {
 	font: normal 400 14px/1.4 "line-text", "icon";
 	letter-spacing: -.022em
 }
+blockquote figure {
+	padding-bottom: .5em
+}
 blockquote figure::after {
-	padding-right: .2em;
-	font-size: 14px;
+	font-size: 1.2em;
 	content: "\f32a"
 }
 
