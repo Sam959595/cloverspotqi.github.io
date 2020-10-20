@@ -1,4 +1,4 @@
-nav, section, picture, footer {
+body {
 	opacity: 0;
 	transition: opacity 0.5s ease 0s
 }
@@ -310,7 +310,8 @@ blockquote p::before {
 	padding: .5em 0
 }
 .app figcaption img {
-	-webkit-mask: url("/recent-event/media/mask-fillet.svg") no-repeat
+	-webkit-mask: url("/recent-event/media/mask-fillet.svg") 100% 100% no-repeat;
+	mask: url("/recent-event/media/mask-fillet.svg") 100% 100% no-repeat
 }
 .app figcaption div {
 	margin-left: 1em
