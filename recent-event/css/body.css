@@ -364,7 +364,7 @@ main a {
 	width: 7cm;
 	height: 3cm;
 
-	border-radius: 18px;
+	border-radius: 11px;
 
 	padding: 1.5em;
 
@@ -376,6 +376,7 @@ main h3 {
 	color: var(--text)
 }
 main p {
+	font-size: 11px;
 	color: var(--description)
 }
 
