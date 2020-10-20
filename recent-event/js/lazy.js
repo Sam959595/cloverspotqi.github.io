@@ -1,5 +1,5 @@
 window.onload = function() {
-    let i = $('body');
+    let i = $('nav, section, picture, footer');
 
     i.css({
         opacity: '1'
