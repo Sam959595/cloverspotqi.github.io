@@ -309,12 +309,10 @@ figcaption {
 	align-items: center;
 	padding: .5em 0
 }
-figcaption div {
-	margin-left: 1em
-}
 figcaption img {
-	mask: url(/recent-event/media/mask-fillet.svg) 100% 100% no-repeat;
-	-webkit-mask: url(/recent-event/media/mask-fillet.svg) 100% 100% no-repeat
+	-webkit-mask: url(/recent-event/media/mask-fillet.svg) 100% 100% no-repeat;
+
+	margin-right: 1em
 }
 figcaption h4, figcaption a {
 	font: normal 600 14px/1.42859 "line-text", "icon"
