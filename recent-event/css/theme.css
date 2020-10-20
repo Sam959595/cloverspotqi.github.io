@@ -16,6 +16,9 @@
 
         /* - */
 
+        --wrap: #f2f2fa;
+        --pages: #f2f2f7;
+
         --footer: #f2f2f7;
         --description: #86868b;
 
@@ -41,6 +44,9 @@
         --separation: #121213;
 
         /* - */
+
+        --wrap: #151416;
+        --pages: #1d1c1f;
 
         --footer: #1d1c1f;
         --description: #98989f;

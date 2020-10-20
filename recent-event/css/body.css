@@ -331,9 +331,9 @@ blockquote p::before {
 
 main {
 	margin-top: 2cm;
-	padding: 1cm 0;
+	padding-top: 2em;
 
-	background-color: #f5f5f7
+	background-color: var(--wrap)
 }
 main ul {
 	display: grid;
@@ -341,14 +341,19 @@ main ul {
 
 	overflow: scroll;
 
+	padding-bottom: 2em;
+
 	scroll-snap-type: x mandatory
 }
 main li {
-	padding-left: 1em;
-	scroll-snap-align: start
+	padding-left: 2em;
+	scroll-snap-align: center
 }
 main li:first-child {
-	padding-left: 2.5em
+	padding-left: 2.2em
+}
+main li:last-child {
+	padding-right: 2.2em
 }
 main a {
 	display: flex;
@@ -362,7 +367,7 @@ main a {
 
 	padding: 2em;
 
-	background-color: #fff
+	background-color: var(--pages)
 }
 main h3 {
 	font: normal 600 21px/1.19048 "line";
