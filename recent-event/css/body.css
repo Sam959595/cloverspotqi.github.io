@@ -313,6 +313,7 @@ figcaption div {
 	margin-left: 1em
 }
 figcaption img {
+	mask: url(/recent-event/media/svg/mask-fillet.svg) 100% 100% no-repeat;
 	-webkit-mask: url(/recent-event/media/svg/mask-fillet.svg) 100% 100% no-repeat
 }
 figcaption h4, figcaption a {
