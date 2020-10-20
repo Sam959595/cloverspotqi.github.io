@@ -346,6 +346,8 @@ main ul {
 	scroll-snap-type: x mandatory
 }
 main li {
+	text-align: center;
+
 	scroll-snap-align: center
 }
 main li:first-child {
@@ -359,17 +361,17 @@ main a {
 	flex-direction: column;
 	justify-content: space-between;
 
-	width: 8cm;
-	height: 4cm;
+	width: 7cm;
+	height: 3cm;
 
 	border-radius: 18px;
 
-	padding: 2em;
+	padding: 1.5em;
 
 	background-color: var(--pages)
 }
 main h3 {
-	font: normal 600 21px/1.19048 "line";
+	font: normal 600 19px/1.21053 "line";
 	letter-spacing: .011em;
 	color: var(--text)
 }
