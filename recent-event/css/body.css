@@ -310,7 +310,7 @@ blockquote p::before {
 	padding: .5em 0
 }
 .app figcaption img {
-	-webkit-mask-image: url("/recent-event/media/fillet.svg") 100% 100% no-repeat; mask: url("/recent-event/media/fillet.svg") 100% 100% no-repeat
+	-webkit-mask: url("/recent-event/media/fillet.svg") 100% 100% no-repeat; mask: url("/recent-event/media/fillet.svg") 100% 100% no-repeat
 }
 .app figcaption div {
 	margin-left: 1em
