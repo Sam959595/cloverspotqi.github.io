@@ -304,24 +304,24 @@ blockquote p::before {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-figcaption {
+.app figcaption {
 	display: flex;
 	align-items: center;
 	padding: .5em 0
 }
-figcaption img {
+.app figcaption img {
 	-webkit-mask: url(/recent-event/media/mask-fillet.svg) 100% 100% no-repeat;
 
 	margin-right: 1em
 }
-figcaption h4, figcaption a {
+.app figcaption h4, figcaption a {
 	font: normal 600 14px/1.42859 "line-text", "icon"
 }
-figcaption p {
+.app figcaption p {
 	padding-bottom: .8em;
 	color: var(--media)
 }
-figcaption a::before {
+.app figcaption a::before {
 	padding-right: .3em;
 	content: "\f32b"
 }
