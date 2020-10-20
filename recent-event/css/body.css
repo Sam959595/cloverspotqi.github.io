@@ -1,4 +1,4 @@
-nav, section, picture, footer {
+nav, section, picture, main, footer {
 	opacity: 0;
 	transition: opacity 0.5s ease 0s
 }
@@ -243,7 +243,7 @@ picture p {
 	font: normal 400 11px/1.36364 "line-text";
 	letter-spacing: -.008em;
 
-	color: #9d9da7
+	color: var(--media)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -338,6 +338,7 @@ main {
 main ul {
 	display: grid;
 	grid-auto-flow: column;
+	column-gap: 2em;
 
 	overflow: scroll;
 
@@ -346,7 +347,6 @@ main ul {
 	scroll-snap-type: x mandatory
 }
 main li {
-	padding-left: 2em;
 	scroll-snap-align: center
 }
 main li:first-child {
@@ -375,7 +375,7 @@ main h3 {
 	color: var(--text)
 }
 main p {
-	color: var(--media)
+	color: var(--description)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
