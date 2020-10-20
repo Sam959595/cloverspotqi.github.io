@@ -307,10 +307,13 @@ blockquote p::before {
 figcaption {
 	display: flex;
 	align-items: center;
-	padding: .5em 0;
+	padding: .5em 0
+}
+figcaption div {
+	margin-left: 1em
 }
 figcaption img {
-	margin-right: 1em
+	-webkit-mask: url(/recent-event/media/svg/mask-fillet.svg) 100% 100% no-repeat
 }
 figcaption h4, figcaption a {
 	font: normal 600 14px/1.42859 "line-text", "icon"
