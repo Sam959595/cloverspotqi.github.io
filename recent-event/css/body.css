@@ -359,9 +359,9 @@ main li:last-child {
 main a {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 
-	width: 7cm;
+	width: 6cm;
 	height: 3cm;
 
 	border-radius: 11px;
@@ -371,12 +371,13 @@ main a {
 	background-color: var(--pages)
 }
 main h3 {
-	font: normal 600 19px/1.21053 "line";
+	font: normal 600 14px/1.42859 "line-text";
 	letter-spacing: .011em;
 	color: var(--text)
 }
 main p {
 	font-size: 11px;
+	padding-bottom: 5px;
 	color: var(--description)
 }
 
