@@ -42,6 +42,18 @@ body {
 	background-color: var(--body)
 }
 
+main p {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+main h3 {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 :lang(ru-RU) {
@@ -366,13 +378,13 @@ main a {
 
 	border-radius: 11px;
 
-	padding: 1.5em;
+	padding: 1em;
 
 	background-color: var(--pages)
 }
 main h3 {
-	font: normal 600 14px/1.42859 "line-text";
-	letter-spacing: .011em;
+	font: normal 500 16px/1.42859 "line-text", "icon";
+	letter-spacing: 0;
 	color: var(--text)
 }
 main p {
