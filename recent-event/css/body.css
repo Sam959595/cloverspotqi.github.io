@@ -374,7 +374,7 @@ main a {
 	justify-content: center;
 
 	width: 6cm;
-	height: 3cm;
+	height: auto;
 
 	border-radius: 11px;
 
@@ -383,13 +383,13 @@ main a {
 	background-color: var(--pages)
 }
 main h3 {
-	font: normal 500 16px/1.42859 "line-text", "icon";
+	font: normal 600 16px/1 "line-text", "icon";
 	letter-spacing: 0;
 	color: var(--text)
 }
 main p {
-	font-size: 11px;
 	padding-bottom: 5px;
+	font-size: 11px;
 	color: var(--description)
 }
 
