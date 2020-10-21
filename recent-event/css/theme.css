@@ -12,6 +12,8 @@
         --fillet: white;
         --conclusion-h: #1d1d1f;
 
+        --table-line: #e6e6e6;
+
         --separation: #f2f2f7;
 
         /* - */
@@ -40,6 +42,8 @@
 
         --fillet: black;
         --conclusion-h: #fdfdfd;
+
+        --table-line: #151416;
 
         --separation: #121213;
 
