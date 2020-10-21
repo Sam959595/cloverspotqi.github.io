@@ -342,8 +342,7 @@ blockquote p::before {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 main {
-	margin-top: 2cm;
-	padding-top: 2em;
+	padding: 2em 0;
 	background-color: var(--wrap)
 }
 main ul {
@@ -396,13 +395,11 @@ main p {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 footer {
+	margin-top: 2cm;
 	background-color: var(--footer)
 }
 footer ul:first-child li:first-child {
 	padding-top: 2em
-}
-footer ul:last-child li:last-child {
-	padding-bottom: 1cm
 }
 footer li {
 	padding-bottom: 2em;
