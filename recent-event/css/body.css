@@ -142,7 +142,7 @@ nav span::after {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .additionally {
-	padding-bottom: 1em
+	padding: 1em 0
 }
 .additionally h3 {
 	font: normal 400 19px/1.21053 "line";
