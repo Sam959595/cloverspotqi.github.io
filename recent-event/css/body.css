@@ -383,12 +383,12 @@ main a {
 	background-color: var(--pages)
 }
 main h3 {
-	font: normal 600 16px/1 "line-text", "icon";
+	font: normal 600 16px/1 "line";
 	letter-spacing: 0;
 	color: var(--text)
 }
 main p {
-	padding-bottom: 5px;
+	padding-top: 5px;
 	font-size: 11px;
 	color: var(--description)
 }
