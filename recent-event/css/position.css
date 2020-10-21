@@ -2,14 +2,11 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .details {
+    .content h1 {
         padding-top: 3cm
     }
     nav {
         padding: 0 5cm
-    }
-    .content {
-        padding-top: 1cm
     }
     .content h1 {
         font: normal 600 24px/1.16667 "line";
@@ -27,11 +24,8 @@
     section, picture, footer > * {
         width: 576px
     }
-    .details {
+    .content h1 {
         padding-top: 2.5cm
-    }
-    .content {
-        padding-top: 1cm
     }
 }
 
@@ -72,22 +66,16 @@
         font: normal 600 19px "line";
         letter-spacing: .012em
     }
-    .details {
-        padding-top: 2.7cm
+    .content h1 {
+        padding: 2.7cm 0 .4em
     }
-    .details h1 {
+    .content h1 {
         font: normal 600 32px/1.125 "line";
         letter-spacing: .004em
-    }
-    .content {
-        padding-top: 22px
     }
 }
 
 @media screen and (max-width: 414px) {
-    .content {
-        padding-top: 16px
-    }
 }
 
 @media screen and (max-width: 375px) {
