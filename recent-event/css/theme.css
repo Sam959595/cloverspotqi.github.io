@@ -12,6 +12,8 @@
         --fillet: white;
         --conclusion-h: #1d1d1f;
 
+        --teble: #333;
+        --table-description: #666;
         --table-line: #e6e6e6;
 
         --separation: #f2f2f7;
@@ -43,7 +45,9 @@
         --fillet: black;
         --conclusion-h: #fdfdfd;
 
-        --table-line: #151416;
+        --teble: #d5d5e2;
+        --table-description: #98989f;
+        --table-line: #1d1c1f;
 
         --separation: #121213;
 

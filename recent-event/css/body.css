@@ -202,9 +202,9 @@ picture p {
 	list-style: outside disc
 }
 .content ol li {
-	padding-bottom: .5em
+	margin-bottom: .5em
 }
-.content li, .content ol, picture, blockquote, table {
+.content li, picture, blockquote, table {
 	margin-bottom: 1.47059em
 }
 
@@ -336,12 +336,11 @@ table th {
 	padding: 3px 1em 3px 0
 }
 table td {
-	color: #333;
-	padding: .5em 1em .5em 0
+	padding: .5em 1em .5em 0;
+	color: var(--teble)
 }
 table td+td {
-	font-size: 12px;
-	color: #666
+	color: var(--table-description)
 }
 table tbody tr:first-child {
 	border-top: 1px solid var(--text)
