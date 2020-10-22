@@ -154,9 +154,6 @@ nav span::after {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 picture {
-	padding: 1.47059em 0
-}
-picture {
 	display: block
 }
 picture img {
@@ -207,8 +204,8 @@ picture p {
 .content ol li {
 	padding-bottom: .5em
 }
-.content li, .content ol {
-	padding-bottom: 1.47059em
+.content li, .content ol, picture, blockquote, table {
+	margin-bottom: 1.47059em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -263,17 +260,6 @@ picture p {
 
 .separation a+ul+a {
 	margin-top: 1em
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-.description ol li {
-	font: normal 400 14px/1.42859 "line-text" !important;
-	letter-spacing: -.016em
-}
-
-.description p {
-	color: var(--media)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -350,9 +336,11 @@ table th {
 	padding: 3px 1em 3px 0
 }
 table td {
+	color: #333;
 	padding: .5em 1em .5em 0
 }
 table td+td {
+	font-size: 12px;
 	color: #666
 }
 table tbody tr:first-child {
