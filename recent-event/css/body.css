@@ -204,7 +204,7 @@ picture p {
 .content ol li {
 	margin-bottom: .5em
 }
-.content li, picture, blockquote, table {
+.content li, picture, table {
 	margin-bottom: 1.47059em
 }
 
@@ -328,7 +328,9 @@ table th, table td {
 	width: 50%;
 
 	font: normal 400 14px/1.2 "line-text";
-	letter-spacing: -.022em
+	letter-spacing: -.022em;
+
+	color: var(--table-description)
 }
 table th {
 	font-weight: 600;
@@ -336,11 +338,7 @@ table th {
 	padding: 3px 1em 3px 0
 }
 table td {
-	padding: .5em 1em .5em 0;
-	color: var(--teble)
-}
-table td+td {
-	color: var(--table-description)
+	padding: .5em 1em .5em 0
 }
 table tbody tr:first-child {
 	border-top: 1px solid var(--text)
