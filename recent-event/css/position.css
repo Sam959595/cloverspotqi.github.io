@@ -8,10 +8,6 @@
     nav {
         padding: 0 5cm
     }
-    .content h1 {
-        font: normal 600 24px/1.16667 "line";
-        letter-spacing: .009em
-    }
     .additionally h1 {
         font: normal 400 24px/1.33341 "line";
         letter-spacing: .009em
@@ -22,6 +18,7 @@
         padding: 0 22px
     }
     section, picture, footer > * {
+        margin: 0 auto;
         width: 576px
     }
     .content h1 {
