@@ -18,7 +18,6 @@
         padding: 0 22px
     }
     section, picture, footer > * {
-        margin: 0 auto;
         width: 576px
     }
     .content h1 {
