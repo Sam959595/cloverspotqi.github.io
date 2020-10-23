@@ -201,10 +201,7 @@ picture img {
 	padding-left: 20px;
 	list-style: outside disc
 }
-.content ol li {
-	margin-bottom: .5em
-}
-.content li, .content ol li:last-child, picture img, table {
+.content li, picture img, table {
 	margin-bottom: 1.47059em
 }
 
