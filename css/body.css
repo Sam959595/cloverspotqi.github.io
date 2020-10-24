@@ -221,7 +221,9 @@ nav span::after {
 }
 
 .includes {
-	padding-top: 3.5cm
+	padding-top: 3.5cm;
+
+	background-color: var(--conclusion-p);
 }
 .includes ul {
 	display: grid;
