@@ -232,9 +232,10 @@ nav span::after {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .includes a {
+	width: auto;
 	display: block;
 
-	width: auto
+	border-radius: 10px
 }
 .includes img {
 	width: 100%;
