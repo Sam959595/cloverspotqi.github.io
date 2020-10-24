@@ -283,6 +283,9 @@ blockquote p {
 
 	color: var(--description)
 }
+blockquote p::before {
+	content: "\f32a"
+}
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
