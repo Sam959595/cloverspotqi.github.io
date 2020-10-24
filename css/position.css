@@ -28,21 +28,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    .includes ul {
-        -webkit-mask: linear-gradient(to left, transparent, black 2em, black calc(100% - 2em), transparent 100%)
-    }
-    .includes a {
-        width: 7cm
-    }
-    .includes li:first-child {
-        padding-left: 2em
-    }
-    .includes li:last-child {
-        padding-right: 2em
-    }
-    .includes li {
-        padding-left: 2em
-    }
     .includes a {
         position: relative
     }
@@ -55,7 +40,7 @@
         width: 100%;
         height: 100%;
     
-        border-radius: 18px;
+        border-radius: 10px;
         
         position: absolute;
         
@@ -75,19 +60,7 @@
         font-size: 19px
     }
     .includes ul {
-        margin: 0 1cm
-    }
-    .includes ul {
-        grid-column-gap: 1em
-    }
-    .includes li {
-        scroll-snap-align: center
-    }
-    .includes li:first-child {
-        padding-left: .5cm
-    }
-    .includes li:last-child {
-        padding-right: .5cm
+        grid-template-columns: repeat(2, 1fr)
     }
     footer {
         padding: 22px 22px 17px
@@ -104,8 +77,15 @@
     nav {
         padding: 0 16px
     }
-    .includes li:first-child {
-        padding-left: .5cm
+    .app {
+        margin: 0 16px
+    }
+    .includes ul {
+        margin: 0 auto;
+        width: 87.5%
+    }
+    .includes ul {
+        grid-template-columns: repeat(1, 1fr)
     }
     footer {
         padding: 17px 16px 1cm

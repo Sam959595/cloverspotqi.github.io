@@ -102,7 +102,7 @@ em {
 	height: 1.6cm;
 
 	backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
-	background-color: #252529bd;
+	background-color: #e3e3f0bd;
 
 	animation: call-to-active-appear .4s ease-in-out 0s;
 	animation: call-to-active-face .4s ease-in-out 0s;
@@ -128,7 +128,7 @@ em {
 
 	border-radius: 15px;
 
-	background-color: #4143475b;
+	background-color: #989eaa5b;
 	color: #007aff;
 }
 .app div+div {
@@ -221,20 +221,13 @@ nav span::after {
 }
 
 .includes {
+	padding-top: 3.5cm;
 	background-color: var(--includes)
 }
 .includes ul {
 	display: grid;
-	grid-auto-flow: column;
-
-	overflow-x: scroll;
-
-	scroll-snap-type: x mandatory;
-
-	padding-bottom: 2cm
-}
-.includes li {
-	scroll-snap-align: start
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: .5cm
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -242,31 +235,34 @@ nav span::after {
 .includes a {
 	display: block;
 
-	width: 8.5cm;
-
-	border-radius: 18px;
-
-	background-color: var(--fillet)
+	width: auto
 }
 .includes img {
 	width: 100%;
 
-	border-radius: 0 0 18px 18px
+	border-radius: 18px 18px 0 0
+}
+
+.includes a div {
+	border-radius: 0 0 18px 18px;
+	background-color: var(--fillet)
 }
 
 .conclusion {
-	height: 3.2cm;
+	height: 3cm;
 
 	padding: .5cm .5cm 0
 }
 .conclusion p {
-	padding: 0 0 .2cm;
+	padding: .2cm 0 0;
 
 	color: var(--conclusion-p)
 }
 .conclusion h1 {
-	font: normal 700 19px/1.21053 "line";
-	letter-spacing: .012em;
+	font: normal 600 21px/1.19048 "line";
+	letter-spacing: .011em;
+
+	
 
 	color: var(--conclusion-h)
 }
