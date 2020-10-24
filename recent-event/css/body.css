@@ -269,7 +269,7 @@ picture img {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 blockquote {
-	padding: 1em 1.2em;
+	padding: .7em 1.2em 1em;
 
 	border-radius: 11px;
 
@@ -279,7 +279,10 @@ blockquote {
 	color: var(--description)
 }
 blockquote h6 {
-	font-size: 1.3em
+	font-weight: 500;
+	font-size: 14px;
+
+	padding-bottom: .3em
 }
 blockquote h6::before {
 	content: "\f32a"
