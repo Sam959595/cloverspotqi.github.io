@@ -233,7 +233,6 @@ nav span::after {
 
 .includes a {
 	width: auto;
-	display: block;
 
 	border-radius: 10px
 }
