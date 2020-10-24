@@ -273,8 +273,6 @@ blockquote {
 
 	border-radius: 11px;
 
-	text-align: center;
-
 	background-color: var(--footer)
 }
 blockquote p {
@@ -282,10 +280,6 @@ blockquote p {
 	letter-spacing: -.022em;
 
 	color: var(--description)
-}
-blockquote p::before {
-	font-weight: 600;
-	content: "\f32a"
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
