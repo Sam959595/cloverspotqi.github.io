@@ -240,11 +240,11 @@ nav span::after {
 .includes img {
 	width: 100%;
 
-	border-radius: 18px 18px 0 0
+	border-radius: 10px 10px 0 0
 }
 
 .includes a div {
-	border-radius: 0 0 18px 18px;
+	border-radius: 0 0 10px 10px;
 	background-color: var(--fillet)
 }
 
@@ -259,10 +259,8 @@ nav span::after {
 	color: var(--conclusion-p)
 }
 .conclusion h1 {
-	font: normal 600 21px/1.19048 "line";
-	letter-spacing: .011em;
-
-	
+	font: normal 600 17px/1.23543 "line-text";
+	letter-spacing: -.024em;
 
 	color: var(--conclusion-h)
 }

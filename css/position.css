@@ -78,11 +78,11 @@
         padding: 0 16px
     }
     .app {
-        margin: 0 16px
+        margin: 0 16px 2em
     }
     .includes ul {
         margin: 0 auto;
-        width: 87.5%
+        width: 80%
     }
     .includes ul {
         grid-template-columns: repeat(1, 1fr)
