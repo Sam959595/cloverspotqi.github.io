@@ -30,7 +30,7 @@ a, button {
 ul, ol {
 	list-style: none
 }
-a, sup, strong, q, em {
+a, sup, strong, small, q, em {
 	font: inherit
 }
 

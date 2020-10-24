@@ -30,7 +30,7 @@ a, button {
 ul, ol {
 	list-style: none
 }
-a, sup, strong, q, em {
+a, sup, strong, small, q, em {
 	font: inherit
 }
 
@@ -278,6 +278,8 @@ blockquote {
 blockquote p {
 	font: normal 400 14px/1.4 "line-text", "icon";
 	letter-spacing: -.022em;
+
+	text-align: center;
 
 	color: var(--description)
 }
