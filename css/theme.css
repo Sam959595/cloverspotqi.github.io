@@ -6,8 +6,9 @@
         /* - */
 
         --includes: white;
+        --text: #1d1d1f;
 
-        --fillet: #fafafa;
+        --fillet: white;
         --conclusion-p: #f5f5f5;
         --conclusion-h: #1d1d1f;
 
@@ -29,6 +30,7 @@
         /* - */
 
         --includes: #131314;
+        --text: #f5f5f7;
 
         --fillet: #1d1d1f;
         --conclusion-p: #7a7a7a;

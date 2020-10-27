@@ -217,8 +217,11 @@ nav span::after {
 }
 .includes h4 {
 	padding-bottom: 16px;
+
 	font: normal 600 19px "line";
-	letter-spacing: .012em
+	letter-spacing: .012em;
+
+	color: var(--text)
 }
 
 .includes ul {
@@ -264,10 +267,10 @@ nav span::after {
 	color: var(--conclusion-p)
 }
 .conclusion h1 {
-	font: normal 600 17px/1.23543 "line-text";
-	letter-spacing: -.024em;
+	font: normal 700 19px/1.21053 "line";
+	letter-spacing: .012em;
 
-	color: var(--conclusion-h)
+	color: var(--text)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
