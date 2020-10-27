@@ -80,7 +80,7 @@
     }
     .includes ul, .includes h4 {
         margin: 0 auto;
-        width: 80%
+        width: 87.5%
     }
     .includes ul {
         grid-template-columns: 1fr;
