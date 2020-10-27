@@ -241,13 +241,12 @@ nav span::after {
 
 .includes a {
 	display: block;
-	width: auto;
-
-	border-radius: 10px
 }
-.includes img {
-	width: 100%;
+.includes div:first-child {
 	height: 200px;
+
+	background-size: cover;
+	background-position: center;
 
 	border-radius: 10px 10px 0 0
 }
