@@ -5,19 +5,14 @@
 
         /* - */
 
-        --includes: white;
         --text: #1d1d1f;
 
         --fillet: white;
-        --conclusion-p: #f5f5f5;
-        --conclusion-h: #1d1d1f;
 
         /* - */
 
-        --footer: #f5f5f7;
         --description: #86868b;
 
-        --link: #515154;
         --link-footer: #06c;
     }
 }
@@ -29,19 +24,14 @@
 
         /* - */
 
-        --includes: #131314;
         --text: #f5f5f7;
 
         --fillet: #1d1d1f;
-        --conclusion-p: #7a7a7a;
-        --conclusion-h: #fdfdfd;
 
         /* - */
 
-        --footer: #1d1d1f;
         --description: #6e6e73;
 
-        --link: #a1a1a6;
         --link-footer: #2997ff;
     }
 }
