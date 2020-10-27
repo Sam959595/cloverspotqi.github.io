@@ -258,16 +258,14 @@ nav span::after {
 }
 
 .conclusion {
-	height: 3cm;
-
-	padding: .5cm .5cm 0
+	padding: .5cm
 }
 .conclusion p {
-	padding: .2cm 0 0;
+	padding: 0 0 .2cm;
 
 	color: var(--text)
 }
-.conclusion h1 {
+.conclusion h5 {
 	font: normal 700 19px/1.21053 "line";
 	letter-spacing: .012em;
 
