@@ -56,8 +56,9 @@
     nav {
         height: 48px
     }
-    nav > a {
-        font-size: 19px
+    nav > p {
+        font: normal 600 19px "line";
+        letter-spacing: .012em
     }
     .includes ul {
         grid-template-columns: repeat(2, 1fr)
@@ -85,7 +86,7 @@
         width: 80%
     }
     .includes ul {
-        grid-template-columns: repeat(1, 1fr)
+        grid-template-columns: 1fr
     }
     footer {
         padding: 17px 16px 1cm

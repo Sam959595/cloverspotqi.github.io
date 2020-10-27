@@ -118,12 +118,6 @@ nav > a {
 	font: normal 600 21px "line";
 	letter-spacing: .011em
 }
-nav ul {
-	display: inline-flex
-}
-nav li {
-	padding-left: 4em
-}
 nav a {
 	color: var(--conclusion-h)
 }

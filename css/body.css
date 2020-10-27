@@ -161,17 +161,17 @@ nav {
 	backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
 	background-color: var(--nav)
 }
-nav > a {
-	font: normal 600 21px/1.14286 "line";
-	letter-spacing: .011em
-}
 nav ul {
 	display: inline-flex
 }
 nav li {
 	padding-left: 4em
 }
-nav a {
+nav > p {
+	font: normal 600 21px "line";
+	letter-spacing: .011em
+}
+nav p {
 	color: var(--conclusion-h)
 }
 
@@ -221,9 +221,7 @@ nav span::after {
 }
 
 .includes {
-	padding-top: 3.5cm;
-
-	background-color: var(--conclusion-p);
+	padding-top: 3.5cm
 }
 .includes ul {
 	display: grid;
@@ -234,6 +232,7 @@ nav span::after {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .includes a {
+	display: block;
 	width: auto;
 
 	border-radius: 10px
