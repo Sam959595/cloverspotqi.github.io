@@ -77,6 +77,18 @@ em {
 	font-style: italic
 }
 
+.includes h4, .includes p {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+.includes h5 {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .app {
@@ -206,12 +218,6 @@ nav span::after {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.margin {
-	margin-bottom: 15px
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
 .includes {
 	padding-top: 3.2cm
 }
@@ -241,6 +247,7 @@ nav span::after {
 
 .includes a {
 	display: block;
+	border-radius: 10px
 }
 .includes div:first-child {
 	height: 200px;
