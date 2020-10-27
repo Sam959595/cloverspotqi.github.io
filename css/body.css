@@ -167,11 +167,11 @@ nav ul {
 nav li {
 	padding-left: 4em
 }
-nav > p {
+nav > h4 {
 	font: normal 600 21px "line";
 	letter-spacing: .011em
 }
-nav p {
+nav h4 {
 	color: var(--conclusion-h)
 }
 
@@ -212,21 +212,26 @@ nav span::after {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+.includes {
+	padding-top: 3.2cm
+}
+.includes h4 {
+	padding-bottom: 16px;
+	font: normal 600 19px "line";
+	letter-spacing: .012em
+}
+
+.includes ul {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: .5cm
+}
 .includes > h1 {
 	font-size: 15px;
 	font-weight: 700;
 	padding: .7cm 1cm 1cm;
 
 	color: #a5a5a5
-}
-
-.includes {
-	padding-top: 3.5cm
-}
-.includes ul {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: .5cm
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
