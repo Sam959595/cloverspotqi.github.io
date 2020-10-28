@@ -1,13 +1,10 @@
 @media screen and (max-width: 1600px) {
 }
 
+@media screen and (max-width: 1068px) {
+}
+
 @media screen and (min-width: 1024px) {
-    nav {
-        padding: 0 5cm
-    }
-    .includes ul, .includes h4 {
-        margin: 0 5cm
-    }
     .includes > h1 {
         padding: 2cm 6.1cm 1cm
     }
@@ -16,8 +13,12 @@
     nav {
         padding: 0 22px
     }
+    .includes ul {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px
+    }
     .includes ul, .includes h4 {
-        margin: 0 2cm
+        width: 692px
     }
 }
 
@@ -50,12 +51,15 @@
     nav {
         height: 48px
     }
-    nav > h4 {
+    nav h4 {
         font: normal 600 19px "line";
         letter-spacing: .012em
     }
+    .includes ul, .includes h4 {
+        width: 366px
+    }
     .includes ul {
-        grid-template-columns: repeat(2, 1fr)
+        grid-template-columns: 1fr
     }
 }
 
@@ -70,12 +74,7 @@
         margin: 0 16px 2em
     }
     .includes ul, .includes h4 {
-        margin: 0 auto;
         width: 87.5%
-    }
-    .includes ul {
-        grid-template-columns: 1fr;
-        grid-gap: 24px 0
     }
 }
 
