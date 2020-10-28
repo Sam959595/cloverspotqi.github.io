@@ -1,14 +1,3 @@
-@media screen and (max-width: 1600px) {
-}
-
-@media screen and (max-width: 1068px) {
-}
-
-@media screen and (min-width: 1024px) {
-    .includes > h1 {
-        padding: 2cm 6.1cm 1cm
-    }
-}
 @media screen and (max-width: 1024px) {
     nav {
         padding: 0 22px
@@ -26,7 +15,7 @@
     .includes a {
         position: relative
     }
-    .includes a::after {
+    .includes a::before {
         display: block;
         content: "";
         
@@ -41,7 +30,7 @@
         
         transition: all 0.5s linear 0s
     }
-    .includes a:hover::after {
+    .includes a:hover::before {
         background-color: #00000034;
     
         transition: all 0.3s linear 0s
@@ -63,32 +52,11 @@
     }
 }
 
-@media screen and (max-width: 548px) {
-}
-
 @media screen and (max-width: 414px) {
     nav {
         padding: 0 16px
     }
-    .app {
-        margin: 0 16px 2em
-    }
     .includes ul, .includes h4 {
         width: 87.5%
     }
-}
-
-@media screen and (max-width: 411px) {
-}
-
-@media screen and (max-width: 375px) {
-}
-
-@media screen and (max-width: 360px) {
-}
-
-@media screen and (max-width: 320px) {
-}
-
-@media screen and (max-width: 280px) {
 }
