@@ -5,7 +5,7 @@
     nav {
         padding: 0 5cm
     }
-    .includes ul {
+    .includes ul, .includes h4 {
         margin: 0 5cm
     }
     .includes > h1 {
@@ -16,7 +16,7 @@
     nav {
         padding: 0 22px
     }
-    .includes ul {
+    .includes ul, .includes h4 {
         margin: 0 2cm
     }
 }
@@ -71,7 +71,7 @@
     }
     .includes ul, .includes h4 {
         margin: 0 auto;
-        width: 85%
+        width: 87.5%
     }
     .includes ul {
         grid-template-columns: 1fr;
