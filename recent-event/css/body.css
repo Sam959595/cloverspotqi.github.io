@@ -136,8 +136,8 @@ nav span::after {
 	padding: 1em 0
 }
 .additionally h3 {
-	font: normal 400 19px/1.21053 "line";
-	letter-spacing: .012em;
+	font: normal 600 21px/1.19048 "line";
+	letter-spacing: .011em;
 
 	color: var(--media)
 }
