@@ -196,8 +196,8 @@ nav span::after {
 .includes h4 {
 	padding-bottom: 16px;
 
-	font: normal 600 19px "line";
-	letter-spacing: .012em;
+	font: normal 700 24px/1.16667 "line";
+	letter-spacing: .009em;
 
 	color: var(--text)
 }
