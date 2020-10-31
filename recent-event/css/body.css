@@ -219,24 +219,14 @@ picture img {
 
 	background-color: var(--separation)
 }
-
-.separation div {
+.separation p {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 
 	height: 100%;
 
-	padding: 0 1.2em
-}
-.separation p {
 	font: normal 500 16px "line-text"
-}
-.separation figure {
-	font-size: 1.7em
-}
-.separation a:nth-child(1) figure::after {
-	content: "\f315"
 }
 
 .separation li {
