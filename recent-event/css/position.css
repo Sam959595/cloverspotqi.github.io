@@ -1,5 +1,5 @@
 @media screen and (max-width: 1024px) {
-    article, section, blockquote, footer > * {
+    article, section, table, blockquote, footer > * {
         width: 576px
     }
 
@@ -23,7 +23,7 @@
 }
 
 @media screen and (max-width: 734px) {
-    article, section, blockquote, footer > * {
+    article, section, table, blockquote, footer > * {
         width: 87.5%
     }
 

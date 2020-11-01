@@ -1,4 +1,4 @@
-nav, section, picture, main, footer {
+nav, article, section, picture, table, blockquote, main, footer {
 	opacity: 0;
 	transition: opacity 0.5s ease 0s
 }
@@ -92,7 +92,7 @@ article a, section a {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-article, section, blockquote, footer > * {
+article, section, table, blockquote, footer > * {
 	margin: 0 auto;
 	width: 653px
 }
@@ -301,8 +301,6 @@ figcaption+figcaption {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 table {
-	width: 100%;
-
 	text-align: left;
 	border-collapse: collapse
 }
