@@ -62,6 +62,10 @@
         font: normal 600 19px "line";
         letter-spacing: .012em
     }
+    .additionally h3 {
+        font: normal 400 19px/1.21053 "line";
+        letter-spacing: .012em
+    }
     .content h1 {
         padding-top: 2.7cm
     }

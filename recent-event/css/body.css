@@ -42,7 +42,7 @@ body {
 	background-color: var(--body)
 }
 
-main p {
+main p, .separation > a {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden
@@ -136,8 +136,8 @@ nav span::after {
 	padding: 1em 0
 }
 .additionally h3 {
-	font: normal 400 19px/1.21053 "line";
-	letter-spacing: .012em;
+	font: normal 400 24px/1.33341 "line";
+	letter-spacing: .009em;
 
 	color: var(--media)
 }
@@ -216,17 +216,12 @@ picture img {
 	height: 1.2cm;
 
 	border-radius: 11px;
+	padding: .8em 1.2em;
+
+	font: normal 600 16px "line-text";
+	text-align: center;
 
 	background-color: var(--separation)
-}
-.separation p {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	height: 100%;
-
-	font: normal 500 16px "line-text"
 }
 
 .separation li {
