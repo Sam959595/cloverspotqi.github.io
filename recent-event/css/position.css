@@ -1,5 +1,5 @@
 @media screen and (max-width: 1024px) {
-    article, section, table, blockquote, footer > * {
+    article, section, .vertical img, table, blockquote, footer > * {
         width: 576px
     }
 
@@ -22,13 +22,20 @@
     }
 }
 
+@media screen and (max-width: 980px) {
+    picture img {
+        width: 100%
+    }
+}
+
 @media screen and (max-width: 734px) {
-    article, section, table, blockquote, footer > * {
+    article, section, .vertical img, table, blockquote, footer > * {
         width: 87.5%
     }
 
     nav {
-        height: 48px
+        height: 48px;
+        padding: 0 16px
     }
     nav a {
         font: normal 600 19px "line";

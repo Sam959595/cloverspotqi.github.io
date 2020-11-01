@@ -92,8 +92,15 @@ article a, section a {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-article, section, table, blockquote, footer > * {
-	margin: 0 auto;
+nav div, picture img, article, section, table, blockquote, footer > * {
+	margin: 0 auto
+}
+
+nav div, picture img {
+	width: 980px
+}
+
+article, section, .vertical img, table, blockquote, footer > * {
 	width: 653px
 }
 
@@ -112,9 +119,6 @@ nav {
 	background-color: var(--nav)
 }
 nav div {
-	margin: 0 auto;
-	width: 980px;
-
 	display: flex;
 	align-items: center;
 	justify-content: space-between
@@ -148,20 +152,8 @@ nav span::after {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-picture {
-	display: block
-}
 picture img {
-	width: 100%
-}
-
-.device img {
-	display: inherit;
-
-	width: 238px;
-
-	margin-left: auto;
-	margin-right: auto
+	display: block
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
