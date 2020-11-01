@@ -83,7 +83,7 @@ span::after, a::after {
 	-webkit-tap-highlight-color: none
 }
 
-section {
+nav, section {
 	color: var(--text)
 }
 section a {
@@ -103,23 +103,27 @@ nav {
 	position: fixed;
 	z-index: 9;
 
+	display: flex;
+
 	width: 100%;
 	height: 1.3cm;
-
-	display: flex;
-	justify-content: space-between;
-
-	align-items: center;
 
 	backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
 	background-color: var(--nav)
 }
-nav > a {
-	font: normal 600 21px "line";
-	letter-spacing: .011em
+nav div {
+	margin: 0 auto;
+	width: 980px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between
 }
 nav a {
-	color: var(--conclusion-h)
+	font: normal 600 21px "line";
+	letter-spacing: .011em;
+
+	color: var(--conclusion-dark)
 }
 
 nav span::after {
@@ -166,7 +170,7 @@ picture img {
 	font: normal 600 48px/1.08349 "line";
 	letter-spacing: -.003em;
 
-	color: var(--conclusion-h)
+	color: var(--conclusion-dark)
 }
 .content h2 {
 	font: normal 600 28px/1.14286 "line";
@@ -212,8 +216,6 @@ picture img {
 }
 .separation > a {
 	display: block;
-
-	height: 1.2cm;
 
 	border-radius: 11px;
 	padding: .8em 1.2em;
@@ -363,12 +365,10 @@ main a {
 
 	padding: 1em;
 
-	background-color: var(--pages)
-}
-
-main h3 {
 	font: normal 600 14px/1.3 "line-text";
-	color: var(--text)
+	color: var(--text);
+
+	background-color: var(--pages)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */

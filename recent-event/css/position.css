@@ -1,18 +1,3 @@
-@media screen and (max-width: 1600px) {
-}
-
-@media screen and (min-width: 1024px) {
-    .content h1 {
-        padding-top: 3cm
-    }
-    nav {
-        padding: 0 5cm
-    }
-    .additionally h1 {
-        font: normal 400 24px/1.33341 "line";
-        letter-spacing: .009em
-    }
-}
 @media screen and (max-width: 1024px) {
     nav {
         padding: 0 22px
@@ -24,7 +9,39 @@
         padding-top: 2.5cm
     }
 }
+@media screen and (min-width: 1024px) {
+    .content h1 {
+        padding-top: 3cm
+    }
+    .additionally h1 {
+        font: normal 400 24px/1.33341 "line";
+        letter-spacing: .009em
+    }
+}
 
+@media screen and (max-width: 734px) {
+    section, picture, footer > * {
+        width: 87.5%
+    }
+    nav {
+        height: 48px
+    }
+    nav a {
+        font: normal 600 19px "line";
+        letter-spacing: .012em
+    }
+    .additionally h3 {
+        font: normal 400 19px/1.21053 "line";
+        letter-spacing: .012em
+    }
+    .content h1 {
+        padding-top: 2.7cm
+    }
+    .content h1 {
+        font: normal 600 32px/1.125 "line";
+        letter-spacing: .004em
+    }
+}
 @media screen and (min-width: 768px) {
     .includes a {
         position: relative
@@ -49,43 +66,4 @@
     
         transition: all 0.3s linear 0s
     }
-}
-@media screen and (max-width: 734px) {
-    section, picture, footer > * {
-        width: 87.5%
-    }
-    nav {
-        height: 48px;
-        padding: 0 16px
-    }
-    nav > a {
-        font: normal 600 19px "line";
-        letter-spacing: .012em
-    }
-    .additionally h3 {
-        font: normal 400 19px/1.21053 "line";
-        letter-spacing: .012em
-    }
-    .content h1 {
-        padding-top: 2.7cm
-    }
-    .content h1 {
-        font: normal 600 32px/1.125 "line";
-        letter-spacing: .004em
-    }
-}
-
-@media screen and (max-width: 414px) {
-}
-
-@media screen and (max-width: 375px) {
-}
-
-@media screen and (max-width: 360px) {
-}
-
-@media screen and (max-width: 320px) {
-}
-
-@media screen and (max-width: 280px) {
 }

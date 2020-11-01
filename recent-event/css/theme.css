@@ -10,7 +10,7 @@
         --media: #888888;
 
         --fillet: white;
-        --conclusion-h: #1d1d1f;
+        /* --conclusion-dark */
 
         --table: #333;
         --table-description: #666;
@@ -43,7 +43,7 @@
         --media: #8e8e93;
 
         --fillet: black;
-        --conclusion-h: #fdfdfd;
+        --conclusion-dark: #fdfdfd;
 
         --table: #98989f;
         --table-description: #d5d5e2;
