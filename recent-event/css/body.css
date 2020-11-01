@@ -92,16 +92,14 @@ article a, section a {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-nav div, picture img, article, section, table, blockquote, footer > * {
-	margin: 0 auto
+nav div, picture img, .vertical img, article, section, table, blockquote, footer > * {
+	margin: 0 auto;
+	width: 653px
 }
 
 nav div, picture img {
+	margin: 0 auto;
 	width: 980px
-}
-
-article, section, .vertical img, table, blockquote, footer > * {
-	width: 653px
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -153,7 +151,9 @@ nav span::after {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 picture img {
-	display: block
+	display: block;
+
+	padding-bottom: 1.47059em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -191,7 +191,7 @@ picture img {
 	padding-left: 20px;
 	list-style: outside disc
 }
-.content li, picture img, table {
+.content li, table {
 	margin-bottom: 1.47059em
 }
 
@@ -210,7 +210,7 @@ picture img {
 	display: block;
 
 	border-radius: 11px;
-	padding: 1em 1.2em;
+	padding: 1.1em 1.2em;
 
 	text-align: center;
 

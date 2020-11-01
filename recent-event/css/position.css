@@ -28,11 +28,7 @@
     }
 }
 
-@media screen and (max-width: 734px) {
-    img {
-        pointer-events: auto
-    }
-
+@media screen and (max-width: 768px) {
     article, section, .vertical img, table, blockquote, footer > * {
         width: 87.5%
     }
