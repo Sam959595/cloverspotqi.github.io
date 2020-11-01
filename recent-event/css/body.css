@@ -220,10 +220,12 @@ picture img {
 	border-radius: 11px;
 	padding: .8em 1.2em;
 
-	font: normal 600 16px "line-text";
 	text-align: center;
 
 	background-color: var(--separation)
+}
+.separation div {
+	font: normal 600 16px "line-text"
 }
 
 .separation li {
@@ -365,10 +367,11 @@ main a {
 
 	padding: 1em;
 
-	font: normal 600 14px/1.3 "line-text";
-	color: var(--text);
-
-	background-color: var(--pages)
+	background-color: var(--pages);
+	color: var(--text)
+}
+main div {
+	font: normal 600 14px/1.3 "line-text"
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
