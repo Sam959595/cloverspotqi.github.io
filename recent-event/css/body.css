@@ -150,10 +150,13 @@ nav span::after {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+picture {
+	display: block
+}
 picture img {
-	display: block;
+	display: inherit;
 
-	padding-bottom: 1.47059em
+	padding-bottom: 2em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
