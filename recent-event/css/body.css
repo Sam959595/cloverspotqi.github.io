@@ -42,12 +42,12 @@ body {
 	background-color: var(--body)
 }
 
-main p, .separation > a {
+.separation > a {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden
 }
-main h3 {
+main div {
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
@@ -83,16 +83,16 @@ span::after, a::after {
 	-webkit-tap-highlight-color: none
 }
 
-nav, section {
+nav, article, section {
 	color: var(--text)
 }
-section a {
+article a, section a {
 	color: var(--link-footer)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-section, picture, footer > * {
+article, section, blockquote, footer > * {
 	margin: 0 auto;
 	width: 653px
 }
@@ -152,16 +152,16 @@ picture {
 	display: block
 }
 picture img {
-	width: 100%;
-	border-radius: 5px
+	width: 100%
 }
 
 .device img {
 	display: inherit;
+
 	width: 238px;
+
 	margin-left: auto;
-	margin-right: auto;
-	border-radius: 0
+	margin-right: auto
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -218,7 +218,7 @@ picture img {
 	display: block;
 
 	border-radius: 11px;
-	padding: .8em 1.2em;
+	padding: 1em 1.2em;
 
 	text-align: center;
 
@@ -252,7 +252,7 @@ picture img {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 blockquote {
-	padding: .7em 1.2em 1em;
+	padding: 1em 1.2em;
 
 	border-radius: 11px;
 
@@ -332,12 +332,12 @@ table tbody tr+tr {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 main {
-	padding-bottom: 4em;
+	padding: 0 5cm 4em;
 	background-color: var(--wrap)
 }
 main ul {
 	display: grid;
-	grid-auto-flow: column;
+	grid-template-columns: repeat(5, 6cm);
 	column-gap: 2em;
 
 	overflow: scroll;
@@ -349,19 +349,10 @@ main ul {
 main li {
 	scroll-snap-align: center
 }
-main li:first-child {
-	padding-left: 2.2em
-}
-main li:last-child {
-	padding-right: 2.2em
-}
 
 main a {
 	display: block;
 	text-align: center;
-
-	width: 6cm;
-	height: auto;
 
 	border-radius: 11px;
 

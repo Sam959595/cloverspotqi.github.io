@@ -1,18 +1,21 @@
 @media screen and (max-width: 1024px) {
+    article, section, blockquote, footer > * {
+        width: 576px
+    }
+
     nav {
         padding: 0 22px
     }
-    section, picture, footer > * {
-        width: 576px
-    }
+
     .content h1 {
         padding-top: 2.5cm
     }
 }
 @media screen and (min-width: 1024px) {
     .content h1 {
-        padding-top: 3cm
+        padding-top: 4cm
     }
+
     .additionally h1 {
         font: normal 400 24px/1.33341 "line";
         letter-spacing: .009em
@@ -20,9 +23,10 @@
 }
 
 @media screen and (max-width: 734px) {
-    section, picture, footer > * {
+    article, section, blockquote, footer > * {
         width: 87.5%
     }
+
     nav {
         height: 48px
     }
@@ -30,16 +34,22 @@
         font: normal 600 19px "line";
         letter-spacing: .012em
     }
+
     .additionally h3 {
         font: normal 400 19px/1.21053 "line";
         letter-spacing: .012em
     }
+
     .content h1 {
         padding-top: 2.7cm
     }
     .content h1 {
         font: normal 600 32px/1.125 "line";
         letter-spacing: .004em
+    }
+
+    main {
+        padding: 0 0 4em 2.2em
     }
 }
 @media screen and (min-width: 768px) {

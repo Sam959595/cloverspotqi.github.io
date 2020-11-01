@@ -1,7 +1,7 @@
 @media screen and (prefers-color-scheme: no-preference), (prefers-color-scheme: light) {
     :root {
         --body: #f5f5f7;
-        --nav: rgba(245, 245, 245, 0.7);
+        --nav: #f5f5f5b3;
 
         /* - */
 
