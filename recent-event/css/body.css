@@ -291,7 +291,7 @@ figcaption div:first-child::before {
 	position: absolute;
 	z-index: 1;
 
-	background: url("recent-event/media/11.svg") center/100% 100% no-repeat/* - */
+	background: url("/recent-event/media/mask.svg") center/100% 100% no-repeat/* - */
 }
 
 figcaption {
