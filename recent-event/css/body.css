@@ -271,6 +271,7 @@ figcaption div:first-child {
 	position: relative
 }
 figcaption div:first-child::before {
+	display: block;
 	content: "";
 
 	width: 100%;
@@ -365,6 +366,8 @@ dl div+div dt {
 }
 
 dl dt {
+	font-size: 12px;
+	font-weight: 500;
 	text-align: right;
 	color: var(--table-description)
 }
