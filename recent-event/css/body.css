@@ -1,4 +1,4 @@
-nav, article, section, picture, table, blockquote, main, footer {
+nav, article, section, picture, table, dl, blockquote, main, footer {
 	opacity: 0;
 	transition: opacity 0.5s ease 0s
 }
@@ -86,13 +86,13 @@ span::after, a::after {
 nav, article, section {
 	color: var(--text)
 }
-article a, section a {
+article a, section a, table a, dl a {
 	color: var(--link-footer)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-nav div, picture img, .vertical img, article, section, table, blockquote, footer > * {
+nav div, picture img, .vertical img, article, section, table, dl, blockquote, footer > * {
 	margin: 0 auto;
 	width: 653px
 }
@@ -268,15 +268,17 @@ blockquote p::before {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 figcaption div:first-child {
-	position: relative;
-	
+	position: relative
 }
 figcaption div:first-child::before {
 	content: "";
+
 	width: 100%;
 	height: 100%;
+
 	position: absolute;
 	z-index: 1;
+
 	background: url("/recent-event/media/11.svg") 100% 100% no-repeat
 }
 
@@ -313,7 +315,7 @@ table {
 	border-collapse: collapse
 }
 
-table th, table td {
+table * {
 	width: 50%;
 
 	font: normal 400 14px/1.2 "line-text";
@@ -322,16 +324,20 @@ table th, table td {
 table th {
 	font-weight: 600;
 	vertical-align: bottom;
+
 	padding: 3px 1em 3px 0;
+
 	color: var(--table)
 }
 
 table td {
-	padding: .5em 1em .5em 0;
-	color: var(--table-description)
+	padding: .5em 1em .5em 0
+}
+table td:first-child {
+	color: var(--table)
 }
 table td:last-child {
-	color: var(--table)
+	color: var(--table-description)
 }
 
 table tbody tr:first-child {
@@ -339,6 +345,32 @@ table tbody tr:first-child {
 }
 table tbody tr+tr {
 	border-top: 1px solid var(--table-line)
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+dl div {
+	display: table-row
+}
+dl div * {
+	display: table-cell;
+	vertical-align: baseline;
+
+	font: normal 400 13px/1.38462 "line-text";
+	letter-spacing: -.005em
+}
+
+dl div+div dt {
+	padding-top: 8px
+}
+
+dl dt {
+	text-align: right;
+	color: var(--table-description)
+}
+dl dd {
+	padding-left: 20px;
+	color: var(--table)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
