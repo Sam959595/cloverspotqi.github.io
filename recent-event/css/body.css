@@ -271,7 +271,6 @@ figcaption div:first-child {
 	position: relative
 }
 figcaption div:first-child::before {
-	display: block;
 	content: "";
 
 	width: 100%;
@@ -335,6 +334,7 @@ table td {
 	padding: .5em 1em .5em 0
 }
 table td:first-child {
+	font-weight: 500;
 	color: var(--table-description)
 }
 table td:last-child {
@@ -366,9 +366,8 @@ dl div+div dt {
 }
 
 dl dt {
-	font-size: 12px;
-	font-weight: 500;
 	text-align: right;
+	font-weight: 500;
 	color: var(--table-description)
 }
 dl dd {
