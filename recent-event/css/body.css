@@ -282,6 +282,7 @@ figcaption div:first-child::before {
 	width: 100%;
 	height: 100%;
 
+	border-radius: 22.5%;
 	position: absolute;
 	z-index: 1;
 
