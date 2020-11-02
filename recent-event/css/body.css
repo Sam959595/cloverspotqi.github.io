@@ -334,10 +334,10 @@ table td {
 	padding: .5em 1em .5em 0
 }
 table td:first-child {
-	color: var(--table)
+	color: var(--table-description)
 }
 table td:last-child {
-	color: var(--table-description)
+	color: var(--table)
 }
 
 table tbody tr:first-child {
