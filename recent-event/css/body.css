@@ -359,7 +359,7 @@ table tbody tr+tr {
 dl div {
 	display: table-row
 }
-dl div * {
+dl div > * {
 	display: table-cell;
 	vertical-align: baseline;
 
