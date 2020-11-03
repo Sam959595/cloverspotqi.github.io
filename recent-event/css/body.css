@@ -150,13 +150,8 @@ nav span::after {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-picture {
+picture, picture img {
 	display: block
-}
-picture img {
-	display: inherit;
-
-	padding-bottom: 2em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -200,7 +195,7 @@ picture img {
 	padding-left: 20px;
 	list-style: outside disc
 }
-.content li, table {
+.content li, table, picture {
 	margin-bottom: 1.47059em
 }
 
