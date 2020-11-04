@@ -20,7 +20,7 @@
 @media screen and (prefers-color-scheme: dark) {
     :root {
         --body: black;
-        --nav: rgba(29, 29, 31, 0.7);
+        --nav: #1d1d1fb3;
 
         /* - */
 
