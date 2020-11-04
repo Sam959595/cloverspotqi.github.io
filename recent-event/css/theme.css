@@ -21,7 +21,6 @@
         /* - */
 
         --wrap: #ececf5;
-        --pages: white;
 
         --footer: #f2f2f7;
         --description: #86868b;
@@ -46,7 +45,7 @@
         --conclusion-dark: #fdfdfd;
 
         --table: #d5d5e2;
-        --table-description: #98989f;
+        --table-description:#63636e;
         --table-line: #1d1c1f;
 
         --separation: #1d1c1f;
@@ -54,12 +53,11 @@
         /* - */
 
         --wrap: #121217;
-        --pages: #1d1c1f;
 
         --footer: #17171d;
         --description: #63636e;
 
-        --link: #c9c9d0;
+        --link: #aaaab3;
         --link-footer: #007aff;
     }
 }
