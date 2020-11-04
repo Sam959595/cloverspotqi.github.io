@@ -35,7 +35,7 @@
     :root {
         --body: black;
         /* --strong */
-        --nav: #1b1b1bb3;
+        --nav: rgba(26, 26, 26, 0.7);
 
         /* - */
 
