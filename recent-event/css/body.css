@@ -367,6 +367,7 @@ dl div+div dt {
 
 dl dt {
 	text-align: right;
+	line-height: 1em;
 	color: var(--table-description)
 }
 dl dd {
