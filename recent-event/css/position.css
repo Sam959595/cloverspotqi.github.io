@@ -15,11 +15,6 @@
     .content h1 {
         padding-top: 4cm
     }
-
-    .additionally h1 {
-        font: normal 400 24px/1.33341 "line";
-        letter-spacing: .009em
-    }
 }
 
 @media screen and (max-width: 980px) {
@@ -54,11 +49,10 @@
     }
 
     .content h1 {
-        padding-top: 2.7cm
-    }
-    .content h1 {
         font: normal 600 32px/1.125 "line";
-        letter-spacing: .004em
+        letter-spacing: .004em;
+
+        padding-top: 2.7cm
     }
 
     main {
