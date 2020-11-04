@@ -1,9 +1,9 @@
 @media screen and (max-width: 1024px) {
-    article, section, .vertical img, table, dl, blockquote, footer > * {
+    article, section, .vertical img, table, dl, blockquote {
         width: 576px
     }
 
-    nav {
+    nav, footer > * {
         padding: 0 22px
     }
 
@@ -29,13 +29,19 @@
 }
 
 @media screen and (max-width: 768px) {
-    article, section, .vertical img, table, dl, blockquote, footer > * {
+    article, section, .vertical img, table, dl, blockquote {
         width: 87.5%
     }
 
-    nav {
-        height: 48px;
+    nav div, picture img, footer > * {
+        width: 100%
+    }
+    nav, footer > * {
         padding: 0 16px
+    }
+
+    nav {
+        height: 48px
     }
     nav a {
         font: normal 600 19px "line";

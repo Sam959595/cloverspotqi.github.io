@@ -97,8 +97,7 @@ nav div, picture img, .vertical img, article, section, table, dl, blockquote, fo
 	width: 653px
 }
 
-nav div, picture img {
-	margin: 0 auto;
+nav div, picture img, footer > * {
 	width: 980px
 }
 
@@ -425,7 +424,7 @@ footer li {
 	color: var(--description)
 }
 footer ol {
-	padding-left: 17px;
+	padding-left: 33px;
 	list-style: outside decimal
 }
 footer ul+ol li a {
