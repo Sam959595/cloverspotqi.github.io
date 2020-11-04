@@ -54,11 +54,11 @@ body {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-:lang(ru) {
-	quotes: "«" "»"
+:lang(ru-RU) {
+	quotes: "\00ab" "\00bb"
 }
 :lang(en-US) {
-	quotes: "“" "”"
+	quotes: "\201c" "\201d"
 }
 
 *, h1, h2, h3, h4, h5, h6, p {

@@ -16,7 +16,7 @@
         --table-description: #666;
         --table-line: #e6e6e6;
 
-        --separation: #ececf5;
+        --separation: #00000014;
 
         /* - */
 
@@ -35,7 +35,7 @@
     :root {
         --body: black;
         /* --strong */
-        --nav: rgba(29, 29, 31, .7);
+        --nav: #121212b3;
 
         /* - */
 
