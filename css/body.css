@@ -119,7 +119,7 @@ nav h4 {
 }
 
 nav span::after {
-	content: "\f303";
+	content: "\ea1d";
 
 	font-size: 1.8em;
 
