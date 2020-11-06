@@ -62,7 +62,7 @@
         padding: 0 16px
     }
 
-    section {
+    section, form {
         width: 87.5%
     }
 }
