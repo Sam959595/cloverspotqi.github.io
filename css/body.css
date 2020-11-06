@@ -101,13 +101,12 @@ aside {
 
 aside form {
 	display: flex;
-	justify-content: space-between;
-	padding: 16px 0 1cm
+	padding-top: 16px
 }
 
 aside div {
 	position: relative;
-	width: 75%
+	width: 100%;
 }
 aside input {
 	width: 100%;
@@ -122,14 +121,14 @@ aside input {
 
 	background-color: #eeeeef
 }
-input::placeholder, form div::before, form div button::before {
+aside input::placeholder, form div::before, form div button::before {
 	color: #a3a3a3
 }
-input:focus {
+aside input:focus {
 	color: #1d1d1e
 }
 
-form div div::before {
+aside form div div::before {
 	padding: 4px 0 0 7px;
 
 	position: absolute;
@@ -138,7 +137,7 @@ form div div::before {
 
 	content: "\ea1d"
 }
-form div button::before {
+aside form div button::before {
 	display: block;
 	right: 0;
 
@@ -151,12 +150,39 @@ form div button::before {
 	content: "\f314"
 }
 
-form > button {
+aside form > button {
 	font: normal 400 17px "line-text";
 	letter-spacing: -.022em;
 
+	padding-left: .8em;
+
 	background: none;
-	color: var(--link-footer)
+	color: var(--link-footer);
+
+	-webkit-tap-highlight-color: none
+}
+
+aside section h2 {
+	font-weight: 600;
+	font-size: 21px;
+
+	padding-top: 3em
+}
+
+aside section ul {
+	padding-top: 1em
+}
+aside section ul li a {
+	display: block;
+	font: normal 400 17px "line-text";
+	letter-spacing: -.022em;
+
+	padding: 8px 0;
+
+	color: #84848b
+}
+aside section ul li+li {
+	border-top: 1px solid #e2e2e2
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
