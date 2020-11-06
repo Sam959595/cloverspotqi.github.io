@@ -35,17 +35,7 @@ a, sup, strong, small, q, em {
 }
 
 ::-webkit-scrollbar {
-	width: 0
-}
-::-webkit-scrollbar:horizontal {
-	height: 5px
-}
-::-webkit-scrollbar-button {
 	display: none
-}
-::-webkit-scrollbar-thumb {
-    border-radius: 2px;
-    background-color: #353535
 }
 
 body {
@@ -130,9 +120,14 @@ nav span::after {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.includes {
+section {
+	margin: 0 auto;
+	width: 980px
+}
+section, footer {
 	padding-top: 2.7cm
 }
+
 .includes h4 {
 	padding-bottom: 16px;
 
@@ -146,11 +141,6 @@ nav span::after {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 36px
-}
-
-.includes ul, .includes h4 {
-	margin: 0 auto;
-	width: 980px
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -186,10 +176,4 @@ nav span::after {
 	letter-spacing: .012em;
 
 	color: var(--text)
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-footer {
-	margin-top: 2.7cm
 }
