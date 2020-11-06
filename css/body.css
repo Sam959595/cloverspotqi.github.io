@@ -169,17 +169,18 @@ aside section h2 {
 	padding: 3em 0 .6em
 }
 
+aside section ul li {
+	padding: 10px 0
+}
 aside section ul li a {
 	display: block;
 	font: normal 400 17px "line-text";
 	letter-spacing: -.022em;
 
-	padding: 10px 0;
-
 	color: #84848b
 }
 aside section ul li+li {
-	border-top: .1px solid #e2e2e2
+	border-top: 1px solid #e2e2e2
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
