@@ -114,7 +114,7 @@ aside input {
 
 	border-radius: 10px;
 
-	padding: 3px 40px 3px 30px;
+	padding: 0 40px 2px 30px;
 
 	font: normal 400 16px "line-text";
 	letter-spacing: -.022em;
@@ -154,7 +154,7 @@ aside form > button {
 	font: normal 400 17px "line-text";
 	letter-spacing: -.022em;
 
-	padding-left: .8em;
+	margin-left: .6em;
 
 	background: none;
 	color: var(--link-footer);
@@ -166,12 +166,9 @@ aside section h2 {
 	font-weight: 600;
 	font-size: 21px;
 
-	padding-top: 3em
+	padding: 3em 0 .6em
 }
 
-aside section ul {
-	padding-top: 1em
-}
 aside section ul li a {
 	display: block;
 	font: normal 400 17px "line-text";
@@ -182,7 +179,7 @@ aside section ul li a {
 	color: #84848b
 }
 aside section ul li+li {
-	border-top: 1px solid #e2e2e2
+	border-top: .1px solid #e2e2e2
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
