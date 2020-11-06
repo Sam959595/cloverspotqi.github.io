@@ -117,13 +117,13 @@ aside input {
 
 	padding: 3px 40px 3px 30px;
 
-	font: normal 400 17px "line-text";
+	font: normal 400 16px "line-text";
 	letter-spacing: -.022em;
 
 	background-color: #eeeeef
 }
 input::placeholder, form div::before, form div button::before {
-	color: #8b8b93
+	color: #a3a3a3
 }
 input:focus {
 	color: #1d1d1e
