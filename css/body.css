@@ -86,17 +86,17 @@ em {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 aside {
+	z-index: 10;
+
 	width: 100%;
 	height: 100%;
-
-	background-color: #fefffe;
 
 	position: fixed;
 
 	pointer-events: auto;
 	overflow-y: hidden;
 
-	z-index: 10
+	background-color: #f2f2f7
 }
 
 aside form {
@@ -119,7 +119,7 @@ aside input {
 	font: normal 400 16px "line-text";
 	letter-spacing: -.022em;
 
-	background-color: #eeeeef
+	background-color: #e3e3e8
 }
 aside input::placeholder, form div::before, form div button::before {
 	color: #a3a3a3
@@ -163,8 +163,8 @@ aside form > button {
 }
 
 aside section h2 {
-	font-weight: 600;
-	font-size: 21px;
+	font: normal 600 21px/1.2 "line";
+	letter-spacing: .011em;
 
 	padding: 3em 0 .6em
 }
@@ -174,7 +174,7 @@ aside section ul li a {
 	font: normal 400 17px "line-text";
 	letter-spacing: -.022em;
 
-	padding: 8px 0;
+	padding: 10px 0;
 
 	color: #84848b
 }
