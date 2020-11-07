@@ -6,9 +6,14 @@ i.addEventListener('click', function(){
     console.log('click');
 })
 
-let e = $("body");
-e.addClass("color", function(){
-    e.css({
+let s = $('body');
+
+$('body').addClass('color', function(d){
+    d.css({
         'background-color':'#435'
     });
+});
+
+$('body').bind('touchmove', function(e) {
+    e.preventDefault();
 });
