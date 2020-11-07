@@ -122,7 +122,7 @@ aside input {
 	background-color: #e3e3e8
 }
 aside input::placeholder, form div::before, form div button::before {
-	color: #a3a3a3
+	color: #8d8d93
 }
 aside input:focus {
 	color: #1d1d1e
