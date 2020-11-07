@@ -1,5 +1,5 @@
 @media screen and (max-width: 1024px) {
-    nav {
+    nav, form {
         padding: 0 22px
     }
 
@@ -10,6 +10,12 @@
     .includes ul {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 24px
+    }
+}
+
+@media screen and (max-width: 980px) {
+    nav div, form {
+        width: 100%
     }
 }
 
@@ -39,9 +45,11 @@
     }
 }
 @media screen and (max-width: 768px) {
-    nav {
-        height: 48px;
+    nav, form {
         padding: 0 16px
+    }
+    nav {
+        height: 48px
     }
     nav h4 {
         font: normal 600 19px "line";
@@ -58,11 +66,7 @@
 }
 
 @media screen and (max-width: 414px) {
-    nav {
-        padding: 0 16px
-    }
-
-    section, form {
+    section {
         width: 87.5%
     }
 }

@@ -185,6 +185,17 @@ aside section ul li+li {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+nav div, section, form {
+	margin: 0 auto;
+	width: 980px
+}
+
+.includes, footer {
+	padding-top: 2.7cm
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
 nav {
 	position: fixed;
 	z-index: 9;
@@ -198,9 +209,6 @@ nav {
 	background-color: var(--nav)
 }
 nav div {
-	margin: 0 auto;
-	width: 980px;
-
 	display: flex;
 	align-items: center;
 	justify-content: space-between
@@ -223,14 +231,6 @@ nav span::after {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
-
-section, form {
-	margin: 0 auto;
-	width: 980px
-}
-.includes, footer {
-	padding-top: 2.7cm
-}
 
 .includes h4 {
 	padding-bottom: 16px;
