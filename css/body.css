@@ -106,7 +106,7 @@ aside form {
 
 aside div {
 	position: relative;
-	width: 100%;
+	width: 100%
 }
 aside input {
 	width: 100%;
@@ -114,14 +114,14 @@ aside input {
 
 	border-radius: 10px;
 
-	padding: 0 40px 2px 30px;
+	padding: 0 40px 2px 10px;
 
 	font: normal 400 16px "line-text";
 	letter-spacing: -.022em;
 
 	background-color: #e3e3e8
 }
-aside input::placeholder, form div::before, form div button::before {
+aside input::placeholder {
 	color: #8d8d93
 }
 aside input:focus {
