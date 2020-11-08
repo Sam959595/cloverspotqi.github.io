@@ -30,9 +30,9 @@
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
-        --search-page: black;
+        --search-page: #121212;
 
-        --search: #1c1c1e;
+        --search: #3a3a3e;
         --search-line: #75757a;
         --search-border: #1c1c1e;
         
