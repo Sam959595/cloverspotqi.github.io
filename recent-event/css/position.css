@@ -28,6 +28,10 @@
         width: 87.5%
     }
 
+    .search {
+        padding: 0 2em
+    }
+
     nav div, picture img, footer > * {
         width: 100%
     }
@@ -60,6 +64,11 @@
     }
 }
 @media screen and (min-width: 768px) {
+    .search {
+        margin: 0 auto;
+        width: 65%
+    }
+
     .includes a {
         position: relative
     }
@@ -82,5 +91,11 @@
         background-color: #00000034;
     
         transition: all 0.3s linear 0s
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .search {
+        padding: 0 16px
     }
 }
