@@ -94,7 +94,7 @@ aside {
 
 	position: fixed;
 
-	background-color: #f2f2f7
+	background-color: var(--search-page)
 }
 
 aside .search {
@@ -117,13 +117,13 @@ aside input {
 	font: normal 400 16px "line-text";
 	letter-spacing: -.022em;
 
-	background-color: #e3e3e8
+	background-color: var(--search)
 }
 aside input::placeholder {
-	color: #8d8d93
+	color: var(--search-inner)
 }
 aside input:focus {
-	color: #1d1d1e
+	color: var(--search-focus)
 }
 
 aside .search div div::before {
@@ -164,7 +164,9 @@ aside section h2 {
 	font: normal 600 21px/1.2 "line";
 	letter-spacing: .011em;
 
-	padding: 3em 0 .6em
+	padding: 3em 0 .6em;
+
+	color: var(--text)
 }
 
 aside section ul li {
@@ -175,10 +177,10 @@ aside section ul li a {
 	font: normal 400 17px "line-text";
 	letter-spacing: -.022em;
 
-	color: #84848b
+	color: var(--search-line)
 }
 aside section ul li+li {
-	border-top: 1px solid #e2e2e2
+	border-top: 1px solid var(--search-border)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
