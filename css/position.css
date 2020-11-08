@@ -3,7 +3,7 @@
         padding: 0 22px
     }
 
-    section, form {
+    section {
         width: 692px
     }
 
@@ -14,6 +14,11 @@
 }
 
 @media screen and (min-width: 768px) {
+    form {
+        margin: 0 auto;
+        width: 65%
+    }
+
     .includes a {
         position: relative
     }
@@ -39,6 +44,10 @@
     }
 }
 @media screen and (max-width: 768px) {
+    form {
+        padding: 0 2em
+    }
+
     nav {
         height: 48px;
         padding: 0 16px
@@ -48,7 +57,7 @@
         letter-spacing: .012em
     }
 
-    section, form {
+    section {
         width: 366px
     }
 
@@ -58,7 +67,11 @@
 }
 
 @media screen and (max-width: 414px) {
-    section, form {
+    form {
+        padding: 0 16px
+    }
+
+    section {
         width: 87.5%
     }
 }

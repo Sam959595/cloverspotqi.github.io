@@ -182,7 +182,7 @@ aside section ul li+li {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-nav div, section, form {
+nav div, section {
 	margin: 0 auto;
 	width: 980px
 }
