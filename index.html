@@ -49,7 +49,7 @@
 </head>
 
 <body>
-    <aside>
+    <aside style="opacity: 0; pointer-events: none; transition: 0.5s;">
         <form action="/recent-event">
             <div>
                 <input type="text" placeholder="&nbsp;Запрос оглавления" autocapitalize="off">
@@ -75,7 +75,7 @@
     <nav>
         <div>
             <h4>Вестник</h4>
-            <span id="search"></span>
+            <span onclick="sea()"></span>
         </div>
     </nav>
 

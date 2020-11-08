@@ -2,9 +2,16 @@ $('body').bind('touchmove', function(e) {
     e.preventDefault();
 });
 
+function sea(){
+    $('aside').css({
+        'opacity':'1',
+        'pointer-events':'all'
+    });
+};
+
 var i = document.getElementById('search');
-i.addEventListener('click', function(){
-    console.log('cli')
+i.onclick('ls', function(){
+    console.log('frondet');
 });
 
 $('aside').addClass('colorClass', function(d){
