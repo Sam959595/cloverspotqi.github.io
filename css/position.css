@@ -1,21 +1,15 @@
 @media screen and (max-width: 1024px) {
-    nav, form {
+    nav {
         padding: 0 22px
     }
 
-    section {
+    section, form {
         width: 692px
     }
 
     .includes ul {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 24px
-    }
-}
-
-@media screen and (max-width: 980px) {
-    nav div, form {
-        width: 100%
     }
 }
 
@@ -45,18 +39,16 @@
     }
 }
 @media screen and (max-width: 768px) {
-    nav, form {
-        padding: 0 16px
-    }
     nav {
-        height: 48px
+        height: 48px;
+        padding: 0 16px
     }
     nav h4 {
         font: normal 600 19px "line";
         letter-spacing: .012em
     }
 
-    section {
+    section, form {
         width: 366px
     }
 
@@ -66,7 +58,7 @@
 }
 
 @media screen and (max-width: 414px) {
-    section {
+    section, form {
         width: 87.5%
     }
 }

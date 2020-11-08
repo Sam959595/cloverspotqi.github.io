@@ -2,9 +2,9 @@ $('body').bind('touchmove', function(e) {
     e.preventDefault();
 });
 
-var i = document.getElementById('s');
+var i = document.getElementById('search');
 i.addEventListener('click', function(){
-    console.log('click');
+    console.log('cli')
 });
 
 $('aside').addClass('colorClass', function(d){

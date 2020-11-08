@@ -93,9 +93,6 @@ aside {
 
 	position: fixed;
 
-	pointer-events: auto;
-	overflow-y: hidden;
-
 	background-color: #f2f2f7
 }
 
@@ -226,6 +223,8 @@ nav span::after {
 	font-size: 1.8em;
 
 	color: var(--link-footer);
+
+	cursor: pointer;
 
 	-webkit-tap-highlight-color: none
 }
