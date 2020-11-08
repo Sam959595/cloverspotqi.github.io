@@ -50,12 +50,14 @@
 
 <body>
     <aside style="opacity: 0; pointer-events: none; transition: .5s;">
-        <form action="/recent-event">
+        <div class="search">
             <div>
-                <input type="text" placeholder="&nbsp;Запрос оглавления" autocapitalize="off">
+                <form action="/recent-event">
+                    <input type="text" placeholder="&nbsp;Запрос оглавления" autocapitalize="off">
+                </form>
             </div>
-            <button>Отменить</button>
-        </form>
+            <button onclick="esc()">Отменить</button>
+        </div>
         <section>
             <h2>Предложения</h2>
             <ul>

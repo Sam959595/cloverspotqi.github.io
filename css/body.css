@@ -25,7 +25,8 @@ img, svg, h1, h2, h3, h4, h5, h6, p {
 a, button {
 	cursor: pointer;
 	text-decoration: none;
-	border: none
+	border: none;
+	outline: none
 }
 ul, ol {
 	list-style: none
@@ -96,7 +97,7 @@ aside {
 	background-color: #f2f2f7
 }
 
-aside form {
+aside .search {
 	display: flex;
 	padding-top: 16px
 }
@@ -125,7 +126,7 @@ aside input:focus {
 	color: #1d1d1e
 }
 
-aside form div div::before {
+aside .search div div::before {
 	padding: 4px 0 0 7px;
 
 	position: absolute;
@@ -134,7 +135,7 @@ aside form div div::before {
 
 	content: "\ea1d"
 }
-aside form div button::before {
+aside .search div button::before {
 	display: block;
 	right: 0;
 
@@ -147,7 +148,7 @@ aside form div button::before {
 	content: "\f314"
 }
 
-aside form > button {
+aside .search > button {
 	font: normal 400 17px "line-text";
 	letter-spacing: -.022em;
 
@@ -156,7 +157,7 @@ aside form > button {
 	background: none;
 	color: var(--link-footer);
 
-	-webkit-tap-highlight-color: none
+	-webkit-tap-highlight-color: transparent
 }
 
 aside section h2 {
@@ -226,7 +227,7 @@ nav span::after {
 
 	cursor: pointer;
 
-	-webkit-tap-highlight-color: none
+	-webkit-tap-highlight-color: transparent
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */

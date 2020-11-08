@@ -25,7 +25,8 @@ img, svg, h1, h2, h3, h4, h5, h6, p {
 a, button {
 	cursor: pointer;
 	text-decoration: none;
-	border: none
+	border: none;
+	outline: none
 }
 ul, ol {
 	list-style: none

@@ -8,6 +8,12 @@ function sea(){
         'pointer-events':'all'
     });
 };
+function esc(){
+    $('aside').css({
+        'opacity':'0',
+        'pointer-events':'none'
+    });
+};
 
 var i = document.getElementById('search');
 i.onclick('ls', function(){
