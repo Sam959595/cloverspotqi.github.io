@@ -119,7 +119,7 @@ aside input {
 
 	background-color: var(--search)
 }
-aside input::placeholder {
+aside input[placeholder] {
 	color: var(--search-inner)
 }
 aside input:focus {
