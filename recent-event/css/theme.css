@@ -1,7 +1,5 @@
 @media screen and (prefers-color-scheme: no-preference), (prefers-color-scheme: light) {
     :root {
-        --search-page: #fafafa;
-
         --search: #e3e3e8;
         --search-line: #84848b;
         --search-border: #e2e2e2;
@@ -43,8 +41,6 @@
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
-        --search-page: black;
-
         --search: #1c1c1e;
         --search-line: #75757a;
         --search-border: #1c1c1e;

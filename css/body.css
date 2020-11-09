@@ -94,7 +94,7 @@ aside {
 
 	position: fixed;
 
-	background-color: var(--search-page)
+	background-color: var(--body)
 }
 
 aside .search {

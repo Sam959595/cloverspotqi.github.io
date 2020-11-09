@@ -5,11 +5,17 @@ $('body').bind('touchmove', function(e) {
 function sea(){
     $('aside').css({
         'opacity':'1',
-        'pointer-events':'all'
+        'pointer-events':'all',
+        'transition':'all .5s ease 0s'
     });
     $('.includes').css({
-        'opacity':'0'
+        'opacity':'0',
+        'transition':'all .5s ease 0s'
     });
+    function nosroll(){
+        window.scroll(0, 0);
+    }
+    window.addEventListener('scroll', nosroll);
 };
 function esc(){
     $('aside').css({
@@ -19,6 +25,10 @@ function esc(){
     $('.includes').css({
         'opacity':'1'
     });
+    function nosroll(){
+        window.scroll(!0, !0);
+    }
+    window.addEventListener('scroll', nosroll);
 };
 
 var i = document.getElementById('search');
