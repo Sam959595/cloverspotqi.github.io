@@ -22,9 +22,13 @@ img, svg, h1, h2, h3, h4, h5, h6, p {
 img, svg, h1, h2, h3, h4, h5, h6, p {
 	pointer-events: none
 }
-a, button {
-	cursor: pointer;
-	text-decoration: none;
+a {
+	text-decoration: none
+}
+button {
+	cursor: pointer
+}
+input, button {
 	border: none;
 	outline: none
 }
@@ -33,10 +37,6 @@ ul, ol {
 }
 a, sup, strong, small, q, em {
 	font: inherit
-}
-input {
-	border: none;
-	outline: none
 }
 
 ::-webkit-scrollbar {

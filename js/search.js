@@ -7,11 +7,17 @@ function sea(){
         'opacity':'1',
         'pointer-events':'all'
     });
+    $('.includes ul').css({
+        'opacity':'0'
+    });
 };
 function esc(){
     $('aside').css({
         'opacity':'0',
         'pointer-events':'none'
+    });
+    $('.includes ul').css({
+        'opacity':'1'
     });
 };
 
