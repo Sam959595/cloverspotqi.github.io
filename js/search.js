@@ -12,10 +12,9 @@ function sea(){
         'opacity':'0',
         'transition':'all .5s ease 0s'
     });
-    function nosroll(){
-        window.scroll(0, 0);
-    }
-    window.addEventListener('scroll', nosroll);
+    $('body').css({
+        'overflow':'hidden'
+    })
 };
 function esc(){
     $('aside').css({
@@ -25,10 +24,9 @@ function esc(){
     $('.includes').css({
         'opacity':'1'
     });
-    function nosroll(){
-        window.scroll(!0, !0);
-    }
-    window.addEventListener('scroll', nosroll);
+    $('body').css({
+        'overflow':'auto'
+    })
 };
 
 var i = document.getElementById('search');
