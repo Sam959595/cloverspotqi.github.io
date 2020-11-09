@@ -240,7 +240,7 @@ nav span::after {
 
 	cursor: pointer;
 
-	-webkit-tap-highlight-color: none
+	-webkit-tap-highlight-color: transparent
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */

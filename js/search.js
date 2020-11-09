@@ -4,8 +4,9 @@ $('body').bind('touchmove', function(e) {
 
 function sea(){
     $('body').css({
-        'overflow':'hidden'
-    })
+        'overflow':'hidden',
+        'height':'100%'
+    });
     $('aside').css({
         'opacity':'1',
         'pointer-events':'all',
@@ -18,8 +19,9 @@ function sea(){
 };
 function esc(){
     $('body').css({
-        'overflow':'auto'
-    })
+        'overflow':'auto',
+        'height':'auto'
+    });
     $('aside').css({
         'opacity':'0',
         'pointer-events':'none'
