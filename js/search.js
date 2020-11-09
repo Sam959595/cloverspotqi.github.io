@@ -7,7 +7,7 @@ function sea(){
         'opacity':'1',
         'pointer-events':'all'
     });
-    $('nav, .includes').css({
+    $('.includes').css({
         'opacity':'0'
     });
 };
@@ -16,7 +16,7 @@ function esc(){
         'opacity':'0',
         'pointer-events':'none'
     });
-    $('nav, .includes').css({
+    $('.includes').css({
         'opacity':'1'
     });
 };
