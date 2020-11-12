@@ -155,7 +155,7 @@ nav span::before {
 	font: normal 400 24px/1.33341 "line";
 	letter-spacing: .009em;
 
-	color: var(--media)
+	color: var(--separation)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -221,10 +221,10 @@ picture, picture img {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.separation {
+.setup {
 	max-width: 10cm
 }
-.separation > a {
+.setup > a {
 	display: block;
 
 	border-radius: 11px;
@@ -232,13 +232,13 @@ picture, picture img {
 
 	text-align: center;
 
-	background-color: var(--separation)
+	background-color: var(--setup)
 }
-.separation div {
+.setup div {
 	font: normal 600 16px "line-text"
 }
 
-.separation li {
+.setup li {
 	margin-top: .5em;
 
 	font: normal 400 11px/1.36364 "line-text";
@@ -246,10 +246,10 @@ picture, picture img {
 
 	text-align: center;
 
-	color: var(--media)
+	color: var(--separation)
 }
 
-.separation a+ul+a {
+.setup a+ul+a {
 	margin-top: 1em
 }
 
@@ -314,7 +314,7 @@ figcaption h4, figcaption a {
 }
 figcaption p {
 	padding-bottom: .8em;
-	color: var(--media)
+	color: var(--separation)
 }
 figcaption a::before {
 	padding-right: .3em;
