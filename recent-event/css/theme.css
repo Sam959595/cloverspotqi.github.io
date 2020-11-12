@@ -15,11 +15,11 @@
 
         /* - */
 
+        --text-title: #111;
         --text: #1d1d1f;
         --media: #888;
 
         --fillet: white;
-        /* --conclusion-dark */
 
         --table: #333;
         --table-description: #666;
@@ -31,7 +31,7 @@
 
         --wrap: #ececf5;
 
-        --footer: #36363c;
+        --footer:#f5f5f7;
         --description: #86868b;
 
         --link: #515154;
@@ -56,11 +56,11 @@
 
         /* - */
 
+        --text-title: white;
         --text: #f5f5f7;
         --media: #8e8e93;
 
         --fillet: black;
-        --conclusion-dark: #fdfdfd;
 
         --table: #d5d5e2;
         --table-description:#8e8e93;
