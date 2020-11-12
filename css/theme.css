@@ -16,7 +16,7 @@
 
         --text: #1d1d1f;
 
-        --fillet: #fefffe;
+        --fillet: white;
 
         /* - */
 
@@ -48,7 +48,7 @@
 
         /* - */
 
-        --description: #6e6e73;
+        --description: #86868b;
 
         --link-footer: #2997ff;
     }
