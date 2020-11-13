@@ -1,6 +1,6 @@
 @media screen and (prefers-color-scheme: no-preference), (prefers-color-scheme: light) {
     :root {
-        --body: #fafafa;
+        --body: white;
         --strong: black;
         --nav: #fafafab3;
 
@@ -16,7 +16,7 @@
         --table-description: #666;
         --table-line: #e6e6e6;
 
-        --setup: #00000012;
+        --setup: #f4f4f4;
 
         /* - */
 
