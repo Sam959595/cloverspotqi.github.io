@@ -112,6 +112,26 @@ nav div, picture img, footer > * {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+.hide {
+	position: relative
+}
+.hide div {
+	font: inherit;
+	display: block;
+	height: 90px;
+	-webkit-mask: linear-gradient(0deg, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0) 18.0001px, rgb(0, 0, 0) 18.0001px), linear-gradient(270deg, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0) 48px, rgb(0, 0, 0) 70px);
+}
+.hide button {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	color: var(--link-footer);
+	background: none;
+	font: inherit;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
 nav {
 	position: fixed;
 	z-index: 9;
@@ -183,22 +203,22 @@ picture, picture img {
 	padding: 3em 0 20px
 }
 .content h4 {
-	font: normal 600 21px/1.2 "line";
+	font: normal 600 21px/1.19048 "line";
 	letter-spacing: .011em;
 
 	padding: 20px 0 5px
 }
 .content h5 {
-	font: normal 700 20px/1.19048 "line";
+	font: normal 700 20px/1.2 "line";
 	letter-spacing: .024em;
 
-	padding: 2.2em 0 19px
+	padding: 2em 0 17px
 }
 .content h6 {
 	font: normal 600 19px/1.21053 "line";
 	letter-spacing: .012em;
 
-	padding: 2em 0 17px
+	padding: 1em 0 19px
 }
 
 .content li {

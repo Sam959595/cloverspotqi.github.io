@@ -2,7 +2,7 @@
     :root {
         /* --body */
         --strong: black;
-        --nav: #ffffffa6;
+        --nav: #ffffffb3;
 
         /* - */
 
@@ -16,13 +16,13 @@
         --table-description: #666;
         --table-line: #e6e6e6;
 
-        --setup: #f4f4f4;
+        --setup: #00000012;
 
         /* - */
 
         --wrap: #e8e8ed;
 
-        --footer:#f5f5f7;
+        --footer: #f2f2f7;
         --description: #86868b;
 
         --link: #515154;
