@@ -253,8 +253,7 @@ nav span::after {
 
 .includes a {
 	display: block;
-	border-radius: 10px;
-	-webkit-box-shadow: 0 10px 15px 3px #0000001e;
+	border-radius: 10px
 }
 .includes div:first-child {
 	height: 200px;
