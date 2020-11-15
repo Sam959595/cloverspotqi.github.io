@@ -72,6 +72,13 @@ em {
 	font-style: italic
 }
 
+hr {
+	border-top: 1px solid var(--hr);
+	border-bottom: none;
+	border-left: none;
+	border-right: none
+}
+
 .includes h4, .includes p {
 	white-space: nowrap;
 	text-overflow: ellipsis;
