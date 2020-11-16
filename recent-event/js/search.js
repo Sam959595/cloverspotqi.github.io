@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    $('.hide button').click(function(){
-        $('.hide div').css({
-            'max-height':'none',
-            '-webkit-mask':'none'
-        });
-        $(this).remove()
+
+    $('.hide button').click(function() {
+        $(this).remove();
+        $('dl .hide')[0].classList.remove('close');
     });
 });

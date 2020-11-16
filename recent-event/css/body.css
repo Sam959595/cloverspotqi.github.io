@@ -119,14 +119,16 @@ nav div, picture img, footer > * {
 .hide div {
 	display: block;
 
-	max-height: 90px;
-
 	font: inherit;
 
-	pointer-events: none;
-
+	pointer-events: none
+}
+.close div {
+	max-height: 90px;
+	
 	-webkit-mask: linear-gradient(to top, transparent 13px, black 0), linear-gradient(to left, transparent 40px, black 60px)
 }
+
 .hide button {
 	position: absolute;
 
