@@ -89,14 +89,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 hr {
-	border-top: 1px solid var(--hr);
-	border-bottom: none;
-	border-left: none;
-	border-right: none
-}
-
-span::after, a::after {
-	-webkit-tap-highlight-color: transparent
+	border: none;
+	border-top: 1px solid var(--table-line)
 }
 
 nav, article, section {
@@ -178,7 +172,9 @@ nav span::before {
 
 	color: var(--link-footer);
 
-	cursor: pointer
+	cursor: pointer;
+
+	-webkit-tap-highlight-color: transparent
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */

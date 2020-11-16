@@ -1,9 +1,9 @@
-$('#hide').click(() {
-    alert('dsf');
-})
-
-$('#hide').addEventListener('click', hides);
-
-function hides() {
-    alert('dsf');
-}
+document.addEventListener('DOMContentLoaded', function() {
+    $('.hide button').click(function(){
+        $('.hide div').css({
+            'max-height':'none',
+            '-webkit-mask':'none'
+        });
+        $(this).remove()
+    });
+});

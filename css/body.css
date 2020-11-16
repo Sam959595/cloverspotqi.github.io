@@ -73,10 +73,8 @@ em {
 }
 
 hr {
-	border-top: 1px solid var(--hr);
-	border-bottom: none;
-	border-left: none;
-	border-right: none
+	border: none;
+	border-top: 1px solid var(--table-line)
 }
 
 .includes h4, .includes p {
@@ -227,7 +225,7 @@ nav h4 {
 	color: var(--text)
 }
 
-nav span::after {
+nav span::before {
 	content: "\ea1d";
 
 	font-size: 1.8em;
