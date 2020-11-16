@@ -129,6 +129,8 @@ nav div, picture img, footer > * {
 
 	font: inherit;
 
+	pointer-events: none;
+
 	-webkit-mask: linear-gradient(to top, transparent 13px, black 0), linear-gradient(to left, transparent 40px, black 60px)
 }
 .hide button {
@@ -429,7 +431,7 @@ dl dd {
 
 main {
 	padding: 0 5cm 4em;
-	background-color: var(--wrap)
+	background-color: var(--footer)
 }
 main ul {
 	display: grid;
@@ -454,7 +456,7 @@ main a {
 
 	padding: 1em;
 
-	background-color: var(--footer);
+	background-color: var(--wrap);
 	color: var(--link)
 }
 main div {
