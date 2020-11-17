@@ -28,10 +28,11 @@ document.addEventListener('DOMContentLoaded', function() {
         $('.includes').css({
             'opacity':'1'
         });
+        $('.search button')[0].classList.remove('hide');
     });
 
     $('.search input').click(function() {
-        $('.search button')[0].classList.add('hide')
+        $('.search button')[0].classList.add('hide');
     });
 });
 
