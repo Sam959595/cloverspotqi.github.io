@@ -29,6 +29,10 @@ document.addEventListener('DOMContentLoaded', function() {
             'opacity':'1'
         });
     });
+
+    $('.search input').click(function() {
+        $('.search button')[0].classList.add('hide')
+    });
 });
 
 globalThis == this //для различных редакторов, сгруппировать глобальное обращение

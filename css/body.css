@@ -157,12 +157,23 @@ aside .search > button {
 	font: normal 400 17px "line-text";
 	letter-spacing: -.022em;
 
-	margin-left: .6em;
+	padding: 7px 0;
+
+	width: 0;
+	margin-left: 0;
+	opacity: 0;
 
 	background: none;
 	color: var(--link-footer);
 
+	transition: all .5s ease 0s;
+
 	-webkit-tap-highlight-color: transparent
+}
+.hide {
+	opacity: 1 !important;
+	width: 79px !important;
+	margin-left: .6em !important
 }
 
 aside section h4 {
