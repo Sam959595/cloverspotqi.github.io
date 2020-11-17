@@ -13,10 +13,7 @@
         --fillet: white;
 
         --table: #333;
-        --table-description: #666;
         --table-line: #e6e6e6;
-
-        --setup: #00000012;
 
         /* - */
 
@@ -26,7 +23,7 @@
         --description: #86868b;
 
         --link: #515154;
-        --link-footer: #007aff;
+        --link-footer: #06c;
     }
 }
 
@@ -45,10 +42,7 @@
         --fillet: black;
 
         --table: #d5d5e2;
-        --table-description: #8e8e93;
         --table-line: #1d1c1f;
-
-        --setup: #1c1c1e;
 
         /* - */
 
