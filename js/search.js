@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    $('.search button').click(function() {
+    $('.search > button').click(function() {
         $('body').css({
             'overflow':'auto',
             'height':'auto'
@@ -28,11 +28,18 @@ document.addEventListener('DOMContentLoaded', function() {
         $('.includes').css({
             'opacity':'1'
         });
-        $('.search button')[0].classList.remove('hide');
+        $('.search > button')[0].classList.remove('hide');
     });
 
-    $('.search input').click(function() {
-        $('.search button')[0].classList.add('hide');
+    $('form input').click(function() {
+        $('.search > button')[0].classList.add('hide');
+    });
+
+    $('form input').on('input', function() {
+        $('form button')[0].classList.add('remove');
+    });
+    $('form button').click('input', function() {
+        $('form button')[0].classList.remove('remove');
     });
 });
 

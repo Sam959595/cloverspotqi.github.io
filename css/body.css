@@ -97,9 +97,7 @@ aside {
 
 aside .search {
 	display: flex;
-	padding-top: 16px;
-
-	overflow-x: visible;
+	padding-top: 16px
 }
 
 aside div {
@@ -126,29 +124,37 @@ aside input:focus {
 	color: var(--search-focus)
 }
 
-aside .search div div::before {
-	padding: 4px 0 0 7px;
-
+aside form button {
 	position: absolute;
 
-	font-size: 20px;
+	opacity: 0;
 
-	content: "\ea1d"
+	pointer-events: none;
+
+	transition: opacity .3s ease 0s
 }
-aside .search div button::before {
-	display: block;
+aside form button::before {
 	right: 0;
 
-	padding: 5px 8px 0 0;
-
 	position: absolute;
+
+	margin: 5.5px 10px;
 
 	font-size: 17px;
 
-	content: "\f314"
+	content: "\f314";
+
+	color: var(--search-inner)
+}
+.remove {
+	opacity: 1;
+
+	pointer-events: auto
 }
 
 aside .search > button {
+	z-index: 1;
+
 	font: normal 400 17px "line-text";
 	letter-spacing: -.022em;
 
