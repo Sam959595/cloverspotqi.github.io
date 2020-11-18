@@ -166,7 +166,7 @@ aside .search > button {
 	background: none;
 	color: var(--link-footer);
 
-	transition: all .5s ease
+	transition: .5s ease
 }
 .hide {
 	opacity: 1 !important;
