@@ -131,14 +131,16 @@ aside form button {
 
 	pointer-events: none;
 
-	transition: opacity .3s ease 0s
+	transition: opacity .3s ease 0s;
+
+	-webkit-tap-highlight-color: transparent
 }
 aside form button::before {
 	right: 0;
 
 	position: absolute;
 
-	margin: 5.5px 10px;
+	margin: 5.7px 10px;
 
 	font-size: 17px;
 
