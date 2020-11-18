@@ -174,7 +174,9 @@ aside .search > button {
 	margin-left: .6em !important
 }
 
-aside section h4 {
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+aside main h4 {
 	font: normal 600 21px/1.2 "line";
 	letter-spacing: .011em;
 
@@ -183,21 +185,26 @@ aside section h4 {
 	color: var(--text)
 }
 
-aside section ul li {
+aside main ul li {
 	padding: 10px 0
 }
-aside section ul li a {
+aside main ul li a {
 	display: block;
 	font: normal 400 17px "line-text";
 	letter-spacing: -.022em;
 
 	color: var(--search-line)
 }
-aside section ul li+li {
+aside main ul li+li {
 	border-top: 1px solid var(--search-border)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
+
+.search, main {
+	margin: 0 auto;
+	width: 35%
+}
 
 nav div, section {
 	margin: 0 auto;

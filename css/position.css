@@ -1,4 +1,8 @@
 @media screen and (max-width: 1024px) {
+    .search, main {
+        width: 450px
+    }
+
     nav {
         padding: 0 22px
     }
@@ -14,11 +18,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    .search {
-        margin: 0 auto;
-        width: 65%
-    }
-
     .includes a {
         position: relative
     }
@@ -44,8 +43,8 @@
     }
 }
 @media screen and (max-width: 768px) {
-    .search {
-        padding: 0 2em
+    .search, main {
+        width: 366px
     }
 
     nav {
@@ -67,8 +66,8 @@
 }
 
 @media screen and (max-width: 414px) {
-    .search {
-        padding: 0 16px
+    .search, main {
+        width: 87.5%
     }
 
     section {
