@@ -82,6 +82,10 @@ hr {
 	overflow: hidden
 }
 
+aside form button, aside .search > button, nav span {
+	-webkit-tap-highlight-color: transparent
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 aside {
@@ -97,11 +101,12 @@ aside {
 
 aside .search {
 	display: flex;
-	padding-top: 16px
+	padding-top: 16px;
+
+	overflow: visible;
 }
 
 aside div {
-	position: relative;
 	width: 100%
 }
 aside input {
@@ -131,16 +136,14 @@ aside form button {
 
 	pointer-events: none;
 
-	transition: opacity .3s ease 0s;
-
-	-webkit-tap-highlight-color: transparent
+	transition: opacity .3s ease 0s
 }
 aside form button::before {
 	right: 0;
 
 	position: absolute;
 
-	padding: 6px 10px;
+	padding: 6px 8px;
 
 	font-size: 17px;
 
@@ -165,9 +168,7 @@ aside .search > button {
 	background: none;
 	color: var(--link-footer);
 
-	transition: all .5s ease 0s;
-
-	-webkit-tap-highlight-color: transparent
+	transition: all .5s ease 0s
 }
 .hide {
 	opacity: 1 !important;
@@ -242,9 +243,7 @@ nav span::before {
 
 	color: var(--link-footer);
 
-	cursor: pointer;
-
-	-webkit-tap-highlight-color: transparent
+	cursor: pointer
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
