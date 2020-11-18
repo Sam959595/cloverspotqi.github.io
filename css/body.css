@@ -140,7 +140,7 @@ aside form button::before {
 
 	position: absolute;
 
-	margin: 5.7px 10px;
+	padding: 6px 10px;
 
 	font-size: 17px;
 
@@ -155,8 +155,6 @@ aside form button::before {
 }
 
 aside .search > button {
-	z-index: 1;
-
 	font: normal 400 17px "line-text";
 	letter-spacing: -.022em;
 
