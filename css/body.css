@@ -101,9 +101,7 @@ aside {
 
 aside .search {
 	display: flex;
-	padding-top: 16px;
-
-	overflow: visible;
+	padding-top: 16px
 }
 
 aside div {
@@ -158,6 +156,9 @@ aside form button::before {
 }
 
 aside .search > button {
+	display: block;
+	overflow: visible;
+
 	font: normal 400 17px "line-text";
 	letter-spacing: -.022em;
 
