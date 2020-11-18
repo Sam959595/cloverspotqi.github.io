@@ -67,7 +67,7 @@
 
 @media screen and (max-width: 414px) {
     .search, main {
-        width: 87.5%
+        padding: 0 15px;
     }
 
     section {
