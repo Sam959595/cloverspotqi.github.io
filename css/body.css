@@ -134,7 +134,7 @@ aside form button {
 
 	pointer-events: none;
 
-	transition: opacity .3s ease 0s
+	transition: opacity .3s ease
 }
 aside form button::before {
 	right: 0;
@@ -163,10 +163,12 @@ aside .search > button {
 	margin-left: 0;
 	opacity: 0;
 
+	overflow: visible;
+
 	background: none;
 	color: var(--link-footer);
 
-	transition: all 3s ease 0s
+	transition: all 3s ease
 }
 .hide {
 	opacity: 1 !important;
