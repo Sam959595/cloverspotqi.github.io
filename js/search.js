@@ -31,9 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         $('.search > button')[0].classList.remove('hide');
     });
 
-    $('form input').click(function() {
-        $('.search > button')[0].classList.add('hide');
-    });
+    
 
     $('form input').on('input', function() {
         $('form button')[0].classList.add('remove');
