@@ -138,7 +138,9 @@ nav div, picture img, footer > * {
 	font: inherit;
 
 	background: none;
-	color: var(--link-footer)
+	color: var(--link-footer);
+
+	-webkit-tap-highlight-color: transparent
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */

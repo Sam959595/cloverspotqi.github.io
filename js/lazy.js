@@ -1,7 +1,7 @@
-window.onload = function() {
-    let i = $('nav, section, footer');
+var i = $('nav, section, footer');
 
+$(document).ready(function() {
     i.css({
-        opacity: '1'
+        opacity: '0'
     });
-};
+})
