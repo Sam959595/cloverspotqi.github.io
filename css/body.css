@@ -253,6 +253,8 @@ nav span::before {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .includes h4 {
+	margin-bottom: 16px;
+
 	font: normal 700 24px/1.16667 "line";
 	letter-spacing: .009em;
 
@@ -263,12 +265,6 @@ nav span::before {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 36px
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-.includes hr {
-	margin: .6em 0 2em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
