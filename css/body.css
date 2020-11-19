@@ -101,7 +101,7 @@ aside {
 
 aside .search {
 	display: flex;
-	padding-top: 16px
+	margin-top: 5em
 }
 
 aside div {
@@ -145,7 +145,7 @@ aside form button::before {
 
 	font-size: 15px;
 
-	content: "\f314";
+	content: "d";
 
 	color: var(--search-inner)
 }

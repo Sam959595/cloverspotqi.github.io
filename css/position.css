@@ -43,6 +43,10 @@
     }
 }
 @media screen and (max-width: 768px) {
+    aside .search {
+        margin-top: 3em
+    }
+
     .search, main, section {
         width: 366px
     }
@@ -62,6 +66,10 @@
 }
 
 @media screen and (max-width: 414px) {
+    aside .search {
+        margin-top: 16px
+    }
+
     .search, main, section {
         width: 87.5%
     }
