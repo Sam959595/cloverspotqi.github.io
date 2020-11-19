@@ -67,7 +67,7 @@ em {
 
 hr {
 	border: none;
-	border-top: 1px solid var(--table-line)
+	border-top: 1px solid #ddd
 }
 
 .includes p {
@@ -253,8 +253,6 @@ nav span::before {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .includes h4 {
-	padding-bottom: .8em;
-
 	font: normal 600 40px/1.1 "line";
 	letter-spacing: normal;
 
@@ -265,6 +263,12 @@ nav span::before {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 36px
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+.includes hr {
+	margin: .6em 0 2em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -283,6 +287,8 @@ nav span::before {
 }
 
 .includes a div:last-child {
+	text-align: center;
+
 	border-radius: 0 0 10px 10px;
 	background-color: var(--fillet)
 }
