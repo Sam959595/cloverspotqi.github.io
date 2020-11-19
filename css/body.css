@@ -185,13 +185,12 @@ aside main h4 {
 	color: var(--text)
 }
 
-aside main ul li {
-	padding: 10px 0
-}
 aside main ul li a {
 	display: block;
 	font: normal 400 17px "line-text";
 	letter-spacing: -.022em;
+
+	padding: 10px 0;
 
 	color: var(--search-line)
 }
@@ -254,7 +253,7 @@ nav span::before {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .includes h4 {
-	padding-bottom: 30px;
+	padding-bottom: .8em;
 
 	font: normal 600 40px/1.1 "line";
 	letter-spacing: normal;
