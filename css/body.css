@@ -70,7 +70,7 @@ hr {
 	border-top: 1px solid var(--table-line)
 }
 
-.includes h4, .includes p {
+.includes p {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden
@@ -254,10 +254,10 @@ nav span::before {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .includes h4 {
-	padding-bottom: 16px;
+	padding-bottom: 30px;
 
-	font: normal 700 24px/1.16667 "line";
-	letter-spacing: .009em;
+	font: normal 600 40px/1.1 "line";
+	letter-spacing: normal;
 
 	color: var(--text)
 }
