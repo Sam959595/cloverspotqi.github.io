@@ -297,7 +297,7 @@ nav span::before {
 	color: var(--description)
 }
 .includes div:last-child h5 {
-	font: normal 700 19px/1.21053 "line";
+	font: normal 600 19px/1.21053 "line";
 	letter-spacing: .012em;
 
 	color: var(--text)
