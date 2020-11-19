@@ -67,10 +67,10 @@ em {
 
 hr {
 	border: none;
-	border-top: 1px solid #ddd
+	border-top: 1px solid var(--search-border)
 }
 
-.includes p {
+.includes h4, .includes p {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden
@@ -253,8 +253,8 @@ nav span::before {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .includes h4 {
-	font: normal 600 40px/1.1 "line";
-	letter-spacing: normal;
+	font: normal 700 24px/1.16667 "line";
+	letter-spacing: .009em;
 
 	color: var(--text)
 }
@@ -287,8 +287,6 @@ nav span::before {
 }
 
 .includes a div:last-child {
-	text-align: center;
-
 	border-radius: 0 0 10px 10px;
 	background-color: var(--fillet)
 }
