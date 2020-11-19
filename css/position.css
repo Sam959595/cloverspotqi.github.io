@@ -43,7 +43,7 @@
     }
 }
 @media screen and (max-width: 768px) {
-    .search, main {
+    .search, main, section {
         width: 366px
     }
 
@@ -56,21 +56,13 @@
         letter-spacing: .012em
     }
 
-    section {
-        width: 366px
-    }
-
     .includes ul {
         grid-template-columns: 1fr
     }
 }
 
 @media screen and (max-width: 414px) {
-    .search, main {
-        padding: 0 15px;
-    }
-
-    section {
+    .search, main, section {
         width: 87.5%
     }
 }
