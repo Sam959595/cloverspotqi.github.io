@@ -163,6 +163,7 @@ aside .search > button {
 	margin-left: 0;
 	opacity: 0;
 
+	overflow-x: visible;
 	background: #5465;
 	color: var(--link-footer);
 
