@@ -167,7 +167,9 @@ aside .search > button {
 	
 	color: var(--link-footer);
 
-	transition: margin-left .5s ease, width .5s ease, opacity .5s ease .3s
+	-webkit-backface-visibility: visible;
+
+	-webkit-transition: margin-left .5s ease, width .5s ease, opacity .5s ease
 }
 .hide {
 	opacity: 1 !important;
