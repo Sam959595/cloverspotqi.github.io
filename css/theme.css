@@ -28,7 +28,7 @@
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
-        --search: #1c1c1e;
+        --search: #2a2a2d;
         --search-line: #75757a;
         --search-border: #1c1c1e;
         
