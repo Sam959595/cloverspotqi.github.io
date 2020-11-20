@@ -164,7 +164,9 @@ aside .search > button {
 	opacity: 0;
 
 	overflow: visible;
-	background: #5465;
+	backface-visibility: visible;
+	background: #d1a4ff;
+	
 	color: var(--link-footer);
 
 	transition: .5s ease
