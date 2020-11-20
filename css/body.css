@@ -155,6 +155,10 @@ aside form button::before {
 	pointer-events: auto
 }
 
+aside .search > button * {
+	overflow: visible;
+	backface-visibility: visible;
+}
 aside .search > button {
 	font: normal 400 17px "line-text";
 	letter-spacing: -.022em;
@@ -163,6 +167,7 @@ aside .search > button {
 	margin-left: 0;
 	opacity: 0;
 
+	display: inline;
 	overflow: visible;
 	backface-visibility: visible;
 	background: #d1a4ff;
