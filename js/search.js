@@ -34,13 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
     $('form input').click(function() {
         $('.search > button')[0].classList.add('hide');
     });
-
-    $('form input').on('input', function() {
-        $('form button')[0].classList.add('remove');
-    });
-    $('form button').click('input', function() {
-        $('form button')[0].classList.remove('remove');
-    });
 });
 
 globalThis == this //для различных редакторов, сгруппировать глобальное обращение

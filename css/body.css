@@ -150,7 +150,7 @@ aside .search > button {
 	
 	color: var(--link-footer);
 
-	-webkit-transition: margin-left .5s ease, width .5s ease, opacity .5s ease .3s
+	-webkit-transition: .5s ease
 }
 .hide {
 	width: 79px !important;
