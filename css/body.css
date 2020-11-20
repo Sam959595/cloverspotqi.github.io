@@ -156,6 +156,7 @@ aside form button::before {
 }
 
 aside .search > button * {
+	display: block;
 	overflow: visible;
 	backface-visibility: visible;
 }
