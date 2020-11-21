@@ -42,6 +42,7 @@
         transition: all 0.3s linear 0s
     }
 }
+
 @media screen and (max-width: 768px) {
     aside .search {
         margin-top: 3em

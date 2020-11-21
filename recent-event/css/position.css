@@ -11,6 +11,7 @@
         padding-top: 2.5cm
     }
 }
+
 @media screen and (min-width: 1024px) {
     .content h1 {
         padding-top: 4cm
@@ -63,6 +64,7 @@
         padding: 0 0 4em 16px
     }
 }
+
 @media screen and (min-width: 768px) {
     .search {
         margin: 0 auto;

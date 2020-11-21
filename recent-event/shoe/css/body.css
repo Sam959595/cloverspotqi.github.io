@@ -1,0 +1,132 @@
+*, html, body, button {
+	margin: 0;
+	padding: 0
+}
+*, html, body {
+	vertical-align: top;
+	box-sizing: border-box
+}
+*, body, img, svg, a, h1, h2, h3, h4, h5, h6, p {
+	user-select: none
+}
+img, svg, h1, h2, h3, h4, h5, h6, p {
+	cursor: default
+}
+img, svg, h1, h2, h3, h4, h5, h6, p {
+	pointer-events: none
+}
+a {
+	text-decoration: none
+}
+button {
+	cursor: pointer
+}
+input, button {
+	border: none;
+	outline: none
+}
+ul, ol {
+	list-style: none
+}
+a, sup, strong, small, q, em {
+	font: inherit
+}
+
+::-webkit-scrollbar {
+	display: none
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+sup {
+	font-size: 11px
+}
+strong {
+	font-weight: 600
+}
+em {
+	font-style: italic
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+:lang(ru-RU) {
+	quotes: "\00ab" "\00bb"
+}
+:lang(en-US) {
+	quotes: "\201c" "\201d"
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+.separation > a {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+main div {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden
+}
+
+hr {
+	border: none;
+	border-top: 1px solid var(--table-line)
+}
+
+body {
+	background-color: var(--body)
+}
+
+*, h1, h2, h3, h4, h5, h6, p {
+	font: normal 400 12px/1.33337 "line-text", "line", "icon";
+	letter-spacing: -.01em;
+
+	-webkit-font-smoothing: antialiased
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--text-title)
+}
+nav, article, section {
+	color: var(--text)
+}
+article a, section a, table a, dl a {
+	color: var(--link-footer)
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+nav {
+	position: fixed;
+	z-index: 9;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+	height: 1.35cm;
+
+	padding: 0 22px;
+
+	backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
+	background-color: var(--transparency-dark-1, --red-3)
+}
+nav ul {
+	display: inherit
+}
+nav li:first-child {
+	opacity: .56
+}
+nav li+li {
+	margin-left: 24px;
+	opacity: .92
+}
+nav h4 {
+	font: normal 600 21px "line";
+	letter-spacing: .011em;
+	color: var(--text)
+}

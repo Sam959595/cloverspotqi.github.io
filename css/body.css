@@ -125,20 +125,22 @@ aside input {
 aside input::-webkit-input-placeholder {
 	color: var(--search-inner)
 }
-aside input:focus, aside input[placeholder] {
+aside input[placeholder] {
 	color: var(--search-focus)
 }
 
 aside input::-webkit-search-cancel-button {
 	-webkit-appearance: inherit;
 
-	cursor: pointer;
-
     width: 18px;
-	height: 18px
+	height: 18px;
+
+	cursor: pointer
 }
 
 aside .search > button {
+	-webkit-appearance: none;
+
 	font: normal 400 17px "line-text";
 	letter-spacing: -.022em;
 
