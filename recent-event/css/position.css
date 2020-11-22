@@ -44,17 +44,17 @@
         height: 48px
     }
     nav a {
-        font: normal 600 19px "line";
+        font: normal 600 19px "bold";
         letter-spacing: .012em
     }
 
     .additionally h3 {
-        font: normal 400 19px/1.21053 "line";
+        font: normal 400 19px/1.21053 "bold";
         letter-spacing: .012em
     }
 
     .content h1 {
-        font: normal 600 32px/1.125 "line";
+        font: normal 600 32px/1.125 "bold";
         letter-spacing: .004em;
 
         padding-top: 2.7cm

@@ -1,149 +1,34 @@
+@media screen and (prefers-color-scheme: no-preference) {
+    :root {
+    }
+}
+
 @media screen and (prefers-color-scheme: light) {
     :root {
-        --transparency-light-1: #fff;
-        --transparency-light-2: #fff;
+        --body: #fff;
 
-        --transparency-dark-1: #1d1d1fb8;
-        --transparency-dark-2: #000;
+        --nav: #ffffffb8;
 
-        --light-0: #fff;
-        --light-1: #f5f5f7;
-        --light-2: #f2f2f7;
-        --light-3: #f2f2f2;
-        --light-4: #fafafa;
-        --light-5: #fbfbfd;
-        --light-6: #eeeeef;
-        --light-7: #d2d2d7;
-        --light-8: #d5d5e2;
-        --light-9: #e6e6e6;
-        --light-10: #e3e3e8;
-        --light-11: #e2e2e2;
-        --light-12: #e8e8ed;
+        --bold: #111;
+        --small: #1d1d1f;
 
-        --dark-0: #000;
-        --dark-1: #111;
-        --dark-2: #333;
-        --dark-3: #666;
-        --dark-4: #888;
-        --dark-5: #1d1d1c;
-        --dark-6: #1d1d1f;
-        --dark-7: #1c1c1e;
-        --dark-8: #86868b;
-        --dark-9: #141414;
-        --dark-10: #2c2c2e;
-        --dark-11: #9e9ea5;
-        --dark-12: #8e8e93;
-        --dark-13: #ceced2;
-        --dark-14: #515154;
-        --dark-15: #323234;
-        --dark-16: #75757a;
-        --dark-17: #a1a1a6;
-        --dark-18: #151516;
-        --dark-19: #8e8e8d;
-        --dark-20: #84848b;
-        --dark-21: #1d1c1f;
-        --dark-22: #121217;
-        --dark-23: #aaaab3;
-        --dark-24: #17171d;
-        --dark-25: #63636e;
-        --dark-26: #8d8d93;
-        --dark-27: #6e6e73;
-        --dark-28: #6e6e77;
+        --blockquote: #e8e8ed;
 
-        --red-1: #fb5c74;
-        --red-2: #fa233b;
-        --red-3: #fe2d55;
-        --red-4: #ff2d55;
-        --red-5: #ff2c55;
-        --red-6: #fa3454;
-
-        --blue-1: #0a84fe;
-        --blue-2: #007aff;
-        --blue-3: #06c;
-        --blue-4: #2997ff;
-        --blue-5: #0071e3;
-
-        --green-1: #30d158;
-        --green-2: #1fd660;
-
-        --yellow-1: #fad000;
-
-        --orange-1: #f56300;
-        --orange-2: #bf4800;
+        --link: #06c;
     }
 }
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
-        --transparency-light-1: #fff;
-        --transparency-light-2: #fff;
+        --body: #000;
 
-        --transparency-dark-1: #1d1d1fb8;
-        --transparency-dark-2: #000;
+        --nav: #1d1d1fb8;
 
-        --light-0: #fff;
-        --light-1: #f5f5f7;
-        --light-2: #f2f2f7;
-        --light-3: #f2f2f2;
-        --light-4: #fafafa;
-        --light-5: #fbfbfd;
-        --light-6: #eeeeef;
-        --light-7: #d2d2d7;
-        --light-8: #d5d5e2;
-        --light-9: #e6e6e6;
-        --light-10: #e3e3e8;
-        --light-11: #e2e2e2;
-        --light-12: #e8e8ed;
+        --bold: #d5d5e2;
+        --small: #f5f5f7;
 
-        --dark-0: #000;
-        --dark-1: #111;
-        --dark-2: #333;
-        --dark-3: #666;
-        --dark-4: #888;
-        --dark-5: #1d1d1c;
-        --dark-6: #1d1d1f;
-        --dark-7: #1c1c1e;
-        --dark-8: #86868b;
-        --dark-9: #141414;
-        --dark-10: #2c2c2e;
-        --dark-11: #9e9ea5;
-        --dark-12: #8e8e93;
-        --dark-13: #ceced2;
-        --dark-14: #515154;
-        --dark-15: #323234;
-        --dark-16: #75757a;
-        --dark-17: #a1a1a6;
-        --dark-18: #151516;
-        --dark-19: #8e8e8d;
-        --dark-20: #84848b;
-        --dark-21: #1d1c1f;
-        --dark-22: #121217;
-        --dark-23: #aaaab3;
-        --dark-24: #17171d;
-        --dark-25: #63636e;
-        --dark-26: #8d8d93;
-        --dark-27: #6e6e73;
-        --dark-28: #6e6e77;
+        --blockquote: #151516;
 
-        --red-1: #fb5c74;
-        --red-2: #fa233b;
-        --red-3: #fe2d55;
-        --red-4: #ff2d55;
-        --red-5: #ff2c55;
-        --red-6: #fa3454;
-
-        --blue-1: #0a84fe;
-        --blue-2: #007aff;
-        --blue-3: #06c;
-        --blue-4: #2997ff;
-        --blue-5: #0071e3;
-
-        --green-1: #30d158;
-        --green-2: #1fd660;
-
-        --yellow-1: #fad000;
-
-        --orange-1: #f56300;
-        --orange-2: #bf4800;
+        --link: #007aff;
     }
 }

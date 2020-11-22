@@ -69,7 +69,7 @@ main div {
 }
 
 *, h1, h2, h3, h4, h5, h6, p {
-	font: normal 400 12px/1.33337 "line-text", "line", "icon";
+	font: normal 400 12px/1.33337 "small", "bold", "icon";
 	letter-spacing: -.01em;
 
 	-webkit-font-smoothing: antialiased
@@ -163,7 +163,7 @@ nav div {
 	justify-content: space-between
 }
 nav a {
-	font: normal 600 21px "line";
+	font: normal 600 21px "bold";
 	letter-spacing: .011em;
 
 	color: var(--conclusion-dark)
@@ -187,7 +187,7 @@ nav span::before {
 	padding: 1em 0
 }
 .additionally h3 {
-	font: normal 400 24px/1.33341 "line";
+	font: normal 400 24px/1.33341 "bold";
 	letter-spacing: .009em;
 
 	color: var(--separation)
@@ -202,42 +202,42 @@ picture, picture img {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .content h1 {
-	font: normal 600 48px/1.08349 "line";
+	font: normal 600 48px/1.08349 "bold";
 	letter-spacing: -.003em
 }
 .content h2 {
-	font: normal 600 28px/1.14286 "line";
+	font: normal 600 28px/1.14286 "bold";
 	letter-spacing: .007em;
 
 	padding: 4cm 0 20px
 }
 .content h3 {
-	font: normal 600 24px/1.16667 "line";
+	font: normal 600 24px/1.16667 "bold";
 	letter-spacing: .009em;
 
 	padding: 3em 0 20px
 }
 .content h4 {
-	font: normal 600 21px/1.19048 "line";
+	font: normal 600 21px/1.19048 "bold";
 	letter-spacing: .011em;
 
 	padding: 20px 0 5px
 }
 .content h5 {
-	font: normal 700 20px/1.2 "line";
+	font: normal 700 20px/1.2 "bold";
 	letter-spacing: .024em;
 
 	padding: 19px 0 17px
 }
 .content h6 {
-	font: normal 600 19px/1.21053 "line";
+	font: normal 600 19px/1.21053 "bold";
 	letter-spacing: .012em;
 
 	padding: 1em 0 19px
 }
 
 .content li {
-	font: normal 400 17px/1.47059 "line-text";
+	font: normal 400 17px/1.47059 "small";
 	letter-spacing: -.022em
 }
 .content ol {
@@ -270,13 +270,13 @@ picture, picture img {
 	background-color: var(--footer)
 }
 .setup div {
-	font: normal 600 16px "line-text"
+	font: normal 600 16px "small"
 }
 
 .setup li {
 	margin-top: .5em;
 
-	font: normal 400 11px/1.36364 "line-text";
+	font: normal 400 11px/1.36364 "small";
 	letter-spacing: -.008em;
 
 	text-align: center;
@@ -305,7 +305,7 @@ blockquote {
 	background-color: var(--footer)
 }
 blockquote p {
-	font: normal 400 14px/1.4 "line-text", "icon";
+	font: normal 400 14px/1.4 "small", "icon";
 	letter-spacing: -.022em;
 
 	text-align: center;
@@ -347,7 +347,7 @@ figcaption div:last-child {
 	margin-left: 1em
 }
 figcaption h4, figcaption a {
-	font: normal 600 14px/1.42859 "line-text", "icon"
+	font: normal 600 14px/1.42859 "small", "icon"
 }
 figcaption p {
 	padding-bottom: .8em;
@@ -372,7 +372,7 @@ table {
 table * {
 	width: 50%;
 
-	font: normal 400 14px/1.2 "line-text";
+	font: normal 400 14px/1.2 "small";
 	letter-spacing: -.022em
 }
 table th {
@@ -410,7 +410,7 @@ dl div > * {
 	display: table-cell;
 	vertical-align: baseline;
 
-	font: normal 400 13px/1.38462 "line-text";
+	font: normal 400 13px/1.38462 "small";
 	letter-spacing: -.005em
 }
 
@@ -460,12 +460,14 @@ main a {
 	color: var(--link)
 }
 main div {
-	font: normal 600 14px/1.3 "line-text"
+	font: normal 600 14px/1.3 "small"
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 footer {
+	overflow: hidden;
+	
 	margin-top: 2cm;
 	background-color: var(--footer)
 }

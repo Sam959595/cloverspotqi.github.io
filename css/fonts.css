@@ -1,63 +1,63 @@
 @font-face {
-	font-family: "line";
+	font-family: "bold";
 	font-style: normal;
 	font-weight: 300;
-	src: url("fonts/line/light.woff2") format("woff2")
+	src: url("fonts/bold/light.woff2") format("woff2")
 }
 @font-face {
-	font-family: "line";
+	font-family: "bold";
 	font-style: normal;
 	font-weight: 400;
-	src: url("fonts/line/regular.woff2") format("woff2")
+	src: url("fonts/bold/regular.woff2") format("woff2")
 }
 @font-face {
-	font-family: "line";
+	font-family: "bold";
 	font-style: normal;
 	font-weight: 500;
-	src: url("fonts/line/medium.woff2") format("woff2")
+	src: url("fonts/bold/medium.woff2") format("woff2")
 }
 @font-face {
-	font-family: "line";
+	font-family: "bold";
 	font-style: normal;
 	font-weight: 600;
-	src: url("fonts/line/semibold.woff2") format("woff2")
+	src: url("fonts/bold/semibold.woff2") format("woff2")
 }
 @font-face {
-	font-family: "line";
+	font-family: "bold";
 	font-style: normal;
 	font-weight: 700;
-	src: url("fonts/line/bold.woff2") format("woff2")
+	src: url("fonts/bold/bold.woff2") format("woff2")
 }
 
 @font-face {
-	font-family: "line-text";
+	font-family: "small";
 	font-style: normal;
 	font-weight: 300;
-	src: url("fonts/line-text/light.woff2") format("woff2")
+	src: url("fonts/small/light.woff2") format("woff2")
 }
 @font-face {
-	font-family: "line-text";
+	font-family: "small";
 	font-style: normal;
 	font-weight: 400;
-	src: url("fonts/line-text/regular.woff2") format("woff2")
+	src: url("fonts/small/regular.woff2") format("woff2")
 }
 @font-face {
-	font-family: "line-text";
+	font-family: "small";
 	font-style: normal;
 	font-weight: 500;
-	src: url("fonts/line-text/medium.woff2") format("woff2")
+	src: url("fonts/small/medium.woff2") format("woff2")
 }
 @font-face {
-	font-family: "line-text";
+	font-family: "small";
 	font-style: normal;
 	font-weight: 600;
-	src: url("fonts/line-text/semibold.woff2") format("woff2")
+	src: url("fonts/small/semibold.woff2") format("woff2")
 }
 @font-face {
-	font-family: "line-text";
+	font-family: "small";
 	font-style: normal;
 	font-weight: 700;
-	src: url("fonts/line-text/bold.woff2") format("woff2")
+	src: url("fonts/small/bold.woff2") format("woff2")
 }
 
 @font-face {
