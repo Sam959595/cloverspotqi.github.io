@@ -26,11 +26,8 @@ blockquote p {
 }
 
 @media screen and (max-width: 980px) {
-    nav div {
+    nav div, picture img {
         width: 100%
-    }
-    picture img {
-        width: 78.5%
     }
     blockquote p {
         padding: 9px 3em;
@@ -61,5 +58,9 @@ blockquote p {
     .catalogue > p {
         font: normal 600 32px/1.125 "bold";
         letter-spacing: .004em
+    }
+    .catalogue > a {
+        font: normal 400 17px/1.47059 "bold";
+        letter-spacing: -.022em
     }
 }
