@@ -183,10 +183,10 @@ picture img {
 	letter-spacing: .004em
 }
 .catalogue > p {
-	font: normal 600 48px/1.08349 "bold";
+	font: normal 600 28/1.08349 "bold";
 	letter-spacing: -.003em;
 
-	padding: 0 2em;
+	padding: 0 1em;
 
 	margin-bottom: 2em
 }
