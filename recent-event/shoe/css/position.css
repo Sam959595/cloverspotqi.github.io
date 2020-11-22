@@ -51,4 +51,12 @@ blockquote p {
     nav {
         padding: 0 16px
     }
+    .catalogue > h1 {
+        font: normal 600 21px/1.19048 "bold";
+        letter-spacing: .011em
+    }
+    .catalogue > p {
+        font: normal 600 28px/1.14286 "bold";
+        letter-spacing: .007em
+    }
 }

@@ -100,9 +100,10 @@ nav {
 }
 nav div {
 	height: 100%;
+
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
+	align-items: center
 }
 
 nav h4 {
@@ -184,6 +185,8 @@ picture img {
 .catalogue > p {
 	font: normal 600 48px/1.08349 "bold";
 	letter-spacing: -.003em;
+
+	padding: 0 2em;
 
 	margin-bottom: 2em
 }
