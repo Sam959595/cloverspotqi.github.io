@@ -26,8 +26,11 @@ blockquote p {
 }
 
 @media screen and (max-width: 980px) {
-    nav div, picture img {
+    nav div {
         width: 100%
+    }
+    picture img {
+        width: 78.5%
     }
     blockquote p {
         padding: 9px 3em;

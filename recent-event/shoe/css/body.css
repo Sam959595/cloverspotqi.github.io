@@ -157,6 +157,7 @@ blockquote *:not(q):not(small) {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 picture img {
+	padding-top: 1cm;
 	display: block
 }
 
