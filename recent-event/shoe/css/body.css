@@ -163,6 +163,7 @@ picture img {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .catalogue {
+	margin-top: 59px;
 	text-align: center
 }
 
@@ -186,7 +187,5 @@ picture img {
 	font: normal 600 28/1.08349 "bold";
 	letter-spacing: -.003em;
 
-	padding: 0 1em;
-
-	margin-bottom: 2em
+	padding: 5px 0 25px
 }
