@@ -13,6 +13,13 @@ blockquote p {
     nav {
         padding: 0 22px
     }
+    section {
+        width: 786px
+    }
+    .catalogue ul {
+        grid-template-columns: repeat(2, 50%);
+        gap: 16px 0
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -29,7 +36,11 @@ blockquote p {
 
 @media screen and (max-width: 768px) {
     section {
-        width: 576px
+        width: 100%
+    }
+    .catalogue ul {
+        grid-template-columns: 1fr;
+        gap: 0
     }
 }
 
