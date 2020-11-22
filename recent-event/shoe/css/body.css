@@ -132,7 +132,7 @@ blockquote p {
 
 	background-color: var(--link);
 
-	transform: translateY(-6em);
+	transform: translateY(-100%);
 }
 blockquote *:not(q):not(small) {
 	color: #f5f5f7
