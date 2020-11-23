@@ -37,7 +37,7 @@ hr {
 	border-top: 1px solid var(--table-line)
 }
 sup {
-	font-size: 10px
+	font-size: 9px
 }
 strong {
 	font-weight: 600
@@ -189,8 +189,9 @@ picture img {
 }
 .catalogue > a {
 	font: normal 400 21px/1.381 "bold";
-	letter-spacing: .011em
+	letter-spacing: -.022em
 }
+
 .catalogue li *:not(sup) {
 	font: normal 400 14px/1.42859 "bold";
 	letter-spacing: .011em
