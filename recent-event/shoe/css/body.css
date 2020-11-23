@@ -193,10 +193,18 @@ picture img {
 }
 
 .catalogue li *:not(sup) {
-	font: normal 400 14px/1.42859 "bold";
-	letter-spacing: .011em
+	font: normal 400 14px/1.42859 "small";
+	letter-spacing: -.016em
 }
 .catalogue li h3 {
-	font: normal 600 17px/1.47059 "bold";
-	letter-spacing: .011em
+	font: normal 600 17px/1.47059 "small";
+	letter-spacing: -.008em;
+
+	margin: 5px 0 10px
+}
+.catalogue li p:first-child {
+	color: #fe2d55
+}
+.catalogue li p:last-child {
+	color: #888
 }
