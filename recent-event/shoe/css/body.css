@@ -206,5 +206,6 @@ picture img {
 	color: #fa233b
 }
 .catalogue li p:last-child {
+	padding-top: 2em;
 	color: #888
 }
