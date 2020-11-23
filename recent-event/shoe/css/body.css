@@ -194,3 +194,11 @@ picture img {
 	font: normal 400 21px/1.381 "bold";
 	letter-spacing: .011em
 }
+.catalogue li * {
+	font: normal 400 14px/1.42859 "bold";
+	letter-spacing: -.016em
+}
+.catalogue li h3 {
+	font: normal 600 17px/1.47059 "bold";
+	letter-spacing: -.008em
+}

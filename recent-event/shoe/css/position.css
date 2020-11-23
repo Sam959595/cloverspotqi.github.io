@@ -14,11 +14,11 @@ blockquote p {
         padding: 0 22px
     }
     section {
-        width: 786px
+        width: 980px
     }
     .catalogue ul {
-        grid-template-columns: repeat(2, 50%);
-        gap: 16px 0
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px
     }
 }
 
@@ -32,15 +32,15 @@ blockquote p {
     blockquote p {
         padding: 9px 3em;
     }
-}
-
-@media screen and (max-width: 768px) {
     section {
         width: 100%
     }
+}
+
+@media screen and (max-width: 768px) {
     .catalogue ul {
         grid-template-columns: 1fr;
-        gap: 0
+        gap: 30px
     }
 }
 
