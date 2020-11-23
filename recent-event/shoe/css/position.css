@@ -63,7 +63,7 @@ blockquote p {
         letter-spacing: .004em
     }
     .catalogue > a {
-        font: normal 400 17px/1.47059 "bold";
-        letter-spacing: .012em
+        font: normal 400 17px/1.47059 "small";
+        letter-spacing: -.022em
     }
 }
