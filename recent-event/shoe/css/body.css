@@ -212,3 +212,30 @@ picture img {
 	margin-top: .8em;
 	color: #888
 }
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+.division ul {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	column-gap: 2em;
+
+	overflow: scroll hidden;
+	scroll-snap-type: x mandatory
+}
+.division li {
+	width: 8cm;
+	height: 12cm;
+
+	border-radius: 20px;
+
+	scroll-snap-align: center;
+
+	background-color: #fafafa;
+}
+.division li:first-child {
+	margin-left: 2em
+}
+.division li:last-child {
+	margin-right: 2em
+}

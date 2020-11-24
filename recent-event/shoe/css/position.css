@@ -59,7 +59,7 @@ blockquote p {
         width: 87.5%
     }
     .catalogue li img:not(.wide) {
-        width: 270px
+        width: 220px
     }
     .catalogue > h1 {
         font: normal 600 21px/1.19048 "bold";
