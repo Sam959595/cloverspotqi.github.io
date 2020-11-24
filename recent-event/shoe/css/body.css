@@ -231,7 +231,7 @@ picture img {
     flex-direction: column;
     justify-content: space-between;
 
-	width: 8cm;
+	width: 9cm;
 	height: 14cm;
 
 	border-radius: 24px;
@@ -248,7 +248,7 @@ picture img {
 }
 
 .division li h3 {
-	padding: 2em;
+	padding: 1em;
 
 	font: normal 600 24px/1.16667 "bold";
 	letter-spacing: .004em
