@@ -215,15 +215,22 @@ picture img {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+.division {
+	margin: 1cm 0;
+}
 .division ul {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	column-gap: 2em;
+	column-gap: 1em;
 
 	overflow: scroll hidden;
 	scroll-snap-type: x mandatory
 }
 .division li {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 	width: 8cm;
 	height: 12cm;
 
@@ -234,8 +241,16 @@ picture img {
 	background-color: #fafafa;
 }
 .division li:first-child {
-	margin-left: 2em
+	margin-left: 16px
 }
 .division li:last-child {
 	margin-right: 2em
+}
+
+.division li p {
+	padding: 2em;
+
+	color: #888;
+
+	text-align: center;
 }
