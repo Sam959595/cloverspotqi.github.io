@@ -164,7 +164,7 @@ picture img {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .catalogue {
-	margin-top: 59px;
+	margin-top: 88px;
 	text-align: center
 }
 
@@ -182,16 +182,21 @@ picture img {
 	letter-spacing: .004em
 }
 .catalogue > p {
-	font: normal 600 28px/1.08349 "bold";
+	font: normal 600 48px/1.08349 "bold";
 	letter-spacing: -.003em;
 
 	padding: 4px 5% 21px
 }
 .catalogue > a {
 	font: normal 400 21px/1.381 "bold";
-	letter-spacing: .011em
+	letter-spacing: .011em;
+
+	padding-bottom: 43px
 }
 
+.catalogue li div {
+	padding: 11px 0 16px
+}
 .catalogue li *:not(sup) {
 	font: normal 400 14px/1.42859 "small";
 	letter-spacing: -.016em
@@ -206,6 +211,6 @@ picture img {
 	color: #fa233b
 }
 .catalogue li p:last-child {
-	padding-top: 2em;
+	margin-top: .8em;
 	color: #888
 }

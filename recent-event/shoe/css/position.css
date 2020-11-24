@@ -54,6 +54,9 @@ blockquote p {
     nav {
         padding: 0 16px
     }
+    .catalogue {
+        margin-top: 41px
+    }
     .catalogue > h1 {
         font: normal 600 21px/1.19048 "bold";
         letter-spacing: .011em
