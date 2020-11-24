@@ -2,9 +2,6 @@ nav div, picture img, section {
     margin: 0 auto;
     width: 980px
 }
-.span {
-    height: 52px
-}
 blockquote p {
     padding: 9px 8cm
 }
@@ -46,7 +43,7 @@ blockquote p {
 
 @media screen and (min-width: 768px) {
     .colum {
-        grid-column-end: span 2;
+        grid-column-end: span 2
     }
 }
 
@@ -56,6 +53,13 @@ blockquote p {
     }
     .catalogue {
         margin-top: 41px
+    }
+    .catalogue li:not(.colum), picture img {
+        margin: 0 auto;
+        width: 87.5%
+    }
+    .catalogue li img:not(.wide) {
+        width: 270px
     }
     .catalogue > h1 {
         font: normal 600 21px/1.19048 "bold";

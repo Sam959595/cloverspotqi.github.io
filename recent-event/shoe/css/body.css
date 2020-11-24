@@ -189,9 +189,7 @@ picture img {
 }
 .catalogue > a {
 	font: normal 400 21px/1.381 "bold";
-	letter-spacing: .011em;
-
-	padding-bottom: 43px
+	letter-spacing: .011em
 }
 
 .catalogue li div {
