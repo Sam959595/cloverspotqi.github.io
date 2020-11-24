@@ -232,7 +232,7 @@ picture img {
     justify-content: space-between;
 
 	width: 8cm;
-	height: 12cm;
+	height: 14cm;
 
 	border-radius: 20px;
 
@@ -250,7 +250,8 @@ picture img {
 .division li p {
 	padding: 2em;
 
-	color: #888;
-
+	font-size: 11px;
 	text-align: center;
+
+	color: #888;
 }
