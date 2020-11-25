@@ -232,7 +232,7 @@ picture img {
 	scroll-snap-align: center
 }
 
-.division li div {
+.division li a {
 	display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -240,7 +240,7 @@ picture img {
 	width: 8.5cm;
 	height: 14cm;
 
-	border-radius: 24px;
+	border-radius: 20px;
 
 	background-color: #fafafa
 }
