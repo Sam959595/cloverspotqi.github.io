@@ -229,7 +229,6 @@ picture img {
 	scroll-snap-type: x mandatory
 }
 .division li {
-	
 	scroll-snap-align: center
 }
 

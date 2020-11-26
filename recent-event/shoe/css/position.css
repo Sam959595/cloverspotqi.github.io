@@ -42,7 +42,7 @@ blockquote p {
 }
 
 @media screen and (min-width: 768px) {
-    .colum {
+    .column {
         grid-column-end: span 2
     }
 }
@@ -54,7 +54,7 @@ blockquote p {
     .catalogue {
         margin-top: 41px
     }
-    .catalogue li:not(.colum), picture img {
+    .catalogue li:not(.column), picture img {
         margin: 0 auto;
         width: 87.5%
     }
