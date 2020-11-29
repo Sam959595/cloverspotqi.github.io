@@ -59,10 +59,6 @@
 
         padding-top: 2.7cm
     }
-
-    main {
-        padding: 0 0 4em 16px
-    }
 }
 
 @media screen and (min-width: 768px) {
