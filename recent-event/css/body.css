@@ -421,7 +421,6 @@ dl dd {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 main {
-	margin-bottom: 4em;
 	padding: 0 5cm 4em;
 	background-color: var(--footer)
 }
