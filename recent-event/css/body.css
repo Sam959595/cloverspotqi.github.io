@@ -79,6 +79,18 @@ p, li {
 
 /* - */
 
+.gray-a {
+	background-color: #fafafa
+}
+.gray-b {
+	background-color: #afafaf
+}
+.gray-c {
+	background-color: #353535
+}
+
+/* - */
+
 .separation > a {
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -93,7 +105,7 @@ main div {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-nav div, picture img, .vertical img, article, section, table, dl, blockquote, footer > * {
+nav div, picture img, .vertical img, article, section > *, table, dl, blockquote, footer > * {
 	margin: 0 auto;
 	width: 653px
 }
@@ -215,10 +227,10 @@ picture, picture img {
 	padding: 20px 0 5px
 }
 .content h5 {
-	font: normal 700 20px/1.2 "bold";
-	letter-spacing: .024em;
+	font: normal 600 32px/1.125 "bold";
+	letter-spacing: .004em;
 
-	padding: 19px 0 17px
+	padding: 2.8em 0 17px
 }
 .content h6 {
 	font: normal 600 19px/1.21053 "bold";
@@ -247,7 +259,7 @@ picture, picture img {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.setup {
+.setup > * {
 	max-width: 10cm
 }
 .setup > a {

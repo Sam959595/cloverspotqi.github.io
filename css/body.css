@@ -107,7 +107,7 @@ aside .search {
 aside div {
 	width: 100%
 }
-aside input {
+input[type="search"] {
 	-webkit-appearance: none;
 
 	width: 100%;
@@ -122,14 +122,14 @@ aside input {
 
 	background-color: var(--search)
 }
-aside input::-webkit-input-placeholder {
+input[type="search"]::-webkit-input-placeholder {
 	color: var(--search-inner)
 }
-aside input[placeholder] {
+input[placeholder] {
 	color: var(--search-focus)
 }
 
-aside input::-webkit-search-cancel-button {
+input[type="search"]::-webkit-search-cancel-button {
 	-webkit-appearance: inherit;
 
     width: 18px;
