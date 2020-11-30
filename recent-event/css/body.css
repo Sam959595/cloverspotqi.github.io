@@ -227,10 +227,10 @@ picture, picture img {
 	padding: 20px 0 5px
 }
 .content h5 {
-	font: normal 600 32px/1.125 "bold";
-	letter-spacing: .004em;
+	font: normal 700 20px/1.2 "bold";
+	letter-spacing: .024em;
 
-	padding: 2.8em 0 17px
+	padding: 2em 0 17px
 }
 .content h6 {
 	font: normal 600 19px/1.21053 "bold";
