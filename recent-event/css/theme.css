@@ -1,4 +1,4 @@
-@media screen and (prefers-color-scheme: no-preference), (prefers-color-scheme: light) {
+@media screen and (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
     :root {
         --transparency-2: #ffffffb3;
 
