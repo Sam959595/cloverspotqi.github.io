@@ -41,7 +41,7 @@ button {
 	cursor: pointer
 }
 hr {
-	border-top: 1pt solid var(--gray-9)
+	border-top: 1px solid var(--gray-9)
 }
 sup {
 	font-size: 9px
@@ -75,18 +75,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 p, li {
 	color: var(--gray-7)
-}
-
-/* - */
-
-.gray-a {
-	background-color: #cfcfcf
-}
-.gray-b {
-	background-color: #afafaf
-}
-.gray-c {
-	background-color: #353535
 }
 
 /* - */
@@ -363,19 +351,18 @@ figcaption a::before {
 }
 
 figcaption+figcaption {
-	margin-top: 1em
+	margin-top: 2em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 table {
+	table-layout: fixed;
 	text-align: left;
 	border-collapse: collapse
 }
 
 table * {
-	width: 50%;
-
 	font: normal 400 14px/1.2 "small";
 	letter-spacing: -.022em
 }

@@ -17,6 +17,15 @@
 
         --blue-1: #06c;
     }
+    .gray-a {
+        background-color: #fafafa
+    }
+    .gray-b {
+        background-color: #afafaf
+    }
+    .gray-c {
+        background-color: #353535
+    }
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -37,5 +46,14 @@
         --gray-10: #666;
 
         --blue-1: #007aff;
+    }
+    .gray-a {
+        background-color: black
+    }
+    .gray-b {
+        background-color: #313131
+    }
+    .gray-c {
+        background-color: #161616
     }
 }
