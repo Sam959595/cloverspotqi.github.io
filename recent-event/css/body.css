@@ -206,19 +206,17 @@ picture, picture img {
 	font: normal 600 24px/1.16667 "bold";
 	letter-spacing: .009em;
 
-	padding: 3em 0 20px
+	padding: 3em 0 .8em
 }
 .content h4 {
 	font: normal 600 21px/1.19048 "bold";
-	letter-spacing: .011em;
-
-	padding: 20px 0 5px
+	letter-spacing: .011em
 }
 .content h5 {
 	font: normal 700 20px/1.2 "bold";
 	letter-spacing: .024em;
 
-	padding: 19px 0 17px
+	padding: 19px 0 1.25em
 }
 .content h6 {
 	font: normal 600 19px/1.21053 "bold";
