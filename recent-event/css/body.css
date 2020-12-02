@@ -467,9 +467,6 @@ footer {
 	padding-top: 2em;
 	background-color: var(--gray-8)
 }
-footer ul:first-child li:first-child {
-	padding-top: 2em
-}
 footer li {
 	padding-bottom: 2em;
 	color: var(--gray-3)
