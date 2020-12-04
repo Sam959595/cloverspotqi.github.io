@@ -1,62 +1,43 @@
-*, html, body, button {
+* {
 	margin: 0;
-	padding: 0
-}
-*, html, body {
+	padding: 0;
+
 	vertical-align: top;
-	box-sizing: border-box
-}
-*, body, img, svg, a, h1, h2, h3, h4, h5, h6, p {
-	user-select: none
-}
-img, svg, h1, h2, h3, h4, h5, h6, p {
-	cursor: default
-}
-img, svg, h1, h2, h3, h4, h5, h6, p {
-	pointer-events: none
-}
-a {
-	text-decoration: none
-}
-button {
-	cursor: pointer
-}
-input, button {
-	border: none;
-	outline: none
-}
-ul, ol {
-	list-style: none
-}
-a, sup, strong, small, q, em {
-	font: inherit
-}
+	box-sizing: border-box;
 
-::-webkit-scrollbar {
-	display: none
-}
+	user-select: none;
 
-body {
-	background-color: var(--body)
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-:lang(ru-RU) {
-	quotes: "\00ab" "\00bb"
-}
-:lang(en-US) {
-	quotes: "\201c" "\201d"
-}
-
-*, h1, h2, h3, h4, h5, h6, p {
 	font: normal 400 12px/1.33337 "small", "bold", "icon";
 	letter-spacing: -.01em;
 
 	-webkit-font-smoothing: antialiased
 }
+
+img {
+	pointer-events: none
+}
+a, sup, strong, small, q, em {
+	font: inherit
+}
+a {
+	text-decoration: none;
+	color: var(--blue-1)
+}
+ul, ol {
+	list-style: none
+}
+input, button, hr {
+	border: none;
+	outline: none
+}
+button {
+	cursor: pointer
+}
+hr {
+	border-top: 1px solid var(--gray-9)
+}
 sup {
-	font-size: 11px
+	font-size: 9px
 }
 strong {
 	font-weight: 600
@@ -65,10 +46,28 @@ em {
 	font-style: italic
 }
 
-hr {
-	border: none;
-	border-top: 1px solid var(--search-border)
+/* - */
+
+::-webkit-scrollbar {
+	display: none
 }
+:lang(ru-RU) {
+	quotes: "\00ab" "\00bb"
+}
+:lang(en-US) {
+	quotes: "\201c" "\201d"
+}
+
+/* - */
+
+body {
+	background-color: var(--gray-0)
+}
+aside form button, aside .search > button, nav span {
+	-webkit-tap-highlight-color: transparent
+}
+
+/* - */
 
 .includes h4, .includes p {
 	white-space: nowrap;
@@ -82,10 +81,6 @@ hr {
 	overflow: hidden
 }
 
-aside form button, aside .search > button, nav span {
-	-webkit-tap-highlight-color: transparent
-}
-
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 aside {
@@ -96,7 +91,7 @@ aside {
 
 	position: fixed;
 
-	background-color: var(--body)
+	background-color: var(--gray-0)
 }
 
 aside .search {
@@ -150,7 +145,7 @@ aside .search > button {
 
 	background: none;
 	
-	color: var(--link-footer);
+	color: var(--blue-1);
 
 	-webkit-transition: .5s ease
 }
@@ -162,9 +157,12 @@ aside .search > button {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+aside main ul+ul {
+	padding-top: .6em
+}
 aside main h4 {
-	font: normal 600 21px/1.2 "bold";
-	letter-spacing: .011em;
+	font: normal 600 21px/1.19048 "bold";
+    letter-spacing: .011em;
 
 	padding: 3em 0 .6em;
 
@@ -197,7 +195,7 @@ nav div, section {
 }
 
 .includes, footer {
-	padding-top: 2.7cm
+	padding-top: 4cm
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -231,7 +229,7 @@ nav span::before {
 
 	font-size: 1.8em;
 
-	color: var(--link-footer);
+	color: var(--blue-1);
 
 	cursor: pointer
 }

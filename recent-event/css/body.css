@@ -93,17 +93,6 @@ main div {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-nav div, picture img, .vertical img, article, table, dl, blockquote, footer > * {
-	margin: 0 auto;
-	width: 653px
-}
-
-nav div, picture img, footer > * {
-	width: 980px
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
 .hide {
 	position: relative
 }
@@ -413,11 +402,8 @@ dl dd {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-main hr {
-	margin-left: 16px
-}
-
 main {
+	padding-bottom: 4em;
 	background-color: var(--gray-8)
 }
 main ul {
@@ -432,13 +418,6 @@ main ul {
 }
 main li {
 	scroll-snap-align: center
-}
-
-main li:first-child {
-	padding-left: 16px
-}
-main li:last-child {
-	padding-right: 16px
 }
 
 main a {

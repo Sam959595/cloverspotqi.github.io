@@ -1,3 +1,12 @@
+nav div, picture img, .vertical img, article, table, dl, blockquote, footer > *, main > * {
+	margin: 0 auto;
+	width: 653px
+}
+
+nav div, picture img, footer > *, main > * {
+	width: 980px
+}
+
 @media screen and (max-width: 1024px) {
     article, .vertical img, table, dl, blockquote {
         width: 576px
@@ -19,7 +28,7 @@
 }
 
 @media screen and (max-width: 980px) {
-    picture img {
+    picture img, main > * {
         width: 100%
     }
 }
@@ -96,7 +105,14 @@
     .search {
         padding: 0 16px
     }
-    main {
-        padding-bottom: 4em
+
+    main hr {
+        margin-left: 16px
+    }
+    main li:first-child {
+        padding-left: 16px
+    }
+    main li:last-child {
+        padding-right: 16px
     }
 }
