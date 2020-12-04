@@ -199,7 +199,9 @@ picture, picture img {
 }
 .content h4 {
 	font: normal 600 21px/1.19048 "bold";
-	letter-spacing: .011em
+	letter-spacing: .011em;
+
+	padding: 2em 0 16px
 }
 .content h5 {
 	font: normal 700 20px/1.2 "bold";

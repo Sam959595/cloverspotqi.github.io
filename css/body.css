@@ -157,9 +157,6 @@ aside .search > button {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-aside main ul+ul {
-	padding-top: 2em
-}
 aside main h4 {
 	font: normal 600 21px/1.19048 "bold";
     letter-spacing: .011em;
