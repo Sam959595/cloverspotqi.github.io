@@ -424,7 +424,7 @@ main a {
 	display: block;
 	text-align: center;
 
-	width: 6cm;
+	min-width: 6cm;
 
 	border-radius: 11px;
 

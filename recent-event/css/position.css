@@ -1,9 +1,9 @@
-nav div, picture img, .vertical img, article, table, dl, blockquote, footer > *, main > *:not(hr) {
+nav div, picture img, .vertical img, article, table, dl, blockquote, footer > *, main > * {
 	margin: 0 auto;
 	width: 653px
 }
 
-nav div, picture img, footer > *, main > *:not(hr) {
+nav div, picture img, footer > *, main > * {
 	width: 980px
 }
 
@@ -19,6 +19,13 @@ nav div, picture img, footer > *, main > *:not(hr) {
     .content h1 {
         padding-top: 2.5cm
     }
+
+    main li:first-child {
+        padding-left: 22px
+    }
+    main li:last-child {
+        padding-right: 22px
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -28,8 +35,11 @@ nav div, picture img, footer > *, main > *:not(hr) {
 }
 
 @media screen and (max-width: 980px) {
-    picture img, main > *:not(hr) {
+    picture img, main > * {
         width: 100%
+    }
+    main hr {
+        width: auto
     }
 }
 
@@ -68,6 +78,16 @@ nav div, picture img, footer > *, main > *:not(hr) {
 
         padding-top: 2.7cm
     }
+
+    main hr {
+        margin-left: 16px
+    }
+    main li:first-child {
+        padding-left: 16px
+    }
+    main li:last-child {
+        padding-right: 16px
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -77,7 +97,7 @@ nav div, picture img, footer > *, main > *:not(hr) {
     }
 
     main ul {
-        -webkit-mask: linear-gradient(to left, transparent, black 1cm)
+        -webkit-mask: linear-gradient(to left, transparent 0, black 1cm)
     }
 
     .includes a {
@@ -108,15 +128,5 @@ nav div, picture img, footer > *, main > *:not(hr) {
 @media screen and (max-width: 414px) {
     .search {
         padding: 0 16px
-    }
-
-    main hr {
-        margin-left: 16px
-    }
-    main li:first-child {
-        padding-left: 16px
-    }
-    main li:last-child {
-        padding-right: 16px
     }
 }
