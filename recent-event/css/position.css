@@ -1,9 +1,9 @@
-nav div, picture img, .vertical img, article, table, dl, blockquote, footer > *, main > * {
+nav div, picture img, .vertical img, article, table, dl, blockquote, footer > *, main > *:not(hr) {
 	margin: 0 auto;
 	width: 653px
 }
 
-nav div, picture img, footer > *, main > * {
+nav div, picture img, footer > *, main > *:not(hr) {
 	width: 980px
 }
 
@@ -28,7 +28,7 @@ nav div, picture img, footer > *, main > * {
 }
 
 @media screen and (max-width: 980px) {
-    picture img, main > * {
+    picture img, main > *:not(hr) {
         width: 100%
     }
 }
