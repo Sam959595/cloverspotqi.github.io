@@ -76,6 +76,10 @@ nav div, picture img, footer > *, main > * {
         width: 65%
     }
 
+    main ul {
+        -webkit-mask: linear-gradient(to left, transparent, black 1cm)
+    }
+
     .includes a {
         position: relative
     }

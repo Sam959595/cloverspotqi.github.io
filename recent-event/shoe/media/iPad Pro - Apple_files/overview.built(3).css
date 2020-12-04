@@ -1,0 +1,5 @@
+/*Local fix*/
+
+@media only screen and (max-width: 340px){.section-system-requirements a {font-size: 15px;}}
+
+.section-compare{background-image: linear-gradient(to bottom, #fff, #fbfbfb 18%);}

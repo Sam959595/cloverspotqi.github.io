@@ -440,8 +440,6 @@ main div {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 footer {
-	overflow: hidden;
-	
 	margin-top: 2cm;
 	padding-top: 2em;
 	background-color: var(--gray-8)
