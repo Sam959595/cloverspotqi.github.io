@@ -1,3 +1,13 @@
+.search, main {
+	margin: 0 auto;
+	width: 35%
+}
+
+nav div, section {
+	margin: 0 auto;
+	width: 980px
+}
+
 @media screen and (max-width: 1024px) {
     .search, main {
         width: 450px
@@ -61,6 +71,9 @@
         letter-spacing: .012em
     }
 
+    .includes, footer {
+        padding-top: 2.7cm
+    }
     .includes ul {
         grid-template-columns: 1fr
     }

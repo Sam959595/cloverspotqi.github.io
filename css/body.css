@@ -158,7 +158,7 @@ aside .search > button {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 aside main ul+ul {
-	padding-top: .6em
+	padding-top: 2em
 }
 aside main h4 {
 	font: normal 600 21px/1.19048 "bold";
@@ -180,22 +180,6 @@ aside main ul li a {
 }
 aside main ul li+li {
 	border-top: 1px solid var(--search-border)
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-.search, main {
-	margin: 0 auto;
-	width: 35%
-}
-
-nav div, section {
-	margin: 0 auto;
-	width: 980px
-}
-
-.includes, footer {
-	padding-top: 4cm
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -235,6 +219,10 @@ nav span::before {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
+
+.includes, footer {
+	padding-top: 4cm
+}
 
 .includes h4 {
 	margin-bottom: 16px;
