@@ -86,8 +86,6 @@ aside form button, aside .string > button, nav span {
 aside {
 	z-index: 10;
 
-	top: 0;/* - */
-
 	width: 100%;
 
 	position: fixed;
@@ -157,6 +155,7 @@ aside .string > button {
 }
 
 .search {
+	display: none;
 	height: 100%;
 	pointer-events: none;
 	overflow-y: hidden
