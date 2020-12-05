@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     $('nav span').click(function() {
         $('.includes ul').css({
             'height':'100%',
-            'overflow-y':'hidden',
+            'overflow':'hidden',
             'poiner-event':'none'
         });
 
