@@ -86,7 +86,10 @@ aside form button, aside .search > button, nav span {
 aside {
 	z-index: 10;
 
+	top: 0;
+
 	width: 100%;
+	height: auto;
 
 	position: fixed;
 
