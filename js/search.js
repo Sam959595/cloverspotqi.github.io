@@ -20,9 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     $('.string > button').click(function() {
-        $('body').css({
-            'overflow':'auto',
-            'height':'auto'
+        $('.includes').css({
+            'height':'auto',
+            'overflow-y':'visibly',
+            'poiner-event':'auto',
+            'display':'block'
         });
 
         $('aside').css({
