@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     $('nav span').click(function() {
-        $('body').css({
-            'overflow':'hidden',
-            'height':'100%'
+        $('.includes').css({
+            'height':'100%',
+            'overflow-y':'hidden',
+            'poiner-event':'none',
+            'display':'none'
         });
         $('aside').css({
             'opacity':'1',
