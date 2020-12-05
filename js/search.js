@@ -1,11 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     $('nav span').click(function() {
-        $('.includes ul').css({
-            'height':'100%',
-            'overflow':'hidden',
-            'poiner-event':'none'
-        });
+        $('.includes')[0].classList.add('search');
 
         $('aside').css({
             'opacity':'1',
@@ -19,11 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     $('.string > button').click(function() {
-        $('.includes ul').css({
-            'height':'auto',
-            'overflow-y':'visibly',
-            'poiner-event':'auto'
-        });
+        $('.includes')[0].classList.remove('search');
 
         $('aside').css({
             'opacity':'0',
@@ -39,8 +31,5 @@ document.addEventListener('DOMContentLoaded', function() {
         $('.string > button')[0].classList.add('hide');
     });
 });
-
-$('.includes')[0].classList.add('search');
-$('.includes')[0].classList.remove('search');
 
 globalThis == this //для различных редакторов, сгруппировать глобальное обращение
