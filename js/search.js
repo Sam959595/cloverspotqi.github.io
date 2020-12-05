@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     $('nav span').click(function() {
-        $('.includes').css({
+        $('.includes ul').css({
             'height':'100%',
             'overflow-y':'hidden',
-            'poiner-event':'none',
-            'display':'none'
+            'poiner-event':'none'
         });
 
         $('aside').css({
@@ -20,11 +19,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     $('.string > button').click(function() {
-        $('.includes').css({
+        $('.includes ul').css({
             'height':'auto',
             'overflow-y':'visibly',
-            'poiner-event':'auto',
-            'display':'block'
+            'poiner-event':'auto'
         });
 
         $('aside').css({
