@@ -63,7 +63,7 @@ em {
 body {
 	background-color: var(--gray-0)
 }
-aside form button, aside .search > button, nav span {
+aside form button, aside .string > button, nav span {
 	-webkit-tap-highlight-color: transparent
 }
 
@@ -96,7 +96,7 @@ aside {
 	background-color: var(--gray-0)
 }
 
-aside .search {
+aside .string {
 	display: flex;
 	margin-top: 5em
 }
@@ -135,7 +135,7 @@ input[type="search"]::-webkit-search-cancel-button {
 	cursor: pointer
 }
 
-aside .search > button {
+aside .string > button {
 	-webkit-appearance: none;
 
 	font: normal 400 17px "small";
@@ -155,6 +155,13 @@ aside .search > button {
 	width: 79px !important;
 	margin-left: .6em !important;
 	opacity: 1 !important
+}
+
+.search {
+	display: none;
+	height: 100%;
+	pointer-events: none;
+	overflow-y: hidden
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */

@@ -1,4 +1,4 @@
-.search, main {
+.string, main {
 	margin: 0 auto;
 	width: 35%
 }
@@ -35,7 +35,7 @@ nav div, section {
 }
 
 @media screen and (max-width: 1024px) {
-    .search, main {
+    .string, main {
         width: 450px
     }
 
@@ -54,11 +54,11 @@ nav div, section {
 }
 
 @media screen and (max-width: 768px) {
-    aside .search {
+    aside .string {
         margin-top: 3em
     }
 
-    .search, main, section {
+    .string, main, section {
         width: 366px
     }
 
@@ -80,11 +80,11 @@ nav div, section {
 }
 
 @media screen and (max-width: 414px) {
-    aside .search {
+    aside .string {
         margin-top: 16px
     }
 
-    .search, main, section {
+    .string, main, section {
         width: 87.5%
     }
 }

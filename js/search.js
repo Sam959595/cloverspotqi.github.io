@@ -1,12 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     $('nav span').click(function() {
-        $('.includes').css({
-            'height':'100%',
-            'overflow-y':'hidden',
-            'poiner-event':'none',
-            'display':'none'
-        });
+        $('.includes')[0].classList.add('search');
+
         $('aside').css({
             'opacity':'1',
             'pointer-events':'all',
@@ -18,11 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    $('.search > button').click(function() {
-        $('body').css({
-            'overflow':'auto',
-            'height':'auto'
-        });
+    $('.string > button').click(function() {
+        $('.includes')[0].classList.remove('search');
+
         $('aside').css({
             'opacity':'0',
             'pointer-events':'none'
@@ -30,11 +24,11 @@ document.addEventListener('DOMContentLoaded', function() {
         $('.includes').css({
             'opacity':'1'
         });
-        $('.search > button')[0].classList.remove('hide');
+        $('.string > button')[0].classList.remove('hide');
     });
 
     $('form input').click(function() {
-        $('.search > button')[0].classList.add('hide');
+        $('.string > button')[0].classList.add('hide');
     });
 });
 
