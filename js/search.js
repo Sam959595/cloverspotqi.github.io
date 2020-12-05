@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     $('nav span').click(function() {
-        $('.includes')[0].classList.add('search');
+        $('body')[0].classList.add('search');
 
         $('aside').css({
             'opacity':'1',
@@ -15,7 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     $('.string > button').click(function() {
-        $('.includes')[0].classList.remove('search');
+        $('body')[0].classList.remove('search');
+
+        $('aside')[0].classList.remove('search');
 
         $('aside').css({
             'opacity':'0',
@@ -24,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         $('.includes').css({
             'opacity':'1'
         });
+
         $('.string > button')[0].classList.remove('hide');
     });
 

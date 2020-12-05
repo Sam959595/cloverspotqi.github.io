@@ -83,8 +83,15 @@ aside form button, aside .string > button, nav span {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+.search {
+	height: 100%;
+	overflow-y: hidden
+}
+
 aside {
 	z-index: 10;
+
+	top: 0;
 
 	width: 100%;
 	height: 100%;
@@ -153,13 +160,6 @@ aside .string > button {
 	width: 79px !important;
 	margin-left: .6em !important;
 	opacity: 1 !important
-}
-
-.search {
-	display: block;
-	height: 0;
-	pointer-events: none;
-	overflow-y: hidden
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
