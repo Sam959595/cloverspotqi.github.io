@@ -14,22 +14,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    $('.string > button').click(function() {
+    $('aside main:first-child div:last-child button').click(function() {
         $('body')[0].classList.remove('search');
 
-        $('aside').css({
-            'opacity':'0',
-            'pointer-events':'none'
-        });
-        $('.includes').css({
-            'opacity':'1'
-        });
+        $('aside main:first-child div:last-child button')[0].classList.remove('hide');
 
-        $('.string > button')[0].classList.remove('hide');
+        $('aside main:first-child div:first-child')[0].classList.remove('disappear');
     });
 
-    $('form input').click(function() {
-        $('.string > button')[0].classList.add('hide');
+    $('aside form input').click(function() {
+        $('aside main:first-child div:last-child button')[0].classList.add('hide');
+
+        $('aside main:first-child div:first-child')[0].classList.add('disappear');
     });
 });
 

@@ -62,6 +62,9 @@ nav div, picture img, footer > *, main > * {
     main ul {
         -webkit-mask: linear-gradient(to left, transparent 0, black 1cm)
     }
+    main a {
+        transition: background-color .5s ease 0s
+    }
     main a:hover {
         background-color: #00000025;
     

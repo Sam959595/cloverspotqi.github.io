@@ -433,9 +433,7 @@ main a {
 	padding: 1em;
 
 	background-color: var(--gray-2);
-	color: var(--gray-4);
-
-	transition: background-color .5s ease 0s
+	color: var(--gray-4)
 }
 main div {
 	font: normal 600 14px/1.3 "small"

@@ -1,4 +1,4 @@
-.string, main {
+aside > * {
 	margin: 0 auto;
 	width: 35%
 }
@@ -35,7 +35,7 @@ nav div, section {
 }
 
 @media screen and (max-width: 1024px) {
-    .string, main {
+    aside > * {
         width: 450px
     }
 
@@ -54,11 +54,11 @@ nav div, section {
 }
 
 @media screen and (max-width: 768px) {
-    aside .string {
+    aside main:first-child {
         margin-top: 3em
     }
 
-    .string, main, section {
+    aside > *, section {
         width: 366px
     }
 
@@ -80,11 +80,11 @@ nav div, section {
 }
 
 @media screen and (max-width: 414px) {
-    aside .string {
+    aside main:first-child {
         margin-top: 16px
     }
 
-    .string, main, section {
+    aside > *, section {
         width: 87.5%
     }
 }

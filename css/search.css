@@ -1,0 +1,149 @@
+aside {
+	opacity: 0;
+	pointer-events: none
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+aside main:first-child h4 {
+	font: normal 600 32px "small"
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+aside main:first-child div:first-child {
+	display: flex;
+	justify-content: space-between;
+
+	height: 3em;
+	
+	margin: 2em 0 .5em;
+
+	transition: all .4s ease 0s, opacity .2s ease 0s;
+}
+aside main:first-child div:first-child button {
+	background: none;
+
+	font-size: 20px
+}
+aside main:first-child div:first-child button::before {
+	content: "\f314"
+}
+
+.disappear {
+	height: 0 !important;
+	opacity: 0;
+
+	margin: 0 !important
+}
+
+/* - */
+
+aside main:first-child div:last-child {
+	display: flex
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+aside form {
+	width: 100%
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+.search {
+	height: 100%;
+	overflow-y: hidden
+}
+
+aside {
+	z-index: 10;
+
+	width: 100%;
+	height: 100%;
+
+	position: fixed;
+
+	background-color: var(--gray-0)
+}
+
+aside main:first-child {
+	margin-top: 5em
+}
+aside main:first-child div:last-child button {
+	appearance: none;
+
+	font: normal 400 17px "small";
+	letter-spacing: -.022em;
+
+	width: 0;
+	margin-left: 0;
+	opacity: 0;
+
+	background: none;
+	
+	color: var(--blue-1);
+
+	-webkit-transition: .5s ease
+}
+.hide {
+	width: 79px !important;
+	margin-left: .6em !important;
+	opacity: 1 !important
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+aside main:last-child h4 {
+	font: normal 600 21px/1.19048 "bold";
+    letter-spacing: .011em;
+
+	padding: 3em 0 .6em;
+
+	color: var(--text)
+}
+
+aside main ul li a {
+	display: block;
+	font: normal 400 17px "small";
+	letter-spacing: -.022em;
+
+	padding: 10px 0;
+
+	color: var(--search-line)
+}
+aside main ul li+li {
+	border-top: 1px solid var(--search-border)
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+input[type="search"] {
+	appearance: none;
+
+	width: 100%;
+	height: 34px;
+
+	border-radius: 10px;
+
+	padding: 0 7px 0 10px;
+
+	font: normal 400 16px "small";
+	letter-spacing: -.022em;
+
+	background-color: var(--search)
+}
+input[type="search"]::-webkit-input-placeholder {
+	color: var(--search-inner)
+}
+input[placeholder] {
+	color: var(--search-focus)
+}
+input[type="search"]::-webkit-search-cancel-button {
+	appearance: inherit;
+
+	width: 18px;
+	height: 18px;
+
+	cursor: pointer
+}
