@@ -1,14 +1,10 @@
-aside {
-	opacity: 0;
-	pointer-events: none
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
 aside main:first-child h4 {
 	align-self: flex-end;
 
-	font: normal 700 28px "bold"
+	font: normal 700 28px "bold";
+	letter-spacing: .007em;
+
+	color: var(--text)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -71,7 +67,19 @@ aside {
 
 	position: fixed;
 
-	background-color: var(--gray-0)
+	opacity: 0;
+	pointer-events: none;
+
+	background-color: var(--gray-0);
+
+	transition: all .5s ease 0s
+}
+
+.visible {
+	opacity: 1;
+	pointer-events: auto;
+
+	transition: all .5s ease 0s
 }
 
 aside main:first-child {
@@ -103,13 +111,8 @@ aside main:first-child div:last-child button {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-aside main:last-child h4 {
-	font: normal 600 21px/1.19048 "bold";
-    letter-spacing: .011em;
-
-	padding: 3em 0 .6em;
-
-	color: var(--text)
+aside main:last-child {
+	margin-top: 3em
 }
 
 aside main ul li a {
