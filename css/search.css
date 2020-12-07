@@ -6,7 +6,9 @@ aside {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 aside main:first-child h4 {
-	font: normal 700 32px "bold"
+	align-self: flex-end;
+	
+	font: normal 700 28px "bold"
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -25,7 +27,7 @@ aside main:first-child div:first-child button {
 	background: none;
 
 	align-self: flex-end;
-	font-size: 20px;
+	font-size: 23px;
 
 	-webkit-tap-highlight-color: transparent
 }
