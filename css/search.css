@@ -6,7 +6,7 @@ aside {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 aside main:first-child h4 {
-	font: normal 600 32px "small"
+	font: normal 700 32px "bold"
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -17,14 +17,17 @@ aside main:first-child div:first-child {
 
 	height: 3em;
 	
-	margin: 2em 0 .5em;
+	margin: 2em 0 .6em;
 
 	transition: all .4s ease 0s, opacity .2s ease 0s;
 }
 aside main:first-child div:first-child button {
 	background: none;
 
-	font-size: 20px
+	align-self: flex-end;
+	font-size: 20px;
+
+	-webkit-tap-highlight-color: transparent
 }
 aside main:first-child div:first-child button::before {
 	content: "\f314"
@@ -83,6 +86,8 @@ aside main:first-child div:last-child button {
 	background: none;
 	
 	color: var(--blue-1);
+
+	-webkit-tap-highlight-color: transparent;
 
 	-webkit-transition: .5s ease
 }
