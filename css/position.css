@@ -25,7 +25,7 @@ nav div, section {
         
         position: absolute;
         
-        transition: all 0.5s linear 0s
+        transition: all 0.3s linear 0s
     }
     .includes a:hover::before {
         background-color: #00000034;

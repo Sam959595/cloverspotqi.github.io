@@ -73,10 +73,15 @@ aside {
 
 	transition: opacity .5s ease 0s
 }
-
 .visible {
 	opacity: 1;
 	pointer-events: auto
+}
+
+.disguise {
+	opacity: 0;
+	transition: opacity .5s ease 0s
+
 }
 
 aside main:first-child {

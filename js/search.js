@@ -3,12 +3,14 @@ document.addEventListener('DOMContentLoaded', function() {
     $('nav span').click(function() {
 
         $('body')[0].classList.add('search');
-        $('aside, section.includes')[0].classList.add('visible');
+        $('aside')[0].classList.add('visible');
+        $('.includes')[0].classList.add('disguise');
     });
     $('aside main:first-child div:first-child button').click(function() {
 
         $('body')[0].classList.remove('search');
-        $('aside, section.includes')[0].classList.remove('visible');
+        $('aside')[0].classList.remove('visible');
+        $('.includes')[0].classList.remove('disguise');
     });
 
     $('aside form input').click(function() {
@@ -17,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         $('aside main:first-child div:first-child')[0].classList.add('disappear');
     });
     $('aside main:first-child div:last-child button').click(function() {
-        
+
         $('aside main:first-child div:last-child button')[0].classList.remove('hide');
         $('aside main:first-child div:first-child')[0].classList.remove('disappear');
     });
