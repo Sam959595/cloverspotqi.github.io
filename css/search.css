@@ -1,62 +1,9 @@
-aside main:first-child h4 {
-	align-self: flex-end;
-
-	font: normal 700 28px "bold";
-	letter-spacing: .007em;
-
-	color: var(--text)
+.disguise {
+	opacity: 0;
+	transition: opacity .5s ease 0s
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
-
-aside main:first-child div:first-child {
-	display: flex;
-	justify-content: space-between;
-
-	height: 3em;
-	
-	margin: 2em 0 .6em;
-
-	transition: all .4s ease 0s, opacity .2s ease 0s;
-}
-aside main:first-child div:first-child button {
-	background: none;
-
-	align-self: flex-end;
-	font-size: 23px;
-
-	-webkit-tap-highlight-color: transparent
-}
-aside main:first-child div:first-child button::before {
-	content: "\f314";
-
-	color: var(--text)
-}
-
-.disappear {
-	opacity: 0 !important;
-	height: 0 !important;
-	margin: 0 !important
-}
-
-/* - */
-
-aside main:first-child div:last-child {
-	display: flex
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-aside form {
-	width: 100%
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-.search {
-	height: 100%;
-	overflow-y: hidden
-}
 
 aside {
 	z-index: 10;
@@ -78,15 +25,103 @@ aside {
 	pointer-events: auto
 }
 
-.disguise {
-	opacity: 0;
-	transition: opacity .5s ease 0s
-
-}
+/* - - - - - - - - - - - - - - - - - - - - - */
 
 aside main:first-child {
 	margin-top: 5em
 }
+
+/* - */
+
+aside main:first-child div:first-child {
+	display: flex;
+	justify-content: space-between;
+
+	height: 3em;
+	
+	margin: 2em 0 .6em;
+
+	transition: all .4s ease 0s, opacity .2s ease 0s
+}
+.disappear {
+	opacity: 0 !important;
+	height: 0 !important;
+	margin: 0 !important
+}
+
+/* - */
+
+aside main:first-child div:first-child h4 {
+	align-self: flex-end;
+
+	font: normal 700 28px "bold";
+	letter-spacing: .007em;
+
+	color: var(--text)
+}
+
+/* - */
+
+aside main:first-child div:first-child button {
+	background: none;
+
+	align-self: flex-end;
+	font-size: 23px;
+
+	color: var(--text);
+
+	-webkit-tap-highlight-color: transparent
+}
+aside main:first-child div:first-child button::before {
+	content: "\f314"
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+aside main:first-child div:last-child {
+	display: flex
+}
+
+/* - */
+
+aside form {
+	width: 100%
+}
+
+/* - */
+
+input[type="search"] {
+	-webkit-appearance: none;
+
+	width: 100%;
+	height: 34px;
+
+	border-radius: 10px;
+
+	padding: 0 7px 0 10px;
+
+	font: normal 400 16px "small";
+	letter-spacing: -.022em;
+
+	background-color: var(--search)
+}
+input[type="search"]::-webkit-input-placeholder {
+	color: var(--search-inner)
+}
+input[placeholder] {
+	color: var(--search-focus)
+}
+input[type="search"]::-webkit-search-cancel-button {
+	-webkit-appearance: inherit;
+
+	width: 18px;
+	height: 18px;
+
+	cursor: pointer
+}
+
+/* - */
+
 aside main:first-child div:last-child button {
 	-webkit-appearance: none;
 
@@ -117,6 +152,8 @@ aside main:last-child {
 	margin-top: 3em
 }
 
+/* - */
+
 aside main ul li a {
 	display: block;
 	font: normal 400 17px "small";
@@ -128,36 +165,4 @@ aside main ul li a {
 }
 aside main ul li+li {
 	border-top: 1px solid var(--search-border)
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-input[type="search"] {
-	-webkit-appearance: none;
-
-	width: 100%;
-	height: 34px;
-
-	border-radius: 10px;
-
-	padding: 0 7px 0 10px;
-
-	font: normal 400 16px "small";
-	letter-spacing: -.022em;
-
-	background-color: var(--search)
-}
-input[type="search"]::-webkit-input-placeholder {
-	color: var(--search-inner)
-}
-input[placeholder] {
-	color: var(--search-focus)
-}
-input[type="search"]::-webkit-search-cancel-button {
-	appearance: inherit;
-
-	width: 18px;
-	height: 18px;
-
-	cursor: pointer
 }

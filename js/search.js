@@ -2,13 +2,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     $('nav span').click(function() {
 
-        $('body')[0].classList.add('search');
         $('aside')[0].classList.add('visible');
         $('.includes')[0].classList.add('disguise');
     });
     $('aside main:first-child div:first-child button').click(function() {
 
-        $('body')[0].classList.remove('search');
         $('aside')[0].classList.remove('visible');
         $('.includes')[0].classList.remove('disguise');
     });
