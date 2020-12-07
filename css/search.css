@@ -7,7 +7,7 @@ aside {
 
 aside main:first-child h4 {
 	align-self: flex-end;
-	
+
 	font: normal 700 28px "bold"
 }
 
@@ -32,7 +32,9 @@ aside main:first-child div:first-child button {
 	-webkit-tap-highlight-color: transparent
 }
 aside main:first-child div:first-child button::before {
-	content: "\f314"
+	content: "\f314";
+
+	color: var(--search)
 }
 
 .disappear {
@@ -91,7 +93,7 @@ aside main:first-child div:last-child button {
 
 	-webkit-tap-highlight-color: transparent;
 
-	-webkit-transition: .5s ease
+	-webkit-transition: .5s ease 0s
 }
 .hide {
 	width: 79px !important;
