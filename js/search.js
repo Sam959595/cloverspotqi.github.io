@@ -17,8 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
     $('.string > button').click(function() {
         $('body')[0].classList.remove('search');
 
-        $('aside')[0].classList.remove('search');
-
         $('aside').css({
             'opacity':'0',
             'pointer-events':'none'

@@ -224,7 +224,7 @@ picture, picture img {
 	padding-left: 20px;
 	list-style: outside disc
 }
-.content li, table, picture {
+.content li, picture, table {
 	margin-bottom: 1.25em
 }
 
@@ -433,7 +433,9 @@ main a {
 	padding: 1em;
 
 	background-color: var(--gray-2);
-	color: var(--gray-4)
+	color: var(--gray-4);
+
+	transition: background-color .5s ease 0s
 }
 main div {
 	font: normal 600 14px/1.3 "small"
