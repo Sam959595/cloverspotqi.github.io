@@ -13,12 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     $('aside input').click(function() {
 
-        $('aside main:first-child div:last-child button')[0].classList.add('hide');
+        $('aside main:first-child div:last-child span')[0].classList.add('hide');
         $('aside main:first-child div:first-child')[0].classList.add('disappear');
     });
-    $('aside main:first-child div:last-child button').click(function() {
+    $('aside main:first-child div:last-child span').click(function() {
 
-        $('aside main:first-child div:last-child button')[0].classList.remove('hide');
+        $('aside main:first-child div:last-child span')[0].classList.remove('hide');
         $('aside main:first-child div:first-child')[0].classList.remove('disappear');
     });
 });

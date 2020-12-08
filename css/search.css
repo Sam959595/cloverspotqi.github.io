@@ -120,9 +120,8 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* - */
 
-aside main:first-child div:last-child button {
-	display: flex;
-	align-items: center;
+aside main:first-child div:last-child span {
+	align-self: center;
 
 	font: normal 400 17px "small";
 	letter-spacing: -.022em;
@@ -130,10 +129,10 @@ aside main:first-child div:last-child button {
 	width: 0;
 	margin-left: 0;
 	opacity: 0;
-
-	background: none;
 	
 	color: var(--blue-1);
+
+	cursor: pointer;
 
 	transition: .5s ease 0s
 }
