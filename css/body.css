@@ -63,7 +63,7 @@ em {
 body {
 	background-color: var(--gray-0)
 }
-nav button, aside main:first-child div:last-child button, aside main:first-child div:first-child button {
+nav button, aside main:first-child div:last-child span, aside main:first-child div:first-child button {
 	-webkit-tap-highlight-color: transparent
 }
 
@@ -142,7 +142,7 @@ nav button::before {
 
 .includes a {
 	display: block;
-	border-radius: 10px
+	border-radius: 11px
 }
 .includes div:first-child {
 	height: 200px;
@@ -150,11 +150,11 @@ nav button::before {
 	background-size: cover;
 	background-position: center;
 
-	border-radius: 10px 10px 0 0
+	border-radius: 11px 11px 0 0
 }
 
 .includes a div:last-child {
-	border-radius: 0 0 10px 10px;
+	border-radius: 0 0 11px 11px;
 	background-color: var(--fillet)
 }
 
