@@ -121,6 +121,8 @@ input[type="search"]::-webkit-search-cancel-button {
 /* - */
 
 aside main:first-child div:last-child button {
+	display: inline;
+
 	font: normal 400 17px "small";
 	letter-spacing: -.022em;
 
@@ -128,8 +130,7 @@ aside main:first-child div:last-child button {
 	margin-left: 0;
 	opacity: 0;
 
-	overflow: visible;
-	visibility: visible;
+	background: none;
 	
 	color: var(--blue-1);
 
