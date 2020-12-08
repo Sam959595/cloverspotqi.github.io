@@ -121,8 +121,7 @@ input[type="search"]::-webkit-search-cancel-button {
 /* - */
 
 aside main:first-child div:last-child button {
-	display: inline;
-	overflow: visible;
+	display: unset;
 
 	font: normal 400 17px "small";
 	letter-spacing: -.022em;
