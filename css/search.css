@@ -68,9 +68,7 @@ aside main:first-child div:first-child button {
 	align-self: flex-end;
 	font-size: 23px;
 
-	color: var(--text);
-
-	-webkit-tap-highlight-color: transparent
+	color: var(--text)
 }
 aside main:first-child div:first-child button::before {
 	content: "\f314"
@@ -123,7 +121,7 @@ input[type="search"]::-webkit-search-cancel-button {
 /* - */
 
 aside main:first-child div:last-child button {
-	display: initial;
+	display: flex;
 
 	font: normal 400 17px "small";
 	letter-spacing: -.022em;
@@ -132,11 +130,10 @@ aside main:first-child div:last-child button {
 	margin-left: 0;
 	opacity: 0;
 
-	background: none;
+	overflow: visible;
+	visibility: visible;
 	
 	color: var(--blue-1);
-
-	-webkit-tap-highlight-color: transparent;
 
 	transition: .5s ease 0s
 }

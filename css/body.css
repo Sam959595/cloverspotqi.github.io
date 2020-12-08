@@ -63,7 +63,7 @@ em {
 body {
 	background-color: var(--gray-0)
 }
-aside form button, aside .string > button, nav span {
+nav button, aside main:first-child div:last-child button, aside main:first-child div:first-child button {
 	-webkit-tap-highlight-color: transparent
 }
 
@@ -109,7 +109,7 @@ nav h4 {
 
 nav button {
 	font-size: 1.8em;
-	
+
 	background: none;
 	color: var(--blue-1)
 }
