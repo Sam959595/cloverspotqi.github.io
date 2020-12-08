@@ -36,7 +36,7 @@ nav div, picture img, footer > *, main > * {
 
 @media screen and (min-width: 980px) {
     picture img {
-        border-radius: 10px
+        border-radius: 11px
     }
 }
 
@@ -45,7 +45,7 @@ nav div, picture img, footer > *, main > * {
         width: 100%
     }
     picture.vertical img {
-        border-radius: 10px
+        border-radius: 11px
     }
 
     main hr {
