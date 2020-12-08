@@ -107,14 +107,14 @@ nav h4 {
 	color: var(--text)
 }
 
-nav span::before {
-	content: "\ea1d";
-
+nav button {
 	font-size: 1.8em;
-
-	color: var(--blue-1);
-
-	cursor: pointer
+	
+	background: none;
+	color: var(--blue-1)
+}
+nav button::before {
+	content: "\ea1d"
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
