@@ -3,22 +3,23 @@ async function getResponse() {
     let i = await t.json();
     i = i.splice(0, 10);
 
-    let key;
+    let r = null;
     let e = document.querySelector('.includes ul');
 
-    for (key in i) {
+    for (r in i) {
 
-        e.innerHTML += `
-        <li>
-            <a href="${i[key].href}">
-                <div style="background-image: url(${i[key].image})"></div>
+        e.innerHTML +=
+        `<li>
+            <a href="${i[r].href}">
+                <div style="background-image: url(${i[r].image})"></div>
                 <div>
-                    <p>${i[key].date}</p>
-                    <h5>${i[key].title}</h5>
+                    <p>${i[r].date}</p>
+                    <h5>${i[r].title}</h5>
                 </div>
             </a>
-        </li>`
-        i[key];
+        </li>`;
+
+        i[r];
     };
 };
 
