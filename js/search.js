@@ -23,37 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-let data = [
-    {
-        "href": "recent-event\Поколение_Mac_разработанные_на_собственном_процессоре_Apple_M1.html",
-        "image": "media/9.jpg",
-        "date": "10 ноября, 2020",
-        "title": "Поколение Mac разработанные на собственном процессоре Apple M1"
-    },
-    {
-        "href": "recent-event\Нарушение-и-снижение-продуктивности-сна.html",
-        "image": "media/2.jpg",
-        "date": "9 ноября, 2020",
-        "title": "Нарушение и снижение продуктивности сна"
-    },
-    {
-        "href": "recent-event\Ограничение-уровня-звукового-прослушивания.html",
-        "image": "media/4.png",
-        "date": "20 сентября, 2020",
-        "title": "Ограничение уровня звукового прослушивания"
-    },
-    {
-        "href": "recent-event\1.html",
-        "image": "media/4.jpg",
-        "date": "4 октября, 2020",
-        "title": "Системное обновление iOS 14.1 (предварительная версия)"
-    }
-]
-
-let p = JSON.parse(data);
-
 async function getResponse() {
-    let t = await fetch('data');
+    let t = await fetch('https://sam959595.github.io/cloverspotqi.github.io/json/post.json');
     let i = await t.json();
     i = i.splice(0, 10);
 
@@ -71,8 +42,7 @@ async function getResponse() {
                     <h5>${i[key].title}</h5>
                 </div>
             </a>
-        </li>`;
-
+        </li>`
         i[key];
     };
 };
