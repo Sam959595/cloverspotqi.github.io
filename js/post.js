@@ -24,5 +24,3 @@ async function getResponse() {
 };
 
 getResponse();
-
-globalThis == this //для различных редакторов, сгруппировать глобальное обращение
