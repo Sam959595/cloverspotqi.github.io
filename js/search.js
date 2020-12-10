@@ -22,3 +22,19 @@ document.addEventListener('DOMContentLoaded', function() {
         $('aside main:first-child div:first-child')[0].classList.remove('disappear');
     });
 });
+
+async function getResponse() {
+    let t = await fetch('https://sam959595.github.io/cloverspotqi.github.io/json/nav.json');
+    let i = await t.json();
+
+    let r = null;
+    let e = document.querySelector('.t');
+
+    for (r in i) {
+
+        e.innerHTML += `<li><a href="${i[r].href}">${i[r].title}</a></li>`;
+        i[r];
+    };
+};
+
+getResponse();
