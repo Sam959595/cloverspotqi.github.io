@@ -8,13 +8,7 @@ async function getResponse() {
 
     for (r in i) {
 
-        e.innerHTML +=
-        `<li>
-            <a href="${i[r].href}">
-                <div>${i[r].title}</div>
-            </a>
-        </li>`;
-
+        e.innerHTML += `<li><a href="${i[r].href}"><div>${i[r].title}</div></a></li>`;
         i[r];
     };
 };
