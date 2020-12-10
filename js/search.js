@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    $('nav button').click(function() {
+    $('nav span').click(function() {
 
         $('aside')[0].classList.add('visible');
         $('.includes')[0].classList.add('disguise');
     });
-    $('aside main:first-child div:first-child button').click(function() {
+    $('aside main:first-child div:first-child span').click(function() {
 
         $('aside')[0].classList.remove('visible');
         $('.includes')[0].classList.remove('disguise');
@@ -28,7 +28,7 @@ async function getResponse() {
     let i = await t.json();
 
     let r = null;
-    let e = document.querySelector('aside main ul');
+    let e = document.querySelector('aside main:last-child ul');
 
     for (r in i) {
 

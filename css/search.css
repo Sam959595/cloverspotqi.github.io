@@ -63,16 +63,15 @@ aside main:first-child div:first-child h4 {
 
 /* - */
 
-aside main:first-child div:first-child button {
-	background: none;
-
-	align-self: flex-end;
+aside main:first-child div:first-child span {
+	align-self: flex-end
+}
+aside main:first-child div:first-child span::before {
 	font-size: 23px;
 
+	content: "\f314";
+
 	color: var(--gray-5)
-}
-aside main:first-child div:first-child button::before {
-	content: "\f314"
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -134,8 +133,6 @@ aside main:first-child div:last-child span {
 	color: var(--blue-1);
 
 	pointer-events: none;
-
-	cursor: pointer;
 
 	transition: all .4s ease 0s
 }

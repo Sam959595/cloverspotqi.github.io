@@ -30,7 +30,7 @@ input, button, hr {
 	border: none;
 	outline: none
 }
-button {
+button, span {
 	cursor: pointer
 }
 hr {
@@ -63,7 +63,7 @@ em {
 body {
 	background-color: var(--gray-0)
 }
-nav button, aside main:first-child div:last-child span, aside main:first-child div:first-child button {
+nav span, aside main:first-child div:last-child span, aside main:first-child div:first-child span {
 	-webkit-tap-highlight-color: transparent
 }
 
@@ -107,14 +107,12 @@ nav h4 {
 	color: var(--gray-5)
 }
 
-nav button {
+nav span::before {
 	font-size: 1.8em;
 
-	background: none;
+	content: "\ea1d";
+
 	color: var(--blue-1)
-}
-nav button::before {
-	content: "\ea1d"
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
