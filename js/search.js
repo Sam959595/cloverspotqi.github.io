@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', function() {
 
     $('nav button').click(function() {
@@ -30,12 +28,11 @@ async function getResponse() {
     let i = await t.json();
 
     let r = null;
-    let e = document.querySelector('.includes ul');
+    let e = document.querySelector('aside main ul');
 
     for (r in i) {
 
         e.innerHTML += `<li><a href="${i[r].href}">${i[r].title}</a></li>`;
-
         i[r];
     };
 };

@@ -18,7 +18,6 @@ async function getResponse() {
                 </div>
             </a>
         </li>`;
-
         i[r];
     };
 };
