@@ -107,7 +107,7 @@ section {
 /* - */
 
 h1 {
-	padding-top: 4em;
+	padding-top: 5em;
 
 	font: 600 32px/1.125 "bold";
 	letter-spacing: .004em
@@ -125,7 +125,7 @@ section p {
 /* - */
 
 section div:last-child {
-	padding-top: 4cm;
+	padding-top: 5cm;
 
 	margin: inherit;
 	max-width: 10cm
