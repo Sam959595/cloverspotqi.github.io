@@ -139,7 +139,7 @@ nav a {
 	font: normal 600 21px "bold";
 	letter-spacing: .011em;
 
-	color: var(--gray-00)
+	color: var(--gray-01)
 }
 
 nav span::before {
@@ -265,7 +265,7 @@ picture, picture img {
 
 .distribution strong {
 	letter-spacing: 0;
-	color: var(--gray-00)
+	color: var(--gray-01)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */

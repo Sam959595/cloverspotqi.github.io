@@ -34,7 +34,7 @@ button, span {
 	cursor: pointer
 }
 hr {
-	border-top: 1px solid var(--gray-9)
+	border-top: 1px solid var(--gray-8)
 }
 sup {
 	font-size: 9px
@@ -112,7 +112,7 @@ nav span::before {
 
 	content: "\ea1d";
 
-	color: var(--blue-1)
+	color: var(--blue-5)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
