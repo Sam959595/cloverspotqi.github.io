@@ -63,6 +63,9 @@ em {
 body {
 	background-color: var(--gray-0)
 }
+
+/* - */
+
 nav span, aside main:first-child div:last-child span, aside main:first-child div:first-child span {
 	-webkit-tap-highlight-color: transparent
 }
@@ -112,7 +115,7 @@ nav span::before {
 
 	content: "\ea1d";
 
-	color: var(--blue-5)
+	color: var(--gray-5)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
