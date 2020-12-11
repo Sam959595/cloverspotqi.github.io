@@ -26,8 +26,10 @@ a {
 ul, ol {
 	list-style: none
 }
-input, button, hr {
-	border: none;
+input, button, hr, iframe {
+	border: none
+}
+input, button {
 	outline: none
 }
 button, span {
