@@ -106,8 +106,14 @@ section {
 
 /* - */
 
+section svg {
+	margin-top: 2cm;
+}
+
+/* - */
+
 h1 {
-	padding-top: 5em;
+	margin: .5em 0;
 
 	font: 600 32px/1.125 "bold";
 	letter-spacing: .004em
@@ -125,7 +131,7 @@ section p {
 /* - */
 
 section div:last-child {
-	padding-top: 5cm;
+	padding-top: 1cm;
 
 	margin: inherit;
 	max-width: 10cm
@@ -134,7 +140,7 @@ section div:last-child {
 section div:last-child button {
 	width: 100%;
 
-	border-radius: 11px;
+	border-radius: 15px;
 
 	padding: 1em 1.2em;
 
@@ -157,7 +163,7 @@ section div:last-child button+button {
 
 @media screen and (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
     :root {
-        --gray-0: white;
+        --gray-0: #f5f5f7;
 		--gray-01: black;
 		--gray-02: white;
         --gray-1: #111;
