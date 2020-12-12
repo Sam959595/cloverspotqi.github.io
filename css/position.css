@@ -8,6 +8,25 @@ nav div, section {
 	width: 980px
 }
 
+@media screen and (max-width: 1024px) {
+    aside > * {
+        width: 450px
+    }
+
+    nav {
+        padding: 0 22px
+    }
+
+    section {
+        width: 692px
+    }
+
+    .includes ul {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px
+    }
+}
+
 @media screen and (min-width: 768px) {
     .includes a {
         position: relative
@@ -31,25 +50,6 @@ nav div, section {
         background-color: #00000034;
     
         transition: all 0.3s linear 0s
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    aside > * {
-        width: 450px
-    }
-
-    nav {
-        padding: 0 22px
-    }
-
-    section {
-        width: 692px
-    }
-
-    .includes ul {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 24px
     }
 }
 

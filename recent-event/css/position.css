@@ -41,13 +41,13 @@ nav div, picture img, footer > *, main > * {
 }
 
 @media screen and (max-width: 980px) {
-    picture img, main > * {
-        width: 100%
-    }
     picture.vertical img {
         border-radius: 11px
     }
 
+    main > * {
+        width: 100%
+    }
     main hr {
         width: auto
     }

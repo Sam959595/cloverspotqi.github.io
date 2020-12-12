@@ -5,11 +5,7 @@
 	vertical-align: top;
 	box-sizing: border-box;
 
-	-webkit-touch-callout: none;
 	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
 	user-select: none;
 
 	font: normal 400 12px/1.33337 "small", "bold", "icon";
@@ -19,6 +15,7 @@
 }
 
 img {
+	-webkit-touch-callout: none;
 	pointer-events: none
 }
 a, sup, strong, small, q, em {
