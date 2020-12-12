@@ -2,8 +2,8 @@
     :root {
         --transparency-1: #ffffffb3;
 
-        --gray-0: white;
         --gray-01: black;
+        --gray-0: white;
         --gray-1: #111;
         --gray-2: #e8e8ed;
         --gray-3: #86868b;
@@ -11,7 +11,7 @@
         --gray-5: #888;
         --gray-6: #333;
         --gray-7: #1d1d1f;
-        --gray-8: #f2f2f7;
+        --gray-8: #f5f5f7;
         --gray-9: #e6e6e6;
         --gray-10: #666;
         --gray-11: #00000014;
@@ -24,8 +24,8 @@
     :root {
         --transparency-1: #1d1d1fb3;
 
-        --gray-0: black;
         --gray-01: white;
+        --gray-0: black;
         --gray-1: #f3f3f3;
         --gray-2: #121217;
         --gray-3: #63636e;
