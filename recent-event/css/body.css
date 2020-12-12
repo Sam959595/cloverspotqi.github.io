@@ -5,17 +5,18 @@
 	vertical-align: top;
 	box-sizing: border-box;
 
+	font: normal 400 12px/1.33337 "small", "bold", "icon";
+	letter-spacing: -.01em;
+
+	-webkit-font-smoothing: antialiased
+}
+*:not(a) {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-
-	font: normal 400 12px/1.33337 "small", "bold", "icon";
-	letter-spacing: -.01em;
-
-	-webkit-font-smoothing: antialiased
 }
 
 img {
