@@ -10,9 +10,13 @@
 
 	-webkit-font-smoothing: antialiased
 }
-
+*:not(main) {
+	-webkit-user-select: none;
+	user-select: none
+}
 
 img {
+	-webkit-touch-callout: none;
 	pointer-events: none
 }
 a, sup, strong, small, q, em {
