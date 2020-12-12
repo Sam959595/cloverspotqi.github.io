@@ -74,6 +74,9 @@ p, li {
 nav span, .hide button {
 	-webkit-tap-highlight-color: transparent
 }
+.setup > a, figcaption a {
+	-webkit-touch-callout: none
+}
 
 /* - */
 
@@ -199,8 +202,6 @@ picture, picture img {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .setup {
-	-webkit-touch-callout: none;
-
 	max-width: 10cm
 }
 .setup > a {
