@@ -15,8 +15,7 @@
 }
 
 img {
-	-webkit-touch-callout: none;
-	pointer-events: none
+	-webkit-touch-callout: none
 }
 a, sup, strong, small, q, em {
 	font: inherit
