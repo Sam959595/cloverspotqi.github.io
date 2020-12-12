@@ -377,6 +377,7 @@ main {
 	background-color: var(--gray-8)
 }
 main ul {
+	-webkit-user-drag: element;
 	display: grid;
 	grid-auto-flow: column;
 	column-gap: 2em;
@@ -387,6 +388,7 @@ main ul {
 	scroll-snap-type: x mandatory
 }
 main li {
+	-webkit-user-drag: element;
 	scroll-snap-align: center
 }
 
@@ -404,7 +406,6 @@ main a {
 	color: var(--gray-4)
 }
 main a {
-	-webkit-user-drag: element;
 	font: normal 600 14px/1.3 "small"
 }/* main div */
 
