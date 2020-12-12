@@ -5,13 +5,12 @@
 	vertical-align: top;
 	box-sizing: border-box;
 
+	-webkit-user-select: none
+
 	font: normal 400 12px/1.33337 "small", "bold", "icon";
 	letter-spacing: -.01em;
 
 	-webkit-font-smoothing: antialiased
-}
-*:not(a) {
-	-webkit-user-select: none
 }
 
 a, sup, strong, small, q, em {
@@ -212,10 +211,9 @@ picture, picture img {
 
 	text-align: center;
 
+	font: normal 600 16px "small";
+
 	background-color: var(--gray-11)
-}
-.setup div {
-	font: normal 600 16px "small"
 }
 
 .setup li {
