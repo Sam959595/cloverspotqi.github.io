@@ -15,8 +15,7 @@
 }
 
 img {
-	-webkit-touch-callout: none;
-	pointer-events: none
+	-webkit-touch-callout: none
 }
 a, sup, strong, small, q, em {
 	font: inherit
@@ -204,6 +203,8 @@ picture, picture img {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .setup {
+	-webkit-touch-callout: none;
+
 	max-width: 10cm
 }
 .setup > a {
