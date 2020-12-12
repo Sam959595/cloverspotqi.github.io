@@ -14,3 +14,11 @@ async function getResponse() {
 };
 
 getResponse();
+
+document.addEventListener('DOMContentLoaded', function() {
+    $('dl .hide button').click(function() {
+
+        $('dl .hide')[0].classList.remove('close');
+        this.remove();
+    });
+});
