@@ -112,8 +112,8 @@ input[placeholder] {
 input[type="search"]::-webkit-search-cancel-button {
 	-webkit-appearance: inherit;
 
-	width: 18px;
-	height: 18px;
+	width: 19px;
+	height: 19px;
 
 	cursor: pointer
 }
