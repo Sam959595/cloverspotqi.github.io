@@ -8,13 +8,16 @@ nav div, section {
 	width: 980px
 }
 
-@media screen and (max-width: 1024px) {
-    aside > * {
-        width: 450px
-    }
+@media screen and (min-width: 1024px) {
+}
 
+@media screen and (max-width: 1024px) {
     nav {
         padding: 0 22px
+    }
+
+    aside > * {
+        width: 450px
     }
 
     section {
@@ -57,7 +60,6 @@ nav div, section {
     aside main:first-child {
         margin-top: 3em
     }
-
     aside > *, section {
         width: 366px
     }
@@ -85,6 +87,7 @@ nav div, section {
     }
 
     aside > *, section {
-        width: 87.5%
+        margin: 0 16px;
+        width: auto
     }
 }
