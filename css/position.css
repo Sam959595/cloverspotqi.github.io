@@ -85,12 +85,8 @@ nav div, section {
     aside main:first-child {
         margin-top: 16px
     }
-    aside > * {
-        margin: 0 16px;
-        width: auto
-    }
 
-    section {
+    aside > *, section {
         width: 87.5%
     }
 }
