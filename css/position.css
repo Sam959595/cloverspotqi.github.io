@@ -87,7 +87,6 @@ nav div, section {
     }
 
     aside > *, section {
-        margin: 0 16px;
-        width: auto
+        width: 87.5%
     }
 }
