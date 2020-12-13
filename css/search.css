@@ -86,7 +86,7 @@ aside form {
 	width: 100%
 }
 
-/* - */
+/* - - - - - - - - - - - - - - - - - - - - - */
 
 input[type="search"] {
 	-webkit-appearance: none;
@@ -96,7 +96,7 @@ input[type="search"] {
 
 	border-radius: 10px;
 
-	padding: 0 7px 0 10px;
+	padding: 0 2px 0 10px;
 
 	font: normal 400 16px "small";
 	letter-spacing: -.022em;
