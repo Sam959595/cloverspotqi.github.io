@@ -37,3 +37,13 @@ async function getResponse() {
 };
 
 getResponse();
+
+
+Request.onreadystatuschange = function() {
+    if (Request.readyStatus == 1) {
+        $('aside form::before')[0].classList.add('load');
+    }
+    else {
+        $(this)[0].classList.remove('load');
+    }
+}
