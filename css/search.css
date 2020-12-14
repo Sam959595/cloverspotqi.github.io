@@ -2,8 +2,9 @@
 	display: none
 }
 
-aside main:last-child ul li {
-	transition: 2s ease;
+aside main:last-child ul li strong {
+	font-weight: inherit;
+	color: var(--gray-4)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
