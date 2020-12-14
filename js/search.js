@@ -1,17 +1,3 @@
-async function sech() {
-    let t = await fetch('https://sam959595.github.io/cloverspotqi.github.io/json/nav.json'),
-    i = await t.json(),
-    r = null,
-    e = document.querySelector('aside main:last-child ul');
-
-    for (r in i) {
-
-        e.innerHTML += `<li><a href="${i[r].href}">${i[r].title}</a></li>`;
-        i[r];
-    };
-};
-sech();
-
 document.addEventListener('DOMContentLoaded', function() {
 
     $('nav span').click(function() {
@@ -29,18 +15,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
         $('aside main:first-child div:last-child span')[0].classList.add('hide');
         $('aside main:first-child div:first-child')[0].classList.add('disappear');
-
-        $('aside main:last-child ul').html('');
     });
     $('aside main:first-child div:last-child span').click(function() {
 
         $('aside main:first-child div:last-child span')[0].classList.remove('hide');
         $('aside main:first-child div:first-child')[0].classList.remove('disappear');
-
-        sech();
     });
 });
 
+async function sech() {
+    let t = await fetch('https://sam959595.github.io/cloverspotqi.github.io/json/nav.json'),
+    i = await t.json(),
+    r = null,
+    e = document.querySelector('aside main:last-child ul');
+
+    for (r in i) {
+
+        e.innerHTML += `<li><a href="${i[r].href}">${i[r].title}</a></li>`;
+        i[r];
+    };
+};
+sech();
 
 Request.onreadystatuschange = function() {
     if (Request.readyStatus == 1) {
