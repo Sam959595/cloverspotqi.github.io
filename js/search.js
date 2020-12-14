@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     $('aside main:first-child div:first-child span').click(function() {
 
         $('aside')[0].classList.remove('visible');
-        $('.includes')[0].classList.remove('disguise');
+        $('body')[0].classList.remove('disguise');
     });
 
     $('aside input').click(function() {
@@ -22,12 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-async function getResponse() {
-    let t = await fetch('https://sam959595.github.io/cloverspotqi.github.io/json/nav.json');
-    let i = await t.json();
-
-    let r = null;
-    let e = document.querySelector('aside main:last-child ul');
+async function sch() {
+    let t = await fetch('https://sam959595.github.io/cloverspotqi.github.io/json/nav.json'),
+    i = await t.json(),
+    r = null,
+    e = document.querySelector('aside main:last-child ul');
 
     for (r in i) {
 
@@ -35,8 +34,7 @@ async function getResponse() {
         i[r];
     };
 };
-
-getResponse();
+sch();
 
 
 Request.onreadystatuschange = function() {
@@ -46,4 +44,11 @@ Request.onreadystatuschange = function() {
     else {
         $(this)[0].classList.remove('load');
     }
-}
+};
+
+$(document).ready(function() {
+    let i = document.getElementsByClassName('.load'),
+    t = document.getElementsByTagName('input')[0].value;
+
+    console.log(t.value);
+});
