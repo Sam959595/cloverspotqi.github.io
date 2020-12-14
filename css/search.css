@@ -1,6 +1,6 @@
 .disguise {
-	opacity: 0;
-	transition: opacity .5s ease 0s
+	height: 100%;
+	overflow: hidden
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -95,7 +95,7 @@ aside form::before {
 
 	font-size: 1.7em;
 
-	margin: 5px 0 0 6px;
+	margin: 5px 0 0 5px;
 
 	color: var(--gray-3)
 }
@@ -120,7 +120,7 @@ input[type="search"] {
 
 	border-radius: 10px;
 
-	padding: 0 7px 0 27px;
+	padding: 0 7px 0 26px;
 
 	font: normal 400 16px "small";
 	letter-spacing: -.022em;
@@ -136,7 +136,7 @@ input[placeholder] {
 input[type="search"]::-webkit-search-cancel-button {
 	-webkit-appearance: inherit;
 
-	width: 16px;
+	width: 17px;
 	height: 17px;
 
 	cursor: pointer

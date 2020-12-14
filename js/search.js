@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     $('nav span').click(function() {
         
         $('aside')[0].classList.add('visible');
-        $('.includes')[0].classList.add('disguise');
+        $('body')[0].classList.add('disguise');
     });
     $('aside main:first-child div:first-child span').click(function() {
 
