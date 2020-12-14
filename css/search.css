@@ -2,6 +2,10 @@
 	display: none
 }
 
+aside main:last-child ul li {
+	transition: 2s ease;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 aside {
@@ -174,7 +178,7 @@ aside main:last-child {
 
 /* - */
 
-aside main ul li a {
+aside main:last-child ul li a {
 	display: block;
 	font: normal 400 17px "small";
 	letter-spacing: -.022em;
@@ -183,6 +187,6 @@ aside main ul li a {
 
 	color: var(--gray-2)
 }
-aside main ul li+li {
+aside main:last-child ul li+li {
 	border-top: 1px solid var(--gray-8)
 }

@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         $('aside main:first-child div:last-child span')[0].classList.add('hide');
         $('aside main:first-child div:first-child')[0].classList.add('disappear');
+
+        document.querySelector('aside main:last-child ul').innerHTML = '<li><a href="">Apps</a></li><li><a href="">Application</a></li><li><a href="">Apply</a></li>';
     });
     $('aside main:first-child div:last-child span').click(function() {
 
