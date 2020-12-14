@@ -1,10 +1,10 @@
-async function getResponse() {
-    let t = await fetch('https://sam959595.github.io/cloverspotqi.github.io/json/post.json');
-    let i = await t.json();
-    i = i.splice(0, 10);
+async function sech() {
+    let t = await fetch('https://sam959595.github.io/cloverspotqi.github.io/json/post.json'),
+    i = await t.json(),
+    r = null,
+    e = document.querySelector('.includes ul');
 
-    let r = null;
-    let e = document.querySelector('.includes ul');
+    i = i.splice(0, 10);
 
     for (r in i) {
 
@@ -12,5 +12,4 @@ async function getResponse() {
         i[r];
     };
 };
-
-getResponse();
+sech();

@@ -1,28 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-    $('nav span').click(function() {
-        
-        $('aside')[0].classList.add('visible');
-        $('body')[0].classList.add('disguise');
-    });
-    $('aside main:first-child div:first-child span').click(function() {
-
-        $('aside')[0].classList.remove('visible');
-        $('body')[0].classList.remove('disguise');
-    });
-
-    $('aside input').click(function() {
-
-        $('aside main:first-child div:last-child span')[0].classList.add('hide');
-        $('aside main:first-child div:first-child')[0].classList.add('disappear');
-    });
-    $('aside main:first-child div:last-child span').click(function() {
-
-        $('aside main:first-child div:last-child span')[0].classList.remove('hide');
-        $('aside main:first-child div:first-child')[0].classList.remove('disappear');
-    });
-});
-
-async function sch() {
+async function sech() {
     let t = await fetch('https://sam959595.github.io/cloverspotqi.github.io/json/nav.json'),
     i = await t.json(),
     r = null,
@@ -34,7 +10,36 @@ async function sch() {
         i[r];
     };
 };
-sch();
+sech();
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    $('nav span').click(function() {
+        
+        $('aside')[0].classList.add('visible');
+        $('.includes')[0].classList.add('disguise');
+    });
+    $('aside main:first-child div:first-child span').click(function() {
+
+        $('aside')[0].classList.remove('visible');
+        $('.includes')[0].classList.remove('disguise');
+    });
+
+    $('aside input').click(function() {
+
+        $('aside main:first-child div:last-child span')[0].classList.add('hide');
+        $('aside main:first-child div:first-child')[0].classList.add('disappear');
+
+        $('aside main:last-child ul').html('');
+    });
+    $('aside main:first-child div:last-child span').click(function() {
+
+        $('aside main:first-child div:last-child span')[0].classList.remove('hide');
+        $('aside main:first-child div:first-child')[0].classList.remove('disappear');
+
+        sech();
+    });
+});
 
 
 Request.onreadystatuschange = function() {
@@ -47,8 +52,8 @@ Request.onreadystatuschange = function() {
 };
 
 $(document).ready(function() {
-    let i = document.getElementsByClassName('.load'),
+    let i = document.getElementsByClassName('load'),
     t = document.getElementsByTagName('input')[0].value;
-
-    console.log(t.value);
+    
+    console.log(t);
 });
