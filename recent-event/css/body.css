@@ -13,12 +13,11 @@
 	-webkit-font-smoothing: antialiased
 }
 
-a, sup, strong, small, q, em {
+a, strong, sup, sub, b, u, ins, del, i, s, mark, small, q, em {
 	font: inherit
 }
-a {
-	text-decoration: none;
-	color: var(--blue-1)
+a, u {
+	text-decoration: none
 }
 ul, ol {
 	list-style: none
@@ -67,6 +66,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 p, li {
 	color: var(--gray-7)
+}
+a {
+	color: var(--blue-1)
 }
 
 /* - */
