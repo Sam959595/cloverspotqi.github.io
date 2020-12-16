@@ -82,25 +82,6 @@ a {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 section {
-	margin: 0 auto;
-	width: 653px
-}
-
-@media screen and (max-width: 1024px) {
-	section {
-		width: 576px
-	}
-}
-
-@media screen and (max-width: 768px) {
-	section {
-		width: 87.5%
-	}
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-section {
 	height: 100%;
 
 	text-align: center
@@ -109,7 +90,7 @@ section {
 /* - */
 
 h1 {
-	margin-top: 1cm;
+	margin-top: 3cm;
 
 	font: 700 32px/1.125 "bold";
 	letter-spacing: .02em
@@ -118,7 +99,7 @@ h1 {
 /* - */
 
 section dl {
-	margin: 1cm 0 2cm
+	margin: 1cm 0 2.2cm
 }
 section dl div {
 	display: table-row
@@ -158,13 +139,6 @@ section p {
 
 /* - */
 
-section div:last-child {
-	padding-top: 1cm;
-
-	margin: inherit;
-	max-width: 10cm
-}
-
 section div:last-child button {
 	width: 100%;
 
@@ -181,29 +155,66 @@ section div:last-child button {
 }
 
 section div:last-child button+button {
-	margin-top: .5em;
-
 	background-color: var(--blue-1);
 	color: var(--gray-02)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-@media screen and (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
+section {
+	margin: 0 auto;
+	width: 653px
+}
+
+@media screen and (max-width: 1024px) {
+	section {
+		width: 576px
+	}
+}
+
+@media screen and (min-width: 768px) {
+	section > div:last-child {
+		display: flex
+	}
+	section div:last-child {
+		padding-top: .5cm
+	}
+	section div:last-child button+button {
+		margin-left: .5em
+	}
+}
+
+@media screen and (max-width: 768px) {
+	section {
+		width: 87.5%
+	}
+
+	h1 {
+		margin-top: 1cm
+	}
+
+	section div:last-child {
+		padding-top: .5cm;
+	
+		margin: inherit;
+		max-width: 10cm
+	}
+	section div:last-child button+button {
+		margin-top: .5em
+	}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+@media screen and (prefers-color-scheme: light) {
     :root {
         --gray-0: #f2f2f7;
 		--gray-01: black;
 		--gray-02: white;
         --gray-1: #111;
-        --gray-2: #e8e8ed;
-        --gray-3: #86868b;
-        --gray-4: #515154;
         --gray-5: #888;
-        --gray-6: #333;
         --gray-7: #1d1d1f;
         --gray-8: #f2f2f7;
-        --gray-9: #e6e6e6;
-        --gray-10: #666;
         --gray-11: #00000014;
 
         --blue-1: #06c;
@@ -216,15 +227,9 @@ section div:last-child button+button {
 		--gray-01: white;
 		--gray-02: white;
         --gray-1: #f3f3f3;
-        --gray-2: #121217;
-        --gray-3: #63636e;
-        --gray-4: #aaaab3;
         --gray-5: #8e8e93;
-        --gray-6: #d5d5e2;
         --gray-7: #f5f5f7;
         --gray-8: #17171d;
-        --gray-9: #1d1c1f;
-        --gray-10: #aaaab3;
         --gray-11: #2c2c2e;
 
         --blue-1: #007aff;
