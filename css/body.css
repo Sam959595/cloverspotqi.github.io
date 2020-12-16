@@ -71,6 +71,19 @@ a {
 
 /* - */
 
+iframe {
+	z-index: 10;
+
+	top: 0;
+
+	position: fixed;
+
+	width: 100vw;
+	height: 100vh
+}
+
+/* - */
+
 nav span, aside main:first-child div:last-child span, aside main:first-child div:first-child span {
 	-webkit-tap-highlight-color: transparent
 }
@@ -125,19 +138,6 @@ nav span::before {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-iframe {
-	z-index: 10;
-
-	top: 0;
-
-	position: fixed;
-
-	width: 100vw;
-	height: 100vh
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
 .includes, footer {
 	padding-top: 4cm
 }
@@ -163,7 +163,7 @@ iframe {
 	display: block;
 	border-radius: 11px
 }
-.includes div:first-child {
+.includes a div:first-child {
 	height: 200px;
 
 	background-size: cover;
@@ -173,19 +173,18 @@ iframe {
 }
 
 .includes a div:last-child {
+	padding: .5cm;
+
 	border-radius: 0 0 11px 11px;
 	background-color: var(--gray-6)
 }
 
-.includes div:last-child {
-	padding: .5cm
-}
-.includes div:last-child p {
+.includes a div:last-child p {
 	padding: 0 0 .2cm;
 
 	color: var(--gray-7)
 }
-.includes div:last-child h5 {
+.includes a div:last-child h5 {
 	font: normal 600 19px/1.21053 "bold";
 	letter-spacing: .012em;
 
