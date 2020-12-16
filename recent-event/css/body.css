@@ -34,10 +34,10 @@ button, span {
 hr {
 	border-top: 1px solid var(--gray-9)
 }
-sup {
+sup, sub {
 	font-size: 9px
 }
-strong {
+strong, b {
 	font-weight: 600
 }
 em {
@@ -214,7 +214,7 @@ picture, picture img {
 
 	text-align: center;
 
-	font: normal 600 18px "small";
+	font: normal 600 17px "small";
 
 	background-color: var(--gray-11)
 }
