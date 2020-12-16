@@ -84,7 +84,7 @@ a {
 section {
 	height: 100%;
 
-	padding-top: 2.7cm
+	padding: 2.7cm 0
 }
 
 /* - */
@@ -126,9 +126,6 @@ section ul a div:last-child h5 strong {
 	color: var(--gray-1)
 }
 section ul a div:last-child h5 {
-    font: normal 400 17px/1.47059 "small";
-	letter-spacing: -.022em;
-	
 	color: var(--gray-5)
 }
 
