@@ -166,8 +166,7 @@ nav span::before {
 .includes a div:first-child {
 	height: 200px;
 
-	background-size: cover;
-	background-position: center;
+	background: center/cover;
 
 	border-radius: 11px 11px 0 0
 }

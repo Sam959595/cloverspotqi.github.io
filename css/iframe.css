@@ -19,7 +19,7 @@ html, body {
 }
 
 img {
-	pointer-events: none
+	-webkit-touch-callout: none
 }
 a, strong, b, sup, sub, u, ins, del, i, s, mark, small, q, em {
 	font: inherit
@@ -30,7 +30,7 @@ a, u {
 ul, ol {
 	list-style: none
 }
-input, button, hr, iframe {
+input, button, hr {
 	border: none
 }
 input, button {
@@ -42,7 +42,7 @@ button, span {
 hr {
 	border-top: 1px solid var(--gray-8)
 }
-sup {
+sup, sub {
 	font-size: 9px
 }
 strong, b {
@@ -93,7 +93,7 @@ h1 {
 	margin-top: 3cm;
 
 	font: 700 32px/1.125 "bold";
-	letter-spacing: .02em
+	letter-spacing: 0
 }
 
 /* - */
@@ -164,6 +164,9 @@ section div:last-child button+button {
 section {
 	margin: 0 auto;
 	width: 653px
+}
+
+@media screen and (min-width: 1024px) {
 }
 
 @media screen and (max-width: 1024px) {
