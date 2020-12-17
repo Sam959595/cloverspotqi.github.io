@@ -87,8 +87,8 @@ section {
 
 /* - */
 
-section h4 {
-	padding: 1cm 0 2.7cm;
+section p {
+	padding: 1cm 0 2cm;
 	
 	text-align: center;
 	color: var(--gray-5)
