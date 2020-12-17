@@ -110,11 +110,18 @@ nav {
 	background-color: var(--transparency-1)
 }
 nav div {
-	text-align: center;
 	-webkit-mask: linear-gradient(to left, transparent 0, black 1cm)
 }
 nav h4 {
+	opacity: 0;
+	text-align: center;
 	color: var(--gray-01)
+}
+
+.title {
+	opacity: 1;
+
+	transition: .5s ease 0s;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
