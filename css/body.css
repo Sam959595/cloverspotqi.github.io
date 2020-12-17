@@ -130,12 +130,15 @@ nav h4 {
 	color: var(--gray-5)
 }
 
-nav span::before {
-	font-size: 1.8em;
-
-	content: "\ea1d";
-
-	color: var(--gray-5)
+nav ul {
+	display: inherit
+}
+nav li:first-child {
+    opacity: .56
+}
+nav li+li {
+    margin-left: 24px;
+    opacity: .88
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -147,7 +150,7 @@ blockquote {
 blockquote p {
 	text-align: center;
 
-	padding: 9px 8cm;
+	padding: 9px 3cm;
 
 	transform: translateY(-100%);
 
@@ -175,7 +178,7 @@ blockquote *:not(q):not(small) {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .includes, footer {
-	padding-top: 4cm
+	padding-top: 2.7cm
 }
 
 .includes h4 {
