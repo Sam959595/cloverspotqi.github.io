@@ -35,24 +35,24 @@ nav div, section {
         position: relative
     }
     .includes a::before {
-        display: block;
+        position: absolute;
         content: "";
+
+        display: block;
         
         top: 0;
         
         width: 100%;
         height: 100%;
     
-        border-radius: 10px;
-        
-        position: absolute;
+        border-radius: 11px;
         
         transition: all 0.3s linear 0s
     }
     .includes a:hover::before {
-        background-color: #00000034;
-    
-        transition: all 0.3s linear 0s
+        transition: all 0.3s linear 0s;
+
+        background-color: #00000034
     }
 }
 
@@ -72,13 +72,12 @@ nav div, section {
         font: normal 600 19px "bold";
         letter-spacing: .012em
     }
-
     blockquote p {
         padding: 9px 3em
     }
 
     .includes, footer {
-        padding-top: 2.7cm
+        padding-top: 1.5cm
     }
     .includes ul {
         grid-template-columns: 1fr

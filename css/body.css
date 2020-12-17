@@ -110,6 +110,8 @@ nav {
 
 	display: flex;
 
+	top: 0;
+
 	width: 100%;
 	height: 1.3cm;
 
@@ -162,7 +164,7 @@ blockquote *:not(q):not(small) {
 	will-change: transform;
 
 	background-color: var(--gray-9);
-	color: var(--small)
+	color: var(--gray-5)
 }
 .quote a {
 	transition: color 1s ease-in-out 3s;
