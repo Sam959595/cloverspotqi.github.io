@@ -97,8 +97,8 @@ main div {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 nav {
+	z-index: 5;
 	position: fixed;
-	z-index: 9;
 
 	display: flex;
 

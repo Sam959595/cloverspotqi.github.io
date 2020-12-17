@@ -73,6 +73,10 @@ nav div, section {
         letter-spacing: .012em
     }
 
+    blockquote p {
+        padding: 9px 3em
+    }
+
     .includes, footer {
         padding-top: 2.7cm
     }
