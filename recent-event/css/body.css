@@ -82,9 +82,9 @@ nav span, .hide button {
 
 /* - */
 
-.setup > a {
+nav h4, .setup > a {
 	white-space: nowrap;
-	text-overflow: ellipsis;
+	text-overflow: clip;
 	overflow: hidden
 }
 main div {
@@ -100,32 +100,21 @@ nav {
 	z-index: 5;
 	position: fixed;
 
-	display: flex;
-
 	width: 100%;
 	height: 1.3cm;
+
+	display: flex;
+	align-items: center;
 
 	backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
 	background-color: var(--transparency-1)
 }
 nav div {
-	display: flex;
-	align-items: center;
-	justify-content: space-between
+	text-align: center;
+	-webkit-mask: linear-gradient(to left, transparent 0, black 1cm)
 }
-nav a {
-	font: normal 600 21px "bold";
-	letter-spacing: .011em;
-
+nav h4 {
 	color: var(--gray-01)
-}
-
-nav span::before {
-	font-size: 1.8em;
-
-	content: "\ea1d";
-
-	color: var(--gray-7)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
