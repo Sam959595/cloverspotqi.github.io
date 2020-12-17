@@ -82,18 +82,16 @@ a {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 section {
-	height: 100%;
-
-	padding: 2.7cm 0
+	height: 100%
 }
 
 /* - */
 
 section h4 {
-	margin-bottom: 16px;
+	padding: 1cm 0 2.7cm;
 	
-    font: normal 700 24px/1.16667 "bold";
-    letter-spacing: .009em
+	text-align: center;
+	color: var(--gray-5)
 }
 
 section ul {
