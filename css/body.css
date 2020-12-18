@@ -65,6 +65,9 @@ em {
 body {
 	background-color: var(--gray-0)
 }
+li {
+	color: var(--gray-5)
+}
 a {
 	color: var(--blue-1)
 }
@@ -84,7 +87,7 @@ iframe {
 
 /* - */
 
-nav span, aside main:first-child div:last-child span, aside main:first-child div:first-child span {
+nav li+li, aside main:first-child div:last-child span, aside main:first-child div:first-child span {
 	-webkit-tap-highlight-color: transparent
 }
 
@@ -123,21 +126,17 @@ nav div {
 	align-items: center;
 	justify-content: space-between
 }
-nav h4 {
-	font: normal 600 21px "bold";
-	letter-spacing: .011em;
 
-	color: var(--gray-5)
-}
-
-nav ul {
-	display: inherit
-}
-nav li:first-child {
+nav ul:first-child li:first-child {
+	line-height: 1;
     opacity: .56
 }
-nav li+li {
-    margin-left: 24px;
+nav ul:first-child li:last-child {
+	font: normal 600 21px "bold";
+	letter-spacing: .011em
+}
+
+nav ul:last-child li {
 	opacity: .88;
 	
 	cursor: pointer

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    $('nav li:last-child').click(function() {
+    $('nav ul:last-child li').click(function() {
         
         $('aside')[0].classList.add('visible');
         $('.includes')[0].classList.add('disguise');
