@@ -84,7 +84,7 @@ nav span, .hide button {
 
 .setup > a {
 	white-space: nowrap;
-	text-overflow: clip;
+	text-overflow: ellipsis;
 	overflow: hidden
 }
 nav h4, main div {
