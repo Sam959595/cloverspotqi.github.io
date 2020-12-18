@@ -99,6 +99,8 @@ nav h4, main div {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 nav {
+	opacity: 0;
+	
 	z-index: 5;
 	position: fixed;
 
@@ -108,14 +110,10 @@ nav {
 	display: flex;
 	align-items: center;
 
-	opacity: 0;
 	transition: .5s ease 0s;
 
 	backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
 	background-color: var(--transparency-1)
-}
-nav h4 {
-	color: var(--gray-01)
 }
 
 .title {
