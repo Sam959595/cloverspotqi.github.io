@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
 $(document).scroll(function() {
     let w = $('article h1').offset();
 
-    if (($(window).height()+$(window).scrollTop() >= w.top) && ($(window).scrollTop() - (w.top + 20) < 0)) {
+    if (($(window).height()+$(window).scrollTop() >= w.top) && ($(window).scrollTop() - (w.top + 100) < 0)) {
         $('nav')[0].classList.remove('title');
     }
     else {
