@@ -8,7 +8,7 @@ async function sech() {
 
     for (r in i) {
 
-        e.innerHTML += `<li><a href="${i[r].href}"><div style="background-image: url(${i[r].image})"></div><div><p>${i[r].date}</p><h5>${i[r].title}</h5></div></a></li>`;
+        e.innerHTML += `<li><a href="${i[r].href}"><div data-img="${i[r].image}" style="background-image: url(${i[r].image})"></div><div><p>${i[r].date}</p><h5>${i[r].title}</h5></div></a></li>`;
         i[r];
     };
 };

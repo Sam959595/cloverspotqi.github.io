@@ -82,12 +82,14 @@ nav span, .hide button {
 
 /* - */
 
-nav h4, .setup > a {
+.setup > a {
 	white-space: nowrap;
 	text-overflow: clip;
 	overflow: hidden
 }
-main div {
+nav h4, main div {
+	text-align: center;
+
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
@@ -112,13 +114,7 @@ nav {
 	backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
 	background-color: var(--transparency-1)
 }
-
-nav div {
-	-webkit-mask: linear-gradient(to left, transparent 0, black 1cm)
-}
 nav h4 {
-	text-align: center;
-
 	color: var(--gray-01)
 }
 
@@ -389,7 +385,6 @@ main li {
 
 main a {
 	display: block;
-	text-align: center;
 
 	min-width: 6cm;
 
