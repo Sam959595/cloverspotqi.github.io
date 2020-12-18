@@ -23,15 +23,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-$(document).ready(function() {
-    $(document).scroll(function(e) {
-        let w = $('article h1').offset();
+$(document).scroll(function() {
+    let w = $('article h1').offset();
 
-        if (($(window).height()+$(window).scrollTop() >= w.top) && ($(window).scrollTop() - (w.top + 109) < 0)) {
-            $('nav h4')[0].classList.remove('title');
-        }
-        else {
-            $('nav h4')[0].classList.add('title');
-        }
-    });
+    if (($(window).height()+$(window).scrollTop() >= w.top) && ($(window).scrollTop() - (w.top + 15) < 0)) {
+        $('nav h4')[0].classList.remove('title');
+    }
+    else {
+        $('nav h4')[0].classList.add('title');
+    }
 });

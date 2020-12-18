@@ -109,19 +109,21 @@ nav {
 	backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
 	background-color: var(--transparency-1)
 }
+
 nav div {
 	-webkit-mask: linear-gradient(to left, transparent 0, black 1cm)
 }
 nav h4 {
 	opacity: 0;
 	text-align: center;
+
+	transition: .5s ease 0s;
+
 	color: var(--gray-01)
 }
 
 .title {
-	opacity: 1;
-
-	transition: .5s ease 0s;
+	opacity: 1
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
