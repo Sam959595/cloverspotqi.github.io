@@ -65,7 +65,7 @@ em {
 body {
 	background-color: var(--gray-0)
 }
-h1, h2, h3, h4, h5, h6, li {
+h1, h2, h3, h4, h5, h6, p, span {
 	color: var(--gray-5)
 }
 a {
@@ -74,20 +74,7 @@ a {
 
 /* - */
 
-iframe {
-	z-index: 10;
-
-	top: 0;
-
-	position: fixed;
-
-	width: 100vw;
-	height: 100vh
-}
-
-/* - */
-
-nav li:last-child, aside main:first-child div:last-child span, aside main:first-child div:first-child span {
+span {
 	-webkit-tap-highlight-color: transparent
 }
 
@@ -131,17 +118,11 @@ nav h4 {
     letter-spacing: .011em
 }
 
-nav ul {
-    display: inherit
-}
-nav li:first-child {
-    opacity: .56
-}
-nav li+li {
-    margin-left: 24px;
-	opacity: .88;
+nav span {
+	font: normal 600 19px "bold";
+	letter-spacing: .011em;
 	
-	cursor: pointer
+	color: var(--blue-1)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -226,7 +207,5 @@ blockquote *:not(q):not(small) {
 }
 .includes a div:last-child h5 {
 	font: normal 600 19px/1.21053 "bold";
-	letter-spacing: .012em;
-
-	color: var(--gray-5)
+	letter-spacing: .012em
 }
