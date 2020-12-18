@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', function() {
 $(document).scroll(function() {
     let w = $('article h1').offset();
 
-    if (($(window).height()+$(window).scrollTop() >= w.top) && ($(window).scrollTop() - (w.top + 15) < 0)) {
-        $('nav h4')[0].classList.remove('title');
+    if (($(window).height()+$(window).scrollTop() >= w.top) && ($(window).scrollTop() - (w.top + 20) < 0)) {
+        $('nav')[0].classList.remove('title');
     }
     else {
-        $('nav h4')[0].classList.add('title');
+        $('nav')[0].classList.add('title');
     }
 });
