@@ -128,7 +128,6 @@ nav div {
 }
 
 nav ul:first-child li:first-child {
-	line-height: 1;
     opacity: .56
 }
 nav ul:first-child li:last-child {

@@ -65,11 +65,11 @@ nav div, section {
     }
 
     nav {
-        height: 48px;
+        height: 60px;
         padding: 0 16px
     }
     nav ul:first-child li:last-child {
-        font: normal 600 16px "bold";
+        font: normal 600 19px "bold";
         letter-spacing: .012em
     }
     blockquote p {
