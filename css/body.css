@@ -87,7 +87,7 @@ iframe {
 
 /* - */
 
-nav li+li, aside main:first-child div:last-child span, aside main:first-child div:first-child span {
+nav ul:last-child li, aside main:first-child div:last-child span, aside main:first-child div:first-child span {
 	-webkit-tap-highlight-color: transparent
 }
 
