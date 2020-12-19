@@ -107,16 +107,18 @@ nav {
 nav div {
 	display: inherit;
 	align-items: center;
-	justify-content: space-between
+	justify-content: space-between;
+
+	font: normal 600 21px "bold";
+    letter-spacing: .011em
 }
 
 nav h1 {
-	font: normal 600 21px "bold";
-    letter-spacing: .011em;
+	font: inherit
 }
 nav span {
-	font: normal 400 17px "small";
-    letter-spacing: -.022em;
+	font: inherit;
+	
 	color: var(--blue-1)
 }
 
