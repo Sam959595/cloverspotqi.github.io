@@ -68,7 +68,7 @@ nav div, section {
         height: 48px;
         padding: 0 16px
     }
-    nav div > * {
+    nav h1 {
         font: normal 600 19px "bold";
         letter-spacing: .012em
     }
