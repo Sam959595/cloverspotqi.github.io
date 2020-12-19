@@ -116,13 +116,10 @@ nav h1, nav span {
 }
 
 nav h1 {
-	width: 17px
+	width: 56.75px
 }
 nav p {
 	opacity: 0
-}
-nav span::before {
-	content: "\ea1d"
 }
 
 nav * {
@@ -130,7 +127,8 @@ nav * {
 }
 
 .title > *:not(p) {
-	opacity: 0
+	opacity: 0;
+	pointer-events: none
 }/* - */
 .title p {
 	opacity: 1
