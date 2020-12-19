@@ -125,7 +125,7 @@ input[type="search"] {
 
 	padding: 0 6px 0 26px;
 
-	font: normal 400 16px "small";
+	font: normal 400 16px/2 "small";
 	letter-spacing: -.022em;
 
 	background-color: var(--gray-1)

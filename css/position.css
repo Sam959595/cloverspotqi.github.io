@@ -69,7 +69,7 @@ nav div, section {
         padding: 0 16px
     }
     nav div {
-        font: normal 600 19px "bold";
+        font: normal 600 19px/1.26316 "bold";
         letter-spacing: .012em
     }
     blockquote p {

@@ -109,7 +109,7 @@ nav div {
 	align-items: center;
 	justify-content: space-between;
 
-	font: normal 600 21px "bold";
+	font: normal 600 21px/1.14286 "bold";
     letter-spacing: .011em
 }
 
@@ -118,7 +118,7 @@ nav h1 {
 }
 nav span {
 	font: inherit;
-	
+
 	color: var(--blue-1)
 }
 
