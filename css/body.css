@@ -111,11 +111,11 @@ nav div {
 }
 
 nav h1, nav span {
-	font: normal 600 21px/1.14286 "bold";
+	font: normal 600 21px/1.14286 "bold", "icon";
     letter-spacing: .011em
 }
-nav span {
-	color: var(--blue-1)
+nav span::before {
+	content: "\ea1d"
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
