@@ -22,8 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         r[0].classList.add('hide');
         i[0].classList.add('disappear');
-
-        document.querySelector('aside main:last-child ul').innerHTML = '<li><a href=""><u>App</u>s</a></li><li><a href=""><u>App</u>lication</a></li><li><a href=""><u>App</u>ly</a></li>';
     });
     r.click(function() {
 

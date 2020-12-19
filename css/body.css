@@ -112,19 +112,27 @@ nav div {
 
 nav h1, nav span {
 	font: normal 600 21px/1.14286 "bold", "icon";
-    letter-spacing: .011em
+	letter-spacing: .011em
 }
-nav h1, nav span {
+
+nav h1 {
 	width: 17px
+}
+nav p {
+	opacity: 0
 }
 nav span::before {
 	content: "\ea1d"
 }
 
-nav p {
-	opacity: 0
+nav * {
+	transition: opacity .5s ease 0s
 }
-.title {
+
+.title > *:not(p) {
+	opacity: 0
+}/* - */
+.title p {
 	opacity: 1
 }/* - */
 

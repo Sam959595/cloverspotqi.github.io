@@ -84,7 +84,7 @@ a {
 	text-overflow: ellipsis;
 	overflow: hidden
 }
-nav h4, main div {
+nav h1, main div {
 	text-align: center;
 
 	display: -webkit-box;
@@ -107,7 +107,7 @@ nav {
 	display: flex;
 	align-items: center;
 
-	transition: .5s ease 0s;
+	transition: opacity .5s ease 0s;
 
 	backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
 	background-color: var(--transparency-1)
