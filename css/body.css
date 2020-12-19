@@ -47,6 +47,9 @@ strong, b {
 em {
 	font-style: italic
 }
+span {
+	-webkit-tap-highlight-color: transparent
+}
 
 /* - */
 
@@ -70,12 +73,6 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 a {
 	color: var(--blue-1)
-}
-
-/* - */
-
-span {
-	-webkit-tap-highlight-color: transparent
 }
 
 /* - */
@@ -113,15 +110,11 @@ nav div {
 	justify-content: space-between
 }
 
-nav h4 {
-    font: normal 600 21px "bold";
+nav div > * {
+	font: normal 600 21px "bold";
     letter-spacing: .011em
 }
-
 nav span {
-	font: normal 600 19px "bold";
-	letter-spacing: .011em;
-	
 	color: var(--blue-1)
 }
 

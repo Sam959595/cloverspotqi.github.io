@@ -74,9 +74,7 @@ aside main:first-child div:first-child span {
 aside main:first-child div:first-child span::before {
 	font-size: 23px;
 
-	content: "\f314";
-
-	
+	content: "\f314"
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */

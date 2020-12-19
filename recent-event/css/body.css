@@ -43,6 +43,12 @@ strong, b {
 em {
 	font-style: italic
 }
+span, button {
+	-webkit-tap-highlight-color: transparent
+}
+.setup > a, figcaption a {
+	-webkit-touch-callout: none
+}
 
 /* - */
 
@@ -73,15 +79,6 @@ a {
 
 /* - */
 
-nav span, .hide button {
-	-webkit-tap-highlight-color: transparent
-}
-.setup > a, figcaption a {
-	-webkit-touch-callout: none
-}
-
-/* - */
-
 .setup > a {
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -100,7 +97,7 @@ nav h4, main div {
 
 nav {
 	opacity: 0;
-	
+
 	z-index: 5;
 	position: fixed;
 
