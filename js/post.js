@@ -1,7 +1,3 @@
-window.onload = function() {
-    $('blockquote p')[0].classList.add('quote');
-};
-
 async function sech() {
     let t = await fetch('https://sam959595.github.io/cloverspotqi.github.io/json/post.json'),
     i = await t.json(),
@@ -17,3 +13,19 @@ async function sech() {
     };
 };
 sech();
+
+window.onload = function() {
+    $('blockquote p')[0].classList.add('quote');
+};
+
+$(document).scroll(function() {
+    let w = $('nav').offset(),
+    c = $('nav div');
+
+    if (($(window).height()+$(window).scrollTop() >= w.top) && ($(window).scrollTop() - (w.top + 100) < 0)) {
+        c[0].classList.remove('title');
+    }
+    else {
+        c[0].classList.add('title');
+    }
+});

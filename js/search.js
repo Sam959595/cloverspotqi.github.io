@@ -1,27 +1,34 @@
 document.addEventListener('DOMContentLoaded', function() {
+    let a = $('nav span'),
+    b = $('aside'),
+    c = $('aside main:first-child div:first-child span'),
+    d = $('.includes'),
+    e = $('aside input'),
+    r = $('aside main:first-child div:last-child span'),
+    i = $('aside main:first-child div:first-child');
 
-    $('nav span').click(function() {
+    a.click(function() {
         
-        $('aside')[0].classList.add('visible');
-        $('.includes')[0].classList.add('disguise');
+        b[0].classList.add('visible');
+        d[0].classList.add('disguise');
     });
-    $('aside main:first-child div:first-child span').click(function() {
+    c.click(function() {
 
-        $('aside')[0].classList.remove('visible');
-        $('.includes')[0].classList.remove('disguise');
+        b[0].classList.remove('visible');
+        d[0].classList.remove('disguise');
     });
 
-    $('aside input').click(function() {
+    e.click(function() {
 
-        $('aside main:first-child div:last-child span')[0].classList.add('hide');
-        $('aside main:first-child div:first-child')[0].classList.add('disappear');
+        r[0].classList.add('hide');
+        i[0].classList.add('disappear');
 
         document.querySelector('aside main:last-child ul').innerHTML = '<li><a href=""><u>App</u>s</a></li><li><a href=""><u>App</u>lication</a></li><li><a href=""><u>App</u>ly</a></li>';
     });
-    $('aside main:first-child div:last-child span').click(function() {
+    r.click(function() {
 
-        $('aside main:first-child div:last-child span')[0].classList.remove('hide');
-        $('aside main:first-child div:first-child')[0].classList.remove('disappear');
+        r[0].classList.remove('hide');
+        i[0].classList.remove('disappear');
     });
 });
 
