@@ -3,8 +3,6 @@
 }
 
 aside main:last-child ul li u {
-	font-weight: inherit;
-
 	color: var(--gray-4)
 }
 
