@@ -1,9 +1,9 @@
-nav div, picture img, .vertical img, article, table, dl, blockquote, footer > *, main > * {
+nav div, picture img, .vertical img, article, table, dl, blockquote, footer div, main > * {
 	margin: 0 auto;
 	width: 653px
 }
 
-nav div, picture img, footer > *, main > * {
+nav div, picture img, footer div, main > * {
 	width: 980px
 }
 
@@ -18,11 +18,11 @@ nav div, picture img, footer > *, main > * {
         width: 576px
     }
 
-    nav, footer > * {
+    nav, footer div {
         padding: 0 22px
     }
     @media screen and (orientation: landscape) {
-        nav, footer > * {
+        nav, footer div {
             padding-left: max(22px, env(safe-area-inset-left));
             padding-right: max(22px, env(safe-area-inset-right))
         }
@@ -31,6 +31,21 @@ nav div, picture img, footer > *, main > * {
     .content h1 {
         padding-top: 2.5cm
     }
+    @media screen and (orientation: landscape) {
+        .content h1 {
+            font: normal 600 40px/1.1 "bold";
+            letter-spacing: 0
+        }
+    }
+
+    main hr {
+        margin-left: 22px
+    }
+    @media screen and (orientation: landscape) {
+        main hr {
+            margin-left: max(22px, env(safe-area-inset-left))
+        }
+    }
 
     main li:first-child {
         padding-left: 22px
@@ -38,9 +53,13 @@ nav div, picture img, footer > *, main > * {
     main li:last-child {
         padding-right: 22px
     }
-
-    main hr {
-        margin-left: 22px
+    @media screen and (orientation: landscape) {
+        main li:first-child {
+            padding-left: max(22px, env(safe-area-inset-left))
+        }
+        main li:last-child {
+            padding-right: max(22px, env(safe-area-inset-right))
+        }
     }
 }
 
@@ -55,7 +74,7 @@ nav div, picture img, footer > *, main > * {
         border-radius: 11px
     }
 
-    nav div, picture img, footer > * {
+    nav div, picture img, footer div {
         width: 100%
     }
 
@@ -102,7 +121,7 @@ nav div, picture img, footer > *, main > * {
         padding: 0 2em
     }
 
-    nav, footer > * {
+    nav, footer div {
         padding: 0 16px
     }
 

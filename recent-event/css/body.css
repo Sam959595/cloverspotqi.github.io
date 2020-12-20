@@ -437,7 +437,7 @@ footer li {
 	color: var(--gray-3)
 }
 footer ol {
-	padding-left: 33px;
+	padding-left: 16px;
 	list-style: outside decimal
 }
 footer ol li a {
