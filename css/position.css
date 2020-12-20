@@ -13,10 +13,7 @@ nav div, section {
 
 @media screen and (max-width: 1024px) {
     nav {
-        padding: 0 22px;
-        
-        padding-left: max(22px, env(safe-area-inset-left));
-        padding-right: max(22px, env(safe-area-inset-right))
+        padding: 0 22px
     }
 
     aside > * {
