@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    let a = $('nav span'),
+    let d = $('body'),
+    a = $('nav span'),
     b = $('aside'),
-    c = $('aside main:first-child div:first-child span'),
-    d = $('.includes'),
     e = $('aside input'),
-    r = $('aside main:first-child div:last-child span'),
-    i = $('aside main:first-child div:first-child');
+    i = $('aside main:first-child div:first-child'),
+    c = $('aside main:first-child div:first-child span'),
+    r = $('aside main:first-child div:last-child span');
 
     a.click(function() {
         
