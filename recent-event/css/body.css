@@ -361,7 +361,8 @@ dl dd {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 main {
-	padding-bottom: 4em;
+	padding-bottom: 2em;
+	padding-bottom: calc(max(4em, env(safe-area-inset-bottom)));
 	background-color: var(--gray-8)
 }
 main ul {
