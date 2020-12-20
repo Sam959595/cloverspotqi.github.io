@@ -21,6 +21,12 @@ nav div, picture img, footer > *, main > * {
     nav, footer > * {
         padding: 0 22px
     }
+    @media screen and (orientation: landscape) {
+        nav, footer > * {
+            padding-left: max(22px, env(safe-area-inset-left));
+            padding-right: max(22px, env(safe-area-inset-right))
+        }
+    }
 
     .content h1 {
         padding-top: 2.5cm
