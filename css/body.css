@@ -114,6 +114,9 @@ nav h1, nav span {
 	font: normal 600 21px/1.14286 "bold";
 	letter-spacing: .011em
 }
+nav span {
+	color: var(--blue-1)
+}
 
 nav h1 {
 	width: 56.75px
@@ -129,7 +132,7 @@ nav * {
 .title > *:not(p) {
 	opacity: 0;
 	pointer-events: none
-}/* - */
+}
 .title p {
 	opacity: 1
 }/* - */
