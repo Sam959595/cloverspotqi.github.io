@@ -39,7 +39,6 @@ async function sech() {
     for (r in i) {
 
         e.innerHTML += `<li><a href="${i[r].href}">${i[r].title}</a></li>`;
-        i[r];
     };
 };
 sech();

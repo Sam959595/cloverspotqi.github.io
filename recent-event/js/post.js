@@ -2,7 +2,7 @@ $(document).scroll(function() {
     let w = $('article h1'),
     p =  $('nav');
 
-    if ($(document).scrollTop() > w.height()) {
+    if ($(window).scrollTop() > w.height()) {
         p[0].classList.add('title');
     }
     else {
