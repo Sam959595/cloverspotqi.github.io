@@ -1,12 +1,12 @@
 $(document).scroll(function() {
-    let w = $('article h1').offset(),
+    let w = $('article h1'),
     p =  $('nav');
 
-    if (($(window).height()+$(window).scrollTop() >= w.top) && ($(window).scrollTop() - (w.top + 100) < 0)) {
-        p[0].classList.remove('title');
+    if ($(document).scrollTop() > w.height()) {
+        p[0].classList.add('title');
     }
     else {
-        p[0].classList.add('title');
+        p[0].classList.remove('title');
     }
 });
 

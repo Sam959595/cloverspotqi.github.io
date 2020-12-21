@@ -1,0 +1,240 @@
+html, body {
+	width: 100vw;
+	height: 100vh
+}
+
+* {
+	margin: 0;
+	padding: 0;
+
+	vertical-align: top;
+	box-sizing: border-box;
+
+	-webkit-user-select: none;
+
+	font: normal 400 12px/1.33337 "small", "bold", "icon";
+	letter-spacing: -.01em;
+
+	-webkit-font-smoothing: antialiased
+}
+
+img {
+	-webkit-touch-callout: none
+}
+a, strong, b, sup, sub, u, ins, del, i, s, mark, small, q, em {
+	font: inherit
+}
+a, u {
+	text-decoration: none
+}
+ul, ol {
+	list-style: none
+}
+input, button, hr {
+	border: none
+}
+input, button {
+	outline: none
+}
+button, span {
+	cursor: pointer
+}
+hr {
+	border-top: 1px solid var(--gray-8)
+}
+sup, sub {
+	font-size: 9px
+}
+strong, b {
+	font-weight: 600
+}
+em {
+	font-style: italic
+}
+
+/* - */
+
+::-webkit-scrollbar {
+	display: none
+}
+:lang(ru-RU) {
+	quotes: "\00ab" "\00bb"
+}
+:lang(en-US) {
+	quotes: "\201c" "\201d"
+}
+
+/* - */
+
+body {
+	background-color: var(--gray-0)
+}
+h1, h2, h3, h4, h5, h6 {
+	color: var(--gray-1)
+}
+p, li {
+	color: var(--gray-5)
+}
+a {
+	color: var(--blue-1)
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+section {
+	height: 100%;
+
+	text-align: center
+}
+
+/* - */
+
+h1 {
+	margin-top: 3cm;
+
+	font: 700 32px/1.125 "bold";
+	letter-spacing: 0
+}
+
+/* - */
+
+section dl {
+	margin: 1cm 0 2.2cm
+}
+section dl div {
+	display: table-row
+}
+section dl div > * {
+	display: table-cell;
+	vertical-align: baseline
+}
+
+section dl div+div dt {
+	padding-top: .8em
+}
+
+section dl dd {
+	text-align: left;
+
+	padding-left: 2em;
+
+	color: var(--gray-5)
+}
+section dl dd strong {
+	color: var(--gray-7)
+}
+
+section dl dt img {
+	-webkit-mask: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 45 45'%3e%3cpath d='M12.2278449,0.00125705805 L32.3808775,5.09827651e-16 C36.7688213,5.09827651e-16 38.3599958,0.456876055 39.9641624,1.31479378 C41.5683291,2.1727115 42.8272885,3.43167089 43.6852062,5.03583755 L43.8367596,5.32798654 C44.5968247,6.84314665 45,8.49711466 45,12.6191225 L45,32.3808775 L44.994978,33.1484926 C44.943148,36.9617387 44.4911289,38.457218 43.6852062,39.9641624 C42.8272885,41.5683291 41.5683291,42.8272885 39.9641624,43.6852062 L39.6720135,43.8367596 C38.1568534,44.5968247 36.5028853,45 32.3808775,45 L12.6191225,45 L11.8515074,44.994978 C8.03826132,44.943148 6.542782,44.4911289 5.03583755,43.6852062 C3.43167089,42.8272885 2.1727115,41.5683291 1.31479378,39.9641624 L1.16324036,39.6720135 C0.427693516,38.2057295 0.0263826823,36.6094485 0.00125705805,32.7721551 L3.39885101e-16,12.6191225 C3.39885101e-16,8.23117867 0.456876055,6.64000422 1.31479378,5.03583755 C2.1727115,3.43167089 3.43167089,2.1727115 5.03583755,1.31479378 L5.32798654,1.16324036 C6.79427052,0.427693516 8.39055149,0.0263826823 12.2278449,0.00125705805 Z'%3e%3c/path%3e%3c/svg%3e") 100% 100% no-repeat
+}
+
+/* - */
+
+section p {
+	margin-top: .2em;
+
+	font: 400 11px/1.2 "small";
+	letter-spacing: -.008em
+}
+
+/* - */
+
+section div:last-child button {
+	width: 100%;
+
+	border-radius: 13px;
+
+	padding: .8em 1.2em;
+
+	font: normal 600 16px "small";
+
+	overflow: hidden;
+
+	background-color: var(--gray-11);
+	color: var(--gray-01)
+}
+
+section div:last-child button+button {
+	background-color: var(--blue-1);
+	color: var(--gray-02)
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+section {
+	margin: 0 auto;
+	width: 653px
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (max-width: 1024px) {
+	section {
+		width: 576px
+	}
+}
+
+@media screen and (min-width: 768px) {
+	section > div:last-child {
+		display: flex
+	}
+	section div:last-child {
+		padding-top: .5cm
+	}
+	section div:last-child button+button {
+		margin-left: .5em
+	}
+}
+
+@media screen and (max-width: 768px) {
+	section {
+		width: 87.5%
+	}
+
+	h1 {
+		margin-top: 1cm
+	}
+
+	section div:last-child {
+		padding-top: .5cm;
+	
+		margin: inherit;
+		max-width: 10cm
+	}
+	section div:last-child button+button {
+		margin-top: .5em
+	}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+@media screen and (prefers-color-scheme: light) {
+    :root {
+        --gray-0: #f2f2f7;
+		--gray-01: black;
+		--gray-02: white;
+        --gray-1: #111;
+        --gray-5: #888;
+        --gray-7: #1d1d1f;
+        --gray-8: #f2f2f7;
+        --gray-11: #00000014;
+
+        --blue-1: #06c;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        --gray-0: black;
+		--gray-01: white;
+		--gray-02: white;
+        --gray-1: #f3f3f3;
+        --gray-5: #8e8e93;
+        --gray-7: #f5f5f7;
+        --gray-8: #17171d;
+        --gray-11: #2c2c2e;
+
+        --blue-1: #007aff;
+    }
+}

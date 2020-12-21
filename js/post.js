@@ -19,13 +19,13 @@ window.onload = function() {
 };
 
 $(document).scroll(function() {
-    let w = $('blockquote').offset(),
+    let w = $('blockquote'),
     p = $('nav div');
 
-    if (($(window).height()+$(window).scrollTop() >= w.top) && ($(window).scrollTop() - (w.top - null) < 0)) {
-        p[0].classList.remove('title');
+    if ($(document).scrollTop() > w.height()) {
+        p[0].classList.add('title');
     }
     else {
-        p[0].classList.add('title');
+        p[0].classList.remove('title');
     }
 });
