@@ -29,13 +29,10 @@ nav div, picture img, footer div, main > * {
     }
 
     .content h1 {
+        font: normal 600 40px/1.1 "bold";
+        letter-spacing: 0;
+        
         padding-top: 2.5cm
-    }
-    @media screen and (orientation: landscape) {
-        .content h1 {
-            font: normal 600 40px/1.1 "bold";
-            letter-spacing: 0
-        }
     }
 
     main hr {
