@@ -1,6 +1,6 @@
 function elLoad() {
 
-    if ($(window) && $('footer')) {
+    if (true) {
         async function sech() {
             let t = await fetch('https://sam959595.github.io/cloverspotqi.github.io/json/post.json'),
             i = await t.json(),
