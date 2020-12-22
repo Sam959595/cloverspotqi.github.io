@@ -74,10 +74,10 @@ nav div, section {
         height: 48px;
         padding: 0 16px
     }
-    nav h1, nav span {
+    /* nav h1, nav span {
         font: normal 600 19px/1.26316 "bold";
         letter-spacing: .012em
-    }
+    }*/
     blockquote p {
         padding: 9px 3em
     }
