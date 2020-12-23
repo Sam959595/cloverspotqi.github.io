@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     let d = $('body'),
-    a = $('nav span'),
+    a = $('nav li:last-child'),
     b = $('aside'),
     e = $('aside input'),
     i = $('aside main:first-child div:first-child'),

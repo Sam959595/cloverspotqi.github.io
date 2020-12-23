@@ -3,7 +3,7 @@ aside > * {
 	width: 35%
 }
 
-nav div, section {
+nav ul, section {
 	margin: 0 auto;
 	width: 980px
 }
