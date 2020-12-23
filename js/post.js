@@ -26,7 +26,7 @@ elLoad();
 
 $(window).scroll(function() {
     let w = $('blockquote'),
-    p = $('nav div');
+    p = $('nav ul');
 
     if ($(window).scrollTop() > w.height()) {
         p[0].classList.add('title');
