@@ -22,7 +22,7 @@
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
-        --transparency-1: rgba(21, 21, 22, 0.7);
+        --transparency-1: #15151699;
 
         --gray-0: black;
         --gray-1: #1c1c1e;
