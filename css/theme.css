@@ -22,7 +22,7 @@
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
-        --transparency-1: #151516a6;
+        --transparency-1: #151516ee;
 
         --gray-0: black;
         --gray-1: #1c1c1e;
