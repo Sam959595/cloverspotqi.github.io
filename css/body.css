@@ -123,8 +123,8 @@ nav li:first-child img {
 }
 nav li:nth-child(2) {
 	font-weight: 600;
-	
-	opacity: 1/* - */
+
+	opacity: 1
 }
 nav li:last-child {
 	color: var(--blue-1)
