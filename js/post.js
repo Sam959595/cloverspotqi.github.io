@@ -17,8 +17,7 @@ function elLoad() {
         sech();
 
         console.log('show');
-    }
-    else {
+    } else {
         console.log('null');
     }
 };
@@ -28,14 +27,14 @@ elLoad();
 
 window.scroll(function() {
     let w = $('blockquote'),
-    p = $('nav ul');
+    p = $('nav ul'),
+    u = 'title';
 
     if ($(window).scrollTop() > w.height()) {
-        p[0].classList.add('title');
-    }
-    else {
-        p[0].classList.remove('title');
-    }
+        p[0].classList.add(u);
+    } else {
+        p[0].classList.remove(u);
+    };
 });
 
 //

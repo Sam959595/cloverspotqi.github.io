@@ -5,8 +5,7 @@ $(document).scroll(function() {
 
     if ($(window).scrollTop() > w.height()) {
         p[0].classList.add(n);
-    }
-    else {
+    } else {
         p[0].classList.remove(n);
     };
 });
