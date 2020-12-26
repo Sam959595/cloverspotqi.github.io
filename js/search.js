@@ -5,32 +5,41 @@ document.addEventListener('DOMContentLoaded', function() {
     e = $('aside input'),
     i = $('aside main:first-child div:first-child'),
     c = $('aside main:first-child div:first-child span'),
-    r = $('aside main:first-child div:last-child span');
+    r = $('aside main:first-child div:last-child span'),
+    p = $('aside main:last-child ul'),
+    v = 'visible',
+    y = 'disguise',
+    h = 'hide',
+    x = 'disappear';
 
     a.click(function() {
         
-        b[0].classList.add('visible');
-        d[0].classList.add('disguise');
+        b[0].classList.add(v);
+        d[0].classList.add(y);
     });
     c.click(function() {
 
-        b[0].classList.remove('visible');
-        d[0].classList.remove('disguise');
+        b[0].classList.remove(v);
+        d[0].classList.remove(y);
     });
 
     e.click(function() {
 
-        r[0].classList.add('hide');
-        i[0].classList.add('disappear');
+        r[0].classList.add(h);
+        i[0].classList.add(x);
+
+        p[0].innerHTML = "";
     });
     r.click(function() {
 
-        r[0].classList.remove('hide');
-        i[0].classList.remove('disappear');
+        r[0].classList.remove(h);
+        i[0].classList.remove(x);
     });
 });
 
-async function sech() {
+//
+
+async function categories() {
     let t = await fetch('https://sam959595.github.io/cloverspotqi.github.io/json/nav.json'),
     i = await t.json(),
     r = null,
@@ -41,20 +50,4 @@ async function sech() {
         e.innerHTML += `<li><a href="${i[r].href}">${i[r].title}</a></li>`;
     };
 };
-sech();
-
-Request.onreadystatuschange = function() {
-    if (Request.readyStatus == 1) {
-        $('aside form::before')[0].classList.add('load');
-    }
-    else {
-        $(this)[0].classList.remove('load');
-    }
-};
-
-$(document).ready(function() {
-    let i = document.getElementsByClassName('load'),
-    t = document.getElementsByTagName('input')[0].value;
-    
-    console.log(t);
-});
+categories();

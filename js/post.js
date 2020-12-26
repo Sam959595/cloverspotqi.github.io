@@ -19,12 +19,14 @@ function elLoad() {
         console.log('show');
     }
     else {
-        console.log('null')
+        console.log('null');
     }
 };
 elLoad();
 
-$(window).scroll(function() {
+//
+
+window.scroll(function() {
     let w = $('blockquote'),
     p = $('nav ul');
 
@@ -36,21 +38,8 @@ $(window).scroll(function() {
     }
 });
 
+//
+
 window.onload = function() {
     $('blockquote p')[0].classList.add('quote');
 };
-
-$.ajax({
-    beforeSend: function() {
-        $('.load').show();
-    },
-    complete: function() {
-        $('.load').hide();
-    },
-    statusCode: {
-        404: function() {
-        },
-        403: function() {
-        }
-    }
-});
