@@ -1,4 +1,4 @@
-$(document).scroll(function() {
+$(window).scroll(function() {
     let w = $('article h1'),
     p =  $('nav'),
     n = 'title';
@@ -13,7 +13,7 @@ $(document).scroll(function() {
 //
 
 async function articleDown() {
-    let t = await fetch('https://sam959595.github.io/cloverspotqi.github.io/json/post.json'),
+    let t = await fetch('json/post.json'),
     i = await t.json(),
     e = document.querySelector('main ul'),
     r = null;
@@ -41,9 +41,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-window.scroll(function() {
+$(window).scroll(function() {
 
-    if(window.scrollTop() + window.height() >= document.height()) {
+    if($(window).scrollTop() + $(window).height() >= $(document).height()) {
         let n = $('footer'),
         m = 'load';
 

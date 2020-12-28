@@ -2,7 +2,7 @@ function elLoad() {
 
     if (true) {
         async function sech() {
-            let t = await fetch('https://sam959595.github.io/cloverspotqi.github.io/json/post.json'),
+            let t = await fetch('json/post.json'),
             i = await t.json(),
             r = null,
             e = document.querySelector('.includes ul');
@@ -25,16 +25,16 @@ elLoad();
 
 //
 
-window.scroll(function() {
+$(window).scroll(function() {
     let w = $('blockquote'),
-    p = $('nav ul'),
+    p = $('nav'),
     u = 'title';
 
     if ($(window).scrollTop() > w.height()) {
         p[0].classList.add(u);
     } else {
         p[0].classList.remove(u);
-    };
+    }
 });
 
 //

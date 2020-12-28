@@ -104,7 +104,7 @@ nav {
 	height: 1.3cm;
 
 	backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
-	background-color: var(--transparency-1)
+	background-color: var(--gray-10)
 }
 nav ul {
 	display: inherit;
@@ -132,6 +132,9 @@ nav * {
 	transition: opacity .5s ease 0s
 }
 
+.title {
+	background-color: var(--transparency-1)
+}
 .title li {
 	opacity: 0;
 	pointer-events: none
