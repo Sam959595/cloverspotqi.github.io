@@ -114,29 +114,20 @@ nav ul {
 
 nav li {
 	font: normal 400 17px "small";
-	letter-spacing: -.022em
+	letter-spacing: -.022em;
+
+	transition: opacity .5s ease 0s
 }
 nav li:first-child {
-	width: 84.11px
-}
-nav li:nth-child(2) {
-	font-weight: 600;
-	color: var(--gray-5)
+	font-weight: 600
 }
 nav li:last-child {
 	color: var(--blue-1)
 }
 
-nav * {
-	transition: opacity .5s ease 0s
-}
-
-.title li {
+.title li:last-child {
 	opacity: 0;
 	pointer-events: none
-}
-.title li:nth-child(2) {
-	opacity: 1
 }/* - */
 
 /* - - - - - - - - - - - - - - - - - - - - - */
