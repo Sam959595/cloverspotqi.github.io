@@ -27,7 +27,7 @@ elLoad();
 
 $(window).scroll(function() {
     let w = $('blockquote'),
-    p = $('nav'),
+    p = $('nav ul'),
     u = 'title';
 
     if ($(window).scrollTop() > w.height()) {
