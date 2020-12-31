@@ -132,6 +132,9 @@ nav {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+picture {
+	margin: 28px 0
+}
 picture, picture img {
 	display: block
 }
@@ -174,15 +177,14 @@ picture, picture img {
 }
 
 .content li {
+	margin-bottom: 1.25em;
+
 	font: normal 400 17px/1.47059 "small";
 	letter-spacing: -.022em
 }
 .content ol {
 	padding-left: 20px;
 	list-style: outside disc
-}
-.content li, picture, table {
-	margin-bottom: 1.25em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
