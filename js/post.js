@@ -1,27 +1,27 @@
-function elLoad() {
+var er = 2;
 
-    if (true) {
-        async function sech() {
-            let t = await fetch('json/post.json'),
-            i = await t.json(),
-            r = null,
-            e = document.querySelector('.includes ul');
-        
-            i = i.splice(0, 10);
-        
-            for (r in i) {
-        
-                e.innerHTML += `<li><a href="${i[r].href}"><div data-img="${i[r].image}" style="background-image: url(${i[r].image})"></div><div><p>${i[r].date}</p><h5>${i[r].title}</h5></div></a></li>`;
+$(window).scroll(function() {
+    let e = 2;
+
+    if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
+        $.ajax({
+            url: 'json/post.json',
+            method: 'post',
+            data: ('er' : er),
+            beforeSend: function() {
+
+            }.done(function(data) {
+                data = jQuery.parseJSON(data);
+            });
+
+            if (data.length > 0) {
+                $.each(data, function(index, data) {
+
+                });
             };
-        };
-        sech();
-
-        console.log('show');
-    } else {
-        console.log('null');
-    }
-};
-elLoad();
+        });
+    };
+});
 
 //
 
@@ -34,7 +34,7 @@ $(window).scroll(function() {
         p[0].classList.add(u);
     } else {
         p[0].classList.remove(u);
-    }
+    };
 });
 
 //

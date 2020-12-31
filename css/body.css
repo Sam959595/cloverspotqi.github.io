@@ -99,7 +99,7 @@ nav {
 
 	display: flex;
 
-	top: 0;
+	inset: 0;
 
 	height: 1.3cm;
 
