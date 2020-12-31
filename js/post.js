@@ -1,7 +1,5 @@
-var er = 2;
-
 $(window).scroll(function() {
-    let e = 2;
+    let er = 2;
 
     if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
         $.ajax({
