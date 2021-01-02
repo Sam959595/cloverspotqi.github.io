@@ -189,3 +189,41 @@ aside main:last-child ul li a {
 aside main:last-child ul li+li {
 	border-top: 1px solid var(--gray-8)
 }
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+aside div.articles a {
+	display: flex;
+	align-items: center
+}
+
+aside div.articles a div:first-child {
+	margin-right: 15px;
+
+	width: 108px;
+	height: 42px;
+
+	border-radius: 5px;
+	border: 1px solid var(--gray-10);
+
+	background: center/cover
+}
+aside div.articles a div:last-child {
+	width: 100%
+}
+
+aside div.articles li {
+	margin-bottom: 1em
+}
+aside div.articles li+li a div:last-child {
+	border-top: 1px solid var(--gray-10)
+}
+
+aside div.articles a p {
+	padding-top: 1em;
+	color: var(--gray-7)
+}
+aside div.articles a h5 {
+	font: normal 600 17px/1.23536 "small";
+	letter-spacing: -.022em
+}

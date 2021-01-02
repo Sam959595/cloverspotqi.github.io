@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //
 
 async function categories() {
-    let t = await fetch('https://sam959595.github.io/cloverspotqi.github.io/json/nav.json'),
+    let t = await fetch('json/nav.json'),
     i = await t.json(),
     r = null,
     e = document.querySelector('aside main:last-child ul');

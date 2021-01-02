@@ -84,9 +84,9 @@ a {
 	text-overflow: ellipsis;
 	overflow: hidden
 }
-.includes h5 {
+.includes h5, .articles h5 {
 	display: -webkit-box;
-	-webkit-line-clamp: 3;
+	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 	overflow: hidden
 }
