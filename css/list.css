@@ -96,11 +96,12 @@ a {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .includes a {
-	display: flex
+	display: flex;
+	align-items: center
 }
 
 .includes a div:first-child {
-	margin: 1em 15px 0 0;
+	margin-right: 15px;
 
 	width: 108px;
 	height: 42px;
@@ -114,8 +115,10 @@ a {
 	width: 100%
 }
 
+.includes li {
+	margin-bottom: 1em
+}
 .includes li+li a div:last-child {
-	margin-top: 1em;
 	border-top: 1px solid var(--gray-11)
 }
 
