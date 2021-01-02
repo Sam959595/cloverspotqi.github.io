@@ -113,10 +113,9 @@ a {
 .includes a div:last-child {
 	width: 100%
 }
-.includes li {
-	margin-bottom: 1em
-}
+
 .includes li+li a div:last-child {
+	margin-top: 1em;
 	border-top: 1px solid var(--gray-11)
 }
 
