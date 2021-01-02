@@ -86,14 +86,9 @@ a {
 
 /* - */
 
-.includes p {
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden
-}
-.includes h5 {
+.includes p, .includes h5 {
 	display: -webkit-box;
-	-webkit-line-clamp: 3;
+	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 	overflow: hidden
 }
@@ -129,7 +124,7 @@ a {
 	margin-top: 1em
 }
 .includes a h5 {
-	font: normal 600 17px/1.47059 "small";
+	font: normal 600 17px/1.23536 "small";
 	letter-spacing: -.022em
 }
 
