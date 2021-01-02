@@ -12,6 +12,8 @@ html, body {
 
 	-webkit-user-select: none;
 
+	-webkit-text-size-adjust: 100%;
+
 	font: normal 400 12px/1.33337 "small", "bold", "icon";
 	letter-spacing: -.01em;
 
@@ -21,7 +23,7 @@ html, body {
 img {
 	-webkit-touch-callout: none
 }
-a, strong, b, sup, sub, u, ins, del, i, s, mark, small, q, em {
+a, strong, b, sup, sub, u, ins, del, i, s, mark, small, q, em, span {
 	font: inherit
 }
 a, u {
@@ -50,6 +52,9 @@ strong, b {
 }
 em {
 	font-style: italic
+}
+span {
+	-webkit-tap-highlight-color: transparent
 }
 
 /* - */
