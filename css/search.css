@@ -1,5 +1,4 @@
 .disguise {
-	height: 100%;
 	overflow: hidden
 }/* - */
 
@@ -177,7 +176,7 @@ aside main:last-child {
 
 /* - */
 
-aside main:last-child ul li a {
+aside main:last-child ul:first-child li a {
 	display: block;
 	font: normal 400 17px "small";
 	letter-spacing: -.022em;
@@ -186,18 +185,18 @@ aside main:last-child ul li a {
 
 	color: var(--gray-2)
 }
-aside main:last-child ul li+li {
+aside main:last-child ul:first-child li+li {
 	border-top: 1px solid var(--gray-8)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-aside div.articles a {
+aside main:last-child ul:last-child a {
 	display: flex;
 	align-items: center
 }
 
-aside div.articles a div:first-child {
+aside main:last-child ul:last-child a div:first-child {
 	margin-right: 15px;
 
 	width: 108px;
@@ -208,22 +207,22 @@ aside div.articles a div:first-child {
 
 	background: center/cover
 }
-aside div.articles a div:last-child {
+aside main:last-child ul:last-child a div:last-child {
 	width: 100%
 }
 
-aside div.articles li {
+aside main:last-child ul:last-child li {
 	margin-bottom: 1em
 }
-aside div.articles li+li a div:last-child {
+aside main:last-child ul:last-child li+li a div:last-child {
 	border-top: 1px solid var(--gray-10)
 }
 
-aside div.articles a p {
+aside main:last-child ul:last-child a p {
 	padding-top: 1em;
 	color: var(--gray-7)
 }
-aside div.articles a h5 {
+aside main:last-child ul:last-child a h5 {
 	font: normal 600 17px/1.23536 "small";
 	letter-spacing: -.022em
 }

@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 
 	-webkit-user-select: none;
-	
+
 	-webkit-text-size-adjust: 100%;
 
 	font: normal 400 12px/1.33337 "small", "bold", "icon";
@@ -80,6 +80,8 @@ a {
 
 section p {
 	padding: 1cm 0 2cm;
+
+	text-align: center;
 	
 	color: var(--gray-5)
 }
