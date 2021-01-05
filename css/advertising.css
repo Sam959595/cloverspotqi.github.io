@@ -172,9 +172,12 @@ section {
 	section {
 		width: 366px
 	}
-
 	section ul {
 		grid-template-columns: 1fr
+	}
+
+	.includes, footer {
+		margin-top: 1.5cm
 	}
 }
 

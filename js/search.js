@@ -27,8 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         r[0].classList.add(h);
         i[0].classList.add(x);
-
-        p[0].innerHTML = "";
     });
     r.click(function() {
 

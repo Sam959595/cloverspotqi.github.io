@@ -177,7 +177,7 @@ blockquote *:not(q):not(small) {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .includes, footer {
-	padding-top: 2.7cm
+	margin-top: 2.7cm
 }
 
 .includes h4 {

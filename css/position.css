@@ -79,7 +79,7 @@ nav ul, section {
     }
 
     .includes, footer {
-        padding-top: 1.5cm
+        margin-top: 1.5cm
     }
     .includes ul {
         grid-template-columns: 1fr
