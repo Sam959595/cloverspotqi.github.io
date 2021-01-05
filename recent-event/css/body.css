@@ -364,7 +364,7 @@ dl dd {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 main {
-	padding-bottom: 4em;
+	padding-bottom: env(safe-area-inset-left);
 	background-color: var(--gray-12)
 }
 main ul {
@@ -372,7 +372,7 @@ main ul {
 	grid-auto-flow: column;
 	column-gap: 2em;
 
-	padding-top: 2em;
+	padding: 2em 0;
 
 	overflow-x: scroll;
 	scroll-snap-type: x mandatory
@@ -435,7 +435,7 @@ footer {
 	background-color: var(--gray-8)
 }
 footer li {
-	padding-bottom: .8em;
+	padding-bottom: 2em;
 	color: var(--gray-3)
 }
 footer ol {
