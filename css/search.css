@@ -59,9 +59,7 @@ aside main:first-child div:first-child h4 {
 	align-self: flex-end;
 
 	font: normal 700 28px "bold";
-	letter-spacing: .007em;
-
-	color: var(--gray-5)
+	letter-spacing: .007em
 }
 
 /* - */

@@ -69,7 +69,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	color: var(--gray-1)
 }
-p, li {
+p {
 	color: var(--gray-5)
 }
 a {
@@ -81,9 +81,7 @@ a {
 section p {
 	padding: 1cm 0 2cm;
 
-	text-align: center;
-	
-	color: var(--gray-5)
+	text-align: center
 }
 
 section ul {
