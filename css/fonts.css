@@ -1,3 +1,17 @@
+/* bold font */
+
+@font-face {
+	font-family: "bold";
+	font-style: normal;
+	font-weight: 100;
+	src: url("fonts/bold/ultralight.woff2") format("woff2")
+}
+@font-face {
+	font-family: "bold";
+	font-style: normal;
+	font-weight: 200;
+	src: url("fonts/bold/thin.woff2") format("woff2")
+}
 @font-face {
 	font-family: "bold";
 	font-style: normal;
@@ -28,6 +42,20 @@
 	font-weight: 700;
 	src: url("fonts/bold/bold.woff2") format("woff2")
 }
+@font-face {
+	font-family: "bold";
+	font-style: normal;
+	font-weight: 800;
+	src: url("fonts/bold/heavy.woff2") format("woff2")
+}
+@font-face {
+	font-family: "bold";
+	font-style: normal;
+	font-weight: 900;
+	src: url("fonts/bold/black.woff2") format("woff2")
+}
+
+/* small font */
 
 @font-face {
 	font-family: "small";
@@ -60,6 +88,8 @@
 	src: url("fonts/small/bold.woff2") format("woff2")
 }
 
+/* icons font */
+
 @font-face {
 	font-family: "icon";
 	font-style: normal;
@@ -83,4 +113,10 @@
 	font-style: normal;
 	font-weight: 600;
 	src: url("fonts/icon/semibold.woff2") format("woff2")
+}
+@font-face {
+	font-family: "icon";
+	font-style: normal;
+	font-weight: 700;
+	src: url("fonts/icon/bold.woff2") format("woff2")
 }
