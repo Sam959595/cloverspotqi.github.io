@@ -111,7 +111,7 @@ nav {
 }
 
 nav h5 {
-	font: normal 900 32px/1.1 "bold"
+	font: normal 800 32px/1.1 "bold"
 }
 nav li:last-child {
 	opacity: .2
@@ -122,10 +122,13 @@ nav li:last-child {
 main ul {
     display: grid;
     grid-auto-flow: column;
-	column-gap: 2em;
+	column-gap: 1em;
 	
     overflow-x: scroll;
     scroll-snap-type: x mandatory
+}
+main li {
+	scroll-snap-align: center
 }
 main a {
 	display: block;
@@ -135,7 +138,7 @@ main a {
     border-radius: 11px;
 	padding: 1em;
 	
-    background-color: var(--gray-11);
+    background-color: var(--gray-9);
     color: var(--gray-4)
 }
 main div {
