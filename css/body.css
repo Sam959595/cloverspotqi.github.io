@@ -111,8 +111,7 @@ nav {
 }
 
 nav li {
-	font: normal 800 32px "bold";
-	letter-spacing: -.022em
+	font: normal 900 32px "bold"
 }
 nav li:last-child {
 	opacity: .2;
