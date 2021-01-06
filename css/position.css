@@ -34,6 +34,14 @@ nav ul, section {
     main li:last-child {
         padding-right: 22px
     }
+    @media screen and (orientation: landscape) {
+        main li:first-child {
+            padding-left: max(22px, env(safe-area-inset-left))
+        }
+        main li:last-child {
+            padding-right: max(22px, env(safe-area-inset-right))
+        }
+    }
 
     section {
         width: 692px
