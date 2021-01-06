@@ -15,6 +15,9 @@ nav ul, section {
     nav {
         padding: 0 22px
     }
+    nav ul {
+        width: 100%
+    }
     @media screen and (orientation: landscape) {
         nav {
             padding-left: max(22px, env(safe-area-inset-left));

@@ -107,14 +107,14 @@ iframe {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 nav {
-	margin: 16px 0;
+	margin: 16px 0
 }
 
 nav li {
-	font: normal 900 32px "bold"
+	font: normal 900 32px/1.1 "bold"
 }
 nav li:last-child {
-	opacity: .2;
+	opacity: .2
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
