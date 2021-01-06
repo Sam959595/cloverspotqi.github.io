@@ -134,6 +134,7 @@ main a {
 	display: block;
 	
 	min-width: 3.5cm;
+	white-space: nowrap;
 	
     border-radius: 9px;
 	padding: 1em;
@@ -144,11 +145,6 @@ main a {
 main div {
 	text-align: center;
     font: normal 600 14px/1.3 "small"
-}
-
-main li:last-child div::before {
-	font-family: "icon";
-	content: "\ea1d"
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
