@@ -3,7 +3,7 @@ aside > * {
 	width: 35%
 }
 
-nav ul, section {
+nav ul, main ul, section {
     margin: 0 auto
 }
 
@@ -54,6 +54,19 @@ nav ul, section {
 }
 
 @media screen and (min-width: 768px) {
+    main ul {
+        width: 550px
+    }
+
+    main a {
+        transition: background-color .5s ease 0s
+    }
+    main a:hover {
+        background-color: #00000025;
+    
+        transition: background-color .3s ease 0s
+    }
+
     .includes a {
         position: relative
     }
