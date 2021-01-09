@@ -93,7 +93,7 @@ header ul, main ul, section {
 }
 
 @media screen and (max-width: 768px) {
-    aside div:first-child {
+    aside > div:first-child {
         margin-top: 3em
     }
     aside > *, section {
@@ -123,7 +123,7 @@ header ul, main ul, section {
 }
 
 @media screen and (max-width: 414px) {
-    aside div:first-child {
+    aside > div:first-child {
         margin-top: 16px
     }
 

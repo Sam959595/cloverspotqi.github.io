@@ -87,7 +87,7 @@ a {
 	text-overflow: ellipsis;
 	overflow: hidden
 }
-.includes h5, aside main:last-child ul:last-child a h5 {
+.includes h5, aside > div:last-child ul:last-child a h5 {
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
