@@ -2,7 +2,7 @@
 	overflow: hidden
 }/* - */
 
-aside main:last-child ul li u {
+aside > div:last-child ul li u {
 	color: var(--gray-4)
 }/* - */
 
@@ -30,13 +30,13 @@ aside {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-aside main:first-child {
+aside > div:first-child {
 	margin-top: 5em
 }
 
 /* - */
 
-aside main:first-child div:first-child {
+aside > div:first-child div:first-child {
 	display: flex;
 	justify-content: space-between;
 
@@ -55,7 +55,7 @@ aside main:first-child div:first-child {
 
 /* - */
 
-aside main:first-child div:first-child h4 {
+aside > div:first-child div:first-child h4 {
 	align-self: flex-end;
 
 	font: normal 700 28px "bold";
@@ -64,10 +64,10 @@ aside main:first-child div:first-child h4 {
 
 /* - */
 
-aside main:first-child div:first-child span {
+aside > div:first-child div:first-child span {
 	align-self: flex-end
 }
-aside main:first-child div:first-child span::before {
+aside > div:first-child div:first-child span::before {
 	font-size: 23px;
 
 	content: "\f314"
@@ -75,7 +75,7 @@ aside main:first-child div:first-child span::before {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-aside main:first-child div:last-child {
+aside > div:first-child div:last-child {
 	display: flex
 }
 
@@ -143,7 +143,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* - */
 
-aside main:first-child div:last-child span {
+aside > div:first-child div:last-child span {
 	align-self: center;
 
 	font: normal 400 17px "small";
@@ -168,13 +168,13 @@ aside main:first-child div:last-child span {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-aside main:last-child {
+aside > div:last-child {
 	margin-top: 3em
 }
 
 /* - */
 
-aside main:last-child ul:first-child li a {
+aside > div:last-child ul:first-child li a {
 	display: block;
 	font: normal 400 17px "small";
 	letter-spacing: -.022em;
@@ -183,18 +183,18 @@ aside main:last-child ul:first-child li a {
 
 	color: var(--gray-2)
 }
-aside main:last-child ul:first-child li+li {
+aside > div:last-child ul:first-child li+li {
 	border-top: 1px solid var(--gray-8)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-aside main:last-child ul:last-child a {
+aside > div:last-child ul:last-child a {
 	display: flex;
 	align-items: center
 }
 
-aside main:last-child ul:last-child a div:first-child {
+aside > div:last-child ul:last-child a div:first-child {
 	margin-right: 15px;
 
 	width: 108px;
@@ -205,22 +205,22 @@ aside main:last-child ul:last-child a div:first-child {
 
 	background: center/cover
 }
-aside main:last-child ul:last-child a div:last-child {
+aside > div:last-child ul:last-child a div:last-child {
 	width: 100%
 }
 
-aside main:last-child ul:last-child li {
+aside > div:last-child ul:last-child li {
 	margin-bottom: 1em
 }
-aside main:last-child ul:last-child li+li a div:last-child {
+aside > div:last-child ul:last-child li+li a div:last-child {
 	border-top: 1px solid var(--gray-10)
 }
 
-aside main:last-child ul:last-child a p {
+aside > div:last-child ul:last-child a p {
 	padding-top: 1em;
 	color: var(--gray-7)
 }
-aside main:last-child ul:last-child a h5 {
+aside > div:last-child ul:last-child a h5 {
 	font: normal 600 17px/1.23536 "small";
 	letter-spacing: -.022em
 }

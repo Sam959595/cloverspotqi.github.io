@@ -1,12 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     let d = $('body'),
-    a = $('nav li:last-child'),
+    a = $('main li:last-child'),
     b = $('aside'),
     e = $('aside input'),
-    i = $('aside main:first-child div:first-child'),
-    c = $('aside main:first-child div:first-child span'),
-    r = $('aside main:first-child div:last-child span'),
-    p = $('aside main:last-child ul'),
+    i = $('aside > div:first-child div:first-child'),
+    c = $('aside > div:first-child div:first-child span'),
+    r = $('aside > div:first-child div:last-child span'),
     v = 'visible',
     y = 'disguise',
     h = 'hide',
@@ -41,7 +40,7 @@ async function categories() {
     let t = await fetch('json/nav.json'),
     i = await t.json(),
     r = null,
-    e = document.querySelector('aside main:last-child ul:first-child');
+    e = document.querySelector('aside > div:last-child ul:first-child');
 
     for (r in i) {
 

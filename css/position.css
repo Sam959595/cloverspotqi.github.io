@@ -3,12 +3,12 @@ aside > * {
 	width: 35%
 }
 
-nav ul, main ul, section {
+header ul, main ul, section {
     margin: 0 auto
 }
 
 @media screen and (min-width: 1024px) {
-    nav ul, section {
+    header ul, section {
         width: 980px
     }
 }
@@ -18,11 +18,11 @@ nav ul, main ul, section {
         width: 450px
     }
 
-    nav {
+    header {
         padding: 0 22px
     }
     @media screen and (orientation: landscape) {
-        nav {
+        header {
             padding-left: max(22px, env(safe-area-inset-left));
             padding-right: max(22px, env(safe-area-inset-right))
         }
@@ -93,14 +93,14 @@ nav ul, main ul, section {
 }
 
 @media screen and (max-width: 768px) {
-    aside main:first-child {
+    aside div:first-child {
         margin-top: 3em
     }
     aside > *, section {
         width: 366px
     }
 
-    nav {
+    header {
         padding: 0 16px
     }
     blockquote p {
@@ -123,7 +123,7 @@ nav ul, main ul, section {
 }
 
 @media screen and (max-width: 414px) {
-    aside main:first-child {
+    aside div:first-child {
         margin-top: 16px
     }
 

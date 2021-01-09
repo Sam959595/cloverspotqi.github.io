@@ -11,27 +11,11 @@ async function sech() {
 
     $(window).scroll(function() {
         if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
-            b = b.splice(3, 0, b.splice(undefined, 3));
-
             console.log('call');
         };
     });
 };
 sech();
-
-//
-
-$(window).scroll(function() {
-    let w = $('blockquote'),
-    p = $('nav ul'),
-    u = 'title';
-
-    if ($(window).scrollTop() > w.height()) {
-        p[0].classList.add(u);
-    } else {
-        p[0].classList.remove(u);
-    };
-});
 
 //
 

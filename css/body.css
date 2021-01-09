@@ -106,14 +106,14 @@ iframe {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-nav {
+header {
 	margin: 16px 0
 }
 
-nav h5 {
+header h5 {
 	font: normal 800 32px/1.1 "bold"
 }
-nav li:last-child {
+header li:last-child {
 	opacity: .2
 }
 
