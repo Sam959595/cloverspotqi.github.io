@@ -48,3 +48,16 @@ async function categories() {
     };
 };
 categories();
+
+async function categDown() {
+    let t = await fetch('json/post.json'),
+    i = await t.json(),
+    r = null,
+    e = document.querySelector('aside > div:last-child ul:last-child');
+
+    for (r in i) {
+
+        e.innerHTML += `<li><a href="${i[r].href}"><div style="background-image: url(${i[r].image_mini})"></div><div><p>${i[r].date}</p><h5>${i[r].title}</h5></div></a></li>`;
+    };
+};
+categDown();
