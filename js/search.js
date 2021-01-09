@@ -55,6 +55,8 @@ async function categDown() {
     r = null,
     e = document.querySelector('aside > div:last-child ul:last-child');
 
+    i = i.splice(0, 3);
+
     for (r in i) {
 
         e.innerHTML += `<li><a href="${i[r].href}"><div style="background-image: url(${i[r].image_mini})"></div><div><p>${i[r].date}</p><h5>${i[r].title}</h5></div></a></li>`;
