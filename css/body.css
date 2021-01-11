@@ -142,7 +142,7 @@ main a {
     background-color: var(--gray-9);
     color: var(--gray-4)
 }
-main div {
+main h5 {
 	text-align: center;
     font: normal 600 14px/1.3 "small"
 }
