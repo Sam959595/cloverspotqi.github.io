@@ -85,7 +85,7 @@ a {
 	text-overflow: ellipsis;
 	overflow: hidden
 }
-nav h1, main div {
+nav h1, main h5 {
 	text-align: center;
 
 	display: -webkit-box;
@@ -391,7 +391,7 @@ main a {
 	background-color: var(--gray-2);
 	color: var(--gray-4)
 }
-main div {
+main h5 {
 	font: normal 600 14px/1.3 "small"
 }
 

@@ -71,7 +71,7 @@ body {
 	background-color: var(--gray-0)
 }
 h1, h2, h3, h4, h5, h6, span {
-	color: var(--gray-5)
+	color: var(--gray-3)
 }
 p {
 	color: var(--gray-7)
@@ -173,7 +173,7 @@ blockquote *:not(q):not(small) {
 	will-change: transform;
 
 	background-color: var(--gray-9);
-	color: var(--gray-5)
+	color: var(--gray-3)
 }
 .quote a {
 	transition: color 1s ease-in-out 3s;
@@ -185,15 +185,6 @@ blockquote *:not(q):not(small) {
 
 .includes, footer {
 	margin-top: 2.7cm
-}
-
-.includes h4 {
-	margin-bottom: 16px;
-
-	font: normal 700 24px/1.16667 "bold";
-	letter-spacing: .009em;
-
-	color: var(--gray-5)
 }
 
 .includes ul {

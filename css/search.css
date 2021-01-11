@@ -96,7 +96,7 @@ aside form::before {
 
 	margin: 5px 0 0 5px;
 
-	color: var(--gray-3)
+	color: var(--gray-2)
 }
 .load::before {
 	content: "";
@@ -127,7 +127,7 @@ input[type="search"] {
 	background-color: var(--gray-1)
 }
 input[type="search"]::-webkit-input-placeholder {
-	color: var(--gray-3)
+	color: var(--gray-2)
 }
 input[placeholder] {
 	color: var(--gray-4)
