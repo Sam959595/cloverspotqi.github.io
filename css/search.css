@@ -181,10 +181,10 @@ aside > div:last-child ul:first-child li a {
 
 	padding: 10px 0;
 
-	color: var(--gray-7)
+	color: var(--gray-5)
 }
 aside > div:last-child ul:first-child li+li {
-	border-top: 1px solid var(--gray-10)
+	border-top: 1px solid var(--gray-7)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -201,7 +201,7 @@ aside > div:last-child ul:last-child a div:first-child {
 	height: 42px;
 
 	border-radius: 5px;
-	border: 1px solid var(--gray-10);
+	border: 1px solid var(--gray-7);
 
 	background: center/cover
 }
@@ -211,11 +211,11 @@ aside > div:last-child ul:last-child a div:last-child {
 }
 
 aside > div:last-child ul:last-child li+li a div:last-child {
-	border-top: 1px solid var(--gray-10)
+	border-top: 1px solid var(--gray-7)
 }
 
 aside > div:last-child ul:last-child a p {
-	color: var(--gray-7)
+	color: var(--gray-5)
 }
 aside > div:last-child ul:last-child a h5 {
 	font: normal 600 17px/1.23536 "small";

@@ -38,7 +38,7 @@ button, span {
 	cursor: pointer
 }
 hr {
-	border-top: 1px solid var(--gray-8)
+	border-top: 1px solid var(--gray-7)
 }
 sup, sub {
 	font-size: 9px
@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6, span {
 	color: var(--gray-3)
 }
 p {
-	color: var(--gray-7)
+	color: var(--gray-5)
 }
 a {
 	color: var(--blue-1)
@@ -139,7 +139,7 @@ main a {
     border-radius: 9px;
 	padding: 1em;
 	
-    background-color: var(--gray-9);
+    background-color: var(--gray-6);
     color: var(--gray-4)
 }
 main h5 {
@@ -172,7 +172,7 @@ blockquote *:not(q):not(small) {
 
 	will-change: transform;
 
-	background-color: var(--gray-9);
+	background-color: var(--gray-6);
 	color: var(--gray-3)
 }
 .quote a {
@@ -210,7 +210,7 @@ blockquote *:not(q):not(small) {
 	padding: .5cm;
 
 	border-radius: 0 0 11px 11px;
-	background-color: var(--gray-6)
+	background-color: var(--gray-4)
 }
 
 .includes a div:last-child p {
