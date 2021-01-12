@@ -132,8 +132,6 @@ main li {
 }
 main a {
 	display: block;
-
-	-webkit-user-drag: element;
 	
 	min-width: 3.5cm;
 	white-space: nowrap;
