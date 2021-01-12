@@ -21,6 +21,8 @@ aside {
 
 	background-color: var(--gray-0);
 
+	overflow-y: scroll;
+
 	transition: opacity .5s ease 0s
 }
 .visible {
@@ -195,9 +197,11 @@ aside > div:last-child ul:last-child a {
 }
 
 aside > div:last-child ul:last-child a div:first-child {
+	display: table;
+
 	margin-right: 15px;
 
-	width: 107.72px;
+	width: 80px;
 	height: 42px;
 
 	border-radius: 5px;
@@ -206,7 +210,6 @@ aside > div:last-child ul:last-child a div:first-child {
 	background: center/cover
 }
 aside > div:last-child ul:last-child a div:last-child {
-	width: 100%;
 	padding: 1em 0
 }
 
