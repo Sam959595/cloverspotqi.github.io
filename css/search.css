@@ -1,5 +1,5 @@
 .disguise {
-	overflow: hidden
+	overflow-y: hidden
 }/* - */
 
 aside > div:last-child ul li u {
@@ -223,8 +223,4 @@ aside > div:last-child ul:last-child a p:first-child {
 aside > div:last-child ul:last-child a h5 {
 	font: normal 600 17px/1.23536 "small";
 	letter-spacing: -.022em
-}
-aside > div:last-child ul:last-child a p:last-child {
-	font: normal 400 14px/1.42859 "small";
-	letter-spacing: -.016em
 }

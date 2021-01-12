@@ -93,12 +93,6 @@ a {
 	-webkit-box-orient: vertical;
 	overflow: hidden
 }
-aside > div:last-child ul:last-child a p:last-child {
-	display: -webkit-box;
-	-webkit-line-clamp: 1;
-	-webkit-box-orient: vertical;
-	overflow: hidden
-}
 
 /* - */
 
