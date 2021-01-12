@@ -112,7 +112,7 @@ header {
 
 header h5 {
 	text-transform: uppercase;
-	font: normal 800 28px/1.1 "bold"
+	font: normal 900 28px/1.1 "bold"
 }
 header li:last-child {
 	opacity: .3
