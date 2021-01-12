@@ -55,7 +55,7 @@ async function categDown() {
     r = null,
     e = document.querySelector('aside > div:last-child ul:last-child');
 
-    i = i.splice(0, 3);
+    i = i.splice(0, 5);
 
     for (r in i) {
 
