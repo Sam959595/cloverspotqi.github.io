@@ -3,7 +3,7 @@
 }/* - */
 
 aside > div:last-child ul li u {
-	color: var(--gray-4)
+	color: var(--gray-3)
 }/* - */
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -171,7 +171,8 @@ aside > div:first-child div:last-child span {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 aside > div:last-child {
-	margin-top: 3em
+	margin-top: 3em;
+	margin-bottom: 3em
 }
 
 /* - */
