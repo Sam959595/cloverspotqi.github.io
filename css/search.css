@@ -219,8 +219,8 @@ aside > div:last-child ul:last-child a p:first-child {
 	letter-spacing: -.008em
 }
 aside > div:last-child ul:last-child a h5 {
-	font: normal 400 17px/1.1 "bold";
-	letter-spacing: .012em
+	font: normal 600 17px/1.23536 "small";
+	letter-spacing: -.022em
 }
 aside > div:last-child ul:last-child a p:last-child {
 	font: normal 400 14px/1.28577 "small";
