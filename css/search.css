@@ -215,7 +215,8 @@ aside > div:last-child ul:last-child li+li a div:last-child {
 }
 
 aside > div:last-child ul:last-child a p {
-	color: var(--gray-5)
+	font: normal 600 11px/1.36364 "small";
+	letter-spacing: -.008em
 }
 aside > div:last-child ul:last-child a h5 {
 	font: normal 600 17px/1.23536 "small";
