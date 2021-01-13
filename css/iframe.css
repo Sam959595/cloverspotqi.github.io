@@ -95,10 +95,10 @@ section {
 /* - */
 
 h1 {
-	margin-top: 3cm;
+	margin-top: 2.5cm;
 
-	font: 700 32px/1.125 "bold";
-	letter-spacing: 0
+	font: 700 48px/1.08365 "bold";
+	letter-spacing: -.003em
 }
 
 /* - */
@@ -115,7 +115,7 @@ section dl div > * {
 }
 
 section dl div+div dt {
-	padding-top: .8em
+	padding-top: 2em
 }
 
 section dl dd {
@@ -144,7 +144,7 @@ section p {
 
 /* - */
 
-section div:last-child button {
+section > div:last-child button {
 	width: 100%;
 
 	border-radius: 13px;
@@ -159,7 +159,7 @@ section div:last-child button {
 	color: var(--gray-01)
 }
 
-section div:last-child button+button {
+section > div:last-child button+button {
 	background-color: var(--blue-1);
 	color: var(--gray-02)
 }
@@ -177,6 +177,15 @@ section {
 @media screen and (max-width: 1024px) {
 	section {
 		width: 576px
+	}
+
+	h1 {
+		font: 700 40px/1.1 "bold";
+		letter-spacing: 0
+	}
+
+	section dl div+div dt {
+		padding-top: 1em
 	}
 }
 
@@ -198,10 +207,13 @@ section {
 	}
 
 	h1 {
-		margin-top: 1cm
+		margin-top: 2cm;
+
+		font: 700 32px/1.125 "bold";
+		letter-spacing: .004em
 	}
 
-	section div:last-child {
+	section > div:last-child {
 		padding-top: .5cm;
 	
 		margin: inherit;
@@ -209,6 +221,23 @@ section {
 	}
 	section div:last-child button+button {
 		margin-top: .5em
+	}
+}
+
+@media screen and (min-width: 428px) {
+}
+
+@media screen and (max-width: 428px) {
+	section {
+		width: 87.5%
+	}
+
+	h1 {
+		margin-top: 1cm
+	}
+
+	section dl div+div dt {
+		padding-top: .8em
 	}
 }
 

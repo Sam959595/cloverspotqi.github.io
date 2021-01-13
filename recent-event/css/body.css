@@ -372,6 +372,8 @@ main ul {
 
 	padding: 2em 0;
 
+	touch-action: pan-x;
+
 	overflow-x: scroll;
 	scroll-snap-type: x mandatory
 }

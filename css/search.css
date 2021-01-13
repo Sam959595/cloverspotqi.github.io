@@ -198,10 +198,15 @@ aside > div:last-child ul:last-child a {
 	align-items: center
 }
 
-aside > div:last-child ul:last-child a div:first-child {
-	margin-right: 15px;
+aside > div:last-child ul:last-child li+li a div:last-child {
+	border-top: 1px solid var(--gray-7)
+}
 
-	width: 107.72px;
+aside > div:last-child ul:last-child a > div:first-child {
+	margin-right: 15px
+}
+aside > div:last-child ul:last-child a div:first-child div {
+	width: 80px;
 	height: 42px;
 
 	border-radius: 5px;
@@ -209,15 +214,10 @@ aside > div:last-child ul:last-child a div:first-child {
 
 	background: center/cover
 }
-aside > div:last-child ul:last-child a div:last-child {
-	width: 100%;
+
+aside > div:last-child ul:last-child a > div:last-child {
 	padding: 1em 0
 }
-
-aside > div:last-child ul:last-child li+li a div:last-child {
-	border-top: 1px solid var(--gray-7)
-}
-
 aside > div:last-child ul:last-child a p:first-child {
 	font: normal 600 11px/1.36364 "small";
 	letter-spacing: -.008em
