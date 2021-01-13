@@ -123,8 +123,6 @@ main ul {
     display: grid;
     grid-auto-flow: column;
 	column-gap: 1em;
-
-	touch-action: pan-x;
 	
     overflow-x: scroll;
     scroll-snap-type: x mandatory
