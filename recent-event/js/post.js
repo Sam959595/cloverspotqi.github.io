@@ -22,7 +22,7 @@ async function articleDown() {
 
     for (r in i) {
 
-        e.innerHTML += `<li><a href="${i[r].href}"><h5>${i[r].title}</h5></a></li>`;
+        e.innerHTML += `<li><a href="${i[r].href}"><h6>${i[r].title}</h6></a></li>`;
     };
 };
 articleDown();
