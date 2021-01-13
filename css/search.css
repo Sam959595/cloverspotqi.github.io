@@ -1,8 +1,6 @@
 .no-scroll {
 	height: 100%;
-
-	overflow: hidden;
-	overflow-y: scroll
+	overflow: hidden
 }/* - */
 
 aside > div:last-child ul li u {
