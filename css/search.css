@@ -1,5 +1,8 @@
-.disguise {
-	overflow-y: hidden
+.no-scroll {
+	height: 100%;
+
+	overflow: hidden;
+	overflow-y: scroll
 }/* - */
 
 aside > div:last-child ul li u {

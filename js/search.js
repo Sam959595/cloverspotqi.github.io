@@ -1,25 +1,28 @@
 document.addEventListener('DOMContentLoaded', function() {
-    let d = $('body'),
+    let s = $('html'),
+    d = $('body'),
     a = $('main li:last-child'),
     b = $('aside'),
     e = $('aside input'),
     i = $('aside > div:first-child div:first-child'),
     c = $('aside > div:first-child div:first-child span'),
     r = $('aside > div:first-child div:last-child span'),
+    p = 'no-scroll',
     v = 'visible',
-    y = 'disguise',
     h = 'hide',
     x = 'disappear';
 
     a.click(function() {
         
         b[0].classList.add(v);
-        d[0].classList.add(y);
+        s[0].classList.add(p);
+        d[0].classList.add(p);
     });
     c.click(function() {
 
         b[0].classList.remove(v);
-        d[0].classList.remove(y);
+        s[0].classList.remove(p);
+        d[0].classList.remove(p);
     });
 
     e.click(function() {
