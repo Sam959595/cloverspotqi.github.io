@@ -22,3 +22,7 @@ sech();
 window.onload = function() {
     $('blockquote p')[0].classList.add('quote');
 };
+
+//
+
+console.log([2, 1, 5, 6, 8, 3, 9].filter(Element => !(Element % 2)).reduceRight((abc, Element) => abc + Math.sqrt(Element), 0));
