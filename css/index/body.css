@@ -133,7 +133,7 @@ main li {
 main a {
 	display: block;
 	
-	min-width: 3.5cm;
+	min-width: 3cm;
 	white-space: nowrap;
 	
     border-radius: 9px;
