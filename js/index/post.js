@@ -1,5 +1,5 @@
 async function sech() {
-    let t = await fetch('json/post.json'),
+    let t = await fetch('/json/post.json'),
     b = await t.json(),
     e = document.querySelector('.includes ul');
 
