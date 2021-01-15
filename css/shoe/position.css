@@ -1,0 +1,76 @@
+nav div, picture img, section {
+    margin: 0 auto;
+    width: 980px
+}
+blockquote p {
+    padding: 9px 8cm
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 0 22px
+    }
+    section {
+        width: 980px
+    }
+    .catalogue ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (max-width: 980px) {
+    nav div, picture img {
+        width: 100%
+    }
+    blockquote p {
+        padding: 9px 3em;
+    }
+    section {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .catalogue ul {
+        grid-template-columns: 1fr;
+        gap: 30px
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .column {
+        grid-column-end: span 2
+    }
+}
+
+@media screen and (max-width: 414px) {
+    nav {
+        padding: 0 16px
+    }
+    .catalogue {
+        margin-top: 41px
+    }
+    .catalogue li:not(.column), picture img {
+        margin: 0 auto;
+        width: 87.5%
+    }
+    .catalogue li img:not(.wide) {
+        width: 220px
+    }
+    .catalogue > h1 {
+        font: normal 600 21px/1.19048 "bold";
+        letter-spacing: .011em
+    }
+    .catalogue > p {
+        font: normal 600 32px/1.125 "bold";
+        letter-spacing: .004em
+    }
+    .catalogue > a {
+        font: normal 400 17px/1.47059 "small";
+        letter-spacing: -.022em
+    }
+}
