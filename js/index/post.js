@@ -25,4 +25,4 @@ window.onload = function() {
 
 //
 
-console.log([2, 1, 5, 6, 8, 3, 9].filter(Element => !(Element % 2)).reduceRight((abc, Element) => abc + Math.sqrt(Element), 0));
+console.log([1, 2, 5, 6, 8].filter(x => !(x % 2)).reduceRight((c, x) => c + Math.sqrt(x), 0));
