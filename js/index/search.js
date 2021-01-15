@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //
 
 async function categories() {
-    let t = await fetch('/json/nav.json'),
+    let t = await fetch('json/nav.json'),
     i = await t.json(),
     r = null,
     e = document.querySelector('aside > div:last-child ul:first-child');
@@ -53,7 +53,7 @@ async function categories() {
 categories();
 
 async function categDown() {
-    let t = await fetch('/json/post.json'),
+    let t = await fetch('json/post.json'),
     i = await t.json(),
     r = null,
     e = document.querySelector('aside > div:last-child ul:last-child');
