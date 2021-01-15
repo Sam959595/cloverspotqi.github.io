@@ -1,64 +1,64 @@
 [
     {
-        "href": "/ru/1.html",
-        "image": "/media/index/9.jpg",
-        "image_mini": "/media/index/9m.jpg",
+        "href": "ru/1.html",
+        "image": "media/index/9.jpg",
+        "image_mini": "media/index/9m.jpg",
         "date": "10 НОЯБ. 2020",
         "title": "Поколение Mac разработанные на собственном процессоре Apple M1",
         "details": "Семейство MacBook Air, MacBook Pro и Mac mini в основе процессора chip M1."
     },
     {
-        "href": "/ru/Нарушение-и-снижение-продуктивности-сна.html",
-        "image": "/media/index/2.jpg",
-        "image_mini": "/media/index/2m.jpg",
+        "href": "ru/Нарушение-и-снижение-продуктивности-сна.html",
+        "image": "media/index/2.jpg",
+        "image_mini": "media/index/2m.jpg",
         "date": "9 НОЯБ. 2020",
         "title": "Нарушение и снижение продуктивности сна",
         "details": "Причины препятствий ночного сна. Условность порядка отхода ко сну. Предварительные меры комфорта."
     },
     {
-        "href": "/ru/Ограничение-уровня-звукового-прослушивания.html",
-        "image": "/media/index/5.jpg",
-        "image_mini": "/media/index/5m.jpg",
+        "href": "ru/Ограничение-уровня-звукового-прослушивания.html",
+        "image": "media/index/5.jpg",
+        "image_mini": "media/index/5m.jpg",
         "date": "20 СЕНТ. 2020",
         "title": "Ограничение уровня звукового прослушивания",
         "details": "Меры предосторожности и воздействие анализа звука в долгосрочной перспективе."
     },
     {
-        "href": "/ru/1.html",
-        "image": "/media/index/4.jpg",
+        "href": "ru/1.html",
+        "image": "media/index/4.jpg",
         "image_mini": "media/index/4m.jpg",
         "date": "4 ОКТ. 2020",
         "title": "Системное обновление iOS 14.1 (предварительная версия)",
         "details": "Процессор Bionic A14, Изменённый корпус с защитой «Кирамический щит», Сканер пространства LiDAR, Переустроенная система камер, Увеличенный 6.7 дюймовый экран Super Retina XDR, Поддержка сети 5-го поколения."
     },
     {
-        "href": "/ru/Поколение-Mac-разработанные-на-собственном-процессоре-Apple-M1.html",
-        "image": "/media/index/9.jpg",
-        "image_mini": "/media/index/9m.jpg",
+        "href": "ru/Поколение-Mac-разработанные-на-собственном-процессоре-Apple-M1.html",
+        "image": "media/index/9.jpg",
+        "image_mini": "media/index/9m.jpg",
         "date": "10 НОЯБ. 2020",
         "title": "Поколение Mac разработанные на собственном процессоре Apple M1",
         "details": "Семейство MacBook Air, MacBook Pro и Mac mini в основе процессора chip M1."
     },
     {
-        "href": "/ru/Нарушение-и-снижение-продуктивности-сна.html",
-        "image": "/media/index/2.jpg",
-        "image_mini": "/media/index/2m.jpg",
+        "href": "ru/Нарушение-и-снижение-продуктивности-сна.html",
+        "image": "media/index/2.jpg",
+        "image_mini": "media/index/2m.jpg",
         "date": "9 НОЯБ., 2020",
         "title": "Нарушение и снижение продуктивности сна",
         "details": "Причины препятствий ночного сна. Условность порядка отхода ко сну. Предварительные меры комфорта."
     },
     {
-        "href": "/ru/Ограничение-уровня-звукового-прослушивания.html",
-        "image": "/media/index/5.jpg",
-        "image_mini": "/media/index/5m.jpg",
+        "href": "ru/Ограничение-уровня-звукового-прослушивания.html",
+        "image": "media/index/5.jpg",
+        "image_mini": "media/index/5m.jpg",
         "date": "20 СЕНТ. 2020",
         "title": "Ограничение уровня звукового прослушивания",
         "details": "Меры предосторожности и воздействие анализа звука в долгосрочной перспективе."
     },
     {
-        "href": "/ru/1.html",
-        "image": "/media/index/4.jpg",
-        "image_mini": "/media/index/4m.jpg",
+        "href": "ru/1.html",
+        "image": "media/index/4.jpg",
+        "image_mini": "media/index/4m.jpg",
         "date": "4 ОКТ. 2020",
         "title": "Системное обновление iOS 14.1 (предварительная версия)",
         "details": "Процессор Bionic A14, Изменённый корпус с защитой «Кирамический щит», Сканер пространства LiDAR, Переустроенная система камер, Увеличенный 6.7 дюймовый экран Super Retina XDR, Поддержка сети 5-го поколения."
