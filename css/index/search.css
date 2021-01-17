@@ -188,7 +188,7 @@ aside > div:last-child ul:first-child li a {
 	color: var(--gray-5)
 }
 aside > div:last-child ul:first-child li+li {
-	border-top: 1px solid var(--gray-7)
+	border-top: .1px solid var(--gray-7)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -198,14 +198,14 @@ aside > div:last-child ul:last-child a {
 	align-items: center
 }
 
-aside > div:last-child ul:last-child li+li a div:last-child {
-	border-top: 1px solid var(--gray-7)
+aside > div:last-child ul:last-child li+li a > div:last-child {
+	border-top: .1px solid var(--gray-7)
 }
 
 aside > div:last-child ul:last-child a > div:first-child {
 	margin-right: 15px
 }
-aside > div:last-child ul:last-child a div:first-child div {
+aside > div:last-child ul:last-child a > div:first-child div {
 	width: 80px;
 	height: 42px;
 

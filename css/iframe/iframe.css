@@ -241,7 +241,7 @@ section {
 @media screen and (prefers-color-scheme: light) {
     :root {
         --gray-0: #f2f2f7;
-		--gray-01: black;
+		--gray-01: #111;
 		--gray-02: white;
         --gray-1: #111;
         --gray-5: #888;
@@ -256,7 +256,7 @@ section {
 @media screen and (prefers-color-scheme: dark) {
     :root {
         --gray-0: black;
-		--gray-01: white;
+		--gray-01: #f3f3f3;
 		--gray-02: white;
         --gray-1: #f3f3f3;
         --gray-5: #8e8e93;
