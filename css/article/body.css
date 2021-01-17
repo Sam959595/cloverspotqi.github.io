@@ -85,7 +85,7 @@ a {
 	text-overflow: ellipsis;
 	overflow: hidden
 }
-nav h1, main h6 {
+nav h6, main h6 {
 	text-align: center;
 
 	display: -webkit-box;
@@ -208,7 +208,8 @@ picture, picture img {
 
 	font: normal 600 16px "small";
 
-	background-color: var(--gray-11)
+	background-color: var(--gray-11);
+	color: var(--gray-1)
 }
 
 .setup li {
