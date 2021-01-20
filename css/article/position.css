@@ -99,7 +99,7 @@ nav div, picture img, footer div, main > * {
 
 @media screen and (max-width: 768px) {
     article, .vertical img, table, dl, blockquote {
-        width: 87.5%
+        width: 90%
     }
 
     .search {
