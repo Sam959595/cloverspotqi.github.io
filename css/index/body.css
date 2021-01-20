@@ -122,7 +122,7 @@ header li:last-child {
 main ul {
     display: grid;
     grid-auto-flow: column;
-	column-gap: 1em;
+	column-gap: 1.2em;
 	
     overflow-x: scroll;
     scroll-snap-type: x mandatory
