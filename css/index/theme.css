@@ -2,11 +2,11 @@
     :root {
         --transparency-1: #fafafab3;
 
-        --gray-0: #f5f5f7;
+        --gray-0: white;
         --gray-1: #e3e3e8;
         --gray-2: #8d8d93;
         --gray-3: #1d1d1f;
-        --gray-4: white;
+        --gray-4: #f5f5f7;
         --gray-5: #84848b;
         --gray-6: #e8e8ed;
         --gray-7: #d2d2d7;

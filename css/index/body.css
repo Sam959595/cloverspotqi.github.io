@@ -107,7 +107,7 @@ iframe {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 header {
-	margin: 16px 0 8px
+	margin: 16px 0
 }
 
 header h5 {
@@ -119,12 +119,8 @@ header li:last-child {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-main hr {
-	margin-left: 16px
-}
-
 main ul {
-	padding-top: 8px;
+	padding-top: 8px;/* - */
 
     display: grid;
     grid-auto-flow: column;
