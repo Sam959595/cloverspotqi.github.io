@@ -120,7 +120,7 @@ header li:last-child {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 main ul {
-	padding-top: 8px;/* - */
+	padding-top: 1em;/* - */
 
     display: grid;
     grid-auto-flow: column;
