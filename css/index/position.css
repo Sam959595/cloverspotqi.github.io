@@ -28,6 +28,9 @@ header ul, main ul, section {
         }
     }
 
+    main hr {
+        margin-left: 22px
+    }
     main li:first-child {
         padding-left: 22px
     }
