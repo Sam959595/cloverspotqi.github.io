@@ -4,7 +4,7 @@ aside > * {
 }
 
 header {
-    padding: 2em 0 1em
+    padding: 5em 0 1em
 }
 header ul, main ul, section {
     margin: 0 auto
@@ -24,7 +24,7 @@ header ul, main ul, section {
     }
 
     header {
-        padding: 2em 22px 1em
+        padding: 4em 22px 1em
     }
     @media screen and (orientation: landscape) {
         header {
@@ -108,7 +108,7 @@ header ul, main ul, section {
     }
 
     header {
-        padding: 2em 16px 1em
+        padding: 4em 16px 1em
     }
     blockquote p {
         padding: 9px 3em
