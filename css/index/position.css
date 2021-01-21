@@ -64,7 +64,6 @@ header ul, main ul, section {
     main ul {
         width: 550px
     }
-
     main a {
         transition: background-color .5s ease 0s
     }
@@ -108,8 +107,9 @@ header ul, main ul, section {
     }
 
     header {
-        padding: 4em 16px 1em
+        padding: 3em 16px 1em
     }
+
     blockquote p {
         padding: 9px 3em
     }
