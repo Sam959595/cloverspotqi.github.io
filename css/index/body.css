@@ -116,8 +116,6 @@ header li:last-child {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 main ul {
-	padding-top: 1em;/* - */
-
     display: grid;
     grid-auto-flow: column;
 	column-gap: 1em;

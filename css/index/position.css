@@ -33,9 +33,6 @@ header ul, main ul, section {
         }
     }
 
-    main hr {
-        margin-left: 22px
-    }
     main li:first-child {
         padding-left: 22px
     }
@@ -117,9 +114,6 @@ header ul, main ul, section {
         padding: 9px 3em
     }
 
-    main hr {
-        margin-left: 16px
-    }/* - */
     main li:first-child {
         padding-left: 16px
     }
