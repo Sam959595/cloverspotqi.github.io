@@ -184,6 +184,13 @@ blockquote *:not(q):not(small) {
 	margin-top: 2.7cm
 }
 
+.includes h3 {
+	margin-bottom: 1em;
+
+	font: normal 700 18px/1.22226 "small";
+	letter-spacing: 0
+}
+
 .includes ul {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
