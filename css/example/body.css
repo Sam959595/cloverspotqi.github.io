@@ -200,7 +200,8 @@ blockquote *:not(q):not(small) {
 	height: 200px;
 
 	border-radius: 5px;
-	border: .1px solid var(--gray-1);
+	
+	box-shadow: inset 0 0 0 .1px var(--gray-8);
 
 	background: center/cover
 }

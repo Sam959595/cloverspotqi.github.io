@@ -210,7 +210,8 @@ aside > div:last-child ul:last-child a > div:first-child div {
 	height: 42px;
 
 	border-radius: 5px;
-	border: .1px solid var(--gray-1);
+
+	box-shadow: inset .1px var(--gray-1);
 
 	background: center/cover
 }
