@@ -183,6 +183,13 @@ blockquote *:not(q):not(small) {
 	margin-top: 2.7cm
 }
 
+.includes h2 {
+	padding-bottom: .5em;
+
+	font: normal 800 24px/1.21053 "bold";
+	letter-spacing: .012em
+}
+
 .includes ul {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -192,7 +199,7 @@ blockquote *:not(q):not(small) {
 
 .includes a {
 	display: block;
-	border-radius: 11px
+	border-radius: 5px
 }
 
 .includes a div:first-child {
