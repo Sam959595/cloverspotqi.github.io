@@ -1,11 +1,13 @@
-nav div, picture img, .vertical img, article, table, dl, blockquote, footer div, main > * {
+nav div, picture img, .vertical img, article, table, dl, blockquote, footer div, main ul {
 	margin: 0 auto;
 	width: 653px
 }
 
-nav div, picture img, footer div, main > * {
+nav div, picture img, footer div, main ul {
 	width: 980px
 }
+
+/* - */
 
 @media screen and (min-width: 1024px) {
     .content h1 {
@@ -51,6 +53,8 @@ nav div, picture img, footer div, main > * {
     }
 }
 
+/* - */
+
 @media screen and (min-width: 980px) {
     picture img {
         border-radius: 11px
@@ -62,10 +66,12 @@ nav div, picture img, footer div, main > * {
         border-radius: 11px
     }
 
-    nav div, picture img, footer div, main > * {
+    nav div, picture img, footer div, main ul {
         width: 100%
     }
 }
+
+/* - */
 
 @media screen and (max-width: 980px) and (min-width: 692px) and (orientation: landscape) {
     picture img {
@@ -73,6 +79,8 @@ nav div, picture img, footer div, main > * {
         border-radius: 11px
     }
 }
+
+/* - */
 
 @media screen and (min-width: 768px) {
     .search {
@@ -134,7 +142,9 @@ nav div, picture img, footer div, main > * {
     }
 }
 
-@media screen and (max-width: 414px) {
+/* - */
+
+@media screen and (max-width: 428px) {
     .search {
         padding: 0 16px
     }
