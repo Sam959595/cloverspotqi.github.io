@@ -168,7 +168,7 @@ blockquote *:not(q):not(small) {
 
 	will-change: transform;
 
-	background-color: var(--gray-6);
+	background-color: var(--gray-9);
 	color: var(--gray-3)
 }
 .quote a {
