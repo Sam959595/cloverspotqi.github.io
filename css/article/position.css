@@ -62,11 +62,7 @@ nav div, picture img, footer div, main > * {
         border-radius: 11px
     }
 
-    nav div, picture img, footer div {
-        width: 100%
-    }
-
-    main > * {
+    nav div, picture img, footer div, main > * {
         width: 100%
     }
 }
