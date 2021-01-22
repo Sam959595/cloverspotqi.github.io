@@ -203,7 +203,7 @@ blockquote *:not(q):not(small) {
 
 .includes a {
 	display: block;
-	border-radius: 5px
+	/* border-radius: 5px */
 }
 
 .includes a div:first-child {
