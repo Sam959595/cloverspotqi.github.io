@@ -205,7 +205,6 @@ blockquote *:not(q):not(small) {
 .includes li:first-child a {
 	display: block
 }
-
 .includes li+li a {
 	display: flex;
 	align-items: center
@@ -221,9 +220,13 @@ blockquote *:not(q):not(small) {
 	font: normal 600 11px/1.36364 "small";
 	letter-spacing: -.008em
 }
-.includes a div:first-child h5 {
+.includes li:first-child a div:first-child h5 {
 	font: normal 700 19px/1.21053 "bold";
 	letter-spacing: .012em
+}
+.includes li+li a div:first-child h5 {
+	font: normal 700 17px/1.21053 "bold";
+	letter-spacing: .004em
 }
 
 .includes li+li+li a > div:first-child {
@@ -236,7 +239,7 @@ blockquote *:not(q):not(small) {
 	padding: 1em 0
 }
 .includes li+li a > div:last-child {
-	margin-left: 1em
+	margin-left: 2em
 }
 
 /* - */
