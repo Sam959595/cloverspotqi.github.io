@@ -198,51 +198,23 @@ blockquote *:not(q):not(small) {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-/* first */
+.includes a {
+	border-radius: 5px
+}
 
 .includes li:first-child a {
 	display: block
 }
 
-.includes li:first-child a div:last-child div {
-	height: 200px
-}
-
-.includes li:first-child a > div:last-child {
-	padding: 1em 0
+.includes li+li a {
+	display: flex;
+	align-items: center
 }
 
 /* - */
 
-.includes a {
-	border-radius: 5px
-}
-
-.includes a div:last-child div {
-	border-radius: 5px;
-	box-shadow: inset 0 0 0 .5px var(--transparency-2);
-
-	background: center/cover
-}
-
 .includes li+li a > div:first-child {
 	padding: 1.5em 0
-}
-.includes li+li+li a > div:first-child {
-	border-top: .1px solid var(--gray-7)
-}
-
-.includes li+li a > div:last-child {
-	margin-left: 1em
-}
-.includes li+li a div:last-child div {
-	width: 110px;
-	height: 110px
-}
-
-.includes a {
-	display: flex;
-	align-items: center
 }
 
 .includes a div:first-child p {
@@ -252,4 +224,36 @@ blockquote *:not(q):not(small) {
 .includes a div:first-child h5 {
 	font: normal 700 19px/1.21053 "bold";
 	letter-spacing: .012em
+}
+
+.includes li+li+li a > div:first-child {
+	border-top: .1px solid var(--gray-7)
+}
+
+/* - */
+
+.includes li:first-child a > div:last-child {
+	padding: 1em 0
+}
+.includes li+li a > div:last-child {
+	margin-left: 1em
+}
+
+/* - */
+
+.includes li:first-child a div:last-child div {
+	height: 200px
+}
+.includes li+li a div:last-child div {
+	width: 110px;
+	height: 110px
+}
+
+/* - */
+
+.includes a div:last-child div {
+	border-radius: 5px;
+	box-shadow: inset 0 0 0 .5px var(--transparency-2);
+
+	background: center/cover
 }
