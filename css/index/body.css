@@ -207,12 +207,12 @@ blockquote *:not(q):not(small) {
 	height: 200px;
 
 	border-radius: 5px;
-	box-shadow: inset 0 0 0 .5px var(--gray-8);
+	box-shadow: inset 0 0 0 .5px var(--transparency-2);
 
 	background: center/cover
 }
 .includes a div:last-child {
-	padding: .5cm 0
+	padding-top: .5cm
 }
 
 .includes a div:last-child h5 {
