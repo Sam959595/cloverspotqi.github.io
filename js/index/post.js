@@ -10,8 +10,8 @@ async function sech() {
         `<li>
             <a href="${b[i].href}">
                 <div>
-                    <h5>${b[i].title}</h5>
                     <p>${b[i].date}</p>
+                    <h5>${b[i].title}</h5>
                 </div>
                 <div style="background-image: url(${b[i].image})"></div>
             </a>

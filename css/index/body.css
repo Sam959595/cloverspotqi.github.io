@@ -212,16 +212,16 @@ blockquote *:not(q):not(small) {
 	background: center/cover
 }
 .includes a div:first-child {
-	padding-bottom: 1em
+	padding-top: 1em
 }
 
-.includes a div:first-child h5 {
-	font: normal 700 19px/1.21053 "bold";
-	letter-spacing: .012em
-}
 .includes a div:first-child p {
-	padding-top: .2cm;
+	padding-bottom: .2cm;
 
 	font: normal 600 11px/1.36364 "small";
 	letter-spacing: -.008em
+}
+.includes a div:first-child h5 {
+	font: normal 700 19px/1.21053 "bold";
+	letter-spacing: .012em
 }
