@@ -226,7 +226,7 @@ blockquote *:not(q):not(small) {
 }
 .includes li+li a div:first-child h5 {
 	font: normal 700 17px/1.21053 "bold";
-	letter-spacing: .004em
+	letter-spacing: .008em
 }
 
 .includes li+li+li a > div:first-child {
@@ -236,10 +236,10 @@ blockquote *:not(q):not(small) {
 /* - */
 
 .includes li:first-child a > div:last-child {
-	padding: 1em 0
+	padding: 1.3em 0
 }
 .includes li+li a > div:last-child {
-	margin-left: 2em
+	margin-left: 1.3em
 }
 
 /* - */
