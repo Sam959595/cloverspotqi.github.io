@@ -106,7 +106,7 @@ iframe {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-header h5 {
+header h5, header time {
 	font: normal 900 32px/1 "bold"
 }
 header li:last-child {
