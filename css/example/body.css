@@ -183,47 +183,39 @@ blockquote *:not(q):not(small) {
 	margin-top: 2.7cm
 }
 
-.includes h2 {
-	padding-bottom: .5em;
-
-	font: normal 800 24px/1.21053 "bold";
-	letter-spacing: .012em
-}
-
 .includes ul {
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 36px
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .includes a {
 	display: block;
-	border-radius: 5px
+	border-radius: 11px
 }
 
 .includes a div:first-child {
 	height: 200px;
 
-	border-radius: 5px;
-	
-	box-shadow: inset 0 0 0 .5px var(--gray-8);
-
+	border-radius: 11px 11px 0 0;
 	background: center/cover
 }
 .includes a div:last-child {
-	padding: 1em 0;
+	padding: .5cm;
 
-	border-radius: 0 0 11px 11px
+	border-radius: 0 0 11px 11px;
+	background-color: var(--gray-4)
 }
 
-.includes a div:last-child h5 {
-	font: normal 800 19px/1.21053 "bold";
-	letter-spacing: .012em
-}
 .includes a div:last-child p {
-	font: normal 600 11px/1.36364 "small";
-	letter-spacing: -.008em;
+	padding-bottom: .2cm;
 
-	padding-top: .2cm
+	font: normal 600 11px/1.36364 "small";
+	letter-spacing: -.008em
+}
+.includes a div:last-child h5 {
+	font: normal 600 19px/1.21053 "bold";
+	letter-spacing: .012em
 }

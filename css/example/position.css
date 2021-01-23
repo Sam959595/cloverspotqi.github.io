@@ -52,10 +52,10 @@ header ul, main ul, section {
         width: 692px
     }
 
-    /* .includes ul {
+    .includes ul {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px
-    } */
+    }
 }
 
 /* - */
@@ -111,7 +111,7 @@ header ul, main ul, section {
     }
 
     header {
-        padding: 4em 16px 1em
+        padding: 2em 16px
     }
 
     main li:first-child {
@@ -122,11 +122,11 @@ header ul, main ul, section {
     }
 
     .includes, footer {
-        margin-top: 1cm
+        margin-top: 1.5cm
     }
-    /* .includes ul {
+    .includes ul {
         grid-template-columns: 1fr
-    } */
+    }
 }
 
 /* - */

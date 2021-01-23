@@ -1,12 +1,12 @@
 @media screen and (prefers-color-scheme: light) {
     :root {
-        --gray-0: #f5f5f7;/* #fff */
+        --gray-0: #f5f5f7;
         --gray-1: #e3e3e8;
         --gray-2: #8d8d93;
         --gray-3: #1d1d1f;
         --gray-4: white;
         --gray-5: #84848b;
-        --gray-6: #e8e8ed;/* #f0f0f5 */
+        --gray-6: #e8e8ed;
         --gray-7: #d2d2d7;
         --gray-8: #8080801a;
 
