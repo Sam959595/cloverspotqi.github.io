@@ -212,7 +212,7 @@ blockquote *:not(q):not(small) {
 	background: center/cover
 }
 .includes a div:first-child {
-	padding-top: 1em
+	padding-bottom: 1em
 }
 
 .includes a div:first-child p {
