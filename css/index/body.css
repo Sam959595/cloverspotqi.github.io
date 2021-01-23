@@ -89,7 +89,7 @@ a {
 }
 .includes h5, aside > div:last-child ul:last-child a h5 {
 	display: -webkit-box;
-	-webkit-line-clamp: 2;
+	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
 	overflow: hidden
 }
@@ -198,21 +198,51 @@ blockquote *:not(q):not(small) {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+/* first */
+
+.includes li:first-child a {
+	display: block
+}
+
+.includes li:first-child a div:last-child div {
+	height: 200px
+}
+
+.includes li:first-child a div:first-child {
+	padding-bottom: 1em
+}
+
+/* - */
+
 .includes a {
-	display: block;
 	border-radius: 5px
 }
 
-.includes a div:last-child {
-	height: 200px;
-
+.includes a div:last-child div {
 	border-radius: 5px;
 	box-shadow: inset 0 0 0 .5px var(--transparency-2);
 
 	background: center/cover
 }
-.includes a div:first-child {
-	padding-bottom: 1em
+
+.includes li+li a > div:first-child {
+	padding: 1em 0
+}
+.includes li+li+li a > div:first-child {
+	border-top: .1px solid var(--gray-7)
+}
+
+.includes li+li a > div:last-child {
+	margin-left: 15px
+}
+.includes li+li a div:last-child div {
+	width: 90px;
+	height: 90px
+}
+
+.includes a {
+	display: flex;
+	align-items: center
 }
 
 .includes a div:first-child p {

@@ -125,7 +125,8 @@ header ul, main ul, section {
         margin-top: 1cm
     }
     .includes ul {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
+        gap: 0
     }
 }
 
