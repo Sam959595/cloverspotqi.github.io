@@ -208,8 +208,8 @@ blockquote *:not(q):not(small) {
 	height: 200px
 }
 
-.includes li:first-child a div:first-child {
-	padding-bottom: 1em
+.includes li:first-child a > div:last-child {
+	padding: 1em 0
 }
 
 /* - */
@@ -226,18 +226,18 @@ blockquote *:not(q):not(small) {
 }
 
 .includes li+li a > div:first-child {
-	padding: 1em 0
+	padding: 1.5em 0
 }
 .includes li+li+li a > div:first-child {
 	border-top: .1px solid var(--gray-7)
 }
 
 .includes li+li a > div:last-child {
-	margin-left: 15px
+	margin-left: 1em
 }
 .includes li+li a div:last-child div {
-	width: 90px;
-	height: 90px
+	width: 110px;
+	height: 110px
 }
 
 .includes a {
