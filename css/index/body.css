@@ -216,8 +216,6 @@ blockquote *:not(q):not(small) {
 }
 
 .includes a div:first-child p {
-	padding-bottom: .2cm;
-
 	font: normal 600 11px/1.36364 "small";
 	letter-spacing: -.008em
 }
