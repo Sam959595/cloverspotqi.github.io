@@ -212,6 +212,9 @@ blockquote *:not(q):not(small) {
 
 /* - */
 
+.includes li:first-child a > div:first-child {
+	padding-bottom: 1em
+}
 .includes li+li a > div:first-child {
 	padding: 1.8em 0
 }
@@ -235,9 +238,6 @@ blockquote *:not(q):not(small) {
 
 /* - */
 
-.includes li:first-child a > div:last-child {
-	padding: 1em 0
-}
 .includes li+li a > div:last-child {
 	margin-left: 1.3em
 }
