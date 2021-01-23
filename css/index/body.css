@@ -212,7 +212,7 @@ blockquote *:not(q):not(small) {
 	background: center/cover
 }
 .includes a div:last-child {
-	padding-top: .5cm
+	padding-top: 1em
 }
 
 .includes a div:last-child h5 {
