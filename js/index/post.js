@@ -6,7 +6,7 @@ async function sech() {
     b = b.splice(0, 5);
 
     for (let i = 0; i < b.length; i++) {
-        e.innerHTML += `<li><a href="${b[i].href}"><div style="background-image: url(${b[i].image})"></div><div><p>${b[i].date}</p><h5>${b[i].title}</h5></div></a></li>`;
+        e.innerHTML += `<li><a href="${b[i].href}"><div style="background-image: url(${b[i].image})"></div><div><h5>${b[i].title}</h5><p>${b[i].date}</p></div></a></li>`;
     }
 
     $(window).scroll(function() {
