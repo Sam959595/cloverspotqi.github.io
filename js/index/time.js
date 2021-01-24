@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).ready(function() {
     let d = new Date(),
     i = d.getDate(),
     t = d.getMonth(),
@@ -277,6 +277,6 @@ $(document).ready(function() {
 
 jQuery(function ($) {
   $(document).ready(function() {
-    $('.includes ul li a time').timeago();
+    $('time').timeago();
   });
 });
