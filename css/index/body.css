@@ -106,7 +106,8 @@ iframe {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-header h5 {
+header li * {
+	text-transform: uppercase;
 	font: normal 900 32px/1 "bold"
 }
 header li:last-child {
@@ -220,6 +221,7 @@ blockquote *:not(q):not(small) {
 }
 
 .includes a div:first-child time {
+	text-transform: uppercase;
 	font: normal 600 11px/1.36364 "small";
 	letter-spacing: -.008em
 }

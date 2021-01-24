@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
+    let q = $('main ul li:nth-child(2)'),
+    o = $('.includes'),
+    u = 'json/nav.json';
+
+    q.click(function() {
+        o.load(u);
+    });
+
+    //
+
     let s = $('html'),
     d = $('body'),
     a = $('main li:last-child'),
@@ -13,25 +23,21 @@ document.addEventListener('DOMContentLoaded', function() {
     x = 'disappear';
 
     a.click(function() {
-        
         b[0].classList.add(v);
         s[0].classList.add(p);
         d[0].classList.add(p);
     });
     c.click(function() {
-
         b[0].classList.remove(v);
         s[0].classList.remove(p);
         d[0].classList.remove(p);
     });
 
     e.click(function() {
-
         r[0].classList.add(h);
         i[0].classList.add(x);
     });
     r.click(function() {
-
         r[0].classList.remove(h);
         i[0].classList.remove(x);
     });
@@ -76,7 +82,7 @@ async function categDown() {
                     <div style="background-image: url(${i[r].image_mini})"></div>
                 </div>
                 <div>
-                    <time datetime="${i[r].date}">${i[r].date}</time>
+                    <time datetime="${i[r].date}"></time>
                     <h5>${i[r].title}</h5>
                 </div>
             </a>
