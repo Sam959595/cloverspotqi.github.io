@@ -1,3 +1,15 @@
+$(document).ready(function() {
+    let d = new Date(),
+    i = d.getDate(),
+    m = d.getMonth(),
+    n = ['ЯНВАРЯ', 'ФЕВРАЛЯ', 'МАРТА', 'АПРЕЛЯ', 'МАЯ', 'ИЮНЯ', 'ИЮЛЯ', 'АВГУСТА', 'СЕНТЯБРЯ', 'ОКТЯБРЯ', 'НОЯБРЯ', 'ДЕКАБРЯ'],
+    e = $('header li:last-child h5');
+    
+    e[0].innerHTML = i + " " + n[m];
+});
+
+//
+
 async function sech() {
     let t = await fetch('json/post.json'),
     b = await t.json(),
@@ -8,13 +20,13 @@ async function sech() {
     for (let i = 0; i < b.length; i++) {
         e.innerHTML +=
         `<li>
-            <a href="${b[i].href}">
+            <a href='${b[i].href}'>
                 <div>
-                    <p>${b[i].date}</p>
+                    <time datetime='${b[i].date}'>${b[i].date}</time>
                     <h5>${b[i].title}</h5>
                 </div>
                 <div>
-                    <div style="background-image: url(${b[i].image})"></div>
+                    <div style='background-image: url(${b[i].image})'></div>
                 </div>
             </a>
         </li>`;

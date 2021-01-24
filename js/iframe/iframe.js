@@ -10,7 +10,6 @@ function riri(a, b) {
 
 //funcs("kkk = " + riri(3, 5));
 
-
 function ds() {
     let d = new Date();
 

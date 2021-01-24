@@ -19,7 +19,7 @@
 img {
 	-webkit-touch-callout: none
 }
-a, strong, b, sup, sub, u, ins, del, i, s, mark, small, q, em, span {
+a, strong, b, sup, sub, u, ins, del, i, s, mark, small, q, em, span, time {
 	font: inherit
 }
 a, u {
@@ -73,7 +73,7 @@ body {
 h1, h2, h3, h4, h5, h6, span {
 	color: var(--gray-3)
 }
-p {
+p, time {
 	color: var(--gray-5)
 }
 a {

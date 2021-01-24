@@ -49,11 +49,15 @@ async function categories() {
 
         e.innerHTML +=
         `<li>
-            <a href="${i[r].href}">${i[r].title}</a>
+            <a href="${i[r].href}">
+                <p>${i[r].title}</p>
+            </a>
         </li>`;
     };
 };
 categories();
+
+//
 
 async function categDown() {
     let t = await fetch('json/post.json'),
@@ -72,7 +76,7 @@ async function categDown() {
                     <div style="background-image: url(${i[r].image_mini})"></div>
                 </div>
                 <div>
-                    <p>${i[r].date}</p>
+                    <time datetime="${i[r].date}">${i[r].date}</time>
                     <h5>${i[r].title}</h5>
                 </div>
             </a>
