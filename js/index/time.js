@@ -276,7 +276,7 @@ $(document).ready(function() {
 }));
 
 jQuery(function ($) {
-    $(document).ready(function() {
-        $('.includes ul li a time').timeago();
-    });
+  $(document).ready(function() {
+    $('.includes ul li a time').timeago();
+  });
 });
