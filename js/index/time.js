@@ -2,12 +2,8 @@ $(window).ready(function() {
     let d = new Date(),
     i = d.getDate(),
     t = d.getMonth(),
-    h = d.getHours(),
-    m = d.getMinutes(),
     n = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'],
-    b = ['янв.', 'фев.', 'марта', 'апр.', 'мая', 'июня', 'июля', 'авг.', 'сент.', 'окт.', 'нояб.', 'дек.'],
-    e = $('header time'),
-    v = $('.includes time, aside > div:last-child ul:last-child time');
+    e = $('header time');
     
     e[0].innerHTML = i + ' ' + n[t];
 });

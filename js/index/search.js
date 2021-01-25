@@ -66,7 +66,7 @@ categories();
 //
 
 async function categDown() {
-    let t = await fetch('json/post.json'),
+    let t = await fetch('json/general.json'),
     i = await t.json(),
     r = null,
     e = document.querySelector('aside > div:last-child ul:last-child');

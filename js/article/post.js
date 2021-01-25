@@ -13,7 +13,7 @@ $(window).scroll(function() {
 //
 
 async function articleDown() {
-    let t = await fetch('json/post.json'),
+    let t = await fetch('json/general.json'),
     i = await t.json(),
     e = document.querySelector('main ul'),
     r = null;
