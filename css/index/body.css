@@ -205,16 +205,15 @@ blockquote *:not(q):not(small) {
 	border-radius: 5px
 }
 
+.includes li:first-child {
+	margin-bottom: 2em
+}
 .includes li:first-child a {
 	display: block
 }
 .includes li+li a {
 	display: flex;
 	align-items: center
-}
-
-.includes li:nth-child(2) {
-	margin-top: 2em
 }
 
 /* - */
