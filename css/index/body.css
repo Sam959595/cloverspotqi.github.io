@@ -240,6 +240,9 @@ blockquote *:not(q):not(small) {
 .includes li+li+li a > div:first-child {
 	border-top: .1px solid var(--gray-7)
 }
+.includes li:last-child {
+	border-bottom: .1px solid var(--gray-7)
+}
 
 /* - */
 
