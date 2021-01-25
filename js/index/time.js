@@ -143,11 +143,11 @@ $(window).ready(function() {
     },
     datetime: function(elem) {
       var iso8601 = $t.isTime(elem) ? $(elem).attr("datetime") : $(elem).attr("title");
-      return $t.parse(iso8601);
+      
     },
     isTime: function(elem) {
-      // jQuery's `is()` doesn't play well with HTML5 in IE
-      return $(elem).get(0).tagName.toLowerCase() === "time"; // $(elem).is("time");
+      return $(elem).is("time"); // jQuery's `is()` doesn't play well with HTML5 in IE - $(elem).is("time")
+      return $(elem).get(0).tagName.toLowerCase() === "time"; // for IE
     }
   });
 
@@ -260,17 +260,17 @@ $(window).ready(function() {
 }(function (jQuery) {
   // Russian
   function numpf(n, f, s, t) {
-    // f - 1, 21, 31, ...
-    // s - 2-4, 22-24, 32-34 ...
-    // t - 5-20, 25-30, ...
+    // f - 1, 21, 31, минуту...
+    // s - 2-4, 22-24, 32-34, минуты...
+    // t - 5-20, 25-30, минут...
     n = n % 100;
     var n10 = n % 10;
     if ( (n10 === 1) && ( (n === 1) || (n > 20) ) ) {
-      return f;
+      return f; // f - 1, 21, 31, минуту...
     } else if ( (n10 > 1) && (n10 < 5) && ( (n > 20) || (n < 10) ) ) {
-      return s;
+      return s; // s - 2-4, 22-24, 32-34, минуты...
     } else {
-      return t;
+      return t; // t - 5-20, 25-30, минут...
     }
   }
 
@@ -278,7 +278,7 @@ $(window).ready(function() {
     prefixAgo: null,
     prefixFromNow: "через",
     suffixAgo: "назад",
-    suffixFromNow: "сейчас",
+    suffixFromNow: null,
     seconds: "менее минуты",
     minute: "минуту",
     minutes: function(value) { return numpf(value, "%d минуту", "%d минуты", "%d минут"); },
