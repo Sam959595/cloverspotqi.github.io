@@ -143,11 +143,11 @@ $(window).ready(function() {
     },
     datetime: function(elem) {
       var iso8601 = $t.isTime(elem) ? $(elem).attr("datetime") : $(elem).attr("title");
-      
+      return $t.parse(iso8601);
     },
     isTime: function(elem) {
-      return $(elem).is("time"); // jQuery's `is()` doesn't play well with HTML5 in IE - $(elem).is("time")
-      return $(elem).get(0).tagName.toLowerCase() === "time"; // for IE
+      // jQuery's `is()` doesn't play well with HTML5 in IE
+      return $(elem).get(0).tagName.toLowerCase() === "time"; // $(elem).is("time");
     }
   });
 
