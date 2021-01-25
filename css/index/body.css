@@ -250,7 +250,7 @@ blockquote *:not(q):not(small) {
 /* - */
 
 .includes li:first-child a div:last-child div {
-	height: 200px
+	height: 220px
 }
 .includes li+li a div:last-child div {
 	width: 110px;

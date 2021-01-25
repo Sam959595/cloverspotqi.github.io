@@ -1,0 +1,66 @@
+[
+    {
+        "href": "ru/example.html",
+        "image": "media/index/3.jpg",
+        "image_mini": "media/index/9m.jpg",
+        "date": "2021-01-25T17:02:50Z",
+        "title": "Компания Apple достигает первозданных результатов стоимостью акций в 2,4 триллион долларов",
+        "details": "Процессор Bionic A14, Изменённый корпус с защитой «Кирамический щит», Сканер пространства LiDAR, Переустроенная система камер, Увеличенный 6.7 дюймовый экран Super Retina XDR, Поддержка сети 5-го поколения."
+    },
+    {
+        "href": "#",
+        "image": "media/index/6.jpg",
+        "image_mini": "media/index/2m.jpg",
+        "date": "2020-11-09T15:03:58Z",
+        "title": "Часы Watch Series 7 позволят отслеживать элементы крови",
+        "details": "Измерение кислорода крови при помощи Apple Watch."
+    },
+    {
+        "href": "#",
+        "image": "media/index/5.jpg",
+        "image_mini": "media/index/5m.jpg",
+        "date": "2020-09-20T03:21:58Z",
+        "title": "Управление приложениями и еженедельные подборки в App Store",
+        "details": "Расширенные возможности для комфортного использования просмотров событий."
+    },
+    {
+        "href": "#",
+        "image": "media/index/4.jpg",
+        "image_mini": "media/index/4m.jpg",
+        "date": "2020-10-04T16:42:58Z",
+        "title": "Системное обновление iOS 14.1 (предварительная версия)",
+        "details": "Процессор Bionic A14, Изменённый корпус с защитой «Кирамический щит», Сканер пространства LiDAR, Переустроенная система камер, Увеличенный 6.7 дюймовый экран Super Retina XDR, Поддержка сети 5-го поколения."
+    },
+    {
+        "href": "ru/generation-mac-developed-on-its-own-processor-apple-m-one.html",
+        "image": "media/index/9.jpg",
+        "image_mini": "media/index/9m.jpg",
+        "date": "2020-11-10T23:45:02Z",
+        "title": "Поколение Mac разработанные на собственном процессоре Apple M1",
+        "details": "Семейство MacBook Air, MacBook Pro и Mac mini в основе процессора chip M1."
+    },
+    {
+        "href": "#",
+        "image": "media/index/2.jpg",
+        "image_mini": "media/index/2m.jpg",
+        "date": "2020-11-09T09:37:58Z",
+        "title": "Нарушение и снижение продуктивности сна",
+        "details": "Причины препятствий ночного сна. Условность порядка отхода ко сну. Предварительные меры комфорта."
+    },
+    {
+        "href": "#",
+        "image": "media/index/5.jpg",
+        "image_mini": "media/index/5m.jpg",
+        "date": "2020-09-20T01:05:58Z",
+        "title": "Ограничение уровня звукового прослушивания",
+        "details": "Меры предосторожности и воздействие анализа звука в долгосрочной перспективе."
+    },
+    {
+        "href": "ru/example.html",
+        "image": "media/index/4.jpg",
+        "image_mini": "media/index/4m.jpg",
+        "date": "2020-10-04T10:09:58Z",
+        "title": "Apple представила iPhone 12 Pro и iPhone 12 Pro Max",
+        "details": "Процессор Bionic A14, Изменённый корпус с защитой «Кирамический щит», Сканер пространства LiDAR, Переустроенная система камер, Увеличенный 6.7 дюймовый экран Super Retina XDR, Поддержка сети 5-го поколения."
+    }
+]
