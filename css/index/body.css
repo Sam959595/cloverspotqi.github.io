@@ -52,7 +52,7 @@ em {
 time {
 	text-transform: uppercase
 }
-span {
+span, .includes a {
 	-webkit-tap-highlight-color: transparent
 }
 
