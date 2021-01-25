@@ -209,10 +209,12 @@ blockquote *:not(q):not(small) {
 	display: block
 }
 .includes li+li a {
-	height: 120px;
-
 	display: flex;
 	align-items: center
+}
+
+.includes li:nth-child(2) {
+	margin-top: 2em
 }
 
 /* - */
