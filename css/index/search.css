@@ -124,7 +124,7 @@ input[type="search"] {
 
 	padding: 0 6px 0 26px;
 
-	font: normal 400 16px "-apple-system";
+	font: normal 400 16px "-apple-system-body";
 	letter-spacing: -.022em;
 
 	background-color: var(--gray-1)
@@ -149,7 +149,7 @@ input[type="search"]::-webkit-search-cancel-button {
 aside > div:first-child div:last-child span {
 	align-self: center;
 
-	font: normal 400 17px "-apple-system";
+	font: normal 400 17px "-apple-system-body";
 	letter-spacing: -.022em;
 
 	width: 0;
@@ -183,7 +183,7 @@ aside > div:last-child ul:first-child li a {
 	padding: 10px 0
 }
 aside > div:last-child ul:first-child li a p {
-	font: normal 400 17px "-apple-system";
+	font: normal 400 17px "-apple-system-body";
 	letter-spacing: -.022em
 }
 aside > div:last-child ul:first-child li+li {
@@ -218,10 +218,10 @@ aside > div:last-child ul:last-child a > div:last-child {
 	padding: 1em 0
 }
 aside > div:last-child ul:last-child a time {
-	font: normal 600 11px/1.36364 "-apple-system";
+	font: normal 600 11px/1.36364 "-apple-system-body";
 	letter-spacing: -.008em
 }
 aside > div:last-child ul:last-child a h5 {
-	font: normal 600 17px/1.23536 "-apple-system";
+	font: normal 600 17px/1.23536 "-apple-system-body";
 	letter-spacing: -.022em
 }

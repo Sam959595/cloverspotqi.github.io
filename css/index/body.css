@@ -226,7 +226,7 @@ blockquote *:not(q):not(small) {
 }
 
 .includes a div:first-child time {
-	font: normal 600 11px/1.36364 "-apple-system";
+	font: normal 600 11px/1.36364 "-apple-system-body";
 	letter-spacing: -.008em
 }
 .includes a div:first-child h5 {
