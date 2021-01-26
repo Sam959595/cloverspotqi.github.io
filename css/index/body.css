@@ -7,7 +7,7 @@
 
 	-webkit-text-size-adjust: 100%;
 
-	font: normal 400 12px/1.33337 "-apple-system", "BlinkMacSystemFont";
+	font: normal 400 12px/1.33337 "-apple-system", "-apple-system-headline1", "-apple-system-headline2", "-apple-system-body", "-apple-system-subheadline1", "-apple-system-subheadline2", "-apple-system-footnote", "-apple-system-caption1", "-apple-system-caption2", "-apple-system-short-headline1", "-apple-system-short-headline2", "-apple-system-short-body", "-apple-system-short-subheadline1", "-apple-system-short-subheadline2", "-apple-system-short-footnote", "-apple-system-short-caption1", "-apple-system-tall-body", "-apple-system-figure", "BlinkMacSystemFont";
 	letter-spacing: -.01em;
 
 	-webkit-font-smoothing: antialiased
