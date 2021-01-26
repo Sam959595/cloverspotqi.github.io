@@ -110,7 +110,7 @@ iframe {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 header li * {
-	font: normal 900 32px/1 "bold"
+	font: normal 900 32px/1 "SF Pro Display"
 }
 header li:last-child {
 	opacity: .6
