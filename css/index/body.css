@@ -110,7 +110,7 @@ iframe {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 header li * {
-	font: normal 900 32px/1 "SF Pro Display"
+	font: normal 900 32px/1 "-apple-system"
 }
 header li:last-child {
 	opacity: .6
