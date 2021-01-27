@@ -7,7 +7,7 @@
 
 	-webkit-text-size-adjust: 100%;
 
-	font: normal 400 12px/1.33337 "-apple-system", "-apple-system-headline1", "-apple-system-headline2", "-apple-system-body", "-apple-system-subheadline1", "-apple-system-subheadline2", "-apple-system-footnote", "-apple-system-caption1", "-apple-system-caption2", "-apple-system-short-headline1", "-apple-system-short-headline2", "-apple-system-short-body", "-apple-system-short-subheadline1", "-apple-system-short-subheadline2", "-apple-system-short-footnote", "-apple-system-short-caption1", "-apple-system-tall-body", "-apple-system-figure", "BlinkMacSystemFont";
+	font: normal 400 12px/1.33337 "-apple-system", "Seravek", "Futura", "Iowan Old Style", "American Typewriter", "Courier New", "Verdana", "Thonburi", "Avenir", "Arial Hebrew", "Apple Color Emoji", "Avenir Book", "Charter Black", "Hiragino Sans W3", "Helvetica", "Hiragino Sans W3", "Palatino", "Papyrus", "Rockwell", "Zapf Dingbats", "Zapfino", "Verdana", "Trebuchet MS", "Balega", "Bebas Neue", "Euphemia UCAS", "Carlito", "Druk Wide Medium", "Hoefler Text", "Gill Sans", "Menlo", "BlinkMacSystemFont";
 	letter-spacing: -.01em;
 
 	-webkit-font-smoothing: antialiased
@@ -226,11 +226,11 @@ blockquote *:not(q):not(small) {
 }
 
 .includes a div:first-child time {
-	font: normal 600 11px/1.36364 "-apple-system-body";
+	font: normal 600 11px/1.36364 "-apple-system";
 	letter-spacing: -.008em
 }
 .includes a div:first-child h5 {
-	font: normal 700 19px/1.21053 "-apple-system";
+	font: normal 700 19px/1.21053 "Seravek";
 	letter-spacing: .012em
 }
 .includes li+li a div:first-child h5 {
