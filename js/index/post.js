@@ -44,16 +44,18 @@ async function sef() {
     for (i in b) {
         e.innerHTML +=
         `<li>
-            <a href='${b[i].href}'>
+        <a href='${b[i].href}'>
+            <div>
                 <div>
                     <time datetime='${b[i].date}'></time>
                     <h5>${b[i].title}</h5>
                 </div>
-                <div>
-                    <div style='background-image: url(${b[i].image})'></div>
-                </div>
-            </a>
-        </li>`;
+            </div>
+            <div>
+                <div style='background-image: url(${b[i].image})'></div>
+            </div>
+        </a>
+    </li>`;
     };
 };
 sef();
