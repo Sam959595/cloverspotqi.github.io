@@ -231,7 +231,7 @@ blockquote *:not(q):not(small) {
 }
 .includes a div:first-child h5 {
 	font: normal 800 24px/1.21053 "Galvji";
-	letter-spacing: .012em
+	letter-spacing: -.016em
 }
 .includes li+li a div:first-child h5 {
 	font-size: 17px
