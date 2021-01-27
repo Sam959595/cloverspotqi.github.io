@@ -230,7 +230,7 @@ blockquote *:not(q):not(small) {
 	letter-spacing: -.008em
 }
 .includes a div:first-child h5 {
-	font: normal 700 19px/1.21053 "Iowan Old Style";
+	font: normal 700 19px/1.21053 "Hoefler Text";
 	letter-spacing: .012em
 }
 .includes li+li a div:first-child h5 {
