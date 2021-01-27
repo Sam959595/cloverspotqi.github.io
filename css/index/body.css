@@ -232,7 +232,7 @@ blockquote *:not(q):not(small) {
 	letter-spacing: -.008em
 }
 .includes a div:first-child h5 {
-	font: normal 900 19px/1.1 "Galvji";
+	font: normal 900 19px/1.2 "Galvji";
 	letter-spacing: -.016em
 }
 .includes li+li a div:first-child h5 {
