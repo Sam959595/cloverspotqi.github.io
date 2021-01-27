@@ -8,7 +8,7 @@
 	-webkit-user-select: none;
 	-webkit-text-size-adjust: 100%;
 
-	font: normal 400 12px/1.33337 "small", "bold", "icon";
+	font: normal 400 12px/1.33337 "-apple-system";
 	letter-spacing: -.01em;
 
 	-webkit-font-smoothing: antialiased
@@ -124,7 +124,7 @@ nav {
 	padding: 1em 0
 }
 .additionally h3 {
-	font: normal 400 24px/1.33341 "bold";
+	font: normal 400 24px/1.33341 "-apple-system";
 	letter-spacing: .009em;
 
 	color: var(--gray-5)
@@ -142,35 +142,35 @@ picture, picture img {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .content h1 {
-	font: normal 700 48px/1.08349 "bold";
+	font: normal 700 48px/1.08349 "-apple-system";
 	letter-spacing: -.003em
 }
 .content h2 {
-	font: normal 600 28px/1.14286 "bold";
+	font: normal 600 28px/1.14286 "-apple-system";
 	letter-spacing: .007em;
 
 	padding: 4cm 0 20px
 }
 .content h3 {
-	font: normal 600 24px/1.16667 "bold";
+	font: normal 600 24px/1.16667 "-apple-system";
 	letter-spacing: .009em;
 
 	padding: 3em 0 .8em
 }
 .content h4 {
-	font: normal 600 21px/1.19048 "bold";
+	font: normal 600 21px/1.19048 "-apple-system";
 	letter-spacing: .011em;
 
 	padding: 2em 0 16px
 }
 .content h5 {
-	font: normal 700 20px/1.2 "bold";
+	font: normal 700 20px/1.2 "-apple-system";
 	letter-spacing: .024em;
 
 	padding: 19px 0 1.25em
 }
 .content h6 {
-	font: normal 600 19px/1.21053 "bold";
+	font: normal 600 19px/1.21053 "-apple-system";
 	letter-spacing: .012em;
 
 	padding: 1em 0 19px
