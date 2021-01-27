@@ -222,7 +222,9 @@ blockquote *:not(q):not(small) {
 	padding-bottom: 1em
 }
 .includes li+li a > div:first-child {
-	padding: 1.8em 0
+	display: inherit;
+	align-items: inherit;
+	height: 120px
 }
 
 .includes a div:first-child time {
