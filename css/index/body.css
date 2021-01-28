@@ -109,10 +109,10 @@ iframe {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-header li * {
+header * {
 	font: normal 900 32px/1 "-apple-system"
 }
-header li:last-child {
+header time {
 	opacity: .6
 }
 
