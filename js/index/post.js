@@ -10,10 +10,8 @@ async function sech() {
         `<li>
             <a href='${b[i].href}'>
                 <div>
-                    <div>
-                        <time datetime='${b[i].date}'></time>
-                        <h5>${b[i].title}</h5>
-                    </div>
+                    <time datetime='${b[i].date}'></time>
+                    <h5>${b[i].title}</h5>
                 </div>
                 <div>
                     <div style='background-image: url(${b[i].image})'></div>
@@ -46,10 +44,8 @@ async function sef() {
         `<li>
             <a href='${b[i].href}'>
                 <div>
-                    <div>
-                        <time datetime='${b[i].date}'></time>
-                        <h5>${b[i].title}</h5>
-                    </div>
+                    <time datetime='${b[i].date}'></time>
+                    <h5>${b[i].title}</h5>
                 </div>
                 <div>
                     <div style='background-image: url(${b[i].image})'></div>
