@@ -186,11 +186,22 @@ blockquote *:not(q):not(small) {
 	margin-top: 2.7cm
 }
 
-.includes h2 {
-	padding-bottom: .5em;
+.includes > div {
+	padding-bottom: 1em;
 
+	display: flex;
+	align-items: center;
+	justify-content: space-between
+}
+.includes > div h2 {
 	font: normal 800 24px/1.21053 "-apple-system";
 	letter-spacing: .012em
+}
+.includes > div span {
+	font: normal 400 19px/1.21053 "-apple-system";
+	letter-spacing: .012em;
+
+	color: var(--blue-1)
 }
 
 .includes ul {
@@ -205,10 +216,10 @@ blockquote *:not(q):not(small) {
 	border-radius: 5px
 }
 
-/*.includes a div:last-child div {
+.includes a div:last-child div {
 	opacity: 0;
 	-webkit-transition: opacity 1s ease 0s
-}*/
+}
 
 .includes li:first-child {
 	margin-bottom: 2em
@@ -231,7 +242,7 @@ blockquote *:not(q):not(small) {
 
 	display: inherit;
 	flex-wrap: wrap-reverse;
-	align-items: inherit;
+	align-items: inherit
 }
 
 .includes a div:first-child time {
