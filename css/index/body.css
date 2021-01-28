@@ -205,10 +205,10 @@ blockquote *:not(q):not(small) {
 	border-radius: 5px
 }
 
-.includes a div:last-child div {
+/*.includes a div:last-child div {
 	opacity: 0;
 	-webkit-transition: opacity 1s ease 0s
-}
+}*/
 
 .includes li:first-child {
 	margin-bottom: 2em
@@ -227,10 +227,9 @@ blockquote *:not(q):not(small) {
 	padding-bottom: 1em
 }
 .includes li+li a > div:first-child {
-	display: inherit;
-	flex-wrap: wrap-reverse;
-	align-items: inherit;
-	height: 120px
+	height: 120px;
+
+	padding-top: 1.8em;
 }
 
 .includes a div:first-child time {
