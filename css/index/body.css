@@ -182,7 +182,7 @@ blockquote *:not(q):not(small) {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.includes, footer {
+.includes {
 	margin-top: 2.7cm
 }
 
@@ -286,4 +286,11 @@ blockquote *:not(q):not(small) {
 	box-shadow: inset 0 0 0 .5px var(--transparency-2);
 
 	background: center/cover
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+footer {
+	margin-top: 1em;
+	margin-bottom: max(1em, env(safe-area-inset-bottom))
 }
