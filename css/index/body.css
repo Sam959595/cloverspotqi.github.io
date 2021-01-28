@@ -224,12 +224,12 @@ blockquote *:not(q):not(small) {
 /* - */
 
 .includes li:first-child a > div:first-child {
-	padding-bottom: 1em
+	margin-bottom: 1em
 }
 .includes li+li a > div:first-child {
 	height: 120px;
 
-	padding-top: 1.8em;
+	padding-top: 1.8em
 }
 
 .includes a div:first-child time {
