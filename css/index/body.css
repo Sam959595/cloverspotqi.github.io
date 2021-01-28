@@ -198,8 +198,8 @@ blockquote *:not(q):not(small) {
 	letter-spacing: .012em
 }
 .includes > div span {
-	font: normal 400 19px/1.21053 "-apple-system";
-	letter-spacing: .012em;
+	font: normal 400 17px/1.23536 "-apple-system";
+	letter-spacing: -.022em;
 
 	color: var(--blue-1)
 }
@@ -216,10 +216,10 @@ blockquote *:not(q):not(small) {
 	border-radius: 5px
 }
 
-.includes a div:last-child div {
+/*.includes a div:last-child div {
 	opacity: 0;
 	-webkit-transition: opacity 1s ease 0s
-}
+}*/
 
 .includes li:first-child {
 	margin-bottom: 2em
