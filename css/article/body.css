@@ -180,7 +180,7 @@ picture, picture img {
 	margin-bottom: 1.47em;
 
 	font: normal 400 17px/1.47059 "-apple-system";
-	letter-spacing: -.008em
+	letter-spacing: 0
 }
 .content ol {
 	padding-left: 20px;
@@ -230,7 +230,7 @@ picture, picture img {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .distribution strong {
-	letter-spacing: 0;
+	letter-spacing: .008em;
 	color: var(--gray-01)
 }
 
