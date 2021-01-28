@@ -190,7 +190,7 @@ blockquote *:not(q):not(small) {
 	padding-bottom: 1em;
 
 	display: flex;
-	align-items: center;
+	align-items: baseline;
 	justify-content: space-between
 }
 .includes > div h2 {
