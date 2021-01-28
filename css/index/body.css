@@ -199,7 +199,7 @@ blockquote *:not(q):not(small) {
 }
 .includes > div span {
 	font: normal 400 17px/1.23536 "-apple-system", "Segoe UI";
-	letter-spacing: -.022em;
+	letter-spacing: 0;
 
 	color: var(--blue-1)
 }
