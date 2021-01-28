@@ -229,7 +229,9 @@ blockquote *:not(q):not(small) {
 .includes li+li a > div:first-child {
 	height: 120px;
 
-	padding-top: 1.8em
+	display: inherit;
+	flex-wrap: wrap-reverse;
+	align-items: inherit;
 }
 
 .includes a div:first-child time {
