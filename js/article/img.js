@@ -1,12 +1,3 @@
-window.onload = function() {
-    let a = $('blockquote p'),
-    b = 'quote';
-
-    a[0].classList.add(b);
-};
-
-//
-
 $(document).ready(function() {
     let tt = document.querySelectorAll('[data-src]');
     
@@ -16,15 +7,11 @@ $(document).ready(function() {
         if (!u) {
             return;
         }
-        a.forEach((e) => {
-            e.setAttribute('data-style', e.getAttribute('style'));
-            e.removeAttribute('data-style');
-        });
+        a.src = u;
     };
     
     let bb = {
-        threshold: 0,
-        rootMargin: '0px'
+        threshold: 0
     };
     
     const ee = new IntersectionObserver((a, b) => {

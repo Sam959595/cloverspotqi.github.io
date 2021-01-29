@@ -14,7 +14,7 @@ async function sech() {
                     <h5>${b[i].title}</h5>
                 </div>
                 <div>
-                    <div style='background-image: url(${b[i].image})'></div>
+                    <div data-style='background-image: url(${b[i].image})'></div>
                 </div>
             </a>
         </li>`;
@@ -48,7 +48,7 @@ async function sef() {
                     <h5>${b[i].title}</h5>
                 </div>
                 <div>
-                    <div style='background-image: url(${b[i].image})'></div>
+                    <div data-style='background-image: url(${b[i].image})'></div>
                 </div>
             </a>
         </li>`;

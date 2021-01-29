@@ -121,7 +121,7 @@ header ul, main ul, section, footer > * {
         padding-right: 16px
     }
 
-    .includes {
+    .includes, footer {
         margin-top: 1cm
     }
     .includes ul {

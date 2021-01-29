@@ -182,7 +182,7 @@ blockquote *:not(q):not(small) {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.includes {
+.includes, footer {
 	margin-top: 2.7cm
 }
 
@@ -194,8 +194,8 @@ blockquote *:not(q):not(small) {
 	justify-content: space-between
 }
 .includes > div h2 {
-	font: normal 800 24px/1.21053 "-apple-system", "Segoe UI";
-	letter-spacing: .012em
+	font: normal 800 24px/1.16667 "-apple-system", "Segoe UI";
+	letter-spacing: .009em
 }
 .includes > div span {
 	font: normal 400 17px/1.23536 "-apple-system", "Segoe UI";
@@ -216,10 +216,10 @@ blockquote *:not(q):not(small) {
 	border-radius: 5px
 }
 
-/*.includes a div:last-child div {
-	opacity: 0;
+.includes a div:last-child div {
+	opacity: 1;
 	-webkit-transition: opacity 1s ease 0s
-}*/
+}
 
 .includes li:first-child {
 	margin-bottom: 2em
@@ -291,6 +291,5 @@ blockquote *:not(q):not(small) {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 footer {
-	margin-top: 1em;
 	margin-bottom: max(1em, env(safe-area-inset-bottom))
 }
