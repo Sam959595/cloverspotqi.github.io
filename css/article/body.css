@@ -139,6 +139,16 @@ picture, picture img {
 	display: block
 }
 
+/* - */
+
+img[data-src] {
+	opacity: 0
+}
+img[src] {
+	opacity: 1;
+	-webkit-transition: opacity 1s ease 0s
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .content h1 {

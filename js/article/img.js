@@ -11,7 +11,8 @@ $(document).ready(function() {
     };
     
     let bb = {
-        threshold: 0
+        threshold: 0,
+        rootMargin: '0 0 300px 0'
     };
     
     const ee = new IntersectionObserver((a, b) => {
