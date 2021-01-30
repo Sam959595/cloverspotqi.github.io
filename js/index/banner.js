@@ -7,19 +7,21 @@ window.onload = function() {
 
 //
 
+/*u.forEach((e) => {
+    e.setAttribute('style', e.getAttribute('data-style'));
+    e.removeAttribite('data-style');
+});*/
+
 $(document).ready(function() {
-    let tt = document.querySelectorAll('[data-src]');
+    let tt = document.querySelectorAll('[data-style]');
     
     function vv(a) {
-        let u = a.getAttribute('data-src');
+        let u = a.getAttribute('data-style');
         
         if (!u) {
             return;
         }
-        a.forEach((e) => {
-            e.setAttribute('data-style', e.getAttribute('style'));
-            e.removeAttribute('data-style');
-        });
+        a.style = u;
     };
     
     let bb = {
