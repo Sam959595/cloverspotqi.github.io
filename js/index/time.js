@@ -10,7 +10,7 @@ $(window).ready(function() {
 
 //
 
-$(window).ready(function() {
+
   /**
  * Timeago is a jQuery plugin that makes it easy to support automatically
  * updating fuzzy timestamps (e.g. "4 minutes ago" or "about 1 day ago").
@@ -296,5 +296,4 @@ jQuery(function ($) {
   $(document).ready(function() {
     $('.includes time, aside > div:last-child ul:last-child time').timeago();
   });
-});
 });
