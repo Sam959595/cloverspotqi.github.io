@@ -207,7 +207,9 @@ blockquote *:not(q):not(small) {
 	font: normal 400 17px/1.23536 "-apple-system", "Segoe UI";
 	letter-spacing: 0;
 
-	border-bottom: .1px solid var(--gray-7);
+	border-width: .1px 0;
+	border-style: solid;
+	border-color: var(--gray-7);
 
 	color: var(--blue-1)
 }
@@ -263,9 +265,6 @@ blockquote *:not(q):not(small) {
 
 .includes li+li+li a > div:first-child {
 	border-top: .1px solid var(--gray-7)
-}
-.includes li:last-child {
-	border-bottom: .1px solid var(--gray-7)
 }
 
 /* - */
