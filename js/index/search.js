@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     let q = $('main ul li:nth-child(2)'),
-    o = $('.includes'),
-    u = 'json/nav.json';
+    o = $('.includes')[0],
+    u = 'x';
 
     q.click(function() {
         o.load(u);
@@ -45,48 +45,50 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //
 
-async function categories() {
-    let t = await fetch('json/nav.json'),
-    i = await t.json(),
-    r = null,
-    e = document.querySelector('aside > div:last-child ul:first-child');
-
-    for (r in i) {
-
-        e.innerHTML +=
-        `<li>
-            <a href="${i[r].href}">
-                <p>${i[r].title}</p>
-            </a>
-        </li>`;
+$(window).ready(function() {
+    async function categories() {
+        let t = await fetch('json/nav.json'),
+        i = await t.json(),
+        r = null,
+        e = $('aside > div:last-child ul:first-child')[0];
+    
+        for (r in i) {
+    
+            e.innerHTML +=
+            `<li>
+                <a href="${i[r].href}">
+                    <p>${i[r].title}</p>
+                </a>
+            </li>`;
+        };
     };
-};
-categories();
-
-//
-
-async function categDown() {
-    let t = await fetch('json/general.json'),
-    i = await t.json(),
-    r = null,
-    e = document.querySelector('aside > div:last-child ul:last-child');
-
-    i = i.splice(0, 5);
-
-    for (r in i) {
-
-        e.innerHTML +=
-        `<li>
-            <a href="${i[r].href}">
-                <div>
-                    <div style="background-image: url(${i[r].image_mini})"></div>
-                </div>
-                <div>
-                    <time datetime="${i[r].date}"></time>
-                    <h5>${i[r].title}</h5>
-                </div>
-            </a>
-        </li>`;
+    categories();
+    
+    //
+    
+    async function categDown() {
+        let t = await fetch('json/general.json'),
+        i = await t.json(),
+        r = null,
+        e = document.querySelector('aside > div:last-child ul:last-child');
+    
+        i = i.splice(0, 5);
+    
+        for (r in i) {
+    
+            e.innerHTML +=
+            `<li>
+                <a href="${i[r].href}">
+                    <div>
+                        <div style="background-image: url(${i[r].image_mini})"></div>
+                    </div>
+                    <div>
+                        <time datetime="${i[r].date}"></time>
+                        <h5>${i[r].title}</h5>
+                    </div>
+                </a>
+            </li>`;
+        };
     };
-};
-categDown();
+    categDown();
+});
