@@ -202,10 +202,12 @@ blockquote *:not(q):not(small) {
 .includes > span {
 	display: block;
 
-	margin-top: .5em;
+	padding: .5em 0;
 
 	font: normal 400 17px/1.23536 "-apple-system", "Segoe UI";
 	letter-spacing: 0;
+
+	border-bottom: .1px solid var(--gray-7);
 
 	color: var(--blue-1)
 }
