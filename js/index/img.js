@@ -1,4 +1,4 @@
-$(window).ready(function() {
+$(document).ready(function() {
     let tt = document.querySelectorAll('[data-style]');
     
     function vv(a) {

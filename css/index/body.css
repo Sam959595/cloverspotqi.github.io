@@ -186,28 +186,28 @@ blockquote *:not(q):not(small) {
 	margin-top: 2.7cm
 }
 
-.includes > div {
-	padding-bottom: 1em;
+.includes > h2 {
+	margin-bottom: .5em;
 
-	display: flex;
-	align-items: baseline;
-	justify-content: space-between
-}
-.includes > div h2 {
 	font: normal 800 24px/1.16667 "-apple-system", "Segoe UI";
 	letter-spacing: .009em
-}
-.includes > div span {
-	font: normal 400 17px/1.23536 "-apple-system", "Segoe UI";
-	letter-spacing: 0;
-
-	color: var(--blue-1)
 }
 
 .includes ul {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 36px
+}
+
+.includes > span {
+	display: block;
+
+	margin-top: .5em;
+
+	font: normal 400 17px/1.23536 "-apple-system", "Segoe UI";
+	letter-spacing: 0;
+
+	color: var(--blue-1)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
