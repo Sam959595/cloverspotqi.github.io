@@ -8,6 +8,7 @@ $(document).ready(function() {
             return;
         };
         a.style = u;
+        a.removeAttribute('data-style');
     };
     
     let bb = {
@@ -33,5 +34,5 @@ $(document).ready(function() {
 
 /*u.forEach((e) => {
     e.setAttribute('style', e.getAttribute('data-style'));
-    e.removeAttribite('data-style');
+    e.removeAttribute('data-style');
 });*/
