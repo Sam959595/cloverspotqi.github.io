@@ -111,14 +111,14 @@ header ul, main ul, section, footer > * {
     }
 
     header {
-        padding: 2em 20px 1em
+        padding: 2em 20.71px 1em
     }
 
     main li:first-child {
-        padding-left: 20px
+        padding-left: 20.71px
     }
     main li:last-child {
-        padding-right: 20px
+        padding-right: 20.71px
     }
 
     .includes, footer {
@@ -139,5 +139,41 @@ header ul, main ul, section, footer > * {
 
     aside > *, section, footer > * {
         width: 90%
+    }
+
+    main.reference a div {
+        width: 372.59px
+    }
+}
+
+/* - */
+
+@media screen and (max-width: 414px) {
+    main.reference a div {
+        width: 372.59px
+    }
+}
+
+/* - */
+
+@media screen and (max-width: 390px) {
+    main.reference a div {
+        width: 351px;
+    }
+}
+
+/* - */
+
+@media screen and (max-width: 320px) {
+    main.reference a div {
+        width: 288px
+    }
+
+    .includes ul li:first-child a div:last-child div {
+        height: 150px
+    }
+    .includes ul li+li a div:last-child div {
+        width: 90px;
+        height: 90px
     }
 }
