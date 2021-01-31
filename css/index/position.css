@@ -111,14 +111,14 @@ header ul, main ul, section, footer > * {
     }
 
     header {
-        padding: 2em 16px 1em
+        padding: 2em 20px 1em
     }
 
     main li:first-child {
-        padding-left: 16px
+        padding-left: 20px
     }
     main li:last-child {
-        padding-right: 16px
+        padding-right: 20px
     }
 
     .includes, footer {

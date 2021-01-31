@@ -1,5 +1,5 @@
 let tt = document.querySelectorAll('[data-style]');
-    
+
 function vv(a) {
     let u = a.getAttribute('data-style');
         
@@ -9,12 +9,12 @@ function vv(a) {
     a.style = u;
     a.removeAttribute('data-style');
 };
-    
+
 let bb = {
     threshold: 0,
     rootMargin: '0px'
 };
-    
+
 let ee = new IntersectionObserver((a, b) => {
     a.forEach(c => {
          if (!c.isIntersecting) {
@@ -25,7 +25,7 @@ let ee = new IntersectionObserver((a, b) => {
         };
     });
 }, bb);
-    
+
 tt.forEach(a => {
     ee.observe(a);
 });
