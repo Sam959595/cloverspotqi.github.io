@@ -283,11 +283,9 @@ blockquote *:not(q):not(small) {
 
 /* - */
 
-.includes ul a > div:last-child {
-	box-shadow: inset 0 0 0 .5px var(--transparency-2);
-}
 .includes ul a div:last-child div {
 	border-radius: 5px;
+	box-shadow: inset 0 0 0 .5px var(--transparency-2);
 	background: center/cover
 }
 
