@@ -182,12 +182,14 @@ blockquote *:not(q):not(small) {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+main.reference ul {
+	grid-auto-columns: calc((100% - 1 * 20px)/ 1)
+}
 main.reference a {
 	display: block
 }
 main.reference a div {
-	min-width: 372px;
-	height: 200px;
+	height: 180px;
 
 	border-radius: 5px;
 
