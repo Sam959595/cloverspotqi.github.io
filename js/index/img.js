@@ -7,7 +7,7 @@ $(document).ready(function() {
         if (!u) {
             return;
         };
-        a.style = u;
+        a.style = ;
     };
     
     let bb = {

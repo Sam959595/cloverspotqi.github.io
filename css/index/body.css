@@ -199,7 +199,7 @@ blockquote *:not(q):not(small) {
 	gap: 36px
 }
 
-.includes > span {
+.includes > a {
 	display: block;
 
 	padding: .5em 0;
@@ -209,42 +209,40 @@ blockquote *:not(q):not(small) {
 
 	border-width: .1px 0;
 	border-style: solid;
-	border-color: var(--gray-7);
-
-	color: var(--blue-1)
+	border-color: var(--gray-7)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.includes a {
+.includes ul a {
 	border-radius: 5px
 }
 
-.includes a div:last-child div[data-style] {
+.includes ul a div:last-child div[data-style] {
 	opacity: 0
 }
-.includes a div:last-child div[style] {
+.includes ul a div:last-child div[style] {
 	opacity: 1;
 	-webkit-transition: opacity 1s ease 0s
 }
 
-.includes li:first-child {
+.includes ul li:first-child {
 	margin-bottom: 2em
 }
-.includes li:first-child a {
+.includes ul li:first-child a {
 	display: block
 }
-.includes li+li a {
+.includes ul li+li a {
 	display: flex;
 	align-items: center
 }
 
 /* - */
 
-.includes li:first-child a > div:first-child {
+.includes ul li:first-child a > div:first-child {
 	margin-bottom: 1em
 }
-.includes li+li a > div:first-child {
+.includes ul li+li a > div:first-child {
 	height: 120px;
 
 	display: inherit;
@@ -252,43 +250,44 @@ blockquote *:not(q):not(small) {
 	align-items: inherit
 }
 
-.includes a div:first-child time {
+.includes ul a div:first-child time {
 	font: normal 600 11px/1.36364 "-apple-system", "Segoe UI";
 	letter-spacing: -.008em
 }
-.includes a div:first-child h5 {
+.includes ul a div:first-child h5 {
 	font: normal 900 19px/1.2 "Galvji", "Segoe UI"
 }
-.includes li+li a div:first-child h5 {
+.includes ul li+li a div:first-child h5 {
 	font-size: 17px
 }
 
-.includes li+li+li a > div:first-child {
+.includes ul li+li+li a > div:first-child {
 	border-top: .1px solid var(--gray-7)
 }
 
 /* - */
 
-.includes li+li a > div:last-child {
+.includes ul li+li a > div:last-child {
 	margin-left: 1.3em
 }
 
 /* - */
 
-.includes li:first-child a div:last-child div {
+.includes ul li:first-child a div:last-child div {
 	height: 220px
 }
-.includes li+li a div:last-child div {
+.includes ul li+li a div:last-child div {
 	width: 110px;
 	height: 110px
 }
 
 /* - */
 
-.includes a div:last-child div {
-	border-radius: 5px;
+.includes ul a > div:last-child {
 	box-shadow: inset 0 0 0 .5px var(--transparency-2);
-
+}
+.includes ul a div:last-child div {
+	border-radius: 5px;
 	background: center/cover
 }
 
