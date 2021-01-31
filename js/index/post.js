@@ -38,7 +38,7 @@ async function sef() {
                     <h5>${b[i].title}</h5>
                 </div>
                 <div>
-                    <div data-style='background-image: url(${b[i].image}) style='background-image: url(#)'></div>
+                    <div data-style='background-image: url(${b[i].image})' style='background-image: url(#)'></div>
                 </div>
             </a>
         </li>`;
