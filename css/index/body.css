@@ -14,7 +14,7 @@
 }
 *:not(input) {
 	-webkit-user-select: none
-}
+}git 
 
 img {
 	-webkit-touch-callout: none
@@ -52,7 +52,7 @@ em {
 time {
 	text-transform: uppercase
 }
-span, .includes a {
+a, span {
 	-webkit-tap-highlight-color: transparent
 }
 
