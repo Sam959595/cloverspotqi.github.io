@@ -121,7 +121,7 @@ header time {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-section, footer {
+section:not(.general), footer {
 	margin-top: 2.7cm
 }
 
