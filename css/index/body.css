@@ -111,17 +111,19 @@ iframe {
 
 header {
 	display: flex;
-	justify-content: space-between;
-
-	padding-bottom: .5em;
-
-	border-bottom: .1px solid var(--gray-7)
+	justify-content: space-between
 }
 header * {
 	font: normal 800 17px/1 "-apple-system", "Segoe UI"
 }
 header time {
 	opacity: .6
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+section+section, footer {
+	margin-top: 2.7cm
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
