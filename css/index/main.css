@@ -32,7 +32,7 @@ main.reference a {
 	display: block;
 	border-radius: 5px
 }
-main.reference a div {
+main.reference a div:first-child {
 	height: 185px;
 
 	border-radius: 5px;
@@ -41,6 +41,9 @@ main.reference a div {
     background: center/cover
 }
 
+main.reference a div:last-child {
+	margin-top: .5em
+}
 main.reference a div h5 {
 	font: normal 700 17px/1.2 "Galvji", "Segoe UI"
 }

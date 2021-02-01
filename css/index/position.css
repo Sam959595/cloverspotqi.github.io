@@ -141,7 +141,7 @@ header ul, main ul, section, footer > * {
         width: 90%
     }
 
-    main.reference a div {
+    main.reference a {
         width: 372.59px
     }
 }
@@ -149,7 +149,7 @@ header ul, main ul, section, footer > * {
 /* - */
 
 @media screen and (max-width: 414px) {
-    main.reference a div {
+    main.reference a {
         width: 372.59px
     }
 }
@@ -157,7 +157,7 @@ header ul, main ul, section, footer > * {
 /* - */
 
 @media screen and (max-width: 390px) {
-    main.reference a div {
+    main.reference a {
         width: 351px;
     }
 }
@@ -165,7 +165,7 @@ header ul, main ul, section, footer > * {
 /* - */
 
 @media screen and (max-width: 320px) {
-    main.reference a div {
+    main.reference a {
         width: 288px
     }
 
