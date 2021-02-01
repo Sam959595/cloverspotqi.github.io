@@ -109,19 +109,13 @@ iframe {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-header {
-	display: flex;
-	justify-content: space-between
-}
 header * {
-	font: normal 900 17px/1 "-apple-system", "Segoe UI"
-}
-header h5 {
-	background: linear-gradient(to top left, #30343d 0, #8e8e93 1em);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent
+	font: normal 900 32px/1 "-apple-system", "Segoe UI"
 }
 header time {
+	background: linear-gradient(to top left, #1d1d1f .5cm, #84848b 1cm);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	opacity: .6
 }
 
