@@ -6,14 +6,14 @@ aside > * {
 header {
     padding: 5em 0 1em
 }
-header ul, main ul, section, footer > * {
+header ul, main ul, section, footer > div {
     margin: 0 auto
 }
 
 /* - */
 
 @media screen and (min-width: 1024px) {
-    header ul, section, footer > * {
+    header ul, section, footer > div {
         width: 980px
     }
 }
@@ -48,7 +48,7 @@ header ul, main ul, section, footer > * {
         }
     }
 
-    section, footer > * {
+    section, footer > div {
         width: 692px
     }
 
@@ -137,7 +137,7 @@ header ul, main ul, section, footer > * {
         margin-top: 16px
     }
 
-    aside > *, section, footer > * {
+    aside > *, section, footer > div {
         width: 90%
     }
 

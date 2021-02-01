@@ -14,7 +14,7 @@
 }
 *:not(input) {
 	-webkit-user-select: none
-}git 
+}
 
 img {
 	-webkit-touch-callout: none
@@ -119,5 +119,11 @@ header time {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 footer {
-	margin-bottom: max(1em, env(safe-area-inset-bottom))
+	padding-top: 2em;
+	padding-bottom: env(safe-area-inset-bottom);
+
+	background-color: var(--gray-8)
+}
+footer > div {
+	padding: 2em 0 1em
 }
