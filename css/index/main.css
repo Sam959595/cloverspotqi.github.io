@@ -3,10 +3,11 @@ main ul {
     grid-auto-flow: column;
 	column-gap: .8em;
 
-	touch-action: pan-x;
-	
     overflow-x: scroll;
     scroll-snap-type: x mandatory
+}
+main.attachment ul {
+	touch-action: pan-x
 }
 main li {
 	scroll-snap-align: center
