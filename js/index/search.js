@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //
 
 $(window).ready(function() {
-    async function categories() {
+    async function mm() {
         let t = await fetch('json/nav.json'),
         i = await t.json(),
         r = null,
@@ -62,11 +62,11 @@ $(window).ready(function() {
             </li>`;
         };
     };
-    categories();
+    mm();
     
     //
     
-    async function categDown() {
+    async function tt() {
         let t = await fetch('json/general.json'),
         i = await t.json(),
         r = null,
@@ -90,5 +90,5 @@ $(window).ready(function() {
             </li>`;
         };
     };
-    categDown();
+    tt();
 });

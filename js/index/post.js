@@ -1,4 +1,4 @@
-async function sech() {
+async function bb() {
     let t = await fetch('json/general.json'),
     b = await t.json(),
     e = $('.general ul');
@@ -20,9 +20,9 @@ async function sech() {
         </li>`;
     };
 };
-sech();
+bb();
 
-async function sef() {
+async function vv() {
     let t = await fetch('json/policy.json'),
     b = await t.json(),
     e = $('.policy ul');
@@ -44,4 +44,4 @@ async function sef() {
         </li>`;
     };
 };
-sef();
+vv();
