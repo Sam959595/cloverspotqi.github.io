@@ -4,16 +4,16 @@ aside > * {
 }
 
 header {
-    padding: 5em 0 1em
+    padding-top: 5em
 }
-header ul, main ul, section, footer > div {
+header, main ul, section, footer > div {
     margin: 0 auto
 }
 
 /* - */
 
 @media screen and (min-width: 1024px) {
-    header ul, section, footer > div {
+    header, section, footer > div {
         width: 980px
     }
 }
@@ -24,7 +24,7 @@ header ul, main ul, section, footer > div {
     }
 
     header {
-        padding: 4em 22px 1em
+        padding-top: 4em
     }
     @media screen and (orientation: landscape) {
         header {
@@ -102,7 +102,7 @@ header ul, main ul, section, footer > div {
     aside > div:first-child {
         margin-top: 3em
     }
-    aside > *, section {
+    aside > *, header, section {
         width: 366px
     }
 
@@ -111,7 +111,7 @@ header ul, main ul, section, footer > div {
     }
 
     header {
-        padding: 2em 20.71px 0
+        padding-top: 2em
     }
 
     main li:first-child {
@@ -137,7 +137,7 @@ header ul, main ul, section, footer > div {
         margin-top: 16px
     }
 
-    aside > *, section, footer > div {
+    aside > *, header, section, footer > div {
         width: 90%
     }
 
