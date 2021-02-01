@@ -111,7 +111,7 @@ header ul, main ul, section, footer > * {
     }
 
     header {
-        padding: 2em 20.71px 1em
+        padding: 2em 20.71px 0
     }
 
     main li:first-child {
