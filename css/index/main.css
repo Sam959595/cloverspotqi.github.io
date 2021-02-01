@@ -1,0 +1,45 @@
+main ul {
+    display: grid;
+    grid-auto-flow: column;
+	column-gap: .8em;
+	
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory
+}
+main li {
+	scroll-snap-align: center
+}
+main.attachment a {
+	display: block;
+	
+	min-width: 3cm;
+	white-space: nowrap;
+	
+    border-radius: 9px;
+	padding: 1em;
+
+	text-align: center;
+	
+    background-color: var(--gray-6)
+}
+main.attachment h6 {
+	font: normal 600 14px/1.3 "-apple-system", "Segoe UI"
+}
+
+/* - */
+
+main.reference {
+	margin-top: 2em
+}
+main.reference a {
+	display: block;
+	border-radius: 5px
+}
+main.reference a div {
+	height: 185px;
+
+	border-radius: 5px;
+
+	box-shadow: inset 0 0 0 .5px var(--transparency-2);
+    background: center/cover
+}

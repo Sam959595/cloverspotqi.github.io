@@ -1,0 +1,106 @@
+.includes, footer {
+	margin-top: 2.7cm
+}
+
+.includes > h2 {
+	margin-bottom: .5em;
+
+	font: normal 800 24px/1.16667 "-apple-system", "Segoe UI";
+	letter-spacing: .009em
+}
+
+.includes ul {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 36px
+}
+
+.includes > a {
+	display: block;
+
+	padding: .5em 0;
+
+	font: normal 400 17px/1.23536 "-apple-system", "Segoe UI";
+	letter-spacing: 0;
+
+	border-width: .1px 0;
+	border-style: solid;
+	border-color: var(--gray-7)
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+.includes ul a {
+	border-radius: 5px
+}
+
+.includes ul a div:last-child div[data-style] {
+	opacity: 0
+}
+.includes ul a div:last-child div[style] {
+	opacity: 1;
+	-webkit-transition: opacity 1s ease 0s
+}
+
+.includes ul li:first-child {
+	margin-bottom: 2em
+}
+.includes ul li:first-child a {
+	display: block
+}
+.includes ul li+li a {
+	display: flex;
+	align-items: center
+}
+
+/* - */
+
+.includes ul li:first-child a > div:first-child {
+	margin-bottom: 1em
+}
+.includes ul li+li a > div:first-child {
+	height: 120px;
+
+	display: inherit;
+	flex-wrap: wrap-reverse;
+	align-items: inherit
+}
+
+.includes ul a div:first-child time {
+	font: normal 600 11px/1.36364 "-apple-system", "Segoe UI";
+	letter-spacing: -.008em
+}
+.includes ul a div:first-child h5 {
+	font: normal 900 19px/1.2 "Galvji", "Segoe UI"
+}
+.includes ul li+li a div:first-child h5 {
+	font-size: 17px
+}
+
+.includes ul li+li+li a > div:first-child {
+	border-top: .1px solid var(--gray-7)
+}
+
+/* - */
+
+.includes ul li+li a > div:last-child {
+	margin-left: 1.3em
+}
+
+/* - */
+
+.includes ul li:first-child a div:last-child div {
+	height: 220px
+}
+.includes ul li+li a div:last-child div {
+	width: 110px;
+	height: 110px
+}
+
+/* - */
+
+.includes ul a div:last-child div {
+	border-radius: 5px;
+	box-shadow: inset 0 0 0 .5px var(--transparency-2);
+	background: center/cover
+}

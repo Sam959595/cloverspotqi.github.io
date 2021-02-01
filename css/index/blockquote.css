@@ -1,0 +1,31 @@
+blockquote {
+	overflow: hidden
+}
+
+blockquote p {
+	text-align: center;
+
+	padding: 9px 3cm;
+
+	transform: translateY(-100%);
+
+	background-color: var(--blue-1)
+}
+blockquote *:not(q):not(small) {
+	color: #f5f5f7
+}
+
+.quote {
+	transform: translateY(0);
+	transition: transform 2s ease .5s, background-color 1s ease-in-out 3s, color 1s ease-in-out 3s;
+
+	will-change: transform;
+
+	background-color: var(--gray-6);
+	color: var(--gray-3)
+}
+.quote a {
+	transition: color 1s ease-in-out 3s;
+
+	color: var(--blue-1)
+}
