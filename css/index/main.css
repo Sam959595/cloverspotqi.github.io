@@ -45,7 +45,7 @@ main.reference a div:last-child {
 	margin-top: .5em
 }
 main.reference a div h5 {
-	font: normal 700 17px/1.2 "Galvji", "Segoe UI"
+	font: normal 700 17px/1.21053 "Galvji", "Segoe UI"
 }
 main.reference a div p {
     -webkit-line-clamp: 2
