@@ -28,9 +28,6 @@ main.attachment h6 {
 
 /* - */
 
-main.reference {
-	margin-top: 2em
-}
 main.reference a {
 	display: block;
 	border-radius: 5px
