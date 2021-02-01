@@ -114,7 +114,12 @@ header {
 	justify-content: space-between
 }
 header * {
-	font: normal 800 17px/1 "-apple-system", "Segoe UI"
+	font: normal 900 17px/1 "-apple-system", "Segoe UI"
+}
+header h5 {
+	background: linear-gradient(to top left, #30343d 0, #8e8e93 1em);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent
 }
 header time {
 	opacity: .6
@@ -122,7 +127,7 @@ header time {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-section+section, footer {
+section, footer {
 	margin-top: 2.7cm
 }
 
