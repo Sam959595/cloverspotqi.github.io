@@ -121,7 +121,7 @@ header, main ul, section, footer > div {
         padding-right: 20.71px
     }
 
-    section:not(.general), footer {
+    section, footer {
         margin-top: 1cm
     }
     .includes ul {

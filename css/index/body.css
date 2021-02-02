@@ -116,13 +116,10 @@ header h5 {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent
 }
-header hr {
-	margin: .8em 0
-}
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-section:not(.general), footer {
+section, footer {
 	margin-top: 2.7cm
 }
 
