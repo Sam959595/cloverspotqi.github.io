@@ -112,9 +112,12 @@ iframe {
 header h5 {
 	font: normal 900 32px/1 "-apple-system", "Segoe UI";
 
-	background: linear-gradient(to right, #1d1d1f 1cm, #656e81 5cm);
+	background: linear-gradient(to right, var(--gray-3) 1cm, #656e81 5cm);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent
+}
+header hr {
+	margin-top: .5em;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
