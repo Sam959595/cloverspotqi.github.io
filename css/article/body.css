@@ -240,7 +240,7 @@ img[src] {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 .distribution strong {
-	letter-spacing: .008em;
+	letter-spacing: .016em;
 	color: var(--gray-01)
 }
 
