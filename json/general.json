@@ -1,10 +1,10 @@
 [
     {
         "href": "ru/example.html",
-        "image": "media/index/8.jpg",
-        "image_mini": "media/index/9m.jpg",
-        "date": "2021-01-29T00:01:50Z",
-        "title": "Apple представила iPhone 12 Pro и iPhone 12 Pro Max",
+        "image": "media/index/13.jpg",
+        "image_mini": "#",
+        "date": "2021-02-03T09:00:50Z",
+        "title": "Обладатели Apple Watch, способны разблокировать iPhone, при использовании маски",
         "details": "Процессор Bionic A14, Изменённый корпус с защитой «Кирамический щит», Сканер пространства LiDAR, Переустроенная система камер, Увеличенный 6.7 дюймовый экран Super Retina XDR, Поддержка сети 5-го поколения."
     },
     {
