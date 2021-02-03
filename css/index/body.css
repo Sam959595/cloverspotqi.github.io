@@ -119,13 +119,14 @@ header h5 {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-section {
-	margin-bottom: 2.7cm
+section+section {
+	margin-top: 2.7cm
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 footer {
+	margin-top: 2cm;
 	padding-top: 1em;
 	padding-bottom: env(safe-area-inset-bottom);
 

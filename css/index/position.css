@@ -121,8 +121,8 @@ header, main ul, section, footer > div {
         padding-right: 20.71px
     }
 
-    section {
-        margin-bottom: 1cm
+    section+section {
+        margin-top: 1cm
     }
     .includes ul {
         grid-template-columns: 1fr;
