@@ -111,7 +111,7 @@ header, main ul, section, footer > div {
     }
 
     header {
-        padding-top: 1cm
+        padding-top: 1.5cm
     }
 
     main li:first-child {
@@ -121,8 +121,8 @@ header, main ul, section, footer > div {
         padding-right: 20.71px
     }
 
-    section, footer {
-        margin-top: 1cm
+    section {
+        margin-bottom: 1cm
     }
     .includes ul {
         grid-template-columns: 1fr;
