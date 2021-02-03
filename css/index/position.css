@@ -114,13 +114,6 @@ header, main ul, section, footer > div {
         padding: 1.5cm 0 .5em
     }
 
-    main li:first-child {
-        padding-left: 20.71px
-    }
-    main li:last-child {
-        padding-right: 20.71px
-    }
-
     section+section {
         margin-top: 1cm
     }
@@ -132,6 +125,11 @@ header, main ul, section, footer > div {
 
 /* - */
 
+@media screen and (min-width: 428px) {
+    main.reference a {
+        width: 366px
+    }
+}
 @media screen and (max-width: 428px) {
     aside > div:first-child {
         margin-top: 16px
@@ -142,7 +140,13 @@ header, main ul, section, footer > div {
     }
 
     main.reference a {
-        width: 372.59px
+        width: 384.19px
+    }
+    main li:first-child {
+        padding-left: 21.9px
+    }
+    main li:last-child {
+        padding-right: 21.9px
     }
 }
 
@@ -152,13 +156,25 @@ header, main ul, section, footer > div {
     main.reference a {
         width: 372.59px
     }
+    main li:first-child {
+        padding-left: 20.71px
+    }
+    main li:last-child {
+        padding-right: 20.71px
+    }
 }
 
 /* - */
 
 @media screen and (max-width: 390px) {
     main.reference a {
-        width: 351px;
+        width: 351px
+    }
+    main li:first-child {
+        padding-left: 19.5px
+    }
+    main li:last-child {
+        padding-right: 19.5px
     }
 }
 
@@ -167,6 +183,12 @@ header, main ul, section, footer > div {
 @media screen and (max-width: 320px) {
     main.reference a {
         width: 288px
+    }
+    main li:first-child {
+        padding-left: 16px
+    }
+    main li:last-child {
+        padding-right: 16px
     }
 
     .includes ul li:first-child a div:last-child div {
