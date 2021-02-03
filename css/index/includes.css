@@ -30,14 +30,6 @@
 	border-radius: 5px
 }
 
-.includes ul a div:last-child div[data-style] {
-	opacity: 0
-}
-.includes ul a div:last-child div[style] {
-	opacity: 1;
-	-webkit-transition: opacity 1s ease 0s
-}
-
 .includes ul li:first-child {
 	margin-bottom: 2em
 }
