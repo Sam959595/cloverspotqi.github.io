@@ -31,7 +31,7 @@ nav div, picture img, footer div, main ul {
     }
 
     .content h1 {
-        font: normal 600 40px/1.1 "-apple-system";
+        font: normal 600 40px/1.1 "-apple-system", "Segoe UI";
         letter-spacing: 0;
         
         padding-top: 2.5cm
@@ -118,17 +118,17 @@ nav div, picture img, footer div, main ul {
         height: 48px
     }
     nav a {
-        font: normal 600 19px "-apple-system";
+        font: normal 600 19px "-apple-system", "Segoe UI";
         letter-spacing: .012em
     }
 
     .additionally h3 {
-        font: normal 400 19px/1.21053 "-apple-system";
+        font: normal 400 19px/1.21053 "-apple-system", "Segoe UI";
         letter-spacing: .012em
     }
 
     .content h1 {
-        font: normal 700 32px/1.125 "-apple-system";
+        font: normal 700 32px/1.125 "-apple-system", "Segoe UI";
         letter-spacing: .004em;
 
         padding-top: 1.5cm
