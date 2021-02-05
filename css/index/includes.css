@@ -30,9 +30,6 @@
 	border-radius: 5px
 }
 
-.includes ul li:first-child {
-	margin-bottom: 2em
-}
 .includes ul li:first-child a {
 	display: block
 }
@@ -62,9 +59,15 @@
 	font: normal 900 19px/1.2 "Galvji", "Segoe UI"
 }
 .includes ul li+li a div:first-child h5 {
+	-webkit-line-clamp: 4;
 	font-size: 17px
 }
 
+.includes ul li:nth-child(2) {
+	margin-top: 2em;
+	
+	border-top: .1px solid var(--gray-7)
+}
 .includes ul li+li+li a > div:first-child {
 	border-top: .1px solid var(--gray-7)
 }
