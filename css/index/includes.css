@@ -63,9 +63,9 @@
 	font-size: 17px
 }
 
-.includes ul li:nth-child(2) {
-	margin-top: 2em;
-	
+.includes ul li:nth-child(2) a {
+	margin-top: 1em;
+
 	border-top: .1px solid var(--gray-7)
 }
 .includes ul li+li+li a > div:first-child {
