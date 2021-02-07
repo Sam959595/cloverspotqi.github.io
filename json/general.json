@@ -1,5 +1,21 @@
 [
     {
+        "href": "#",
+        "image": "media/index/16.jpg",
+        "image_mini": "#",
+        "date": "2021-02-01T15:03:58Z",
+        "title": "Telegram занимает лидирующую позицию по результатам загрузок в первом квартале 2021 года",
+        "details": ""
+    },
+    {
+        "href": "#",
+        "image": "media/index/15.jpg",
+        "image_mini": "media/index/5m.jpg",
+        "date": "2021-02-20T03:21:58Z",
+        "title": "Apple откажется от проиводства iPhone 12 mini, в гряду второго квартала",
+        "details": ""
+    },
+    {
         "href": "ru/apple-watch-owners-will-be-allowed-to-unlock-their-iphone-while-wearing-a-mask.html",
         "image": "media/index/13.jpg",
         "image_mini": "#",
@@ -13,15 +29,7 @@
         "image_mini": "#",
         "date": "2021-02-01T15:03:58Z",
         "title": "Серии Mac нового поколения на Chip M1, выводят из строя приложения в iPhone",
-        "details": "Измерение кислорода крови при помощи Apple Watch."
-    },
-    {
-        "href": "#",
-        "image": "media/index/5.jpg",
-        "image_mini": "media/index/5m.jpg",
-        "date": "2021-02-20T03:21:58Z",
-        "title": "Управление приложениями и еженедельные подборки в App Store",
-        "details": "Расширенные возможности для комфортного использования просмотров событий."
+        "details": ""
     },
     {
         "href": "#",
