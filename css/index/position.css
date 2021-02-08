@@ -111,10 +111,10 @@ header, main ul, section, footer > div {
     }
 
     header {
-        padding: 2em 0 .5em
+        padding: 3em 0 1em
     }
 
-    section+section {
+    section {
         margin-top: 1cm
     }
     .includes ul {
