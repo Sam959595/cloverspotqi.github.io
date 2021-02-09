@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let s = $('html'),
     d = $('body'),
-    a = $('main li:last-child'),
+    a = $('.attachment li:last-child'),
     b = $('aside'),
     e = $('aside input'),
     i = $('aside > div:first-child div:first-child'),
