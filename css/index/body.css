@@ -87,9 +87,9 @@ main.reference a div h5 {
 	text-overflow: ellipsis;
 	overflow: hidden
 }
-.includes h5, aside > div:last-child ul:last-child a h5, main.reference a div p {
-	display: -webkit-inline-box;
-	-webkit-line-clamp: 3;
+.includes h5, main.reference a div p {
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
 	-webkit-box-orient: vertical;
 	overflow: hidden
 }
