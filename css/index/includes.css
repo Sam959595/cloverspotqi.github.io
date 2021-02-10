@@ -40,7 +40,7 @@
 	margin-bottom: 1em
 }
 .includes ul li+li a > div:first-child {
-	height: 130px;
+	height: 135px;
 
 	display: inherit;
 	flex-wrap: wrap-reverse;
