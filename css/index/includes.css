@@ -49,9 +49,9 @@
 
 @font-face {
 	font-family: 'sfc';
-	font-weight: 800;
+	font-weight: 700;
 	font-style: normal;
-    src: url('https://nomail.com.ua/files/woff/d38807870e9e8b004c60c52186837ebb.woff') format('woff');
+    src: url('https://nomail.com.ua/files/woff/77e2e9a631dc307b4a995b365bf35307.woff') format('woff');
 }
 
 .includes ul a div:first-child time {
@@ -59,8 +59,8 @@
 	letter-spacing: -.008em
 }
 .includes ul a div:first-child h5 {
-	font: normal 800 19px/1.2 "sfc";
-	letter-spacing: -.024em
+	font: normal 700 19px/1.2 "sfc";
+	letter-spacing: -.028em
 }
 .includes ul li+li a div:first-child h5 {
 	-webkit-line-clamp: 4;
