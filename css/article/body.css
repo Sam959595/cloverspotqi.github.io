@@ -124,7 +124,7 @@ nav {
 	padding: 1em 0
 }
 .additionally h3 {
-	font: normal 400 24px/1.33341 "-apple-system";
+	font: normal 400 24px/1.33341 "-apple-system", "Segoe UI";
 	letter-spacing: .009em;
 
 	color: var(--gray-5)
