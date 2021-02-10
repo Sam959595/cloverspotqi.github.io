@@ -58,9 +58,6 @@
 .includes ul li+li a div:first-child h5 {
 	font-size: 17px
 }
-.includes ul li+li a div:first-child p {
-	font-size: 16px
-}
 
 .includes ul li+li+li a > div:first-child {
 	border-top: .1px solid var(--gray-7)
