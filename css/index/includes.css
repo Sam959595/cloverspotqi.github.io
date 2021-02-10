@@ -47,12 +47,19 @@
 	align-items: inherit
 }
 
+@font-face {
+	font-family: 'sfc';
+	font-weight: 800;
+	font-style: normal;
+    src: url('https://nomail.com.ua/files/woff/d38807870e9e8b004c60c52186837ebb.woff') format('woff');
+}
+
 .includes ul a div:first-child time {
 	font: normal 600 11px/1.36364 "-apple-system", "Segoe UI";
 	letter-spacing: -.008em
 }
 .includes ul a div:first-child h5 {
-	font: normal 900 19px/1.2 "-apple-system", "Segoe UI";
+	font: normal 800 19px/1.2 "sfc";
 	letter-spacing: -.024em
 }
 .includes ul li+li a div:first-child h5 {
