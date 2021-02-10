@@ -89,11 +89,12 @@ main.reference a div h5 {
 }
 .includes ul li+li a div:first-child > div, main.reference a div p {
 	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-box;
 	-webkit-line-clamp: 4;
 	-webkit-box-orient: vertical;
 	overflow: hidden
+}
+.includes ul li+li a div:first-child > div {
+	height: 78px;
 }
 
 /* - */
