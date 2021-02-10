@@ -33,7 +33,10 @@ async function bb() {
             <a href='${b[i].href}'>
                 <div>
                     <time datetime='${b[i].date}'></time>
-                    <h5>${b[i].title}</h5>
+                    <div>
+                        <h5>${b[i].title}</h5>
+                        <p>${b[i].details}</p>
+                    </div>
                 </div>
                 <div>
                     <div data-style='background-image: url(${b[i].image})' style='background-image: url(#)'></div>
