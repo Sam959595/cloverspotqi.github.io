@@ -49,9 +49,6 @@ strong, b {
 em {
 	font-style: italic
 }
-time {
-	text-transform: uppercase
-}
 a, span {
 	-webkit-tap-highlight-color: transparent
 }
@@ -110,6 +107,7 @@ iframe {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 header h5 {
+	text-transform: uppercase;
 	font: normal 900 32px/1 "-apple-system", "Segoe UI";
 
 	background: linear-gradient(to right, var(--gray-3) 1cm, #656e81 5cm);
