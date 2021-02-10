@@ -134,7 +134,6 @@ section > h2 {
 
 footer {
 	margin-top: 2cm;
-	padding-top: 1em;
 	padding-bottom: env(safe-area-inset-bottom);
 
 	background-color: var(--gray-8)
