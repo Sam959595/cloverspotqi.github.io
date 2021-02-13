@@ -52,7 +52,7 @@
 	letter-spacing: -.008em
 }
 .includes ul a div:first-child h5 {
-	font: normal 700 19px/1.2 "-apple-system", "Segoe UI";
+	font: normal 700 19px/1.2 "HelveticaNeue-CondensedBold", "-apple-system", "Segoe UI";
 	letter-spacing: -.024em
 }
 .includes ul li+li a div:first-child h5 {
