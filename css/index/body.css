@@ -7,7 +7,7 @@
 
 	-webkit-text-size-adjust: 100%;
 
-	font: normal 400 12px/1.33337 "-apple-system", "Seravek", "Futura", "Galvji", "Segoe UI", "Damascus", "Iowan Old Style", "American Typewriter", "Courier New", "Verdana", "Thonburi", "Avenir", "Arial Hebrew", "Apple Color Emoji", "Avenir Book", "Charter Black", "Hiragino Sans W3", "Helvetica", "Hiragino Sans W3", "Palatino", "Papyrus", "Rockwell", "Zapf Dingbats", "Zapfino", "Verdana", "Trebuchet MS", "Balega", "Bebas Neue", "Euphemia UCAS", "Carlito", "Druk Wide Medium", "Hoefler Text", "Gill Sans", "Menlo", "BlinkMacSystemFont";
+	font: normal 400 12px/1.33337 "-apple-system", "BlinkMacSystemFont", "Segoe UI";
 	letter-spacing: -.01em;
 
 	-webkit-font-smoothing: antialiased
