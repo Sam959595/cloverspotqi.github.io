@@ -54,10 +54,3 @@ main.reference a div h5 {
 main.reference a div p {
     -webkit-line-clamp: 2
 }
-
-/* - */
-
-main.banner {
-	height: 8cm;
-	background-color: var(--gray-9);
-}
