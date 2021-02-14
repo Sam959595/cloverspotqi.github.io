@@ -110,7 +110,7 @@ header h5 {
 	text-transform: uppercase;
 	font: normal 900 32px/1 "-apple-system", "Segoe UI";
 
-	background: linear-gradient(to right, var(--gray-3) 1cm, #656e81 5cm);
+	background: linear-gradient(to right, var(--gray-3) 1cm, #989da8 5cm);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent
 }
