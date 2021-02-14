@@ -23,9 +23,6 @@
 	border-radius: 5px
 }
 
-.includes ul li:first-child {
-	margin-bottom: 1em
-}
 .includes ul li:first-child a {
 	display: block
 }
@@ -38,6 +35,9 @@
 
 .includes ul li:first-child a > div:first-child {
 	margin-bottom: 1em
+}
+.includes ul li:nth-child(2) {
+	margin-top: 7.5px
 }
 .includes ul li+li a > div:first-child {
 	height: 135px;
@@ -59,7 +59,7 @@
 	font-size: 17px
 }
 
-.includes ul li+li+li a > div:first-child {
+.includes ul li:nth-child(n+3) a > div:first-child {
 	border-top: .1px solid var(--gray-7)
 }
 
