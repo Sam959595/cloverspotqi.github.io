@@ -117,10 +117,10 @@ header, main ul, section, footer > div {
     section {
         margin-top: 1cm
     }
-    .includes ul {
+    /* .includes ul {
         grid-template-columns: 1fr;
-        gap: 0
-    }
+        row-gap: 0
+    } */
 }
 
 /* - */

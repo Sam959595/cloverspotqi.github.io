@@ -1,8 +1,8 @@
-.includes ul {
+/* .includes ul {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 36px
-}
+} */
 
 .includes > a {
 	display: block;
@@ -26,7 +26,22 @@
 .includes ul li:first-child a {
 	display: block
 }
-.includes ul li+li a {
+.includes ul li:nth-child(2) a, .includes ul li:nth-child(3) a {
+	display: block
+}/* - */
+.includes ul li:nth-child(2), .includes ul li:nth-child(3) {
+	width: 47.5%
+}/* - */
+.includes ul li:nth-child(2) {
+	float: left
+}/* - */
+.includes ul li:nth-child(3) {
+	float: right
+}/* - */
+.includes ul li:nth-child(4) {
+	clear: both
+}/* - */
+.includes ul li:nth-child(n+4) a {
 	display: flex;
 	align-items: center
 }
@@ -36,10 +51,13 @@
 .includes ul li:first-child a > div:first-child {
 	margin-bottom: 1em
 }
-.includes ul li:nth-child(2) {
-	margin-top: 7.5px
-}
-.includes ul li+li a > div:first-child {
+.includes ul li:nth-child(2) a > div:first-child, .includes ul li:nth-child(3) a > div:first-child {
+	margin: 1em 0
+}/* - */
+.includes ul li:nth-child(4) {
+	padding-top: 1em
+}/* - */
+.includes ul li:nth-child(n+4) a > div:first-child {
 	height: 135px;
 
 	display: inherit;
@@ -59,13 +77,13 @@
 	font-size: 17px
 }
 
-.includes ul li:nth-child(n+3) a > div:first-child {
+.includes ul li:nth-child(n+5) a > div:first-child {
 	border-top: .1px solid var(--gray-7)
 }
 
 /* - */
 
-.includes ul li+li a > div:last-child {
+.includes ul li:nth-child(n+4) a > div:last-child {
 	margin-left: 1.3em
 }
 
@@ -74,7 +92,10 @@
 .includes ul li:first-child a div:last-child div {
 	height: 220px
 }
-.includes ul li+li a div:last-child div {
+.includes ul li:nth-child(2) a div:last-child div, .includes ul li:nth-child(3) a div:last-child div {
+	padding-top: 100%
+}/* - */
+.includes ul li:nth-child(n+4) a div:last-child div {
 	width: 120px;
 	height: 120px
 }
