@@ -191,10 +191,13 @@ header, main ul, section, footer > div {
         padding-right: 16px
     }
 
+    .includes ul li:nth-child(n+4) a > div:first-child {
+        height: 100px
+    }
     .includes ul li:first-child a div:last-child div {
         height: 150px
     }
-    .includes ul li+li a div:last-child div {
+    .includes ul li:nth-child(n+4) a div:last-child div {
         width: 90px;
         height: 90px
     }
