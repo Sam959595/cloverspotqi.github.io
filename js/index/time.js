@@ -1,7 +1,4 @@
-//
-
-
-  /**
+/**
  * Timeago is a jQuery plugin that makes it easy to support automatically
  * updating fuzzy timestamps (e.g. "4 minutes ago" or "about 1 day ago").
  *
@@ -15,7 +12,7 @@
  * http://timeago.yarp.com/
  *
  * Copyright (c) 2008-2019, Ryan McGeary (ryan -[at]- mcgeary [*dot*] org)
- */
+*/
 
 (function (factory) {
   if (typeof define === 'function' && define.amd) {
