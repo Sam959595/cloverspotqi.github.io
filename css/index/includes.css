@@ -67,6 +67,12 @@
 .includes ul li+li a div:first-child h5 {
 	font-size: 17px
 }
+.includes ul li:first-child a div:first-child p, .includes ul li:nth-child(2) a div:first-child p, .includes ul li:nth-child(3) a div:first-child p {
+	display: none
+}/* - */
+.includes ul li+li a div:first-child p {
+	-webkit-line-clamp: 2
+}/* - */
 
 .includes ul li:nth-child(n+5) a > div:first-child {
 	border-top: .1px solid var(--gray-7)
