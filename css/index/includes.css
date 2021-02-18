@@ -65,7 +65,7 @@
 	letter-spacing: -.024em
 }
 .includes ul li+li a div:first-child h5 {
-	font-size: 17px
+	font-size: 15px
 }
 .includes ul li:first-child a div:first-child p, .includes ul li:nth-child(2) a div:first-child p, .includes ul li:nth-child(3) a div:first-child p {
 	display: none
