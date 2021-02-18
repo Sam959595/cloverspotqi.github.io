@@ -108,11 +108,12 @@ iframe {
 
 header h1 {
 	text-transform: uppercase;
-	font: normal 900 32px/1 -apple-system, BlinkMacSystemFont, "Segoe UI"
+	font: normal 900 32px/1 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	letter-spacing: -.024em;
 
-	/* background: linear-gradient(to right, var(--gray-3) 1cm, #989da8 5cm);
+	background: linear-gradient(to right, var(--gray-3) 1cm, #54575e 5cm);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent */
+	-webkit-text-fill-color: transparent
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
