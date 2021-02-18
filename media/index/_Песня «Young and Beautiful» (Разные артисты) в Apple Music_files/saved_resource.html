@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://mediaauth.apple.com/auth-bridge/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"> <script src="./auth-bridge.js.&#1079;&#1072;&#1075;&#1088;&#1091;&#1079;&#1082;&#1072;"></script></head>
+  <body>
+    <script>
+      function getSrc() {
+        let src = 'js-cdn.music.apple.com/musickit/v2/amp/auth-bridge.js';
+
+        // Support x-mediaauth.apple.com/auth-bridge/
+        const hostname = location.hostname;
+        const prefixMatch = /^[a-z0-9]+-/.exec(location.hostname);
+        if (prefixMatch && prefixMatch[0]) {
+          src = prefixMatch[0] + src;
+        } else if (location.search) {
+          // Support mediaauth.apple.com/auth-bridge/?env=x
+          const envMatch = /env=([a-z0-9]+)/.exec(location.search);
+          if (envMatch && envMatch[1]) {
+            src = envMatch[1] + '-' + src;
+          }
+        }
+
+        return src;
+      }
+
+      const script = document.createElement('script');
+      script.src = 'https://' + getSrc();
+      document.head.appendChild(script);
+    </script>
+  
+
+</body></html>

@@ -71,6 +71,7 @@
 	display: none
 }/* - */
 .includes ul li+li a div:first-child p {
+	padding-top: .3em;
 	-webkit-line-clamp: 2
 }/* - */
 
