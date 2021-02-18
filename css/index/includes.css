@@ -3,7 +3,7 @@
 
 	padding: .5em 0;
 
-	font: normal 400 17px/1.23536 "-apple-system", "Segoe UI";
+	font: normal 400 17px/1.23536 -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: 0;
 
 	border-width: .1px 0;
@@ -30,7 +30,7 @@
 	float: right
 }/* - */
 .includes ul li:nth-child(4) {
-	clear: both
+	clear: right
 }/* - */
 .includes ul li:nth-child(n+4) a {
 	display: flex;
@@ -57,11 +57,11 @@
 }
 
 .includes ul a div:first-child time {
-	font: normal 600 11px/1.36364 "-apple-system", "Segoe UI";
+	font: normal 600 11px/1.36364 -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: -.008em
 }
 .includes ul a div:first-child h5 {
-	font: normal 700 19px/1.2 "-apple-system", "Segoe UI";
+	font: normal 700 19px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: -.024em
 }
 .includes ul li+li a div:first-child h5 {
