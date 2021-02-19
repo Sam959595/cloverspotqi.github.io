@@ -1,11 +1,11 @@
-.includes > h2 {
+.entries > h2 {
 	margin-bottom: .5em;
 
 	font: normal 900 32px/1 -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: -.024em
 }
 
-.includes > a {
+.entries > a {
 	display: block;
 
 	padding: .5em 0;
@@ -20,18 +20,18 @@
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.includes ul a {
+.entries ul a {
 	border-radius: 5px
 }
 
-.includes ul li a {
+.entries ul li a {
 	display: flex;
 	align-items: center
 }
 
 /* - */
 
-.includes ul li a > div:first-child {
+.entries ul li a > div:first-child {
 	height: 135px;
 
 	display: inherit;
@@ -39,35 +39,35 @@
 	align-items: inherit
 }
 
-.includes ul a div:first-child time {
+.entries ul a div:first-child time {
 	font: normal 600 11px/1.36364 -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: -.008em
 }
-.includes ul a div:first-child h5 {
+.entries ul a div:first-child h5 {
 	font: normal 700 17px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: -.024em
 }
 
-.includes ul li+li a > div:first-child {
+.entries ul li+li a > div:first-child {
 	border-top: .1px solid var(--gray-7)
 }
 
 /* - */
 
-.includes ul li a > div:last-child {
+.entries ul li a > div:last-child {
 	margin-left: 1.3em
 }
 
 /* - */
 
-.includes ul li a div:last-child div {
+.entries ul li a div:last-child div {
 	width: 120px;
 	height: 120px
 }
 
 /* - */
 
-.includes ul a div:last-child div {
+.entries ul a div:last-child div {
 	border-radius: 5px;
 	box-shadow: inset 0 0 0 .5px var(--transparency-2);
 	background: center/cover

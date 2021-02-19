@@ -281,6 +281,6 @@
 
 jQuery(function ($) {
   $(document).ready(function() {
-    $('.includes time, aside > div:last-child ul:last-child time').timeago();
+    $('ul time, aside > div:last-child ul:last-child time').timeago();
   });
 });
