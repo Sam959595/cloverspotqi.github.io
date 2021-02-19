@@ -17,9 +17,9 @@
 	border-radius: 5px
 }
 
-.includes ul li:first-child a, /* - */.includes ul li:nth-child(2) a, .includes ul li:nth-child(3) a {
+.includes ul li:nth-child(-n+3) a {
 	display: block
-}
+}/* - */
 .includes ul li:nth-child(2), .includes ul li:nth-child(3) {
 	width: 47.5%
 }/* - */
@@ -39,14 +39,8 @@
 
 /* - */
 
-.includes ul li:first-child a > div:first-child {
-	margin-bottom: 1em
-}
-.includes ul li:nth-child(2) a > div:first-child, .includes ul li:nth-child(3) a > div:first-child {
+.includes ul li:nth-child(-n+3) a > div:last-child {
 	margin: 1em 0
-}/* - */
-.includes ul li:nth-child(4) {
-	padding-top: 1em
 }/* - */
 .includes ul li:nth-child(n+4) a > div:first-child {
 	height: 135px;
