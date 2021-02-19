@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    let tt = document.querySelectorAll('[data-style]');
+    let tt = document.querySelectorAll('ul div[data-style]');
     
     function vv(a) {
         let u = a.getAttribute('data-style');
