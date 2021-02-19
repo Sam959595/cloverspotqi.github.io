@@ -1,17 +1,17 @@
 [
     {
-        "href": "#",
-        "image": "media/index/14.jpg",
-        "image_mini": "#",
-        "date": "2021-02-01T15:03:58Z",
-        "title": "Mac нового поколения на Chip M1, выводят из строя приложения iPhone сторонних производителей"
-    },
-    {
         "href": "ru/apple-watch-owners-will-be-allowed-to-unlock-their-iphone-while-wearing-a-mask.html",
         "image": "media/index/13.jpg",
         "image_mini": "#",
         "date": "2021-02-03T09:00:50Z",
         "title": "Обладателям Apple Watch, позволят разблокировать iPhone во время пребывания в маске"
+    },
+    {
+        "href": "#",
+        "image": "media/index/14.jpg",
+        "image_mini": "#",
+        "date": "2021-02-01T15:03:58Z",
+        "title": "Mac нового поколения на Chip M1, выводят из строя приложения iPhone сторонних производителей"
     },
     {
         "href": "ru/generation-mac-developed-on-its-own-processor-apple-m-one.html",
