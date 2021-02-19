@@ -129,7 +129,7 @@ nav div, picture img, footer div, main ul {
 
     .content h1 {
         font: normal 700 32px/1.125 "-apple-system", "Segoe UI";
-        letter-spacing: -.008em;
+        letter-spacing: -.016em;
 
         padding-top: 1.5cm
     }
