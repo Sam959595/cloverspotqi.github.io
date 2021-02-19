@@ -16,7 +16,7 @@
 	-webkit-user-select: none
 }
 
-img, ul a {
+img, .includes ul > a {
 	-webkit-touch-callout: none
 }
 a, strong, b, sup, sub, u, ins, del, i, s, mark, small, q, em, span, time {
