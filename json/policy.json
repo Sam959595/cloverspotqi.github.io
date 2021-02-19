@@ -1,66 +1,58 @@
 [
     {
+        "href": "#",
+        "image": "media/index/14.jpg",
+        "image_mini": "#",
+        "date": "2021-02-01T15:03:58Z",
+        "title": "Mac нового поколения на Chip M1, выводят из строя приложения iPhone сторонних производителей"
+    },
+    {
         "href": "ru/apple-watch-owners-will-be-allowed-to-unlock-their-iphone-while-wearing-a-mask.html",
         "image": "media/index/13.jpg",
         "image_mini": "#",
         "date": "2021-02-03T09:00:50Z",
-        "title": "Обладателям Apple Watch, позволят разблокировать iPhone во время пребывания в маске",
-        "details": "Данная функция находится на предварительном тестирование обновления iOS 14.5, доступная для профиля разработчиков."
-    },
-    {
-        "href": "#",
-        "image": "media/index/17.jpg",
-        "image_mini": "#",
-        "date": "2021-02-04T16:42:58Z",
-        "title": "Принудительная политика WhatsApp побудила 30 млн. пользователей отказаться от приложения",
-        "details": "Результаты продукции подтверждают что вероятнее производство"
+        "title": "Обладателям Apple Watch, позволят разблокировать iPhone во время пребывания в маске"
     },
     {
         "href": "ru/generation-mac-developed-on-its-own-processor-apple-m-one.html",
         "image": "media/index/9.jpg",
         "image_mini": "media/index/9m.jpg",
         "date": "2021-02-10T23:45:02Z",
-        "title": "Корпорация Google выплатит 76 млн. долларов за нарушение авторского права француского СМИ",
-        "details": "Семейство MacBook Air, MacBook Pro и Mac mini в основе процессора chip M1."
-    },
-    {
-        "href": "#",
-        "image": "media/index/2.jpg",
-        "image_mini": "media/index/2m.jpg",
-        "date": "2021-02-09T09:37:58Z",
-        "title": "Бывший посол США Марк Чарльз Гинзберг, потребовал удалить Telegram из магазина Google Play",
-        "details": "Причины препятствий ночного сна. Условность порядка отхода ко сну. Предварительные меры комфорта."
-    },
-    {
-        "href": "#",
-        "image": "media/index/16.jpg",
-        "image_mini": "#",
-        "date": "2021-02-01T15:03:58Z",
-        "title": "Telegram занимает лидирующую позицию по результатам загрузок соц. сетей в первом квартале 2021 года",
-        "details": "Возлогаемое препятствие"
+        "title": "Корпорация Google выплатит 76 млн. долларов за нарушение авторского права француского СМИ"
     },
     {
         "href": "#",
         "image": "media/index/15.jpg",
         "image_mini": "media/index/5m.jpg",
         "date": "2021-02-20T03:21:58Z",
-        "title": "Apple откажется от производства iPhone 12 mini, во второго квартала",
-        "details": "Результаты продукции подтверждают что вероятнее производство"
+        "title": "Apple откажется от производства iPhone 12 mini вначале второго квартала"
     },
     {
         "href": "#",
         "image": "media/index/5.jpg",
         "image_mini": "media/index/5m.jpg",
         "date": "2021-02-20T01:05:58Z",
-        "title": "Samsung готова представить Galaxy Watch с технологией измерении содержания глюкозы в крови",
-        "details": "Меры предосторожности и воздействие анализа звука в долгосрочной перспективе."
+        "title": "Samsung готова представить Galaxy Watch с технологией измерении содержания глюкозы в крови"
     },
     {
         "href": "#",
-        "image": "media/index/14.jpg",
+        "image": "media/index/2.jpg",
+        "image_mini": "media/index/2m.jpg",
+        "date": "2021-02-09T09:37:58Z",
+        "title": "Бывший посол США Марк Чарльз Гинзберг, потребовал удалить Telegram из магазина Google Play"
+    },
+    {
+        "href": "#",
+        "image": "media/index/16.jpg",
         "image_mini": "#",
         "date": "2021-02-01T15:03:58Z",
-        "title": "Серии Mac нового поколения на Chip M1, выводят из строя приложения iPhone",
-        "details": "Результаты продукции подтверждают что вероятнее производство"
+        "title": "Telegram занимает лидирующую позицию по результатам загрузок соц. сетей в первом квартале 2021 года"
+    },
+    {
+        "href": "#",
+        "image": "media/index/17.jpg",
+        "image_mini": "#",
+        "date": "2021-02-04T16:42:58Z",
+        "title": "Принудительная политика WhatsApp побудила 30 млн. пользователей отказаться от приложения"
     }
 ]
