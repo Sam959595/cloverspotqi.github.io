@@ -59,7 +59,7 @@
 	font-size: 19px
 }
 .includes ul a div:first-child h5 {
-	font: normal 700 17px/1.2 "GH Guardian Headline", "Guardian Egyptian Web", -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 700 17px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: -.024em
 }
 
