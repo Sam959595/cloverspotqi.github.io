@@ -1,7 +1,7 @@
 .includes > h2 {
 	margin-bottom: .5em;
 
-	font: normal 800 24px/1.16667 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 900 32px/1 -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: -.024em
 }
 
@@ -24,32 +24,14 @@
 	border-radius: 5px
 }
 
-.includes ul li:nth-child(-n+3) a {
-	display: block
-}/* - */
-.includes ul li+li:nth-child(-n+3) {
-	width: 47.5%
-}/* - */
-.includes ul li:nth-child(2) {
-	float: left
-}/* - */
-.includes ul li:nth-child(3) {
-	float: right
-}/* - */
-.includes ul li:nth-child(4) {
-	clear: right
-}/* - */
-.includes ul li:nth-child(n+4) a {
+.includes ul li a {
 	display: flex;
 	align-items: center
 }
 
 /* - */
 
-.includes ul li:nth-child(-n+3) a > div:last-child {
-	margin: 1em 0
-}/* - */
-.includes ul li:nth-child(n+4) a > div:first-child {
+.includes ul li a > div:first-child {
 	height: 135px;
 
 	display: inherit;
@@ -61,34 +43,24 @@
 	font: normal 600 11px/1.36364 -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: -.008em
 }
-.includes ul li:first-child a div:first-child h5 {
-	-webkit-line-clamp: 3;
-	font-size: 19px
-}
 .includes ul a div:first-child h5 {
 	font: normal 700 17px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: -.024em
 }
 
-.includes ul li:nth-child(n+5) a > div:first-child {
+.includes ul li+li a > div:first-child {
 	border-top: .1px solid var(--gray-7)
 }
 
 /* - */
 
-.includes ul li:nth-child(n+4) a > div:last-child {
+.includes ul li a > div:last-child {
 	margin-left: 1.3em
 }
 
 /* - */
 
-.includes ul li:first-child a div:last-child div {
-	height: 220px
-}/* - */
-.includes ul li+li:nth-child(-n+3) a div:last-child div {
-	padding-top: 75%
-}/* - */
-.includes ul li:nth-child(n+4) a div:last-child div {
+.includes ul li a div:last-child div {
 	width: 120px;
 	height: 120px
 }
