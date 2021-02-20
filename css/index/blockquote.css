@@ -22,7 +22,7 @@ blockquote *:not(q):not(small) {
 	will-change: transform;
 
 	background-color: var(--gray-6);
-	color: var(--gray-3)
+	color: var(--gray-9)
 }
 .quote a {
 	transition: color 1s ease-in-out 3s;
