@@ -37,7 +37,7 @@
 	float: right
 }/* - */
 .includes ul li:nth-child(4) {
-	clear: right
+	clear: left
 }/* - */
 .includes ul li:nth-child(n+4) a {
 	display: flex;
