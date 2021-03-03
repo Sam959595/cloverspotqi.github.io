@@ -30,9 +30,17 @@ articleDown();
 //
 
 document.addEventListener('DOMContentLoaded', function() {
+    let a = $('dl .hide div')[0],
+    b = $('dl .hide')[0];
+
+    if ($('dl .hide div').height() >= '72px') {
+
+        $('dl .hide').innerHTML = '<button>далее</button>'
+    }
+
     $('dl .hide button').click(function() {
 
-        $('dl .hide')[0].classList.remove('close');
+        b.classList.remove('close');
         this.remove();
     });
 });
