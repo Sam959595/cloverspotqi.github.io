@@ -8,7 +8,7 @@ $(document).ready(function() {
             return;
         }
         a.src = u;
-        a.removeAttribute('data-style');
+        a.removeAttribute('data-src');
     };
     
     let bb = {
