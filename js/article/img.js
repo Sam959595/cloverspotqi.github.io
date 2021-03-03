@@ -8,6 +8,7 @@ $(document).ready(function() {
             return;
         }
         a.src = u;
+        a.removeAttribute('data-style');
     };
     
     let bb = {
