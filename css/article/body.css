@@ -302,10 +302,7 @@ figcaption p {
 	padding-bottom: .8em;
 	color: var(--gray-5)
 }
-figcaption a::before {
-	padding-right: .3em;
-	content: "\f32b"
-}
+/* figcaption a::before */
 
 figcaption+figcaption {
 	margin-top: 1em
