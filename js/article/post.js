@@ -30,18 +30,20 @@ articleDown();
 //
 
 document.addEventListener('DOMContentLoaded', function() {
-    let a = $('dl .hide')[0],
-    b = $('dl .hide div')[0],
-    c = $('dl .hide button');
+    let a = $('dl dd.string'),
+    b = $('dl dd.string div');
 
-    if (b.height() > '72px') {
+    if (b.height() > '72') {
+        a[0].classList.add('hide', 'close');
 
-        a.innerHTML = '<button>далее</button>'
+        let b = document.createElement('button');
+
+        b.innerHTML = 'далее';
+        a[0].appendChild(b);
     };
 
-    c.click(function() {
-
-        b.classList.remove('close');
+    $('dl dd.string button').click(function() {
+        a[0].classList.remove('hide', 'close');
         this.remove();
     });
 });

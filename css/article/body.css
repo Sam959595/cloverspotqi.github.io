@@ -411,22 +411,13 @@ main h6 {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+.string div {
+	font: inherit
+}
+
 .hide {
 	position: relative
 }
-.hide div {
-	display: block;
-
-	font: inherit
-}
-.close div {
-	/* max-height: 72px; */
-
-	pointer-events: none;
-
-	-webkit-mask: linear-gradient(to top, transparent 16px, black 0), linear-gradient(to left, transparent 40px, black 60px)
-}
-
 .hide button {
 	position: absolute;
 
@@ -437,6 +428,16 @@ main h6 {
 
 	background: none;
 	color: var(--blue-1)
+}
+
+.close div {
+	display: block;
+	
+	max-height: 72px;
+
+	pointer-events: none;
+
+	-webkit-mask: linear-gradient(to top, transparent 16px, black 0), linear-gradient(to left, transparent 40px, black 60px)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
