@@ -261,7 +261,9 @@ blockquote p {
 
 	color: var(--gray-3)
 }
-/* blockquote p::before */
+/* blockquote p::before {
+	content: "\f32a"
+} */
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
@@ -300,7 +302,10 @@ figcaption p {
 	padding-bottom: .8em;
 	color: var(--gray-5)
 }
-/* figcaption a::before */
+/* figcaption a::before {
+	padding-right: .3em;
+	content: "\f32b"
+} */
 
 figcaption+figcaption {
 	margin-top: 1em
