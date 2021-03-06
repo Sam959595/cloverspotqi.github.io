@@ -30,15 +30,16 @@ articleDown();
 //
 
 document.addEventListener('DOMContentLoaded', function() {
-    let a = $('dl .hide div')[0],
-    b = $('dl .hide')[0];
+    let a = $('dl .hide')[0],
+    b = $('dl .hide div')[0],
+    c = $('dl .hide button');
 
-    if ($('dl .hide div').height() >= '72px') {
+    if (b.height() > '72px') {
 
-        $('dl .hide').innerHTML = '<button>далее</button>'
-    }
+        a.innerHTML = '<button>далее</button>'
+    };
 
-    $('dl .hide button').click(function() {
+    c.click(function() {
 
         b.classList.remove('close');
         this.remove();

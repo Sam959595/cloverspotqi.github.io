@@ -420,7 +420,7 @@ main h6 {
 	font: inherit
 }
 .close div {
-	max-height: 72px;
+	/* max-height: 72px; */
 
 	pointer-events: none;
 
