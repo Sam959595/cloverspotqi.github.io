@@ -261,9 +261,7 @@ blockquote p {
 
 	color: var(--gray-3)
 }
-blockquote p::before {
-	content: "\f32a"
-}
+/* blockquote p::before */
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
