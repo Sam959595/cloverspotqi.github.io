@@ -1,4 +1,4 @@
-nav div, picture img, .vertical img, article, table, dl, blockquote, footer div, main ul {
+nav div, picture img, picture.vertical img, article, table, dl, blockquote, footer div, main ul {
 	margin: 0 auto;
 	width: 653px
 }
@@ -16,7 +16,7 @@ nav div, picture img, footer div, main ul {
 }
 
 @media screen and (max-width: 1024px) {
-    article, .vertical img, table, dl, blockquote {
+    article, picture.vertical img, table, dl, blockquote {
         width: 576px
     }
 
@@ -31,7 +31,7 @@ nav div, picture img, footer div, main ul {
     }
 
     .content h1 {
-        font: normal 600 40px/1.1 "-apple-system", "Segoe UI";
+        font: normal 600 40px/1.1 -apple-system, "Segoe UI";
         letter-spacing: 0;
         
         padding-top: 2.5cm
@@ -62,10 +62,6 @@ nav div, picture img, footer div, main ul {
 }
 
 @media screen and (max-width: 980px) {
-    picture.vertical img {
-        border-radius: 11px
-    }
-
     nav div, picture img, footer div, main ul {
         width: 100%
     }
@@ -102,7 +98,7 @@ nav div, picture img, footer div, main ul {
 }
 
 @media screen and (max-width: 768px) {
-    article, .vertical img, table, dl, blockquote {
+    article, picture.vertical img, table, dl, blockquote {
         width: 90%
     }
 
@@ -118,17 +114,17 @@ nav div, picture img, footer div, main ul {
         height: 48px
     }
     nav a {
-        font: normal 600 19px "-apple-system", "Segoe UI";
+        font: normal 600 19px -apple-system, "Segoe UI";
         letter-spacing: .012em
     }
 
     .additionally h3 {
-        font: normal 600 19px/1.21053 "-apple-system", "Segoe UI";
+        font: normal 600 19px/1.21053 -apple-system, "Segoe UI";
         letter-spacing: -.012em
     }
 
     .content h1 {
-        font: normal 700 32px/1.125 "-apple-system", "Segoe UI";
+        font: normal 700 32px/1.125 -apple-system, "Segoe UI";
         letter-spacing: -.016em;
 
         padding-top: 1.5cm
@@ -144,8 +140,18 @@ nav div, picture img, footer div, main ul {
 
 /* - */
 
+@media screen and (min-width: 428px) {
+    picture.vertical img {
+        border-radius: 11px
+    }
+}
+
 @media screen and (max-width: 428px) {
     .search {
         padding: 0 16px
+    }
+
+    picture.vertical img {
+        width: 100%
     }
 }
