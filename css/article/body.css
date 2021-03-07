@@ -430,7 +430,7 @@ main h6 {
 	color: var(--blue-1)
 }
 
-.close div {
+.hide div {
 	display: block;
 	
 	max-height: 72px;

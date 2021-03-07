@@ -31,8 +31,3 @@ $(document).ready(function() {
         ee.observe(a);
     });
 });
-
-/*u.forEach((e) => {
-    e.setAttribute('style', e.getAttribute('data-style'));
-    e.removeAttribute('data-style');
-});*/

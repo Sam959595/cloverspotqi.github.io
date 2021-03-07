@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     b = $('dl dd.string div');
 
     if (b.height() > '72') {
-        a[0].classList.add('hide', 'close');
+        a[0].classList.add('hide');
 
         let b = document.createElement('button');
 
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     $('dl dd.string button').click(function() {
-        a[0].classList.remove('hide', 'close');
+        a[0].classList.remove('hide');
         this.remove();
     });
 });
