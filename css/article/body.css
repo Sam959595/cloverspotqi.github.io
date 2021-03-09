@@ -419,8 +419,6 @@ main h6 {
 	position: relative
 }
 .hide div {
-	display: block;
-	
 	max-height: 72px;
 
 	-webkit-mask: linear-gradient(to top, transparent 16px, black 0), linear-gradient(to left, transparent 40px, black 60px)
