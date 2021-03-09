@@ -346,7 +346,7 @@ table tbody tr+tr {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-dl div {
+dl > div {
 	display: table-row
 }
 dl div > * {
