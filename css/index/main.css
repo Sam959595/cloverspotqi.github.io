@@ -26,9 +26,7 @@ main.attachment a {
     background-color: var(--gray-6)
 }
 main.attachment h6 {
-	font: normal 600 14px/1.3 -apple-system, BlinkMacSystemFont, "Segoe UI";
-	
-	color: var(--gray-9)
+	font: normal 600 14px/1.3 -apple-system, BlinkMacSystemFont, "Segoe UI"
 }
 
 /* - */
