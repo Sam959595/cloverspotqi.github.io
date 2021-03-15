@@ -151,10 +151,10 @@ a {
 }
 .bb div:last-child h4 {
 	font: normal 400 17px/1.47059 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: .008em
+    letter-spacing: 0
 }
 .bb div:last-child p {
-	font: normal 400 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 400 13px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: -.016em
 }
 
