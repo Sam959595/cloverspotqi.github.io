@@ -97,14 +97,14 @@ main.reference a div h5 {
 .bb ul {
 	display: grid;
     grid-auto-flow: column;
-    column-gap: .95em;
+    column-gap: .9em;
     overflow-x: scroll;
     scroll-snap-type: x mandatory
 }
 
 .bb li div {
-	width: 178.7px;
-	height: 178.7px;
+	width: 179px;
+	height: 179px;
 
 	position: relative
 }
