@@ -47,7 +47,7 @@ strong, b {
 em {
 	font-style: italic
 }
-span {
+.bb ul li a {
 	-webkit-tap-highlight-color: transparent
 }
 
@@ -97,6 +97,12 @@ a {
 section {
 	margin: 0 auto;
 	width: 90%
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+.dd {
+	margin-top: 3em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
