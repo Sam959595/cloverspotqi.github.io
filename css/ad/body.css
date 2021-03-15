@@ -1,0 +1,135 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	vertical-align: top;
+	box-sizing: border-box;
+
+	-webkit-text-size-adjust: 100%;
+
+	font: normal 400 12px/1.33337 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	letter-spacing: -.01em;
+
+	-webkit-font-smoothing: antialiased
+}
+*:not(input) {
+	-webkit-user-select: none
+}
+
+img, .includes > a {
+	-webkit-touch-callout: none
+}
+a, strong, b, sup, sub, u, ins, del, i, s, mark, small, q, em, span, time {
+	font: inherit
+}
+a, u {
+	text-decoration: none
+}
+ul, ol {
+	list-style: none
+}
+input, button, hr {
+	border: none
+}
+input, button {
+	outline: none
+}
+button, span {
+	cursor: pointer
+}
+hr {
+	border-top: .1px solid var(--gray-7)
+}
+sup, sub {
+	font-size: 9px
+}
+strong, b {
+	font-weight: 600
+}
+em {
+	font-style: italic
+}
+span {
+	-webkit-tap-highlight-color: transparent
+}
+
+/* - */
+
+::-webkit-scrollbar {
+	display: none
+}
+:lang(ru-RU) {
+	quotes: "\00ab" "\00bb"
+}
+:lang(en-US) {
+	quotes: "\201c" "\201d"
+}
+
+/* - */
+
+body {
+	background-color: var(--gray-0)
+}
+h1, h2, h3, h4, h5, h6, span {
+	color: var(--gray-3)
+}
+p, time {
+	color: var(--gray-5)
+}
+a {
+	color: var(--blue-1)
+}
+
+/* - */
+
+main.reference a div h5 {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+.includes ul h5, main.reference a div p {
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+.bb ul {
+	display: grid;
+    grid-auto-flow: column;
+    column-gap: .8em;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory
+}
+
+.bb li div {
+	width: 179.89px;
+
+	position: relative
+}
+.bb li div::before {
+	z-index: 1;
+	position: absolute;
+
+	content: "";
+
+	width: 100%;
+	height: 100%;
+
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 90 90'%3E%3Cpath d='m58.371220683029925,0.5000000071290351 c8.888070708353325,0 13.332111074598052,0 18.17116254910932,1.4813469084367754 c5.234082631050069,1.8763680727560113 9.381849629890697,6.024135406724203 11.25822757517774,11.258228484809935 c1.5801045778829423,4.839061889629559 1.5801045778829423,9.381850387916993 1.5801045778829423,18.269921814400703 l0,26.86172987367922 c0,8.888071426483712 0,13.332112151794034 -1.481346788748243,18.171164017286657 c-1.8763679211509148,5.234083053948796 -6.024134919991541,9.381850387916993 -11.25822757517774,11.258228484809935 c-4.937819287782099,1.5801047055508186 -9.381849629890697,1.5801047055508186 -18.269920338244024,1.5801047055508186 l-26.861727703329375,0 c-8.888070708353325,0 -13.332111074598052,0 -18.17116254910932,-1.4813469084367754 c-5.33284042018477,-1.9751258698700545 -9.381849629890697,-6.024135406724203 -11.356975340176307,-11.356976257787043 c-1.481346788748243,-4.740304092515518 -1.481346788748243,-9.184344817825844 -1.481346788748243,-18.171164017286657 l0,-26.86172987367922 c0,-8.888071426483712 0,-13.332112151794034 1.481346788748243,-18.171164017286657 c1.9751257102856137,-5.234083053948796 6.024134919991541,-9.381850387916993 11.356975340176307,-11.258228484809935 c4.740303709512699,-1.5801047055508186 9.184344075757425,-1.5801047055508186 18.17116254910932,-1.5801047055508186 l26.861727703329375,0 z' fill-opacity='0' opacity='.15' stroke='%23808080' stroke-width='1'/%3E%3C/svg%3E") no-repeat
+}
+
+.bb li:first-child {
+    padding-left: 20.71px
+}
+.bb li:last-child {
+    padding-right: 20.71px
+}
+
+.bb img {
+	width: 100%;
+
+    -webkit-mask: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 90 90'%3e%3cpath d='m58.6,0c9,0 13.5,0 18.4,1.5c5.3,1.9 9.5,6.1 11.4,11.4c1.6,4.9 1.6,9.5 1.6,18.5l0,27.2c0,9 0,13.5 -1.5,18.4c-1.9,5.3 -6.1,9.5 -11.4,11.4c-5,1.6 -9.5,1.6 -18.5,1.6l-27.2,0c-9,0 -13.5,0 -18.4,-1.5c-5.4,-2 -9.5,-6.1 -11.5,-11.5c-1.5,-4.8 -1.5,-9.3 -1.5,-18.4l0,-27.2c0,-9 0,-13.5 1.5,-18.4c2,-5.3 6.1,-9.5 11.5,-11.4c4.8,-1.6 9.3,-1.6 18.4,-1.6l27.2,0z'/%3e%3c/svg%3e") no-repeat
+}
