@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6, span {
 	color: var(--gray-1)
 }
 p, time {
-	color: var(--gray-3)
+	color: var(--gray-13)
 }
 a {
 	color: var(--blue-1)
@@ -146,7 +146,7 @@ a {
 }
 
 .bb div:last-child h6 {
-	font: normal 600 12px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 600 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: -.008em
 }
 .bb div:last-child h4 {
@@ -184,6 +184,7 @@ img {
 		--gray-10: #666;
 		--gray-11: #00000014;
 		--gray-12: #f0f0f2;
+		--gray-13: #8e8e93;
 	
 		--blue-1: #06c;
 	}
@@ -207,6 +208,7 @@ img {
 		--gray-10: #aaaab3;
 		--gray-11: #2c2c2e;
 		--gray-12: #1a1a21;
+		--gray-13: #8e8e93;
 	
 		--blue-1: #007aff;
 	}
