@@ -94,6 +94,22 @@ a {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+section {
+	margin: 0 auto;
+	width: 90%
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+.tt h3 {
+	font: normal 700 21px/1.14286 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: .011em;
+
+	margin: .5em 0 .8em
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
 .bb ul {
 	display: grid;
     grid-auto-flow: column;
@@ -114,10 +130,7 @@ a {
 
 .bb ul li a {
 	display: block;
-
-	width: 179.1px;
-
-	border-radius: 3.2em 3.2em 5px 5px
+	width: 179.1px
 }
 
 .bb li div:first-child {
