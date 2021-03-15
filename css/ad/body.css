@@ -102,8 +102,6 @@ a {
     scroll-snap-type: x mandatory
 }
 .bb ul li {
-	width: 179.1px;
-
 	scroll-snap-align: center
 }
 
@@ -112,6 +110,14 @@ a {
 }
 .bb li:last-child {
     padding-right: 20.7px
+}
+
+.bb ul li a {
+	display: block;
+
+	width: 179.1px;
+
+	border-radius: 2em
 }
 
 .bb li div:first-child {
@@ -139,16 +145,12 @@ a {
 }
 
 .bb div:last-child h6 {
-	font: normal 600 12px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 600 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: -.008em
 }
 .bb div:last-child h4 {
-	font: normal 500 17px/1.47059 "Geeza Pro Regular", "Segoe UI";
+	font: normal 500 17px/1.47059 "Geeza Pro", "Segoe UI";
     letter-spacing: .008em
-}
-.bb div:last-child p {
-	font: normal 400 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: -.024em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
