@@ -150,7 +150,7 @@ a {
     letter-spacing: -.008em
 }
 .bb div:last-child h4 {
-	font: normal 500 17px/1.47059 "Geeza Pro", "Segoe UI";
+	font: normal 500 17px/1.47059 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: .008em
 }
 
