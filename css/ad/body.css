@@ -202,7 +202,7 @@ main.nn a {
 
     border-radius: 5px
 }
-main.nn a > h6 {
+main.nn a > h6, main.nn a > div:last-child div h4 {
     font-size: 14px
 }
 main.nn a > div:nth-child(2) {
