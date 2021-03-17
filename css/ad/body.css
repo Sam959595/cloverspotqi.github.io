@@ -238,12 +238,16 @@ main.nn a > div:last-child div h4, main.kk a > div:last-child h4 {
 main.kk ul {
 	display: grid;
 	grid-auto-flow: column;
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-rows: repeat(3, auto);
     column-gap: .9em
 }
 
-main.kk li:nth-child(-n+2) a > div:last-child {
-	border-bottom: .1px solid var(--gray-9)
+main.kk a > div:last-child h4 {
+	padding: 2px 0
+}
+
+main.kk li:nth-child(3n+2) {
+	margin: 1em 0;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
