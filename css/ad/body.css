@@ -85,7 +85,7 @@ main.bb div:last-child h4, main.bb div:last-child p, main.nn a > h6 {
 	text-overflow: ellipsis;
 	overflow: hidden
 }
-main.nn a > div:last-child div p, main.kk a > div:last-child p {
+main.nn a > div:last-child div p, main.kk a > div:last-child p, main.kk a > div:last-child h4 {
 	display: -webkit-box;
 	-webkit-line-clamp: 1;
 	-webkit-box-orient: vertical;
@@ -244,7 +244,7 @@ main.kk ul {
 }
 
 main.kk li:nth-child(3n+2) {
-	margin: 1em 0;
+	margin: 1.2em 0
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
