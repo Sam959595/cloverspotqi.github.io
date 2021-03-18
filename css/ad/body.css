@@ -131,7 +131,7 @@ header div h1 {
 	color: white
 }
 header div h5 {
-	padding-top: 1em;
+	padding-top: .5em;
 
 	font-size: 14px;
     letter-spacing: 0;
@@ -294,7 +294,7 @@ main.kk li:nth-child(3n+2) {
 
 @media screen and (prefers-color-scheme: light) {
 	:root {
-		--transparency-1: #1d1d1f57;
+		--transparency-1: #000000cc;
 		--transparency-2: #8080801a;
 
 		--gray-01: black;
