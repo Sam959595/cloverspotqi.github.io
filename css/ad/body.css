@@ -124,13 +124,13 @@ header div p {
 
 	opacity: .5;
 
-	color: var(--gray-02)
+	color: white
 }
 header div h1 {
 	font: normal 700 32px/1.14286 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0;
 
-	color: var(--gray-02)
+	color: white
 }
 header div h5 {
 	padding-top: 1em;
@@ -140,7 +140,7 @@ header div h5 {
 
 	opacity: .5;
 
-	color: var(--gray-02)
+	color: white
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -299,7 +299,6 @@ main.kk li:nth-child(3n+2) {
 		--transparency-1: #1d1d1f57;
 		--transparency-2: #8080801a;
 
-		--gray-02: white;
 		--gray-01: black;
 		--gray-0: white;
 		--gray-1: #111;
@@ -325,7 +324,6 @@ main.kk li:nth-child(3n+2) {
 		--transparency-1: #1d1d1fb3;
 		--transparency-2: #d4d4d41a;
 
-		--gray-02: white;
 		--gray-01: white;
 		--gray-0: black;
 		--gray-1: #f3f3f3;
