@@ -125,7 +125,7 @@ nav div, picture img, footer div, main ul {
 
     .content h1 {
         font: normal 700 32px/1.125 -apple-system, BlinkMacSystemFont, "Segoe UI";
-        letter-spacing: -.016em;
+        letter-spacing: .004em;
 
         padding-top: 1.5cm
     }
