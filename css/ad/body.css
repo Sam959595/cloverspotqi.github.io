@@ -209,7 +209,7 @@ main.nn a > h6, main.nn a > div:last-child div h4, main.kk a > div:last-child h4
     font-size: 14px
 }
 main.nn a > div:nth-child(2) {
-	margin: 1em 0;
+	margin: 1.2em 0;
 
     height: 185px;
     border-radius: 5px;
