@@ -100,6 +100,10 @@ header section {
 
 	inset: auto 0 0 0;
 
+	left: 0;
+	right: 0;
+	bottom: 0;
+
 	border-radius: 15px;
 
 	margin-bottom: 2em;
@@ -109,15 +113,6 @@ header section {
     backdrop-filter: saturate(180%) blur(20px);
 
     background-color: var(--transparency-1)
-}
-@media not all and (min-resolution:.001dpcm) {
-	@media {
-		header section {
-			left: 0;
-			right: 0;
-			bottom: 0
-		}
-	}
 }
 
 header p {
