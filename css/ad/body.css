@@ -95,13 +95,12 @@ main.nn a > div:last-child div p, main.kk a > div:last-child p, main.kk a > div:
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-header {
-	position: relative
-}
 header section div {
 	position: absolute;
 
 	bottom: 0;
+
+	width: inherit;
 
 	border-radius: 15px;
 
@@ -292,7 +291,7 @@ main.kk li:nth-child(3n+2) {
 
 @media screen and (prefers-color-scheme: light) {
 	:root {
-		--transparency-1: #000000cc;
+		--transparency-1: #00000050;
 		--transparency-2: #8080801a;
 
 		--gray-01: black;
