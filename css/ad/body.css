@@ -98,7 +98,7 @@ main.nn a > div:last-child div p, main.kk a > div:last-child p, main.kk a > div:
 header {
 	position: relative
 }
-header div {
+header > div {
 	position: absolute;
 
 	inset: auto 0 0 0;
@@ -107,9 +107,7 @@ header div {
 	right: 0;
 	bottom: 0;
 
-	border-radius: 15px;
-
-	padding: 2em;
+	padding: 2em 0;
 
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
@@ -144,7 +142,7 @@ header h5 {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-section, header div {
+section, header > div div {
 	margin: 0 auto;
 	width: 90%
 }
