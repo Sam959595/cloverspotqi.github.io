@@ -109,8 +109,7 @@ header > div {
 
 	padding: 2em 0;
 
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
 
     background-color: var(--transparency-1)
 }
