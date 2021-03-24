@@ -240,6 +240,9 @@ main.bb div:last-child p, main.nn a > div:last-child div p, main.kk a > div:last
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+main.nn a > p {
+	font-size: 14px
+}
 main.nn a, main.kk a {
     display: block;
 	width: 372.59px;
