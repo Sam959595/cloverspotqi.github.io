@@ -225,15 +225,15 @@ main.bb li div:last-child {
     margin-top: .8em
 }
 
-main.bb div:last-child h6 {
+main.bb div:last-child h6, main.nn a > div:last-child div h6, main.kk a > div:last-child h6 {
 	font: normal 500 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: -.016em
 }
-main.bb div:last-child h4 {
+main.bb div:last-child h4, main.nn a > div:last-child div h4, main.kk a > div:last-child h4 {
 	font: normal 400 17px/1.47059 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0
 }
-main.bb div:last-child p {
+main.bb div:last-child p, main.nn a > div:last-child div p, main.kk a > div:last-child p {
 	font: normal 400 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: -.016em
 }
@@ -245,9 +245,6 @@ main.nn a, main.kk a {
 	width: 372.59px;
 
     border-radius: 5px
-}
-main.nn a > h6, main.nn a > div:last-child div h4, main.kk a > div:last-child h4 {
-    font-size: 14px
 }
 main.nn a > div:nth-child(2) {
 	margin: 1.2em 0;
@@ -269,10 +266,6 @@ main.nn a > div:last-child img, main.kk a > div:first-child img {
 
 main.nn a > div:last-child div, main.kk a > div:last-child {
 	margin-left: .8em
-}
-main.nn a > div:last-child div h4, main.kk a > div:last-child h4 {
-	font: normal 400 15px/1.47059 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: 0
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
