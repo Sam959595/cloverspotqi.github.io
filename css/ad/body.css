@@ -250,9 +250,7 @@ main.bb div:last-child p, main.nn a > div:last-child div p, main.kk a > div:last
 
 main.nn a, main.kk a {
     display: block;
-	width: 372.59px;
-
-    border-radius: 5px
+	width: 372.59px
 }
 main.nn a > div:nth-child(2) {
 	margin: 1.2em 0;
@@ -285,8 +283,20 @@ main.kk ul {
     column-gap: .9em
 }
 
-main.kk li:nth-child(3n+2) {
-	margin: 1.2em 0
+main.kk li:nth-child(3n+2) a > div:last-child {
+	margin-top: 9.6px;
+    margin-bottom: 9.6px;
+
+	width: 100%;
+    height: 84.2px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+	border-style: solid;
+    border-width: .1px 0 .1px;
+    border-color: var(--gray-9)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
