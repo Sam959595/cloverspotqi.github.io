@@ -271,7 +271,9 @@ main.nn a > div:last-child img, main.kk a > div:first-child img {
 }
 
 main.nn a > div:last-child div, main.kk a > div:last-child {
-	margin-left: .8em
+	margin-left: .8em;
+	
+	width: 100%
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -287,8 +289,7 @@ main.kk li:nth-child(3n+2) a > div:last-child {
 	margin-top: 9.6px;
     margin-bottom: 9.6px;
 
-	width: 100%;
-    height: 84.2px;
+	height: 84.2px;
 
     display: flex;
     flex-direction: column;
