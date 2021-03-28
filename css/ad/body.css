@@ -233,16 +233,13 @@ main.bb div:last-child h4, main.nn a > div:last-child div h4, main.kk a > div:la
 	font: normal 400 17px/1.47059 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0
 }
-main.bb div:last-child p, main.nn a > div:last-child div p, main.kk a > div:last-child p {
+main.bb div:last-child p, main.nn a > div:last-child div p, main.kk a > div:last-child p, main.nn a > p {
 	font: normal 400 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: -.016em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-main.nn a > p {
-	font-size: 14px
-}
 main.nn a, main.kk a {
     display: block;
 	width: 372.59px;
@@ -252,7 +249,7 @@ main.nn a, main.kk a {
 main.nn a > div:nth-child(2) {
 	margin: 1.2em 0;
 
-    height: 185px;
+    height: 190px;
     border-radius: 5px;
     box-shadow: inset 0 0 0 .5px var(--transparency-2);
     background: center/cover
