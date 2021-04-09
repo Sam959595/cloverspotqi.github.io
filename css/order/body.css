@@ -102,14 +102,14 @@ section.bb {
 section.bb h1 {
 	padding: 1.5cm 2cm 0;
 
-    font: normal 700 32px/1.14286 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: 0
+    font: normal 700 32px/1.125 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: .004em
 }
 section.bb p {
-	margin: 1.5em 2.3cm;
+	margin: 1.5em 2.2cm;
 
-	font: normal 400 13px/1.38462 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: -.005em
+	font: normal 400 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: -.022em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
