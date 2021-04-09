@@ -95,18 +95,18 @@ a {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 section.bb {
-	padding: 1.5cm 2cm;
-
 	text-align: center;
 
     background-color: var(--gray-14)
 }
 section.bb h1 {
+	padding: 1.5cm 2cm 0;
+
     font: normal 700 32px/1.14286 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0
 }
 section.bb p {
-	margin-top: 2em;
+	margin: 1.5em 2.3cm;
 
 	font: normal 400 13px/1.38462 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: -.005em
