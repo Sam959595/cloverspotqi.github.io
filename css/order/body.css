@@ -107,9 +107,18 @@ section.bb h1 {
 }
 section.bb p {
 	margin-top: 1.2em;
-	
+
 	font: normal 400 14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0
+}
+section.bb figure {
+	margin-top: 1cm;
+
+	width: 100%;
+	height: 220px;
+	
+	background: center/cover;
+	background-image: url(/media/order/3434.png)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
