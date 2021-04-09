@@ -441,11 +441,11 @@ main h6 {
 
 footer {
 	margin-top: 2cm;
-	padding-top: 2em;
+	padding-top: 1em;
 	background-color: var(--gray-8)
 }
 footer li {
-	padding-bottom: 2em;
+	padding-bottom: 1em;
 	color: var(--gray-3)
 }
 footer ol {
