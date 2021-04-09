@@ -1,6 +1,6 @@
 @media screen and (prefers-color-scheme: light) {
     :root {
-        --transparency-1: #f7f7f7cc;
+        --soft-1: #f7f7f7cc;
 
         --gray-01: black;
         --gray-0: white;
@@ -23,7 +23,7 @@
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
-        --transparency-1: #1d1d1fb3;
+        --soft-1: #1d1d1fb3;
 
         --gray-01: white;
         --gray-0: black;

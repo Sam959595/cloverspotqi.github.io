@@ -111,7 +111,7 @@ header > div {
 
     -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
 
-    background-color: var(--transparency-1)
+    background-color: var(--soft-1)
 }
 
 header p {
@@ -257,7 +257,7 @@ main.nn a > div:nth-child(2) {
 
     height: 190px;
     border-radius: 5px;
-    box-shadow: inset 0 0 0 .5px var(--transparency-2);
+    box-shadow: inset 0 0 0 .5px var(--soft-2);
     background: center/cover
 }
 main.nn a > div:last-child, main.kk a {
@@ -304,8 +304,8 @@ main.kk li:nth-child(3n+2) a > div:last-child {
 
 @media screen and (prefers-color-scheme: light) {
 	:root {
-		--transparency-1: #00000050;
-		--transparency-2: #8080801a;
+		--soft-1: #00000050;
+		--soft-2: #8080801a;
 
 		--gray-01: black;
 		--gray-0: white;
@@ -329,8 +329,8 @@ main.kk li:nth-child(3n+2) a > div:last-child {
 
 @media screen and (prefers-color-scheme: dark) {
 	:root {
-		--transparency-1: #1d1d1fb3;
-		--transparency-2: #d4d4d41a;
+		--soft-1: #1d1d1fb3;
+		--soft-2: #d4d4d41a;
 
 		--gray-01: white;
 		--gray-0: black;

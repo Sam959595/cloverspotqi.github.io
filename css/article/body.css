@@ -111,7 +111,7 @@ nav {
 	transition: opacity .5s ease 0s;
 
 	-webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
-	background-color: var(--transparency-1)
+	background-color: var(--soft-1)
 }
 
 .title {

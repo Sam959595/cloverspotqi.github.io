@@ -8,6 +8,6 @@
 .banner ul li:first-child a div:last-child div {
 	height: 200px;
 	border-radius: 5px;
-    box-shadow: inset 0 0 0 .5px var(--transparency-2);
+    box-shadow: inset 0 0 0 .5px var(--soft-2);
     background: center/cover
 }
