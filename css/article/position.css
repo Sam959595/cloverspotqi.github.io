@@ -1,9 +1,9 @@
-nav div, picture img, picture.vertical img, article, table, dl, blockquote, footer div, main ul {
+nav div, picture img, picture.vertical img, article, table, dl, blockquote, footer ul, main ul {
 	margin: 0 auto;
 	width: 653px
 }
 
-nav div, picture img, footer, main ul {
+nav div, picture img, footer ul, main ul {
 	width: 980px
 }
 
@@ -62,7 +62,7 @@ nav div, picture img, footer, main ul {
 }
 
 @media screen and (max-width: 980px) {
-    nav div, picture img, footer, main ul {
+    nav div, picture img, footer ul, main ul {
         width: 100%
     }
 }

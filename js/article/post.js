@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (b.height() > '72') {
         a[0].classList.add('hide');
 
-        let b = document.createElement('button');
+        let b = document.createElement('a');
 
         b.innerHTML = 'далее';
         a[0].appendChild(b);

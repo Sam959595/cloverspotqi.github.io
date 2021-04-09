@@ -425,23 +425,17 @@ main h6 {
 
 	-webkit-mask: linear-gradient(to top, transparent 16px, black 0), linear-gradient(to left, transparent 40px, black 60px)
 }
-.hide button {
+.hide a {
 	position: absolute;
 
 	right: 0;
-	bottom: 0;
-
-	font: inherit;
-
-	background: none;
-	color: var(--blue-1)
+	bottom: 0
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 footer {
 	padding-bottom: env(safe-area-inset-bottom);
-
 	background-color: var(--gray-8)
 }
 footer ul {
