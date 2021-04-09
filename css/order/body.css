@@ -127,7 +127,9 @@ nav {
 }
 nav h5 {
 	font: normal 700 17px/1.47 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: -.022em
+    letter-spacing: 0;
+
+	color: var(--gray-10)
 }
 nav a {
 	font: normal 400 17px/1.47 -apple-system, BlinkMacSystemFont, "Segoe UI";
@@ -155,13 +157,13 @@ section.bb p {
     letter-spacing: 0
 }
 section.bb figure {
-	margin-top: 1cm;
+	margin-top: 4cm;
 
 	width: 100%;
 	height: 220px;
 	
 	background: center/cover;
-	background-image: url(https://sam959595.github.io/cloverspotqi.github.io/media/order/3434.png)
+	background-image: url(/media/order/34.png)
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
