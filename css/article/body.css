@@ -304,13 +304,13 @@ figcaption p {
 	content: "\f32b"
 } */
 
-.district figcaption:nth-child(2) {
+figcaption:nth-child(2) {
 	margin-top: 2em
 }
-.district figcaption+figcaption {
+figcaption+figcaption {
 	margin-top: 1em
 }
-.district figcaption:last-child {
+figcaption:last-child {
 	margin-bottom: 2em
 }
 
