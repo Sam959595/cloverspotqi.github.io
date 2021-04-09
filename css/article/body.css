@@ -373,7 +373,7 @@ dl dd {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 main {
-	padding-bottom: env(safe-area-inset-bottom);
+	margin-top: 2cm;
 	background-color: var(--gray-12)
 }
 main ul {
@@ -381,7 +381,7 @@ main ul {
 	grid-auto-flow: column;
 	column-gap: 1.3em;
 
-	padding: 2em 0;
+	padding: 1em 0;
 
 	touch-action: pan-x;
 
@@ -440,18 +440,13 @@ main h6 {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 footer {
-	margin-top: 2cm;
-	padding-top: 1em;
+	padding-bottom: env(safe-area-inset-bottom);
+
 	background-color: var(--gray-8)
 }
+footer ul {
+	padding: 1em 0
+}
 footer li {
-	padding-bottom: 1em;
 	color: var(--gray-3)
-}
-footer ol {
-	padding-left: 16px;
-	list-style: outside decimal
-}
-footer ol li a {
-	color: var(--gray-4)
 }
