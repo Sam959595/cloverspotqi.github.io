@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         a[0].appendChild(b);
     };
 
-    $('dl dd.string button').click(function() {
+    $('dl dd.string a').click(function() {
         a[0].classList.remove('hide');
         this.remove();
     });
