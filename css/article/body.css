@@ -376,7 +376,7 @@ dl dd {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 main {
-	margin: 2em 0
+	margin: 2em 0 2cm
 }
 main ul {
 	display: grid;
