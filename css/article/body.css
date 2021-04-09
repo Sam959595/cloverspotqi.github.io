@@ -80,14 +80,12 @@ a {
 
 /* - */
 
-.setup > a {
+nav h6, .setup > a {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden
 }
-nav h6, main h6 {
-	text-align: center;
-
+main h6 {
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
@@ -107,6 +105,8 @@ nav {
 
 	display: flex;
 	align-items: center;
+
+	text-align: center;
 
 	transition: opacity .5s ease 0s;
 
@@ -404,6 +404,8 @@ main a {
 	background-color: var(--gray-2)
 }
 main h6 {
+	text-align: center;
+
 	font: normal 600 14px/1.3 -apple-system, BlinkMacSystemFont, "Segoe UI";
 
 	color: var(--gray-4)
