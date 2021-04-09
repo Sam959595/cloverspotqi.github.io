@@ -3,7 +3,7 @@ nav div, picture img, picture.vertical img, article, table, dl, blockquote, foot
 	width: 653px
 }
 
-nav div, picture img, footer div, main ul {
+nav div, picture img, footer, main ul {
 	width: 980px
 }
 
@@ -20,11 +20,11 @@ nav div, picture img, footer div, main ul {
         width: 576px
     }
 
-    nav, footer div {
+    nav, footer {
         padding: 0 22px
     }
     @media screen and (orientation: landscape) {
-        nav, footer div {
+        nav, footer {
             padding-left: max(22px, env(safe-area-inset-left));
             padding-right: max(22px, env(safe-area-inset-right))
         }
@@ -62,7 +62,7 @@ nav div, picture img, footer div, main ul {
 }
 
 @media screen and (max-width: 980px) {
-    nav div, picture img, footer div, main ul {
+    nav div, picture img, footer, main ul {
         width: 100%
     }
 }
@@ -106,7 +106,7 @@ nav div, picture img, footer div, main ul {
         padding: 0 2em
     }
 
-    nav, footer div {
+    nav, footer {
         padding: 0 16px
     }
 

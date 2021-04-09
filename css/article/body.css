@@ -450,3 +450,6 @@ footer ul {
 footer li {
 	color: var(--gray-3)
 }
+footer li+li {
+	padding-top: 1em
+}
