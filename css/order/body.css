@@ -114,6 +114,10 @@ nav {
 
 	width: 90%;
     height: 1.3cm;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	
 	border-bottom: .1px solid var(--gray-9);
 
@@ -123,11 +127,12 @@ nav {
 /* - */
 
 section.bb {
+    background-color: var(--gray-14)
+}
+section.bb div {
 	text-align: center;
 
-	padding: 2.5cm 1.7cm;
-
-    background-color: var(--gray-14)
+	padding: 1.5cm 1.7cm 0
 }
 section.bb h1 {
     font: normal 700 32px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
