@@ -20,12 +20,9 @@
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-.includes ul a {
-	border-radius: 5px
-}
-
 .includes ul li:nth-child(-n+3) a {
-	display: block
+	display: block;
+	border-radius: 5px
 }/* - */
 .includes ul li+li:nth-child(-n+3) {
 	width: 47.5%
