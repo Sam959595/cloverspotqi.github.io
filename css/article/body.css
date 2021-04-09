@@ -330,7 +330,7 @@ table th {
 	font-weight: 600;
 	vertical-align: bottom;
 
-	padding: 3px 1em 3px 0;
+	padding: 3px 1em 8px 0;
 
 	color: var(--gray-6)
 }
