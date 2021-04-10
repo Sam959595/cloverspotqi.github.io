@@ -175,10 +175,11 @@ nav a {
 section.bb {
     background-color: var(--gray-14)
 }
+
 section.bb div {
 	text-align: center;
 
-	padding: 2em 1.7cm 0
+	padding: 2em 1cm 0
 }
 section.bb h1 {
     font: normal 700 32px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
@@ -190,6 +191,7 @@ section.bb div p {
 	font: normal 400 14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0
 }
+
 section.bb figure {
 	margin-top: 4cm;
 
@@ -198,6 +200,22 @@ section.bb figure {
 	
 	background: center/cover;
 	background-image: url(https://sam959595.github.io/cloverspotqi.github.io/media/order/34.png)
+}
+
+/* - */
+
+section.pp div {
+	padding: 5em 1cm
+}
+section.pp h2 {
+    font: normal 700 28px/1.14286 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: .007em
+}
+section.pp p {
+	margin-top: 3px;
+
+    font: normal 400 17px/1.14286 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: -.022em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -235,7 +253,7 @@ section.bb figure {
 
 		--gray-01: white;
 		--gray-0: black;
-		--gray-1: #f3f3f3;
+		--gray-1: #f5f5f7;
 		--gray-2: #1c1c23;
 		--gray-3: #63636e;
 		--gray-4: #aaaab3;
