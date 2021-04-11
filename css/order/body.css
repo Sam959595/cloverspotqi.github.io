@@ -219,8 +219,6 @@ section.tt h2 {
 section.pp div {
 	text-align: center;
 
-	border-bottom: .1px solid var(--gray-9);
-
 	padding: 2em 1.5cm
 }
 section.pp p:first-child {
@@ -250,6 +248,11 @@ section.pp a {
 
     background-color: var(--blue-1);
     color: white
+}
+
+section.pp hr {
+	margin-left: auto;
+	width: 95%
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
