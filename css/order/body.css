@@ -205,9 +205,9 @@ section.bb figure {
 /* - */
 
 section.tt {
-	text-align: center;
-
-	padding: 5em 1.5cm 0
+	margin-top: 5em;
+	margin-left: auto;
+	width: 95%
 }
 section.tt h2 {
 	font: normal 700 28px/1.14286 -apple-system, BlinkMacSystemFont, "Segoe UI";
@@ -217,12 +217,13 @@ section.tt h2 {
 /* - */
 
 section.pp div {
-	text-align: center;
+	margin-left: auto;
+	width: 95%;
 
-	padding: 2em 1.5cm
+	border-bottom: .1px solid var(--gray-9)
 }
 section.pp p:first-child {
-	margin-top: 3px;
+	margin-top: 2em;
 
     font: normal 400 19px/1.4211 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: .012em;
@@ -237,22 +238,21 @@ section.pp p+p {
 }
 
 section.pp a {
-	margin-top: 1cm;
+	margin: 1cm 0;
 
 	display: block;
 
+	max-width: 5cm;
+
     border-radius: 11px;
+
     padding: .8em 1.2em;
 
+	text-align: center;
     font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
 
     background-color: var(--blue-1);
     color: white
-}
-
-section.pp hr {
-	margin-left: auto;
-	width: 95%
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
