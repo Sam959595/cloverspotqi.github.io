@@ -215,6 +215,40 @@ section.vv {
 	background-color: var(--gray-9)
 }
 
+section.vv div {
+	padding: 2cm 1cm
+}
+
+section.vv h3 {
+    font: normal 400 19px/1.21053 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: .012em;
+
+	color: var(--gray-10)
+}
+section.vv h2 {
+	margin: .2em 0 .4em;
+
+	font: normal 700 28px/1.14286 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: .007em
+}
+section.vv h6 {
+    font: normal 400 14px/1.42859 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: -.016em;
+
+	color: var(--gray-5)
+}
+section.vv p {
+    font-size: 11px
+}
+
+section.vv a {
+	margin: 4cm 0 1cm;
+
+	display: block;
+
+    font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI"
+}
+
 /* - */
 
 section.pp {
@@ -228,6 +262,7 @@ section.pp {
 section.pp div {
 	padding: 2cm 1cm .5cm
 }
+
 section.pp h3 {
     font: normal 400 19px/1.21053 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: .012em;
@@ -347,7 +382,7 @@ footer li+li {
 		--gray-12: #1a1a21;
 		--gray-13: #8e8e93;
 		--gray-14: #1c1c1e;
-		--gray-15: #0e0e0e;
+		--gray-15: #212125;
 	
 		--blue-1: #007aff;
 	}
