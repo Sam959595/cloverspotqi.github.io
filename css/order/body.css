@@ -215,7 +215,7 @@ section.vv {
 }
 
 section.vv div {
-	padding: 2cm 1cm 0
+	padding: 2cm .8cm 0
 }
 
 section.vv h2 {
@@ -259,7 +259,7 @@ section.pp {
 }
 
 section.pp div {
-	padding: 2cm 1cm .5cm
+	padding: 2cm .8cm .5cm
 }
 
 section.pp h3 {
