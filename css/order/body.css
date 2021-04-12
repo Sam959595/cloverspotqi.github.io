@@ -316,7 +316,7 @@ section.kk li+li {
 /* - */
 
 footer {
-	margin-top: 3cm;
+	margin-top: 2cm;
 
     padding-bottom: env(safe-area-inset-bottom);
     background-color: var(--gray-8)
