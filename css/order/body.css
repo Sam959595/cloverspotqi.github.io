@@ -95,7 +95,7 @@ a {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 nav, footer li {
-    padding: 0 16px;
+    padding: 0 max(env(safe-area-inset-right), 16px) 0 max(env(safe-area-inset-left), 16px);
 }
 
 /* - */
@@ -125,7 +125,7 @@ blockquote p {
 	text-align: center;
 
 	padding: max(env(safe-area-inset-top), 9px) 3em 9px;
-	
+
 	transform: translateY(-100%);
 
 	background-color: var(--blue-1)
