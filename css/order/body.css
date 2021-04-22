@@ -118,13 +118,14 @@ nav, footer li {
 /* - */
 
 blockquote {
+	padding-top: env(safe-area-inset-top);
+
 	overflow: hidden
 }
 
 blockquote p {
 	text-align: center;
 
-	padding-top: env(safe-area-inset-top);
 	padding: 9px 3em;
 
 	transform: translateY(-100%);
@@ -175,8 +176,6 @@ nav a {
 /* - */
 
 section.bb {
-	padding-top: env(safe-area-inset-top);
-
     background-color: var(--gray-14)
 }
 
