@@ -118,6 +118,8 @@ nav, footer li {
 /* - */
 
 blockquote {
+	padding-top: env(safe-area-inset-top);
+	
 	overflow: hidden;
 }
 
@@ -175,7 +177,7 @@ nav a {
 
 section.bb {
 	padding-top: env(safe-area-inset-top);
-	
+
     background-color: var(--gray-14)
 }
 
