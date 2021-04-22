@@ -124,7 +124,11 @@ blockquote {
 blockquote p {
 	text-align: center;
 
-	padding-top: env(safe-area-inset-top);
+	padding-top: max(env(safe-area-inset-top), 9px);
+	padding-bottom: 9px;
+
+	padding-left: 3em;
+	padding-right: 3em;
 
 	transform: translateY(-100%);
 
