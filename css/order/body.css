@@ -201,6 +201,10 @@ section.bb figure {
 	background: top/cover
 }
 
+section.bb div:last-child p {
+    font-size: 11px
+}
+
 /* - */
 
 section.vv {
