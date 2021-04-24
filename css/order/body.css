@@ -198,7 +198,7 @@ section.bb figure {
 
 	height: 8cm;
 	
-	background: center/cover
+	background: top/cover
 }
 
 /* - */
@@ -239,7 +239,6 @@ section.vv a {
 section.vv figure {
 	margin-top: 3cm;
 
-	width: 100%;
 	height: 10cm;
 	
 	background: center/cover
