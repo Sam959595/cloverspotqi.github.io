@@ -295,21 +295,27 @@ section.pp a {
 /* - */
 
 section.kk {
-	margin-top: .5cm;
-	margin-left: auto;
-	width: 95%
+	margin-top: .5cm
+	/* margin-left: auto;
+	width: 95% */
 }
 
 section.kk a {
 	display: block;
 
+	padding-left: 5%
+}
+
+section.kk h5 {
 	padding: 10px 0;
 
 	font: normal 400 19px -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: 0
+    letter-spacing: 0;
+
+	color: inherit
 }
 
-section.kk li+li {
+section.kk li+li h5 {
 	border-top: .1px solid var(--gray-9)
 }
 
