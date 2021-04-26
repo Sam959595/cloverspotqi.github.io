@@ -95,7 +95,7 @@ a {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 nav, footer li {
-    padding: 0 max(env(safe-area-inset-right), 16px) 0 max(env(safe-area-inset-left), 16px);
+    margin: 0 max(env(safe-area-inset-right), 16px) 0 max(env(safe-area-inset-left), 16px)
 }
 
 /* - */
