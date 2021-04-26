@@ -119,10 +119,6 @@ section.tt h5 {
 
 /* - */
 
-section.bb {
-	text-align: center
-}
-
 section.bb::before {
 	content: "Имя";
     position: absolute;
@@ -135,7 +131,7 @@ section.bb::before {
     color: var(--gray-1)
 }
 
-input[type="email"] {
+section.bb input[type="email"] {
 	-webkit-appearance: none;
 
 	width: 100%;
@@ -150,14 +146,19 @@ input[type="email"] {
 
 	background-color: var(--gray-13)
 }
-input[type="email"]::-webkit-input-placeholder {
+section.bb input[type="email"]::-webkit-input-placeholder {
 	color: var(--gray-3)
 }
-input[placeholder] {
+section.bb input[placeholder] {
 	color: var(--gray-1)
 }
 
-section.bb a {
+/* - */
+
+section.kk {
+	text-align: center
+}
+section.kk a {
 	margin-top: 1em;
 
 	display: inline-block;
