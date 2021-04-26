@@ -102,7 +102,7 @@ section {
 /* - */
 
 section.tt {
-	padding: 2cm 0 1cm;
+	padding: 3cm 0 2em;
 
 	text-align: center
 }
@@ -119,32 +119,48 @@ section.tt h5 {
 
 /* - */
 
+section.bb {
+	text-align: center
+}
+
+section.bb::before {
+	content: "Имя";
+    position: absolute;
+
+	margin: .8em 0 0 1.2em;
+
+    font: normal 600 17px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: 0;
+
+    color: var(--gray-1)
+}
+
 input[type="email"] {
 	-webkit-appearance: none;
 
 	width: 100%;
-	height: 34px;
+	height: 50px;
 
 	border-radius: 10px;
 
-	padding: 0 6px 0 26px;
+	padding: 0 1em 0 4.5em;
 
-	font: normal 400 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
-	letter-spacing: -.022em;
+	font: normal 400 17px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: 0;
 
 	background-color: var(--gray-13)
 }
 input[type="email"]::-webkit-input-placeholder {
-	color: var(--gray-2)
+	color: var(--gray-3)
 }
 input[placeholder] {
-	color: var(--gray-3)
+	color: var(--gray-1)
 }
 
 section.bb a {
+	margin-top: 1em;
+
 	display: inline-block;
-	
-	text-align: center;
 
 	font: normal 400 17px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0
