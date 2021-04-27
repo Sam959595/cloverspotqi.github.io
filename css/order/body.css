@@ -94,7 +94,7 @@ a {
 
 /* body */
 
-nav, footer li {
+nav, blockquote div > *, footer li {
     margin: 0 max(env(safe-area-inset-right), 16px) 0 max(env(safe-area-inset-left), 16px)
 }
 
@@ -104,10 +104,11 @@ blockquote {
 	overflow: hidden
 }
 
-blockquote p {
-	text-align: center;
+blockquote div {
+	display: flex;
+	justify-content: space-between;
 
-	padding: max(env(safe-area-inset-top), 9px) max(env(safe-area-inset-right), 2em) 9px max(env(safe-area-inset-left), 2em);
+	padding: max(env(safe-area-inset-top), 9px) 0 9px;
 
 	transform: translateY(-100%);
 
@@ -115,6 +116,12 @@ blockquote p {
 }
 blockquote *:not(q):not(small) {
 	color: #f5f5f7
+}
+
+blockquote button {
+	padding: 0 1em;
+	border-radius: 5px;
+	background-color: var(--blue-1)
 }
 
 .quote {
