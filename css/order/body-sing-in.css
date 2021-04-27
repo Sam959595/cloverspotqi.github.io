@@ -107,7 +107,7 @@ section.tt {
 	text-align: center
 }
 section.tt h1 {
-	font: normal 700 32px -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 700 32px/1.25 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: .012em
 }
 section.tt h5 {
