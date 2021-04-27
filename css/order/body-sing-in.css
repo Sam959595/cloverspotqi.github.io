@@ -179,7 +179,7 @@ section.bb input[type="email"] {
 	background-color: var(--gray-3)
 }
 section.bb input[type="email"]::-webkit-input-placeholder {
-	color: var(--gray-5)
+	color: var(--gray-4)
 }
 section.bb input[placeholder] {
 	color: var(--gray-1)
