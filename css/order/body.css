@@ -142,7 +142,7 @@ nav {
 }
 
 nav h6 {
-	font: normal 500 19px -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 600 19px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0
 }
 nav a {
@@ -161,7 +161,7 @@ section.bb {
 }
 
 section.bb div {
-	padding: 2em .5cm
+	padding: 2cm .5cm .2em
 }
 section.bb h1 {
     font: normal 700 32px/1.25 -apple-system, BlinkMacSystemFont, "Segoe UI";
