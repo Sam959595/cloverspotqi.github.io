@@ -145,12 +145,13 @@ header {
 
 	border-bottom: .1px solid var(--gray-9);
 
-	-webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px)
+	-webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
+	background-color: var(--soft-2)
 }
 
 nav {
 	padding-top: env(safe-area-inset-top);
-	
+
 	height: 1.3cm;
 
 	display: flex;
