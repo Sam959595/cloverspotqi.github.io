@@ -94,26 +94,9 @@ a {
 
 /* body */
 
-nav, footer li {
+header nav, footer li {
     margin: 0 max(env(safe-area-inset-right), 16px) 0 max(env(safe-area-inset-left), 16px)
 }
-
-/* - */
-
-/* header {
-	opacity: 0;
-    z-index: 5;
-
-    position: fixed;
-
-    width: 100%;
-    height: 1.3cm;
-
-    transition: opacity .5s ease 0s;
-
-    -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
-    background-color: var(--soft-1);
-} */
 
 /* 1 */
 
@@ -151,14 +134,28 @@ blockquote *:not(q):not(small) {
 
 /* 2 */
 
+header {
+	opacity: 1;
+    z-index: 5;
+
+    position: sticky;
+	top: 0;
+
+	padding-top: env(safe-area-inset-top);
+
+    transition: opacity .5s ease 0s;
+
+	border-bottom: .1px solid var(--gray-9);
+
+	-webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px)
+}
+
 nav {
-    height: 1.3cm;
+	height: 1.3cm;
 
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	
-	border-bottom: .1px solid var(--gray-9)
+	justify-content: space-between
 }
 nav h5 {
 	font: normal 700 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
