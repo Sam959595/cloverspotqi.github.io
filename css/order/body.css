@@ -141,8 +141,6 @@ header {
     position: sticky;
 	top: 0;
 
-	padding-top: env(safe-area-inset-top);
-
     transition: opacity .5s ease 0s;
 
 	border-bottom: .1px solid var(--gray-9);
@@ -151,6 +149,8 @@ header {
 }
 
 nav {
+	padding-top: env(safe-area-inset-top);
+	
 	height: 1.3cm;
 
 	display: flex;
