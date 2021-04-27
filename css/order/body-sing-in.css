@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6, span {
 	color: var(--gray-1)
 }
 p, time {
-	color: var(--gray-13)
+	color: var(--gray-2)
 }
 a {
 	color: var(--blue-1)
@@ -92,14 +92,14 @@ a {
 	overflow: hidden
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - */
+/* body */
 
 section {
 	margin: 0 auto;
 	width: 90%
 }
 
-/* - */
+/* 1 */
 
 section.pp {
 	margin: 2cm auto 1em;
@@ -128,7 +128,7 @@ section.pp div img {
     -webkit-mask: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 90 90'%3e%3cpath d='m58.6,0c9,0 13.5,0 18.4,1.5c5.3,1.9 9.5,6.1 11.4,11.4c1.6,4.9 1.6,9.5 1.6,18.5l0,27.2c0,9 0,13.5 -1.5,18.4c-1.9,5.3 -6.1,9.5 -11.4,11.4c-5,1.6 -9.5,1.6 -18.5,1.6l-27.2,0c-9,0 -13.5,0 -18.4,-1.5c-5.4,-2 -9.5,-6.1 -11.5,-11.5c-1.5,-4.8 -1.5,-9.3 -1.5,-18.4l0,-27.2c0,-9 0,-13.5 1.5,-18.4c2,-5.3 6.1,-9.5 11.5,-11.4c4.8,-1.6 9.3,-1.6 18.4,-1.6l27.2,0z'/%3e%3c/svg%3e") no-repeat
 }
 
-/* - */
+/* 2 */
 
 section.tt {
 	text-align: center
@@ -138,14 +138,14 @@ section.tt h1 {
 	font: normal 700 32px/1.25 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: .012em
 }
-section.tt h5 {
+section.tt p {
 	margin-top: 1.2em;
 
     font: normal 400 19px/1.21053 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0
 }
 
-/* - */
+/* 3 */
 
 section.bb {
 	margin: 2em auto
@@ -176,51 +176,37 @@ section.bb input[type="email"] {
 	font: normal 400 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0;
 
-	background-color: var(--gray-13)
+	background-color: var(--gray-3)
 }
 section.bb input[type="email"]::-webkit-input-placeholder {
-	color: var(--gray-3)
+	color: var(--gray-5)
 }
 section.bb input[placeholder] {
 	color: var(--gray-1)
 }
 
-/* - */
+/* 4 */
 
 section.kk {
 	text-align: center
 }
 
-section.kk a {
+section.kk p {
 	display: inline-block;
 
 	font: normal 400 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - */
+/* color */
 
 @media screen and (prefers-color-scheme: light) {
 	:root {
-		--soft-1: #00000050;
-		--soft-2: #8080801a;
-
-		--gray-01: black;
 		--gray-0: white;
-		--gray-1: #111;
-		--gray-2: #e8e8ed;
-		--gray-3: #86868b;
-		--gray-4: #515154;
-		--gray-5: #888;
-		--gray-6: #333;
-		--gray-7: #1d1d1f;
-		--gray-8: #f5f5f7;
-		--gray-9: #d2d2d7;
-		--gray-10: #666;
-		--gray-11: #00000014;
-		--gray-12: #f0f0f2;
-		--gray-13: #f2f2f7;
-		--gray-14: #e8e8ed;
+		--gray-1: #1d1d1f;
+		--gray-2: #888;
+		--gray-3: #f2f2f7;
+		--gray-4: #8e8e93;
 	
 		--blue-1: #06c;
 	}
@@ -228,25 +214,11 @@ section.kk a {
 
 @media screen and (prefers-color-scheme: dark) {
 	:root {
-		--soft-1: #1d1d1fb3;
-		--soft-2: #d4d4d41a;
-
-		--gray-01: white;
 		--gray-0: black;
 		--gray-1: #f5f5f7;
-		--gray-2: #1c1c23;
-		--gray-3: #63636e;
-		--gray-4: #aaaab3;
-		--gray-5: #8e8e93;
-		--gray-6: #d5d5e2;
-		--gray-7: #f5f5f7;
-		--gray-8: #17171d;
-		--gray-9: #212125;
-		--gray-10: #aaaab3;
-		--gray-11: #2c2c2e;
-		--gray-12: #1a1a21;
-		--gray-13: #17171d;
-		--gray-14: #212125;
+		--gray-2: #8e8e93;
+		--gray-3: #212125;
+		--gray-4: #2c2c2e;
 	
 		--blue-1: #007aff;
 	}

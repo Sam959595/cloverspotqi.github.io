@@ -92,7 +92,7 @@ a {
 	overflow: hidden
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - */
+/* body */
 
 nav, footer li {
     margin: 0 max(env(safe-area-inset-right), 16px) 0 max(env(safe-area-inset-left), 16px)
@@ -115,7 +115,7 @@ nav, footer li {
     background-color: var(--soft-1);
 } */
 
-/* - */
+/* 1 */
 
 blockquote {
 	overflow: hidden
@@ -149,7 +149,7 @@ blockquote *:not(q):not(small) {
 	color: var(--blue-1)
 }
 
-/* - */
+/* 2 */
 
 nav {
     height: 1.3cm;
@@ -171,7 +171,7 @@ nav a {
     letter-spacing: 0
 }
 
-/* - */
+/* 3 */
 
 section.bb {
     background-color: var(--gray-8)
@@ -205,7 +205,7 @@ section.bb div:last-child p {
     font-size: 11px
 }
 
-/* - */
+/* 4 */
 
 section.vv {
 	margin-top: .5cm;
@@ -248,7 +248,7 @@ section.vv figure {
 	background: center/cover
 }
 
-/* - */
+/* 5 */
 
 section.pp {
 	margin-top: .5cm;
@@ -292,7 +292,7 @@ section.pp a {
     font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI"
 }
 
-/* - */
+/* 6 */
 
 section.kk {
 	margin-top: .5cm
@@ -319,7 +319,7 @@ section.kk li+li h5 {
 	border-top: .1px solid var(--gray-9)
 }
 
-/* - */
+/* 7 */
 
 footer {
 	margin-top: 2cm;
@@ -337,7 +337,7 @@ footer li+li {
 	margin-top: 1em
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - */
+/* color */
 
 @media screen and (prefers-color-scheme: light) {
 	:root {
