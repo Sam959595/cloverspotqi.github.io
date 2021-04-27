@@ -94,7 +94,7 @@ a {
 
 /* body */
 
-header nav, footer li {
+nav, footer li {
     margin: 0 max(env(safe-area-inset-right), 16px) 0 max(env(safe-area-inset-left), 16px)
 }
 
@@ -132,52 +132,17 @@ blockquote *:not(q):not(small) {
 	color: var(--blue-1)
 }
 
-/* 2 */
-
-header {
-	opacity: 1;
-    z-index: 5;
-
-    position: sticky;
-	top: 0;
-
-    transition: opacity .5s ease 0s;
-
-	border-bottom: .1px solid var(--gray-9);
-
-	-webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
-	background-color: var(--soft-2)
-}
-
-nav {
-	padding-top: env(safe-area-inset-top);
-
-	height: 1.3cm;
-
-	display: flex;
-	align-items: center;
-	justify-content: space-between
-}
-nav h5 {
-	font: normal 700 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: 0;
-
-	color: var(--gray-10)
-}
-nav a {
-	font: normal 400 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: 0
-}
-
 /* 3 */
 
 section.bb {
+	margin-top: .5cm;
+
+	text-align: center;
+
     background-color: var(--gray-8)
 }
 
 section.bb div {
-	text-align: center;
-
 	padding: 2em .5cm
 }
 section.bb h1 {
