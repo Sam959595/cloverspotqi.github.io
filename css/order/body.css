@@ -174,17 +174,13 @@ section.bb div p {
     letter-spacing: 0
 }
 
-section.bb img {
-	height: 440.22px
-}
-
-/* section.bb figure {
+section.bb figure {
 	margin-top: 1cm;
 
 	height: 440.28px;
 	
 	background: top/cover
-} */
+}
 
 section.bb div:last-child p {
     font-size: 11px
