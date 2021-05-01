@@ -254,7 +254,7 @@ figcaption > div div {
 
 	width: 110px
 }
-section.ss > div div::before {
+figcaption > div div::before {
     z-index: 1;
     position: absolute;
 
