@@ -235,17 +235,16 @@ section.vv figure {
 /* 1x */
 
 section.ss {
+	padding: 2cm 0 1cm;
+
 	overflow: hidden
 }
 
 section.ss > div {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-auto-flow: column;
 
 	justify-content: center
-}
-section.ss > div:nth-child(2) {
-	grid-template-columns: repeat(4, 1fr)
 }
 
 section.ss > div div {
