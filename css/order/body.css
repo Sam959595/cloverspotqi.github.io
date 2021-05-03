@@ -181,7 +181,7 @@ section.bb div p {
 section.bb figure {
 	margin-top: 1cm;
 
-	height: 720px;
+	height: 5cm;
 	
 	background: top/cover
 }
@@ -232,7 +232,7 @@ section.vv figure {
 	background: center/cover
 }
 
-/* 1 */
+/* 9 */
 
 figcaption {
 	padding: 2cm 0 1cm;
