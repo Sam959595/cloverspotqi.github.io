@@ -270,7 +270,7 @@ section.vv figure {
 	border-radius: 100%;
 	border: .1px solid var(--soft-2);
 
-    background: center/cover
+    background: center/cover no-repeat
 }
 
 section.vv ul li a div {
