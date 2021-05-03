@@ -174,7 +174,7 @@ main ul {
     scroll-snap-type: x mandatory
 }
 main ul li {
-	scroll-snap-align: center
+	scroll-snap-align: start
 }
 
 /* - */
@@ -182,8 +182,12 @@ main ul li {
 main.tt ul {
 	display: grid;
     grid-auto-flow: column;
-    column-gap: .9em
+    column-gap: .9em;
+
+	scroll-padding: 0 20.705px
 }
+
+/* - */
 
 main li:first-child, main.kk li:nth-child(-n+3) {
     padding-left: 20.705px
@@ -191,6 +195,8 @@ main li:first-child, main.kk li:nth-child(-n+3) {
 main li:last-child {
     padding-right: 20.705px
 }
+
+/* - */
 
 main.bb ul li a {
 	display: block;
