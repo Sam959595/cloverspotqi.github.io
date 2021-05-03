@@ -215,7 +215,7 @@ section.vv h6 {
 	color: var(--gray-5)
 }
 
-section.vv a {
+section.vv > div a {
 	margin: 1em 0;
 
 	display: inline-block;
@@ -224,7 +224,7 @@ section.vv a {
 	letter-spacing: 0
 }
 
-section.vv figure {
+section.vv > figure {
 	margin-top: 3cm;
 
 	height: 10cm;
@@ -232,7 +232,52 @@ section.vv figure {
 	background: center/cover
 }
 
-/* 6 */
+/* 5.1 */
+
+section.vv ul {
+	padding: 2cm 0 2em;
+
+	display: grid;
+    grid-auto-flow: column;
+    column-gap: .9em;
+
+	overflow-x: scroll;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 20.69px
+}
+section.vv ul li {
+	scroll-snap-align: start
+}
+
+section.vv ul li:first-child {
+    padding-left: 20.69px
+}
+section.vv ul li:last-child {
+    padding-right: 20.69px
+}
+
+section.vv ul li a {
+    display: block;
+
+	border-radius: 1em
+}
+
+section.vv figure {
+	width: 180.91px;
+    height: 180.91px;
+
+	border-radius: 100%;
+	border: .1px solid var(--gray-9);
+
+    background: center/cover
+}
+
+section.vv ul li a div {
+	margin-top: 1em
+}
+
+/* 5.2 */
 
 figcaption {
 	padding: 2cm 0 1cm;
@@ -272,7 +317,7 @@ figcaption > div div img {
     -webkit-mask: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 90 90'%3e%3cpath d='m58.6,0c9,0 13.5,0 18.4,1.5c5.3,1.9 9.5,6.1 11.4,11.4c1.6,4.9 1.6,9.5 1.6,18.5l0,27.2c0,9 0,13.5 -1.5,18.4c-1.9,5.3 -6.1,9.5 -11.4,11.4c-5,1.6 -9.5,1.6 -18.5,1.6l-27.2,0c-9,0 -13.5,0 -18.4,-1.5c-5.4,-2 -9.5,-6.1 -11.5,-11.5c-1.5,-4.8 -1.5,-9.3 -1.5,-18.4l0,-27.2c0,-9 0,-13.5 1.5,-18.4c2,-5.3 6.1,-9.5 11.5,-11.4c4.8,-1.6 9.3,-1.6 18.4,-1.6l27.2,0z'/%3e%3c/svg%3e") no-repeat
 }
 
-/* 7 */
+/* 6 */
 
 section.pp {
 	text-align: center;
@@ -314,73 +359,7 @@ section.pp a {
     font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI"
 }
 
-/* 8 */
-
-section.hh {
-	padding: 2em 0;
-
-	text-align: center;
-
-	background-color: var(--gray-8)
-}
-
-section.hh h2 {
-	font: normal 600 28px/1.14286 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: .007em
-}
-
-section.hh ul {
-	margin-top: 5em;
-
-	display: grid;
-    grid-auto-flow: column;
-    column-gap: .9em;
-
-	overflow-x: scroll;
-
-    scroll-snap-type: x mandatory;
-    scroll-padding: 0 20.69px
-}
-section.hh ul li {
-	scroll-snap-align: start
-}
-
-section.hh ul li:first-child {
-    padding-left: 20.69px
-}
-section.hh ul li:last-child {
-    padding-right: 20.69px
-}
-
-section.hh ul li a {
-    display: block;
-
-	border-radius: 1em
-}
-
-section.hh figure {
-	width: 180.91px;
-    height: 180.91px;
-
-	border-radius: 100%;
-	border: .1px solid var(--gray-9);
-
-    background: center/cover
-}
-
-section.hh ul li a div {
-	margin-top: 1em
-}
-section.hh ul li a div h6 {
-	font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: 0
-}
-section.hh ul li a div p {
-	font: normal 400 14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: 0
-}
-
-/* 9 */
+/* 7 */
 
 section.kk {
 	/* margin-left: auto;
@@ -406,7 +385,7 @@ section.kk li+li h5 {
 	border-top: .1px solid var(--gray-9)
 }
 
-/* 10 */
+/* 8 */
 
 footer {
 	margin-top: 2cm;
