@@ -268,7 +268,7 @@ section.vv figure {
     height: 180.91px;
 
 	border-radius: 100%;
-	border: .1px solid var(--soft-2);
+	border: 1px solid var(--soft-2);
 
     background: center/cover no-repeat
 }
