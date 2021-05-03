@@ -4,13 +4,15 @@ main ul {
 	column-gap: .8em;
 
     overflow-x: scroll;
-    scroll-snap-type: x mandatory
+    scroll-snap-type: x mandatory;
+
+	scroll-padding: 0 20.71px
 }
 main.attachment ul {
 	touch-action: pan-x
 }
 main li {
-	scroll-snap-align: center
+	scroll-snap-align: start
 }
 main.attachment a {
 	display: block;

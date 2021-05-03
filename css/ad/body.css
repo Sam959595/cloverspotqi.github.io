@@ -171,7 +171,8 @@ section.pp a {
 
 main ul {
     overflow-x: scroll;
-    scroll-snap-type: x mandatory
+    scroll-snap-type: x mandatory;
+	scroll-padding: 0 20.705px
 }
 main ul li {
 	scroll-snap-align: start
@@ -182,9 +183,7 @@ main ul li {
 main.tt ul {
 	display: grid;
     grid-auto-flow: column;
-    column-gap: .9em;
-
-	scroll-padding: 0 20.705px
+    column-gap: .9em
 }
 
 /* - */
