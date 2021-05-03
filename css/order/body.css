@@ -346,7 +346,9 @@ section.hh ul li:last-child {
 }
 
 section.hh ul li a {
-    display: block
+    display: block;
+
+	border-radius: 1em
 }
 
 section.hh figure {
