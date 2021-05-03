@@ -264,10 +264,10 @@ section.vv ul li a {
 }
 
 section.vv figure {
-	width: 180.91px;
-    height: 180.91px;
+	width: 8cm;
+    height: 12cm;
 
-	border-radius: 100%;
+	border-radius: 1em;
 	border: 1px solid var(--gray-11);
 
     background: center/cover no-repeat
