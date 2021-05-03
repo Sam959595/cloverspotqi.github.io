@@ -14,7 +14,7 @@
 	-webkit-font-smoothing: antialiased
 }
 
-img {
+img, section.kk a {
 	-webkit-touch-callout: none
 }
 a, strong, b, sup, sub, u, ins, del, i, s, mark, small, q, em, span, time {
