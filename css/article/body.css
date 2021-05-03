@@ -383,10 +383,12 @@ main ul {
 	touch-action: pan-x;
 
 	overflow-x: scroll;
-	scroll-snap-type: x mandatory
+	scroll-snap-type: x mandatory;
+
+	scroll-padding: 0 16px
 }
 main li {
-	scroll-snap-align: center
+	scroll-snap-align: start
 }
 
 main a {

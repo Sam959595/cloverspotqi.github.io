@@ -130,6 +130,10 @@ nav div, picture img, footer ul, main ul {
         padding-top: 1.5cm
     }
 
+    main ul {
+        scroll-padding: 0 22px
+    }
+
     main li:first-child {
         padding-left: 16px
     }
