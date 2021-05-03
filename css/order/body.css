@@ -232,7 +232,7 @@ section.vv > figure {
 	background: center/cover
 }
 
-/* 5.15 */
+/* 5.1 */
 
 section.vv ul {
 	padding: 2cm 0 2em;
@@ -268,7 +268,7 @@ section.vv figure {
     height: 180.91px;
 
 	border-radius: 100%;
-	border: .1px solid var(--gray-9);
+	border: .1px solid var(--soft-2);
 
     background: center/cover
 }
