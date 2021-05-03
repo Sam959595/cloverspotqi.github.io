@@ -356,6 +356,7 @@ section.hh figure {
     height: 180.91px;
 
 	border-radius: 100%;
+	border: .1px solid var(--gray-9);
 
     background: center/cover
 }
