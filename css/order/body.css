@@ -164,29 +164,23 @@ section.bb {
     background-color: var(--gray-14)
 }
 
-section.bb div {
-	padding: 2cm .5cm 1.2em
+section.bb > div:nth-child(2) {
+	padding: 2cm .5cm 2cm
 }
 section.bb h1 {
     font: normal 700 32px/1.25 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: .012em
 }
-section.bb div p {
+section.bb > div p {
 	margin-top: 1.2em;
 
 	font: normal 400 14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0
 }
 
-section.bb figure {
-	margin-top: 1cm;
-
-	height: 5cm;
-	
-	background: top/cover
-}
-
 section.bb div:last-child p {
+	padding-bottom: 2em;
+
     font-size: 11px
 }
 
@@ -227,9 +221,9 @@ section.vv div a {
 section.vv figure {
 	margin-top: 3cm;
 
-	height: 10cm;
+	height: 5cm;
 	
-	background: center/cover
+	background: top/cover
 }
 
 /* 5.1 */
