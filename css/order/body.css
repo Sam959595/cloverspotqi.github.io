@@ -141,7 +141,7 @@ section {
 /* 3 */
 
 nav {
-	padding-top: 1em;
+	padding: 1em 0;
 
 	display: flex;
 	justify-content: space-between
@@ -156,7 +156,7 @@ nav a {
     letter-spacing: 0
 }
 
-/* 4 */
+/* 3.1 */
 
 section.bb {
 	text-align: center;
