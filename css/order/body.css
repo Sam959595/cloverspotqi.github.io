@@ -216,7 +216,7 @@ section.vv h6 {
 }
 
 section.vv > div a {
-	margin: 1em 0;
+	margin: 1em 0 2cm;
 
 	display: inline-block;
 
@@ -235,7 +235,7 @@ section.vv > figure {
 /* 5.1 */
 
 section.vv ul {
-	padding: 2cm 0 2em;
+	padding-bottom: 2em;
 
 	display: grid;
     grid-auto-flow: column;
@@ -274,7 +274,7 @@ section.vv ul li a img {
 /* 5.2 */
 
 figcaption {
-	padding: 2cm 0 1cm;
+	padding-bottom: 2em;
 
 	overflow: hidden
 }
