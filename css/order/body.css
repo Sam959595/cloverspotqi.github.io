@@ -244,9 +244,7 @@ figcaption > div {
 figcaption > div div {
 	margin: .5em;
 
-    position: relative;
-
-	width: 110px
+    position: relative
 }
 figcaption > div div::before {
     z-index: 1;
@@ -261,7 +259,7 @@ figcaption > div div::before {
 }
 
 figcaption > div div img {
-	width: 100%;
+	width: 110px;
 
     -webkit-mask: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 90 90'%3e%3cpath d='m58.6,0c9,0 13.5,0 18.4,1.5c5.3,1.9 9.5,6.1 11.4,11.4c1.6,4.9 1.6,9.5 1.6,18.5l0,27.2c0,9 0,13.5 -1.5,18.4c-1.9,5.3 -6.1,9.5 -11.4,11.4c-5,1.6 -9.5,1.6 -18.5,1.6l-27.2,0c-9,0 -13.5,0 -18.4,-1.5c-5.4,-2 -9.5,-6.1 -11.5,-11.5c-1.5,-4.8 -1.5,-9.3 -1.5,-18.4l0,-27.2c0,-9 0,-13.5 1.5,-18.4c2,-5.3 6.1,-9.5 11.5,-11.4c4.8,-1.6 9.3,-1.6 18.4,-1.6l27.2,0z'/%3e%3c/svg%3e") no-repeat
 }
