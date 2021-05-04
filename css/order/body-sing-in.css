@@ -106,7 +106,8 @@ section {
 section.pp {
 	margin: 2cm auto 1em;
 
-	text-align: center
+	display: flex;
+	justify-content: center
 }
 
 section.pp div {
