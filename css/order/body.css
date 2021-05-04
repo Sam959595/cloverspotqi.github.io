@@ -321,8 +321,6 @@ section.hh {
 }
 
 section.hh ul {
-	padding: 2em 0;
-
 	display: grid;
     grid-auto-flow: column;
     column-gap: .9em;
