@@ -235,7 +235,7 @@ section.vv > figure {
 /* 5.1 */
 
 section.vv ul {
-	padding-bottom: 2em;
+	padding: 2em 0;
 
 	display: grid;
     grid-auto-flow: column;
