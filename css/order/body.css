@@ -317,7 +317,7 @@ section.hh {
 section.hh ul {
 	display: grid;
     grid-auto-flow: column;
-    column-gap: .9em;
+    column-gap: 1em;
 
 	overflow-x: scroll;
 
