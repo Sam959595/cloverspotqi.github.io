@@ -164,7 +164,7 @@ section.bb {
     background-color: var(--gray-14)
 }
 
-section.bb > div:nth-child(4) {
+section.bb > div:nth-child(3) {
 	padding: .5cm
 }
 section.bb h1 {
