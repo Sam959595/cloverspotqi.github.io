@@ -200,7 +200,7 @@ section.bb {
     background-color: var(--gray-14)
 }
 
-section.bb > div:nth-child(3) {
+section.bb > div:nth-child(2) {
 	padding: .5cm
 }
 section.bb h1 {
@@ -307,10 +307,14 @@ section.pp a {
 /* 7 */
 
 section.hh {
+	margin-top: 0;
+
 	text-align: center
 }
 
 section.hh ul {
+	padding-bottom: 2em;
+
 	display: grid;
     grid-auto-flow: column;
     column-gap: 1em;
@@ -318,7 +322,7 @@ section.hh ul {
 	overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
-    scroll-padding: 0 20.69px
+    scroll-padding: 0 16px
 }
 section.hh ul li {
 	scroll-snap-align: start
