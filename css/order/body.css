@@ -159,6 +159,8 @@ nav a {
 /* 3.1 */
 
 figcaption {
+	padding-bottom: 2em;
+
 	overflow: hidden
 }
 
@@ -200,7 +202,7 @@ section.bb {
     background-color: var(--gray-14)
 }
 
-section.bb > div:nth-child(2) {
+section.bb > div:nth-child(3) {
 	padding: .5cm
 }
 section.bb h1 {
@@ -307,14 +309,10 @@ section.pp a {
 /* 7 */
 
 section.hh {
-	margin-top: 0;
-
 	text-align: center
 }
 
 section.hh ul {
-	padding-bottom: 2em;
-
 	display: grid;
     grid-auto-flow: column;
     column-gap: 1em;
@@ -322,17 +320,17 @@ section.hh ul {
 	overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
-    scroll-padding: 0 16px
+    scroll-padding: 0 20.69px
 }
 section.hh ul li {
 	scroll-snap-align: start
 }
 
 section.hh ul li:first-child {
-    padding-left: 16px
+    padding-left: 20.69px
 }
 section.hh ul li:last-child {
-    padding-right: 16px
+    padding-right: 20.69px
 }
 
 section.hh ul li a {
