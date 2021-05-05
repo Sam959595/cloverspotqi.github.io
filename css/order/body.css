@@ -325,10 +325,10 @@ section.hh ul li {
 }
 
 section.hh ul li:first-child {
-    padding-left: 20.69px
+    padding-left: 16px
 }
 section.hh ul li:last-child {
-    padding-right: 20.69px
+    padding-right: 16px
 }
 
 section.hh ul li a {
