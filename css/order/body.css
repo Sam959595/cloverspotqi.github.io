@@ -134,7 +134,7 @@ blockquote *:not(q):not(small) {
 
 /* 2 */
 
-section {
+section, footer {
 	margin-top: .5cm
 }
 
@@ -396,7 +396,6 @@ section.kk li+li h5 {
 /* 9 */
 
 footer {
-	margin-top: .5cm;
     padding-bottom: env(safe-area-inset-bottom);
 	
     background-color: var(--gray-8)
