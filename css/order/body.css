@@ -252,7 +252,7 @@ section.vv h6 {
 }
 
 section.vv a {
-	margin: 4cm 0 1cm;
+	margin-bottom: 1cm;
 
 	display: inline-block;
 
@@ -261,11 +261,13 @@ section.vv a {
 }
 
 section.vv figure {
-	margin-top: 3cm;
-
 	height: 3cm;
 	
 	background: top/cover
+}
+
+section.vv p {
+    font-size: 11px
 }
 
 /* 6 */
