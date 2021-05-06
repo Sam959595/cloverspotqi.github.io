@@ -216,7 +216,7 @@ section.bb > div p {
 }
 
 section.bb div:last-child p {
-	padding-bottom: 2em;
+	padding-bottom: .5cm;
 
     font-size: 11px
 }
