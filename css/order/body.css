@@ -158,23 +158,23 @@ nav a {
 
 /* 3.1 */
 
-figcaption {
+section.bb figcaption {
 	overflow: hidden
 }
 
-figcaption > div {
+section.bb figcaption > div {
 	display: grid;
 	grid-auto-flow: column;
 
 	justify-content: center
 }
 
-figcaption > div div {
+section.bb figcaption > div div {
 	margin: .5em;
 
     position: relative
 }
-figcaption > div div::before {
+section.bb figcaption > div div::before {
     z-index: 1;
     position: absolute;
 
@@ -186,7 +186,7 @@ figcaption > div div::before {
     background: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 90 90'%3e%3cpath d='m58.41868930807106,0.5000030713727028 c8.895362248019133,0 13.3430433720287,0 18.18607392928356,1.482560374669856 c5.238379990500156,1.8779098079151506 9.389549039575751,6.029078856990745 11.267458847490902,11.267458847490902 c1.5813977329811792,4.843030557254862 1.5813977329811792,9.389549039575751 1.5813977329811792,18.284911287594884 l0,26.883761460680045 c0,8.895362248019133 0,13.3430433720287 -1.482560374669856,18.18607392928356 c-1.8779098079151506,5.238379990500156 -6.029078856990745,9.389549039575751 -11.267458847490902,11.267458847490902 c-4.941867915566185,1.5813977329811792 -9.389549039575751,1.5813977329811792 -18.284911287594884,1.5813977329811792 l-26.883761460680045,0 c-8.895362248019133,0 -13.3430433720287,0 -18.18607392928356,-1.482560374669856 c-5.33721734881148,-1.976747166226474 -9.389549039575751,-6.029078856990745 -11.366296205802225,-11.366296205802225 c-1.482560374669856,-4.744193198943537 -1.482560374669856,-9.191874322953105 -1.482560374669856,-18.18607392928356 l0,-26.883761460680045 c0,-8.895362248019133 0,-13.3430433720287 1.482560374669856,-18.18607392928356 c1.976747166226474,-5.238379990500156 6.029078856990745,-9.389549039575751 11.366296205802225,-11.267458847490902 c4.744193198943537,-1.5813977329811792 9.191874322953105,-1.5813977329811792 18.18607392928356,-1.5813977329811792 l26.883761460680045,0 z' fill-opacity='0' opacity='.15' stroke='%23808080' stroke-width='1'/%3e%3c/svg%3e") no-repeat
 }
 
-figcaption > div div img {
+section.bb figcaption > div div img {
 	width: 110px;
 	height: 110px;
 
@@ -331,10 +331,10 @@ section.hh ul {
     scroll-snap-type: x mandatory;
     scroll-padding: 0 20.69px
 }
+
 section.hh ul li {
 	scroll-snap-align: start
 }
-
 section.hh ul li:first-child {
     padding-left: 20.69px
 }
@@ -342,7 +342,7 @@ section.hh ul li:last-child {
     padding-right: 20.69px
 }
 
-section.hh ul li a {
+section.hh ul li > a {
 	position: relative;
 
     display: block;
@@ -350,25 +350,48 @@ section.hh ul li a {
 	border-radius: 20px
 }
 
-section.hh ul li a div {
+section.hh figcaption {
 	z-index: 1;
 
 	position: absolute;
 
-	padding: 2em
+	height: 100%;
+
+	padding: 2em;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
-section.hh ul li a h2 {
+section.hh figcaption h2 {
 	font: normal 600 19px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0
 }
-section.hh ul li a p {
+section.hh figcaption div:first-child p {
 	margin-top: .5em;
 
     font: normal 400 14px/1.42859 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: -.016em
 }
 
-section.hh ul li a img {
+section.hh figcaption div:last-child {
+	display: inherit;
+	justify-content: inherit;
+	align-items: center
+}
+section.hh figcaption div:last-child span {
+	padding: 2px 11px;
+
+	border-radius: 8px;
+	
+	font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: 0;
+
+	background-color: var(--gray-0);
+	color: var(--blue-1)
+}
+
+section.hh img {
 	width: 302px;
 	height: 480px;
 	
