@@ -350,7 +350,7 @@ section.hh ul li a {
 	border-radius: 20px
 }
 
-section.hh ul li a figcaption {
+section.hh ul figcaption {
 	z-index: 1;
 
 	position: absolute;
@@ -363,18 +363,21 @@ section.hh ul li a figcaption {
 	flex-direction: column;
 	justify-content: space-between
 }
-section.hh ul li a h2 {
+section.hh ul h2 {
 	font: normal 600 19px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0
 }
-section.hh ul li a div:first-child p {
+section.hh ul p {
 	margin-top: .5em;
 
     font: normal 400 14px/1.42859 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: -.016em
 }
+section.hh ul h6 {
+    font-size: 11px
+}
 
-section.hh ul li a figure {
+section.hh ul figure {
 	width: 302px;
 	height: 480px;
 	
