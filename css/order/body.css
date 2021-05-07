@@ -331,10 +331,10 @@ section.hh ul {
     scroll-snap-type: x mandatory;
     scroll-padding: 0 20.69px
 }
-
 section.hh ul li {
 	scroll-snap-align: start
 }
+
 section.hh ul li:first-child {
     padding-left: 20.69px
 }
@@ -342,7 +342,7 @@ section.hh ul li:last-child {
     padding-right: 20.69px
 }
 
-section.hh ul li > a {
+section.hh ul li a {
 	position: relative;
 
     display: block;
@@ -350,48 +350,32 @@ section.hh ul li > a {
 	border-radius: 20px
 }
 
-section.hh figcaption {
+section.hh ul li a figcaption {
 	z-index: 1;
 
 	position: absolute;
 
+	width: 100%;
 	height: 100%;
 
 	padding: 2em;
 
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-between
 }
-section.hh figcaption h2 {
+section.hh ul li a h2 {
 	font: normal 600 19px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0
 }
-section.hh figcaption div:first-child p {
+section.hh ul li a div:first-child p {
 	margin-top: .5em;
 
     font: normal 400 14px/1.42859 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: -.016em
 }
 
-section.hh figcaption div:last-child {
-	display: inherit;
-	justify-content: inherit;
-	align-items: center
-}
-section.hh figcaption div:last-child span {
-	padding: 2px 11px;
-
-	border-radius: 8px;
-	
-	font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: 0;
-
-	background-color: var(--gray-0);
-	color: var(--blue-1)
-}
-
-section.hh img {
+section.hh ul li a img {
 	width: 302px;
 	height: 480px;
 	
