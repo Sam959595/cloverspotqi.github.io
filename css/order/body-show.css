@@ -98,9 +98,17 @@ section.pp ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+
 section.pp li {
     padding: 2em;
-    border-top: .1px solid var(--gray-9)
+    border-bottom: .1px solid var(--gray-9)
+}
+section.pp li:nth-child(odd) {
+    border-right: .1px solid var(--gray-9)
+}
+section.pp figure {
+    height: 3cm;
+    background: top/cover;
 }
 
 /* color */
