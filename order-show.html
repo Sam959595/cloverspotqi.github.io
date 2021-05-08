@@ -44,84 +44,116 @@ headNode.appendChild(sbNode);
        }
 </script>
 
+
+
+
+
+
 <script>
-    window.apple = window.apple || {};
-        apple.buyFlowVersionId = "v10";
-        apple.buyFlowFirstStep = true;
-        apple.buyFlowExpiry = 3600000;
-        apple.buyFlowPath = "/shop/buy-iphone/iphone-12";
+window.apple = window.apple || {};
+apple.buyFlowVersionId = "v10";
+apple.buyFlowFirstStep = true;
+apple.buyFlowExpiry = 3600000;
+apple.buyFlowPath = "/shop/buy-iphone/iphone-12";
+</script>
+
+
+
+
+<script>
+window.asBuyFlow = window.asBuyFlow || {};
+window.asBuyFlow.sfa = 'us';
+
+window.asBuyFlow.storageConfig = {
+genericPath: '/' + window.asBuyFlow.sfa + (window.apple && window.apple.buyFlowPath
+? window.apple.buyFlowPath : (window.location.pathname + '/generic'))
+}
 </script>
 
 <script>
-    window.asBuyFlow = window.asBuyFlow || {};
-    window.asBuyFlow.sfa = 'us';
+window.asUnsupportedBrowserUrl = "https://www.apple.com/shop/unsupported";
+</script>
 
-    window.asBuyFlow.storageConfig = {
-        genericPath: '/' + window.asBuyFlow.sfa + (window.apple && window.apple.buyFlowPath
-            ? window.apple.buyFlowPath : (window.location.pathname + '/generic'))
-    }
+
+<script>
+//replace nojs class with js on html element
+(function(html){
+html.className = html.className.replace(/\bnojs\b/,'js')
+})(document.documentElement);
+</script>
+
+
+<script>
+window.irOn=true;
+</script>
+
+<script src="https://store.storeimages.cdn-apple.com/4982/store.apple.com/shop/rs-external/rel/external.js"></script>
+
+<script src="https://store.storeimages.cdn-apple.com/4982/store.apple.com/shop/rs-iphone/dist/step1flagship.js"></script>
+
+
+<script>
+(function() {
+var url = "https://xp.apple.com/report/2/xp_aos_clientperf";
+var appName = "com.apple.www.Store";
+
+var metadata = {
+   environment: "",
+   sf: "us",
+   segment: "Consumer",
+   locale: "en-us",
+   referer: asGetReferrer()
+};
+
+var config = {
+   "app": "com.apple.www.Store",
+   "delaySendingPageViewDataMS": 500,
+   "nonEssentialEventSampleRatePct": 25,
+   "performanceMeasurePollingIntervalMS": 1000,
+   "performanceMeasuresToReport": "".split(','),
+   "resourceAlwaysAllowedInitiatorList": "".split(','),
+   "resourceDisallowedResourceList": "securemetrics.apple.com".split(','),
+   "resourcePollingIntervalMS": 2000,
+   "sendErrors": true,
+   "sendPageViewData": true,
+   "sendResourceData":  true,
+   "url": "https://xp.apple.com/report/2/xp_aos_clientperf"
+};
+
+if (typeof asTelemetry === 'function') {
+   new asTelemetry(url, appName, metadata, config);
+}
+})();
 </script>
 
 <script>
-    window.asUnsupportedBrowserUrl = "https://www.apple.com/shop/unsupported";
+window.atServerDomain = "securemvt.apple.com";
+window.astexEndpoint = "https://www.apple.com/shop/experience-meta";
+window.astexLocalStorageKey = "as_tex";
 </script>
+<script src="https://store.storeimages.cdn-apple.com/4982/store.apple.com/shop/rs-external/rel/at.js"></script>
+
 
 <script>
-    window.irOn=true;
+window.chatConfig = {"chat":{"page":[{"name":"WEB_CHAT_COUNTRY","value":"us"},{"name":"WEB_CHAT_LANGUAGE","value":"en"},{"name":"WEB_CHAT_ORDERNUMBER","value":null},{"name":"WEB_CHAT_GEO","value":"amr"},{"name":"WEB_CHAT_SEGMENT","value":"consumer"},{"name":"WEB_CHAT_SECTION","value":"product selection"},{"name":"WEB_CHAT_SUBSECTION","value":"select"},{"name":"WEB_CHAT_REFER","value":"https://www.apple.com/iphone-12/"},{"name":"WEB_CHAT_APP","value":"AOS"},{"name":"WEB_CHAT_PAGE","value":"AOS: home/shop_iphone/family/iphone_12/select"},{"name":"url","value":"https://contactretail.apple.com"}]}};
 </script>
 
-<script>
-    window.atServerDomain = "securemvt.apple.com";
-    window.astexEndpoint = "https://www.apple.com/shop/experience-meta";
-    window.astexLocalStorageKey = "as_tex";
-</script>
+<script></script>
+
+
 
 <script>
-    (function() {
-        var url = "https://xp.apple.com/report/2/xp_aos_clientperf";
-        var appName = "com.apple.www.Store";
-
-        var metadata = {
-            environment: "",
-            sf: "us",
-            segment: "Consumer",
-            locale: "en-us",
-            referer: asGetReferrer()
-        };
-
-        var config = {
-            "app": "com.apple.www.Store",
-            "delaySendingPageViewDataMS": 500,
-            "nonEssentialEventSampleRatePct": 25,
-            "performanceMeasurePollingIntervalMS": 1000,
-            "performanceMeasuresToReport": "".split(','),
-            "resourceAlwaysAllowedInitiatorList": "".split(','),
-            "resourceDisallowedResourceList": "securemetrics.apple.com".split(','),
-            "resourcePollingIntervalMS": 2000,
-            "sendErrors": true,
-            "sendPageViewData": true,
-            "sendResourceData":  true,
-            "url": "https://xp.apple.com/report/2/xp_aos_clientperf"
-        };
-
-        if (typeof asTelemetry === 'function') {
-            new asTelemetry(url, appName, metadata, config);
-        }
-    })();
-</script>
-
-<script>
-    if(!/dssid2/.test(document.cookie) || !/as_dc/.test(document.cookie))
-    {
-        Event.onDomReady(function() {
-            var ie = document.createElement("IMG");
-            ie.src = '/shop/dc';
-            ie.width = ie.height = 1;
-            ie.style.display = "none";
-            ie.alt = "";
-            document.body.appendChild(ie);
-        });
-    }
+if(!/dssid2/.test(document.cookie) || !/as_dc/.test(document.cookie))
+{
+Event.onDomReady(function() {
+   var ie = document.createElement("IMG");
+   ie.src = '/shop/dc';
+   ie.width = ie.height = 1;
+   ie.style.display = "none";
+   ie.alt = "";
+   document.body.appendChild(ie);
+});
+}
 </script>
 
 </head>
