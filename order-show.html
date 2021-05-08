@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <title>Logo Structure ― Демонстрация</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <link rel="stylesheet" href="css/order/body-show.css">
+
+    <script>
+        if (/(iPad).*OS ([6-9]|[1-9][0-9]).*AppleWebKit.*Mobile.*Safari/.test(navigator.userAgent)) {
+          var headNode = document.getElementsByTagName("head")[0];
+var sbNode = document.createElement('meta');
+var url = decodeURI("https://www.apple.com/shop/buy-iphone/iphone-12");
+var ses = "; " + document.cookie;
+var sesParts = ses.split("; s_vi=");
+ses = sesParts.length == 2 ? sesParts.pop().split(";").shift() : '';
+if (ses !== '') {
+url += url.indexOf('?') >= 0 ? '&' : '?';
+url += 'ses=' + encodeURI(ses);
+}
+sbNode.name = 'apple-itunes-app';
+sbNode.content = 'app-id=375380948, app-argument=' + url;
+headNode.appendChild(sbNode);
+
+        }
+       else if (/(iPhone|iPod).*OS ([6-9]|[1-9][0-9]).*AppleWebKit.*Mobile.*Safari/.test(navigator.userAgent)) {
+         var headNode = document.getElementsByTagName("head")[0];
+var sbNode = document.createElement('meta');
+var url = decodeURI("https://www.apple.com/shop/buy-iphone/iphone-12");
+var ses = "; " + document.cookie;
+var sesParts = ses.split("; s_vi=");
+ses = sesParts.length == 2 ? sesParts.pop().split(";").shift() : '';
+if (ses !== '') {
+url += url.indexOf('?') >= 0 ? '&' : '?';
+url += 'ses=' + encodeURI(ses);
+}
+sbNode.name = 'apple-itunes-app';
+sbNode.content = 'app-id=375380948, app-argument=' + url;
+headNode.appendChild(sbNode);
+
+       }
+</script>
+
+<script>
+    window.apple = window.apple || {};
+        apple.buyFlowVersionId = "v10";
+        apple.buyFlowFirstStep = true;
+        apple.buyFlowExpiry = 3600000;
+        apple.buyFlowPath = "/shop/buy-iphone/iphone-12";
+</script>
+
+<script>
+    window.asBuyFlow = window.asBuyFlow || {};
+    window.asBuyFlow.sfa = 'us';
+
+    window.asBuyFlow.storageConfig = {
+        genericPath: '/' + window.asBuyFlow.sfa + (window.apple && window.apple.buyFlowPath
+            ? window.apple.buyFlowPath : (window.location.pathname + '/generic'))
+    }
+</script>
+
+<script>
+    window.asUnsupportedBrowserUrl = "https://www.apple.com/shop/unsupported";
+</script>
+
+<script>
+    window.irOn=true;
+</script>
+
+</head>
+
+<body>
+    <section class="pp">
+        <ul>
+            <li>
+                <figure style="background-image: url(media/order/13x.png)"></figure>
+            </li>
+        </ul>
+    </section>
+
+    <script src="js/#"></script>
+</body>
+
+</html>
