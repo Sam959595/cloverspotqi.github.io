@@ -70,6 +70,60 @@ headNode.appendChild(sbNode);
     window.irOn=true;
 </script>
 
+<script>
+    window.atServerDomain = "securemvt.apple.com";
+    window.astexEndpoint = "https://www.apple.com/shop/experience-meta";
+    window.astexLocalStorageKey = "as_tex";
+</script>
+
+<script>
+    (function() {
+        var url = "https://xp.apple.com/report/2/xp_aos_clientperf";
+        var appName = "com.apple.www.Store";
+
+        var metadata = {
+            environment: "",
+            sf: "us",
+            segment: "Consumer",
+            locale: "en-us",
+            referer: asGetReferrer()
+        };
+
+        var config = {
+            "app": "com.apple.www.Store",
+            "delaySendingPageViewDataMS": 500,
+            "nonEssentialEventSampleRatePct": 25,
+            "performanceMeasurePollingIntervalMS": 1000,
+            "performanceMeasuresToReport": "".split(','),
+            "resourceAlwaysAllowedInitiatorList": "".split(','),
+            "resourceDisallowedResourceList": "securemetrics.apple.com".split(','),
+            "resourcePollingIntervalMS": 2000,
+            "sendErrors": true,
+            "sendPageViewData": true,
+            "sendResourceData":  true,
+            "url": "https://xp.apple.com/report/2/xp_aos_clientperf"
+        };
+
+        if (typeof asTelemetry === 'function') {
+            new asTelemetry(url, appName, metadata, config);
+        }
+    })();
+</script>
+
+<script>
+    if(!/dssid2/.test(document.cookie) || !/as_dc/.test(document.cookie))
+    {
+        Event.onDomReady(function() {
+            var ie = document.createElement("IMG");
+            ie.src = '/shop/dc';
+            ie.width = ie.height = 1;
+            ie.style.display = "none";
+            ie.alt = "";
+            document.body.appendChild(ie);
+        });
+    }
+</script>
+
 </head>
 
 <body>
