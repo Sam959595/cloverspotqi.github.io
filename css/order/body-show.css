@@ -99,6 +99,10 @@ section.pp ul {
     grid-template-columns: repeat(2, 1fr);
 }
 
+section.pp li:nth-child(-n+2) {
+    padding: 2em;
+    border-top: .1px solid var(--gray-9)
+}
 section.pp li {
     padding: 2em;
     border-bottom: .1px solid var(--gray-9)
@@ -106,9 +110,30 @@ section.pp li {
 section.pp li:nth-child(odd) {
     border-right: .1px solid var(--gray-9)
 }
-section.pp figure {
-    height: 3cm;
-    background: top/cover;
+section.pp img {
+    width: 100%;
+}
+
+/* 1 */
+
+section.vv {
+    margin: 1cm auto;
+    width: 95%;
+}
+section.vv a {
+    display: inline-block;
+
+    width: 100%;
+
+    border-radius: 11px;
+
+    padding: .8em 1.2em;
+
+    text-align: center;
+    font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
+
+    background-color: var(--gray-11);
+    color: var(--gray-01);
 }
 
 /* color */

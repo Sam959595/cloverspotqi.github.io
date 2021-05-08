@@ -217,7 +217,8 @@ section.bb > div p {
 section.bb div:last-child p {
 	padding-bottom: .5cm;
 
-    font-size: 11px
+    font: 400 11px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: -.008em
 }
 
 /* 5 */
@@ -267,7 +268,8 @@ section.vv figure {
 }
 
 section.vv p {
-    font-size: 11px
+    font: 400 11px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: -.008em
 }
 
 /* 6 */
@@ -311,7 +313,8 @@ section.pp a {
 }
 
 section.pp p {
-    font-size: 11px
+    font: 400 11px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: -.008em
 }
 
 /* 7 */
@@ -373,7 +376,8 @@ section.hh ul p {
     letter-spacing: -.016em
 }
 section.hh ul h6 {
-    font-size: 11px
+    font: 400 11px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: -.008em
 }
 
 section.hh ul figure {
