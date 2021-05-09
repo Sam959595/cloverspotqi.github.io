@@ -132,7 +132,7 @@ section.pp h6 {
 /* 3 */
 
 section.vv {
-    margin-top: 3cm;
+    margin-top: .5cm;
     background-color: var(--gray-8)
 }
 section.vv figcaption {
