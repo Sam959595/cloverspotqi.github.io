@@ -156,6 +156,14 @@ section.vv ol li {
 section.vv div {
     text-align: center
 }
+section.vv button {
+    -webkit-appearance: -apple-pay-button;
+    -apple-pay-button-type: plain;
+    -apple-pay-button-style: black;
+    width: 163px;
+    height: 45px;
+    border-radius: 9px;"
+}
 section.vv a:first-child {
     margin: 1cm 0;
 
