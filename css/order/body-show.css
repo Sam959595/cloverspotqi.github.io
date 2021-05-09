@@ -155,12 +155,12 @@ section.vv ol li {
 }
 
 section.vv div {
+	margin-top: 1cm;
     text-align: center
 }
-section.vv a:first-child {
-	margin: 1cm 0 .5em
-}
 section.vv a {
+	margin-top: .5em;
+	
     display: inline-block;
 
     width: 100%;
