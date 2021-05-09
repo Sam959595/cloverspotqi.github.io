@@ -77,6 +77,9 @@ section.vv div {
     text-align: center
 }
 
+section.vv a {
+	-webkit-touch-callout: none
+}
 section.vv a:first-child {
 	display: block;
 
