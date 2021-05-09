@@ -95,9 +95,7 @@ a {
 /* 1 */
 
 section.tt {
-    margin: .5cm 0
-}
-section.tt h6 {
+    margin: .5cm 0;
     text-align: center
 }
 
