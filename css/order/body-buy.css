@@ -159,7 +159,7 @@ section.vv div {
 section.vv div button {
     -webkit-appearance: -apple-pay-button;
     -apple-pay-button-type: plain;
-    -apple-pay-button-style: black;
+    -apple-pay-button-style: --var(apple-pay-color);
 
     width: 100%;
     height: 47px;
@@ -215,6 +215,8 @@ section.vv a:last-child {
 		--blue-1: #06c;
 
         --red-1: #ff2d55;
+
+        --apple-pay-color: black;
 	}
 }
 
@@ -243,5 +245,7 @@ section.vv a:last-child {
 		--blue-1: #007aff;
 
         --red-1: #fb5c74;
+
+        --apple-pay-color: white;
 	}
 }
