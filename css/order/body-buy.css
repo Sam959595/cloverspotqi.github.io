@@ -136,7 +136,7 @@ table tbody tr+tr {
 }
 
 table tr:last-child td {
-	font: normal 400 19px -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 600 19px -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: .004em
 }
 
