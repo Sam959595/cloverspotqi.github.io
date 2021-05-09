@@ -95,17 +95,17 @@ a {
 /* 1 */
 
 section.tt {
-    margin: .5cm 0;
+    margin: .5cm 0
 }
 section.tt h6 {
-    text-align: center;
+    text-align: center
 }
 
-/* 1 */
+/* 2 */
 
 section.pp ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr)
 }
 
 section.pp li:nth-child(-n+2) {
@@ -119,39 +119,45 @@ section.pp li:nth-child(odd) {
     border-right: .1px solid var(--gray-9)
 }
 section.pp img {
-    width: 100%;
+    width: 100%
 }
 
 section.pp div {
     margin-top: 3em;
-    text-align: center;
+    text-align: center
 }
 section.pp h6 {
     margin-top: .5em;
-    color: var(--red-1);
+    color: var(--red-1)
 }
 
-/* 1 */
+/* 3 */
 
 section.vv {
-    margin: 2cm auto;
-    width: 90%;
+    margin-top: 3cm;
+    background-color: var(--gray-8)
+}
+section.vv figcaption {
+    margin: 0 auto;
+    padding: 1cm 0;
+    
+    width: 90%
 }
 
 section.vv ol {
     padding-left: 20px;
-    list-style: outside disc;
+    list-style: outside disc
 }
 section.vv ol li+li {
-    margin-top: .5em
+    margin-top: 1em
 }
 section.vv ol li {
-    color: var(--gray-13)
+    color: var(--gray-3)
 }
 
 section.vv div {
     margin-top: 1cm;
-    text-align: center;
+    text-align: center
 }
 section.vv a:first-child {
     display: inline-block;
@@ -164,7 +170,7 @@ section.vv a:first-child {
 
     font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
 
-    background-color: var(--gray-11);
+    background-color: var(--gray-11)
 }
 
 section.vv a:last-child {
@@ -174,7 +180,7 @@ section.vv a:last-child {
     
     font: normal 400 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
 
-    color: var(--red-1);
+    color: var(--red-1)
 }
 
 /* color */
