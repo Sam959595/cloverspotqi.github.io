@@ -175,6 +175,8 @@ section.vv a {
 }
 
 section.vv a:last-child {
+	font-weight: 400;
+
     color: var(--red-1)
 }
 
