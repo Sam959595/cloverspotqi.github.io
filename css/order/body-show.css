@@ -134,7 +134,7 @@ section.pp h6 {
 /* 1 */
 
 section.vv {
-    margin: 1cm auto;
+    margin: 2cm auto;
     width: 90%;
 }
 
@@ -142,13 +142,15 @@ section.vv ol {
     padding-left: 20px;
     list-style: outside disc;
 }
+section.vv ol li+li {
+    margin-top: .5em
+}
 section.vv ol li {
-    margin-top: .5em;
-
-    color: var(--gray-13);
+    color: var(--gray-13)
 }
 
 section.vv div {
+    margin-top: 1cm;
     text-align: center;
 }
 section.vv a:first-child {
