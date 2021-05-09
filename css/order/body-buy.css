@@ -122,10 +122,6 @@ table {
 	color: var(--gray-5)
 }
 
-table * {
-	font: normal 400 16px -apple-system, BlinkMacSystemFont, "Segoe UI"
-}
-
 table td {
 	padding: .5em 0
 }
@@ -138,7 +134,7 @@ table tbody tr+tr {
 	border-top: .1px solid var(--gray-9)
 }
 
-table tr:last-child td {
+table tr:last-child td:last-child {
 	font: normal 600 19px -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: .004em
 }
