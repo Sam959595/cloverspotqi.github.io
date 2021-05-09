@@ -158,11 +158,11 @@ section.vv div {
 	margin-top: 1cm;
     text-align: center
 }
+
 section.vv a {
-	margin-top: .5em;
-
-    display: inline-block;
-
+    display: inline-block
+}
+section.vv a:first-child {
     width: 100%;
 
     border-radius: 11px;
@@ -173,9 +173,10 @@ section.vv a {
 
     background-color: var(--gray-2)
 }
-
 section.vv a:last-child {
-	font-weight: 400;
+	margin-top: .5cm;
+
+	font: normal 400 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
 
     color: var(--red-1)
 }
