@@ -76,7 +76,7 @@ section.vv {
 section.vv #apple-pay {
     -webkit-appearance: -apple-pay-button;
     -apple-pay-button-type: buy;
-    -apple-pay-button-style: var(--const-2);
+    -apple-pay-button-style: var(--const-1);
 
     width: 100%;
     height: 46px;
