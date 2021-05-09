@@ -137,7 +137,7 @@ section.vv {
 }
 section.vv figcaption {
     margin: 0 auto;
-    padding: 1cm 0 max(env(safe-area-inset-bottom), 1cm);
+    padding: 1cm 0 max(env(safe-area-inset-bottom), .5cm);
 
     width: 90%
 }
@@ -160,7 +160,7 @@ section.vv div {
 }
 section.vv a {
 	margin-top: .5em;
-	
+
     display: inline-block;
 
     width: 100%;
