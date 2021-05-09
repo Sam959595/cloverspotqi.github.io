@@ -25,14 +25,14 @@ section.pp ul {
 }
 
 section.pp li:nth-child(-n+2) {
-    border-top: .1px solid var(--gray-9)
+    border-top: .1px solid var(--gray-3)
 }
 section.pp li {
     padding: 3em;
-    border-bottom: .1px solid var(--gray-9)
+    border-bottom: .1px solid var(--gray-3)
 }
 section.pp li:nth-child(odd) {
-    border-right: .1px solid var(--gray-9)
+    border-right: .1px solid var(--gray-3)
 }
 section.pp img {
     width: 100%
@@ -69,7 +69,7 @@ section.vv ol li+li {
     margin-top: 1.2em
 }
 section.vv ol li {
-    color: var(--gray-3)
+    color: var(--gray-9)
 }
 
 section.vv div {

@@ -144,7 +144,7 @@ section.bb div:last-child p {
 section.vv {
 	text-align: center;
 
-	background-color: var(--gray-9)
+	background-color: var(--gray-3)
 }
 
 section.vv > div {
@@ -332,7 +332,7 @@ section.kk h5 {
 }
 
 section.kk li+li h5 {
-	border-top: .1px solid var(--gray-9)
+	border-top: .1px solid var(--gray-3)
 }
 
 /* 9 */
@@ -346,7 +346,7 @@ footer ul {
     padding: 1em 0
 }
 footer li {
-    color: var(--gray-3)
+    color: var(--gray-9)
 }
 footer li+li {
 	margin-top: 1em
