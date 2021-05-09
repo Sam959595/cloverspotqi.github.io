@@ -95,9 +95,9 @@ a {
 /* 1 */
 
 table {
-    margin: 0 auto;
+    margin: 3cm auto;
     width: 90%;
-    
+
 	table-layout: fixed;
 	text-align: left;
 	border-collapse: collapse
@@ -125,57 +125,13 @@ table tbody tr+tr {
 	border-top: .1px solid var(--gray-9)
 }
 
-/* 1 */
-
-section.tt {
-    margin: .5cm 0;
-    text-align: center
-}
-
 /* 2 */
 
-section.pp ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr)
-}
-
-section.pp li:nth-child(-n+2) {
-    border-top: .1px solid var(--gray-9)
-}
-section.pp li {
-    padding: 3em;
-    border-bottom: .1px solid var(--gray-9)
-}
-section.pp li:nth-child(odd) {
-    border-right: .1px solid var(--gray-9)
-}
-section.pp img {
-    width: 100%
-}
-
-section.pp div {
-    margin-top: 3em;
-    text-align: center
-}
-section.pp h6 {
-    margin-top: .5em;
-    color: var(--red-1)
-}
-
-/* 3 */
-
 section.vv {
-    margin-top: 3cm;
+    margin: 0 auto;
+    width: 90%;
 
     text-align: center;
-
-    background-color: var(--gray-8)
-}
-section.vv figcaption {
-    margin: 0 auto;
-    padding: 1cm 0 max(env(safe-area-inset-bottom), 1cm);
-
-    width: 90%
 }
 
 section.vv ol {
