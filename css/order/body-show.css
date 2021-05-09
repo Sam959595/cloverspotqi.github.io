@@ -148,7 +148,7 @@ section.vv ol {
     list-style: outside disc
 }
 section.vv ol li+li {
-    margin-top: 1em
+    margin-top: 1.2em
 }
 section.vv ol li {
     color: var(--gray-3)
