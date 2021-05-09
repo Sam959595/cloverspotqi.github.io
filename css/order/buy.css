@@ -76,7 +76,7 @@ section.vv {
 section.vv #apple-pay {
     -webkit-appearance: -apple-pay-button;
     -apple-pay-button-type: buy;
-    -apple-pay-button-style: var(--gray-c);
+    -apple-pay-button-style: var(--const-2);
 
     width: 100%;
     height: 46px;
@@ -93,9 +93,6 @@ section.vv p {
 	:root {
 		--gray-a: white;
 		--gray-b: black;
-
-		--gray-c: white;
-		--gray-d: black;
 
 		--gray-1: #111;
 		--gray-2: #8e8e93;
@@ -114,17 +111,15 @@ section.vv p {
 		
 		--blue-1: #06c;
 
-        --red-1: #ff2d55;
+		--const-1: white;
+		--const-2: black;
 	}
 }
 
 @media screen and (prefers-color-scheme: dark) {
 	:root {
-		--gray-a: white;
-		--gray-b: black;
-
-		--gray-c: black;
-		--gray-d: white;
+		--gray-a: black;
+		--gray-b: white;
 		
 		--gray-1: #f5f5f7;
 		--gray-2: #8e8e93;
@@ -143,6 +138,7 @@ section.vv p {
 	
 		--blue-1: #007aff;
 
-        --red-1: #fb5c74;
+		--const-1: white;
+		--const-2: black;
 	}
 }
