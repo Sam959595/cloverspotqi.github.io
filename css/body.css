@@ -38,7 +38,7 @@ button, span {
 	cursor: pointer
 }
 hr {
-	border-top: .1px solid var(--gray-9)
+	border-top: .1px solid var(--gray-3)
 }
 sup, sub {
 	font-size: 9px

@@ -352,7 +352,7 @@ footer li+li {
 	margin-top: 1em
 }
 
-/* color */
+/* 10 */
 
 @media screen and (prefers-color-scheme: light) {
 	:root {
@@ -364,13 +364,13 @@ footer li+li {
 
 		--gray-1: #111;
 		--gray-2: #8e8e93;
-		--gray-3: #86868b;
+		--gray-3: #d2d2d7;
 		--gray-4: #515154;
 		--gray-5: #888;
 		--gray-6: #333;
 		--gray-7: #1d1d1f;
 		--gray-8: #f5f5f7;
-		--gray-9: #d2d2d7;
+		--gray-9: #86868b;
 		--gray-10: #666;
 		--gray-11: #c9c9d1;
 		--gray-12: #f0f0f2;
@@ -393,13 +393,13 @@ footer li+li {
 
 		--gray-1: #f5f5f7;
 		--gray-2: #8e8e93;
-		--gray-3: #63636e;
+		--gray-3: #212125;
 		--gray-4: #aaaab3;
 		--gray-5: #8e8e93;
 		--gray-6: #d5d5e2;
 		--gray-7: #f5f5f7;
 		--gray-8: #17171d;
-		--gray-9: #212125;
+		--gray-9: #63636e;
 		--gray-10: #aaaab3;
 		--gray-11: #2c2c2e;
 		--gray-12: #1a1a21;
