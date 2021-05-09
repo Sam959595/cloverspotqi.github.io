@@ -79,7 +79,7 @@ section.vv div {
 
 section.vv a:first-child {
 	display: block;
-	
+
     width: 100%;
 
     border-radius: 11px;
@@ -125,9 +125,6 @@ section.vv a:last-child {
 		--blue-1: #06c;
 
         --red-1: #ff2d55;
-
-		--const-1: white;
-		--const-2: black;
 	}
 }
 
@@ -154,8 +151,5 @@ section.vv a:last-child {
 		--blue-1: #007aff;
 
         --red-1: #fb5c74;
-
-		--const-1: white;
-		--const-2: black;
 	}
 }
