@@ -144,6 +144,7 @@ section.vv figcaption {
 
 section.vv ol {
     padding-left: 20px;
+
     list-style: outside disc
 }
 section.vv ol li+li {
@@ -157,8 +158,9 @@ section.vv div {
     text-align: center
 }
 section.vv a:first-child {
-    margin: 1cm 0;
-
+	margin: 1cm 0 .5em
+}
+section.vv a {
     display: inline-block;
 
     width: 100%;
@@ -173,8 +175,6 @@ section.vv a:first-child {
 }
 
 section.vv a:last-child {
-    font: normal 400 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
-
     color: var(--red-1)
 }
 
