@@ -156,7 +156,7 @@ section.vv ol li {
 section.vv div {
     text-align: center
 }
-section.vv button {
+section.vv div button {
     -webkit-appearance: -apple-pay-button;
     -apple-pay-button-type: plain;
     -apple-pay-button-style: black;
