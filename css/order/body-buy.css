@@ -146,17 +146,6 @@ section.vv {
     text-align: center
 }
 
-section.vv ol {
-    padding-left: 20px;
-    list-style: outside disc
-}
-section.vv ol li+li {
-    margin-top: 1em
-}
-section.vv ol li {
-    color: var(--gray-3)
-}
-
 section.vv #apple-pay {
     -webkit-appearance: -apple-pay-button;
     -apple-pay-button-type: buy;
@@ -167,26 +156,8 @@ section.vv #apple-pay {
 
     border-radius: 11px;
 }
-section.vv a:first-child {
-    margin: 1cm 0;
-
-    display: inline-block;
-
-    width: 100%;
-
-    border-radius: 11px;
-
-    padding: .8em 1.2em;
-
-    font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
-
-    background-color: var(--gray-2)
-}
-
-section.vv a:last-child {
-    font: normal 400 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
-
-    color: var(--red-1)
+section.vv p {
+    margin-top: 2em
 }
 
 /* color */
