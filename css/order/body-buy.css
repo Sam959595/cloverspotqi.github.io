@@ -94,6 +94,36 @@ a {
 
 /* 1 */
 
+table {
+	table-layout: fixed;
+	text-align: left;
+	border-collapse: collapse
+}
+
+table * {
+	font: normal 400 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	letter-spacing: -.022em;
+}
+table th {
+	font-weight: 600;
+	vertical-align: bottom;
+
+	padding: 3px 1em 8px 0;
+
+	color: var(--gray-6)
+}
+
+table td {
+	color: var(--gray-10);
+	padding: .5em 1em .5em 0
+}
+
+table tbody tr+tr {
+	border-top: .1px solid var(--gray-9)
+}
+
+/* 1 */
+
 section.tt {
     margin: .5cm 0;
     text-align: center
@@ -159,10 +189,10 @@ section.vv div {
 section.vv #apple-pay {
     -webkit-appearance: -apple-pay-button;
     -apple-pay-button-type: plain;
-    -apple-pay-button-style: var(--apple-pay-color);
+    -apple-pay-button-style: var(--pay-color);
 
     width: 100%;
-    height: 47px;
+    height: 46px;
 
     border-radius: 11px;
 }
@@ -216,7 +246,7 @@ section.vv a:last-child {
 
         --red-1: #ff2d55;
 
-        --apple-pay-color: black;
+        --pay-color: black;
 	}
 }
 
@@ -246,6 +276,6 @@ section.vv a:last-child {
 
         --red-1: #fb5c74;
 
-        --apple-pay-color: white;
+        --pay-color: white;
 	}
 }
