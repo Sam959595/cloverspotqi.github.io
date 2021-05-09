@@ -32,7 +32,7 @@ blockquote p {
 	background-color: var(--blue-1)
 }
 blockquote *:not(q):not(small) {
-	color: #f5f5f7
+	color: var(--const-1)
 }
 
 .quote {
@@ -379,8 +379,7 @@ footer li+li {
 		
 		--blue-1: #06c;
 
-		--const-1: white;
-		--const-2: black;
+		--const-1: #f5f5f7;
 	}
 }
 
@@ -409,7 +408,6 @@ footer li+li {
 	
 		--blue-1: #007aff;
 
-		--const-1: white;
-		--const-2: black;
+		--const-1: #f5f5f7;
 	}
 }
