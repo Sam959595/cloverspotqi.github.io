@@ -118,7 +118,10 @@ table th {
 
 table td {
 	color: var(--gray-10);
-	padding: .5em 1em .5em 0
+	padding: .5em 0
+}
+table td:nth-child(even) {
+	text-align: right
 }
 
 table tbody tr+tr {
