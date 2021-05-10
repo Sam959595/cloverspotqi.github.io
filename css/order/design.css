@@ -54,7 +54,7 @@ section.pp input[type="text"] {
 }
 
 section.pp input[type="type"]::-webkit-input-placeholder {
-	color: var(--gray-2)
+	color: var(--gray-9)
 } 
 section.pp input[placeholder] {
 	color: var(--gray-1)
