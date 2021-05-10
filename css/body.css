@@ -28,6 +28,9 @@ a, u {
 ul, ol {
 	list-style: none
 }
+input, select {
+	-webkit-appearance: none
+}
 input, button, select, hr {
 	border: none
 }

@@ -35,8 +35,6 @@ section.pp div > * {
 }
 
 section.pp select, section.pp input[type="text"] {
-	-webkit-appearance: none;
-
 	margin: .3em 0;
 
 	width: 100%;
@@ -53,7 +51,7 @@ section.pp select, section.pp input[type="text"] {
 
 section.pp input[type="text"] {
 	font: normal 400 17px -apple-system, "Segoe UI";
-	letter-spacing: 0;
+	letter-spacing: 0
 }
 
 section.pp input[type="type"]::-webkit-input-placeholder {
