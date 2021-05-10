@@ -175,7 +175,9 @@ section.vv ul {
     grid-auto-flow: column;
 
     overflow-x: scroll;
-    scroll-snap-type: x mandatory
+    scroll-snap-type: x mandatory;
+
+	scroll-padding: 0 20.69px
 }
 section.vv ul li {
     scroll-snap-align: center
