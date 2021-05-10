@@ -35,6 +35,8 @@ section.pp div > * {
 }
 
 section.pp select, section.pp input[type="text"] {
+	-webkit-appearance: none;
+
 	margin: .3em 0;
 
 	width: 100%;
@@ -42,23 +44,21 @@ section.pp select, section.pp input[type="text"] {
 
 	border-radius: 11px;
 
+	font: normal 600 17px -apple-system, "Segoe UI";
+	letter-spacing: 0;
+
 	background-color: var(--gray-8);
 	color: var(--blue-1)
 }
-section.pp select {
-	-webkit-appearance: none;
-
-	font: normal 600 17px -apple-system, "Segoe UI";
-	letter-spacing: 0
-}
 
 section.pp input[type="text"] {
-	font: normal 400 14px/1.42859 -apple-system, "Segoe UI";
-	letter-spacing: .015em
+	font: normal 400 17px -apple-system, "Segoe UI";
+	letter-spacing: 0;
 }
+
 section.pp input[type="type"]::-webkit-input-placeholder {
 	color: var(--gray-2)
-}
+} 
 section.pp input[placeholder] {
 	color: var(--gray-1)
 }
