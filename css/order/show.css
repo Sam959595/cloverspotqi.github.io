@@ -17,7 +17,7 @@ section.tt {
     text-align: center
 }
 
-/* 2 */
+/* 1 */
 
 section.pp ul {
     display: grid;
@@ -47,7 +47,7 @@ section.pp h6 {
     color: var(--red-1)
 }
 
-/* 3 */
+/* 2 */
 
 section.vv {
     margin-top: .5cm;
@@ -79,7 +79,7 @@ section.vv div {
 
 section.vv a:first-child {
 	-webkit-touch-callout: none;
-	
+
 	display: block;
 
     width: 100%;
