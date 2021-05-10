@@ -79,7 +79,7 @@ section.vv #apple-pay {
     -apple-pay-button-style: var(--gray-b);
 
     width: 100%;
-    height: 46px;
+    height: 45px;
 
     border-radius: 11px;
 }
