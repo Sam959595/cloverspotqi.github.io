@@ -67,7 +67,7 @@ section.vv {
     background-color: var(--gray-8)
 }
 section.vv figcaption {
-    padding: 1cm 0 2cm
+    padding: .5cm 0 2cm
 }
 
 section.vv ol {
@@ -87,7 +87,7 @@ section.vv div {
     text-align: center
 }
 
-section.vv a {
+section.vv a:first-child {
 	-webkit-touch-callout: none;
 
 	display: block;
@@ -101,6 +101,15 @@ section.vv a {
     font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
 
     background-color: var(--gray-13)
+}
+section.vv a:last-child {
+	margin-top: 1cm;
+
+	display: inline-block;
+
+	font: normal 400 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
+
+    color: var(--red-1)
 }
 
 /* 4 */
