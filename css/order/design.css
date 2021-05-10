@@ -43,7 +43,7 @@ section.pp select, section.pp input[type="text"] {
 	border-radius: 11px;
 
 	background-color: var(--gray-8);
-	color: var(--gray-1)
+	color: var(--blue-1)
 }
 section.pp select {
 	-webkit-appearance: none;
@@ -54,7 +54,7 @@ section.pp select {
 
 section.pp input[type="text"] {
 	font: normal 400 14px/1.42859 -apple-system, "Segoe UI";
-	letter-spacing: .015em;
+	letter-spacing: .015em
 }
 section.pp input[type="type"]::-webkit-input-placeholder {
 	color: var(--gray-2)
