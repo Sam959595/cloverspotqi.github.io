@@ -39,7 +39,7 @@ section.pp select {
 
 	border-radius: 11px;
 
-	font: normal 400 16px -apple-system, "Segoe UI";
+	font: normal 600 17px -apple-system, "Segoe UI";
 	letter-spacing: 0;
 
 	background-color: var(--gray-8);
