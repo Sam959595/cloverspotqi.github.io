@@ -78,6 +78,9 @@ section.vv ol {
 section.vv ol li+li {
     margin-top: 1.2em
 }
+section.vv ol li {
+    color: var(--gray-1)
+}
 
 section.vv div {
 	margin-top: 1cm;
