@@ -28,7 +28,7 @@ a, u {
 ul, ol {
 	list-style: none
 }
-input, button, hr {
+input, button, select, hr {
 	border: none
 }
 input, button {

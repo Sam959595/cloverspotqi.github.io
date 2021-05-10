@@ -25,20 +25,24 @@ section.tt {
 }
 
 /* 2 */
-section.pp h6 {
-	font: normal 400 14px/1.42859 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: -.016em;
+
+section.pp > * {
+	padding: 0 20px;
 }
 section.pp select {
+	margin: .2em 0;
+
 	-webkit-appearance: none;
 
 	width: 100%;
 	height: 1cm;
 
-	padding: 0 1em;
+	border-radius: 11px;
 
 	font: normal 400 19px -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: 0
+    letter-spacing: 0;
+
+	background-color: var(--gray-8);
 }
 
 /* 4 */
@@ -48,7 +52,7 @@ section.pp select {
 		--gray-a: white;
 		--gray-b: black;
 
-		--gray-1: #111;
+		--gray-1: #1d1d1f;
 		--gray-2: #8e8e93;
 		--gray-3: #d2d2d7;
 		--gray-4: #515154;
