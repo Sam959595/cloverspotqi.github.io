@@ -31,7 +31,7 @@ section.pp div {
 }
 
 section.pp div > * {
-	padding: 0 20px
+	padding: 0 1em
 }
 
 section.pp select, section.pp input[type="text"] {
