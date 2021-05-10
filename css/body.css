@@ -31,7 +31,7 @@ ul, ol {
 input, button, select, hr {
 	border: none
 }
-input, button {
+input, select, button {
 	outline: none
 }
 button, span {

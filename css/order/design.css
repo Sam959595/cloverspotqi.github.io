@@ -50,6 +50,10 @@ section.pp select {
 	color: var(--gray-1)
 }
 
+section.pp input[type="text"] {
+
+}
+
 /* 4 */
 
 @media screen and (prefers-color-scheme: light) {
