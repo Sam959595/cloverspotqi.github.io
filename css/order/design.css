@@ -53,7 +53,7 @@ section.pp select {
 }
 
 section.pp input[type="text"] {
-	font: normal 600 14px/1.42859 -apple-system, "Segoe UI";
+	font: normal 400 14px/1.42859 -apple-system, "Segoe UI";
 	letter-spacing: .015em;
 }
 section.pp input[type="type"]::-webkit-input-placeholder {
