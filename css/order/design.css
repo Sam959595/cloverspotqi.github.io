@@ -47,6 +47,9 @@ section.pp {
 	margin-top: 2cm
 }
 
+section.pp div {
+	margin-top: .5cm
+}
 section.pp div > * {
 	padding: 0 1em
 }
