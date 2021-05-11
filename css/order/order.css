@@ -170,23 +170,6 @@ section.vv h6 {
 	color: var(--gray-5)
 }
 
-section.vv ul {
-	display: grid;
-    grid-auto-flow: column;
-
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-
-	scroll-padding: 0 20.69px
-}
-section.vv ul li {
-    scroll-snap-align: center
-}
-
-section.vv img {
-	width: 8cm
-}
-
 section.vv a {
 	margin-bottom: 1cm;
 
