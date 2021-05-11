@@ -65,18 +65,14 @@ section.vv h5 {
     letter-spacing: -.016em
 }
 
-section.vv figure {
-	height: 3cm;
-	
-	background: top/cover
-}
+/* 1 */
 
-section.vv ul {
+section.nn ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-section.vv ul li {
+section.nn ul li {
     margin: 0 .2em;
 
 	width: 2em;
