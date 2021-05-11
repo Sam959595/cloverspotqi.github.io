@@ -64,23 +64,6 @@ section.vv h5 {
 
 /* 1 */
 
-section.nn ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-section.nn ul li {
-    margin: 0 .2em;
-
-	width: 2em;
-    height: 2em;
-
-    border-radius: 100%;
-    border: .1px solid var(--gray-3)
-}
-
-/* 1 */
-
 section.tt ul {
     display: grid;
     grid-auto-flow: column;
