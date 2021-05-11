@@ -71,6 +71,20 @@ section.vv figure {
 	background: top/cover
 }
 
+section.vv ul {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+section.vv ul li {
+	width: 2em;
+    height: 2em;
+
+    border-radius: 100%;
+    border: .1px solid var(--gray-3)
+}
+
 /* 1 */
 
 section.tt ul {
