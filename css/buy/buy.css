@@ -62,7 +62,7 @@ section.vv h5 {
 	margin-top: .5em;
 
 	font: normal 600 14px/1.2 -apple-system, "Segoe UI";
-    letter-spacing: .015em
+    letter-spacing: -.016em
 }
 
 section.vv figure {
@@ -255,7 +255,7 @@ footer li+li {
 
 @media screen and (prefers-color-scheme: dark) {
 	:root {
-        --soft-1: #3a3a3db8;
+        --soft-1: #1d1d1fb8;
         
 		--gray-a: black;
 		--gray-b: white;
