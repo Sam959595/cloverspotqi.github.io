@@ -74,10 +74,11 @@ section.vv figure {
 section.vv ul {
     display: flex;
     flex-direction: row;
-
     justify-content: center;
 }
 section.vv ul li {
+    margin: 0 .2em;
+
 	width: 2em;
     height: 2em;
 
