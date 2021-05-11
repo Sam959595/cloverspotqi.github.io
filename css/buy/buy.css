@@ -59,9 +59,9 @@ section.vv h6 {
     color: var(--red-1)
 }
 section.vv h5 {
-	margin-bottom: .4em;
+	margin-top: .5em;
 
-	font: normal 600 14px/1.42859 -apple-system, "Segoe UI";
+	font: normal 600 14px/1.2 -apple-system, "Segoe UI";
     letter-spacing: .015em
 }
 
