@@ -30,8 +30,8 @@ nav {
     background-color: var(--soft-1)
 }
 nav h6 {
-    font: normal 400 14px/1.42859 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: -.016em
+    font: normal 600 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: 0
 }
 
 /* 1 */
