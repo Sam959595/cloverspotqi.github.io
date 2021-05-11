@@ -12,9 +12,8 @@
 
 /* 0 */
 
-section div {
-    margin: 0 auto;
-    width: 90%
+section, footer {
+    margin-top: .5cm
 }
 
 /* 1 */
@@ -24,13 +23,14 @@ nav {
 
     position: fixed;
 
+    top: 0;
     width: 100%;
 
     padding: 1em;
 
     text-align: center;
 
-    border-bottom: .1px solid var(--gray-3);
+    border-bottom: .1px solid #aeaeb2;
 
     -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--soft-1)
@@ -80,10 +80,10 @@ section.hh ul li {
 }
 
 section.hh ul li:first-child {
-    padding-left: 20.69px
+    padding-left: var(--padding)
 }
 section.hh ul li:last-child {
-    padding-right: 20.69px
+    padding-right: var(--padding)
 }
 
 section.hh ul li a {
@@ -138,7 +138,7 @@ section.kk a {
 
 	display: block;
 
-	padding-left: 20.69px
+	padding-left: var(--padding)
 }
 
 section.kk h5 {
@@ -166,11 +166,17 @@ footer ul {
 }
 footer li {
     margin: 0 max(env(safe-area-inset-right), 16px) 0 max(env(safe-area-inset-left), 16px);
-    
+
     color: var(--gray-9)
 }
 footer li+li {
 	margin-top: 1em
+}
+
+/* 4 */
+
+:root {
+    --padding: 20.69px;
 }
 
 /* 4 */
