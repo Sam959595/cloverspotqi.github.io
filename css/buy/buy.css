@@ -30,14 +30,45 @@ nav {
 
     text-align: center;
 
-    border-bottom: .1px solid var(--gray-3);
+    border-bottom: .1px solid var(--gray-15);
 
     -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--soft-1)
 }
 nav h6 {
+    font: normal 600 14px/1.42859 -apple-system, "Segoe UI";
+    letter-spacing: .015em;
+
     font: normal 400 14px/1.42859 -apple-system, "Segoe UI";
     letter-spacing: -.016em
+}
+
+/* 5 */
+
+section.vv {
+	text-align: center
+}
+
+section.vv > div {
+	padding: 2cm .8cm .5cm
+}
+
+section.vv h6 {
+    font-weight: 600;
+
+    color: var(--red-1)
+}
+section.vv h5 {
+	margin-bottom: .4em;
+
+	font: normal 600 14px/1.42859 -apple-system, "Segoe UI";
+    letter-spacing: .015em
+}
+
+section.vv figure {
+	height: 3cm;
+	
+	background: top/cover
 }
 
 /* 1 */
