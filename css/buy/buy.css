@@ -61,8 +61,8 @@ section.vv h6 {
 section.vv h5 {
 	margin-top: .5em;
 
-	font: normal 600 14px/1.42859 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: -.016em
+	font: normal 600 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: 0
 }
 
 /* 1 */
