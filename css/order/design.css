@@ -51,7 +51,7 @@ section.pp div {
 	margin-top: .5cm
 }
 section.pp div > * {
-	padding: 0 16px
+	padding: 0 13px
 }
 
 section.pp select, section.pp input[type="text"] {
