@@ -12,22 +12,40 @@
 
 /* 0 */
 
-section.ee, section.pp, section.vv figcaption {
+section.pp, section.vv figcaption {
     margin: 0 auto;
     width: 90%
 }
 
 /* 1 */
 
-section.ee {
-	margin-top: 1cm
+nav {
+    z-index: 5;
+
+    position: fixed;
+
+    top: 0;
+    width: 100%;
+
+    padding: 1em;
+
+    text-align: center;
+
+    border-bottom: .1px solid var(--gray-15);
+
+    -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
+    background-color: var(--soft-1)
 }
-section.ee h1 {
-	font: normal 600 32px -apple-system, BlinkMacSystemFont, "Segoe UI";
-	letter-spacing: 0
+nav h6 {
+    font: normal 600 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: 0
 }
 
 /* 2 */
+
+section.pp {
+	margin-top: 2cm
+}
 
 section.pp div {
 	margin-top: .5cm
