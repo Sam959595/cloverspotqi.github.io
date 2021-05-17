@@ -12,29 +12,26 @@
 
 /* 0 */
 
-nav {
-    z-index: 5;
-
-    position: fixed;
-
-    top: 0;
-    width: 100%;
-
-    padding: 1em;
-
-    text-align: center;
-
-    border-bottom: .1px solid var(--gray-15);
-
-    -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
-    background-color: var(--soft-1)
+section.pp, section.vv {
+    margin-top: .5cm
 }
-nav h6 {
-    font: normal 600 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: 0
+
+section.tt, section.vv figcaption {
+    margin: 0 auto;
+    width: 90%
 }
 
 /* 1 */
+
+section.tt {
+    margin-top: 1cm
+}
+section.tt h1 {
+    font: normal 700 32px -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: .012em
+}
+
+/* 2 */
 
 section.pp ul {
     display: grid;
@@ -67,14 +64,10 @@ section.pp h6 {
 /* 2 */
 
 section.vv {
-    margin-top: .5cm;
     background-color: var(--gray-8)
 }
 section.vv figcaption {
-    margin: 0 auto;
-    padding: 1cm 0 2cm;
-
-    width: 90%
+    padding: 1cm 0 2cm
 }
 
 section.vv ol {
