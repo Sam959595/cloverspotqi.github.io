@@ -195,7 +195,9 @@ main li:last-child {
 
 main.bb ul li a {
 	display: block;
-	width: 180.89px
+
+	width: 180.89px;
+	height: 180.89px
 }
 
 main.bb li div:first-child, main.nn a > div:last-child, main.kk a > div:first-child {
