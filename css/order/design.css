@@ -45,18 +45,15 @@ section.pp select, section.pp input[type="text"] {
 
 	border-radius: 11px;
 
-	font: normal 600 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 400 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: 0;
 
 	background-color: var(--gray-14)
 }
 
 section.pp select {
+	font-weight: 600;
 	color: var(--blue-1)
-}
-
-section.pp input[type="text"] {
-	font-weight: 400
 }
 
 section.pp input[type="text"]::-webkit-input-placeholder {
