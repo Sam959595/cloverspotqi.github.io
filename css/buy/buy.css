@@ -176,7 +176,7 @@ section.kk h5 {
 	color: inherit
 }
 
-section.kk li+li h5 {
+section.kk li h5 {
 	border-top: .1px solid var(--gray-3)
 }
 
