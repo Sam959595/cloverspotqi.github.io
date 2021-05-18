@@ -76,6 +76,10 @@ section.pp select, section.pp input {
 	background-color: var(--gray-14)
 }
 
+section.pp input[type="date"] {
+	-webkit-appearance: auto;
+}
+
 /* 3 */
 
 section.vv {
