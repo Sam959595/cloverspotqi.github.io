@@ -127,6 +127,8 @@ section.kk p {
 		--gray-4: #8e8e93;
 	
 		--blue-1: #06c;
+
+		--red-1: #ff2d55;
 	}
 }
 
@@ -140,5 +142,7 @@ section.kk p {
 		--gray-4: #63636e;
 	
 		--blue-1: #007aff;
+
+		--red-1: #fb5c74;
 	}
 }
