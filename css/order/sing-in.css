@@ -88,7 +88,7 @@ section.bb input[type="email"] {
 	width: 100%;
 	height: 50px;
 
-	border-radius: 10px;
+	border-radius: 11px;
 
 	padding: 0 .8em .13em 4.5em;
 
@@ -121,7 +121,7 @@ section.kk p {
 
 		--gray-1: #1d1d1f;
 		--gray-2: #888;
-		--gray-3: #f2f2f7;
+		--gray-3: #e8e8ed;
 		--gray-4: #8e8e93;
 	
 		--blue-1: #06c;
