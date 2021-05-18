@@ -32,7 +32,7 @@ section.tt h1 {
 section.pp div {
 	margin-top: .5cm
 }
-section.pp div > *:not(input[type="color"]) {
+section.pp div > * {
 	padding: 0 13px
 }
 
@@ -60,6 +60,20 @@ section.pp input::-webkit-input-placeholder {
 }
 section.pp input[placeholder] {
 	color: var(--gray-1)
+}
+
+section.pp select, section.pp input {
+	margin: .3em 0;
+
+	width: 100%;
+	height: 45px;
+
+	border-radius: 11px;
+
+	font: normal 400 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
+	letter-spacing: 0;
+
+	background-color: var(--gray-14)
 }
 
 /* 3 */

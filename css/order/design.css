@@ -32,11 +32,11 @@ section.tt h1 {
 section.pp div {
 	margin-top: .5cm
 }
-section.pp div > *:not(input[type="color"]) {
+section.pp div > * {
 	padding: 0 13px
 }
 
-section.pp select, section.pp input{
+section.pp select, section.pp input {
 	margin: .3em 0;
 
 	width: 100%;
