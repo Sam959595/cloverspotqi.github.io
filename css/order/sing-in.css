@@ -103,7 +103,7 @@ section.bb input[placeholder] {
 }
 
 section.bb input:invalid {
-	border: 3px solid var(--red-1)
+	background-color: var(--red-1)
 }
 
 /* 4 */
