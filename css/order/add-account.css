@@ -67,7 +67,7 @@ section.pp input[type="date"] {
 }
 
 section.pp select:invalid, section.pp input:invalid {
-	border: .1px solid var(--red-1)
+	border: 1px solid var(--red-1)
 }
 
 /* 3 */
