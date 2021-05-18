@@ -67,7 +67,7 @@ section.pp input[type="date"] {
 }
 
 section.pp select:invalid, section.pp input:invalid {
-	background-color: var(--red-2);
+	border: .1px solid var(--red-1)
 }
 
 /* 3 */
@@ -150,7 +150,6 @@ section.vv a:last-child {
 		--blue-1: #06c;
 
         --red-1: #ff2d55;
-		--red-2: #ebb3b3;
 	}
 }
 
@@ -180,6 +179,5 @@ section.vv a:last-child {
 		--blue-1: #007aff;
 
         --red-1: #fb5c74;
-		--red-2: #a03f3f;
 	}
 }
