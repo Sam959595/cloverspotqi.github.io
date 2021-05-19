@@ -71,7 +71,7 @@ section.pp select {
 section.vv {
     margin-top: 1cm;
 	padding-bottom: env(safe-area-inset-bottom);
-	
+
     background-color: var(--gray-8)
 }
 section.vv figcaption {
@@ -90,12 +90,9 @@ section.vv ol li {
     color: var(--gray-9)
 }
 
-section.vv div {
-	margin-top: 1cm;
-    text-align: center
-}
-
 input[type="submit"] {
+	margin: 1cm 0;
+
     width: 100%;
 
     border-radius: 11px;
@@ -109,8 +106,6 @@ input[type="submit"] {
 }
 section.vv a {
 	-webkit-touch-callout: none;
-
-	margin-top: 1cm;
 
 	display: inline-block;
 
