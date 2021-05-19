@@ -93,11 +93,7 @@ section.vv div {
     text-align: center
 }
 
-section.vv a:first-child {
-	-webkit-touch-callout: none;
-
-	display: block;
-
+input[type="submit"] {
     width: 100%;
 
     border-radius: 11px;
@@ -106,9 +102,12 @@ section.vv a:first-child {
 
     font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
 
-    background-color: var(--gray-13)
+    background-color: var(--gray-13);
+	color: var(--blue-1)
 }
-section.vv a:last-child {
+section.vv a {
+	-webkit-touch-callout: none;
+	
 	margin-top: 1cm;
 
 	display: inline-block;
