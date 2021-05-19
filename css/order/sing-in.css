@@ -108,8 +108,11 @@ section.bb input:invalid {
 
 /* 4 */
 
-section.kk p {
-	text-align: center;
+section.kk {
+	text-align: center
+}
+section.kk a {
+	display: inline-block;
 
 	font: normal 400 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0
