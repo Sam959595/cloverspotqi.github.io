@@ -104,15 +104,6 @@ input[type="submit"] {
     background-color: var(--gray-13);
 	color: var(--blue-1)
 }
-section.vv a {
-	-webkit-touch-callout: none;
-
-	display: inline-block;
-
-	font: normal 400 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
-
-    color: var(--red-1)
-}
 
 /* 4 */
 
