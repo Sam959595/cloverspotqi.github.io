@@ -50,7 +50,7 @@ section.pp select, section.pp input {
 	background-color: var(--gray-14);
 	color: var(--gray-1);
 
-	transition: background-color .3s ease-out;
+	transition: background-color .3s ease-out
 }
 
 section.pp input::-webkit-input-placeholder {
