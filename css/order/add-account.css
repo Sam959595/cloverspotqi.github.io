@@ -50,24 +50,20 @@ section.pp select, section.pp input {
 	background-color: var(--gray-14)
 }
 
-section.pp select {
-	font-weight: 600;
-	color: var(--blue-1)
-}
-
 section.pp input::-webkit-input-placeholder {
 	color: var(--gray-9)
 }
-section.pp input[placeholder] {
-	color: var(--gray-1)
-}
-
-section.pp input[type="date"] {
+section.pp input[placeholder], section.pp input::-webkit-datetime-edit {
 	color: var(--gray-1)
 }
 
 section.pp select:invalid, section.pp input:invalid {
 	background-color: var(--red-2)
+}
+
+section.pp select {
+	font-weight: 600;
+	color: var(--blue-1)
 }
 
 /* 3 */
