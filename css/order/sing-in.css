@@ -71,7 +71,7 @@ section.bb {
 }
 
 section.bb::before {
-	content: "Имя";
+	content: "ИД";
     position: absolute;
 
 	margin: 13.5px 0 13.5px 1.2em;
