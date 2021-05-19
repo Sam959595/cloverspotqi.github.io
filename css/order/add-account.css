@@ -69,11 +69,13 @@ section.pp select {
 /* 3 */
 
 section.vv {
-    margin-top: .5cm;
+    margin-top: 1cm;
+	padding-bottom: env(safe-area-inset-bottom);
+	
     background-color: var(--gray-8)
 }
 section.vv figcaption {
-    padding: 1cm 0 2cm
+    padding: .5cm 0
 }
 
 section.vv ol {
@@ -107,7 +109,7 @@ input[type="submit"] {
 }
 section.vv a {
 	-webkit-touch-callout: none;
-	
+
 	margin-top: 1cm;
 
 	display: inline-block;
