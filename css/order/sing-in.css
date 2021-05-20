@@ -74,7 +74,7 @@ section.bb::before {
 	content: "ИД";
     position: absolute;
 
-	margin: 13.5px 0 13.5px 1.2em;
+	margin: 13.5px 0 13.5px 1em;
 
     font: normal 600 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0;
@@ -88,7 +88,7 @@ section.bb input {
 
 	border-radius: 11px;
 
-	padding: 0 .8em 0 4.5em;
+	padding: 0 .8em 0 3.5em;
 
 	font: normal 400 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0;
