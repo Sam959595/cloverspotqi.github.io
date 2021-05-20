@@ -74,9 +74,10 @@ section.vv {
 }
 
 section.vv div {
-	text-align: center;
-    margin: .5cm auto;
+    margin: 1cm auto;
     max-width: 10cm;
+
+	text-align: center
 }
 section.vv p {
     margin-top: .2em;
@@ -86,6 +87,8 @@ section.vv p {
 }
 
 input[type="submit"] {
+	margin-top: .5cm;
+
     width: 100%;
 
     border-radius: 11px;
