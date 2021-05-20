@@ -12,7 +12,7 @@
 
 /* 0 */
 
-section.tt, section.pp, section.vv figcaption {
+section {
     margin: 0 auto;
     width: 90%
 }
@@ -23,8 +23,8 @@ section.tt {
     margin-top: 1cm
 }
 section.tt h1 {
-    font: normal 700 32px -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: .012em
+    font: 700 32px/1.125 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: .004em
 }
 
 /* 2 */
@@ -70,29 +70,22 @@ section.pp select {
 
 section.vv {
     margin-top: 1cm;
-	padding-bottom: env(safe-area-inset-bottom);
-
-    background-color: var(--gray-8)
-}
-section.vv figcaption {
-    padding: .5cm 0
+	padding-bottom: env(safe-area-inset-bottom)
 }
 
-section.vv ol {
-    padding-left: 20px;
+section.vv div {
+	text-align: center;
+    margin: .5cm auto;
+    max-width: 10cm;
+}
+section.vv p {
+    margin-top: .2em;
 
-    list-style: outside disc
-}
-section.vv ol li+li {
-    margin-top: 1.2em
-}
-section.vv ol li {
-    color: var(--gray-9)
+    font: 400 11px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: -.008em
 }
 
 input[type="submit"] {
-	margin: 1cm 0;
-
     width: 100%;
 
     border-radius: 11px;
