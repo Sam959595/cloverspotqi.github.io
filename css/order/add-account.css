@@ -69,19 +69,17 @@ section.pp select {
 /* 3 */
 
 section.vv {
-    margin-top: 1cm;
+	margin: 1cm auto .5cm;
 	padding-bottom: env(safe-area-inset-bottom)
 }
 
 section.vv div {
-    margin: 1cm auto;
+    margin: 0 auto;
     max-width: 10cm;
 
 	text-align: center
 }
 section.vv p {
-    margin-top: .2em;
-
     font: 400 11px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: -.008em
 }

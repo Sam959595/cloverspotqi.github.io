@@ -37,7 +37,7 @@ input, button, select, hr {
 input, select, button {
 	outline: none
 }
-button, span {
+input[type="submit"], button, span {
 	cursor: pointer
 }
 hr {
