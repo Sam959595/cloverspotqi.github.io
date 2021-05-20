@@ -69,7 +69,7 @@ section.pp select {
 /* 3 */
 
 section.vv {
-	margin: 1cm auto .5cm;
+	margin: 2cm auto .5cm;
 	padding-bottom: env(safe-area-inset-bottom)
 }
 
