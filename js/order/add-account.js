@@ -7,7 +7,7 @@ $(document).ready(function () {
 
         if (e.keyCode === 13) {
 
-            if (this.value.length == 0) {
+            if (this.value.length === 0) {
                 return false;
             } else {
                 b.classList.add(c);
