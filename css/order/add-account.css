@@ -47,14 +47,14 @@ section.pp select, section.pp input {
 	font: normal 400 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: 0;
 
-	background-color: var(--gray-4);
+	background-color: var(--gray-5);
 	color: var(--gray-1);
 
 	transition: background-color .3s ease-out
 }
 
 section.pp input::-webkit-input-placeholder {
-	color: var(--gray-3)
+	color: var(--gray-4)
 }
 
 section.pp select:invalid, section.pp input:invalid {
@@ -96,7 +96,7 @@ section.vv input {
 
     font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
 
-    background-color: var(--gray-4);
+    background-color: var(--gray-5);
 	color: var(--blue-1)
 }
 
@@ -108,8 +108,9 @@ section.vv input {
 
 		--gray-1: #1d1d1f;
 		--gray-2: #8e8e93;
-		--gray-3: #86868b;
-		--gray-4: #e8e8ed;
+		--gray-3: #d2d2d7;
+		--gray-4: #86868b;
+		--gray-5: #e8e8ed;
 		
 		--blue-1: #06c;
 
@@ -123,8 +124,9 @@ section.vv input {
 		
 		--gray-1: #f5f5f7;
 		--gray-2: #8e8e93;
-		--gray-3: #63636e;
-		--gray-4: #212125;
+		--gray-3: #212125;
+		--gray-4: #63636e;
+		--gray-5: #212125;
 	
 		--blue-1: #007aff;
 
