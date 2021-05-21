@@ -4,8 +4,14 @@ $(document).ready(function () {
     c = 'ee';
 
     a.keydown(function(e) {
+
         if (e.keyCode === 13) {
-            b.classList.add(c);
+
+            if (this.value.length == 0) {
+                return;
+            } else {
+                b.classList.add(c);
+            }
         }
     });
 });
