@@ -98,14 +98,6 @@ section.bb input {
 
 	transition: background-color .3s ease-out
 }
-section.bb input::-webkit-input-placeholder {
-	color: var(--gray-4)
-}
-
-section.bb input:invalid {
-	background-color: var(--red-1)
-}
-
 section.bb input:last-child {
 	display: block;
 
@@ -113,12 +105,20 @@ section.bb input:last-child {
 	height: 0;
 
 	transition: all .5s ease-out;
-}
+}/* 3.1 */
 section.bb input:last-child.ee {
 	margin-top: .5em;
 
 	opacity: 1;
 	height: 50px
+}/* 3.2 */
+
+section.bb input::-webkit-input-placeholder {
+	color: var(--gray-4)
+}
+
+section.bb input:invalid {
+	background-color: var(--red-1)
 }
 
 /* 4 */
