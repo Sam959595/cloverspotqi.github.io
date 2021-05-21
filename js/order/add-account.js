@@ -4,5 +4,6 @@ function bb() {
     c = $('section.pp div:nth-child(3) input:nth-child(2)')[0],
     d = $('section.pp div:nth-child(3) input:nth-child(3)')[0];
     
-    a.style('background-color : red');
+    a.style.backgroundColor = 'red';
+    b.style.backgroundColor = 'red';
 }

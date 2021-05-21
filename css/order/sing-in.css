@@ -88,7 +88,7 @@ section.bb input {
 
 	border-radius: 11px;
 
-	padding: 0 .8em 0 4.5em;
+	padding: 0 .8em 0 4.4em;
 
 	font: normal 400 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0;
@@ -104,6 +104,21 @@ section.bb input::-webkit-input-placeholder {
 
 section.bb input:invalid {
 	background-color: var(--red-1)
+}
+
+section.bb input:last-child {
+	display: block;
+
+	opacity: 0;
+	height: 0;
+
+	transition: all .5s ease-out;
+}
+section.bb input:last-child.ee {
+	margin-top: .5em;
+
+	opacity: 1;
+	height: 50px
 }
 
 /* 4 */
