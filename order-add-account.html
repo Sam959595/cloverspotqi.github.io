@@ -2,11 +2,11 @@
 <html lang="ru-RU">
 
 <head>
+    <meta charset="utf-8">
     <meta name="robots" content="none">
     
     <title>Logo Structure ― Учётная запись</title>
 
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
     <link rel="stylesheet" href="css/body.css">
@@ -18,32 +18,35 @@
         <h1>Учётная запись</h1>
     </section>
 
-    <section class="pp">
-        <div>
-            <p>ЭЛ. ПОЧТА</p>
-            <input type="email" placeholder="Заполнить" spellcheck="false" autocomplete="off" autocapitalize="off" maxlength="32">
-            <p>Введите действующий адрес электронной почты. *Используется в качестве резервной почты.</p>
-        </div>
-        <div>
-            <p>ИНДЕНТИФИКАТОР</p>
-            <input type="text" placeholder="Создать" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off" maxlength="32" pattern="[0-9a-z]{5,32}">
-            <p>Создайте ключ авторизации. Например: victor123.</p>
-        </div>
-        <div>
-            <p>ПАРОЛЬ</p>
-            <input type="password" placeholder="Создать" autocomplete="off" autocorrect="new-password" autocapitalize="off" minlength="8" maxlength="15" pattern="[0-9A-Za-z]{8,15}">
-            <p>Создайте пароль, используя не менее 8-ми символов.</p>
-        </div>
-    </section>
+    <form action="">
+        <section class="pp">
+            <div>
+                <p>ЭЛ. ПОЧТА</p>
+                <input type="email" placeholder="Заполнить" spellcheck="false" autocomplete="off" autocapitalize="off" maxlength="32">
+                <p>Введите действующий адрес электронной почты. *Используется в качестве резервной почты.</p>
+            </div>
+            <div>
+                <p>ИНДЕНТИФИКАТОР</p>
+                <input type="text" placeholder="Создать" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off" maxlength="32" pattern="[0-9a-z]{5,32}">
+                <p>Создайте ключ авторизации. Например: victor123.</p>
+            </div>
+            <div>
+                <p>ПАРОЛЬ</p>
+                <input type="password" placeholder="Создать" autocomplete="off" autocorrect="new-password" autocapitalize="off" minlength="8" maxlength="15" pattern="[0-9A-Za-z]{8,15}">
+                <input type="password" placeholder="Подтвердить" autocomplete="off" autocorrect="new-password" autocapitalize="off" minlength="8" maxlength="15" pattern="[0-9A-Za-z]{8,15}">
+                <p>Создайте пароль, используя не менее 8-ми символов.</p>
+            </div>
+        </section>
+    
+        <section class="vv">
+            <div>
+                <p>Принимая соглашения, Вы подтверждаете принадлежность к возрастной категории не менее 18 лет.&nbsp;<a href="#">Просмотреть дополнительные условия соглашения…</a></p>
+                <input type="submit" value="Принять соглашение и продолжить">
+            </div>
+        </section>
+    </form>
 
-    <section class="vv">
-        <div>
-            <p>Принимая соглашения, Вы подтверждаете принадлежность к возрастной категории не менее 18 лет.&nbsp;<a href="#">Просмотреть дополнительные условия соглашения…</a></p>
-            <input type="submit" value="Принять соглашение и продолжить">
-        </div>
-    </section>
-
-    <script src="js/#.js"></script>
+    <script src="js/order/add-account.js"></script>
 </body>
 
 </html>
