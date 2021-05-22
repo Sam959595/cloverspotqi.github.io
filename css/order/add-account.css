@@ -74,11 +74,9 @@ section.vv {
 }
 
 section.vv div {
-    margin: 0 auto;
-    max-width: 10cm;
-
 	text-align: center
 }
+
 section.vv p {
     font: 400 11px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: -.008em;
@@ -86,7 +84,7 @@ section.vv p {
 	color: var(--gray-3)
 }
 section.vv input {
-	margin-top: .5cm;
+	margin: .5cm 0;
 
     width: 100%;
 
@@ -98,6 +96,22 @@ section.vv input {
 
     background-color: var(--gray-5);
 	color: var(--blue-1)
+}
+section.vv div > a {
+	font: normal 700 17px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	letter-spacing: -.024em
+}
+
+/* 4 */
+
+@media screen and (min-width: 378px) {
+	section.vv div {
+		margin: 0 auto;
+		max-width: 10cm
+	}
+
+    @media screen and (orientation: landscape) {
+    }
 }
 
 /* 4 */

@@ -20,7 +20,8 @@ img {
 	-webkit-touch-callout: none
 }
 a, strong, b, sup, sub, u, ins, del, i, s, mark, small, q, em, span, time {
-	font: inherit
+	font: inherit;
+	letter-spacing: inherit
 }
 a, u {
 	text-decoration: none
