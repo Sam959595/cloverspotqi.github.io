@@ -101,15 +101,13 @@ section.bb input {
 section.bb input:nth-child(4) {
 	display: block;
 
-	opacity: 0;
 	height: 0;
 
 	transition: all .5s ease-out
 }/* 3.1 */
 section.bb input:nth-child(4).ee {
 	margin-top: .5em;
-
-	opacity: 1;
+	
 	height: 50px
 }/* 3.2 */
 

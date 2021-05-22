@@ -25,13 +25,17 @@
         <p>Введите ключ идентификатор, чтобы воспользоваться доступом к личным данным и заявкам.</p>
     </section>
 
-    <section class="bb">
-        <label for="email"></label>
-        <input type="text" id="email" name="email" placeholder="Например: victor123" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" maxlength="32">
-
-        <label for="password"></label>
-        <input type="password" id="password" name="password" placeholder="Пароль" autocomplete="off" autocorrect="off" autocapitalize="off" minlength="8" maxlength="15" pattern="[0-9A-Za-z]{8,15}">
-    </section>
+    <apple-auth app-loading-defaults="{appLoadingDefaults}" pmrpc-hook="{pmrpcHook}">
+        <sign-in suppress-iforgot="{suppressIforgot}" {on-test-idp}="@_onTestIdp">
+            <section class="bb">
+                <label for="email"></label>
+                <input type="text" id="email" can-field="accountName" ($focus)="appleIdFocusHandler()" ($keyup)="appleIdKeyupHandler()" ($blur)="appleIdBlurHandler()" name="email" placeholder="Например: victor123" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" maxlength="32">
+        
+                <label for="password"></label>
+                <input type="password" id="password" ($focus)="pwdFocusHandler()" ($keyup)="passwordKeyUpHandler()" ($blur)="pwdBlurHandler()" name="password" placeholder="Пароль" autocomplete="off" autocorrect="off" autocapitalize="off" minlength="8" maxlength="15" pattern="[0-9A-Za-z]{8,15}">
+            </section>
+        </sign-in>
+    </apple-auth>
 
     <section class="kk">
         <a href="order-add-account.html">Создать учётную запись</a>
