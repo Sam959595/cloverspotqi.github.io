@@ -41,7 +41,7 @@ section.bb {
 	margin: 2em auto
 }
 
-section.bb::before {
+section.bb form::before {
 	content: "Ключ";
     position: absolute;
 
@@ -53,29 +53,13 @@ section.bb::before {
     color: var(--gray-1)
 }
 
-section.bb form {
-	position: relative
-}
-section.bb form::before {
-	content: "";
-    position: absolute;
-
-	inset: 0;
-
-	margin-left: 20.69px;
-
-	border-width: .1px 0;
-	border-style: solid;
-	border-color: var(--gray-3);
-
-	pointer-events: none
-}
-
 section.bb input {
 	width: 100%;
 	height: 50px;
 
 	border-radius: 0;
+
+	border-top: .1px solid var(--gray-3);
 
 	padding: 0 .8em 0 5em;
 
@@ -96,7 +80,9 @@ section.bb input:last-child {
 }/* 2.2 */
 section.bb input:last-child.ee {
 	opacity: 1;
-	height: 50px
+	height: 50px;
+
+	border-bottom: .1px solid var(--gray-3)
 }/* 2.3 */
 
 section.bb input::-webkit-input-placeholder {
