@@ -26,17 +26,10 @@
     </section>
 
     <section class="bb">
-        <label for="account_name_text_field"></label>
+        
         <input type="text" id="account_name_text_field" can-field="accountName" ($focus)="appleIdFocusHandler()" ($keyup)="appleIdKeyupHandler()" ($blur)="appleIdBlurHandler()" name="email" placeholder="Например: victor123" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" maxlength="32">
-        <span id="apple_id_field_label">             
-            <font _mstmutation="1" _msthash="437814" _msttexthash="82030" _msthidden="1"></font>
-        </span>
-
-        <label for="password_text_field"></label>
+        
         <input type="password" id="password_text_field" can-field="password" ($keyup)="passwordKeyUpHandler()" ($focus)="pwdFocusHandler()" ($blur)="pwdBlurHandler()" name="password" placeholder="Пароль" autocomplete="off" autocorrect="off" autocapitalize="off" minlength="8" maxlength="15" pattern="[0-9A-Za-z]{8,15}">
-        <span id="password_field_label">
-            <font _mstmutation="1" _msthash="445471" _msttexthash="802438" _msthidden="1"></font> 
-        </span>
     </section>
 
     <section class="kk">
