@@ -98,16 +98,16 @@ section.bb input {
 
 	transition: background-color .3s ease-out
 }
-section.bb input:nth-child(4) {
+section.bb label:last-child input {
 	display: block;
 
 	height: 0;
 
 	transition: all .5s ease-out
 }/* 3.1 */
-section.bb input:nth-child(4).ee {
+section.bb label:last-child input.ee {
 	margin-top: .5em;
-	
+
 	height: 50px
 }/* 3.2 */
 
