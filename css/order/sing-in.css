@@ -75,7 +75,7 @@ section.bb label:last-child input {
 	opacity: 0;
 	height: 0;
 
-	transition: height .5s ease-out, opacity .5s ease-out .5s
+	transition: height 1s ease, opacity 1s ease-out .5s
 }/* 2.1 */
 section.bb label:last-child input.ee {
 	margin-top: .5em;
