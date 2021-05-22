@@ -117,13 +117,13 @@ section.vv div > a {
 
 @media screen and (prefers-color-scheme: light) {
 	:root {
-		--gray-a: white;
+		--gray-a: #e8e8ed;
 
 		--gray-1: #1d1d1f;
 		--gray-2: #8e8e93;
 		--gray-3: #d2d2d7;
 		--gray-4: #86868b;
-		--gray-5: #e8e8ed;
+		--gray-5: white;
 		--gray-6: #aaaab3;
 		
 		--blue-1: #06c;
