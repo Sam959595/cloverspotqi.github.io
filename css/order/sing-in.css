@@ -69,15 +69,13 @@ section.bb input {
 
 	transition: background-color .3s ease-out
 }
-section.bb label:last-child input {
+section.bb input:last-child {
 	display: block;
 
 	opacity: 0;
 	height: 0;
-
-	transition: height 1s ease, opacity 1s ease-out .5s
 }/* 2.1 */
-section.bb label:last-child input.ee {
+section.bb input:last-child.ee {
 	margin-top: .5em;
 
 	opacity: 1;

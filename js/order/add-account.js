@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    let a = $('section.bb label:first-child input'),
-    b = $('section.bb label:last-child input')[0],
+    let a = $('section.bb input:first-child'),
+    b = $('section.bb input:last-child')[0],
     c = 'ee';
 
     a.keydown(function(e) {
