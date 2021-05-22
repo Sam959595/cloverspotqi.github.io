@@ -23,8 +23,8 @@ section.tt {
     margin-top: 1cm
 }
 section.tt h1 {
-    font: normal 700 32px -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: .012em
+	font: 700 32px/1.125 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: .004em;
 }
 
 /* 2 */
@@ -47,19 +47,21 @@ section.pp select, section.pp input {
 	font: normal 400 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: 0;
 
-	background-color: var(--gray-14)
+	background-color: var(--gray-5);
+	color: var(--gray-1)
+}
+
+section.pp input::-webkit-input-placeholder {
+	color: var(--gray-4)
+}
+
+section.pp select:invalid, section.pp input:invalid {
+	background-color: var(--red-1)
 }
 
 section.pp select {
 	font-weight: 600;
 	color: var(--blue-1)
-}
-
-section.pp input::-webkit-input-placeholder {
-	color: var(--gray-9)
-} 
-section.pp input[placeholder] {
-	color: var(--gray-1)
 }
 
 /* 3 */
@@ -77,7 +79,7 @@ section.vv p {
     font: 400 11px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: -.008em;
 
-	color: var(--gray-3)
+	color: var(--gray-6)
 }
 section.vv input {
 	margin: .5cm 0;
@@ -90,72 +92,50 @@ section.vv input {
     font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: 0;
 
-    background-color: var(--gray-14);
+    background-color: var(--gray-5);
 	color: var(--blue-1)
 }
 section.vv div > a {
 	font: normal 600 14px -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: 0;
 
-	color: var(--red-1)
+	color: var(--red-2)
 }
 
 /* 4 */
 
 @media screen and (prefers-color-scheme: light) {
 	:root {
-		--soft-1: #f5f5f7b8;
-
 		--gray-a: white;
-		--gray-b: black;
 
 		--gray-1: #1d1d1f;
 		--gray-2: #8e8e93;
 		--gray-3: #d2d2d7;
-		--gray-4: #515154;
-		--gray-5: #888;
-		--gray-6: #333;
-		--gray-7: #1d1d1f;
-		--gray-8: #f5f5f7;
-		--gray-9: #86868b;
-		--gray-10: #666;
-		--gray-11: #c9c9d1;
-		--gray-12: #f0f0f2;
-		--gray-13: #e8e8ed;
-		--gray-14: #e8e8ed;
-		--gray-15: #aeaeb2;
+		--gray-4: #86868b;
+		--gray-5: #e8e8ed;
+		--gray-6: #aaaab3;
 		
 		--blue-1: #06c;
 
-        --red-1: #ff2d55;
+		--red-1: #ffdddd;
+		--red-2: #ff2d55;
 	}
 }
 
 @media screen and (prefers-color-scheme: dark) {
 	:root {
-		--soft-1: #1d1d1fb8;
-
 		--gray-a: black;
-		--gray-b: white;
 		
 		--gray-1: #f5f5f7;
 		--gray-2: #8e8e93;
 		--gray-3: #212125;
-		--gray-4: #aaaab3;
-		--gray-5: #8e8e93;
-		--gray-6: #d5d5e2;
-		--gray-7: #f5f5f7;
-		--gray-8: #17171d;
-		--gray-9: #63636e;
-		--gray-10: #aaaab3;
-		--gray-11: #2c2c2e;
-		--gray-12: #1a1a21;
-		--gray-13: #1c1c23;
-		--gray-14: #212125;
-		--gray-15: none;
+		--gray-4: #63636e;
+		--gray-5: #212125;
+		--gray-6: #86868b;
 	
 		--blue-1: #007aff;
 
-        --red-1: #fb5c74;
+		--red-1: #5f2535;
+        --red-2: #fb5c74;
 	}
 }
