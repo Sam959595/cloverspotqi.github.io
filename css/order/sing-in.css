@@ -74,14 +74,15 @@ section.bb input {
 
 section.bb input:last-child {
 	display: block;
+
 	opacity: 0;
-	height: 0;
+	height: 0
 }
 section.bb input:last-child.ee {
 	opacity: 1;
 	height: 50px;
 
-	border-top: 0;
+	border-top: 0
 }
 
 section.bb input::-webkit-input-placeholder {
