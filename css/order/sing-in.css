@@ -72,13 +72,15 @@ section.bb input {
 section.bb label:last-child input {
 	display: block;
 
+	opacity: 0;
 	height: 0;
 
-	transition: all .5s ease-out
+	transition: height .5s ease-out, opacity .5s ease-out .5s
 }/* 2.1 */
 section.bb label:last-child input.ee {
 	margin-top: .5em;
 
+	opacity: 1;
 	height: 50px
 }/* 2.2 */
 
