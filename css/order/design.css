@@ -55,10 +55,6 @@ section.pp input::-webkit-input-placeholder {
 	color: var(--gray-4)
 }
 
-section.pp select:invalid, section.pp input:invalid {
-	background-color: var(--red-1)
-}
-
 section.pp select {
 	font-weight: 600;
 	color: var(--blue-1)
@@ -99,7 +95,7 @@ section.vv div > a {
 	font: normal 600 14px -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: 0;
 
-	color: var(--red-2)
+	color: var(--red-1)
 }
 
 /* 4 */
@@ -117,8 +113,7 @@ section.vv div > a {
 		
 		--blue-1: #06c;
 
-		--red-1: #ffdddd;
-		--red-2: #ff2d55;
+		--red-1: #ff2d55;
 	}
 }
 
@@ -135,7 +130,6 @@ section.vv div > a {
 	
 		--blue-1: #007aff;
 
-		--red-1: #5f2535;
-        --red-2: #fb5c74;
+        --red-1: #fb5c74;
 	}
 }
