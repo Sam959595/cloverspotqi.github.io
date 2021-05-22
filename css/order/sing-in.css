@@ -38,19 +38,14 @@ section.tt h5 {
 /* 2 */
 
 section.bb {
-	margin: 2em 0;
-	width: 100%;
-}
-
-section.bb hr {
-	margin-left: 20.69px
+	margin: 2em auto
 }
 
 section.bb::before {
 	content: "Ключ";
     position: absolute;
 
-	margin: 13.5px 0 0 20.69px;
+	margin: 13.5px 0;
 
     font: normal 600 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0;
@@ -64,7 +59,9 @@ section.bb input {
 
 	border-radius: 0;
 
-	padding: 0 .8em 0 5em;
+	border-bottom: .1px solid var(--gray-3);
+
+	padding: 0 .8em 0 3.5em;
 
 	font: normal 400 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0;
@@ -74,18 +71,19 @@ section.bb input {
 
 	transition: background-color .3s ease-out
 }
-section.bb input:nth-child(3) {
+section.bb input:first-child {
+	border-top: .1px solid var(--gray-3)
+}/* 2.1 */
+section.bb input:last-child {
 	display: block;
 
 	opacity: 0;
-	height: 0
-}/* 2.1 */
-section.bb input:nth-child(3).ee {
-	opacity: 1;
-	height: 50px;
-
-	border-top: .1px solid var(--gray-3)
+	height: 0;
 }/* 2.2 */
+section.bb input:last-child.ee {
+	opacity: 1;
+	height: 50px
+}/* 2.3 */
 
 section.bb input::-webkit-input-placeholder {
 	color: var(--gray-5)
