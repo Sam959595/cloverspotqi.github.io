@@ -98,7 +98,7 @@ section.bb input {
 
 	transition: background-color .3s ease-out
 }
-section.bb input:last-child {
+section.bb label:last-child input {
 	display: block;
 
 	opacity: 0;
@@ -106,7 +106,7 @@ section.bb input:last-child {
 
 	transition: all .5s ease-out;
 }/* 3.1 */
-section.bb input:last-child.ee {
+section.bb label:last-child input.ee {
 	margin-top: .5em;
 
 	opacity: 1;
