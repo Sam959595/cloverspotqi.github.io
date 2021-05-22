@@ -80,5 +80,5 @@ p, time {
 	color: var(--gray-2)
 }
 a {
-	color: -webkit-link
+	color: var(--blue-1)
 }
