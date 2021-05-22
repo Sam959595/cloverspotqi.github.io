@@ -69,6 +69,7 @@ section.bb input {
 	border-style: solid;
 	border-color: var(--gray-3);
 
+	background-color: transparent;
 	color: var(--gray-1);
 
 	transition: background-color .3s ease-out
