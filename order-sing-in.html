@@ -22,17 +22,14 @@
 
     <section class="tt">
         <h1>Авторизация в<br>Logo Structure</h1>
-        <p>Введите ключ индентификатор, чтобы воспользоваться доступом к личным данным и заявкам.</p>
+        <p>Введите ключ идентификатор, чтобы воспользоваться доступом к личным данным и заявкам.</p>
     </section>
 
     <apple-auth>
         <sing-in>
             <section class="bb">
-                <label for="account_name_text_field"></label>
-                <input type="text" can-field="accountName" id="account_name_text_field" name="email" placeholder="Например: victor123" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" maxlength="32">
-
-                <label for="password_text_field"></label>
-                <input type="password" can-field="password" id="password_text_field" name="password" placeholder="Пароль" autocomplete="off" autocorrect="off" autocapitalize="off" minlength="8" maxlength="15" pattern="[0-9A-Za-z]{8,15}">
+                <input type="text" name="email" placeholder="Например: victor123" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" maxlength="32">
+                <input type="password" name="password" placeholder="Пароль" autocomplete="off" autocorrect="off" autocapitalize="off" minlength="8" maxlength="15" pattern="[0-9A-Za-z]{8,15}">
             </section>
         </sing-in>
     </apple-auth>
@@ -40,6 +37,36 @@
     <section class="kk">
         <a href="order-add-account.html">Создать учётную запись</a>
     </section>
+
+    <div class="si-field-container container">
+        <div class="form-table">
+          <div class="account-name form-row    ">
+            <label class="sr-only form-cell form-label" for="account_name_text_field" _msthash="1114100" _msttexthash="2028559">Разработчик Apple ID</label>
+            <div class="form-cell">
+    
+              <div class=" form-cell-wrapper ">
+                <input type="text" id="account_name_text_field" can-field="accountName" autocomplete="off" autocorrect="off" autocapitalize="off" aria-required="true" required="required" aria-invalid="false" spellcheck="false" ($focus)="appleIdFocusHandler()" ($keyup)="appleIdKeyupHandler()" ($blur)="appleIdBlurHandler()" class="force-ltr form-textbox form-textbox-text " placeholder="Apple ID" autofocus="" _mstplaceholder="82030">
+                <span aria-hidden="true" id="apple_id_field_label" class=" form-label-flyout" _msthidden="1">             
+                  <font _mstmutation="1" _msthash="437814" _msttexthash="82030" _msthidden="1">Apple ID</font>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="password form-row     " aria-hidden="true">
+            <label class="sr-only form-cell form-label" for="password_text_field" _msthash="1114568" _msttexthash="802438">Пароль</label>
+            <div class="form-cell">
+              <div class="form-cell-wrapper ">
+                <input type="password" id="password_text_field" ($keyup)="passwordKeyUpHandler()" ($focus)="pwdFocusHandler()" ($blur)="pwdBlurHandler()" aria-required="true" required="required" can-field="password" autocomplete="off" class="form-textbox form-textbox-text " placeholder="Пароль" aria-invalid="false" tabindex="-1" _mstplaceholder="802438">
+                <span id="password_field_label" aria-hidden="true" class=" form-label-flyout" _msthidden="1">              <font _mstmutation="1" _msthash="445471" _msttexthash="802438" _msthidden="1">Пароль</font> 
+                </span>
+                <span class="sr-only form-label-flyout" id="invalid_user_name_pwd_err_msg" aria-hidden="true">
+                  
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/order/add-account.js"></script>
