@@ -53,16 +53,13 @@ section.bb form::before {
     color: var(--gray-1)
 }
 
-section.bb input:first-child {
-	border-top: .1px solid var(--gray-3)
-}
-
 section.bb input {
 	width: 100%;
 	height: 50px;
 
 	border-radius: 0;
-	border-bottom: .1px solid var(--gray-3);
+	border: solid var(--gray-3);
+	border-width: .1px 0;
 
 	padding: 0 .8em 0 5em;
 
@@ -82,13 +79,14 @@ section.bb input:last-child {
 }
 section.bb input:last-child.ee {
 	opacity: 1;
-	height: 50px
+	height: 50px;
+
+	border-top: 0;
 }
 
 section.bb input::-webkit-input-placeholder {
 	color: var(--gray-5)
 }
-
 section.bb input:invalid {
 	background-color: var(--red-1)
 }
