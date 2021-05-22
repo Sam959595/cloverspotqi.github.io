@@ -24,7 +24,7 @@ section.tt {
 }
 section.tt h1 {
 	font: 700 32px/1.125 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: .004em;
+    letter-spacing: .012em
 }
 
 /* 2 */
