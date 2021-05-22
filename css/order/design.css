@@ -12,7 +12,7 @@
 
 /* 0 */
 
-section.tt, section.pp, section.vv figcaption {
+section {
     margin: 0 auto;
     width: 90%
 }
@@ -65,53 +65,39 @@ section.pp input[placeholder] {
 /* 3 */
 
 section.vv {
-    margin-top: .5cm;
-    background-color: var(--gray-8)
-}
-section.vv figcaption {
-    padding: 1cm 0 2cm
-}
-
-section.vv ol {
-    padding-left: 20px;
-
-    list-style: outside disc
-}
-section.vv ol li+li {
-    margin-top: 1.2em
-}
-section.vv ol li {
-    color: var(--gray-9)
+	margin: 2cm auto .5cm;
+	padding-bottom: env(safe-area-inset-bottom)
 }
 
 section.vv div {
-	margin-top: 1cm;
-    text-align: center
+	text-align: center
 }
 
-section.vv a:first-child {
-	-webkit-touch-callout: none;
+section.vv p {
+    font: 400 11px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: -.008em;
 
-	display: block;
+	color: var(--gray-3)
+}
+section.vv input {
+	margin: .5cm 0;
 
     width: 100%;
+	height: 45px;
 
     border-radius: 11px;
 
-    padding: .75em;
-
     font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
+	letter-spacing: 0;
 
-    background-color: var(--gray-13)
+    background-color: var(--gray-14);
+	color: var(--blue-1)
 }
-section.vv a:last-child {
-	margin-top: 1cm;
+section.vv div > a {
+	font: normal 600 14px -apple-system, BlinkMacSystemFont, "Segoe UI";
+	letter-spacing: 0;
 
-	display: inline-block;
-
-	font: normal 400 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
-
-    color: var(--red-1)
+	color: var(--red-1)
 }
 
 /* 4 */
