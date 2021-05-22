@@ -106,7 +106,7 @@ section.bb input:nth-child(4) {
 
 	transition: all .5s ease-out
 }/* 3.1 */
-section.bb input:nth-child(4).ee {
+section.bb input:nth-child(4) {
 	margin-top: .5em;
 
 	opacity: 1;
