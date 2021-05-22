@@ -25,12 +25,14 @@
         <p>Введите ключ индентификатор, чтобы воспользоваться доступом к личным данным и заявкам.</p>
     </section>
 
-    <sing-in>
-        <section class="bb">
-            <input type="text" can-field="accountName" name="email" placeholder="Например: victor123" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" maxlength="32">
-            <input type="password" can-field="password" name="password" placeholder="Пароль" autocomplete="off" autocorrect="off" autocapitalize="off" minlength="8" maxlength="15" pattern="[0-9A-Za-z]{8,15}">
-        </section>
-    </sing-in>
+    <apple-auth app-loading-defaults="{appLoadingDefaults}" pmrpc-hook="{pmrpcHook}">
+        <sing-in>
+            <section class="bb">
+                <input type="text" can-field="accountName" name="email" placeholder="Например: victor123" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" maxlength="32">
+                <input type="password" can-field="password" name="password" placeholder="Пароль" autocomplete="off" autocorrect="off" autocapitalize="off" minlength="8" maxlength="15" pattern="[0-9A-Za-z]{8,15}">
+            </section>
+        </sing-in>
+    </apple-auth>
 
     <section class="kk">
         <a href="order-add-account.html">Создать учётную запись</a>
