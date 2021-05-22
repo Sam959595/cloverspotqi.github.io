@@ -93,13 +93,14 @@ section.vv input {
     padding: .75em;
 
     font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
+	letter-spacing: 0;
 
     background-color: var(--gray-5);
 	color: var(--blue-1)
 }
 section.vv div > a {
 	font: normal 600 14px/1.42859 -apple-system, BlinkMacSystemFont, "Segoe UI";
-	letter-spacing: -.016em
+	letter-spacing: .015em
 }
 
 /* 4 */
