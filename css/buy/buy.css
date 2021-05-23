@@ -51,8 +51,6 @@ section.vv > div {
 }
 
 section.vv h6 {
-    font-weight: 600;
-
     color: var(--red-1)
 }
 section.vv h5 {
