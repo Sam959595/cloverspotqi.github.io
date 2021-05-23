@@ -38,7 +38,7 @@ section.tt h5 {
 /* 2 */
 
 section.bb {
-	margin: 1cm auto
+	margin: 1cm auto .5cm
 }
 
 section.bb form::before {
@@ -111,9 +111,6 @@ section.kk a {
 
 	font: normal 400 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0
-}
-section.kk a+a {
-	margin-top: .5cm
 }
 
 /* 4 */
