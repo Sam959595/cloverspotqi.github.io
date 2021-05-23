@@ -57,6 +57,10 @@ section.bb form::before {
 	border-width: .1px 0;
 */
 
+section.bb hr {
+	margin-left: var(--padding)
+}
+
 section.bb input {
 	width: 100%;
 	height: 50px;
@@ -80,12 +84,8 @@ section.bb input:nth-of-type(2) {
 	opacity: 0;
 	height: 0
 }
-section.bb hr {
-	margin-left: var(--padding)
-}
 section.bb hr:nth-of-type(2) {
-	display: none;
-	margin-left: 7em
+	display: none
 }
 
 section.bb input:nth-of-type(2).ee {
