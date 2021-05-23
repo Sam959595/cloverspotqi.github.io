@@ -119,7 +119,13 @@ section.kk a+a {
 /* 3 */
 
 section.gg {
-	margin-top: .5cm;
+	display: none;
+	position: absolute;
+	
+	margin-top: 1cm;
+
+	inset: 0 0 auto;
+
 	text-align: center
 }
 section.gg h6 {
