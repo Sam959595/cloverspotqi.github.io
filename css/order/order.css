@@ -322,8 +322,8 @@ section.kk a {
 	padding-left: var(--padding)
 }
 
-section.kk li+li a {
-	border-top: .1px solid var(--gray-3)
+section.kk hr {
+	margin-left: var(--padding)
 }
 
 /* 9 */
