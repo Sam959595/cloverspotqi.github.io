@@ -45,7 +45,7 @@ section.bb form::before {
 	content: "Ключ";
     position: absolute;
 
-	margin: 14px 0 14px 20px;
+	margin: 14px 0 14px var(--padding);
 
     font: normal 600 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0;
@@ -80,9 +80,12 @@ section.bb input:nth-of-type(2) {
 	opacity: 0;
 	height: 0
 }
+section.bb hr {
+	margin-left: var(--padding)
+}
 section.bb hr:nth-of-type(2) {
 	display: none;
-	margin-left: 20px
+	margin-left: 7em
 }
 
 section.bb input:nth-of-type(2).ee {
@@ -110,6 +113,17 @@ section.kk a {
 
 	font: normal 400 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0
+}
+
+/* 4 */
+
+@media screen and (min-width: 320px) and (max-width: 428px) {
+    :root {
+        --padding: 20px;
+    }
+
+    @media screen and (orientation: landscape) {
+    }
 }
 
 /* 4 */
