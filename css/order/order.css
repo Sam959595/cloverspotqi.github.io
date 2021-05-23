@@ -347,7 +347,7 @@ footer li+li {
 
 @media screen and (min-width: 320px) and (max-width: 428px) {
     :root {
-        --padding: 20.69px;
+        --padding: 20.33px;
     }
 
     @media screen and (orientation: landscape) {

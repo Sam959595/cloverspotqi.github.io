@@ -1,6 +1,6 @@
 $(document).ready(function () {
     let a = $('section.bb input:first-child'),
-    b = $('section.bb input:last-child')[0],
+    b = $('section.bb hr:nth-of-type(2), section.bb input:last-child')[0],
     c = 'ee';
 
     a.keydown(function(e) {
