@@ -2,7 +2,7 @@ $(document).ready(function () {
     let a = $('section.bb input:nth-of-type(1)'),
     b = $('section.bb input:nth-of-type(2)')[0],
     n = $('section.bb hr:nth-of-type(2)')[0],
-    e = 'ee',
+    c = 'ee',
     r = 'rr';
 
     a.keydown(function(e) {
@@ -12,8 +12,8 @@ $(document).ready(function () {
             if (this.value.length === 0) {
                 return false;
             } else {
-                b.classList.add(e);
-                n.classList.add(c);
+                b.classList.add(c);
+                n.classList.add(r);
             }
         }
     });
