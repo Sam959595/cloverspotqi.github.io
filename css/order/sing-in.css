@@ -88,7 +88,6 @@ section.bb input:last-child.ee {
 section.bb input::-webkit-input-placeholder {
 	color: var(--gray-5)
 }
-
 section.bb input:invalid {
 	background-color: var(--red-1)
 }
