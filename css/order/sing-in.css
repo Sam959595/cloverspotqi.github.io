@@ -116,6 +116,16 @@ section.kk a+a {
 	margin-top: .5cm
 }
 
+/* 3 */
+
+section.gg {
+	margin-top: .5cm;
+	text-align: center
+}
+section.gg h6 {
+	color: var(--red-2)
+}
+
 /* 4 */
 
 @media screen and (max-width: 428px) {
@@ -142,6 +152,7 @@ section.kk a+a {
 		--blue-1: #06c;
 
 		--red-1: #ffdddd;
+		--red-2: #ff2d55;
 	}
 }
 
@@ -158,5 +169,6 @@ section.kk a+a {
 		--blue-1: #007aff;
 
 		--red-1: #5f2535;
+		--red-2: #fb5c74;
 	}
 }
