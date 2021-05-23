@@ -6,9 +6,9 @@ $(window).ready (function () {
     c = 'ee',
     r = 'rr';
 
-    a.keydown (function (e) {
+    a.keydown (function (x) {
 
-        if (e.keyCode === 13) {
+        if (x.keyCode === 13) {
 
             if (this.value.length === 0) {
                 return false;
@@ -23,13 +23,13 @@ $(window).ready (function () {
 function ss () {
     let a = $ ('section.bb input:nth-of-type(1)'),
     b = $ ('section.bb input:nth-of-type(2)') [0],
-    v = $ ('section.gg') [0],
     n = (a || b),
-    k = (a && b);
+    k = (a && b),
+    v = $ ('section.gg') [0];
 
-    n.keydown (function (e) {
+    n.keydown (function (x) {
 
-        if (e.keyCode === 13 && k.value.length > 0) {
+        if (x.keyCode === 13 && k.value.length > 0) {
             v.style.display = 'block';
         }
     });
