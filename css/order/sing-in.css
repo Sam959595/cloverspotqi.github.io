@@ -78,15 +78,16 @@ section.bb input {
 	transition: background-color .3s ease-out, height .3s ease
 }
 
-section.bb label:nth-of-type(2) input {
+section.bb input:nth-of-type(2) {
 	display: block;
+
 	opacity: 0;
 	height: 0
 }
 section.bb hr:nth-of-type(2) {
 	display: none
 }
-section.bb label:nth-of-type(2) input.ee {
+section.bb input:nth-of-type(2).ee {
 	opacity: 1;
 	height: 50px
 }

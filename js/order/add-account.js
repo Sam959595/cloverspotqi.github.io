@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    let a = $('section.bb label:nth-of-type(1) input'),
-    b = $('section.bb label:nth-of-type(2) input')[0],
+    let a = $('section.bb input:nth-of-type(1)'),
+    b = $('section.bb input:nth-of-type(2)')[0],
     n = $('section.bb hr:nth-of-type(2)')[0],
     c = 'ee',
     r = 'rr';
