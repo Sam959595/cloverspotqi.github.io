@@ -94,8 +94,7 @@ section.bb input:nth-of-type(2).ee {
 	height: 50px
 }
 section.bb hr:nth-of-type(2).rr {
-	opacity: 1;
-	height: .1px
+	opacity: 1
 }
 
 section.bb input::-webkit-input-placeholder {
