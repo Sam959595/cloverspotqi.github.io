@@ -69,7 +69,7 @@ section.bb input {
 	background-color: transparent;
 	color: var(--gray-1);
 
-	transition: background-color .3s ease-out
+	transition: background-color .3s ease-out, height .3s ease
 }
 
 section.bb input:last-child {
