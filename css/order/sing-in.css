@@ -80,7 +80,6 @@ section.bb input {
 
 section.bb input:nth-of-type(2) {
 	display: block;
-
 	opacity: 0;
 	height: 0
 }
