@@ -12,10 +12,8 @@
 
 	-webkit-font-smoothing: antialiased
 }
-*:not(input) {
-	-webkit-user-select: none
-}
-*:not(a[draggable="false"]) {
+*:not(input, a[draggable="false"]) {
+	-webkit-user-select: none;
 	-webkit-touch-callout: none
 }
 
