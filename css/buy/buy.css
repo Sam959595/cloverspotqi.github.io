@@ -158,8 +158,6 @@ section.hh ul figure {
 /* 1 */
 
 section.kk a {
-	-webkit-touch-callout: none;
-
 	display: block;
 
 	padding-left: var(--padding)
