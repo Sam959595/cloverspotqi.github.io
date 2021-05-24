@@ -10,11 +10,11 @@
 	font: normal 400 12px/1.33337 -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: -.01em;
 
-	-webkit-font-smoothing: antialiased
-}
-*:not(input, a[draggable="true"]) {
-	-webkit-user-select: none;
+	-webkit-font-smoothing: antialiased;
 	-webkit-touch-callout: none
+}
+*:not(input) {
+	-webkit-user-select: none
 }
 
 a, strong, b, sup, sub, u, ins, del, i, s, mark, small, q, em, span, time {
