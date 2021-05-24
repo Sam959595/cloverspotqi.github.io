@@ -11,13 +11,13 @@ $(window).ready (function () {
         if (x.keyCode === 13) {
 
             if (this.value.length === 0) {
-                return false;
+                return false
             } else {
                 b.classList.add(c);
-                n.classList.add(r);
+                n.classList.add(r)
             }
-        };
-    });
+        }
+    })
 });
 
 function ss () {
@@ -30,8 +30,8 @@ function ss () {
     n.keydown (function (x) {
 
         if (x.keyCode === 13 && k.value.length > 0) {
-            v.style.display = 'block';
+            
         }
-    });
+    })
 }
 ss ();
