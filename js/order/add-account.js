@@ -35,3 +35,14 @@ function ss () {
     })
 }
 ss ();
+
+function dd (x) {
+    console.log('1');
+    x ();
+}
+dd;
+
+function bb (x, n) {
+    console.log(x + n)
+}
+bb (1, 2);

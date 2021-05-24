@@ -80,19 +80,19 @@ section.bb figcaption {
 	overflow: hidden
 }
 
-section.bb figcaption > div {
+section.bb figcaption ul {
 	display: grid;
 	grid-auto-flow: column;
 
 	justify-content: center
 }
 
-section.bb figcaption > div div {
+section.bb figcaption ul li {
 	margin: .5em;
 
     position: relative
 }
-section.bb figcaption > div div::before {
+section.bb figcaption ul li::before {
     z-index: 1;
     position: absolute;
 
@@ -103,7 +103,7 @@ section.bb figcaption > div div::before {
     background: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 90 90'%3e%3cpath d='m58.41868930807106,0.5000030713727028 c8.895362248019133,0 13.3430433720287,0 18.18607392928356,1.482560374669856 c5.238379990500156,1.8779098079151506 9.389549039575751,6.029078856990745 11.267458847490902,11.267458847490902 c1.5813977329811792,4.843030557254862 1.5813977329811792,9.389549039575751 1.5813977329811792,18.284911287594884 l0,26.883761460680045 c0,8.895362248019133 0,13.3430433720287 -1.482560374669856,18.18607392928356 c-1.8779098079151506,5.238379990500156 -6.029078856990745,9.389549039575751 -11.267458847490902,11.267458847490902 c-4.941867915566185,1.5813977329811792 -9.389549039575751,1.5813977329811792 -18.284911287594884,1.5813977329811792 l-26.883761460680045,0 c-8.895362248019133,0 -13.3430433720287,0 -18.18607392928356,-1.482560374669856 c-5.33721734881148,-1.976747166226474 -9.389549039575751,-6.029078856990745 -11.366296205802225,-11.366296205802225 c-1.482560374669856,-4.744193198943537 -1.482560374669856,-9.191874322953105 -1.482560374669856,-18.18607392928356 l0,-26.883761460680045 c0,-8.895362248019133 0,-13.3430433720287 1.482560374669856,-18.18607392928356 c1.976747166226474,-5.238379990500156 6.029078856990745,-9.389549039575751 11.366296205802225,-11.267458847490902 c4.744193198943537,-1.5813977329811792 9.191874322953105,-1.5813977329811792 18.18607392928356,-1.5813977329811792 l26.883761460680045,0 z' fill-opacity='0' opacity='.15' stroke='%23808080' stroke-width='1'/%3e%3c/svg%3e") no-repeat
 }
 
-section.bb figcaption > div div img {
+section.bb figcaption ul li img {
 	width: 100px;
 	height: 100px;
 
@@ -118,14 +118,14 @@ section.bb {
     background-color: var(--gray-14)
 }
 
-section.bb > div:nth-child(3) {
+section.bb div:nth-child(3) {
 	padding: .5cm
 }
-section.bb h1 {
+section.bb div h1 {
     font: normal 700 32px/1.25 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: .012em
 }
-section.bb > div p {
+section.bb div p {
 	margin-top: 1.2em;
 
 	font: normal 400 14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI";
@@ -263,26 +263,20 @@ section.hh ul li:last-child {
 }
 
 section.hh ul li a {
-	position: relative;
-
-    display: block;
-
-	border-radius: 20px
-}
-
-section.hh ul figcaption {
-	z-index: 1;
-
-	position: absolute;
-
-	inset: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 
 	padding: 2em;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between
+	width: 302px;
+	height: 480px;
+
+	border-radius: 20px;
+
+	background: center/cover var(--gray-8)
 }
+
 section.hh ul h2 {
 	font: normal 600 19px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0
@@ -296,15 +290,6 @@ section.hh ul p {
 section.hh ul h6 {
     font: normal 400 11px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: -.008em
-}
-
-section.hh ul figure {
-	width: 302px;
-	height: 480px;
-
-	border-radius: inherit;
-
-	background: center/cover var(--gray-8)
 }
 
 /* 8 */
