@@ -62,10 +62,10 @@ span {
 ::-webkit-scrollbar {
 	display: none
 }
-:lang(ru-RU) {
+:lang(ru) {
 	quotes: "\00ab" "\00bb"
 }
-:lang(en-US) {
+:lang(en) {
 	quotes: "\201c" "\201d"
 }
 
