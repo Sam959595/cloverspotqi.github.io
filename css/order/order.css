@@ -263,8 +263,6 @@ section.hh ul li:last-child {
 }
 
 section.hh ul li a {
-	-webkit-touch-callout: none;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -299,8 +297,6 @@ section.hh ul h6 {
 /* 8 */
 
 section.kk a {
-	-webkit-touch-callout: none;
-
 	display: block;
 
 	padding: 10px 0;

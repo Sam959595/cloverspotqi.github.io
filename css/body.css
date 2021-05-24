@@ -15,7 +15,7 @@
 *:not(input) {
 	-webkit-user-select: none
 }
-*:not(a[href="tel:"], a[href="mailto:"]) {
+*:not(a[draggable="false"]) {
 	-webkit-touch-callout: none
 }
 

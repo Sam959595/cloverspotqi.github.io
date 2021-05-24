@@ -88,8 +88,6 @@ section.vv div {
 }
 
 section.vv a:first-child {
-	-webkit-touch-callout: none;
-
 	display: block;
 
     width: 100%;
