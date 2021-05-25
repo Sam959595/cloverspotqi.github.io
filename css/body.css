@@ -12,6 +12,9 @@
 
 	-webkit-font-smoothing: antialiased
 }
+*:not(a) {
+	-webkit-user-select: none
+}
 
 img {
 	-webkit-touch-callout: none
