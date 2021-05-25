@@ -12,9 +12,6 @@
 
 	-webkit-font-smoothing: antialiased
 }
-*:not(a):not(input) {
-	-webkit-user-select: none
-}
 
 img {
 	-webkit-touch-callout: none
