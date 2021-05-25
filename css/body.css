@@ -15,10 +15,10 @@
 *:not(a) {
 	-webkit-user-select: none
 }
-
-img {
+.x {
 	-webkit-touch-callout: none
 }
+
 a, strong, b, sup, sub, u, ins, del, i, s, mark, small, q, em, span, time {
 	font: inherit;
 	letter-spacing: inherit
