@@ -12,7 +12,7 @@
 
 	-webkit-font-smoothing: antialiased
 }
-*:not(input) {
+*:not(a, input) {
 	-webkit-user-select: none
 }
 
