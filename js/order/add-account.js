@@ -1,4 +1,4 @@
-$(window).ready (function () {
+let ff = () => {
     let a = $ ('section.bb input:nth-of-type(1)'),
     b = $ ('section.bb input:nth-of-type(2)') [0],
     n = $ ('section.bb hr:nth-of-type(2)') [0],
@@ -18,31 +18,35 @@ $(window).ready (function () {
             }
         }
     })
-});
+}
 
-function ss () {
-    let a = $ ('section.bb input:nth-of-type(1)'),
-    b = $ ('section.bb input:nth-of-type(2)') [0],
-    n = (a || b),
+ff();
+
+let nn = () => {
+    let w = localStorage.getItem('username'),
+    t = localStorage.getItem('passwork'),
+    a = $ ('section.bb input:nth-of-type(1)'),
+    b = $ ('section.bb input:nth-of-type(2)'),
+    n = (b || a),
     k = (a && b),
-    v = $ ('section.gg') [0];
+    v = $ ('section.gg');
 
-    n.keydown (function (x) {
+    n.keydown ( (x) => {
 
-        if (x.keyCode === 13 && k.value.length > 0) {
-            
+        if ((x.keyCode === 13) && (k.value != 0)) {
+            v.html('<h6>Авторизация.</h6>')
+        } else if ((a.value.length === 0) && (b.value.length != 0)) {
+            v.html('<h6>Введите ключ.</h6>')
+        } else if ((a.value != 0) && (b.value.length === 0)) {
+            v.html('<h6>Введите пароль.</h6>')
+        } else if (k.value.length === 0) {
+            v.html('<h6>Введите ключ и пароль.</h6>')
+        } else if (k.value != 0) {
+            return true
+        } else if (xx == false) {
+            v.html('<h6>Неверный ключ или пароль.</h6>')
         }
-    })
+    });
 }
-ss ();
 
-function dd (x) {
-    console.log('1');
-    x ();
-}
-dd;
-
-function bb (x, n) {
-    console.log(x + n)
-}
-bb (1, 2);
+nn();
