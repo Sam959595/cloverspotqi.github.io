@@ -34,7 +34,7 @@ let nn = () => {
         let m = (x.keyCode === 13);
         
         if (m && (a[0].value.length === 0) && (b.value != 0)) {
-            alert('Введите ключ')
+            v.html('<h6>Введите ключ</h6>')
         } else if (m && (a[0].value != 0) && (b[0].value.length === 0)) {
             v.html('<h6>Введите пароль</h6>')
         } else if (m && (n[0].value.length === 0)) {
