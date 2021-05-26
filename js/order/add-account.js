@@ -26,8 +26,7 @@ let nn = () => {
 
         if (k && (a.value.length === 0) && (b.value.length != 0)) {
             v.html(y)
-        } else if (k && (n[0].value.length != 0)) {
-            console.log('post');
+        } else if (k && (b.value.length != 0) && (a.value.length != 0)) {
             ( () => {
                 let w = localStorage.getItem('username'),
                 t = localStorage.getItem('passwork');
