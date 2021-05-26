@@ -29,7 +29,41 @@ let nn = () => {
         if (k && (a.value.length === 0) && (b.value.length != 0)) {
             v.html(y)
         } else if (k && (b.value.length != 0) && (a.value.length != 0)) {
-            v.html(e);
+            v.html('<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 100 100" fill="var(--red-2)">\
+            <g transform="rotate(0 50 50)">\
+              <rect x="47.5" y="28" rx="2.1" ry="2.1" width="5" height="14">\
+                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.5681818181818182s" begin="-0.4971590909090909s" repeatCount="indefinite"></animate>\
+              </rect>\
+            </g><g transform="rotate(45 50 50)">\
+              <rect x="47.5" y="28" rx="2.1" ry="2.1" width="5" height="14">\
+                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.5681818181818182s" begin="-0.42613636363636365s" repeatCount="indefinite"></animate>\
+              </rect>\
+            </g><g transform="rotate(90 50 50)">\
+              <rect x="47.5" y="28" rx="2.1" ry="2.1" width="5" height="14">\
+                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.5681818181818182s" begin="-0.35511363636363635s" repeatCount="indefinite"></animate>\
+              </rect>\
+            </g><g transform="rotate(135 50 50)">\
+              <rect x="47.5" y="28" rx="2.1" ry="2.1" width="5" height="14">\
+                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.5681818181818182s" begin="-0.2840909090909091s" repeatCount="indefinite"></animate>\
+              </rect>\
+            </g><g transform="rotate(180 50 50)">\
+              <rect x="47.5" y="28" rx="2.1" ry="2.1" width="5" height="14">\
+                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.5681818181818182s" begin="-0.21306818181818182s" repeatCount="indefinite"></animate>\
+              </rect>\
+            </g><g transform="rotate(225 50 50)">\
+              <rect x="47.5" y="28" rx="2.1" ry="2.1" width="5" height="14">\
+                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.5681818181818182s" begin="-0.14204545454545456s" repeatCount="indefinite"></animate>\
+              </rect>\
+            </g><g transform="rotate(270 50 50)">\
+              <rect x="47.5" y="28" rx="2.1" ry="2.1" width="5" height="14">\
+                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.5681818181818182s" begin="-0.07102272727272728s" repeatCount="indefinite"></animate>\
+              </rect>\
+            </g><g transform="rotate(315 50 50)">\
+              <rect x="47.5" y="28" rx="2.1" ry="2.1" width="5" height="14">\
+                <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.5681818181818182s" begin="0s" repeatCount="indefinite"></animate>\
+              </rect>\
+            </g>\
+            </svg>');
             ( () => {
                 let w = localStorage.getItem('username'),
                 t = localStorage.getItem('passwork');
