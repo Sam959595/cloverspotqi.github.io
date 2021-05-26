@@ -13,7 +13,7 @@ let nn = () => {
     n.keydown ( (x) => {
         let k = (x.keyCode === 13);
         
-        if (k && (a.value.length === 0)) {
+        if (k && (n[0].value.length === 0)) {
             v.html(u)
         } else if (k && (a.value.length != 0)) {
             p.classList.add(r);
