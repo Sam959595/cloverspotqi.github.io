@@ -2,7 +2,7 @@ let nn = () => {
     let a = $ ('section.bb input:nth-of-type(1)')[0],
     b = $ ('section.bb input:nth-of-type(2)')[0],
     n = $ ('section.bb input'),
-    v = $ ('section.gg'),
+    v = $ ('blockquote.gg'),
     p = $ ('section.bb hr:nth-of-type(2)')[0],
     c = 'ee',
     r = 'rr',

@@ -19,6 +19,27 @@ section:not(.bb) {
 
 /* 1 */
 
+blockquote.gg {
+	z-index: 5;
+
+    position: fixed;
+
+    inset: 0 0 auto;
+
+    padding: 1em;
+
+    text-align: center;
+
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: var(--soft-1);
+}
+blockquote.gg h6 {
+	color: var(--red-2)
+}
+
+/* 1 */
+
 section.tt {
 	margin-top: 2cm;
 	text-align: center
@@ -117,21 +138,6 @@ section.kk a+a {
 	margin-top: .5cm
 }
 
-/* 3 */
-
-section.gg {
-	position: absolute;
-	
-	margin-top: 5.5cm;
-
-	inset: 0 0 auto;
-
-	text-align: center
-}
-section.gg h6 {
-	color: var(--red-2)
-}
-
 /* 4 */
 
 @media screen and (max-width: 428px) {
@@ -147,6 +153,8 @@ section.gg h6 {
 
 @media screen and (prefers-color-scheme: light) {
 	:root {
+		--soft-1: #f5f5f7b8;
+
 		--gray-a: white;
 
 		--gray-1: #1d1d1f;
@@ -164,6 +172,8 @@ section.gg h6 {
 
 @media screen and (prefers-color-scheme: dark) {
 	:root {
+		--soft-1: #1d1d1fb8;
+
 		--gray-a: black;
 
 		--gray-1: #f5f5f7;
