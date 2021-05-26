@@ -15,9 +15,7 @@ let nn = () => {
 
         if (k && (p.classList.contains(r)) && (b.value.length === 0) && (a.value.length != 0)) {
             v.html(q)
-        }
-        
-        if (k && (n[0].value.length === 0)) {
+        } else if (k && (n[0].value.length === 0)) {
             v.html(u)
         } else if (k && (a.value.length != 0)) {
             p.classList.add(r);
