@@ -31,7 +31,7 @@ let nn = () => {
                 let w = localStorage.getItem('username'),
                 t = localStorage.getItem('passwork');
         
-                $.post('user.php', {
+                $.post('users.php', {
                     w: username,
                     t: password
                 });
