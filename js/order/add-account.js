@@ -27,24 +27,20 @@ let nn = () => {
     t = localStorage.getItem('passwork'),
     a = $ ('section.bb input:nth-of-type(1)'),
     b = $ ('section.bb input:nth-of-type(2)'),
-    n = (b || a),
-    k = (a && b),
+    n = $ ('section.bb input'),
     v = $ ('section.gg');
 
     n.keydown ( (x) => {
-
-        if ((x.keyCode === 13) && (k.value != 0)) {
-            v.html('<h6>Авторизация.</h6>')
-        } else if ((a.value.length === 0) && (b.value.length != 0)) {
-            v.html('<h6>Введите ключ.</h6>')
-        } else if ((a.value != 0) && (b.value.length === 0)) {
-            v.html('<h6>Введите пароль.</h6>')
-        } else if (k.value.length === 0) {
-            v.html('<h6>Введите ключ и пароль.</h6>')
-        } else if (k.value != 0) {
-            return true
-        } else if (xx == false) {
-            v.html('<h6>Неверный ключ или пароль.</h6>')
+        let m = (x.keyCode === 13);
+        
+        if (m && (a[0].value.length === 0) && (b.value != 0)) {
+            v.html('<h6>Введите ключ</h6>')
+        } else if (m && (a[0].value != 0) && (b[0].value.length === 0)) {
+            v.html('<h6>Введите пароль</h6>')
+        } else if (m && (n[0].value.length === 0)) {
+            v.html('<h6>Введите ключ и пароль</h6>')
+        } else if (m && (n[0].value != 0)) {
+            v.html('')
         }
     });
 }
