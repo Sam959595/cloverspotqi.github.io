@@ -26,18 +26,19 @@ let nn = () => {
 
         if (k && (a.value.length === 0) && (b.value.length != 0)) {
             v.html(y)
+        } else if (k && (n[0].value.length != 0)) {
+            console.log('post');
+            ( () => {
+                let w = localStorage.getItem('username'),
+                t = localStorage.getItem('passwork');
+        
+                $.post('user.php', {
+                    w: username,
+                    t: password
+                });
+            })
         }
     });
-
-    ( () => {
-        let w = localStorage.getItem('username'),
-        t = localStorage.getItem('passwork');
-
-        $.post('user.php', {
-            w: username,
-            t: password
-        });
-    })
 }
 
 nn();
