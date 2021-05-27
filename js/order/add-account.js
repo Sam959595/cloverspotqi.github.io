@@ -43,7 +43,7 @@ let nn = () => {
         <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animate>\
       </rect>\
     </g>\
-    </svg>',\
+    </svg>',
     e = '<h6>Неверный ключ или пароль</h6>',
     g = '<h6>Сбой авторизации</h6>';
 
