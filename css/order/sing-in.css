@@ -38,11 +38,11 @@ section.tt h5 {
 /* 1 */
 
 section.gg {
-	height: 1cm;
+	height: 38px;
 	text-align: center
 }
 section.gg h6 {
-	padding: 10.5px 0;
+	padding: 11px 0;
 	color: var(--red-2)
 }
 
