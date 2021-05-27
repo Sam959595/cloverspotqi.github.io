@@ -9,37 +9,37 @@ let nn = () => {
     y = '<h6>Введите ключ</h6>',
     q = '<h6>Введите пароль</h6>',
     u = '<h6>Введите ключ и пароль</h6>',
-    t = '<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100" fill="var(--red-2)">\
+    t = '<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 100 100" fill="var(--red-2)">\
     <g transform="rotate(0 50 50)">\
-      <rect x="46" y="19" rx="3.96" ry="3.96" width="8" height="22">\
+      <rect x="45.5" y="13.5" rx="3.91" ry="3.91" width="9" height="23">\
         <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.875s" repeatCount="indefinite"></animate>\
       </rect>\
     </g><g transform="rotate(45 50 50)">\
-      <rect x="46" y="19" rx="3.96" ry="3.96" width="8" height="22">\
+      <rect x="45.5" y="13.5" rx="3.91" ry="3.91" width="9" height="23">\
         <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.75s" repeatCount="indefinite"></animate>\
       </rect>\
     </g><g transform="rotate(90 50 50)">\
-      <rect x="46" y="19" rx="3.96" ry="3.96" width="8" height="22">\
+      <rect x="45.5" y="13.5" rx="3.91" ry="3.91" width="9" height="23">\
         <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.625s" repeatCount="indefinite"></animate>\
       </rect>\
     </g><g transform="rotate(135 50 50)">\
-      <rect x="46" y="19" rx="3.96" ry="3.96" width="8" height="22">\
+      <rect x="45.5" y="13.5" rx="3.91" ry="3.91" width="9" height="23">\
         <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5s" repeatCount="indefinite"></animate>\
       </rect>\
     </g><g transform="rotate(180 50 50)">\
-      <rect x="46" y="19" rx="3.96" ry="3.96" width="8" height="22">\
+      <rect x="45.5" y="13.5" rx="3.91" ry="3.91" width="9" height="23">\
         <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.375s" repeatCount="indefinite"></animate>\
       </rect>\
     </g><g transform="rotate(225 50 50)">\
-      <rect x="46" y="19" rx="3.96" ry="3.96" width="8" height="22">\
+      <rect x="45.5" y="13.5" rx="3.91" ry="3.91" width="9" height="23">\
         <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.25s" repeatCount="indefinite"></animate>\
       </rect>\
     </g><g transform="rotate(270 50 50)">\
-      <rect x="46" y="19" rx="3.96" ry="3.96" width="8" height="22">\
+      <rect x="45.5" y="13.5" rx="3.91" ry="3.91" width="9" height="23">\
         <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.125s" repeatCount="indefinite"></animate>\
       </rect>\
     </g><g transform="rotate(315 50 50)">\
-      <rect x="46" y="19" rx="3.96" ry="3.96" width="8" height="22">\
+      <rect x="45.5" y="13.5" rx="3.91" ry="3.91" width="9" height="23">\
         <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animate>\
       </rect>\
     </g>\
