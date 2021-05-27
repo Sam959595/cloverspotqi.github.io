@@ -9,7 +9,7 @@ let nn = () => {
     y = '<h6>Введите ключ</h6>',
     q = '<h6>Введите пароль</h6>',
     u = '<h6>Введите ключ и пароль</h6>',
-    t = '<svg width="38" height="38" viewBox="0 0 100 100" fill="var(--gray-2)">\
+    t = '<svg width="38" height="38" viewBox="0 0 100 100" fill="var(--gray-1)">\
     <g transform="rotate(0 50 50)">\
       <rect x="47" y="29" rx="2.64" ry="2.64" width="6" height="12">\
         <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.518s" begin="-0.453s" repeatCount="indefinite"></animate>\
