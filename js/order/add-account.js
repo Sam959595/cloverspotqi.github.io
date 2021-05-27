@@ -50,10 +50,10 @@ let nn = () => {
     n.keydown ( (x) => {
         let k = (x.keyCode === 13);
 
-        if (k && (p.classList.contains(r)) && (b.value.length === 0) && (a.value.length != 0)) {
-            v.html(q)
-        } else if (k && (n[0].value.length === 0)) {
+        if (k && (n[0].value.length === 0)) {
             v.html(u)
+        } else if (k && (p.classList.contains(r)) && (a.value.length != 0) && (b.value.length === 0)) {
+            v.html(q)
         } else if (k && (a.value.length != 0)) {
             p.classList.add(r);
             b.classList.add(c)
