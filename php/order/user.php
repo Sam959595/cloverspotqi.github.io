@@ -1,1 +1,3 @@
-var d = 5;
+<?php
+mysql_query()
+?>

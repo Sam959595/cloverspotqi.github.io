@@ -62,7 +62,7 @@ let nn = () => {
         }
 
         if (k && (a.value.length === 0) && (b.value.length != 0)) {
-            v.html(y)
+            v.html(y);
         } else if (k && (b.value.length != 0) && (a.value.length != 0)) {
             v.html(t);
             ( () => {
