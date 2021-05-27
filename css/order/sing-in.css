@@ -35,6 +35,17 @@ section.tt h5 {
     letter-spacing: 0
 }
 
+/* 1 */
+
+section.gg {
+	height: 1cm;
+	text-align: center
+}
+section.gg h6 {
+	padding: 10.5px 0;
+	color: var(--red-2)
+}
+
 /* 2 */
 
 section.bb {
@@ -115,17 +126,6 @@ section.kk a {
 }
 section.kk a+a {
 	margin-top: .5cm
-}
-
-/* 3 */
-
-section.gg {
-	height: 1cm;
-	text-align: center
-}
-section.gg h6 {
-	padding: 10.5px 0;
-	color: var(--red-2)
 }
 
 /* 4 */
