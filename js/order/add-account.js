@@ -12,35 +12,35 @@ let nn = () => {
     t = '<svg width="38" height="38" viewBox="0 0 100 100" fill="var(--gray-2)">\
     <g transform="rotate(0 50 50)">\
       <rect x="47" y="29" rx="2.64" ry="2.64" width="6" height="12">\
-        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.5181347150259068s" begin="-0.4533678756476684s" repeatCount="indefinite"></animate>\
+        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.518s" begin="-0.453s" repeatCount="indefinite"></animate>\
       </rect>\
     </g><g transform="rotate(45 50 50)">\
       <rect x="47" y="29" rx="2.64" ry="2.64" width="6" height="12">\
-        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.5181347150259068s" begin="-0.38860103626943004s" repeatCount="indefinite"></animate>\
+        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.518s" begin="-0.388s" repeatCount="indefinite"></animate>\
       </rect>\
     </g><g transform="rotate(90 50 50)">\
       <rect x="47" y="29" rx="2.64" ry="2.64" width="6" height="12">\
-        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.5181347150259068s" begin="-0.3238341968911917s" repeatCount="indefinite"></animate>\
+        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.518s" begin="-0.323s" repeatCount="indefinite"></animate>\
       </rect>\
     </g><g transform="rotate(135 50 50)">\
       <rect x="47" y="29" rx="2.64" ry="2.64" width="6" height="12">\
-        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.5181347150259068s" begin="-0.2590673575129534s" repeatCount="indefinite"></animate>\
+        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.518s" begin="-0.259s" repeatCount="indefinite"></animate>\
       </rect>\
     </g><g transform="rotate(180 50 50)">\
       <rect x="47" y="29" rx="2.64" ry="2.64" width="6" height="12">\
-        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.5181347150259068s" begin="-0.19430051813471502s" repeatCount="indefinite"></animate>\
+        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.518s" begin="-0.194s" repeatCount="indefinite"></animate>\
       </rect>\
     </g><g transform="rotate(225 50 50)">\
       <rect x="47" y="29" rx="2.64" ry="2.64" width="6" height="12">\
-        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.5181347150259068s" begin="-0.1295336787564767s" repeatCount="indefinite"></animate>\
+        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.518s" begin="-0.1297s" repeatCount="indefinite"></animate>\
       </rect>\
     </g><g transform="rotate(270 50 50)">\
       <rect x="47" y="29" rx="2.64" ry="2.64" width="6" height="12">\
-        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.5181347150259068s" begin="-0.06476683937823835s" repeatCount="indefinite"></animate>\
+        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.518s" begin="-0.064s" repeatCount="indefinite"></animate>\
       </rect>\
     </g><g transform="rotate(315 50 50)">\
       <rect x="47" y="29" rx="2.64" ry="2.64" width="6" height="12">\
-        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.5181347150259068s" begin="0s" repeatCount="indefinite"></animate>\
+        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="0.518s" begin="0s" repeatCount="indefinite"></animate>\
       </rect>\
     </g>\
     </svg>',
