@@ -65,6 +65,29 @@ section.vv figure {
 
 /* 1 */
 
+section.bb {
+	margin: .5cm auto;
+	width: 90%;
+
+    text-align: center
+}
+
+section.bb button[name="apple-pay"] {
+    -webkit-appearance: -apple-pay-button;
+    -apple-pay-button-type: buy;
+    -apple-pay-button-style: var(--gray-b);
+
+    width: 100%;
+    height: 45px;
+
+    border-radius: 11px;
+}
+section.bb p {
+    margin-top: 2em
+}
+
+/* 1 */
+
 section.tt ul {
     display: grid;
     grid-auto-flow: column;

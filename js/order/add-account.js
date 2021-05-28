@@ -66,13 +66,15 @@ let nn = () => {
         } else if (k && (b.value.length != 0) && (a.value.length != 0)) {
             v.html(t);
             ( () => {
-                let w = localStorage.getItem('username'),
-                t = localStorage.getItem('passwork');
-        
-                $.post('users.php', {
+                let w = localStorage.setItem('username'),
+                t = localStorage.setItem('passwork');
+
+                if (w == null && t == null) {
+                  $.post('users.php', {
                     w: username,
                     t: password
                 });
+                }
             })
         }
     });
