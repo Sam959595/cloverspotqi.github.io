@@ -114,10 +114,6 @@ section.bb a {
 
 /* 1 */
 
-section.tt {
-	margin-top: 1cm
-}
-
 section.tt ul {
     display: grid;
     grid-auto-flow: column;
@@ -280,27 +276,33 @@ footer li+li {
 
 @media screen and (min-width: 720px) {
 	section.rr {
-		display: flex
+		display: grid;
+		grid-template-areas: "a b""c c";
 	}
 	section.vv {
+		margin: 2.5cm auto .5cm;
 		width: 50%
 	}
 	section.vv h5 {
+		grid-area: a;
+
 		font: normal 600 17px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
 		letter-spacing: 0
 	}
-	section.vv > * {
+	section.vv p {
 		margin: 0 auto;
 		width: 60%
 	}
-	section.bb {
-		margin: auto;
-		width: 30%;
-		height: 100%
-	}
-	section.tt {
+	section.tt div {
+		grid-area: c;
+
 		margin: auto;
 		width: 65%
+	}
+	section.bb {
+		grid-area: b;
+
+		margin: auto
 	}
 }
 @media screen and (min-width: 320px) and (max-width: 428px) {
