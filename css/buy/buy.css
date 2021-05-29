@@ -79,14 +79,15 @@ section.bb p {
     color: var(--gray-6)
 }
 
+section.bb div {
+	margin: .5cm 0
+}
+
 section.bb apple-pay-button, section.bb google-pay-button, section.bb button {
 	width: 100%;
     height: 50px;
 
     border-radius: 15px
-}
-section.bb div {
-	margin: .5cm 0
 }
 section.bb apple-pay-button {
 	margin-bottom: .6em;
