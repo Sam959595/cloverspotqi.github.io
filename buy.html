@@ -24,8 +24,20 @@
                 <h6>Новинка</h6>
                 <h5>Спортивная обувь <q>Reebok</q>, противостойкость к влаге и пыли в погодных условиях</h5>
             </div>
-            
-            <figure style="background-image: url(media/order/1g.png)"></figure>
+
+            <style>
+                @media screen and (prefers-color-scheme: light) {
+                    :root {
+                        --img: url("media/order/1g.jpg")
+                    }
+                }
+                @media screen and (prefers-color-scheme: dark) {
+                    :root {
+                        --img: url("media/order/2g.png")
+                    }
+                }
+            </style>
+            <figure style="background-image: var(--img)"></figure>
         </section>
         
         <section class="bb">
@@ -38,8 +50,6 @@
             <a href="#">Об оплате и конфиденциальности…</a>
         </section>
     </section>
-
-    
 
     <section class="tt">
         <ul>
