@@ -79,35 +79,26 @@ section.bb p {
     color: var(--gray-6)
 }
 
-section.bb div {
-	margin: .5cm 0
-}
-section.bb apple-pay-button {
-	margin-top: .5em;
-	
-    -webkit-appearance: -apple-pay-button;
-    -apple-pay-button-type: buy;
-    -apple-pay-button-style: var(--gray-b);
-
-    width: 100%;
+section.bb apple-pay-button, section.bb google-pay-button, section.bb button {
+	width: 100%;
     height: 50px;
 
     border-radius: 15px
 }
+section.bb div {
+	margin: .5cm 0
+}
+section.bb apple-pay-button {
+	margin-bottom: .6em;
+	
+    -webkit-appearance: -apple-pay-button;
+    -apple-pay-button-type: buy;
+    -apple-pay-button-style: var(--gray-b)
+}
 section.bb google-pay-button {
-	margin-top: .5em;
-
-    width: 100%;
-    height: 45px;
-
-	border-radius: 11px
+	margin-bottom: .6em
 }
 section.bb button {
-	width: 100%;
-	height: 50px;
-
-	border-radius: 15px;
-
 	font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0;
 
