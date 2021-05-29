@@ -87,7 +87,7 @@ section.bb apple-pay-button, section.bb google-pay-button, section.bb button {
 	width: 100%;
     height: 50px;
 
-    border-radius: 15px
+    -webkit-border-radius: 15px
 }
 section.bb apple-pay-button {
 	margin-bottom: .6em;
