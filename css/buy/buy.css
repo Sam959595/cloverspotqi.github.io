@@ -198,6 +198,17 @@ section.hh ul h6 {
 
 /* 1 */
 
+section.nn {
+	margin: .5cm auto 0;
+	width: 90%
+}
+section.nn h3 {
+    font: normal 700 21px/1.14286 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: 0
+}
+
+/* 1 */
+
 section.kk a {
 	display: block;
 
