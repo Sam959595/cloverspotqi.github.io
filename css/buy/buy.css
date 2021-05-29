@@ -72,7 +72,7 @@ section.bb {
     text-align: center
 }
 
-section.bb button[name="apple-pay"] {
+section.bb apple-pay-button[name="apple-pay"] {
     -webkit-appearance: -apple-pay-button;
     -apple-pay-button-type: buy;
     -apple-pay-button-style: var(--gray-b);
