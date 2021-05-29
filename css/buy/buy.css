@@ -163,10 +163,6 @@ section.hh ul li a {
 	border-radius: 20px
 }
 section.hh ul li figure {
-	-webkit-appearance: -apple-pay-button;
-
-	font-size: 0;
-
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
