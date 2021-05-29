@@ -87,7 +87,7 @@ section.bb apple-pay-button, section.bb google-pay-button, section.bb button {
 	width: 100%;
     height: 50px;
 
-    -webkit-border-radius: 15px
+    -webkit-border-radius: 11px
 }
 section.bb apple-pay-button {
 	margin-bottom: .6em;
@@ -246,8 +246,8 @@ footer li+li {
 		width: 50%
 	}
 	section.vv h5 {
-		font: normal 600 17px/1.47059 -apple-system, BlinkMacSystemFont, "Segoe UI";
-		letter-spacing: -.022em
+		font: normal 600 17px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+		letter-spacing: 0
 	}
 	section.vv > * {
 		margin: 0 auto;
