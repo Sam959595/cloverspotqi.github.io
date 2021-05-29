@@ -114,6 +114,10 @@ section.bb a {
 
 /* 1 */
 
+section.tt {
+	margin-top: 1cm
+}
+
 section.tt ul {
     display: grid;
     grid-auto-flow: column;
@@ -137,11 +141,12 @@ section.pp {
 	margin: .5cm auto;
 	width: 90%
 }
+
 section.pp select {
 	margin: .3em 0;
 
     width: 100%;
-    height: 45px;
+    height: 50px;
 
 	padding: 0 13px;
 
