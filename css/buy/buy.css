@@ -238,12 +238,37 @@ footer li+li {
 
 /* 4 */
 
+@media screen and (min-width: 720px) {
+	section.rr {
+		display: flex
+	}
+	section.vv {
+		width: 50%
+	}
+	section.vv h5 {
+		font: normal 600 17px/1.47059 -apple-system, BlinkMacSystemFont, "Segoe UI";
+		letter-spacing: -.022em
+	}
+	section.vv > * {
+		margin: 0 auto;
+		width: 60%
+	}
+	section.bb {
+		margin: auto;
+		width: 30%;
+		height: 100%
+	}
+	section.tt {
+		margin: auto;
+		width: 65%
+	}
+}
 @media screen and (min-width: 320px) and (max-width: 428px) {
-    :root {
-        --padding: 20px;
+    @media screen and (orientation: landscape) {
     }
 
-    @media screen and (orientation: landscape) {
+	:root {
+        --padding: 20px
     }
 }
 
