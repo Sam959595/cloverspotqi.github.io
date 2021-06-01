@@ -100,7 +100,7 @@ section.bb google-pay-button {
 	margin-bottom: .6em;
 
 	display: block;
-	background: var(--gray-b) url("/media/buy/google-pay.svg") center/60% no-repeat
+	background: var(--gray-b) url("media/buy/google-pay.svg") center/60% no-repeat
 }
 section.bb button {
 	font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
