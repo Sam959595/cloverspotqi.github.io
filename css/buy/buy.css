@@ -158,6 +158,20 @@ section.pp select {
 
 /* 1 */
 
+section.ff {
+	text-align: center;
+	background-color: var(--gray-3)
+}
+section.ff div {
+	padding: .5cm 0
+}
+section.ff h5 {
+	font: normal 400 19px/1.21053 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	letter-spacing: .012em
+}
+
+/* 1 */
+
 section.hh {
 	text-align: center
 }
