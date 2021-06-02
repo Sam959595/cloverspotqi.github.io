@@ -12,12 +12,6 @@
 
 /* 0 */
 
-section, footer {
-    margin-top: .5cm
-}
-
-/* 1 */
-
 nav {
     z-index: 5;
 
@@ -79,7 +73,7 @@ section.bb p {
     color: var(--gray-6)
 }
 
-section.bb div {
+section.bb > div {
 	margin: .5cm 0
 }
 
@@ -165,10 +159,10 @@ section.pp select {
 /* 1 */
 
 section.ff {
+	margin-bottom: .5cm;
+
 	display: flex;
-	justify-content: space-evenly;
-	
-	text-align: center
+	justify-content: space-evenly
 }
 section.ff h5 {
 	font: normal 400 11px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
@@ -305,7 +299,7 @@ footer li+li {
 	}
 	section.bb {
 		margin: auto;
-		width: 30%;
+		width: 30%
 	}
 }
 @media screen and (min-width: 320px) and (max-width: 428px) {
