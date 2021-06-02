@@ -100,8 +100,9 @@ section.bb google-pay-button {
 	margin-bottom: .6em;
 
 	display: flex;
+	align-items: center;
 	justify-content: center;
-	
+
 	background: var(--gray-b)
 }
 section.bb button {
