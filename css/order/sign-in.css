@@ -81,7 +81,7 @@ section.bb hr:nth-of-type(2) {
 }
 section.bb input:nth-of-type(2).ee {
 	opacity: 1;
-	height: 50px
+	height: 40px
 }
 section.bb hr:nth-of-type(2).rr {
 	display: block
