@@ -42,7 +42,7 @@ section.pp select, section.pp input {
 	width: 100%;
 	height: 45px;
 
-	-webkit-border-radius: 11px;
+	border-radius: 11px;
 
 	font: normal 400 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: 0;
@@ -88,7 +88,7 @@ section.vv input {
     width: 100%;
 	height: 45px;
 
-    -webkit-border-radius: 11px;
+    border-radius: 11px;
 
     font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: 0;
