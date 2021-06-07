@@ -28,21 +28,10 @@ section.tt h1 {
     letter-spacing: .012em
 }
 
-/* 1 */
-
-section.gg {
-	height: .5cm;
-	text-align: center
-}
-section.gg h6 {
-	padding: 11px 0;
-	color: var(--red-2)
-}
-
 /* 2 */
 
 section.bb {
-	margin-bottom: 1cm
+	margin-top: .5cm
 }
 
 /* border: solid var(--gray-3);
@@ -92,6 +81,17 @@ section.bb input::-webkit-input-placeholder {
 }
 section.bb input:invalid {
 	background-color: var(--red-1)
+}
+
+/* 1 */
+
+section.gg {
+	height: 38px;
+	text-align: center
+}
+section.gg h6 {
+	padding: 11px 0;
+	color: var(--red-2)
 }
 
 /* 3 */
