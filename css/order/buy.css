@@ -63,7 +63,7 @@ table tr:last-child td {
 	color: var(--gray-1)
 }
 table tr:last-child td:last-child {
-	font: normal 800 19px "Arial Rounded MT", "Segoe UI";
+	font: normal 700 19px "Arial Rounded MT Bold", "Segoe UI";
 	letter-spacing: .004em
 }
 
