@@ -36,7 +36,7 @@ section.pp div > * {
 	padding: 0 13px
 }
 
-section.pp select, section.pp input {
+section.pp:where(select, input) {
 	margin: .3em 0;
 
 	width: 100%;
