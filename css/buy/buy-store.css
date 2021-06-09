@@ -90,11 +90,11 @@ main.tt ul li:last-child {
 
 main.tt ul li a {
 	display: block;
-    border-radius: 20px;
+    border-radius: 25px;
 }
 
 main.tt ul li figure {
-    padding: 1.5em;
+    padding: 1em;
 
     width: 140px;
     height: 140px;
