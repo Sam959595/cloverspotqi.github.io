@@ -296,7 +296,7 @@ footer li+li {
 
 /* 4 */
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 720px) and (orientation: portrait) {
 	section.rr {
 		margin: 2cm auto 0;
 		width: 80%;
@@ -314,17 +314,6 @@ footer li+li {
 		margin: auto 0 auto auto;
 		width: 35%
 	}
-	@media screen and (orientation: landscape) {
-		section.rr {
-			width: 90%
-		}
-		section.vv {
-			width: 50%
-		}
-		section.bb {
-			width: 40%
-		}
-    }
 }
 @media screen and (min-width: 320px) and (max-width: 428px) {
 	:root {
