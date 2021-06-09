@@ -1,0 +1,228 @@
+main.nn a > h6 {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+main.bb div:last-child p, main.bb div:last-child h4, main.nn a > div:last-child div p, main.kk a > div:last-child p, main.kk a > div:last-child h4 {
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+section.hh {
+	margin-top: 1cm
+}
+
+section.hh h1 {
+	font: normal 700 32px/1.25 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: .012em
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+section, header > div div {
+	margin: 0 auto;
+	width: 90%
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+section.pp {
+	margin-top: 3em
+}
+
+section.pp > div {
+	margin: .8em 0;
+	
+	display: flex;
+	justify-content: space-between
+}
+section.pp h3 {
+	font: normal 700 21px/1.14286 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: 0
+}
+section.pp a {
+	font: normal 400 17px/1.47 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: -.022em
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+main ul {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+	scroll-padding: 0 20.705px
+}
+main ul li {
+	scroll-snap-align: start
+}
+
+/* - */
+
+main.tt ul {
+	display: grid;
+    grid-auto-flow: column;
+    column-gap: .9em
+}
+
+/* - */
+
+main.tt ul {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1em;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 20px;
+}
+
+main.tt ul li:first-child {
+    padding-left: 20px;
+}
+main.tt ul li:last-child {
+    padding-right: 20px;
+}
+
+main.tt ul li a {
+	display: block;
+    border-radius: 20px;
+}
+
+main.tt ul li figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em;
+    width: 180.89px;
+    height: 290px;
+    -webkit-mask: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 302.00002 480.00002'%3e%3cpath d='M301.99365,26.31659c-.00586-.95581-.01684-1.91132-.04223-2.86688a41.80419,41.80419,0,0,0-.54883-6.23883,21.05351,21.05351,0,0,0-1.95545-5.93372,19.95128,19.95128,0,0,0-8.7218-8.7215,21.05605,21.05605,0,0,0-5.93066-1.9541,41.61954,41.61954,0,0,0-6.241-.54913C277.89185.03455,276.672.01849,275.68652.0097c-1.1167-.01-2.01953-.01028-2.54492-.00939-.24414.00039-.37256.00094-.39892.001C270.19983.01,36.80811.04,29.71729.00336c-.24653-.00128-1.58564-.00974-3.40387.00634-.57972.00513-1.94812.018-2.86689.04273a41.61108,41.61108,0,0,0-6.241.54913,21.05059,21.05059,0,0,0-5.93061,1.9541,19.94935,19.94935,0,0,0-8.722,8.7215,21.06444,21.06444,0,0,0-1.9552,5.93372,41.69714,41.69714,0,0,0-.54889,6.23883c-.02558.95556-.03669,1.91107-.04248,2.86688C-.00055,27.45105,0,28.58575,0,29.72046V450.2829c0,1.13464-.00055,2.26941.00629,3.40387.00579.95581.0169,1.91131.04248,2.86682a41.69645,41.69645,0,0,0,.54889,6.23883,21.06231,21.06231,0,0,0,1.9552,5.93378,19.94871,19.94871,0,0,0,8.722,8.72143,21.05889,21.05889,0,0,0,5.93061,1.95441,41.65283,41.65283,0,0,0,6.241.54889c.95551.02582,1.91077.03692,2.86689.04272,1.13446.00684,2.26892.00635,3.40387.00635H272.28271c1.135,0,2.26941.00049,3.40381-.00635.95606-.0058,1.91162-.0169,2.86719-.04272a41.6613,41.6613,0,0,0,6.241-.54889,21.06436,21.06436,0,0,0,5.93066-1.95441,19.95065,19.95065,0,0,0,8.7218-8.72143,21.05138,21.05138,0,0,0,1.95545-5.93378,41.80349,41.80349,0,0,0,.54883-6.23883c.02539-.95551.03637-1.911.04223-2.86682.00684-1.13446.00635-2.26923.00635-3.40387V29.72046C302,28.58575,302.00049,27.45105,301.99365,26.31659Z' transform='translate(0.00001 0.00002)'/%3e%3c/svg%3e") no-repeat;
+    background: center/cover var(--gray-8);
+}
+
+/* - */
+
+main.bb li div:last-child {
+    margin-top: .8em
+}
+
+main.bb div:last-child h6, main.nn a > div:last-child div h6, main.kk a > div:last-child h6 {
+	font: normal 500 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: -.016em
+}
+main.bb div:last-child h4, main.nn a > div:last-child div h4, main.kk a > div:last-child h4 {
+	font: normal 400 17px/1.47059 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: 0
+}
+main.bb div:last-child p, main.nn a > div:last-child div p, main.kk a > div:last-child p, main.nn a > p {
+	font: normal 400 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: -.016em
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+main.nn a, main.kk a {
+    display: block;
+	width: 372.59px
+}
+main.nn a > div:nth-child(2) {
+	margin: 1.2em 0;
+
+    height: 190px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 .5px var(--soft-2);
+    background: center/cover
+}
+main.nn a > div:last-child, main.kk a {
+	display: flex;
+	align-items: center
+}
+
+main.nn a > div:last-child img, main.kk a > div:first-child img {
+	width: 65px;
+	height: 65px
+}
+
+main.nn a > div:last-child div, main.kk a > div:last-child {
+	margin-left: .8em;
+	
+	width: 100%
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+main.kk ul {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-rows: repeat(3, auto);
+    column-gap: .9em
+}
+
+main.kk li:nth-child(3n+2) a > div:last-child {
+	margin-top: 9.6px;
+    margin-bottom: 9.6px;
+
+	height: 84.2px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+	border-style: solid;
+    border-width: .1px 0 .1px;
+    border-color: var(--gray-9)
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - */
+
+@media screen and (prefers-color-scheme: light) {
+	:root {
+		--soft-1: #00000050;
+		--soft-2: #8080801a;
+
+		--gray-01: black;
+		--gray-0: white;
+		--gray-1: #111;
+		--gray-2: #e8e8ed;
+		--gray-3: #86868b;
+		--gray-4: #515154;
+		--gray-5: #888;
+		--gray-6: #333;
+		--gray-7: #1d1d1f;
+		--gray-8: #f5f5f7;
+		--gray-9: #d2d2d7;
+		--gray-10: #666;
+		--gray-11: #00000014;
+		--gray-12: #f0f0f2;
+		--gray-13: #8e8e93;
+	
+		--blue-1: #06c;
+	}
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	:root {
+		--soft-1: #1d1d1fb3;
+		--soft-2: #d4d4d41a;
+
+		--gray-01: white;
+		--gray-0: black;
+		--gray-1: #f3f3f3;
+		--gray-2: #1c1c23;
+		--gray-3: #63636e;
+		--gray-4: #aaaab3;
+		--gray-5: #8e8e93;
+		--gray-6: #d5d5e2;
+		--gray-7: #f5f5f7;
+		--gray-8: #17171d;
+		--gray-9: #212125;
+		--gray-10: #aaaab3;
+		--gray-11: #2c2c2e;
+		--gray-12: #1a1a21;
+		--gray-13: #8e8e93;
+	
+		--blue-1: #007aff;
+	}
+}
