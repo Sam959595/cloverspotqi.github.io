@@ -52,7 +52,7 @@ section.vv h5 {
 }
 
 section.vv figure {
-	height: 338px;
+	padding-top: 100%;
 
 	background: center/cover
 }
