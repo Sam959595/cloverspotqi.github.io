@@ -36,9 +36,10 @@ nav h6 {
 
 /* 5 */
 
-section.vv {
-	margin: 2cm 1cm .5cm;
-	text-align: center
+@media screen and (max-width: 428px) {
+	section.vv {
+		margin: 2cm 1cm .5cm
+	}
 }
 
 section.vv h6 {
@@ -59,11 +60,11 @@ section.vv figure {
 
 /* 1 */
 
-section.bb {
-	margin: .5cm auto;
-	width: 90%;
-
-    text-align: center
+@media screen and (max-width: 428px) {
+	section.bb {
+		margin: .5cm auto;
+		width: 90%
+	}
 }
 
 section.bb p {
@@ -77,7 +78,7 @@ section.bb > div {
 	margin: .5cm 0
 }
 
-section.bb apple-pay-button, section.bb google-pay-button, section.bb button {
+section.bb :where(apple-pay-button, google-pay-button, button) {
 	width: 100%;
     height: 45px;
 
@@ -291,15 +292,23 @@ footer li+li {
 
 @media screen and (min-width: 720px) {
 	section.rr {
+		margin: 2cm auto 0;
+		width: 80%;
+		
 		display: flex;
+
+		text-align: center;
+	}
+	section.vv {
+		width: 40%
 	}
 	section.vv h5 {
 		font: normal 600 17px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
 		letter-spacing: 0
 	}
 	section.bb {
-		margin: auto;
-		width: 30%
+		margin: auto 0 auto auto;
+		width: 40%
 	}
 }
 @media screen and (min-width: 320px) and (max-width: 428px) {
