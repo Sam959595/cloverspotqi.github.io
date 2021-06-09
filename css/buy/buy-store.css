@@ -184,23 +184,27 @@ main.kk li:nth-child(3n+2) a > div:last-child {
 		--soft-1: #00000050;
 		--soft-2: #8080801a;
 
-		--gray-01: black;
-		--gray-0: white;
-		--gray-1: #111;
-		--gray-2: #e8e8ed;
-		--gray-3: #86868b;
+		--gray-a: white;
+		--gray-b: black;
+
+		--gray-1: #1d1d1f;
+		--gray-2: #8e8e93;
+		--gray-3: #d2d2d7;
 		--gray-4: #515154;
 		--gray-5: #888;
 		--gray-6: #333;
 		--gray-7: #1d1d1f;
 		--gray-8: #f5f5f7;
-		--gray-9: #d2d2d7;
+		--gray-9: #86868b;
 		--gray-10: #666;
-		--gray-11: #00000014;
+		--gray-11: #c9c9d1;
 		--gray-12: #f0f0f2;
-		--gray-13: #8e8e93;
-	
+		--gray-13: #e8e8ed;
+		--gray-14: #e8e8ed;
+		
 		--blue-1: #06c;
+
+		--const-1: #f5f5f7;
 	}
 }
 
@@ -209,22 +213,26 @@ main.kk li:nth-child(3n+2) a > div:last-child {
 		--soft-1: #1d1d1fb3;
 		--soft-2: #d4d4d41a;
 
-		--gray-01: white;
-		--gray-0: black;
-		--gray-1: #f3f3f3;
-		--gray-2: #1c1c23;
-		--gray-3: #63636e;
+		--gray-a: black;
+		--gray-b: white;
+
+		--gray-1: #f5f5f7;
+		--gray-2: #8e8e93;
+		--gray-3: #212125;
 		--gray-4: #aaaab3;
 		--gray-5: #8e8e93;
 		--gray-6: #d5d5e2;
 		--gray-7: #f5f5f7;
 		--gray-8: #17171d;
-		--gray-9: #212125;
+		--gray-9: #63636e;
 		--gray-10: #aaaab3;
 		--gray-11: #2c2c2e;
 		--gray-12: #1a1a21;
-		--gray-13: #8e8e93;
+		--gray-13: #1c1c23;
+		--gray-14: #212125;
 	
 		--blue-1: #007aff;
+
+		--const-1: #f5f5f7;
 	}
 }
