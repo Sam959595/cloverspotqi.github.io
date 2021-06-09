@@ -119,8 +119,7 @@ main.bb div:last-child h4, main.nn a > div:last-child div h4, main.kk a > div:la
     letter-spacing: 0
 }
 main.bb div:last-child p, main.nn a > div:last-child div p, main.kk a > div:last-child p, main.nn a > p {
-	font: normal 400 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: -.016em
+	margin-top: .2em;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
