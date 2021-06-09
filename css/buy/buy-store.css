@@ -110,7 +110,7 @@ main.tt ul li figure {
 
 /* - */
 
-main.bb div:last-child h6, main.nn a > div:last-child div h6, main.kk a > div:last-child h6 {
+main.bb h6, main.nn a > div:last-child div h6, main.kk a > div:last-child h6 {
 	font: normal 600 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: -.016em
 }
