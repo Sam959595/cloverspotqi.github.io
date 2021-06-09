@@ -36,10 +36,8 @@ nav h6 {
 
 /* 5 */
 
-@media screen and (max-width: 428px) {
-	section.rr {
-		text-align: center
-	}
+section.rr {
+	text-align: center
 }
 
 /* 5 */
@@ -303,9 +301,7 @@ footer li+li {
 		margin: 2cm auto 0;
 		width: 80%;
 		
-		display: flex;
-
-		text-align: center
+		display: flex
 	}
 	section.vv {
 		width: 40%
