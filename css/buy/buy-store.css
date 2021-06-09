@@ -94,7 +94,11 @@ main.tt ul li a {
 }
 
 main.tt ul li figure {
-    padding: 1em;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 1.2em;
 
     width: 140px;
     height: 140px;
@@ -106,12 +110,8 @@ main.tt ul li figure {
 
 /* - */
 
-main.bb li div:last-child {
-    margin-top: .8em
-}
-
 main.bb div:last-child h6, main.nn a > div:last-child div h6, main.kk a > div:last-child h6 {
-	font: normal 500 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 600 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: -.016em
 }
 main.bb div:last-child h4, main.nn a > div:last-child div h4, main.kk a > div:last-child h4 {
