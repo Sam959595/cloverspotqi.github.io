@@ -98,8 +98,8 @@ main.tt ul li figure {
 
 /* - */
 
-main.ee h5 {
-	margin-bottom: .5em;
+main.ee h6 {
+	margin: .5em 0;
 }
 
 main.ee ul li figure {
