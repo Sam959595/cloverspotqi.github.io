@@ -76,8 +76,7 @@ main.tt ul li:last-child, main.ee ul li:last-child {
     padding-right: 20px;
 }
 
-main.tt ul li a {
-	display: block;
+main.tt ul li a, main.ee ul li figure {
     border-radius: 25px;
 }
 
