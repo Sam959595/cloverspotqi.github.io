@@ -3,7 +3,7 @@ main.nn a > h6 {
 	text-overflow: ellipsis;
 	overflow: hidden
 }
-main.bb div:last-child p, main.bb div:last-child h4, main.nn a > div:last-child div p, main.kk a > div:last-child p, main.kk a > div:last-child h4 {
+main.bb div:last-child p, main.bb div:last-child h4, main.nn a > div:last-child div p, main.kk a > div:last-child p, main.kk a > div:last-child h4, main.ee h6 {
 	display: -webkit-box;
 	-webkit-line-clamp: 1;
 	-webkit-box-orient: vertical;
@@ -97,6 +97,10 @@ main.tt ul li figure {
 }
 
 /* - */
+
+main.ee h6 {
+	margin-bottom: .5em;
+}
 
 main.ee ul li figure {
 	display: flex;
