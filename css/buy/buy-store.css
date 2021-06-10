@@ -24,7 +24,7 @@ section.hh h1 {
 /* - - - - - - - - - - - - - - - - - - - - - */
 
 section, header > div div {
-	margin: 0 20px
+	margin-left: 20px;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - */
@@ -33,11 +33,8 @@ section.pp {
 	margin-top: 3em
 }
 
-section.pp > div {
-	margin: .8em 0;
-	
-	display: flex;
-	justify-content: space-between
+section.pp h3 {
+	margin: .48em 0
 }
 section.pp h3 {
 	font: normal 700 21px/1.14286 -apple-system, BlinkMacSystemFont, "Segoe UI";
