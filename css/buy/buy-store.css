@@ -29,7 +29,7 @@ section, header > div div {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
-section.pp {
+section.pp:not(.cc) {
 	margin-top: 3em
 }
 
