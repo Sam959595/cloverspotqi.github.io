@@ -104,12 +104,6 @@ main.ee h6 {
 }
 
 main.ee ul li figure {
-	display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    padding: 2em;
-
     width: 230px;
     height: 338px;
 
@@ -125,8 +119,7 @@ main.bb h6 {
 }
 
 main.bb h6, main.ee h5, main.nn a > div:last-child div h6, main.kk a > div:last-child h6 {
-	font: normal 600 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: 0
+	font: -apple-system-headline;
 }
 main.bb div:last-child h4, main.nn a > div:last-child div h4, main.kk a > div:last-child h4 {
 	font: normal 400 17px/1.47059 -apple-system, BlinkMacSystemFont, "Segoe UI";
