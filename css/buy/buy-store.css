@@ -83,8 +83,9 @@ main.tt ul li a, main.ee ul li a {
 
 main.tt ul li figure {
 	display: flex;
+	align-items: center;
 
-    padding: 1em;
+    padding: 0 1em;
 
     width: 230px;
     height: 60px;
