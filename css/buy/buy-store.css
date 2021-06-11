@@ -37,8 +37,7 @@ section.pp h3 {
 	margin: .48em 0
 }
 section.pp h3 {
-	font: normal 700 21px/1.14286 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: 0
+	text-transform: uppercase;
 }
 section.pp a {
 	font: normal 400 17px/1.47 -apple-system, BlinkMacSystemFont, "Segoe UI";
@@ -185,7 +184,7 @@ main.kk li:nth-child(3n+2) a > div:last-child {
 		--soft-1: #00000050;
 		--soft-2: #8080801a;
 
-		--gray-a: white;
+		--gray-a: #f5f5f7;
 		--gray-b: black;
 
 		--gray-1: #1d1d1f;
@@ -195,7 +194,7 @@ main.kk li:nth-child(3n+2) a > div:last-child {
 		--gray-5: #888;
 		--gray-6: #333;
 		--gray-7: #1d1d1f;
-		--gray-8: #f5f5f7;
+		--gray-8: white;
 		--gray-9: #86868b;
 		--gray-10: #666;
 		--gray-11: #c9c9d1;
