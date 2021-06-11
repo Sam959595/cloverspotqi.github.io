@@ -185,7 +185,7 @@ main.kk li:nth-child(3n+2) a > div:last-child {
 		--soft-1: #00000050;
 		--soft-2: #8080801a;
 
-		--gray-a: #f2f2f7;
+		--gray-a: white;
 		--gray-b: black;
 
 		--gray-1: #1d1d1f;
@@ -195,7 +195,7 @@ main.kk li:nth-child(3n+2) a > div:last-child {
 		--gray-5: #888;
 		--gray-6: #333;
 		--gray-7: #1d1d1f;
-		--gray-8: white;
+		--gray-8: #f5f5f7;
 		--gray-9: #86868b;
 		--gray-10: #666;
 		--gray-11: #c9c9d1;
