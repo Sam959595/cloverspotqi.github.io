@@ -36,7 +36,7 @@ section.pp:not(.cc) {
 section.pp h3 {
 	margin: .48em 0;
 
-	color: var(--gray-4);
+	color: var(--gray-2);
 }
 section.pp h3 {
 	text-transform: uppercase;
@@ -186,7 +186,7 @@ main.kk li:nth-child(3n+2) a > div:last-child {
 		--soft-1: #00000050;
 		--soft-2: #8080801a;
 
-		--gray-a: #f5f5f7;
+		--gray-a: #f2f2f7;
 		--gray-b: black;
 
 		--gray-1: #1d1d1f;
