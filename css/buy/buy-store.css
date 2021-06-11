@@ -194,6 +194,10 @@ main.kk li:nth-child(3n+2) a > div:last-child {
 
 /* - - - - - - - - - - - - - - - - - - - - - */
 
+section.kk {
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
 section.kk a {
     display: block;
     padding-left: 20px
@@ -205,7 +209,7 @@ section.kk h5 {
     letter-spacing: 0;
     color: inherit
 }
-section.kk li+li h5 {
+section.kk li h5 {
     border-top: .1px solid var(--gray-3);
 }
 
