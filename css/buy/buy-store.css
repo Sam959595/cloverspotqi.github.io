@@ -95,7 +95,9 @@ main.tt ul li figure {
 /* - */
 
 main.ee h6 {
-	margin: .5em 0
+	margin: .5em 0;
+
+	color: #ffc107;
 }
 
 main.ee ul li figure {
