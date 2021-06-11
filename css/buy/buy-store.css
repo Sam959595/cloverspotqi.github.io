@@ -36,7 +36,7 @@ section.pp:not(.cc) {
 section.pp h3 {
 	margin: .48em 0;
 
-	color: var(--gray-9);
+	color: var(--gray-4);
 }
 section.pp h3 {
 	text-transform: uppercase;
