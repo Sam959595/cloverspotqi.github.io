@@ -119,7 +119,8 @@ main.bb h6 {
 }
 
 main.bb h6, main.ee h5, main.nn a > div:last-child div h6, main.kk a > div:last-child h6 {
-	font: -apple-system-headline;
+	font: -apple-system-body;
+    letter-spacing: 0
 }
 main.bb div:last-child h4, main.nn a > div:last-child div h4, main.kk a > div:last-child h4 {
 	font: normal 400 17px/1.47059 -apple-system, BlinkMacSystemFont, "Segoe UI";
