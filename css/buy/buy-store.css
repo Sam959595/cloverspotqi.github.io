@@ -26,7 +26,7 @@ section.hh li {
 	scroll-snap-align: start
 }
 
-section :where(.hh li:first-child, .nn li:nth-child(-n+2)) {
+section.hh ul {
     padding-left: var(--padding)
 }
 section.hh li:last-child {
