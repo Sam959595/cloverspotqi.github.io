@@ -62,6 +62,9 @@ section:is(.bb, .nn) figure {
 section:is(.bb, .nn) h5 {
 	margin-left: .5em
 }
+section:is(.bb, .nn) p {
+	color: var(--orange-1)
+}
 
 /* 2 */
 
