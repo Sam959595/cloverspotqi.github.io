@@ -1,201 +1,115 @@
-main.nn a > h6 {
+.x {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden
 }
-main.bb div:last-child p, main.bb div:last-child h4, main.nn a > div:last-child div p, main.kk a > div:last-child p, main.kk a > div:last-child h4, main.ee h6 {
+section.ee h5 {
 	display: -webkit-box;
 	-webkit-line-clamp: 1;
 	-webkit-box-orient: vertical;
 	overflow: hidden
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - */
+/* 0 */
 
-section:not(.kk) {
-	margin: 0 20px
+section.hh ul {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1em;
+
+	overflow-x: scroll;
+
+    scroll-snap-type: x mandatory;
+	scroll-padding: 0 var(--padding)
+}
+section.hh li {
+	scroll-snap-align: start
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - */
+section :where(.hh li:first-child, .nn li:nth-child(-n+2)) {
+    padding-left: var(--padding)
+}
+section.hh li:last-child {
+    padding-right: var(--padding)
+}
 
-main.ss {
+/* 1 */
+
+section.bb {
 	margin-top: .5em
 }
 
-main.ss ul li h1 {
-	width: 300px;
-
+section.bb h1 {
 	padding-top: 20px;
+
+	width: 300px;
 
 	font: normal 700 32px/1.25 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: .012em
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-section.pp:not(.cc) {
-	margin-top: 3em
-}
-
-section.pp h3 {
-	margin: .48em 0
-}
-section.pp h3 {
-	font: normal 700 21px/1.14286 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: 0
-}
-section.pp a {
-	font: normal 400 17px/1.47 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: -.022em
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-main ul {
-    overflow-x: scroll;
-
-    scroll-snap-type: x mandatory;
-	scroll-padding: 0 20px
-}
-main ul li {
-	scroll-snap-align: start
-}
-
-/* - */
-
-main.tt ul, main.ee ul {
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 1em
-}
-main.tt ul {
-	grid-template-rows: repeat(2, 1fr);
-	gap: 1em
-}
-
-main.rr ul li:nth-child(-n+2), main.ss ul li:first-child, main.ee ul li:first-child {
-    padding-left: 20px
-}
-main.tt ul li:last-child, main.ee ul li:last-child {
-    padding-right: 20px
-}
-
-main.tt ul li a, main.ee ul li a {
-	display: block;
-    border-radius: 20px
-}
-
-main.tt ul li figure {
+section :where(.bb figure, .nn figure) {
 	display: flex;
 	align-items: center;
 
     padding: 0 1em;
+	
+    height: 60px !important;
 
-    width: 230px;
-    height: 60px;
-
-    -webkit-mask: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' id='Слой_1' data-name='Слой 1' viewBox='0 0 230.00229 60.00007'%3e%3cpath d='M229.99963,26.09412c0-.942.00049-1.88379-.00525-2.82544-.00512-.8451-.01495-1.68994-.03753-2.53485a36.89117,36.89117,0,0,0-.48535-5.51624A18.62434,18.62434,0,0,0,227.7428,9.971a17.63886,17.63886,0,0,0-7.71186-7.71137A18.61217,18.61217,0,0,0,214.78741.53186,36.7925,36.7925,0,0,0,209.269.04633c-.81384-.022-2.02563-.03336-2.53485-.03785-1.61673-.01425-2.80569-.00662-3.00964-.00555-4.93494.02557-172.5141.0256-177.4491,0-.2039-.00107-1.39294-.00473-3.0097.00555-.84534.00537-1.68994.015-2.53485.03785a36.79136,36.79136,0,0,0-5.51838.48553A18.6112,18.6112,0,0,0,9.96906,2.25964,17.63858,17.63858,0,0,0,2.25714,9.971a18.6167,18.6167,0,0,0-1.7287,5.24658,36.866,36.866,0,0,0-.48529,5.51624c-.02264.84491-.03247,1.68975-.0376,2.53485-.00567.94165-.00518,1.88348-.00518,2.82544H0V39H.03918c.00214.08966.00159.17938.004.269a36.86681,36.86681,0,0,0,.48529,5.5163,18.61454,18.61454,0,0,0,1.7287,5.24652,17.63912,17.63912,0,0,0,7.71192,7.71143,18.61923,18.61923,0,0,0,5.24346,1.728,36.82266,36.82266,0,0,0,5.51838.48535c.84491.02283,1.68951.03266,2.53485.03778,1.00311.00611,2.00616.00562,3.0097.00562h177.4491c1.00329,0,2.00635.00049,3.00964-.00562.84534-.00512,1.69-.01495,2.53485-.03778a36.8238,36.8238,0,0,0,5.51837-.48535,18.6202,18.6202,0,0,0,5.24353-1.728,17.6394,17.6394,0,0,0,7.71186-7.71143,19.41745,19.41745,0,0,0,1.7287-5.24652A25.461,25.461,0,0,0,230,39.26089V26.27838Z' transform='translate(0 0.00006)'/%3e%3c/svg%3e") no-repeat;
-
-    background-color: var(--gray-8)
+    -webkit-mask: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' id='Слой_1' data-name='Слой 1' viewBox='0 0 230.00229 60.00007'%3e%3cpath d='M229.99963,26.09412c0-.942.00049-1.88379-.00525-2.82544-.00512-.8451-.01495-1.68994-.03753-2.53485a36.89117,36.89117,0,0,0-.48535-5.51624A18.62434,18.62434,0,0,0,227.7428,9.971a17.63886,17.63886,0,0,0-7.71186-7.71137A18.61217,18.61217,0,0,0,214.78741.53186,36.7925,36.7925,0,0,0,209.269.04633c-.81384-.022-2.02563-.03336-2.53485-.03785-1.61673-.01425-2.80569-.00662-3.00964-.00555-4.93494.02557-172.5141.0256-177.4491,0-.2039-.00107-1.39294-.00473-3.0097.00555-.84534.00537-1.68994.015-2.53485.03785a36.79136,36.79136,0,0,0-5.51838.48553A18.6112,18.6112,0,0,0,9.96906,2.25964,17.63858,17.63858,0,0,0,2.25714,9.971a18.6167,18.6167,0,0,0-1.7287,5.24658,36.866,36.866,0,0,0-.48529,5.51624c-.02264.84491-.03247,1.68975-.0376,2.53485-.00567.94165-.00518,1.88348-.00518,2.82544H0V39H.03918c.00214.08966.00159.17938.004.269a36.86681,36.86681,0,0,0,.48529,5.5163,18.61454,18.61454,0,0,0,1.7287,5.24652,17.63912,17.63912,0,0,0,7.71192,7.71143,18.61923,18.61923,0,0,0,5.24346,1.728,36.82266,36.82266,0,0,0,5.51838.48535c.84491.02283,1.68951.03266,2.53485.03778,1.00311.00611,2.00616.00562,3.0097.00562h177.4491c1.00329,0,2.00635.00049,3.00964-.00562.84534-.00512,1.69-.01495,2.53485-.03778a36.8238,36.8238,0,0,0,5.51837-.48535,18.6202,18.6202,0,0,0,5.24353-1.728,17.6394,17.6394,0,0,0,7.71186-7.71143,19.41745,19.41745,0,0,0,1.7287-5.24652A25.461,25.461,0,0,0,230,39.26089V26.27838Z' transform='translate(0 0.00006)'/%3e%3c/svg%3e") no-repeat !important;
 }
 
-/* - */
+/* 2 */
 
-main.ss ul {
-	grid-template-rows: 1fr;
-	gap: 0 1em
+section.tt {
+	margin: 3em var(--padding) 0
 }
 
-/* - */
+section.tt h3 {
+	margin: .48em 0;
 
-main.ee h6 {
+	font: normal 700 21px/1.14286 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: 0
+}
+
+/* 3 */
+
+section.hh :where(h5, h6) {
+	font: normal 600 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: 0
+}
+section.hh h6 {
 	margin: .5em 0;
 
-	color: var(--yellow-1)
+	font-weight: 400;
+
+	color: var(--orange-1)
 }
 
-main.ee ul li figure {
+section.hh a {
+	display: block;
+    border-radius: 20px
+}
+section.hh figure {
     width: 230px;
     height: 338px;
 
     -webkit-mask: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 991.12 1458.01813'%3e%3cpath d='M991.12,137.96V1320.07c0,5.27,0,10.53-.03,15.8-.03,4.44-.08,8.87-.2,13.31a192.59928,192.59928,0,0,1-2.55,28.96,97.711,97.711,0,0,1-9.07,27.54,92.60625,92.60625,0,0,1-40.49,40.49,97.96641,97.96641,0,0,1-27.53,9.07,192.72339,192.72339,0,0,1-28.97,2.55c-4.44.12-8.87006.17-13.31006.2-5.27.03-10.54.03-15.8.03H137.95c-5.27,0-10.53,0-15.8-.03-4.44-.03-8.87-.08-13.31-.2a192.6082,192.6082,0,0,1-28.97-2.55,97.85993,97.85993,0,0,1-27.53-9.07,92.606,92.606,0,0,1-40.49-40.49,97.72934,97.72934,0,0,1-9.08-27.54,193.89569,193.89569,0,0,1-2.54-28.96c-.12-4.44-.17-8.87-.19995-13.31C0,1330.6,0,1325.34,0,1320.07V137.96c0-5.27,0-10.53.03-15.8.03-4.44.08-8.87.2-13.31A193.895,193.895,0,0,1,2.77,79.89a97.72976,97.72976,0,0,1,9.08-27.54A92.606,92.606,0,0,1,52.34,11.86,97.85993,97.85993,0,0,1,79.87,2.79,193.92368,193.92368,0,0,1,108.84.24c4.44-.12,8.87-.17,13.31-.2,8.30819-.05622,14.44016-.02826,15.8-.02,35.94969.21875,701.18341.08069,715.22,0,.09931-.00055.9364-.006,2.07-.01,2.8-.01,7.68-.02,13.73.03,2.69.03,9.04.09,13.31006.2a194.04047,194.04047,0,0,1,28.97,2.55,97.96641,97.96641,0,0,1,27.53,9.07,92.60625,92.60625,0,0,1,40.49,40.49,98.031,98.031,0,0,1,9.07,27.54,192.59863,192.59863,0,0,1,2.55,28.96c.12,4.44.17,8.87.2,13.31C991.12,127.43,991.12,132.69,991.12,137.96Z' transform='translate(0 -0.00183)'/%3e%3c/svg%3e") no-repeat;
 
-    background: center/cover var(--gray-8)
+    background: center/cover var(--gray-4)
 }
 
-/* - */
+/* 4 */
 
-main.bb h6 {
-	margin-left: .5em
+section.nn ul {
+	grid-template-rows: repeat(2, 1fr);
+	gap: 1em
 }
 
-main.bb h6, main.ee h5, main.nn a > div:last-child div h6, main.kk a > div:last-child h6 {
-	font: normal 600 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: 0
-}
-main.bb div:last-child h4, main.nn a > div:last-child div h4, main.kk a > div:last-child h4 {
-	font: normal 400 17px/1.47059 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: 0
-}
-main.ee h6 {
-	font: normal 400 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: 0
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-main.nn a > div:nth-child(2) {
-	margin: 1.2em 0;
-
-    height: 190px;
-    border-radius: 5px;
-    box-shadow: inset 0 0 0 .5px var(--soft-2);
-    background: center/cover
-}
-main.nn a > div:last-child, main.kk a {
-	display: flex;
-	align-items: center
-}
-
-main.nn a > div:last-child img, main.kk a > div:first-child img {
-	width: 65px;
-	height: 65px
-}
-
-main.nn a > div:last-child div, main.kk a > div:last-child {
-	margin-left: .8em;
-	
-	width: 100%
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
-
-main.kk ul {
-	display: grid;
-	grid-auto-flow: column;
-	grid-template-rows: repeat(3, auto);
-    column-gap: .9em
-}
-
-main.kk li:nth-child(3n+2) a > div:last-child {
-	margin-top: 9.6px;
-    margin-bottom: 9.6px;
-
-	height: 84.2px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-	border-style: solid;
-    border-width: .1px 0 .1px;
-    border-color: var(--gray-9)
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - */
+/* 5 */
 
 section.kk {
-    padding-bottom: env(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom)
 }
 
 section.kk a {
@@ -205,80 +119,60 @@ section.kk a {
 
 section.kk h5 {
     padding: 10px 0;
+	
+	border-top: .1px solid var(--gray-3);
+
     font: normal 400 19px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: 0;
+
     color: inherit
 }
-section.kk li h5 {
-    border-top: .1px solid var(--gray-3);
+
+/* 6 */
+
+@media screen and (max-width: 428px) {
+    :root {
+        --padding: 20px;
+    }
+
+    @media screen and (orientation: landscape) {
+    }
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - */
+/* 8 */
 
 @media screen and (prefers-color-scheme: light) {
 	:root {
-		--soft-1: #00000050;
-		--soft-2: #8080801a;
-
 		--gray-a: white;
 		--gray-b: black;
 
 		--gray-1: #1d1d1f;
 		--gray-2: #8e8e93;
 		--gray-3: #d2d2d7;
-		--gray-4: #515154;
-		--gray-5: #888;
-		--gray-6: #333;
-		--gray-7: #1d1d1f;
-		--gray-8: #f5f5f7;
-		--gray-9: #86868b;
-		--gray-10: #666;
-		--gray-11: #c9c9d1;
-		--gray-12: #f0f0f2;
-		--gray-13: #e8e8ed;
-		--gray-14: #e8e8ed;
+		--gray-4: #f5f5f7;
 		
 		--blue-1: #06c;
 
 		--green-1: #40dd33;
 
-		--yellow-1: #fd9900;
-
-		--const-1: #f5f5f7;
-		--const-2: #17171d;
+		--orange-1: #fd9900;
 	}
 }
 
 @media screen and (prefers-color-scheme: dark) {
 	:root {
-		--soft-1: #1d1d1fb3;
-		--soft-2: #d4d4d41a;
-
 		--gray-a: black;
 		--gray-b: white;
 
 		--gray-1: #f5f5f7;
 		--gray-2: #8e8e93;
 		--gray-3: #212125;
-		--gray-4: #aaaab3;
-		--gray-5: #8e8e93;
-		--gray-6: #d5d5e2;
-		--gray-7: #f5f5f7;
-		--gray-8: #17171d;
-		--gray-9: #63636e;
-		--gray-10: #aaaab3;
-		--gray-11: #2c2c2e;
-		--gray-12: #1a1a21;
-		--gray-13: #1c1c23;
-		--gray-14: #212125;
+		--gray-4: #17171d;
 	
 		--blue-1: #007aff;
 
 		--green-1: #4cee3e;
 
-		--yellow-1: #ff9f00;
-
-		--const-1: #f5f5f7;
-		--const-2: #17171d;
+		--orange-1: #ff9f00;
 	}
 }
