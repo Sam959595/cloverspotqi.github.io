@@ -3,7 +3,7 @@
 	text-overflow: ellipsis;
 	overflow: hidden
 }
-section.hh h5 {
+section.hh:not(.bb, .nn) h5 {
 	display: -webkit-box;
 	-webkit-line-clamp: 1;
 	-webkit-box-orient: vertical;
