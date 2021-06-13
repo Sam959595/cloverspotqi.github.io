@@ -56,7 +56,7 @@ section.pp :where(select, input) {
 section.pp input::-webkit-input-placeholder {
 	color: var(--gray-4)
 }
-section.pp :where(select:invalid, input:invalid) {
+section.pp :is(select, input):invalid {
 	background-color: var(--red-1)
 }
 
