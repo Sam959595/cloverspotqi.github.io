@@ -121,12 +121,14 @@ section.kk a {
     padding-left: 20px
 }
 
+section.kk li+li h5 {
+	border-top: .1px solid var(--gray-3)
+}
+
 section.kk h5 {
     padding: 10px 0;
-	
-	border-top: .1px solid var(--gray-3);
 
-    font: normal 400 19px -apple-system, BlinkMacSystemFont, "Segoe UI";
+    font: normal 400 21px -apple-system, BlinkMacSystemFont, "Segoe UI";
 	letter-spacing: 0;
 
     color: inherit
