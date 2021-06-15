@@ -40,7 +40,7 @@ section.bb {
 }
 
 section.bb li:first-child {
-	width: 374px;
+	width: 394px;
 
 	display: flex;
 	justify-content: space-between;
@@ -51,6 +51,9 @@ section.bb h1 {
 
 	font: normal 700 32px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: .012em
+}
+section.bb li:first-child svg {
+	padding-right: 20px
 }
 
 section:is(.bb, .nn) figure {
