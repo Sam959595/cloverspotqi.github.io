@@ -39,10 +39,14 @@ section.bb {
 	margin-top: .5em
 }
 
+section.bb li:first-child {
+	display: flex;
+	align-items: center
+}
 section.bb h1 {
 	padding-top: 15px;
 
-	width: 280px;
+	width: 414px;
 
 	font: normal 700 32px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: .012em
