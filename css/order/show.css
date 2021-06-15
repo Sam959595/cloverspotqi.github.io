@@ -42,12 +42,17 @@ section.pp li:nth-child(-n+2) {
     border-top: .1px solid var(--gray-3)
 }
 section.pp li {
-    padding: 1em;
     border-bottom: .1px solid var(--gray-3)
 }
 section.pp li:nth-child(odd) {
     border-right: .1px solid var(--gray-3)
 }
+
+section.pp a {
+	display: block;
+    padding: 1em
+}
+
 section.pp img {
     width: 100%
 }
