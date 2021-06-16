@@ -87,6 +87,10 @@ section.pp p {
     letter-spacing: -.008em
 }
 
+footer {
+	padding-bottom: env(safe-area-inset-bottom)
+}
+
 /* 4 */
 
 @media screen and (prefers-color-scheme: light) {
@@ -109,7 +113,7 @@ section.pp p {
 		--gray-13: #e8e8ed;
 		--gray-14: #e8e8ed;
 		
-		--blue-1: #06c;
+		--blue-1: #007aff;
 
         --red-1: #ff2d55;
 
