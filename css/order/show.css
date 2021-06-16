@@ -52,11 +52,11 @@ section.pp a {
 }
 
 section.pp input[type="checkbox"] {
-	width: 20px;
-	height: 20px;
+	width: 22px;
+	height: 22px;
 
 	border-radius: 100%;
-	border: 2px solid var(--blue-1);
+	border: 1px solid var(--blue-1);
 
 	transition: background-color .2s ease
 }
