@@ -20,7 +20,7 @@ section.tt, section.vv figcaption {
 /* 1 */
 
 section.tt {
-    margin: .5cm auto;
+    margin: 1em auto;
 	text-align: center
 }
 section.tt h1 {
@@ -30,6 +30,7 @@ section.tt h1 {
 
 section.tt div {
     display: flex;
+	justify-content: center
 }
 section.tt select {
     color: var(--blue-1)
