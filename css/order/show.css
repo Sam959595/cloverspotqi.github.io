@@ -20,19 +20,13 @@ section.tt, section.vv figcaption {
 /* 1 */
 
 section.tt {
-    margin: 1em auto;
-	text-align: center
-}
-section.tt h1 {
-    font: normal 600 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: 0
+    margin: 1em auto
 }
 
-section.tt div {
-    display: flex;
-	justify-content: center
-}
 section.tt select {
+	font: normal 400 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: 0;
+
     color: var(--blue-1)
 }
 
