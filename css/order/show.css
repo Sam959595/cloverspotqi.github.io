@@ -12,10 +12,6 @@ section.pp h5 {
 
 /* 0 */
 
-section.pp, section.vv {
-    margin-top: .5cm
-}
-
 section.tt, section.vv figcaption {
     margin: 0 auto;
     width: 90%
@@ -50,7 +46,22 @@ section.pp li:nth-child(odd) {
 
 section.pp a {
 	display: block;
-    padding: 1em
+    padding: 1em;
+
+	text-align: right
+}
+
+section.pp input[type="checkbox"] {
+	width: 20px;
+	height: 20px;
+
+	border-radius: 100%;
+	border: 2px solid var(--blue-1);
+
+	transition: background-color .2s ease
+}
+section.pp input[type="checkbox"]:checked {
+	background-color: var(--blue-1)
 }
 
 section.pp img {
@@ -74,55 +85,6 @@ section.pp h6 {
 section.pp p {
     font: normal 400 11px -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: -.008em
-}
-
-/* 2 */
-
-section.vv {
-    background-color: var(--gray-8)
-}
-section.vv figcaption {
-    padding: 1cm 0 2cm
-}
-
-section.vv ol {
-    padding-left: 20px;
-
-    list-style: outside disc
-}
-section.vv ol li+li {
-    margin-top: 1.2em
-}
-section.vv ol li {
-    color: var(--gray-9)
-}
-
-section.vv div {
-	margin-top: 1cm;
-    text-align: center
-}
-
-section.vv a:first-child {
-	display: block;
-
-    width: 100%;
-
-    border-radius: 11px;
-
-    padding: .75em;
-
-    font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
-
-    background-color: var(--gray-13)
-}
-section.vv a:last-child {
-	margin-top: 1cm;
-
-	display: inline-block;
-
-	font: normal 400 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
-
-    color: var(--red-1)
 }
 
 /* 4 */
