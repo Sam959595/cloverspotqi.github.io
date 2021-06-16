@@ -20,11 +20,19 @@ section.tt, section.vv figcaption {
 /* 1 */
 
 section.tt {
-    margin-top: 1cm
+    margin: .5cm auto;
+	text-align: center
 }
 section.tt h1 {
-    font: normal 700 32px -apple-system, BlinkMacSystemFont, "Segoe UI";
-    letter-spacing: .012em
+    font: normal 600 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: 0
+}
+
+section.tt div {
+    display: flex;
+}
+section.tt select {
+    color: var(--blue-1)
 }
 
 /* 2 */
@@ -61,7 +69,6 @@ section.pp input[type="checkbox"] {
 	transition: background-color .2s ease
 }
 section.pp input[type="checkbox"]:checked {
-	border: none;
 	background-color: var(--blue-1)
 }
 
