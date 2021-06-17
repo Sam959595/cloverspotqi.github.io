@@ -71,7 +71,7 @@ section:is(.bb, .nn) h5 {
 /* 2 */
 
 section.tt {
-	margin: 3em var(--padding) 0
+	margin: 2em var(--padding) 0
 }
 
 section.tt h3 {

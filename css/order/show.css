@@ -12,7 +12,7 @@ section.pp h5 {
 
 /* 0 */
 
-section.tt, section.vv figcaption {
+section.tt {
     margin: 0 auto;
     width: 90%
 }
@@ -93,7 +93,7 @@ section.pp p {
 }
 
 footer {
-	padding-bottom: env(safe-area-inset-bottom)
+	margin-bottom: env(safe-area-inset-bottom)
 }
 
 /* 4 */
