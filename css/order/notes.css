@@ -1,0 +1,11 @@
+section.tt button {
+    font: normal 400 19px -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: 0
+}
+
+/* 2 */
+
+section.tt button, section.pp button {
+    background: none;
+    color: var(--red-1)
+}
