@@ -2,7 +2,9 @@ section.pp li {
     text-align: right
 }
 
-section.pp input[type="button"] {
+section.pp button {
+    margin: 1em 1em 0;
+
     font: normal 400 14px/1.42859 -apple-system, BlinkMacSystemFont, "Segoe UI";
     letter-spacing: -.016em;
 
