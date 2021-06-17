@@ -3,7 +3,7 @@ let ss = () => {
     vv = $('section.vv'),
     tt = '<p>Нет добавленных заметок</p>';
 
-    if (pp[0].classList.contains('li')) {
+    if (pp.children().length) {
         return true
     } else {
         vv.html(tt)
