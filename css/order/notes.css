@@ -9,3 +9,14 @@ section.pp button {
     background: none;
     color: var(--red-1)
 }
+
+/* 1 */
+
+section.vv p {
+    margin-top: 3cm;
+
+    text-align: center;
+    
+    font: normal 400 14px/1.42859 -apple-system, BlinkMacSystemFont, "Segoe UI";
+    letter-spacing: -.016em
+}
