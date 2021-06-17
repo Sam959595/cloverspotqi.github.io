@@ -117,10 +117,6 @@ section.nn ul {
 
 /* 5 */
 
-section.kk {
-    padding-bottom: env(safe-area-inset-bottom)
-}
-
 section.kk a {
     display: block;
     padding-left: 20px
@@ -140,6 +136,12 @@ section.kk h5 {
 }
 
 /* 6 */
+
+footer {
+	margin-bottom: env(safe-area-inset-bottom)
+}
+
+/* 8 */
 
 @media screen and (max-width: 428px) {
     :root {
