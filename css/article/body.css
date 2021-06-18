@@ -48,7 +48,7 @@ nav {
 	padding: 1em 0 1cm
 }
 .additionally h3 {
-	font: normal 400 24px/1.33341 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 400 24px/1.33341 system-ui;
 	letter-spacing: .009em;
 
 	color: var(--gray-5)
@@ -76,35 +76,35 @@ img[src] {
 /* - */
 
 .content h1 {
-	font: normal 700 48px/1.08349 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 700 48px/1.08349 system-ui;
 	letter-spacing: -.003em
 }
 .content h2 {
-	font: normal 600 28px/1.14286 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 600 28px/1.14286 system-ui;
 	letter-spacing: .007em;
 
 	padding: 4cm 0 20px
 }
 .content h3 {
-	font: normal 600 24px/1.16667 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 600 24px/1.16667 system-ui;
 	letter-spacing: .009em;
 
 	padding: 3em 0 .8em
 }
 .content h4 {
-	font: normal 600 21px/1.19048 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 600 21px/1.19048 system-ui;
 	letter-spacing: .011em;
 
 	padding: 2em 0 16px
 }
 .content h5 {
-	font: normal 700 21px/1.14286 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 700 21px/1.14286 system-ui;
     letter-spacing: 0;
 
 	padding: .5em 0 1.25em
 }
 .content h6 {
-	font: normal 600 19px/1.21053 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 600 19px/1.21053 system-ui;
 	letter-spacing: .012em;
 
 	padding: 1em 0 19px
@@ -113,7 +113,7 @@ img[src] {
 .content li {
 	margin-bottom: 1.47em;
 
-	font: normal 400 17px/1.47059 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 400 17px/1.47059 system-ui;
 	letter-spacing: 0
 }
 .content ol {
@@ -140,7 +140,7 @@ img[src] {
 
 	text-align: center;
 
-	font: normal 600 16px -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 600 16px system-ui;
 
 	background-color: var(--gray-11);
 	color: var(--gray-1)
@@ -149,7 +149,7 @@ img[src] {
 .setup li {
 	margin-top: .5em;
 
-	font: normal 400 11px/1.36364 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 400 11px/1.36364 system-ui;
 	letter-spacing: -.008em;
 
 	text-align: center;
@@ -178,7 +178,7 @@ blockquote {
 	background-color: var(--gray-8)
 }
 blockquote p {
-	font: normal 400 14px/1.42859 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 400 14px/1.42859 system-ui;
 	letter-spacing: -.016em;
 
 	text-align: center;
@@ -217,7 +217,7 @@ figcaption div:last-child {
 	margin-left: 1em
 }
 figcaption h4, figcaption a {
-	font: normal 600 14px/1.42859 -apple-system, BlinkMacSystemFont, "Segoe UI"
+	font: normal 600 14px/1.42859 system-ui
 }
 figcaption p {
 	padding-bottom: .8em;
@@ -247,7 +247,7 @@ table {
 }
 
 table * {
-	font: normal 400 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 400 14px/1.2 system-ui;
 	letter-spacing: -.022em
 }
 table th {
@@ -277,7 +277,7 @@ dl div > * {
 	display: table-cell;
 	vertical-align: baseline;
 
-	font: normal 400 13px/1.38462 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 400 13px/1.38462 system-ui;
 	letter-spacing: -.005em
 }
 
@@ -329,7 +329,7 @@ main a {
 main h6 {
 	text-align: center;
 
-	font: normal 600 14px/1.3 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 600 14px/1.3 system-ui;
 
 	color: var(--gray-4)
 }

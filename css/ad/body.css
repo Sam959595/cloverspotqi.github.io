@@ -8,7 +8,7 @@
 	-webkit-user-select: none;
 	-webkit-text-size-adjust: 100%;
 
-	font: normal 400 12px/1.33337 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 400 12px/1.33337 system-ui;
 	letter-spacing: -.01em;
 
 	-webkit-font-smoothing: antialiased
@@ -100,7 +100,7 @@ section.hh {
 }
 
 section.hh h1 {
-	font: normal 700 32px/1.25 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 700 32px/1.25 system-ui;
     letter-spacing: .012em
 }
 
@@ -124,11 +124,11 @@ section.pp > div {
 	justify-content: space-between
 }
 section.pp h3 {
-	font: normal 700 21px/1.14286 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 700 21px/1.14286 system-ui;
     letter-spacing: 0
 }
 section.pp a {
-	font: normal 400 17px/1.47 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 400 17px/1.47 system-ui;
     letter-spacing: -.022em
 }
 
@@ -199,15 +199,15 @@ main.bb li div:last-child {
 }
 
 main.bb div:last-child h6, main.nn a > div:last-child div h6, main.kk a > div:last-child h6 {
-	font: normal 500 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 500 14px/1.2 system-ui;
     letter-spacing: -.016em
 }
 main.bb div:last-child h4, main.nn a > div:last-child div h4, main.kk a > div:last-child h4 {
-	font: normal 400 17px/1.47059 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 400 17px/1.47059 system-ui;
     letter-spacing: 0
 }
 main.bb div:last-child p, main.nn a > div:last-child div p, main.kk a > div:last-child p, main.nn a > p {
-	font: normal 400 14px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 400 14px/1.2 system-ui;
     letter-spacing: -.016em
 }
 

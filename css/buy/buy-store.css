@@ -40,7 +40,7 @@ section.ss {
 }
 
 section.ss h1 {
-	font: normal 700 32px system-ui, BlinkMacSystemFont, "Segoe UI";
+	font: normal 700 32px system-ui;
     letter-spacing: .012em
 }
 
@@ -70,14 +70,14 @@ section.tt {
 section.tt h3 {
 	margin: .48em 0;
 
-	font: normal 700 21px/1.14286 ui-rounded, BlinkMacSystemFont, "Segoe UI";
+	font: normal 700 21px/1.14286 ui-rounded;
     letter-spacing: 0
 }
 
 /* 3 */
 
 section.hh :where(h5, h6) {
-	font: normal 600 14px/1.2 ui-serif, BlinkMacSystemFont, "Segoe UI";
+	font: normal 600 14px/1.2 ui-serif;
     letter-spacing: 0
 }
 section.hh h6 {

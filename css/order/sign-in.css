@@ -31,7 +31,7 @@ section.gg h6 {
 /* 1 */
 
 section.tt h1 {
-	font: normal 700 32px/1.25 -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 700 32px/1.25 system-ui;
     letter-spacing: .012em
 }
 
@@ -59,7 +59,7 @@ section.bb input {
 
 	padding: 0 var(--padding);
 
-	font: normal 400 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 400 17px system-ui;
     letter-spacing: 0;
 
 	background: none;
@@ -83,7 +83,7 @@ section.kk {
 section.kk a {
 	display: inline-block;
 
-	font: normal 400 17px -apple-system, BlinkMacSystemFont, "Segoe UI";
+	font: normal 400 17px system-ui;
     letter-spacing: 0
 }
 section.kk a+a {
