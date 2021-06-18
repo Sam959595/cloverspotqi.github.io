@@ -24,7 +24,7 @@ section.bb {
     text-align: center
 }
 section.bb h1 {
-    font: normal 700 32px/1.25 system-ui;
+    font: normal 700 60px/1.25 ui-rounded;
     letter-spacing: .012em
 }
 
