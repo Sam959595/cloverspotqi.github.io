@@ -88,13 +88,13 @@ section.hh h6 {
 
 section.hh a {
 	display: block;
-    border-radius: 17px
+    border-radius: 22px
 }
 section.hh figure {
     width: 230px;
     height: 338px;
 
-	border-radius: 17px;
+	border-radius: 22px;
 
     background: center/cover var(--gray-4)
 }
