@@ -1,4 +1,4 @@
-let ss = () => {
+window.addEventListener('DOMContentLoaded', () => {
     let pp = $('section.pp ul'),
     vv = $('section.vv'),
     tt = '<p>Нет добавленных заметок</p>';
@@ -8,8 +8,18 @@ let ss = () => {
     } else {
         vv.html(tt)
     }
-}
-ss();
+});
+window.addEventListener('click', () => {
+    let pp = $('section.pp ul'),
+    vv = $('section.vv'),
+    tt = '<p>Нет добавленных заметок</p>';
+
+    if (pp.children().length) {
+        return true
+    } else {
+        vv.html(tt)
+    }
+});
 
 $('section.pp button').click( (x) => {
     x.preventDefault();
