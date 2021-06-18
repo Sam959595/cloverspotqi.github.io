@@ -61,9 +61,7 @@ section.pp input[type="checkbox"] {
 	height: 22px;
 
 	border-radius: 100%;
-	border: 2px solid var(--gray-3);
-
-	transition: background-color .2s ease
+	border: 2px solid var(--gray-3)
 }
 section.pp input[type="checkbox"]:checked {
 	border: 0;
