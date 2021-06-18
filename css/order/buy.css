@@ -24,7 +24,7 @@ section.bb {
     text-align: center
 }
 section.bb h1 {
-    font: normal 600 62px/1.25 ui-rounded;
+    font: normal 600 14vw/1.25 ui-rounded;
     letter-spacing: .012em
 }
 
@@ -64,7 +64,7 @@ table tr:last-child td {
 }
 table tr:last-child td:last-child {
 	font: normal 600 19px ui-rounded;
-	letter-spacing: .004em
+	letter-spacing: 0
 }
 
 /* 3 */
