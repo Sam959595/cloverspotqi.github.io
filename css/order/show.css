@@ -66,6 +66,7 @@ section.pp input[type="checkbox"] {
 	transition: background-color .2s ease
 }
 section.pp input[type="checkbox"]:checked {
+	border: 0;
 	background-color: var(--blue-1)
 }
 
