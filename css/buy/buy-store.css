@@ -62,7 +62,7 @@ section:is(.bb, .nn) h5 {
 /* 2 */
 
 section.tt {
-	margin: 2em var(--padding) 0
+	margin: 3em var(--padding) 0
 }
 
 section.tt h3 {
@@ -88,13 +88,13 @@ section.hh h6 {
 
 section.hh a {
 	display: block;
-    border-radius: 22px
+    border-radius: 15px
 }
 section.hh figure {
     width: 230px;
     height: 338px;
 
-	border-radius: 22px;
+	border-radius: 15px;
 
     background: center/cover var(--gray-4)
 }
