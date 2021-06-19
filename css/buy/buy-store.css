@@ -103,7 +103,7 @@ section.hh figure {
 
 /* 4 */
 
-section.bb a {
+section:is(.bb, .nn) a {
 	border-radius: 17px
 }
 
