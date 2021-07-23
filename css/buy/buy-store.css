@@ -137,7 +137,7 @@ section.kk h5 {
 /* 6 */
 
 footer {
-	margin-bottom: env(safe-area-inset-bottom)
+	/* margin-bottom: env(safe-area-inset-bottom) */
 }
 
 /* 8 */
