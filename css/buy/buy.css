@@ -29,7 +29,7 @@ nav {
     border: solid var(--gray-7);
     border-width: .1px 0;
 
-    -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: blur(20px); backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--soft-1)
 }
 nav h6 {
