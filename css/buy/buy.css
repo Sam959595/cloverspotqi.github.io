@@ -26,7 +26,7 @@ nav {
 
     /* border-bottom: .1px solid var(--gray-7); */
 
-    border: .1px 0 solid var(--gray-7);
+    border: .1px 0 .1px 0 solid var(--gray-7);
 
     -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--soft-1)
