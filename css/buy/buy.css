@@ -363,7 +363,8 @@ footer li+li {
 		--gray-4: #63636e;
 		--gray-5: #212125;
 		--gray-6: #63636e;
-        --gray-7: none;
+        /* --gray-7: none; */
+                --gray-7: #83838e;
 	
 		--blue-1: #007aff;
 
