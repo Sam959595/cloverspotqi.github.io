@@ -92,7 +92,7 @@ section.pp p {
 }
 
 footer {
-	margin-bottom: env(safe-area-inset-bottom)
+	/* margin-bottom: env(safe-area-inset-bottom) */
 }
 
 /* 4 */
