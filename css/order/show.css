@@ -29,6 +29,7 @@ section.tt select {
 	font: normal 400 19px system-ui;
     letter-spacing: 0;
 
+    background: none;
     color: var(--blue-1)
 }
 
