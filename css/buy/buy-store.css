@@ -153,13 +153,7 @@ footer {
 
 /* 8 */
 
-@media screen and (prefers-color-scheme: light) {
-        :root {
-                --nav: #40dd33;
-        }
-}
-
-@media screen and (prefers-color-scheme: light) and (min-device-height: 897px) {
+@media screen and (prefers-color-scheme: light) and (min-device-height: 500px) and (max-device-height: 897px) {
         :root {
                 --nav: #000;
         }
