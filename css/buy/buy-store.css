@@ -153,6 +153,12 @@ footer {
 
 /* 8 */
 
+@media screen and (prefers-color-scheme: light) and (max-height: 896px) {
+        :root {
+                --nav: #40dd33;
+        }
+}
+
 @media screen and (prefers-color-scheme: light) {
 	:root {
 		--gray-a: white;
