@@ -154,13 +154,8 @@ footer {
 /* 8 */
 
 @media screen and (prefers-color-scheme: light) {
-        :root {
-                --nav: #000;
-        }
-}
-
-@media screen and (prefers-color-scheme: light) {
 	:root {
+                --nav: #40dd33;
 		--gray-a: white;
 		--gray-b: black;
 
