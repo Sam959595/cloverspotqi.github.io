@@ -155,7 +155,6 @@ footer {
 
 @media screen and (prefers-color-scheme: light) {
 	:root {
-                --nav: #40dd33;
 		--gray-a: white;
 		--gray-b: black;
 
