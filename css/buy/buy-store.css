@@ -17,8 +17,6 @@ section.hh ul {
     grid-auto-flow: column;
     column-gap: 1em;
 
-    padding-left: var(--padding);
-
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
@@ -28,6 +26,9 @@ section.hh li {
 	scroll-snap-align: start
 }
 
+section.hh li:first-child {
+    padding-left: var(--padding)
+}
 section.hh li:last-child {
     padding-right: var(--padding)
 }
