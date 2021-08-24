@@ -20,7 +20,7 @@ section.hh ul {
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
-    scroll-margin: 0 var(--padding);
+    scroll-margin: 50px;
     scroll-padding: 0 var(--padding)
 }
 section.hh li {
