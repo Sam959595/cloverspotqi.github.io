@@ -26,8 +26,8 @@ section.hh li {
     scroll-snap-align: start
 }
 
-section.hh li {
-     scroll-margin: 50px
+section.hh li:last-child {
+     scroll-padding-end: var(--padding)
 }
 
 /* 1 */
