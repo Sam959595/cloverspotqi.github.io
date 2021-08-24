@@ -20,12 +20,14 @@ section.hh ul {
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
-    scroll-margin-block: 50px;
-    scroll-margin: 50px;
     scroll-padding: 0 var(--padding)
 }
 section.hh li {
-	scroll-snap-align: start
+    scroll-snap-align: start
+}
+
+section.hh li {
+     scroll-margin: 50px
 }
 
 /* 1 */
