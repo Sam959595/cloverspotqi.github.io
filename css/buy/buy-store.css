@@ -17,19 +17,14 @@ section.hh ul {
     grid-auto-flow: column;
     column-gap: 1em;
 
-    padding-left: var(--padding);
-
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
+    scroll-margin: 0 var(--padding)
     scroll-padding: 0 var(--padding)
 }
 section.hh li {
 	scroll-snap-align: start
-}
-
-section.hh li:last-child {
-    padding-right: var(--padding)
 }
 
 /* 1 */
