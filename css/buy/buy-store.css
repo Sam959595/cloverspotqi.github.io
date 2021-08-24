@@ -27,7 +27,7 @@ section.hh li {
 }
 
 section.hh li:last-child {
-     scroll-padding-end: var(--padding)
+     scroll-padding-right: var(--padding)
 }
 
 /* 1 */
