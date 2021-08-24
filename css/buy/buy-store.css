@@ -17,6 +17,8 @@ section.hh ul {
     grid-auto-flow: column;
     column-gap: 1em;
 
+    padding-left: var(--padding);
+
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
@@ -27,7 +29,7 @@ section.hh li {
 }
 
 section.hh li:last-child {
-     margin-right: var(--padding)
+     padding-right: var(--padding)
 }
 
 /* 1 */
