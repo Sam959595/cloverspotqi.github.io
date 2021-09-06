@@ -267,17 +267,17 @@ section.kk a {
 	padding-left: var(--padding)
 }
 
+section.kk li+li h5 {
+	border-top: .1px solid var(--gray-3)
+}
+
 section.kk h5 {
 	padding: 10px 0;
 
-	font: normal 400 19px system-ui;
+	font: normal 400 21px system-ui;
     letter-spacing: 0;
 
 	color: inherit
-}
-
-section.kk li+li h5 {
-	border-top: .1px solid var(--gray-3)
 }
 
 /* 9 */
