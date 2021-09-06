@@ -33,8 +33,7 @@ section.tt select {
     color: var(--blue-1)
 }
 section.tt select:focus {
-    opacity: .5;
-    color: #888
+    opacity: .5
 }
 
 /* 2 */
