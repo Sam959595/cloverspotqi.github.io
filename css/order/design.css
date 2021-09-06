@@ -51,7 +51,7 @@ section.pp :where(select, input) {
 	color: var(--gray-1)
 }
 
-section.pp select:focus {
+section.pp select:focus option {
         opacity: .5
 }
 
