@@ -253,6 +253,8 @@ section.nn {
 	width: 90%
 }
 section.nn h3 {
+    margin: .48em 0;
+
     font: normal 700 21px/1.14286 system-ui;
     letter-spacing: 0
 }
