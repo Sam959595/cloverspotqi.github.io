@@ -131,10 +131,10 @@ section.nn ul {
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
-    scroll-padding: 0
+    scroll-padding-left: var(--padding)
 }
 section.nn ul li {
-    scroll-snap-align: center
+    scroll-snap-align: start
 }
 
 section.nn img {
