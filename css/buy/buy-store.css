@@ -22,7 +22,7 @@ section.hh ul {
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
-    scroll-padding: 0 var(--padding)
+    scroll-padding-left: var(--padding)
 }
 section.hh li {
     scroll-snap-align: start
