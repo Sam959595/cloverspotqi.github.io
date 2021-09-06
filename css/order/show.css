@@ -33,6 +33,10 @@ section.tt select {
     color: var(--blue-1)
 }
 
+section.tt select:active {
+    opacity: .5
+}
+
 /* 2 */
 
 section.pp ul {
