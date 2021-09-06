@@ -124,7 +124,7 @@ section.bb > a {
 
 /* 1 */
 
-section.tt ul {
+section.nn ul {
     display: grid;
     grid-auto-flow: column;
 
@@ -133,11 +133,11 @@ section.tt ul {
     scroll-snap-type: x mandatory;
     scroll-padding: 0
 }
-section.tt ul li {
+section.nn ul li {
     scroll-snap-align: center
 }
 
-section.tt img {
+section.nn img {
 	width: 5cm
 }
 
@@ -248,11 +248,11 @@ section.hh ul h6 {
 
 /* 1 */
 
-section.nn {
+section.tt {
 	margin: 1cm auto 0;
 	width: 90%
 }
-section.nn h3 {
+section.tt h3 {
     margin: .48em 0;
 
     font: normal 700 21px/1.14286 system-ui;
