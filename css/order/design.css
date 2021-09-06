@@ -51,6 +51,10 @@ section.pp :where(select, input) {
 	color: var(--gray-1)
 }
 
+section.pp select:focus {
+        opacity: .5
+}
+
 section.pp input::-webkit-input-placeholder {
 	color: var(--gray-4)
 }
