@@ -52,7 +52,7 @@ section.rr {
 }
 
 section.vv h6 {
-    font: normal 600 14px/1.2 system-ui;
+    font: normal 400 14px/1.2 system-ui;
     letter-spacing: 0;
 
     color: var(--orange-1)
