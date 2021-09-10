@@ -69,14 +69,14 @@ section.tt {
 section.tt h3 {
 	margin: .48em 0;
 
-	font: normal 700 21px/1.14286 inherit;
+	font: normal 700 21px/1.14286 system-ui;
     letter-spacing: 0
 }
 
 /* 3 */
 
 section.hh :where(h5, h6) {
-	font: normal 600 14px/1.2 inherit;
+	font: normal 600 14px/1.2 system-ui;
     letter-spacing: 0
 }
 section.hh h6 {
@@ -127,7 +127,7 @@ section.kk li+li h5 {
 section.kk h5 {
     padding: 10px 0;
 
-    font: normal 400 21px inherit;
+    font: normal 400 21px system-ui;
 	letter-spacing: 0;
 
     color: inherit
