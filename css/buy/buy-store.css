@@ -39,7 +39,7 @@ section.ss {
 }
 
 section.ss h1 {
-	font: normal 700 32px inherit;
+	font: normal 700 32px system-ui;
     letter-spacing: .012em
 }
 
