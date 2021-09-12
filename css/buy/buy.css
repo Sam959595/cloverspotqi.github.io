@@ -234,7 +234,7 @@ section.hh ul h2 {
 	font: normal 600 19px system-ui;
     letter-spacing: 0;
 
-	color: var(--const-2)
+	/* color: var(--const-2) */
 }
 section.hh ul p {
 	margin-top: .5em;
