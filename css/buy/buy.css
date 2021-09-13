@@ -22,9 +22,12 @@ section.zz > div {
     width: 5cm;
     height: 12cm;
 
+    border-radius: 15px;
     padding: 2em;
 
-    text-align: center
+    text-align: center;
+
+     background-color: var(--soft-1)
 }
 
 /* 1 */
