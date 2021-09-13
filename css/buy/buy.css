@@ -46,11 +46,12 @@ section.zz h5 {
 }
 section.zz button {
     width: 100%;
-    padding: 5px 0;
+
+    padding: .5em 0;
 
     border-top: .1px solid var(--gray-3);
 
-    font: normal 400 16px system-ui;
+    font: normal 400 17px system-ui;
     letter-spacing: 0;
 
     background: none
