@@ -17,7 +17,11 @@ section.zz {
 
     position: fixed;
 
-    margin: 5em 5em 0;
+    init: 0;
+
+    pointer-events: none;
+
+    overflow: hidden scroll;
 
     background-color: #00000033
 }
