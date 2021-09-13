@@ -27,7 +27,8 @@ section.zz > div {
 
     text-align: center;
 
-     background-color: var(--soft-1)
+    -webkit-backdrop-filter: blur(20px); backdrop-filter: saturate(180%) blur(20px);
+    background-color: var(--soft-1)
 }
 
 /* 1 */
