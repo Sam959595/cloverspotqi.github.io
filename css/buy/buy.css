@@ -12,6 +12,23 @@
 
 /* 0 */
 
+section.zz {
+    position: absolute;
+    
+    margin: auto;
+    init: 0
+}
+section.zz > div {
+    width: 5cm;
+    height: 12cm;
+
+    padding: 2em;
+
+    text-align: center
+}
+
+/* 1 */
+
 nav {
     z-index: 5;
 
