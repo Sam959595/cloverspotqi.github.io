@@ -12,6 +12,10 @@
 
 /* 0 */
 
+html, body {
+    overflow: hidden
+}
+
 section.zz {
     z-index: 5;
 
@@ -19,10 +23,6 @@ section.zz {
 
     margin: auto;
     width: 60%
-}
-
-html, body {
-    overflow-y: hidden
 }
 section.zz > div {
     width: 7cm;
