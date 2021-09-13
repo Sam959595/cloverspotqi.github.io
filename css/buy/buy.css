@@ -60,7 +60,7 @@ section.zz li button:last-child {
 section.zz button {
     width: 100%;
 
-    padding: .5em 0;
+    padding: .8em 0;
 
     border-top: .1px solid var(--gray-3);
 
