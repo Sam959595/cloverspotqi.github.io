@@ -13,7 +13,7 @@
 /* 0 */
 
 section.zz {
-    position: absolute;
+    position: fixed;
     
     margin: auto;
     init: 0
@@ -22,7 +22,7 @@ section.zz > div {
     width: 7cm;
     height: 12cm;
 
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 2em;
 
     text-align: center;
