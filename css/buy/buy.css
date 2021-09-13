@@ -12,7 +12,7 @@
 
 /* 0 */
 
-body:not(section.zz) {
+body:not(.zz) {
     pointer-events: none
 }
 
