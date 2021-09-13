@@ -33,11 +33,11 @@ section.zz ul {
     background-color: var(--soft-1)
 }
 
-section.zz ul li+li {
-    padding-top: 1em
-}
 section.zz ul li:first-child {
     padding: 2em 1em
+}
+section.zz ul li+li {
+    padding-top: 1em
 }
 
 section.zz h5 {
