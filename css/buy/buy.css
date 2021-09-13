@@ -16,11 +16,12 @@ section.zz {
     position: fixed;
     
     margin: auto;
-    init: 0
+
+    width: 100%;
+    height: 100%
 }
 section.zz > div {
     width: 7cm;
-    height: 12cm;
 
     border-radius: 20px;
     padding: 2em 1em;
