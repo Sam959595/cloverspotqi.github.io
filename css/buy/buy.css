@@ -34,15 +34,17 @@ section.zz ul {
 }
 
 section.zz ul li+li {
-    margin-top: 1em
+    padding-top: 1em
 }
 section.zz ul li:first-child {
     padding: 2em 1em
 }
+
 section.zz h5 {
     font: normal 600 14px/1.42859 system-ui;
     letter-spacing: 0
 }
+
 section.zz button {
     width: 100%;
 
