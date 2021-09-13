@@ -25,16 +25,18 @@ section.zz {
     margin: auto
 }
 
-section.zz > div {
+section.zz ul {
     width: 7cm;
 
     border-radius: 20px;
-    padding-top: 2em;
 
     text-align: center;
 
     -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--soft-1)
+}
+section.zz ul li:first-child {
+    margin: 2em 1em 0
 }
 section.zz h5 {
     font: normal 600 14px/1.42859 system-ui;
