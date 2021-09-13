@@ -15,6 +15,8 @@
 section.zz {
     z-index: 5;
 
+    display: block;
+
     position: fixed;
     width: 100%;
 
