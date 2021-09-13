@@ -50,7 +50,7 @@ section.zz button {
 
     border: .1px solid var(--gray-3);
 
-    font: normal 400 14px/1.42859 system-ui;
+    font: normal 400 16px system-ui;
     letter-spacing: 0;
 
     background: none
