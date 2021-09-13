@@ -19,10 +19,10 @@ body:not(section.zz) {
 section.zz {
     z-index: 5;
 
-    position: absolute;
+    position: fixed;
 
     margin: auto;
-    width: 60%
+    init: 0
 }
 
 section.zz > div {
