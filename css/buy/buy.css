@@ -21,7 +21,7 @@ section.zz {
     width: 60%
 }
 
-html {
+html, body {
     overflow-y: hidden
 }
 section.zz > div {
