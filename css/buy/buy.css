@@ -33,7 +33,7 @@ section.zz > div {
     width: 7cm;
 
     border-radius: 20px;
-    padding: 2em 1em;
+    padding: 2em 0;
 
     text-align: center;
 
@@ -48,7 +48,7 @@ section.zz button {
     width: 100%;
     padding: 5px 0;
 
-    border: .1px solid var(--gray-3);
+    border-top: .1px solid var(--gray-3);
 
     font: normal 400 16px system-ui;
     letter-spacing: 0;
