@@ -18,7 +18,7 @@ section.zz {
     position: fixed;
 
     margin: auto;
-    init: 0
+    width: 60%
 }
 
 html {
