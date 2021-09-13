@@ -7,7 +7,7 @@
 
 	-webkit-text-size-adjust: none;
 
-	ifont: normal 400 12px/1.33337 system-ui;
+        font: normal 400 12px/1.33337 system-ui;
 	letter-spacing: -.01em;
 
 	-webkit-font-smoothing: antialiased
