@@ -19,7 +19,7 @@ section.zz {
     init: 0
 }
 section.zz > div {
-    width: 5cm;
+    width: 7cm;
     height: 12cm;
 
     border-radius: 15px;
@@ -27,7 +27,7 @@ section.zz > div {
 
     text-align: center;
 
-    -webkit-backdrop-filter: blur(20px); backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--soft-1)
 }
 
@@ -50,7 +50,7 @@ nav {
     /* border: solid var(--gray-7);
     border-width: .1px 0; */
 
-    -webkit-backdrop-filter: blur(20px); backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--soft-1)
 }
 nav h6 {
