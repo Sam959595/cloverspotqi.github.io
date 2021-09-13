@@ -36,7 +36,7 @@ section.zz ul {
     background-color: var(--soft-1)
 }
 section.zz ul li:first-child {
-    margin: 2em 1em 0
+    padding: 2em 1em
 }
 section.zz h5 {
     font: normal 600 14px/1.42859 system-ui;
