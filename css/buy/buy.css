@@ -32,6 +32,10 @@ section.zz ul {
     -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--soft-1)
 }
+
+section.zz ul li+li {
+    margin-top: 1em
+}
 section.zz ul li:first-child {
     padding: 2em 1em
 }
