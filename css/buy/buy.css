@@ -48,6 +48,8 @@ section.zz button {
     width: 100%;
     padding: 5px 0;
 
+    border: .1px solid var(--gray-3);
+
     font: normal 400 14px/1.42859 system-ui;
     letter-spacing: 0;
 
