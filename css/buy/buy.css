@@ -394,7 +394,7 @@ footer li+li {
 @media screen and (prefers-color-scheme: light) {
 	:root {
         --soft-1: #f5f5f7b8;
-                --soft-2: #ffffff33;
+                --soft-2: #ffffff4b;
 
 		--gray-a: white;
 		--gray-b: black;
