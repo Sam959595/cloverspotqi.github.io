@@ -45,6 +45,9 @@ section.zz h5 {
     letter-spacing: 0
 }
 
+section.zz li button:last-child {
+    font-width: 600
+}
 section.zz button {
     width: 100%;
 
