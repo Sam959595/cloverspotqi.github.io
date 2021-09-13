@@ -44,6 +44,15 @@ section.zz h5 {
     font: normal 600 14px/1.42859 system-ui;
     letter-spacing: 0
 }
+section.zz button {
+    width: 100%;
+    padding: 5px 0;
+
+    font: normal 400 14px/1.42859 system-ui;
+    letter-spacing: 0;
+
+    background: none
+}
 
 /* 1 */
 
