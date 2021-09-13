@@ -17,10 +17,9 @@ section.zz {
 
     position: fixed;
 
-    display: block;
+    margin: auto;
 
-    justify-content: center;
-    align-items: center
+    init: 0;
 }
 section.zz > div {
     width: 7cm;
