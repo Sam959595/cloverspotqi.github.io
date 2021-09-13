@@ -13,7 +13,7 @@
 /* 0 */
 
 body:not(section.zz) {
-    poiner-events: none
+    pointer-events: none
 }
 
 section.zz {
