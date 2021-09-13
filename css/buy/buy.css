@@ -24,6 +24,7 @@ section.zz {
     margin: auto;
     width: 60%
 }
+
 section.zz > div {
     width: 7cm;
 
