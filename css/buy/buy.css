@@ -107,7 +107,7 @@ section.rr {
 
 @media screen and (min-width: 320px) and (max-width: 896px) {
 	section.vv {
-		margin: 1cm 1cm .5cm
+		/* margin: 1cm 1cm .5cm */
 	}
 }
 
