@@ -12,10 +12,6 @@
 
 /* 0 */
 
-body:not(.zz) {
-    pointer-events: none
-}
-
 section.zz {
     z-index: 5;
 
