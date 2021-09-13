@@ -36,8 +36,8 @@ section.zz ul {
 section.zz ul li:first-child {
     padding: 2em 1em
 }
-section.zz ul li+li {
-    padding-top: 1em
+section.zz h6 {
+    margin-top: 1em
 }
 
 section.zz h5 {
