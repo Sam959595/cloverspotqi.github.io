@@ -111,17 +111,17 @@ section.rr {
 	}
 }
 
+section.vv h5 {
+	margin: 1cm 1cm .5em;
+
+	font: normal 600 14px/1.2 system-ui;
+    letter-spacing: 0
+}
 section.vv h6 {
     font: normal 400 14px/1.2 system-ui;
     letter-spacing: 0;
 
     color: var(--orange-1)
-}
-section.vv h5 {
-	margin: .5em 0;
-
-	font: normal 600 14px/1.2 system-ui;
-    letter-spacing: 0
 }
 
 section.vv figure {
