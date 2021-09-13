@@ -22,6 +22,9 @@ section.zz {
 
     pointer-events: none;
 
+    justify-align: center;
+    align-items: center;
+
     overflow: hidden scroll;
 
     background-color: #00000033
