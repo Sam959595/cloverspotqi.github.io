@@ -17,7 +17,9 @@ section.zz {
 
     position: fixed;
 
-    margin: 5em 5em 0
+    margin: 5em 5em 0;
+
+    background-color: #00000033
 }
 
 section.zz ul {
