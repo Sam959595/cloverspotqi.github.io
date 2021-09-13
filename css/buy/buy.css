@@ -30,6 +30,10 @@ section.zz > div {
     -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--soft-1)
 }
+section.zz h6 {
+    font: normal 600 14px/1.42859 system-ui;
+    letter-spacing: 0
+}
 
 /* 1 */
 
