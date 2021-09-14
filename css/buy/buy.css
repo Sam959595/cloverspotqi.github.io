@@ -43,10 +43,10 @@ section.zz main {
     background-color: var(--soft-1)
 }
 
-section.zz ul li:first-child {
+section.zz ul {
     margin: 2em 1.5em
 }
-section.zz h6 {
+section.zz li+li {
     margin-top: 1em
 }
 
