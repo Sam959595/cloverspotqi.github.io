@@ -44,7 +44,7 @@ section.zz ul {
 }
 
 section.zz ul li:first-child {
-    padding: 1em
+    margin: 2em 1em 1.5em
 }
 section.zz h6 {
     margin-top: 1em
