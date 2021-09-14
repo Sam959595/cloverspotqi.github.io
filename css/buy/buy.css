@@ -54,10 +54,14 @@ section.zz h5 {
     font: normal 600 17px system-ui;
     letter-spacing: 0
 }
-section.zz table {
+
+section.zz td:nth-child(n1) {
     text-align: left
 }
-section.zz tr td:first-child {
+section.zz td:nth-child(even) {
+    text-align: right
+}
+section.zz td:first-child {
     opacity: .3
 }
 
