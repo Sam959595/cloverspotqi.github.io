@@ -81,8 +81,8 @@ section.zz td:first-child {
 }
 
 section.zz input[type="checkbox"] {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 
     border-radius: 100%;
     border: 2px solid var(--blue-1)
