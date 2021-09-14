@@ -55,20 +55,20 @@ section.zz h5 {
     letter-spacing: 0
 }
 
-section.zz li button:last-child {
-    font-weight: 600
-}
 section.zz button {
     width: 100%;
 
     padding: .8em 0;
 
-    border-top: .1px solid var(--gray-3);
+    border-top: .1px solid var(--gray-8);
 
     font: normal 400 17px system-ui;
     letter-spacing: 0;
 
     background: none
+}
+section.zz li button:last-child {
+    font-weight: 600
 }
 
 /* 1 */
@@ -409,6 +409,7 @@ footer li+li {
 		--gray-5: #e8e8ed;
 		--gray-6: #aaaab3;
         --gray-7: #aeaeb2;
+                --gray-8: #d2d2d7;
 		
 		--blue-1: #007aff;
 
@@ -437,6 +438,7 @@ footer li+li {
 		--gray-6: #63636e;
         /* --gray-7: none; */
                 --gray-7: #8e8e93;
+                --gray-8: #333;
 	
 		--blue-1: #007aff;
 
