@@ -54,6 +54,9 @@ section.zz h5 {
     font: normal 600 17px system-ui;
     letter-spacing: 0
 }
+section.zz tr td:first-child {
+    opacity: .5
+}
 
 section.zz button {
     width: 100%;
