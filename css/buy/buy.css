@@ -59,10 +59,10 @@ section.zz table {
     width: 100%
 }
 section.zz td:nth-child(odd) {
-    text-align: left
+    text-align: right
 }
 section.zz td:nth-child(even) {
-    text-align: right
+    text-align: left
 }
 section.zz td:first-child {
     opacity: .3
