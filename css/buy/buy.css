@@ -88,7 +88,6 @@ section.zz input[type="checkbox"] {
     border: 2px solid var(--blue-1)
 }
 section.zz input[type="checkbox"]:checked {
-    border: 0;
     background-color: var(--blue-1)
 }
 
