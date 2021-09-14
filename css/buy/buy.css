@@ -54,8 +54,11 @@ section.zz h5 {
     font: normal 600 17px system-ui;
     letter-spacing: 0
 }
+section.zz table {
+    text-align: left
+}
 section.zz tr td:first-child {
-    opacity: .5
+    opacity: .3
 }
 
 section.zz button {
