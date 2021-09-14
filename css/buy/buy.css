@@ -80,12 +80,17 @@ section.zz td:first-child {
     opacity: .3
 }
 
+section.zz li:last-child {
+    display: flex
+}
 section.zz input[type="checkbox"] {
     width: 20px;
     height: 20px;
 
+    opacity: .5;
+
     border-radius: 100%;
-    border: 2px solid var(--blue-1)
+    border: 1px solid var(--gray-1)
 }
 section.zz input[type="checkbox"]:checked {
     background-color: var(--blue-1)
