@@ -32,7 +32,7 @@ section.zz {
     background-color: var(--soft-2)
 }
 
-section.zz ul {
+section.zz main {
     width: 8cm;
 
     border-radius: 20px;
