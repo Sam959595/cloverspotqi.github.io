@@ -81,8 +81,8 @@ section.zz td:first-child {
 }
 
 section.zz input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 
     opacity: .5;
 
@@ -90,6 +90,7 @@ section.zz input[type="checkbox"] {
     border: 1px solid var(--gray-1)
 }
 section.zz input[type="checkbox"]:checked {
+    border-color: var(--blue-1);
     background-color: var(--blue-1)
 }
 
