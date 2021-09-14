@@ -55,7 +55,7 @@ section.zz h5 {
     letter-spacing: 0
 }
 
-section.zz td:nth-child(n1) {
+section.zz td:nth-child(odd) {
     text-align: left
 }
 section.zz td:nth-child(even) {
