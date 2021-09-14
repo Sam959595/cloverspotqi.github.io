@@ -55,6 +55,9 @@ section.zz h5 {
     letter-spacing: 0
 }
 
+section.zz table {
+    width: 100%
+}
 section.zz td:nth-child(odd) {
     text-align: left
 }
