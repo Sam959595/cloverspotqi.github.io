@@ -85,7 +85,7 @@ section.zz input[type="checkbox"] {
     height: 22px;
 
     border-radius: 100%;
-    border: 2px solid var(--gray-3)
+    border: 2px solid var(--blue-1)
 }
 section.zz input[type="checkbox"]:checked {
     border: 0;
