@@ -62,6 +62,8 @@ section.zz td:nth-child(odd) {
     text-align: right
 }
 section.zz td:nth-child(even) {
+    margin-left: .5em;
+
     text-align: left
 }
 section.zz td:first-child {
