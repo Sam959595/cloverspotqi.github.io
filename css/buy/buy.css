@@ -44,7 +44,7 @@ section.zz main {
 }
 
 section.zz ul {
-    margin-top: 2em
+    margin: 2em 0
 }
 section.zz li+li {
     margin-top: 1em
@@ -62,6 +62,9 @@ section.zz h5 {
     letter-spacing: 0
 }
 
+section.zz table {
+    width: 100%
+}
 section.zz td:nth-child(odd) {
     text-align: left
 }
