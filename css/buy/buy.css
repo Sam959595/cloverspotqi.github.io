@@ -21,7 +21,7 @@ section.zz {
     margin: auto;
 
     opacity: 1;
-    pointer-events: none;
+    pointer-events: auto;
 
     display: flex;
     justify-content: center;
