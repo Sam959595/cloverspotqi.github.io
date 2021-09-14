@@ -56,7 +56,10 @@ section.zz h5 {
 }
 
 section.zz table {
-    width: 100%
+    width: 100%;
+
+    border: solid var(--gray-8);
+    border-width: .1px 0
 }
 section.zz td:nth-child(odd) {
     text-align: left
