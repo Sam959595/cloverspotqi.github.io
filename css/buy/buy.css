@@ -65,7 +65,7 @@ section.zz h5 {
 section.zz table {
     width: 100%;
 
-    margin: 1.5em
+    margin: 1em
 }
 section.zz td:nth-child(odd) {
     text-align: left
