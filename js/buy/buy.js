@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     let h = $('html'),
     b = $('body'),
     o = $('apple-pay-button'),
@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', function () {
     n = 'no-scroll',
     v = 'visible';
 
-    o.click(function () {
+    o.click ( () => {
         h[0].classList.add(n);
         b[0].classList.add(n);
         z[0].classList.add(v);
     });
-    e.click(function () {
+    e.click ( () => {
         h[0].classList.remove(n);
         b[0].classList.remove(n);
         z[0].classList.remove(v);
@@ -22,7 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
         j = $('section.zz li:last-child h6'),
         f = 'active';
 
-    p.click(function () {
+    p.click ( () => {
+        if () {}
         j[0].classList.add(f);
+
+        j[0].classList.remove(f);
     });
 });
