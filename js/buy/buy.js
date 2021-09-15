@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         f = 'active';
 
     p.click( () => {
-        if (j.classList.contains(f) == false) {
+        if (j[0].classList.contains(f) == false) {
             j[0].classList.add(f);
             } else {
                   j[0].classList.remove(f);
