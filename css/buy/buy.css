@@ -20,8 +20,8 @@ section.zz {
     inset: 0;
     margin: auto;
 
-    opacity: 1;
-    pointer-events: auto;
+    opacity: 0;
+    pointer-events: none;
 
     display: flex;
     justify-content: center;
