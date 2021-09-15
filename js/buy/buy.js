@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
     v = 'visible';
 
     o.click(function() {
-        h.classList.add(n);
-        b.classList.add(n);
-        z.classList.add(v);
+        h[0].classList.add(n);
+        b[0].classList.add(n);
+        z[0].classList.add(v);
     });
     e.click(function() {
         h.classList.remove(n);
