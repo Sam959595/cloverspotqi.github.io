@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
         z[0].classList.add(v);
     });
     e.click(function() {
-        h.classList.remove(n);
-        b.classList.remove(n);
-        z.classList.remove(v);
+        h[0].classList.remove(n);
+        b[0].classList.remove(n);
+        z[0].classList.remove(v);
     });
 });
