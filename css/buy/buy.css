@@ -82,7 +82,7 @@ section.zz td:first-child {
     opacity: .3
 }
 
-section.zz li:last-child {
+section.zz li:last-child button:checked {
     font: normal 400 11px/1.2 system-ui;
     letter-spacing: -.008em;
 
