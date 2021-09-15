@@ -79,9 +79,6 @@ section.zz td:first-child {
 }
 
 section.zz li:last-child button {
-    font: normal 400 11px/1.2 system-ui;
-    letter-spacing: -.008em;
-
     opacity: .3;
 
     background: none;
