@@ -62,10 +62,6 @@ section.zz h5 {
     letter-spacing: 0
 }
 
-section.zz table * {
-    font: normal 400 11px/1.2 system-ui;
-    letter-spacing: -.008em
-}
 section.zz table {
     table-layout: fixed;
     border-collapse: collapse;
