@@ -43,10 +43,10 @@ section.zz main {
     background-color: var(--soft-1)
 }
 
-section.zz ul {
+section.zz :where(ul, li:last-child) {
     margin: 2em 0
 }
-section.zz li h6 {
+section.zz li:not(:last-child) {
     margin-top: 1em
 }
 section.zz li > * {
