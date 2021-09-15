@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     let p = $('section.zz li:last-child button'),
-        f = $('active');
+        f = 'active';
 
     p.click(function () {
         p[0].classList.add(f);
