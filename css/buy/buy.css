@@ -54,8 +54,8 @@ section.zz li > * {
 }
 section.zz li:nth-child(4) {
      border: solid var(--gray-8);
-     border-width: .5em 0
- }
+     border-width: 1em 0
+}
 
 section.zz h5 {
     font: normal 600 17px system-ui;
