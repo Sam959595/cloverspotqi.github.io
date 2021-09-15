@@ -78,9 +78,10 @@ section.zz td:first-child {
     opacity: .3
 }
 
-
 section.zz li:last-child {
-    display: flex
+    display: flex;
+
+    text-align: left
 }
 section.zz input[type="checkbox"] {
     width: 18px;
