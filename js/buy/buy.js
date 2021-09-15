@@ -8,13 +8,13 @@ document.addEventListener('DOMContentLoaded', function() {
     v = 'visible';
 
     o.click(function() {
-        z[0].classList.add(v);
         h[0].classList.add(n);
         b[0].classList.add(n);
+        z[0].classList.add(v);
     });
     e.click(function() {
-        z[0].classList.remove(v);
         h[0].classList.remove(n);
         b[0].classList.remove(n);
+        z[0].classList.remove(v);
     });
 });
