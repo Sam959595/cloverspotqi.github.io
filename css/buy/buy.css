@@ -103,7 +103,7 @@ section.zz input[type="checkbox"]:checked {
     background-color: var(--blue-1)
 }
 
-section.zz button {
+section.zz div button {
     width: 100%;
 
     padding: .8em 0;
