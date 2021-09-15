@@ -20,7 +20,7 @@ section.zz {
     inset: 0;
     margin: auto;
 
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
 
     display: flex;
