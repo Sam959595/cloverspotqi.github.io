@@ -53,8 +53,8 @@ section.zz li > * {
     margin: 0 1.5em
 }
 section.zz li:nth-child(4) {
-     border: solid var(--gray-9);
-     border-width: 1em 0
+     border: solid var(--gray-8);
+     border-width: .1px 0
 }
 
 section.zz h5 {
@@ -461,7 +461,6 @@ footer li+li {
 		--gray-6: #aaaab3;
         --gray-7: #aeaeb2;
                 --gray-8: #d2d2d7;
-                --gray-9: #0000000d;
 		
 		--blue-1: #007aff;
 
@@ -491,7 +490,6 @@ footer li+li {
         /* --gray-7: none; */
                 --gray-7: #8e8e93;
                 --gray-8: #515154;
-                --gray-9: #00000033;
 	
 		--blue-1: #007aff;
 
