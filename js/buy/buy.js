@@ -8,13 +8,13 @@ document.addEventListener('DOMContentLoaded', function() {
     v = 'visible';
 
     o.click(function() {
-        h[0].classList.add(n);
-        b[0].classList.add(n);
-        z[0].classList.add(v);
+        h.classList.add(n);
+        b.classList.add(n);
+        z.classList.add(v);
     });
     e.click(function() {
-        h[0].classList.remove(n);
-        b[0].classList.remove(n);
-        z[0].classList.remove(v);
+        h.classList.remove(n);
+        b.classList.remove(n);
+        z.classList.remove(v);
     });
 });
