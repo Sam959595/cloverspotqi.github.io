@@ -20,6 +20,9 @@
     opacity: 1 !important;
     pointer-events: auto !important
 }
+.active {
+    color: var(--green-1) !important
+}
 
 /* 1 */
 
