@@ -91,15 +91,8 @@ section.zz td:nth-child(odd) {
 section.zz td:nth-child(even) {
     text-align: right
 }
-section.zz td:first-child {
+section.zz :where(td:first-child, li:last-child h6) {
     opacity: .3
-}
-
-section.zz li:last-child button {
-    opacity: .3;
-
-    background: none;
-    color: var(--gray-1)
 }
 
 section.zz div button {
