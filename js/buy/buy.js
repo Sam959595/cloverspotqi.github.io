@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     let s = $('html'),
     d = $('body'),
-    a = $('apple-pay-button'),
+    a = $('section.rr button'),
     b = $('section.zz'),
     e = $('aside input'),
     c = $('section.zz div button:last-child'),
