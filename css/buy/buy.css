@@ -22,7 +22,7 @@
 }
 .active {
     opacity: 1 !important;
-    color: var(--green-1) !important
+    color: var(--blue-1) !important
 }
 
 /* 1 */
@@ -458,8 +458,6 @@ footer li+li {
 
         --orange-1: #fd9900;
 
-        --green-1: #40dd33;
-
         --const-1: #17171d;
         --const-2: #f5f5f7;
 	}
@@ -489,8 +487,6 @@ footer li+li {
         --red-1: #fb5c74;
 
         --orange-1: #ff9f00;
-
-        --green-1: #4cee3e;
 
         --const-1: #17171d;
         --const-2: #f5f5f7;
