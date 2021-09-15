@@ -18,10 +18,11 @@ document.addEventListener('DOMContentLoaded', function () {
         z[0].classList.remove(v);
     });
 
-    let p = $('section.zz li:last-child button'),
+    let p = $('section.zz li:last-child'),
+        j = $('section.zz li:last-child h6'),
         f = 'active';
 
     p.click(function () {
-        p[0].classList.add(f);
+        j[0].classList.add(f);
     });
 });
