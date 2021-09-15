@@ -1,14 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    let q = $('main ul li:nth-child(2)'),
-    o = $('.includes')[0],
-    u = 'x';
-
-    q.click(function() {
-        o.load(u);
-    });
-
-    //
-
     let s = $('html'),
     d = $('body'),
     a = $('.attachment li:last-child'),
