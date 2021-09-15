@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let s = $('html'),
     d = $('body'),
     a = $('apple-pay-button'),
-    b = $('aside'),
+    b = $('section.zz'),
     e = $('aside input'),
     i = $('aside > div:first-child div:first-child'),
     c = $('section.zz div button:last-child'),
