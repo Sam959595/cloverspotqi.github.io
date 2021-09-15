@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     let h = $('html'),
     b = $('body'),
-    o = $('section.bb div button'),
+    o = $('apple-pay-button'),
     e = $('section.zz div button:last-child'),
     z = $('section.zz'),
     n = 'no-scroll',
