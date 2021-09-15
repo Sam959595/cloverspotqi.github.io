@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', function () {
     n = 'no-scroll',
     v = 'visible';
 
-    o.click ( () => {
+    o.click( () => {
         h[0].classList.add(n);
         b[0].classList.add(n);
         z[0].classList.add(v);
     });
-    e.click ( () => {
+    e.click( () => {
         h[0].classList.remove(n);
         b[0].classList.remove(n);
         z[0].classList.remove(v);
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
         j = $('section.zz li:last-child h6'),
         f = 'active';
 
-    p.click ( () => {
+    p.click( () => {
         if () {}
         j[0].classList.add(f);
 
