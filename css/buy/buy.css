@@ -82,25 +82,11 @@ section.zz td:first-child {
     opacity: .3
 }
 
-section.zz label {
-    -webkit-tap-highlight-color: transparent
-}
-section.zz input[type="checkbox"] {
-    margin-right: .5em;
+section.zz li:last-child {
+    font: normal 400 11px/1.2 system-ui;
+    letter-spacing: -.008em;
 
-    width: 18px;
-    height: 18px;
-
-    opacity: .3;
-
-    border-radius: 100%;
-    border: 1px solid var(--gray-1)
-}
-section.zz input[type="checkbox"]:checked {
-    opacity: 1;
-
-    border: 0;
-    background-color: var(--blue-1)
+    background: none
 }
 
 section.zz div button {
