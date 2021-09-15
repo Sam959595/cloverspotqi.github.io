@@ -80,6 +80,7 @@ section.zz td:first-child {
 
 section.zz li:last-child div {
     display: flex;
+    align-items: center;
 
     text-align: left
 }
