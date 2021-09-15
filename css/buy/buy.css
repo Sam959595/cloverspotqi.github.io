@@ -86,7 +86,11 @@ section.zz li:last-child button:checked {
     font: normal 400 11px/1.2 system-ui;
     letter-spacing: -.008em;
 
-    background: none
+    background: none;
+    color: var(--gray-3)
+}
+section.zz li:last-child button:checked {
+    color: var(--blue-1)
 }
 
 section.zz div button {
