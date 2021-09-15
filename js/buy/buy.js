@@ -23,9 +23,10 @@ document.addEventListener('DOMContentLoaded', function () {
         f = 'active';
 
     p.click(function () {
-        if () {}
-        j[0].classList.add(f);
-
-        j[0].classList.remove(f);
+        if (!j.classList(f)) {
+           j[0].classList.add(f);
+         } else {
+                j[0].classList.remove(f);
+         }
     });
 });
