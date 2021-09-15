@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     let h = $('html'),
     b = $('body'),
-    o = $('section.vv div button'),
+    o = $('section.bb div button'),
     e = $('section.zz div button:last-child'),
     z = $('section.zz'),
     n = 'no-scroll',
