@@ -84,6 +84,8 @@ section.zz li:last-child div {
     text-align: left
 }
 section.zz input[type="checkbox"] {
+    margin: .5em;
+
     width: 18px;
     height: 18px;
 
