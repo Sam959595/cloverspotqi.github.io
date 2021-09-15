@@ -12,6 +12,17 @@
 
 /* 0 */
 
+.no-scroll {
+    height: 100%;
+    overflow: hidden
+}
+.visible {
+    opacity: 1;
+    pointer-events: auto
+}
+
+/* 1 */
+
 section.zz {
     z-index: 5;
 
@@ -20,16 +31,18 @@ section.zz {
     inset: 0;
     margin: auto;
 
-    opacity: 1;
+    opacity: 0;
     pointer-events: none;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
+    background-color: var(--soft-2);
+
     overflow: hidden scroll;
 
-    background-color: var(--soft-2)
+    transition: opacity .5s ease 0s
 }
 
 section.zz main {
