@@ -3,19 +3,18 @@ document.addEventListener('DOMContentLoaded', function() {
     b = $('body'),
     a = $('section.rr button'),
     z = $('section.zz'),
-    e = $('aside input'),
     c = $('section.zz div button:last-child'),
-    p = 'no-scroll',
+    n = 'no-scroll',
     v = 'visible';
 
     a.click(function() {
         z[0].classList.add(v);
-        h[0].classList.add(p);
-        b[0].classList.add(p);
+        h[0].classList.add(n);
+        b[0].classList.add(n);
     });
     c.click(function() {
         z[0].classList.remove(v);
-        h[0].classList.remove(p);
-        b[0].classList.remove(p);
+        h[0].classList.remove(n);
+        b[0].classList.remove(n);
     });
 });
