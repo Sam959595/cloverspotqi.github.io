@@ -46,7 +46,7 @@ section.zz main {
 section.zz ul {
     margin: 2em 0
 }
-section.zz h6 {
+section.zz li h6 {
     margin-top: 1em
 }
 section.zz li > * {
