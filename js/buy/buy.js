@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     let s = $('html'),
     d = $('body'),
-    a = $('.attachment li:last-child'),
+    a = $('apple-pay-button'),
     b = $('aside'),
     e = $('aside input'),
     i = $('aside > div:first-child div:first-child'),
-    c = $('aside > div:first-child div:first-child span'),
+    c = $('section.zz div button:last-child'),
     r = $('aside > div:first-child div:last-child span'),
     p = 'no-scroll',
     v = 'visible',
