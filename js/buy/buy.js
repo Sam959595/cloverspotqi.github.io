@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     let h = $('html'),
     b = $('body'),
     o = $('apple-pay-button'),
