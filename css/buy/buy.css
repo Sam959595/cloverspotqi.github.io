@@ -82,6 +82,9 @@ section.zz td:first-child {
     opacity: .3
 }
 
+section.zz label {
+    -webkit-tap-highlight-color: transparent
+}
 section.zz input[type="checkbox"] {
     margin-right: .5em;
 
