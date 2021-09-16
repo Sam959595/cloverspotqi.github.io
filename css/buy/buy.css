@@ -401,7 +401,7 @@ footer li {
 
     color: var(--gray-9)
 }
-footer li+li {
+footer li + li {
 	margin-top: 1em
 }
 
