@@ -257,9 +257,6 @@ section.pp {
 	width: 90% */
 }
 
-section.pp > * {
-	padding: 0 13px
-}
 section.pp select {
     width: 230px;
     height: 60px;
