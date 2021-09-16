@@ -190,7 +190,9 @@ section.bb p {
 }
 
 section.bb > div {
-	margin: .5cm 0
+	margin: .5cm 0;
+
+     display: flex
 }
 
 section.bb :where(apple-pay-button, google-pay-button, button) {
@@ -203,7 +205,6 @@ section.bb apple-pay-button {
 	margin-bottom: .6em;
 	
     -webkit-appearance: -apple-pay-button;
-    -apple-pay-button-type: buy;
     -apple-pay-button-style: var(--gray-b)
 }
 section.bb google-pay-button {
