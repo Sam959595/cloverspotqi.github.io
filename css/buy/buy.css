@@ -355,8 +355,10 @@ section.hh ul h6 {
 /* 1 */
 
 section.tt {
-	margin: 1cm auto 0;
-	width: 90%
+	/* margin: 1cm auto 0;
+	width: 90% */
+
+        margin: var(--padding)
 }
 section.tt h3 {
     margin: .48em 0;
