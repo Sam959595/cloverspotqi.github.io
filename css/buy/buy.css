@@ -261,7 +261,7 @@ section.pp select {
     width: 230px;
     height: 60px;
 
-    padding: 0 auto;
+    padding: 0 1em;
 
     border-radius: 17px;
 
