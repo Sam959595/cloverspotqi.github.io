@@ -263,8 +263,8 @@ section.pp > * {
 section.pp select {
 	margin: .3em 0;
 
-    width: 100%;
-    height: 45px;
+    width: 2cm;
+    height: 1.5cm;
 
     border-radius: 11px;
 
@@ -296,7 +296,7 @@ section.hh {
 	text-align: center
 }
 
-section.hh ul {
+section.hh ul, section.pp ul {
 	display: grid;
     grid-auto-flow: column;
     column-gap: 1em;
@@ -306,14 +306,14 @@ section.hh ul {
     scroll-snap-type: x mandatory;
     scroll-padding-left: var(--padding)
 }
-section.hh ul li {
+section.hh ul li, section.pp ul li {
 	scroll-snap-align: start
 }
 
-section.hh ul li:first-child {
+section.hh ul li:first-child, section.pp ul li:first-child {
     padding-left: var(--padding)
 }
-section.hh ul li:last-child {
+section.hh ul li:last-child, section.hh ul li:last-child {
     padding-right: var(--padding)
 }
 
