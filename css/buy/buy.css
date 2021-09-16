@@ -276,6 +276,10 @@ section.pp select {
 
 /* 1 */
 
+section.uu {
+        margin: 0 var(--padding)
+}
+
 dl > div {
 	display: table-row
 }
@@ -287,7 +291,7 @@ dl div > * {
 	letter-spacing: -.005em
 }
 
-dl div+div dt {
+dl div + div dt {
 	padding-top: 8px
 }
 
