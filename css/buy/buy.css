@@ -314,7 +314,7 @@ section.hh ul li, section.pp ul li {
 section.hh ul li:first-child, section.pp ul li:first-child {
     padding-left: var(--padding)
 }
-section.hh ul li:last-child, section.hh ul li:last-child {
+section.hh ul li:last-child, section.pp ul li:last-child {
     padding-right: var(--padding)
 }
 
