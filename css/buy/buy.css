@@ -360,7 +360,7 @@ section.tt {
 	/* margin: 1cm auto 0;
 	width: 90% */
 
-        margin: var(--padding)
+        margin: 3em var(--padding) 0
 }
 section.tt h3 {
     margin: .48em 0;
@@ -377,7 +377,7 @@ section.kk a {
 	padding-left: var(--padding)
 }
 
-section.kk li+li h5 {
+section.kk li + li h5 {
 	border-top: .1px solid var(--gray-3)
 }
 
