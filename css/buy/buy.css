@@ -276,6 +276,32 @@ section.pp select {
 
 /* 1 */
 
+dl > div {
+	display: table-row
+}
+dl div > * {
+	display: table-cell;
+	vertical-align: baseline;
+
+	font: normal 400 13px/1.38462 system-ui;
+	letter-spacing: -.005em
+}
+
+dl div+div dt {
+	padding-top: 8px
+}
+
+dl dt {
+	text-align: right;
+	color: var(--gray-5)
+}
+dl dd {
+	padding-left: 20px;
+	color: var(--gray-6)
+}
+
+/* 1 */
+
 section.ff {
 	margin-bottom: .5cm;
 
