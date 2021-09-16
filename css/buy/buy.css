@@ -217,7 +217,7 @@ section.bb google-pay-button {
 	background: var(--gray-b)
 }
 section.bb button {
-        margin-right: 1em;
+        margin-right: .8em;
 
 	font: normal 600 16px system-ui;
     letter-spacing: 0;
