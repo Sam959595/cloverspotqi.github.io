@@ -255,6 +255,8 @@ section.nn img {
 section.pp {
 	/* margin: .5cm auto;
 	width: 90% */
+
+        text-align: center
 }
 
 section.pp select {
