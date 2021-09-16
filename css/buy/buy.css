@@ -253,8 +253,8 @@ section.nn img {
 /* 1 */
 
 section.pp {
-	margin: .5cm auto;
-	width: 90%
+	/* margin: .5cm auto;
+	width: 90% */
 }
 
 section.pp > * {
