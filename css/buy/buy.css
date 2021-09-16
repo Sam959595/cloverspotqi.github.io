@@ -261,11 +261,9 @@ section.pp select {
     width: 230px;
     height: 60px;
 
-    display: flex;
-	align-items: center;
-	justify-content: center;
-
     border-radius: 11px;
+
+    text-align: center;
 
     font: normal 600 16px system-ui;
     letter-spacing: 0;
