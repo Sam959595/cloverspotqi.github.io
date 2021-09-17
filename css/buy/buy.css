@@ -177,7 +177,7 @@ section.vv figure {
 
 @media screen and (min-width: 320px) and (max-width: 896px) {
 	section.bb {
-		margin: .5cm auto;
+		margin: .5cm auto 0;
 		width: 90%
 	}
 }
