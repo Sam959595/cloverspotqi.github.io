@@ -208,8 +208,6 @@ section.bb apple-pay-button {
     -apple-pay-button-style: var(--gray-b)
 }
 section.bb google-pay-button {
-	margin-bottom: .6em;
-
 	display: flex;
 	align-items: center;
 	justify-content: center;
