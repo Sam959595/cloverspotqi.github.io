@@ -1,5 +1,5 @@
 if (window.ApplePaySession) {
-   let n = $('section.zz div apple-pay-button');
+   let n = $('section.zz div button:first-child');
 
    n.click( () => {
    let p = {
