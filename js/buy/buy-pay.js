@@ -11,7 +11,7 @@ if (window.ApplePaySession) {
    currencyCode: 'RUB',
    merchantCapabilities: ['supports3DS'],
    supportedNetworks: ['masterCard', 'visa']
-   };
+   });
 
    let b = new window.ApplePaySession(1, p);
 
