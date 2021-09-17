@@ -202,8 +202,6 @@ section.bb :where(apple-pay-button, google-pay-button, button) {
     border-radius: 13px
 }
 section.bb apple-pay-button {
-	margin-bottom: .6em;
-	
     -webkit-appearance: -apple-pay-button;
     -apple-pay-button-style: var(--gray-b)
 }
