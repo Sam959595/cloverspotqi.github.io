@@ -183,7 +183,7 @@ section.vv figure {
 }
 
 section.bb p {
-    margin-top: .5cm;
+    margin-bottom: .5cm;
 
     font: normal 400 11px/1.2 system-ui;
     letter-spacing: -.008em;
