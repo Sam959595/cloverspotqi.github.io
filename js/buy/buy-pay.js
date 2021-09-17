@@ -5,7 +5,7 @@ if (window.ApplePaySession) {
    let p = {
        total: {
            label: 'Магазин',
-           amount: 50.00
+           amount: 899
        },
        countryCode: 'RU',
    currencyCode: 'RUB',
@@ -14,5 +14,7 @@ if (window.ApplePaySession) {
    };
 
    let b = new window.ApplePaySession(1, p);
+
+   applePaySession.begin();
    };
 }
