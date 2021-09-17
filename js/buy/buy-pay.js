@@ -1,7 +1,7 @@
 if (window.ApplePaySession) {
    let n = $('section.zz div apple-pay-button');
 
-   n.click ( () => {
+   n.click( () => {
    let p = {
        total: {
            label: 'Магазин',
