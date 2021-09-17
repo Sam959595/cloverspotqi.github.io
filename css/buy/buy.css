@@ -183,6 +183,8 @@ section.vv figure {
 }
 
 section.bb p {
+    margin-top: .5cm;
+
     font: normal 400 11px/1.2 system-ui;
     letter-spacing: -.008em;
 
@@ -190,8 +192,6 @@ section.bb p {
 }
 
 section.bb > div {
-	margin: .5cm 0;
-
      display: flex
 }
 
