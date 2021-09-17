@@ -15,6 +15,6 @@ if (window.ApplePaySession) {
 
    let b = new window.ApplePaySession(1, p);
 
-   applePaySession.begin();
+   b.begin();
    };
 }
