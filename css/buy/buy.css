@@ -82,8 +82,6 @@ section.zz h5 {
 section.zz table {
     width: 100%;
 
-    padding: 1.5em;
-
     table-layout: auto;
 }
 section.zz td:nth-child(odd) {
