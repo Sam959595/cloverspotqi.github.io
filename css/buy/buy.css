@@ -82,7 +82,7 @@ section.zz h5 {
 section.zz table {
     margin: 1.5em;
 
-    table-layout: auto;
+    table-layout: fixed;
     width: 100%
 }
 section.zz td:nth-child(odd) {
