@@ -80,10 +80,9 @@ section.zz h5 {
 }
 
 section.zz table {
-    margin: 20px;
+    margin: 1.5em;
 
-    table-layout: fixed;
-    width: 100%
+    table-layout: auto;
 }
 section.zz td:nth-child(odd) {
     text-align: left
