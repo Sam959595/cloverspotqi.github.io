@@ -83,10 +83,12 @@ section.zz table {
     margin: 1.5em;
 
     table-layout: fixed;
-	border-collapse: collapse
+	border-collapse: collapse;
+
+    text-align: left
 }
 section.zz td:nth-child(odd) {
-    text-align: left
+    /* text-align: left */
 }
 section.zz td:nth-child(even) {
     text-align: right
