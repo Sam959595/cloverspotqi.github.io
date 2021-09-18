@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             k[0].removeAttribute('disabled', 'disabled');
             } else {
                   j[0].classList.remove(f);
-                  k[0].setAttribute('disabled');
+                  k[0].setAttribute('disabled', 'disabled');
          }
     });
 });
