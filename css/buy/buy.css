@@ -80,15 +80,10 @@ section.zz h5 {
 }
 
 section.zz table {
-    margin: 1.5em;
-
-    table-layout: fixed;
-	border-collapse: collapse;
-
-    text-align: left
+    margin: 1.5em
 }
 section.zz td:nth-child(odd) {
-    /* text-align: left */
+    text-align: left
 }
 section.zz td:nth-child(even) {
     text-align: right
