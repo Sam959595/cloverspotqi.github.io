@@ -40,7 +40,7 @@ if (window.ApplePaySession) {
 
    ( () => {
         if (j[0].classList.contains(f) == false) {
-            n.setAttribute(disabled, disabled);
+            n[0].setAttribute(disabled, disabled);
             } else {
                   return true;
          }
