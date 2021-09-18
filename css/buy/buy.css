@@ -83,6 +83,8 @@ section.zz table {
     margin: 1.5em
 }
 section.zz tbody {
+    table-layout: auto;
+
     width: 100%
 }
 section.zz td:nth-child(odd) {
