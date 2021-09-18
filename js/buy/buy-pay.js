@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
     p.click( () => {
         if (j[0].classList.contains(f) === false) {
             j[0].classList.add(f);
-            k[0].removeAttribute(disabled, disabled);
+            k[0].removeAttribute('disabled', 'disabled');
             } else {
                   j[0].classList.remove(f);
-                  k[0].setAttribute(disabled, disabled);
+                  k[0].setAttribute('disabled');
          }
     });
 });
