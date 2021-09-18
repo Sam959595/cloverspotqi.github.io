@@ -107,11 +107,6 @@ section.zz div button {
 
     background: none
 }
-section.zz div button:disabled {
-    -webkit-appearance: none;
-
-    opacity: .5
-}
 section.zz div button:last-child {
     font-weight: 600
 }
