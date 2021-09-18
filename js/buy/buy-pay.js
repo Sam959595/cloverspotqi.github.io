@@ -34,6 +34,18 @@ document.addEventListener('DOMContentLoaded', () => {
 if (window.ApplePaySession) {
    let n = $('section.zz div button:first-child');
 
+   let p = $('section.zz li:last-child'),
+       j = $('section.zz li:last-child h6'),
+       f = 'active';
+
+   ( () => {
+        if (j[0].classList.contains(f) == false) {
+            n.setAttribute(disabled, disabled);
+            } else {
+                  return true;
+         }
+    });
+
    n.click( () => {
    let p = {
        total: {
