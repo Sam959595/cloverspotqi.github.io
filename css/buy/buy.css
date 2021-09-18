@@ -27,7 +27,7 @@
 
 /* 1 */
 
-section.zz {
+/* section.zz {
     z-index: 5;
 
     position: fixed;
@@ -47,7 +47,7 @@ section.zz {
     overflow: hidden scroll;
 
     transition: opacity .5s ease 0s
-}
+} */
 
 section.zz main {
     width: 8cm;
