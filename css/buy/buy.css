@@ -80,8 +80,9 @@ section.zz h5 {
 }
 
 section.zz table {
-    margin: 1.5em;
-
+    margin: 1.5em
+}
+section.zz tbody {
     width: 100%
 }
 section.zz td:nth-child(odd) {
