@@ -195,13 +195,13 @@ section.bb > div {
      display: flex
 }
 
-section.bb :where(apple-pay-button, google-pay-button, button) {
+section.bb :where(google-pay-button, button) {
 	width: 100%;
     height: 48px;
 
     border-radius: 13px
 }
-section.bb apple-pay-button {
+section.bb button:last-child {
     -webkit-appearance: -apple-pay-button;
     -apple-pay-button-style: var(--gray-b)
 }
