@@ -113,7 +113,7 @@ section.zz div button:last-child {
 }
 
 section.zz div button:disabled {
-    color: var(--blue-1)+80
+    color: var(--blue-1)
 }
 
 /* 1 */
