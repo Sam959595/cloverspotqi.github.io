@@ -20,31 +20,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let p = $('section.zz li:last-child'),
         j = $('section.zz li:last-child h6'),
+        k = $('section.zz div button:first-child'),
         f = 'active';
 
     p.click( () => {
-        if (j[0].classList.contains(f) == false) {
+        if (j[0].classList.contains(f) === false) {
             j[0].classList.add(f);
+            k.removeAttribute(disabled, disabled);
             } else {
                   j[0].classList.remove(f);
+                  k.setAttribute(disabled, disabled);
          }
     });
 });
 
 if (window.ApplePaySession) {
    let n = $('section.zz div button:first-child');
-
-   let p = $('section.zz li:last-child'),
-       j = $('section.zz li:last-child h6'),
-       f = 'active';
-
-   ( () => {
-        if (j[0].classList.contains(f) == false) {
-            n[0].setAttribute(disabled, disabled);
-            } else {
-                  return true;
-         }
-    });
 
    n.click( () => {
    let p = {
