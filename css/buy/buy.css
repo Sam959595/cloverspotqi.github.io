@@ -67,7 +67,7 @@ section.zz li:not(:last-child) {
     margin-top: 1em
 }
 section.zz li > * {
-    margin: 0 1.5em
+    margin: 0 24px
 }
 section.zz li:nth-child(4) {
      border: solid var(--gray-9);
