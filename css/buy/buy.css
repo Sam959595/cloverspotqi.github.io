@@ -79,10 +79,10 @@ section.zz h5 {
 }
 
 section.zz table {
-    table-layout: fixed;
-    border-collapse: collapse;
-
     margin: 1.5em;
+
+    table-layout: auto;
+    border-collapse: collapse
 }
 section.zz td:nth-child(odd) {
     text-align: left
