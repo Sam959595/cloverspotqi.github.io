@@ -53,13 +53,13 @@ section.zz main {
 
     border-radius: 20px;
 
-    /* text-align: center; */
+    text-align: center;
 
     -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--soft-1)
 }
 
-section.zz :where(ul, li:last-child) {
+/* section.zz :where(ul, li:last-child) {
     margin: 2em 0
 }
 section.zz li:not(:last-child) {
@@ -67,7 +67,7 @@ section.zz li:not(:last-child) {
 }
 section.zz li > * {
     margin: 0 1.5em
-}
+} */
 section.zz li:nth-child(4) {
      border: solid var(--gray-9);
      border-width: 1em 0
