@@ -83,6 +83,9 @@ section.zz table {
 
     table-layout: auto
 }
+section.zz td {
+    vertical-align: middle
+}
 section.zz td:nth-child(odd) {
     text-align: left
 }
