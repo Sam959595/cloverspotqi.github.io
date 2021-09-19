@@ -90,7 +90,7 @@ section.zz td:nth-child(odd) {
     text-align: left
 }
 section.zz td:nth-child(even) {
-    /* text-align: right */
+    text-align: right
 }
 section.zz :where(td:first-child, li:last-child h6) {
     opacity: .3
