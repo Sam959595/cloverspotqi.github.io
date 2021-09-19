@@ -81,6 +81,8 @@ section.zz h5 {
 section.zz table {
     margin: 1.5em;
 
+    width: 100%;
+
     table-layout: auto
 }
 section.zz td {
