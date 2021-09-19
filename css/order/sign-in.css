@@ -78,7 +78,9 @@ section.bb input:invalid {
 /* 3 */
 
 section.kk {
+        position: fixed;
         bottom: 0;
+
 	text-align: center
 }
 section.kk a {
