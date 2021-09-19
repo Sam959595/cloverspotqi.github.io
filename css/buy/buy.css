@@ -89,7 +89,7 @@ section.zz td {
 section.zz td:nth-child(odd) {
     text-align: left
 }
-section.zz td:nth-child(even) {
+section.zz td:last-child {
     text-align: right
 }
 section.zz :where(td:first-child, li:last-child h6) {
