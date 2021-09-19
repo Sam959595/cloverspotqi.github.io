@@ -227,11 +227,6 @@ section.bb button {
 	color: var(--blue-1)
 }
 
-section.bb > a {
-	font: normal 600 14px system-ui;
-	letter-spacing: 0
-}
-
 /* 1 */
 
 section.nn ul {
