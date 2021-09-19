@@ -83,7 +83,7 @@ section.zz table {
 
     width: 100%;
 
-    table-layout: auto
+    table-layout: fixed
 }
 section.zz td {
     vertical-align: middle
