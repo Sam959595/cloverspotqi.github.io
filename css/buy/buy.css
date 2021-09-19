@@ -53,7 +53,7 @@ section.zz main {
 
     border-radius: 20px;
 
-    /* text-align: center; */
+    text-align: center;
 
     -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--soft-1)
@@ -83,7 +83,7 @@ section.zz table {
 
     width: 100%;
 
-    table-layout: fixed
+    table-layout: auto
 }
 section.zz td {
     vertical-align: middle
