@@ -43,16 +43,22 @@ if (window.ApplePaySession) {
            label: 'Kilugi Inc.',
            amount: 899.00
        },
-       ApplePayShippingMethod: {
-           label: 'Доставка',
-           detail: 'В соответствии местоположения.',
-           amount: 0.00
-       },
        countryCode: 'RU',
    currencyCode: 'RUB',
    merchantCapabilities: ['supports3DS'],
-   supportedNetworks: ['masterCard', 'visa']
+   supportedNetworks: ['masterCard', 'visa'];
+
+   let applePayShippingMethod = {
+    amount: "0.00",
+    dateComponentsRange: {
+        startDateComponents: { days: 3 },
+        endDateComponents: { days: 7 },
+    },
+    detail: "В соответствии с местоположением",
+    identifier: "про",
+    label: "Доставка",
    }
+};
 
    let b = new window.ApplePaySession(1, p);
 
