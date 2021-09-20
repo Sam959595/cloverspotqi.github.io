@@ -49,7 +49,7 @@ if (window.ApplePaySession) {
    supportedNetworks: ['masterCard', 'visa']
    };
 
-   let m = ApplePaySession.applePayShippingMethod = {
+   let m = new window.ApplePaySession.applePayShippingMethod = {
     amount: "0.00",
     dateComponentsRange: {
         startDateComponents: { days: 3 },
