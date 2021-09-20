@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         f = 'active';
 
     p.click( () => {
-        if (j[0].classList.contains(f) === false) {
+        if (j[0].classList.contains(f) == false) {
             j[0].classList.add(f);
             k[0].removeAttribute('disabled', 'disabled');
             } else {
