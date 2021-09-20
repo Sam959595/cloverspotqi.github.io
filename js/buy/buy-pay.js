@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         f = 'active';
 
     p.click( () => {
-        if (j[0].classList.contains(f) == false) {
+        if (j[0].classList.contains(f) === false) {
             j[0].classList.add(f);
             k[0].removeAttribute('disabled', 'disabled');
             } else {
@@ -44,25 +44,14 @@ if (window.ApplePaySession) {
            amount: 899.00
        },
        countryCode: 'RU',
-   currencyCode: 'RUB',
-   merchantCapabilities: ['supports3DS'],
-   supportedNetworks: ['masterCard', 'visa']
+       currencyCode: 'RUB',
+       merchantCapabilities: ['supports3DS'],
+       supportedNetworks: ['masterCard', 'visa']
+       }
    };
 
-   let applePayShippingMethod = {
-    amount: "0.00",
-    dateComponentsRange: {
-        startDateComponents: { days: 3 },
-        endDateComponents: { days: 7 },
-    },
-    detail: "В соответствии с местоположением",
-    identifier: "про",
-    label: "Доставка"
-    };
-};
-
    let b = new window.ApplePaySession(1, p);
-
    b.begin();
+
    });
 }
