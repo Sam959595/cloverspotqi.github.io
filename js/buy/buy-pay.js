@@ -46,7 +46,9 @@ if (window.ApplePaySession) {
        countryCode: 'RU',
    currencyCode: 'RUB',
    merchantCapabilities: ['supports3DS'],
-   supportedNetworks: ['masterCard', 'visa'];
+   supportedNetworks: ['masterCard', 'visa']
+   };
+
    let applePayShippingMethod = {
     amount: "0.00",
     dateComponentsRange: {
@@ -57,7 +59,6 @@ if (window.ApplePaySession) {
     identifier: "про",
     label: "Доставка"
     };
-   };
 };
 
    let b = new window.ApplePaySession(1, p);
