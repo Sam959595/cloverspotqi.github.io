@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         f = 'active';
 
     p.click( () => {
-        if (j[0].classList.contains(f) == false) {
+        if (j[0].classList.contains(f) === false) {
             j[0].classList.add(f);
             k[0].removeAttribute('disabled', 'disabled');
             } else {
@@ -47,8 +47,7 @@ if (window.ApplePaySession) {
        currencyCode: 'RUB',
        merchantCapabilities: ['supports3DS'],
        supportedNetworks: ['masterCard', 'visa']
-       }
-   };
+       };
 
    let b = new window.ApplePaySession(1, p);
    b.begin();
