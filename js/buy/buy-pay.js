@@ -45,7 +45,7 @@ if (window.ApplePaySession) {
        },
        ApplePayShippingMethod: {
            label: 'Доставка',
-           detail: 'В соответствии местоположения.'
+           detail: 'В соответствии местоположения.',
            amount: 0.00
        },
        countryCode: 'RU',
