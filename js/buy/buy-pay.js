@@ -40,8 +40,13 @@ if (window.ApplePaySession) {
    n.click( () => {
    let p = {
        total: {
-           label: 'Магазин',
-           amount: 899
+           label: 'Kilugi Inc.',
+           amount: 899.00
+       },
+       ApplePayShippingMethod: {
+           label: 'Доставка',
+           detail: 'В соответствии местоположения.'
+           amount: 0.00
        },
        countryCode: 'RU',
    currencyCode: 'RUB',
