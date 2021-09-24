@@ -43,7 +43,7 @@ section.ss h6 {
 
     width: 5cm;
 
-    border-radius: 50%;
+    border-radius: 25px;
 
     -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--soft-1)
