@@ -26,6 +26,23 @@
 
 /* 1 */
 
+section.ss {
+    opacity: 1;
+
+    text-align: center;
+}
+section.ss h6 {
+    margin: 2em;
+
+    width: 5em;
+
+    border-radius: 100%;
+
+    background-color: var(--soft-2)
+}
+
+/* 1 */
+
 section.zz {
     z-index: 5;
 
