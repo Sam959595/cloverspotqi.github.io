@@ -34,7 +34,9 @@ section.ss {
     opacity: 1;
     pointer-events: none;
 
-    text-align: center;
+    width: 100%;
+
+    text-align: center
 }
 section.ss h6 {
     margin: 2em;
@@ -43,7 +45,8 @@ section.ss h6 {
 
     border-radius: 100%;
 
-    background-color: var(--soft-2)
+    -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
+    background-color: var(--soft-1)
 }
 
 /* 1 */
