@@ -35,8 +35,6 @@ section.ss {
 
     opacity: 1;
     pointer-events: none;
-
-    inset: auto 0
 }
 section.ss h6 {
     width: 5cm;
@@ -58,8 +56,7 @@ section.zz {
 
     position: fixed;
 
-    inset: 0;
-    margin: auto;
+   
 
     opacity: 0;
     pointer-events: none;
