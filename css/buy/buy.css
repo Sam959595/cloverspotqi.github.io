@@ -330,6 +330,8 @@ section.hh ul, section.pp ul {
     grid-auto-flow: column;
     column-gap: 1em;
 
+        padding-left: var(--padding);
+
 	overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
@@ -346,7 +348,7 @@ section.hh ul li, section.pp ul li {
 }
 
 section.hh ul li:first-child, section.pp ul li:first-child {
-    padding-left: var(--padding)
+    /* padding-left: var(--padding) */
 }
 section.hh ul li:last-child, section.pp ul li:last-child {
     padding-right: var(--padding)
