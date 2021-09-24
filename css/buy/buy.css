@@ -31,21 +31,21 @@ section.ss {
 
     position: fixed;
 
+    margin-top: 1em;
+
     opacity: 1;
     pointer-events: none;
 
-    width: 100%;
-
-    text-align: center
+    inset: auto 0
 }
 section.ss h6 {
-    margin-top: 1em;
-
     width: 5cm;
 
     padding: .8em;
 
     border-radius: 25px;
+
+    text-align: center;
 
     -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--soft-1)
