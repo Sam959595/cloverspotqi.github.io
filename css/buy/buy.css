@@ -335,6 +335,12 @@ section.hh ul, section.pp ul {
     scroll-snap-type: x mandatory;
     scroll-padding-left: var(--padding)
 }
+
+section.pp ul {
+	grid-template-rows: repeat(2, 1fr);
+	gap: 1em
+}
+
 section.hh ul li, section.pp ul li {
 	scroll-snap-align: start
 }
