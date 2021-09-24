@@ -27,7 +27,12 @@
 /* 1 */
 
 section.ss {
+    z-index: 5;
+
+    position: fixed;
+
     opacity: 1;
+    pointer-events: none;
 
     text-align: center;
 }
