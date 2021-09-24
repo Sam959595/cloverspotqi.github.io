@@ -42,7 +42,8 @@ section.ss h6 {
     margin-top: 1em;
 
     width: 5cm;
-    height: 3em;
+
+    padding: 2em;
 
     border-radius: 25px;
 
