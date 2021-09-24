@@ -336,7 +336,7 @@ section.hh ul, section.pp ul {
     scroll-padding-left: var(--padding)
 }
 
-section.pp ul {
+section.hh ul {
 	grid-template-rows: repeat(2, 1fr);
 	gap: 1em
 }
