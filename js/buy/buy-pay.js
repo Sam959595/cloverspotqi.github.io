@@ -18,12 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
         z[0].classList.remove(v);
     });
 
-    let p = $('section.zz li:last-child'),
-        j = $('section.zz li:last-child h6'),
+    let j = $('section.zz li:last-child h6'),
         k = $('section.zz div button:first-child'),
         f = 'active';
 
-    p.click( () => {
+    j.click( () => {
         if (j[0].classList.contains(f) === false) {
             j[0].classList.add(f);
             k[0].removeAttribute('disabled', 'disabled');
