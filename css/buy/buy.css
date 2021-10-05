@@ -63,7 +63,7 @@ section.zz {
 
     inset: 0;
 
-    opacity: 0;
+    opacity: .5;
     pointer-events: none;
 
     display: flex;
