@@ -17,6 +17,14 @@
     overflow: hidden
 }
 
+.visible {
+    opacity: 1 !important;
+    pointer-events: auto !important
+}
+.active {
+    opacity: 1 !important
+}
+
 /* 1 */
 
 section.ss {
@@ -136,15 +144,6 @@ section.zz div button:last-child {
 
 section.zz div button:disabled {
     color: #007aff80
-}
-
-.visible {
-    opacity: 1;
-    pointer-events: auto
-}
-
-.active {
-    opacity: 1 !important
 }
 
 /* 1 */
