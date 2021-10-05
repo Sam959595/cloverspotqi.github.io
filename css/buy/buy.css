@@ -16,9 +16,6 @@
     height: 100%;
     overflow: hidden
 }
-.active {
-    opacity: 1 !important
-}
 
 /* 1 */
 
@@ -141,9 +138,13 @@ section.zz div button:disabled {
     color: #007aff80
 }
 
-section.zz.visible {
+.visible {
     opacity: 1;
     pointer-events: auto
+}
+
+.active {
+    opacity: 1 !important
 }
 
 /* 1 */
