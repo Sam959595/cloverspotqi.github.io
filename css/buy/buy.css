@@ -16,10 +16,6 @@
     height: 100%;
     overflow: hidden
 }
-.visible {
-    opacity: 1 !important;
-    pointer-events: auto !important
-}
 .active {
     opacity: 1 !important
 }
@@ -75,6 +71,11 @@ section.zz {
     overflow: hidden scroll;
 
     transition: opacity .5s ease 0s
+}
+
+.visible {
+    opacity: 1;
+    pointer-events: auto
 }
 
 section.zz main {
