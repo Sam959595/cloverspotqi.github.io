@@ -73,11 +73,6 @@ section.zz {
     transition: opacity .5s ease 0s
 }
 
-.visible {
-    opacity: 1;
-    pointer-events: auto
-}
-
 section.zz main {
     width: 8cm;
 
@@ -144,6 +139,11 @@ section.zz div button:last-child {
 
 section.zz div button:disabled {
     color: #007aff80
+}
+
+.visible {
+    opacity: 1;
+    pointer-events: auto
 }
 
 /* 1 */
