@@ -141,9 +141,9 @@ section.zz div button:disabled {
     color: #007aff80
 }
 
-.visible {
-    opacity: 1 !important;
-    pointer-events: auto !important
+section.zz.visible {
+    opacity: 1;
+    pointer-events: auto
 }
 
 /* 1 */
