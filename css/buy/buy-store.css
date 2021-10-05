@@ -35,7 +35,7 @@ section.hh li:last-child {
 /* 1 */
 
 section.ss {
-	margin: 1cm var(--padding) 1em
+	margin: 1cm var(--padding) 0
 }
 
 section.ss h1 {
