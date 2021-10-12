@@ -355,7 +355,7 @@ section.hh {
 	/* text-align: center */
 }
 
-section.hh ul, section.pp ul {
+section :where(.hh, .pp) ul {
 	display: grid;
     grid-auto-flow: column;
     column-gap: 1em;
@@ -366,7 +366,7 @@ section.hh ul, section.pp ul {
     scroll-padding-left: var(--padding)
 }
 
-section.hh ul li, section.pp ul li {
+section :where(.hh, .pp) ul li {
 	scroll-snap-align: start
 }
 
