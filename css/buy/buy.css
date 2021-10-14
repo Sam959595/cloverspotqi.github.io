@@ -336,6 +336,27 @@ dl dd {
 
 /* 1 */
 
+.string div {
+	font: inherit
+}
+
+.hide {
+	position: relative
+}
+.hide div {
+	max-height: 72px;
+
+	-webkit-mask: linear-gradient(to top, transparent 16px, black 0), linear-gradient(to left, transparent 40px, black 60px)
+}
+.hide a {
+	position: absolute;
+
+	right: 0;
+	bottom: 0
+}
+
+/* 1 */
+
 section.ff {
 	margin-bottom: .5cm;
 
