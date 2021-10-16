@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
    c.click( () => {
-        a[0].classList.remove('hide', c);
+        a[0].classList.remove('hide');
+        c.remove();
     });
 });
 
