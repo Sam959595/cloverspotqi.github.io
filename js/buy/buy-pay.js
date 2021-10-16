@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     let a = $('dl dd.string'),
-    b = $('dl dd.string div');
+    b = $('dl dd.string div'),
+    c = $('dl dd.string a');
 
     if (b.height() > '72') {
         a[0].classList.add('hide');
@@ -11,9 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
         a[0].appendChild(b);
     };
 
-    $('dl dd.string a').click( () => {
+   c.click( () => {
         a[0].classList.remove('hide');
-        this.remove();
+        c.remove();
     });
 });
 
