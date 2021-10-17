@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () = {
+document.addEventListener('DOMContentLoaded', function () {
     let a = $('dl dd.string'),
     b = $('dl dd.string div'),
     c = $('dl dd.string a');
