@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
    $('dl dd.string a').click( () => {
         a[0].classList.remove('hide');
-        this.remove();
+        this.remove('a');
     });
 });
 
