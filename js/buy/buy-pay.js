@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () = {
     let a = $('dl dd.string'),
     b = $('dl dd.string div'),
     c = $('dl dd.string a');
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
    c.click( () => {
         a[0].classList.remove('hide');
-        c.remove();
+        this.remove();
     });
 });
 
