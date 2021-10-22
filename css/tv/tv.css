@@ -249,6 +249,12 @@ section.bb button {
 
 /* 1 */
 
+section.ww video {
+    aspect-ratio: 16/9
+}
+
+/* 1 */
+
 section.nn ul {
     display: grid;
     grid-auto-flow: column;
