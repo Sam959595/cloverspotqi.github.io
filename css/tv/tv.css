@@ -250,6 +250,8 @@ section.bb button {
 /* 1 */
 
 section.ww video {
+    width: 100%;
+
     aspect-ratio: 16/9
 }
 
