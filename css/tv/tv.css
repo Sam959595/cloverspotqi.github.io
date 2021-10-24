@@ -181,7 +181,7 @@ nav h6 {
 	}
 }
 
-section.rr :not(section.vv h5) {
+section.rr:not(.vv h5) {
         text-align: center
 }
 
