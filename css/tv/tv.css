@@ -195,8 +195,7 @@ section.vv h4 {
     letter-spacing: 0
 }
 section.vv p {
-	font: normal 400 14px/1.42859 system-ui;
-    letter-spacing: 0
+        color: var(--gray-6)
 }
 section.vv h5 {
     margin: .8em 0;
