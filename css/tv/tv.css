@@ -197,20 +197,12 @@ section.vv h4 {
     letter-spacing: 0
 }
 section.vv h5 {
-    margin-top: .8em;
+    margin: .8em 0;
 
     text-align: left;
 
 	font: normal 400 14px/1.42859 system-ui;
     letter-spacing: 0
-}
-section.vv h6 {
-    margin-bottom: .8em;
-
-    font: normal 400 14px/1.42859 system-ui;
-    letter-spacing: 0;
-
-    color: var(--orange-1)
 }
 
 section.vv figure {
