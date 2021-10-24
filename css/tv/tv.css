@@ -175,14 +175,14 @@ nav h6 {
 
 /* 5 */
 
+section.rr :not(.vv h5) {
+        text-align: center
+}
+
 @media screen and (min-width: 320px) and (max-width: 896px) {
 	section.vv {
 		/* margin: 1cm 1cm .5cm */
 	}
-}
-
-section.rr:not(section.vv h5) {
-        text-align: center
 }
 
 section.vv {
