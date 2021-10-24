@@ -194,6 +194,9 @@ section.vv h4 {
     letter-spacing: 0
 }
 section.vv h5 {
+
+    text-align: right;
+
 	font: normal 400 14px/1.42859 system-ui;
     letter-spacing: 0
 }
