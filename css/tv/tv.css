@@ -175,7 +175,7 @@ nav h6 {
 
 /* 5 */
 
-section.vv:not(h5) {
+section.vv :not(h5) {
         text-align: center
 }
 
