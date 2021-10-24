@@ -193,10 +193,10 @@ section.vv h4 {
 	font: normal 600 17px/1.47059 system-ui;
     letter-spacing: 0
 }
-/* section.vv h5 {
-	font: normal 400 17px/1.2 system-ui;
+section.vv h5 {
+	font: normal 400 14px/1.42859 system-ui;
     letter-spacing: 0
-} */
+}
 section.vv h6 {
     margin-bottom: .8em;
 
