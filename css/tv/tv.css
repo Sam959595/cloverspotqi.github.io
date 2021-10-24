@@ -188,6 +188,9 @@ section.rr {
 }
 
 section.vv h4 {
+        margin: 0 var(--padding)
+}
+section.vv h4 {
 	margin: .5cm 1cm 0;
 
 	font: normal 600 17px/1.47059 system-ui;
