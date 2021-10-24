@@ -175,7 +175,7 @@ nav h6 {
 
 /* 5 */
 
-section.rr :not(section.vv h5) {
+section.rr :not(h5) {
         text-align: center
 }
 
@@ -189,7 +189,7 @@ section.vv {
         margin: 0 var(--padding)
 }
 section.vv h4 {
-	margin-top: .5cm;
+	margin-top: .5cm;о
 
 	font: normal 600 17px/1.47059 system-ui;
     letter-spacing: 0
@@ -201,7 +201,9 @@ section.vv h5 {
     margin: .8em 0;
 
 	font: normal 400 14px/1.42859 system-ui;
-    letter-spacing: 0
+    letter-spacing: 0;
+
+    color: var(--gray-10)
 }
 
 section.vv figure {
