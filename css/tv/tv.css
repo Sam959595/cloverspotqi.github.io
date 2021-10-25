@@ -229,7 +229,7 @@ section.bb select:first-child {
         margin-right: .8em
 }
 section.bb select {
-        text-align-last: center;
+        text-align: center;
 
 	font: normal 600 16px system-ui;
     letter-spacing: 0;
