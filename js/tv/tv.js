@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let a = $('h5.string'),
     b = $('h5.string div');
 
-    if (b.height() > '72') {
+    if (b.height() > '65') {
         a[0].classList.add('hide');
 
         let b = document.createElement('a');
