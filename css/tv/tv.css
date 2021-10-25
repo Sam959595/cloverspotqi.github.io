@@ -182,10 +182,9 @@ section.rr :not(h5) {
         text-align: center
 }
 
-section.rr :not(p) {
-	margin-top: .5cm
-}
 section.rr h4 {
+        margin-top: .5cm;
+
 	font: normal 600 17px/1.47059 system-ui;
     letter-spacing: 0
 }
@@ -193,6 +192,8 @@ section.rr p {
         color: var(--gray-6)
 }
 section.rr h5 {
+        margin-top: .8em;
+
 	font: normal 400 14px/1.42859 system-ui;
     letter-spacing: 0;
 
