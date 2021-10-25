@@ -175,29 +175,23 @@ nav h6 {
 
 /* 5 */
 
-section.vv div:not(h5) {
+section.rr {
+        margin: 0 var(--padding)
+}
+section.rr :not(h5) {
         text-align: center
 }
 
-@media screen and (min-width: 320px) and (max-width: 896px) {
-	section.vv {
-		/* margin: 1cm 1cm .5cm */
-	}
-}
-
-section.vv {
-        margin: 0 var(--padding)
-}
-section.vv h4 {
+section.rr h4 {
 	margin-top: .5cm;
 
 	font: normal 600 17px/1.47059 system-ui;
     letter-spacing: 0
 }
-section.vv p {
+section.rr p {
         color: var(--gray-6)
 }
-section.vv h5 {
+section.rr h5 {
     margin: .8em 0;
 
 	font: normal 400 14px/1.42859 system-ui;
@@ -206,7 +200,7 @@ section.vv h5 {
     color: var(--gray-10)
 }
 
-section.vv figure {
+section.rr figure {
 	aspect-ratio: 1/1;
 
 	background: center/cover
