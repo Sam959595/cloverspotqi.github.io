@@ -178,7 +178,7 @@ nav h6 {
 section.rr {
         margin: 0 var(--padding)
 }
-section.rr :not(h5 div) {
+section.rr :where(h4, p) {
         text-align: center
 }
 
