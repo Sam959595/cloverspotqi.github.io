@@ -229,8 +229,7 @@ section.bb select:first-child {
         margin-right: .8em
 }
 section.bb select {
-        align-items: center;
-        justify-content: center;
+        text-align: -webkit-center;
 
 	font: normal 600 16px system-ui;
     letter-spacing: 0;
