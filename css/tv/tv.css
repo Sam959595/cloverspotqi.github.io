@@ -343,7 +343,7 @@ dl dd {
 	position: relative
 }
 .hide div {
-	max-height: 72px;
+	max-height: 65px;
 
 	-webkit-mask: linear-gradient(to top, transparent 16px, black 0), linear-gradient(to left, transparent 40px, black 60px)
 }
