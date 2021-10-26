@@ -398,12 +398,16 @@ section.hh ul li figure {
 	justify-content: space-between;
 
 	width: 250px;
-	height: 210px;
+	height: 190px;
+
+        border-radius: 11px;
 
 	background: center/cover var(--gray-18)
 }
 
 section.hh h5 {
+        margin-bottom: .8em;
+
 	font: normal 600 14px/1.2 system-ui;
     letter-spacing: 0
 }
