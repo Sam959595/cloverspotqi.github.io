@@ -250,7 +250,7 @@ section.ww video {
 
     aspect-ratio: 21/9;
 
-    background-color: center/cover var(--gray-15)
+    background: center/cover var(--gray-15)
 }
 
 /* nn */
