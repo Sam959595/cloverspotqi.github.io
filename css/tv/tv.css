@@ -241,7 +241,7 @@ section.bb select:focus {
     opacity: .5
 }
 
-/* 1 */
+/* ww */
 
 section.ww video {
     margin-top: 1cm;
@@ -253,7 +253,7 @@ section.ww video {
     background-color: var(--gray-15)
 }
 
-/* 1 */
+/* nn */
 
 section.nn ul {
     display: grid;
@@ -272,7 +272,7 @@ section.nn img {
 	width: 6.5cm
 }
 
-/* 1 */
+/* pp */
 
 section.pp {
 	/* margin: .5cm auto;
@@ -280,15 +280,15 @@ section.pp {
 }
 
 section.pp figure {
-    width: 230px;
-    height: 60px;
+    width: 200px;
+    height: 120px;
 
     border-radius: 17px;
 
-    background-color: var(--gray-5)
+    background-color: var(--gray-4)
 }
 
-/* 1 */
+/* uu */
 
 section.uu {
         margin: 0 var(--padding)
