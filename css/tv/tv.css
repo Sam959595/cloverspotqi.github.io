@@ -253,7 +253,7 @@ section.ww video {
     background-color: var(--gray-15)
 }
 section.ww video[poster] {
-    background: center/cover
+   object-fit: cover
 }
 
 /* nn */
