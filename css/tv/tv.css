@@ -280,12 +280,12 @@ section.pp {
 }
 
 section.pp figure {
-    width: 200px;
-    height: 120px;
+    width: 180px;
+    height: 100px;
 
     border-radius: 17px;
 
-    background-color: var(--gray-4)
+    background: center/cover var(--gray-4)
 }
 
 /* uu */
