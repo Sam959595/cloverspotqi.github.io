@@ -206,6 +206,11 @@ section.rr figure {
 	background: center/cover
 }
 
+section.rr select {
+	background: none;
+	color: var(--blue-1)
+}
+
 /* 1 */
 
 @media screen and (min-width: 320px) and (max-width: 896px) {
