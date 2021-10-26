@@ -250,10 +250,8 @@ section.ww video {
 
     aspect-ratio: 21/9;
 
+    object-fit: cover;
     background-color: var(--gray-15)
-}
-section.ww video[poster] {
-   object-fit: cover
 }
 
 /* nn */
