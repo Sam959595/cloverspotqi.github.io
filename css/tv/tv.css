@@ -281,7 +281,7 @@ section.pp {
 
 section.pp figure {
     width: 180px;
-    height: 100px;
+    height: 80px;
 
     border-radius: 17px;
 
@@ -525,6 +525,7 @@ footer li + li {
                 --gray-9: #0000000d;
                 --gray-10: #1d1d1f;
                 --gray-15: #f5f5f5;
+                --gray-18: #f5f5f7;
 		
 		--blue-1: #007aff;
 
@@ -556,6 +557,7 @@ footer li + li {
                 --gray-9: #00000033;
                 --gray-10: #d5d5e2;
                 --gray-15: #121212;
+                --gray-18: #17171d;
 	
 		--blue-1: #0a84ff;
 
