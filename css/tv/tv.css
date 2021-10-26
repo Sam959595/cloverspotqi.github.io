@@ -428,16 +428,10 @@ section.hh h6 {
 /* 1 */
 
 section.tt {
-	/* margin: 1cm auto 0;
-	width: 90% */
+	width: 400px;
+        height: 250px;
 
-        margin: 3em var(--padding) 0
-}
-section.tt h3 {
-    margin: .48em 0;
-
-    font: normal 700 21px/1.14286 system-ui;
-    letter-spacing: 0
+        background-color: var(--gray-4)
 }
 
 /* 1 */
