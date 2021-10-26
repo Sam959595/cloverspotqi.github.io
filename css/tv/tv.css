@@ -390,13 +390,9 @@ section.hh ul li:last-child, section.pp ul li:last-child {
 
 section.hh ul li a {
 	display: block;
-	border-radius: 22px
+	border-radius: 11px
 }
 section.hh ul li figure {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
 	width: 250px;
 	height: 190px;
 
