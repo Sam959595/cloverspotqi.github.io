@@ -349,7 +349,7 @@ section.uu select {
 
 section.ff figure {
         display: flex;
-        flex-direction: colume;
+        flex-direction: column;
         justify-content: space-between;
 
         padding: 1em
