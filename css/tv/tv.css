@@ -280,7 +280,7 @@ section.pp {
 	width: 90% */
 }
 
-section.pp figure {
+section:where(.pp, .ff) figure {
     width: 250px;
     height: 120px;
 
