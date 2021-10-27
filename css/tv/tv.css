@@ -360,8 +360,8 @@ section.ff div {
         justify-content: space-between
 }
 section.ff p {
-        font: normal 400 13px/1.38462 system-ui;
-	letter-spacing: -.005em
+        font: normal 600 17px/1.47059 system-ui;
+    letter-spacing: 0
 }
 section.ff time {
         color: var(--gray-6)
