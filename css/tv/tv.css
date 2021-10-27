@@ -348,6 +348,9 @@ section.uu select {
 /* 1 */
 
 section.ff figure {
+        display: flex;
+        justify-content: space-between;
+
         padding: 1em
 }
 section.ff p {
