@@ -348,16 +348,7 @@ section.uu select {
 /* 1 */
 
 section.ff {
-	margin-bottom: .5cm;
-
-	display: flex;
-	justify-content: space-evenly
-}
-section.ff h5 {
-	font: normal 400 11px/1.2 system-ui;
-    letter-spacing: -.008em;
-
-	color: var(--gray-6)
+        /* text-align: center */
 }
 
 /* 1 */
