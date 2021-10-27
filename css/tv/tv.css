@@ -347,8 +347,8 @@ section.uu select {
 
 /* 1 */
 
-section.ff {
-        /* text-align: center */
+section.ff figure {
+        padding: .8em
 }
 
 /* 1 */
