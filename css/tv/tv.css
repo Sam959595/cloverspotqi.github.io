@@ -349,6 +349,7 @@ section.uu select {
 
 section.ff figure {
         display: flex;
+        flex-direction: colume;
         justify-content: space-between;
 
         padding: 1em
@@ -409,14 +410,14 @@ section.hh p {
 /* 1 */
 
 section.tt {
-         margin: 3em var(--padding) 0
- }
+        margin: 3em var(--padding) 0
+}
  section.tt h3 {
      margin: .48em 0;
 
      font: normal 700 21px/1.14286 system-ui;
      letter-spacing: 0
- }
+}
 
 /* 1 */
 
