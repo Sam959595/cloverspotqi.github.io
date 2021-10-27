@@ -3,9 +3,9 @@
 	text-overflow: ellipsis;
 	overflow: hidden
 }
-.x {
+section.ff p {
 	display: -webkit-box;
-	-webkit-line-clamp: 2;
+	-webkit-line-clamp: 4;
 	-webkit-box-orient: vertical;
 	overflow: hidden
 }
@@ -352,7 +352,7 @@ section.ff figure {
         flex-direction: column;
         justify-content: space-between;
 
-        padding: 1em
+        padding: 10px
 }
 section.ff p {
         font: normal 400 13px/1.38462 system-ui;
