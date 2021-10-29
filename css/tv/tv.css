@@ -266,53 +266,15 @@ section.kk h5 {
 	color: inherit
 }
 
-/* 9 */
+/* root */
 
-footer {
-    padding-bottom: env(safe-area-inset-bottom);
-	
-    background-color: var(--gray-8)
-}
-footer ul {
-    padding: 1em 0
-}
-footer li {
-    margin: 0 max(env(safe-area-inset-right), 16px) 0 max(env(safe-area-inset-left), 16px);
-
-    color: var(--gray-9)
-}
-footer li + li {
-	margin-top: 1em
-}
-
-/* 4 */
-
-@media screen and (min-width: 896px) {
-	/* section.rr {
-		margin: 2cm auto 0;
-		width: 80%;
-		
-		display: flex
-	}
-	section.vv {
-		width: 45%
-	}
-	section.vv h5 {
-		font: normal 600 17px/1.2 system-ui;
-		letter-spacing: 0
-	}
-	section.bb {
-		margin: auto 0 auto auto;
-		width: 35%
-	} */
-}
 @media screen and (min-width: 320px) and (max-width: 728px) {
 	:root {
         --padding: 20px
     }
 }
 
-/* 4 */
+/* color */
 
 @media screen and (prefers-color-scheme: light) {
 	:root {
