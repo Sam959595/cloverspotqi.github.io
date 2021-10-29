@@ -208,14 +208,9 @@ section.rr figure {
 
 /* 1 */
 
-@media screen and (min-width: 320px) and (max-width: 896px) {
-	section.bb {
-		margin: .5cm auto 0;
-		width: 90%
-	}
-}
+section.bb {
+     margin: .8em 0;
 
-section.bb > div {
      display: flex
 }
 
@@ -244,8 +239,6 @@ section.bb select:focus {
 /* ww */
 
 section.ww video {
-    margin-top: 1cm;
-
     width: 100%;
 
     aspect-ratio: 21/9;
