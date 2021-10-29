@@ -209,7 +209,7 @@ section.rr figure {
 /* 1 */
 
 section.bb {
-     margin: .8em 0;
+     margin: .5cm var(--padding);
 
      display: flex
 }
