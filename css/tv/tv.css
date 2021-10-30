@@ -6,26 +6,25 @@ section.bb {
      display: flex
 }
 
-section.bb select {
+section.bb button {
 	width: 100%;
     height: 48px;
 
     border-radius: 13px
 }
-section.bb select:first-child {
+section.bb button:first-child {
         margin-right: .8em
 }
-section.bb select {
+section.bb botton {
         padding: 0 1em;
+
+        text-align: center;
 
 	font: normal 600 16px system-ui;
     letter-spacing: 0;
 
 	background-color: var(--gray-5);
 	color: var(--blue-1)
-}
-section.bb select:focus {
-    opacity: .5
 }
 
 /* ww */
