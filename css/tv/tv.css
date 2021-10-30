@@ -119,10 +119,10 @@ section.uu {
         margin: 0 var(--padding)
 }
 
-dl > div {
+section.uu dl > div {
 	display: table-row
 }
-dl div > * {
+section.uu dl div > * {
 	display: table-cell;
 	vertical-align: baseline;
 
@@ -130,15 +130,15 @@ dl div > * {
 	letter-spacing: -.005em
 }
 
-dl div + div dt {
+section.uu dl div + div dt {
 	padding-top: 8px
 }
 
-dl dt {
+section.uu dl dt {
 	text-align: right;
 	color: var(--gray-6)
 }
-dl dd {
+section.uu dl dd {
 	padding-left: 20px;
 	color: var(--gray-10)
 }
