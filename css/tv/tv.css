@@ -2,8 +2,8 @@ body {
      height: 100%;
      scroll-snap-type: y proximity
 }
-body section.ww {
-     scroll-snap-align: end
+body section.rr {
+     scroll-snap-align: start
 }
 
 /* bb */
