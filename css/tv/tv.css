@@ -57,6 +57,14 @@ section.rr h4 {
 section.rr p {
         color: var(--gray-6)
 }
+
+section.rr select {
+    background: none
+}
+section.rr select:focus {
+    opacity: .5
+}
+
 section.rr h5 {
         margin-top: .8em;
 
@@ -64,12 +72,6 @@ section.rr h5 {
     letter-spacing: 0;
 
     color: var(--gray-10)
-}
-
-section.rr figure {
-	aspect-ratio: 1/1;
-
-	background: center/cover
 }
 
 .string div {
