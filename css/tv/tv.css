@@ -20,10 +20,10 @@ section.bb botton {
 
         text-align: center;
 
-	font: normal 600 16px system-ui;
+	font: normal 600 16px system-ui !important;
     letter-spacing: 0;
 
-	background-color: var(--gray-5);
+	background-color: var(--gray-5) !important;
 	color: var(--blue-1)
 }
 
