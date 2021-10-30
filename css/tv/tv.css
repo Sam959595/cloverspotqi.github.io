@@ -3,7 +3,7 @@ body {
      scroll-snap-type: y proximity
 }
 body section.ww {
-     scroll-snap-align: start
+     scroll-snap-align: center
 }
 
 /* bb */
