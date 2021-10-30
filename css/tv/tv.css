@@ -1,3 +1,10 @@
+body {
+     scroll-snap-type: y proximity
+}
+body section.ww {
+     scroll-snap-align: end
+}
+
 /* bb */
 
 section.bb {
