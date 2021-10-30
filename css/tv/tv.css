@@ -48,15 +48,13 @@ section.ww video {
 /* rr */
 
 section.rr {
-        margin: 0 var(--padding)
+        margin: .5cm var(--padding) 0
 }
 section.rr :where(h4, p) {
         text-align: center
 }
 
 section.rr h4 {
-        padding-top: .5cm;
-
 	font: normal 600 17px/1.47059 system-ui;
     letter-spacing: 0
 }
