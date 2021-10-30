@@ -1,7 +1,7 @@
 /* bb */
 
 section.bb {
-     margin: .5cm var(--padding);
+     margin: .5cm 0;
 
      display: flex
 }
