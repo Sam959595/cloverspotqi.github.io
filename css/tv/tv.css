@@ -55,7 +55,7 @@ section.rr :where(h4, p) {
 }
 
 section.rr h4 {
-        margin-top: .5cm;
+        padding-top: .5cm;
 
 	font: normal 600 17px/1.47059 system-ui;
     letter-spacing: 0
