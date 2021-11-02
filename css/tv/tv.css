@@ -121,26 +121,7 @@ section.uu select {
 	color: var(--blue-1)
 }
 
-/* nn */
-
-section.nn ul {
-    display: grid;
-    grid-auto-flow: column;
-
-    overflow-x: scroll;
-
-    scroll-snap-type: x mandatory;
-    scroll-padding-left: var(--padding)
-}
-section.nn ul li {
-    scroll-snap-align: start
-}
-
-section.nn img {
-	width: 6.5cm
-}
-
-/* 1 */
+/* ff */
 
 section.ff li {
         display: flex;
@@ -169,7 +150,7 @@ section.ff :where(b, time) {
         color: var(--gray-6)
 }
 
-/* 1 */
+/* hh */
 
 section.hh {
 	/* text-align: center */
@@ -217,7 +198,7 @@ section.hh p {
     letter-spacing: 0
 }
 
-/* 1 */
+/* kk */
 
 section.kk a {
 	display: block;
