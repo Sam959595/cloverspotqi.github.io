@@ -144,6 +144,8 @@ section.uu dl dd {
 }
 
 section.uu select {
+        font: inherit;
+
 	background: none;
 	color: var(--blue-1)
 }
