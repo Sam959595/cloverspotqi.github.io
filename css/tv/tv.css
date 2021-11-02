@@ -29,7 +29,7 @@ section.rr p {
 section.rr select {
     background: none
 }
-section.rr select:focus {
+section:where(.rr, .uu) select:focus {
     opacity: .5
 }
 
