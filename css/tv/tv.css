@@ -75,6 +75,32 @@ section.tt {
 
 /* pp */
 
+section:where(.pp, .ff, .hh) ul {
+	display: grid;
+    grid-auto-flow: column;
+    column-gap: 1em;
+
+	overflow-x: scroll;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: var(--padding)
+}
+
+section:where(.hh, .pp, .ff) ul li {
+	scroll-snap-align: start
+}
+
+section:where(.hh, .pp, .ff) ul li:first-child {
+    padding-left: var(--padding)
+}
+section:where(.hh, .pp, .ff) ul li:last-child {
+    padding-right: var(--padding)
+}
+
+section.hh ul li figure {
+	background: center/cover
+}
+
 section:where(.pp figure, .ff li, .hh figure) {
     width: 250px;
     height: 120px;
@@ -152,34 +178,9 @@ section.ff :where(b, time) {
 
 /* hh */
 
-section:where(.hh, .pp, .ff) ul {
-	display: grid;
-    grid-auto-flow: column;
-    column-gap: 1em;
-
-	overflow-x: scroll;
-
-    scroll-snap-type: x mandatory;
-    scroll-padding-left: var(--padding)
-}
-
-section:where(.hh, .pp, .ff) ul li {
-	scroll-snap-align: start
-}
-
-section:where(.hh, .pp, .ff) ul li:first-child {
-    padding-left: var(--padding)
-}
-section:where(.hh, .pp, .ff) ul li:last-child {
-    padding-right: var(--padding)
-}
-
 section.hh ul li a {
 	display: block;
 	border-radius: 11px
-}
-section.hh ul li figure {
-	background: center/cover
 }
 
 section.hh p {
