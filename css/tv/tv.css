@@ -142,7 +142,7 @@ section.nn img {
 
 /* 1 */
 
-section.ff figure {
+section.ff li {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -165,7 +165,7 @@ section.ff p {
     letter-spacing: 0
 }
 
-section.ff :where(p b, time) {
+section.ff :where(b, time) {
         color: var(--gray-6)
 }
 
