@@ -75,7 +75,7 @@ section.tt {
 
 /* pp */
 
-section:where(.pp, .ff) figure {
+section:where(.pp figure, .ff li, .hh figure) {
     width: 250px;
     height: 120px;
 
