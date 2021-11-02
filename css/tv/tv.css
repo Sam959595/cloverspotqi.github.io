@@ -152,10 +152,6 @@ section.ff :where(b, time) {
 
 /* hh */
 
-section.hh {
-	/* text-align: center */
-}
-
 section:where(.hh, .pp, .ff) ul {
 	display: grid;
     grid-auto-flow: column;
