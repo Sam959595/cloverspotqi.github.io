@@ -86,14 +86,14 @@ section:where(.pp, .ff, .hh) ul {
     scroll-padding-left: var(--padding)
 }
 
-section:where(.hh, .pp, .ff) ul li {
+section:where(.pp, .ff, .hh) ul li {
 	scroll-snap-align: start
 }
 
-section:where(.hh, .pp, .ff) ul li:first-child {
+section:where(.pp, .ff, .hh) ul li:first-child {
     padding-left: var(--padding)
 }
-section:where(.hh, .pp, .ff) ul li:last-child {
+section:where(.pp, .ff, .hh) ul li:last-child {
     padding-right: var(--padding)
 }
 
