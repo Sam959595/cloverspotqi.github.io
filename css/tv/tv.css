@@ -14,6 +14,10 @@ section.bb h6 {
     margin-top: .5em
 }
 section.bb p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
     font: normal 400 11px/1.25648 system-ui;
     letter-spacing: 0
 }
