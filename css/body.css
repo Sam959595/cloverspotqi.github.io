@@ -23,6 +23,9 @@ a, strong, b, sup, sub, u, ins, del, i, s, mark, small, q, em, span, time {
 	font: inherit;
 	letter-spacing: inherit
 }
+b {
+        color: inherit
+}
 a, u {
 	text-decoration: none
 }
@@ -31,6 +34,9 @@ ul, ol {
 }
 input, select {
 	-webkit-appearance: none
+}
+select:focus {
+       opacity: .5
 }
 input, button, select, hr {
 	border: none
