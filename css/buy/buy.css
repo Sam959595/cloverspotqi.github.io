@@ -100,7 +100,7 @@ section.zz li:not(:nth-child(4)) > * {
 }
 section.zz li:nth-child(4) {
      border: solid var(--gray-9);
-     /* border-width: 1em 0 */
+     border-width: 1em 0
 }
 
 section.zz h5 {
@@ -111,9 +111,7 @@ section.zz h5 {
 section.zz table {
     padding: 1.5em;
 
-    width: 100%;
-
-    background-color: var(--gray-9)
+    width: 100%
 }
 section.zz td {
     vertical-align: middle
