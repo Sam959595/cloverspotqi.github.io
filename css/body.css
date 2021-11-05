@@ -36,7 +36,7 @@ input, select {
 	-webkit-appearance: none
 }
 select:focus {
-       opacity: .5
+        opacity: .5
 }
 input, button, select, hr {
 	border: none
