@@ -10,7 +10,7 @@ section.bb figure {
     background: center/cover var(--gray-18)
 }
 
-section.bb p:first-child {
+section.bb h6 {
     margin-top: .2em
 }
 section.bb p {
