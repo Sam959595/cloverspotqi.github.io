@@ -97,7 +97,7 @@ section:where(.pp, .ff, .hh) ul li:last-child {
     padding-right: var(--padding)
 }
 
-section:where(.pp figure, .ff li, .hh figure) {
+section:where(.pp figure, .ff li, .hh figure), section.ff li {
     width: 250px;
     height: 120px;
 
