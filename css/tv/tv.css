@@ -157,7 +157,7 @@ section.uu select {
 
 /* ff */
 
-section.ff li {
+section.ff figure {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
