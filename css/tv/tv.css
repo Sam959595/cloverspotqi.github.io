@@ -87,7 +87,7 @@ section.tt {
 
 /* pp */
 
-section:where(.pp, .ff, .hh) ul {
+section:where(.pp, .bb, .ff, .hh) ul {
 	display: grid;
     grid-auto-flow: column;
     column-gap: 1em;
@@ -98,14 +98,14 @@ section:where(.pp, .ff, .hh) ul {
     scroll-padding-left: var(--padding)
 }
 
-section:where(.pp, .ff, .hh) ul li {
+section:where(.pp, .bb, .ff, .hh) ul li {
 	scroll-snap-align: start
 }
 
-section:where(.pp, .ff, .hh) ul li:first-child {
+section:where(.pp, .bb, .ff, .hh) ul li:first-child {
     padding-left: var(--padding)
 }
-section:where(.pp, .ff, .hh) ul li:last-child {
+section:where(.pp, .bb, .ff, .hh) ul li:last-child {
     padding-right: var(--padding)
 }
 
