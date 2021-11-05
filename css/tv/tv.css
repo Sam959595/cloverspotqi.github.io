@@ -11,10 +11,10 @@ section.bb figure {
 }
 
 section.bb h6 {
-    margin-top: .2em
+    margin-top: .5em
 }
 section.bb p {
-    font: normal 400 11px/1.573883 system-ui;
+    font: normal 400 11px/1.25648 system-ui;
     letter-spacing: 0
 }
 
