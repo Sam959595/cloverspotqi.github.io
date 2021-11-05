@@ -97,7 +97,7 @@ section:where(.pp, .ff, .hh) ul li:last-child {
     padding-right: var(--padding)
 }
 
-section:where(.pp figure, .ff li, .hh figure), section.ff li {
+section:where(.pp, .ff, .hh) figure {
     width: 250px;
     height: 120px;
 
@@ -168,7 +168,7 @@ section.ff p {
     letter-spacing: 0
 }
 
-section.ff :where(b, time) {
+section.ff :where(p b, time) {
         color: var(--gray-6)
 }
 
