@@ -54,9 +54,6 @@ section.rr p {
 section.rr select {
     background: none
 }
-section:where(.rr, .uu) select:focus {
-    opacity: .5
-}
 
 section.rr h5 {
         margin-top: .8em;
@@ -193,7 +190,7 @@ section.ff p {
     letter-spacing: 0
 }
 
-section.ff :where(p b, time) {
+section.ff time {
         color: var(--gray-6)
 }
 
