@@ -2,8 +2,8 @@ section.bb {
     text-align: center
 }
 section.bb figure {
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
 
     border-radius: 100%;
     border: .1px solid var(--gray-3);
