@@ -25,6 +25,9 @@ section.bb p {
 
 /* ww */
 
+section.ww {
+    display: flex
+}
 section.ww img {
     width: 120px;
     height: 120px;
@@ -35,7 +38,7 @@ section.ww img {
 /* rr */
 
 section.rr {
-        margin: .5cm var(--padding) 0
+        margin-right: 2em
 }
 section.rr :where(h4, p) {
         text-align: center
