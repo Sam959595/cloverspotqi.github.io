@@ -30,8 +30,8 @@ section.ww {
     display: flex
 }
 section.ww img {
-    width: 220px;
-    height: 220px;
+    width: 150px;
+    height: 150px;
 
     border-radius: 5px
 }
