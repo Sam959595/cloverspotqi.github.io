@@ -41,9 +41,6 @@ section.ww img {
 .rr {
         margin-right: 2em
 }
-.rr :where(h4, p) {
-        text-align: center
-}
 
 .rr h4 {
 	font: normal 600 17px/1.47059 system-ui;
