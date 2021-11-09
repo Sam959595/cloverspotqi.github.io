@@ -54,6 +54,11 @@ section.ww div select {
     background: none
 }
 
+/* rr */
+
+section.rr {
+    margin: 0 var(--padding)
+}
 section.rr h5 {
         margin-top: .8em;
 
