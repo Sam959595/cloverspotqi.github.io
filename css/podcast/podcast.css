@@ -54,8 +54,10 @@ section.ww div p {
 
         color: var(--gray-6)
 }
-section.ww div a {
+section.ww div button {
         margin-top: 1.2em;
+
+        border-radius: 100%;
 
         font: normal 600 17px/1.2 system-ui;
 	letter-spacing: 0
