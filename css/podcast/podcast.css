@@ -27,7 +27,9 @@ section.bb p {
 
 section.ww {
     margin: 3em var(--padding) 1em;
-    display: flex
+
+    display: flex;
+    align-items: center
 }
 section.ww img {
     width: 180px;
@@ -39,10 +41,7 @@ section.ww img {
 /* rr */
 
 section.ww div {
-        margin-left: 2em;
-
-        display: flex;
-	align-items: center
+        margin-left: 2em
 }
 
 section.ww div h4 {
