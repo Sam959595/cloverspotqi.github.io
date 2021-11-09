@@ -57,10 +57,9 @@ section.ww div p {
 section.ww div button {
         margin-top: 1.2em;
 
-        width: 90px;
-        height: 30px;
+        padding: 5px 8px;
 
-        border-radius: 50%;
+        border-radius: 20px;
 
         font: normal 600 17px/1.2 system-ui;
 	letter-spacing: 0
