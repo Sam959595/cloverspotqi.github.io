@@ -26,7 +26,7 @@ section.bb p {
 /* ww */
 
 section.ww {
-    margin: 3em var(--padding) 0;
+    margin: 3em var(--padding);
     display: flex
 }
 section.ww img {
