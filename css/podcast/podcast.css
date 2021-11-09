@@ -41,7 +41,8 @@ section.ww img {
 section.ww div {
         margin-left: 2em;
 
-        vertical-align: middle
+        display: flex;
+	align-items: center
 }
 
 section.ww div h4 {
