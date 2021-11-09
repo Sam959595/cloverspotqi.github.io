@@ -38,23 +38,23 @@ section.ww img {
 
 /* rr */
 
-.rr {
+section.ww div {
         margin-right: 2em
 }
 
-.rr h4 {
+section.ww div h4 {
 	font: normal 600 17px/1.47059 system-ui;
     letter-spacing: 0
 }
-.rr p {
+section.ww div p {
         color: var(--gray-6)
 }
 
-.rr select {
+section.ww div select {
     background: none
 }
 
-.rr h5 {
+section.ww div h5 {
         margin-top: .8em;
 
 	font: normal 400 14px/1.42859 system-ui;
