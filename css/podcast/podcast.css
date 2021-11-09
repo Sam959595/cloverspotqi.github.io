@@ -60,8 +60,6 @@ section.rr {
     margin: 0 var(--padding)
 }
 section.rr h5 {
-        margin-top: .8em;
-
 	font: normal 400 14px/1.42859 system-ui;
     letter-spacing: 0;
 
