@@ -62,7 +62,9 @@ section.ww div button {
         border-radius: 20px;
 
         font: normal 600 14px/1.42859 system-ui;
-        letter-spacing: 0
+        letter-spacing: 0;
+
+        background-color: var(--gray-18)
 }
 
 /* rr */
