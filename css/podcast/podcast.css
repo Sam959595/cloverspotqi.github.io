@@ -45,10 +45,12 @@ section.ww div {
 }
 
 section.ww div h4 {
-	font: normal 600 19px/1.21053 system-ui;
-	letter-spacing: .012em
+	font: normal 600 17px/1.2 system-ui;
+	letter-spacing: 0
 }
 section.ww div p {
+        margin-top: .8em;
+
         color: var(--gray-6)
 }
 
