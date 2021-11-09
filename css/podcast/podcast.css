@@ -36,7 +36,7 @@ section.ww img {
     height: 150px;
 
     border-radius: 8px;
-    border: .1px solid #80808026
+    border: .1px solid var(--gray-3)
 }
 
 /* rr */
