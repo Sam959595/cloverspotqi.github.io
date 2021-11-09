@@ -35,7 +35,7 @@ section.ww img {
     width: 180px;
     height: 180px;
 
-    border-radius: 5px;
+    border-radius: 8px;
     border: .1px solid var(--soft-1)
 }
 
