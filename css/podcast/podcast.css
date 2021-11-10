@@ -32,7 +32,9 @@ section.ww {
     align-items: center
 }
 section.ww figure {
-    margin-right: 1em;
+    /* margin-right: 1em; */
+
+    padding: auto 0 0;
 
     width: 150px;
     height: 150px;
