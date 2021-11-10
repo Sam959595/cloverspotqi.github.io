@@ -31,7 +31,7 @@ section.ww {
     display: flex;
     align-items: center
 }
-section.ww img {
+section.ww figure {
     margin-right: 1em;
 
     width: 150px;
@@ -39,15 +39,6 @@ section.ww img {
 
     border-radius: 8px;
     border: .1px solid var(--gray-3)
-}
-
-section.ww progress {
-    position: relative
-}
-section.ww progress:after {
-    position: absolute;
-
-    inset: 0
 }
 
 /* rr */
