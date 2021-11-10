@@ -29,7 +29,8 @@ section.ww {
     margin: 3em var(--padding) 1em;
 
     display: flex;
-    align-items: center
+    align-items: center;
+    justify-content: space-evenly
 }
 section.ww figure {
     margin-left: 1em;
