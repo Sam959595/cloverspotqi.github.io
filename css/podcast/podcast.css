@@ -38,7 +38,9 @@ section.ww figure {
     height: 150px;
 
     border-radius: 8px;
-    border: .1px solid var(--gray-3)
+    border: .1px solid var(--gray-3);
+
+    background: center/cover
 }
 
 /* rr */
