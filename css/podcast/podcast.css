@@ -29,11 +29,10 @@ section.ww {
     margin: 3em var(--padding) 1em;
 
     display: flex;
-    align-items: center;
-    justify-content: space-evenly
+    align-items: center
 }
 section.ww figure {
-    /* margin-right: 1em; */
+    margin-right: 1em;
 
     width: 150px;
     height: 150px;
