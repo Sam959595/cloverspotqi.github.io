@@ -41,6 +41,15 @@ section.ww img {
     border: .1px solid var(--gray-3)
 }
 
+section.ww progress {
+    position: relative
+}
+section.ww progress:after {
+    position: absolute;
+
+    inset: 0
+}
+
 /* rr */
 
 section.ww div h4 {
