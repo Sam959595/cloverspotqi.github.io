@@ -32,6 +32,8 @@ section.ww {
     align-items: center
 }
 section.ww img {
+    margin-right: 1em;
+
     width: 150px;
     height: 150px;
 
@@ -40,10 +42,6 @@ section.ww img {
 }
 
 /* rr */
-
-/* section.ww div {
-        margin-left: 1em
-} */
 
 section.ww div h4 {
 	font: normal 600 17px/1.2 system-ui;
