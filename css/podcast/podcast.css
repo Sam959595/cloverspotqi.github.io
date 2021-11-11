@@ -28,8 +28,6 @@ section.bb p {
 section.ww {
     margin: 3em var(--padding) 1em;
 
-    width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: space-evenly
@@ -51,7 +49,7 @@ section.ww progress::-webkit-progress-bar {
     background-color: var(--red-1)
 }
 section.ww progress::-webkit-progress-value {
-    
+    background-color: var(--red-1)
 }
 
 /* rr */
