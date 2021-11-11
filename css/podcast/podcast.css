@@ -44,12 +44,12 @@ section.ww figure {
     background: center/cover
 }
 
-progress::-webkit-progress-bar {
+section.ww progress::-webkit-progress-bar {
     border: 0;
-    background-color: #ffffff26
+    background-color: var(--red-1)
 }
-progress::-webkit-progress-value {
-  
+section.ww progress::-webkit-progress-value {
+    
 }
 
 /* rr */
