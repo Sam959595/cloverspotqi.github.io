@@ -59,7 +59,7 @@ strong, b {
 em {
 	font-style: italic
 }
-span {
+span, select {
 	-webkit-tap-highlight-color: transparent
 }
 
