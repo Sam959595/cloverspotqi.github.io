@@ -24,8 +24,6 @@ section.tt {
 }
 
 section.tt select {
-	-webkit-tap-highlight-color: transparent;
-	
 	font: normal 400 19px system-ui;
     letter-spacing: 0;
 
