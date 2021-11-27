@@ -210,6 +210,10 @@ section.hh p {
 
 /* kk */
 
+section.kk {
+        margin-bottom: env(safe-area-inset-bottom)
+}
+
 section.kk a {
 	display: block;
 
