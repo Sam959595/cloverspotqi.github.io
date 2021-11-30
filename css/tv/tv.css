@@ -39,7 +39,8 @@ section.rr h5 {
 }
 
 .string div {
-	font: inherit
+	font: inherit;
+        letter-spacing: inherit
 }
 
 .hide {
