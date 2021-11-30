@@ -160,7 +160,7 @@ section.bb h6 {
     margin-top: .8em
 }
 section.bb p {
-    width: inherit;
+    width: 90px;
 
     white-space: nowrap;
     text-overflow: ellipsis;
