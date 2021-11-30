@@ -77,7 +77,7 @@ section:where(.pp, .bb, .ff, .hh) ul {
     grid-auto-flow: column;
     column-gap: 1em;
 
-	overflow: auto scroll;
+	overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
     scroll-padding-left: var(--padding)
