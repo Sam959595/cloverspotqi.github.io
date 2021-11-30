@@ -204,6 +204,7 @@ section.hh a {
 }
 
 section.hh h6 {
+        position: reletive;
         bottom: 0
 }
 
