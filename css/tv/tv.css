@@ -205,7 +205,8 @@ section.hh a {
 
 section.hh figure {
         display: flex;
-        place-content: end center;
+        align-items: flex-end;
+        justify-content: center;
 
         padding: 10px
 }
