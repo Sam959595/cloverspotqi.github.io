@@ -146,9 +146,6 @@ section.bb {
     text-align: center
 }
 
-section.bb li {
-    width: 90px
-}
 section.bb figure {
     width: 90px;
     height: 90px;
@@ -163,6 +160,10 @@ section.bb h6 {
     margin-top: .8em
 }
 section.bb p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
     font: normal 400 11px/1.25648 system-ui;
     letter-spacing: 0
 }
