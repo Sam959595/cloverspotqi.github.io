@@ -178,8 +178,8 @@ section.ff figure {
 }
 
 section.ff div {
-        display: flex;
-        justify-content: space-between
+        display: inherit;
+        justify-content: inherit
 }
 
 section.ff p {
@@ -205,7 +205,7 @@ section.hh a {
 
 section.hh figure {
         display: flex;
-        place-items: end center;
+        place-content: end center;
 
         padding: 10px
 }
