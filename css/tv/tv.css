@@ -54,8 +54,7 @@ section.rr h5 {
 .hide a {
 	position: absolute;
 
-	right: 0;
-	bottom: 0
+        inset: auto 0 0 auto
 }
 
 /* tt */
@@ -218,7 +217,7 @@ section.hh figure {
         padding: 10px
 }
 section.hh h6 {
-        font: normal 600 14px/1.42859 system-ui;
+        font-weight: 600;
         letter-spacing: 0
 }
 
