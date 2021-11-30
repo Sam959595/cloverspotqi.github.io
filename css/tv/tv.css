@@ -207,11 +207,11 @@ section.hh figure {
         display: flex;
         align-items: flex-end;
 
-        padding: 10px;
-
-        text-align: center
+        padding: 10px
 }
 section.hh h6 {
+        text-align: center;
+
         font: normal 600 14px/1.42859 system-ui;
         letter-spacing: 0
 }
