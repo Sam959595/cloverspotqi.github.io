@@ -177,9 +177,9 @@ section.bb p {
 /* ff */
 
 section.ff figure {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-between; */
 
         padding: 10px
 }
