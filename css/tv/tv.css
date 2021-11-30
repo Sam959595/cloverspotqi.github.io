@@ -95,6 +95,7 @@ section:where(.pp, .bb, .ff, .hh) ul li:last-child {
 }
 
 section:where(.pp, .ff, .hh) figure {
+    display: block;
     width: 250px;
     height: 120px;
 
