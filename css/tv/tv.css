@@ -119,7 +119,7 @@ section.uu dl div > * {
 	display: table-cell;
 	vertical-align: baseline;
 
-	font: normal 400 13px/1.38462;
+	font: 400 13px/1.38462 system-ui;
 	letter-spacing: -.005em
 }
 
