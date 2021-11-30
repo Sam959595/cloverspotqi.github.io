@@ -145,8 +145,11 @@ section.uu select {
 section.bb {
     text-align: center
 }
+
+section.bb li {
+    wigth: 90px
+}
 section.bb figure {
-    width: 90px;
     height: 90px;
 
     border-radius: 100%;
