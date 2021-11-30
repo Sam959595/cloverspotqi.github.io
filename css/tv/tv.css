@@ -22,8 +22,6 @@ section.rr h4 {
 	font: 600 17px/1.47059 system-ui
 }
 section.rr p {
-        letter-spacing: -.01em;
-
         color: var(--gray-6)
 }
 
@@ -35,6 +33,7 @@ section.rr h5 {
         margin-top: .8em;
 
 	font: 400 14px/1.42859 system-ui;
+        letter-spacing: -.01em;
 
     color: var(--gray-10)
 }
