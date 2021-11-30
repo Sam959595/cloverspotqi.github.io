@@ -99,6 +99,7 @@ section:where(.pp, .ff, .hh) figure {
     height: 120px;
 
     border-radius: 11px;
+    box-shadow: 0 0 1px #fffa;
 
     background: center/cover var(--gray-18)
 }
