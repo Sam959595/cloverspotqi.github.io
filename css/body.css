@@ -8,7 +8,7 @@
 	-webkit-text-size-adjust: none;
 
         font: normal 400 12px/1.33337 system-ui;
-	letter-spacing: 0;
+	letter-spacing: -.01em;
 
 	-webkit-font-smoothing: antialiased
 }
