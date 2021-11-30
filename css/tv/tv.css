@@ -164,6 +164,8 @@ section.bb p {
     text-overflow: ellipsis;
     overflow: hidden;
 
+    width: 90px;
+
     font: normal 400 11px/1.25648 system-ui;
     letter-spacing: 0
 }
