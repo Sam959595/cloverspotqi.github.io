@@ -203,9 +203,14 @@ section.hh a {
 	border-radius: 11px
 }
 
+section.hh figure {
+        padding: 10px
+}
 section.hh h6 {
-        position: reletive;
-        bottom: 0
+        margin-top: auto;
+
+        font: normal 600 14px/1.42859 system-ui;
+        letter-spacing: 0
 }
 
 /* section.hh p {
