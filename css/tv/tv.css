@@ -19,10 +19,11 @@ section.rr :where(h4, p) {
 }
 
 section.rr h4 {
-	font: 600 17px/1.47059 system-ui;
-    letter-spacing: 0
+	font: 600 17px/1.47059 system-ui
 }
 section.rr p {
+        letter-spacing: -.01em;
+
         color: var(--gray-6)
 }
 
@@ -34,7 +35,6 @@ section.rr h5 {
         margin-top: .8em;
 
 	font: 400 14px/1.42859 system-ui;
-    letter-spacing: 0;
 
     color: var(--gray-10)
 }
@@ -65,8 +65,7 @@ section.tt {
  section.tt h3 {
      margin: .48em 0;
 
-     font: 700 21px/1.14286 system-ui;
-     letter-spacing: 0
+     font: 700 21px/1.14286 system-ui
 }
 
 /* pp */
@@ -169,8 +168,7 @@ section.bb p {
     text-overflow: ellipsis;
     overflow: hidden;
 
-    font: 400 11px/1.25648 system-ui;
-    letter-spacing: 0
+    font: 400 11px/1.25648 system-ui
 }
 
 /* ff */
@@ -194,8 +192,7 @@ section.ff p {
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 
-        font: 400 14px/1.42859 system-ui;
-    letter-spacing: 0
+        font: 400 14px/1.42859 system-ui
 }
 
 section.ff time {
@@ -217,15 +214,13 @@ section.hh figure {
         padding: 10px
 }
 section.hh h6 {
-        font: 400 12px/1.33337 system-ui;
-        letter-spacing: 0
+        font: 400 12px/1.33337 system-ui
 }
 
 /* section.hh p {
         margin-bottom: .8em;
 
-	font: 400 14px/1.2 system-ui;
-        letter-spacing: 0
+	font: 400 14px/1.2 system-ui
 } */
 
 /* kk */
@@ -248,7 +243,6 @@ section.kk h5 {
 	padding: 10px 0;
 
 	font: 400 21px system-ui;
-    letter-spacing: 0;
 
 	color: inherit
 }
