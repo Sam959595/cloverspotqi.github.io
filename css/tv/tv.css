@@ -160,11 +160,11 @@ section.bb h6 {
     margin-top: .8em
 }
 section.bb p {
+    width: inherit;
+
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-
-    width: 90px;
 
     font: normal 400 11px/1.25648 system-ui;
     letter-spacing: 0
@@ -214,6 +214,8 @@ section.hh figure {
         padding: 10px
 }
 section.hh h6 {
+        text-shadow: 0 0 2em #00000080;
+
         font: normal 600 14px/1.42859 system-ui;
         letter-spacing: 0
 }
