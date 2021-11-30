@@ -204,14 +204,14 @@ section.hh a {
 }
 
 section.hh figure {
-        padding: 10px
+        display: flex;
+        align-items: flex-end;
+
+        padding: 10px;
+
+        text-align: center
 }
 section.hh h6 {
-        inset: 0;
-        margin: auto;
-
-        text-align: center;
-
         font: normal 600 14px/1.42859 system-ui;
         letter-spacing: 0
 }
