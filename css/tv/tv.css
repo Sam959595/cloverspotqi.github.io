@@ -217,7 +217,7 @@ section.hh figure {
         padding: 10px
 }
 section.hh h6 {
-        font-weight: 600;
+        font: normal 600 11px/1.25648 system-ui;
         letter-spacing: 0
 }
 
