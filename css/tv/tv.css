@@ -1,28 +1,3 @@
-section.bb {
-    text-align: center
-}
-section.bb figure {
-    width: 90px;
-    height: 90px;
-
-    border-radius: 100%;
-    border: .1px solid var(--gray-3);
-
-    background: center/cover var(--gray-18)
-}
-
-section.bb h6 {
-    margin-top: .8em
-}
-section.bb p {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-
-    font: normal 400 11px/1.25648 system-ui;
-    letter-spacing: 0
-}
-
 /* ww */
 
 section.ww video {
@@ -165,6 +140,33 @@ section.uu select {
 	color: var(--blue-1)
 }
 
+/* bb */
+
+section.bb {
+    text-align: center
+}
+section.bb figure {
+    width: 90px;
+    height: 90px;
+
+    border-radius: 100%;
+    border: .1px solid var(--gray-3);
+
+    background: center/cover var(--gray-18)
+}
+
+section.bb h6 {
+    margin-top: .8em
+}
+section.bb p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    font: normal 400 11px/1.25648 system-ui;
+    letter-spacing: 0
+}
+
 /* ff */
 
 section.ff figure {
@@ -196,17 +198,21 @@ section.ff time {
 
 /* hh */
 
-section.hh ul li a {
+section.hh a {
 	display: block;
 	border-radius: 11px
 }
 
-section.hh p {
+section.hh h6 {
+        bottom: 0
+}
+
+/* section.hh p {
         margin-bottom: .8em;
 
 	font: normal 400 14px/1.2 system-ui;
     letter-spacing: 0
-}
+} */
 
 /* kk */
 
