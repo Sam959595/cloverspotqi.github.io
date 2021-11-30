@@ -150,6 +150,7 @@ section.bb li {
     width: 90px
 }
 section.bb figure {
+    width: 90px;
     height: 90px;
 
     border-radius: 100%;
