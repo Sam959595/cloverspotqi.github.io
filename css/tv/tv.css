@@ -19,7 +19,7 @@ section.rr :where(h4, p) {
 }
 
 section.rr h4 {
-	font: normal 600 17px/1.47059;
+	font: normal 600 17px/1.47059 inherit;
     letter-spacing: 0
 }
 section.rr p {
@@ -65,7 +65,7 @@ section.tt {
  section.tt h3 {
      margin: .48em 0;
 
-     font: normal 700 21px/1.14286;
+     font: normal 700 21px/1.14286 system-ui;
      letter-spacing: 0
 }
 
