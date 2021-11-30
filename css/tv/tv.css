@@ -211,7 +211,7 @@ section.hh figure {
         align-items: flex-end;
         justify-content: center;
 
-        background: linear-gradient(to bottom, black 10%, translation 90%);
+        background: linear-gradient(to bottom, #000a 10%, translation 90%);
 
         padding: 10px
 }
