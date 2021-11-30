@@ -208,9 +208,7 @@ section.hh figure {
         align-items: flex-end;
         justify-content: center;
 
-        padding: 10px;
-
-        border: .1px solid var(--gray-3)
+        padding: 10px
 }
 section.hh h6 {
         font: normal 600 14px/1.42859 system-ui;
