@@ -16,7 +16,7 @@ section.ww div {
         display: flex;
         justify-content: space-between
 }
-section.ww div > * {
+section.ww {
         font: 400 14px/1.42859 system-ui
 }
 
