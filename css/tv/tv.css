@@ -214,7 +214,11 @@ section.hh figure {
         padding: 10px
 }
 section.hh h6 {
-        font: 600 12px/1.33337 system-ui
+        text-shadow: 0 0 5px #000a";
+
+        font: 600 12px/1.33337 system-ui;
+
+        color: white
 }
 
 /* kk */
