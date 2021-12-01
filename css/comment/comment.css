@@ -7,7 +7,7 @@ section.ww {
 section.ww figure {
         width: 100%;
 
-        padding: 10px;
+        padding: 25px;
 
         border-radius: 11px;
 
@@ -20,6 +20,8 @@ section.ww div {
 }
 
 section.ww h6 {
+        margin-top: 2em;
+
         font: 400 14px/1.42859 system-ui
 }
 section.ww p {
