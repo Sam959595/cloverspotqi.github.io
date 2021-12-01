@@ -21,7 +21,10 @@ section.ww div > * {
 }
 
 section.ww figure > p {
-        margin: 1em 0
+        margin: 1em 0;
+
+        font: 400 13px/1.38462 system-ui;
+	letter-spacing: -.005em
 }
 
 section.ww time {
