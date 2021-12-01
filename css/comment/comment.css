@@ -28,6 +28,10 @@ section.ww figure > p {
 }
 
 section.ww time {
+        width: 100%;
+
+        text-align: right;
+
         color: var(--gray-6)
 }
 
