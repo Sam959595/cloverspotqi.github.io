@@ -105,6 +105,11 @@ section:where(.pp, .hh) figure {
     box-shadow: inset 0 0 0 1px #fff1
 }
 
+section:where(.pp, .hh) a {
+	display: block;
+	border-radius: 11px
+}
+
 /* uu */
 
 section.uu {
@@ -200,11 +205,6 @@ section.ff time {
 }
 
 /* hh */
-
-section.hh a {
-	display: block;
-	border-radius: 11px
-}
 
 section.hh figure {
         display: flex;
