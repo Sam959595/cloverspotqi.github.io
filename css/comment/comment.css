@@ -20,7 +20,7 @@ section.ww div {
 }
 
 section.ww h6 {
-        font: 400 17px/1.42859 system-ui
+        font: 400 14px/1.42859 system-ui
 }
 section.ww p {
         margin-top: 2em;
@@ -30,7 +30,7 @@ section.ww p {
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 
-        font: 400 14px/1.42859 system-ui
+        font: 400 16px/1.42859 system-ui
 }
 
 section.ww time {
