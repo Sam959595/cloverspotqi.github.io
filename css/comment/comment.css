@@ -14,12 +14,11 @@ section.ww figure {
 
 section.ww div {
         display: flex;
-        justify-content: space-between
-}
+        justify-content: space-between;
 
-section.ww h6 {
         font: 400 14px/1.42859 system-ui
 }
+
 section.ww > p {
         margin-top: 1em;
 
