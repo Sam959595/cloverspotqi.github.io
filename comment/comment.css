@@ -1,11 +1,17 @@
 /* ww */
 
 section.ww figure {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        margin: 0 var(--padding)
+}
 
-        padding: 10px
+section.ww figure {
+        width: 100%;
+
+        padding: 10px;
+
+        border-radius: 11px;
+
+        background-color: var(--gray-18)
 }
 
 section.ww div {
@@ -25,6 +31,8 @@ section.ww p {
 section.ww time {
         color: var(--gray-6)
 }
+
+/* color */
 
 @media screen and (prefers-color-scheme: light) {
 	:root {
