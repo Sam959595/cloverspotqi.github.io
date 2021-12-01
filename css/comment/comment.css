@@ -1,6 +1,6 @@
 /* ww */
 
-section.ww {
+section:where(.ww, .hh) {
         margin: var(--padding) var(--padding) 0
 }
 
@@ -29,6 +29,15 @@ section.ww figure > p {
 
 section.ww time {
         color: var(--gray-6)
+}
+
+/* hh */
+
+section.hh button {
+        border-radius: 11px;
+
+        background: var(--gray-18);
+        color: var(--blue)
 }
 
 /* var */
