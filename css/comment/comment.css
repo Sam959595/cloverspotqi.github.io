@@ -19,6 +19,9 @@ section.ww div {
         justify-content: inherit
 }
 
+section.ww h6 {
+        font: 400 14px/1.42859 system-ui
+}
 section.ww p {
         display: -webkit-box;
 	-webkit-line-clamp: 4;
