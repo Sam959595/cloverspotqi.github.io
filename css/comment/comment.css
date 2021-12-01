@@ -5,8 +5,6 @@ section.ww {
 }
 
 section.ww figure {
-        width: 100%;
-
         padding: 15px;
 
         border-radius: 11px;
@@ -14,7 +12,7 @@ section.ww figure {
         background-color: var(--gray-18)
 }
 
-section.ww div {
+section.ww > div {
         display: flex;
         justify-content: space-between
 }
@@ -24,11 +22,6 @@ section.ww h6 {
 }
 section.ww p {
         margin-top: 2em;
-
-        display: -webkit-box;
-	-webkit-line-clamp: 4;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
 
         font: 400 16px/1.42859 system-ui
 }
