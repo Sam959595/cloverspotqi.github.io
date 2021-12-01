@@ -20,9 +20,7 @@ section.ww div {
 }
 
 section.ww > p {
-        margin-top: 1em;
-
-        font: 400 14px/1.42859 system-ui
+        margin-top: 1em
 }
 
 section.ww time {
