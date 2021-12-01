@@ -213,7 +213,7 @@ section.hh figure {
 
         padding: 10px;
 
-        background-image: linear-gradient(to top, #000a 10%, transparent)
+        background-image: linear-gradient(to top, #000a 10%, transparent) !important
 }
 section.hh h6 {
         font: 600 12px/1.33337 system-ui
