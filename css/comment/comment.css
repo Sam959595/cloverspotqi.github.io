@@ -24,6 +24,9 @@ section.ww > p {
 }
 
 section.ww time {
+        font: 400 13px/1.38462 system-ui;
+	letter-spacing: -.005em;
+
         color: var(--gray-6)
 }
 
