@@ -15,8 +15,8 @@ section.ww figure {
 }
 
 section.ww div {
-        display: inherit;
-        justify-content: inherit
+        display: flex;
+        justify-content: space-between
 }
 
 section.ww h6 {
