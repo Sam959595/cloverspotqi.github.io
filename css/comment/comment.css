@@ -25,6 +25,8 @@ section.ww figure > p {
 }
 
 section.ww time {
+        text-align: end;
+
         font: 400 13px/1.38462 system-ui;
 	letter-spacing: -.005em;
 
