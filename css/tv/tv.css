@@ -211,9 +211,7 @@ section.hh figure {
         align-items: flex-end;
         justify-content: center;
 
-        padding: 10px;
-
-        background-image: linear-gradient(to top, #000a 10%, transparent)
+        padding: 10px
 }
 section.hh h6 {
         font: 600 12px/1.33337 system-ui
