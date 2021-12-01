@@ -19,7 +19,7 @@ section.ww div {
         font: 400 14px/1.42859 system-ui
 }
 
-section.ww > p {
+section.ww figure > p {
         margin-top: 1em
 }
 
