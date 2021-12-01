@@ -12,10 +12,11 @@ section.ww figure {
         background-color: var(--gray-18)
 }
 
-section.ww div > * {
+section.ww div {
         display: flex;
-        justify-content: space-between;
-
+        justify-content: space-between
+}
+section.ww div > * {
         font: 400 14px/1.42859 system-ui
 }
 
