@@ -22,15 +22,13 @@ section.ww :where(div > *, time) {
 }
 
 section.ww figure > p {
-        margin: 1em 0;
+        margin-top: 1em;
 
         font: 400 14px/1.42859 system-ui
 }
 
 section.ww time {
         display: inline-block;
-
-        width: 100%;
 
         text-align: right;
 
