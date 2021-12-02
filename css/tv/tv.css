@@ -207,6 +207,8 @@ section.ff time {
 section.ff h5 {
         height: 120px;
 
+        display: inline-block;
+
         vertical-align: middle;
 
         text-align: center;
