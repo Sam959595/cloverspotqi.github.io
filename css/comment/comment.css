@@ -22,7 +22,7 @@ section.ww :where(div > *, time) {
 }
 
 section.ww figure > p {
-        margin-top: 1em;
+        margin: .8em 0;
 
         font: 400 14px/1.42859 system-ui
 }
