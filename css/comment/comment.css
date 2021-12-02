@@ -30,6 +30,8 @@ section.ww figure > p {
 section.ww time {
         display: inline-block;
 
+        width: 100%;
+
         text-align: right;
 
         color: var(--gray-6)
