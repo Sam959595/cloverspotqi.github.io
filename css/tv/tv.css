@@ -204,6 +204,14 @@ section.ff time {
         color: var(--gray-6)
 }
 
+section.ff h5 {
+        text-align: center;
+
+        height: 120px;
+
+        font: 400 17px/1.47059 system-ui
+}
+
 /* hh */
 
 section.hh figure {
