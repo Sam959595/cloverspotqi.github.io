@@ -205,11 +205,12 @@ section.ff time {
 }
 
 section.ff h5 {
-        text-align: center;
-
         height: 120px;
 
-        font: 400 17px/1.47059 system-ui
+        text-align: center;
+        font: 400 17px/1.47059 system-ui;
+
+        color: var(--gray-6)
 }
 
 /* hh */
