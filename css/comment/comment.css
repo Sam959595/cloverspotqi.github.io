@@ -48,7 +48,7 @@ section.hh button {
         font: 600 16px system-ui;
 
         background: var(--gray-18);
-        color: var(--red-1)
+        color: var(--gray-1)
 }
 
 /* var */
