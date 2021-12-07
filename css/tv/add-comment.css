@@ -15,11 +15,6 @@ section.ww figure {
 section.ww select {
         width: 100%;
 
-        border-radius: 0;
-
-        font: 13px/1.38462 system-ui;
-	letter-spacing: -.005em;
-
         background: none
 }
 
