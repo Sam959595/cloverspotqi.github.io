@@ -38,6 +38,7 @@ section.ww time {
 /* hh */
 
 section.hh a {
+        position: fixed;
         bottom: 0;
 
         display: block;
