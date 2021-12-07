@@ -1,6 +1,6 @@
 /* ww */
 
-section:where(.ww, .hh) {
+section.ww {
         margin: var(--padding)
 }
 
@@ -42,6 +42,8 @@ section.hh a {
         inset: auto 0 0;
 
         display: block;
+
+        padding-bottom: var(--padding);
 
         text-align: center;
 
