@@ -28,6 +28,10 @@ section.ww textarea {
         background: none
 }
 
+section.ww textarea::-webkit-input-placeholder {
+        color: var(--gray-6)
+}
+
 /* var */
 
 @media screen and (min-width: 320px) and (max-width: 728px) {
