@@ -29,6 +29,8 @@ section.ww textarea::-webkit-input-placeholder {
 section.ww p {
         margin-top: .5em;
 
+        text-align: right;
+
         font: 13px/1.38462 system-ui;
 	letter-spacing: -.005em
 }
