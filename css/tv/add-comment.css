@@ -13,6 +13,9 @@ section.ww figure {
 }
 
 section.ww select {
+        font: 13px/1.38462 system-ui;
+	letter-spacing: -.005em;
+
         background: none
 }
 
