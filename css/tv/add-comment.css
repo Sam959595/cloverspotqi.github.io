@@ -38,6 +38,17 @@ section.ww select {
         background: none
 }
 
+section.ww {
+        width: 100%;
+        height: 45px;
+
+        border-radius: 11px;
+
+        font: 600 16px system-ui;
+
+        background: var(--gray-18)
+}
+
 /* var */
 
 @media screen and (min-width: 320px) and (max-width: 728px) {
