@@ -12,17 +12,7 @@ section.ww figure {
         background-color: var(--gray-18)
 }
 
-section.ww p {
-        font: 13px/1.38462 system-ui;
-	letter-spacing: -.005em
-}
-section.ww select {
-        background: none
-}
-
 section.ww textarea {
-        margin-top: .5em;
-
         width: 100%;
 
         border-radius: 0;
@@ -34,6 +24,16 @@ section.ww textarea {
 
 section.ww textarea::-webkit-input-placeholder {
         color: var(--gray-6)
+}
+
+section.ww p {
+        margin-top: .5em;
+
+        font: 13px/1.38462 system-ui;
+	letter-spacing: -.005em
+}
+section.ww select {
+        background: none
 }
 
 /* var */
