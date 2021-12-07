@@ -12,10 +12,11 @@ section.ww figure {
         background-color: var(--gray-18)
 }
 
-section.ww select {
+section.ww p {
         font: 13px/1.38462 system-ui;
-	letter-spacing: -.005em;
-
+	letter-spacing: -.005em
+}
+section.ww select {
         background: none
 }
 
