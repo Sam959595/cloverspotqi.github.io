@@ -32,7 +32,7 @@ section.rr select {
 section.rr h5 {
         margin-top: .8em;
 
-	font: 400 14px/1.42859 system-ui;
+	font: 14px/1.42859 system-ui;
         letter-spacing: -.01em;
 
     color: var(--gray-10)
@@ -124,7 +124,7 @@ section.uu dl div > * {
 	display: table-cell;
 	vertical-align: baseline;
 
-	font: 400 13px/1.38462 system-ui;
+	font: 13px/1.38462 system-ui;
 	letter-spacing: -.005em
 }
 
@@ -174,7 +174,7 @@ section.bb p {
     text-overflow: ellipsis;
     overflow: hidden;
 
-    font: 400 11px/1.25648 system-ui
+    font: 11px/1.25648 system-ui
 }
 
 /* ff */
@@ -198,7 +198,7 @@ section.ff p {
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 
-        font: 400 14px/1.42859 system-ui
+        font: 14px/1.42859 system-ui
 }
 
 section.ff :where(p b, time) {
@@ -216,7 +216,7 @@ section.ff h5 {
 
         text-align: center;
 
-        font: 400 17px/1.47059 system-ui;
+        font: 17px/1.47059 system-ui;
 
         color: var(--gray-6)
 }
@@ -255,7 +255,7 @@ section.kk li + li h5 {
 section.kk h5 {
 	padding: 10px 0;
 
-	font: 400 21px system-ui;
+	font: 21px system-ui;
 
 	color: inherit
 }
