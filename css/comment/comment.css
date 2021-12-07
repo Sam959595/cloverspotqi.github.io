@@ -40,7 +40,7 @@ section.ww time {
 /* hh */
 
 section.hh a {
-        display: inline-block;
+        display: block;
 
         text-align: center;
 
