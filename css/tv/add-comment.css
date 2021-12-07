@@ -17,11 +17,13 @@ section.ww select {
 }
 
 section.ww textarea {
+        margin-top: 2em;
+
         width: 100%;
 
         border-radius: 0;
 
-        font: 13px/1.38462 system-ui;
+        font: 17px/1.38462 system-ui;
 	letter-spacing: -.005em;
 
         background: none
