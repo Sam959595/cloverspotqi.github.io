@@ -38,6 +38,8 @@ section.ww time {
 /* hh */
 
 section.hh a {
+        bottom: 0;
+
         display: block;
 
         text-align: center;
