@@ -32,7 +32,7 @@ a, u {
 ul, ol {
 	list-style: none
 }
-input, select {
+input, select, textarea {
 	-webkit-appearance: none
 }
 select:focus {
