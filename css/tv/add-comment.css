@@ -31,7 +31,7 @@ section.ww p {
 
         text-align: right;
 
-        font: 13px/1.38462 system-ui;
+        font: 13px system-ui;
 	letter-spacing: -.005em;
 
         color: var(--gray-6)
