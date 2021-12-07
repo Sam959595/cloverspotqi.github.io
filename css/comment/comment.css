@@ -43,7 +43,7 @@ section.hh a {
 
         display: block;
 
-        padding-bottom: var(--padding);
+        padding: var(--padding) 0;
 
         text-align: center;
 
