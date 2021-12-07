@@ -17,12 +17,10 @@ section.ww textarea {
 
         border-radius: 0;
 
-        background: none
-}
-
-section.ww :where(div > *, time) {
         font: 13px/1.38462 system-ui;
-	letter-spacing: -.005em
+	letter-spacing: -.005em;
+
+        background: none
 }
 
 /* var */
