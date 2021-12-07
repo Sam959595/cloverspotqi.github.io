@@ -12,6 +12,17 @@ section.ww figure {
         background-color: var(--gray-18)
 }
 
+section.ww select {
+        width: 100%;
+
+        border-radius: 0;
+
+        font: 13px/1.38462 system-ui;
+	letter-spacing: -.005em;
+
+        background: none
+}
+
 section.ww textarea {
         width: 100%;
 
