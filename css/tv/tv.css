@@ -200,7 +200,7 @@ section.ff p {
         font: 400 14px/1.42859 system-ui
 }
 
-section.ff time {
+section.ff :where(p b, time) {
         color: var(--gray-6)
 }
 
