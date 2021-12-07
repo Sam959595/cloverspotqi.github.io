@@ -80,7 +80,7 @@ select, textarea, span {
 body {
 	background-color: var(--gray-a)
 }
-h1, h2, h3, h4, h5, h6, table, span {
+h1, h2, h3, h4, h5, h6, table, textarea, span {
 	color: var(--gray-1)
 }
 p, time {
