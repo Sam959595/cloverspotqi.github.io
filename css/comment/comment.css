@@ -39,7 +39,7 @@ section.ww time {
 
 section.hh a {
         position: fixed;
-        bottom: 0;
+        inset: auto 0 0;
 
         display: block;
 
