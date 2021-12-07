@@ -39,6 +39,8 @@ section.ww select {
 }
 
 section.ww button {
+        margin-top: var(--padding);
+
         width: 100%;
         height: 45px;
 
