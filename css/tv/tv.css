@@ -61,7 +61,7 @@ section.rr h5 {
 
 section.tt {
         margin: 3em var(--padding) 0;
-        padding: 15px 0;
+        padding: 10px 0;
 
         border-top: .1px solid var(--gray-3)
 }
