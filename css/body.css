@@ -12,7 +12,7 @@
 
 	-webkit-font-smoothing: antialiased
 }
-*:not(input) {
+*:not(input, textarea) {
 	-webkit-user-select: none
 }
 .x {
@@ -38,10 +38,10 @@ input, select, textarea {
 select:focus {
         opacity: .5
 }
-input, button, select, hr {
+input, button, select, textarea, hr {
 	border: none
 }
-input, select, button {
+input, select, textarea, button {
 	outline: none
 }
 input[type="submit"], button, span {
