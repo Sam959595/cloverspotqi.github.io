@@ -20,6 +20,9 @@ section.ww :where(div > *, time) {
         font: 400 13px/1.38462 system-ui;
 	letter-spacing: -.005em
 }
+section.ww :where(p b, time) {
+        color: var(--gray-6)
+}
 
 section.ww figure > p {
         margin: .5em 0;
@@ -30,9 +33,7 @@ section.ww figure > p {
 section.ww time {
         display: block;
 
-        text-align: right;
-
-        color: var(--gray-6)
+        text-align: right
 }
 
 /* hh */
