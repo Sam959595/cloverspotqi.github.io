@@ -28,9 +28,7 @@ section.ww figure > p {
 }
 
 section.ww time {
-        width: 100%;
-
-        display: inline-block;
+        display: block;
 
         text-align: right;
 
@@ -44,7 +42,7 @@ section.hh a {
 
         text-align: center;
 
-        font: 400 16px system-ui
+        font: 400 14px system-ui
 }
 
 /* var */
