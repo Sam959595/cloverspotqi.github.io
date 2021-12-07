@@ -12,43 +12,8 @@ section.ww figure {
         background-color: var(--gray-18)
 }
 
-section.ww div {
-        display: flex;
-        justify-content: space-between
-}
-section.ww :where(div > *, time) {
-        font: 400 13px/1.38462 system-ui;
-	letter-spacing: -.005em
-}
-section.ww :where(p b, time) {
-        color: var(--gray-6)
-}
-
-section.ww figure > p {
-        margin: .5em 0;
-
-        font: 400 14px/1.42859 system-ui
-}
-
-section.ww time {
-        display: block;
-
-        text-align: right
-}
-
-/* hh */
-
-section.hh a {
-        position: fixed;
-        inset: auto 0 0;
-
-        display: block;
-
-        padding: var(--padding) 0;
-
-        text-align: center;
-
-        font: 400 14px system-ui
+section.ww textarea {
+        font: 14px/1.48 system-ui
 }
 
 /* var */
