@@ -19,7 +19,7 @@
 	-webkit-touch-callout: none
 }
 
-a, strong, b, sup, sub, u, ins, del, i, s, mark, small, q, em, span, time {
+a, strong, b, sup, sub, u, ins, del, i, s, mark, small, q, em, select, span, time {
 	font: inherit;
 	letter-spacing: inherit
 }
