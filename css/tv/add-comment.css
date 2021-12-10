@@ -26,10 +26,11 @@ section.ww textarea::-webkit-input-placeholder {
         color: var(--gray-6)
 }
 
-section.ww p {
+section.ww div {
         margin-top: .5em;
 
-        text-align: right;
+        display: flex;
+        justify-content: space-between;
 
         font: 13px system-ui;
 	letter-spacing: -.005em;
