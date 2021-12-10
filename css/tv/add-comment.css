@@ -35,7 +35,7 @@ section.ww div {
         color: var(--gray-6)
 }
 section.ww :where(select, button) {
-        font: 13px system-ui;
+        font: 600 13px system-ui;
 	letter-spacing: -.005em;
 
         background: none
