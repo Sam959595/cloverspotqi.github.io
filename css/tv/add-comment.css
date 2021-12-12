@@ -42,7 +42,9 @@ section.ww :where(select, button) {
 }
 
 section.ww button {
-        opacity: .5
+        opacity: .5;
+
+        pointer-events: none
 }
 
 /* var */
