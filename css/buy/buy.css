@@ -134,34 +134,7 @@ section.zz div button:disabled {
     color: #007aff80
 }
 
-/* nav */
-
-nav {
-    z-index: 5;
-
-    position: fixed;
-
-    top: 0;
-    width: 100%;
-
-    padding: 1em;
-
-    text-align: center;
-
-    border-bottom: .1px solid var(--gray-3);
-
-    /* border: solid var(--gray-7);
-    border-width: .1px 0; */
-
-    -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
-    background-color: var(--soft-1)
-}
-nav h6 {
-    font: normal 400 14px/1.42859 system-ui;
-    letter-spacing: 0
-}
-
-/* 5 */
+/* rr */
 
 section.rr {
 	text-align: center
