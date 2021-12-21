@@ -443,25 +443,6 @@ section.kk h5 {
 	color: inherit
 }
 
-/* 9 */
-
-footer {
-    padding-bottom: env(safe-area-inset-bottom);
-	
-    background-color: var(--gray-8)
-}
-footer ul {
-    padding: 1em 0
-}
-footer li {
-    margin: 0 max(env(safe-area-inset-right), 16px) 0 max(env(safe-area-inset-left), 16px);
-
-    color: var(--gray-9)
-}
-footer li + li {
-	margin-top: 1em
-}
-
 /* 4 */
 
 @media screen and (min-width: 896px) {
