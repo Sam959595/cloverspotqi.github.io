@@ -459,6 +459,10 @@ section.tt h3 {
 
 /* 1 */
 
+section.kk {
+        margin-bottom: env(safe-area-inset-bottom)
+}
+
 section.kk a {
 	display: block;
 
