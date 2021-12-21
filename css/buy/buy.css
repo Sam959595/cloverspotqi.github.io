@@ -137,6 +137,8 @@ section.zz div button:disabled {
 /* vv */
 
 section.vv {
+    margin: 0 var(--padding);
+
     text-align: center
 }
 
