@@ -17,6 +17,7 @@
 
 section.ss {
     opacity: 1;
+    pointer-events: none;
 
     z-index: 5;
     position: fixed;
@@ -24,8 +25,6 @@ section.ss {
     inset: 0 0 auto;
 
     margin-top: 1em;
-
-    pointer-events: none;
 
     display: flex;
     justify-content: center
@@ -92,8 +91,7 @@ section.zz li:nth-child(4) {
 }
 
 section.zz h5 {
-    font: normal 600 17px system-ui;
-    letter-spacing: 0
+    font: 600 17px system-ui;
 }
 
 section.zz table {
@@ -121,8 +119,7 @@ section.zz div button {
 
     border-top: .1px solid var(--gray-8);
 
-    font: normal 400 17px system-ui;
-    letter-spacing: 0;
+    font: 17px system-ui;
 
     background: none
 }
@@ -152,14 +149,12 @@ section.vv div p {
 section.vv h5 {
 	margin: .5cm 1cm .5em;
 
-	font: normal 600 14px/1.2 system-ui;
-    letter-spacing: 0
+	font: 600 14px/1.2 system-ui;
 }
 section.vv h6 {
     margin-bottom: .8em;
 
-    font: normal 400 14px/1.2 system-ui;
-    letter-spacing: 0;
+    font: 14px/1.2 system-ui;
 
     color: var(--orange-1)
 }
@@ -228,8 +223,7 @@ section.pp select {
 
     border-radius: 17px;
 
-    font: normal 600 16px system-ui;
-    letter-spacing: 0;
+    font: 600 16px system-ui;
 
     background-color: var(--gray-5);
     color: var(--blue-1);
@@ -253,7 +247,7 @@ dl div > * {
 	display: table-cell;
 	vertical-align: baseline;
 
-	font: normal 400 13px/1.38462 system-ui;
+	font: 13px/1.38462 system-ui;
 	letter-spacing: -.005em
 }
 
@@ -300,7 +294,7 @@ section.ff {
 	justify-content: space-evenly
 }
 section.ff h5 {
-	font: normal 400 11px/1.2 system-ui;
+	font: 11px/1.2 system-ui;
     letter-spacing: -.008em;
 
 	color: var(--gray-6)
@@ -354,21 +348,19 @@ section.hh ul li figure {
 }
 
 section.hh ul h2 {
-	font: normal 600 19px system-ui;
-    letter-spacing: 0;
+	font: 600 19px system-ui;
 
 	/* color: var(--const-2) */
 }
 section.hh ul p {
 	/* margin-top: .5em;
 
-    font: normal 400 14px/1.42859 system-ui;
+    font: 14px/1.42859 system-ui;
     letter-spacing: -.016em */
 }
 
 section.hh :where(h5, h6) {
-	font: normal 600 14px/1.2 system-ui;
-    letter-spacing: 0
+	font: 600 14px/1.2 system-ui
 }
 section.hh h6 {
 	margin: .5em 0;
@@ -389,8 +381,7 @@ section.tt {
 section.tt h3 {
     margin: .48em 0;
 
-    font: normal 700 21px/1.14286 system-ui;
-    letter-spacing: 0
+    font: 700 21px/1.14286 system-ui
 }
 
 /* kk */
@@ -412,8 +403,7 @@ section.kk li + li h5 {
 section.kk h5 {
 	padding: 10px 0;
 
-	font: normal 400 21px system-ui;
-    letter-spacing: 0;
+	font: 21px system-ui;
 
 	color: inherit
 }
@@ -431,8 +421,7 @@ section.kk h5 {
 		width: 45%
 	}
 	section.vv h5 {
-		font: normal 600 17px/1.2 system-ui;
-		letter-spacing: 0
+		font: 600 17px/1.2 system-ui
 	}
 	section.bb {
 		margin: auto 0 auto auto;
