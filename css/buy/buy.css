@@ -1,16 +1,4 @@
-.x {
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden
-}
-.x {
-	display: -webkit-box;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
-	overflow: hidden
-}
-
-/* 0 */
+/* class */
 
 .no-scroll {
     height: 100%;
@@ -25,7 +13,7 @@
     opacity: 1 !important
 }
 
-/* 1 */
+/* ss */
 
 section.ss {
     z-index: 5;
@@ -55,7 +43,7 @@ section.ss h6 {
     background-color: var(--soft-1)
 }
 
-/* 1 */
+/* zz */
 
 section.zz {
     z-index: 5;
@@ -146,7 +134,7 @@ section.zz div button:disabled {
     color: #007aff80
 }
 
-/* 1 */
+/* nav */
 
 nav {
     z-index: 5;
@@ -179,7 +167,7 @@ section.rr {
 	text-align: center
 }
 
-/* 5 */
+/* vv */
 
 @media screen and (min-width: 320px) and (max-width: 896px) {
 	section.vv {
@@ -208,7 +196,7 @@ section.vv figure {
 	background: center/cover
 }
 
-/* 1 */
+/* bb */
 
 @media screen and (min-width: 320px) and (max-width: 896px) {
 	section.bb {
@@ -258,7 +246,7 @@ section.bb button {
 	color: var(--blue-1)
 }
 
-/* 1 */
+/* nn */
 
 section.nn ul {
     display: grid;
@@ -277,7 +265,7 @@ section.nn img {
 	width: 6.5cm
 }
 
-/* 1 */
+/* pp */
 
 section.pp {
 	/* margin: .5cm auto;
@@ -304,7 +292,7 @@ section.pp select:focus {
     opacity: .5
 }
 
-/* 1 */
+/* uu */
 
 section.uu {
         margin: 0 var(--padding)
@@ -355,7 +343,7 @@ dl dd {
 	bottom: 0
 }
 
-/* 1 */
+/* ff */
 
 section.ff {
 	margin-bottom: .5cm;
@@ -370,7 +358,7 @@ section.ff h5 {
 	color: var(--gray-6)
 }
 
-/* 1 */
+/* hh */
 
 section.hh {
 	/* text-align: center */
@@ -442,7 +430,7 @@ section.hh h6 {
 	color: var(--orange-1)
 }
 
-/* 1 */
+/* tt */
 
 section.tt {
 	/* margin: 1cm auto 0;
@@ -457,7 +445,7 @@ section.tt h3 {
     letter-spacing: 0
 }
 
-/* 1 */
+/* kk */
 
 section.kk {
         margin-bottom: env(safe-area-inset-bottom)
