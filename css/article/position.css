@@ -20,7 +20,7 @@ nav div, picture img, footer ul, main ul {
         width: 576px
     }
 
-    nav, footer li {
+    /* nav, */ footer li {
         padding: 0 22px
     }
     @media screen and (orientation: landscape) {
