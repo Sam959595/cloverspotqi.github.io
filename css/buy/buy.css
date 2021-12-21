@@ -46,14 +46,14 @@ section.ss h6 {
 /* zz */
 
 section.zz {
+    opacity: 0;
+    pointer-events: none;
+
     z-index: 5;
 
     position: fixed;
 
     inset: 0;
-
-    opacity: 0;
-    pointer-events: none;
 
     display: flex;
     justify-content: center;
