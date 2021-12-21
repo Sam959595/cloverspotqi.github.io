@@ -25,11 +25,17 @@ nav {
 
 	position: fixed;
 
+        /* top: 0; */
 	width: 100%;
 
         padding: 1em;
 
 	text-align: center;
+
+        border-bottom: .1px solid var(--gray-3);
+
+        /* border: solid var(--gray-7);
+        border-width: .1px 0; */
 
 	-webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
 	background-color: var(--soft-1);
