@@ -110,9 +110,9 @@ nav div, picture img, footer ul, main ul {
         padding: 0 16px
     }
 
-    nav {
+    /* nav {
         height: 48px
-    }
+    } */
     nav a {
         font: normal 600 19px system-ui;
         letter-spacing: .012em
