@@ -142,6 +142,13 @@ section.rr {
 
 /* vv */
 
+section.vv div p {
+    font: 11px/1.2 system-ui;
+    letter-spacing: -.008em;
+
+    color: var(--gray-6)
+}
+
 @media screen and (min-width: 320px) and (max-width: 896px) {
 	section.vv {
 		/* margin: 1cm 1cm .5cm */
@@ -176,15 +183,6 @@ section.vv figure {
 		margin: .5cm auto 0;
 		width: 90%
 	}
-}
-
-section.bb p {
-    margin-bottom: .5cm;
-
-    font: normal 400 11px/1.2 system-ui;
-    letter-spacing: -.008em;
-
-    color: var(--gray-6)
 }
 
 section.bb > div {
