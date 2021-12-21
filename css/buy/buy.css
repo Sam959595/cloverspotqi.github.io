@@ -184,7 +184,7 @@ section.vv button {
 section.vv div:nth-child(3) button:first-child {
         margin-right: .8em
 }
-section.bb button:last-child {
+section.bb div:nth-child(3) button:last-child {
     -webkit-appearance: -apple-pay-button;
     -apple-pay-button-style: var(--gray-b)
 }
