@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    let o = $('section.bb div button:last-child'),
+    let o = $('section.vv div:nth-child(3) button:last-child'),
     e = $('section.zz div button:last-child'),
     h = $('html'),
     b = $('body'),
