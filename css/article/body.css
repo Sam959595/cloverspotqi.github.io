@@ -371,6 +371,8 @@ footer ul {
 	padding: 1em 0
 }
 footer li {
+        margin: 0 max(env(safe-area-inset-right), 16px) 0 max(env(safe-area-inset-left), 16px);
+
 	color: var(--gray-9)
 }
 footer li+li {
