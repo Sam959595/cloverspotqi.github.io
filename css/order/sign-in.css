@@ -86,8 +86,14 @@ section.kk {
 section.kk a {
 	display: inline-block;
 
+        padding: var(--padding);
+
 	font: normal 400 14px system-ui;
     letter-spacing: 0
+}
+
+section.kk a:first-child {
+	margin-right: 2em
 }
 
 /* 4 */
