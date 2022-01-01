@@ -86,7 +86,7 @@ section.kk {
 	text-align: center
 }
 section.kk a {
-	display: inline-block;
+	display: block;
 
 	font: normal 400 14px system-ui;
     letter-spacing: 0
