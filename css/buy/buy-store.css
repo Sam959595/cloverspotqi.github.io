@@ -115,9 +115,14 @@ section.nn ul {
 
 /* 5 */
 
+section.kk {
+        margin-bottom: env(safe-area-inset-bottom)
+}
+
 section.kk a {
-    display: block;
-    padding-left: var(--padding)
+	display: block;
+
+	padding-left: var(--padding)
 }
 
 section.kk li + li h5 {
@@ -125,18 +130,11 @@ section.kk li + li h5 {
 }
 
 section.kk h5 {
-    padding: 10px 0;
+	padding: 10px 0;
 
-    font: normal 400 21px system-ui;
-	letter-spacing: 0;
+	font: 21px system-ui;
 
-    color: inherit
-}
-
-/* 6 */
-
-footer {
-	/* margin-bottom: env(safe-area-inset-bottom) */
+	color: inherit
 }
 
 /* 8 */
