@@ -81,7 +81,7 @@ section.kk a {
 }
 
 section.kk a:first-child {
-	margin-right: 2em
+	margin-right: var(--padding)
 }
 
 /* 4 */
