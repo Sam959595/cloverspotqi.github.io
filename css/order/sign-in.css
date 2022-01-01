@@ -81,12 +81,12 @@ section.kk {
         position: fixed;
         inset: auto 0 0;
 
+        padding: var(--padding);
+
 	text-align: center
 }
 section.kk a {
 	display: inline-block;
-
-        padding: var(--padding);
 
 	font: normal 400 14px system-ui;
     letter-spacing: 0
