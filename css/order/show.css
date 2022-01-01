@@ -41,6 +41,10 @@ section.pp ul {
     grid-template-columns: repeat(2, 1fr)
 }
 
+section.pp li {
+    background-color: var(--gray-15)
+}
+
 section.pp li:nth-child(-n+2) {
     border-top: .1px solid var(--gray-3)
 }
