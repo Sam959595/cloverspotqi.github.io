@@ -86,7 +86,7 @@ section.kk a {
 	font: normal 400 17px system-ui;
     letter-spacing: 0
 }
-section.kk a+a {
+section.kk a + a {
 	margin-top: .5cm
 }
 
