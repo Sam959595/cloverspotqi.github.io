@@ -67,6 +67,8 @@ section.kk {
         position: fixed;
         inset: auto 0 0;
 
+        display: flex;
+
         padding: var(--padding);
 
 	text-align: center
