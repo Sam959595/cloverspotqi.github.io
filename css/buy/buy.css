@@ -112,23 +112,27 @@ section.zz :where(td:first-child, li:last-child h6) {
     opacity: .3
 }
 
+section.zz div {
+    border-top: .1px solid var(--gray-8)
+}
+
 section.zz div button {
     width: 100%;
 
     padding: .8em 0;
-
-    border-top: .1px solid var(--gray-8);
 
     font: 17px system-ui;
 
     background: none
 }
 section.zz div button:last-child {
+    border-top: .1px solid var(--gray-8);
+
     font-weight: 600
 }
 
 section.zz div button:disabled {
-    color: #007aff80
+    opacity: .5
 }
 
 /* vv */
