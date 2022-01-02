@@ -435,7 +435,7 @@ section.kk h5 {
 }
 @media screen and (min-width: 320px) and (max-width: 728px) {
 	:root {
-        --padding: 16px
+        --padding: 20px
     }
 }
 
