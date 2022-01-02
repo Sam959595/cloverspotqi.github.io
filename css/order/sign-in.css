@@ -70,9 +70,7 @@ section.kk {
         display: flex;
         justify-content: space-between;
 
-        padding: var(--padding);
-
-	text-align: center
+        padding: var(--padding)
 }
 section.kk a {
 	display: block;
