@@ -60,7 +60,7 @@ section.rr h5 {
 /* tt */
 
 section.tt {
-        margin: 15px var(--padding) 0;
+        margin: 35px var(--padding) 0;
         padding: 10px 0;
 
         border-top: .1px solid var(--gray-3)
