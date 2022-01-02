@@ -1,23 +1,9 @@
-.x {
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden
-}
-.x {
-	display: -webkit-box;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
-	overflow: hidden
-}
-
-/* 0 */
-
 section, table {
     margin: 0 auto;
     width: 90%
 }
 
-/* 1 */
+/* bb */
 
 section.bb {
     margin-top: 2cm;
@@ -28,7 +14,7 @@ section.bb h1 {
     letter-spacing: 0
 }
 
-/* 2 */
+/* table */
 
 table {
     margin: 2cm auto;
@@ -55,7 +41,7 @@ table td:nth-child(even) {
 	text-align: right
 }
 
-table tbody tr+tr {
+table tbody tr + tr {
 	border-top: .1px solid var(--gray-3)
 }
 
@@ -67,7 +53,7 @@ table tr:last-child td:last-child {
 	letter-spacing: 0
 }
 
-/* 3 */
+/* vv */
 
 section.vv {
     text-align: center
@@ -87,7 +73,7 @@ section.vv p {
     margin-top: 2em
 }
 
-/* 4 */
+/* color */
 
 @media screen and (prefers-color-scheme: light) {
 	:root {
