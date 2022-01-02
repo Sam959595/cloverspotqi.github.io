@@ -100,7 +100,7 @@ section.zz table {
     width: 100%
 }
 section.zz td {
-    vertical-align: middle
+    vertical-align: baseline
 }
 section.zz td:nth-child(odd) {
     text-align: left
