@@ -58,7 +58,7 @@ if (window.ApplePaySession) {
    n.click( () => {
    let p = {
        total: {
-           label: 'Kilugi Inc.',
+           label: 'Антанон ТАТ',
            amount: 899.00
        },
        countryCode: 'RU',
