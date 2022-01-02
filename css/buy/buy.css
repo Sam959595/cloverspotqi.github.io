@@ -123,7 +123,8 @@ section.zz div button {
 
     font: 17px system-ui;
 
-    background: none
+    background: none;
+    color: var(--blue-1)
 }
 section.zz div button:last-child {
     border-top: .1px solid var(--gray-8);
