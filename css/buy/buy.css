@@ -381,7 +381,7 @@ section.tt {
 	/* margin: 1cm auto 0;
 	width: 90% */
 
-        margin: 3em var(--padding) 0
+        margin: 35px var(--padding) 0
 }
 section.tt h3 {
     margin: .48em 0;
@@ -435,7 +435,7 @@ section.kk h5 {
 }
 @media screen and (min-width: 320px) and (max-width: 728px) {
 	:root {
-        --padding: 20px
+        --padding: 16px
     }
 }
 
