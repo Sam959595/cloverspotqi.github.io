@@ -32,7 +32,8 @@ section.ww figure > p {
 
 section.ww time {
         display: block;
-        justify-content: space-between
+
+        text-align: right
 }
 
 /* hh */
