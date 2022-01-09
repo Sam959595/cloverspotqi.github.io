@@ -25,10 +25,6 @@ section.rr p {
         color: var(--gray-6)
 }
 
-section.rr select {
-    background: none
-}
-
 section.rr h5 {
         margin-top: .8em;
 
@@ -142,8 +138,7 @@ section.uu dl dd {
 }
 
 section.uu select {
-	background: none;
-	color: var(--blue-1)
+	background: none
 }
 
 /* bb */
