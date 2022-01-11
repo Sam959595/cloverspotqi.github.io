@@ -215,18 +215,11 @@ section.nn img {
 
 /* pp */
 
-section.pp {
-	/* margin: .5cm auto;
-	width: 90% */
-}
-
 section.pp select {
     width: 230px;
     height: 60px;
 
     padding: 0 1em;
-
-    /* border-radius: 17px; */
 
     font: 600 16px system-ui;
 
