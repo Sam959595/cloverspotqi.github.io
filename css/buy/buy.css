@@ -261,11 +261,13 @@ dl div + div dt {
 }
 
 dl dt {
+	padding-left: 20px;
+	
 	text-align: right;
+	
 	color: var(--gray-6)
 }
 dl dd {
-	padding-left: 20px;
 	color: var(--gray-10)
 }
 
