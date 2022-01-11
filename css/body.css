@@ -44,7 +44,7 @@ input, button, select, textarea, hr {
 input, select, textarea, button {
 	outline: none
 }
-input[type="submit"], button, span {
+input[type="submit"], button, select, span {
 	cursor: pointer
 }
 hr {
