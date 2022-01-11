@@ -226,7 +226,7 @@ section.pp select {
 
     padding: 0 1em;
 
-    border-radius: 17px;
+    /* border-radius: 17px; */
 
     font: 600 16px system-ui;
 
