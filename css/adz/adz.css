@@ -1,7 +1,7 @@
 /* ww */
 
 section.ww {
-        margin: 2cm var(--padding) 0
+        margin: 2cm var(--padding) 5cm
 }
 
 section.ww figure {
@@ -44,6 +44,8 @@ section.ee {
         margin: 0 var(--padding)
 }
 section.ee a {
+        width: 100%;
+
         font: 21px system-ui;
 
         border-style: solid;
