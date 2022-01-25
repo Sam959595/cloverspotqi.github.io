@@ -38,6 +38,14 @@ section.ww :where(h4, a) {
 	font: normal 600 14px/1.42859 system-ui
 }
 
+/* pp */
+
+section.pp {
+        border-style: solid;
+        border-color: var(--gray-3);
+        border-width: .1px 0
+}
+
 /* rr */
 
 section.rr {
