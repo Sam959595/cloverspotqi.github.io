@@ -1,5 +1,9 @@
 /* ww */
 
+section.ww {
+        margin: 0 var(--padding)
+}
+
 section.ww figure {
 	position: relative
 }
