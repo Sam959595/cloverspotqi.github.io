@@ -31,11 +31,14 @@ section.ww img {
 }
 
 section.ww div {
-        margin-left: 1em
+        margin-left: 2em
 }
 
-section.ww :where(h4, a) {
-	font: normal 600 14px/1.42859 system-ui
+section.ww h4 {
+	font: 600 14px/1.42859 system-ui
+}
+section.ww p {
+        font: 14px sustem-ui
 }
 
 /* ee */
