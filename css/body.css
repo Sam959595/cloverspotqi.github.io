@@ -65,7 +65,7 @@ select, textarea, span {
 
 /* 1 */
 
-::-webkit-scrollbar:horizontal {
+::-webkit-scrollbar{
         display: none
 }
 :lang(ru) {
