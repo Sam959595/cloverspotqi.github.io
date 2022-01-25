@@ -44,7 +44,7 @@ section.ee {
         margin: 0 var(--padding)
 }
 section.ee a {
-        width: 100%;
+        padding: 10px 0;
 
         font: 21px system-ui;
 
