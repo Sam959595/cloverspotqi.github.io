@@ -1,14 +1,14 @@
 /* ww */
 
-section.ww {
+section.ww img {
     width: 90px;
     height: 90px
 }
 
-section.ww img {
+section.ww figure {
 	position: relative
 }
-section.ww img {
+section.ww img:before {
 	z-index: 1;
 	position: absolute;
 
