@@ -41,7 +41,9 @@ section.ww :where(h4, a) {
 /* ee */
 
 section.ee {
-        margin: 0 var(--padding)
+        margin: 0 var(--padding);
+
+        width: 100%
 }
 section.ee a {
         padding: 10px 0;
