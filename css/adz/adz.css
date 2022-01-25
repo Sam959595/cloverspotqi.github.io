@@ -38,12 +38,12 @@ section.ww :where(h4, a) {
 	font: normal 600 14px/1.42859 system-ui
 }
 
-/* pp */
+/* ee */
 
-section.pp {
+section.ee {
         margin: 0 var(--padding)
 }
-section.pp a {
+section.ee a {
         font: 21px system-ui;
 
         border-style: solid;
