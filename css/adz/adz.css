@@ -46,6 +46,8 @@ section.ee {
         width: 100%
 }
 section.ee a {
+        display: block;
+
         padding: 10px 0;
 
         font: 21px system-ui;
