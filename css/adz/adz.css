@@ -1,7 +1,7 @@
 /* ww */
 
 section.ww {
-        margin: 0 var(--padding)
+        margin: 2cm var(--padding) 0
 }
 
 section.ww figure {
