@@ -31,7 +31,7 @@ section.ww img {
 }
 
 section.ww div {
-        margin-left: 2em
+        margin-left: 1em
 }
 
 section.ww :where(h4, a) {
