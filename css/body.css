@@ -65,6 +65,9 @@ select, textarea, span {
 
 /* 1 */
 
+::-webkit-scrollbar:horizontal {
+        display: none
+}
 :lang(ru) {
 	quotes: "\00ab" "\00bb"
 }
