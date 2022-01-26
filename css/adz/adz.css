@@ -39,14 +39,14 @@ section.ww h4 {
 }
 
 section.ww div div }
-       margin-top: 1em;
+       padding-top: 1em;
 
        width: 100%;
 
        display: flex;
        justify-content: space-between
 }
-section.ww time {
+section.ww :where(time, select) {
        display: block
 }
 
