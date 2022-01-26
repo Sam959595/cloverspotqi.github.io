@@ -37,10 +37,11 @@ section.ww div {
 section.ww h4 {
 	font: 600 14px/1.42859 system-ui
 }
-section.ww a {
-       display: block;
+section.ww div div }
+       margin-top: 1em;
 
-       margin-top: 1em
+       display: flex;
+       justify-content: space-evenly
 }
 
 /* ee */
