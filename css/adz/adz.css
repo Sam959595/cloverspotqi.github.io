@@ -42,7 +42,7 @@ section.ww div div }
        margin-top: 1em;
 
        display: flex;
-       justify-content: space-evenly
+       justify-content: space-between
 }
 section.ww time {
        display: block
