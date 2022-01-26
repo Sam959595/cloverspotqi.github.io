@@ -37,6 +37,7 @@ section.ww div {
 section.ww h4 {
 	font: 600 14px/1.42859 system-ui
 }
+
 section.ww div div }
        margin-top: 1em;
 
@@ -49,7 +50,7 @@ section.ww div div }
 section.ee {
         margin: 0 var(--padding)
 }
-section.ee a{
+section.ee a {
         display: block;
 
         padding: 10px 0;
