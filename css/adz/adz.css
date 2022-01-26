@@ -37,7 +37,7 @@ section.ww div {
 section.ww h4 {
 	font: 600 14px/1.42859 system-ui
 }
-section.ww p {
+section.ww a {
         font: 14px system-ui
 }
 
@@ -48,7 +48,7 @@ section.ee {
 
         width: 100%
 }
-section.ee a {
+section.ee a{
         display: block;
 
         padding: 10px 0;
