@@ -44,9 +44,7 @@ section.ww a {
 /* ee */
 
 section.ee {
-        margin: 0 var(--padding);
-
-        width: 100%
+        margin: 0 var(--padding)
 }
 section.ee a{
         display: block;
