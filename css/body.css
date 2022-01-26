@@ -63,7 +63,7 @@ select, textarea, span {
 	-webkit-tap-highlight-color: transparent
 }
 select {
-        background: none
+        background-color: none
 }
 
 /* 1 */
