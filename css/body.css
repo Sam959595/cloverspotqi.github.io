@@ -62,6 +62,9 @@ em {
 select, textarea, span {
 	-webkit-tap-highlight-color: transparent
 }
+select {
+        background: none
+}
 
 /* 1 */
 
