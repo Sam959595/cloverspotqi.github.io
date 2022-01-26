@@ -31,7 +31,9 @@ section.ww img {
 }
 
 section.ww > div {
-        margin-left: 2em
+        margin-left: 2em;
+
+        width: 100%
 }
 
 section.ww h4 {
@@ -41,13 +43,8 @@ section.ww h4 {
 section.ww div div {
        padding-top: 1em;
 
-       width: 100%;
-
        display: flex;
        justify-content: space-between
-}
-section.ww :where(time, select) {
-       display: block
 }
 
 /* ee */
