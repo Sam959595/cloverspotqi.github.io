@@ -44,6 +44,9 @@ section.ww div div }
        display: flex;
        justify-content: space-evenly
 }
+section.ww time {
+       display: block
+}
 
 /* ee */
 
