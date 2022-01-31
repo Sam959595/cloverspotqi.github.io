@@ -139,17 +139,17 @@ section.zz div button:disabled {
 /* vv */
 
 section.vv {
-    margin: 0 var(--padding);
+    margin: var(--padding) var(--padding) 0;
 
     text-align: center
 }
 
-section.vv div p {
+/* section.vv div p {
     font: 11px/1.2 system-ui;
     letter-spacing: -.008em;
 
     color: var(--gray-6)
-}
+} */
 
 section.vv div:first-child {
     display: flex;
@@ -157,8 +157,6 @@ section.vv div:first-child {
 }
 
 section.vv h5 {
-	margin: .5cm 1cm .5em;
-
 	font: 600 14px/1.2 system-ui;
 }
 section.vv h6 {
