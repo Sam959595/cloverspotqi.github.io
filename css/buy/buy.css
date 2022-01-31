@@ -151,6 +151,11 @@ section.vv div p {
     color: var(--gray-6)
 }
 
+section.vv div:first-child {
+    display: flex;
+    justify-content: space-between
+}
+
 section.vv h5 {
 	margin: .5cm 1cm .5em;
 
