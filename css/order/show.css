@@ -53,11 +53,9 @@ section.pp li:nth-child(odd) {
 section.pp a {
 	display: block;
 
-    padding: 1em
-}
+    padding: 1em;
 
-section.pp a:not(h5, h6, p) {
-        text-align: right
+        text-align: center
 }
 
 section.pp input[type="checkbox"] {
@@ -78,17 +76,13 @@ section.pp img {
         aspect-ratio: 1/1
 }
 
-section.pp div {
-    margin-top: 1em;
-    text-align: center
-}
 section.pp :where(h5, h6) {
     font: 600 14px/1.2 system-ui
 }
 section.pp h6 {
     margin-top: .5em;
 
-    font-weight: 400;
+    font: 400 14px/1.2 system-ui
 
     color: var(--orange-1)
 }
