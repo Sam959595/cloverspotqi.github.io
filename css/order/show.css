@@ -24,8 +24,7 @@ section.tt {
 }
 
 section.tt select {
-	font: normal 400 19px system-ui;
-    letter-spacing: 0;
+	font: 19px system-ui;
 
     background: none;
     color: var(--blue-1)
@@ -79,8 +78,7 @@ section.pp div {
     text-align: center
 }
 section.pp :where(h5, h6) {
-    font: normal 600 14px/1.2 system-ui;
-    letter-spacing: 0
+    font: 600 14px/1.2 system-ui
 }
 section.pp h6 {
     margin: 3em 0 .5em;
@@ -89,12 +87,12 @@ section.pp h6 {
     color: var(--orange-1)
 }
 section.pp p {
-    font: normal 400 11px system-ui;
+    font: 11px system-ui;
     letter-spacing: -.008em
 }
 
 footer {
-	/* margin-bottom: env(safe-area-inset-bottom) */
+	margin-bottom: env(safe-area-inset-bottom)
 }
 
 /* 4 */
