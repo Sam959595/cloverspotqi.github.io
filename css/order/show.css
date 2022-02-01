@@ -53,8 +53,6 @@ section.pp li:nth-child(odd) {
 section.pp a {
 	display: block;
 
-        height: 15cm;
-
     padding: 1em;
 
 	text-align: right
@@ -73,7 +71,7 @@ section.pp input[type="checkbox"]:checked {
 }
 
 section.pp img {
-    width: 100%
+    aspect-ratio: 1/1
 }
 
 section.pp div {
