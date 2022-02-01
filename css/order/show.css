@@ -56,7 +56,7 @@ section.pp a {
     padding: 1em
 }
 
-section.pp a input[type="checkbox"] {
+section.pp a input {
         text-align: right
 }
 
