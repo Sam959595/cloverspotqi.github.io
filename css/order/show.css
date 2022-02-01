@@ -82,7 +82,7 @@ section.pp :where(h5, h6) {
     font: 600 14px/1.2 system-ui
 }
 section.pp h6 {
-    margin-too: .5em;
+    margin-top: .5em;
 
     font-weight: 400;
 
