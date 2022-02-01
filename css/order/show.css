@@ -53,9 +53,11 @@ section.pp li:nth-child(odd) {
 section.pp a {
 	display: block;
 
-    padding: 1em;
+    padding: 1em
+}
 
-	text-align: right
+section.pp a input[type="checkbox"] {
+        text-align: right
 }
 
 section.pp input[type="checkbox"] {
