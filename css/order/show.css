@@ -71,9 +71,9 @@ section.pp input[type="checkbox"]:checked {
 }
 
 section.pp img {
-    aspect-ratio: 1/1;
+        width: 100%;
 
-    width: 100%
+        aspect-ratio: 1/1
 }
 
 section.pp div {
