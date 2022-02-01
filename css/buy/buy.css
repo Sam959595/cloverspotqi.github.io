@@ -158,8 +158,6 @@ section.vv h5 {
 	font: 600 14px/1.2 system-ui;
 }
 section.vv h6 {
-    margin-bottom: .8em;
-
     font: 14px/1.2 system-ui;
 
     color: var(--orange-1)
