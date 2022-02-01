@@ -56,7 +56,7 @@ section.pp a {
     padding: 1em
 }
 
-section.pp a input {
+section.pp a:not(h5, h6, p) {
         text-align: right
 }
 
