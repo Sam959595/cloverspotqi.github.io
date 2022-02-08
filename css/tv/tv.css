@@ -198,17 +198,16 @@ section.ff :where(p b, time) {
 }
 
 section.ff h5 {
-        margin: 0 2em;
+        margin: 0 10%;
 
         height: 120px;
 
         display: flex;
         align-items: center;
-        justify-content: center;
 
         text-align: center;
 
-        font: 17px/1.47059 system-ui;
+        font: 16px system-ui;
 
         color: var(--gray-6)
 }
