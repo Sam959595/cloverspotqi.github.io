@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (b.height() > '60') {
         a[0].classList.add('hide');
 
-        let b = document.createElement('span');
+        b = document.createElement('span');
 
         b.innerHTML = 'далее';
         a[0].appendChild(b);
