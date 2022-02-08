@@ -217,7 +217,7 @@ section.ff h5 {
 
 /* hh */
 
-section.hh a {
+section.hh figure {
         display: flex;
         align-items: flex-end;
         justify-content: center;
