@@ -18,6 +18,9 @@
 .x {
 	-webkit-touch-callout: none
 }
+a {
+        -webkit-user-drag: element
+}
 
 a, strong, b, sup, sub, u, ins, del, i, s, mark, small, q, em, select, span, time {
 	font: inherit;
