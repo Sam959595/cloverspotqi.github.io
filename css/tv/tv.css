@@ -98,7 +98,7 @@ section:where(.pp, .ff, .hh) a {
 	
 	border-radius: 10px
 }
-section:where(.pp, .ff, .hh) a {
+section:where(.pp, .ff, .hh) figure {
 	height: 120px;
 	
 	background: center/cover var(--gray-18);
