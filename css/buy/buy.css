@@ -275,7 +275,7 @@ dl dd {
 
 	-webkit-mask: linear-gradient(to top, transparent 16px, black 0), linear-gradient(to left, transparent 40px, black 60px)
 }
-.hide a {
+.hide span {
 	position: absolute;
 
         inset: auto 0 0 auto;
