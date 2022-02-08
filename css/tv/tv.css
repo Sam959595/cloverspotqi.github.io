@@ -170,7 +170,7 @@ section.bb p {
 
 /* ff */
 
-section.ff figure {
+section.ff a {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -213,7 +213,7 @@ section.ff h5 {
 
 /* hh */
 
-section.hh figure {
+section.hh a {
         display: flex;
         align-items: flex-end;
         justify-content: center;
