@@ -100,7 +100,8 @@ section:where(.pp, .ff, .hh) figure {
 
 section:where(.ff, .hh) a {
 	display: block;
-	border-radius: 13px
+
+	border-radius: 10px
 }
 
 /* uu */
