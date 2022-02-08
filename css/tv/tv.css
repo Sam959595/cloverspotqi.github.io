@@ -207,7 +207,7 @@ section.ff h5 {
 
         text-align: center;
 
-        font: 16px system-ui;
+        font: 16px/1.47059 system-ui;
 
         color: var(--gray-6)
 }
