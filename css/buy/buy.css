@@ -278,8 +278,9 @@ dl dd {
 .hide a {
 	position: absolute;
 
-	right: 0;
-	bottom: 0
+        inset: auto 0 0 auto;
+
+        color: var(--blue-1)
 }
 
 /* ff */
