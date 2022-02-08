@@ -7,6 +7,8 @@ section.ww {
 section.ww figure {
         border-radius: 11px;
 
+        padding: 0 15px;
+
         background-color: var(--gray-18)
 }
 
@@ -17,7 +19,7 @@ section.ww textarea {
 
         border-radius: 0;
 
-        padding: 15px 15px 0;
+        padding-top: 15px;
 
         font: 16px/1.42859 system-ui;
 
@@ -29,7 +31,7 @@ section.ww textarea::-webkit-input-placeholder {
 }
 
 section.ww div {
-        padding: 15px;
+        padding: 15px 0;
 
         display: flex;
         justify-content: space-between;
