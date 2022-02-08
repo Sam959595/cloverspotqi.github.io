@@ -92,12 +92,14 @@ section:where(.pp, .bb, .ff, .hh) ul li:last-child {
 }
 
 section:where(.pp, .ff, .hh) a {
-	width: 250px;
+        width: 250px;
+
+        display: block;
+	
+	border-radius: 10px
+}
+section:where(.pp, .ff, .hh) a {
 	height: 120px;
-	
-	display: block;
-	
-	border-radius: 10px;
 	
 	background: center/cover var(--gray-18);
 	
@@ -172,7 +174,7 @@ section.bb p {
 
 /* ff */
 
-section.ff a {
+section.ff figure {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
