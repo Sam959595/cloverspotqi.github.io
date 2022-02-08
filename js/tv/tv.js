@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         a[0].appendChild(b);
     };
 
-   $('.string a').click(function () {
+   $('.string span').click(function () {
         a[0].classList.remove('hide');
         this.remove();
     });
