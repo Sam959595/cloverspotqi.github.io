@@ -169,9 +169,9 @@ section.vv figure {
 	background: center/cover
 }
 section.vv img {
-        width: 350px;
+        width: 300px;
 
-	aspect-ratio: 11/21;
+	aspect-ratio: 10/21;
         object-fit: cover
 }
 
@@ -325,10 +325,10 @@ section:where(.hh, .pp, .vv) ul li {
 	scroll-snap-align: start
 }
 
-section:where(.hh, .pp, .vv) ul li:first-child {
+section:where(.hh, .pp) ul li:first-child {
     padding-left: var(--padding)
 }
-section:where(.hh, .pp, .vv) ul li:last-child {
+section:where(.hh, .pp) ul li:last-child {
     padding-right: var(--padding)
 }
 
