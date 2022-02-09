@@ -168,6 +168,12 @@ section.vv figure {
 
 	background: center/cover
 }
+section.vv img {
+        width: 350px;
+
+	aspect-ratio: 11/21;
+        object-fit: cover
+}
 
 section.vv div:nth-child(3) {
      display: flex
