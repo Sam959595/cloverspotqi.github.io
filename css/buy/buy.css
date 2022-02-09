@@ -310,7 +310,7 @@ section.hh {
 	/* text-align: center */
 }
 
-section:where(.hh, .pp) ul {
+section:where(.hh, .pp, .vv) ul {
 	display: grid;
     grid-auto-flow: column;
     column-gap: 1em;
@@ -321,14 +321,14 @@ section:where(.hh, .pp) ul {
     scroll-padding-left: var(--padding)
 }
 
-section:where(.hh, .pp) ul li {
+section:where(.hh, .pp, .vv) ul li {
 	scroll-snap-align: start
 }
 
-section.hh ul li:first-child, section.pp ul li:first-child {
+section:where(.hh, .pp, .vv) ul li:first-child {
     padding-left: var(--padding)
 }
-section.hh ul li:last-child, section.pp ul li:last-child {
+section:where(.hh, .pp, .vv) ul li:last-child {
     padding-right: var(--padding)
 }
 
