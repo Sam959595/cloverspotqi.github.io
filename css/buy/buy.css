@@ -171,7 +171,7 @@ section.vv figure {
 section.vv img {
         width: 300px;
 
-	aspect-ratio: 9/21;
+	aspect-ratio: 1/1;
         object-fit: cover
 }
 
