@@ -138,7 +138,7 @@ section.zz div button:disabled {
 
 /* vv */
 
-section.vv {
+section.vv > *:not(ul) {
     margin-top: var(--padding)
 }
 
@@ -176,8 +176,6 @@ section.vv img {
 }
 
 section.vv div:nth-child(3) {
-     margin: var(--padding) var(--padding) 0;
-
      display: flex
 }
 
