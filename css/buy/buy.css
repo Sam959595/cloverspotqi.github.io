@@ -169,9 +169,10 @@ section.vv figure {
 	background: center/cover
 }
 section.vv img {
-        width: 300px;
+        width: 280px;
+        height: 350px;
 
-	aspect-ratio: 1/2;
+	/* aspect-ratio: 1/2; */
         object-fit: cover
 }
 
