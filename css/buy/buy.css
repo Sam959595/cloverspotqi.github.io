@@ -138,8 +138,8 @@ section.zz div button:disabled {
 
 /* vv */
 
-section.vv > *:not(ul) {
-    margin-top: var(--padding)
+section.vv > div {
+    margin: var(--padding) var(--padding) 0
 }
 
 /* section.vv div p {
