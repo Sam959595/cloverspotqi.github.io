@@ -168,6 +168,12 @@ section.vv figure {
 
 	background: center/cover
 }
+
+section.vv ul {
+        margin-top: var(--padding);
+
+        column-gap: 0
+}
 section.vv img {
         width: 280px;
         height: 350px;
