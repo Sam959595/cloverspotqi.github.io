@@ -176,9 +176,8 @@ section.vv ul {
 }
 section.vv img {
         width: 280px;
-        height: 350px;
 
-	/* aspect-ratio: 1/2; */
+	aspect-ratio: 1/1.5;
         object-fit: cover
 }
 
