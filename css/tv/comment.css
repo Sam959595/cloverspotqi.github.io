@@ -41,6 +41,9 @@ section.ww time {
 section.kk {
         position: fixed;
         inset: auto 0 0;
+	
+	display: flex;
+	justify-content: center;
 
         padding: var(--padding)
 }
@@ -50,8 +53,6 @@ section.kk a {
 	-webkit-line-clamp: 1;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
-
-        text-align: center;
 
         font: 14px system-ui
 }
