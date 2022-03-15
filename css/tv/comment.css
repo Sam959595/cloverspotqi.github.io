@@ -4,6 +4,10 @@ section {
 
 /* ww */
 
+section.ww {
+        margin-top: var(--padding)
+}
+
 section.ww figure {
         padding: 15px;
 
