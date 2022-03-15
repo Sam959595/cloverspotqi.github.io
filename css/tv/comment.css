@@ -1,8 +1,8 @@
-/* ww */
-
-section.ww {
-        margin: var(--padding)
+section {
+        margin: 0 var(--padding)
 }
+
+/* ww */
 
 section.ww figure {
         padding: 15px;
@@ -38,13 +38,18 @@ section.ww time {
 
 /* hh */
 
-section.hh a {
+section.kk {
         position: fixed;
         inset: auto 0 0;
 
-        display: block;
+        padding: var(--padding)
+}
 
-        padding: var(--padding) 0;
+section.kk a {
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 
         text-align: center;
 
