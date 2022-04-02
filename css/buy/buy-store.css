@@ -39,7 +39,7 @@ section.ss {
 }
 
 section.ss h1 {
-	font: normal 700 32px system-ui;
+	font: 700 32px system-ui;
     letter-spacing: .012em
 }
 
@@ -69,15 +69,13 @@ section.tt {
 section.tt h3 {
 	margin: .48em 0;
 
-	font: normal 700 21px/1.14286 system-ui;
-    letter-spacing: 0
+	font: 700 21px/1.14286 system-ui
 }
 
 /* 3 */
 
 section.hh :where(h5, h6) {
-	font: normal 600 14px/1.2 system-ui;
-    letter-spacing: 0
+	font: 600 14px/1.2 system-ui
 }
 section.hh h6 {
 	margin: .5em 0;
