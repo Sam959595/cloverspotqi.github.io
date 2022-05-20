@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let a = $('section.ww hr'),
         b = $('section.ww textarea');
 
-    if (b.val().length > 50) {
+    if (b.value.length > 50) {
         a.css('opacity', '1')
     } else {
         a.css('opacity', '0')
