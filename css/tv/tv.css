@@ -150,25 +150,27 @@ section.bb {
 }
 
 section.bb figure {
-    height: 90px;
-
-    border-radius: 100%;
-    border: .1px solid var(--gray-3);
-
-    background: center/cover var(--gray-18)
+	width: 90px;
+	height: 90px;
+	
+	border-radius: 100%;
+	border: .1px solid var(--gray-3);
+	
+	background: center/cover var(--gray-18)
 }
 
+section.bb :where(h6, p) {
+	width: 90px;
+	
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
 section.bb h6 {
-    margin-top: .8em
+	margin-top: .8em
 }
 section.bb p {
-    width: 90px;
-
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-
-    font: 11px/1.25648 system-ui
+	font: 11px/1.25648 system-ui
 }
 
 /* ff */
