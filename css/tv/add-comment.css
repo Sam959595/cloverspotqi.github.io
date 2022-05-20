@@ -30,6 +30,10 @@ section.ww textarea::-webkit-input-placeholder {
         color: var(--gray-6)
 }
 
+section.ww hr {
+	opacity: 0
+}
+
 section.ww div {
         margin-top: 15px;
 
