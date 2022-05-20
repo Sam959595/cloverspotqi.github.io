@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (b.value.length > 50) {
         a.css('opacity', '1')
+        consol.log('plus')
     } else {
         a.css('opacity', '0')
     };
