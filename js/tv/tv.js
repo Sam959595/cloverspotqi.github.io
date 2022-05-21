@@ -22,7 +22,7 @@ document.addEventListener('keyup', () => {
     b = $('section.ww hr'),
     c = 12;
 
-    if (a.value.split('\n').length >= c) {
+    if (a.value.split('\n').length > c) {
         b.css('opacity', '1')
     } else {
         b.css('opacity', '0')
