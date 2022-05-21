@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
     let a = $('.string'),
     b = $('.string div');
 
@@ -10,21 +9,22 @@ document.addEventListener('DOMContentLoaded', function () {
         b.innerHTML = 'далее';
         a[0].appendChild(b);
     };
-
-   $('.string span').click(function () {
+    
+    $('.string span').click(function () {
         a[0].classList.remove('hide');
         this.remove();
     });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    let a = $('section.ww hr'),
-        b = $('section.ww textarea');
 
-    if (b.value.length > 50) {
-        a.css('opacity', '1')
-        consol.log('plus')
-    } else {
-        a.css('opacity', '0')
+document.addEventListener('keyup', () => {
+    let a = $('section.ww textarea')[0],
+    b = $('section.ww hr'),
+    c = 581;
+
+    if (a.value.length >= c) {
+        b.css('opacity', '1')
+    } else if (a.value.length <= c) {
+        b.css('opacity', '0')
     };
 });
