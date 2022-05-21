@@ -218,10 +218,10 @@ section.ff h5 {
 
 /* hh */
 
-section.hh a {
+section.hh a, section.pp figure {
 	position: relative
 }
-section.hh a:before {
+section.hh a:before, section.pp figure:before {
     z-index: 1;
     position: absolute;
 	
