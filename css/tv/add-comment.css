@@ -7,8 +7,6 @@ section.ww {
 section.ww figure {
         border-radius: 11px;
 
-        padding: 0 15px 15px;
-
         background-color: var(--gray-18)
 }
 
@@ -19,7 +17,7 @@ section.ww textarea {
 
         border-radius: 0;
 
-        padding-top: 15px;
+        padding: 15px 15px 0;
 
         font: 16px/1.42859 system-ui;
 
@@ -31,7 +29,7 @@ section.ww textarea::-webkit-input-placeholder {
 }
 
 section.ww div {
-        margin-top: 15px;
+        padding: 15px;
 
         display: flex;
         justify-content: space-between;
@@ -63,7 +61,7 @@ section.ww button {
 
 @media screen and (prefers-color-scheme: light) {
 	:root {
-        --soft-1: #f5f5f7b8;
+		--soft-1: #f5f5f7b8;
                 --soft-2: #ffffffcc;
 
 		--gray-a: white;
@@ -75,7 +73,7 @@ section.ww button {
 		--gray-4: #86868b;
 		--gray-5: #e8e8ed;
 		--gray-6: #aaaab3;
-        --gray-7: #f5f5f7;
+		--gray-7: #f5f5f7;
                 --gray-8: #d2d2d7;
                 --gray-9: #0000000d;
                 --gray-10: #1d1d1f;
@@ -83,19 +81,19 @@ section.ww button {
                 --gray-18: #f5f5f7;
 		
 		--blue-1: #007aff;
-
-        --red-1: #ff2d55;
-
-        --orange-1: #fd9900;
-
-        --const-1: #17171d;
-        --const-2: #f5f5f7;
+		
+		--red-1: #ff2d55;
+		
+		--orange-1: #fd9900;
+		
+		--const-1: #17171d;
+		--const-2: #f5f5f7;
 	}
 }
 
 @media screen and (prefers-color-scheme: dark) {
 	:root {
-        --soft-1: #1d1d1fb8;
+		--soft-1: #1d1d1fb8;
                 --soft-2: #00000080;
         
 		--gray-a: black;
@@ -115,12 +113,12 @@ section.ww button {
                 --gray-18: #17171d;
 	
 		--blue-1: #0a84ff;
-
-        --red-1: #fb5c74;
-
-        --orange-1: #ff9f00;
-
-        --const-1: #17171d;
-        --const-2: #f5f5f7;
+		
+		--red-1: #fb5c74;
+		
+		--orange-1: #ff9f00;
+		
+		--const-1: #17171d;
+		--const-2: #f5f5f7;
 	}
 }
