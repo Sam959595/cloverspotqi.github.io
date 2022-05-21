@@ -218,7 +218,7 @@ section.ff h5 {
 
 /* hh */
 
-section.hh li {
+section.hh a {
 	position: relative
 }
 section.hh a:before {
