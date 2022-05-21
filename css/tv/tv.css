@@ -225,7 +225,7 @@ section.hh figure {
 
         padding: 10px
 }
-section.hh figure:before {
+section.hh a:before {
     z-index: 1;
     position: absolute;
     content: "";
