@@ -24,7 +24,7 @@ document.addEventListener('keyup', () => {
 
     if (a.value.split('\n').length >= c) {
         b.css('opacity', '1')
-    } else if (a.value.split('\n').length <= c) {
+    } else {
         b.css('opacity', '0')
     };
 });
