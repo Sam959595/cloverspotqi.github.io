@@ -16,7 +16,6 @@
     });
 });
 
-
 document.addEventListener('keyup', () => {
     let a = $('section.ww textarea')[0],
     b = $('section.ww hr'),
