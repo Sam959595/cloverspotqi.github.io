@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('keyup', () => {
     let a = $('section.ww textarea')[0],
     b = $('section.ww hr'),
-    c = 581;
+    c = 400;
 
     if (a.value.length >= c) {
         b.css('opacity', '1')
