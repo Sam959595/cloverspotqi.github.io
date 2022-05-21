@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
     let a = $('.string'),
     b = $('.string div');
 
