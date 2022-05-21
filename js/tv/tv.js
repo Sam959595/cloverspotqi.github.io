@@ -18,10 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('keyup', () => {
-    let a = $('section.ww textarea')[0],
-    b = $('section.ww hr');
+    let a = $('section.ww textarea')[0].scrollHeight,
+    b = $('section.ww hr'),
+    c = 279;
 
-    if (a.value.split('\n').length > 12) {
+    if (a > c) {
         b.css('opacity', '1')
     } else {
         b.css('opacity', '0')
