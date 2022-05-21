@@ -20,11 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('keyup', () => {
     let a = $('section.ww textarea')[0],
     b = $('section.ww hr'),
-    c = 400;
+    c = 12;
 
-    if (a.value.length >= c) {
+    if (a.value.split('\n').length > c) {
         b.css('opacity', '1')
-    } else if (a.value.length <= c) {
+    } else if (a.value.split('\n').length < c) {
         b.css('opacity', '0')
     };
 });
