@@ -19,10 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('keyup', () => {
     let a = $('section.ww textarea')[0],
-    b = $('section.ww hr'),
-    c = 12;
+    b = $('section.ww hr');
 
-    if (a.value.split('\n').length > c) {
+    if (a.value.split('\n').length > 12) {
         b.css('opacity', '1')
     } else {
         b.css('opacity', '0')
