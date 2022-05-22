@@ -55,7 +55,7 @@ section.bb > div {
 section.bb u {
     vertical-align: bottom;
 
-    font: 11px system-ui
+    font: 9px system-ui
 }
 section.bb .vvv u {
     color: var(--gray-20)
