@@ -261,7 +261,7 @@ main.kk li:nth-child(3n+2) a > div:last-child {
     justify-content: center;
 
 	border-style: solid;
-    border-width: .1px 0 .1px;
+    border-width: .1px 0;
     border-color: var(--gray-9)
 }
 
