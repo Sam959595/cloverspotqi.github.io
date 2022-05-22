@@ -91,11 +91,10 @@ section.nn div {
     display: flex;
 
     border-radius: 18px;
-    border: solid 2px var(--gray-8);
 
     font: 16px/1.42859 system-ui;
 
-    background: none
+    background-color: var(--gray-19)
 }
 
 section.nn textarea {
@@ -151,7 +150,7 @@ section.nn button {
     --gray-10: #1d1d1f;
     --gray-15: #f5f5f5;
     --gray-18: #f5f5f7;
-    --gray-19: #00000080;
+    --gray-19: #f5f5f780;
     
     --blue-1: #007aff;
 
@@ -184,7 +183,7 @@ section.nn button {
     --gray-10: #d5d5e2;
     --gray-15: #121212;
     --gray-18: #17171d;
-    --gray-19: #ffffff80;
+    --gray-19: #17171d80;
 
     --blue-1: #0a84ff;
 
