@@ -42,6 +42,9 @@ section.bb .ttt {
 }
 
 section.bb > div {
+    display: flex;
+    flex-direction: column;
+    
     margin-bottom: .2em;
     max-width: 8cm;
 
@@ -53,7 +56,7 @@ section.bb > div {
 }
 
 section.bb u {
-    vertical-align: bottom;
+    margin-left: auto;
 
     font: 9px system-ui
 }
