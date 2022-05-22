@@ -29,7 +29,7 @@ section.ww button:last-child {
 /* bb */
 
 section.bb {
-    margin: 1.8cm 0
+    padding: 1.8cm 0 max(env(safe-area-inset-bottom), 1.8cm)
 }
 
 section.bb main {
@@ -54,17 +54,19 @@ section.bb main > div {
 
     width: fit-content;
 
-    border-radius: 18px;
-
     font: 16px/1.2 system-ui
 }
 
 section.bb .vvv {
+    border-radius: 18px 18px 18px 5px;
+
     background-color: var(--gray-5);
     color: var(--gray-b)
 }
 section.bb .yyy {
     margin-left: auto;
+
+    border-radius: 18px 18px 5px 18px;
 
     background-color: var(--blue-1);
     color: white
