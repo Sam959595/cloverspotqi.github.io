@@ -73,7 +73,7 @@ section.bb .vvv {
 section.bb .yyy {
     margin-left: auto;
 
-    border-radius: 18px 18px 5px 18px;
+    border-radius: 18px;
 
     background-color: var(--blue-1);
     color: white
