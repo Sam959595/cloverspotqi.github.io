@@ -62,15 +62,15 @@ section.rr {
 section.ww {
     margin: 20px;
 
-    padding: 1em;
-
     border-radius: 18px;
 
     background-color: var(--gray-18)
 }
 
 section.ww div {
-    display: flex
+    display: flex;
+
+    padding: 1em
 }
 
 section.ww select {
@@ -93,7 +93,7 @@ section.ww select:last-child {
 }
 
 section.ww h5 {
-    margin-top: 1em;
+    padding: 1em;
 
     text-align: center;
 
