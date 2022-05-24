@@ -16,13 +16,11 @@ section.ww div {
     background-color: var(--gray-a)
 }
 
-section.ww button {
-    font: 17px system-ui;
-
-    background: none
+section.ww a {
+    font: 17px system-ui
 }
 
-section.ww button:last-child {
+section.ww a:last-child {
     font-weight: 600
 }
 
