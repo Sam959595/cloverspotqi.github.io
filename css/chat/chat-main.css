@@ -1,0 +1,177 @@
+/* hh */
+
+section.hh div {
+    padding: 1em 16px;
+
+    display: flex;
+    justify-content: end;
+
+    background-color: var(--gray-a)
+}
+
+section.hh a {
+    font: 17px system-ui
+}
+
+section.hh a:last-child {
+    font-weight: 600
+}
+
+/* nn */
+
+section.nn {
+    margin: 1cm 0;
+
+    display: flex;
+    justify-content: center
+}
+
+section.nn div {
+    width: fit-content;
+
+    padding: .3em;
+
+    display: flex;
+
+    border-radius: 12px;
+
+    background-color: var(--gray-18)
+}
+section.nn h1 {
+    padding: .5em 1.8em
+}
+
+section.nn div .ttt {
+    border-radius: 10px;
+
+    font-weight: 800;
+
+    background-color: var(--gray-5);
+    color: var(--blue-1)
+}
+
+/* rr */
+
+section.rr {
+    position: fixed;
+    inset: auto 0 0
+}
+
+/* ww */
+
+section.ww {
+    margin: 20px;
+
+    padding: 1em;
+
+    border-radius: 18px;
+
+    background-color: var(--gray-18)
+}
+
+section.ww div {
+    display: flex
+}
+
+section.ww div:first-child {
+    margin-bottom: .5em
+}
+
+section.ww select {
+    text-align: -webkit-center;
+	flex-direction: column;
+
+    width: 100%;
+
+    padding: .8em;
+
+    border-radius: 12px;
+
+    font: 700 14px system-ui;
+
+    background-color: var(--gray-5)
+}
+
+section.ww select:last-child {
+    margin-left: .5em
+}
+
+section.ww h5 {
+    margin-top: 1em;
+
+    text-align: center;
+
+    font: 11px system-ui;
+
+    color: var(--gray-4)
+}
+
+/* color */
+
+@media screen and (prefers-color-scheme: light) {
+:root {
+    --soft-1: #f5f5f7b8;
+    --soft-2: #ffffffcc;
+
+    --gray-a: white;
+    --gray-b: black;
+
+    --gray-1: #1d1d1f;
+    --gray-2: #8e8e93;
+    --gray-3: #d2d2d7;
+    --gray-4: #86868b;
+    --gray-5: #e8e8ed;
+    --gray-6: #aaaab3;
+    --gray-7: #f5f5f7;
+    --gray-8: #d2d2d7;
+    --gray-9: #0000000d;
+    --gray-10: #1d1d1f;
+    --gray-15: #f5f5f5;
+    --gray-18: #f5f5f7;
+    --gray-19: #e3e3e880;
+    --gray-20: #00000080;
+    
+    --blue-1: #007aff;
+
+    --red-1: #ff2d55;
+
+    --orange-1: #fd9900;
+
+    --const-1: #17171d;
+    --const-2: #f5f5f7;
+}
+}
+
+@media screen and (prefers-color-scheme: dark) {
+:root {
+    --soft-1: #1d1d1fb8;
+    --soft-2: #00000080;
+    
+    --gray-a: black;
+    --gray-b: white;
+    
+    --gray-1: #f5f5f7;
+    --gray-2: #8e8e93;
+    --gray-3: #212125;
+    --gray-4: #63636e;
+    --gray-5: #212125;
+    --gray-6: #63636e;
+    --gray-7: #1c1c1e;
+    --gray-8: #515154;
+    --gray-9: #00000033;
+    --gray-10: #d5d5e2;
+    --gray-15: #121212;
+    --gray-18: #17171d;
+    --gray-19: #24242d80;
+    --gray-20: #ffffff80;
+
+    --blue-1: #0a84ff;
+
+    --red-1: #fb5c74;
+
+    --orange-1: #ff9f00;
+
+    --const-1: #17171d;
+    --const-2: #f5f5f7;
+}
+}
