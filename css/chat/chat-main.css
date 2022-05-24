@@ -73,10 +73,6 @@ section.ww div {
     display: flex
 }
 
-section.ww div:first-child {
-    margin-bottom: .5em
-}
-
 section.ww select {
     text-align: -webkit-center;
 	flex-direction: column;
