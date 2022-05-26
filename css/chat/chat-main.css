@@ -42,7 +42,7 @@ section.nn h1 {
 }
 
 section.nn div .ttt {
-    border-radius: 10px;
+    border-radius: 9px;
 
     font-weight: 800;
 
@@ -74,8 +74,8 @@ section.ww div {
 }
 
 section.ww select {
-    text-align: -webkit-center;
 	flex-direction: column;
+    text-align: -webkit-center;
 
     width: 100%;
 
