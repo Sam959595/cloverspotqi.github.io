@@ -11,9 +11,9 @@ section.ww div {
     display: flex;
     justify-content: space-between;
 
-    border-bottom: solid .1px var(--gray-5);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
 
-    background-color: var(--gray-a)
+    background: linear-gradient(to top, transparent, black)
 }
 
 section.ww a {
