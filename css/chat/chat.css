@@ -13,7 +13,7 @@ section.ww div {
 
     -webkit-backdrop-filter: saturate(180%) blur(20px);
 
-    background: linear-gradient(to top, transparent, black)
+    background: linear-gradient(to top, transparent, var(--gray-a))
 }
 
 section.ww a {
