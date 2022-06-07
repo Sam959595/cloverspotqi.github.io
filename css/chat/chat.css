@@ -40,8 +40,8 @@ section.bb .ttt {
 }
 
 section.bb > div {
-    display: flex;
-    flex-direction: column;
+    display: flow-root;
+    white-space: pre-wrap;
 
     margin-bottom: .2em;
     max-width: 8cm;
@@ -54,15 +54,14 @@ section.bb > div {
 }
 
 section.bb u {
-    margin-left: auto;
+    margin-top: 8px;
+    
+    float: right;
 
     font: 9px system-ui
 }
-section.bb .vvv u {
-    color: var(--gray-20)
-}
-section.bb .yyy u {
-    color: #ffffff80
+section.bb :where(.vvv, .yyy) u {
+    opacity: .5
 }
 
 section.bb .vvv {
