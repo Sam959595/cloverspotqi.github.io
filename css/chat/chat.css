@@ -1,11 +1,10 @@
 /* ww */
 
 section.ww {
+    z-index: 1;
     position: fixed;
-    inset: 0 0 auto
-}
+    inset: 0 0 auto;
 
-section.ww div {
     padding: 1em 16px;
 
     display: flex;
@@ -40,15 +39,16 @@ section.bb .ttt {
 }
 
 section.bb > div {
+    margin-bottom: .2em;
+    padding: .3em .8em;
+
+    max-width: 8cm;
+    width: fit-content;
+
     display: flow-root;
     white-space: pre-wrap;
 
-    margin-bottom: .2em;
-    max-width: 8cm;
-
-    padding: .3em .8em;
-
-    width: fit-content;
+    border-radius: 18px;
 
     font: 16px/1.2 system-ui
 }
@@ -65,15 +65,11 @@ section.bb :where(.vvv, .yyy) u {
 }
 
 section.bb .vvv {
-    border-radius: 18px 18px 18px 5px;
-
     background-color: var(--gray-5);
     color: var(--gray-b)
 }
 section.bb .yyy {
     margin-left: auto;
-
-    border-radius: 18px;
 
     background-color: var(--blue-1);
     color: white
@@ -89,9 +85,9 @@ section.nn {
     position: fixed;
     inset: auto 0 0;
 
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    padding: 15px 25px max(env(safe-area-inset-bottom), 15px);
 
-    padding: 15px 25px max(env(safe-area-inset-bottom), 15px)
+    -webkit-backdrop-filter: saturate(180%) blur(20px)
 }
 
 section.nn div {
