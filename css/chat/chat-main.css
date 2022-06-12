@@ -1,12 +1,18 @@
 /* hh */
 
-section.hh div {
+section.hh {
+    z-index: 1;
+    position: fixed;
+    inset: 0 0 auto;
+
     padding: 1em 16px;
 
     display: flex;
     justify-content: end;
 
-    background-color: var(--gray-a)
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+
+    background: linear-gradient(to top, transparent, var(--gray-a))
 }
 
 section.hh a {
@@ -20,7 +26,7 @@ section.hh a:last-child {
 /* nn */
 
 section.nn {
-    margin: 1cm auto;
+    margin: 3cm auto 2em;
     width: fit-content
 }
 
@@ -30,6 +36,9 @@ section.nn main {
     overflow: hidden;
 
     background-color: var(--gray-18)
+}
+section.nn main:last-child {
+    margin-top: 1em
 }
 
 section.nn div {
@@ -50,72 +59,17 @@ section.nn div .ttt {
 }
 
 section.nn select {
-    -webkit-appearance: none;
 	flex-direction: column;
     text-align: -webkit-center;
 
-    width: 100%;
+    width: -webkit-fill-available;
 
-    padding: .2em;
-
-    border-radius: 0
+    padding: .2em
 }
 section.nn hr {
     border-width: 0 .1px 0 0;
     border-style: solid;
     border-color: var(--gray-3)
-}
-
-/* rr */
-
-section.rr {
-    position: fixed;
-    inset: auto 0 0
-}
-
-/* ww */
-
-section.ww {
-    margin: 20px;
-
-    border-radius: 18px;
-
-    background-color: var(--gray-18)
-}
-
-section.ww div {
-    display: flex;
-
-    padding: 1em
-}
-
-section.ww select {
-	flex-direction: column;
-    text-align: -webkit-center;
-
-    width: 100%;
-
-    padding: .8em;
-
-    border-radius: 12px;
-
-    font: 700 14px system-ui;
-
-    background-color: var(--gray-5)
-}
-
-section.ww select:last-child {
-    margin-left: .5em
-}
-
-section.ww h5 {
-    padding: 1em;
-
-    text-align: center;
-
-    font: 11px system-ui;
-
-    color: var(--gray-4)
 }
 
 /* color */
