@@ -58,10 +58,7 @@ section.rr h5 {
 /* tt */
 
 section.tt {
-        margin: 35px var(--padding) 0;
-        padding: 10px 0;
-
-        border-top: .1px solid var(--gray-3)
+        margin: 35px var(--padding) 15px
 }
  section.tt h3 {
      font: 700 21px/1.14286 system-ui
