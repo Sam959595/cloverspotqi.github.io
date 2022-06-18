@@ -63,12 +63,10 @@ section:is(.bb, .nn) h5 {
 /* 2 */
 
 section.tt {
-	margin: 3em var(--padding) 0
+	margin: 35px var(--padding) 10px
 }
 
 section.tt h3 {
-	margin: .48em 0;
-
 	font: 700 21px/1.14286 system-ui
 }
 
