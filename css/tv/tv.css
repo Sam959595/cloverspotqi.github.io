@@ -14,9 +14,7 @@ section.ww figure {
 
 section.ww h1 {
 	font: 700 12vw system-ui;
-	letter-spacing: .012em;
-
-	color: white
+	letter-spacing: .012em
 }
 
 section.ww figure > div {
