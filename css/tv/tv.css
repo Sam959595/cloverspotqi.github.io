@@ -13,7 +13,9 @@ section.ww figure {
 }
 
 section.ww h1 {
-	font: 700 12vw system-ui;
+	margin-right: 1cm;
+	
+	font: 700 12vw/1 system-ui;
 	letter-spacing: .012em
 }
 
