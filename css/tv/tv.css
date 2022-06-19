@@ -37,7 +37,7 @@ section.ww section:last-child > div {
 section.ww h6 {
 	opacity: .5;
 
-	color: var(--gray-a)
+	color: var(--const-2)
 }
 section.ww select {
 	text-align: -webkit-right;
@@ -55,7 +55,7 @@ section.ww select {
 
 	-webkit-mask: linear-gradient(to top, transparent 16px, black 0), linear-gradient(to left, transparent 125px, black 160px);
 
-	color: var(--gray-a)
+	color: var(--const-2)
 }
 
 .hide span {
