@@ -1,28 +1,15 @@
 /* ww */
 
-section.ww video {
-	padding: 2.8cm 0 3cm;
-    width: -webkit-fill-available;
-
-    aspect-ratio: 1/1.4
-}
-section.ww video[poster] {
-	background: linear-gradient(to top, transparent 40%, var(--gray-a))
-}
-
 section.ww figure {
-	position: relative;
-
+	aspect-ratio: 1/1.4;
+	
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-
-	background-color: var(--gray-15)
+	justify-content: space-between
 }
 
-section.ww main {
-	position: absolute;
-	margin: .5cm var(--padding) 0
+section.ww section:first-child {
+	margin: .5cm var(--padding)
 }
 section.ww p {
 	font: 700 5vw/1 system-ui;
@@ -32,49 +19,30 @@ section.ww h1 {
 	letter-spacing: .012em
 }
 
-section.ww figure>div {
-	position: absolute;
-	inset: auto 0 0;
-	margin-top: auto;
-
-	padding: 1.5em 1.8em;
+section.ww section:last-child {
+	padding: 9em 1.8em 1.5em;
 
 	-webkit-backdrop-filter: saturate(180%) blur(20px);
-	background: linear-gradient(to top, var(--gray-a), var(--soft-1))
+	background: linear-gradient(to top, var(--soft-2) 40%, transparent);
+	-webkit-mask: linear-gradient(to top, black 50%, transparent)
 }
 
-section.ww figure>div>div:first-child h6 {
-	opacity: .5
-}
-section.ww figure>div>div:first-child select {
-	text-align: -webkit-right;
-	flex-direction: column
-}
+section.ww section:last-child > div {
+	margin-top: 1em;
 
-section.ww figure>div>div {
 	display: flex;
 	justify-content: space-between
 }
 
-section.ww figure>div h5 {
-	margin-top: .8em;
-
-	color: var(--gray-10)
+section.ww h6 {
+	opacity: .5
+}
+section.ww select {
+	text-align: -webkit-right;
+	flex-direction: column
 }
 
-section.ww figure div > div:last-child  { 
-	margin-top: 2em
-}
-section.ww figure div button { 
-	font: 16px system-ui;
-
-	background: none
-}
-
-.string div {
-	font: inherit;
-	letter-spacing: inherit
-}
+/* text hide */
 
 .hide {
 	position: relative
@@ -330,7 +298,7 @@ section.kk h5 {
 @media screen and (prefers-color-scheme: light) {
 	:root {
 		--soft-1: #f5f5f7b8;
-		--soft-2: #ffffffcc;
+		--soft-2: #ffffff90;
 
 		--gray-a: white;
 		--gray-b: black;
@@ -362,7 +330,7 @@ section.kk h5 {
 @media screen and (prefers-color-scheme: dark) {
 	:root {
 		--soft-1: #1d1d1fb8;
-		--soft-2: #00000080;
+		--soft-2: #00000050;
 
 		--gray-a: black;
 		--gray-b: white;
