@@ -22,7 +22,7 @@ section.ww figure {
 
 section.ww main {
 	position: absolute;
-	margin: 1cm var(--padding) 0
+	margin: .5cm var(--padding) 0
 }
 section.ww p {
 	font: 700 5vw/1 system-ui;
