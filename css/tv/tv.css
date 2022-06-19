@@ -12,7 +12,11 @@ section.ww section:first-child {
 	margin: .5cm var(--padding)
 }
 section.ww p {
+	opacity: .5;
+
 	font: 700 5vw/1 system-ui;
+
+	color: var(--gray-1)
 }
 section.ww h1 {
 	font: 700 12vw/1 system-ui;
@@ -34,6 +38,9 @@ section.ww section:last-child > div {
 	justify-content: space-between
 }
 
+section.ww h5 {
+	color: var(--const-2)
+}
 section.ww h6 {
 	opacity: .5;
 
@@ -53,9 +60,7 @@ section.ww select {
 .hide div {
 	max-height: 48px;
 
-	-webkit-mask: linear-gradient(to top, transparent 16px, black 0), linear-gradient(to left, transparent 125px, black 160px);
-
-	color: var(--const-2)
+	-webkit-mask: linear-gradient(to top, transparent 16px, black 0), linear-gradient(to left, transparent 125px, black 160px)
 }
 
 .hide span {
