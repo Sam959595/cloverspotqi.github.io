@@ -20,10 +20,10 @@ section.ww h1 {
 }
 
 section.ww section:last-child {
-	padding: 9em 1.8em 1.5em;
+	padding: 10em 1.8em 1.5em;
 
 	-webkit-backdrop-filter: saturate(180%) blur(20px);
-	background: linear-gradient(to top, var(--soft-2) 40%, transparent);
+	background: linear-gradient(to top, #00000050 40%, transparent);
 	-webkit-mask: linear-gradient(to top, black 50%, transparent)
 }
 
@@ -35,7 +35,9 @@ section.ww section:last-child > div {
 }
 
 section.ww h6 {
-	opacity: .5
+	opacity: .5;
+
+	color: var(--gray-a)
 }
 section.ww select {
 	text-align: -webkit-right;
@@ -51,7 +53,9 @@ section.ww select {
 .hide div {
 	max-height: 48px;
 
-	-webkit-mask: linear-gradient(to top, transparent 16px, black 0), linear-gradient(to left, transparent 125px, black 160px)
+	-webkit-mask: linear-gradient(to top, transparent 16px, black 0), linear-gradient(to left, transparent 125px, black 160px);
+
+	color: var(--gray-a)
 }
 
 .hide span {
