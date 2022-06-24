@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let a = $('.string'),
+    let a = $('section.ww section h5.string'),
     b = $('section.ww section h5.string > div');
 
     if (b.height() > '48') {
