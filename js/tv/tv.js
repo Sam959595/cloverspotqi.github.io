@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => {
     let a = $('section.ww section h5.string'),
     b = $('section.ww section h5.string > div');
 
