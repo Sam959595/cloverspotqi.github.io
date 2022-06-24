@@ -8,12 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
         b = document.createElement('span');
 
         b.innerHTML = 'читать продолжение';
-        a[0].appendChild(b);
+        a[0].appendChild(b)
+    } else {
+        return false
     };
     
     $('.string span').click(function () {
         a[0].classList.remove('hide');
-        this.remove();
+        this.remove()
     });
 });
 
