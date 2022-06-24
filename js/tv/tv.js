@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     let a = $('.string'),
-    b = $('.string div');
+    b = $('section.ww section h5.string > div');
 
     if (b.height() > '48') {
         a[0].classList.add('hide');
