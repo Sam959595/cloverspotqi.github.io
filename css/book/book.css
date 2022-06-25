@@ -20,13 +20,13 @@ section.rr {
 }
 
 section.rr>h6 {
-    margin: 0 var(--padding);
+    margin: var(--padding) var(--padding) .2em;
 
     font: 600 14px system-ui
 }
 
 section.rr>h5 {
-    margin: .2em var(--padding) var(--padding);
+    margin: 0 var(--padding);
 
     font: 600 19px system-ui
 }
