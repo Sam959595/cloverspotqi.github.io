@@ -14,7 +14,7 @@ section.ww section:first-child {
 section.ww p {
 	opacity: .5;
 
-	font: 700 5vw/1 system-ui;
+	font: 700 5vw/1 ui-rounded;
 
 	color: var(--gray-1)
 }
@@ -226,6 +226,9 @@ section.ff div {
 	justify-content: inherit
 }
 
+section.ff h6 {
+	font-family: ui-rounded
+}
 section.ff p {
 	display: -webkit-box;
 	-webkit-line-clamp: 4;
