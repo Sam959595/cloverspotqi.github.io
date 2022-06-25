@@ -81,6 +81,12 @@ section.tt h3 {
 	font: 700 21px/1.14286 system-ui
 }
 
+section.qq {
+	display: flex;
+	flex-direction: column-reverse;
+	align-content: end
+}
+
 /* pp */
 
 section:where(.pp, .bb, .ff, .hh) ul {
