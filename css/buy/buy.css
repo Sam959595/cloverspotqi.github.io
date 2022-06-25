@@ -391,11 +391,9 @@ section.tt {
 	/* margin: 1cm auto 0;
 	width: 90% */
 
-        margin: 35px var(--padding) 0
+        margin: 45px var(--padding) 10px
 }
 section.tt h3 {
-    margin: .48em 0;
-
     font: 700 21px/1.14286 system-ui
 }
 
