@@ -81,6 +81,9 @@ section.tt h3 {
 	font: 700 21px/1.14286 system-ui
 }
 
+section.qq {
+	display: flex
+}
 section.qq a {
 	margin-left: 5px;
 	
