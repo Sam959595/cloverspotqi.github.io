@@ -13,8 +13,10 @@ section.ww h1 {
 /* rr */
 
 section.rr {
-    margin-top: 10px;
-    padding: 2em 0;
+    margin: 10px 16px 0;
+    padding: 2cm 0;
+
+    border-radius: 15px;
 
     background-color: var(--gray-15)
 }
@@ -39,7 +41,7 @@ section.rr ul {
     grid-auto-flow: column;
     column-gap: 1em;
 
-    padding-left: var(--padding);
+    padding-left: 14px;
 
     overflow-x: scroll;
 
@@ -52,7 +54,7 @@ section.rr li {
 }
 
 section.rr li:last-child {
-    padding-right: var(--padding)
+    padding-right: 14px
 }
 
 /* bb */
@@ -98,13 +100,7 @@ section.nn li a {
     display: block;
     border-radius: 10px
 }
-section.nn li div {
-    display: flex;
-    justify-content: space-between
-}
-section.nn li h5 {
-    color: var(--gray-4)
-}
+
 section.nn li h6 {
     font-family: ui-rounded;
 
