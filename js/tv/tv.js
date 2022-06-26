@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let a = $('.string'),
     b = $('.string div');
 
-    if (b.height() > '51') {
+    if (b.height() > '54') {
         a[0].classList.add('hide');
 
         b = document.createElement('span');
