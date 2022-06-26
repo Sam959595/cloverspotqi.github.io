@@ -14,27 +14,26 @@ section.ww h1 {
 
 section.rr {
     margin: 10px 16px 0;
-    padding: 1cm 0;
 
     border-radius: 15px;
 
     background-color: var(--gray-15)
 }
 
+section.rr>h5 {
+    padding: 2cm var(--padding-2) 3cm;
+
+    font: 600 19px system-ui
+}
+
 section.rr>a {
-    margin: 0 var(--padding-2);
+    padding: 0 var(--padding-2) 1cm;
 
     display: flex;
     justify-content: end
 }
 section.rr>a h6 {
     font: 500 14px system-ui
-}
-
-section.rr>h5 {
-    margin: 0 var(--padding-2) 3cm;
-
-    font: 600 19px ui-serif
 }
 
 section.rr ul {
@@ -122,6 +121,8 @@ section.nn li figure {
 
     display: flex;
     justify-content: end;
+
+    border: 1px solid var(--soft-1);
 
     box-shadow: 0 10px 20px #00000050;
 
