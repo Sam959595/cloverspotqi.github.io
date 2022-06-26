@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         b = document.createElement('span');
 
-        b.innerHTML = 'читать продолжение';
+        b.innerHTML = 'продолжить';
         a[0].appendChild(b)
     } else {
         return false
