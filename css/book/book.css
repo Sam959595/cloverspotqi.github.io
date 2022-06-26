@@ -14,7 +14,7 @@ section.ww h1 {
 
 section.rr {
     margin: 10px 16px 0;
-    padding: 2cm 0 1cm;
+    padding: 1cm 0;
 
     border-radius: 15px;
 
@@ -22,18 +22,19 @@ section.rr {
 }
 
 section.rr>a {
-    margin: var(--padding) var(--padding-2) .2em;
+    margin: 0 var(--padding-2);
 
-    display: flex
+    display: flex;
+    justify-content: end
 }
 section.rr>a h6 {
-    font: 14px ui-serif
+    font: 500 14px system-ui
 }
 
 section.rr>h5 {
-    margin: 0 var(--padding);
+    margin: 0 var(--padding-2) 3cm;
 
-    font: 600 19px system-ui
+    font: 600 19px ui-serif
 }
 
 section.rr ul {
@@ -90,21 +91,27 @@ section.bb h1 {
 /* nn */
 
 section.nn ul {
-    padding-bottom: 1cm
+    padding-bottom: 1cm;
 }
 
 section.nn li h1 {
     font: 500 14px system-ui
 }
 
+section.nn li a {
+    width: 120px;
+
+    display: block;
+
+    border-radius: 5px
+}
 section.nn li h6 {
     font: 11px ui-rounded;
 
     color: white
 }
 
-section.nn li a {
-    width: 120px;
+section.nn li figure {
     height: 180px;
 
     display: block;
