@@ -44,6 +44,9 @@
   
  	color: var(--const-2)
  }
+section.ww div {
+ font: inherit
+}
  section.ww h6 {
  opacity: .5;
 
@@ -61,9 +64,7 @@
  }
 
  .hide div {
-  font: inherit;
-  
- 	max-height: 60;
+  max-height: 60px;
 
  	-webkit-mask: linear-gradient(to top, transparent 16px, black 0), linear-gradient(to left, transparent 80px, black 150px)
  }
