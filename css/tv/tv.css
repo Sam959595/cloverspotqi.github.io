@@ -68,7 +68,7 @@ section.ww select {
 }
 
 .hide div {
-    max-height: 51px;
+    max-height: 54px;
 
     -webkit-mask: linear-gradient(to top, transparent 16px, black 0), linear-gradient(to left, transparent 85px, black 150px)
 }
