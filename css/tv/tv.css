@@ -41,7 +41,7 @@ section.ww section:last-child>div {
 }
 
 section.ww h5 {
-    font: 14px system-ui;
+    font-size: 14px;
 
     color: var(--const-2)
 }
