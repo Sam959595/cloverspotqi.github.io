@@ -26,7 +26,7 @@ section.ww h1 {
 }
 
 section.ww section:last-child {
-    padding: 10em 1.8em 1.5em;
+    padding: 10em var(--padding) 1.5em;
 
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     background: linear-gradient(to top, #00000050 40%, transparent);
