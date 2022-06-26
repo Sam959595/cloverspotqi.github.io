@@ -1,7 +1,7 @@
 /* ww */
 
  section.ww figure {
- 	aspect-ratio: 1/1.4;
+  aspect-ratio: 1/1.4;
 
  	display: flex;
  	flex-direction: column;
@@ -39,12 +39,15 @@
  }
 
  section.ww h5 {
+  font: 14px/1.42859 system-ui;
+  letter-spacing: -.01em;
+  
  	color: var(--const-2)
  }
  section.ww h6 {
- 	opacity: .5;
+ opacity: .5;
 
- 	color: var(--const-2)
+ color: var(--const-2)
  }
  section.ww select {
  	text-align: -webkit-right;
@@ -58,9 +61,11 @@
  }
 
  .hide div {
- 	max-height: 48px;
+  font: inherit;
+  
+ 	max-height: 60;
 
- 	-webkit-mask: linear-gradient(to top, transparent 16px, black 0), linear-gradient(to left, transparent 125px, black 160px)
+ 	-webkit-mask: linear-gradient(to top, transparent 16px, black 0), linear-gradient(to left, transparent 80px, black 150px)
  }
 
  .hide span {
