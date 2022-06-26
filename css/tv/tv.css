@@ -41,7 +41,7 @@ section.ww section:last-child>div {
 }
 
 section.ww h5 {
-    font: 14px/1.42859 system-ui;
+    font: 14px system-ui;
     letter-spacing: -.01em;
 
     color: var(--const-2)
