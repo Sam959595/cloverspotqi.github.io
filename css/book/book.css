@@ -84,25 +84,25 @@ section.bb h1 {
 /* nn */
 
 section.nn li h1 {
-    width: 170px;
-    
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-
-    font: 14px system-ui
+    font: 500 14px system-ui
 }
 section.nn a {
-    margin: .8em 0;
+    margin: .5em 0;
 
     aspect-ratio: 1.3/2;
-    width: 170px;
+    width: 150px;
 
     display: block;
     border-radius: 10px
 }
-section.nn li h6 {
+section.nn li div {
+    display: flex;
+    justify-content: space-between;
+
     color: var(--gray-4)
+}
+section.nn li h6 {
+    font-family: ui-rounded
 }
 
 section.nn figure {
