@@ -21,7 +21,7 @@ section.rr {
 }
 
 section.rr>h5 {
-    padding: 2cm var(--padding-2) 3cm;
+    padding: 1cm var(--padding-2) 4cm;
 
     font: 600 19px system-ui
 }
@@ -144,12 +144,12 @@ section.mm div a {
     border-radius: 15px;
 
     text-align: center;
-    font: 600 14px system-ui;
+    font: 600 17px system-ui;
 
     background-color: var(--gray-15)
 }
 section.mm>a {
-    padding: 2cm 16px 3cm;
+    padding: 2cm 16px 1cm;
 
     display: block;
     
