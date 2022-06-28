@@ -10,6 +10,64 @@ section.ww h1 {
     color: #e02f57
 }
 
+/* kk */
+
+section.kk ul {
+    column-gap: 0 !important;
+    padding-left: 0 !important;
+    scroll-padding-left: 0 !important;
+    border-radius: inherit
+}
+section.kk li {
+    scroll-snap-align: center !important
+}
+section.kk li {
+    width: 300px;
+
+    padding: 1cm .8cm;
+
+    background: linear-gradient(to right, transparent 60%, var(--gray-21))
+}
+
+section.kk li h5 {
+    margin-top: 2em;
+
+    font: 500 14px system-ui
+}
+section.kk li p {
+    margin: .5em 0 .5cm;
+
+    font-family: ui-serif
+}
+section.kk li h6 {
+    font-size: 11px;
+
+    color: #e02f57
+}
+section.kk li h6 b {
+    font-family: ui-rounded
+}
+
+section.kk li figure {
+    width: 129px;
+    height: 180px;
+
+    display: block;
+
+    border-radius: 5px;
+
+    padding: .8em;
+
+    display: flex;
+    justify-content: end;
+
+    border: 1px solid var(--soft-1);
+
+    box-shadow: 0 10px 20px #00000050;
+
+    background: center/cover
+}
+
 /* rr */
 
 section.rr {
@@ -40,7 +98,6 @@ section.rr ul {
     display: grid;
     grid-auto-flow: column;
     column-gap: 2em;
-    align-items: end;
 
     padding-left: var(--padding-2);
 
@@ -191,6 +248,7 @@ section.mm>a {
         --gray-18: #f5f5f7;
         --gray-19: #e3e3e880;
         --gray-20: #00000080;
+        --gray-21: #0000001d;
 
         --blue-1: #007aff;
 
@@ -225,6 +283,7 @@ section.mm>a {
         --gray-18: #17171d;
         --gray-19: #24242d80;
         --gray-20: #ffffff80;
+        --gray-21: #00000060;
 
         --blue-1: #0a84ff;
 
