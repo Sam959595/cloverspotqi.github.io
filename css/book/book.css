@@ -24,15 +24,30 @@ section.kk li {
 section.kk li {
     width: 300px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     padding: 1cm .8cm;
 
     background: linear-gradient(to right, transparent 60%, var(--gray-21))
 }
 
+section.kk li a {
+    width: 120px;
+    
+    display: block
+}
 section.kk li h5 {
     margin-top: 2em;
 
     font: 500 14px system-ui
+}
+section.kk li p {
+	display: -webkit-box;
+	-webkit-line-clamp: 8;
+	-webkit-box-orient: vertical;
+	overflow: hidden
 }
 section.kk li p {
     margin: .5em 0 .5cm;
@@ -49,19 +64,12 @@ section.kk li h6 b {
 }
 
 section.kk li figure {
-    width: 120px;
     height: 180px;
-
-    display: block;
 
     border-radius: 5px;
 
-    padding: .8em;
-
     display: flex;
     justify-content: end;
-
-    border: 1px solid var(--soft-1);
 
     box-shadow: 0 10px 20px #00000050;
 
@@ -78,20 +86,14 @@ section.rr {
     background-color: var(--gray-15)
 }
 
-section.rr>h5 {
-    padding: 1cm var(--padding-2) 4cm;
-
+section.rr a h5 {
     font: 600 19px system-ui
 }
 
 section.rr>a {
-    padding: 0 var(--padding-2) 1cm;
+    padding: 1cm var(--padding-2) 4cm;
 
-    display: flex;
-    justify-content: end
-}
-section.rr>a h6 {
-    font: 500 14px system-ui
+    display: block
 }
 
 section.rr ul {
@@ -170,16 +172,12 @@ section.nn li h6 {
 section.nn li figure {
     height: 180px;
 
-    display: block;
-
     border-radius: 5px;
 
     padding: .8em;
 
     display: flex;
     justify-content: end;
-
-    border: 1px solid var(--soft-1);
 
     box-shadow: 0 10px 20px #00000050;
 
