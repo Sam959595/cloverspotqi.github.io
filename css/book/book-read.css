@@ -48,6 +48,14 @@ section.vv h2 {
 
     color: var(--canvas-22)
 }
+section.vv h5 {
+    margin: 1em 0;
+
+    text-align: center;
+    font: 600 19px ui-serif;
+
+    color: var(--canvas-22)
+}
 section.vv h6::first-letter {
     margin-left: 1cm
 }
