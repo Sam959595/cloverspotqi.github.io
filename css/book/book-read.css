@@ -95,9 +95,10 @@ section.vv h6 {
         --gray-20: #00000080;
         --gray-21: #0000000f;
 
-        --canvas-0: #ffb68c;
-        --canvas-1: #f2f2f9;
-        --canvas-2: #4b4b57;
+        --canvas-1: #feddbc;
+        --canvas-2: #5b3f2a;
+        --canvas-11: #f2f2f9;
+        --canvas-22: #4b4b57;
 
         --blue-1: #007aff;
 
@@ -134,9 +135,10 @@ section.vv h6 {
         --gray-20: #ffffff80;
         --gray-21: #00000060;
 
-        --canvas-0: #605e4f;
-        --canvas-1: #1a1a1c;
-        --canvas-2: #cfcfd2;
+        --canvas-1: #603e2c;
+        --canvas-2: #fedcc5;
+        --canvas-11: #1a1a1c;
+        --canvas-22: #a7a7b3;
 
         --blue-1: #0a84ff;
 
