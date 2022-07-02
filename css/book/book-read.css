@@ -49,7 +49,7 @@ section.vv h2 {
     color: var(--canvas-22)
 }
 section.vv h5 {
-    margin: 1em 0;
+    margin: 3em 0;
 
     text-align: center;
     font: 600 19px ui-serif;
@@ -61,11 +61,33 @@ section.vv h6::first-letter {
 }
 section.vv h6 {
     padding-bottom: 1em;
-
-    text-align: justify;
+    
     font: 17px ui-serif;
+    text-align: justify;
 
     color: var(--canvas-22)
+}
+
+.yyo h6 {
+    font-size: 20px !important;
+    font-weight: 600 !important
+}
+.yyu h6 {
+    font-size: 20px !important
+}
+.yyy h6 {
+    font-size: 14px !important
+}
+
+.sss :where(h2, h5, h6) {
+    font-family: system-ui !important
+}
+
+.rrr {
+    background-color: var(--canvas-1) !important
+}
+.rrr :where(h2, h5, h6) {
+    color: var(--canvas-2) !important
 }
 
 /* var */
