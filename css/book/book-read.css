@@ -90,10 +90,13 @@ section.ww {
 
     -webkit-backdrop-filter: blur(20px);
 
-    transition: opacity .5s, transform 1s ease
+    -webkit-tap-highlight-color: transparent;
+
+    transition: opacity .5s, transform .8s ease
 }
 
 .www {
+    pointer-events: none;
     transform: translateY(30px) !important
 }
 
@@ -133,10 +136,12 @@ section.vv h6 {
 
 .yyo h6 {
     font-size: 20px !important;
-    font-weight: 600 !important
+    font-weight: 600 !important;
+    line-height: 1.5 !important
 }
 .yyu h6 {
-    font-size: 20px !important
+    font-size: 20px !important;
+    line-height: 1.5 !important
 }
 .yyy h6 {
     font-size: 14px !important
@@ -234,8 +239,8 @@ section.vv h6 {
         --gray-20: #ffffff80;
         --gray-21: #00000060;
 
-        --canvas-1: #603e2c;
-        --canvas-2: #fedcc5;
+        --canvas-1: #120b08;
+        --canvas-2: #a9938d;
         --canvas-11: #1a1a1c;
         --canvas-22: #a7a7b3;
 
