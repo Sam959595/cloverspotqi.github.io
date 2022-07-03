@@ -46,19 +46,15 @@ window.addEventListener('change', () => {
     }
 })
 
-window.addEventListener('click', () => {
+window.addEventListener('mouseup', () => {
     let vv = $('section.ee'),
     nn = $('section.ww')
 
-    if (vv.click()) {
+    if (nn.click) {
         vv[0].classList.add('eee')
         nn[0].classList.add('www')
+    } else if (vv.mouseleave()) {
+        vv[0].classList.remove('eee')
+        nn[0].classList.remove('www')
     }
-
-    setTimeout(() => {
-        if (vv.click()) {
-            vv[0].classList.remove('eee')
-            nn[0].classList.remove('www')
-        }
-    }, 5000)
 })
