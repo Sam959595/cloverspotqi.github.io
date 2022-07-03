@@ -46,7 +46,7 @@ window.addEventListener('change', () => {
     }
 })
 
-window.addEventListener('mouseup', () => {
+document.addEventListener('mouseup', () => {
     let vv = $('section.ee'),
     nn = $('section.ww')
 
