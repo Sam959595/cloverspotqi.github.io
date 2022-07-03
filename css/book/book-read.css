@@ -1,3 +1,9 @@
+/* body */
+
+body {
+    background-color: var(--canvas-11)
+}
+
 /* ww */
 
 section.ww {
@@ -36,8 +42,7 @@ section.ww li {
 /* vv */
 
 section.vv {
-    padding: 1.2cm;
-    background-color: var(--canvas-11)
+    padding: 1.2cm
 }
 
 section.vv h2 {
