@@ -9,7 +9,7 @@ body {
 section.ee {
     pointer-events: none;
     opacity: 0;
-    transform: scale(1.5);
+    transform: scale(-1.5);
 
     z-index: 2;
     position: fixed;
