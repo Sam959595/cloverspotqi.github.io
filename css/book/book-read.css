@@ -9,7 +9,7 @@ body {
 section.ee {
     pointer-events: none;
     opacity: 0;
-    transform: translateY(-90px);
+    transform: scale(1.5);
 
     z-index: 2;
     position: fixed;
@@ -29,7 +29,7 @@ section.ee {
 
     -webkit-backdrop-filter: blur(20px);
 
-    transition: transform 1s ease, opacity .5s
+    transition: opacity .5s, transform 1s ease
 }
 section.ee hr {
     opacity: .1;
@@ -67,15 +67,15 @@ section.ee li {
 }
 
 .eee {
-    pointer-events: all !important;
+    pointer-events: auto !important;
     opacity: 1 !important;
-    transform: translate(0) !important
+    transform: scale(1) !important
 }
 
 /* ww */
 
 section.ww {
-    opacity: 1;
+    transform: translateY(0);
     
     z-index: 1;
     position: fixed;
@@ -90,11 +90,11 @@ section.ww {
 
     -webkit-backdrop-filter: blur(20px);
 
-    transition: opacity .5s ease
+    transition: opacity .5s, transform 1s ease
 }
 
 .www {
-    opacity: 0 !important
+    transform: translateY(30px) !important
 }
 
 /* vv */
