@@ -53,8 +53,12 @@ window.addEventListener('click', () => {
     if (vv.click()) {
         vv[0].classList.add('eee')
         nn[0].classList.add('www')
-    } else {
-        vv[0].classList.remove('eee')
-        nn[0].classList.remove('www')
     }
+
+    setTimeout(() => {
+        if (vv.click()) {
+            vv[0].classList.remove('eee')
+            nn[0].classList.remove('www')
+        }
+    }, 5000)
 })
