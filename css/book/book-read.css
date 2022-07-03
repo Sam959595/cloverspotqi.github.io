@@ -7,6 +7,7 @@ body {
 /* ee */
 
 section.ee {
+    pointer-events: none;
     opacity: 0;
     transform: translateY(-90px);
 
@@ -66,6 +67,7 @@ section.ee li {
 }
 
 .eee {
+    pointer-events: all !important;
     opacity: 1 !important;
     transform: translate(0) !important
 }
