@@ -54,7 +54,7 @@ window.addEventListener('touchmove', () => {
     nn[0].classList.remove('www')
 })
 
-document.addEventListener('click', () => {
+let cv = () => {
     let vv = $('section.ee'),
     nn = $('section.ww')
 
@@ -69,4 +69,4 @@ document.addEventListener('click', () => {
             nn[0].classList.remove('www')
         }, 3000)
     })
-})
+}
