@@ -46,6 +46,14 @@ window.addEventListener('change', () => {
     }
 })
 
+window.addEventListener('touchmove', () => {
+    let vv = $('section.ee'),
+    nn = $('section.ww')
+
+    vv[0].classList.remove('eee')
+    nn[0].classList.remove('www')
+})
+
 document.addEventListener('click', () => {
     let vv = $('section.ee'),
     nn = $('section.ww')
@@ -59,6 +67,6 @@ document.addEventListener('click', () => {
         window.setTimeout(() => {
             vv[0].classList.remove('eee')
             nn[0].classList.remove('www')
-        }, 5000)
+        }, 3000)
     })
 })
