@@ -36,4 +36,8 @@ window.addEventListener('change', () => {
     } else {
         nn[0].classList.remove('rrr')
     }
+
+    if (vv == '0') {
+        $('meta[name=theme-color]').attr('content', '#feddbc')
+    }
 })
