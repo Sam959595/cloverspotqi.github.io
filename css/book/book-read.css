@@ -7,16 +7,25 @@ body {
 /* ww */
 
 section.ww {
-    margin: var(--padding);
+    z-index: 1;
+    position: fixed;
+    inset: 0 0 auto;
+
+    width: -webkit-fit-content;
+
+    margin: var(--padding) auto;
+    padding: .5em 1.8em .4em;
+
+    border-radius: 10px;
 
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+
+    -webkit-backdrop-filter: saturate(180%) blur(20px)
 }
 
 section.ww h6 {
-    text-align: center;
-
-    color: var(--gray-2)
+    text-align: center
 }
 section.ww select {
     flex-direction: column;
@@ -46,7 +55,7 @@ section.vv {
 }
 
 section.vv h2 {
-    margin-bottom: 2em;
+    margin: 2em 0;
 
     text-align: center;
     font: 600 24px ui-serif;
