@@ -45,3 +45,16 @@ window.addEventListener('change', () => {
         $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#1a1a1c')
     }
 })
+
+window.addEventListener('click', () => {
+    let vv = $('section.ee'),
+    nn = $('section.ww')
+
+    if (vv.click()) {
+        vv[0].classList.add('eee')
+        nn[0].classList.add('www')
+    } else {
+        vv[0].classList.remove('eee')
+        nn[0].classList.remove('www')
+    }
+})
