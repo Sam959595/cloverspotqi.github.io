@@ -39,7 +39,7 @@ window.addEventListener('change', () => {
 
     if (vv == '0') {
         $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#120b08')
-        $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#603e2c')
+        $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#120b08')
     } else {
         $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#f2f2f9')
         $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#1a1a1c')
