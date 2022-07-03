@@ -46,6 +46,30 @@ window.addEventListener('change', () => {
     }
 })
 
+window.addEventListener('DOMContentLoaded', () => {
+    $('section.ww').click( () => {
+        let vv = $('section.ee'),
+        nn = $('section.ww')
+    
+        vv[0].classList.add('eee')
+        nn[0].classList.add('www')
+    })
+})
+
+window.addEventListener('DOMContentLoaded', () => {
+    let vv = $('section.ee'),
+    nn = $('section.ww')
+
+    nn.mouseenter(() => {
+        vv[0].classList.add('eee')
+        nn[0].classList.add('www')
+    })
+    vv.mouseleave(() => {
+        vv[0].classList.remove('eee')
+        nn[0].classList.remove('www')
+    })
+})
+
 window.addEventListener('touchmove', () => {
     let vv = $('section.ee'),
     nn = $('section.ww')
@@ -53,20 +77,3 @@ window.addEventListener('touchmove', () => {
     vv[0].classList.remove('eee')
     nn[0].classList.remove('www')
 })
-
-let cv = () => {
-    let vv = $('section.ee'),
-    nn = $('section.ww')
-
-    if (nn.click) {
-        vv[0].classList.add('eee')
-        nn[0].classList.add('www')
-    }
-
-    vv.mouseleave(() => {
-        window.setTimeout(() => {
-            vv[0].classList.remove('eee')
-            nn[0].classList.remove('www')
-        }, 3000)
-    })
-}
