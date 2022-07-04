@@ -59,14 +59,20 @@ window.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('DOMContentLoaded', () => {
     let vv = $('section.ee'),
     nn = $('section.ww')
-
+    
     nn.mouseenter(() => {
         vv[0].classList.add('eee')
         nn[0].classList.add('www')
+
+        nn[0].style.pointerEvents = 'none'
     })
     vv.mouseleave(() => {
         vv[0].classList.remove('eee')
         nn[0].classList.remove('www')
+
+        setTimeout(() => {
+            nn[0].style.pointerEvents = ''
+        }, 500)
     })
 })
 
