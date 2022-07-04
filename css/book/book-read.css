@@ -9,7 +9,7 @@ body {
 section.ee {
     pointer-events: none;
     opacity: 0;
-    transform: scale(-1.5);
+    transform: scale(0.5);
 
     z-index: 2;
     position: fixed;
@@ -77,7 +77,6 @@ section.ee li {
 section.ww {
     transform: translateY(0);
     
-    z-index: 1;
     position: fixed;
     inset: 0 0 auto;
 
@@ -140,8 +139,7 @@ section.vv h6 {
     line-height: 1.5 !important
 }
 .yyu h6 {
-    font-size: 20px !important;
-    line-height: 1.5 !important
+    font-size: 20px !important
 }
 .yyy h6 {
     font-size: 14px !important
