@@ -46,7 +46,7 @@ window.addEventListener('change', () => {
     }
 })
 
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     $('section.ww').click( () => {
         let vv = $('section.ee'),
         nn = $('section.ww')
