@@ -49,7 +49,7 @@ section.ee select {
 
     width: -webkit-fill-available;
 
-    font: 600 12px ui-rounded;
+    font: 600 12px system-ui;
 
     color: var(--gray-1)
 }
@@ -72,6 +72,17 @@ section.ee li {
     transform: translateY(0) !important
 }
 
+@media screen and (max-width: 728px) {
+    section.ee {
+        transform: scale(0.5);
+    
+        transition: opacity .5s, transform .8s ease
+    }
+    .eee {
+        transform: scale(1) !important
+    }
+}
+
 /* ww */
 
 section.ww {
@@ -83,12 +94,13 @@ section.ww {
 
     width: -webkit-fit-content;
 
-    margin: 1em auto;
-    padding: .5em 1.8em .4em;
+    margin: 2em auto;
+    padding: .5em 1.8em;
 
     border-radius: 10px;
 
     -webkit-backdrop-filter: blur(20px);
+    background-color: #ffffff26;
 
     -webkit-tap-highlight-color: transparent;
 
@@ -97,6 +109,17 @@ section.ww {
 
 .www {
     transform: translateY(30px) !important
+}
+
+@media screen and (max-width: 728px) {
+    section.ww {
+        transform: scale(1);
+    
+        transition: opacity .5s, transform .8s ease
+    }
+    .www {
+        transform: scale(2) !important
+    }
 }
 
 /* vv */
