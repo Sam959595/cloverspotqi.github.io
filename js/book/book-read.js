@@ -1,3 +1,35 @@
+window.addEventListener('DOMContentLoaded', () => {
+    $('section.ww').click( () => {
+        let vv = $('section.ee'),
+        nn = $('section.ww')
+    
+        vv[0].classList.add('eee')
+        nn[0].classList.add('www')
+    })
+})
+
+window.addEventListener('touchmove', () => {
+    let vv = $('section.ee'),
+    nn = $('section.ww')
+
+    vv[0].classList.remove('eee')
+    nn[0].classList.remove('www')
+})
+
+window.addEventListener('DOMContentLoaded', () => {
+    let vv = $('section.ee'),
+    nn = $('section.ww')
+
+    nn.mouseenter( () => {
+        vv[0].classList.add('eee')
+        nn[0].classList.add('www')
+    })
+    vv.mouseleave( () => {
+        vv[0].classList.remove('eee')
+        nn[0].classList.remove('www')
+    })
+})
+
 window.addEventListener('change', () => {
     let vv = $('#bb').val(),
     nn = $('section.vv')
@@ -44,42 +76,4 @@ window.addEventListener('change', () => {
         $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#f2f2f9')
         $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#1a1a1c')
     }
-})
-
-document.addEventListener('DOMContentLoaded', () => {
-    $('section.ww').click( () => {
-        let vv = $('section.ee'),
-        nn = $('section.ww')
-    
-        vv[0].classList.add('eee')
-        nn[0].classList.add('www')
-    })
-})
-
-window.addEventListener('DOMContentLoaded', () => {
-    let vv = $('section.ee'),
-    nn = $('section.ww')
-    
-    nn.mouseenter(() => {
-        vv[0].classList.add('eee')
-        nn[0].classList.add('www')
-
-        nn[0].style.pointerEvents = 'none'
-    })
-    vv.mouseleave(() => {
-        vv[0].classList.remove('eee')
-        nn[0].classList.remove('www')
-
-        setTimeout(() => {
-            nn[0].style.pointerEvents = ''
-        }, 500)
-    })
-})
-
-window.addEventListener('touchmove', () => {
-    let vv = $('section.ee'),
-    nn = $('section.ww')
-
-    vv[0].classList.remove('eee')
-    nn[0].classList.remove('www')
 })
