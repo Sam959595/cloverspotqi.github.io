@@ -92,10 +92,10 @@ section.ww {
     position: fixed;
     inset: 0 0 auto;
 
-    width: -webkit-fit-content;
+    width: 50px;
+    height: 7px;
 
-    margin: 2em auto;
-    padding: .5em 1.8em;
+    margin: 2.7em auto 0;
 
     border-radius: 10px;
 
@@ -113,11 +113,11 @@ section.ww {
 
 @media screen and (max-width: 728px) {
     section.ww {
+        opacity: 1;
         transform: scale(1);
-    
-        transition: opacity .5s, transform .8s ease
     }
     .www {
+        opacity: 0 !important;
         transform: scale(2) !important
     }
 }
