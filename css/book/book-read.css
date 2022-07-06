@@ -19,22 +19,21 @@ section.ee {
     height: 50px;
 
     margin: 1em auto;
-    padding: 0 1.5em;
 
     border-radius: 15px;
 
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
 
     -webkit-backdrop-filter: blur(20px);
 
     transition: opacity .5s, transform .8s ease
 }
-section.ee hr {
-    opacity: .1;
-    height: -webkit-fill-available;
-    border: 1px solid var(--gray-1)
+section.ee div:nth-child(2) {
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: var(--soft-3)
 }
 
 section.ee h6 {
