@@ -10,6 +10,12 @@ section.ww h1 {
     color: #e02f57
 }
 
+/* ss */
+
+section.ss {
+    padding: 2em
+}
+
 /* kk */
 
 section.kk ul {
@@ -38,26 +44,16 @@ section.kk li a {
     
     display: block
 }
-section.kk li h5 {
-    margin-top: 2em;
 
-    font: 500 14px system-ui
-}
-section.kk li p {
-	display: -webkit-box;
-	-webkit-line-clamp: 8;
-	-webkit-box-orient: vertical;
-	overflow: hidden
-}
-section.kk li p {
-    margin: .5em 0 .5cm;
-
-    font-family: ui-serif
-}
 section.kk li h6 {
     font-size: 11px;
 
     color: #e02f57
+}
+section.kk li h5 {
+    margin: .5em 0 2em;
+
+    font: 500 14px system-ui
 }
 section.kk li h6 b {
     font-family: ui-rounded
@@ -91,7 +87,7 @@ section.rr a h5 {
 }
 
 section.rr>a {
-    padding: 1cm var(--padding-2) 4cm;
+    padding: 1cm var(--padding-2);
 
     display: block
 }
