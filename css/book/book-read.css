@@ -83,23 +83,19 @@ section.ww {
     position: fixed;
     inset: 0 0 auto;
 
-    width: -webkit-fit-content;
-
-    margin: 1.6em auto 0;
-    padding: 10px;
-
-    -webkit-tap-highlight-color: transparent;
-
-    transition: opacity .5s, transform .8s ease
-}
-section.ww div {
     width: 50px;
     height: 7px;
 
+    margin: 2.8em auto 0;
+
     border-radius: 5px;
+
+    -webkit-tap-highlight-color: transparent;
 
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     background-color: var(--soft-3);
+
+    transition: opacity .5s, transform .8s ease
 }
 
 .www {
