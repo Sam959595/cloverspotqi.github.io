@@ -19,7 +19,7 @@ a.x {
 	-webkit-touch-callout: none
 }
 a {
-        -webkit-user-drag: element
+        -webkit-user-drag: none
 }
 
 a, strong, b, sup, sub, u, ins, del, i, s, mark, small, q, em, select, span, time {
