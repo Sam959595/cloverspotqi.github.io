@@ -1,164 +1,212 @@
-/* body */
-
-body {
-    background-color: var(--canvas-11)
-}
-
-/* ee */
-
-section.ee {
-    pointer-events: none;
-    opacity: 0;
-    transform: scale(0.5);;
-
-    z-index: 2;
-    position: fixed;
-    inset: 0 0 auto;
-
-    width: 350px;
-
-    margin: 1em auto;
-
-    border-radius: 15px;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    -webkit-backdrop-filter: blur(20px);
-
-    transition: opacity .5s, transform .8s ease
-}
-section.ee div:nth-child(2) {
-    border-width: 0 1px;
-    border-style: solid;
-    border-color: var(--soft-3)
-}
-
-section.ee>div {
-    padding: 10px 0
-}
-
-section.ee h6 {
-    opacity: .5;
-
-    text-align: center;
-    font-size: 11px
-}
-section.ee select {
-    flex-direction: column;
-    text-align: -webkit-center;
-
-    width: -webkit-fill-available;
-
-    font: 600 12px system-ui;
-
-    color: var(--gray-1)
-}
-
-section.ee ul {
-    display: flex
-}
-section.ee li {
-    width: 20px;
-    height: 20px;
-
-    margin: 5px;
-
-    border-radius: 100%;
-}
-
-.eee {
-    pointer-events: auto !important;
-    opacity: 1 !important;
-    transform: scale(1) !important
-}
-
 /* ww */
 
 section.ww {
-    opacity: 1;
-    transform: scale(1);
+    margin: 2cm var(--padding) .5cm
+}
+
+section.ww h1 {
+    font: 700 10vw ui-serif;
+
+    color: #e02f57
+}
+
+/* ss */
+
+section.ss {
+    padding: 2em
+}
+
+/* kk */
+
+section.kk ul {
+    column-gap: 0 !important;
+    padding-left: 0 !important;
+    scroll-padding-left: 0 !important;
+    border-radius: inherit
+}
+section.kk li {
+    scroll-snap-align: center !important
+}
+section.kk li {
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 1cm .8cm;
+
+    background: linear-gradient(to right, transparent 50%, var(--gray-21))
+}
+
+section.kk li a {
+    width: 120px;
     
-    z-index: 1;
-    position: fixed;
-    inset: 0 0 auto;
+    display: block
+}
 
-    width: 50px;
-    height: 7px;
+section.kk li h6 {
+    font-size: 11px;
 
-    margin: 2.8em auto 0;
+    color: #e02f57
+}
+section.kk li h5 {
+    margin: .5em 0 2em;
+
+    font: 500 14px system-ui
+}
+section.kk li h6 b {
+    font-family: ui-rounded
+}
+
+section.kk li figure {
+    height: 180px;
 
     border-radius: 5px;
 
-    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    justify-content: end;
 
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    background-color: var(--soft-3);
+    box-shadow: 0 10px 20px #00000050;
 
-    transition: opacity .5s, transform .8s ease
+    background: center/cover
 }
 
-.www {
-    opacity: 0 !important;
-    pointer-events: none;
-    transform: scale(2) !important
+/* rr */
+
+section.rr {
+    margin: 10px 16px 0;
+
+    border-radius: 15px;
+
+    background-color: var(--gray-15)
 }
 
-/* vv */
-
-section.vv {
-    padding: 1.2cm
+section.rr a h5 {
+    font: 600 19px system-ui
 }
 
-section.vv h2 {
-    margin: 2em 0;
+section.rr>a {
+    padding: 1cm var(--padding-2);
+
+    display: block
+}
+
+section.rr ul {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 2em;
+
+    padding-left: var(--padding-2);
+
+    overflow-x: scroll;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: var(--padding-2)
+}
+
+section.rr li {
+    scroll-snap-align: start
+}
+
+section.rr li:last-child {
+    padding-right: var(--padding-2)
+}
+
+/* bb */
+
+section.bb li a {
+    width: 250px;
+
+    display: block;
+    border-radius: 10px
+}
+
+section.bb figure {
+    height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 10px;
 
     text-align: center;
-    font: 600 24px ui-serif;
 
-    color: var(--canvas-22)
+    background-color: var(--gray-5)
 }
-section.vv h5 {
-    margin: 3em 0;
+
+section.bb h1 {
+    font: 700 24px ui-serif;
+
+    color: var(--gray-2)
+}
+
+/* nn */
+
+section.nn ul {
+    padding-bottom: 2cm;
+}
+
+section.nn li h1 {
+    font: 500 14px system-ui
+}
+
+section.nn li a {
+    width: 120px;
+
+    display: block;
+
+    border-radius: 5px
+}
+section.nn li h6 {
+    font: 11px ui-rounded;
+
+    color: white
+}
+
+section.nn li figure {
+    height: 180px;
+
+    border-radius: 5px;
+
+    padding: .8em;
+
+    display: flex;
+    justify-content: end;
+
+    box-shadow: 0 10px 20px #00000050;
+
+    background: center/cover
+}
+
+/* mm */
+
+section.mm {
+    margin: 0 16px;
+}
+
+section.mm div a {
+    margin-top: 10px;
+    padding: .8em 0;
+
+    display: block;
+
+    border-radius: 15px;
 
     text-align: center;
-    font: 600 19px ui-serif;
+    font: 600 17px system-ui;
 
-    color: var(--canvas-22)
+    background-color: var(--gray-15)
 }
-section.vv h6::first-letter {
-    margin-left: 1cm
-}
-section.vv h6 {
-    padding-bottom: 1em;
+section.mm>a {
+    padding: 2cm 16px 1cm;
+
+    display: block;
     
-    font: 17px ui-serif;
-    text-align: justify;
+    font-size: 11px;
 
-    color: var(--canvas-22)
-}
-
-.yyo h6 {
-    font-size: 20px !important;
-    font-weight: 600 !important;
-    line-height: 1.5 !important
-}
-.yyu h6 {
-    font-size: 20px !important
-}
-.yyy h6 {
-    font-size: 14px !important
-}
-
-.sss :where(h2, h5, h6) {
-    font-family: system-ui !important
-}
-
-.rrr {
-    background-color: var(--canvas-1) !important
-}
-.rrr :where(h2, h5, h6) {
-    color: var(--canvas-2) !important
+    color: var(--gray-4)
 }
 
 /* var */
@@ -170,21 +218,14 @@ section.vv h6 {
     }
 }
 
-@media screen and (min-width: 920px) {
-    section.vv {
-        padding: 1cm 10cm
-    }
-}
-
 /* color */
 
 @media screen and (prefers-color-scheme: light) {
     :root {
         --soft-1: #f5f5f7b8;
         --soft-2: #ffffffcc;
-        --soft-3: #00000016;
 
-        --gray-a: white;
+        --gray-a: #f2f2f6;
         --gray-b: black;
 
         --gray-1: #1d1d1f;
@@ -197,16 +238,11 @@ section.vv h6 {
         --gray-8: #d2d2d7;
         --gray-9: #0000000d;
         --gray-10: #1d1d1f;
-        --gray-15: #f5f5f5;
+        --gray-15: white;
         --gray-18: #f5f5f7;
         --gray-19: #e3e3e880;
         --gray-20: #00000080;
-        --gray-21: #0000000f;
-
-        --canvas-1: #feddbc;
-        --canvas-2: #5b3f2a;
-        --canvas-11: #f2f2f9;
-        --canvas-22: #4b4b57;
+        --gray-21: #00000008;
 
         --blue-1: #007aff;
 
@@ -223,7 +259,6 @@ section.vv h6 {
     :root {
         --soft-1: #1d1d1fb8;
         --soft-2: #00000080;
-        --soft-3: #ffffff26;
 
         --gray-a: black;
         --gray-b: white;
@@ -243,11 +278,6 @@ section.vv h6 {
         --gray-19: #24242d80;
         --gray-20: #ffffff80;
         --gray-21: #00000060;
-
-        --canvas-1: #120b08;
-        --canvas-2: #a9938d;
-        --canvas-11: #1a1a1c;
-        --canvas-22: #a7a7b3;
 
         --blue-1: #0a84ff;
 
