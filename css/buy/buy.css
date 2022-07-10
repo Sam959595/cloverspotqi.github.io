@@ -324,7 +324,7 @@ section:where(.hh, .pp, .vv) ul {
     grid-auto-flow: column;
     column-gap: 1em;
 	
-	padding: 0 var(--padding)
+	padding: 0 var(--padding);
 
 	overflow-x: scroll;
 
