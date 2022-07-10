@@ -1,164 +1,233 @@
-/* body */
-
-body {
-    background-color: var(--canvas-11)
-}
-
-/* ee */
-
-section.ee {
-    pointer-events: none;
-    opacity: 0;
-    transform: scale(0.5);;
-
-    z-index: 2;
-    position: fixed;
-    inset: 0 0 auto;
-
-    width: 350px;
-
-    margin: 1em auto;
-
-    border-radius: 15px;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    -webkit-backdrop-filter: blur(20px);
-
-    transition: opacity .5s, transform .8s ease
-}
-section.ee div:nth-child(2) {
-    border-width: 0 1px;
-    border-style: solid;
-    border-color: var(--soft-3)
-}
-
-section.ee>div {
-    padding: 10px 0
-}
-
-section.ee h6 {
-    opacity: .5;
-
-    text-align: center;
-    font-size: 11px
-}
-section.ee select {
-    flex-direction: column;
-    text-align: -webkit-center;
-
-    width: -webkit-fill-available;
-
-    font: 600 12px system-ui;
-
-    color: var(--gray-1)
-}
-
-section.ee ul {
-    display: flex
-}
-section.ee li {
-    width: 20px;
-    height: 20px;
-
-    margin: 5px;
-
-    border-radius: 100%;
-}
-
-.eee {
-    pointer-events: auto !important;
-    opacity: 1 !important;
-    transform: scale(1) !important
-}
-
 /* ww */
 
+hr {
+    margin: 0 var(--padding)
+}
+
 section.ww {
-    opacity: 1;
-    transform: scale(1);
+    margin: 2cm var(--padding) .5cm
+}
+
+section.ww h1 {
+    font: 700 32px ui-serif
+}
+
+/* ss */
+
+section.ss {
+    padding: 2em
+}
+
+/* kk */
+
+section.kk ul {
+    border-radius: inherit
+}
+section.kk li {
+    width: 357px;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 30px 0
+}
+
+section.kk li a {
+    width: 80px;
     
-    z-index: 1;
-    position: fixed;
-    inset: 0 0 auto;
+    display: block
+}
 
-    width: 50px;
-    height: 7px;
+section.kk li div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
 
-    margin: 2.8em auto 0;
+section.kk a {
+    width: 230px;
+    
+    display: block;
+    border-radius: 22px;
+}
+
+section.kk li h6 {
+    font-size: 11px;
+
+    color: #e02f57
+}
+section.kk li h5 {
+    font: 600 13px system-ui
+}
+section.kk li h6 b {
+    font-family: ui-rounded
+}
+
+section.kk li figure {
+    aspect-ratio: 1/1.6;
 
     border-radius: 5px;
 
-    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    justify-content: end;
 
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    background-color: var(--soft-3);
+    box-shadow: 0 10px 20px #00000050;
 
-    transition: opacity .5s, transform .8s ease
+    background: center/cover
 }
 
-.www {
-    opacity: 0 !important;
-    pointer-events: none;
-    transform: scale(2) !important
+/* rr */
+
+section.rr>a {
+    padding: 1cm var(--padding);
+
+    display: block
 }
 
-/* vv */
+section.rr ul {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 2em;
 
-section.vv {
-    padding: 1.2cm
+    padding: 0 var(--padding);
+
+    overflow-x: scroll;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: var(--padding)
 }
 
-section.vv h2 {
-    margin: 2em 0;
+section.rr li {
+    scroll-snap-align: start
+}
+
+/* bb */
+
+section.bb li a {
+    width: 250px;
+
+    display: block;
+    border-radius: 10px
+}
+
+section.bb figure {
+    height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 10px;
 
     text-align: center;
-    font: 600 24px ui-serif;
 
-    color: var(--canvas-22)
+    background-color: var(--gray-5)
 }
-section.vv h5 {
-    margin: 3em 0;
+
+section.bb h1 {
+    font: 700 24px ui-serif;
+
+    color: var(--gray-2)
+}
+
+/* nn */
+
+section.nn ul {
+    padding-bottom: 2cm;
+}
+
+section.nn li h1 {
+    font: 500 14px system-ui
+}
+
+section.nn li a {
+    width: 120px;
+
+    display: block;
+
+    border-radius: 5px
+}
+section.nn a h5 {
+    font: 600 19px ui-serif
+}
+section.nn li h6 {
+    font: 11px ui-rounded;
+
+    color: white
+}
+
+section.nn li figure {
+    height: 180px;
+
+    border-radius: 5px;
+
+    padding: .8em;
+
+    display: flex;
+    justify-content: end;
+
+    box-shadow: 0 10px 20px #00000050;
+
+    background: center/cover
+}
+
+/* mm */
+
+section.mm {
+    margin: 0 16px;
+}
+
+section.mm div a {
+    margin-top: 10px;
+    padding: .8em 0;
+
+    display: block;
+
+    border-radius: 15px;
 
     text-align: center;
-    font: 600 19px ui-serif;
+    font: 600 17px system-ui;
 
-    color: var(--canvas-22)
+    background-color: var(--gray-15)
 }
-section.vv h6::first-letter {
-    margin-left: 1cm
-}
-section.vv h6 {
-    padding-bottom: 1em;
+section.mm>a {
+    padding: 2cm 16px 1cm;
+
+    display: block;
     
-    font: 17px ui-serif;
-    text-align: justify;
+    font-size: 11px;
 
-    color: var(--canvas-22)
-}
-
-.yyo h6 {
-    font-size: 20px !important;
-    font-weight: 600 !important;
-    line-height: 1.5 !important
-}
-.yyu h6 {
-    font-size: 20px !important
-}
-.yyy h6 {
-    font-size: 14px !important
+    color: var(--gray-4)
 }
 
-.sss :where(h2, h5, h6) {
-    font-family: system-ui !important
+/* cc */
+
+section.cc {
+   background: none
 }
 
-.rrr {
-    background-color: var(--canvas-1) !important
+section.cc ul {
+    column-gap: 1em;
 }
-.rrr :where(h2, h5, h6) {
-    color: var(--canvas-2) !important
+
+section.cc li a {
+    width: 230px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2em;
+    -webkit-mask: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 230.00229 60.00007'%3e%3cpath d='M229.99963,26.09412c0-.942.00049-1.88379-.00525-2.82544-.00512-.8451-.01495-1.68994-.03753-2.53485a36.89117,36.89117,0,0,0-.48535-5.51624A18.62434,18.62434,0,0,0,227.7428,9.971a17.63886,17.63886,0,0,0-7.71186-7.71137A18.61217,18.61217,0,0,0,214.78741.53186,36.7925,36.7925,0,0,0,209.269.04633c-.81384-.022-2.02563-.03336-2.53485-.03785-1.61673-.01425-2.80569-.00662-3.00964-.00555-4.93494.02557-172.5141.0256-177.4491,0-.2039-.00107-1.39294-.00473-3.0097.00555-.84534.00537-1.68994.015-2.53485.03785a36.79136,36.79136,0,0,0-5.51838.48553A18.6112,18.6112,0,0,0,9.96906,2.25964,17.63858,17.63858,0,0,0,2.25714,9.971a18.6167,18.6167,0,0,0-1.7287,5.24658,36.866,36.866,0,0,0-.48529,5.51624c-.02264.84491-.03247,1.68975-.0376,2.53485-.00567.94165-.00518,1.88348-.00518,2.82544H0V39H.03918c.00214.08966.00159.17938.004.269a36.86681,36.86681,0,0,0,.48529,5.5163,18.61454,18.61454,0,0,0,1.7287,5.24652,17.63912,17.63912,0,0,0,7.71192,7.71143,18.61923,18.61923,0,0,0,5.24346,1.728,36.82266,36.82266,0,0,0,5.51838.48535c.84491.02283,1.68951.03266,2.53485.03778,1.00311.00611,2.00616.00562,3.0097.00562h177.4491c1.00329,0,2.00635.00049,3.00964-.00562.84534-.00512,1.69-.01495,2.53485-.03778a36.8238,36.8238,0,0,0,5.51837-.48535,18.6202,18.6202,0,0,0,5.24353-1.728,17.6394,17.6394,0,0,0,7.71186-7.71143,19.41745,19.41745,0,0,0,1.7287-5.24652A25.461,25.461,0,0,0,230,39.26089V26.27838Z' transform='translate(0 0.00006)'/%3e%3c/svg%3e") no-repeat !important;
+    background-color: var(--gray-18)
+}
+
+section.cc h5 {
+    font: 600 14px/1.2 system-ui
+}
+section.cc h6 {
+    font: 11px ui-rounded;
+    color: var(--red-1)
 }
 
 /* var */
@@ -170,19 +239,12 @@ section.vv h6 {
     }
 }
 
-@media screen and (min-width: 920px) {
-    section.vv {
-        padding: 1cm 10cm
-    }
-}
-
 /* color */
 
 @media screen and (prefers-color-scheme: light) {
     :root {
         --soft-1: #f5f5f7b8;
         --soft-2: #ffffffcc;
-        --soft-3: #00000026;
 
         --gray-a: white;
         --gray-b: black;
@@ -197,16 +259,11 @@ section.vv h6 {
         --gray-8: #d2d2d7;
         --gray-9: #0000000d;
         --gray-10: #1d1d1f;
-        --gray-15: #f5f5f5;
+        --gray-15: #f2f2f6;
         --gray-18: #f5f5f7;
         --gray-19: #e3e3e880;
         --gray-20: #00000080;
-        --gray-21: #0000000f;
-
-        --canvas-1: #feddbc;
-        --canvas-2: #5b3f2a;
-        --canvas-11: #f2f2f9;
-        --canvas-22: #4b4b57;
+        --gray-21: #00000008;
 
         --blue-1: #007aff;
 
@@ -223,7 +280,6 @@ section.vv h6 {
     :root {
         --soft-1: #1d1d1fb8;
         --soft-2: #00000080;
-        --soft-3: #ffffff26;
 
         --gray-a: black;
         --gray-b: white;
@@ -238,16 +294,11 @@ section.vv h6 {
         --gray-8: #515154;
         --gray-9: #00000033;
         --gray-10: #d5d5e2;
-        --gray-15: #121212;
-        --gray-18: #17171d;
+        --gray-15: #17171d;
+        --gray-18: #121212;
         --gray-19: #24242d80;
         --gray-20: #ffffff80;
         --gray-21: #00000060;
-
-        --canvas-1: #120b08;
-        --canvas-2: #a9938d;
-        --canvas-11: #1a1a1c;
-        --canvas-22: #a7a7b3;
 
         --blue-1: #0a84ff;
 
