@@ -1,13 +1,15 @@
 /* ww */
 
+hr {
+    margin: 0 var(--padding)
+}
+
 section.ww {
     margin: 2cm var(--padding) .5cm
 }
 
 section.ww h1 {
-    font: 700 32px ui-serif;
-
-    color: #e02f57
+    font: 700 32px ui-serif
 }
 
 /* ss */
@@ -19,23 +21,15 @@ section.ss {
 /* kk */
 
 section.kk ul {
-    column-gap: 0 !important;
-    padding-left: 0 !important;
-    scroll-padding-left: 0 !important;
     border-radius: inherit
 }
 section.kk li {
-    scroll-snap-align: center !important
-}
-section.kk li {
-    width: 350px;
+    width: 357px;
 
     display: flex;
     justify-content: space-between;
 
-    padding: .5cm .8cm;
-
-    background: linear-gradient(to right, transparent 50%, var(--gray-21))
+    padding: 30px 0
 }
 
 section.kk li a {
@@ -63,7 +57,7 @@ section.kk li h6 {
     color: #e02f57
 }
 section.kk li h5 {
-    font: 13px ui-serif
+    font: 600 13px system-ui
 }
 section.kk li h6 b {
     font-family: ui-rounded
@@ -84,14 +78,8 @@ section.kk li figure {
 
 /* rr */
 
-section.rr {
-    margin: 10px 0;
-
-    background-color: var(--gray-18)
-}
-
 section.rr>a {
-    padding: 1cm var(--padding-2);
+    padding: 1cm var(--padding);
 
     display: block
 }
@@ -101,20 +89,16 @@ section.rr ul {
     grid-auto-flow: column;
     column-gap: 2em;
 
-    padding-left: var(--padding);
+    padding: 0 var(--padding);
 
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
-    scroll-padding-left: var(--padding-2)
+    scroll-padding-left: var(--padding)
 }
 
 section.rr li {
     scroll-snap-align: start
-}
-
-section.rr li:last-child {
-    padding-right: var(--padding-2)
 }
 
 /* bb */
@@ -164,7 +148,7 @@ section.nn li a {
     border-radius: 5px
 }
 section.nn a h5 {
-    font: 600 19px system-ui
+    font: 600 19px ui-serif
 }
 section.nn li h6 {
     font: 11px ui-rounded;
@@ -219,7 +203,7 @@ section.mm>a {
 /* cc */
 
 section.cc {
-    background: none
+   background: none
 }
 
 section.cc ul {
@@ -310,8 +294,8 @@ section.cc h6 {
         --gray-8: #515154;
         --gray-9: #00000033;
         --gray-10: #d5d5e2;
-        --gray-15: #121212;
-        --gray-18: #17171d;
+        --gray-15: #17171d;
+        --gray-18: #121212;
         --gray-19: #24242d80;
         --gray-20: #ffffff80;
         --gray-21: #00000060;
