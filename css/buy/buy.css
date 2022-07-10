@@ -172,7 +172,9 @@ section.vv figure {
 section.vv ul {
         margin-top: var(--padding);
 
-        column-gap: 0
+        column-gap: 0;
+	
+	padding: 0
 }
 section.vv img {
         width: 280px;
