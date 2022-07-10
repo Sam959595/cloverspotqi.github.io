@@ -60,7 +60,7 @@ section.zz {
 
     background-color: var(--soft-2);
 
-    overflow: hidden scroll;
+    overflow-x: scroll;
 
     transition: opacity .5s ease 0s
 }
@@ -323,6 +323,8 @@ section:where(.hh, .pp, .vv) ul {
 	display: grid;
     grid-auto-flow: column;
     column-gap: 1em;
+	
+	padding: 0 var(--padding)
 
 	overflow-x: scroll;
 
@@ -332,13 +334,6 @@ section:where(.hh, .pp, .vv) ul {
 
 section:where(.hh, .pp, .vv) ul li {
 	scroll-snap-align: start
-}
-
-section:where(.hh, .pp) ul li:first-child {
-    padding-left: var(--padding)
-}
-section:where(.hh, .pp) ul li:last-child {
-    padding-right: var(--padding)
 }
 
 section.hh ul li a {
