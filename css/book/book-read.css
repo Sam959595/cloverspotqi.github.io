@@ -107,12 +107,10 @@ section.ww {
 /* vv */
 
 section.vv {
-    padding: 1.2cm
+    margin: 2.8cm 1.2cm 1.2cm
 }
 
 section.vv h2 {
-    margin: 2em 0;
-
     text-align: center;
     font: 600 24px ui-serif;
 
@@ -130,11 +128,22 @@ section.vv h6::first-letter {
     margin-left: 1cm
 }
 section.vv h6 {
-    padding-bottom: 1em;
+    margin-bottom: 1em;
     
     font: 17px ui-serif;
     text-align: justify;
 
+    color: var(--canvas-22)
+}
+
+section.vv ol {
+    opacity: .6;
+
+    margin-left: auto;
+
+    width: -webkit-fit-content;
+
+    list-style: outside decimal;
     color: var(--canvas-22)
 }
 
@@ -157,8 +166,21 @@ section.vv h6 {
 .rrr {
     background-color: var(--canvas-1) !important
 }
-.rrr :where(h2, h5, h6) {
+.rrr :where(h2, h5, h6, ol) {
     color: var(--canvas-2) !important
+}
+
+/* pp */
+
+section.pp {
+    margin: 1.2cm;
+
+    display: flex;
+    justify-content: space-between
+}
+
+section.pp button {
+    background: none
 }
 
 /* var */
