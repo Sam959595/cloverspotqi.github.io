@@ -173,17 +173,19 @@ section.vv ol li {
     color: var(--canvas-2) !important
 }
 
-/* pp */
+/* bb */
 
-section.pp {
-    margin: 1.2cm;
-
-    display: flex;
-    justify-content: space-between
+section.bb {
+    margin-inline: 1.2cm
 }
+section.bb a {
+    margin-block: 1em;
 
-section.pp button {
-    background: none
+    display: block;
+
+    font-weight: 600;
+
+    color: var(--gray-1)
 }
 
 /* var */
