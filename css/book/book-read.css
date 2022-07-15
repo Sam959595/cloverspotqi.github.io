@@ -35,7 +35,7 @@ section.ee div:nth-child(2) {
 }
 
 section.ee>div {
-    padding: 10px 0
+    padding-block: 10px
 }
 
 section.ee h6 {
@@ -117,7 +117,7 @@ section.vv h2 {
     color: var(--canvas-22)
 }
 section.vv h5 {
-    margin: 3em 0;
+    margin-block: 3em;
 
     text-align: center;
     font: 600 19px ui-serif;
@@ -138,8 +138,8 @@ section.vv h6 {
 
 section.vv ol {
     opacity: .6;
-
-    margin-left: auto;
+    
+    margin: 3cm 0 0 auto;
 
     width: -webkit-fit-content;
 
@@ -190,8 +190,7 @@ section.pp button {
 
 @media screen and (min-width: 320px) and (max-width: 728px) {
     :root {
-        --padding: 30px;
-        --padding-2: 14px
+        --padding: 30px
     }
 }
 
