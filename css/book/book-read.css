@@ -146,6 +146,9 @@ section.vv ol {
     list-style: outside decimal;
     color: var(--canvas-22)
 }
+section.vv ol li {
+    font-family: ui-serif
+}
 
 .yyo h6 {
     font-size: 20px !important;
@@ -159,7 +162,7 @@ section.vv ol {
     font-size: 14px !important
 }
 
-.sss :where(h2, h5, h6) {
+.sss :where(h2, h5, h6, ol li) {
     font-family: system-ui !important
 }
 
