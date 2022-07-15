@@ -77,13 +77,13 @@ section.zz main {
 }
 
 section.zz :where(ul, li:last-child) {
-    margin: 2em 0
+    margin-block: 2em
 }
 section.zz li:not(:last-child) {
     margin-top: 1em
 }
 section.zz li:not(:nth-child(4)) > * {
-    margin: 0 1.5em
+    margin-inline: 1.5em
 }
 section.zz li:nth-child(4) {
      border: solid var(--gray-9);
@@ -119,7 +119,7 @@ section.zz div {
 section.zz div button {
     width: 100%;
 
-    padding: .8em 0;
+    padding-block: .8em;
 
     font: 17px system-ui;
 
@@ -249,7 +249,7 @@ section.pp select:focus {
 /* uu */
 
 section.uu {
-        margin: 0 var(--padding)
+        margin-inline: var(--padding)
 }
 
 dl > div {
@@ -326,7 +326,7 @@ section:where(.hh, .pp, .vv) ul {
     grid-auto-flow: column;
     column-gap: 1em;
 	
-	padding: 0 var(--padding);
+	padding-inline: var(--padding);
 
 	overflow-x: scroll;
 
@@ -375,7 +375,7 @@ section.hh :where(h5, h6) {
 	font: 600 14px/1.2 system-ui
 }
 section.hh h6 {
-	margin: .5em 0;
+	margin-block: .5em;
 
 	font-weight: 400;
 
@@ -411,7 +411,7 @@ section.kk li + li h5 {
 }
 
 section.kk h5 {
-	padding: 10px 0;
+	padding-block: 10px;
 
 	font: 21px system-ui;
 
