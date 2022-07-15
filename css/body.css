@@ -54,12 +54,8 @@ input[type="submit"], button, select, span {
 	cursor: pointer
 }
 
-a :is(h1, h2, h3, h4, h5, h6, p, time) {
-	pointer-events: none
-}
-
 h1, h2, h3, h4, h5, h6, p, time {
-	cursor: default
+	pointer-events: none
 }
 
 hr {
