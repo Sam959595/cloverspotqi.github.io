@@ -165,7 +165,7 @@ section.hh a:before {
 /* uu */
 
 section.uu {
-    margin: 0 var(--padding)
+    margin-inline: var(--padding)
 }
 
 section.uu dl>div {
@@ -266,7 +266,7 @@ section.ff :where(p b, time) {
 }
 
 section.ff h5 {
-    margin: 0 10%;
+    margin-inline: 10%;
 
     height: 120px;
 
@@ -313,7 +313,7 @@ section.kk li+li h5 {
 }
 
 section.kk h5 {
-    padding: 10px 0;
+    padding-block: 10px;
 
     font: 21px system-ui;
 
