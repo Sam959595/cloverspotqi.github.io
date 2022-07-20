@@ -142,7 +142,7 @@ section.nn li a {
     border-radius: 5px
 }
 section.nn a h5 {
-    font: 600 19px ui-serif
+    font: 700 19px ui-serif
 }
 section.nn li h6 {
     font: 11px ui-rounded;
@@ -233,6 +233,52 @@ section.cc h5 {
 section.cc h6 {
     font: 11px ui-rounded;
     color: var(--red-1)
+}
+
+/* hh */
+
+section.hh {
+    margin-block: 1cm
+}
+
+section.hh a {
+    width: 354px;
+
+    display: block
+}
+
+section.hh figure {
+    aspect-ratio: 1;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    border-radius: 8px;
+
+    background: center/cover var(--gray-4)
+}
+section.hh section {
+    padding: 4em 1em 1em;
+
+    display: flex;
+    justify-content: space-around;
+
+    background: linear-gradient(to top, #00000050 50%, transparent)
+}
+
+section.hh img {
+    object-fit: cover;
+
+    width: 25px;
+    height: 25px;
+
+    border-radius: 100%
+}
+section.hh h5 {
+    font-weight: 600
 }
 
 /* var */
