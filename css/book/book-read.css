@@ -9,7 +9,7 @@ body {
 section.ee {
     pointer-events: none;
     opacity: 0;
-    transform: scale(0.5);;
+    transform: scale(0.5);
 
     z-index: 2;
     position: fixed;
@@ -176,7 +176,12 @@ section.vv ol li {
 /* bb */
 
 section.bb {
-    margin-inline: 1.2cm
+    margin-inline: 1.2cm;
+    margin-bottom: env(safe-area-inset-bottom)
+}
+section.bb div {
+    display: flex;
+    justify-content: space-between
 }
 section.bb a {
     margin-block: 1em;
@@ -186,6 +191,12 @@ section.bb a {
     font-weight: 600;
 
     color: var(--gray-1)
+}
+
+section.bb hr {
+    opacity: .3;
+
+    border-color: var(--gray-1)
 }
 
 /* var */
