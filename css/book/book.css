@@ -261,7 +261,7 @@ section.hh figure {
 section.hh div {
     overflow: hidden;
 
-    height: -webkit-fill-available;
+    height: 100%;
 
     display: flex;
     justify-content: center;
