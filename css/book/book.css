@@ -141,7 +141,7 @@ section.nn li a {
 
     border-radius: 5px
 }
-section.nn a h5 {
+section.rr > a h5 {
     font: 700 19px ui-serif
 }
 section.nn li h6 {
@@ -168,7 +168,7 @@ section.nn li figure {
 /* mm */
 
 section.mm {
-    margin-inline: var(--padding)
+    margin: 1cm var(--padding)
 }
 
 section.mm div a {
@@ -187,7 +187,7 @@ section.mm div a {
     -webkit-tap-highlight-color: transparent
 }
 section.mm>a {
-    margin-block: 2cm 1cm;
+    margin-block-start: 2cm;
 
     display: block;
     
@@ -241,44 +241,51 @@ section.hh {
     margin-block: 1cm
 }
 
-section.hh a {
+section.hh ul a {
     width: 354px;
 
-    display: block
+    display: block;
+    border-radius: 8px
 }
 
 section.hh figure {
+    position: relative;
+    
     aspect-ratio: 1;
 
+    border-radius: inherit;
+
+    background-color: var(--gray-18)
+}
+
+section.hh div {
     overflow: hidden;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-
-    border-radius: 8px;
-
-    background: center/cover var(--gray-4)
-}
-section.hh section {
-    padding: 4em 1em 1em;
+    height: -webkit-fill-available;
 
     display: flex;
-    justify-content: space-around;
-
-    background: linear-gradient(to top, #00000050 50%, transparent)
+    justify-content: center;
+    align-items: center
 }
-
 section.hh img {
     object-fit: cover;
+    aspect-ratio: 1;
 
-    width: 25px;
-    height: 25px;
+    width: 150px;
+    height: 150px;
 
     border-radius: 100%
 }
-section.hh h5 {
-    font-weight: 600
+
+section.hh h6 {
+    position: absolute;
+    inset: auto 0 0 auto;
+
+    margin: 1em;
+
+    text-align: right;
+
+    font: 600 14px system-ui
 }
 
 /* var */
