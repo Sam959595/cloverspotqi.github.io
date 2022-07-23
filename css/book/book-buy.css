@@ -66,15 +66,12 @@ section.vv {
 }
 
 section.vv > div {
-    margin-bottom: 1cm;
     padding-block: 1em;
 
     display: flex;
     justify-content: space-between;
 
-    border-width: .1px 0;
-    border-style: solid;
-    border-color: var(--gray-3)
+    border-top: .1px solid var(--gray-3)
 }
 
 section.vv div div {
