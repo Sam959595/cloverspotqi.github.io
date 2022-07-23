@@ -296,7 +296,8 @@ section.hh h6 {
     :root {
         --padding: 30px;
         --width: calc(var(--screen) - var(--padding) * 2);
-        --width-2: calc(var(--width) / 3 - (24px * 2 / 3))
+        --width-2: calc(var(--width) / 3 - (24px * 2 / 3));
+        --shadow: linear-gradient(to top right, transparent 60%, #000000cc)
     }
 }
 
