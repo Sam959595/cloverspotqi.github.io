@@ -30,7 +30,7 @@ section.bb a:last-child {
 /* ww */
 
 section.ww {
-    margin: 3cm var(--padding) .5cm
+    margin: 1.5cm var(--padding) .5cm
 }
 
 section.ww h1 {
@@ -40,7 +40,7 @@ section.ww h1 {
 /* rr */
 
 section.rr {
-    margin: .5cm var(--padding)
+    margin: .3cm var(--padding)
 }
 
 section.rr h6 {
@@ -116,9 +116,9 @@ section.vv button {
     -apple-pay-button-style: var(--gray-b);
 
 	width: 100%;
-    height: 48px;
+    height: 38px;
 
-    border-radius: 13px;
+    border-radius: 8px;
 
     font: 600 16px system-ui;
 
