@@ -24,12 +24,12 @@ section.kk ul {
     border-radius: inherit
 }
 section.kk li {
-    width: 354px;
+    width: var(--width);
+
+    margin-block: 30px;
 
     display: flex;
-    justify-content: space-between;
-
-    margin-block: 30px
+    justify-content: space-between
 }
 
 section.kk li a {
@@ -81,7 +81,7 @@ section.rr>a {
 section.rr ul {
     display: grid;
     grid-auto-flow: column;
-    column-gap: 2em;
+    column-gap: 24px;
 
     padding-inline: var(--padding);
 
@@ -135,7 +135,7 @@ section.nn li h1 {
 }
 
 section.nn li a {
-    width: 100px;
+    width: var(--width-2);
 
     display: block;
 
@@ -201,8 +201,7 @@ section.mm>a {
 /* cc */
 
 section.cc {
-    margin-top: 20px;
-    background: none
+    margin-top: 20px
 }
 
 section.cc ul {
@@ -216,7 +215,6 @@ section.cc li a {
     height: 60px;
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -227,11 +225,14 @@ section.cc li a {
     background-color: var(--gray-18)
 }
 
-section.cc h5 {
+section.cc :where(h5, h6) {
     font: 600 14px/1.2 system-ui
 }
 section.cc h6 {
-    font: 11px ui-rounded;
+    margin-left: .5em;
+
+    font-weight: 400;
+
     color: var(--red-1)
 }
 
@@ -242,8 +243,8 @@ section.hh {
 }
 
 section.hh ul a {
-    width: 354px;
-
+    width: var(--width);
+    
     display: block;
     border-radius: 8px
 }
@@ -267,14 +268,17 @@ section.hh div {
     justify-content: center;
     align-items: center
 }
-section.hh img {
-    object-fit: cover;
+section.hh figcaption {
     aspect-ratio: 1;
 
-    width: 150px;
     height: 150px;
 
-    border-radius: 100%
+    border-radius: 100%;
+
+    background: center/cover
+}
+section.hh figcaption:nth-child(2) {
+    margin-inline: .8cm
 }
 
 section.hh h6 {
