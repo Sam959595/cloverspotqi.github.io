@@ -15,7 +15,7 @@
 *:not(input, textarea) {
 	-webkit-user-select: none
 }
-a.x {
+*:not(li a) {
 	-webkit-touch-callout: none
 }
 a {
