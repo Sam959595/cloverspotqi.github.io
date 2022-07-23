@@ -34,13 +34,13 @@ section.ww {
 }
 
 section.ww h1 {
-    font: 700 36px ui-serif
+    font: 700 36px/1 ui-serif
 }
 
 /* rr */
 
 section.rr {
-    margin: .3cm var(--padding)
+    margin: .4cm var(--padding)
 }
 
 section.rr h6 {
@@ -58,15 +58,12 @@ section.rr a {
 /* vv */
 
 section.vv {
-    margin: .5cm var(--padding) max(env(safe-area-inset-bottom), .5cm);
+    margin: 0 var(--padding) env(safe-area-inset-bottom);
+    padding-block: .5cm;
 
     z-index: 1;
     position: fixed;
-    inset: auto 0 0
-}
-
-section.vv > div {
-    padding-block: 1em;
+    inset: auto 0 0;
 
     display: flex;
     justify-content: space-between;
@@ -74,7 +71,7 @@ section.vv > div {
     border-top: .1px solid var(--gray-3)
 }
 
-section.vv div div {
+section.vv div {
     display: flex;
     flex-direction: column;
     justify-content: space-between
