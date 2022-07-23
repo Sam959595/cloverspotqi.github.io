@@ -1,0 +1,209 @@
+hr {
+    margin-inline: var(--padding)
+}
+
+/* bb */
+
+section.bb {
+    z-index: 1;
+    position: fixed;
+    inset: 0 0 auto;
+
+    padding: 1em 16px;
+
+    display: flex;
+    justify-content: space-between;
+
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+
+    background: linear-gradient(to top, transparent, var(--gray-a))
+}
+
+section.bb a {
+    font: 17px system-ui
+}
+
+section.bb a:last-child {
+    font-weight: 600
+}
+
+/* ww */
+
+section.ww {
+    margin: 3cm var(--padding) .5cm
+}
+
+section.ww h1 {
+    font: 700 36px ui-serif
+}
+
+/* rr */
+
+section.rr {
+    margin: .5cm var(--padding)
+}
+
+section.rr h6 {
+    font: 14px/1.4 ui-serif;
+    letter-spacing: .01em
+}
+
+section.rr a {
+    display: flex;
+    justify-content: end;
+    
+    font-size: 14px;
+}
+
+/* vv */
+
+section.vv {
+    margin: .5cm var(--padding) max(env(safe-area-inset-bottom), .5cm);
+
+    z-index: 1;
+    position: fixed;
+    inset: auto 0 0
+}
+
+section.vv > div {
+    margin-bottom: 1cm;
+    padding-block: 1em;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-width: .1px 0;
+    border-style: solid;
+    border-color: var(--gray-3)
+}
+
+section.vv div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+section.vv h5 {
+    font: 600 14px ui-rounded;
+    color: var(--orange-1)
+}
+
+section.vv figure {
+    width: 50px;
+    aspect-ratio: 1/1.6;
+
+    border-radius: 2px;
+
+    box-shadow: 0 10px 20px #00000050;
+
+    background: center/cover
+}
+
+section.vv a {
+    margin-block: 1em;
+
+    display: block;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    color: var(--gray-b)
+}
+
+section.vv button {
+    -webkit-appearance: -apple-pay-button;
+    -apple-pay-button-type: buy;
+    -apple-pay-button-style: var(--gray-b);
+
+	width: 100%;
+    height: 48px;
+
+    border-radius: 13px;
+
+    font: 600 16px system-ui;
+
+    background-color: var(--gray-5)
+}
+
+/* var */
+
+@media screen and (min-width: 320px) and (max-width: 728px) {
+    :root {
+        --padding: 30px;
+        --width: calc(var(--screen) - var(--padding) * 2);
+        --width-2: calc(var(--width) / 3 - (24px * 2 / 3));
+        --shadow: linear-gradient(to top right, transparent 60%, #000000cc)
+    }
+}
+
+/* color */
+
+@media screen and (prefers-color-scheme: light) {
+    :root {
+        --soft-1: #f5f5f7b8;
+        --soft-2: #ffffffcc;
+
+        --gray-a: white;
+        --gray-b: black;
+
+        --gray-1: #1d1d1f;
+        --gray-2: #8e8e93;
+        --gray-3: #d2d2d7;
+        --gray-4: #86868b;
+        --gray-5: #e8e8ed;
+        --gray-6: #aaaab3;
+        --gray-7: #f5f5f7;
+        --gray-8: #d2d2d7;
+        --gray-9: #0000000d;
+        --gray-10: #1d1d1f;
+        --gray-15: #f2f2f6;
+        --gray-18: #f5f5f7;
+        --gray-19: #e3e3e880;
+        --gray-20: #00000080;
+        --gray-21: #00000008;
+
+        --blue-1: #007aff;
+
+        --red-1: #ff2d55;
+
+        --orange-1: #fd9900;
+
+        --const-1: #17171d;
+        --const-2: #f5f5f7;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        --soft-1: #1d1d1fb8;
+        --soft-2: #00000080;
+
+        --gray-a: black;
+        --gray-b: white;
+
+        --gray-1: #f5f5f7;
+        --gray-2: #8e8e93;
+        --gray-3: #212125;
+        --gray-4: #63636e;
+        --gray-5: #212125;
+        --gray-6: #63636e;
+        --gray-7: #1c1c1e;
+        --gray-8: #515154;
+        --gray-9: #00000033;
+        --gray-10: #d5d5e2;
+        --gray-15: #17171d;
+        --gray-18: #121212;
+        --gray-19: #24242d80;
+        --gray-20: #ffffff80;
+        --gray-21: #00000060;
+
+        --blue-1: #0a84ff;
+
+        --red-1: #fb5c74;
+
+        --orange-1: #ff9f00;
+
+        --const-1: #17171d;
+        --const-2: #f5f5f7;
+    }
+}
