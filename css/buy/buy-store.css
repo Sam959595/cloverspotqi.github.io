@@ -13,8 +13,6 @@ section.hh:not(.bb, .nn) h5 {
 /* 0 */
 
 section.hh ul {
-	width: fit-content;
-	
 	display: grid;
 	grid-auto-flow: column;
 	column-gap: 1em;
