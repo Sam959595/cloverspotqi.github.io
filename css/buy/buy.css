@@ -324,6 +324,7 @@ section.hh {
 
 section:where(.hh, .pp, .vv) ul {
 	display: grid;
+	grid-auto-columns: max-content;
 	grid-auto-flow: column;
 	column-gap: 1em;
 	
