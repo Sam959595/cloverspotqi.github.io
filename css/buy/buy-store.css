@@ -14,6 +14,7 @@ section.hh:not(.bb, .nn) h5 {
 
 section.hh ul {
 	display: grid;
+	grid-auto-columns: max-content;
 	grid-auto-flow: column;
 	column-gap: 1em;
 	
