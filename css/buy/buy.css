@@ -341,13 +341,12 @@ section:where(.hh, .pp, .vv) ul li {
 }
 
 section.hh ul li a {
-        width: 230px;
-
 	display: block;
 
 	border-radius: 22px
 }
 section.hh ul li figure {
+	width: 230px;
 	height: 338px;
 
         padding: 2em;
