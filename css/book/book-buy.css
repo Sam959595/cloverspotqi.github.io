@@ -84,7 +84,7 @@ section:where(.rr, .ff) li {
 }
 
 section.rr ul {
-    padding-bottom: 2cm;
+    padding-block: 1cm
 }
 
 section.rr li h1 {
@@ -188,7 +188,7 @@ section.vv button {
 /* ff */
 
 section.ff {
-    margin-bottom: 4cm
+    margin-block: 1cm
 }
 
 section.ff ul {
