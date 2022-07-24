@@ -65,7 +65,7 @@ section.rr>a {
     -webkit-tap-highlight-color: transparent
 }
 
-section.rr ul {
+section:where(.rr, .ff) ul {
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
@@ -79,7 +79,7 @@ section.rr ul {
     scroll-padding-left: var(--padding)
 }
 
-section.rr li {
+section:where(.rr, .ff) li {
     scroll-snap-align: start
 }
 
@@ -107,7 +107,7 @@ section.rr li h6 {
 
 section.rr li figure {
     width: var(--width-2);
-    
+
     aspect-ratio: 1/1.6;
 
     border-radius: 5px;
@@ -125,8 +125,7 @@ section.rr li figure {
 /* vv */
 
 section.vv {
-    margin: 0 var(--padding) env(safe-area-inset-bottom);
-    padding-block: .5cm;
+    padding: .5cm var(--padding) max(env(safe-area-inset-bottom), .5cm);
 
     z-index: 1;
     position: fixed;
@@ -135,7 +134,7 @@ section.vv {
     display: flex;
     justify-content: space-between;
 
-    border-top: .1px solid var(--gray-3)
+    -webkit-backdrop-filter: saturate(180%) blur(20px)
 }
 
 section.vv div {
@@ -184,6 +183,70 @@ section.vv button {
     font: 600 16px system-ui;
 
     background-color: var(--gray-5)
+}
+
+/* ff */
+
+section.ff ul {
+    column-gap: 1em
+}
+
+section.ff a {
+    display: block;
+
+    border-radius: 10px
+}
+
+section.ff figure {
+    padding: 10px;
+
+    width: 250px;
+    height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: var(--gray-18);
+
+    -webkit-mask: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M249.72583,7.89532a9.99245,9.99245,0,0,0-.87726-2.74145,7.84917,7.84917,0,0,0-1.69964-2.3028,11.349,11.349,0,0,0-2.3028-1.69964,9.64063,9.64063,0,0,0-2.68665-.87726A25.06752,25.06752,0,0,0,239.30841,0H10.69159A12.56424,12.56424,0,0,0,7.84052.27417a9.09068,9.09068,0,0,0-2.68665.87726,7.84917,7.84917,0,0,0-2.3028,1.69964,11.349,11.349,0,0,0-1.69964,2.3028A9.43212,9.43212,0,0,0,.27417,7.89532,25.06922,25.06922,0,0,0,0,10.7464v98.5072a12.56438,12.56438,0,0,0,.27417,2.85108,9.9918,9.9918,0,0,0,.87726,2.74145,7.84917,7.84917,0,0,0,1.69964,2.3028,10.01393,10.01393,0,0,0,2.3028,1.69964,9.64,9.64,0,0,0,2.68665.87726A25.06752,25.06752,0,0,0,10.69159,120H239.30841a12.56424,12.56424,0,0,0,2.85107-.27417,9.09125,9.09125,0,0,0,2.68665-.87726,7.84917,7.84917,0,0,0,2.3028-1.69964,10.01393,10.01393,0,0,0,1.69964-2.3028,9.431,9.431,0,0,0,.87726-2.74145A25.06791,25.06791,0,0,0,250,109.2536V10.7464A12.5647,12.5647,0,0,0,249.72583,7.89532Z'/%3e%3c/svg%3e") no-repeat
+}
+
+section.ff div {
+    display: inherit;
+    justify-content: inherit
+}
+
+section.ff h6 {
+    font-family: ui-rounded
+}
+
+section.ff p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    font: 14px/1.42859 system-ui
+}
+
+section.ff :where(p b, time) {
+    color: var(--gray-6)
+}
+
+section.ff h5 {
+    margin-inline: 10%;
+
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+
+    font: 16px/1.47059 system-ui;
+
+    color: var(--gray-6)
 }
 
 /* var */
