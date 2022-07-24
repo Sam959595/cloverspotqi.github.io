@@ -20,7 +20,7 @@ section.bb {
 }
 
 section.bb a {
-    font: 17px system-ui
+    font-size: 17px
 }
 
 section.bb a:last-child {
@@ -52,7 +52,7 @@ section.uu a {
     display: flex;
     justify-content: end;
     
-    font-size: 14px;
+    font-size: 17px
 }
 
 /* rr */
