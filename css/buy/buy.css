@@ -209,8 +209,6 @@ section.vv div:nth-child(3) button:last-child {
 /* nn */
 
 section.nn ul {
-	width: fit-content;
-	
     display: grid;
     grid-auto-flow: column;
 
@@ -324,8 +322,6 @@ section.hh {
 }
 
 section:where(.hh, .pp, .vv) ul {
-	width: fit-content;
-	
 	display: grid;
 	grid-auto-flow: column;
 	column-gap: 1em;
