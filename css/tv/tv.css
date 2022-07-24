@@ -107,8 +107,11 @@ section.qq a {
 
 section:where(.pp, .bb, .ff, .hh) ul {
     display: grid;
+    grid-auto-columns: max-content;
     grid-auto-flow: column;
     column-gap: 1em;
+    
+    padding-inline: var(--padding);
 
     overflow-x: scroll;
 
@@ -120,23 +123,14 @@ section:where(.pp, .bb, .ff, .hh) ul li {
     scroll-snap-align: start
 }
 
-section:where(.pp, .bb, .ff, .hh) ul li:first-child {
-    padding-left: var(--padding)
-}
-
-section:where(.pp, .bb, .ff, .hh) ul li:last-child {
-    padding-right: var(--padding)
-}
-
 section:where(.pp, .ff, .hh) a {
-    width: 250px;
-
     display: block;
 
     border-radius: 10px
 }
 
 section:where(.pp, .ff, .hh) figure {
+    width: 250px;
     height: 120px;
 
     background: center/cover var(--gray-18);
@@ -308,7 +302,7 @@ section.kk a {
     padding-left: var(--padding)
 }
 
-section.kk li+li h5 {
+section.kk li + li h5 {
     border-top: .1px solid var(--gray-3)
 }
 
