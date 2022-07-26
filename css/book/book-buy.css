@@ -43,7 +43,7 @@ section.uu {
     margin: .4cm var(--padding)
 }
 
-section.uu h6 {
+section.uu :where(h6, span) {
     font: 14px/1.4 ui-serif;
     letter-spacing: .01em
 }
@@ -53,6 +53,26 @@ section.uu a {
     justify-content: end;
     
     font-size: 17px
+}
+
+/* text hide */
+
+.hide {
+    position: relative
+}
+
+.hide h6 {
+    max-height: 57px;
+
+    -webkit-mask: linear-gradient(to top, transparent 16px, black 0), linear-gradient(to left, transparent 85px, black 150px)
+}
+
+.hide span {
+    position: absolute;
+
+    inset: auto 0 0 auto;
+
+    color: var(--blue-1)
 }
 
 /* rr */
