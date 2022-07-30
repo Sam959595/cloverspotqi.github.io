@@ -16,7 +16,7 @@ section.bb {
 
     -webkit-backdrop-filter: saturate(180%) blur(20px);
 
-    background: linear-gradient(to top, transparent, var(--gray-a))
+    background: linear-gradient(to top, var(--soft-2), var(--gray-a))
 }
 
 section.bb a {
@@ -164,7 +164,7 @@ section.vv {
     justify-content: space-between;
 
     -webkit-backdrop-filter: saturate(180%) blur(20px);
-    background-color: var(--soft-1)
+    background-color: var(--soft-2)
 }
 
 section.vv div {
