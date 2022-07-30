@@ -9,7 +9,7 @@ section.bb {
     position: fixed;
     inset: 0 0 auto;
 
-    padding: 1em 16px;
+    padding: 4em var(--padding);
 
     display: flex;
     justify-content: space-between;
@@ -20,21 +20,31 @@ section.bb {
 }
 
 section.bb a {
-    font-size: 17px
+    padding: .8em 1em;
+
+    width: 100%;
+
+    text-align: center;
+    font: 600 14px system-ui;
+
+    border-radius: 12px;
+
+    background-color: var(--gray-18);
+    color: var(--gray-b)
 }
 
-section.bb a:last-child {
-    font-weight: 600
+section.bb a:first-child {
+    margin-right: .5em
 }
 
 /* ww */
 
 section.ww {
-    margin: 1.5cm var(--padding) .5cm
+    margin: 4cm var(--padding) .5cm
 }
 
 section.ww h1 {
-    font: 700 36px/1 ui-serif
+    font: 700 24px/1 ui-serif
 }
 
 /* uu */
@@ -44,8 +54,7 @@ section.uu {
 }
 
 section.uu :where(h6, span) {
-    font: 14px/1.4 ui-serif;
-    letter-spacing: .01em
+    font: 15px/1.4 ui-serif
 }
 
 section.uu a {
@@ -62,9 +71,9 @@ section.uu a {
 }
 
 .hide h6 {
-    max-height: 57px;
+    max-height: 63px;
 
-    -webkit-mask: linear-gradient(to top, transparent 16px, black 0), linear-gradient(to left, transparent 85px, black 150px)
+    -webkit-mask: linear-gradient(to top, transparent 16px, black 0), linear-gradient(to left, transparent 40px, black 90px)
 }
 
 .hide span {
@@ -154,7 +163,8 @@ section.vv {
     display: flex;
     justify-content: space-between;
 
-    -webkit-backdrop-filter: saturate(180%) blur(20px)
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    background-color: var(--soft-1)
 }
 
 section.vv div {
@@ -225,15 +235,15 @@ section.ff figure {
     padding: 10px;
 
     width: 250px;
-    height: 120px;
+    height: 250px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    background-color: var(--gray-18);
+    border-radius: 9px;
 
-    -webkit-mask: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M249.72583,7.89532a9.99245,9.99245,0,0,0-.87726-2.74145,7.84917,7.84917,0,0,0-1.69964-2.3028,11.349,11.349,0,0,0-2.3028-1.69964,9.64063,9.64063,0,0,0-2.68665-.87726A25.06752,25.06752,0,0,0,239.30841,0H10.69159A12.56424,12.56424,0,0,0,7.84052.27417a9.09068,9.09068,0,0,0-2.68665.87726,7.84917,7.84917,0,0,0-2.3028,1.69964,11.349,11.349,0,0,0-1.69964,2.3028A9.43212,9.43212,0,0,0,.27417,7.89532,25.06922,25.06922,0,0,0,0,10.7464v98.5072a12.56438,12.56438,0,0,0,.27417,2.85108,9.9918,9.9918,0,0,0,.87726,2.74145,7.84917,7.84917,0,0,0,1.69964,2.3028,10.01393,10.01393,0,0,0,2.3028,1.69964,9.64,9.64,0,0,0,2.68665.87726A25.06752,25.06752,0,0,0,10.69159,120H239.30841a12.56424,12.56424,0,0,0,2.85107-.27417,9.09125,9.09125,0,0,0,2.68665-.87726,7.84917,7.84917,0,0,0,2.3028-1.69964,10.01393,10.01393,0,0,0,1.69964-2.3028,9.431,9.431,0,0,0,.87726-2.74145A25.06791,25.06791,0,0,0,250,109.2536V10.7464A12.5647,12.5647,0,0,0,249.72583,7.89532Z'/%3e%3c/svg%3e") no-repeat
+    background-color: var(--gray-18)
 }
 
 section.ff div {
