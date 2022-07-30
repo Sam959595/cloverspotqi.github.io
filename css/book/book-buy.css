@@ -71,7 +71,7 @@ section.uu a {
 }
 
 .hide h6 {
-    max-height: 63px;
+    max-height: 84px;
 
     -webkit-mask: linear-gradient(to top, transparent 16px, black 0), linear-gradient(to left, transparent 40px, black 90px)
 }
