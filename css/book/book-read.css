@@ -104,12 +104,6 @@ section.vv {
     margin: 2.8cm 1.2cm 1.2cm
 }
 
-section.vv h2 {
-    text-align: center;
-    font: 600 24px ui-serif;
-
-    color: var(--canvas-22)
-}
 section.vv h5 {
     margin-block: 3em;
 
@@ -156,14 +150,14 @@ section.vv ol li {
     font-size: 14px !important
 }
 
-.sss :where(h2, h5, h6, ol li) {
+.sss :where(h5, h6, ol li) {
     font-family: system-ui !important
 }
 
 .rrr {
     background-color: var(--canvas-1) !important
 }
-.rrr :where(h2, h5, h6, ol) {
+.rrr :where(h5, h6, ol) {
     color: var(--canvas-2) !important
 }
 
@@ -188,7 +182,7 @@ section.bb a {
 }
 
 section.bb hr {
-    opacity: .3;
+    opacity: .2;
 
     border-color: var(--gray-1)
 }
