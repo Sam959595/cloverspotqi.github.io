@@ -18,7 +18,9 @@ section.bb {
 
 section.bb p {
     padding-bottom: .8em;
-    text-align: center
+
+    text-align: center;
+    font-size: 11px
 }
 
 section.bb div {
