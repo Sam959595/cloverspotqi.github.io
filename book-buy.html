@@ -1,111 +1,309 @@
-<!DOCTYPE html>
-<html lang="ru">
+hr {
+    margin-inline: var(--padding)
+}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="robots" content="none">
+/* bb */
 
-    <title>Глаза тьмы</title>
+section.bb {
+    z-index: 1;
+    position: fixed;
+    inset: 0 0 auto;
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    padding: 3.5em var(--padding);
 
-    <meta name="theme-color" content="white" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="black" media="(prefers-color-scheme: dark)">
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="js/book/book.js"></script>
+    background: linear-gradient(to top, var(--soft-2), var(--gray-a))
+}
 
-    <link rel="stylesheet" href="css/body.css">
-    <link rel="stylesheet" href="css/book/book-buy.css">
-</head>
+section.bb p {
+    padding-bottom: .8em;
+    text-align: center
+}
 
-<body>
-    <section class="bb">
-        <p>★ <b>4,9</b> • Мистика и ужасы | Дин Кунц, 1998 г.</p>
-        <div>
-            <a href="#">Купить за 499 ₽</a>
-            <a href="book-read.html">Читать фрагмент</a>
-        </div>
-    </section>
+section.bb div {
+    display: flex
+}
 
-    <section class="ww">
-        <h1>Глаза тьмы</h1>
-    </section>
+section.bb a {
+    padding: .8em 1em;
 
-    <hr>
+    width: 100%;
 
-    <section class="uu string">
-        <h6>Попытка Кристины Эванс прикоснуться к тайне гибели отряда скаутов, в котором был и ее сын, немедленно обернулась для Кристины и ее спутника, бывшего секретного агента Страйкера, смертельной опасностью. Убийцы упорно шли по их следу. В то же время некто (или нечто) не менее упорно передавал Кристине послание: "Не умер! Не умер!" Впереди, в горах Невады, в подземной лаборатории, где проводились бесчеловечные опыты и разрабатывалось смертельное оружие для будущих войн, Кристину и Страйкера ожидала встреча с Неведомым. Именно здесь им предстояло получить ответ на вопрос - способна ли материнская любовь противостоять всему злу этого безжалостного мира? И действительно ли сын Кристины НЕ УМЕР?</h6>
-    </section>
+    text-align: center;
+    font: 600 14px system-ui;
 
-    <hr>
+    border-radius: 12px;
 
-    <section class="ff">
-        <ul>
-            <li>
-                <a href="0000545.html">
-                    <figure>
-                        <p>Это прекрасный роман о материнской любви и надежде, которые являются настоящими главными героями книги Кунца. Одинокая женщина, от которой ушёл муж, и которая год назад потеряла сына в результате аварии автобуса, однажды видит его в чужой машине. Она не может поверить, что это он, её Дэнни. Ей в ближайшее время предстоит ответственная работа, но всё идёт не так. Мысль о том, что сын жив и где-то рядом, будет теперь важнее всего. Кроме того, все эти паранормальные знаки и компьютерные послания, сводящие с ума неизвестностью о том, от кого же она на самом деле их получает. Без надежды на лучшее этого бы не вынес никто. Автор держит читателя в неизвестности до конца, заставляя по-настоящему сопереживать Тине Эванс. В романе все элементы триллера. Я считаю эту книгу одной из лучших и очень рекомендую</p>
-                        <div>
-                            <h6>★ <b>5</b></h6>
-                            <time>vyacheslavk • 24 окт.</time>
-                        </div>
-                    </figure>
-                </a>
-            </li>
-            <li>
-                <a href="0000545.html">
-                    <figure>
-                        <p>Трогательная история семьи, которая приводит нас к пониманию и доверию. Безусловно, фильм проникнут чувствами</p>
-                        <div>
-                            <h6>★ <b>4</b></h6>
-                            <time>antongrivin • 24 окт.</time>
-                        </div>
-                    </figure>
-                </a>
-            </li>
-            <li>
-                <a href="0000545.html">
-                    <figure>
-                        <p>Мне кажется, что выглядит несколько нелепо, когда все участники семьи…</p>
-                        <div>
-                            <h6>★ <b>3</b></h6>
-                            <time>handygdh • 22 дек. 2021 г.</time>
-                        </div>
-                    </figure>
-                </a>
-            </li>
-        </ul>
-    </section>
+    background-color: var(--gray-21);
+    color: var(--gray-b)
+}
 
-    <section class="uu">
-        <a href="#">Добавить</a>
-    </section>
+section.bb a:first-child {
+    margin-right: .5em
+}
 
-    <hr>
+/* ww */
 
-    <section class="rr">
-        <ul>
-            <li>
-                <a href="#">
-                    <figure style="background-image: var(--shadow), url('https://top10a.ru/wp-content/uploads/2019/11/2-43.jpg')">
-                        <h6>★ <b>4,7</b></h6>
-                    </figure>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <figure style="background-image: var(--shadow), url('https://s1.livelib.ru/boocover/1005020518/200x305/4272/boocover.jpg')">
-                        <h6>★ <b>3,2</b></h6>
-                    </figure>
-                </a>
-            </li>
-        </ul>
-    </section>
+section.ww {
+    margin: 4cm var(--padding) .5cm
+}
 
-    <section class="uu">
-        <a href="#">Дин Кунц <svg width="15" height="22" viewBox="0 0 64 64" opacity=".2" fill="var(--blue-1)"><path d="m47.67 28-23.33-23.34a5.66 5.66 0 0 0 -8 8l19.31 19.34-19.32 19.33a5.66 5.66 0 1 0 8 8l23.34-23.33a5.68 5.68 0 0 0 0-8z"></path></svg></a>
-    </section>
-</body>
+section.ww h1 {
+    font: 700 24px/1 ui-serif
+}
 
-</html>
+/* uu */
+
+section.uu {
+    margin: .4cm var(--padding)
+}
+
+section.uu :where(h6, span) {
+    font: 15px/1.4 ui-serif
+}
+
+section.uu a {
+    display: flex;
+    justify-content: end;
+    
+    font-size: 17px
+}
+
+/* text hide */
+
+.hide {
+    position: relative
+}
+
+.hide h6 {
+    max-height: 84px;
+
+    -webkit-mask: linear-gradient(to top, transparent 17px, black 0), linear-gradient(to left, transparent 40px, black 90px)
+}
+
+.hide span {
+    position: absolute;
+
+    inset: auto 0 0 auto;
+
+    color: var(--blue-1)
+}
+
+/* rr */
+
+section.rr>a {
+    margin: 1cm var(--padding);
+
+    display: block;
+
+    -webkit-tap-highlight-color: transparent
+}
+
+section:where(.rr, .ff) ul {
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    column-gap: 24px;
+
+    padding-inline: var(--padding);
+
+    overflow-x: scroll;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: var(--padding)
+}
+
+section:where(.rr, .ff) li {
+    scroll-snap-align: start
+}
+
+section.rr ul {
+    padding-block: 1cm
+}
+
+section.rr li h1 {
+    font: 500 14px system-ui
+}
+
+section.rr li a {
+    display: block;
+
+    border-radius: 5px
+}
+section.rr > a h5 {
+    font: 700 19px ui-serif
+}
+section.rr li h6 {
+    font: 11px ui-rounded;
+
+    color: white
+}
+
+section.rr li figure {
+    width: var(--width-2);
+
+    aspect-ratio: 1/1.6;
+
+    border-radius: 5px;
+
+    padding: .8em;
+
+    display: flex;
+    justify-content: end;
+
+    box-shadow: 0 10px 20px #00000050;
+
+    background: center/cover
+}
+
+/* ff */
+
+section.ff {
+    margin-block: 1cm
+}
+
+section.ff ul {
+    column-gap: 1em
+}
+
+section.ff a {
+    display: block;
+
+    border-radius: 10px
+}
+
+section.ff figure {
+    padding: 10px;
+
+    width: 250px;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 9px;
+
+    background-color: var(--gray-18)
+}
+
+section.ff div {
+    display: inherit;
+    justify-content: inherit
+}
+
+section.ff h6 {
+    font-family: ui-rounded
+}
+
+section.ff p {
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    font: 14px/1.42859 system-ui
+}
+
+section.ff :where(p b, time) {
+    color: var(--gray-6)
+}
+
+section.ff h5 {
+    margin-inline: 10%;
+
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+
+    font: 16px/1.47059 system-ui;
+
+    color: var(--gray-6)
+}
+
+/* var */
+
+@media screen and (min-width: 320px) and (max-width: 728px) {
+    :root {
+        --padding: 30px;
+        --width: calc(var(--screen) - var(--padding) * 2);
+        --width-2: calc(var(--width) / 3 - (24px * 2 / 3));
+        --shadow: linear-gradient(to top right, transparent 60%, #000000cc)
+    }
+}
+
+/* color */
+
+@media screen and (prefers-color-scheme: light) {
+    :root {
+        --soft-1: #f5f5f7e7;
+        --soft-2: #ffffff80;
+
+        --gray-a: white;
+        --gray-b: black;
+
+        --gray-1: #1d1d1f;
+        --gray-2: #8e8e93;
+        --gray-3: #d2d2d7;
+        --gray-4: #86868b;
+        --gray-5: #e8e8ed;
+        --gray-6: #aaaab3;
+        --gray-7: #f5f5f7;
+        --gray-8: #d2d2d7;
+        --gray-9: #0000000d;
+        --gray-10: #1d1d1f;
+        --gray-15: #f2f2f6;
+        --gray-18: #f5f5f7;
+        --gray-19: #e3e3e880;
+        --gray-20: #00000080;
+        --gray-21: #202e440d;
+
+        --blue-1: #007aff;
+
+        --red-1: #ff2d55;
+
+        --orange-1: #fd9900;
+
+        --const-1: #17171d;
+        --const-2: #f5f5f7;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        --soft-1: #1d1d1fb8;
+        --soft-2: #00000080;
+
+        --gray-a: black;
+        --gray-b: white;
+
+        --gray-1: #f5f5f7;
+        --gray-2: #8e8e93;
+        --gray-3: #212125;
+        --gray-4: #63636e;
+        --gray-5: #212125;
+        --gray-6: #63636e;
+        --gray-7: #1c1c1e;
+        --gray-8: #515154;
+        --gray-9: #00000033;
+        --gray-10: #d5d5e2;
+        --gray-15: #17171d;
+        --gray-18: #121212;
+        --gray-19: #24242d80;
+        --gray-20: #ffffff80;
+        --gray-21: #22222380;
+
+        --blue-1: #0a84ff;
+
+        --red-1: #fb5c74;
+
+        --orange-1: #ff9f00;
+
+        --const-1: #17171d;
+        --const-2: #f5f5f7;
+    }
+}
