@@ -154,7 +154,7 @@ section.vv ol li {
     font-family: system-ui !important
 }
 .zzz :where(h5, h6, ol li) {
-    font-family: "hoefler text" !important
+    font-family: lowan !important
 }
 
 .rrr {
