@@ -1,7 +1,7 @@
 /* body */
 
 body {
-    background-color: var(--canvas-11)
+    background-color: var(--canvas-3)
 }
 
 /* ee */
@@ -17,7 +17,7 @@ section.ee {
 
     width: 350px;
 
-    margin: 1.5em auto;
+    margin: 1.6em auto;
 
     border-radius: 12px;
 
@@ -110,7 +110,7 @@ section.vv h5 {
     text-align: center;
     font: 600 19px ui-serif;
 
-    color: var(--canvas-22)
+    color: var(--text-3)
 }
 section.vv h6::first-letter {
     margin-left: 1cm
@@ -121,7 +121,7 @@ section.vv h6 {
     font: 17px ui-serif;
     text-align: justify;
 
-    color: var(--canvas-22)
+    color: var(--text-3)
 }
 
 section.vv ol {
@@ -132,7 +132,7 @@ section.vv ol {
     width: -webkit-fit-content;
 
     list-style: outside decimal;
-    color: var(--canvas-22)
+    color: var(--text-3)
 }
 section.vv ol li {
     font-family: ui-serif
@@ -153,12 +153,22 @@ section.vv ol li {
 .sss :where(h5, h6, ol li) {
     font-family: system-ui !important
 }
+.zzz :where(h5, h6, ol li) {
+    font-family: "hoefler text" !important
+}
 
 .rrr {
-    background-color: var(--canvas-1) !important
+    background-color: var(--canvas) !important
 }
+.ttt {
+    background-color: var(--canvas-2) !important
+}
+
 .rrr :where(h5, h6, ol) {
-    color: var(--canvas-2) !important
+    color: var(--text) !important
+}
+.ttt :where(h5, h6, ol) {
+    color: var(--text-2) !important
 }
 
 /* bb */
@@ -197,7 +207,7 @@ section.bb hr {
 
 @media screen and (min-width: 920px) {
     section.vv {
-        padding: 1cm 10cm
+        padding-inline: 10cm
     }
 }
 
@@ -228,10 +238,13 @@ section.bb hr {
         --gray-20: #00000080;
         --gray-21: #0000000f;
 
-        --canvas-1: #feddbc;
-        --canvas-2: #5b3f2a;
-        --canvas-11: #f2f2f9;
-        --canvas-22: #4b4b57;
+        --canvas: white;
+        --canvas-2: #feddbc;
+        --canvas-3: #f2f2f9;
+
+        --text: #3a3a3a;
+        --text-2: #5b3f2a;
+        --text-3: #4b4b57;
 
         --blue-1: #007aff;
 
@@ -269,10 +282,13 @@ section.bb hr {
         --gray-20: #ffffff80;
         --gray-21: #00000060;
 
-        --canvas-1: #120b08;
-        --canvas-2: #a9938d;
-        --canvas-11: #1a1a1c;
-        --canvas-22: #a7a7b3;
+        --canvas: black;
+        --canvas-2: #120b08;
+        --canvas-3: #1a1a1c;
+
+        --text: #c0c0c0;
+        --text-2: #a9938d;
+        --text-3: #a7a7b3;
 
         --blue-1: #0a84ff;
 
