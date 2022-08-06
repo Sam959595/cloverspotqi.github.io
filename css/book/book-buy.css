@@ -9,14 +9,20 @@ section.bb {
     position: fixed;
     inset: 0 0 auto;
 
-    padding: 4em var(--padding);
-
-    display: flex;
-    justify-content: space-between;
+    padding: 3.5em var(--padding);
 
     -webkit-backdrop-filter: saturate(180%) blur(20px);
 
     background: linear-gradient(to top, var(--soft-2), var(--gray-a))
+}
+
+section.bb p {
+    padding-bottom: .8em;
+    text-align: center
+}
+
+section.bb div {
+    display: flex
 }
 
 section.bb a {
@@ -149,70 +155,6 @@ section.rr li figure {
     box-shadow: 0 10px 20px #00000050;
 
     background: center/cover
-}
-
-/* vv */
-
-section.vv {
-    padding: .5cm var(--padding) max(env(safe-area-inset-bottom), .5cm);
-
-    z-index: 1;
-    position: fixed;
-    inset: auto 0 0;
-
-    display: flex;
-    justify-content: space-between;
-
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    background-color: var(--soft-1)
-}
-
-section.vv div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between
-}
-section.vv h5 {
-    font: 600 14px ui-rounded;
-    color: var(--orange-1)
-}
-
-section.vv figure {
-    width: 50px;
-    aspect-ratio: 1/1.6;
-
-    border-radius: 2px;
-
-    box-shadow: 0 10px 20px #00000050;
-
-    background: center/cover
-}
-
-section.vv a {
-    margin-block: 1em;
-
-    display: block;
-
-    text-align: center;
-
-    font-size: 14px;
-
-    color: var(--gray-b)
-}
-
-section.vv button {
-    -webkit-appearance: -apple-pay-button;
-    -apple-pay-button-type: buy;
-    -apple-pay-button-style: var(--gray-b);
-
-	width: 100%;
-    height: 38px;
-
-    border-radius: 8px;
-
-    font: 600 16px system-ui;
-
-    background-color: var(--gray-5)
 }
 
 /* ff */
@@ -353,7 +295,7 @@ section.ff h5 {
         --gray-18: #121212;
         --gray-19: #24242d80;
         --gray-20: #ffffff80;
-        --gray-21: #00000060;
+        --gray-21: #22222380;
 
         --blue-1: #0a84ff;
 
