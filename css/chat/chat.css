@@ -103,8 +103,6 @@ section.nn div {
 
     border-radius: 18px;
 
-    font: 16px/1.42859 system-ui;
-
     background-color: var(--gray-19)
 }
 
@@ -136,7 +134,7 @@ section.nn button {
 
     border-radius: 100%;
 
-    font-size: 12px;
+    font: 12px system-ui;
 
     background-color: var(--blue-1);
     color: white
