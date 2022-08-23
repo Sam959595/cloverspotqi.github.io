@@ -107,7 +107,6 @@ section.nn div {
 }
 
 section.nn textarea {
-    -webkit-appearance: none;
     resize: none;
 
     padding: 5px 5px 5px 1em;
