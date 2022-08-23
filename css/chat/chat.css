@@ -115,7 +115,7 @@ section.nn div {
 section.nn textarea {
     resize: none;
 
-    padding: 5px 5px 5px 0;
+    margin: 10px 10px 10px 0;
 
     width: 100%;
 
@@ -129,10 +129,6 @@ section.nn textarea::-webkit-input-placeholder {
 }
 
 section.nn button {
-    aspect-ratio: 1;
-
-    height: 22px;
-
     font: 600 14px system-ui;
 
     background: none;
