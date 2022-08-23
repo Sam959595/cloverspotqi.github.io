@@ -36,7 +36,8 @@ section.bb {
 section.bb main {
     margin: 1.8cm .5em max(env(safe-area-inset-bottom), 1.8cm)
 }
-section.bb main > div {
+
+section.bb main>div {
     margin-bottom: .2em;
     padding: .3em .8em;
 
@@ -61,13 +62,14 @@ section.bb .ttt {
 
 section.bb time {
     margin-top: 8px;
-    
+
     float: right;
 
     font-size: 9px;
 
     color: inherit
 }
+
 section.bb :where(.vvv, .yyy) time {
     opacity: .5
 }
@@ -76,6 +78,7 @@ section.bb .vvv {
     background-color: var(--gray-5);
     color: var(--gray-b)
 }
+
 section.bb .yyy {
     margin-left: auto;
 
@@ -99,9 +102,12 @@ section.nn {
 }
 
 section.nn div {
-    display: flex;
+    padding-inline: .8em;
 
-    border-radius: 18px;
+    display: flex;
+    align-items: center;
+
+    border-radius: 10px;
 
     background-color: var(--gray-19)
 }
@@ -109,11 +115,11 @@ section.nn div {
 section.nn textarea {
     resize: none;
 
-    padding: 5px 5px 5px 1em;
+    padding: 5px 5px 5px 0;
 
     width: 100%;
 
-    font: 16px/1.42859 system-ui;
+    font: 16px/1.2 system-ui;
 
     background: none
 }
@@ -125,86 +131,80 @@ section.nn textarea::-webkit-input-placeholder {
 section.nn button {
     aspect-ratio: 1;
 
-    margin: 5px;
-
     height: 22px;
-    
-    transform: rotate(-90deg);
 
-    border-radius: 100%;
+    font: 600 14px system-ui;
 
-    font: 12px system-ui;
-
-    background-color: var(--blue-1);
-    color: white
+    background: none;
+    color: var(--blue-1)
 }
 
 /* color */
 
 @media screen and (prefers-color-scheme: light) {
-:root {
-    --soft-1: #f5f5f7b8;
-    --soft-2: #ffffffcc;
+    :root {
+        --soft-1: #f5f5f7b8;
+        --soft-2: #ffffffcc;
 
-    --gray-a: white;
-    --gray-b: black;
+        --gray-a: white;
+        --gray-b: black;
 
-    --gray-1: #1d1d1f;
-    --gray-2: #8e8e93;
-    --gray-3: #d2d2d7;
-    --gray-4: #86868b;
-    --gray-5: #e8e8ed;
-    --gray-6: #aaaab3;
-    --gray-7: #f5f5f7;
-    --gray-8: #d2d2d7;
-    --gray-9: #0000000d;
-    --gray-10: #1d1d1f;
-    --gray-15: #f5f5f5;
-    --gray-18: #f5f5f7;
-    --gray-19: #e3e3e880;
-    --gray-20: #00000080;
-    
-    --blue-1: #007aff;
+        --gray-1: #1d1d1f;
+        --gray-2: #8e8e93;
+        --gray-3: #d2d2d7;
+        --gray-4: #86868b;
+        --gray-5: #e8e8ed;
+        --gray-6: #aaaab3;
+        --gray-7: #f5f5f7;
+        --gray-8: #d2d2d7;
+        --gray-9: #0000000d;
+        --gray-10: #1d1d1f;
+        --gray-15: #f5f5f5;
+        --gray-18: #f5f5f7;
+        --gray-19: #e3e3e880;
+        --gray-20: #00000080;
 
-    --red-1: #ff2d55;
+        --blue-1: #007aff;
 
-    --orange-1: #fd9900;
+        --red-1: #ff2d55;
 
-    --const-1: #17171d;
-    --const-2: #f5f5f7;
-}
+        --orange-1: #fd9900;
+
+        --const-1: #17171d;
+        --const-2: #f5f5f7;
+    }
 }
 
 @media screen and (prefers-color-scheme: dark) {
-:root {
-    --soft-1: #1d1d1fb8;
-    --soft-2: #00000080;
-    
-    --gray-a: black;
-    --gray-b: white;
-    
-    --gray-1: #f5f5f7;
-    --gray-2: #8e8e93;
-    --gray-3: #212125;
-    --gray-4: #63636e;
-    --gray-5: #212125;
-    --gray-6: #63636e;
-    --gray-7: #1c1c1e;
-    --gray-8: #515154;
-    --gray-9: #00000033;
-    --gray-10: #d5d5e2;
-    --gray-15: #121212;
-    --gray-18: #17171d;
-    --gray-19: #24242d80;
-    --gray-20: #ffffff80;
+    :root {
+        --soft-1: #1d1d1fb8;
+        --soft-2: #00000080;
 
-    --blue-1: #0a84ff;
+        --gray-a: black;
+        --gray-b: white;
 
-    --red-1: #fb5c74;
+        --gray-1: #f5f5f7;
+        --gray-2: #8e8e93;
+        --gray-3: #212125;
+        --gray-4: #63636e;
+        --gray-5: #212125;
+        --gray-6: #63636e;
+        --gray-7: #1c1c1e;
+        --gray-8: #515154;
+        --gray-9: #00000033;
+        --gray-10: #d5d5e2;
+        --gray-15: #121212;
+        --gray-18: #17171d;
+        --gray-19: #24242d80;
+        --gray-20: #ffffff80;
 
-    --orange-1: #ff9f00;
+        --blue-1: #0a84ff;
 
-    --const-1: #17171d;
-    --const-2: #f5f5f7;
-}
+        --red-1: #fb5c74;
+
+        --orange-1: #ff9f00;
+
+        --const-1: #17171d;
+        --const-2: #f5f5f7;
+    }
 }
