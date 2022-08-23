@@ -96,26 +96,21 @@ section.nn {
     position: fixed;
     inset: auto 0 0;
 
-    padding: 15px 25px max(env(safe-area-inset-bottom), 15px);
-
-    -webkit-backdrop-filter: saturate(180%) blur(20px)
-}
-
-section.nn div {
-    padding-inline: .8em;
+    margin: 15px 20px max(env(safe-area-inset-bottom), 15px);
+    padding: 10px;
 
     display: flex;
     align-items: center;
 
-    border-radius: 10px;
+    border-radius: 12px;
+
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
 
     background-color: var(--gray-19)
 }
 
 section.nn textarea {
     resize: none;
-
-    margin: 10px 10px 10px 0;
 
     width: 100%;
 
@@ -125,10 +120,17 @@ section.nn textarea {
 }
 
 section.nn textarea::-webkit-input-placeholder {
-    color: var(--gray-8)
+    opacity: .3;
+
+    color: var(--gray-b)
 }
 
 section.nn button {
+    pointer-events: none;
+    opacity: 0;
+
+    margin-left: 10px;
+
     font: 600 14px system-ui;
 
     background: none;
