@@ -16,7 +16,7 @@ section.ww {
 }
 
 section.ww a {
-    font: 17px system-ui
+    font-size: 17px
 }
 
 section.ww a:last-child {
@@ -64,7 +64,7 @@ section.bb time {
     
     float: right;
 
-    font: 9px system-ui;
+    font-size: 9px;
 
     color: inherit
 }
@@ -136,7 +136,7 @@ section.nn button {
 
     border-radius: 100%;
 
-    font: 12px system-ui;
+    font-size: 12px;
 
     background-color: var(--blue-1);
     color: white
