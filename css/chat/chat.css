@@ -34,10 +34,13 @@ section.bb {
 }
 
 section.bb main {
-    margin: 1.8cm .5em max(env(safe-area-inset-bottom), 1.8cm)
+    margin: 1.8cm .5em max(env(safe-area-inset-bottom), 2cm)
 }
 
-section.bb main>div {
+section.bb main>div:not(.aaa) {
+    pointer-events: none
+}
+section.bb main>div:not(.ttt, .aaa) {
     margin-bottom: .2em;
     padding: .3em .8em;
 
@@ -52,7 +55,7 @@ section.bb main>div {
     font: 16px/1.2 system-ui
 }
 
-section.bb .ttt {
+section.bb :where(.ttt, .aaa) {
     margin: 1em 0;
 
     text-align: center;
@@ -135,6 +138,11 @@ section.nn button {
 
     background: none;
     color: var(--blue-1)
+}
+
+.qqq {
+    pointer-events: auto !important;
+    opacity: 1 !important
 }
 
 /* color */
