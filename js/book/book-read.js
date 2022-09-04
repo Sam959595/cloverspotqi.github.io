@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('touchstart', () => {
     $('section.ww').click( () => {
         let vv = $('section.ee'),
         nn = $('section.ww')
