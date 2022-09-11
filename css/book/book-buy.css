@@ -30,7 +30,7 @@ section.bb div {
 section.bb a {
     padding: .8em 1em;
 
-    width: 100%;
+    width: -webkit-fill-available;
 
     text-align: center;
     font: 600 14px system-ui;
