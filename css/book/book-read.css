@@ -175,26 +175,29 @@ section.vv ol li {
 
 section.bb {
     margin-inline: 1.2cm;
-    margin-bottom: env(safe-area-inset-bottom)
+    margin-bottom: max(env(safe-area-inset-bottom), 1.2cm)
 }
 section.bb div {
-    display: flex;
-    justify-content: space-between
+    display: flex
+}
+
+section.bb a:first-child {
+    margin-right: .5em
 }
 section.bb a {
-    margin-block: 1em;
+    padding: .8em 1em;
+
+    width: -webkit-fill-available;
 
     display: block;
 
+    border-radius: 10px;
+
+    text-align: center;
     font-weight: 600;
 
+    background-color: var(--gray-21);
     color: var(--gray-1)
-}
-
-section.bb hr {
-    opacity: .2;
-
-    border-color: var(--gray-1)
 }
 
 /* var */
