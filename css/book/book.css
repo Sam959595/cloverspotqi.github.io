@@ -47,6 +47,10 @@ section.kk li>div {
 section.kk li h6 {
     color: #e02f57
 }
+
+section.kk div {
+    width: 90%
+}
 section.kk li h5 {
     font: 600 13px system-ui
 }
@@ -214,7 +218,6 @@ section.cc li a {
     height: 60px;
 
     display: flex;
-    justify-content: center;
     align-items: center;
 
     border-radius: 18px;
@@ -224,15 +227,8 @@ section.cc li a {
     background-color: var(--gray-18)
 }
 
-section.cc :where(h5, h6) {
+section.cc h5 {
     font: 600 14px/1.2 system-ui
-}
-section.cc h6 {
-    margin-left: .5em;
-
-    font-weight: 400;
-
-    color: var(--red-1)
 }
 
 /* hh */
