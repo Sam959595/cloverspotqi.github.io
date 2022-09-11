@@ -38,7 +38,7 @@ ul, ol {
 input, select, textarea {
 	-webkit-appearance: none
 }
-select:focus {
+select:active {
         opacity: .5
 }
 
