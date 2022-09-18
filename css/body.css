@@ -94,7 +94,7 @@ select {
 body {
 	background-color: var(--gray-a)
 }
-h1, h2, h3, h4, h5, h6, table, textarea, span {
+h1, h2, h3, h4, h5, h6, table, textarea, span, article {
 	color: var(--gray-1)
 }
 p, time {
