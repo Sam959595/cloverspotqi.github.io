@@ -2,6 +2,13 @@ hr {
     margin-inline: var(--padding)
 }
 
+/* body */
+
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
 /* bb */
 
 section.bb {
@@ -73,7 +80,7 @@ section.uu a {
 
 /* rr */
 
-section.rr ul {
+section.rr > ul {
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
@@ -83,28 +90,85 @@ section.rr ul {
     scroll-snap-type: x mandatory;
 }
 
-section.rr li {
-    scroll-snap-align: center;
-    width: 350px;
+section.rr > ul > li {
+    overflow-y: scroll;
+    scroll-snap-align: start;
+
+    width: var(--width);
+    height: -webkit-fill-available
 }
 
-section.rr figure {
-    aspect-ratio: 1;
-    background: center/cover;
+/* rr - li */
+
+section.rr > ul > li:first-child > *:not(img, video) {
+    margin-inline: var(--padding)
 }
 
-section.rr h1 {
-    padding: 6cm var(--padding) 0;
+section.rr > ul > li:first-child time {
+    padding-block: 5cm .5cm;
 
-    
-    font: 600 28px system-ui;
+    display: block;
+
+    color: var(--orange-1)
 }
-section.rr p {
-    padding-bottom: 3cm;
-    padding-inline: var(--padding);
+section.rr > ul > li:first-child h1 {
+    font: 600 28px/1.125 system-ui
+}
+section.rr > ul > li:first-child p {
+    padding-block: .5cm;
 
-    
-    font: 17px system-ui;
+    font: 800 17px system-ui
+}
+section.rr > ul > li:first-child img {
+    width: -webkit-fill-available;
+
+    aspect-ratio: 1.8;
+    object-fit: cover
+}
+section.rr > ul > li:first-child video {
+    width: -webkit-fill-available;
+
+    aspect-ratio: 1.8;
+    object-fit: cover
+}
+
+section.rr > ul > li:first-child article::first-letter {
+    margin-left: 1cm
+}
+section.rr > ul > li:first-child article {
+    margin-block: .5cm;
+
+    text-align: justify;
+    font: 17px/1.47059 system-ui
+}
+
+/* rr - li 2 */
+
+section.rr > ul > li:last-child h1 {
+    padding: 5.9cm var(--padding) .5cm;
+
+    font: 600 28px/1.125 system-ui
+}
+
+section.rr > ul > li:last-child ul {
+    margin-inline: var(--padding);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+section.rr > ul > li:last-child img{
+    width: -webkit-fill-available;
+
+    border-radius: 8px;
+
+    aspect-ratio: 1.9;
+    object-fit: cover
+}
+
+section.rr > ul > li:last-child p {
+    margin-top: .8em;
 }
 
 /* ff */
@@ -159,9 +223,7 @@ section.ff h1 {
 @media screen and (min-width: 320px) and (max-width: 728px) {
     :root {
         --padding: 30px;
-        --width: calc(var(--screen) - var(--padding) * 2);
-        --width-2: calc(var(--width) / 3 - (24px * 2 / 3));
-        --shadow: linear-gradient(to top right, transparent 60%, #000000cc)
+        --width: var(--screen);
     }
 }
 
