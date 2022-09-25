@@ -1,194 +1,41 @@
-hr {
-    margin-inline: var(--padding)
+/* vv */
+
+section.vv > h1 {
+    margin: 3cm var(--padding) var(--padding);
+    font: 700 32px system-ui;
+    letter-spacing: .012em
 }
 
-/* body */
-
-body {
-    height: 100%;
-    overflow: hidden;
+section.vv ul {
+    display: grid;
+    row-gap: 24px
 }
 
-/* bb */
+section.vv figure {
+    aspect-ratio: 1/1.2;
+    display: flex;
+    align-items: flex-end;
+    background: center/cover
+}
 
-section.bb {
-    z-index: 1;
-    position: fixed;
-    inset: 0 0 auto;
+section.vv figure h1 {
+    padding: 90px var(--padding) var(--padding);
 
-    padding: 1.2cm var(--padding) .5cm;
+    font: 600 19px/1.2 system-ui;
+
+    color: white;
 
     -webkit-backdrop-filter: saturate(180%) blur(20px);
-
-    background: linear-gradient(to top, var(--soft-2), var(--gray-a))
+    background: linear-gradient(to top, #00000050 40%, transparent);
+    -webkit-mask: linear-gradient(to top, black 50%, transparent)
 }
 
-section.bb a {
-    opacity: .8;
+section.vv figure p {
+    opacity: .6;
+    padding-bottom: .8em;
 
-    font-size: 42px;
-
-    color: var(--gray-1)
-}
-
-/* ww */
-
-section.ww {
-    margin: 4cm var(--padding) .5cm
-}
-
-section.ww h1 {
-    font: 700 24px/1 ui-serif
-}
-
-/* uu */
-
-section.uu {
-    margin: .4cm var(--padding)
-}
-
-section.uu :where(h6, span) {
-    font: 15px/1.4 ui-serif
-}
-
-section.uu a {
-    display: flex;
-    justify-content: end;
-    
-    font-size: 17px
-}
-
-/* text hide */
-
-.hide {
-    position: relative
-}
-
-.hide h6 {
-    max-height: 84px;
-
-    -webkit-mask: linear-gradient(to top, transparent 17px, black 0), linear-gradient(to left, transparent 40px, black 90px)
-}
-
-.hide span {
-    position: absolute;
-
-    inset: auto 0 0 auto;
-
-    color: var(--blue-1)
-}
-
-/* rr */
-
-section.rr > ul {
-    display: grid;
-    grid-auto-columns: max-content;
-    grid-auto-flow: column;
-
-    overflow-x: scroll;
-
-    scroll-snap-type: x mandatory;
-}
-
-section.rr > ul > li {
-    overflow-y: scroll;
-    scroll-snap-align: start;
-    width: calc(428px - var(--padding));
-    height: -webkit-fill-available;
-}
-
-section.rr > ul li:first-child img {
-    display: block;
-    width: -webkit-fill-available;
-    aspect-ratio: 1.7;
-    background: center/cover;
-}
-
-section.rr h2 {
-    padding: 5cm var(--padding) .5cm;
-    color: var(--orange-1);
-}
-section.rr h1 {
-    padding: 0 var(--padding) 0;
-
-    
-    font: 600 28px/1.125 system-ui;
-}
-section.rr p {
-    padding-block: .5cm;
-    padding-inline: var(--padding);
-
-    
-    font: 800 17px system-ui;
-}
-
-section.rr article::first-letter {
-    margin-left: 1cm
-}
-section.rr article {
-    padding: var(--padding);
-    text-align: justify;
-    font: 17px/1.47059 system-ui;
-    color: var(--gray-1);
-}
-
-section.rr li:nth-child(2) ul {
-    padding-inline: var(--padding);
-}
-
-section.rr li:nth-child(2) ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
-}
-
-section.rr li:nth-child(2) h1 {
-    padding: 5.9cm var(--padding) .5cm;
-}
-
-/* ff */
-
-section.ff {
-    padding-block: 150px
-}
-
-section.ff ul {
-    display: grid;
-    grid-auto-columns: max-content;
-    grid-auto-flow: column;
-    column-gap: 1em;
-
-    padding-inline: var(--padding);
-
-    overflow-x: scroll;
-
-    scroll-snap-type: x mandatory;
-    scroll-padding-left: var(--padding)
-}
-
-section.ff a {
-    display: block;
-
-    border-radius: 10px
-}
-
-section.ff figure {
-    padding: 20px;
-
-    width: 280px;
-
-    aspect-ratio: 1/1.7;
-
-    border-radius: 15px;
-    box-shadow: inset 0 0 0 1px var(--gray-3);
-
-    background: center/cover;
-    background-color: var(--gray-5)
-}
-
-section.ff h1 {
     text-align: right;
-    font: 600 19px/1.47059 system-ui;
+    font: 500 12px/1.2 ui-rounded;
 
     color: white
 }
@@ -198,9 +45,7 @@ section.ff h1 {
 @media screen and (min-width: 320px) and (max-width: 728px) {
     :root {
         --padding: 30px;
-        --width: calc(var(--screen) - var(--padding) * 2);
-        --width-2: calc(var(--width) / 3 - (24px * 2 / 3));
-        --shadow: linear-gradient(to top right, transparent 60%, #000000cc)
+        --width: var(--screen);
     }
 }
 
