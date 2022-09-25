@@ -6,7 +6,7 @@ hr {
 
 body {
     height: 100%;
-    overflow: hidden;
+    overflow: hidden
 }
 
 /* bb */
@@ -144,8 +144,13 @@ section.rr > ul > li:first-child article {
 
 /* rr - li 2 */
 
+section.rr > ul > li:last-child a {
+    display: block;
+
+    border-radius: 8px
+}
 section.rr > ul > li:last-child h1 {
-    padding: 5.9cm var(--padding) .5cm;
+    padding: 3.5cm var(--padding) .5cm;
 
     font: 600 28px/1.125 system-ui
 }
@@ -155,10 +160,10 @@ section.rr > ul > li:last-child ul {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
+    gap: 2em 1em
 }
 
-section.rr > ul > li:last-child img{
+section.rr > ul > li:last-child img {
     width: -webkit-fill-available;
 
     border-radius: 8px;
@@ -169,6 +174,11 @@ section.rr > ul > li:last-child img{
 
 section.rr > ul > li:last-child p {
     margin-top: .8em;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden
 }
 
 /* ff */
