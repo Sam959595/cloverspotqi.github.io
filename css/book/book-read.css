@@ -208,9 +208,24 @@ section.bb a {
     }
 }
 
-@media screen and (min-width: 920px) {
-    section.vv {
-        padding-inline: 10cm
+@media screen and (min-width: 550px) and (max-width: 700px) {
+    section:is(.vv, .bb) {
+        margin-inline: 3cm
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    section:is(.vv, .bb) {
+        margin-inline: 5cm
+    }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    section:is(.vv, .bb) {
+        margin-inline: 7cm
+    }
+}
+@media screen and (min-width: 1200px) {
+    section:is(.vv, .bb) {
+        margin-inline: 10cm
     }
 }
 
@@ -239,7 +254,7 @@ section.bb a {
         --gray-18: #f5f5f7;
         --gray-19: #e3e3e880;
         --gray-20: #00000080;
-        --gray-21: #0000000f;
+        --gray-21: #00000018;
 
         --canvas: white;
         --canvas-2: #feddbc;
@@ -283,7 +298,7 @@ section.bb a {
         --gray-18: #17171d;
         --gray-19: #24242d80;
         --gray-20: #ffffff80;
-        --gray-21: #00000060;
+        --gray-21: #ffffff18;
 
         --canvas: black;
         --canvas-2: #120b08;
