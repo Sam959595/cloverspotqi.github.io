@@ -9,19 +9,20 @@ section.ww figure {
 }
 
 section.ww section:first-child {
-    margin: .5cm var(--padding)
+    margin: .5cm var(--padding);
+
+    display: flex;
+    justify-content: space-between
 }
 
 section.ww p {
     opacity: .5;
 
-    font: 700 5vw/1 ui-rounded;
-
-    color: var(--gray-1)
+    font: 700 5vw/1.25 ui-rounded
 }
 
 section.ww h1 {
-    font: 700 12vw/1 system-ui;
+    font: 700 5vw/1.25 system-ui;
     letter-spacing: .012em
 }
 
@@ -255,7 +256,7 @@ section.ff p {
     font: 14px/1.42859 system-ui
 }
 
-section.ff :where(p b, time) {
+section.ff time {
     color: var(--gray-6)
 }
 
