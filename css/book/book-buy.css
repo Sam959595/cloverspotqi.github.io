@@ -9,8 +9,6 @@ section.bb {
     position: fixed;
     inset: 0 0 auto;
 
-    padding: 3.5em var(--padding);
-
     -webkit-backdrop-filter: saturate(180%) blur(20px);
 
     background: linear-gradient(to top, var(--soft-2), var(--gray-a))
@@ -24,6 +22,8 @@ section.bb p {
 }
 
 section.bb div {
+    padding: 3em var(--padding);
+
     display: flex
 }
 
@@ -45,10 +45,51 @@ section.bb a:first-child {
     margin-right: .5em
 }
 
+/* ee */
+
+section.ee ul {
+    margin-block: 1em
+}
+
+section.ee ul {
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+
+    padding-inline: var(--padding);
+
+    overflow-x: scroll;
+
+    scroll-snap-type: x mandatory
+}
+
+section.ee li {
+    padding-inline: 20px;
+
+    text-align: center
+}
+section.ee li + li {
+    border-left: .1px solid var(--gray-3)
+}
+
+section.ee p {
+    font: 600 11px system-ui;
+    letter-spacing: .08em
+}
+section.ee h1 {
+    font: 600 18px ui-serif
+}
+section.ee h6 {
+    font-size: 10px
+}
+section.ee h4 {
+    font: 600 17px ui-rounded
+}
+
 /* ww */
 
 section.ww {
-    margin: 4cm var(--padding) .5cm
+    margin: 5cm var(--padding) .5cm
 }
 
 section.ww h1 {
@@ -58,12 +99,11 @@ section.ww h1 {
 /* uu */
 
 section.uu {
-    margin: .4cm var(--padding)
+    margin: .6cm var(--padding)
 }
 
 section.uu :where(h6, span) {
-    font: 15px/1.4 ui-serif;
-    text-align: justify
+    font: 14px/1.4 system-ui
 }
 
 section.uu a {
@@ -73,6 +113,16 @@ section.uu a {
     font-size: 17px
 }
 
+/* tt */
+
+section.tt {
+    margin: .6cm var(--padding)
+}
+
+section.tt h5 {
+    font: 600 15px ui-serif
+}
+
 /* text hide */
 
 .hide {
@@ -80,7 +130,7 @@ section.uu a {
 }
 
 .hide h6 {
-    max-height: 84px;
+    max-height: 57px;
 
     -webkit-mask: linear-gradient(to top, transparent 17px, black 0), linear-gradient(to left, transparent 40px, black 90px)
 }
@@ -161,10 +211,6 @@ section.rr li figure {
 }
 
 /* ff */
-
-section.ff {
-    margin-block: 1cm
-}
 
 section.ff ul {
     column-gap: 1em
@@ -260,7 +306,7 @@ section.ff h5 {
         --gray-9: #0000000d;
         --gray-10: #1d1d1f;
         --gray-15: #f2f2f6;
-        --gray-18: #f5f5f7;
+        --gray-18: #17171d;
         --gray-19: #e3e3e880;
         --gray-20: #00000080;
         --gray-21: #202e440d;
@@ -271,7 +317,7 @@ section.ff h5 {
 
         --orange: #fd9900;
 
-        --const-1: #17171d;
+        --const: #17171d;
         --const-2: #f5f5f7;
     }
 }
@@ -295,7 +341,7 @@ section.ff h5 {
         --gray-9: #00000033;
         --gray-10: #d5d5e2;
         --gray-15: #17171d;
-        --gray-18: #121212;
+        --gray-18: #17171d;
         --gray-19: #24242d80;
         --gray-20: #ffffff80;
         --gray-21: #22222380;
