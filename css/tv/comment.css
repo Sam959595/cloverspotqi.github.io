@@ -73,13 +73,13 @@ section.kk a {
 
 @media screen and (prefers-color-scheme: light) {
 	:root {
-        --soft-1: #f5f5f7b8;
+        --soft: #f5f5f7b8;
                 --soft-2: #ffffffcc;
 
 		--gray-a: white;
 		--gray-b: black;
 
-		--gray-1: #1d1d1f;
+		--gray: #1d1d1f;
 		--gray-2: #8e8e93;
 		--gray-3: #d2d2d7;
 		--gray-4: #86868b;
@@ -94,24 +94,24 @@ section.kk a {
 		
 		--blue-1: #007aff;
 
-        --red-1: #ff2d55;
+        --red: #ff2d55;
 
-        --orange-1: #fd9900;
+        --orange: #fd9900;
 
-        --const-1: #17171d;
+        --const: #17171d;
         --const-2: #f5f5f7;
 	}
 }
 
 @media screen and (prefers-color-scheme: dark) {
 	:root {
-        --soft-1: #1d1d1fb8;
+        --soft: #1d1d1fb8;
                 --soft-2: #00000080;
         
 		--gray-a: black;
 		--gray-b: white;
 		
-		--gray-1: #f5f5f7;
+		--gray: #f5f5f7;
 		--gray-2: #8e8e93;
 		--gray-3: #212125;
 		--gray-4: #63636e;
@@ -124,13 +124,13 @@ section.kk a {
                 --gray-15: #121212;
                 --gray-18: #17171d;
 	
-		--blue-1: #0a84ff;
+		--blue: #0a84ff;
 
-        --red-1: #fb5c74;
+        --red: #fb5c74;
 
-        --orange-1: #ff9f00;
+        --orange: #ff9f00;
 
-        --const-1: #17171d;
+        --const: #17171d;
         --const-2: #f5f5f7;
 	}
 }
