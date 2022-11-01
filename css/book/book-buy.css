@@ -30,7 +30,7 @@ section.bb div {
 section.bb a {
     padding: .8em 1em;
 
-    width: -webkit-fill-available;
+    width: 100%;
 
     text-align: center;
     font: 600 14px system-ui;
@@ -62,7 +62,8 @@ section.uu {
 }
 
 section.uu :where(h6, span) {
-    font: 15px/1.4 ui-serif
+    font: 15px/1.4 ui-serif;
+    text-align: justify
 }
 
 section.uu a {
