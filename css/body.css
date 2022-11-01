@@ -95,11 +95,11 @@ body {
 	background-color: var(--gray-a)
 }
 h1, h2, h3, h4, h5, h6, table, textarea, span, article {
-	color: var(--gray-1)
+	color: var(--gray)
 }
 p, time {
 	color: var(--gray-2)
 }
 a, select, button {
-	color: var(--blue-1)
+	color: var(--blue)
 }
