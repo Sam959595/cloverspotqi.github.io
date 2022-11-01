@@ -84,7 +84,7 @@ section.nnz figure {
 	background: center/cover var(--gray-4)
 }
 
-/* nx */
+/* nnx */
 
 section.nnx ul {
 	grid-template-rows: repeat(2, 1fr);
