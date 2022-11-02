@@ -2,9 +2,9 @@ hr {
     margin-inline: var(--padding)
 }
 
-/* bb */
+/* nav */
 
-section.bb {
+nav {
     z-index: 1;
     position: fixed;
     inset: 0 0 auto;
@@ -14,40 +14,9 @@ section.bb {
     background: linear-gradient(to top, var(--soft-2), var(--gray-a))
 }
 
-section.bb p {
-    padding-bottom: .8em;
-
-    text-align: center;
-    font-size: 11px
-}
-
-section.bb div {
-    padding: 3em var(--padding);
-
-    display: flex
-}
-
-section.bb a {
-    padding: .8em 1em;
-
-    width: 100%;
-
-    text-align: center;
-    font: 600 14px system-ui;
-
-    border-radius: 12px;
-
-    background-color: var(--gray-21);
-    color: var(--gray-b)
-}
-
-section.bb a:first-child {
-    margin-right: .5em
-}
-
 /* ee */
 
-section.ee ul {
+section.ee {
     margin-block: 1em
 }
 
@@ -58,9 +27,7 @@ section.ee ul {
 
     padding-inline: var(--padding);
 
-    overflow-x: scroll;
-
-    scroll-snap-type: x mandatory
+    overflow-x: scroll
 }
 
 section.ee li {
@@ -73,6 +40,8 @@ section.ee li + li {
 }
 
 section.ee p {
+    padding-bottom: .8em;
+
     font: 600 11px ui-rounded;
     letter-spacing: .08em
 }
@@ -87,6 +56,41 @@ section.ee h3 {
 }
 section.ee h1 {
     font: 600 18px ui-serif
+}
+
+/* bb */
+
+section.bb {
+    margin-block: 2em
+}
+
+section.bb a {
+    padding: 1em;
+
+    width: var(--width);
+    max-height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 12px;
+
+    background-color: var(--gray-21)
+}
+
+section.bb h1 {
+    margin-block: .2em;
+
+    font: 600 15px ui-serif
+}
+section.bb p {
+    opacity: .5;
+
+    text-align: center;
+
+    color: var(--gray-b)
 }
 
 /* ww */
@@ -156,7 +160,7 @@ section.rr>a {
     -webkit-tap-highlight-color: transparent
 }
 
-section:where(.rr, .ff) ul {
+section:where(.bb, .rr, .ff) ul {
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
@@ -170,7 +174,7 @@ section:where(.rr, .ff) ul {
     scroll-padding-left: var(--padding)
 }
 
-section:where(.rr, .ff) li {
+section:where(.bb, .rr, .ff) li {
     scroll-snap-align: start
 }
 
@@ -318,6 +322,8 @@ section.ff h5 {
 
         --red: #ff2d55;
 
+        --green: #40dd33;
+
         --orange: #fd9900;
 
         --const: #17171d;
@@ -328,7 +334,7 @@ section.ff h5 {
 @media screen and (prefers-color-scheme: dark) {
     :root {
         --soft: #1d1d1fb8;
-        --soft-2: #00000080;
+        --soft-2: #00000040;
 
         --gray-a: black;
         --gray-b: white;
@@ -352,6 +358,8 @@ section.ff h5 {
         --blue: #0a84ff;
 
         --red: #fb5c74;
+
+        --green: #4cee3e;
 
         --orange: #ff9f00;
 
