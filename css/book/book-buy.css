@@ -73,7 +73,7 @@ section.ee li + li {
 }
 
 section.ee p {
-    font: 600 11px system-ui;
+    font: 600 11px ui-rounded;
     letter-spacing: .08em
 }
 section.ee h6 {
@@ -83,7 +83,6 @@ section.ee h4 {
     font: 600 17px ui-rounded
 }
 section.ee h3 {
-    max-width: 90px;
     font: 600 12px/1 ui-rounded
 }
 section.ee h1 {
