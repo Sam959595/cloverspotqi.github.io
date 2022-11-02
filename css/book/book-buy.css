@@ -64,15 +64,12 @@ section.bb {
     margin-block: 2em
 }
 
-section.bb a {
+section.bb li {
     padding: 1em;
 
     width: var(--width);
-    max-height: 100px;
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
 
     border-radius: 12px;
@@ -81,43 +78,14 @@ section.bb a {
 }
 
 section.bb h1 {
-    margin-block: .2em;
-
-    font: 600 15px ui-serif
+    font: 600 14px system-ui
 }
 section.bb p {
     opacity: .5;
 
-    text-align: center;
+    padding-top: .2em;
 
     color: var(--gray-b)
-}
-
-/* ww */
-
-section.ww {
-    margin: 5.5cm var(--padding) .5cm
-}
-
-section.ww h1 {
-    font: 700 24px/1 ui-serif
-}
-
-/* uu */
-
-section.uu {
-    margin: .6cm var(--padding)
-}
-
-section.uu :where(h6, span) {
-    font: 14px/1.4 system-ui
-}
-
-section.uu a {
-    display: flex;
-    justify-content: end;
-    
-    font-size: 17px
 }
 
 /* tt */
@@ -128,6 +96,16 @@ section.tt {
 
 section.tt h5 {
     font: 600 16px ui-serif
+}
+
+/* uu */
+
+section.uu {
+    margin: .6cm var(--padding)
+}
+
+section.uu > * {
+    font: 14px/1.4 system-ui
 }
 
 /* text hide */
@@ -179,7 +157,7 @@ section:where(.bb, .rr, .ff) li {
 }
 
 section.rr ul {
-    padding-block: 0 1cm
+    padding-bottom: 1cm
 }
 
 section.rr li h1 {
@@ -219,8 +197,8 @@ section.rr li figure {
 
 /* ff */
 
-section.ff ul {
-    column-gap: 1em
+section.ff {
+    margin-block: 2em
 }
 
 section.ff a {
@@ -232,8 +210,8 @@ section.ff a {
 section.ff figure {
     padding: 10px;
 
-    width: 250px;
-    height: 250px;
+    width: var(--width);
+    height: 100px;
 
     display: flex;
     flex-direction: column;
@@ -255,7 +233,7 @@ section.ff h6 {
 
 section.ff p {
     display: -webkit-box;
-    -webkit-line-clamp: 10;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 
