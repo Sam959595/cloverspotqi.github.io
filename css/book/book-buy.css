@@ -61,40 +61,18 @@ section.ee h1 {
 /* bb */
 
 section.bb {
-    margin-block: 2em
-}
-
-section.bb li {
-    padding: 1em;
-
-    width: var(--width);
+    margin: 2em var(--padding);
 
     display: flex;
     align-items: center;
-
-    border-radius: 17px;
-
-    background-color: var(--gray-21)
+    justify-content: space-between
 }
 
 section.bb h1 {
+    font: 600 4vw system-ui
+}
+section.bb a {
     font: 600 14px system-ui
-}
-section.bb p {
-    opacity: .5;
-
-    padding-top: .2em;
-
-    color: var(--gray-b)
-}
-
-section.bb h2 {
-    font: 700 21px ui-rounded;
-}
-
-.zz {
-    fill: var(--gray-4);
-    transform: scale(1)
 }
 
 /* tt */
@@ -147,7 +125,7 @@ section.rr>a {
     -webkit-tap-highlight-color: transparent
 }
 
-section:where(.bb, .rr, .ff) ul {
+section:where(.rr, .ff) ul {
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
@@ -161,7 +139,7 @@ section:where(.bb, .rr, .ff) ul {
     scroll-padding-left: var(--padding)
 }
 
-section:where(.bb, .rr, .ff) li {
+section:where(.rr, .ff) li {
     scroll-snap-align: start
 }
 
