@@ -17,7 +17,7 @@ nav {
 /* ee */
 
 section.ee {
-    margin-block: 1em
+    margin-block: 1emx
 }
 
 section.ee ul {
@@ -267,7 +267,7 @@ section.ff h5 {
 
 @media screen and (prefers-color-scheme: light) {
     :root {
-        --soft: #f5f5f7e7;
+        --soft: #00000010;
         --soft-2: #ffffff80;
 
         --gray-a: white;
@@ -304,7 +304,7 @@ section.ff h5 {
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
-        --soft: #1d1d1fb8;
+        --soft: #ffffff10;
         --soft-2: #00000040;
 
         --gray-a: black;
