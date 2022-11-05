@@ -1,5 +1,37 @@
-hr {
-    margin-inline: var(--padding)
+/* pp */
+
+section.pp {
+    opacity: 0;
+
+    pointer-events: none;
+
+    z-index: 1;
+    position: fixed;
+    inset: 0;
+
+    margin: auto;
+
+    width: 150px;
+    
+    aspect-ratio: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+
+    background-color: var(--soft-2);
+
+    transition: .5s ease-out
+}
+
+.qq {
+    opacity: 1;
+
+    transition: 2s linear
 }
 
 /* nav */
@@ -14,10 +46,16 @@ nav {
     background: linear-gradient(to top, var(--soft-2), var(--gray-a))
 }
 
+/* hr */
+
+hr {
+    margin-inline: var(--padding)
+}
+
 /* ee */
 
 section.ee {
-    margin-block: 1emx
+    margin-block: 1em
 }
 
 section.ee ul {
@@ -61,7 +99,7 @@ section.ee h1 {
 /* bb */
 
 section.bb {
-    margin: 2em var(--padding);
+    margin: .6cm var(--padding);
 
     display: flex;
     align-items: center;
@@ -69,6 +107,12 @@ section.bb {
 }
 
 section.bb h1 {
+    margin-right: .8em;
+    
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
     font: 800 19px ui-serif
 }
 section.bb a {
