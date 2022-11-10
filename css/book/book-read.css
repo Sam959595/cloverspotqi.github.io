@@ -138,12 +138,12 @@ section.vv ol li {
     font-family: ui-serif
 }
 
-.yyo h6 {
+.y h6 {
     font-size: 20px !important;
     font-weight: 600 !important;
     line-height: 1.5 !important
 }
-.yyu h6 {
+.yy h6 {
     font-size: 20px !important;
     line-height: 1.4 !important
 }
@@ -164,12 +164,18 @@ section.vv ol li {
 .ttt {
     background-color: var(--canvas-2) !important
 }
+.kkk {
+    background-color: var(--canvas-4) !important
+}
 
 .rrr :where(h5, h6, ol) {
     color: var(--text) !important
 }
 .ttt :where(h5, h6, ol) {
     color: var(--text-2) !important
+}
+.kkk :where(h5, h6, ol) {
+    color: var(--text-4) !important
 }
 
 /* bb */
@@ -260,10 +266,12 @@ section.bb a {
         --canvas: white;
         --canvas-2: #feddbc;
         --canvas-3: #f2f2f9;
+        --canvas-4: #51545c;
 
         --text: #3a3a3a;
         --text-2: #5b3f2a;
         --text-3: #4b4b57;
+        --text-4: #fbfcff;
 
         --blue-1: #007aff;
 
@@ -304,10 +312,12 @@ section.bb a {
         --canvas: black;
         --canvas-2: #120b08;
         --canvas-3: #1a1a1c;
+        --canvas-4: #20232b;
 
         --text: #c0c0c0;
         --text-2: #a9938d;
         --text-3: #a7a7b3;
+        --text-4: #cacfde;
 
         --blue-1: #0a84ff;
 
