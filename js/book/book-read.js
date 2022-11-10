@@ -93,6 +93,6 @@ window.addEventListener('change', () => {
         nn.classList.remove('rrr', 'ttt')
 
         $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#51545c')
-        $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#1a1a1c')
+        $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#20232b')
     }
 })
