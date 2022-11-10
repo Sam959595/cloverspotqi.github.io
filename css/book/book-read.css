@@ -118,7 +118,7 @@ section.vv h6::first-letter {
 section.vv h6 {
     margin-bottom: 1em;
     
-    font: 17px ui-serif;
+    font: 18px ui-serif;
     text-align: justify;
 
     color: var(--text-3)
@@ -266,12 +266,12 @@ section.bb a {
         --canvas: white;
         --canvas-2: #feeddb;
         --canvas-3: #f2f2f9;
-        --canvas-4: #e8eeff;
+        --canvas-4: #e3e4e6;
 
-        --text: #3a3a3a;
+        --text: #1e1e1e;
         --text-2: #5b3f2a;
         --text-3: #4b4b57;
-        --text-4: #353949;
+        --text-4: #444;
 
         --blue: #007aff;
 
