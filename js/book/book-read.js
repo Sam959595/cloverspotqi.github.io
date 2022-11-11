@@ -92,7 +92,7 @@ window.addEventListener('change', () => {
         nn.classList.add('kkk')
         nn.classList.remove('rrr', 'ttt')
 
-        $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#e8eeff')
+        $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#e3e4e6')
         $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#51545c')
     }
 })
