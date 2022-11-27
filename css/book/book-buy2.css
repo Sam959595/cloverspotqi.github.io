@@ -5,16 +5,85 @@ section.mm {
 
     background-color: var(--gray-15)
 }
-section.mm figure {
-    width: 140px;
 
-    aspect-ratio: 1/1.6;
+/* ww */
+
+section.ww > ul {
+    padding: 2em var(--padding);
+
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    column-gap: 24px;
+
+    overflow-x: scroll;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: var(--padding)
+}
+
+section.ww > ul li {
+    scroll-snap-align: start
+}
+
+section.ww figure {
+    width: 140px;
+    height: 224px;
 
     border-radius: 5px;
 
-    box-shadow: 0 10px 20px #00000050;
+    box-shadow: 0 5px 20px #00000050;
 
     background: center/cover
+}
+
+section.ww figcaption {
+    width: var(--width);
+    height: 224px;
+
+    padding-block: 1em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 5px;
+
+    background-color: var(--gray-5)
+}
+
+section.ww h1 {
+    font: 600 17px ui-rounded
+}
+
+section.ww figcaption > img {
+    object-fit: cover;
+    aspect-ratio: 1;
+
+    width: 90px;
+
+    border-radius: 100%
+}
+
+section.ww figcaption ul {
+    width: -webkit-fill-available;
+
+    display: flex;
+    justify-content: space-evenly
+}
+
+section.ww figcaption li {
+    text-align: center
+}
+section.ww figcaption p {
+    font-size: 10px
+}
+section.ww figcaption h5 {
+    font: 700 14px ui-rounded
+}
+section.ww figcaption li img {
+    height: 20px
 }
 
 /* pp */
@@ -53,18 +122,6 @@ section.pp {
     transition: 2s linear
 }
 
-/* nav */
-
-nav {
-    z-index: 1;
-    position: fixed;
-    inset: 0 0 auto;
-
-    -webkit-backdrop-filter: blur(20px);
-
-    background: linear-gradient(to top, transparent, var(--gray-15))
-}
-
 /* hr */
 
 hr {
@@ -72,10 +129,6 @@ hr {
 }
 
 /* ee */
-
-section.ee {
-    margin-top: 2em
-}
 
 section.ee ul {
     display: grid;
@@ -118,11 +171,18 @@ section.ee h1 {
 /* bb */
 
 section.bb {
-    margin: 1em var(--padding);
+    z-index: 1;
+    position: fixed;
+    inset: 0 0 auto;
+
+    padding: 1em var(--padding);
 
     display: flex;
-    align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+
+    -webkit-backdrop-filter: blur(20px);
+
+    background: linear-gradient(to top, transparent, var(--gray-15))
 }
 
 section.bb h1 {
