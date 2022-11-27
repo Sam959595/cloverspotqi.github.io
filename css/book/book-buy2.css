@@ -6,7 +6,7 @@ section.mm {
     background-color: var(--gray-15)
 }
 section.mm figure {
-    width: 150px;
+    width: 140px;
 
     aspect-ratio: 1/1.6;
 
@@ -60,7 +60,7 @@ nav {
     position: fixed;
     inset: 0 0 auto;
 
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 
     background: linear-gradient(to top, transparent, var(--gray-15))
 }
@@ -72,6 +72,10 @@ hr {
 }
 
 /* ee */
+
+section.ee {
+    margin-top: 2em
+}
 
 section.ee ul {
     display: grid;
