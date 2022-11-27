@@ -8,7 +8,7 @@ section.mm {
 
 /* ww */
 
-section.ww > ul {
+section.ww ul {
     padding: 2em var(--padding);
 
     display: grid;
@@ -21,8 +21,7 @@ section.ww > ul {
     scroll-snap-type: x mandatory;
     scroll-padding-left: var(--padding)
 }
-
-section.ww > ul li {
+section.ww ul li {
     scroll-snap-align: start
 }
 
@@ -37,57 +36,57 @@ section.ww figure {
     background: center/cover
 }
 
-section.ww figcaption {
+section.ww ul li:nth-child(2) {
     width: var(--width);
-    height: 224px;
 
-    padding: 1em 2em 2em;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
-    border-radius: 5px;
-
-    background-color: var(--gray-9)
+    margin-block: auto;
+    padding-inline: 1cm
 }
 
-section.ww h1 {
-    font: 600 17px ui-rounded
-}
-
-section.ww figcaption ul {
-    width: -webkit-fill-available;
-
+section.ww figcaption {
     display: flex;
     justify-content: space-between
 }
-
-section.ww figcaption li {
+section.ww figcaption div {
     text-align: center
 }
 section.ww figcaption p {
     font-size: 10px
 }
 section.ww figcaption h5 {
-    font: 700 21px ui-rounded
+    font: 700 32px ui-rounded
 }
-section.ww figcaption li img {
-    height: 25px
-}
-
-section.ww figcaption a {
-    font: 600 14px system-ui
+section.ww figcaption img {
+    height: 35px
 }
 
-section.ww figcaption li:last-child img {
+section.ww ul li:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+section.ww h1 {
+    font: 600 17px ui-rounded
+}
+section.ww ul li:last-child img {
+    margin-block: 2em;
+
     object-fit: cover;
+    aspect-ratio: 1;
 
-    width: 50px;
-    height: 50px;
+    width: 120px;
 
     border-radius: 100%
+}
+section.ww a {
+    padding: .2em 1em;
+
+    border-radius: 15px;
+
+    font: 600 14px system-ui;
+
+    background-color: var(--soft)
 }
 
 /* pp */
