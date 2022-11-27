@@ -41,7 +41,7 @@ section.ww figcaption {
     width: var(--width);
     height: 224px;
 
-    padding-block: 1em;
+    padding: 1em 2em 2em;
 
     display: flex;
     flex-direction: column;
@@ -57,20 +57,11 @@ section.ww h1 {
     font: 600 17px ui-rounded
 }
 
-section.ww figcaption > img {
-    object-fit: cover;
-    aspect-ratio: 1;
-
-    width: 90px;
-
-    border-radius: 100%
-}
-
 section.ww figcaption ul {
     width: -webkit-fill-available;
 
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-between
 }
 
 section.ww figcaption li {
@@ -80,10 +71,23 @@ section.ww figcaption p {
     font-size: 10px
 }
 section.ww figcaption h5 {
-    font: 700 18px ui-rounded
+    font: 700 21px ui-rounded
 }
 section.ww figcaption li img {
-    height: 20px
+    height: 25px
+}
+
+section.ww figcaption a {
+    font: 600 14px system-ui
+}
+
+section.ww figcaption li:last-child img {
+    object-fit: cover;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 100%
 }
 
 /* pp */
