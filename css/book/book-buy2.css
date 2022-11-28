@@ -16,13 +16,7 @@ section.ww ul {
     grid-auto-flow: column;
     column-gap: 24px;
 
-    overflow-x: scroll;
-
-    scroll-snap-type: x mandatory;
-    scroll-padding-left: var(--padding)
-}
-section.ww ul li {
-    scroll-snap-align: start
+    overflow-x: scroll
 }
 
 section.ww figure {
@@ -36,14 +30,12 @@ section.ww figure {
     background: center/cover
 }
 
-section.ww ul li:nth-child(2) {
-    width: var(--width);
-
-    margin-block: auto;
-    padding-inline: 1cm
-}
-
 section.ww figcaption {
+    margin-block: auto;
+    padding-inline: 1cm;
+
+    width: var(--width);
+    
     display: flex;
     justify-content: space-between
 }
@@ -62,22 +54,18 @@ section.ww figcaption img {
 
 section.ww ul li:last-child {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center
+
+    text-align: center
+}
+
+section.ww li > div {
+    margin-inline: 1.5cm
 }
 section.ww h1 {
+    margin-bottom: .8em;
+
     font: 600 17px ui-rounded
-}
-section.ww ul li:last-child img {
-    margin-block: 2em;
-
-    object-fit: cover;
-    aspect-ratio: 1;
-
-    width: 120px;
-
-    border-radius: 100%
 }
 section.ww a {
     padding: .2em 1em;
@@ -87,6 +75,15 @@ section.ww a {
     font: 600 14px system-ui;
 
     background-color: var(--soft)
+}
+
+section.ww ul li > img {
+    object-fit: cover;
+    aspect-ratio: 1;
+
+    width: 60px;
+
+    border-radius: 100%
 }
 
 /* pp */
