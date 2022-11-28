@@ -14,9 +14,15 @@ section.ww ul {
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
-    column-gap: 24px;
 
-    overflow-x: scroll
+    overflow-x: scroll;
+
+    scroll-snap-type: x mandatory
+}
+section.ww li {
+    width: var(--width);
+
+    scroll-snap-align: center
 }
 
 section.ww figure {
@@ -30,13 +36,12 @@ section.ww figure {
     background: center/cover
 }
 
+section.ww ul li:nth-child(2) {
+    margin-block: auto
+}
 section.ww figcaption {
-    margin-left: 1cm;
-
-    width: var(--width);
-    
     display: flex;
-    justify-content: space-between
+    justify-content: space-around
 }
 section.ww figcaption div {
     text-align: center
@@ -51,22 +56,20 @@ section.ww figcaption h5 {
 section.ww ul li:last-child {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     text-align: center
 }
 
-section.ww li > div {
-    margin-inline: 3cm
-}
 section.ww h1 {
-    margin-bottom: .8em;
+    margin-bottom: .5em;
 
-    font: 600 17px ui-rounded
+    font: 600 17px/1 ui-rounded
 }
 section.ww div a {
     padding: .2em 1em;
     
-    display: block;
+    display: inline-block;
 
     border-radius: 15px;
 
@@ -75,7 +78,10 @@ section.ww div a {
     background-color: var(--soft)
 }
 
-section.ww ul a > img {
+section.ww li:last-child > a {
+    border-radius: 100%
+}
+section.ww li:last-child img {
     padding: 3px;
 
     object-fit: cover;
@@ -83,7 +89,7 @@ section.ww ul a > img {
 
     width: 70px;
 
-    border-radius: 100%;
+    border-radius: inherit;
     border: 2px solid var(--blue)
 }
 
@@ -166,7 +172,7 @@ section.ee h3 {
     font: 600 12px/1 ui-rounded
 }
 section.ee h1 {
-    font: 600 18px ui-serif
+    font: 600 18px/1.2 ui-serif
 }
 
 /* bb */
