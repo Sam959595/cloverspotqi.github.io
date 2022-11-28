@@ -63,8 +63,10 @@ section.ww h1 {
 
     font: 600 17px ui-rounded
 }
-section.ww a {
+section.ww div a {
     padding: .2em 1em;
+    
+    display: block;
 
     border-radius: 15px;
 
@@ -73,13 +75,16 @@ section.ww a {
     background-color: var(--soft)
 }
 
-section.ww ul li > img {
+section.ww ul a > img {
+    padding: 3px;
+
     object-fit: cover;
     aspect-ratio: 1;
 
-    width: 60px;
+    width: 70px;
 
-    border-radius: 100%
+    border-radius: 100%;
+    border: 2px solid var(--blue)
 }
 
 /* pp */
