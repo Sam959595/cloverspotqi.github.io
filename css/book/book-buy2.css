@@ -47,9 +47,6 @@ section.ww figcaption p {
 section.ww figcaption h5 {
     font: 700 32px ui-rounded
 }
-section.ww figcaption img {
-    height: 35px
-}
 
 section.ww ul li:last-child {
     display: flex;
