@@ -1,7 +1,7 @@
 /* mm */
 
 section.mm {
-    padding-block: 2cm 2em;
+    padding-block: 5em 2em;
 
     background-color: var(--gray-15)
 }
@@ -26,7 +26,7 @@ section.ww li {
 }
 
 section.ww ul li:first-child {
-    padding-block: 2em;
+    padding-block: 3.5em 2em;
 
     display: flex;
     align-items: center
@@ -81,7 +81,7 @@ section.ww li:last-child img {
 }
 
 section.ww figcaption {
-    margin-top: 2cm;
+    margin-top: 2.1cm;
 
     display: flex;
     justify-content: space-around
