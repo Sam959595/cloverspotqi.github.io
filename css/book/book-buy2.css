@@ -25,6 +25,10 @@ section.ww li {
     scroll-snap-align: center
 }
 
+section.ww ul li:first-child {
+    display: flex;
+    align-items: center
+}
 section.ww figure {
     width: 140px;
     height: 224px;
@@ -35,6 +39,9 @@ section.ww figure {
 
     background: center/cover
 }
+section.ww li:first-child div {
+    margin-inline: auto
+}
 
 section.ww ul li:nth-child(2) {
     margin-block: auto
@@ -43,13 +50,13 @@ section.ww figcaption {
     display: flex;
     justify-content: space-around
 }
-section.ww figcaption div {
+section.ww div {
     text-align: center
 }
-section.ww figcaption p {
+section.ww p {
     font-size: 10px
 }
-section.ww figcaption h5 {
+section.ww h5 {
     font: 700 32px ui-rounded
 }
 
@@ -61,7 +68,7 @@ section.ww ul li:last-child {
     text-align: center
 }
 
-section.ww h1 {
+section.ww h2 {
     margin-bottom: .5em;
 
     font: 600 17px/1 ui-rounded
