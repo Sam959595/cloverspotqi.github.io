@@ -9,7 +9,7 @@ section.mm {
 /* ww */
 
 section.ww ul {
-    padding: 2em var(--padding);
+    padding-inline: var(--padding);
 
     display: grid;
     grid-auto-columns: max-content;
@@ -26,6 +26,8 @@ section.ww li {
 }
 
 section.ww ul li:first-child {
+    padding-block: 2em;
+
     display: flex;
     align-items: center
 }
@@ -79,7 +81,7 @@ section.ww li:last-child img {
 }
 
 section.ww figcaption {
-    margin-top: 1cm;
+    margin-top: 2cm;
 
     display: flex;
     justify-content: space-around
