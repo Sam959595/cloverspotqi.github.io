@@ -31,8 +31,7 @@ section.ww figure {
 }
 
 section.ww figcaption {
-    margin-block: auto;
-    padding-inline: 1cm;
+    margin-left: 1cm;
 
     width: var(--width);
     
@@ -60,7 +59,7 @@ section.ww ul li:last-child {
 }
 
 section.ww li > div {
-    margin-inline: 1.5cm
+    margin-inline: 3cm
 }
 section.ww h1 {
     margin-bottom: .8em;
