@@ -45,9 +45,17 @@ section.ww li:first-child div {
     margin-inline: auto
 }
 
-section.ww li:last-child > div {
+section.ww li:last-child {
     display: flex;
-    justify-content: space-between
+    flex-flow: column
+}
+section.ww li:last-child > div {
+    margin-left: 49px;
+
+    display: flex
+}
+section.ww li:last-child > div div {
+    flex: 1
 }
 section.ww h2 {
     margin-bottom: .5em;
@@ -65,9 +73,7 @@ section.ww div div a {
 
     background-color: var(--soft)
 }
-section.ww li:last-child > div > a {
-    border-radius: 100%
-}
+
 section.ww li:last-child img {
     padding: 3px;
 
@@ -76,12 +82,12 @@ section.ww li:last-child img {
 
     width: 49px;
 
-    border-radius: inherit;
+    border-radius: 100%;
     border: 2px solid var(--blue)
 }
 
 section.ww figcaption {
-    margin-top: 2.1cm;
+    margin-block: auto;
 
     display: flex;
     justify-content: space-around
@@ -348,7 +354,7 @@ section.ff figure {
     height: 100px;
 
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     justify-content: space-between;
 
     border-radius: 9px;
