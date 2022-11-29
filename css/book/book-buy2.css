@@ -12,8 +12,7 @@ section.pp {
     margin: auto;
 
     width: 150px;
-    
-    aspect-ratio: 1;
+    height: 150px;
 
     display: flex;
     flex-flow: column;
@@ -209,6 +208,11 @@ section.ee li + li {
     border-left: .1px solid var(--gray-3)
 }
 
+section.ee svg {
+    height: 21px;
+
+    fill: var(--gray)
+}
 section.ee p {
     padding-bottom: .8em;
 
@@ -472,7 +476,7 @@ footer h6 {
 
         --red: #ff2d55;
 
-        --green: #10c600;
+        --green: #31c65e;
 
         --orange: #fd9900;
     }
@@ -489,7 +493,7 @@ footer h6 {
 
         --gray: #f5f5f7;
         --gray-2: #8e8e93;
-        --gray-3: #212125;
+        --gray-3: #333338;
         --gray-6: #63636e;
         --gray-15: #17171d;
 
