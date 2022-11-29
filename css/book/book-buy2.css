@@ -20,7 +20,7 @@ section.ww ul {
     scroll-snap-type: x mandatory
 }
 section.ww li {
-    width: var(--width);
+    width: var(--screen-padding);
 
     scroll-snap-align: center
 }
@@ -178,9 +178,9 @@ section.ee h1 {
     font: 600 18px/1.2 ui-serif
 }
 
-/* bb */
+/* nav */
 
-section.bb {
+nav {
     z-index: 1;
     position: fixed;
     inset: 0 0 auto;
@@ -195,7 +195,7 @@ section.bb {
     background: linear-gradient(to top, transparent, var(--gray-15))
 }
 
-section.bb h1 {
+nav h1 {
     margin-right: .8em;
 
     white-space: nowrap;
@@ -205,10 +205,10 @@ section.bb h1 {
     font: 800 19px ui-serif
 }
 
-section.bb a {
+nav a {
     font-size: 17px
 }
-section.bb a:last-child {
+nav a:last-child {
     font-weight: 600
 }
 
@@ -219,7 +219,7 @@ section.tt {
 }
 
 section.tt h5 {
-    font: 600 16px ui-serif
+    font: 800 16px ui-serif
 }
 
 /* uu */
@@ -266,7 +266,7 @@ section:where(.rr, .ff) ul {
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
-    column-gap: 24px;
+    column-gap: var(--gap);
 
     padding-inline: var(--padding);
 
@@ -296,27 +296,37 @@ section.rr li a {
 section.rr > a h5 {
     font: 700 19px ui-serif
 }
-section.rr li h6 {
-    font: 11px ui-rounded;
-
-    color: white
-}
 
 section.rr li figure {
-    width: var(--width-2);
+    width: var(--li-3);
 
+    overflow: hidden;
     aspect-ratio: 1/1.6;
 
     border-radius: 5px;
 
+    box-shadow: 0 10px 20px #00000050;
+
+    background: center/cover
+}
+section.rr li h6 {
+    height: -webkit-fill-available;
+    
     padding: .8em;
 
     display: flex;
     justify-content: end;
+    
+    font: 11px ui-rounded;
 
-    box-shadow: 0 10px 20px #00000050;
+    background-image: linear-gradient(to top right, transparent 60%, #000000cc);
+    color: white
+}
 
-    background: center/cover
+/* zz */
+
+section.zz li figure {
+    width: var(--li-2)
 }
 
 /* ff */
@@ -334,7 +344,7 @@ section.ff a {
 section.ff figure {
     padding: 10px;
 
-    width: var(--width);
+    width: var(--screen-padding);
     height: 100px;
 
     display: flex;
@@ -383,14 +393,45 @@ section.ff h5 {
     color: var(--gray-6)
 }
 
+/* footer */
+
+footer {
+    padding: var(--padding);
+
+    background-color: var(--gray-15)
+}
+
+footer ul + ul {
+    margin-top: 1cm
+}
+footer li + li {
+    margin-top: .8em
+}
+
+footer a {
+    padding: 1.5em 2em;
+
+    display: block;
+    
+    border-radius: 18px;
+
+    background-color: var(--gray-a)
+}
+footer h6 {
+    font: 600 18px system-ui;
+
+    color: inherit
+}
+
 /* var */
 
 @media screen and (min-width: 320px) and (max-width: 728px) {
     :root {
         --padding: 30px;
-        --width: calc(var(--screen) - var(--padding) * 2);
-        --width-2: calc(var(--width) / 3 - (24px * 2 / 3));
-        --shadow: linear-gradient(to top right, transparent 60%, #000000cc)
+        --screen-padding: calc(var(--screen) - var(--padding) * 2);
+        --gap: 24px;
+        --li-2: calc(var(--screen-padding) / 2 - (var(--gap) / 2));
+        --li-3: calc(var(--screen-padding) / 3 - (var(--gap) * 2 / 3))
     }
 }
 
