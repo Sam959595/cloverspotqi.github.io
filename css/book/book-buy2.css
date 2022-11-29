@@ -231,7 +231,7 @@ section.ee h1 {
 /* tt */
 
 section.tt {
-    margin: 1cm var(--padding)
+    margin: .6cm var(--padding)
 }
 
 section.tt h5 {
@@ -241,7 +241,7 @@ section.tt h5 {
 /* uu */
 
 section.uu {
-    margin: 1cm var(--padding)
+    margin: .6cm var(--padding)
 }
 
 section.uu > * {
@@ -297,7 +297,7 @@ section:where(.rr, .ff) li {
 }
 
 section.rr ul {
-    padding-bottom: 1cm
+    padding-bottom: .6cm
 }
 
 section.rr li h1 {
@@ -348,7 +348,7 @@ section.zz li figure {
 /* ff */
 
 section.ff {
-    margin-block: 1cm
+    margin-block: .6cm
 }
 
 section.ff a {
@@ -456,7 +456,7 @@ footer h6 {
 @media screen and (prefers-color-scheme: light) {
     :root {
         --soft: #00000030;
-        --soft-2: #eeeeeeb0;
+        --soft-2: #ddddddaa;
         --soft-3: #00000010;
 
         --gray-a: white;
@@ -497,7 +497,7 @@ footer h6 {
 
         --red: #fb5c74;
 
-        --green: #4cee3e;
+        --green: #77ffc6;
 
         --orange: #ff9f00;
     }
