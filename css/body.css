@@ -77,8 +77,6 @@ select {
         background: none
 }
 
-/* 1 */
-
 ::-webkit-scrollbar{
         display: none
 }
@@ -88,8 +86,6 @@ select {
 :lang(en) {
 	quotes: "\201c" "\201d"
 }
-
-/* 2 */
 
 body {
 	background-color: var(--gray-a)
