@@ -146,16 +146,18 @@ section.ww h2 {
 
     font: 600 17px/1 system-ui
 }
-section.ww li:last-child div a {
+section.ww button {
     padding: .2em 1em;
-    
-    display: inline-block;
 
     border-radius: 15px;
 
     font: 600 14px system-ui;
 
     background-color: var(--soft-3)
+}
+
+.aa {
+    color: var(--gray)
 }
 
 section.ww li:last-child img {
