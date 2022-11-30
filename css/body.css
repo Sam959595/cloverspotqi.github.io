@@ -70,7 +70,7 @@ strong, b {
 em {
 	font-style: italic
 }
-select, textarea, span {
+select, textarea, span, button, a {
 	-webkit-tap-highlight-color: transparent
 }
 select {
