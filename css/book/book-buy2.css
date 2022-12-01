@@ -60,16 +60,6 @@ nav {
     background: linear-gradient(to top, transparent, var(--gray-15))
 }
 
-nav h1 {
-    margin-right: .8em;
-
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-
-    font: 800 19px ui-serif
-}
-
 nav a {
     font-size: 17px
 }
@@ -88,8 +78,6 @@ section.mm {
 /* ww */
 
 section.ww ul {
-    padding-inline: var(--padding);
-
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
@@ -99,13 +87,13 @@ section.ww ul {
     scroll-snap-type: x mandatory
 }
 section.ww li {
-    width: var(--screen-padding);
+    width: var(--screen);
 
     scroll-snap-align: center
 }
 
 section.ww ul li:first-child {
-    padding-block: 3.5em 2em;
+    padding: 3.5em var(--padding) 2em;
 
     display: flex;
     align-items: center
@@ -116,7 +104,7 @@ section.ww figure {
 
     border-radius: 5px;
 
-    box-shadow: 0 5px 20px #00000050;
+    box-shadow: 0 5px 10px #00000040;
 
     background: center/cover
 }
@@ -132,14 +120,14 @@ section.ww li:last-child {
     flex-flow: column
 }
 section.ww li:last-child figcaption:first-child {
-    margin-left: 51px;
+    margin-inline: calc(var(--padding) + 51px) var(--padding);
 
     display: flex
 }
 section.ww h2 {
     margin-bottom: .5em;
 
-    width: calc(var(--screen-padding) - 102px);
+    width: calc(var(--screen) - var(--padding) * 2 - 102px);
 
     text-overflow: ellipsis;
     overflow-x: hidden;
@@ -329,7 +317,7 @@ section.rr li figure {
 
     border-radius: 5px;
 
-    box-shadow: 0 10px 20px #00000050;
+    box-shadow: 0 5px 10px #00000040;
 
     background: center/cover
 }
