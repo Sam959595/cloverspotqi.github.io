@@ -63,13 +63,6 @@ nav {
 nav a {
     font-size: 17px
 }
-nav h2 {
-    text-overflow: ellipsis;
-    overflow-x: hidden;
-
-    text-align: center;
-    font: 600 17px system-ui
-}
 
 /* mm */
 
@@ -82,13 +75,35 @@ section.mm {
 /* ww */
 
 section.ww {
+    position: relative;
+
     margin-inline: var(--padding);
 
-    display: flex
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+section.ww h1 {
+    opacity: 1;
+
+    z-index: 1;
+    position: absolute;
+    inset: 0;
+
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+
+    text-align: center;
+    font: 700 28px system-ui;
+
+    background-color: var(--gray-15);
+
+    transition: opacity 2s ease
 }
 
 .aa {
-    color: var(--gray)
+    opacity: 0 !important
 }
 
 section.ww img {
@@ -196,7 +211,7 @@ section.uu > * {
 .hide h6 {
     max-height: 57px;
 
-    -webkit-mask: linear-gradient(to top, transparent 17px, black 0), linear-gradient(to left, transparent 40px, black 90px)
+    -webkit-mask: linear-gradient(to top, transparent 19px, black 0), linear-gradient(to left, transparent 40px, black 90px)
 }
 
 .hide span {
