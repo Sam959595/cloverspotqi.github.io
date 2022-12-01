@@ -93,7 +93,7 @@ section.ww li {
 }
 
 section.ww ul li:first-child {
-    padding: 3.5em var(--padding) 2em;
+    padding: 2cm var(--padding);
 
     display: flex;
     align-items: center
