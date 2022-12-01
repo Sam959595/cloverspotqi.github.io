@@ -6,8 +6,8 @@
 	box-sizing: border-box;
 
 	-webkit-text-size-adjust: none;
-
-        font: normal 400 12px/1.33337 system-ui;
+	
+	font: normal 400 12px/1.33337 system-ui;
 	letter-spacing: 0;
 
 	-webkit-font-smoothing: antialiased
@@ -19,7 +19,7 @@
 	-webkit-touch-callout: none
 }
 a {
-        -webkit-user-drag: none
+	-webkit-user-drag: none
 }
 
 a, strong, b, sup, sub, u, ins, del, i, s, mark, small, q, em, select, span, time {
@@ -27,10 +27,13 @@ a, strong, b, sup, sub, u, ins, del, i, s, mark, small, q, em, select, span, tim
 	letter-spacing: inherit
 }
 b {
-        color: inherit
+    color: inherit
 }
 a, u {
 	text-decoration: none
+}
+u {
+	display: inline-block
 }
 ul, ol {
 	list-style: none
@@ -39,7 +42,7 @@ input, select, textarea {
 	-webkit-appearance: none
 }
 select:focus {
-        opacity: .5
+	opacity: .5
 }
 
 input, button, select, textarea, hr {
@@ -74,17 +77,11 @@ select, textarea, span, button, a {
 	-webkit-tap-highlight-color: transparent
 }
 select {
-        background: none
+    background: none
 }
 
 ::-webkit-scrollbar{
-        display: none
-}
-:lang(ru) {
-	quotes: "\00ab" "\00bb"
-}
-:lang(en) {
-	quotes: "\201c" "\201d"
+    display: none
 }
 
 body {
