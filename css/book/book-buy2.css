@@ -132,14 +132,14 @@ section.ww li:last-child {
     flex-flow: column
 }
 section.ww li:last-child figcaption:first-child {
-    margin-left: 51px;
+    margin-left: 49px;
 
     display: flex
 }
 section.ww h2 {
-    margin-bottom: .5em;
+    margin-bottom: .4em;
 
-    width: calc(var(--screen-padding) - 102px);
+    width: calc(var(--screen-padding) - 98px);
 
     text-overflow: ellipsis;
     overflow-x: hidden;
@@ -166,7 +166,7 @@ section.ww li:last-child img {
     object-fit: cover;
     aspect-ratio: 1;
 
-    width: 51px;
+    width: 49px;
 
     border-radius: 100%;
     border: 2px solid var(--blue)
