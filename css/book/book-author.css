@@ -52,19 +52,13 @@ nav {
 
     padding: 1em var(--padding);
 
-    display: flex;
-    justify-content: center;
-
     -webkit-backdrop-filter: blur(20px);
 
     background: linear-gradient(to top, transparent, var(--gray-15))
 }
 
-nav h2 {
-    text-overflow: ellipsis;
-    overflow-x: hidden;
-
-    font: 700 19px system-ui
+nav a {
+    font-size: 17px
 }
 
 /* mm */
@@ -78,20 +72,30 @@ section.mm {
 /* ww */
 
 section.ww {
-    display: flex
+    display: flex;
+    flex-flow: column;
 }
 
 .aa {
     color: var(--gray)
 }
 
+section.ww h2 {
+    margin-bottom: 1em;
+
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+
+    text-align: center;
+    font: 600 19px system-ui
+}
 section.ww img {
     margin-inline: auto;
 
     object-fit: cover;
     aspect-ratio: 1;
 
-    width: 120px;
+    width: 150px;
 
     border-radius: 100%
 }
