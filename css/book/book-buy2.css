@@ -86,7 +86,10 @@ section.mm > ul {
     scroll-padding-left: 16px
 }
 section.mm > ul > li {
+    position: relative;
+
     width: 400px;
+    height: 538px;
 
     border-radius: 15px;
 
@@ -96,14 +99,15 @@ section.mm > ul > li {
 }
 
 section.mm li > div {
-    z-index: 1;
+    position: absolute;
+    inset: auto 0 0;
 
-    position: relative;
+    border-radius: 0 0 15px 15px;
+
+    overflow: hidden
 }
 
 section.mm li > div img {
-    opacity: 1;
-
     object-fit: cover;
 
     width: -webkit-fill-available;
@@ -111,14 +115,14 @@ section.mm li > div img {
 
     border-radius: 0 0 15px 15px;
 
-    transition: height 2s ease
+    transition: height 1s ease
 }
 
 .u {
     height: 90px !important
 }
 .a {
-    height: 500px !important
+    height: 400px !important
 }
 
 /* ee */
