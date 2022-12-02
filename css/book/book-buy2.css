@@ -46,9 +46,6 @@ section.pp h1 {
 /* nav */
 
 nav {
-    z-index: 1;
-    position: fixed;
-    inset: 0 0 auto;
 
     padding: 1em var(--padding);
 
@@ -56,8 +53,6 @@ nav {
     justify-content: space-between;
 
     -webkit-backdrop-filter: blur(20px);
-
-    background: linear-gradient(to top, transparent, var(--gray-15))
 }
 
 nav a {
@@ -70,7 +65,10 @@ nav a:last-child {
 /* mm */
 
 section.mm {
+    margin: 1em 16px;
     padding-block: 5em 2em;
+
+    border-radius: 18px;
 
     background-color: var(--gray-15)
 }
@@ -441,7 +439,7 @@ footer h6 {
     :root {
         --padding: 30px;
         --screen-padding: calc(var(--screen) - var(--padding) * 2);
-        --gap: 24px;
+        --gap: 18px;
         --li-2: calc(var(--screen-padding) / 2 - (var(--gap) / 2));
         --li-3: calc(var(--screen-padding) / 3 - (var(--gap) * 2 / 3))
     }
