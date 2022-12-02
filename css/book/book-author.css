@@ -1,160 +1,111 @@
-/* pp */
-
-section.pp {
-    opacity: 0;
-
-    pointer-events: none;
-
-    z-index: 1;
-    position: fixed;
-    inset: 0;
-
-    margin: auto;
-
-    width: 150px;
-    height: 150px;
-
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 11px;
-
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-
-    background-color: var(--soft-2);
-
-    transition: opacity 2s ease-out
-}
-
-section.pp h1 {
-    margin-top: .8em;
-
-    text-align: center;
-    font-weight: 800;
-
-    color: var(--soft)
-}
-
-.qq {
-    opacity: 1 !important;
-
-    transition: opacity .5s !important
-}
-
 /* nav */
 
 nav {
-    padding: 1em var(--padding);
-
     z-index: 1;
     position: fixed;
     inset: 0 0 auto;
 
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    padding: 1em var(--padding);
 
-    background: linear-gradient(to top, var(--soft-2), var(--gray-a))
+    display: flex;
+    justify-content: space-between;
+
+    -webkit-backdrop-filter: blur(20px);
+
+    background: linear-gradient(to top, transparent, var(--gray-15))
 }
 
-nav h6 {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow-x: hidden;
-    
-    text-align: center;
-    font: 600 17px system-ui
+nav a {
+    font-size: 17px
 }
 
 /* mm */
 
 section.mm {
-    margin-top: 4em
+    padding-block: 5em 2em; 
+
+    background-color: var(--gray-15)
 }
 
-section.mm > ul {
-    display: grid;
-    grid-auto-columns: max-content;
-    grid-auto-flow: column;
-    column-gap: 8px;
+/* ww */
 
-    padding-inline: 16px;
+section.ww {
+    position: relative;
 
-    overflow-x: scroll;
+    margin-inline: var(--padding);
 
-    scroll-snap-type: x mandatory;
-    scroll-padding-left: 16px
+    display: flex;
+    align-items: center;
+    justify-content: space-between
 }
-section.mm > ul > li {
-    width: 400px;
 
-    border-radius: 15px;
+section.ww h1 {
+    opacity: 1;
+
+    position: absolute;
+    inset: 0;
+
+    margin-right: 57px;
+    padding-top: .2em;
+
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+
+    font: 600 32px system-ui;
 
     background-color: var(--gray-15);
 
-    scroll-snap-align: start
+    transition: opacity 2s ease
 }
 
-section.mm li > div {
-    z-index: 1;
-
-    position: relative;
+.aa {
+    opacity: 0 !important
 }
 
-section.mm li > div img {
-    opacity: 1;
+section.ww img {
+    margin-left: 15px;
 
     object-fit: cover;
+    aspect-ratio: 1;
 
-    width: -webkit-fill-available;
-    height: 150px;
+    width: 57px;
+    height: 57px;
 
-    border-radius: 0 0 15px 15px;
-
-    transition: height 2s ease
+    border-radius: 100%
 }
 
-.u {
-    height: 90px !important
+/* bb */
+
+section.bb ul {
+    margin-block: 121px 134px;
+
+    display: flex;
+    justify-content: space-around;
+
+    text-align: center
 }
-.a {
-    height: 500px !important
+
+section.bb p {
+    font-size: 10px
+}
+section.bb h5 {
+    font: 700 48px ui-rounded
+}
+
+/* hr */
+
+hr {
+    margin-inline: var(--padding)
 }
 
 /* ee */
 
-section.ee {
-    height: 100%;
-    
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-}
-
-section.ee figure {
-    width: 140px;
-    height: 224px;
-
-    border-radius: 5px;
-
-    box-shadow: 0 5px 10px #00000040;
-
-    background: center/cover
-}
-
-section.ee figcaption {
-    margin: 2cm 1cm 0;
-    display: flex;
-}
-
 section.ee ul {
-    padding-block: 2em;
-
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
 
-    padding-inline: 10px;
+    padding-inline: var(--padding);
 
     overflow-x: scroll
 }
@@ -162,7 +113,7 @@ section.ee ul {
 section.ee li {
     padding-inline: 20px;
 
-    text-align: center
+    text-align: end
 }
 section.ee li + li {
     border-left: .1px solid var(--gray-3)
@@ -176,8 +127,7 @@ section.ee svg {
 section.ee p {
     padding-bottom: .8em;
 
-    font: 600 11px ui-rounded;
-    letter-spacing: .08em
+    font: 600 10px system-ui;
 }
 section.ee h6 {
     font-size: 10px
@@ -186,82 +136,10 @@ section.ee h4 {
     font: 600 18px ui-rounded
 }
 section.ee h3 {
-    font: 600 14px ui-rounded
+    font: 600 14px/1 ui-rounded
 }
 section.ee h1 {
     font: 600 18px/1.2 ui-serif
-}
-
-/* ww */
-
-section.ww div {
-    text-align: center
-}
-section.ww li:first-child div {
-    margin-inline: auto
-}
-
-section.ww li:last-child {
-    display: flex;
-    flex-flow: column
-}
-section.ww figcaption:first-child {
-    margin: 1cm 10px 0 calc(10px + 51px);
-
-    display: flex
-}
-section.ww figcaption:first-child div {
-    width: -webkit-fill-available
-}
-section.ww h2 {
-    margin-bottom: .5em;
-
-    text-overflow: ellipsis;
-    overflow-x: hidden;
-
-    font: 600 17px/1 system-ui
-}
-section.ww button {
-    padding: .3em 1em;
-
-    border-radius: 15px;
-
-    font: 700 14px system-ui;
-
-    background-color: var(--soft-3)
-}
-.aa {
-    color: var(--gray)
-}
-section.ww img {
-    padding: 3px;
-
-    object-fit: cover;
-    aspect-ratio: 1;
-
-    width: 51px;
-
-    border-radius: 100%;
-    border: 2px solid var(--blue)
-}
-
-section.ww figcaption:last-child {
-    margin-block: 3cm;
-
-    display: flex;
-    justify-content: space-around
-}
-section.ww p {
-    font-size: 10px
-}
-section.ww h5 {
-    font: 700 48px ui-rounded
-}
-
-/* hr */
-
-hr {
-    margin-inline: var(--padding)
 }
 
 /* tt */
@@ -276,10 +154,6 @@ section.tt h5 {
 
 /* uu */
 
-section.uu {
-    margin: .6cm var(--padding)
-}
-
 section.uu > * {
     font: 14px/1.4 system-ui
 }
@@ -291,9 +165,9 @@ section.uu > * {
 }
 
 .hide h6 {
-    max-height: 95px;
+    max-height: 57px;
 
-    -webkit-mask: linear-gradient(to top, transparent 17px, black 0), linear-gradient(to left, transparent 40px, black 90px)
+    -webkit-mask: linear-gradient(to top, transparent 19px, black 0), linear-gradient(to left, transparent 40px, black 90px)
 }
 
 .hide span {
@@ -394,40 +268,46 @@ section.ff a {
 }
 
 section.ff figure {
-    padding: 10px;
+    padding: 2em 3em;
 
     width: var(--screen-padding);
-    height: 100px;
-
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
 
     border-radius: 9px;
 
     background-color: var(--gray-15)
 }
-
-section.ff div {
-    display: inherit;
-    justify-content: inherit
-}
-
-section.ff h6 {
-    font-family: ui-rounded
-}
-
-section.ff p {
+section.ff h1 {
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 11;
     -webkit-box-orient: vertical;
     overflow: hidden;
 
-    font: 14px/1.42859 system-ui
+    text-align: center;
+    font: 700 17px ui-rounded;
+
+    color: var(--gray-6)
 }
 
-section.ff :where(p b, time) {
-    color: var(--gray-6)
+section.ff div {
+    margin-top: 2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+section.ff time {
+    color: var(--gray-3)
+}
+section.ff img {
+    padding: 3px;
+
+    object-fit: cover;
+    aspect-ratio: 1;
+
+    width: 45px;
+
+    border-radius: 100%;
+    border: 2px solid var(--blue)
 }
 
 section.ff h5 {
@@ -492,7 +372,7 @@ footer h6 {
 @media screen and (prefers-color-scheme: light) {
     :root {
         --soft: #00000030;
-        --soft-2: #ffffff80;
+        --soft-2: #ddddddaa;
         --soft-3: #00000010;
 
         --gray-a: white;
@@ -511,13 +391,15 @@ footer h6 {
         --green: #31c692;
 
         --orange: #fd9900;
+
+        --violet: #7c39f7;
     }
 }
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
         --soft: #ffffff40;
-        --soft-2: #00000040;
+        --soft-2: #f2f4ff1a;
         --soft-3: #ffffff10;
 
         --gray-a: black;
@@ -536,5 +418,7 @@ footer h6 {
         --green: #77ffc6;
 
         --orange: #ff9f00;
+
+        --violet: #8b6fff;
     }
 }
