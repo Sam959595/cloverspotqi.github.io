@@ -63,11 +63,14 @@ nav {
 nav a {
     font-size: 17px
 }
+nav a:last-child {
+    font-weight: 600
+}
 
 /* mm */
 
 section.mm {
-    padding-block: 2em 2em; 
+    padding-block: 5em 2em; 
 
     background-color: var(--gray-15)
 }
@@ -123,7 +126,7 @@ section.ww img {
 /* bb */
 
 section.bb ul {
-    margin-block: 4cm;
+    margin-block: 131px 143px;
 
     display: flex;
     justify-content: space-around;
