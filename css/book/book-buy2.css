@@ -78,17 +78,17 @@ section.mm > ul {
     grid-auto-flow: column;
     column-gap: 8px;
 
-    padding-inline: 16px;
+    padding-inline: var(--padding);
 
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
-    scroll-padding-left: 16px
+    scroll-padding-left: var(--padding)
 }
 section.mm > ul > li {
     position: relative;
 
-    width: 400px;
+    width: var(--screen-padding);
     height: 538px;
 
     border-radius: 15px;
@@ -483,7 +483,7 @@ footer h6 {
 
 @media screen and (min-width: 320px) and (max-width: 728px) {
     :root {
-        --padding: 30px;
+        --padding: 18px;
         --screen-padding: calc(var(--screen) - var(--padding) * 2);
         --gap: 18px;
         --li-2: calc(var(--screen-padding) / 2 - (var(--gap) / 2));
