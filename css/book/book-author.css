@@ -314,7 +314,7 @@ section.ff a {
 }
 
 section.ff figure {
-    padding: 10px;
+    padding: 2em 3em;
 
     width: var(--screen-padding);
 
@@ -322,17 +322,38 @@ section.ff figure {
 
     background-color: var(--gray-15)
 }
-
 section.ff h1 {
-    text-align: end;
-    font: 700 15vw ui-rounded;
+    display: -webkit-box;
+    -webkit-line-clamp: 11;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 
-    color: var(--gray-3)
-}
-section.ff p {
-    font: 600 14px/1.42859 system-ui;
+    text-align: center;
+    font: 700 17px ui-rounded;
 
     color: var(--gray-6)
+}
+
+section.ff div {
+    margin-top: 2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+section.ff time {
+    color: var(--gray-3)
+}
+section.ff img {
+    padding: 2px;
+
+    object-fit: cover;
+    aspect-ratio: 1;
+
+    width: 45px;
+
+    border-radius: 100%;
+    border: 2px solid var(--blue)
 }
 
 section.ff h5 {
