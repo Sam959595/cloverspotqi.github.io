@@ -64,37 +64,33 @@ nav a:last-child {
 
 /* mm */
 
-section.mm {
-    margin: 1em 16px;
-    padding-block: 5em 2em;
+section.mm > ul {
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    column-gap: 8px;
 
-    border-radius: 18px;
+    padding-inline: 16px;
 
-    background-color: var(--gray-15)
+    overflow-x: scroll;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 16px
+}
+section.mm > ul > li {
+    width: calc(var(--screen) - 16px * 2);
+
+    border-radius: 15px;
+
+    background-color: var(--gray-15);
+
+    scroll-snap-align: start
 }
 
 /* ww */
 
-section.ww ul {
-    display: grid;
-    grid-auto-columns: max-content;
-    grid-auto-flow: column;
-
-    overflow-x: scroll;
-
-    scroll-snap-type: x mandatory
-}
-section.ww li {
-    width: var(--screen);
-
-    scroll-snap-align: center
-}
-
-section.ww ul li:first-child {
-    padding: 2cm var(--padding);
-
-    display: flex;
-    align-items: center
+section.ww {
+    margin-block: 1cm
 }
 section.ww figure {
     width: 140px;
@@ -117,15 +113,16 @@ section.ww li:last-child {
     display: flex;
     flex-flow: column
 }
-section.ww li:last-child figcaption:first-child {
-    margin-inline: calc(var(--padding) + 51px) var(--padding);
+section.ww figcaption:first-child {
+    margin-inline: calc(10px + 51px) 10px;
 
     display: flex
 }
+section.ww figcaption:first-child div {
+    width: -webkit-fill-available
+}
 section.ww h2 {
     margin-bottom: .5em;
-
-    width: calc(var(--screen) - var(--padding) * 2 - 102px);
 
     text-overflow: ellipsis;
     overflow-x: hidden;
@@ -141,12 +138,10 @@ section.ww button {
 
     background-color: var(--soft-3)
 }
-
 .aa {
     color: var(--gray)
 }
-
-section.ww li:last-child img {
+section.ww img {
     padding: 3px;
 
     object-fit: cover;
@@ -159,7 +154,7 @@ section.ww li:last-child img {
 }
 
 section.ww figcaption:last-child {
-    margin-block: auto;
+    margin-block: 4cm;
 
     display: flex;
     justify-content: space-around
