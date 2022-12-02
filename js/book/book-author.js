@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
         setTimeout( () => {
             a[0].remove()
         }, 2000)
-    }, 3000)
+    }, 2000)
 })
 
 window.addEventListener('DOMContentLoaded', () => {
