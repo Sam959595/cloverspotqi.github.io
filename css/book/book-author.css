@@ -123,7 +123,7 @@ section.ww img {
 /* bb */
 
 section.bb ul {
-    margin-block: 131px 143px;
+    margin-block: 121px 134px;
 
     display: flex;
     justify-content: space-around;
@@ -135,7 +135,7 @@ section.bb p {
     font-size: 10px
 }
 section.bb h5 {
-    font: 700 32px ui-rounded
+    font: 700 48px ui-rounded
 }
 
 /* hr */
