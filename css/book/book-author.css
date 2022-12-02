@@ -67,7 +67,7 @@ nav a {
 /* mm */
 
 section.mm {
-    padding-block: 5em 2em; 
+    padding-block: 2em 2em; 
 
     background-color: var(--gray-15)
 }
@@ -91,11 +91,13 @@ section.ww h1 {
     position: absolute;
     inset: 0;
 
+    margin-right: 57px;
+    padding-top: .2em;
+
     text-overflow: ellipsis;
     overflow-x: hidden;
 
-    text-align: center;
-    font: 700 28px system-ui;
+    font: 600 32px system-ui;
 
     background-color: var(--gray-15);
 
@@ -315,36 +317,21 @@ section.ff figure {
     padding: 10px;
 
     width: var(--screen-padding);
-    height: 100px;
-
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
 
     border-radius: 9px;
 
     background-color: var(--gray-15)
 }
 
-section.ff div {
-    display: inherit;
-    justify-content: inherit
-}
+section.ff h1 {
+    text-align: end;
+    font: 700 15vw ui-rounded;
 
-section.ff h6 {
-    font-family: ui-rounded
+    color: var(--gray-3)
 }
-
 section.ff p {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    font: 600 14px/1.42859 system-ui;
 
-    font: 14px/1.42859 system-ui
-}
-
-section.ff :where(p b, time) {
     color: var(--gray-6)
 }
 
