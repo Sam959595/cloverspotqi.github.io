@@ -86,8 +86,7 @@ section.ww {
 
 section.ww h1 {
     opacity: 1;
-
-    z-index: 1;
+    
     position: absolute;
     inset: 0;
 
