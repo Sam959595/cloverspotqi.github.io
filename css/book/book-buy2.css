@@ -46,23 +46,31 @@ section.pp h1 {
 /* nav */
 
 nav {
-
     padding: 1em var(--padding);
 
-    display: flex;
-    justify-content: space-between;
+    z-index: 1;
+    position: fixed;
+    inset: 0 0 auto;
 
-    -webkit-backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+
+    background: linear-gradient(to top, var(--soft-2), var(--gray-a))
 }
 
-nav a {
-    font-size: 17px
-}
-nav a:last-child {
-    font-weight: 600
+nav h6 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    
+    text-align: center;
+    font: 600 17px system-ui
 }
 
 /* mm */
+
+section.mm {
+    margin-top: 4em
+}
 
 section.mm > ul {
     display: grid;
@@ -445,7 +453,7 @@ footer h6 {
 @media screen and (prefers-color-scheme: light) {
     :root {
         --soft: #00000030;
-        --soft-2: #ddddddaa;
+        --soft-2: #ffffff80;
         --soft-3: #00000010;
 
         --gray-a: white;
@@ -470,7 +478,7 @@ footer h6 {
 @media screen and (prefers-color-scheme: dark) {
     :root {
         --soft: #ffffff40;
-        --soft-2: #f2f4ff1a;
+        --soft-2: #00000040;
         --soft-3: #ffffff10;
 
         --gray-a: black;
