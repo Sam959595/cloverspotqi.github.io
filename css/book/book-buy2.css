@@ -76,7 +76,7 @@ section.mm > ul {
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
-    column-gap: 8px;
+    column-gap: var(--gap);
 
     padding-inline: var(--padding);
 
@@ -86,55 +86,23 @@ section.mm > ul {
     scroll-padding-left: var(--padding)
 }
 section.mm > ul > li {
-    position: relative;
-
-    width: var(--screen-padding);
-    height: 538px;
-
-    border-radius: 15px;
-
-    background-color: var(--gray-15);
-
     scroll-snap-align: start
 }
 
-section.mm li > div {
-    position: absolute;
-    inset: auto 0 0;
+section.mm > ul > li > section {
+    width: var(--screen-padding);
 
-    border-radius: 0 0 15px 15px;
+    border-radius: 15px;
 
-    overflow: hidden
-}
-
-section.mm li > div img {
-    object-fit: cover;
-
-    width: -webkit-fill-available;
-    height: 150px;
-
-    border-radius: 0 0 15px 15px;
-
-    transition: height 1s ease
-}
-
-.u {
-    height: 90px !important
-}
-.a {
-    height: 400px !important
+    background-color: var(--gray-15)
 }
 
 /* ee */
 
-section.ee {
-    height: 100%;
-    
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
+section:where(.ee, .ww) {
+    width: var(--screen-padding);
+    height: 538px;
 }
-
 section.ee figure {
     width: 140px;
     height: 224px;
@@ -148,7 +116,6 @@ section.ee figure {
 
 section.ee figcaption {
     margin: 2cm 1cm 0;
-    display: flex;
 }
 
 section.ee ul {
@@ -198,27 +165,43 @@ section.ee h1 {
 
 /* ww */
 
+section.ww figure:first-child {
+    position: absolute;
+    inset: auto 0 0;
+
+    border-radius: 0 0 15px 15px
+}
+
+section.ww figure:first-child img {
+    object-fit: cover;
+
+    width: -webkit-fill-available;
+    height: 120px;
+
+    border-radius: 0 0 15px 15px;
+
+    transition: height 1s ease
+}
+
+.a {
+    height: 400px !important
+}
+
 section.ww div {
     text-align: center
 }
-section.ww li:first-child div {
-    margin-inline: auto
-}
 
-section.ww li:last-child {
-    display: flex;
-    flex-flow: column
-}
 section.ww figcaption:first-child {
-    margin: 1cm 10px 0 calc(10px + 51px);
+    margin-inline: calc(10px + 51px) 10px;
+    padding-top: 1cm;
 
     display: flex
 }
-section.ww figcaption:first-child div {
-    width: -webkit-fill-available
-}
+
 section.ww h2 {
     margin-bottom: .5em;
+
+    width: calc(var(--screen-padding) - 122px);
 
     text-overflow: ellipsis;
     overflow-x: hidden;
@@ -237,7 +220,8 @@ section.ww button {
 .aa {
     color: var(--gray)
 }
-section.ww img {
+
+section.ww figcaption:first-child img {
     padding: 3px;
 
     object-fit: cover;
@@ -250,7 +234,7 @@ section.ww img {
 }
 
 section.ww figcaption:last-child {
-    margin-block: 3cm;
+    margin-top: 3cm;
 
     display: flex;
     justify-content: space-around
@@ -481,22 +465,19 @@ footer h6 {
 
 /* var */
 
-@media screen and (min-width: 320px) and (max-width: 728px) {
-    :root {
-        --padding: 25px;
-        --screen-padding: calc(var(--screen) - var(--padding) * 2);
-        --gap: 18px;
-        --li-2: calc(var(--screen-padding) / 2 - (var(--gap) / 2));
-        --li-3: calc(var(--screen-padding) / 3 - (var(--gap) * 2 / 3))
-    }
+:root {
+    --padding: 25px;
+    --screen-padding: calc(var(--screen) - var(--padding) * 2);
+    --gap: 18px;
+    --li-2: calc(var(--screen-padding) / 2 - (var(--gap) / 2));
+    --li-3: calc(var(--screen-padding) / 3 - (var(--gap) * 2 / 3))
 }
-
 /* color */
 
 @media screen and (prefers-color-scheme: light) {
     :root {
         --soft: #00000030;
-        --soft-2: #ffffff80;
+        --soft-2: #ffffffcc;
         --soft-3: #00000010;
 
         --gray-a: white;
