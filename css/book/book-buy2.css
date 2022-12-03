@@ -46,7 +46,7 @@ section.pp h1 {
 /* mm */
 
 section.mm {
-    margin-top: var(--padding)
+    margin-top: var(--padding-2)
 }
 
 section.mm > ul {
@@ -55,19 +55,19 @@ section.mm > ul {
     grid-auto-flow: column;
     column-gap: var(--gap);
 
-    padding-inline: var(--padding);
+    padding-inline: var(--padding-2);
 
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
-    scroll-padding-left: var(--padding)
+    scroll-padding-left: var(--padding-2)
 }
 section.mm > ul > li {
     scroll-snap-align: start
 }
 
 section.mm > ul > li > section {
-    width: var(--screen-padding);
+    width: var(--screen-padding-2);
     height: 538px;
 
     border-radius: 15px;
@@ -123,7 +123,7 @@ section.ee h3 {
     font: 600 14px ui-rounded
 }
 section.ee h1 {
-    font: 600 18px/1.2 ui-serif
+    font: 600 21px ui-serif
 }
 
 section.ee a {
@@ -142,10 +142,18 @@ section.ee img {
     background: center/cover
 }
 
-section.ee h2 {
-    margin: auto 1em 1em;
+section.ee div {
+    margin: auto 2em 2em;
 
-    font: 600 21px ui-rounded
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+section.ee h2 {
+    font: 600 48px ui-rounded
+}
+section.ee u {
+    font-size: 28px
 }
 
 /* ww */
@@ -451,12 +459,15 @@ footer h6 {
 /* var */
 
 :root {
-    --padding: 25px;
+    --padding: 30px;
+    --padding-2: 25px;
     --screen-padding: calc(var(--screen) - var(--padding) * 2);
+    --screen-padding-2: calc(var(--screen) - var(--padding-2) * 2);
     --gap: 18px;
     --li-2: calc(var(--screen-padding) / 2 - (var(--gap) / 2));
     --li-3: calc(var(--screen-padding) / 3 - (var(--gap) * 2 / 3))
 }
+
 /* color */
 
 @media screen and (prefers-color-scheme: light) {
