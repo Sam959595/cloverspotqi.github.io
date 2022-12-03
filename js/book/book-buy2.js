@@ -8,11 +8,9 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 window.addEventListener('DOMContentLoaded', () => {
-    let a = $('#uu'),
-    b = $('#aa')
+    let b = $('#aa')
 
     b.click( () => {
-        a[0].classList.toggle('u')
         b[0].classList.toggle('a')
 
         console.log('ghb')
