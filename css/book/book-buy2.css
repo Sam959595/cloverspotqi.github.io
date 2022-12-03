@@ -117,13 +117,13 @@ section.ee h6 {
     font-size: 10px
 }
 section.ee h4 {
-    font: 600 18px ui-rounded
-}
-section.ee h3 {
-    font: 600 14px ui-rounded
+    font: 600 21px ui-rounded
 }
 section.ee h1 {
     font: 600 21px ui-serif
+}
+section.ee h3 {
+    font: 600 14px ui-rounded
 }
 
 section.ee a {
@@ -150,10 +150,7 @@ section.ee div {
     justify-content: space-between
 }
 section.ee h2 {
-    font: 600 48px ui-rounded
-}
-section.ee u {
-    font-size: 28px
+    font: 600 32px ui-rounded
 }
 
 /* ww */
