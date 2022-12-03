@@ -194,7 +194,7 @@ section.ww figcaption:first-child {
 section.ww h2 {
     margin-bottom: .5em;
 
-    width: calc(var(--screen-padding) - 122px);
+    width: calc(var(--screen-padding-2) - 122px);
 
     text-overflow: ellipsis;
     overflow-x: hidden;
