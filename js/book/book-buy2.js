@@ -12,7 +12,13 @@ window.addEventListener('DOMContentLoaded', () => {
 
     b.click( () => {
         b[0].classList.toggle('a')
-
-        console.log('ghb')
     })
+})
+
+window.addEventListener('touchstart', x => {
+    b = $('#aa')
+
+    if (x.touches.length === 3) {
+        $('#aa')[0].classList.toggle('a')
+    }
 })
