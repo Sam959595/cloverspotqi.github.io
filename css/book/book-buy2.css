@@ -460,7 +460,7 @@ footer h6 {
 
 :root {
     --padding: 30px;
-    --padding-2: 25px;
+    --padding-2: 15px;
     --screen-padding: calc(var(--screen) - var(--padding) * 2);
     --screen-padding-2: calc(var(--screen) - var(--padding-2) * 2);
     --gap: 18px;
