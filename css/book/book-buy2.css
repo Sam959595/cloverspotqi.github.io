@@ -196,12 +196,13 @@ section.ww figure:first-child figure h1 {
     -webkit-backdrop-filter: saturate(180%) blur(20px);
 
     background-color: #202024ad;
-    color: var(--gray);
+    color: white;
 
     transition: background-color 1s ease
 }
 
 .a figure {
+    border-radius: 15px !important;
     height: 538px !important
 }
 .a h1 {
