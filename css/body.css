@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 
-	vertical-align: top;
 	box-sizing: border-box;
 
 	-webkit-text-size-adjust: none;
@@ -57,7 +56,7 @@ input[type="submit"], button, select, span {
 	cursor: pointer
 }
 
-h1, h2, h3, h4, h5, h6, p, time {
+h1, h2, h3, h4, h5, h6, p, time, img {
 	pointer-events: none
 }
 
@@ -78,6 +77,9 @@ select, textarea, span, button, a {
 }
 select {
     background: none
+}
+img {
+	vertical-align: top
 }
 
 ::-webkit-scrollbar{
