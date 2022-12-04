@@ -8,17 +8,19 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 window.addEventListener('DOMContentLoaded', () => {
-    let b = $('#aa')
+    let a = $('#aa'),
+    b = $('#bb')
 
-    b.click( () => {
+    a.click( () => {
+        a[0].classList.toggle('a')
         b[0].classList.toggle('a')
     })
 })
 
 window.addEventListener('touchstart', x => {
-    b = $('#aa')
+    let a = $('#aa')
 
     if (x.touches.length === 3) {
-        $('#aa')[0].classList.toggle('a')
+        a[0].classList.toggle('a')
     }
 })
