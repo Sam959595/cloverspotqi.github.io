@@ -49,17 +49,17 @@ section.mm {
 }
 
 section.mm>ul {
-    padding-inline: var(--padding);
+    padding-inline: var(--padding-2);
 
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
-    column-gap: 10px;
+    column-gap: var(--gap);
 
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
-    scroll-padding-left: var(--padding)
+    scroll-padding-left: var(--padding-2)
 }
 
 section.mm>ul>li {
@@ -67,7 +67,7 @@ section.mm>ul>li {
 }
 
 section.mm>ul>li>section {
-    width: var(--screen-padding);
+    width: var(--screen-padding-2);
     height: 700px;
 
     border-radius: 15px;
@@ -116,7 +116,9 @@ section.ee p {
 }
 
 section.ee h6 {
-    font-size: 10px
+    font-size: 10px;
+
+    color: var(--gray-2)
 }
 
 section.ee h4 {
@@ -164,7 +166,9 @@ section.ee div h1 {
 }
 
 section.ee h2 {
-    font: 600 28px ui-rounded
+    font: 600 21px ui-rounded;
+
+    color: var(--gray-6)
 }
 
 /* ww */
@@ -218,7 +222,7 @@ section.ww figcaption:first-child {
 section.ww h2 {
     margin-bottom: .5em;
 
-    width: calc(var(--screen-padding) - 122px);
+    width: calc(var(--screen-padding-2) - 122px);
 
     text-overflow: ellipsis;
     overflow: hidden;
@@ -292,7 +296,6 @@ section.tt h5 {
 
 section.uu {
     overflow: hidden;
-
     margin: 0 2em 2em
 }
 
