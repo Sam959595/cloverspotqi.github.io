@@ -169,21 +169,17 @@ section.ee h2 {
 
 /* ww */
 
-
 figure.www {
-    opacity: .8;
+    position: absolute;
+    inset: auto 0 0;
 
-    margin-inline: 2em;
+    height: 50px;
 
-    height: 15px;
+    border-radius: 15px;
 
-    overflow: hidden;
+    background-color: var(--gray-15);
 
-    border-radius: 12px 12px 0 0;
-
-    background: var(--gray-15);
-
-    transition: 1s ease
+    transition: height .5s ease
 }
 
 figure.www figure {
@@ -191,36 +187,23 @@ figure.www figure {
 
     height: 100%;
 
+    border-radius: 15px;
+
     background: center/cover;
 
-    transition: 1s ease
-}
-figure.www figure h1 {
-    border-radius: 15px 15px 0 0;
-
-    text-align: center;
-    font-size: 14px;
-
-    background-color: #202024ad;
-    color: white;
-
-    transition: 1s ease
+    transition: opacity .5s ease
 }
 
 .a {
-    opacity: 1 !important;
-    margin-inline: 0 !important;
-    height: 553px !important;
-    border-radius: 15px !important;
-    background: transparent !important
+    height: 523px !important
 }
-.a figure {
-    opacity: 1 !important;
-    border-radius: 15px !important;
+.a figure figure {
+    opacity: 1
 }
-.a h1 {
-    -webkit-backdrop-filter: blur(0) !important;
-    background-color: transparent !important
+.a section {
+    opacity: .8;
+    
+    transform: scale(0.9) translate(0, -30px)
 }
 
 section.ww div {
