@@ -169,41 +169,32 @@ section.ee h2 {
 
 /* ww */
 
-figure.www {
+section.ww figure:first-child {
     position: absolute;
-    inset: auto 0 0;
-
-    height: 50px;
+    inset: 0;
 
     border-radius: 15px;
 
-    background-color: var(--gray-15);
-
-    transition: height .5s ease
+    transition: opacity .7s ease
 }
 
-figure.www figure {
-    opacity: 0;
+section.ww figure:first-child figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    height: 100%;
+    background: center/cover
+}
+section.ww figure:first-child h1 {
+    text-align: center;
 
-    border-radius: 15px;
+    font: 600 17px/1 system-ui;
 
-    background: center/cover;
-
-    transition: opacity .5s ease
+    color: white
 }
 
-.a {
-    height: 523px !important
-}
-.a figure figure {
-    opacity: 1
-}
-.a section {
-    opacity: .8;
-    
-    transform: scale(0.9) translate(0, -30px)
+.a figure:first-child {
+    opacity: 0 !important
 }
 
 section.ww div {
