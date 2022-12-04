@@ -54,7 +54,7 @@ section.mm>ul {
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
-    column-gap: var(--gap);
+    column-gap: 9px;
 
     overflow-x: scroll;
 
@@ -68,7 +68,7 @@ section.mm>ul>li {
 
 section.mm>ul>li>section {
     width: var(--screen-padding-2);
-    height: 538px;
+    height: 700px;
 
     border-radius: 15px;
 
@@ -149,7 +149,7 @@ section.ee img {
 }
 
 section.ee div {
-    margin: auto 2em 2em;
+    margin: auto 2em 1em;
 
     display: flex;
     align-items: center;
@@ -164,7 +164,7 @@ section.ee div h1 {
 }
 
 section.ee h2 {
-    font: 600 32px ui-rounded
+    font: 600 28px ui-rounded
 }
 
 /* ww */
@@ -185,7 +185,7 @@ section.ww figure:first-child figure {
     align-items: center;
     justify-content: center;
 
-    background: center/cover #fff
+    background: center/cover
 }
 section.ww figure:first-child h1 {
     text-align: center;
@@ -195,6 +195,9 @@ section.ww figure:first-child h1 {
     text-shadow: 0 0 5px black;
 
     color: white
+}
+section.ww figure:first-child h1 u {
+    font-family: ui-serif;
 }
 
 .a figure:first-child {
@@ -237,7 +240,7 @@ section.ww button {
     color: var(--gray)
 }
 
-section.ww figcaption:first-child img {
+section.ww figcaption.fff img {
     padding: 3px;
 
     width: 51px;
@@ -250,7 +253,7 @@ section.ww figcaption:first-child img {
     border: 2px solid var(--blue)
 }
 
-section.ww figcaption:last-child {
+section.ww figcaption.eee {
     margin-top: 3cm;
 
     display: flex;
@@ -263,6 +266,10 @@ section.ww p {
 
 section.ww h5 {
     font: 700 48px ui-rounded
+}
+
+section.ww figcaption.uuu {
+    
 }
 
 /* hr */
@@ -284,11 +291,13 @@ section.tt h5 {
 /* uu */
 
 section.uu {
-    margin: .6cm var(--padding)
+    overflow: hidden;
+    
+    margin: 0 2em 2em
 }
 
 section.uu>* {
-    font: 14px/1.4 system-ui
+    font: 14px/1.4 system-ui !important
 }
 
 /* text hide */
@@ -300,7 +309,7 @@ section.uu>* {
 .hide h6 {
     max-height: 95px;
 
-    -webkit-mask: linear-gradient(to top, transparent 17px, black 0), linear-gradient(to left, transparent 40px, black 90px)
+    -webkit-mask: linear-gradient(to top, #00000010, black)
 }
 
 .hide span {
