@@ -49,7 +49,7 @@ section.mm {
 }
 
 section.mm>ul {
-    padding-inline: var(--padding-2);
+    padding-inline: var(--padding);
 
     display: grid;
     grid-auto-columns: max-content;
@@ -59,7 +59,7 @@ section.mm>ul {
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
-    scroll-padding-left: var(--padding-2)
+    scroll-padding-left: var(--padding)
 }
 
 section.mm>ul>li {
@@ -67,8 +67,8 @@ section.mm>ul>li {
 }
 
 section.mm>ul>li>section {
-    width: var(--screen-padding-2);
-    height: 700px;
+    width: var(--screen-padding);
+    height: 715px;
 
     border-radius: 15px;
 
@@ -220,7 +220,7 @@ section.ww figcaption:first-child {
 section.ww h2 {
     margin-bottom: .5em;
 
-    width: calc(var(--screen-padding-2) - 122px);
+    width: calc(var(--screen-padding) - 122px);
 
     text-overflow: ellipsis;
     overflow: hidden;
