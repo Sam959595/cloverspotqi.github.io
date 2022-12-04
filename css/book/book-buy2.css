@@ -179,16 +179,20 @@ section.ww figure:first-child {
 }
 
 section.ww figure:first-child figure {
+    padding: 1em;
+    
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background: center/cover
+    background: center/cover #fff
 }
 section.ww figure:first-child h1 {
     text-align: center;
 
-    font: 600 17px/1 system-ui;
+    font: 600 17px system-ui;
+
+    text-shadow: 0 0 5px black;
 
     color: white
 }
