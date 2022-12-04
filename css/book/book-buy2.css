@@ -54,7 +54,7 @@ section.mm>ul {
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
-    column-gap: var(--gap);
+    column-gap: 10px;
 
     overflow-x: scroll;
 
@@ -166,9 +166,7 @@ section.ee div h1 {
 }
 
 section.ee h2 {
-    font: 600 21px ui-rounded;
-
-    color: var(--gray-6)
+    font: 600 21px ui-rounded
 }
 
 /* ww */
