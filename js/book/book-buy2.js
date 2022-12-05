@@ -1,9 +1,10 @@
 window.addEventListener('DOMContentLoaded', () => {
     let bb = window.innerWidth,
+    nn = window.innerHeight,
     mm = document.createElement('style')
 
     document.head.append(mm)
-    mm.innerHTML = ':root{--screen:' + bb + 'px}'
+    mm.innerHTML = ':root{--screen-x:' + bb + 'px; --screen-y:' + nn + 'px}'
 })
 
 window.addEventListener('DOMContentLoaded', () => {
