@@ -68,7 +68,7 @@ section.mm>ul>li {
 
 section.mm>ul>li>section {
     width: var(--screen-padding);
-    height: 715px;
+    height: var(--screen-padding-y);
 
     border-radius: 15px;
 
@@ -166,7 +166,7 @@ section.ee div h1 {
 }
 
 section.ee h2 {
-    font: 600 21px ui-rounded
+    font: 600 21px system-ui
 }
 
 /* ww */
@@ -502,8 +502,9 @@ footer h6 {
 :root {
     --padding: 30px;
     --padding-2: 15px;
-    --screen-padding: calc(var(--screen) - var(--padding) * 2);
-    --screen-padding-2: calc(var(--screen) - var(--padding-2) * 2);
+    --screen-padding: calc(var(--screen-x) - var(--padding) * 2);
+    --screen-padding-2: calc(var(--screen-x) - var(--padding-2) * 2);
+    --screen-padding-y: calc(var(--screen-y) - var(--padding));
     --gap: 18px;
     --li-2: calc(var(--screen-padding) / 2 - (var(--gap) / 2));
     --li-3: calc(var(--screen-padding) / 3 - (var(--gap) * 2 / 3))
@@ -549,7 +550,7 @@ footer h6 {
         --gray-2: #8e8e93;
         --gray-3: #333338;
         --gray-6: #63636e;
-        --gray-15: #17171d;
+        --gray-15: #141414;
 
         --blue: #0a84ff;
 
