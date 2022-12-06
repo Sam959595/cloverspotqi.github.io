@@ -6,17 +6,16 @@ section.pp {
 
     z-index: 1;
     position: fixed;
-    inset: 0;
+    inset: 0 0 auto auto;
 
-    margin: auto;
+    margin: 3em;
 
-    width: 220px;
-    height: 220px;
+    width: 80px;
+    height: 80px;
 
-    border-radius: 11px;
+    border-radius: 100%;
 
     display: flex;
-    flex-flow: column;
     align-items: center;
     justify-content: center;
 
@@ -27,13 +26,10 @@ section.pp {
     transition: opacity 2s ease-out
 }
 
-section.pp h1 {
-    margin-top: .8em;
+section.pp svg {
+    margin-top: 3px;
 
-    text-align: center;
-    font: 600 17px system-ui;
-
-    color: var(--soft)
+    fill: var(--soft)
 }
 
 .qq {
@@ -49,7 +45,7 @@ section.mm {
 }
 
 section.mm>ul {
-    padding-inline: var(--padding);
+    padding-inline: var(--padding-2);
 
     display: grid;
     grid-auto-columns: max-content;
@@ -59,7 +55,7 @@ section.mm>ul {
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
-    scroll-padding-left: var(--padding)
+    scroll-padding-left: var(--padding-2)
 }
 
 section.mm>ul>li {
@@ -67,7 +63,7 @@ section.mm>ul>li {
 }
 
 section.mm>ul>li>section {
-    width: var(--screen-padding);
+    width: var(--screen-padding-2);
     height: var(--screen-padding-y);
 
     border-radius: 15px;
@@ -83,7 +79,8 @@ section.ee {
 }
 
 section.ee ul {
-    padding: 2em 10px;
+    margin-top: 2em;
+    padding-inline: 10px;
 
     display: grid;
     grid-auto-columns: max-content;
@@ -151,7 +148,7 @@ section.ee img {
 }
 
 section.ee div {
-    margin: auto 2em 1em;
+    margin: 0 2em 1em;
 
     display: flex;
     align-items: center;
@@ -220,7 +217,7 @@ section.ww figcaption:first-child {
 section.ww h2 {
     margin-bottom: .5em;
 
-    width: calc(var(--screen-padding) - 122px);
+    width: calc(var(--screen-padding-2) - 122px);
 
     text-overflow: ellipsis;
     overflow: hidden;
@@ -540,7 +537,7 @@ footer h6 {
 @media screen and (prefers-color-scheme: dark) {
     :root {
         --soft: #ffffff40;
-        --soft-2: #00000080;
+        --soft-2: #32323280;
         --soft-3: #ffffff10;
 
         --gray-a: black;
