@@ -43,11 +43,13 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 window.addEventListener('touchstart', x => {
-    let a = $('#aa')
+    let a = $('section.pp')
 
-    if (x.touches.length === 3) {
-        a[0].classList.toggle('a')
+    if (x.touches.length === 1) {
+        a[0].classList.add('qq')
 
-        console.log('ghb')
+        setTimeout( () => {
+            a[0].classList.remove('qq')
+        }, 5000)
     }
 })
