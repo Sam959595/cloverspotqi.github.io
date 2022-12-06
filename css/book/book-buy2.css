@@ -50,7 +50,7 @@ section.mm>ul {
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
-    column-gap: 10px;
+    column-gap: var(--padding-2);
 
     overflow-x: scroll;
 
@@ -68,6 +68,7 @@ section.mm>ul>li>section {
 
     border-radius: 15px;
 
+    -webkit-backdrop-filter: blur(5px);
     background-color: var(--gray-15)
 }
 
@@ -75,7 +76,9 @@ section.mm>ul>li>section {
 
 section.ee {
     display: flex;
-    flex-flow: column
+    flex-flow: column;
+
+    background: center/cover
 }
 
 section.ee ul {
@@ -512,7 +515,7 @@ footer h6 {
 @media screen and (prefers-color-scheme: light) {
     :root {
         --soft: #00000030;
-        --soft-2: #e3e3e3cc;
+        --soft-2: #ffffffe9;
         --soft-3: #00000010;
 
         --gray-a: white;
@@ -537,7 +540,7 @@ footer h6 {
 @media screen and (prefers-color-scheme: dark) {
     :root {
         --soft: #ffffff40;
-        --soft-2: #32323280;
+        --soft-2: #000000e3;
         --soft-3: #ffffff10;
 
         --gray-a: black;
@@ -547,7 +550,7 @@ footer h6 {
         --gray-2: #8e8e93;
         --gray-3: #333338;
         --gray-6: #63636e;
-        --gray-15: #141414;
+        --gray-15: #121212;
 
         --blue: #0a84ff;
 
