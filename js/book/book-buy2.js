@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('touchstart', x => {
     let a = $('section.pp')
 
-    if (x.touches.length === 1) {
+    if (x.touches.length === 3) {
         a[0].classList.add('qq')
 
         setTimeout( () => {
