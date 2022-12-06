@@ -10,8 +10,8 @@ section.pp {
 
     margin: auto;
 
-    width: 150px;
-    height: 150px;
+    width: 220px;
+    height: 220px;
 
     border-radius: 11px;
 
@@ -31,7 +31,7 @@ section.pp h1 {
     margin-top: .8em;
 
     text-align: center;
-    font-weight: 800;
+    font: 600 17px system-ui;
 
     color: var(--soft)
 }
@@ -515,7 +515,7 @@ footer h6 {
 @media screen and (prefers-color-scheme: light) {
     :root {
         --soft: #00000030;
-        --soft-2: #ffffffcc;
+        --soft-2: #e3e3e3cc;
         --soft-3: #00000010;
 
         --gray-a: white;
@@ -540,7 +540,7 @@ footer h6 {
 @media screen and (prefers-color-scheme: dark) {
     :root {
         --soft: #ffffff40;
-        --soft-2: #00000040;
+        --soft-2: #00000080;
         --soft-3: #ffffff10;
 
         --gray-a: black;
