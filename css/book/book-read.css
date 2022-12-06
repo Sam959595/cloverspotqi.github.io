@@ -120,8 +120,7 @@ section.vv h6::first-letter {
 section.vv h6 {
     margin-bottom: 1em;
     
-    font: 18px/1.4 ui-serif;
-    letter-spacing: .02em;
+    font: 17px/1.5 ui-serif;
     text-align: justify;
 
     color: var(--text-3)
@@ -151,7 +150,7 @@ section.vv ol li {
     line-height: 1.4 !important
 }
 .yyy h6 {
-    font-size: 14px !important
+    font-size: 15px !important
 }
 
 .sss :where(h5, h6, ol li) {
