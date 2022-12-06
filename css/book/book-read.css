@@ -142,12 +142,10 @@ section.vv ol li {
 
 .y h6 {
     font-size: 20px !important;
-    font-weight: 600 !important;
-    line-height: 1.5 !important
+    font-weight: 600 !important
 }
 .yy h6 {
-    font-size: 20px !important;
-    line-height: 1.4 !important
+    font-size: 20px !important
 }
 .yyy h6 {
     font-size: 15px !important
@@ -157,8 +155,7 @@ section.vv ol li {
     font-family: system-ui !important
 }
 .zzz :where(h5, h6, ol li) {
-    font-family: charter !important;
-    line-height: 1.5 !important
+    font-family: charter !important
 }
 
 .rrr {
