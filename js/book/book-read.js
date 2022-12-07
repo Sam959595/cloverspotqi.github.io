@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 
-window.addEventListener('touchend', () => {
+window.addEventListener('touchstart', x => {
     let aa = $('section.ww')
 
     if (x.touches.length === 3) {
