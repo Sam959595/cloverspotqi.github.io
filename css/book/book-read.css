@@ -7,7 +7,8 @@ body {
 /* ww */
 
 section.ww {
-    opacity: 1;
+    opacity: 0;
+    pointer-events: none;
     transform: scale(1);
     
     z-index: 1;
@@ -30,8 +31,8 @@ section.ww {
 }
 
 .wwww {
-    opacity: 0 !important;
-    pointer-events: none
+    opacity: 1 !important;
+    pointer-events: auto !important
 }
 
 .www {
