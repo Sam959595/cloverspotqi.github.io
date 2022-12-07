@@ -33,7 +33,7 @@ window.addEventListener('touchmove', x => {
     if (x) {
         setTimeout(() => {
             nn[0].classList.remove('wwww')
-        }, 5000)
+        }, 3000)
     }
 })
 
