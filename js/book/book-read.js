@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-    let aa = 'ontouchstart' in window || window.DocumentTouch && document instanceof window.DocumentTouch || navigator.maxTouchPoints > 0 || window.navigator.maxTouchPoints > 0,
+    let aa = 'ontouchstart' in window,
         vv = $('section.ww')
 
     if (!aa) {
