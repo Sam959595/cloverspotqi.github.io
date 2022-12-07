@@ -89,26 +89,33 @@ window.addEventListener('change', () => {
 
     if (vv == '1') {
         nn.classList.add('rrr')
-        nn.classList.remove('ttt', 'kkk')
+        nn.classList.remove('ttt', 'kkk', 'qqq')
 
         $('meta[media="(prefers-color-scheme: light)"]').attr('content', 'white')
         $('meta[media="(prefers-color-scheme: dark)"]').attr('content', 'black')
     } else if (vv == '2') {
         nn.classList.add('ttt')
-        nn.classList.remove('rrr', 'kkk')
+        nn.classList.remove('rrr', 'kkk', 'qqq')
 
         $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#e0dacc')
         $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#120b08')
     } else if (vv == '3') {
+        nn.classList.remove('rrr', 'ttt', 'kkk', 'qqq')
+
+        $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#ddd')
+        $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#1a1a1c')
+    } else if (vv == '4') {
+        nn.classList.add('kkk')
+        nn.classList.remove('rrr', 'ttt', 'qqq')
+
+        $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#e3e4e6')
+        $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#353539')
+    }
+    else if (vv == '5') {
+        nn.classList.add('qqq')
         nn.classList.remove('rrr', 'ttt', 'kkk')
 
         $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#f2f2f9')
-        $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#353539')
-    } else if (vv == '4') {
-        nn.classList.add('kkk')
-        nn.classList.remove('rrr', 'ttt')
-
-        $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#e3e4e6')
         $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#51545c')
     }
 })
