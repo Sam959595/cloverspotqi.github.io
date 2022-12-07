@@ -9,12 +9,11 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 })
 
-
 window.addEventListener('touchstart', x => {
     let aa = $('section.ww')
 
     if (x.touches.length === 3) {
-        aa[0].classList.add('wwww')
+        aa[0].classList.remove('wwww')
     }
 })
 
@@ -33,6 +32,7 @@ window.addEventListener('touchmove', () => {
         nn = $('section.ww')
 
     vv[0].classList.remove('eee')
+    nn[0].classList.add('wwww')
     nn[0].classList.remove('www')
 })
 
