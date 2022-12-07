@@ -1,39 +1,36 @@
 window.addEventListener('DOMContentLoaded', () => {
-    let aa = $('section.ww'),
-    vv = 'ontouchstart' in window || window.DocumentTouch && document instanceof window.DocumentTouch || navigator.maxTouchPoints > 0 || window.navigator.maxTouchPoints > 0
+    let aa = 'ontouchstart' in window || window.DocumentTouch && document instanceof window.DocumentTouch || navigator.maxTouchPoints > 0 || window.navigator.maxTouchPoints > 0,
+        vv = $('section.ww')
 
-    if (vv === true) {
-        setTimeout( () => {
-            aa[0].classList.add('wwww')
-        }, 3000)
-    }
-})
-
-window.addEventListener('touchstart', x => {
-    let aa = $('section.ww')
-
-    if (x.touches.length === 3) {
-        aa[0].classList.remove('wwww')
-    }
+    window.addEventListener('touchstart', x => {
+        if (aa && x.touches.length === 1) {
+            vv[0].classList.add('wwww')
+        }
+    })
 })
 
 window.addEventListener('touchend', () => {
-    $('section.ww').click(() => {
-        let vv = $('section.ee'),
-            nn = $('section.ww')
+    let vv = $('section.ee'),
+        nn = $('section.ww')
 
+    nn.click( () => {
         vv[0].classList.add('eee')
         nn[0].classList.add('www')
     })
 })
 
-window.addEventListener('touchmove', () => {
+window.addEventListener('touchmove', x => {
     let vv = $('section.ee'),
         nn = $('section.ww')
 
     vv[0].classList.remove('eee')
-    nn[0].classList.add('wwww')
     nn[0].classList.remove('www')
+
+    if (x) {
+        setTimeout( () => {
+            nn[0].classList.remove('wwww')
+        }, 5000)
+    }
 })
 
 //
