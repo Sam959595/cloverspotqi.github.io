@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
         vv = $('section.ww')
 
     window.addEventListener('touchstart', x => {
-        if (aa && x.touches.length === 1) {
+        if (aa && x.touches.length === 3) {
             vv[0].classList.add('wwww')
         }
     })
