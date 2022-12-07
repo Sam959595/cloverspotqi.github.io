@@ -2,6 +2,10 @@ window.addEventListener('DOMContentLoaded', () => {
     let aa = 'ontouchstart' in window || window.DocumentTouch && document instanceof window.DocumentTouch || navigator.maxTouchPoints > 0 || window.navigator.maxTouchPoints > 0,
         vv = $('section.ww')
 
+    if (!aa) {
+        vv[0].classList.add('wwww')
+    }
+
     window.addEventListener('touchstart', x => {
         if (aa && x.touches.length === 3) {
             vv[0].classList.add('wwww')
@@ -13,7 +17,7 @@ window.addEventListener('touchend', () => {
     let vv = $('section.ee'),
         nn = $('section.ww')
 
-    nn.click( () => {
+    nn.click(() => {
         vv[0].classList.add('eee')
         nn[0].classList.add('www')
     })
@@ -27,7 +31,7 @@ window.addEventListener('touchmove', x => {
     nn[0].classList.remove('www')
 
     if (x) {
-        setTimeout( () => {
+        setTimeout(() => {
             nn[0].classList.remove('wwww')
         }, 5000)
     }
