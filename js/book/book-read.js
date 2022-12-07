@@ -1,16 +1,17 @@
 window.addEventListener('DOMContentLoaded', () => {
     let aa = 'ontouchstart' in window,
-        vv = $('section.ww')
+        vv = $('section.ww'),
+        mm = $('section.ee')
+
+    window.addEventListener('touchstart', x => {
+        if (aa && x.touches.length === 3) {
+            mm[0].classList.add('eee')
+        }
+    })
 
     if (!aa) {
         vv[0].classList.add('wwww')
     }
-
-    window.addEventListener('touchstart', x => {
-        if (aa && x.touches.length === 3) {
-            vv[0].classList.add('wwww')
-        }
-    })
 })
 
 window.addEventListener('touchend', () => {
@@ -29,12 +30,6 @@ window.addEventListener('touchmove', x => {
 
     vv[0].classList.remove('eee')
     nn[0].classList.remove('www')
-
-    if (x) {
-        setTimeout(() => {
-            nn[0].classList.remove('wwww')
-        }, 3000)
-    }
 })
 
 //
