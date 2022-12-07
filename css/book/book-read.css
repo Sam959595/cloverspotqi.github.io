@@ -4,49 +4,11 @@ body {
     background-color: var(--canvas-3)
 }
 
-/* ww */
-
-section.ww {
-    opacity: 0;
-    pointer-events: none;
-    transform: scale(1);
-    
-    z-index: 1;
-    position: fixed;
-    inset: 0 0 auto;
-
-    width: 70px;
-    height: 7px;
-
-    margin: 2.8em auto 0;
-
-    border-radius: 5px;
-
-    -webkit-tap-highlight-color: transparent;
-
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    background-color: var(--soft-3);
-
-    transition: opacity .5s, transform .8s ease
-}
-
-.wwww {
-    opacity: 1 !important;
-    pointer-events: auto !important
-}
-
-.www {
-    opacity: 0 !important;
-    pointer-events: none;
-    transform: scale(2) !important
-}
-
 /* ee */
 
 section.ee {
     pointer-events: none;
     opacity: 0;
-    transform: scale(.5);
 
     z-index: 2;
     position: fixed;
@@ -102,8 +64,7 @@ section.ee li {
 
 .eee {
     pointer-events: auto !important;
-    opacity: 1 !important;
-    transform: scale(1) !important
+    opacity: 1 !important
 }
 
 /* vv */
@@ -231,8 +192,49 @@ section.bb a {
     }
 }
 @media screen and (min-width: 1200px) {
+    section.ww {
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(1);
+        
+        z-index: 1;
+        position: fixed;
+        inset: 0 0 auto;
+    
+        width: 70px;
+        height: 7px;
+    
+        margin: 2.8em auto 0;
+    
+        border-radius: 5px;
+    
+        -webkit-tap-highlight-color: transparent;
+    
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        background-color: var(--soft-3);
+    
+        transition: opacity .5s, transform .8s ease
+    }
+    
+    .wwww {
+        opacity: 1 !important;
+        pointer-events: auto !important
+    }
+    
+    .www {
+        opacity: 0 !important;
+        transform: scale(2) !important
+    }
+
+    section.ee {
+        transform: scale(.5);
+    }
+    .eee {
+        transform: scale(1) !important
+    }
+
     section:is(.vv, .bb) {
-        margin-inline: 10cm
+        margin: 2.8cm 10cm
     }
 }
 
