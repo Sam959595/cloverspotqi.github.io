@@ -103,7 +103,7 @@ window.addEventListener('change', () => {
         nn.classList.remove('rrr', 'ttt', 'kkk')
 
         $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#f2f2f9')
-        $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#1a1a1c')
+        $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#353539')
     } else if (vv == '4') {
         nn.classList.add('kkk')
         nn.classList.remove('rrr', 'ttt')
