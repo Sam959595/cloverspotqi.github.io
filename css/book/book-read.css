@@ -4,6 +4,42 @@ body {
     background-color: var(--canvas-3)
 }
 
+/* ww */
+
+section.ww {
+    opacity: 1;
+    transform: scale(1);
+    
+    z-index: 1;
+    position: fixed;
+    inset: 0 0 auto;
+
+    width: 70px;
+    height: 7px;
+
+    margin: 2.8em auto 0;
+
+    border-radius: 5px;
+
+    -webkit-tap-highlight-color: transparent;
+
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    background-color: var(--soft-3);
+
+    transition: opacity .5s, transform .8s ease
+}
+
+.wwww {
+    opacity: 0 !important;
+    pointer-events: none
+}
+
+.www {
+    opacity: 0 !important;
+    pointer-events: none;
+    transform: scale(2) !important
+}
+
 /* ee */
 
 section.ee {
@@ -24,7 +60,7 @@ section.ee {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    -webkit-backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
 
     background-color: var(--soft-3);
 
@@ -67,37 +103,6 @@ section.ee li {
     pointer-events: auto !important;
     opacity: 1 !important;
     transform: scale(1) !important
-}
-
-/* ww */
-
-section.ww {
-    opacity: 1;
-    transform: scale(1);
-    
-    z-index: 1;
-    position: fixed;
-    inset: 0 0 auto;
-
-    width: 50px;
-    height: 7px;
-
-    margin: 2.8em auto 0;
-
-    border-radius: 5px;
-
-    -webkit-tap-highlight-color: transparent;
-
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    background-color: var(--soft-3);
-
-    transition: opacity .5s, transform .8s ease
-}
-
-.www {
-    opacity: 0 !important;
-    pointer-events: none;
-    transform: scale(2) !important
 }
 
 /* vv */
