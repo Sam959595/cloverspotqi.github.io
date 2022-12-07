@@ -1,3 +1,23 @@
+window.addEventListener('DOMContentLoaded', () => {
+    let aa = $('section.ww'),
+    vv = 'ontouchstart' in window || window.DocumentTouch && document instanceof window.DocumentTouch || navigator.maxTouchPoints > 0 || window.navigator.maxTouchPoints > 0
+
+    if (vv === true) {
+        setTimeout( () => {
+            aa[0].classList.add('wwww')
+        }, 3000)
+    }
+})
+
+
+window.addEventListener('touchend', () => {
+    let aa = $('section.ww')
+
+    if (x.touches.length === 3) {
+        aa[0].classList.add('wwww')
+    }
+})
+
 window.addEventListener('touchend', () => {
     $('section.ww').click(() => {
         let vv = $('section.ee'),
