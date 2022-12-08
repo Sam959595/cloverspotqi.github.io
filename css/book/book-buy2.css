@@ -6,30 +6,21 @@ section.pp {
 
     z-index: 1;
     position: fixed;
-    inset: 0 0 auto auto;
+    inset: 0 0 auto;
 
-    margin: 3em;
-
-    width: 80px;
-    height: 80px;
-
-    border-radius: 100%;
+    margin-top: 3cm;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-
-    background-color: var(--soft-2);
-
     transition: opacity 2s ease-out
 }
 
 section.pp svg {
-    margin-top: 3px;
+    fill: #fe0000;
 
-    fill: var(--soft)
+    -webkit-filter: drop-shadow(0 15px 30px #ff000060)
 }
 
 .qq {
@@ -255,7 +246,7 @@ section.ww main ul {
     display: grid;
     grid-auto-rows: max-content;
     grid-auto-flow: row;
-    row-gap: 1em
+    row-gap: 2em
 }
 section.ww main li {
     height: 250px;
@@ -290,7 +281,7 @@ section.ww main h1 {
     text-overflow: ellipsis;
     overflow: hidden;
 
-    font: 600 16px system-ui;
+    font: 600 14px system-ui;
 
     color: white
 }
@@ -302,7 +293,7 @@ section.ww main h6 {
     color: white
 }
 section.ww main p {
-    font: 700 16px ui-rounded
+    font: 700 14px ui-rounded
 }
 section.ww main button {
     width: 30px;
