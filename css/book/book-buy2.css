@@ -282,7 +282,7 @@ section.ww main figure {
 
 section.ww main div {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-between
 }
 section.ww main h1 {
@@ -295,6 +295,8 @@ section.ww main h1 {
     color: white
 }
 section.ww main h6 {
+    margin-right: .5em;
+
     font: 14px system-ui;
 
     color: white
@@ -306,11 +308,11 @@ section.ww main button {
     width: 30px;
     height: 30px;
     
-    padding: 8px;
+    padding: 7px;
 
     border-radius: 100%;
 
-    background: linear-gradient(#4196ff, #1c73ff);
+    background: linear-gradient(#4196ff, #1c73ff)
 }
 
 /* tt */
