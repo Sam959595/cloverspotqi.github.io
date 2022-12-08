@@ -103,13 +103,13 @@ window.addEventListener('change', () => {
         nn.classList.remove('rrr', 'ttt', 'kkk', 'qqq')
 
         $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#ddd')
-        $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#1a1a1c')
+        $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#353539')
     } else if (vv == '4') {
         nn.classList.add('kkk')
         nn.classList.remove('rrr', 'ttt', 'qqq')
 
-        $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#e3e4e6')
-        $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#353539')
+        $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#aeaeaf')
+        $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#1a1a1c')
     }
     else if (vv == '5') {
         nn.classList.add('qqq')
