@@ -8,7 +8,7 @@ section.pp {
     position: fixed;
     inset: 0 0 auto;
 
-    margin-top: 3cm;
+    margin-top: 5cm;
 
     display: flex;
     align-items: center;
@@ -268,12 +268,11 @@ section.ww main figure {
     flex-flow: column;
     justify-content: space-between;
 
-    background: linear-gradient(#00000080, transparent, #00000080)
+    background-color: #00000030
 }
 
 section.ww main div {
     display: flex;
-    align-items: end;
     justify-content: space-between
 }
 section.ww main h1 {
@@ -295,15 +294,14 @@ section.ww main h6 {
 section.ww main p {
     font: 700 14px ui-rounded
 }
-section.ww main button {
-    width: 30px;
-    height: 30px;
-    
-    padding: 7px;
 
-    border-radius: 100%;
+section.ww main img {
+    width: 51px;
 
-    background: linear-gradient(#4196ff, #1c73ff)
+    object-fit: cover;
+    aspect-ratio: 1;
+
+    border-radius: 100%
 }
 
 /* tt */
