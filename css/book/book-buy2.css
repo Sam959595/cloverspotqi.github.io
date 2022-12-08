@@ -173,52 +173,15 @@ section.ee h2 {
 
 /* ww */
 
-section.ww > figure:first-child {
-    z-index: 1;
-    pointer-events: none;
-    position: absolute;
-    inset: 0;
-
-    border-radius: 15px;
-
-    transition: opacity .7s ease
-}
-
-section.ww figure:first-child figure {
-    padding: 1em;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: center/cover
-}
-section.ww figure:first-child h1 {
-    text-align: center;
-
-    font: 600 17px system-ui;
-
-    text-shadow: 0 0 5px black;
-
-    color: white
-}
-section.ww figure:first-child h1 u {
-    font-family: ui-serif;
-}
-
-.a > figure:first-child {
-    opacity: 0 !important
-}
-
-section.ww figcaption:last-child div {
-    text-align: center
-}
-
 section.ww figcaption:first-child {
     margin-inline: calc(10px + 51px) 10px;
     padding-top: 1cm;
 
     display: flex
+}
+
+section.ww figcaption div {
+    text-align: center
 }
 
 section.ww h2 {
@@ -278,28 +241,30 @@ section.ww main {
     position: absolute;
     inset: 0;
 
-    margin-inline: 10px;
+    padding-inline: 10px;
+
+    border-radius: 15px;
 
     overflow-x: hidden
 }
 section.ww main ul {
     padding-block: 11cm 1cm;
 
+    border-radius: 30px;
+
     display: grid;
     grid-auto-rows: max-content;
-    grid-auto-flow: row
+    grid-auto-flow: row;
+    row-gap: 1em
 }
 section.ww main li {
     height: 250px;
 
-    border-radius: 15px;
+    border-radius: 10px;
 
     background: center/cover var(--soft-2);
 
     overflow: hidden
-}
-section.ww main li+li {
-    margin-top: 1em
 }
 
 section.ww main figure {
@@ -312,7 +277,7 @@ section.ww main figure {
     flex-flow: column;
     justify-content: space-between;
 
-    background-color: #00000080
+    background: linear-gradient(#00000080, transparent, #00000080)
 }
 
 section.ww main div {
@@ -323,7 +288,11 @@ section.ww main div {
 section.ww main h1 {
     white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden
+    overflow: hidden;
+
+    font: 600 16px system-ui;
+
+    color: white
 }
 section.ww main h6 {
     font: 14px system-ui;
@@ -331,7 +300,7 @@ section.ww main h6 {
     color: white
 }
 section.ww main p {
-    font: 700 17px ui-rounded
+    font: 700 16px ui-rounded
 }
 section.ww main button {
     width: 30px;
@@ -341,13 +310,7 @@ section.ww main button {
 
     border-radius: 100%;
 
-    background: linear-gradient(to top, #1c73ff, #4196ff);
-}
-
-/* hr */
-
-hr {
-    margin-inline: var(--padding)
+    background: linear-gradient(#4196ff, #1c73ff);
 }
 
 /* tt */
