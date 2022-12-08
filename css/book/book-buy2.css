@@ -173,7 +173,9 @@ section.ee h2 {
 
 /* ww */
 
-section.ww figure:first-child {
+section.ww > figure:first-child {
+    z-index: 1;
+    pointer-events: none;
     position: absolute;
     inset: 0;
 
@@ -204,11 +206,11 @@ section.ww figure:first-child h1 u {
     font-family: ui-serif;
 }
 
-.a figure:first-child {
+.a > figure:first-child {
     opacity: 0 !important
 }
 
-section.ww div {
+section.ww figcaption:last-child div {
     text-align: center
 }
 
@@ -273,17 +275,73 @@ section.ww h5 {
 }
 
 section.ww main {
-    margin: 3cm 10px 0
+    position: absolute;
+    inset: 0;
+
+    margin-inline: 10px;
+
+    overflow-x: hidden
+}
+section.ww main ul {
+    padding-block: 11cm 1cm;
+
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-auto-flow: row
 }
 section.ww main li {
     height: 250px;
 
     border-radius: 15px;
 
-    background-color: var(--soft-2)
+    background: center/cover var(--soft-2);
+
+    overflow: hidden
 }
 section.ww main li+li {
     margin-top: 1em
+}
+
+section.ww main figure {
+    width: 100%;
+    height: 100%;
+
+    padding: 1em;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    background-color: #00000080
+}
+
+section.ww main div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+section.ww main h1 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+section.ww main h6 {
+    font: 14px system-ui;
+
+    color: white
+}
+section.ww main p {
+    font: 700 17px ui-rounded
+}
+section.ww main button {
+    width: 30px;
+    height: 30px;
+    
+    padding: 8px;
+
+    border-radius: 100%;
+
+    background: linear-gradient(to top, #1c73ff, #4196ff);
 }
 
 /* hr */
