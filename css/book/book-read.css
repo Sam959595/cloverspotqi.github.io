@@ -259,13 +259,13 @@ section.bb a {
         --canvas: white;
         --canvas-2: #e0dacc;
         --canvas-3: #ddd;
-        --canvas-4: #e3e4e6;
+        --canvas-4: #aeaeaf;
         --canvas-5: #f2f2f9;
 
         --text: #1e1e1e;
         --text-2: #3d2a1c;
         --text-3: #222;
-        --text-4: #404042;
+        --text-4: #1a1a1a;
         --text-5: #4b4b57;
 
         --blue: #007aff;
@@ -284,14 +284,14 @@ section.bb a {
 
         --canvas: black;
         --canvas-2: #120b08;
-        --canvas-3: #1a1a1c;
-        --canvas-4: #353539;
+        --canvas-3: #353539;
+        --canvas-4: #1a1a1c;
         --canvas-5: #51545c;
 
         --text: #c0c0c0;
         --text-2: #a9938d;
-        --text-3: #f2f2f2;
-        --text-4: #eee;
+        --text-3: #eee;
+        --text-4: #f2f2f2;
         --text-5: #fbfcff;
 
         --blue: #0a84ff;
