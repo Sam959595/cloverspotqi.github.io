@@ -75,7 +75,7 @@ section.ee li h6 {
     display: flex;
     justify-content: end;
     
-    font: 600 14px ui-rounded;
+    font: 600 14px system-ui;
 
     background-image: linear-gradient(to top right, transparent 60%, #000000cc);
     color: white
@@ -177,7 +177,11 @@ section.ww figcaption.fff {
 
     width: 100%;
 
-    background-color: var(--gray-15)
+    border-radius: 15px 15px 0 0;
+
+    -webkit-backdrop-filter: blur(20px);
+
+    background-color: var(--soft)
 }
 section.ww figcaption.fff figure {
     width: 80px;
@@ -211,16 +215,20 @@ section.ww figcaption.eee {
 
     width: 100%;
 
+    border-radius: 0 0 15px 15px;
+
     padding-block: 2em;
 
     display: flex;
     justify-content: space-around;
 
-    background-color: var(--gray-15)
+    -webkit-backdrop-filter: blur(20px);
+
+    background-color: var(--soft)
 }
 
 section.ww h5 {
-    font: 700 14px ui-rounded
+    font: 700 14px system-ui
 }
 
 section.ww ul {
@@ -304,7 +312,7 @@ section.rr button {
 section.rr svg {
     margin-block: 3cm 2cm;
 
-    -webkit-filter: drop-shadow(0 15px 30px #43ff53aa)
+    -webkit-filter: drop-shadow(0 0 30px #43ff53aa)
 }
 
 section.rr h1 {
@@ -333,9 +341,7 @@ section.rr p {
 
 @media screen and (prefers-color-scheme: light) {
     :root {
-        --soft: #00000030;
-        --soft-2: #00000005;
-        --soft-3: #00000010;
+        --soft: #f2f2f680;
 
         --gray-a: white;
         --gray-b: black;
@@ -358,9 +364,7 @@ section.rr p {
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
-        --soft: #ffffff40;
-        --soft-2: #ffffff05;
-        --soft-3: #ffffff10;
+        --soft: #12121240;
 
         --gray-a: black;
         --gray-b: white;
