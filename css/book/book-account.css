@@ -217,7 +217,7 @@ section.ww figcaption.eee {
 
     border-radius: 0 0 15px 15px;
 
-    padding-block: 2em;
+    padding-block: 1.5em;
 
     display: flex;
     justify-content: space-around;
@@ -235,7 +235,7 @@ section.ww ul {
     width: inherit;
     height: inherit;
 
-    padding-block: 147px 65px;
+    padding-block: 147px 53px;
 
     display: grid;
     grid-auto-flow: row;
@@ -304,7 +304,7 @@ section.rr button {
     display: block;
     
     text-align: right;
-    font: 17px system-ui;
+    font: 600 17px system-ui;
 
     background: none
 }
@@ -316,7 +316,7 @@ section.rr svg {
 }
 
 section.rr h1 {
-    font: 600 28px/1 ui-serif
+    font: 600 24px/1 ui-serif
 }
 section.rr p {
     margin-top : 2em;
@@ -341,7 +341,7 @@ section.rr p {
 
 @media screen and (prefers-color-scheme: light) {
     :root {
-        --soft: #f2f2f680;
+        --soft: #f2f2f6aa;
 
         --gray-a: white;
         --gray-b: black;
@@ -364,7 +364,7 @@ section.rr p {
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
-        --soft: #12121240;
+        --soft: #121212aa;
 
         --gray-a: black;
         --gray-b: white;
