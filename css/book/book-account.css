@@ -77,15 +77,12 @@ section.ee li div {
     align-items: end;
     justify-content: space-between;
 
-    background-image: linear-gradient(to right, transparent, #00000080)
+    background-image: linear-gradient(to right, transparent, #00000050)
 }
 section.ee li h6 {
     font: 600 14px system-ui;
 
     color: white
-}
-section.ee li button {
-    background: none
 }
 
 /* ww */
