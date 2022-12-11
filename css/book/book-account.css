@@ -223,7 +223,7 @@ section.ww ul h1 {
 
 section.ww ul svg {
     flex-shrink: 0;
-    
+
     margin-inline: 10px;
 
     cursor: pointer
@@ -290,6 +290,8 @@ section.rr p {
         --gray-3: #d2d2d7;
         --gray-6: #aaaab3;
         --gray-15: #f2f2f6;
+        --gray-4: #f2f2f6;
+        --gray-5: #dadadd;
 
         --blue: #007aff;
 
@@ -313,6 +315,8 @@ section.rr p {
         --gray-3: #333338;
         --gray-6: #63636e;
         --gray-15: #121212;
+        --gray-4: #333338;
+        --gray-5: #333338;
 
         --blue: #0a84ff;
 
