@@ -28,6 +28,7 @@ section.mm>ul>li>section {
 
     border-radius: 15px;
 
+    contain: paint;
     overflow-x: hidden;
 
     background-color: var(--gray-15)
@@ -35,17 +36,15 @@ section.mm>ul>li>section {
 
 /* ee */
 
-section.ee {
-    padding: 2em
-}
-
 section.ee h1 {
-    padding-block: .8em;
+    padding: 2em 1.1em .8em;
 
     font: 600 21px ui-serif
 }
 
 section.ee ul {
+    padding: 1em 2em 2em;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2em
@@ -87,10 +86,6 @@ section.ee li h6 {
 
 /* ww */
 
-section.ww {
-    position: relative
-}
-
 section.ww figcaption:first-child {
     padding: 2.8em 2em;
 
@@ -113,12 +108,8 @@ section.ww h2 {
 }
 
 section.ww figcaption.fff {
-    position: absolute;
+    position: sticky;
     top: 0;
-
-    width: 100%;
-
-    border-radius: 15px 15px 0 0;
 
     -webkit-backdrop-filter: blur(20px);
 
@@ -150,38 +141,8 @@ section.ww figcaption.fff figure a {
     background-color: #00000080
 }
 
-section.ww figcaption.eee {
-    position: absolute;
-    bottom: 0;
-
-    width: 100%;
-
-    border-radius: 0 0 15px 15px;
-
-    padding-block: 1.5em;
-
-    display: flex;
-    justify-content: space-around;
-
-    -webkit-backdrop-filter: blur(20px);
-
-    background-color: var(--soft)
-}
-
-section.ww h5 {
-    font: 700 14px system-ui
-}
-
 section.ww ul {
-    width: inherit;
-    height: inherit;
-
-    padding-block: 147px 53px;
-
-    display: grid;
-    grid-auto-flow: row;
-
-    overflow-x: scroll
+    display: grid
 }
 
 section.ww ul li {
@@ -227,6 +188,24 @@ section.ww ul svg {
     margin-inline: 10px;
 
     cursor: pointer
+}
+
+section.ww figcaption.eee {
+    position: sticky;
+    bottom: 0;
+
+    padding-block: 1.5em;
+
+    display: flex;
+    justify-content: space-around;
+
+    -webkit-backdrop-filter: blur(20px);
+
+    background-color: var(--soft)
+}
+
+section.ww h5 {
+    font: 700 14px system-ui
 }
 
 /* rr */
