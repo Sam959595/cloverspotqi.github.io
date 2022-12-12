@@ -43,7 +43,7 @@ section.ee h1 {
 }
 
 section.ee ul {
-    padding: 1em 2em 2em;
+    padding: 0 2em 2em;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
