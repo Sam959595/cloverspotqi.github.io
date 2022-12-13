@@ -87,7 +87,7 @@ section.vv h6::first-letter {
 section.vv h6 {
     margin-bottom: 1em;
     
-    font: 17px/1.6 ui-serif;
+    font: 18px/1.7 ui-serif;
     text-align: justify;
 
     color: var(--text-3)
@@ -115,7 +115,7 @@ section.vv ol li {
     font-size: 20px !important
 }
 .yyy h6 {
-    font-size: 15px !important
+    font-size: 17px !important
 }
 
 .sss :where(h5, h6, ol li) {
@@ -258,7 +258,7 @@ section.bb a {
 
         --canvas: white;
         --canvas-2: #e0dacc;
-        --canvas-3: #f4f4f4;
+        --canvas-3: #eeeded;
         --canvas-4: #ddd;
         --canvas-5: #f2f2f9;
 
