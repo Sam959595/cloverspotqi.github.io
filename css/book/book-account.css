@@ -53,7 +53,7 @@ section.ee ul {
 section.ee a {
     aspect-ratio: 1/1.6;
 
-    border-radius: 3px;
+    border-radius: 2px;
 
     display: block;
 
@@ -78,7 +78,6 @@ section.ee h3 {
 }
 
 section.ee div {
-
     height: 100%;
 
     padding: .8em;
@@ -86,7 +85,7 @@ section.ee div {
     display: flex;
     flex-flow: column;
     align-items: end;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 /* ww */
