@@ -32,7 +32,7 @@ section.pp svg {
 /* mm */
 
 section.mm {
-    margin-top: var(--padding-2)
+    margin-block: var(--padding-2)
 }
 
 section.mm>ul {
@@ -72,7 +72,7 @@ section.ee ul {
     position: sticky;
     top: 0;
 
-    padding: 2em 10px 1em;
+    padding: 2em 10px 0;
 
     display: grid;
     grid-auto-columns: max-content;
@@ -104,7 +104,7 @@ section.ee svg {
 section.ee p {
     padding-bottom: .8em;
 
-    font: 600 11px ui-rounded;
+    font: 600 10px ui-rounded;
     letter-spacing: .08em
 }
 
@@ -115,11 +115,11 @@ section.ee h6 {
 }
 
 section.ee h4 {
-    font: 600 21px ui-rounded
+    font: 600 19px ui-rounded
 }
 
 section.ee h1 {
-    font: 600 21px ui-serif
+    font: 600 19px ui-serif
 }
 
 section.ee h5 {
@@ -127,7 +127,7 @@ section.ee h5 {
 }
 
 section.ee h3 {
-    font: 600 14px ui-rounded
+    font: 700 12px ui-rounded
 }
 
 section.ee img {
@@ -144,9 +144,9 @@ section.ee img {
 }
 
 section.ee>a {
-    margin: 2.8cm auto;
+    margin: var(--cover-book-y) auto;
 
-    width: 42vw;
+    width: 180px;
 
     border-radius: 2px;
 
@@ -187,7 +187,7 @@ section.ee div h1 {
 }
 
 section.ee h2 {
-    font: 600 21px system-ui
+    font: 600 19px system-ui
 }
 
 /* kk */
@@ -200,6 +200,14 @@ section.kk {
     padding: 1em;
 
     background-color: var(--soft-2)
+}
+
+section.kk h5 {
+    margin-bottom: .8em;
+
+    font: 600 14px system-ui;
+
+    color: var(--gray-2)
 }
 
 section.kk a {
@@ -332,9 +340,10 @@ section.rr img {
 :root {
     --padding: 30px;
     --padding-2: 15px;
-    --screen-padding-x: calc(var(--screen-x) - var(--padding) * 2);
+    --cover-book-y: calc((var(--screen-y) - var(--padding)) - 149%);
+    --screen-padding-x: calc(var(--screen-x) - var(--padding));
     --screen-padding-y: calc(var(--screen-y) - var(--padding));
-    --screen-padding: calc(var(--screen-x) - var(--padding-2) * 2);
+    --screen-padding: calc(var(--screen-x) - var(--padding));
     --gap: 18px;
     --li-2: calc(var(--screen-padding) / 2 - (var(--gap) / 2));
     --li-3: calc(var(--screen-padding) / 3 - (var(--gap) * 2 / 3))
