@@ -130,19 +130,6 @@ section.ee h3 {
     font: 700 12px ui-rounded
 }
 
-section.ee img {
-    padding: 3px;
-
-    width: 60px;
-
-    object-fit: cover;
-    aspect-ratio: 1;
-
-    border-radius: 100%;
-
-    border: 2px solid var(--blue)
-}
-
 section.ee>a {
     margin: var(--cover-book-y) auto;
 
@@ -181,29 +168,6 @@ section.ee>h1 {
     justify-content: space-between
 }
 
-/* kk */
-
-section.kk {
-    padding: 2em;
-
-    background: linear-gradient(var(--soft-2), transparent)
-}
-
-section.kk a {
-    margin: 3px 1px;
-
-    display: inline-block
-}
-section.kk h6 {
-    padding: 4px 10px;
-
-    border-radius: 7px;
-
-    font: 600 14px ui-rounded;
-
-    color: var(--gray-15)
-}
-
 /* uu */
 
 section.uu {
@@ -235,6 +199,63 @@ section.uu>* {
     position: absolute;
 
     inset: auto 0 0 auto;
+
+    color: var(--blue)
+}
+
+/* kk */
+
+section.kk {
+    padding: 2em;
+
+    background: linear-gradient(var(--soft-2), transparent)
+}
+
+section.kk a {
+    margin: 3px 1px;
+
+    display: inline-block
+}
+section.kk h6 {
+    padding: 4px 10px;
+
+    border-radius: 7px;
+
+    font: 600 14px ui-rounded;
+
+    color: var(--gray-15)
+}
+
+/* tt */
+
+section.tt {
+    padding: 2em;
+
+    background: linear-gradient(var(--soft-2), transparent)
+}
+
+section.tt a {
+    display: block;
+
+    text-align: center
+}
+section.tt img {
+    padding: 3px;
+
+    width: 50px;
+
+    object-fit: cover;
+    aspect-ratio: 1;
+
+    border-radius: 100%;
+
+    border: 2px solid var(--blue)
+}
+
+section.tt h5 {
+    margin-top: .5em;
+
+    font-weight: 600;
 
     color: var(--blue)
 }
@@ -319,7 +340,7 @@ section.rr img {
 :root {
     --padding: 30px;
     --padding-2: 15px;
-    --cover-book-y: calc((var(--screen-y) - var(--padding) - 504px) / 2);
+    --cover-book-y: calc((var(--screen-y) - var(--padding) - 500px) / 2);
     --screen-padding-x: calc(var(--screen-x) - var(--padding));
     --screen-padding-y: calc(var(--screen-y) - var(--padding));
     --screen-padding: calc(var(--screen-x) - var(--padding));
@@ -373,7 +394,7 @@ section.rr img {
 
         --blue: #3a8fff;
         --red: #ff367c;
-        --pink: #ff7df4;
+        --pink: #ec55df;
         --violet: #9283ff;
         --green: #77ffc6;
         --orange: #ff9f00;
