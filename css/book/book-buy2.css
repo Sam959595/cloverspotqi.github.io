@@ -122,10 +122,6 @@ section.ee h1 {
     font: 600 19px ui-serif
 }
 
-section.ee h5 {
-    font: 600 12px/1 ui-rounded
-}
-
 section.ee h3 {
     font: 700 12px ui-rounded
 }
@@ -235,11 +231,36 @@ section.tt {
 }
 
 section.tt a {
-    display: block;
+    position: relative;
 
-    text-align: center
+    display: flex;
+    align-items: center;
+    justify-content: space-between
 }
+
+section.tt h1 {
+    opacity: 1;
+
+    position: absolute;
+    inset: 0;
+
+    margin-top: .8em;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    font: 600 17px system-ui;
+
+    transition: opacity 2s ease
+}
+.aa {
+    opacity: 0 !important
+}
+
 section.tt img {
+    margin-left: .8em;
+
     padding: 3px;
 
     width: 50px;
@@ -253,11 +274,12 @@ section.tt img {
 }
 
 section.tt h5 {
-    margin-top: .5em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 
-    font-weight: 600;
-
-    color: var(--blue)
+    font-size: 14px
 }
 
 /* rr */
@@ -271,13 +293,15 @@ section.rr>div {
 }
 
 section.rr div h1 {
-    font: 600 21px ui-serif
+    font: 600 19px ui-serif
 }
 
-section.rr div h2 {
-    font: 700 21px ui-rounded;
-
+section.rr div u {
     color: var(--gray-2)
+}
+
+section.rr div a {
+    font: 600 17px system-ui
 }
 
 section.rr ul {
@@ -288,7 +312,7 @@ section.rr ul {
 }
 
 section.rr ul li {
-    padding: 1.5em;
+    padding: 1.5em 1.5em .8em;
 
     border-radius: 10px;
 
@@ -319,6 +343,8 @@ section.rr h4 {
 }
 
 section.rr time {
+    opacity: .5;
+
     margin-right: .8em
 }
 
@@ -333,6 +359,13 @@ section.rr img {
     border-radius: 100%;
 
     border: 2px solid var(--blue)
+}
+
+.qq {
+    background-color: #4dcc9730 !important
+}
+.qq *:not(h4) {
+    color: var(--green) !important
 }
 
 /* var */
@@ -397,6 +430,6 @@ section.rr img {
         --pink: #ec55df;
         --violet: #9283ff;
         --green: #77ffc6;
-        --orange: #ff9f00;
+        --orange: #ffb53f;
     }
 }
