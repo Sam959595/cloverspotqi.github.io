@@ -171,51 +171,30 @@ section.ee h3 {
     color: #00000090
 }
 
-section.ee>div {
-    margin: 0 2em 1em;
+section.ee>h1 {
+    margin: 0 24px .5em;
+
+    text-overflow: clip;
 
     display: flex;
     align-items: center;
     justify-content: space-between
 }
 
-section.ee div h1 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden
-}
-
-section.ee h2 {
-    font: 600 19px system-ui
-}
-
 /* kk */
 
 section.kk {
-    margin: 10px;
+    padding: 2em;
 
-    border-radius: 10px;
-
-    padding: 1em;
-
-    background-color: var(--soft-2)
-}
-
-section.kk h5 {
-    margin-bottom: .8em;
-
-    font: 600 14px system-ui;
-
-    color: var(--gray-2)
+    background: linear-gradient(var(--soft-2), transparent)
 }
 
 section.kk a {
+    margin: 3px 1px;
+
     display: inline-block
 }
 section.kk h6 {
-    margin: 2.3px 0.5px;
-
     padding: 4px 10px;
 
     border-radius: 7px;
@@ -231,7 +210,7 @@ section.uu {
     margin: 0 2em 2em;
 
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden
 }
@@ -340,7 +319,7 @@ section.rr img {
 :root {
     --padding: 30px;
     --padding-2: 15px;
-    --cover-book-y: calc((var(--screen-y) - var(--padding)) - 149%);
+    --cover-book-y: calc((var(--screen-y) - var(--padding) - 504px) / 2);
     --screen-padding-x: calc(var(--screen-x) - var(--padding));
     --screen-padding-y: calc(var(--screen-y) - var(--padding));
     --screen-padding: calc(var(--screen-x) - var(--padding));
