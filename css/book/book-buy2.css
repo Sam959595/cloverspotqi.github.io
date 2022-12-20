@@ -319,10 +319,10 @@ section.mm li:last-child img {
     border: 2px solid var(--blue)
 }
 
-.qq {
+.ll {
     background-color: #4dcc9730 !important
 }
-.qq *:not(h4) {
+.ll *:not(h4) {
     color: var(--green) !important
 }
 
