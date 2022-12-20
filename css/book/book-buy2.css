@@ -39,7 +39,6 @@ section.mm>ul {
     padding-inline: var(--padding-2);
 
     display: grid;
-    grid-auto-columns: max-content;
     grid-auto-flow: column;
     column-gap: var(--padding-2);
 
@@ -50,10 +49,6 @@ section.mm>ul {
 }
 
 section.mm>ul>li {
-    scroll-snap-align: start
-}
-
-section.mm>ul>li>section {
     width: var(--screen-padding);
     height: var(--screen-padding-y);
 
@@ -61,18 +56,27 @@ section.mm>ul>li>section {
 
     contain: paint;
 
-    overflow-x: scroll;
+    overflow-y: scroll;
 
-    background-color: var(--gray-15)
+    background-color: var(--gray-15);
+
+    scroll-snap-align: start
 }
 
-/* ee */
+/* mm li first */
 
-section.ee ul {
+section.mm>ul>li:first-child>div {
+    height: var(--screen-padding-y);
+
+    display: flex;
+    flex-flow: column
+}
+
+section.mm li:first-child>div ul {
     position: sticky;
     top: 0;
 
-    padding: 2em 10px 0;
+    padding-top: var(--padding-3);
 
     display: grid;
     grid-auto-columns: max-content;
@@ -85,49 +89,39 @@ section.ee ul {
     background-color: var(--soft)
 }
 
-section.ee li {
-    padding-inline: 20px;
+section.mm li:first-child>div li {
+    padding-inline: var(--padding-3);
 
     text-align: center
 }
 
-section.ee li+li {
+section.mm li:first-child>div li+li {
     border-left: .1px solid var(--gray-3)
 }
 
-section.ee svg {
-    height: 21px;
-
-    fill: var(--gray)
-}
-
-section.ee p {
+section.mm li:first-child>div ul p {
     padding-bottom: .8em;
 
     font: 600 10px ui-rounded;
     letter-spacing: .08em
 }
-
-section.ee h6 {
+section.mm li:first-child>div h1 {
+    font: 600 19px ui-serif
+}
+section.mm li:first-child>div ul h3 {
+    font: 700 12px ui-rounded
+}
+section.mm li:first-child>div ul h4 {
+    font: 600 19px ui-rounded
+}
+section.mm li:first-child>div ul h6 {
     font-size: 10px;
 
     color: var(--gray-2)
 }
 
-section.ee h4 {
-    font: 600 19px ui-rounded
-}
-
-section.ee h1 {
-    font: 600 19px ui-serif
-}
-
-section.ee h3 {
-    font: 700 12px ui-rounded
-}
-
-section.ee>a {
-    margin: var(--cover-book-y) auto;
+section.mm>ul>li:first-child>div a {
+    margin: auto;
 
     width: 180px;
 
@@ -142,77 +136,36 @@ section.ee>a {
     box-shadow: 0 5px 10px #00000040
 }
 
-section.ee a div {
-    padding: 1.5em
+section.mm li:first-child>div>h1 {
+    margin-inline: var(--padding-3);
+
+    text-overflow: clip
 }
-
-section.ee a :where(h1, h3) {
-    font: 900 18px/1.25 system-ui
-}
-
-section.ee h3 {
-    color: #00000090
-}
-
-section.ee>h1 {
-    margin: 0 24px .5em;
-
-    text-overflow: clip;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between
-}
-
-/* uu */
-
-section.uu {
-    margin: 0 2em 2em;
+section.mm li:first-child>div>p {
+    margin: .5em var(--padding-3) var(--padding-3);
 
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
-    overflow: hidden
+    overflow: hidden;
+
+    font: 14px/1.4 system-ui;
+
+    color: var(--gray-2)
 }
 
-section.uu>* {
-    font: 14px/1.4 system-ui !important
-}
-
-/* text hide */
-
-.hide {
-    position: relative
-}
-
-.hide h6 {
-    max-height: 95px;
-
-    -webkit-mask: linear-gradient(to top, #00000010, black)
-}
-
-.hide span {
-    position: absolute;
-
-    inset: auto 0 0 auto;
-
-    color: var(--blue)
-}
-
-/* kk */
-
-section.kk {
-    padding: 2em;
+section.mm li:first-child figure {
+    padding: var(--padding-3);
 
     background: linear-gradient(var(--soft-2), transparent)
 }
 
-section.kk a {
+section.mm li:first-child figure a {
     margin: 3px 1px;
 
     display: inline-block
 }
-section.kk h6 {
+section.mm li:first-child figure h6 {
     padding: 4px 10px;
 
     border-radius: 7px;
@@ -222,29 +175,23 @@ section.kk h6 {
     color: var(--gray-15)
 }
 
-/* tt */
+section.mm li:first-child figcaption {
+    padding: var(--padding-3);
 
-section.tt {
-    padding: 2em;
-
-    background: linear-gradient(var(--soft-2), transparent)
-}
-
-section.tt a {
     position: relative;
 
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+
+    background: linear-gradient(var(--soft-2), transparent)
 }
 
-section.tt h1 {
+section.mm li:first-child figcaption h1 {
     opacity: 1;
 
     position: absolute;
     inset: 0;
-
-    margin-top: .8em;
 
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -258,9 +205,18 @@ section.tt h1 {
     opacity: 0 !important
 }
 
-section.tt img {
-    margin-left: .8em;
+section.mm li:first-child figcaption h6 {
+    margin-right: .8em;
 
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    font-size: 14px
+}
+
+section.mm li:first-child figcaption img {
     padding: 3px;
 
     width: 50px;
@@ -273,45 +229,33 @@ section.tt img {
     border: 2px solid var(--blue)
 }
 
-section.tt h5 {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+/* mm li last */
 
-    font-size: 14px
-}
-
-/* rr */
-
-section.rr>div {
-    margin: 3.5em 2em 0;
+section.mm>ul>li:last-child>div {
+    margin: var(--padding) var(--padding-3) var(--padding-2);
 
     display: flex;
     align-items: center;
     justify-content: space-between
 }
-
-section.rr div h1 {
+section.mm li:last-child>div h1 {
     font: 600 19px ui-serif
 }
-
-section.rr div u {
+section.mm li:last-child>div u {
     color: var(--gray-2)
 }
-
-section.rr div a {
+section.mm li:last-child>div a {
     font: 600 17px system-ui
 }
 
-section.rr ul {
-    padding: 2em 10px 10px;
+section.mm li:last-child ul {
+    padding: 10px;
 
     display: grid;
     row-gap: 10px
 }
 
-section.rr ul li {
+section.mm li:last-child ul li {
     padding: 1.5em 1.5em .8em;
 
     border-radius: 10px;
@@ -319,7 +263,7 @@ section.rr ul li {
     background-color: var(--soft-2)
 }
 
-section.rr h6 {
+section.mm li:last-child h6 {
     margin-bottom: .8em;
 
     display: -webkit-box;
@@ -332,23 +276,23 @@ section.rr h6 {
     color: var(--gray-2)
 }
 
-section.rr li div {
+section.mm li:last-child li div {
     display: flex;
     align-items: center;
     justify-content: space-between
 }
 
-section.rr h4 {
+section.mm li:last-child h4 {
     font: 600 14px ui-rounded
 }
 
-section.rr time {
+section.mm li:last-child time {
     opacity: .5;
 
     margin-right: .8em
 }
 
-section.rr img {
+section.mm li:last-child img {
     padding: 2px;
 
     width: 40px;
@@ -373,13 +317,9 @@ section.rr img {
 :root {
     --padding: 30px;
     --padding-2: 15px;
-    --cover-book-y: calc((var(--screen-y) - var(--padding) - 500px) / 2);
-    --screen-padding-x: calc(var(--screen-x) - var(--padding));
+    --padding-3: 20px;
     --screen-padding-y: calc(var(--screen-y) - var(--padding));
     --screen-padding: calc(var(--screen-x) - var(--padding));
-    --gap: 18px;
-    --li-2: calc(var(--screen-padding) / 2 - (var(--gap) / 2));
-    --li-3: calc(var(--screen-padding) / 3 - (var(--gap) * 2 / 3))
 }
 
 /* color */
