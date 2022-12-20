@@ -58,8 +58,6 @@ section.mm>ul>li {
 
     overflow-y: scroll;
 
-    background-color: var(--gray-15);
-
     scroll-snap-align: start
 }
 
@@ -68,8 +66,12 @@ section.mm>ul>li {
 section.mm>ul>li:first-child>div {
     height: var(--screen-padding-y);
 
+    border-radius: 15px;
+
     display: flex;
-    flex-flow: column
+    flex-flow: column;
+
+    background-color: var(--gray-15)
 }
 
 section.mm li:first-child>div ul {
@@ -155,9 +157,13 @@ section.mm li:first-child>div>p {
 }
 
 section.mm li:first-child figure {
+    margin-top: .8em;
+
+    border-radius: 15px;
+
     padding: var(--padding-3);
 
-    background: linear-gradient(var(--soft-2), transparent)
+    background-color: var(--gray-15)
 }
 
 section.mm li:first-child figure a {
@@ -176,6 +182,10 @@ section.mm li:first-child figure h6 {
 }
 
 section.mm li:first-child figcaption {
+    margin-top: .8em;
+
+    border-radius: 15px;
+
     padding: var(--padding-3);
 
     position: relative;
@@ -184,7 +194,7 @@ section.mm li:first-child figcaption {
     align-items: center;
     justify-content: space-between;
 
-    background: linear-gradient(var(--soft-2), transparent)
+    background-color: var(--gray-15)
 }
 
 section.mm li:first-child figcaption h1 {
@@ -230,6 +240,10 @@ section.mm li:first-child figcaption img {
 }
 
 /* mm li last */
+
+section.mm>ul>li:last-child {
+    background-color: var(--gray-15)
+}
 
 section.mm>ul>li:last-child>div {
     margin: var(--padding) var(--padding-3) var(--padding-2);
