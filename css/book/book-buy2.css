@@ -239,19 +239,22 @@ section.mm>ul>li:last-child {
 }
 
 section.mm>ul>li:last-child>div {
-    margin: var(--padding) var(--padding-3) var(--padding-2);
+    margin: 4em var(--padding-3) 0;
 
     display: flex;
     align-items: center;
     justify-content: space-between
 }
 section.mm li:last-child>div h1 {
-    font: 600 19px ui-serif
+    font: 600 21px system-ui
 }
-section.mm li:last-child>div u {
-    color: var(--gray-2)
+section.mm li:last-child>div p {
+    font: 600 17px system-ui
 }
-section.mm li:last-child>div a {
+section.mm>ul>li:last-child>div a {
+    width: 98px;
+
+    text-align: right;
     font: 17px system-ui
 }
 
