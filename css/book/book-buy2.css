@@ -83,11 +83,7 @@ section.mm li:first-child>div ul {
     grid-auto-columns: max-content;
     grid-auto-flow: column;
 
-    overflow-x: scroll;
-
-    -webkit-backdrop-filter: blur(20px);
-
-    background-color: var(--soft)
+    overflow-x: scroll
 }
 
 section.mm li:first-child>div li {
