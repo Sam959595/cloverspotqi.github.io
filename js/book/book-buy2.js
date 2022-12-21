@@ -50,6 +50,6 @@ window.addEventListener('touchstart', x => {
 
         setTimeout( () => {
             a[0].classList.remove('qq')
-        }, 5000)
+        }, 2000)
     }
 })
