@@ -246,13 +246,13 @@ section.mm>ul>li:last-child>div {
     justify-content: space-between
 }
 section.mm li:last-child>div h1 {
-    font: 600 21px system-ui
+    font: 600 17px system-ui
 }
 section.mm li:last-child>div p {
     font: 600 17px system-ui
 }
 section.mm>ul>li:last-child>div a {
-    width: 98px;
+    width: 81px;
 
     text-align: right;
     font: 17px system-ui
