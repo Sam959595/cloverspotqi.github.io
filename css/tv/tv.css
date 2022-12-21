@@ -79,7 +79,7 @@ section.ww select {
 
     inset: auto 0 0 auto;
 
-    color: var(--blue)
+    color: var(--blue-1)
 }
 
 /* tt */
@@ -193,7 +193,7 @@ section.uu dl dd {
 
 section.uu select {
     background: none;
-    color: var(--blue)
+    color: var(--blue-1)
 }
 
 /* bb */
@@ -327,7 +327,7 @@ section.kk h5 {
 
 @media screen and (prefers-color-scheme: light) {
     :root {
-        --soft: #f5f5f7b8;
+        --soft-1: #f5f5f7b8;
         --soft-2: #ffffff90;
 
         --gray-a: white;
@@ -346,20 +346,20 @@ section.kk h5 {
         --gray-15: #f5f5f5;
         --gray-18: #f5f5f7;
 
-        --blue: #007aff;
+        --blue-1: #007aff;
 
-        --red: #ff2d55;
+        --red-1: #ff2d55;
 
-        --orange: #fd9900;
+        --orange-1: #fd9900;
 
-        --const: #17171d;
+        --const-1: #17171d;
         --const-2: #f5f5f7;
     }
 }
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
-        --soft: #1d1d1fb8;
+        --soft-1: #1d1d1fb8;
         --soft-2: #00000050;
 
         --gray-a: black;
@@ -378,13 +378,13 @@ section.kk h5 {
         --gray-15: #121212;
         --gray-18: #17171d;
 
-        --blue: #0a84ff;
+        --blue-1: #0a84ff;
 
-        --red: #fb5c74;
+        --red-1: #fb5c74;
 
-        --orange: #ff9f00;
+        --orange-1: #ff9f00;
 
-        --const: #17171d;
+        --const-1: #17171d;
         --const-2: #f5f5f7;
     }
 }
