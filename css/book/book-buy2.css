@@ -75,9 +75,8 @@ section.mm>ul>li:first-child>div {
 }
 
 section.mm li:first-child>div ul {
-    position: sticky;
-    top: 0;
-
+    border-radius: 15px;
+    
     padding-top: var(--padding-3);
 
     display: grid;
@@ -139,13 +138,13 @@ section.mm li:first-child>div>h1 {
     margin-inline: var(--padding-3);
 
     text-overflow: clip;
-    font: 700 21px ui-serif
+    font: 700 21px system-ui
 }
 section.mm li:first-child>div>p {
     margin: .5em var(--padding-3) var(--padding-3);
 
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 
