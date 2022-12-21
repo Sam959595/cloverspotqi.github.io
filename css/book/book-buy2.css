@@ -101,25 +101,24 @@ section.mm li:first-child>div li+li {
     border-left: .1px solid var(--gray-3)
 }
 
-section.mm li:first-child>div ul p {
-    padding-bottom: .8em;
-
-    font: 600 10px ui-rounded;
-    letter-spacing: .08em
-}
-section.mm li:first-child>div h1 {
-    font: 600 19px ui-serif
-}
-section.mm li:first-child>div ul h3 {
-    font: 700 12px ui-rounded
-}
-section.mm li:first-child>div ul h4 {
+section.mm li:first-child>div ul h1 {
     font: 600 19px ui-rounded
 }
+section.mm li:first-child>div ul h3 {
+    height: 22px;
+
+    font: 700 12px ui-rounded
+}
 section.mm li:first-child>div ul h6 {
-    font-size: 10px;
+    padding-bottom: .8em;
+
+    font: 600 10px system-ui;
+    letter-spacing: .08em;
 
     color: var(--gray-2)
+}
+section.mm li:first-child>div ul p {
+    font-size: 10px
 }
 
 section.mm>ul>li:first-child>div a {
@@ -141,7 +140,8 @@ section.mm>ul>li:first-child>div a {
 section.mm li:first-child>div>h1 {
     margin-inline: var(--padding-3);
 
-    text-overflow: clip
+    text-overflow: clip;
+    font: 600 21px ui-serif
 }
 section.mm li:first-child>div>p {
     margin: .5em var(--padding-3) var(--padding-3);
@@ -156,33 +156,8 @@ section.mm li:first-child>div>p {
     color: var(--gray-2)
 }
 
-section.mm li:first-child figure {
-    margin-top: .8em;
-
-    border-radius: 15px;
-
-    padding: var(--padding-3);
-
-    background-color: var(--gray-15)
-}
-
-section.mm li:first-child figure a {
-    margin: 3px 1px;
-
-    display: inline-block
-}
-section.mm li:first-child figure h6 {
-    padding: 4px 10px;
-
-    border-radius: 7px;
-
-    font: 600 14px ui-rounded;
-
-    color: var(--gray-15)
-}
-
 section.mm li:first-child figcaption {
-    margin-top: .8em;
+    margin-top: 10px;
 
     border-radius: 15px;
 
@@ -239,6 +214,31 @@ section.mm li:first-child figcaption img {
     border: 2px solid var(--blue)
 }
 
+section.mm li:first-child figure {
+    margin-top: 10px;
+
+    border-radius: 15px;
+
+    padding: var(--padding-3);
+
+    background-color: var(--gray-15)
+}
+
+section.mm li:first-child figure a {
+    margin: 3px 1px;
+
+    display: inline-block
+}
+section.mm li:first-child figure h6 {
+    padding: 4px 10px;
+
+    border-radius: 7px;
+
+    font: 600 14px ui-rounded;
+
+    color: var(--gray-15)
+}
+
 /* mm li last */
 
 section.mm>ul>li:last-child {
@@ -259,7 +259,7 @@ section.mm li:last-child>div u {
     color: var(--gray-2)
 }
 section.mm li:last-child>div a {
-    font: 600 17px system-ui
+    font: 17px system-ui
 }
 
 section.mm li:last-child ul {
@@ -277,7 +277,7 @@ section.mm li:last-child ul li {
     background-color: var(--soft-2)
 }
 
-section.mm li:last-child h6 {
+section.mm li:last-child ul h6 {
     margin-bottom: .8em;
 
     display: -webkit-box;
