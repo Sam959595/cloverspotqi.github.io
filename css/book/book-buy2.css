@@ -97,7 +97,7 @@ section.mm li:first-child>div li+li {
 }
 
 section.mm li:first-child>div ul h1 {
-    font: 600 19px ui-rounded
+    font: 700 19px ui-rounded
 }
 section.mm li:first-child>div ul h3 {
     font: 700 12px ui-rounded
@@ -117,7 +117,7 @@ section.mm li:first-child>div ul p {
 section.mm>ul>li:first-child>div a {
     margin: auto;
 
-    width: 180px;
+    height: 32vh;
 
     border-radius: 2px;
 
@@ -147,6 +147,22 @@ section.mm li:first-child>div>p {
     font: 14px/1.4 system-ui;
 
     color: var(--gray-2)
+}
+.uu {
+    pointer-events: auto;
+    cursor: default;
+
+    position: absolute;
+    inset: 0;
+
+    margin: 0 !important;
+    padding: 2.2cm var(--padding-3) var(--padding-3);
+
+    border-radius: 15px;
+
+    -webkit-line-clamp: initial !important;
+
+    background-color: var(--gray-15)
 }
 
 section.mm li:first-child figure {
