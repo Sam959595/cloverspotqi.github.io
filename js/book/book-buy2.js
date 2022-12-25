@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
     mm.innerHTML = ':root{--screen-x:' + bb + 'px; --screen-y:' + nn + 'px}'
 })
 
-window.addEventListener('click', () => {
+window.addEventListener('touchend', () => {
     let a = $('section.mm li:first-child>div>p')[0]
 
     a.classList.toggle('uu')
