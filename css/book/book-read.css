@@ -10,29 +10,21 @@ section.ee {
     pointer-events: none;
     opacity: 0;
 
-    z-index: 2;
+    z-index: 1;
     position: fixed;
     inset: 0 0 auto;
 
-    width: 350px;
-
-    margin: 1.6em auto;
-
-    border-radius: 12px;
+    padding: .8em;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: .5em;
 
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 
-    background-color: var(--soft-3);
+    background: linear-gradient(var(--canvas-3), transparent);
 
-    transition: opacity .5s, transform .8s ease
-}
-section.ee select:nth-child(2) {
-    border-width: 0 1px;
-    border-style: solid;
-    border-color: var(--soft-3)
+    transition: opacity .5s
 }
 
 section.ee select {
@@ -41,12 +33,11 @@ section.ee select {
 
     padding-block: 10px;
 
-    width: -webkit-fill-available;
-
-    border-radius: 0;
+    border-radius: 8px;
 
     font: 600 12px system-ui;
 
+    background-color: var(--soft);
     color: var(--gray)
 }
 
@@ -138,6 +129,19 @@ section.vv ol li {
     background-color: var(--canvas-5) !important
 }
 
+.rrrr {
+    background: linear-gradient(var(--canvas), transparent) !important
+}
+.tttt {
+    background: linear-gradient(var(--canvas-2), transparent) !important
+}
+.kkkk {
+    background: linear-gradient(var(--canvas-4), transparent) !important
+}
+.qqqq {
+    background: linear-gradient(var(--canvas-5), transparent) !important
+}
+
 .rrr :where(h5, h6, ol) {
     color: var(--text) !important
 }
@@ -198,47 +202,6 @@ section.bb a {
     }
 }
 @media screen and (min-width: 1200px) {
-    section.ww {
-        opacity: 0;
-        pointer-events: none;
-        transform: scale(1);
-        
-        z-index: 1;
-        position: fixed;
-        inset: 0 0 auto;
-    
-        width: 70px;
-        height: 7px;
-    
-        margin: 2.8em auto 0;
-    
-        border-radius: 5px;
-    
-        -webkit-tap-highlight-color: transparent;
-    
-        -webkit-backdrop-filter: saturate(180%) blur(20px);
-        background-color: var(--soft-3);
-    
-        transition: opacity .5s, transform .8s ease
-    }
-    
-    .wwww {
-        opacity: 1 !important;
-        pointer-events: auto !important
-    }
-    
-    .www {
-        opacity: 0 !important;
-        transform: scale(2) !important
-    }
-
-    section.ee {
-        transform: scale(.5);
-    }
-    .eee {
-        transform: scale(1) !important
-    }
-
     section:is(.vv, .bb) {
         margin: 2.8cm 10cm
     }
@@ -248,6 +211,7 @@ section.bb a {
 
 @media screen and (prefers-color-scheme: light) {
     :root {
+        --soft: #00000010;
         --soft-3: #00000016;
 
         --gray-a: white;
@@ -274,6 +238,7 @@ section.bb a {
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
+        --soft: #ffffff10;
         --soft-3: #ffffff26;
 
         --gray-a: black;
