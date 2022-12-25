@@ -8,13 +8,14 @@ body {
 
 section.ee {
     pointer-events: none;
-    opacity: 0;
+    opacity: 1;
 
     z-index: 1;
     position: fixed;
     inset: auto 0 0;
 
     padding: .8em;
+    padding-bottom: env(safe-area-inset-bottom);
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
