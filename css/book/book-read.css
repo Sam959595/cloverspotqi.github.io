@@ -12,7 +12,7 @@ section.ee {
 
     z-index: 1;
     position: fixed;
-    inset: 0 0 auto;
+    inset: auto 0 0;
 
     padding: .8em;
 
@@ -20,9 +20,7 @@ section.ee {
     grid-template-columns: repeat(3, 1fr);
     column-gap: .5em;
 
-    -webkit-backdrop-filter: blur(20px);
-
-    background: linear-gradient(var(--canvas-3), transparent);
+    background-color: var(--canvas-3);
 
     transition: opacity .5s
 }
@@ -127,19 +125,6 @@ section.vv ol li {
 }
 .qqq {
     background-color: var(--canvas-5) !important
-}
-
-.rrrr {
-    background: linear-gradient(var(--canvas), transparent) !important
-}
-.tttt {
-    background: linear-gradient(var(--canvas-2), transparent) !important
-}
-.kkkk {
-    background: linear-gradient(var(--canvas-4), transparent) !important
-}
-.qqqq {
-    background: linear-gradient(var(--canvas-5), transparent) !important
 }
 
 .rrr :where(h5, h6, ol) {
