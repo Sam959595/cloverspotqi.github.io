@@ -7,38 +7,18 @@ window.addEventListener('DOMContentLoaded', () => {
     mm.innerHTML = ':root{--screen-x:' + bb + 'px; --screen-y:' + nn + 'px}'
 })
 
-window.addEventListener('DOMContentLoaded', () => {
-    let a = $('.string')[0],
-    b = $('.string h6')
+window.addEventListener('click', () => {
+    let a = $('section.mm li:first-child>div>p')[0]
 
-    if (b.height() > '95') {
-        a.classList.add('hide')
-    } else {
-        return false
-    }
-    
-    $('.string').click( () => {
-        a.classList.remove('hide')
-        $('.string span').remove()
-    })
+    a.classList.toggle('uu')
 })
 
 window.addEventListener('DOMContentLoaded', () => {
     let v = $('section.ww figcaption button')
 
     v.click( () => {
-        (v[0].textContent === 'ПОДПИСАТЬСЯ') ? v[0].textContent = 'ВЫ ПОДПИСАНЫ' : v[0].textContent = 'ПОДПИСАТЬСЯ';
-        (v[0].textContent === 'ПОДПИСАТЬСЯ') ? v[0].classList.toggle('aa') : v[0].classList.toggle('aa')
-    })
-})
-
-window.addEventListener('DOMContentLoaded', () => {
-    let a = $('#aa')
-
-    a.click( () => {
-        a[0].classList.toggle('a')
-
-        console.log('ghb')
+        (v[0].textContent === 'В ЧИТАТЕЛИ') ? v[0].textContent = 'ЧИТАЮ' : v[0].textContent = 'В ЧИТАТЕЛИ';
+        (v[0].textContent === 'В ЧИТАТЕЛИ') ? v[0].classList.toggle('aa') : v[0].classList.toggle('aa')
     })
 })
 
