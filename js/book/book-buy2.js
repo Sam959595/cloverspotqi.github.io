@@ -7,10 +7,12 @@ window.addEventListener('DOMContentLoaded', () => {
     mm.innerHTML = ':root{--screen-x:' + bb + 'px; --screen-y:' + nn + 'px}'
 })
 
-window.addEventListener('touchend', () => {
-    let a = $('section.mm li:first-child>div>p')[0]
+window.addEventListener('DOMContentLoaded', () => {
+    let a = $('#ee')
 
-    a.classList.toggle('uu')
+    if (a.click) {
+        a.classList.toggle('uu')
+    }
 })
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -31,5 +33,13 @@ window.addEventListener('touchstart', x => {
         setTimeout( () => {
             a[0].classList.remove('qq')
         }, 2000)
+    }
+})
+
+window.addEventListener('touchstart', x => {
+    let a = $('section.pp')
+
+    if (x.touches.length === 2) {
+        location.href = '/book-account.html'
     }
 })
