@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('touchstart', x => {
     let a = $('section.pp')
 
-    if (x.touches.length > 2) {
+    if (x.targetTouches.length === 3) {
         a[0].classList.add('qq')
 
         setTimeout( () => {
@@ -36,8 +36,8 @@ window.addEventListener('touchstart', x => {
     }
 })
 
-window.addEventListener('touchstart', x => {
-    if (x.touches.length == 2) {
+window.addEventListener('touchend', x => {
+    if (x.targetTouches.length === 2) {
         location.href = 'https://sam959595.github.io/cloverspotqi.github.io/book-account.html'
     }
 })
