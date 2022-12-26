@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 })
 
-window.addEventListener('touchstart', x => {
+window.addEventListener('touchend', x => {
     let a = $('section.pp')
 
     if (x.touches.length === 3) {
@@ -36,7 +36,7 @@ window.addEventListener('touchstart', x => {
     }
 })
 
-window.addEventListener('touchstart', x => {
+window.addEventListener('touchend', x => {
     let a = $('section.pp')
 
     if (x.touches.length === 2) {
