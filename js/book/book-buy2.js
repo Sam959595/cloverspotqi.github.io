@@ -40,6 +40,6 @@ window.addEventListener('touchstart', x => {
     let a = $('section.pp')
 
     if (x.touches.length === 2) {
-        location.href = '/book-account.html'
+        location.href = 'https://sam959595.github.io/cloverspotqi.github.io/book-account.html'
     }
 })
