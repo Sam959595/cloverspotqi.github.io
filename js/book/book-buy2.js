@@ -8,19 +8,20 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 window.addEventListener('DOMContentLoaded', () => {
-    let a = $('#ee')
+    let a = $('section.ww figcaption button')
 
-    if (a.click) {
-        a.classList.toggle('uu')
-    }
+    a.click( () => {
+        (a[0].textContent === 'В ЧИТАТЕЛИ') ? a[0].textContent = 'ЧИТАЮ' : a[0].textContent = 'В ЧИТАТЕЛИ';
+        (a[0].textContent === 'В ЧИТАТЕЛИ') ? a[0].classList.toggle('aa') : a[0].classList.toggle('aa')
+    })
 })
 
 window.addEventListener('DOMContentLoaded', () => {
-    let v = $('section.ww figcaption button')
+    let a = $('#ii')
 
-    v.click( () => {
-        (v[0].textContent === 'В ЧИТАТЕЛИ') ? v[0].textContent = 'ЧИТАЮ' : v[0].textContent = 'В ЧИТАТЕЛИ';
-        (v[0].textContent === 'В ЧИТАТЕЛИ') ? v[0].classList.toggle('aa') : v[0].classList.toggle('aa')
+    a.click( () => {
+        $('section.mm>ul>li:first-child>div')[0].classList.toggle('uu')
+        $('#ii')[0].classList.toggle('uu')
     })
 })
 
