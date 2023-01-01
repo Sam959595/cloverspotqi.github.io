@@ -64,8 +64,6 @@ section.mm>ul>li {
 /* mm li first */
 
 section.mm>ul>li:first-child>div {
-    height: var(--screen-padding-y);
-
     border-radius: 15px;
 
     display: flex;
@@ -113,7 +111,7 @@ section.mm li:first-child>div ul p {
 }
 
 section.mm>ul>li:first-child>div a {
-    margin: auto;
+    margin: 30% auto;
 
     width: 180px;
 
@@ -137,15 +135,7 @@ section.mm li:first-child>div>h1 {
     font: 700 21px system-ui
 }
 section.mm li:first-child>div>p {
-    pointer-events: auto;
-    cursor: default;
-
     margin: .5em var(--padding-3) var(--padding-3);
-
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
 
     font: 14px/1.4 system-ui
 }
