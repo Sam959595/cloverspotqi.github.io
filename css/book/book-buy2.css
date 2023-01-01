@@ -133,12 +133,14 @@ section.mm>ul>li:first-child>div a {
 section.mm li:first-child>div>h1 {
     margin-inline: var(--padding-3);
 
-    text-overflow: clip;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
     font: 700 21px system-ui
 }
 section.mm li:first-child>div>p {
-    pointer-events: all;
-    cursor: pointer;
+    pointer-events: auto;
+    cursor: default;
 
     margin: .5em var(--padding-3) var(--padding-3);
 
@@ -155,7 +157,7 @@ section.mm li:first-child>div>p {
     -webkit-line-clamp: initial !important
 }
 .uu a {
-    margin: 2cm auto !important
+    margin: 117.5px auto !important
 }
 
 section.mm li:first-child figure {
@@ -283,6 +285,9 @@ section.mm li:last-child ul li {
 }
 
 section.mm li:last-child ul h6 {
+    pointer-events: auto;
+    cursor: default;
+
     margin-bottom: .8em;
 
     display: -webkit-box;
