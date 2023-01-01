@@ -20,8 +20,8 @@ window.addEventListener('DOMContentLoaded', () => {
     let a = $('#ii')
 
     a.click( () => {
-        $('section.mm>ul>li:first-child>div')[0].classList.toggle('uu')
-        $('#ii')[0].classList.toggle('uu')
+        $('section.mm>ul>li:first-child>div')[0].classList.add('uu')
+        $('#ii')[0].classList.add('uu')
     })
 })
 
@@ -42,3 +42,29 @@ window.addEventListener('touchstart', x => {
         location.href = 'https://sam959595.github.io/cloverspotqi.github.io/book-account.html'
     }
 })
+
+window.onload = () => {
+    let jj = q => {
+        let cc;
+        
+        if (cc) {
+            cc.classList.add('uu');
+        }
+        cc = q;
+        cc.classList.add('uu');
+    }
+
+    $('#tt')[0].onclick = x => {
+        let aa = x.target;
+
+        while (aa != this) {
+            if (aa.tagName == 'H6') {
+                jj(aa);
+
+                return;
+            };
+
+            aa = aa.parentNode;
+        }
+    }
+}
