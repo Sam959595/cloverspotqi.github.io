@@ -118,7 +118,6 @@ section.mm>ul>li:first-child>div>a {
     border-radius: 2px;
 
     display: flex;
-    flex-flow: column;
 
     aspect-ratio: 1/1.6;
 
@@ -129,20 +128,20 @@ section.mm>ul>li:first-child>div>a {
 
 section.mm>ul>li:first-child>div>a progress {
     width: -webkit-fill-available;
-    height: 3px;
+    height: 2px;
 
-    margin: auto 1.5em .8em;
-
-    border-radius: 2px;
-    
-    contain: paint
+    margin: auto 1.5em .8em
 }
 section.mm>ul>li:first-child>div>a progress::-webkit-progress-bar {
+    border-radius: 1px;
+    
     -webkit-backdrop-filter: saturate(180%) blur(20px);
 
     background-color: #ffffff50
 }
 section.mm>ul>li:first-child>div>a progress::-webkit-progress-value {
+    border-radius: 1px;
+
     background-color: #ffffff90
 }
 
