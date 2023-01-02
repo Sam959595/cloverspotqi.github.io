@@ -273,6 +273,9 @@ section.mm li:last-child ul h6 {
 
     color: var(--gray-2)
 }
+.uu {
+    -webkit-line-clamp: initial !important
+}
 
 section.mm li:last-child li div {
     display: flex;
