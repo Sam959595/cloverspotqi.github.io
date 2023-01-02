@@ -78,19 +78,20 @@ section.ee div {
 
 section.ee progress {
     width: -webkit-fill-available;
-    height: 3px;
+    height: 2px;
 
-    margin-inline: .8em;
-
-    border-radius: 2px;
-    contain: paint
+    margin-inline: .8em
 }
 section.ee progress::-webkit-progress-bar {
+    border-radius: 1px;
+    
     -webkit-backdrop-filter: saturate(180%) blur(20px);
 
     background-color: #ffffff50
 }
 section.ee progress::-webkit-progress-value {
+    border-radius: 1px;
+    
     background-color: #ffffff90
 }
 
