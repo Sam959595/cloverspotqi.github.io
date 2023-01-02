@@ -88,7 +88,7 @@ section.mm li:first-child>div li {
     text-align: center
 }
 
-section.mm li:first-child>div li~li {
+section.mm li:first-child>div li+li {
     border-left: .1px solid var(--gray-3)
 }
 
@@ -117,13 +117,33 @@ section.mm>ul>li:first-child>div>a {
 
     border-radius: 2px;
 
-    display: block;
+    display: flex;
+    flex-flow: column;
 
     aspect-ratio: 1/1.6;
 
     background-size: cover;
 
     box-shadow: 0 5px 10px #00000040
+}
+
+section.mm>ul>li:first-child>div>a progress {
+    width: -webkit-fill-available;
+    height: 3px;
+
+    margin: auto 1.5em .8em;
+
+    border-radius: 2px;
+    
+    contain: paint
+}
+section.mm>ul>li:first-child>div>a progress::-webkit-progress-bar {
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+
+    background-color: #ffffff50
+}
+section.mm>ul>li:first-child>div>a progress::-webkit-progress-value {
+    background-color: #ffffff90
 }
 
 section.mm li:first-child figure {
