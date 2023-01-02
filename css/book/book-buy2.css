@@ -126,22 +126,9 @@ section.mm>ul>li:first-child>div>a {
     box-shadow: 0 5px 10px #00000040
 }
 
-section.mm li:first-child span {
-    display: grid;
-    grid-auto-flow: column;
-
-    overflow-x: scroll;
-
-    scroll-snap-type: x mandatory
+section.mm li:first-child figure {
+    margin: 0 var(--padding-3) var(--padding-3)
 }
-section.mm li:first-child span>* {
-    width: var(--screen-padding);
-
-    padding: 0 var(--padding-3) var(--padding-3);
-
-    scroll-snap-align: start
-}
-
 section.mm li:first-child figure a {
     margin: 3px 1px;
 
@@ -157,16 +144,16 @@ section.mm li:first-child figure h6 {
     color: var(--gray-15)
 }
 
-section.mm li:first-child>div span>h6 {
-    font: 14px/1.4 system-ui
-}
-.uu {
-    height: auto !important;
+section.mm>ul>li:first-child>h6 {
+    margin-top: 10px;
 
-    -webkit-line-clamp: initial !important
-}
-.uu a {
-    margin: 117.5px auto !important
+    border-radius: 15px;
+
+    padding: var(--padding-3);
+
+    font: 14px/1.4 system-ui;
+
+    background-color: var(--gray-15)
 }
 
 section.mm li:first-child figcaption {
@@ -234,7 +221,7 @@ section.mm>ul>li:last-child {
 }
 
 section.mm>ul>li:last-child>div {
-    margin: var(--padding-3) var(--padding-3) 0;
+    margin: var(--padding-3);
 
     display: flex;
     align-items: center;
@@ -244,20 +231,20 @@ section.mm li:last-child>div h1 {
     text-overflow: ellipsis;
     overflow: hidden;
 
-    font: 700 21px system-ui
+    font: 700 17px system-ui
 }
 section.mm li:last-child>div p {
-    font: 600 17px system-ui
+    font: 600 17px ui-rounded
 }
 section.mm>ul>li:last-child>div a {
-    width: 100px;
+    width: 83px;
 
     text-align: right;
     font: 17px system-ui
 }
 
 section.mm li:last-child ul {
-    padding: 10px;
+    padding: 0 10px 10px;
 
     display: grid;
     row-gap: 10px
