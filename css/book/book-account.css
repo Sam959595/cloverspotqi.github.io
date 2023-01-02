@@ -37,13 +37,16 @@ section.mm>ul>li>section {
 /* ee */
 
 section.ee > h1 {
-    padding: 2em 1.1em .8em;
+    padding: var(--padding-3);
 
-    font: 600 21px ui-serif
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    font: 700 17px system-ui
 }
 
 section.ee ul {
-    padding: 0 2em 2em;
+    padding: 0 var(--padding-3) var(--padding-3);
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -62,21 +65,6 @@ section.ee a {
     box-shadow: 0 5px 10px #00000040
 }
 
-section.ee li h6 {
-    font: 600 14px system-ui;
-
-    color: white
-}
-section.ee a h1 {
-    color: white
-}
-section.ee a :where(h1, h3) {
-    font: 900 18px system-ui
-}
-section.ee h3 {
-    color: #00000090
-}
-
 section.ee div {
     height: 100%;
 
@@ -88,7 +76,29 @@ section.ee div {
     justify-content: space-between
 }
 
+section.ee progress {
+    width: -webkit-fill-available;
+    height: 3px;
+
+    margin-inline: .8em;
+
+    border-radius: 2px;
+    contain: paint
+}
+section.ee progress::-webkit-progress-bar {
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+
+    background-color: #ffffff50
+}
+section.ee progress::-webkit-progress-value {
+    background-color: #ffffff90
+}
+
 /* ww */
+
+section.ww {
+    overscroll-behavior-y: none
+}
 
 section.ww figcaption:first-child {
     padding: 2.8em 2em;
@@ -101,10 +111,13 @@ section.ww figcaption:first-child {
 section.ww h2 {
     margin-bottom: .2em;
 
+    width: 250px;
+
+    white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 
-    font: 600 17px/1 system-ui
+    font: 600 17px system-ui
 }
 
 .aa {
@@ -244,6 +257,7 @@ section.rr p {
 :root {
     --padding: 30px;
     --padding-2: 15px;
+    --padding-3: 20px;
     --screen-padding-x: calc(var(--screen-x) - var(--padding) * 2);
     --screen-padding-y: calc(var(--screen-y) - var(--padding));
     --screen-padding: calc(var(--screen-x) - var(--padding-2) * 2);
@@ -266,16 +280,13 @@ section.rr p {
         --gray-3: #d2d2d7;
         --gray-15: #f2f2f6;
 
-        --gray-8: #f3d3d7;
-        --gray-9: #ff7570;
-
-        --blue: #007aff;
+        --link: #007aff;
 
         --red: #ff2d55;
+        --red-2: #f3d3d7;
+        --red-3: #ff7570;
 
         --green: #31c692;
-
-        --orange: #fd9900;
     }
 }
 
@@ -291,15 +302,12 @@ section.rr p {
         --gray-3: #333338;
         --gray-15: #121212;
 
-        --gray-8: #332526;
-        --gray-9: #d57b7b;
-
-        --blue: #0a84ff;
+        --link: #0a84ff;
 
         --red: #fb5c74;
+        --red-2: #332526;
+        --red-3: #d57b7b;
 
         --green: #77ffc6;
-
-        --orange: #ff9f00;
     }
 }
