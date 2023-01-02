@@ -67,7 +67,8 @@ ol {
 
 input,
 select,
-textarea {
+textarea,
+progress {
 	-webkit-appearance: none
 }
 
