@@ -40,18 +40,6 @@ section.ee select {
     color: var(--gray)
 }
 
-section.ee ul {
-    display: flex
-}
-section.ee li {
-    width: 20px;
-    height: 20px;
-
-    margin: 5px;
-
-    border-radius: 100%;
-}
-
 .eee {
     pointer-events: auto !important;
     opacity: 1 !important
@@ -64,12 +52,15 @@ section.vv {
 }
 
 section.vv h5 {
-    margin-block: 3em;
+    margin-block: 1em 3em;
 
     text-align: center;
     font: 600 19px ui-serif;
 
     color: var(--text-3)
+}
+section.vv h5~h5 {
+    margin-block: 8em 3em
 }
 section.vv h6::first-letter {
     margin-left: 1cm
