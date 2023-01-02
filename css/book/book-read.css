@@ -60,7 +60,7 @@ section.vv h5 {
     color: var(--text-3)
 }
 section.vv h5~h5 {
-    margin-block: 8em 3em
+    margin-block: 13em 3em
 }
 section.vv h6::first-letter {
     margin-left: 1cm
