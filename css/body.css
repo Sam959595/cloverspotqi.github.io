@@ -5,96 +5,172 @@
 	box-sizing: border-box;
 
 	-webkit-text-size-adjust: none;
-	
+
 	font: normal 400 12px/1.33337 system-ui;
 	letter-spacing: 0;
 
 	-webkit-font-smoothing: antialiased
 }
+
 *:not(input, textarea) {
 	-webkit-user-select: none
 }
+
 *:not(li a) {
 	-webkit-touch-callout: none
 }
+
 a {
+	pointer-events: auto;
+
 	-webkit-user-drag: none
 }
 
-a, strong, b, sup, sub, u, ins, del, i, s, mark, small, q, em, select, span, time {
+a,
+strong,
+b,
+sup,
+sub,
+u,
+ins,
+del,
+i,
+s,
+mark,
+small,
+q,
+em,
+select,
+span,
+time {
 	font: inherit;
 	letter-spacing: inherit
 }
+
 b {
-    color: inherit
+	color: inherit
 }
-a, u {
+
+a,
+u {
 	text-decoration: none
 }
+
 u {
 	display: inline-block
 }
-ul, ol {
+
+ul,
+ol {
 	list-style: none
 }
-input, select, textarea {
+
+input,
+select,
+textarea {
 	-webkit-appearance: none
 }
+
 select:focus {
 	opacity: .5
 }
 
-input, button, select, textarea, hr {
+input,
+button,
+select,
+textarea,
+hr {
 	border: none
 }
 
-input, select, textarea, button {
+input,
+select,
+textarea,
+button {
 	outline: none
 }
 
-input[type="submit"], button, select, span {
+input[type="submit"],
+button,
+select,
+span {
 	cursor: pointer
 }
 
-h1, h2, h3, h4, h5, h6, p, time, img {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+time,
+img {
 	pointer-events: none
 }
 
 hr {
 	border-top: .1px solid var(--gray-3)
 }
-sup, sub {
+
+sup,
+sub {
 	font-size: 9px
 }
-strong, b {
+
+strong,
+b {
 	font-weight: 600
 }
+
 em {
 	font-style: italic
 }
-select, textarea, span, button, a {
+
+select,
+textarea,
+span,
+button,
+a {
 	-webkit-tap-highlight-color: transparent
 }
+
 select {
-    background: none
+	background: none
 }
+
 img {
 	vertical-align: top
 }
 
-::-webkit-scrollbar{
-    display: none
+::-webkit-scrollbar {
+	display: none
 }
 
 body {
 	background-color: var(--gray-a)
 }
-h1, h2, h3, h4, h5, h6, table, textarea, span, article {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+textarea,
+span,
+article {
 	color: var(--gray)
 }
-p, time {
+
+p,
+time {
 	color: var(--gray-2)
 }
-a, select, button {
-	color: var(--blue)
+
+a,
+select,
+button {
+	color: var(--link)
 }
