@@ -21,7 +21,7 @@ section.ee {
     grid-template-columns: repeat(3, 1fr);
     column-gap: .5em;
 
-    background-color: var(--canvas-3);
+    background-color: inherit;
 
     transition: opacity .5s
 }
