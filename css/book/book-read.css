@@ -74,6 +74,22 @@ section.vv h6 {
     color: var(--text-3)
 }
 
+section.vv sup {
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+
+    display: inline-block;
+
+    vertical-align: revert;
+    text-align: center;
+    font-weight: 600;
+
+    background-color: var(--text-3);
+    color: var(--canvas-3)
+}
+
 section.vv ol {
     opacity: .6;
     
