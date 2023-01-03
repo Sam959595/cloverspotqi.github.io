@@ -130,30 +130,44 @@ section.vv a {
 /* bb */
 
 section.bb {
-    margin-inline: 1.2cm;
-    margin-bottom: max(env(safe-area-inset-bottom), 1.2cm)
+    margin-bottom: max(env(safe-area-inset-bottom), 2cm)
 }
 section.bb div {
     display: flex
 }
 
-section.bb a:first-child {
-    margin-right: .5em
-}
 section.bb a {
-    padding: .8em 1em;
+    padding-block: 1.5em;
 
     width: -webkit-fill-available;
-
-    display: block;
-
-    border-radius: 12px;
 
     text-align: center;
     font: 600 14px system-ui;
 
-    background-color: var(--gray-21);
     color: var(--gray)
+}
+
+/* mm */
+
+section.mm {
+    background-color: inherit
+}
+
+section.mm h1 {
+    display: none
+}
+section.mm h1:target {
+    pointer-events: none;
+
+    position: fixed;
+    inset: 0 0 auto;
+
+    padding: 1em 1cm;
+
+    display: initial;
+
+    background-color: inherit;
+    color: var(--orange)
 }
 
 /* var */
@@ -190,7 +204,6 @@ section.bb a {
         --gray-b: black;
 
         --gray: #1d1d1f;
-        --gray-21: #00000018;
 
         --canvas: white;
         --canvas-2: #e0dacc;
@@ -219,7 +232,6 @@ section.bb a {
         --gray-b: white;
 
         --gray: #f5f5f7;
-        --gray-21: #ffffff18;
 
         --canvas: black;
         --canvas-2: #26221d;
