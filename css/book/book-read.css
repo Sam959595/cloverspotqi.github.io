@@ -75,10 +75,10 @@ section.vv h6 {
 }
 
 section.vv a {
-    -webkit-text-decoration: underline dotted var(--link);
+    -webkit-text-decoration: underline dotted var(--orange);
     text-decoration-skip: none;
     text-underline-offset: 2px;
-    text-decoration-thickness: 1px;
+    text-decoration-thickness: 1.2px;
 
     color: inherit
 }
@@ -205,6 +205,8 @@ section.bb a {
         --text-5: #4b4b57;
 
         --link: #007aff;
+
+        --orange: #fd9900;
     }
 }
 
@@ -232,5 +234,7 @@ section.bb a {
         --text-5: #fbfcff;
 
         --link: #0a84ff;
+
+        --orange: #ffb53f;
     }
 }
