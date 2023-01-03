@@ -74,34 +74,13 @@ section.vv h6 {
     color: var(--text-3)
 }
 
-section.vv sup {
-    width: 15px;
-    height: 15px;
+section.vv a {
+    -webkit-text-decoration: underline dotted var(--link);
+    text-decoration-skip: none;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
 
-    border-radius: 50%;
-
-    display: inline-block;
-
-    vertical-align: revert;
-    text-align: center;
-    font-weight: 600;
-
-    background-color: var(--text-3);
-    color: var(--canvas-3)
-}
-
-section.vv ol {
-    opacity: .6;
-    
-    margin: 3cm 0 0 auto;
-
-    width: -webkit-fit-content;
-
-    list-style: outside decimal;
-    color: var(--text-3)
-}
-section.vv ol li {
-    font-family: ui-serif
+    color: inherit
 }
 
 .y h6 {
@@ -115,10 +94,10 @@ section.vv ol li {
     font-size: 17px !important
 }
 
-.sss :where(h5, h6, ol li) {
+.sss :where(h5, h6) {
     font-family: system-ui !important
 }
-.zzz :where(h5, h6, ol li) {
+.zzz :where(h5, h6) {
     font-family: georgia !important
 }
 
@@ -135,16 +114,16 @@ section.vv ol li {
     background-color: var(--canvas-5) !important
 }
 
-.rrr :where(h5, h6, ol) {
+.rrr :where(h5, h6) {
     color: var(--text) !important
 }
-.ttt :where(h5, h6, ol) {
+.ttt :where(h5, h6) {
     color: var(--text-2) !important
 }
-.kkk :where(h5, h6, ol) {
+.kkk :where(h5, h6) {
     color: var(--text-4) !important
 }
-.qqq :where(h5, h6, ol) {
+.qqq :where(h5, h6) {
     color: var(--text-5) !important
 }
 
@@ -225,7 +204,7 @@ section.bb a {
         --text-4: #222;
         --text-5: #4b4b57;
 
-        --blue: #007aff;
+        --link: #007aff;
     }
 }
 
@@ -252,6 +231,6 @@ section.bb a {
         --text-4: #f2f2f2;
         --text-5: #fbfcff;
 
-        --blue: #0a84ff;
+        --link: #0a84ff;
     }
 }
