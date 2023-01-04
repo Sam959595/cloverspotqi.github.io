@@ -16,17 +16,8 @@ section.ww>ul>li {
 
 /* ee */
 
-section.ee nav {
-    position: fixed;
-    inset: 0 0 auto;
-
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-
-    background: linear-gradient(var(--gray-a), var(--soft))
-}
-
 section.ee nav ul {
-    padding: 20px 35px;
+    padding: 20px 35px 0;
 
     display: grid;
     grid-auto-columns: max-content;
@@ -48,7 +39,7 @@ section.ee nav ul h1 {
 }
 
 section.ee>ul {
-    padding: 65px 35px 35px;
+    padding: 35px;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -98,7 +89,7 @@ section.ee progress {
 section.ee progress::-webkit-progress-bar {
     border-radius: 1px;
 
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 
     background-color: #ffffff50
 }
@@ -112,26 +103,32 @@ section.ee progress::-webkit-progress-value {
 /* nn */
 
 section.nn ul {
-    margin: 35px
+    margin: 15px 35px 35px
 }
 section.nn ul li+li {
     margin-top: 2em
 }
 
 section.nn h1 {
-    font: 700 21px ui-rounded;
+    font: 700 17px ui-rounded
 }
 
-section.nn figure a {
-    margin: 3px 1px;
+section.nn figure {
+    margin-top: .5em;
 
-    display: inline-block
+    display: flex;
+    flex-flow: wrap;
+    gap: .5em
+}
+section.nn figure a {
+    flex-grow: 1
 }
 section.nn figure h6 {
-    padding: 4px 10px;
+    padding: 6px 10px;
 
     border-radius: 7px;
 
+    text-align: center;
     font: 600 14px ui-rounded;
 
     background-color: var(--gray-3)
@@ -184,7 +181,7 @@ section.nn figure h6 {
 
         --gray: #f5f5f7;
         --gray-2: #8e8e93;
-        --gray-3: #333338;
+        --gray-3: #1c1c1f;
 
         --link: #0a84ff;
 
