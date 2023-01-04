@@ -4,7 +4,7 @@ section.ee>div {
     position: fixed;
     inset: 0 0 auto;
 
-    padding: 20px 40px;
+    padding: 20px 35px;
 
     display: grid;
     grid-auto-columns: max-content;
@@ -47,7 +47,7 @@ section.ee>a {
 }
 
 section.ee ul {
-    padding: 65px 40px 40px;
+    padding: 65px 35px 35px;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
