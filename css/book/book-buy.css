@@ -28,9 +28,11 @@ section.ee nav ul {
 }
 
 section.ee nav ul li+li {
+    opacity: .5;
+    
     margin-left: 1.2cm
 }
-section.ee nav ul li {
+section.ee nav ul h1 {
     text-overflow: ellipsis;
     overflow: hidden;
 
