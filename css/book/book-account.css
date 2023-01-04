@@ -76,23 +76,12 @@ section.ee div {
     justify-content: space-between
 }
 
-section.ee progress {
-    width: -webkit-fill-available;
-    height: 2px;
+section.ee h6 {
+    font: 600 13px ui-rounded;
 
-    margin-inline: .8em
-}
-section.ee progress::-webkit-progress-bar {
-    border-radius: 1px;
-    
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    color: white;
 
-    background-color: #ffffff50
-}
-section.ee progress::-webkit-progress-value {
-    border-radius: 1px;
-    
-    background-color: #ffffff90
+    text-shadow: 0 0 10px #00000080
 }
 
 /* ww */
