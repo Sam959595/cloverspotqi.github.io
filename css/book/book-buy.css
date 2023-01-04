@@ -47,7 +47,7 @@ section.ee>a {
 }
 
 section.ee ul {
-    padding: 60px 40px 40px;
+    padding: 65px 40px 40px;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -134,7 +134,7 @@ section.ee progress::-webkit-progress-value {
 
 @media screen and (prefers-color-scheme: light) {
     :root {
-        --soft: #ffffffaa;
+        --soft: #ffffff50;
 
         --gray-a: white;
         --gray-b: black;
@@ -156,7 +156,7 @@ section.ee progress::-webkit-progress-value {
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
-        --soft: #000000aa;
+        --soft: #00000050;
 
         --gray-a: black;
         --gray-b: white;
