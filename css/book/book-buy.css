@@ -1,53 +1,43 @@
 /* ee */
 
-section.ee>div {
+section.ee nav {
     position: fixed;
     inset: 0 0 auto;
 
     padding: 20px 35px;
 
-    display: grid;
-    grid-auto-columns: max-content;
-    grid-auto-flow: column;
-
-    overflow-x: scroll;
-
     -webkit-backdrop-filter: blur(20px);
 
     background: linear-gradient(var(--gray-a), var(--soft))
 }
+section.ee nav a {
+    padding-bottom: 2em;
 
-section.ee>div>h1+h1 {
+    display: block;
+
+    text-align: center
+}
+
+section.ee nav div {
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+
+    overflow-x: scroll
+}
+
+section.ee nav div h1+h1 {
     margin-left: 1.2cm
 }
-section.ee>div>h1 {
+section.ee nav div h1 {
     text-overflow: ellipsis;
     overflow: hidden;
 
     font: 700 17px system-ui
 }
 
-section.ee>a {
-    position: fixed;
-    inset: auto 0 0;
-
-    margin: 0 3.1cm 20px;
-
-    border-radius: 16px;
-
-    padding: .8em 2em;
-
-    display: block;
-
-    text-align: center;
-
-    -webkit-backdrop-filter: blur(20px);
-
-    background-color: var(--soft)
-}
-
 section.ee ul {
-    padding: 65px 35px 35px;
+    padding: 105px 35px 35px;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
