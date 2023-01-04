@@ -4,21 +4,22 @@ section.ee nav {
     position: fixed;
     inset: 0 0 auto;
 
-    padding: 20px 35px;
-
     -webkit-backdrop-filter: blur(20px);
 
     background: linear-gradient(var(--gray-a), var(--soft))
 }
+
 section.ee nav a {
-    padding-bottom: 2em;
+    padding-top: 1em;
 
     display: block;
 
     text-align: center
 }
 
-section.ee nav div {
+section.ee nav ul {
+    padding: 20px 35px;
+
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
@@ -26,17 +27,17 @@ section.ee nav div {
     overflow-x: scroll
 }
 
-section.ee nav div h1+h1 {
+section.ee nav ul li+li {
     margin-left: 1.2cm
 }
-section.ee nav div h1 {
+section.ee nav ul li {
     text-overflow: ellipsis;
     overflow: hidden;
 
     font: 700 17px system-ui
 }
 
-section.ee ul {
+section.ee>ul {
     padding: 105px 35px 35px;
 
     display: grid;
