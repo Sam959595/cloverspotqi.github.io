@@ -106,11 +106,12 @@ section.nn ul {
     margin: 15px 35px 35px
 }
 section.nn ul li+li {
-    margin-top: 2em
+    margin-top: 2cm
 }
 
 section.nn h1 {
-    font: 700 17px ui-rounded
+    text-align: right;
+    font: 700 14px ui-rounded
 }
 
 section.nn figure {
@@ -124,9 +125,9 @@ section.nn figure a {
     flex-grow: 1
 }
 section.nn figure h6 {
-    padding: 6px 10px;
+    padding: 8px 10px;
 
-    border-radius: 7px;
+    border-radius: 9px;
 
     text-align: center;
     font: 600 14px ui-rounded;
