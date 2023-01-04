@@ -1,20 +1,28 @@
+/* ww */
+
+section.ww>ul {
+    display: grid;
+    grid-auto-flow: column;
+
+    overflow-x: scroll;
+
+    scroll-snap-type: x mandatory
+}
+section.ww>ul>li {
+    width: var(--screen-x);
+
+    scroll-snap-align: start
+}
+
 /* ee */
 
 section.ee nav {
     position: fixed;
     inset: 0 0 auto;
 
-    -webkit-backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
 
     background: linear-gradient(var(--gray-a), var(--soft))
-}
-
-section.ee nav a {
-    padding-top: 1em;
-
-    display: block;
-
-    text-align: center
 }
 
 section.ee nav ul {
@@ -40,7 +48,7 @@ section.ee nav ul h1 {
 }
 
 section.ee>ul {
-    padding: 93px 35px 35px;
+    padding: 65px 35px 35px;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -52,26 +60,18 @@ section.ee li a {
 
     border-radius: 2px;
 
-    display: block;
+    display: flex;
 
     background-size: cover;
 
     box-shadow: 0 5px 10px #00000040
 }
 
-section.ee a div {
-    height: 100%;
-
-    padding: .8em;
-
-    display: flex;
-    flex-flow: column;
-    align-items: end;
-    justify-content: end
-}
-
-section.ee div h6 {
+section.ee h6 {
+    margin: auto .8em .8em auto;
+    
     font: 700 13px ui-rounded;
+
     color: white;
 
     text-shadow: 0 0 10px #00000080
@@ -109,6 +109,34 @@ section.ee progress::-webkit-progress-value {
     background-color: #ffffff90
 }
 
+/* nn */
+
+section.nn ul {
+    margin: 35px
+}
+section.nn ul li+li {
+    margin-top: 2em
+}
+
+section.nn h1 {
+    font: 700 21px ui-rounded;
+}
+
+section.nn figure a {
+    margin: 3px 1px;
+
+    display: inline-block
+}
+section.nn figure h6 {
+    padding: 4px 10px;
+
+    border-radius: 7px;
+
+    font: 600 14px ui-rounded;
+
+    background-color: var(--gray-3)
+}
+
 /* var */
 
 :root {
@@ -134,16 +162,16 @@ section.ee progress::-webkit-progress-value {
 
         --gray: #1d1d1f;
         --gray-2: #8e8e93;
-        --gray-3: #d2d2d7;
-        --gray-15: #f2f2f6;
+        --gray-3: #eee;
 
         --link: #007aff;
 
+        --blue: #3a8fff;
         --red: #ff2d55;
-        --red-2: #f3d3d7;
-        --red-3: #ff7570;
-
+        --pink: #ff9cce;
+        --violet: #9283ff;
         --green: #31c692;
+        --orange: #fd9900;
     }
 }
 
@@ -157,14 +185,14 @@ section.ee progress::-webkit-progress-value {
         --gray: #f5f5f7;
         --gray-2: #8e8e93;
         --gray-3: #333338;
-        --gray-15: #121212;
 
         --link: #0a84ff;
 
-        --red: #fb5c74;
-        --red-2: #332526;
-        --red-3: #d57b7b;
-
+        --blue: #3a8fff;
+        --red: #ff367c;
+        --pink: #ec55df;
+        --violet: #9283ff;
         --green: #77ffc6;
+        --orange: #ff9f00;
     }
 }
