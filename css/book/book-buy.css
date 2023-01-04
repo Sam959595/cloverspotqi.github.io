@@ -78,7 +78,7 @@ section.ee a div {
 }
 
 section.ee div h6 {
-    font: 700 14px ui-rounded;
+    font: 700 13px ui-rounded;
     color: white;
 
     text-shadow: 0 0 10px #00000080
@@ -88,7 +88,7 @@ section.ee p {
     margin-top: 1em;
 
     display: -webkit-box;
-    -webkit-line-clamp: 6;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
 
