@@ -93,7 +93,7 @@ section.mm li:first-child>div li+li {
 }
 
 section.mm li:first-child>div ul h1 {
-    font: 700 19px ui-rounded
+    font: 700 17px ui-rounded
 }
 section.mm li:first-child>div ul h3 {
     font: 700 12px ui-rounded
@@ -143,11 +143,8 @@ section.mm li:first-child figure {
     flex-flow: wrap;
     gap: .5em
 }
-section.mm li:first-child figure a {
-    flex-grow: 1
-}
 section.mm li:first-child figure h6 {
-    padding: 6px 10px;
+    padding: 4px 10px;
 
     border-radius: 7px;
 
