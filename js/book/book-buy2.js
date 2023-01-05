@@ -17,11 +17,11 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 window.addEventListener('DOMContentLoaded', () => {
-    let a = $('#ii')
+    let a = $('section.ee ul>button')
 
     a.click( () => {
-        $('section.mm>ul>li:first-child>div')[0].classList.add('uu')
-        $('#ii')[0].classList.add('uu')
+        $('section.ee')[0].classList.toggle('gg');
+        (a[0].textContent === 'ПРАВИТЬ') ? a[0].textContent = 'ОТМЕНИТЬ' : a[0].textContent = 'ПРАВИТЬ';
     })
 })
 
