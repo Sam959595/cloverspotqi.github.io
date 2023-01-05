@@ -114,17 +114,19 @@ section.nn h1 {
     font: 700 14px ui-rounded
 }
 
-section.nn figure {
+section.nn div {
     margin-top: .5em;
 
     display: flex;
     flex-flow: wrap;
     gap: .5em
 }
-section.nn figure a {
-    flex-grow: 1
+section.nn div a {
+    flex-grow: 1;
+
+    color: inherit
 }
-section.nn figure h6 {
+section.nn div h6 {
     padding: 8px 10px;
 
     border-radius: 9px;
@@ -132,7 +134,8 @@ section.nn figure h6 {
     text-align: center;
     font: 600 14px ui-rounded;
 
-    background-color: var(--gray-3)
+    background-color: var(--gray-3);
+    color: inherit
 }
 
 /* var */
