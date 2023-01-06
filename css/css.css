@@ -96,13 +96,13 @@ span {
 	cursor: pointer
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
+h1:not(a),
+h2:not(a),
+h3:not(a),
+h4:not(a),
+h5:not(a),
+h6:not(a),
+p:not(a),
 time,
 img {
 	pointer-events: none
@@ -161,14 +161,6 @@ textarea,
 span,
 article {
 	color: var(--gray)
-}
-
-h1>a,
-h2>a,
-h3>a,
-h4>a,
-h5>a {
-	pointer-events: auto
 }
 
 p,
