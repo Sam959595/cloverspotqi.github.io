@@ -39,7 +39,7 @@ window.addEventListener('touchstart', x => {
 
 window.addEventListener('touchstart', x => {
     if (x.targetTouches.length === 2) {
-        location.href = 'https://sam959595.github.io/cloverspotqi.github.io/book-account.html'
+        location.href = 'https://sam959595.github.io/cloverspotqi.github.io/book-library.html'
     }
 })
 
