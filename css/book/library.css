@@ -122,9 +122,9 @@ section.ee ul>button {
     grid-column-end: 2 span;
     justify-self: center;
 
-    font: 600 14px system-ui;
+    font-weight: 600;
 
-    background-color: #00000010
+    background-color: var(--soft-2)
 }
 
 /* ww */
@@ -304,6 +304,7 @@ section.rr p {
 @media screen and (prefers-color-scheme: light) {
     :root {
         --soft: #f2f2f6aa;
+        --soft-2: #00000010;
 
         --gray-a: white;
         --gray-b: black;
@@ -326,6 +327,7 @@ section.rr p {
 @media screen and (prefers-color-scheme: dark) {
     :root {
         --soft: #121212aa;
+        --soft-2: #ffffff10;
 
         --gray-a: black;
         --gray-b: white;
