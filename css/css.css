@@ -89,13 +89,6 @@ button {
 	outline: none
 }
 
-input[type="submit"],
-button,
-select,
-span {
-	cursor: pointer
-}
-
 h1,
 h2,
 h3,
@@ -105,6 +98,14 @@ h6,
 p,
 time {
 	cursor: default
+}
+
+input[type="submit"],
+a,
+button,
+select,
+span {
+	cursor: pointer
 }
 
 hr {
