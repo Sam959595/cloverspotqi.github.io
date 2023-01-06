@@ -95,9 +95,11 @@ section.mm li:first-child>div li+li {
 section.mm li:first-child>div ul h1 {
     font: 700 17px ui-rounded
 }
+
 section.mm li:first-child>div ul h3 {
     font: 700 12px ui-rounded
 }
+
 section.mm li:first-child>div ul h6 {
     padding-bottom: .8em;
 
@@ -106,6 +108,7 @@ section.mm li:first-child>div ul h6 {
 
     color: var(--gray-2)
 }
+
 section.mm li:first-child>div ul p {
     font-size: 10px
 }
@@ -143,6 +146,7 @@ section.mm li:first-child figure {
     flex-flow: wrap;
     gap: .5em
 }
+
 section.mm li:first-child figure h6 {
     padding: 4px 10px;
 
@@ -182,6 +186,7 @@ section.mm li:first-child figcaption {
 }
 
 section.mm li:first-child figcaption h1 {
+    pointer-events: none;
     opacity: 1;
 
     position: absolute;
@@ -195,6 +200,7 @@ section.mm li:first-child figcaption h1 {
 
     transition: opacity 2s ease
 }
+
 .aa {
     opacity: 0 !important
 }
@@ -236,15 +242,18 @@ section.mm>ul>li:last-child>div {
     align-items: center;
     justify-content: space-between
 }
+
 section.mm li:last-child>div h1 {
     text-overflow: ellipsis;
     overflow: hidden;
 
     font: 700 17px system-ui
 }
+
 section.mm li:last-child>div p {
     font: 600 17px ui-rounded
 }
+
 section.mm>ul>li:last-child>div a {
     width: 83px;
 
@@ -282,6 +291,7 @@ section.mm li:last-child ul h6 {
 
     color: var(--gray-2)
 }
+
 .uu {
     -webkit-line-clamp: initial !important
 }
@@ -318,6 +328,7 @@ section.mm li:last-child img {
 .ll {
     background-color: #4dcc9730 !important
 }
+
 .ll *:not(h4) {
     color: var(--green) !important
 }
