@@ -96,10 +96,15 @@ span {
 	cursor: pointer
 }
 
-:where(h1, h2, h3, h4, h5, h6, p) :not(a),
-time,
-img {
-	pointer-events: none
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+time {
+	cursor: default
 }
 
 hr {
