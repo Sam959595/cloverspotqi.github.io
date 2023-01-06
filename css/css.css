@@ -21,8 +21,6 @@
 }
 
 a {
-	pointer-events: auto;
-
 	-webkit-user-drag: none
 }
 
@@ -163,6 +161,14 @@ textarea,
 span,
 article {
 	color: var(--gray)
+}
+
+h1>a,
+h2>a,
+h3>a,
+h4>a,
+h5>a {
+	pointer-events: auto
 }
 
 p,
