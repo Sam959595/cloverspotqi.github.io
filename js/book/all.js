@@ -29,7 +29,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 mm = null;
                 e.stopPropagation();
                 xx(e.target);
-                // xx()
             }, 800);
         });
 
@@ -44,13 +43,6 @@ window.addEventListener('DOMContentLoaded', () => {
         x.addEventListener('touchmove', () => {
             if (mm) clearTimeout(mm);
         });
-
-        // let bb = () => {
-        //     clearTimeout(mm);
-        // }
-
-        // x.addEventListener('touchend', bb);
-        // x.addEventListener('touchmove', bb);
     }
 
     jj($('section.nn')[0], () => {
