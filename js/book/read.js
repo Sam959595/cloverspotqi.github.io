@@ -1,17 +1,31 @@
 window.addEventListener('DOMContentLoaded', () => {
-    let aa = 'ontouchstart' in window,
-        vv = $('section.ww'),
-        mm = $('section.ee')
+    let jj = (x, xx) => {
+        let mm;
 
-    window.addEventListener('touchstart', x => {
-        if (aa && x.touches.length === 3) {
-            mm[0].classList.add('eee')
-        }
-    })
+        x.addEventListener('touchstart', e => {
+            mm = setTimeout(() => {
+                mm = null;
+                e.stopPropagation();
+                xx(e.target);
+            }, 500);
+        });
 
-    if (!aa) {
-        vv[0].classList.add('wwww')
+        x.addEventListener('contextmenu', e => {
+            e.preventDefault();
+        });
+
+        x.addEventListener('touchend', () => {
+            if (mm) clearTimeout(mm);
+        });
+
+        x.addEventListener('touchmove', () => {
+            if (mm) clearTimeout(mm);
+        });
     }
+
+    jj($('body')[0], () => {
+        $('section.ee')[0].classList.add('eee')
+    })
 })
 
 window.addEventListener('touchend', () => {
@@ -24,7 +38,7 @@ window.addEventListener('touchend', () => {
     })
 })
 
-window.addEventListener('touchmove', x => {
+window.addEventListener('touchmove', () => {
     let vv = $('section.ee'),
         nn = $('section.ww')
 
