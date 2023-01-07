@@ -1,23 +1,81 @@
-/* ww */
-
-section.ww>ul {
-    display: grid;
-    grid-auto-flow: column;
-
-    overflow-x: scroll;
-
-    scroll-snap-type: x mandatory
+.qq {
+    height: 100%;
+    overflow-y: hidden
 }
-section.ww>ul>li {
-    width: var(--screen-x);
 
-    scroll-snap-align: start
+/* nn */
+
+section.nn {
+    pointer-events: none;
+    opacity: 0;
+    
+    z-index: 1;
+    position: fixed;
+    inset: 0;
+
+    padding: 15px 35px 35px;
+
+    overflow-y: scroll;
+
+    background-color: var(--gray-a);
+
+    transition: opacity .5s ease
+}
+
+section.nn ul li+li {
+    margin-top: 2cm
+}
+
+section.nn ul li:nth-child(1) :where(h1, h6) {
+    color: var(--blue)
+}
+section.nn ul li:nth-child(2) :where(h1, h6) {
+    color: var(--violet)
+}
+section.nn ul li:nth-child(3) :where(h1, h6) {
+    color: var(--red)
+}
+section.nn ul li:nth-child(4) :where(h1, h6) {
+    color: var(--orange)
+}
+
+section.nn h1 {
+    opacity: .5;
+    
+    text-align: right;
+    font: 700 14px ui-rounded
+}
+
+section.nn menu {
+    margin-top: .5em;
+
+    display: flex;
+    flex-flow: wrap;
+    gap: .5em
+}
+section.nn menu a {
+    flex-grow: 1
+}
+section.nn menu h6 {
+    padding: 8px 10px;
+
+    border-radius: 9px;
+
+    text-align: center;
+    font: 600 14px ui-rounded;
+
+    background-color: var(--gray-3)
+}
+
+.qqq {
+    pointer-events: auto !important;
+    opacity: 1 !important
 }
 
 /* ee */
 
 section.ee nav ul {
-    padding: 20px 35px 0;
+    padding: 20px 35px;
 
     display: grid;
     grid-auto-columns: max-content;
@@ -36,6 +94,12 @@ section.ee nav ul h1 {
     overflow: hidden;
 
     font: 700 17px system-ui
+}
+
+section.ee nav>a {
+    display: block;
+
+    text-align: center
 }
 
 section.ee>ul {
@@ -98,51 +162,6 @@ section.ee progress::-webkit-progress-value {
     border-radius: inherit;
 
     background-color: #ffffff90
-}
-
-/* nn */
-
-section.nn ul {
-    margin: 15px 35px 35px
-}
-section.nn ul li+li {
-    margin-top: 2cm
-}
-
-section.nn ul li:nth-child(1) :where(h1, h6) {
-    color: var(--blue)
-}
-section.nn ul li:nth-child(2) :where(h1, h6) {
-    color: var(--violet)
-}
-section.nn ul li:nth-child(3) :where(h1, h6) {
-    color: var(--red)
-}
-
-section.nn h1 {
-    text-align: right;
-    font: 700 14px ui-rounded
-}
-
-section.nn menu {
-    margin-top: .5em;
-
-    display: flex;
-    flex-flow: wrap;
-    gap: .5em
-}
-section.nn menu a {
-    flex-grow: 1
-}
-section.nn menu h6 {
-    padding: 8px 10px;
-
-    border-radius: 9px;
-
-    text-align: center;
-    font: 600 14px ui-rounded;
-
-    background-color: var(--gray-3)
 }
 
 /* var */
