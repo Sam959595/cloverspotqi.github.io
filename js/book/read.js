@@ -3,7 +3,7 @@ $(document).ready( () => {
         x.forEach(xx => {
             if (xx.isIntersecting) {
                 setTimeout( () => {
-                    $('section.bb h2')[0].classList.add('cc')
+                    $('section.bb svg')[0].classList.add('cc')
                 }, 800)
             }
         }
@@ -12,8 +12,7 @@ $(document).ready( () => {
         threshold: 1
     })
 
-    let kk = $('section.bb')[0];
-    ll.observe(kk)
+    ll.observe($('section.bb')[0])
 })
 
 window.addEventListener('DOMContentLoaded', () => {
