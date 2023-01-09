@@ -1,3 +1,19 @@
+$(document).ready( () => {
+    let ll = new IntersectionObserver( x => {
+        x.forEach(xx => {
+            if (xx.isIntersecting) {
+                $('section.bb h2')[0].classList.add('cc')
+            }
+        }
+    )}, {
+        rootMargin: '0 0 -90px 0',
+        threshold: 1
+    })
+
+    let kk = $('section.bb')[0];
+    ll.observe(kk)
+})
+
 window.addEventListener('DOMContentLoaded', () => {
     let jj = (x, xx) => {
         let mm;
@@ -39,11 +55,11 @@ window.addEventListener('touchend', () => {
 })
 
 window.addEventListener('touchmove', () => {
-    let vv = $('section.ee'),
-        nn = $('section.ww')
+    let vv = $('section.ee')
+        // nn = $('section.ww')
 
     vv[0].classList.remove('eee')
-    nn[0].classList.remove('www')
+    // nn[0].classList.remove('www')
 })
 
 //
