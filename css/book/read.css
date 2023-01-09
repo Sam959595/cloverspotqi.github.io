@@ -32,7 +32,7 @@ section.ee select {
 
     padding-block: 10px;
 
-    border-radius: 8px;
+    border-radius: 10px;
 
     font: 600 12px system-ui;
 
@@ -139,46 +139,47 @@ section.vv a {
     color: var(--text-5) !important
 }
 
+/* loader */
+
+section.vv img {
+    margin: 1cm auto;
+    
+    width: 50px;
+    height: 50px;
+
+    display: block;
+
+    -webkit-filter: drop-shadow(0 0 10px #00aaff50);
+
+    animation: uu linear 5s infinite
+}
+
+@keyframes uu {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
 /* bb */
 
 section.bb {
-    margin: 9cm calc(1cm + 35px) max(env(safe-area-inset-bottom), 3cm) 1cm;
+    margin: 9cm calc(1cm + 20px) max(env(safe-area-inset-bottom), 3cm) 1cm;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    text-align: center;
+    text-align: center
 }
 
-section.bb h1 {
-    font: 700 14px system-ui
-}
-section.bb a {
-    opacity: .5;
-
-    display: block;
-
-    color: var(--gray)
-}
-
-section.bb h2 {
-    margin-right: 10px;
-
-    width: 25px;
-
-    display: none;
-
-    font-size: 3vh;
-
-    animation: xx 1s paused
-}
 section.bb svg {
     margin-right: 10px;
 
     animation: xx 1s paused
 }
-
 @keyframes xx {
     0% {
         opacity: 0;
@@ -204,9 +205,34 @@ section.bb svg {
         transform: scale(1)
     }
 }
-
 .cc {
     animation-play-state: running !important
+}
+
+section.bb h1 {
+    font: 700 12px system-ui;
+
+    color: var(--green)
+}
+
+/* ee */
+
+section.tt ul {
+    margin-inline: 1cm;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5em
+}
+section.tt li {
+    border-radius: 10px;
+
+    padding-block: .3em;
+
+    text-align: center;
+    font: 600 24px system-ui;
+
+    background-color: var(--soft)
 }
 
 /* mm */
