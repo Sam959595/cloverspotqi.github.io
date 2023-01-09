@@ -2,11 +2,13 @@ $(document).ready( () => {
     let ll = new IntersectionObserver( x => {
         x.forEach(xx => {
             if (xx.isIntersecting) {
-                $('section.bb h2')[0].classList.add('cc')
+                setTimeout( () => {
+                    $('section.bb h2')[0].classList.add('cc')
+                }, 800)
             }
         }
     )}, {
-        rootMargin: '0 0 -90px 0',
+        //rootMargin: '0 0 -90px 0',
         threshold: 1
     })
 
