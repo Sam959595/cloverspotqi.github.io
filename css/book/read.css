@@ -191,8 +191,14 @@ section.bb svg {
     60% {
         transform: scale(0.9)
     }
-    80% {
+    70% {
         transform: scale(1.1)
+    }
+    80% {
+        transform: scale(0.95)
+    }
+    90% {
+        transform: scale(1.05)
     }
     100% {
         transform: scale(1)
