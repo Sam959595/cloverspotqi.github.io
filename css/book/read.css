@@ -167,7 +167,14 @@ section.bb h2 {
 
     width: 25px;
 
+    display: none;
+
     font-size: 3vh;
+
+    animation: xx 1s paused
+}
+section.bb svg {
+    margin-right: 10px;
 
     animation: xx 1s paused
 }
