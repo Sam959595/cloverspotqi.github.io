@@ -142,7 +142,7 @@ section.vv a {
 /* bb */
 
 section.bb {
-    margin: 7cm 1cm;
+    margin-block: 5cm;
 
     height: 50px;
 
@@ -155,7 +155,7 @@ section.bb h6 {
     opacity: 0;
     position: absolute;
 
-    font-weight: 700;
+    font: 800 17px ui-rounded;
 
     transition: opacity 2s ease
 }
