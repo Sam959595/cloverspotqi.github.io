@@ -16,7 +16,7 @@ $(document).ready( () => {
                     $('section.bb svg')[0].style.animationPlayState = 'running';
 
                     setTimeout( () => {
-                        $('section.bb svg')[0].style.cssText = 'width: 20px; transform: translateX(-135px); fill: var(--gray)';
+                        $('section.bb svg')[0].style.cssText = 'width: 30px; transform: translateX(-80px); fill: var(--gray)';
                         $('section.bb h6')[0].style.opacity = '1';
                     }, 2000)
                 }, 800)
