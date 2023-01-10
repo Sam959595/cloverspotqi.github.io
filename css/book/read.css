@@ -139,34 +139,14 @@ section.vv a {
     color: var(--text-5) !important
 }
 
-/* loader */
-
-section.vv img {
-    margin: 1cm auto;
-    
-    width: 50px;
-    height: 50px;
-
-    display: block;
-
-    -webkit-filter: drop-shadow(0 0 10px #00aaff50);
-
-    animation: uu linear 5s infinite
-}
-
-@keyframes uu {
-    0% {
-        transform: rotate(0deg)
-    }
-    100% {
-        transform: rotate(360deg)
-    }
-}
-
 /* bb */
 
 section.bb {
-    margin: 9cm calc(1cm + 20px) max(env(safe-area-inset-bottom), 3cm) 1cm;
+    position: relative;
+
+    margin: 7cm 1cm max(env(safe-area-inset-bottom), 7cm);
+
+    height: 91px;
 
     display: flex;
     align-items: center;
@@ -174,10 +154,13 @@ section.bb {
 
     text-align: center
 }
+section.bb>* {
+    position: absolute;
+
+    transition: opacity ease 1s
+}
 
 section.bb svg {
-    margin-right: 10px;
-
     animation: xx 1s paused
 }
 @keyframes xx {
@@ -209,27 +192,20 @@ section.bb svg {
     animation-play-state: running !important
 }
 
-section.bb h1 {
-    font: 700 12px system-ui;
+section.bb ul {
+    opacity: 0;
 
-    color: var(--green)
-}
-
-/* ee */
-
-section.tt ul {
-    margin-inline: 1cm;
+    width: -webkit-fill-available;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: .5em
 }
-section.tt li {
+section.bb li {
     border-radius: 10px;
 
     padding-block: .3em;
 
-    text-align: center;
     font: 600 24px system-ui;
 
     background-color: var(--soft)
