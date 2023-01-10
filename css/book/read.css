@@ -142,73 +142,60 @@ section.vv a {
 /* bb */
 
 section.bb {
-    position: relative;
+    margin: 7cm 1cm;
 
-    margin: 7cm 1cm max(env(safe-area-inset-bottom), 7cm);
-
-    height: 91px;
+    height: 50px;
 
     display: flex;
     align-items: center;
-    justify-content: center;
-
-    text-align: center
+    justify-content: center
 }
-section.bb>* {
+
+section.bb h6 {
+    opacity: 0;
     position: absolute;
 
-    transition: opacity ease 1s
+    font-weight: 700;
+
+    transition: opacity 2s ease
 }
 
 section.bb svg {
+    transition: width 1s ease, transform .8s ease, fill 1s ease;
+
     animation: xx 1s paused
 }
+
 @keyframes xx {
     0% {
         opacity: 0;
         transform: scale(0)
     }
+
     50% {
         opacity: 1;
         transform: scale(1.3)
     }
+
     60% {
         transform: scale(0.9)
     }
+
     70% {
         transform: scale(1.1)
     }
+
     80% {
         transform: scale(0.95)
     }
+
     90% {
         transform: scale(1.05)
     }
+
     100% {
         transform: scale(1)
     }
-}
-.cc {
-    animation-play-state: running !important
-}
-
-section.bb ul {
-    opacity: 0;
-
-    width: -webkit-fill-available;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: .5em
-}
-section.bb li {
-    border-radius: 10px;
-
-    padding-block: .3em;
-
-    font: 600 24px system-ui;
-
-    background-color: var(--soft)
 }
 
 /* mm */
