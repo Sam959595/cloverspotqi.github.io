@@ -1,14 +1,28 @@
 $(document).ready( () => {
+    let aa = new Audio()
+
+    aa.preload = 'auto';
+    aa.src = 'https://noisefx.ru/noise_base/priroda/pogoda/00217.mp3';
+    aa.loop = 'true';
+    aa.volume = 0.5;
+    aa.play()
+})
+
+$(document).ready( () => {
     let ll = new IntersectionObserver( x => {
         x.forEach(xx => {
             if (xx.isIntersecting) {
                 setTimeout( () => {
                     $('section.bb svg')[0].classList.add('cc')
+
+                    setTimeout( () => {
+                        $('section.bb svg')[0].style.opacity = '0';
+                        $('section.bb ul')[0].style.opacity = '1';
+                    }, 3000)
                 }, 800)
             }
         }
     )}, {
-        //rootMargin: '0 0 -90px 0',
         threshold: 1
     })
 
