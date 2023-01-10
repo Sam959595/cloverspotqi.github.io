@@ -13,12 +13,12 @@ $(document).ready( () => {
         x.forEach(xx => {
             if (xx.isIntersecting) {
                 setTimeout( () => {
-                    $('section.bb svg')[0].classList.add('cc')
+                    $('section.bb svg')[0].style.animationPlayState = 'running';
 
                     setTimeout( () => {
-                        $('section.bb svg')[0].style.opacity = '0';
-                        $('section.bb ul')[0].style.opacity = '1';
-                    }, 3000)
+                        $('section.bb svg')[0].style.cssText = 'width: 20px; transform: translateX(-135px); fill: var(--gray)';
+                        $('section.bb h6')[0].style.opacity = '1';
+                    }, 2000)
                 }, 800)
             }
         }
