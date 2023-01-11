@@ -142,7 +142,11 @@ section.vv a {
 /* bb */
 
 section.bb {
-    margin-block: 5cm;
+    z-index: 1;
+    position: fixed;
+    inset: 0 0 auto;
+
+    margin-top: 2cm;
 
     height: 50px;
 
