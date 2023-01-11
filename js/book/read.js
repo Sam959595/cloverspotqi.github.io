@@ -17,7 +17,7 @@ $(document).ready( () => {
 
                     setTimeout( () => {
                         $('section.bb svg')[0].style.cssText = 'width: 30px; transform: translateX(-80px); fill: var(--gray)';
-                        $('section.bb h6')[0].style.opacity = '1';
+                        $('section.bb h2')[0].style.opacity = '1';
                     }, 2000)
                 }, 800)
             }
