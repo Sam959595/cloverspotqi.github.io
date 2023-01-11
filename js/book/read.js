@@ -13,11 +13,25 @@ $(document).ready( () => {
         x.forEach(xx => {
             if (xx.isIntersecting) {
                 setTimeout( () => {
+                    $('section.vv')[0].style.cssText = 'opacity: .1; transition: opacity .5s ease';
                     $('section.bb svg')[0].style.animationPlayState = 'running';
 
                     setTimeout( () => {
                         $('section.bb svg')[0].style.cssText = 'width: 30px; transform: translateX(-80px); fill: var(--gray)';
                         $('section.bb h2')[0].style.opacity = '1';
+
+                        let zz = q => {
+                            q.preventDefault();
+
+                            document.addEventListener('wheel', zz, {
+                                passive: false
+                            });
+                        }
+
+                        setTimeout( () => {
+                            $('section.vv')[0].style.opacity = '';
+                            $('section.bb')[0].style.cssText = 'opacity: 0; transition: opacity .5s ease';
+                        }, 5000)
                     }, 2000)
                 }, 800)
             }
@@ -26,7 +40,7 @@ $(document).ready( () => {
         threshold: 1
     })
 
-    ll.observe($('section.bb')[0])
+    ll.observe($('#rr')[0])
 })
 
 window.addEventListener('DOMContentLoaded', () => {
