@@ -1,14 +1,4 @@
 $(document).ready( () => {
-    let aa = new Audio()
-
-    aa.preload = 'auto';
-    aa.src = 'https://noisefx.ru/noise_base/priroda/pogoda/00217.mp3';
-    aa.loop = 'true';
-    aa.volume = 0.5;
-    aa.play()
-})
-
-$(document).ready( () => {
     let ll = new IntersectionObserver( x => {
         x.forEach(xx => {
             if (xx.isIntersecting) {
@@ -170,7 +160,7 @@ window.addEventListener('change', () => {
         nn.classList.add('qqq')
         nn.classList.remove('rrr', 'ttt', 'kkk')
 
-        $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#f2f2f9')
+        $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#f6efe5')
         $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#51545c')
     }
 })
