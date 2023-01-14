@@ -1,3 +1,4 @@
+// all, inset inner
 window.addEventListener('DOMContentLoaded', () => {
     let bb = window.innerWidth,
         nn = window.innerHeight,
@@ -7,8 +8,33 @@ window.addEventListener('DOMContentLoaded', () => {
     mm.innerHTML = ':root{--screen-x:' + bb + 'px; --screen-y:' + nn + 'px}'
 })
 
+// start, lazy load image
+$(document).ready( () => {
+    let ll = new IntersectionObserver( (a, b) => {
+        a.forEach( x => {
+            if (x.isIntersecting) {
+                let mm = new Image();
+                mm.src = x.target.dataset.img;
+                mm.onload = () => {
+                    x.target.setAttribute('style', 'background-image: url(\'' + x.target.dataset.img + '\')');
+                    x.target.removeAttribute('data-img')
+                }
+
+                b.unobserve(x.target);
+            }
+        })
+    }, {
+        threshold: 0
+    });
+    
+    document.querySelectorAll('[data-img]').forEach( a => {
+        ll.observe(a);
+    });
+})
+
+// start, tags inset background
 window.addEventListener('DOMContentLoaded', () => {
-    let d = $('#yy'),
+    let d = $('section.ee nav ul h1'),
         a = $('html'),
         b = $('body'),
         c = $('section.nn')
@@ -20,6 +46,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 })
 
+// start, tags
 window.addEventListener('DOMContentLoaded', () => {
     let jj = (x, xx) => {
         let mm;
@@ -29,6 +56,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 mm = null;
                 e.stopPropagation();
                 xx(e.target);
+                // xx()
             }, 800);
         });
 
@@ -56,6 +84,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 })
 
+// author, button follow
 window.addEventListener('DOMContentLoaded', () => {
     let a = $('section.ww figcaption button')
 
@@ -65,6 +94,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 })
 
+// library, buttom edit
 window.addEventListener('DOMContentLoaded', () => {
     let a = $('section.ee ul>button')
 
@@ -74,6 +104,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 })
 
+// book, heart like
 window.addEventListener('touchstart', x => {
     let a = $('section.pp')
 
@@ -86,25 +117,27 @@ window.addEventListener('touchstart', x => {
     }
 })
 
+// all, back library
 window.addEventListener('touchstart', x => {
     if (x.targetTouches.length === 2) {
         location.href = 'https://sam959595.github.io/cloverspotqi.github.io/book-library.html'
     }
 })
 
+// book, comment hide tap
 window.onload = () => {
-    let jj = q => {
+    let jj = x => {
         let cc;
 
         if (cc) {
             cc.classList.add('uu');
         }
-        cc = q;
+        cc = x;
         cc.classList.add('uu');
     }
 
-    $('#tt')[0].onclick = x => {
-        let aa = x.target;
+    $('#tt')[0].onclick = xx => {
+        let aa = xx.target;
 
         while (aa != this) {
             if (aa.tagName == 'H6') {
