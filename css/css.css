@@ -1,7 +1,6 @@
-html {
-	touch-action: pan-x pan-y
-}
 * {
+	touch-action: pan-x pan-y;
+	
 	margin: 0;
 	padding: 0;
 
@@ -19,11 +18,8 @@ html {
 	-webkit-user-select: none
 }
 
-*:not(li a) {
-	-webkit-touch-callout: none
-}
-
 a {
+	-webkit-touch-callout: none;
 	-webkit-user-drag: none
 }
 
@@ -103,7 +99,7 @@ time {
 	cursor: default
 }
 
-input[type="submit"],
+input[type=submit],
 a,
 button,
 select,
