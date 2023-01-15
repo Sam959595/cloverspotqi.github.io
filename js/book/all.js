@@ -71,40 +71,10 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 // start, tags
-window.addEventListener('DOMContentLoaded', () => {
-    let jj = (x, xx) => {
-        let mm;
+window.addEventListener('click', () => {
+    let a = $('section.nn svg')
 
-        x.addEventListener('touchstart', e => {
-            mm = setTimeout(() => {
-                mm = null;
-                e.stopPropagation();
-                xx(e.target);
-                // xx()
-            }, 800);
-        });
-
-        x.addEventListener('contextmenu', e => {
-            e.preventDefault();
-        });
-
-        x.addEventListener('touchend', () => {
-            if (mm) clearTimeout(mm);
-        });
-
-        x.addEventListener('touchmove', () => {
-            if (mm) clearTimeout(mm);
-        });
-
-        // let bb = () => {
-        //     clearTimeout(mm);
-        // }
-
-        // x.addEventListener('touchend', bb);
-        // x.addEventListener('touchmove', bb);
-    }
-
-    jj($('section.nn')[0], () => {
+    a.click( () => {
         let a = $('html'),
             b = $('body'),
             c = $('section.nn');
@@ -116,10 +86,10 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 // author, button follow
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('click', () => {
     let a = $('section.ww figcaption button')
 
-    a.click(() => {
+    a.click( () => {
         (a[0].textContent === 'В ЧИТАТЕЛИ') ? a[0].textContent = 'ЧИТАЮ' : a[0].textContent = 'В ЧИТАТЕЛИ';
         (a[0].textContent === 'В ЧИТАТЕЛИ') ? a[0].classList.toggle('aa') : a[0].classList.toggle('aa')
     })
@@ -127,7 +97,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // library, buttom edit
 window.addEventListener('DOMContentLoaded', () => {
-    let a = $('section.ee ul>button')
+    let a = $('section.ee>button')
 
     a.click(() => {
         $('section.ee')[0].classList.toggle('gg');
