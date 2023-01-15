@@ -225,6 +225,11 @@ section.mm li:first-child figcaption h6 {
     font-size: 14px
 }
 
+section.mm li:first-child figcaption a {
+    border-radius: 100%;
+
+    border: 2px solid var(--link)
+}
 section.mm li:first-child figcaption img {
     padding: 3px;
 
@@ -233,9 +238,7 @@ section.mm li:first-child figcaption img {
     object-fit: cover;
     aspect-ratio: 1;
 
-    border-radius: 100%;
-
-    border: 2px solid var(--link)
+    border-radius: inherit
 }
 
 /* mm li last */
@@ -321,6 +324,11 @@ section.mm li:last-child time {
     margin-right: .8em
 }
 
+section.mm li:last-child li a {
+    border-radius: 100%;
+
+    border: 2px solid var(--link)
+}
 section.mm li:last-child img {
     padding: 2px;
 
@@ -329,9 +337,7 @@ section.mm li:last-child img {
     object-fit: cover;
     aspect-ratio: 1;
 
-    border-radius: 100%;
-
-    border: 2px solid var(--link)
+    border-radius: inherit
 }
 
 .ll {
