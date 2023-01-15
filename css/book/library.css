@@ -53,10 +53,10 @@ section.ee ul {
     gap: 2em
 }
 
-:where([data-url], [data-src]) {
+[data-url], [data-src] {
     opacity: 0
 }
-:where([style], [src]) {
+[style], [src] {
     opacity: 1;
 
     transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
@@ -86,6 +86,9 @@ section.ee a>div {
 }
 
 section.ee a button {
+    opacity: 0;
+    pointer-events: none;
+    
     width: 23px;
     height: 23px;
 
@@ -95,22 +98,23 @@ section.ee a button {
     box-shadow: 0 0 10px #00000020;
 
     transform: scale(0);
-    transition: transform .5s ease
-}
-.gg a button {
-    pointer-events: none;
-    
-    transform: scale(1) !important
+    transition: opacity .3s, transform .5s ease
 }
 section.ee a button div {
     margin: auto;
     
-    width: 14px;
-    height: 2.8px;
+    width: 15px;
+    height: 3px;
 
     border-radius: 1.3px;
 
     background-color: var(--red-3)
+}
+.gg a button {
+    opacity: 1 !important;
+    pointer-events: initial !important;
+    
+    transform: scale(1) !important
 }
 
 section.ee h6 {
@@ -121,15 +125,14 @@ section.ee h6 {
     text-shadow: 0 0 10px #00000080
 }
 
-section.ee ul>button {
-    margin-block: 1cm;
+section.ee>button {
+    margin: 38px auto 58px;
 
     border-radius: 15px;
 
     padding: .4em 1em;
 
-    grid-column-end: 2 span;
-    justify-self: center;
+    display: block;
 
     font-weight: 600;
 
@@ -176,6 +179,7 @@ section.ww figcaption.fff {
 }
 section.ww figcaption.fff figure {
     width: 80px;
+    height: 80px;
 
     overflow: hidden;
 
@@ -185,11 +189,12 @@ section.ww figcaption.fff figure {
 }
 
 section.ww figcaption.fff figure a {
-    padding-block: 32px;
+    padding-block: 27px;
 
     display: block;
 
     text-align: center;
+    line-height: 1.1;
 
     background-color: #00000080
 }
