@@ -113,6 +113,15 @@ section.ee>ul {
     gap: 2em
 }
 
+[data-url] {
+    opacity: 0
+}
+[style] {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
+}
+
 section.ee li a {
     aspect-ratio: 1/1.6;
 
@@ -123,15 +132,6 @@ section.ee li a {
     background-size: cover;
 
     box-shadow: 0 5px 10px #00000040
-}
-
-section.ee li a[data-img] {
-    opacity: 0
-}
-section.ee li a[style] {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
 }
 
 section.ee h6 {
