@@ -8,28 +8,52 @@ window.addEventListener('DOMContentLoaded', () => {
     mm.innerHTML = ':root{--screen-x:' + bb + 'px; --screen-y:' + nn + 'px}'
 })
 
-// start, lazy load image
+// all, lazy load image url
 $(document).ready( () => {
     let ll = new IntersectionObserver( (a, b) => {
         a.forEach( x => {
             if (x.isIntersecting) {
                 let mm = new Image();
-                mm.src = x.target.dataset.img;
+                mm.src = x.target.dataset.url;
                 mm.onload = () => {
-                    x.target.setAttribute('style', 'background-image: url(\'' + x.target.dataset.img + '\')');
-                    x.target.removeAttribute('data-img')
-                }
+                    x.target.setAttribute('style', 'background-image: url(\'' + x.target.dataset.url + '\')');
+                    x.target.removeAttribute('data-url')
+                };
 
-                b.unobserve(x.target);
+                b.unobserve(x.target)
             }
         })
     }, {
         threshold: 0
     });
     
-    document.querySelectorAll('[data-img]').forEach( a => {
-        ll.observe(a);
+    document.querySelectorAll('[data-url]').forEach( a => {
+        ll.observe(a)
+    })
+})
+
+// all, lazy load image src
+$(document).ready( () => {
+    let ll = new IntersectionObserver( (a, b) => {
+        a.forEach( x => {
+            if (x.isIntersecting) {
+                let mm = new Image();
+                mm.src = x.target.dataset.src;
+                mm.onload = () => {
+                    x.target.src = x.target.dataset.src;
+                    x.target.removeAttribute('data-src')
+                };
+
+                b.unobserve(x.target)
+            }
+        })
+    }, {
+        threshold: 0
     });
+    
+    document.querySelectorAll('[data-src]').forEach( a => {
+        ll.observe(a)
+    })
 })
 
 // start, tags inset background
@@ -71,6 +95,13 @@ window.addEventListener('DOMContentLoaded', () => {
         x.addEventListener('touchmove', () => {
             if (mm) clearTimeout(mm);
         });
+
+        // let bb = () => {
+        //     clearTimeout(mm);
+        // }
+
+        // x.addEventListener('touchend', bb);
+        // x.addEventListener('touchmove', bb);
     }
 
     jj($('section.nn')[0], () => {
