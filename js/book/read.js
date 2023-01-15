@@ -3,6 +3,7 @@ $(document).ready( () => {
         x.forEach(xx => {
             if (xx.isIntersecting) {
                 setTimeout( () => {
+                    $('section.bb')[0].style.visibility = 'visible';
                     $('section.bb svg')[0].style.animationPlayState = 'running';
                     $('section.vv')[0].style.cssText = 'opacity: 0; transition: opacity .5s ease';
 
@@ -12,11 +13,9 @@ $(document).ready( () => {
 
                         setTimeout( () => {
                             $('section.vv')[0].style.opacity = '';
-                            $('section.bb')[0].style.cssText = 'opacity: 0; transition: opacity .5s ease';
+                            $('section.bb')[0].style.cssText = 'opacity: 0; transition: visibility .5s, opacity .5s ease';
 
-                            if (xx.isIntersecting) {
-                                ll.unobserve($('#rr')[0])
-                            }
+                            ll.unobserve($('#rr')[0])
                         }, 2000)
                     }, 2000)
                 }, 800)
