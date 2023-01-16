@@ -1,21 +1,21 @@
 /* mm */
 
 section.mm {
-    margin-top: var(--padding-2)
+    margin-block: 15px
 }
 
 section.mm>ul {
-    padding-inline: var(--padding-2);
+    padding-inline: 15px;
 
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
-    column-gap: var(--padding-2);
+    column-gap: 15px;
 
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
-    scroll-padding-left: var(--padding-2)
+    scroll-padding-left: 15px
 }
 
 section.mm>ul>li {
@@ -23,8 +23,8 @@ section.mm>ul>li {
 }
 
 section.mm>ul>li>section {
-    width: var(--screen-padding);
-    height: var(--screen-padding-y);
+    width: calc(100vw - 30px);
+    height: -webkit-fill-available;
 
     border-radius: 15px;
 
@@ -37,7 +37,7 @@ section.mm>ul>li>section {
 /* ee */
 
 section.ee > h1 {
-    padding: var(--padding-3);
+    padding: 20px;
 
     text-overflow: ellipsis;
     overflow: hidden;
@@ -46,7 +46,7 @@ section.ee > h1 {
 }
 
 section.ee ul {
-    padding: 0 var(--padding-3) var(--padding-3);
+    padding: 0 20px 20px;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -297,20 +297,6 @@ section.rr p {
     margin-top : 2em;
 
     font-size: 14px
-}
-
-/* var */
-
-:root {
-    --padding: 30px;
-    --padding-2: 15px;
-    --padding-3: 20px;
-    --screen-padding-x: calc(var(--screen-x) - var(--padding) * 2);
-    --screen-padding-y: calc(var(--screen-y) - var(--padding));
-    --screen-padding: calc(var(--screen-x) - var(--padding-2) * 2);
-    --gap: 18px;
-    --li-2: calc(var(--screen-padding) / 2 - (var(--gap) / 2));
-    --li-3: calc(var(--screen-padding) / 3 - (var(--gap) * 2 / 3))
 }
 
 /* color */
