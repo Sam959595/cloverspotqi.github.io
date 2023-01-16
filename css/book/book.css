@@ -189,7 +189,7 @@ section.mm>ul>li:first-child>div>a h6 {
     text-shadow: 0 0 10px #00000080
 }
 
-section.mm li:first-child div figure {
+section.mm li:first-child div>figure {
     margin: 0 20px 20px;
 
     display: flex;
@@ -209,48 +209,101 @@ section.mm li:first-child figure h6 {
 
 /* - */
 
-section.mm>ul>li:first-child div>figcaption {
-    border-radius: 0 0 15px 15px;
-
-    background-color: #00000010
-}
-
 section.mm>ul>li:first-child div>figcaption ul {
-    margin-block: 20px;
+    margin-bottom: 20px;
     padding-inline: 20px;
 
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
     column-gap: 1em;
+    
+    align-items: end;
 
     overflow-x: scroll
 }
 
+section.mm>ul>li:first-child div>figcaption li {
+    text-align: center
+}
+
 section.mm>ul>li:first-child div>figcaption a {
-    width: calc(100vw - 70px);
-    height: 250px;
+    position: relative;
+    width: calc((100vw - 70px) / 2 - (1em / 2));
+    aspect-ratio: 1;
+
+    margin-block: 1em;
 
     border-radius: 10px;
 
-    padding: 1em;
+    padding: .8em;
 
     display: flex;
     flex-flow: column;
-    justify-content: space-between
+    justify-content: space-between;
+
+    text-align: right;
+
+    background-color: var(--soft-2)
+}
+
+section.mm>ul>li:first-child div>figcaption figure {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.mm>ul>li:first-child div>figcaption div {
+    position: inherit;
+    border-radius: 50%;
+
+    background: center/cover
+}
+
+section.mm>ul>li:first-child div>figcaption div:first-child {
+    width: 60px;
+    height: 60px;
+
+    transform: translate(-25px, -25px)
+}
+section.mm>ul>li:first-child div>figcaption div:nth-child(2) {
+    width: 52px;
+    height: 52px;
+
+    transform: translate(30px, 10px)
+}
+section.mm>ul>li:first-child div>figcaption div:nth-child(3) {
+    width: 20px;
+    height: 20px;
+
+    transform: translate(25px, -35px)
+}
+section.mm>ul>li:first-child div>figcaption div:nth-child(4) {
+    width: 35px;
+    height: 35px;
+
+    transform: translate(-20px, 30px)
 }
 
 section.mm>ul>li:first-child div>figcaption h1 {
-    text-align: right;
-    font: 600 13px system-ui
+    font-size: 14px
 }
 section.mm>ul>li:first-child div>figcaption h2 {
-    opacity: .8;
-
-    font-weight: 600;
+    opacity: .2;
+    
+    font: 700 13px ui-rounded
 }
-section.mm>ul>li:first-child div>figcaption a * {
-    color: white
+
+section.mm>ul>li:first-child div>figcaption li>h1 {
+    font: 600 11px system-ui
+}
+
+section.mm>ul>li:first-child div>figcaption li button {
+    font: 800 13px system-ui;
+
+    background: none
 }
 
 /* - */
