@@ -31,6 +31,45 @@ section.pp svg {
     transition: opacity .5s !important
 }
 
+/* rr */
+
+section.rr {
+    z-index: 1;
+    position: fixed;
+    inset: 0 0 auto;
+
+    padding: var(--padding-2);
+
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+
+    background: linear-gradient(var(--gray-a), var(--soft))
+}
+
+section.rr ul {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 5px
+}
+section.rr li {
+    border-radius: 10px;
+
+    padding-block: .9em .5em;
+
+    text-align: center;
+
+    background-color: var(--soft-2)
+}
+
+section.rr h1 {
+    opacity: .3;
+
+    margin-top: var(--padding-2);
+
+    text-align: center;
+
+    font: 600 11px system-ui
+}
+
 /* mm */
 
 section.mm {
@@ -74,7 +113,7 @@ section.mm>ul>li:first-child>div {
     background-color: var(--gray-15)
 }
 
-section.mm li:first-child>div ul {
+section.mm li:first-child>div>ul {
     margin-top: var(--padding-3);
 
     display: grid;
@@ -84,17 +123,17 @@ section.mm li:first-child>div ul {
     overflow-x: scroll
 }
 
-section.mm li:first-child>div li {
+section.mm li:first-child>div>ul li {
     padding-inline: var(--padding-3);
 
     text-align: center
 }
 
-section.mm li:first-child>div li+li {
+section.mm li:first-child>div>ul li+li {
     border-left: .1px solid var(--gray-3)
 }
 
-section.mm li:first-child>div ul h1 {
+section.mm li:first-child>div>ul h1 {
     font: 700 17px ui-rounded
 }
 
@@ -150,7 +189,7 @@ section.mm>ul>li:first-child>div>a h6 {
     text-shadow: 0 0 10px #00000080
 }
 
-section.mm li:first-child figure {
+section.mm li:first-child div figure {
     margin: 0 var(--padding-3) var(--padding-3);
 
     display: flex;
@@ -168,6 +207,54 @@ section.mm li:first-child figure h6 {
     color: var(--gray-15)
 }
 
+/* - */
+
+section.mm>ul>li:first-child div>figcaption {
+    border-radius: 0 0 15px 15px;
+
+    background-color: #00000010
+}
+
+section.mm>ul>li:first-child div>figcaption ul {
+    margin-block: var(--padding-3);
+    padding-inline: var(--padding-3);
+
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    column-gap: 1em;
+
+    overflow-x: scroll
+}
+
+section.mm>ul>li:first-child div>figcaption a {
+    width: 250px;
+    height: 380px;
+
+    border-radius: 10px;
+
+    padding: 1em;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between
+}
+
+section.mm>ul>li:first-child div>figcaption h1 {
+    text-align: right;
+    font: 600 14px system-ui
+}
+section.mm>ul>li:first-child div>figcaption h2 {
+    opacity: .8;
+
+    font-weight: 600;
+}
+section.mm>ul>li:first-child div>figcaption a * {
+    color: white
+}
+
+/* - */
+
 section.mm>ul>li:first-child>h6 {
     margin-top: 10px;
 
@@ -180,7 +267,9 @@ section.mm>ul>li:first-child>h6 {
     background-color: var(--gray-15)
 }
 
-section.mm li:first-child figcaption {
+/* - */
+
+section.mm li:first-child>figcaption {
     margin-top: 10px;
 
     border-radius: 15px;
@@ -196,7 +285,7 @@ section.mm li:first-child figcaption {
     background-color: var(--gray-15)
 }
 
-section.mm li:first-child figcaption h1 {
+section.mm li:first-child>figcaption h1 {
     pointer-events: none;
     opacity: 1;
 
@@ -227,7 +316,7 @@ section.mm li:first-child figcaption h6 {
     font-size: 14px
 }
 
-section.mm li:first-child figcaption a {
+section.mm li:first-child>figcaption a {
     width: 54px;
     height: 54px;
 
@@ -292,7 +381,7 @@ section.mm li:last-child ul h6 {
     margin-bottom: .8em;
 
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
 
