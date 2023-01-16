@@ -1,14 +1,4 @@
-// all, inset inner
-window.addEventListener('DOMContentLoaded', () => {
-    let bb = window.innerWidth,
-        nn = window.innerHeight,
-        mm = document.createElement('style')
-
-    document.head.append(mm)
-    mm.innerHTML = ':root{--screen-x:' + bb + 'px; --screen-y:' + nn + 'px}'
-})
-
-// all, lazy load image url
+// all, lazy load image url(a)
 $(document).ready( () => {
     let ll = new IntersectionObserver( (a, b) => {
         a.forEach( x => {
@@ -32,7 +22,7 @@ $(document).ready( () => {
     })
 })
 
-// all, lazy load image src
+// all, lazy load image src(img)
 $(document).ready( () => {
     let ll = new IntersectionObserver( (a, b) => {
         a.forEach( x => {
@@ -101,7 +91,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     a.click(() => {
         $('section.ee')[0].classList.toggle('gg');
-        (a[0].textContent === 'ПРАВИТЬ') ? a[0].textContent = 'ОТМЕНИТЬ' : a[0].textContent = 'ПРАВИТЬ';
+        (a[0].textContent === 'ПРАВИТЬ') ? a[0].textContent = 'ГОТОВО' : a[0].textContent = 'ПРАВИТЬ';
     })
 })
 
