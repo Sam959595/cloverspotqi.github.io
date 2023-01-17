@@ -134,10 +134,6 @@ img {
 	vertical-align: top
 }
 
-::-webkit-scrollbar {
-	display: none
-}
-
 body {
 	background-color: var(--gray-a)
 }
@@ -164,4 +160,8 @@ a,
 select,
 button {
 	color: var(--link)
+}
+
+::-webkit-scrollbar {
+	display: none
 }
