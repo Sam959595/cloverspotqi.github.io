@@ -276,7 +276,7 @@ section.ee h2 {
 
 section.ee li>h1 {
     text-align: center;
-    font: 600 11px system-ui
+    font-weight: 600
 }
 
 section.ee li button {
@@ -288,7 +288,7 @@ section.ee li button {
 
     display: block;
 
-    font: 800 13px system-ui;
+    font: 700 13px system-ui;
 
     background-color: var(--gray-15)
 }
