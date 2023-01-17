@@ -73,8 +73,8 @@ section.rr h1 {
 /* kk */
 
 section.kk {
-    z-index: 0;
-    position: static;
+    z-index: 1;
+    position: absolute;
     inset: 0 0 auto;
 
     padding: 10px 35px 20px;
@@ -99,11 +99,27 @@ section.kk h1 {
     font-size: 17px
 }
 
+/* hh */
+
+section.hh {
+    pointer-events: none;
+
+    position: fixed;
+    inset: 0 0 auto;
+
+    margin: 15px 15px 0;
+
+    height: -webkit-fill-available;
+
+    border-radius: 15px 15px 0 0;
+
+    box-shadow: 0 -15px 0 15px var(--gray-a)
+}
+
 /* mm */
 
 section.mm {
-    z-index: 1;
-    margin: 0 15px 10px;
+    margin: 60px 15px 10px;
 
     border-radius: 15px;
 
