@@ -70,41 +70,41 @@ section.rr h1 {
     font: 600 11px system-ui
 }
 
+/* kk */
+
+section.kk {
+    z-index: 0;
+    position: static;
+    inset: 0 0 auto;
+
+    padding: 10px 35px 20px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 10px
+}
+
+section.kk a {
+    width: 30px;
+    height: 30px;
+
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+
+    background: center/cover
+}
+
+section.kk h1 {
+    font-size: 17px
+}
+
 /* mm */
 
 section.mm {
-    margin-block: 15px
-}
+    z-index: 1;
+    margin: 0 15px 10px;
 
-section.mm>ul {
-    padding-inline: 15px;
-
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 15px;
-
-    overflow-x: scroll;
-
-    scroll-snap-type: x mandatory;
-    scroll-padding-left: 15px
-}
-
-section.mm>ul>li {
-    width: calc(100vw - 30px);
-    height: -webkit-fill-available;
-
-    border-radius: 15px;
-
-    contain: paint;
-
-    overflow-y: scroll;
-
-    scroll-snap-align: start
-}
-
-/* mm li first */
-
-section.mm>ul>li:first-child>div {
     border-radius: 15px;
 
     display: flex;
@@ -113,7 +113,7 @@ section.mm>ul>li:first-child>div {
     background-color: var(--gray-15)
 }
 
-section.mm li:first-child>div>ul {
+section.mm ul {
     margin-top: 20px;
 
     display: grid;
@@ -123,25 +123,25 @@ section.mm li:first-child>div>ul {
     overflow-x: scroll
 }
 
-section.mm li:first-child>div>ul li {
+section.mm ul li {
     padding-inline: 20px;
 
     text-align: center
 }
 
-section.mm li:first-child>div>ul li+li {
+section.mm ul li+li {
     border-left: .1px solid var(--gray-3)
 }
 
-section.mm li:first-child>div>ul h1 {
+section.mm ul h1 {
     font: 700 17px ui-rounded
 }
 
-section.mm li:first-child>div ul h3 {
+section.mm ul h3 {
     font: 700 12px ui-rounded
 }
 
-section.mm li:first-child>div ul h6 {
+section.mm ul h6 {
     padding-bottom: .8em;
 
     font: 600 10px system-ui;
@@ -150,7 +150,7 @@ section.mm li:first-child>div ul h6 {
     color: var(--gray-2)
 }
 
-section.mm li:first-child>div ul p {
+section.mm ul p {
     font-size: 10px
 }
 
@@ -163,7 +163,7 @@ section.mm li:first-child>div ul p {
     transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
 }
 
-section.mm>ul>li:first-child>div>a {
+section.mm>a {
     margin: 30% auto;
 
     width: 180px;
@@ -179,7 +179,7 @@ section.mm>ul>li:first-child>div>a {
     box-shadow: 0 5px 10px #00000040
 }
 
-section.mm>ul>li:first-child>div>a h6 {
+section.mm>a h6 {
     margin: auto .8em .8em auto;
 
     font: 600 13px ui-rounded;
@@ -189,15 +189,15 @@ section.mm>ul>li:first-child>div>a h6 {
     text-shadow: 0 0 10px #00000080
 }
 
-section.mm li:first-child div>figure {
-    margin: 0 20px 20px;
+section.mm div {
+    margin: 20px;
 
     display: flex;
     flex-flow: wrap;
     gap: .5em
 }
 
-section.mm li:first-child figure h6 {
+section.mm div h6 {
     padding: 4px 10px;
 
     border-radius: 7px;
@@ -207,29 +207,30 @@ section.mm li:first-child figure h6 {
     color: var(--gray-15)
 }
 
-/* - */
+/* ee */
 
-section.mm>ul>li:first-child div>figcaption ul {
-    margin-bottom: 20px;
-    padding-inline: 20px;
+section.ee ul {
+    margin-block: 10px;
+    padding-inline: 15px;
 
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
-    column-gap: 1em;
+    column-gap: .5em;
     
     align-items: end;
 
     overflow-x: scroll
 }
 
-section.mm>ul>li:first-child div>figcaption li {
+section.ee li {
     text-align: center
 }
 
-section.mm>ul>li:first-child div>figcaption a {
+section.ee a {
     position: relative;
-    width: calc((100vw - 70px) / 2 - (1em / 2));
+    
+    width: calc((100vw - 30px) / 2 - (.8em / 2));
     aspect-ratio: 1;
 
     margin-block: 1em;
@@ -244,10 +245,10 @@ section.mm>ul>li:first-child div>figcaption a {
 
     text-align: right;
 
-    background-color: var(--soft-2)
+    background-color: var(--gray-15)
 }
 
-section.mm>ul>li:first-child div>figcaption figure {
+section.ee figure {
     position: absolute;
     inset: 0;
 
@@ -255,61 +256,61 @@ section.mm>ul>li:first-child div>figcaption figure {
     align-items: center;
     justify-content: center;
 }
-section.mm>ul>li:first-child div>figcaption div {
+section.ee div {
     position: inherit;
     border-radius: 50%;
 
     background: center/cover
 }
 
-section.mm>ul>li:first-child div>figcaption div:first-child {
+section.ee div:first-child {
     width: 60px;
     height: 60px;
 
     transform: translate(-25px, -25px)
 }
-section.mm>ul>li:first-child div>figcaption div:nth-child(2) {
+section.ee div:nth-child(2) {
     width: 52px;
     height: 52px;
 
     transform: translate(30px, 10px)
 }
-section.mm>ul>li:first-child div>figcaption div:nth-child(3) {
+section.ee div:nth-child(3) {
     width: 20px;
     height: 20px;
 
     transform: translate(25px, -35px)
 }
-section.mm>ul>li:first-child div>figcaption div:nth-child(4) {
+section.ee div:nth-child(4) {
     width: 35px;
     height: 35px;
 
     transform: translate(-20px, 30px)
 }
 
-section.mm>ul>li:first-child div>figcaption h1 {
-    font-size: 14px
+section.ee h1 {
+    font-size: 17px
 }
-section.mm>ul>li:first-child div>figcaption h2 {
+section.ee h2 {
     opacity: .2;
     
     font: 700 13px ui-rounded
 }
 
-section.mm>ul>li:first-child div>figcaption li>h1 {
+section.ee li>h1 {
     font: 600 11px system-ui
 }
 
-section.mm>ul>li:first-child div>figcaption li button {
+section.ee li button {
     font: 800 13px system-ui;
 
     background: none
 }
 
-/* - */
+/* tt */
 
-section.mm>ul>li:first-child>h6 {
-    margin-top: 10px;
+section.tt h6 {
+    margin: 10px 15px;
 
     border-radius: 15px;
 
@@ -320,10 +321,10 @@ section.mm>ul>li:first-child>h6 {
     background-color: var(--gray-15)
 }
 
-/* - */
+/* vv */
 
-section.mm li:first-child>figcaption {
-    margin-top: 10px;
+section.vv {
+    margin: 10px 15px 15px;
 
     border-radius: 15px;
 
@@ -338,7 +339,7 @@ section.mm li:first-child>figcaption {
     background-color: var(--gray-15)
 }
 
-section.mm li:first-child>figcaption h1 {
+section.vv h1 {
     pointer-events: none;
     opacity: 1;
 
@@ -358,7 +359,7 @@ section.mm li:first-child>figcaption h1 {
     opacity: 0 !important
 }
 
-section.mm li:first-child figcaption h6 {
+section.vv h6 {
     margin-right: .8em;
 
     display: -webkit-box;
@@ -369,7 +370,7 @@ section.mm li:first-child figcaption h6 {
     font-size: 14px
 }
 
-section.mm li:first-child>figcaption a {
+section.vv a {
     width: 54px;
     height: 54px;
 
@@ -378,107 +379,6 @@ section.mm li:first-child>figcaption a {
     border-radius: 100%;
     
     background: center/cover
-}
-
-/* mm li last */
-
-section.mm>ul>li:last-child {
-    background-color: var(--gray-15)
-}
-
-section.mm>ul>li:last-child>div {
-    margin: 20px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between
-}
-
-section.mm li:last-child>div h1 {
-    text-overflow: ellipsis;
-    overflow: hidden;
-
-    font: 700 17px system-ui
-}
-
-section.mm li:last-child>div p {
-    font: 600 17px ui-rounded
-}
-
-section.mm>ul>li:last-child>div a {
-    width: 83px;
-
-    text-align: right;
-    font: 17px system-ui
-}
-
-section.mm li:last-child ul {
-    padding: 0 10px 10px;
-
-    display: grid;
-    row-gap: 10px
-}
-
-section.mm li:last-child ul li {
-    padding: 1.5em 1.5em .8em;
-
-    border-radius: 10px;
-
-    background-color: var(--soft-2)
-}
-
-section.mm li:last-child ul h6 {
-    pointer-events: auto;
-    cursor: default;
-
-    margin-bottom: .8em;
-
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-
-    font-size: 14px;
-
-    color: var(--gray-2)
-}
-
-.uu {
-    -webkit-line-clamp: initial !important
-}
-
-section.mm li:last-child li div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between
-}
-
-section.mm li:last-child h4 {
-    font: 600 14px ui-rounded
-}
-
-section.mm li:last-child time {
-    opacity: .5;
-
-    margin-right: .8em
-}
-
-section.mm li:last-child li a {
-    width: 42px;
-
-    aspect-ratio: 1;
-
-    border-radius: 100%;
-
-    background: center/cover
-}
-
-.ll {
-    background-color: #4dcc9730 !important
-}
-
-.ll *:not(h4) {
-    color: var(--green) !important
 }
 
 /* color */
