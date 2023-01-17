@@ -7,11 +7,11 @@
 	box-sizing: border-box;
 
 	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
 
-	font: normal 400 12px/1.33337 system-ui;
+	font: 400 12px/1.33337 system-ui;
 	letter-spacing: 0;
 
-	-webkit-font-smoothing: antialiased;
 	-webkit-tap-highlight-color: transparent
 }
 
