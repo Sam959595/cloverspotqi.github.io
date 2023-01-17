@@ -210,7 +210,7 @@ section.mm div h6 {
 /* ee */
 
 section.ee ul {
-    margin-block: 10px;
+    margin-block: 30px;
     padding-inline: 15px;
 
     display: grid;
@@ -288,7 +288,7 @@ section.ee div:nth-child(4) {
     transform: translate(-20px, 30px)
 }
 
-section.ee h1 {
+section.ee a h1 {
     font-size: 17px
 }
 section.ee h2 {
@@ -302,9 +302,13 @@ section.ee li>h1 {
 }
 
 section.ee li button {
+    border-radius: 15px;
+
+    padding: .4em 1em;
+
     font: 800 13px system-ui;
 
-    background: none
+    background-color: var(--gray-15)
 }
 
 /* tt */
@@ -388,14 +392,14 @@ section.vv a {
         --soft: #f2f2f6aa;
         --soft-2: #00000008;
 
-        --gray-a: white;
+        --gray-a: #f2f2f6;
         --gray-b: black;
 
         --gray: #1d1d1f;
         --gray-2: #8e8e93;
         --gray-3: #d2d2d7;
         --gray-6: #aaaab3;
-        --gray-15: #f2f2f6;
+        --gray-15: white;
 
         --link: #007aff;
 
