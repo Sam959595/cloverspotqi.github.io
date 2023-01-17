@@ -73,7 +73,6 @@ section.rr h1 {
 /* kk */
 
 section.kk {
-    z-index: 1;
     position: absolute;
     inset: 0 0 auto;
 
@@ -95,8 +94,15 @@ section.kk a {
     background: center/cover
 }
 
+section.kk p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+}
+
 section.kk h1 {
-    font-size: 17px
+    font-size: 21px
 }
 
 /* hh */
@@ -127,47 +133,6 @@ section.mm {
     flex-flow: column;
 
     background-color: var(--gray-15)
-}
-
-section.mm ul {
-    margin-top: 20px;
-
-    display: grid;
-    grid-auto-columns: max-content;
-    grid-auto-flow: column;
-
-    overflow-x: scroll
-}
-
-section.mm ul li {
-    padding-inline: 20px;
-
-    text-align: center
-}
-
-section.mm ul li+li {
-    border-left: .1px solid var(--gray-3)
-}
-
-section.mm ul h1 {
-    font: 700 17px ui-rounded
-}
-
-section.mm ul h3 {
-    font: 700 12px ui-rounded
-}
-
-section.mm ul h6 {
-    padding-bottom: .8em;
-
-    font: 600 10px system-ui;
-    letter-spacing: .08em;
-
-    color: var(--gray-2)
-}
-
-section.mm ul p {
-    font-size: 10px
 }
 
 [data-url], [data-src] {
@@ -226,7 +191,7 @@ section.mm div h6 {
 /* ee */
 
 section.ee ul {
-    margin-block: 30px;
+    margin-block: 70px 30px;
     padding-inline: 15px;
 
     display: grid;
@@ -426,6 +391,7 @@ section.vv a {
         --violet: #9283ff;
         --green: #31c692;
         --orange: #fd9900;
+        --slate: #7c8696;
     }
 }
 
@@ -451,5 +417,6 @@ section.vv a {
         --violet: #9283ff;
         --green: #77ffc6;
         --orange: #ff9f00;
+        --slate: #7c8696;
     }
 }
