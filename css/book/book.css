@@ -223,14 +223,10 @@ section.ee ul {
     overflow-x: scroll
 }
 
-section.ee li {
-    text-align: center
-}
-
 section.ee a {
     position: relative;
     
-    width: calc((100vw - 30px) / 2 - (.8em / 2));
+    width: calc((100vw - 30px) / 2 - (.5em / 2));
     aspect-ratio: 1;
 
     margin-block: 1em;
@@ -289,7 +285,7 @@ section.ee div:nth-child(4) {
 }
 
 section.ee a h1 {
-    font-size: 17px
+    font-size: 14px
 }
 section.ee h2 {
     opacity: .2;
@@ -298,13 +294,18 @@ section.ee h2 {
 }
 
 section.ee li>h1 {
+    text-align: center;
     font: 600 11px system-ui
 }
 
 section.ee li button {
+    margin-inline: auto;
+    
     border-radius: 15px;
 
     padding: .4em 1em;
+
+    display: block;
 
     font: 800 13px system-ui;
 
@@ -392,14 +393,14 @@ section.vv a {
         --soft: #f2f2f6aa;
         --soft-2: #00000008;
 
-        --gray-a: #f2f2f6;
+        --gray-a: white;
         --gray-b: black;
 
         --gray: #1d1d1f;
         --gray-2: #8e8e93;
         --gray-3: #d2d2d7;
         --gray-6: #aaaab3;
-        --gray-15: white;
+        --gray-15: #f2f2f6;
 
         --link: #007aff;
 
