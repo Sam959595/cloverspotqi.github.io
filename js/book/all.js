@@ -17,8 +17,8 @@ $(document).ready( () => {
         threshold: 0
     });
     
-    document.querySelectorAll('[data-url]').forEach( a => {
-        ll.observe(a)
+    document.querySelectorAll('[data-url]').forEach( x => {
+        ll.observe(x)
     })
 })
 
