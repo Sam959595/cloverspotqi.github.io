@@ -135,13 +135,11 @@ section.mm {
     background-color: var(--gray-15)
 }
 
-[data-url], [data-src] {
-    opacity: 0
-}
-[style], [src] {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
+section.mm>h3 {
+    margin: 1cm auto 0;
+    
+    font: 700 14px ui-rounded;
+    color: var(--slate)
 }
 
 section.mm>a {
@@ -160,18 +158,8 @@ section.mm>a {
     box-shadow: 0 5px 10px #00000040
 }
 
-section.mm>a h6 {
-    margin: auto .8em .8em auto;
-
-    font: 600 13px ui-rounded;
-
-    color: white;
-
-    text-shadow: 0 0 10px #00000080
-}
-
 section.mm div {
-    margin: 20px;
+    margin: 0 20px 20px;
 
     display: flex;
     flex-flow: wrap;
@@ -310,7 +298,7 @@ section.tt h6 {
 /* vv */
 
 section.vv {
-    margin: 10px 15px 15px;
+    margin: 10px 15px max(env(safe-area-inset-bottom), 15px);
 
     border-radius: 15px;
 
@@ -357,14 +345,25 @@ section.vv h6 {
 }
 
 section.vv a {
-    width: 54px;
-    height: 54px;
+    width: 50px;
+    height: 50px;
 
     aspect-ratio: 1;
 
     border-radius: 100%;
     
     background: center/cover
+}
+
+/* img */
+
+[data-url], [data-src] {
+    opacity: 0
+}
+[style], [src] {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
 }
 
 /* color */
