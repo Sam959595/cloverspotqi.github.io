@@ -1,39 +1,9 @@
-/* pp */
-
-section.pp {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-
-    z-index: 1;
-    position: fixed;
-    inset: 0 0 auto;
-
-    margin-top: 2cm;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: opacity 2s ease-out
-}
-
-section.pp svg {
-    fill: #fe0000;
-
-    -webkit-filter: drop-shadow(0 15px 30px #ff000060)
-}
-
-.qq {
-    visibility: visible !important;
-    opacity: 1 !important;
-
-    transition: opacity .5s !important
-}
-
 /* rr */
 
 section.rr {
+    opacity: 0;
+    pointer-events: none;
+
     z-index: 1;
     position: fixed;
     inset: 0 0 auto;
@@ -70,13 +40,41 @@ section.rr h1 {
     font: 600 11px system-ui
 }
 
+/* pp */
+
+section.pp {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+    z-index: 1;
+    position: fixed;
+    inset: 0 0 auto;
+
+    margin-top: 2cm;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 2s ease-out
+}
+
+section.pp svg {
+    -webkit-filter: drop-shadow(0 15px 30px #ff000060)
+}
+
+.qq {
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    transition: opacity .5s !important
+}
+
 /* kk */
 
 section.kk {
-    position: absolute;
-    inset: 0 0 auto;
-
-    padding: 10px 35px 20px;
+    padding: 10px 35px 0;
 
     display: flex;
     align-items: center;
@@ -108,7 +106,7 @@ section.kk h1 {
 /* mm */
 
 section.mm {
-    margin: 60px 15px 10px;
+    margin: 15px 15px 10px;
 
     border-radius: 15px;
 
@@ -118,23 +116,19 @@ section.mm {
     background-color: var(--gray-15)
 }
 
-section.mm>h3 {
-    margin: 1cm auto 0;
-    
-    font: 700 14px ui-rounded;
-    color: var(--slate)
+section.mm>svg {
+    margin: 15px 20px 0 auto
 }
 
 section.mm>a {
-    margin: 30% auto;
+    margin: 30% auto 40%;
 
     width: 180px;
+    aspect-ratio: 1/1.6;
 
     border-radius: 2px;
 
     display: flex;
-
-    aspect-ratio: 1/1.6;
 
     background-size: cover;
 
