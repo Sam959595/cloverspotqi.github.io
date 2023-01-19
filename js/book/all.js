@@ -17,8 +17,8 @@ $(document).ready( () => {
         threshold: 0
     });
     
-    document.querySelectorAll('[data-url]').forEach( x => {
-        ll.observe(x)
+    document.querySelectorAll('[data-url]').forEach( a => {
+        ll.observe(a)
     })
 })
 
@@ -41,9 +41,16 @@ $(document).ready( () => {
         threshold: 0
     });
     
-    document.querySelectorAll('[data-src]').forEach( a => {
-        ll.observe(a)
+    document.querySelectorAll('[data-src]').forEach( x => {
+        ll.observe(x)
     })
+})
+
+// all, back library
+window.addEventListener('touchstart', x => {
+    if (x.targetTouches.length === 2) {
+        location.href = 'https://sam959595.github.io/cloverspotqi.github.io/book-library.html'
+    }
 })
 
 // start, tags inset background
@@ -108,13 +115,6 @@ window.addEventListener('touchstart', x => {
     }
 })
 
-// all, back library
-window.addEventListener('touchstart', x => {
-    if (x.targetTouches.length === 2) {
-        location.href = 'https://sam959595.github.io/cloverspotqi.github.io/book-library.html'
-    }
-})
-
 // book, comment hide tap
 window.onload = () => {
     let jj = x => {
@@ -141,3 +141,33 @@ window.onload = () => {
         }
     }
 }
+
+// book, button follow
+window.onload = () => {
+    $('section.ee')[0].onclick = x => {
+        let aa = x.target;
+
+        while (aa) {
+            if (aa.tagName == 'BUTTON') {
+                (aa.textContent === 'СЛЕДОВАТЬ') ? aa.textContent = 'ПРОСЛЕЖИВАЮ' : aa.textContent = 'СЛЕДОВАТЬ';
+                (aa.textContent === 'СЛЕДОВАТЬ') ? aa.style.color = '' : aa.style.color = 'var(--gray)'
+            };
+
+            aa = aa.parentNode;
+        }
+    }
+}
+
+// book, box follow
+window.addEventListener('click', () => {
+    let a = $('section.ee a'),
+    b = $('section.rr')
+
+    a.click( () => {
+        b[0].style.cssText = 'opacity: 1; pointer-events: initial';
+
+        setTimeout( () => {
+            b[0].style.cssText = '';
+        }, 10000)
+    })
+})
