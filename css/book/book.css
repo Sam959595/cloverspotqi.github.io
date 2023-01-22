@@ -1,3 +1,14 @@
+/* img */
+
+[data-url] {
+    opacity: 0
+}
+[style] {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
+}
+
 /* rr */
 
 section.rr {
@@ -57,7 +68,7 @@ section.pp {
     align-items: center;
     justify-content: center;
 
-    transition: opacity 2s ease-out
+    transition: visibility 2s, opacity 2s ease-out
 }
 
 section.pp svg {
@@ -68,7 +79,7 @@ section.pp svg {
     visibility: visible !important;
     opacity: 1 !important;
 
-    transition: opacity .5s !important
+    transition: visibility .5s, opacity .5s !important
 }
 
 /* kk */
@@ -239,7 +250,7 @@ section.ee li button {
     
     border-radius: 15px;
 
-    padding: .4em 1em;
+    padding: .4em .8em;
 
     display: block;
 
@@ -320,17 +331,6 @@ section.vv a {
     border-radius: 100%;
     
     background: center/cover
-}
-
-/* img */
-
-[data-url], [data-src] {
-    opacity: 0
-}
-[style], [src] {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
 }
 
 /* color */
