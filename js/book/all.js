@@ -1,7 +1,7 @@
 // all, lazy load image url(a)
-$(document).ready( () => {
-    let ll = new IntersectionObserver( (a, b) => {
-        a.forEach( x => {
+$(document).ready(() => {
+    let ll = new IntersectionObserver((a, b) => {
+        a.forEach(x => {
             if (x.isIntersecting) {
                 let mm = new Image();
                 mm.src = x.target.dataset.url;
@@ -16,16 +16,16 @@ $(document).ready( () => {
     }, {
         threshold: 0
     });
-    
-    document.querySelectorAll('[data-url]').forEach( a => {
+
+    document.querySelectorAll('[data-url]').forEach(a => {
         ll.observe(a)
     })
 })
 
 // all, lazy load image src(img)
-$(document).ready( () => {
-    let ll = new IntersectionObserver( (a, b) => {
-        a.forEach( x => {
+$(document).ready(() => {
+    let ll = new IntersectionObserver((a, b) => {
+        a.forEach(x => {
             if (x.isIntersecting) {
                 let mm = new Image();
                 mm.src = x.target.dataset.src;
@@ -40,22 +40,22 @@ $(document).ready( () => {
     }, {
         threshold: 0
     });
-    
-    document.querySelectorAll('[data-src]').forEach( x => {
+
+    document.querySelectorAll('[data-src]').forEach(x => {
         ll.observe(x)
     })
 })
 
 // all, back library
 window.addEventListener('touchstart', x => {
-    if (x.targetTouches.length === 2) {
+    if (x.targetTouches.length === 3) {
         location.href = 'https://sam959595.github.io/cloverspotqi.github.io/book-library.html'
     }
 })
 
 // start, tags inset background
 window.addEventListener('DOMContentLoaded', () => {
-    let d = $('section.ee nav ul h1'),
+    let d = $('#yy'),
         a = $('html'),
         b = $('body'),
         c = $('section.nn')
@@ -71,7 +71,7 @@ window.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('click', () => {
     let a = $('section.nn svg')
 
-    a.click( () => {
+    a.click(() => {
         let a = $('html'),
             b = $('body'),
             c = $('section.nn');
@@ -86,7 +86,7 @@ window.addEventListener('click', () => {
 window.addEventListener('click', () => {
     let a = $('section.ww figcaption button')
 
-    a.click( () => {
+    a.click(() => {
         (a[0].textContent === 'В ЧИТАТЕЛИ') ? a[0].textContent = 'ЧИТАЮ' : a[0].textContent = 'В ЧИТАТЕЛИ';
         (a[0].textContent === 'В ЧИТАТЕЛИ') ? a[0].classList.toggle('aa') : a[0].classList.toggle('aa')
     })
@@ -96,23 +96,40 @@ window.addEventListener('click', () => {
 window.addEventListener('DOMContentLoaded', () => {
     let a = $('section.ee>button')
 
-    a.click(() => {
+    a.click( () => {
         $('section.ee')[0].classList.toggle('gg');
         (a[0].textContent === 'ПРАВИТЬ') ? a[0].textContent = 'ГОТОВО' : a[0].textContent = 'ПРАВИТЬ';
     })
 })
 
-// book, heart like
-window.addEventListener('touchstart', x => {
-    let a = $('section.pp')
+// start, double-tap like
+$('document').ready( () => {
+    $('section.kk')[0].addEventListener('dblclick', x => {
+        $('section.kk li>div')[0].style.position = 'relative';
 
-    if (x.targetTouches.length === 3) {
-        a[0].classList.add('qq')
+        let vv = document.createElement('figure');
+        $('section.kk li>div')[0].appendChild(vv);
 
-        setTimeout(() => {
-            a[0].classList.remove('qq')
-        }, 2000)
-    }
+        $('section.kk li>div figure')[0].style.cssText = 'opacity: 1; transition: opacity .3s ease-out';
+    
+        setTimeout( () => {
+            $('section.kk li>div figure')[0].style.opacity = '0';
+
+            setTimeout( () => {
+                $('section.kk li>div')[0].style.position = '';
+                $('section.kk li>div figure')[0].remove('figure')
+            }, 300)
+        }, 900)
+    })
+})
+
+// book, double-tap like
+document.addEventListener('dblclick', () => {
+    $('section.pp')[0].classList.add('qq')
+
+    setTimeout( () => {
+        $('section.pp')[0].classList.remove('qq')
+    }, 2000)
 })
 
 // book, comment hide tap
@@ -127,8 +144,8 @@ window.onload = () => {
         cc.classList.add('uu');
     }
 
-    $('#tt')[0].onclick = xx => {
-        let aa = xx.target;
+    $('#tt')[0].onclick = x => {
+        let aa = x.target;
 
         while (aa != this) {
             if (aa.tagName == 'H6') {
@@ -149,8 +166,8 @@ window.onload = () => {
 
         while (aa) {
             if (aa.tagName == 'BUTTON') {
-                (aa.textContent === 'СЛЕДОВАТЬ') ? aa.textContent = 'ПРОСЛЕЖИВАЮ' : aa.textContent = 'СЛЕДОВАТЬ';
-                (aa.textContent === 'СЛЕДОВАТЬ') ? aa.style.color = '' : aa.style.color = 'var(--gray)'
+                (aa.textContent === 'СЛЕДОВАТЬ') ? aa.textContent = 'ВЫ СЛЕДУЕТЕ' : aa.textContent = 'СЛЕДОВАТЬ';
+                (aa.textContent === 'СЛЕДОВАТЬ') ? aa.removeAttribute('style') : aa.style.color = 'var(--gray)'
             };
 
             aa = aa.parentNode;
@@ -161,12 +178,12 @@ window.onload = () => {
 // book, box follow
 window.addEventListener('click', () => {
     let a = $('section.ee a'),
-    b = $('section.rr')
+        b = $('section.rr')
 
-    a.click( () => {
+    a.click(() => {
         b[0].style.cssText = 'opacity: 1; pointer-events: initial';
 
-        setTimeout( () => {
+        setTimeout(() => {
             b[0].style.cssText = '';
         }, 10000)
     })
