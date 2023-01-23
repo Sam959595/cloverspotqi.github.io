@@ -68,18 +68,36 @@ section.pp {
     align-items: center;
     justify-content: center;
 
-    transition: visibility 2s, opacity 2s ease-out
+    animation: xx .6s paused;
+
+    transition: visibility 1.5s, opacity 1.5s ease-out
 }
 
 section.pp svg {
     -webkit-filter: drop-shadow(0 15px 30px #ff000060)
 }
 
-.qq {
-    visibility: visible !important;
-    opacity: 1 !important;
+@keyframes xx {
+    0% {
+        opacity: 0;
+        transform: scale(0)
+    }
 
-    transition: visibility .5s, opacity .5s !important
+    20% {
+        opacity: 1
+    }
+
+    45% {
+        transform: scale(1.1)
+    }
+
+    75% {
+        transform: scale(.95)
+    }
+
+    100% {
+        transform: scale(1)
+    }
 }
 
 /* kk */
