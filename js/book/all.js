@@ -125,11 +125,11 @@ $('document').ready( () => {
 
 // book, double-tap like
 document.addEventListener('dblclick', () => {
-    $('section.pp')[0].classList.add('qq')
+    $('section.pp')[0].style.cssText = 'visibility: visible; opacity: 1 !important; animation-play-state: running; transition: visibility .5s, opacity .5s';
 
     setTimeout( () => {
-        $('section.pp')[0].classList.remove('qq')
-    }, 2000)
+        $('section.pp')[0].removeAttribute('style');
+    }, 1500)
 })
 
 // book, comment hide tap
