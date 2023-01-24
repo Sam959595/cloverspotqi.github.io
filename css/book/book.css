@@ -70,7 +70,7 @@ section.pp {
 
     animation: xx .6s paused;
 
-    transition: visibility 1.5s, opacity 1.5s ease-out
+    transition: visibility 1s, opacity 1s ease
 }
 
 section.pp svg {
@@ -130,6 +130,110 @@ section.kk p {
 
 section.kk h1 {
     font-size: 21px
+}
+
+/* dd */
+
+section.dd ul {
+    margin-block: 2cm;
+    padding-inline: 35px;
+
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    column-gap: 10px;
+
+    overflow-x: scroll;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 35px
+}
+
+section.dd li {
+    scroll-snap-align: start
+}
+
+section.dd li>div {
+    width: calc(100vw - 70px);
+    aspect-ratio: 1/1.8;
+
+    border-radius: 10px;
+
+    padding: 1em;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between
+}
+
+section.dd li>div *:not(button) {
+    color: white
+}
+
+section.dd p {
+    opacity: .8;
+
+    font-weight: 600
+}
+
+section.dd li div div:first-child a {
+    display: flex
+}
+
+section.dd li div div:first-child a div {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background-size: cover
+}
+
+section.dd li div div:first-child a div+div {
+    margin-left: -5px
+}
+
+section.dd h6 {
+    opacity: .8;
+
+    font-weight: 500;
+
+    text-shadow: 0 0 5px black
+}
+
+section.dd li div div:last-child a {
+    display: contents;
+}
+
+section.dd li div div:last-child a div {
+    width: 24px;
+    height: 24px;
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+
+    background-size: cover
+}
+
+section.dd h1 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    font-weight: 600
+}
+
+section.dd button {
+    border-radius: 15px;
+
+    padding: .3em .8em;
+
+    font: 700 13px system-ui;
+
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+
+    background-color: #ffffff20;
+    color: #ffffffcc
 }
 
 /* mm */
