@@ -60,6 +60,7 @@ section.kk li>div {
     flex-flow: column;
     justify-content: space-between
 }
+
 section.kk li>div *:not(button) {
     color: white
 }
@@ -73,6 +74,7 @@ section.kk p {
 section.kk li div div:first-child a {
     display: flex
 }
+
 section.kk li div div:first-child a div {
     width: 20px;
     height: 20px;
@@ -81,6 +83,7 @@ section.kk li div div:first-child a div {
 
     background-size: cover
 }
+
 section.kk li div div:first-child a div+div {
     margin-left: -5px
 }
@@ -99,6 +102,7 @@ section.kk li div div:last-child a {
     align-items: center;
     column-gap: .5em;
 }
+
 section.kk li div div:last-child a div {
     width: 24px;
     height: 24px;
@@ -113,7 +117,7 @@ section.kk h1 {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    
+
     font-weight: 600
 }
 
@@ -135,7 +139,7 @@ section.kk button {
 @keyframes xx {
     0% {
         opacity: 0;
-        transform: scale(0)
+        transform: scale(.5)
     }
 
     20% {
@@ -155,7 +159,7 @@ section.kk button {
     }
 }
 
-section.kk figure {
+section.kk li>figure {
     position: absolute;
     inset: 0;
 
@@ -166,7 +170,7 @@ section.kk figure {
 
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z'/%3E%3C/svg%3E") no-repeat;
 
-    animation: xx .6s
+    animation: xx .5s
 }
 
 /* nn */
@@ -241,6 +245,37 @@ section.nn div h6 {
 .qqq {
     pointer-events: auto !important;
     opacity: 1 !important
+}
+
+/* dd */
+
+section.dd nav ul {
+    margin-block: 10px;
+    padding-inline: 35px;
+
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    overflow-x: scroll
+}
+
+section.dd nav ul li+li {
+    opacity: .5;
+
+    margin-left: 1.2cm
+}
+
+section.dd nav ul h1 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font: 700 17px system-ui
+}
+
+section.dd nav>a {
+    margin-inline: 35px;
+    display: block;
+    text-align: right;
+    font-size: 14px
 }
 
 /* ee */
