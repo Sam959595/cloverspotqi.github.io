@@ -18,7 +18,7 @@ section.ee {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: .8em;
+    column-gap: .5em;
 
     background-color: inherit;
 
@@ -66,6 +66,8 @@ section.vv h6::first-letter {
     margin-left: 1cm
 }
 section.vv h6 {
+    margin-bottom: .5em;
+
     font: 18px/1.7 ui-serif;
     text-align: justify;
 
@@ -253,7 +255,7 @@ section.mm:target {
         --canvas-4: #1a1a1c;
         --canvas-5: #51545c;
 
-        --text: #c0c0c0;
+        --text: #999;
         --text-2: #d6caba;
         --text-3: #eee;
         --text-4: #f2f2f2;
