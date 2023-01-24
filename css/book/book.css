@@ -53,6 +53,29 @@ section.rr h1 {
 
 /* pp */
 
+@keyframes xx {
+    0% {
+        opacity: 0;
+        transform: scale(0)
+    }
+
+    20% {
+        opacity: 1
+    }
+
+    45% {
+        transform: scale(1.1)
+    }
+
+    75% {
+        transform: scale(.95)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
 section.pp {
     visibility: hidden;
     opacity: 0;
@@ -75,29 +98,6 @@ section.pp {
 
 section.pp svg {
     -webkit-filter: drop-shadow(0 15px 30px #ff000060)
-}
-
-@keyframes xx {
-    0% {
-        opacity: 0;
-        transform: scale(0)
-    }
-
-    20% {
-        opacity: 1
-    }
-
-    45% {
-        transform: scale(1.1)
-    }
-
-    75% {
-        transform: scale(.95)
-    }
-
-    100% {
-        transform: scale(1)
-    }
 }
 
 /* kk */
@@ -136,17 +136,17 @@ section.kk h1 {
 
 section.dd ul {
     margin-block: 2cm;
-    padding-inline: 35px;
+    padding-inline: 15px;
 
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
-    column-gap: 10px;
+    column-gap: .5em;
 
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
-    scroll-padding-left: 35px
+    scroll-padding-left: 15px
 }
 
 section.dd li {
@@ -155,7 +155,7 @@ section.dd li {
 
 section.dd li>div {
     width: calc(100vw - 70px);
-    aspect-ratio: 1/1.8;
+    aspect-ratio: 1/2;
 
     border-radius: 10px;
 
@@ -163,7 +163,9 @@ section.dd li>div {
 
     display: flex;
     flex-flow: column;
-    justify-content: space-between
+    justify-content: space-between;
+
+    box-shadow: inset 0 0 1px #ffffff60;
 }
 
 section.dd li>div *:not(button) {
@@ -171,9 +173,9 @@ section.dd li>div *:not(button) {
 }
 
 section.dd p {
-    opacity: .8;
+    opacity: .5;
 
-    font-weight: 600
+    font-weight: 500
 }
 
 section.dd li div div:first-child a {
@@ -286,6 +288,17 @@ section.mm div h6 {
     color: var(--gray-15)
 }
 
+.hhh div {
+    margin: 0 5px 0 0 !important;
+
+    width: 17px;
+    height: 17px;
+
+    border-radius: 50%;
+
+    background-size: cover
+}
+
 /* ee */
 
 section.ee ul {
@@ -393,66 +406,6 @@ section.tt h6 {
     font: 14px/1.4 system-ui;
 
     background-color: var(--gray-15)
-}
-
-/* vv */
-
-section.vv {
-    margin: 10px 15px max(env(safe-area-inset-bottom), 15px);
-
-    border-radius: 15px;
-
-    padding: 20px;
-
-    position: relative;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    background-color: var(--gray-15)
-}
-
-section.vv h1 {
-    pointer-events: none;
-    opacity: 1;
-
-    position: absolute;
-    inset: 0;
-
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-
-    font: 600 17px system-ui;
-
-    transition: opacity 2s ease
-}
-
-.aa {
-    opacity: 0 !important
-}
-
-section.vv h6 {
-    margin-right: .8em;
-
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-
-    font-size: 14px
-}
-
-section.vv a {
-    width: 50px;
-    height: 50px;
-
-    aspect-ratio: 1;
-
-    border-radius: 100%;
-    
-    background: center/cover
 }
 
 /* color */
