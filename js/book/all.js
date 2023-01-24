@@ -96,30 +96,35 @@ window.addEventListener('click', () => {
 window.addEventListener('DOMContentLoaded', () => {
     let a = $('section.ee>button')
 
-    a.click( () => {
+    a.click(() => {
         $('section.ee')[0].classList.toggle('gg');
         (a[0].textContent === 'ПРАВИТЬ') ? a[0].textContent = 'ГОТОВО' : a[0].textContent = 'ПРАВИТЬ';
     })
 })
 
 // start, double-tap like
-$('document').ready( () => {
-    $('section.kk')[0].addEventListener('dblclick', x => {
-        $('section.kk li>div')[0].style.position = 'relative';
+$('document').ready(() => {
+    $('section.kk li')[0].addEventListener('dblclick', () => {
+        
+        if ($('section.kk li')[0].querySelector('figure') == null) {
+            $('section.kk li')[0].style.position = 'relative';
 
-        let vv = document.createElement('figure');
-        $('section.kk li>div')[0].appendChild(vv);
+            let vv = document.createElement('figure');
+            $('section.kk li')[0].appendChild(vv);
 
-        $('section.kk li>div figure')[0].style.cssText = 'opacity: 1; transition: opacity .3s ease-out';
-    
-        setTimeout( () => {
-            $('section.kk li>div figure')[0].style.opacity = '0';
+            $('section.kk li>figure')[0].style.cssText = 'opacity: 1; transition: opacity .2s ease-out';
 
-            setTimeout( () => {
-                $('section.kk li>div')[0].style.position = '';
-                $('section.kk li>div figure')[0].remove('figure')
-            }, 300)
-        }, 900)
+            setTimeout(() => {
+                $('section.kk li>figure')[0].style.opacity = '0';
+
+                setTimeout(() => {
+                    $('section.kk li>figure')[0].remove();
+                    $('section.kk li')[0].removeAttribute('style');
+                }, 200)
+            }, 900)
+        } else {
+            return false
+        }
     })
 })
 
@@ -127,9 +132,9 @@ $('document').ready( () => {
 document.addEventListener('dblclick', () => {
     $('section.pp')[0].style.cssText = 'visibility: visible; opacity: 1 !important; animation-play-state: running; transition: visibility .5s, opacity .5s';
 
-    setTimeout( () => {
+    setTimeout(() => {
         $('section.pp')[0].removeAttribute('style');
-    }, 1500)
+    }, 1000)
 })
 
 // book, comment hide tap
