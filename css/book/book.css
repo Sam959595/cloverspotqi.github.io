@@ -139,9 +139,9 @@ section.dd ul {
     padding-inline: 15px;
 
     display: grid;
-    grid-auto-columns: max-content;
-    grid-auto-flow: column;
-    column-gap: .5em;
+    grid-auto-rows: max-content;
+    grid-auto-flow: row;
+    column-gap: 1em;
 
     overflow-x: scroll;
 
@@ -150,22 +150,22 @@ section.dd ul {
 }
 
 section.dd li {
+    margin-block: 1em;
+
     scroll-snap-align: start
 }
 
 section.dd li>div {
     width: calc(100vw - 30px);
-    aspect-ratio: 1.8/1;
+    aspect-ratio: 1/1.7;
 
-    border-radius: 12px;
+    border-radius: 0 0 12px 12px;
 
     padding: 1em;
 
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-
-    box-shadow: inset 0 0 1px #ffffff60;
 }
 
 section.dd li>div *:not(button) {
@@ -175,7 +175,13 @@ section.dd li>div *:not(button) {
 section.dd p {
     opacity: .5;
 
-    font-weight: 500
+    display: flex;
+    align-items: center;
+
+    font: 600 13px ui-rounded
+}
+section.dd p svg {
+    margin-right: .5em;
 }
 
 section.dd li div div:first-child a {
@@ -196,7 +202,7 @@ section.dd li div div:first-child a div+div {
 }
 
 section.dd h6 {
-    font-weight: 500;
+    font: 500;
 
     text-shadow: 0 0 5px black
 }
@@ -309,7 +315,7 @@ section.mm>a {
 }
 
 section.mm div {
-    margin: 0 20px 20px;
+    margin: 20px;
 
     display: flex;
     flex-flow: wrap;
@@ -486,7 +492,7 @@ section.tt h6 {
         --gray-2: #8e8e93;
         --gray-3: #333338;
         --gray-6: #63636e;
-        --gray-15: #000;
+        --gray-15: #121212;
 
         --link: #0a84ff;
 
