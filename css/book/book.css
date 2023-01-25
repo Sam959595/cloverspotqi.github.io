@@ -157,7 +157,7 @@ section.dd li {
 
 section.dd li>div {
     width: calc(100vw - 30px);
-    aspect-ratio: 1/1.7;
+    aspect-ratio: 1/1.5;
 
     border-radius: 0 0 12px 12px;
 
@@ -178,10 +178,10 @@ section.dd p {
     display: flex;
     align-items: center;
 
-    font: 600 13px ui-rounded
+    font: 600 15px ui-rounded
 }
 section.dd p svg {
-    margin-right: .5em;
+    margin-right: .8em;
 }
 
 section.dd li div div:first-child a {
@@ -202,7 +202,7 @@ section.dd li div div:first-child a div+div {
 }
 
 section.dd h6 {
-    font: 500;
+    font: 500 13px system-ui;
 
     text-shadow: 0 0 5px black
 }
