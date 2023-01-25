@@ -102,24 +102,24 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 })
 
-// start, double-tap like
-$('document').ready(() => {
-    $('section.kk li')[0].addEventListener('dblclick', () => {
-        
-        if ($('section.kk li')[0].querySelector('figure') == null) {
-            $('section.kk li')[0].style.position = 'relative';
+// book, double-tap like
+window.addEventListener('DOMContentLoaded', () => {
+    $('section.dd li').on('dblclick', () => {
+
+        if ($('section.dd li')[0].querySelector('figure') == null) {
+            $('section.dd li')[0].style.position = 'relative';
 
             let vv = document.createElement('figure');
-            $('section.kk li')[0].appendChild(vv);
+            $('section.dd li')[0].appendChild(vv);
 
-            $('section.kk li>figure')[0].style.cssText = 'opacity: 1; transition: opacity .2s ease-out';
+            $('section.dd li>figure')[0].style.cssText = 'opacity: 1; transition: opacity .2s ease-out';
 
             setTimeout(() => {
-                $('section.kk li>figure')[0].style.opacity = '0';
+                $('section.dd li>figure')[0].style.opacity = '0';
 
                 setTimeout(() => {
-                    $('section.kk li>figure')[0].remove();
-                    $('section.kk li')[0].removeAttribute('style');
+                    $('section.dd li>figure')[0].remove();
+                    $('section.dd li')[0].removeAttribute('style');
                 }, 200)
             }, 900)
         } else {
@@ -129,12 +129,14 @@ $('document').ready(() => {
 })
 
 // book, double-tap like
-document.addEventListener('dblclick', () => {
-    $('section.pp')[0].style.cssText = 'visibility: visible; opacity: 1 !important; animation-play-state: running; transition: visibility .5s, opacity .5s';
+window.addEventListener('DOMContentLoaded', () => {
+    $('section.mm').on('dblclick', () => {
+        $('section.pp')[0].style.cssText = 'visibility: visible; opacity: 1 !important; animation-play-state: running; transition: visibility .5s, opacity .5s';
 
-    setTimeout(() => {
-        $('section.pp')[0].removeAttribute('style');
-    }, 1000)
+        setTimeout(() => {
+            $('section.pp')[0].removeAttribute('style');
+        }, 1000)
+    })
 })
 
 // book, comment hide tap
