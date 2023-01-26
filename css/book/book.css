@@ -134,25 +134,28 @@ section.kk h1 {
 
 /* dd */
 
+section.dd {
+    margin-inline: 15px;
+    padding-block: 15px;
+}
 section.dd ul {
-    padding-block: 2cm;
-    padding-inline: 15px;
+    height: -webkit-fill-available;
+
+    border-radius: 12px;
 
     display: grid;
     grid-auto-rows: max-content;
     grid-auto-flow: row;
-    column-gap: 1em;
+    row-gap: 15px;
 
-    overflow-x: scroll;
+    overflow-y: scroll;
 
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: y mandatory;
     scroll-padding-left: 15px
 }
 
 section.dd li {
-    margin-bottom: 15px;
-
-    scroll-snap-align: start
+    scroll-snap-align: center
 }
 
 section.dd li>div {
