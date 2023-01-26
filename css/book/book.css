@@ -135,47 +135,33 @@ section.kk h1 {
 /* dd */
 
 section.dd {
-    margin-inline: 15px;
-    padding-block: 15px;
+    margin: 15px
 }
 section.dd ul {
-    height: -webkit-fill-available;
-
     border-radius: 12px;
 
     display: grid;
-    grid-auto-rows: max-content;
     grid-auto-flow: row;
-    row-gap: 15px;
-
-    overflow-y: scroll;
-
-    scroll-snap-type: y mandatory;
-    scroll-padding-left: 15px
+    row-gap: 15px
 }
 
 section.dd li {
-    scroll-snap-align: center
+    width: calc(100vw - 30px);
+
+    border-radius: 12px;
+
+    contain: paint;
+
+    background-color: var(--gray-15)
 }
 
-section.dd li>div {
-    width: calc(100vw - 30px);
-    aspect-ratio: 1/1.5;
-
-    border-radius: 0 0 12px 12px;
-
-    padding: 1em;
+section.dd li figure>div:first-child {
+    margin: 1em;
 
     display: flex;
-    flex-flow: column;
-    justify-content: space-between;
+    justify-content: space-around
 }
-
-section.dd li>div *:not(button) {
-    color: white
-}
-
-section.dd p {
+section.dd li figure>div:first-child p {
     opacity: .5;
 
     display: flex;
@@ -183,38 +169,40 @@ section.dd p {
 
     font: 600 15px ui-rounded
 }
-section.dd p svg {
-    margin-right: .8em;
+section.dd li figure>div:first-child p svg {
+    margin-right: .8em
 }
 
-section.dd li div div:first-child a {
-    display: flex
+section.dd li figure>h5 {
+    margin: 0 1em 1em;
+
+    font: 500 13px system-ui;
+
+    color: var(--gray)
 }
 
-section.dd li div div:first-child a div {
-    width: 20px;
-    height: 20px;
-
-    border-radius: 50%;
+section.dd li figure>div:last-child {
+    aspect-ratio: 1/1.4;
 
     background-size: cover
 }
 
-section.dd li div div:first-child a div+div {
-    margin-left: -5px
+section.dd li figure>div:last-child>div {
+    height: 100%;
+
+    padding: 1em;
+
+    display: flex;
+    align-items: flex-end;
+    column-gap: .5em;
+
+    background: linear-gradient(transparent 60%, #00000060)
 }
 
-section.dd h6 {
-    font: 500 13px system-ui;
-
-    text-shadow: 0 0 5px black
+section.dd li figure>div:last-child div a {
+    display: contents
 }
-
-section.dd li div div:last-child a {
-    display: contents;
-}
-
-section.dd li div div:last-child a div {
+section.dd li figure>div:last-child div a div {
     width: 24px;
     height: 24px;
 
@@ -224,17 +212,17 @@ section.dd li div div:last-child a div {
 
     background-size: cover
 }
-
-section.dd h1 {
+section.dd li figure>div:last-child div a h6 {
     opacity: .8;
 
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 
-    font-weight: 600
-}
+    font-weight: 600;
 
+    color: white
+}
 section.dd button {
     border-radius: 15px;
 
@@ -271,7 +259,7 @@ section.dd button {
     }
 }
 
-section.dd li>figure {
+section.dd li icon {
     position: absolute;
     inset: 0;
 
@@ -424,7 +412,7 @@ section.ee figcaption div {
 section.ee figcaption div+div {
     margin-left: -5px;
 
-    box-shadow: 0 0 0 2px var(--gray-15)
+    clip-path: inset(10%);
 }
 
 section.ee li button {
