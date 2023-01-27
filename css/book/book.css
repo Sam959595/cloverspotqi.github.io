@@ -237,12 +237,12 @@ section.dd button {
 @keyframes xx {
     0% {
         opacity: 0;
-        transform: scale(.2)
+        transform: scale(0)
     }
 
     30% {
         opacity: 1;
-        transform: scale(1.2)
+        transform: scale(1.15)
     }
 
     60% {
