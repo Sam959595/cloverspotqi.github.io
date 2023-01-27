@@ -152,7 +152,7 @@ section.dd li {
 
     contain: paint;
 
-    background-color: var(--gray-15)
+    background-color: var(--gray-5)
 }
 
 section.dd li figure>div:first-child {
@@ -167,18 +167,16 @@ section.dd li figure>div:first-child p {
     display: flex;
     align-items: center;
 
-    font: 600 15px ui-rounded
+    font: 600 14px ui-rounded
 }
 section.dd li figure>div:first-child p svg {
-    margin-right: .8em
+    margin-right: .5em
 }
 
 section.dd li figure>h5 {
     margin: 0 1em 1em;
 
-    font: 500 13px system-ui;
-
-    color: var(--gray)
+    font-size: 13px
 }
 
 section.dd li figure>div:last-child {
@@ -283,7 +281,7 @@ section.mm {
     display: flex;
     flex-flow: column;
 
-    background-color: var(--gray-15)
+    background-color: var(--gray-5)
 }
 
 section.mm>svg {
@@ -320,7 +318,7 @@ section.mm div h6 {
 
     font: 600 14px ui-rounded;
 
-    color: var(--gray-15)
+    color: var(--gray-5)
 }
 
 .hhh div {
@@ -366,7 +364,7 @@ section.ee a {
 
     text-align: right;
 
-    background-color: var(--gray-15)
+    background-color: var(--gray-5)
 }
 
 section.ee li>h1 {
@@ -426,7 +424,7 @@ section.ee li button {
 
     font: 700 13px system-ui;
 
-    background-color: var(--gray-15)
+    background-color: var(--gray-5)
 }
 
 /* tt */
@@ -440,7 +438,7 @@ section.tt h6 {
 
     font: 14px/1.4 system-ui;
 
-    background-color: var(--gray-15)
+    background-color: var(--gray-5)
 }
 
 /* color */
@@ -456,8 +454,8 @@ section.tt h6 {
         --gray: #1d1d1f;
         --gray-2: #8e8e93;
         --gray-3: #d2d2d7;
-        --gray-6: #aaaab3;
-        --gray-15: #f2f2f6;
+        --gray-4: #aaaab3;
+        --gray-5: #f2f2f6;
 
         --link: #007aff;
 
@@ -482,8 +480,8 @@ section.tt h6 {
         --gray: #f5f5f7;
         --gray-2: #8e8e93;
         --gray-3: #333338;
-        --gray-6: #63636e;
-        --gray-15: #121212;
+        --gray-4: #63636e;
+        --gray-5: #121212;
 
         --link: #0a84ff;
 
