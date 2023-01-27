@@ -405,9 +405,11 @@ section.ee figcaption div {
     background-size: cover
 }
 section.ee figcaption div+div {
-    margin-left: -5px;
+    margin-left: -5px
+}
 
-    clip-path: inset(10%);
+section.ee figcaption div:not(:last-child) {
+    clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
 }
 
 section.ee li button {
