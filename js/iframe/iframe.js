@@ -1,1 +1,0 @@
-console.log([1, 2, 5, 6, 8].filter(x => !(x % 2)).reduceRight((c, x) => c + Math.sqrt(x), 0));
