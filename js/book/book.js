@@ -22,7 +22,7 @@ $(document).ready(() => {
     })
 })
 
-// double-tap like
+// double-tap post
 $(document).ready(() => {
     $('section.dd li')[0].addEventListener('dblclick', () => {
 
@@ -48,7 +48,7 @@ $(document).ready(() => {
     })
 })
 
-// double-tap like
+// double-tap book
 document.addEventListener('dblclick', () => {
     $('section.mm')[0].addEventListener('dblclick', () => {
         $('section.pp')[0].style.cssText = 'visibility: visible; opacity: 1 !important; animation-play-state: running; transition: visibility .5s, opacity .5s';
@@ -58,3 +58,33 @@ document.addEventListener('dblclick', () => {
         }, 1000)
     })
 })
+
+// book, box follow
+window.addEventListener('DOMContentLoaded', () => {
+    let a = $('section.ee a'),
+        b = $('section.rr')
+
+    a.click(() => {
+        b[0].style.cssText = 'opacity: 1; pointer-events: initial';
+
+        setTimeout(() => {
+            b[0].style.cssText = '';
+        }, 10000)
+    })
+})
+
+// book, button follow
+window.onload = () => {
+    $('section.ee')[0].onclick = x => {
+        let aa = x.target;
+
+        while (aa) {
+            if (aa.tagName == 'BUTTON') {
+                (aa.textContent === 'СЛЕДОВАТЬ') ? aa.textContent = 'ВЫ СЛЕДУЕТЕ' : aa.textContent = 'СЛЕДОВАТЬ';
+                (aa.textContent === 'СЛЕДОВАТЬ') ? aa.removeAttribute('style') : aa.style.color = 'var(--gray)'
+            };
+
+            aa = aa.parentNode;
+        }
+    }
+}
