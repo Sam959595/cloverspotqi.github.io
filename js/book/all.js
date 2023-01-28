@@ -66,9 +66,7 @@ window.addEventListener('DOMContentLoaded', () => {
         c[0].classList.add('qqq')
     })
 })
-
-// start, tags
-window.addEventListener('click', () => {
+window.addEventListener('DOMContentLoaded', () => {
     let a = $('section.nn svg')
 
     a.click(() => {
@@ -76,8 +74,8 @@ window.addEventListener('click', () => {
             b = $('body'),
             c = $('section.nn');
 
-        a[0].classList.remove('qq');
-        b[0].classList.remove('qq');
+        a[0].removeAttribute('class');
+        b[0].removeAttribute('class');
         c[0].classList.remove('qqq');
     })
 })
@@ -99,43 +97,6 @@ window.addEventListener('DOMContentLoaded', () => {
     a.click(() => {
         $('section.ee')[0].classList.toggle('gg');
         (a[0].textContent === 'ПРАВИТЬ') ? a[0].textContent = 'ГОТОВО' : a[0].textContent = 'ПРАВИТЬ';
-    })
-})
-
-// book, double-tap like
-window.addEventListener('DOMContentLoaded', () => {
-    $('section.dd li').on('dblclick', () => {
-
-        if ($('section.dd li')[0].querySelector('figure') == null) {
-            $('section.dd li')[0].style.position = 'relative';
-
-            let vv = document.createElement('figure');
-            $('section.dd li')[0].appendChild(vv);
-
-            $('section.dd li>figure')[0].style.cssText = 'opacity: 1; transition: opacity .2s ease-out';
-
-            setTimeout(() => {
-                $('section.dd li>figure')[0].style.opacity = '0';
-
-                setTimeout(() => {
-                    $('section.dd li>figure')[0].remove();
-                    $('section.dd li')[0].removeAttribute('style');
-                }, 200)
-            }, 900)
-        } else {
-            return false
-        }
-    })
-})
-
-// book, double-tap like
-window.addEventListener('DOMContentLoaded', () => {
-    $('section.mm').on('dblclick', () => {
-        $('section.pp')[0].style.cssText = 'visibility: visible; opacity: 1 !important; animation-play-state: running; transition: visibility .5s, opacity .5s';
-
-        setTimeout(() => {
-            $('section.pp')[0].removeAttribute('style');
-        }, 1000)
     })
 })
 
@@ -165,33 +126,3 @@ window.onload = () => {
         }
     }
 }
-
-// book, button follow
-window.onload = () => {
-    $('section.ee')[0].onclick = x => {
-        let aa = x.target;
-
-        while (aa) {
-            if (aa.tagName == 'BUTTON') {
-                (aa.textContent === 'СЛЕДОВАТЬ') ? aa.textContent = 'ВЫ СЛЕДУЕТЕ' : aa.textContent = 'СЛЕДОВАТЬ';
-                (aa.textContent === 'СЛЕДОВАТЬ') ? aa.removeAttribute('style') : aa.style.color = 'var(--gray)'
-            };
-
-            aa = aa.parentNode;
-        }
-    }
-}
-
-// book, box follow
-window.addEventListener('click', () => {
-    let a = $('section.ee a'),
-        b = $('section.rr')
-
-    a.click(() => {
-        b[0].style.cssText = 'opacity: 1; pointer-events: initial';
-
-        setTimeout(() => {
-            b[0].style.cssText = '';
-        }, 10000)
-    })
-})
