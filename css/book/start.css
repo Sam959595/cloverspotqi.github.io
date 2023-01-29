@@ -15,19 +15,6 @@
     transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
 }
 
-/* tt */
-
-section.tt {
-    opacity: .5;
-
-    margin: 35px 35px 10px;
-
-    text-align: right;
-    font: 700 14px ui-rounded;
-
-    color: var(--gray)
-}
-
 /* kk */
 
 section.kk ul {
@@ -193,7 +180,7 @@ section.nn {
 }
 
 section.nn svg {
-    position: fixed;
+    position: inherit;
     inset: 0 auto auto 0;
 
     margin: 10px 0 0 35px;
@@ -329,8 +316,8 @@ section.dd li figure>div:last-child div a {
     justify-content: space-between
 }
 section.dd li figure>div:last-child div a div:last-child {
-    width: 25px;
-    height: 25px;
+    width: 28px;
+    height: 28px;
 
     aspect-ratio: 1;
 
@@ -349,17 +336,8 @@ section.dd li figure>div:last-child div a h6 {
 
     color: white
 }
-section.dd button {
-    border-radius: 15px;
-
-    padding: .3em .8em;
-
-    font: 700 13px system-ui;
-
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-
-    background-color: #ffffff20;
-    color: #ffffffcc
+section.dd li figure>div:last-child div a p {
+    font-size: 11px
 }
 
 @keyframes xx {
@@ -400,7 +378,7 @@ section.dd li icon {
 
 section.hh nav ul {
     margin-block: 10px;
-    padding-inline: 27px;
+    padding-inline: 35px;
 
     display: grid;
     grid-auto-columns: max-content;
@@ -417,7 +395,7 @@ section.hh nav ul li+li {
 section.hh nav ul h1 {
     text-overflow: ellipsis;
     overflow: hidden;
-    font: 700 17px system-ui
+    font: 800 14px system-ui
 }
 
 section.hh nav>a {
@@ -427,9 +405,9 @@ section.hh nav>a {
     font-size: 14px
 }
 
-/* ee */
+/* bb */
 
-section.ee>ul {
+section.bb>ul {
     margin: 0 35px max(env(safe-area-inset-bottom), 35px);
 
     display: grid;
@@ -437,7 +415,7 @@ section.ee>ul {
     gap: 2em
 }
 
-section.ee>ul li a {
+section.bb>ul li a {
     aspect-ratio: 1/1.6;
 
     border-radius: 2px;
@@ -449,7 +427,7 @@ section.ee>ul li a {
     box-shadow: 0 5px 10px #00000040
 }
 
-section.ee h6 {
+section.bb h6 {
     margin: auto .8em .8em auto;
 
     font: 700 13px ui-rounded;
@@ -459,7 +437,7 @@ section.ee h6 {
     text-shadow: 0 0 10px #00000080
 }
 
-section.ee p {
+section.bb p {
     margin-top: 1em;
 
     display: -webkit-box;
@@ -470,14 +448,14 @@ section.ee p {
     font-size: 11px
 }
 
-section.ee progress {
+section.bb progress {
     width: -webkit-fill-available;
     height: 2px;
 
     margin-inline: .8em
 }
 
-section.ee progress::-webkit-progress-bar {
+section.bb progress::-webkit-progress-bar {
     border-radius: 1px;
 
     -webkit-backdrop-filter: blur(20px);
@@ -485,10 +463,107 @@ section.ee progress::-webkit-progress-bar {
     background-color: #ffffff50
 }
 
-section.ee progress::-webkit-progress-value {
+section.bb progress::-webkit-progress-value {
     border-radius: inherit;
 
     background-color: #ffffff90
+}
+
+/* ee */
+
+section.ee ul {
+    margin-block: 2cm;
+    padding-inline: 15px;
+
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    column-gap: 5px;
+    
+    align-items: end;
+
+    overflow-x: scroll
+}
+
+section.ee a {
+    width: calc((100vw - 30px) / 2 - (5px / 2));
+    aspect-ratio: 1;
+
+    margin-block: 1em;
+
+    border-radius: 10px;
+
+    padding: .8em;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    text-align: right;
+
+    background-color: var(--gray-5)
+}
+
+section.ee li>h1 {
+    text-align: center;
+    font-weight: 600
+}
+
+section.ee a h1 {
+    font-size: 14px
+}
+section.ee a>div {
+    margin-inline: auto;
+
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    background-size: cover
+}
+section.ee h2 {
+    opacity: .2;
+    
+    font: 700 13px ui-rounded
+}
+
+section.ee figure {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+section.ee figcaption {
+    display: inherit;
+}
+section.ee figcaption div {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background-size: cover
+}
+section.ee figcaption div+div {
+    margin-left: -5px
+}
+
+section.ee figcaption div:not(:last-child) {
+    clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
+}
+
+section.ee li button {
+    margin-inline: auto;
+    
+    border-radius: 15px;
+
+    padding: .4em .8em;
+
+    display: block;
+
+    font: 700 13px system-ui;
+
+    background-color: var(--gray-5)
 }
 
 /* color */
