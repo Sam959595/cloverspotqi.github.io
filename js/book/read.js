@@ -1,23 +1,45 @@
+// window.addEventListener('DOMContentLoaded', () => {
+//     let aa = 'ontouchstart' in window,
+//         vv = $('section.ww'),
+//         mm = $('section.ee')
+
+//     window.addEventListener('touchstart', x => {
+//         if (aa && x.touches.length === 3) {
+//             mm[0].classList.add('eee')
+//         }
+//     })
+
+//     if (!aa) {
+//         vv[0].classList.add('wwww')
+//     }
+// })
+
+// $(document).ready( () => {
+//     let aa = new Audio()
+
+//     aa.preload = 'auto';
+//     aa.src = 'https://noisefx.ru/noise_base/priroda/pogoda/00217.mp3';
+//     aa.loop = 'true';
+//     aa.volume = 0.5;
+//     aa.play()
+// })
+
 $(document).ready( () => {
     let ll = new IntersectionObserver( x => {
         x.forEach(xx => {
             if (xx.isIntersecting) {
                 setTimeout( () => {
-                    $('section.bb')[0].style.visibility = 'visible';
-                    $('section.bb svg')[0].style.animationPlayState = 'running';
-                    $('section.vv')[0].style.cssText = 'opacity: 0; transition: opacity .5s ease';
-
+                    $('section.bb')[0].style.cssText = 'visibility: visible; opacity: 1';
+                    
                     setTimeout( () => {
-                        $('section.bb svg')[0].style.cssText = 'width: 30px; transform: translateX(-80px); fill: var(--gray)';
-                        $('section.bb h2')[0].style.opacity = '1';
+                        $('section.bb svg')[0].style.transform = 'scale(1)';
 
                         setTimeout( () => {
-                            $('section.vv')[0].style.opacity = '';
-                            $('section.bb')[0].style.cssText = 'opacity: 0; transition: visibility .5s, opacity .5s ease';
+                            $('section.bb svg')[0].style.fill = 'var(--gray)';
 
                             ll.unobserve($('#rr')[0])
                         }, 2000)
-                    }, 2000)
+                    }, 1000)
                 }, 800)
             }
         }
