@@ -48,15 +48,13 @@ $(document).ready(() => {
     })
 })
 
-// double-tap book
+// double-tap book heart
 document.addEventListener('dblclick', () => {
-    $('section.mm')[0].addEventListener('dblclick', () => {
-        $('section.pp')[0].style.cssText = 'visibility: visible; opacity: 1 !important; animation-play-state: running; transition: visibility .5s, opacity .5s';
+    $('section.pp')[0].style.cssText = 'visibility: visible; opacity: 1 !important; animation-play-state: running; transition: visibility .5s, opacity .5s';
 
-        setTimeout(() => {
-            $('section.pp')[0].removeAttribute('style');
-        }, 1000)
-    })
+    setTimeout(() => {
+        $('section.pp')[0].removeAttribute('style');
+    }, 1000)
 })
 
 // book, box follow
