@@ -66,10 +66,8 @@ window.addEventListener('touchend', () => {
 
 window.addEventListener('touchmove', () => {
     let vv = $('section.ee')
-        // nn = $('section.ww')
 
     vv[0].classList.remove('eee')
-    // nn[0].classList.remove('www')
 })
 
 //
@@ -125,37 +123,39 @@ window.addEventListener('change', () => {
 
 window.addEventListener('change', () => {
     let vv = $('#ee').val(),
-        nn = $('body')[0]
+        nn = $('body')[0],
+        ll = $('meta[media="(prefers-color-scheme: light)"]'),
+        dd = $('meta[media="(prefers-color-scheme: dark)"]');
 
     if (vv == '1') {
         nn.classList.add('rrr')
         nn.classList.remove('ttt', 'kkk', 'qqq')
 
-        $('meta[media="(prefers-color-scheme: light)"]').attr('content', 'white')
-        $('meta[media="(prefers-color-scheme: dark)"]').attr('content', 'black')
+        ll.attr('content', 'white')
+        dd.attr('content', 'black')
     } else if (vv == '2') {
         nn.classList.add('ttt')
         nn.classList.remove('rrr', 'kkk', 'qqq')
 
-        $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#e0dacc')
-        $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#26221d')
+        ll.attr('content', '#e0dacc')
+        dd.attr('content', '#26221d')
     } else if (vv == '3') {
         nn.classList.remove('rrr', 'ttt', 'kkk', 'qqq')
 
-        $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#eeeded')
-        $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#353539')
+        ll.attr('content', '#eeeded')
+        dd.attr('content', '#353539')
     } else if (vv == '4') {
         nn.classList.add('kkk')
         nn.classList.remove('rrr', 'ttt', 'qqq')
 
-        $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#ddd')
-        $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#1a1a1c')
+        ll.attr('content', '#ddd')
+        dd.attr('content', '#1a1a1c')
     }
     else if (vv == '5') {
         nn.classList.add('qqq')
         nn.classList.remove('rrr', 'ttt', 'kkk')
 
-        $('meta[media="(prefers-color-scheme: light)"]').attr('content', '#f6efe5')
-        $('meta[media="(prefers-color-scheme: dark)"]').attr('content', '#51545c')
+        ll.attr('content', '#f6efe5')
+        dd.attr('content', '#51545c')
     }
 })
