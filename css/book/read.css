@@ -4,6 +4,41 @@ body {
     background-color: var(--canvas-3)
 }
 
+/* bb */
+
+section.bb {
+    visibility: hidden;
+    opacity: 0;
+
+    z-index: 1;
+    position: fixed;
+    inset: 0 0 auto;
+
+    padding: 1em 1cm 3cm;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: inherit;
+
+    mask: linear-gradient(black 40%, transparent 90%);
+
+    transition: opacity 1s ease
+}
+
+section.bb h2 {
+    width: fit-content;
+
+    font: 500 14px system-ui
+}
+
+section.bb svg {
+    transform: scale(0);
+    
+    transition: transform 1s ease, fill 2s ease
+}
+
 /* ee */
 
 section.ee {
@@ -136,62 +171,6 @@ section.vv a {
     color: var(--text-5) !important
 }
 
-/* bb */
-
-section.bb {
-    visibility: hidden;
-
-    z-index: 1;
-    position: fixed;
-    inset: 0 0 auto;
-
-    margin-top: 2cm;
-
-    height: 50px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-
-section.bb h2 {
-    opacity: 0;
-    position: absolute;
-
-    font: 800 17px ui-rounded;
-
-    transition: opacity 2s ease
-}
-
-@keyframes xx {
-    0% {
-        opacity: 0;
-        transform: scale(0)
-    }
-
-    20% {
-        opacity: 1
-    }
-
-    45% {
-        transform: scale(1.2)
-    }
-
-    75% {
-        transform: scale(.95)
-    }
-
-    100% {
-        transform: scale(1)
-    }
-}
-
-section.bb svg {
-    animation: xx .5s paused;
-    
-    transition: width 1s ease, transform .8s ease, fill 1s ease
-}
-
 /* mm */
 
 section.mm {
@@ -214,8 +193,6 @@ section.mm:target {
 
 @media screen and (prefers-color-scheme: light) {
     :root {
-        --soft: #00000010;
-
         --gray-a: white;
         --gray-b: black;
 
@@ -242,8 +219,6 @@ section.mm:target {
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
-        --soft: #ffffff10;
-
         --gray-a: black;
         --gray-b: white;
 
