@@ -12,7 +12,7 @@
 /* rr */
 
 section.rr {
-    opacity: 1;
+    opacity: 0;
     pointer-events: none;
 
     z-index: 2;
@@ -23,7 +23,7 @@ section.rr {
 
     -webkit-backdrop-filter: saturate(180%) blur(20px);
 
-    background: linear-gradient(var(--gray-a), var(--soft))
+    background-image: linear-gradient(var(--gray-a), var(--soft))
 }
 
 section.rr ul {
@@ -99,28 +99,22 @@ section.pp {
 /* nn */
 
 section.nn {
-    
-
     margin: 10px 15px;
 
     border-radius: 15px;
     contain: paint;
 
-    display: flex;
-    flex-flow: column;
+    text-align: right;
 
     background-color: var(--gray-5)
 }
 
-section.nn li:first-child svg {
+section.nn svg {
     margin: 15px 15px 0 0;
 }
-section.nn li:first-child {
-    text-align: right
-}
 
-section.nn li:first-child>a {
-    margin: 30% auto 35%;
+section.nn a {
+    margin: 30% auto 40%;
 
     width: 180px;
     aspect-ratio: 1/1.6;
@@ -132,95 +126,6 @@ section.nn li:first-child>a {
     background-size: cover;
 
     box-shadow: 0 5px 10px #00000040
-}
-
-section.nn ul {
-    height: 650px;
-    
-    display: grid;
-    grid-auto-flow: row;
-    row-gap: 10px;
-
-    overflow-y: scroll;
-
-    scroll-snap-type: y mandatory
-}
-
-section.nn li {
-    scroll-snap-align: start
-}
-
-section.nn li figure>div:first-child {
-    display: flex;
-    justify-content: space-around
-}
-section.nn li figure>div:first-child p {
-    display: inherit;
-    align-items: center;
-
-    font: 600 15px ui-rounded;
-
-    color: var(--gray-4)
-}
-section.nn li figure>div:first-child p svg {
-    margin-right: .8em
-}
-
-section.nn li figure>h6 {
-    margin: 1em;
-
-    font-size: 13px
-}
-
-section.nn li+li figure>div:last-child {
-    height: 650px;
-
-    background-size: cover
-}
-
-section.nn li figure>div:last-child>div {
-    width: 100%;
-    padding: 1em;
-
-    display: flex;
-    flex-flow: column;
-    justify-content: end;
-
-    background: #00000090
-}
-
-section.nn li figure>div:last-child div a {
-    display: inherit;
-    align-items: center;
-    justify-content: space-between
-}
-section.nn li figure>div:last-child div a div:last-child {
-    width: 28px;
-    height: 28px;
-
-    aspect-ratio: 1;
-
-    border-radius: 50%;
-
-    background-size: cover
-}
-section.nn li figure>div:last-child div a h6 {
-    opacity: .8;
-
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-
-    font-weight: 600;
-
-    color: white
-}
-section.nn li figure>div:last-child div a h5 {
-    opacity: .5;
-
-    font-size: 11px;
-
-    color: white
 }
 
 /* mm */
