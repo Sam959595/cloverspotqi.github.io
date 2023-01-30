@@ -1,29 +1,3 @@
-// window.addEventListener('DOMContentLoaded', () => {
-//     let aa = 'ontouchstart' in window,
-//         vv = $('section.ww'),
-//         mm = $('section.ee')
-
-//     window.addEventListener('touchstart', x => {
-//         if (aa && x.touches.length === 3) {
-//             mm[0].classList.add('eee')
-//         }
-//     })
-
-//     if (!aa) {
-//         vv[0].classList.add('wwww')
-//     }
-// })
-
-// $(document).ready( () => {
-//     let aa = new Audio()
-
-//     aa.preload = 'auto';
-//     aa.src = 'https://noisefx.ru/noise_base/priroda/pogoda/00217.mp3';
-//     aa.loop = 'true';
-//     aa.volume = 0.5;
-//     aa.play()
-// })
-
 $(document).ready( () => {
     let ll = new IntersectionObserver( x => {
         x.forEach(xx => {
