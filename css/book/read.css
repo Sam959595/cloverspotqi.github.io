@@ -193,6 +193,8 @@ section.mm:target {
 
 @media screen and (prefers-color-scheme: light) {
     :root {
+        --soft: #00000010;
+
         --gray-a: white;
         --gray-b: black;
 
@@ -219,6 +221,8 @@ section.mm:target {
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
+        --soft: #ffffff10;
+
         --gray-a: black;
         --gray-b: white;
 
