@@ -10,7 +10,7 @@
 }
 
 section.uu {
-    margin: 10px 35px
+    margin: 20px 35px 10px
 }
 section.uu h1 {
     font: 800 17px system-ui
@@ -224,7 +224,7 @@ section.tt h6 {
 
 @media screen and (prefers-color-scheme: light) {
     :root {
-        --soft: #ffffff50;
+        --soft: #f2f2f6aa;
         --soft-2: #00000008;
 
         --gray-a: white;
@@ -250,7 +250,7 @@ section.tt h6 {
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
-        --soft: #00000050;
+        --soft: #121212aa;
         --soft-2: #ffffff08;
 
         --gray-a: black;
