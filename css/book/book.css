@@ -9,6 +9,32 @@
     transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
 }
 
+section.uu {
+    margin: 10px 35px
+}
+section.uu h1 {
+    font: 800 17px system-ui
+}
+
+section.uu figcaption {
+    display: flex
+}
+section.uu figcaption div {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background-size: cover
+}
+section.uu figcaption div+div {
+    margin-left: -5px
+}
+
+section.uu figcaption div:not(:last-child) {
+    clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
+}
+
 /* rr */
 
 section.rr {
@@ -23,7 +49,9 @@ section.rr {
 
     -webkit-backdrop-filter: saturate(180%) blur(20px);
 
-    background-image: linear-gradient(var(--gray-a), var(--soft))
+    background-image: linear-gradient(var(--gray-a), var(--soft));
+
+    transition: opacity .4s ease
 }
 
 section.rr ul {
@@ -56,7 +84,7 @@ section.rr h1 {
 @keyframes xx {
     0% {
         opacity: 0;
-        transform: scale(0)
+        transform: scale(.5)
     }
 
     20% {
@@ -104,24 +132,32 @@ section.nn {
     border-radius: 15px;
     contain: paint;
 
-    text-align: right;
-
-    background-color: var(--gray-5)
+    background-position: center;
+    background-image: url('https://i.postimg.cc/9QTRgmPt/image.png');
 }
 
 section.nn svg {
     margin: 15px 15px 0 0;
 }
 
-section.nn a {
-    margin: 30% auto 40%;
+section.nn div {
+    width: 100%;
+    height: 600px;
 
+    border-radius: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff90;
+    -webkit-backdrop-filter: blur(20px);
+}
+
+section.nn a {
     width: 180px;
     aspect-ratio: 1/1.6;
 
     border-radius: 2px;
-
-    display: block;
 
     background-size: cover;
 
@@ -173,7 +209,7 @@ section.mm div h6 {
 /* tt */
 
 section.tt h6 {
-    margin: 10px 15px max(env(safe-area-inset-bottom), 15px);
+    margin: 10px 15px max(15px, env(safe-area-inset-bottom));
 
     border-radius: 15px;
 
@@ -188,7 +224,7 @@ section.tt h6 {
 
 @media screen and (prefers-color-scheme: light) {
     :root {
-        --soft: #f2f2f6aa;
+        --soft: #ffffff50;
         --soft-2: #00000008;
 
         --gray-a: white;
@@ -214,7 +250,7 @@ section.tt h6 {
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
-        --soft: #121212aa;
+        --soft: #00000050;
         --soft-2: #ffffff08;
 
         --gray-a: black;
