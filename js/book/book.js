@@ -59,14 +59,14 @@ document.addEventListener('dblclick', () => {
 
 // book, box follow
 window.addEventListener('DOMContentLoaded', () => {
-    let a = $('section.ee a'),
+    let a = $('section.mm a[href]'),
         b = $('section.rr')
 
     a.click(() => {
         b[0].style.cssText = 'opacity: 1; pointer-events: initial';
 
         setTimeout(() => {
-            b[0].style.cssText = '';
+            b[0].removeAttribute('style');
         }, 10000)
     })
 })
@@ -86,3 +86,18 @@ window.onload = () => {
         }
     }
 }
+
+// apple button sign in
+
+AppleID.auth.init({
+    clientId : 'unknown',
+    scope : 'email',
+    redirectURI: 'https://mytld/test.php',
+    state : 'DE'
+});
+
+$(document).ready(() => {
+    $('#wwww')[0].onclick = () => {
+        AppleID.auth.signIn();
+    }
+});
