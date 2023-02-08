@@ -101,11 +101,13 @@ section.pp {
 /* nn */
 
 section.nn {
+    height: 600px;
+    
     padding: 35px;
 
     text-align: center;
 
-    background-image: linear-gradient(#24136f, #5b35af);
+    background-image: linear-gradient(#5b35af, #24136f);
 }
 
 section.nn svg {
