@@ -45,23 +45,31 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 })
 
+// apple button sign in
+
+AppleID.auth.init({
+    clientId: 'unknown',
+    scope: 'email',
+    redirectURI: 'https://mytld/test.php',
+    state: 'DE'
+});
+
+$(document).ready(() => {
+    $('#wwww')[0].onclick = () => {
+        AppleID.auth.signIn();
+    }
+});
+
 // window
 
 $(window).ready(() => {
-    let aa = document.querySelector('meta[name=theme-color]')
-    
-    aa = 'none'
-    localStorage.setItem('col', aa)
-
     window.addEventListener('scroll', () => {
         let bb = $('meta[name=theme-color]')
 
         if ($(window).scrollTop() >= 600) {
-            //let kk = localStorage.getItem('col')
-
             bb.attr('content', '')
         } else {
-            bb.attr('content', '#5b35af')
+            bb.attr('content', '#472b79')
         }
     })
 })
