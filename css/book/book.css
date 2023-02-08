@@ -103,11 +103,7 @@ section.pp {
 section.nn {
     height: 600px;
     
-    padding: 35px;
-
-    text-align: center;
-
-    background-image: linear-gradient(#5b35af, #24136f);
+    padding: 35px
 }
 
 section.nn svg {
@@ -137,7 +133,7 @@ section.nn h1 {
 
 section.nn figcaption {
     display: flex;
-    justify-content: end;
+    justify-content: end
 }
 section.nn figcaption div {
     width: 20px;
