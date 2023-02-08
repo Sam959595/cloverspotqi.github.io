@@ -90,10 +90,10 @@ window.onload = () => {
 // apple button sign in
 
 AppleID.auth.init({
-    clientId : 'unknown',
-    scope : 'email',
+    clientId: 'unknown',
+    scope: 'email',
     redirectURI: 'https://mytld/test.php',
-    state : 'DE'
+    state: 'DE'
 });
 
 $(document).ready(() => {
@@ -101,3 +101,24 @@ $(document).ready(() => {
         AppleID.auth.signIn();
     }
 });
+
+// window
+
+$(window).ready(() => {
+    let aa = document.querySelector('meta[name=theme-color]')
+    
+    aa = 'none'
+    localStorage.setItem('col', aa)
+
+    window.addEventListener('scroll', () => {
+        let bb = $('meta[name=theme-color]')
+
+        if ($(window).scrollTop() > $('section.nn').height()) {
+            //let kk = localStorage.getItem('col')
+
+            bb.attr('content', '')
+        } else {
+            bb.attr('content', '#24136f')
+        }
+    })
+})
