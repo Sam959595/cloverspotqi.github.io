@@ -56,12 +56,12 @@ $(window).ready(() => {
     window.addEventListener('scroll', () => {
         let bb = $('meta[name=theme-color]')
 
-        if ($(window).scrollTop() > 600) {
+        if ($(window).scrollTop() >= 600) {
             //let kk = localStorage.getItem('col')
 
             bb.attr('content', '')
         } else {
-            bb.attr('content', '#24136f')
+            bb.attr('content', '#5b35af')
         }
     })
 })
