@@ -45,21 +45,6 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 })
 
-// apple button sign in
-
-AppleID.auth.init({
-    clientId: 'unknown',
-    scope: 'email',
-    redirectURI: 'https://mytld/test.php',
-    state: 'DE'
-});
-
-$(document).ready(() => {
-    $('#wwww')[0].onclick = () => {
-        AppleID.auth.signIn();
-    }
-});
-
 // window
 
 $(window).ready(() => {
