@@ -22,32 +22,6 @@ $(document).ready(() => {
     })
 })
 
-// double-tap post
-$(document).ready(() => {
-    $('section.dd li')[0].addEventListener('dblclick', () => {
-
-        if ($('section.dd li')[0].querySelector('icon') === null) {
-            $('section.dd li')[0].style.position = 'relative';
-
-            let vv = document.createElement('icon');
-            $('section.dd li')[0].appendChild(vv);
-
-            $('section.dd li icon')[0].style.cssText = 'opacity: 1; transition: opacity .2s ease-out';
-
-            setTimeout(() => {
-                $('section.dd li icon')[0].style.opacity = '0';
-
-                setTimeout(() => {
-                    $('section.dd li icon')[0].remove();
-                    $('section.dd li')[0].removeAttribute('style');
-                }, 200)
-            }, 900)
-        } else {
-            return false;
-        }
-    })
-})
-
 // double-tap book heart
 document.addEventListener('dblclick', () => {
     $('section.pp')[0].style.cssText = 'visibility: visible; opacity: 1 !important; animation-play-state: running; transition: visibility .5s, opacity .5s';
@@ -70,22 +44,6 @@ window.addEventListener('DOMContentLoaded', () => {
         }, 10000)
     })
 })
-
-// book, button follow
-window.onload = () => {
-    $('section.ee')[0].onclick = x => {
-        let aa = x.target;
-
-        while (aa) {
-            if (aa.tagName == 'BUTTON') {
-                (aa.textContent === 'СЛЕДОВАТЬ') ? aa.textContent = 'ВЫ СЛЕДУЕТЕ' : aa.textContent = 'СЛЕДОВАТЬ';
-                (aa.textContent === 'СЛЕДОВАТЬ') ? aa.removeAttribute('style') : aa.style.color = 'var(--gray)'
-            };
-
-            aa = aa.parentNode;
-        }
-    }
-}
 
 // apple button sign in
 
@@ -113,7 +71,7 @@ $(window).ready(() => {
     window.addEventListener('scroll', () => {
         let bb = $('meta[name=theme-color]')
 
-        if ($(window).scrollTop() > $('section.nn').height()) {
+        if ($(window).scrollTop() > 600) {
             //let kk = localStorage.getItem('col')
 
             bb.attr('content', '')
