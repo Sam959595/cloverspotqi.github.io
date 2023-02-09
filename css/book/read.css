@@ -51,13 +51,17 @@ section.ee {
     position: fixed;
     inset: auto 0 0;
 
-    padding: .8em .8em max(.8em, env(safe-area-inset-bottom));
+    margin: .8em .8em max(.8em, env(safe-area-inset-bottom));
+
+    border-radius: 10px;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: .5em;
+    column-gap: 2px;
 
     background-color: inherit;
+
+    overflow: hidden;
 
     transition: opacity .5s
 }
@@ -67,8 +71,6 @@ section.ee select {
     text-align: -webkit-center;
 
     padding-block: 10px;
-
-    border-radius: 10px;
 
     font: 600 12px system-ui;
 
