@@ -1,262 +1,256 @@
-/* img */
+/* body */
 
-[data-url] {
-    opacity: 0
-}
-[style] {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
+body {
+    background-color: var(--canvas-3)
 }
 
-/* rr */
+/* bb */
 
-section.rr {
+section.bb {
+    z-index: 1;
+    visibility: hidden;
     opacity: 0;
-    pointer-events: none;
 
-    z-index: 2;
     position: fixed;
     inset: 0 0 auto;
 
-    padding: 15px;
+    padding: 1em 1cm 3cm;
 
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    background-image: linear-gradient(var(--gray-a), var(--soft));
+    background-color: inherit;
 
-    transition: opacity .4s ease
+    mask: linear-gradient(black 40%, transparent 90%);
+
+    transition: opacity 1s ease
 }
 
-section.rr ul {
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 5px
-}
-section.rr li {
-    height: 40px;
+section.bb h2 {
+    margin-right: 1em;
+    
+    width: fit-content;
 
-    border-radius: 10px;
-
-    text-align: center;
-
-    background-color: var(--soft-2)
+    font: 500 14px system-ui
 }
 
-section.rr h1 {
-    opacity: .3;
-
-    margin-top: 15px;
-
-    text-align: center;
-
-    font: 600 11px system-ui
+section.bb svg {
+    transform: scale(0);
+    
+    transition: transform 1s ease, fill 2s ease
 }
 
-/* pp */
+/* ee */
 
-@keyframes xx {
-    0% {
-        opacity: 0;
-        transform: scale(.5)
-    }
-
-    20% {
-        opacity: 1
-    }
-
-    45% {
-        transform: scale(1.1)
-    }
-
-    75% {
-        transform: scale(.95)
-    }
-
-    100% {
-        transform: scale(1)
-    }
-}
-
-section.pp {
+section.ee {
     pointer-events: none;
-    visibility: hidden;
     opacity: 0;
 
     z-index: 1;
     position: fixed;
-    inset: 0 0 auto;
+    inset: auto 0 0 auto;
 
-    margin-top: 1cm;
+    margin: 0 .8em 5cm 0;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 13px;
 
-    animation: xx .6s paused;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 1px;
 
-    transition: visibility 1s, opacity 1s
+    background-color: inherit;
+
+    overflow: hidden;
+
+    box-shadow: 0 0 30px var(--soft-2);
+
+    transition: opacity .5s
 }
 
-/* nn */
+section.ee select {
+    flex-direction: column;
+    text-align: -webkit-center;
 
-section.nn {
-    height: 600px;
-    
-    padding: 35px
+    padding: 1.5em 3em;
+
+    font: 600 12px system-ui;
+
+    background-color: var(--soft);
+    color: var(--gray)
 }
 
-section.nn svg {
-    margin: 15px 15px 0 0;
+.eee {
+    pointer-events: auto !important;
+    opacity: 1 !important
 }
 
-section.nn a {
-    margin: 20% auto 30%;
+/* vv */
 
-    width: 180px;
-    aspect-ratio: 1/1.6;
-
-    border-radius: 2px;
-
-    display: block;
-
-    background-size: cover;
-
-    box-shadow: 0 5px 10px #00000040
+section.vv {
+    margin: 1cm 1cm max(1cm, env(safe-area-inset-bottom))
 }
 
-section.nn h1 {
-    font: 700 17px system-ui;
+section.vv h5 {
+    margin-block: 1em 3em;
 
-    color: white
+    text-align: center;
+    font: 600 19px ui-serif;
+
+    color: var(--text-3)
+}
+section.vv h5~h5 {
+    margin-block: 13em 3em
 }
 
-section.nn figcaption {
-    display: flex;
-    justify-content: end
+section.vv h6::first-letter {
+    margin-left: 1cm
 }
-section.nn figcaption div {
-    width: 20px;
-    height: 20px;
+section.vv h6 {
+    margin-bottom: .5em;
 
-    border-radius: 50%;
+    font: 18px/1.7 ui-serif;
+    text-align: justify;
 
-    background-size: cover
-}
-section.nn figcaption div+div {
-    margin-left: -5px
+    color: var(--text-3)
 }
 
-section.nn figcaption div:not(:last-child) {
-    clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
+section.vv a {
+    -webkit-text-decoration: underline dotted var(--orange);
+    text-decoration-skip: none;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1.2px;
+
+    color: inherit
+}
+
+.y h6 {
+    font-size: 23px !important;
+    font-weight: 600 !important
+}
+
+.yy h6 {
+    font-size: 20px !important
+}
+
+.yyy h6 {
+    font-size: 17px !important
+}
+
+.sss :where(h5, h6) {
+    font-family: system-ui !important
+}
+
+.zzz :where(h5, h6) {
+    font-family: georgia !important
+}
+
+.rrr {
+    background-color: var(--canvas) !important
+}
+
+.ttt {
+    background-color: var(--canvas-2) !important
+}
+
+.kkk {
+    background-color: var(--canvas-4) !important
+}
+
+.qqq {
+    background-color: var(--canvas-5) !important
+}
+
+.rrr :where(h5, h6) {
+    color: var(--text) !important
+}
+
+.ttt :where(h5, h6) {
+    color: var(--text-2) !important
+}
+
+.kkk :where(h5, h6) {
+    color: var(--text-4) !important
+}
+
+.qqq :where(h5, h6) {
+    color: var(--text-5) !important
 }
 
 /* mm */
 
 section.mm {
-    margin: 15px 15px 10px;
-
-    border-radius: 15px;
-
-    display: flex;
-    flex-flow: column;
-
-    background-color: var(--gray-5)
+    display: none
 }
 
-section.mm div {
-    margin: 20px;
+section.mm:target {
+    position: fixed;
+    inset: 0 0 auto;
 
-    display: flex;
-    flex-flow: wrap;
-    gap: .5em
-}
+    padding: 1em 1cm;
 
-section.mm div h6 {
-    padding: 4px 10px;
+    display: initial;
 
-    border-radius: 7px;
-
-    font: 600 14px ui-rounded;
-
-    color: var(--gray-5)
-}
-
-.hhh div {
-    margin: 0 5px 0 0 !important;
-
-    width: 17px;
-    height: 17px;
-
-    border-radius: 50%;
-
-    background-size: cover
-}
-
-/* tt */
-
-section.tt h6 {
-    margin: 10px 15px max(15px, env(safe-area-inset-bottom));
-
-    border-radius: 15px;
-
-    padding: 20px;
-
-    font: 14px/1.4 system-ui;
-
-    background-color: var(--gray-5)
+    background-color: inherit;
+    color: var(--orange)
 }
 
 /* color */
 
 @media screen and (prefers-color-scheme: light) {
     :root {
-        --soft: #f2f2f6aa;
-        --soft-2: #00000008;
+        --soft: #00000010;
+        --soft-2: #00000040;
 
         --gray-a: white;
         --gray-b: black;
 
         --gray: #1d1d1f;
-        --gray-2: #8e8e93;
-        --gray-3: #d2d2d7;
-        --gray-4: #c0c0c4;
-        --gray-5: #f2f2f6;
+
+        --canvas: white;
+        --canvas-2: #e0dacc;
+        --canvas-3: #eeeded;
+        --canvas-4: #ddd;
+        --canvas-5: #f6efe5;
+
+        --text: #1e1e1e;
+        --text-2: #3d2a1c;
+        --text-3: #111;
+        --text-4: #222;
+        --text-5: #111;
 
         --link: #007aff;
 
-        --blue: #3a8fff;
-        --red: #ff2d55;
-        --pink: #ff9cce;
-        --violet: #9283ff;
-        --green: #31c692;
-        --orange: #fd9900;
-        --slate: #7c8696;
+        --orange: #e08600;
+        --green: #47b561;
     }
 }
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
-        --soft: #121212aa;
-        --soft-2: #ffffff08;
+        --soft: #ffffff10;
+        --soft-2: #00000020;
 
         --gray-a: black;
         --gray-b: white;
 
         --gray: #f5f5f7;
-        --gray-2: #8e8e93;
-        --gray-3: #333338;
-        --gray-4: #505052;
-        --gray-5: #121212;
+
+        --canvas: black;
+        --canvas-2: #26221d;
+        --canvas-3: #353539;
+        --canvas-4: #1a1a1c;
+        --canvas-5: #51545c;
+
+        --text: #999;
+        --text-2: #d6caba;
+        --text-3: #eee;
+        --text-4: #f2f2f2;
+        --text-5: #fbfcff;
 
         --link: #0a84ff;
 
-        --blue: #3a8fff;
-        --red: #ff367c;
-        --pink: #ec55df;
-        --violet: #9283ff;
-        --green: #77ffc6;
-        --orange: #ff9f00;
-        --slate: #7c8696;
+        --orange: #ffa333;
+        --green: #50dc71;
     }
 }
