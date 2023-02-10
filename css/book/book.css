@@ -98,42 +98,17 @@ section.pp {
     transition: visibility 1s, opacity 1s
 }
 
-/* nn */
+/* ss */
 
-section.nn {
-    height: 700px;
-    
-    padding: 35px
+section.ss {
+    margin: 35px
 }
 
-section.nn svg {
-    margin: 15px 15px 0 0;
-}
-
-section.nn a {
-    margin: 30% auto 0;
-
-    width: 200px;
-    aspect-ratio: 1/1.6;
-
-    border-radius: 2px;
-
-    display: block;
-
-    background-size: cover;
-
-    box-shadow: 0 5px 10px #00000040
-}
-
-section.nn h1 {
-    font: 700 17px system-ui
-}
-
-section.nn figcaption {
+section.ss figcaption {
     display: flex;
     justify-content: end
 }
-section.nn figcaption div {
+section.ss figcaption div {
     width: 20px;
     height: 20px;
 
@@ -141,12 +116,35 @@ section.nn figcaption div {
 
     background-size: cover
 }
-section.nn figcaption div+div {
+section.ss figcaption div+div {
     margin-left: -5px
 }
-
-section.nn figcaption div:not(:last-child) {
+section.ss figcaption div:not(:last-child) {
     clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
+}
+
+/* nn */
+
+section.nn {
+    height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+section.nn a {
+    z-index: -1;
+    position: fixed;
+
+    width: 200px;
+    aspect-ratio: 1/1.6;
+
+    border-radius: 2px;
+
+    background-size: cover;
+
+    box-shadow: 0 5px 10px #00000040
 }
 
 /* mm */
