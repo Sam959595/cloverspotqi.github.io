@@ -32,7 +32,7 @@ document.addEventListener('dblclick', () => {
     $('section.ee')[0].classList.add('eee')
 })
 
-window.addEventListener('touchmove', () => {
+window.addEventListener('scroll', () => {
     $('section.ee')[0].classList.remove('eee')
 })
 
