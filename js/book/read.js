@@ -19,7 +19,7 @@ $(window).ready( () => {
 //
 
 window.addEventListener('change', () => {
-    let vv = $('#bb').val(),
+    let vv = $('section.ee select:first-child').val(),
         nn = $('section.vv')
 
     if (vv == 1) {
@@ -37,7 +37,7 @@ window.addEventListener('change', () => {
 })
 
 window.addEventListener('change', () => {
-    let vv = $('#nn').val(),
+    let vv = $('section.ee select:nth-child(2)').val(),
         nn = $('section.vv')
 
     if (vv == 1) {
@@ -52,7 +52,7 @@ window.addEventListener('change', () => {
 })
 
 document.addEventListener('change', () => {
-    let vv = $('#ee').val(),
+    let vv = $('section.ee select:last-child').val(),
         nn = $('body')
 
     if (vv == 1) {
