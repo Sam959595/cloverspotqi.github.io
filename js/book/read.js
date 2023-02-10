@@ -1,39 +1,19 @@
-$(document).ready( () => {
-    let ll = new IntersectionObserver( x => {
-        x.forEach(xx => {
-            if (xx.isIntersecting) {
-                $('section.bb')[0].style.visibility = 'visible';
-                
-                setTimeout( () => {
-                    $('section.bb')[0].style.opacity = '1';
-                    
-                    setTimeout( () => {
-                        $('section.bb svg')[0].style.transform = 'scale(1)';
-
-                        setTimeout( () => {
-                            $('section.bb svg')[0].style.fill = 'var(--gray)';
-
-                            ll.unobserve($('#rr')[0])
-                        }, 2000)
-                    }, 1000)
-                }, 800)
-            }
-        }
-    )}, {
-        threshold: 1
-    })
-
-    ll.observe($('#rr')[0])
-})
-
-//
-
 document.addEventListener('dblclick', () => {
     $('section.ee')[0].classList.add('eee')
 })
 
-window.addEventListener('scroll', () => {
-    $('section.ee')[0].classList.remove('eee')
+$(window).ready( () => {
+    let aa = 'ontouchstart' in window
+
+    if (aa === true) {
+        window.addEventListener('touchmove', () => {
+            $('section.ee')[0].classList.remove('eee')
+        })
+    } else {
+        window.addEventListener('scroll', () => {
+            $('section.ee')[0].classList.remove('eee')
+        })
+    }
 })
 
 //
@@ -86,4 +66,34 @@ document.addEventListener('change', () => {
     } else if (vv == 5) {
         nn.attr('class', 'qqq')
     }
+})
+
+//
+
+$(document).ready( () => {
+    let ll = new IntersectionObserver( x => {
+        x.forEach(xx => {
+            if (xx.isIntersecting) {
+                $('section.bb')[0].style.visibility = 'visible';
+                
+                setTimeout( () => {
+                    $('section.bb')[0].style.opacity = '1';
+                    
+                    setTimeout( () => {
+                        $('section.bb svg')[0].style.transform = 'scale(1)';
+
+                        setTimeout( () => {
+                            $('section.bb svg')[0].style.fill = 'var(--gray)';
+
+                            ll.unobserve($('#rr')[0])
+                        }, 2000)
+                    }, 1000)
+                }, 800)
+            }
+        }
+    )}, {
+        threshold: 1
+    })
+
+    ll.observe($('#rr')[0])
 })
