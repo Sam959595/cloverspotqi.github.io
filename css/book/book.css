@@ -101,7 +101,7 @@ section.pp {
 /* nn */
 
 section.nn {
-    height: 600px;
+    height: 700px;
     
     padding: 35px
 }
@@ -111,9 +111,9 @@ section.nn svg {
 }
 
 section.nn a {
-    margin: 20% auto 30%;
+    margin: 30% auto 0;
 
-    width: 180px;
+    width: 200px;
     aspect-ratio: 1/1.6;
 
     border-radius: 2px;
@@ -126,9 +126,7 @@ section.nn a {
 }
 
 section.nn h1 {
-    font: 700 17px system-ui;
-
-    color: white
+    font: 700 17px system-ui
 }
 
 section.nn figcaption {
