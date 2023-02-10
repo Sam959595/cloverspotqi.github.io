@@ -64,12 +64,12 @@ $(document).ready(() => {
 
 $(window).ready(() => {
     window.addEventListener('scroll', () => {
-        let bb = $('meta[name=theme-color]')
+        let bb = $('section.nn a')[0]
 
         if ($(window).scrollTop() >= 600) {
-            bb.attr('content', '')
+            bb.style.visibility = 'hidden'
         } else {
-            bb.attr('content', '#472b79')
+            bb.style.visibility = ''
         }
     })
 })
