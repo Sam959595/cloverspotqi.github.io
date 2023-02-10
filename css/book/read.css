@@ -63,8 +63,6 @@ section.ee {
 
     overflow: hidden;
 
-    box-shadow: 0 0 30px var(--soft-2);
-
     transition: opacity .5s
 }
 
@@ -199,8 +197,7 @@ section.mm:target {
 
 @media screen and (prefers-color-scheme: light) {
     :root {
-        --soft: #00000010;
-        --soft-2: #00000040;
+        --soft: #00000015;
 
         --gray-a: white;
         --gray-b: black;
@@ -229,7 +226,6 @@ section.mm:target {
 @media screen and (prefers-color-scheme: dark) {
     :root {
         --soft: #ffffff10;
-        --soft-2: #00000020;
 
         --gray-a: black;
         --gray-b: white;
