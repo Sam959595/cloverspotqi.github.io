@@ -203,7 +203,7 @@ section.dd ul {
 }
 
 section.dd li {
-    border-radius: 15px;
+    border-radius: 12px;
 
     contain: paint;
 
@@ -211,7 +211,7 @@ section.dd li {
 }
 
 section.dd li figure>div:first-child {
-    margin: 1em;
+    margin: 1em 2em 1em 1em;
 
     display: flex;
     justify-content: space-around
@@ -228,6 +228,15 @@ section.dd li figure>div:first-child p svg {
     margin-right: .8em
 }
 
+section.dd li figure>div:first-child div {
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+    background: center/cover
+}
+
 section.dd li figure>h6 {
     margin: 1em;
 
@@ -240,7 +249,7 @@ section.dd li figure>div:last-child {
     background: center/cover
 }
 
-section.dd li figure>div:last-child>div {
+section.dd li figure>div:last-child div {
     height: 100%;
 
     padding: 1em;
@@ -252,22 +261,7 @@ section.dd li figure>div:last-child>div {
     background: linear-gradient(transparent 60%, #00000060)
 }
 
-section.dd li figure>div:last-child div a {
-    display: inherit;
-    align-items: center;
-    justify-content: space-between
-}
-section.dd li figure>div:last-child div a div:last-child {
-    width: 28px;
-    height: 28px;
-
-    aspect-ratio: 1;
-
-    border-radius: 50%;
-
-    background-size: cover
-}
-section.dd li figure>div:last-child div a h6 {
+section.dd li figure>div:last-child div h5 {
     opacity: .8;
 
     white-space: nowrap;
@@ -278,7 +272,9 @@ section.dd li figure>div:last-child div a h6 {
 
     color: white
 }
-section.dd li figure>div:last-child div a p {
+section.dd li figure>div:last-child div h6 {
+    opacity: .5;
+
     font-size: 11px
 }
 
