@@ -166,23 +166,44 @@ section.mm div h6 {
     background-size: cover
 }
 
+/* tt */
+
+section.tt {
+    margin: 2cm 28px 10px
+}
+
+section.tt figcaption {
+    display: flex;
+    justify-content: end
+}
+section.tt figcaption div {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    
+    background-size: cover
+}
+section.tt figcaption div+div {
+    margin-left: -5px
+}
+section.tt figcaption div:not(:last-child) {
+    clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
+}
+
 /* dd */
 
 section.dd {
     margin: 15px
 }
 section.dd ul {
-    border-radius: 12px;
-
     display: grid;
     grid-auto-flow: row;
     row-gap: 10px
 }
 
 section.dd li {
-    width: calc(100vw - 30px);
-
-    border-radius: 12px;
+    border-radius: 15px;
 
     contain: paint;
 
@@ -210,7 +231,7 @@ section.dd li figure>div:first-child p svg {
 section.dd li figure>h6 {
     margin: 1em;
 
-    font-size: 13px 
+    font-size: 13px
 }
 
 section.dd li figure>div:last-child {
@@ -227,8 +248,6 @@ section.dd li figure>div:last-child>div {
     display: flex;
     flex-flow: column;
     justify-content: end;
-
-    background-position: center;
 
     background: linear-gradient(transparent 60%, #00000060)
 }
