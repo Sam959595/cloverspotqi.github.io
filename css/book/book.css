@@ -126,7 +126,9 @@ section.ss figcaption div:not(:last-child) {
 /* nn */
 
 section.nn {
-    height: 600px;
+    margin-bottom: 2cm;
+
+    height: 500px;
 
     display: flex;
     align-items: center;
