@@ -211,7 +211,7 @@ section.dd li {
 }
 
 section.dd li figure>div:first-child {
-    margin: 1em 2em 1em 1em;
+    margin: 1em 2em 0 0;
 
     display: flex;
     justify-content: space-around
@@ -229,8 +229,8 @@ section.dd li figure>div:first-child p svg {
 }
 
 section.dd li figure>div:first-child div {
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
 
     border-radius: 50%;
 
@@ -261,7 +261,7 @@ section.dd li figure>div:last-child div {
     background: linear-gradient(transparent 60%, #00000060)
 }
 
-section.dd li figure>div:last-child div h5 {
+section.dd li figure>div:last-child div h6 {
     opacity: .8;
 
     white-space: nowrap;
@@ -272,10 +272,12 @@ section.dd li figure>div:last-child div h5 {
 
     color: white
 }
-section.dd li figure>div:last-child div h6 {
+section.dd li figure>div:last-child div p {
     opacity: .5;
 
-    font-size: 11px
+    font-size: 11px;
+
+    color: white
 }
 
 @keyframes xx {
