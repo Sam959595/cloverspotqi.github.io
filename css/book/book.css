@@ -101,23 +101,26 @@ section.pp {
 /* nn */
 
 section.nn {
-    margin: 35px;
+    height: 670px
+}
 
-    height: 500px;
+section.nn :where(svg, a) {
+    position: fixed
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: center
+section.nn svg {
+    margin: 10px 30px 0
 }
 
 section.nn a {
-    z-index: -1;
-    position: fixed;
+    margin: 5cm calc((100vw - 200px) / 2) 0;
 
     width: 200px;
     aspect-ratio: 1/1.6;
 
     border-radius: 2px;
+
+    display: block;
 
     background-size: cover;
 
@@ -131,8 +134,7 @@ section.mm {
 
     border-radius: 15px;
 
-    display: flex;
-    flex-flow: column;
+    contain: paint;
 
     background-color: var(--gray-5)
 }
@@ -155,21 +157,10 @@ section.mm div h6 {
     color: var(--gray-5)
 }
 
-.hhh div {
-    margin: 0 5px 0 0 !important;
-
-    width: 17px;
-    height: 17px;
-
-    border-radius: 50%;
-
-    background-size: cover
-}
-
 /* tt */
 
 section.tt {
-    margin: 2cm 28px 10px
+    margin: 2cm 28px 0
 }
 
 section.tt figcaption {
@@ -329,7 +320,7 @@ section.dd li icon {
 
 @media screen and (prefers-color-scheme: light) {
     :root {
-        --soft: #ffffffaa;
+        --soft: #f2f2f6aa;
         --soft-2: #00000008;
 
         --gray-a: white;
@@ -355,7 +346,7 @@ section.dd li icon {
 
 @media screen and (prefers-color-scheme: dark) {
     :root {
-        --soft: #000000aa;
+        --soft: #121212aa;
         --soft-2: #ffffff08;
 
         --gray-a: black;
