@@ -60,13 +60,13 @@ $(document).ready(() => {
     }
 });
 
-// window
+// hidden book
 
 $(window).ready(() => {
     window.addEventListener('scroll', () => {
-        let bb = $('section.nn a')[0]
+        let bb = $('section.nn')[0]
 
-        if ($(window).scrollTop() >= 600) {
+        if ($(window).scrollTop() >= 670) {
             bb.style.visibility = 'hidden'
         } else {
             bb.style.visibility = ''
