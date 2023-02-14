@@ -55,31 +55,31 @@ window.addEventListener('touchstart', x => {
 
 // start, tags inset background
 window.addEventListener('DOMContentLoaded', () => {
-    let a = $('section.nn svg'),
-        d = $('#yy'),
-        b = $('body'),
-        k = $('html'),
-        c = $('section.nn')
+    let d = $('#yy'),
+        a = $('section.nn svg'),
+        k = $('html')[0],
+        b = $('body')[0],
+        c = $('section.nn')[0]
 
     d.click(() => {
-        k[0].style.cssText = 'overflow: hidden; height: 100%';
-        b[0].style.cssText = 'overflow: hidden; height: 100%';
-        c[0].style.cssText = 'pointer-events: auto; opacity: 1'
+        k.style.cssText = 'overflow: hidden; height: 100%';
+        b.style.cssText = 'overflow: hidden; height: 100%';
+        c.style.cssText = 'pointer-events: auto; opacity: 1'
     })
     a.click(() => {
-        k[0].removeAttribute('style');
-        b[0].removeAttribute('style');
-        c[0].removeAttribute('style')
+        k.removeAttribute('style');
+        b.removeAttribute('style');
+        c.removeAttribute('style')
     })
 })
 
 // author, button follow
 window.addEventListener('click', () => {
-    let a = $('section.ww figcaption button')
+    let a = $('section.ww figcaption button')[0]
 
     a.click(() => {
-        (a[0].textContent === 'В ЧИТАТЕЛИ') ? a[0].textContent = 'ЧИТАЮ' : a[0].textContent = 'В ЧИТАТЕЛИ';
-        (a[0].textContent === 'В ЧИТАТЕЛИ') ? a[0].classList.toggle('aa') : a[0].classList.toggle('aa')
+        (a.textContent === 'В ЧИТАТЕЛИ') ? a.textContent = 'ЧИТАЮ' : a.textContent = 'В ЧИТАТЕЛИ';
+        (a.textContent === 'В ЧИТАТЕЛИ') ? a.classList.toggle('aa') : a.classList.toggle('aa')
     })
 })
 
