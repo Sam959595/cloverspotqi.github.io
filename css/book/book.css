@@ -105,8 +105,7 @@ section.mm svg {
 }
 
 section.mm figure {
-    padding-block: 4.1cm;
-    background-image: linear-gradient(#00beff, #553fff)
+    padding-block: 4.1cm
 }
 
 section.mm figure a {
@@ -127,23 +126,29 @@ section.mm figure a {
 section.mm {
     height: 700px;
 
-    margin: 15px;
+    margin: 0 15px 15px;
 
-    border-radius: 15px;
+    border-radius: 0 0 15px 15px;
 
     contain: paint;
 
     overflow-y: scroll;
+}
+
+section.mm figcaption {
+    padding: 20px;
+    border-radius: 15px;
 
     background-color: var(--gray-5)
 }
 
 section.mm div {
-    margin: 20px;
-
     display: flex;
     flex-flow: wrap;
     gap: .5em
+}
+section.mm figcaption div:first-child {
+    margin-bottom: 20px;
 }
 
 section.mm div h6 {
