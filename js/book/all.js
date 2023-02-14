@@ -55,28 +55,21 @@ window.addEventListener('touchstart', x => {
 
 // start, tags inset background
 window.addEventListener('DOMContentLoaded', () => {
-    let d = $('#yy'),
-        a = $('html'),
+    let a = $('section.nn svg'),
+        d = $('#yy'),
         b = $('body'),
+        k = $('html'),
         c = $('section.nn')
 
     d.click(() => {
-        a[0].classList.add('qq');
-        b[0].classList.add('qq');
-        c[0].classList.add('qqq')
+        k[0].style.cssText = 'overflow: hidden; height: 100%';
+        b[0].style.cssText = 'overflow: hidden; height: 100%';
+        c[0].style.cssText = 'pointer-events: auto; opacity: 1'
     })
-})
-window.addEventListener('DOMContentLoaded', () => {
-    let a = $('section.nn svg')
-
     a.click(() => {
-        let a = $('html'),
-            b = $('body'),
-            c = $('section.nn');
-
-        a[0].removeAttribute('class');
-        b[0].removeAttribute('class');
-        c[0].classList.remove('qqq');
+        k[0].removeAttribute('style');
+        b[0].removeAttribute('style');
+        c[0].removeAttribute('style')
     })
 })
 
@@ -87,6 +80,48 @@ window.addEventListener('click', () => {
     a.click(() => {
         (a[0].textContent === 'В ЧИТАТЕЛИ') ? a[0].textContent = 'ЧИТАЮ' : a[0].textContent = 'В ЧИТАТЕЛИ';
         (a[0].textContent === 'В ЧИТАТЕЛИ') ? a[0].classList.toggle('aa') : a[0].classList.toggle('aa')
+    })
+})
+
+// book, button follow
+window.onload = () => {
+    $('section.ee')[0].onclick = x => {
+        let aa = x.target;
+
+        while (aa) {
+            if (aa.tagName == 'BUTTON') {
+                (aa.textContent === 'СЛЕДОВАТЬ') ? aa.textContent = 'ВЫ СЛЕДУЕТЕ' : aa.textContent = 'СЛЕДОВАТЬ';
+                (aa.textContent === 'СЛЕДОВАТЬ') ? aa.removeAttribute('style') : aa.style.color = 'var(--gray)'
+            };
+
+            aa = aa.parentNode;
+        }
+    }
+}
+
+// double-tap post
+$(document).ready(() => {
+    $('section.dd li')[0].addEventListener('dblclick', () => {
+
+        if ($('section.dd li')[0].querySelector('icon') === null) {
+            //contain: paint $('section.dd li')[0].style.position = 'relative';
+
+            let vv = document.createElement('icon');
+            $('section.dd li')[0].appendChild(vv);
+
+            $('section.dd li icon')[0].style.cssText = 'opacity: 1; transition: opacity .2s ease-out';
+
+            setTimeout(() => {
+                $('section.dd li icon')[0].style.opacity = '0';
+
+                setTimeout(() => {
+                    $('section.dd li icon')[0].remove();
+                    $('section.dd li')[0].removeAttribute('style');
+                }, 200)
+            }, 900)
+        } else {
+            return false;
+        }
     })
 })
 
