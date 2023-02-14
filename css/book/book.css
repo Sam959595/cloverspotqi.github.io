@@ -98,22 +98,19 @@ section.pp {
     transition: visibility 1s, opacity 1s
 }
 
-/* nn */
+/* mm */
 
-section.nn {
-    height: 670px
+section.mm svg {
+    margin: 20px
 }
 
-section.nn :where(svg, a) {
-    position: fixed
+section.mm figure {
+    padding-block: 4.1cm;
+    background-image: linear-gradient(#00beff, #553fff)
 }
 
-section.nn svg {
-    margin: 10px 30px 0
-}
-
-section.nn a {
-    margin: 5cm calc((100vw - 200px) / 2) 0;
+section.mm figure a {
+    margin-inline: calc((100vw - 230px) / 2);
 
     width: 200px;
     aspect-ratio: 1/1.6;
@@ -127,14 +124,16 @@ section.nn a {
     box-shadow: 0 5px 10px #00000040
 }
 
-/* mm */
-
 section.mm {
-    margin: 10px 15px;
+    height: 700px;
+
+    margin: 15px;
 
     border-radius: 15px;
 
     contain: paint;
+
+    overflow-y: scroll;
 
     background-color: var(--gray-5)
 }
@@ -160,7 +159,7 @@ section.mm div h6 {
 /* tt */
 
 section.tt {
-    margin: 2cm 28px 0
+    margin: 2cm 28px 15px
 }
 
 section.tt figcaption {
@@ -188,7 +187,7 @@ section.tt figcaption div:nth-child(-n+3) {
 /* dd */
 
 section.dd {
-    margin: 15px
+    margin-inline: 15px
 }
 section.dd ul {
     display: grid;
