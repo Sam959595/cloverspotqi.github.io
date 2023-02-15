@@ -100,16 +100,24 @@ section.pp {
 
 /* mm */
 
+section.mm {
+    height: 730px;
+
+    margin: 0 15px 15px;
+
+    border-radius: 0 0 15px 15px;
+
+    text-align: right;
+
+    overflow-y: scroll
+}
+
 section.mm svg {
-    margin: 20px
+    margin: 10px 20px 0
 }
 
-section.mm figure {
-    padding-block: 4.1cm
-}
-
-section.mm figure a {
-    margin-inline: calc((100vw - 230px) / 2);
+section.mm>a {
+    margin: 3.5cm calc((100vw - 230px) / 2) 4.3cm;
 
     width: 200px;
     aspect-ratio: 1/1.6;
@@ -123,20 +131,9 @@ section.mm figure a {
     box-shadow: 0 5px 10px #00000040
 }
 
-section.mm {
-    height: 700px;
-
-    margin: 0 15px 15px;
-
-    border-radius: 0 0 15px 15px;
-
-    contain: paint;
-
-    overflow-y: scroll;
-}
-
 section.mm figcaption {
     padding: 20px;
+
     border-radius: 15px;
 
     background-color: var(--gray-5)
@@ -148,7 +145,7 @@ section.mm div {
     gap: .5em
 }
 section.mm figcaption div:first-child {
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 section.mm div h6 {
