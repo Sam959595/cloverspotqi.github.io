@@ -105,7 +105,7 @@ section.mm {
 
     margin: 0 15px 15px;
 
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 18px 18px;
 
     text-align: right;
 
@@ -134,7 +134,7 @@ section.mm>a {
 section.mm figcaption {
     padding: 20px;
 
-    border-radius: 15px;
+    border-radius: 18px;
 
     background-color: var(--gray-5)
 }
@@ -198,7 +198,7 @@ section.dd ul {
 }
 
 section.dd li {
-    border-radius: 15px;
+    border-radius: 12px;
 
     contain: paint;
 
