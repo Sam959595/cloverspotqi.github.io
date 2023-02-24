@@ -1,5 +1,5 @@
 document.addEventListener('dblclick', () => {
-    $('section.ee')[0].classList.add('eee')
+    $('section.ee')[0].style.cssText = 'pointer-events: auto; opacity: 1'
 })
 
 $(window).ready( () => {
@@ -7,11 +7,11 @@ $(window).ready( () => {
 
     if (aa === true) {
         window.addEventListener('touchmove', () => {
-            $('section.ee')[0].classList.remove('eee')
+            $('section.ee')[0].removeAttribute('style')
         })
     } else {
         window.addEventListener('scroll', () => {
-            $('section.ee')[0].classList.remove('eee')
+            $('section.ee')[0].removeAttribute('style')
         })
     }
 })
