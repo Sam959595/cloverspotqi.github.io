@@ -20,38 +20,38 @@ $(window).ready( () => {
 
 window.addEventListener('change', () => {
     let vv = $('section.ee select:first-child').val(),
-        nn = $('section.vv')
+        nn = $('section.vv')[0]
 
     if (vv == 1) {
-        nn[0].classList.add('y')
-        nn[0].classList.remove('yy', 'yyy')
+        nn.classList.add('y')
+        nn.classList.remove('yy', 'yyy')
     } else if (vv == 2) {
-        nn[0].classList.add('yy')
-        nn[0].classList.remove('y', 'yyy')
+        nn.classList.add('yy')
+        nn.classList.remove('y', 'yyy')
     } else if (vv == 3) {
-        nn[0].classList.remove('yy', 'y', 'yyy')
+        nn.classList.remove('yy', 'y', 'yyy')
     } else if (vv == 4) {
-        nn[0].classList.add('yyy')
-        nn[0].classList.remove('yy', 'y')
+        nn.classList.add('yyy')
+        nn.classList.remove('yy', 'y')
     }
 })
 
 window.addEventListener('change', () => {
     let vv = $('section.ee select:nth-child(2)').val(),
-        nn = $('section.vv')
+        nn = $('section.vv')[0]
 
     if (vv == 1) {
-        nn[0].classList.add('zzz')
-        nn[0].classList.remove('sss')
+        nn.classList.add('zzz')
+        nn.classList.remove('sss')
     } else if (vv == 2) {
-        nn[0].classList.add('sss')
-        nn[0].classList.remove('zzz')
+        nn.classList.add('sss')
+        nn.classList.remove('zzz')
     } else if (vv == 3) {
-        nn[0].classList.remove('sss', 'zzz')
+        nn.classList.remove('sss', 'zzz')
     }
 })
 
-document.addEventListener('change', () => {
+window.addEventListener('change', () => {
     let vv = $('section.ee select:last-child').val(),
         nn = $('body')
 
