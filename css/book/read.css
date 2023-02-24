@@ -78,11 +78,6 @@ section.ee select {
     color: var(--gray)
 }
 
-.eee {
-    pointer-events: auto !important;
-    opacity: 1 !important
-}
-
 /* vv */
 
 section.vv {
