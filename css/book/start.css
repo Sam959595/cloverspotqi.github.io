@@ -381,12 +381,12 @@ section.bb progress::-webkit-progress-value {
 section.dd {
     margin-inline: 15px
 }
+
 section.dd ul {
     display: grid;
     grid-auto-flow: row;
     row-gap: 10px
 }
-
 section.dd li {
     border-radius: 12px;
 
