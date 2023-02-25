@@ -202,9 +202,9 @@ section.kk li>figure {
     animation: xx .5s
 }
 
-/* nn */
+/* ll */
 
-section.nn {
+section.ll {
     pointer-events: none;
     opacity: 0;
 
@@ -221,7 +221,7 @@ section.nn {
     transition: opacity .5s ease
 }
 
-section.nn svg {
+section.ll svg {
     position: inherit;
     inset: 0 auto auto 0;
 
@@ -232,34 +232,34 @@ section.nn svg {
     -webkit-backdrop-filter: blur(20px)
 }
 
-section.nn ul li+li {
+section.ll ul li+li {
     margin-top: 2cm
 }
 
-section.nn ul li:nth-child(1) * {
+section.ll ul li:nth-child(1) * {
     color: var(--blue)
 }
 
-section.nn ul li:nth-child(2) * {
+section.ll ul li:nth-child(2) * {
     color: var(--red)
 }
 
-section.nn ul li:nth-child(3) * {
+section.ll ul li:nth-child(3) * {
     color: var(--violet)
 }
 
-section.nn ul li:nth-child(4) * {
+section.ll ul li:nth-child(4) * {
     color: var(--orange)
 }
 
-section.nn h1 {
+section.ll h1 {
     opacity: .5;
 
     text-align: right;
     font: 700 14px ui-rounded
 }
 
-section.nn div {
+section.ll div {
     margin-top: .5em;
 
     display: flex;
@@ -267,11 +267,11 @@ section.nn div {
     gap: .5em
 }
 
-section.nn div a {
+section.ll div a {
     flex-grow: 1
 }
 
-section.nn div h6 {
+section.ll div h6 {
     padding: 8px 10px;
 
     border-radius: 9px;
@@ -282,38 +282,27 @@ section.nn div h6 {
     background-color: var(--gray-3)
 }
 
-.qqq {
-    pointer-events: auto !important;
-    opacity: 1 !important
-}
-
 /* hh */
 
 section.hh nav ul {
-    margin: 35px;
+    margin-block: 2em;
 
-    display: flex;
-    flex-flow: column;
-    row-gap: 1em
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
 
-section.hh svg {
-    padding-block: 4cm;
+section.hh>svg {
+    margin-block: 5cm;
 
     display: block;
 }
 
-section.hh nav ul h1 {
-    opacity: .5;
-
-    text-align: right;
-    text-overflow: ellipsis;
-    overflow: hidden;
-
-    font: 600 19px system-ui
+section.hh nav ul svg {
+    opacity: .4
 }
 
-.hhh h1 {
+.hhh svg {
     opacity: 1 !important
 }
 
@@ -379,6 +368,152 @@ section.bb progress::-webkit-progress-value {
     border-radius: inherit;
 
     background-color: #ffffff90
+}
+
+/* dd */
+
+section.dd {
+    margin-inline: 15px
+}
+section.dd ul {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 10px
+}
+
+section.dd li {
+    border-radius: 12px;
+
+    contain: paint;
+
+    background-color: var(--gray-5)
+}
+
+section.dd li>figure>div:first-child {
+    margin: 1em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+section.dd li figure>div:first-child p {
+    font-size: 11px
+}
+section.dd li figure>div:first-child div {
+    aspect-ratio: 1;
+
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50%;
+
+    background: center/cover
+}
+
+section.dd li figure>div:first-child h6 {
+    font-weight: 700
+}
+
+section.dd li>figure>h6 {
+    margin: 1em;
+
+    font-size: 13px
+}
+
+section.dd li figure>div:last-child {
+    aspect-ratio: 1/1.4;
+
+    background: center/cover
+}
+
+section.dd li figure>div:last-child>div {
+    height: 100%;
+
+    padding: 1em;
+
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+
+    background-image: linear-gradient(transparent 60%, #00000060)
+}
+
+section.dd li figure>div:last-child div h6+h6 {
+    opacity: .8
+}
+section.dd li figure>div:last-child div h6 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    font-weight: 600;
+
+    color: white
+}
+section.dd li figure>div:last-child div p {
+    opacity: .5;
+
+    margin-top: .5em;
+
+    font: 500 11px system-ui;
+
+    color: white
+}
+
+@keyframes xx {
+    0% {
+        opacity: 0;
+        transform: scale(0)
+    }
+
+    30% {
+        opacity: 1;
+        transform: scale(1.15)
+    }
+
+    60% {
+        transform: scale(.95)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+section.dd li icon {
+    position: absolute;
+    inset: 0;
+
+    margin: auto;
+
+    width: 80px;
+    height: 80px;
+
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z'/%3E%3C/svg%3E") no-repeat;
+
+    animation: xx .5s cubic-bezier(0.29, 0.27, 0.49, 1.07)
+}
+
+/* nn */
+
+section.nn {
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: end
+}
+section.nn div {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    
+    background: center/cover
+}
+section.nn div:not(:last-child) {
+    margin-right: -5px;
+
+    clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
 }
 
 /* color */
