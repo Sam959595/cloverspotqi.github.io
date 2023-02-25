@@ -304,8 +304,8 @@ section.hh ul svg {
 section.hh div {
     margin: .8em auto 0;
 
-    width: 4px;
-    height: 4px;
+    width: 3px;
+    height: 3px;
 
     border-radius: 50%;
 
@@ -438,10 +438,16 @@ section.dd li figure>div:last-child>div {
     padding: 1em;
 
     display: flex;
-    align-items: end;
-    justify-content: space-between;
+    flex-flow: column;
+    justify-content: end;
 
     background-image: linear-gradient(transparent 60%, #00000060)
+}
+
+section.dd li figure>div:last-child>div>figure {
+    display: inherit;
+    align-items: center;
+    justify-content: space-between
 }
 
 section.dd li figure>div:last-child div h6+h6 {
@@ -457,10 +463,11 @@ section.dd li figure>div:last-child div h6 {
     color: white
 }
 section.dd li figure>div:last-child div p {
-    opacity: .5;
+    /* opacity: .5; */
 
     margin-top: .5em;
 
+    text-align: right;
     font: 500 11px system-ui;
 
     color: white
@@ -503,11 +510,9 @@ section.dd li icon {
 /* nn */
 
 section.nn {
-    margin-bottom: 30px;
-
-    display: flex;
-    justify-content: end
+    display: flex
 }
+
 section.nn div {
     width: 20px;
     height: 20px;
