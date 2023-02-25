@@ -298,7 +298,7 @@ section.hh nav ul {
 }
 
 section.hh svg {
-    margin: 4cm auto;
+    padding-block: 4cm;
 
     display: block;
 }
@@ -310,7 +310,7 @@ section.hh nav ul h1 {
     text-overflow: ellipsis;
     overflow: hidden;
 
-    font: 600 17px system-ui
+    font: 600 19px system-ui
 }
 
 .hhh h1 {
