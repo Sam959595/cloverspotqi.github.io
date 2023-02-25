@@ -1,8 +1,3 @@
-.qq {
-    height: -webkit-fill-available;
-    overflow-y: hidden
-}
-
 /* img */
 
 [data-url] {
@@ -450,24 +445,24 @@ section.dd li figure>div:last-child>div>figure {
     justify-content: space-between
 }
 
-section.dd li figure>div:last-child div h6+h6 {
-    opacity: .8
-}
 section.dd li figure>div:last-child div h6 {
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
     overflow: hidden;
 
     font-weight: 600;
 
     color: white
 }
+section.dd li figure>div:last-child div h6+h6 {
+    opacity: .7
+}
 section.dd li figure>div:last-child div p {
-    /* opacity: .5; */
+    opacity: .5;
 
     margin-top: .5em;
 
-    text-align: right;
     font: 500 11px system-ui;
 
     color: white
