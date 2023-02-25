@@ -3,7 +3,6 @@
 [data-url] {
     opacity: 0
 }
-
 [style] {
     opacity: 1;
 
@@ -24,7 +23,9 @@ section.rr {
 
     -webkit-backdrop-filter: saturate(180%) blur(20px);
 
-    background-image: linear-gradient(var(--gray-a), var(--soft))
+    background-image: linear-gradient(var(--gray-a), var(--soft));
+
+    transition: opacity .4s ease
 }
 
 section.rr ul {
@@ -52,113 +53,7 @@ section.rr h1 {
     font: 600 11px system-ui
 }
 
-/* kk */
-
-section.kk ul {
-    padding-inline: 35px;
-
-    display: grid;
-    grid-auto-columns: max-content;
-    grid-auto-flow: column;
-    column-gap: 1em;
-
-    overflow-x: scroll;
-
-    scroll-snap-type: x mandatory;
-    scroll-padding-left: 35px
-}
-
-section.kk li {
-    scroll-snap-align: start
-}
-
-section.kk li>div {
-    width: calc(100vw - 70px);
-    aspect-ratio: 1/1.8;
-
-    border-radius: 10px;
-
-    padding: 1em;
-
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between
-}
-
-section.kk li>div *:not(button) {
-    color: white
-}
-
-section.kk p {
-    opacity: .8;
-
-    font-weight: 600
-}
-
-section.kk li div div:first-child a {
-    display: flex
-}
-
-section.kk li div div:first-child a div {
-    width: 20px;
-    height: 20px;
-
-    border-radius: 50%;
-
-    background-size: cover
-}
-
-section.kk li div div:first-child a div+div {
-    margin-left: -5px
-}
-
-section.kk h6 {
-    opacity: .8;
-
-    font-weight: 500;
-
-    text-shadow: 0 0 5px black
-}
-
-section.kk li div div:last-child a {
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    column-gap: .5em;
-}
-
-section.kk li div div:last-child a div {
-    width: 24px;
-    height: 24px;
-    aspect-ratio: 1;
-
-    border-radius: 50%;
-
-    background-size: cover
-}
-
-section.kk h1 {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-
-    font-weight: 600
-}
-
-section.kk button {
-    border-radius: 15px;
-
-    padding: .3em .8em;
-
-    display: block;
-
-    font: 700 13px system-ui;
-
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-
-    background-color: #ffffff20;
-    color: #ffffffcc
-}
+/* pp */
 
 @keyframes xx {
     0% {
@@ -183,334 +78,64 @@ section.kk button {
     }
 }
 
-section.kk li>figure {
-    position: absolute;
-    inset: 0;
-
-    margin: auto;
-
-    width: 80px;
-    height: 80px;
-
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z'/%3E%3C/svg%3E") no-repeat;
-
-    animation: xx .5s
-}
-
-/* ll */
-
-section.ll {
+section.pp {
     pointer-events: none;
+    visibility: hidden;
     opacity: 0;
 
     z-index: 1;
     position: fixed;
-    inset: 0;
+    inset: 0 0 auto;
 
-    padding: 45px 35px 35px;
-
-    overflow-y: scroll;
-
-    background-color: var(--gray-a);
-
-    transition: opacity .5s ease
-}
-
-section.ll svg {
-    position: inherit;
-    inset: 0 auto auto 0;
-
-    margin: 10px 0 0 35px;
-
-    border-radius: 50%;
-
-    -webkit-backdrop-filter: blur(20px)
-}
-
-section.ll ul li+li {
-    margin-top: 2cm
-}
-
-section.ll ul li:nth-child(1) * {
-    color: var(--blue)
-}
-
-section.ll ul li:nth-child(2) * {
-    color: var(--red)
-}
-
-section.ll ul li:nth-child(3) * {
-    color: var(--violet)
-}
-
-section.ll ul li:nth-child(4) * {
-    color: var(--orange)
-}
-
-section.ll h1 {
-    opacity: .5;
-
-    text-align: right;
-    font: 700 14px ui-rounded
-}
-
-section.ll div {
-    margin-top: .5em;
+    margin-top: 1cm;
 
     display: flex;
-    flex-flow: wrap;
-    gap: .5em
+    align-items: center;
+    justify-content: center;
+
+    animation: xx .6s paused;
+
+    transition: visibility 1s, opacity 1s
+}
+section.pp svg {
+    -webkit-filter: drop-shadow(0 15px 30px #ff000060)
 }
 
-section.ll div a {
-    flex-grow: 1
+/* ss */
+
+section.ss svg {
+    margin: 10px 20px 0 auto;
+
+    display: block
 }
 
-section.ll div h6 {
-    padding: 8px 10px;
+/* aa */
 
-    border-radius: 9px;
+section.aa a {
+    margin: 3.8cm auto;
 
-    text-align: center;
-    font: 600 14px ui-rounded;
-
-    background-color: var(--gray-3)
-}
-
-/* hh */
-
-section.hh ul {
-    margin-block: 1cm;
-
-    display: grid;
-    grid-auto-flow: column;
-    justify-items: center;
-    column-gap: 4em
-}
-section.hh ul svg {
-    display: block;
-
-    fill: var(--gray-4)
-}
-
-.hhh svg {
-    fill: var(--gray-b) !important
-}
-
-section.hh div {
-    margin: .8em auto 0;
-
-    width: 4px;
-    height: 4px;
-
-    border-radius: 50%;
-
-    background-color: #fe0000
-}
-
-/* bb */
-
-section.bb>ul {
-    margin: 0 35px max(35px, env(safe-area-inset-bottom));
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2em
-}
-
-section.bb>ul li a {
+    width: 200px;
     aspect-ratio: 1/1.6;
 
     border-radius: 2px;
 
-    display: flex;
+    display: block;
 
     background-size: cover;
 
     box-shadow: 0 5px 10px #00000040
 }
 
-section.bb h6 {
-    margin: auto .8em .8em auto;
+/* tt */
 
-    font: 700 13px ui-rounded;
-
-    color: white;
-
-    text-shadow: 0 0 10px #00000080
-}
-
-section.bb p {
-    margin-top: 1em;
-
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-
-    font-size: 11px
-}
-
-section.bb progress {
-    width: -webkit-fill-available;
-    height: 2px;
-
-    margin-inline: .8em
-}
-
-section.bb progress::-webkit-progress-bar {
-    border-radius: 1px;
-
-    -webkit-backdrop-filter: blur(20px);
-
-    background-color: #ffffff50
-}
-
-section.bb progress::-webkit-progress-value {
-    border-radius: inherit;
-
-    background-color: #ffffff90
-}
-
-/* dd */
-
-section.dd {
-    margin-inline: 15px
-}
-
-section.dd ul {
-    display: grid;
-    grid-auto-flow: row;
-    row-gap: 1em
-}
-section.dd li {
-    border-radius: 12px;
-
-    contain: paint;
-
-    background-color: var(--gray-5)
-}
-
-section.dd li>figure>div:first-child {
-    margin: 1em;
+section.tt {
+    margin: 2cm 28px 15px;
 
     display: flex;
-    align-items: center;
-    justify-content: space-between
-}
-section.dd li figure>div:first-child p {
-    font-size: 11px
-}
-section.dd li figure>div:first-child div {
-    aspect-ratio: 1;
-
-    width: 28px;
-    height: 28px;
-
-    border-radius: 50%;
-
-    background: center/cover
+    justify-content: end
 }
 
-section.dd li figure>div:first-child h6 {
-    font-weight: 700
-}
-
-section.dd li>figure>h6 {
-    margin: 1em;
-
-    font-size: 13px
-}
-
-section.dd li figure>div:last-child {
-    aspect-ratio: 1/1.4;
-
-    background: center/cover
-}
-
-section.dd li figure>div:last-child>div {
-    height: 100%;
-
-    padding: 1em;
-
-    display: flex;
-    flex-flow: column;
-    justify-content: end;
-
-    background-image: linear-gradient(transparent 60%, #00000060)
-}
-
-section.dd li figure>div:last-child>div>figure {
-    display: inherit;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: 10px
-}
-
-section.dd li figure>div:last-child div h6 {
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-
-    font-weight: 600;
-
-    color: white
-}
-section.dd li figure>div:last-child div h6+h6 {
-    opacity: .7
-}
-section.dd li figure>div:last-child div p {
-    opacity: .9;
-
-    margin-top: .5em;
-
-    font: 500 11px system-ui;
-
-    color: white
-}
-
-@keyframes xx {
-    0% {
-        opacity: 0;
-        transform: scale(0)
-    }
-
-    30% {
-        opacity: 1;
-        transform: scale(1.15)
-    }
-
-    60% {
-        transform: scale(.95)
-    }
-
-    100% {
-        transform: scale(1)
-    }
-}
-
-section.dd li icon {
-    position: absolute;
-    inset: 0;
-
-    margin: auto;
-
-    width: 80px;
-    height: 80px;
-
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z'/%3E%3C/svg%3E") no-repeat;
-
-    animation: xx .5s cubic-bezier(0.29, 0.27, 0.49, 1.07)
-}
-
-/* nn */
-
-section.nn {
-    display: flex
-}
-
-section.nn div {
+section.tt div {
     width: 20px;
     height: 20px;
 
@@ -518,10 +143,57 @@ section.nn div {
     
     background: center/cover
 }
-section.nn div:not(:last-child) {
-    margin-right: -5px;
-
+section.tt div+div:not(:last-child) {
+    margin-left: -5px
+}
+section.tt div:last-child {
+    margin-left: 1em
+}
+section.tt div:nth-child(-n+3) {
     clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
+}
+
+/* mm */
+
+section.mm {
+    margin-inline: 15px;
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background-color: var(--gray-5)
+}
+
+section.mm div {
+    display: flex;
+    flex-flow: wrap;
+    gap: .5em
+}
+section.mm div:last-child {
+    margin-top: 20px
+}
+section.mm div h6 {
+    padding: 4px 10px;
+
+    border-radius: 7px;
+
+    font: 600 14px ui-rounded;
+
+    color: var(--gray-5)
+}
+
+/* ee */
+
+section.ee {
+    margin: 10px 15px max(15px, env(safe-area-inset-bottom));
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background-color: var(--gray-5)
+}
+section.ee h6 {
+    font: 14px/1.4 system-ui
 }
 
 /* color */
@@ -536,7 +208,7 @@ section.nn div:not(:last-child) {
 
         --gray: #1d1d1f;
         --gray-2: #8e8e93;
-        --gray-3: #eee;
+        --gray-3: #d2d2d7;
         --gray-4: #c0c0c4;
         --gray-5: #f2f2f6;
 
@@ -548,6 +220,7 @@ section.nn div:not(:last-child) {
         --violet: #9283ff;
         --green: #31c692;
         --orange: #fd9900;
+        --slate: #7c8696;
     }
 }
 
@@ -561,7 +234,7 @@ section.nn div:not(:last-child) {
 
         --gray: #f5f5f7;
         --gray-2: #8e8e93;
-        --gray-3: #1c1c1f;
+        --gray-3: #333338;
         --gray-4: #505052;
         --gray-5: #121212;
 
@@ -573,5 +246,6 @@ section.nn div:not(:last-child) {
         --violet: #9283ff;
         --green: #77ffc6;
         --orange: #ff9f00;
+        --slate: #7c8696;
     }
 }
