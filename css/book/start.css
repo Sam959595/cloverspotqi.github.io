@@ -284,26 +284,40 @@ section.ll div h6 {
 
 /* hh */
 
-section.hh nav ul {
-    margin-block: 2em;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-}
-
 section.hh>svg {
     margin-block: 5cm;
 
-    display: block;
+    display: block
 }
 
-section.hh nav ul svg {
-    opacity: .4
+section.hh ul {
+    margin-block: 1cm;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center
+}
+section.hh ul svg {
+    opacity: .4;
+
+    display: block
 }
 
 .hhh svg {
     opacity: 1 !important
+}
+
+section.hh indicator {
+    margin: .8em auto 0;
+
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+
+    display: block;
+
+    background-color: #fe0000
 }
 
 /* bb */
