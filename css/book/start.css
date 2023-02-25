@@ -284,16 +284,17 @@ section.hh ul {
 
     display: grid;
     grid-auto-flow: column;
-    justify-items: center
+    justify-items: center;
+    column-gap: 4em
 }
 section.hh ul svg {
-    opacity: .4;
+    display: block;
 
-    display: block
+    fill: var(--gray-4)
 }
 
 .hhh svg {
-    opacity: 1 !important
+    fill: var(--gray-b) !important
 }
 
 section.hh div {
@@ -374,13 +375,13 @@ section.bb progress::-webkit-progress-value {
 /* dd */
 
 section.dd {
-    margin-inline: 10px
+    margin-inline: 15px
 }
 
 section.dd ul {
     display: grid;
     grid-auto-flow: row;
-    row-gap: 10px
+    row-gap: 1em
 }
 section.dd li {
     border-radius: 12px;
@@ -442,7 +443,8 @@ section.dd li figure>div:last-child>div {
 section.dd li figure>div:last-child>div>figure {
     display: inherit;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    column-gap: 10px
 }
 
 section.dd li figure>div:last-child div h6 {
