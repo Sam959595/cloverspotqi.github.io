@@ -17,8 +17,8 @@ $(document).ready(() => {
         threshold: 0
     });
 
-    document.querySelectorAll('[data-url]').forEach(a => {
-        ll.observe(a)
+    document.querySelectorAll('[data-url]').forEach(x => {
+        ll.observe(x)
     })
 })
 
@@ -56,10 +56,10 @@ window.addEventListener('touchstart', x => {
 // start, tags inset background
 window.addEventListener('DOMContentLoaded', () => {
     let d = $('#yy'),
-        a = $('section.nn svg'),
+        a = $('section.ll svg'),
         k = $('html')[0],
         b = $('body')[0],
-        c = $('section.nn')[0]
+        c = $('section.ll')[0]
 
     d.click(() => {
         k.style.cssText = 'overflow: hidden; height: 100%';
