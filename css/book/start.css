@@ -284,12 +284,6 @@ section.ll div h6 {
 
 /* hh */
 
-section.hh>svg {
-    margin-block: 5cm;
-
-    display: block
-}
-
 section.hh ul {
     margin-block: 1cm;
 
@@ -307,15 +301,13 @@ section.hh ul svg {
     opacity: 1 !important
 }
 
-section.hh indicator {
+section.hh div {
     margin: .8em auto 0;
 
     width: 4px;
     height: 4px;
 
     border-radius: 50%;
-
-    display: block;
 
     background-color: #fe0000
 }
