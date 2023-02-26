@@ -381,7 +381,7 @@ section.dd {
 section.dd ul {
     display: grid;
     grid-auto-flow: row;
-    row-gap: 1em
+    row-gap: 10px
 }
 section.dd li {
     border-radius: 12px;
@@ -391,44 +391,44 @@ section.dd li {
     background-color: var(--gray-5)
 }
 
-section.dd li>figure>div:first-child {
-    margin: 1em;
+section.dd li>div:first-child {
+    margin: 1em
+}
+
+section.dd li>div:first-child>div:first-child {
+    margin-bottom: 1em;
 
     display: flex;
     align-items: center;
     justify-content: space-between
 }
-section.dd li figure>div:first-child p {
+
+section.dd li>div:first-child h6 {
+    font-weight: 700
+}
+section.dd li>div:first-child p {
     font-size: 11px
 }
-section.dd li figure>div:first-child div {
-    aspect-ratio: 1;
-
+section.dd li>div:first-child div div:last-child {
     width: 28px;
     height: 28px;
 
     border-radius: 50%;
 
-    background: center/cover
+    background-size: cover
 }
 
-section.dd li figure>div:first-child h6 {
-    font-weight: 700
-}
-
-section.dd li>figure>h6 {
-    margin: 1em;
-
+section.dd li h5 {
     font-size: 13px
 }
 
-section.dd li figure>div:last-child {
+section.dd li>div:last-child {
     aspect-ratio: 1/1.4;
 
     background: center/cover
 }
 
-section.dd li figure>div:last-child>div {
+section.dd li>div:last-child>div {
     height: 100%;
 
     padding: 1em;
@@ -440,14 +440,14 @@ section.dd li figure>div:last-child>div {
     background-image: linear-gradient(transparent 60%, #00000060)
 }
 
-section.dd li figure>div:last-child>div>figure {
-    display: inherit;
+section.dd li>div:last-child>div>div {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     column-gap: 10px
 }
 
-section.dd li figure>div:last-child div h6 {
+section.dd li>div:last-child h6 {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -457,10 +457,28 @@ section.dd li figure>div:last-child div h6 {
 
     color: white
 }
-section.dd li figure>div:last-child div h6+h6 {
+section.dd li>div:last-child h6+h6 {
     opacity: .7
 }
-section.dd li figure>div:last-child div p {
+
+section.dd li>div:last-child div div div:last-child {
+    display: flex
+}
+section.dd li>div:last-child div div div:last-child div {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    
+    background: center/cover
+}
+section.dd li>div:last-child div div div:last-child div:not(:last-child) {
+    margin-right: -5px;
+
+    clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
+}
+
+section.dd li>div:last-child p {
     opacity: .9;
 
     margin-top: .5em;
@@ -502,26 +520,6 @@ section.dd li icon {
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z'/%3E%3C/svg%3E") no-repeat;
 
     animation: xx .5s cubic-bezier(0.29, 0.27, 0.49, 1.07)
-}
-
-/* nn */
-
-section.nn {
-    display: flex
-}
-
-section.nn div {
-    width: 20px;
-    height: 20px;
-
-    border-radius: 50%;
-    
-    background: center/cover
-}
-section.nn div:not(:last-child) {
-    margin-right: -5px;
-
-    clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
 }
 
 /* color */
