@@ -43,13 +43,14 @@ section.rr li {
 }
 
 section.rr h1 {
-    opacity: .3;
-
     margin-top: 15px;
 
     text-align: center;
 
-    font: 600 11px system-ui
+    font: 600 11px system-ui;
+
+    mix-blend-mode: overlay;
+    will-change: transform
 }
 
 /* kk */
@@ -297,11 +298,13 @@ section.hh ul svg {
     fill: var(--gray-b) !important
 }
 
-section.hh div {
+section.hh span {
     margin: .8em auto 0;
 
     width: 4px;
     height: 4px;
+
+    display: block;
 
     border-radius: 50%;
 
@@ -310,7 +313,7 @@ section.hh div {
 
 /* bb */
 
-section.bb>ul {
+section.bb ul {
     margin: 0 35px max(35px, env(safe-area-inset-bottom));
 
     display: grid;
@@ -318,7 +321,7 @@ section.bb>ul {
     gap: 2em
 }
 
-section.bb>ul li a {
+section.bb ul li a {
     aspect-ratio: 1/1.6;
 
     border-radius: 2px;
@@ -349,27 +352,6 @@ section.bb p {
     overflow: hidden;
 
     font-size: 11px
-}
-
-section.bb progress {
-    width: -webkit-fill-available;
-    height: 2px;
-
-    margin-inline: .8em
-}
-
-section.bb progress::-webkit-progress-bar {
-    border-radius: 1px;
-
-    -webkit-backdrop-filter: blur(20px);
-
-    background-color: #ffffff50
-}
-
-section.bb progress::-webkit-progress-value {
-    border-radius: inherit;
-
-    background-color: #ffffff90
 }
 
 /* dd */
@@ -404,7 +386,7 @@ section.dd .b {
 section.dd .a h6 {
     font-weight: 700
 }
-section.dd .a p {
+section.dd time {
     font-size: 11px
 }
 section.dd .c {
@@ -479,7 +461,7 @@ section.dd .f p {
     color: white
 }
 
-@keyframes xx {
+@keyframes x {
     0% {
         opacity: 0;
         transform: scale(0)
@@ -498,8 +480,7 @@ section.dd .f p {
         transform: scale(1)
     }
 }
-
-section.dd icon {
+section.dd span {
     position: absolute;
     inset: 0;
 
@@ -510,7 +491,17 @@ section.dd icon {
 
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z'/%3E%3C/svg%3E") no-repeat;
 
-    animation: xx .5s cubic-bezier(0.29, 0.27, 0.49, 1.07)
+    animation: x .5s cubic-bezier(0.29, 0.27, 0.49, 1.07)
+}
+
+section.dd video {
+    width: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    aspect-ratio: 1/1.7
 }
 
 /* color */
