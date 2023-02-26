@@ -391,25 +391,23 @@ section.dd li {
     background-color: var(--gray-5)
 }
 
-section.dd li>div:first-child {
+section.dd .a {
     margin: 1em
 }
-
-section.dd li>div:first-child>div:first-child {
+section.dd .b {
     margin-bottom: 1em;
 
     display: flex;
     align-items: center;
     justify-content: space-between
 }
-
-section.dd li>div:first-child h6 {
+section.dd .a h6 {
     font-weight: 700
 }
-section.dd li>div:first-child p {
+section.dd .a p {
     font-size: 11px
 }
-section.dd li>div:first-child div div:last-child {
+section.dd .c {
     width: 28px;
     height: 28px;
 
@@ -417,18 +415,15 @@ section.dd li>div:first-child div div:last-child {
 
     background-size: cover
 }
-
-section.dd li h5 {
+section.dd .a h5 {
     font-size: 13px
 }
-
-section.dd li>div:last-child {
+section.dd .f {
     aspect-ratio: 1/1.4;
 
     background: center/cover
 }
-
-section.dd li>div:last-child>div {
+section.dd .g {
     height: 100%;
 
     padding: 1em;
@@ -439,15 +434,13 @@ section.dd li>div:last-child>div {
 
     background-image: linear-gradient(transparent 60%, #00000060)
 }
-
-section.dd li>div:last-child>div>div {
+section.dd .m {
     display: flex;
     align-items: center;
     justify-content: space-between;
     column-gap: 10px
 }
-
-section.dd li>div:last-child h6 {
+section.dd .p h6 {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -457,14 +450,13 @@ section.dd li>div:last-child h6 {
 
     color: white
 }
-section.dd li>div:last-child h6+h6 {
+section.dd .p h6+h6 {
     opacity: .7
 }
-
-section.dd li>div:last-child div div div:last-child {
+section.dd .v {
     display: flex
 }
-section.dd li>div:last-child div div div:last-child div {
+section.dd .v div {
     width: 20px;
     height: 20px;
 
@@ -472,13 +464,12 @@ section.dd li>div:last-child div div div:last-child div {
     
     background: center/cover
 }
-section.dd li>div:last-child div div div:last-child div:not(:last-child) {
+section.dd .v div:not(:last-child) {
     margin-right: -5px;
 
     clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
 }
-
-section.dd li>div:last-child p {
+section.dd .f p {
     opacity: .9;
 
     margin-top: .5em;
@@ -508,7 +499,7 @@ section.dd li>div:last-child p {
     }
 }
 
-section.dd li icon {
+section.dd icon {
     position: absolute;
     inset: 0;
 
