@@ -189,10 +189,10 @@ $(document).ready(() => {
 
     let vv = document.querySelector('video');
     
-    vv.addEventListener('touchstart', () => {
+    $('section.dd .k .g')[0].addEventListener('touchstart', () => {
         vv.pause();
     })
-    vv.addEventListener('touchend', () => {
+    $('section.dd .k .g')[0].addEventListener('touchend', () => {
         if ($('video').prop('muted')) {
             $('video').prop('muted', false)
         }
