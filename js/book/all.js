@@ -186,16 +186,24 @@ $(document).ready(() => {
     document.querySelectorAll('video').forEach(x => {
         ll.observe(x)
     })
-
-    let vv = document.querySelector('video');
     
+    $('section.dd svg')[0].addEventListener('click', () => {
+        if ($('video').prop('muted')) {
+            $('video').prop('muted', false);
+
+            $('section.dd svg path')[0].setAttribute('fill', 'white')
+        } else {
+            $('video').prop('muted', true);
+
+            $('section.dd svg path')[0].setAttribute('fill', '#ffffff80')
+        }
+    })
+    
+    let vv = document.querySelector('video');
     $('section.dd .k .g')[0].addEventListener('touchstart', () => {
         vv.pause();
     })
     $('section.dd .k .g')[0].addEventListener('touchend', () => {
-        if ($('video').prop('muted')) {
-            $('video').prop('muted', false)
-        }
         vv.play();
     })
 })
