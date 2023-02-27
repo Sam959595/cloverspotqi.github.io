@@ -199,86 +199,6 @@ section.kk li>figure {
     animation: xx .5s
 }
 
-/* ll */
-
-section.ll {
-    pointer-events: none;
-    opacity: 0;
-
-    z-index: 1;
-    position: fixed;
-    inset: 0;
-
-    padding: 45px 35px 35px;
-
-    overflow-y: scroll;
-
-    background-color: var(--gray-a);
-
-    transition: opacity .5s ease
-}
-
-section.ll svg {
-    position: inherit;
-    inset: 0 auto auto 0;
-
-    margin: 10px 0 0 35px;
-
-    border-radius: 50%;
-
-    -webkit-backdrop-filter: blur(20px)
-}
-
-section.ll ul li+li {
-    margin-top: 2cm
-}
-
-section.ll ul li:nth-child(1) * {
-    color: var(--blue)
-}
-
-section.ll ul li:nth-child(2) * {
-    color: var(--red)
-}
-
-section.ll ul li:nth-child(3) * {
-    color: var(--violet)
-}
-
-section.ll ul li:nth-child(4) * {
-    color: var(--orange)
-}
-
-section.ll h1 {
-    opacity: .5;
-
-    text-align: right;
-    font: 700 14px ui-rounded
-}
-
-section.ll div {
-    margin-top: .5em;
-
-    display: flex;
-    flex-flow: wrap;
-    gap: .5em
-}
-
-section.ll div a {
-    flex-grow: 1
-}
-
-section.ll div h6 {
-    padding: 8px 10px;
-
-    border-radius: 9px;
-
-    text-align: center;
-    font: 600 14px ui-rounded;
-
-    background-color: var(--gray-3)
-}
-
 /* hh */
 
 section.hh ul {
@@ -441,6 +361,16 @@ section.dd video {
     width: 100%;
 
     display: block
+}
+
+section.dd svg {
+    margin: 0 0 auto auto;
+
+    border-radius: 50%;
+
+    background-color: #00000020;
+
+    -webkit-backdrop-filter: blur(10px)
 }
 
 section.dd .m {
