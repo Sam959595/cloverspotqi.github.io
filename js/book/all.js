@@ -173,17 +173,29 @@ $.ajax({
 
 // all, lazy load image url(a)
 $(document).ready(() => {
-    let vv = document.querySelector('video');
-    vv.playsInline = 'true';
-    vv.muted = 'true';
-    vv.loop = 'true';
-    vv.autoplay = 'false';
-    vv.play();
+    let ll = new IntersectionObserver(a => {
+        a.forEach(x => {
+            if (x.isIntersecting) {
+                x.target.play();
 
+            } else {
+                x.target.pause();
+            }
+        })
+    },{threshold: 0.5})
+    document.querySelectorAll('video').forEach(x => {
+        ll.observe(x)
+    })
+
+    let vv = document.querySelector('video');
+    
     vv.addEventListener('touchstart', () => {
         vv.pause();
     })
     vv.addEventListener('touchend', () => {
+        if ($('video').prop('muted')) {
+            $('video').prop('muted', false)
+        }
         vv.play();
     })
 })
