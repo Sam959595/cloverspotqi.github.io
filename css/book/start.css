@@ -32,6 +32,7 @@ section.rr ul {
     grid-auto-flow: column;
     column-gap: 5px
 }
+
 section.rr li {
     height: 40px;
 
@@ -288,6 +289,7 @@ section.hh ul {
     justify-items: center;
     column-gap: 4em
 }
+
 section.hh ul svg {
     display: block;
 
@@ -365,6 +367,7 @@ section.dd ul {
     grid-auto-flow: row;
     row-gap: 10px
 }
+
 section.dd li {
     border-radius: 12px;
 
@@ -376,6 +379,7 @@ section.dd li {
 section.dd .a {
     margin: 1em
 }
+
 section.dd .b {
     margin-bottom: 1em;
 
@@ -383,13 +387,16 @@ section.dd .b {
     align-items: center;
     justify-content: space-between
 }
+
 section.dd .a h6 {
     font-weight: 700
 }
+
 section.dd time {
     font-size: 11px
 }
-section.dd .c {
+
+section.dd .b a {
     width: 28px;
     height: 28px;
 
@@ -397,14 +404,20 @@ section.dd .c {
 
     background-size: cover
 }
-section.dd .a h5 {
+
+section.dd h5 {
     font-size: 13px
 }
+
 section.dd .f {
     aspect-ratio: 1/1.4;
 
     background: center/cover
 }
+section.dd .k {
+    position: relative
+}
+
 section.dd .g {
     height: 100%;
 
@@ -416,12 +429,19 @@ section.dd .g {
 
     background-image: linear-gradient(transparent 60%, #00000060)
 }
+
+section.dd .k .g {
+    position: absolute;
+    inset: 0
+}
+
 section.dd .m {
     display: flex;
     align-items: center;
     justify-content: space-between;
     column-gap: 10px
 }
+
 section.dd .p h6 {
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -432,26 +452,31 @@ section.dd .p h6 {
 
     color: white
 }
+
 section.dd .p h6+h6 {
     opacity: .7
 }
-section.dd .v {
+
+section.dd .m a {
     display: flex
 }
-section.dd .v div {
+
+section.dd .m a div {
     width: 20px;
     height: 20px;
 
     border-radius: 50%;
-    
+
     background: center/cover
 }
-section.dd .v div:not(:last-child) {
+
+section.dd .m a div:not(:last-child) {
     margin-right: -5px;
 
     clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
 }
-section.dd .f p {
+
+section.dd p {
     opacity: .9;
 
     margin-top: .5em;
@@ -480,6 +505,7 @@ section.dd .f p {
         transform: scale(1)
     }
 }
+
 section.dd span {
     position: absolute;
     inset: 0;
@@ -497,11 +523,10 @@ section.dd span {
 section.dd video {
     width: 100%;
 
+    aspect-ratio: 1/1.6;
     object-fit: cover;
 
-    display: block;
-
-    aspect-ratio: 1/1.7
+    display: block
 }
 
 /* color */
