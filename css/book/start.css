@@ -10,9 +10,9 @@
     transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
 }
 
-/* rr */
+/* a */
 
-section.rr {
+section.a {
     opacity: 0;
     pointer-events: none;
 
@@ -32,7 +32,7 @@ section.rr {
     clip-path: path("M30.3987859,-9.91740883e-16 L269.601214,9.91740883e-16 C278.765463,-6.91704411e-16 283.136497,1.16032014 287.210571,3.3391588 C291.284645,5.51799746 294.482003,8.71535463 296.660841,12.7894287 C298.83968,16.8635028 300,21.2345366 300,30.3987859 L300,39.6012141 C300,48.7654634 298.83968,53.1364972 296.660841,57.2105713 C294.482003,61.2846454 291.284645,64.4820025 287.210571,66.6608412 C283.136497,68.8396799 278.765463,70 269.601214,70 L30.3987859,70 C21.2345366,70 16.8635028,68.8396799 12.7894287,66.6608412 C8.71535463,64.4820025 5.51799746,61.2846454 3.3391588,57.2105713 C1.16032014,53.1364972 -1.47664867e-15,48.7654634 2.11716571e-15,39.6012141 L6.61160589e-16,30.3987859 C-4.61136274e-16,21.2345366 1.16032014,16.8635028 3.3391588,12.7894287 C5.51799746,8.71535463 8.71535463,5.51799746 12.7894287,3.3391588 C16.8635028,1.16032014 21.2345366,6.91704411e-16 30.3987859,-9.91740883e-16 Z")
 }
 
-section.rr h1 {
+section.a h1 {
     margin: 2em;
 
     text-align: center;
@@ -43,13 +43,13 @@ section.rr h1 {
 
     color: var(--soft-2)
 }
-section.rr h1 a {
+section.a h1 a {
     color: var(--gray-b)
 }
 
-/* ss */
+/* b */
 
-section.ss a {
+section.b a {
     margin: 35px 35px 0 auto;
 
     width: 30px;
@@ -62,9 +62,9 @@ section.ss a {
     background-size: cover
 }
 
-/* hh */
+/* c */
 
-section.hh ul {
+section.c ul {
     margin-block: 1cm;
 
     display: grid;
@@ -73,7 +73,7 @@ section.hh ul {
     column-gap: 4em
 }
 
-section.hh ul svg {
+section.c ul svg {
     display: block;
 
     fill: var(--gray-4)
@@ -83,7 +83,7 @@ section.hh ul svg {
     fill: var(--gray-b) !important
 }
 
-section.hh span {
+section.c span {
     margin: .8em auto 0;
 
     width: 4px;
@@ -96,62 +96,17 @@ section.hh span {
     background-color: #fe0000
 }
 
-/* bb */
+/* e */
 
-section.bb ul {
-    margin: 0 35px max(35px, env(safe-area-inset-bottom));
+section.e ul {
+    margin-inline: 15px;
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2em
-}
-
-section.bb ul li a {
-    aspect-ratio: 1/1.6;
-
-    border-radius: 2px;
-
-    display: flex;
-
-    background-size: cover;
-
-    box-shadow: 0 5px 10px #00000040
-}
-
-section.bb h6 {
-    margin: auto .8em .8em auto;
-
-    font: 700 13px ui-rounded;
-
-    color: white;
-
-    text-shadow: 0 0 10px #00000080
-}
-
-section.bb p {
-    margin-top: 1em;
-
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-
-    font-size: 11px
-}
-
-/* dd */
-
-section.dd {
-    margin-inline: 15px
-}
-
-section.dd ul {
     display: grid;
     grid-auto-flow: row;
     row-gap: 10px
 }
 
-section.dd li {
+section.e li {
     border-radius: 12px;
 
     contain: paint;
@@ -159,11 +114,11 @@ section.dd li {
     background-color: var(--gray-5)
 }
 
-section.dd .a {
+section.e .a {
     margin: 1em
 }
 
-section.dd .b {
+section.e .b {
     margin-bottom: 1em;
 
     display: flex;
@@ -171,15 +126,15 @@ section.dd .b {
     justify-content: space-between
 }
 
-section.dd .a h6 {
+section.e .a h6 {
     font-weight: 700
 }
 
-section.dd time {
+section.e time {
     font-size: 11px
 }
 
-section.dd .b a {
+section.e .b a {
     width: 28px;
     height: 28px;
 
@@ -188,20 +143,20 @@ section.dd .b a {
     background-size: cover
 }
 
-section.dd h5 {
+section.e h5 {
     font-size: 13px
 }
 
-section.dd .f {
+section.e .f {
     aspect-ratio: 1/1.4;
 
     background: center/cover
 }
-section.dd .k {
+section.e .k {
     position: relative
 }
 
-section.dd .g {
+section.e .g {
     height: 100%;
 
     padding: 1em;
@@ -213,11 +168,11 @@ section.dd .g {
     background-image: linear-gradient(transparent 60%, #00000060)
 }
 
-section.dd .k .g {
+section.e .k .g {
     position: absolute;
     inset: 0
 }
-section.dd video {
+section.e video {
     aspect-ratio: 1/1.4;
     object-fit: cover;
 
@@ -226,7 +181,7 @@ section.dd video {
     display: block
 }
 
-section.dd svg {
+section.e svg {
     margin: 0 0 auto auto;
 
     border-radius: 50%;
@@ -236,14 +191,14 @@ section.dd svg {
     background-color: #00000020
 }
 
-section.dd .m {
+section.e .m {
     display: flex;
     align-items: center;
     justify-content: space-between;
     column-gap: 10px
 }
 
-section.dd .p h6 {
+section.e .p h6 {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -254,15 +209,15 @@ section.dd .p h6 {
     color: white
 }
 
-section.dd .p h6+h6 {
+section.e .p h6+h6 {
     opacity: .7
 }
 
-section.dd .m a {
+section.e .m a {
     display: flex
 }
 
-section.dd .m a div {
+section.e .m a div {
     width: 20px;
     height: 20px;
 
@@ -271,13 +226,13 @@ section.dd .m a div {
     background: center/cover
 }
 
-section.dd .m a div:not(:last-child) {
+section.e .m a div:not(:last-child) {
     margin-right: -5px;
 
     clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
 }
 
-section.dd p {
+section.e p {
     opacity: .9;
 
     margin-top: .5em;
@@ -307,7 +262,7 @@ section.dd p {
     }
 }
 
-section.dd span {
+section.e span {
     position: absolute;
     inset: 0;
 
@@ -319,6 +274,49 @@ section.dd span {
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z'/%3E%3C/svg%3E") no-repeat;
 
     animation: x .5s cubic-bezier(0.29, 0.27, 0.49, 1.07)
+}
+
+/* f */
+
+section.f ul {
+    margin: 0 35px max(35px, env(safe-area-inset-bottom));
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em
+}
+
+section.f ul li a {
+    aspect-ratio: 1/1.6;
+
+    border-radius: 2px;
+
+    display: flex;
+
+    background-size: cover;
+
+    box-shadow: 0 5px 10px #00000040
+}
+
+section.f h6 {
+    margin: auto .8em .8em auto;
+
+    font: 700 13px ui-rounded;
+
+    color: white;
+
+    text-shadow: 0 0 10px #00000080
+}
+
+section.f p {
+    margin-top: 1em;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    font-size: 11px
 }
 
 /* color */
