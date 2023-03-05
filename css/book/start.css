@@ -13,45 +13,53 @@
 /* rr */
 
 section.rr {
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
 
     z-index: 2;
     position: fixed;
-    inset: 0 0 auto;
+    inset: 0;
 
-    padding: 15px;
+    margin: auto;
 
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    width: 300px;
+    height: 70px;
 
-    background-image: linear-gradient(var(--gray-a), var(--soft))
-}
+    border-radius: 20px;
+    
+    -webkit-backdrop-filter: saturate(180%) blur(17px);
 
-section.rr ul {
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 5px
-}
-
-section.rr li {
-    height: 40px;
-
-    border-radius: 10px;
-
-    text-align: center;
-
-    background-color: var(--soft-2)
+    background-color: var(--soft)
 }
 
 section.rr h1 {
-    margin-top: 15px;
+    margin: 2em;
 
     text-align: center;
-
     font: 600 11px system-ui;
 
-    mix-blend-mode: overlay;
-    will-change: transform
+    mix-blend-mode: var(--mod);
+    will-change: transform;
+
+    color: var(--soft-2)
+}
+section.rr h1 a {
+    color: var(--gray-b)
+}
+
+/* ss */
+
+section.ss a {
+    margin: 35px 35px 0 auto;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    display: block;
+
+    background-size: cover
 }
 
 /* kk */
@@ -368,9 +376,9 @@ section.dd svg {
 
     border-radius: 50%;
 
-    background-color: #00000020;
+    -webkit-backdrop-filter: blur(10px);
 
-    -webkit-backdrop-filter: blur(10px)
+    background-color: #00000020
 }
 
 section.dd .m {
@@ -460,10 +468,12 @@ section.dd span {
 
 /* color */
 
-@media screen and (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {
     :root {
-        --soft: #f2f2f6aa;
-        --soft-2: #00000008;
+        --mod: plus-darker;
+
+        --soft: #ffffff8c;
+        --soft-2: #0000008c;
 
         --gray-a: white;
         --gray-b: black;
@@ -485,10 +495,12 @@ section.dd span {
     }
 }
 
-@media screen and (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     :root {
-        --soft: #121212aa;
-        --soft-2: #ffffff08;
+        --mod: plus-lighter;
+
+        --soft: #0000008c;
+        --soft-2: #ffffff8c;
 
         --gray-a: black;
         --gray-b: white;
