@@ -1,75 +1,97 @@
-// all, lazy load image url(a)
-$(document).ready(() => {
-    let ll = new IntersectionObserver((a, b) => {
-        a.forEach(x => {
-            if (x.isIntersecting) {
-                let mm = new Image();
-                mm.src = x.target.dataset.url;
-                mm.onload = () => {
-                    x.target.setAttribute('style', 'background-image: url(\'' + x.target.dataset.url + '\')');
-                    x.target.removeAttribute('data-url')
-                };
-
-                b.unobserve(x.target)
-            }
-        })
-    }, {
-        threshold: 0
-    });
-
-    document.querySelectorAll('[data-url]').forEach(x => {
-        ll.observe(x)
-    })
-})
-
-// double-tap book heart
 document.addEventListener('dblclick', () => {
-    $('section.pp')[0].style.cssText = 'visibility: visible; opacity: 1 !important; animation-play-state: running; transition: visibility .5s, opacity .5s';
-
-    setTimeout(() => {
-        $('section.pp')[0].removeAttribute('style');
-    }, 1000)
+    $('section.ee')[0].style.cssText = 'pointer-events: auto; opacity: 1'
 })
 
-// book, box follow
-window.addEventListener('DOMContentLoaded', () => {
-    let a = $('section.mm a[href]'),
-        b = $('section.rr')
+$(window).ready( () => {
+    let aa = 'ontouchstart' in window
 
-    a.click(() => {
-        b[0].style.cssText = 'opacity: 1; pointer-events: initial';
-
-        setTimeout(() => {
-            b[0].removeAttribute('style');
-        }, 10000)
-    })
-})
-
-// apple button sign in
-
-AppleID.auth.init({
-    clientId: 'unknown',
-    scope: 'email',
-    redirectURI: 'https://mytld/test.php',
-    state: 'DE'
-});
-
-$(document).ready(() => {
-    $('#wwww')[0].onclick = () => {
-        AppleID.auth.signIn();
+    if (aa === true) {
+        window.addEventListener('touchmove', () => {
+            $('section.ee')[0].removeAttribute('style')
+        })
+    } else {
+        window.addEventListener('scroll', () => {
+            $('section.ee')[0].removeAttribute('style')
+        })
     }
-});
+})
 
-// hidden book
+//
 
-$(window).ready(() => {
-    window.addEventListener('scroll', () => {
-        let bb = $('section.nn')[0]
+window.addEventListener('change', () => {
+    let vv = $('section.ee select:first-child').val(),
+        nn = $('section.vv')[0]
 
-        if ($(window).scrollTop() >= 670) {
-            bb.style.visibility = 'hidden'
-        } else {
-            bb.style.visibility = ''
+    if (vv == 1) {
+        nn.classList.add('y')
+        nn.classList.remove('yy', 'yyy')
+    } else if (vv == 2) {
+        nn.classList.add('yy')
+        nn.classList.remove('y', 'yyy')
+    } else if (vv == 3) {
+        nn.classList.remove('yy', 'y', 'yyy')
+    } else if (vv == 4) {
+        nn.classList.add('yyy')
+        nn.classList.remove('yy', 'y')
+    }
+})
+
+window.addEventListener('change', () => {
+    let vv = $('section.ee select:nth-child(2)').val(),
+        nn = $('section.vv')[0]
+
+    if (vv == 1) {
+        nn.classList.add('zzz')
+        nn.classList.remove('sss')
+    } else if (vv == 2) {
+        nn.classList.add('sss')
+        nn.classList.remove('zzz')
+    } else if (vv == 3) {
+        nn.classList.remove('sss', 'zzz')
+    }
+})
+
+window.addEventListener('change', () => {
+    let vv = $('section.ee select:last-child').val(),
+        nn = $('body')
+
+    if (vv == 1) {
+        nn.attr('class', 'rrr')
+    } else if (vv == 2) {
+        nn.attr('class', 'ttt')
+    } else if (vv == 3) {
+        nn[0].removeAttribute('class')
+    } else if (vv == 4) {
+        nn.attr('class', 'kkk')
+    } else if (vv == 5) {
+        nn.attr('class', 'qqq')
+    }
+})
+
+//
+
+$(document).ready( () => {
+    let ll = new IntersectionObserver( x => {
+        x.forEach(xx => {
+            if (xx.isIntersecting) {
+                $('section.bb')[0].style.visibility = 'visible';
+                
+                setTimeout( () => {
+                    $('section.bb')[0].style.opacity = '1';
+                    
+                    setTimeout( () => {
+                        $('section.bb svg')[0].style.transform = 'scale(1)';
+
+                        setTimeout( () => {
+                            $('section.bb svg')[0].style.fill = 'var(--gray)';
+                        }, 2000)
+                    }, 1000)
+                }, 800)
+
+                ll.unobserve($('#rr')[0])
+            }
         }
-    })
+    )})
+
+    ll.observe($('#rr')[0])
 })
