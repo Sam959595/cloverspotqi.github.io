@@ -239,7 +239,7 @@ $(document).ready(() => {
 })
 
 window.addEventListener('DOMContentLoaded', () => {
-    let a = $('section.dd li'),
+    let a = $('section.dd .b a'),
         b = $('section.rr')
 
     a.click(() => {
@@ -247,9 +247,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
         setTimeout(() => {
             b[0].style.cssText = '';
-            setTimeout(() => {
-                b[0].removeAttribute('style');
-            }, 400)
         }, 10000)
     })
 })
