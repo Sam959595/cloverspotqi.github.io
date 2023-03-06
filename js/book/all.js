@@ -1,47 +1,3 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//     let vv = async () => {
-//         let t = await fetch('/book/json-book.json'),
-//         b = await t.json();
-
-//         b = b.splice(0, 8);
-
-//         for (a in b) {
-//             $('#kk')[0].innerHTML +=
-//             `<li>
-//             <div class="a">
-//                 <div class="b">
-//                     <div>
-//                         <h6>${b[a].gg}</h6>
-//                         <time datetime="${b[a].tt}">8 минут назад</time>
-//                     </div>
-//                     <a href="#" data-url="${b[a].ii}"></a>
-//                 </div>
-//                 <h5>${b[a].kk}</h5>
-//             </div>
-//             <div class="f" data-url="${b[a].jj}">
-//                 <div class="g">
-//                     <div class="m">
-//                         <div class="p">
-//                             <h6>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</h6>
-//                             <h6>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</h6>
-//                             <h6>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.</h6>
-//                         </div>
-//                         <a href="#">
-//                             <div data-url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1WV9cJQRlCCeqSvu1dNAZb6ls-qcqqmTiLQ&usqp=CAU"></div>
-//                             <div data-url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTP4bAILHs6UChbrMFjFX8WEV_wS5fO0QciA&usqp=CAU"></div>
-//                             <div data-url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1UZlSKB-d8Rme5zPjOe0kRSmEQ7U7jJwrbw&usqp=CAU"></div>
-//                             <div data-url="https://avatars.mds.yandex.net/i?id=53cb73b3116273dc384c00772c75c670-5220865-images-thumbs&n=13&exp=1"></div>
-//                         </a>
-//                     </div>
-//                     <p>Нравится Вам и ещё 2 058</p>
-//                 </div>
-//             </div>
-//             </li>`
-//         }
-//     }
-//     vv()
-// })
-
 // all, lazy load image url(a)
 $(document).ready(() => {
     let ll = new IntersectionObserver((a, b) => {
@@ -203,16 +159,30 @@ $(document).ready(() => {
 
 // all, lazy load image url(a)
 $(document).ready(() => {
+    let pp = $('section.e .k .g')[0],
+    vv = document.querySelector('video');
+
     let ll = new IntersectionObserver(a => {
         a.forEach(x => {
             if (x.isIntersecting) {
                 x.target.play();
-
+                
+                pp.addEventListener('touchstart', ggg = () => {
+                    vv.pause()
+                })
+                pp.addEventListener('touchend', kkk = () => {
+                    vv.play()
+                })
             } else {
                 x.target.pause();
+
+                pp.removeEventListener('touchstart', ggg)
+                pp.removeEventListener('touchend', kkk)
             }
         })
-    }, { threshold: 0.5 })
+    }, {
+        threshold: .5
+    })
     document.querySelectorAll('video').forEach(x => {
         ll.observe(x)
     })
@@ -227,14 +197,6 @@ $(document).ready(() => {
 
             $('section.e svg path')[0].setAttribute('fill', '#ffffff20')
         }
-    })
-
-    let vv = document.querySelector('video');
-    $('section.e .k .g')[0].addEventListener('touchstart', () => {
-        vv.pause()
-    })
-    $('section.e .k .g')[0].addEventListener('touchend', () => {
-        vv.play()
     })
 })
 
