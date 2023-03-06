@@ -108,10 +108,9 @@ section.e ul {
 
 section.e li {
     border-radius: 12px;
+    border: 1px solid var(--gray-3);
 
-    contain: paint;
-
-    background-color: var(--gray-5)
+    contain: paint
 }
 
 section.e .a {
@@ -146,6 +145,12 @@ section.e .b a {
 section.e h5 {
     font-size: 13px
 }
+section.e h5 a {
+    display: inline-block
+}
+section.e h5 a:hover {
+    opacity: .5
+}
 
 section.e .f {
     aspect-ratio: 1/1.4;
@@ -175,8 +180,6 @@ section.e .k .g {
 section.e video {
     /* aspect-ratio: 1/1.4;
     object-fit: cover; */
-
-    width: 100%;
 
     display: block
 }
