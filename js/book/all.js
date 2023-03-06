@@ -217,24 +217,24 @@ $(document).ready(() => {
         ll.observe(x)
     })
 
-    $('section.dd svg')[0].addEventListener('click', () => {
+    $('section.e svg')[0].addEventListener('click', () => {
         if ($('video').prop('muted')) {
             $('video').prop('muted', false);
 
-            $('section.dd svg path')[0].setAttribute('fill', 'white')
+            $('section.e svg path')[0].setAttribute('fill', 'white')
         } else {
             $('video').prop('muted', true);
 
-            $('section.dd svg path')[0].setAttribute('fill', '#ffffff80')
+            $('section.e svg path')[0].setAttribute('fill', '#ffffff80')
         }
     })
 
     let vv = document.querySelector('video');
-    $('section.dd .k .g')[0].addEventListener('touchstart', () => {
-        vv.pause();
+    $('section.e .k .g')[0].addEventListener('touchstart', () => {
+        vv.pause()
     })
-    $('section.dd .k .g')[0].addEventListener('touchend', () => {
-        vv.play();
+    $('section.e .k .g')[0].addEventListener('touchend', () => {
+        vv.play()
     })
 })
 
