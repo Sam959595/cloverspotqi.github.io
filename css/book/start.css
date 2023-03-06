@@ -179,6 +179,8 @@ section.e .k .g {
     inset: 0
 }
 section.e video {
+    width: 100%;
+    
     aspect-ratio: 1/1.4;
     object-fit: cover;
 
