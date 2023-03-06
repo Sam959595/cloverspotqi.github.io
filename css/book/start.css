@@ -296,17 +296,31 @@ section.e .j {
     background: center/cover
 }
 
+section.e .j h5 {
+    font-weight: 600;
+
+    color: white
+}
+section.e .j h5 a {
+    color: #ffffff90
+}
 section.e .j>div>h6 {
     font: 900 14px/1 system-ui;
 
     color: #ffffff80
 }
 section.e .j h1 {
-    margin-top: .2em;
+    margin-block: .3em 1cm;
 
-    font: 900 32px/1 system-ui;
+    font: 900 28px system-ui;
 
     color: white
+}
+section.e .j>div>a {
+    display: block;
+
+    text-align: right;
+    font: 600 14px system-ui
 }
 
 /* f */
