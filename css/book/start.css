@@ -108,10 +108,10 @@ section.e ul {
 
 section.e li {
     border-radius: 12px;
-    
-    box-shadow: 0 0 0 1px var(--gray-3);
 
-    contain: paint
+    contain: paint;
+
+    background-color: var(--gray-5)
 }
 
 section.e .a {
@@ -180,7 +180,7 @@ section.e .k .g {
 }
 section.e video {
     width: 100%;
-    
+
     aspect-ratio: 1/1.4;
     object-fit: cover;
 
