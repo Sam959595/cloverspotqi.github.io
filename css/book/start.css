@@ -187,7 +187,7 @@ section.e video {
     display: block
 }
 
-section.e svg {
+section.e .k svg {
     margin: 0 0 auto auto;
 
     border-radius: 50%;
@@ -285,42 +285,48 @@ section.e span {
 /* - */
 
 section.e .j {
-    padding: 1em 1em 1cm;
-
     aspect-ratio: 1/1.6;
+
+    background: center/cover
+}
+
+section.e .c {
+    height: 100%;
+    
+    padding: 1em;
 
     display: flex;
     flex-flow: column;
     justify-content: space-between;
 
-    background: center/cover
+    background-color: #00000050
 }
+section.e .j h4 {
+    opacity: .8;
 
+    margin-bottom: 1.5em;
+
+    font: 600 13px system-ui;
+
+    color: white
+}
 section.e .j h5 {
     font-weight: 600;
 
     color: white
 }
-section.e .j h5 a {
-    color: #ffffff90
-}
-section.e .j>div>h6 {
-    font: 900 14px/1 system-ui;
 
-    color: #ffffff80
-}
-section.e .j h1 {
-    margin-block: .3em 1cm;
+section.e .j a {
+    position: absolute;
 
-    font: 900 28px system-ui;
+    width: 60px;
+    height: 60px;
 
-    color: white
-}
-section.e .j>div>a {
-    display: block;
+    border-radius: 50%;
 
-    text-align: right;
-    font: 600 14px system-ui
+    padding: 1em;
+
+    background-color: white
 }
 
 /* f */
