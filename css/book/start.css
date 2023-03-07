@@ -135,8 +135,8 @@ section.e time {
 }
 
 section.e .b a {
-    width: 28px;
-    height: 28px;
+    width: 25px;
+    height: 25px;
 
     border-radius: 50%;
 
@@ -299,7 +299,7 @@ section.e .c {
     flex-flow: column;
     justify-content: space-between;
 
-    background-color: #00000050
+    background-color: #00000060
 }
 section.e .j h4 {
     opacity: .8;
@@ -327,6 +327,26 @@ section.e .j a {
     padding: 1em;
 
     background-color: white
+}
+
+section.e .w {
+    display: flex;
+    gap: .5em;
+}
+section.e .w time {
+    font-weight: 700;
+}
+
+section.e .j:has(video) {
+    position: relative;
+}
+section.e .j:has(video) .c {
+    position: absolute;
+    inset: 0;
+}
+
+section.e .j video {
+    aspect-ratio: initial;
 }
 
 /* f */
