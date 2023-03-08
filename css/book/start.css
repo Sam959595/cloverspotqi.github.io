@@ -112,7 +112,9 @@ section.e li {
 
     contain: paint;
 
-    box-shadow: 0 0 0 1px var(--gray-3)
+    /* box-shadow: 0 0 0 1px var(--gray-3); */
+
+    background-color: var(--gray-5)
 }
 
 section.e .a {
