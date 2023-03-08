@@ -24,7 +24,7 @@ section.a {
 
     width: 300px;
     height: 70px;
-    
+
     -webkit-backdrop-filter: saturate(180%) blur(17px);
 
     background-color: var(--soft);
@@ -43,6 +43,7 @@ section.a h1 {
 
     color: var(--soft-2)
 }
+
 section.a h1 a {
     color: var(--gray-b)
 }
@@ -115,26 +116,64 @@ section.e li {
 }
 
 section.e .a {
-    margin: 1em
+    aspect-ratio: 1/1.6;
+
+    background: center/cover
 }
 
 section.e .b {
-    margin-bottom: 1em;
+    height: 100%;
 
+    padding: 1em;
+
+    background-image: linear-gradient(#00000060, transparent 60%)
+}
+
+section.e :where(h4, h5) {
+    color: white
+}
+
+section.e h4 {
+    opacity: .7;
+
+    font-weight: 600
+}
+
+section.e h5 {
+    margin-top: 1.5em;
+
+    font-size: 13px
+}
+
+section.e .b>a {
+    position: absolute;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    padding: 15px;
+
+    background-color: white
+}
+
+section.e .c {
+    margin: 1em
+}
+section.e :where(.d, .f, .t) {
     display: flex;
     align-items: center;
     justify-content: space-between
 }
-
-section.e .a h6 {
+section.e .k {
+    display: inherit;
+    column-gap: .5em
+}
+section.e :where(h6, time) {
     font-weight: 700
 }
-
-section.e time {
-    font-size: 11px
-}
-
-section.e .b a {
+section.e .d a {
     width: 25px;
     height: 25px;
 
@@ -142,89 +181,22 @@ section.e .b a {
 
     background-size: cover
 }
-
-section.e h5 {
+section.e h3 {
     font-size: 13px
 }
-section.e h5 a {
-    display: inline-block
+section.e .c>h3 {
+    margin-block: 1em
 }
-section.e h5 a:hover {
-    opacity: .5
-}
-
-section.e .f {
-    aspect-ratio: 1/1.4;
-
-    background: center/cover
-}
-section.e .k {
-    position: relative
-}
-
-section.e .g {
-    height: 100%;
-
-    padding: 1em;
-
-    display: flex;
-    flex-flow: column;
-    justify-content: end;
-
-    background-image: linear-gradient(transparent 60%, #00000060)
-}
-
-section.e .k .g {
-    position: absolute;
-    inset: 0
-}
-section.e video {
-    width: 100%;
-    height: 100%;
-
-    aspect-ratio: 1/1.4;
-    object-fit: cover;
-
-    display: block
-}
-
-section.e .k svg {
-    margin: 0 0 auto auto;
-
-    border-radius: 50%;
-
-    -webkit-backdrop-filter: blur(10px);
-
-    background-color: #00000020
-}
-
-section.e .m {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: 10px
-}
-
-section.e .p h6 {
+section.e .f h3 {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
-    overflow: hidden;
-
-    font-weight: 600;
-
-    color: white
+    overflow: hidden
 }
-
-section.e .p h6+h6 {
-    opacity: .7
-}
-
-section.e .m a {
+section.e .f a {
     display: flex
 }
-
-section.e .m a div {
+section.e .f div {
     width: 20px;
     height: 20px;
 
@@ -232,21 +204,36 @@ section.e .m a div {
 
     background: center/cover
 }
-
-section.e .m a div:not(:last-child) {
+section.e .f div:not(:last-child) {
     margin-right: -5px;
 
     clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
 }
 
-section.e p {
-    opacity: .9;
+section.e .v {
+    position: relative
+}
+section.e video {
+    width: 100%;
+    height: 100%;
 
-    margin-top: .5em;
+    aspect-ratio: 1/1.6;
+    object-fit: cover;
 
-    font: 500 11px system-ui;
+    display: block
+}
+section.e :has(video) .b {
+    position: absolute;
+    inset: 0
+}
+section.e .t svg {
+    border-radius: 50%;
 
-    color: white
+    display: block;
+
+    -webkit-backdrop-filter: blur(10px);
+
+    background-color: #00000020
 }
 
 @keyframes x {
@@ -268,7 +255,6 @@ section.e p {
         transform: scale(1)
     }
 }
-
 section.e span {
     position: absolute;
     inset: 0;
@@ -281,92 +267,6 @@ section.e span {
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z'/%3E%3C/svg%3E") no-repeat;
 
     animation: x .5s cubic-bezier(0.29, 0.27, 0.49, 1.07)
-}
-
-/* - */
-
-section.e .j {
-    aspect-ratio: 1/1.6;
-
-    background: center/cover
-}
-
-section.e .c {
-    height: 100%;
-    
-    padding: 1em;
-
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-
-    background-image: linear-gradient(#00000060, transparent 60%)
-}
-section.e .j h4 {
-    opacity: .7;
-
-    margin-bottom: 1.5em;
-
-    font-weight: 600;
-
-    color: white
-}
-section.e .j h5 {
-    color: white
-}
-
-section.e .j a {
-    position: absolute;
-
-    width: 60px;
-    height: 60px;
-
-    border-radius: 50%;
-
-    padding: 15px;
-
-    background-color: white
-}
-
-section.e .w {
-    display: flex;
-    gap: .5em;
-}
-section.e .w time {
-    font-weight: 700;
-}
-
-section.e .j:has(video) {
-    position: relative;
-}
-section.e .j:has(video) .c {
-    position: absolute;
-    inset: 0;
-}
-
-section.e .a .m {
-    margin-top: 2em;
-}
-
-section.e .b .v {
-    display: flex;
-}
-section.e .b .v div {
-    width: 20px;
-    height: 20px;
-
-    border-radius: 50%;
-    
-    background: center/cover
-}
-section.e .b .v div+div:not(:last-child) {
-    margin-left: -5px
-}
-section.e .b .v div:last-child {
-    margin-left: 1em
-}
-section.e .b .v div:nth-child(-n+2) {
-    clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
 }
 
 /* f */
