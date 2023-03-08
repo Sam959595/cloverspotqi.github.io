@@ -180,6 +180,7 @@ section.e .k .g {
 }
 section.e video {
     width: 100%;
+    height: 100%;
 
     aspect-ratio: 1/1.4;
     object-fit: cover;
@@ -299,20 +300,18 @@ section.e .c {
     flex-flow: column;
     justify-content: space-between;
 
-    background-color: #00000060
+    background-image: linear-gradient(#00000060, transparent 60%)
 }
 section.e .j h4 {
-    opacity: .8;
+    opacity: .7;
 
     margin-bottom: 1.5em;
 
-    font: 600 13px system-ui;
+    font-weight: 600;
 
     color: white
 }
 section.e .j h5 {
-    font-weight: 600;
-
     color: white
 }
 
@@ -324,7 +323,7 @@ section.e .j a {
 
     border-radius: 50%;
 
-    padding: 1em;
+    padding: 15px;
 
     background-color: white
 }
@@ -345,8 +344,29 @@ section.e .j:has(video) .c {
     inset: 0;
 }
 
-section.e .j video {
-    aspect-ratio: initial;
+section.e .a .m {
+    margin-top: 2em;
+}
+
+section.e .b .v {
+    display: flex;
+}
+section.e .b .v div {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    
+    background: center/cover
+}
+section.e .b .v div+div:not(:last-child) {
+    margin-left: -5px
+}
+section.e .b .v div:last-child {
+    margin-left: 1em
+}
+section.e .b .v div:nth-child(-n+2) {
+    clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
 }
 
 /* f */
