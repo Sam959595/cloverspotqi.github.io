@@ -227,15 +227,15 @@ $(document).ready(() => {
         ll.observe(x)
     })
 
-    $('section.e .t svg')[0].addEventListener('click', () => {
+    $('section.e .d svg')[0].addEventListener('click', () => {
         if ($('video').prop('muted')) {
             $('video').prop('muted', false);
 
-            $('section.e .t path')[0].setAttribute('fill', '#ffffffcc')
+            $('section.e .d path')[0].setAttribute('fill', '#ffffffcc')
         } else {
             $('video').prop('muted', true);
 
-            $('section.e .t path')[0].setAttribute('fill', '#ffffff20')
+            $('section.e .d path')[0].setAttribute('fill', '#ffffff20')
         }
     })
 })
