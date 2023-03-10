@@ -235,13 +235,13 @@ $(document).ready(() => {
         } else {
             $('video').prop('muted', true);
 
-            $('section.e .d path')[0].setAttribute('fill', '#ffffff20')
+            $('section.e .d path')[0].setAttribute('fill', 'var(--gray-4)')
         }
     })
 })
 
 window.addEventListener('DOMContentLoaded', () => {
-    let a = $('section.e .b a'),
+    let a = $('section.e :where(.a, .v) a'),
         b = $('section.a')
 
     a.click(() => {
