@@ -135,7 +135,7 @@ section.e :where(.d, .f) {
 section.e .d svg {
     border-radius: 50%;
 
-    background-color: var(--soft-2)
+    background-color: var(--soft-3)
 }
 
 section.e .a {
@@ -156,7 +156,7 @@ section.e video {
     display: block
 }
 
-section.e :where(.a, div:has(video)) a {
+section.e :where(.a, .v) a {
     position: absolute;
     inset: 0;
 
@@ -297,7 +297,8 @@ section.f p {
         --mod: plus-darker;
 
         --soft: #ffffff8c;
-        --soft-2: #00000008;
+        --soft-2: #0000008c;
+        --soft-3: #00000008;
 
         --gray-a: white;
         --gray-b: black;
@@ -324,7 +325,8 @@ section.f p {
         --mod: plus-lighter;
 
         --soft: #0000008c;
-        --soft-2: #ffffff08;
+        --soft-2: #ffffff8c;
+        --soft-3: #00000008;
 
         --gray-a: black;
         --gray-b: white;
