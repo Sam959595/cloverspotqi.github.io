@@ -3,9 +3,17 @@ document.addEventListener('dblclick', () => {
 })
 
 $(window).ready(() => {
-    window.addEventListener('touchmove', () => {
-        $('section.ee')[0].removeAttribute('style')
-    })
+    let aa = 'ontouchstart' in window
+
+    if (aa === true) {
+        window.addEventListener('touchmove', () => {
+            $('section.ee')[0].removeAttribute('style')
+        })
+    } else {
+        window.addEventListener('scroll', () => {
+            $('section.ee')[0].removeAttribute('style')
+        })
+    }
 })
 
 //
@@ -90,7 +98,7 @@ $(document).ready(() => {
 })
 
 $(document).ready(() => {
-    let a = document.querySelectorAll('a'),
+    let a = document.querySelectorAll('u'),
         m = document.querySelectorAll('.mm');
 
     a.forEach(x => {
