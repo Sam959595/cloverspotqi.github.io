@@ -173,19 +173,17 @@ section.vv a {
 /* mm */
 
 section.mm {
-    display: none
-}
-
-section.mm:target {
     position: fixed;
     inset: 0 0 auto;
 
     padding: 1em 1cm;
 
-    display: initial;
+    display: none;
 
     background-color: inherit;
-    color: var(--orange)
+    color: var(--orange);
+
+    transition: opacity .5s
 }
 
 /* color */
