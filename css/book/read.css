@@ -177,6 +177,8 @@ section.mm {
     padding: 1em 1cm;
 
     display: none;
+    
+    text-align: right;
 
     background-color: inherit;
     color: var(--orange);
