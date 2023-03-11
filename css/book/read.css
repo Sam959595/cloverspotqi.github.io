@@ -188,7 +188,7 @@ section.mm {
 
 /* color */
 
-@media screen and (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {
     :root {
         --soft: #00000015;
 
@@ -216,7 +216,7 @@ section.mm {
     }
 }
 
-@media screen and (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     :root {
         --soft: #ffffff10;
 
