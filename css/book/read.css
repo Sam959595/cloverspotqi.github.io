@@ -108,13 +108,11 @@ section.vv h6 {
     color: var(--text-3)
 }
 
-section.vv a {
+section.vv u {
     -webkit-text-decoration: underline dotted var(--orange);
     text-decoration-skip: none;
     text-underline-offset: 2px;
-    text-decoration-thickness: 1.2px;
-
-    color: inherit
+    text-decoration-thickness: 1.2px
 }
 
 .y h6 {
