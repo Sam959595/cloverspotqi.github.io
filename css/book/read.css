@@ -29,7 +29,7 @@ section.bb {
 
 section.bb h2 {
     margin-right: 1em;
-    
+
     width: fit-content;
 
     font: 500 14px system-ui
@@ -37,7 +37,7 @@ section.bb h2 {
 
 section.bb svg {
     transform: scale(0);
-    
+
     transition: transform 1s ease, fill 2s ease
 }
 
@@ -92,6 +92,7 @@ section.vv h5 {
 
     color: var(--text-3)
 }
+
 section.vv h5~h5 {
     margin-block: 13em 3em
 }
@@ -99,10 +100,11 @@ section.vv h5~h5 {
 section.vv h6::first-letter {
     margin-left: 1cm
 }
+
 section.vv h6 {
     margin-bottom: .5em;
 
-    font: 18px/1.7 ui-serif;
+    font: 20px/1.7 ui-serif;
     text-align: justify;
 
     color: var(--text-3)
@@ -121,11 +123,11 @@ section.vv u {
 }
 
 .yy h6 {
-    font-size: 20px !important
+    font-size: 21px !important
 }
 
 .yyy h6 {
-    font-size: 17px !important
+    font-size: 18px !important
 }
 
 .sss :where(h5, h6) {
@@ -177,7 +179,7 @@ section.mm {
     padding: 1em 1cm;
 
     display: none;
-    
+
     text-align: right;
 
     background-color: inherit;
@@ -229,13 +231,13 @@ section.mm {
         --canvas-2: #26221d;
         --canvas-3: #353539;
         --canvas-4: #1a1a1c;
-        --canvas-5: #51545c;
+        --canvas-5: #4a4a4d;
 
-        --text: #999;
+        --text: #8d8d93;
         --text-2: #d6caba;
         --text-3: #eee;
         --text-4: #f2f2f2;
-        --text-5: #fbfcff;
+        --text-5: #ebebf5;
 
         --link: #0a84ff;
 
