@@ -1,6 +1,4 @@
 * {
-	touch-action: pan-x pan-y;
-	
 	margin: 0;
 	padding: 0;
 
@@ -54,10 +52,6 @@ u {
 	text-decoration: none
 }
 
-u {
-	display: inline-block
-}
-
 ul,
 ol {
 	list-style: none
@@ -103,8 +97,7 @@ time {
 input[type=submit],
 a,
 button,
-select,
-span {
+select {
 	cursor: pointer
 }
 
@@ -146,7 +139,6 @@ h5,
 h6,
 table,
 textarea,
-span,
 article {
 	color: var(--gray)
 }
