@@ -1,10 +1,10 @@
 /* img */
 
-[data-url] {
+[data-img], video[data-vid] {
     opacity: 0
 }
 
-[style] {
+[style], video {
     opacity: 1;
 
     transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
@@ -326,7 +326,7 @@ section.f p {
 
         --soft: #0000008c;
         --soft-2: #ffffff8c;
-        --soft-3: #00000008;
+        --soft-3: #ffffff08;
 
         --gray-a: black;
         --gray-b: white;
