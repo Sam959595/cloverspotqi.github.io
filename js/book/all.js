@@ -70,10 +70,10 @@ $(document).ready(() => {
         a.forEach(x => {
             if (x.isIntersecting) {
                 let m = new Image();
-                m.src = x.target.dataset.url;
+                m.src = x.target.dataset.img;
                 m.onload = () => {
-                    x.target.setAttribute('style', 'background-image: url(\'' + x.target.dataset.url + '\')');
-                    x.target.removeAttribute('data-url')
+                    x.target.setAttribute('style', 'background-image: url(\'' + x.target.dataset.img + '\')');
+                    x.target.removeAttribute('data-img')
                 };
 
                 b.unobserve(x.target)
@@ -81,32 +81,54 @@ $(document).ready(() => {
         })
     })
 
-    document.querySelectorAll('[data-url]').forEach(x => {
+    document.querySelectorAll('[data-img]').forEach(x => {
         ll.observe(x)
+    })
+
+    //
+
+    let gg = new IntersectionObserver((a, b) => {
+        a.forEach(x => {
+            if (x.isIntersecting) {
+                x.target.src = x.target.dataset.vid;
+                let t = setInterval(() => {
+                    if (x.target.currentTime > 0) {
+                        x.target.removeAttribute('data-vid');
+
+                        clearInterval(t)
+                    }
+                }, 1000)
+
+                b.unobserve(x.target)
+            }
+        })
+    })
+    document.querySelectorAll('video').forEach(x => {
+        gg.observe(x)
     })
 })
 
 // all, lazy load image src(img)
-$(document).ready(() => {
-    let ll = new IntersectionObserver((a, b) => {
-        a.forEach(x => {
-            if (x.isIntersecting) {
-                let m = new Image();
-                m.src = x.target.dataset.url;
-                m.onload = () => {
-                    x.target.src = x.target.dataset.src;
-                    x.target.removeAttribute('data-src')
-                };
+// $(document).ready(() => {
+//     let ll = new IntersectionObserver((a, b) => {
+//         a.forEach(x => {
+//             if (x.isIntersecting) {
+//                 let m = new Image();
+//                 m.src = x.target.dataset.img;
+//                 m.onload = () => {
+//                     x.target.src = x.target.dataset.img;
+//                     x.target.removeAttribute('data-img')
+//                 };
 
-                b.unobserve(x.target)
-            }
-        })
-    })
+//                 b.unobserve(x.target)
+//             }
+//         })
+//     })
 
-    document.querySelectorAll('[data-src]').forEach(x => {
-        ll.observe(x)
-    })
-})
+//     document.querySelectorAll('[data-img]').forEach(x => {
+//         ll.observe(x)
+//     })
+// })
 // all, back library
 window.addEventListener('touchstart', x => {
     if (x.targetTouches.length === 3) {
@@ -201,7 +223,6 @@ window.addEventListener('DOMContentLoaded', () => {
 $(document).ready(() => {
     let pp = $('section.e .v')[0],
     v = document.querySelector('video');
-
     let ll = new IntersectionObserver(a => {
         a.forEach(x => {
             if (x.isIntersecting) {
@@ -231,7 +252,7 @@ $(document).ready(() => {
         if ($('video').prop('muted')) {
             $('video').prop('muted', false);
 
-            $('section.e .d path')[0].setAttribute('fill', '#ffffffcc')
+            $('section.e .d path')[0].setAttribute('fill', 'var(--gray-2)')
         } else {
             $('video').prop('muted', true);
 
@@ -400,7 +421,7 @@ $(document).ready(() => {
                         m.src = x.target.dataset.url;
                         m.onload = () => {
                             x.target.setAttribute('style', 'background-image: url(\'' + x.target.dataset.url + '\')');
-                            x.target.removeAttribute('data-url')
+                            x.target.removeAttribute('data-img')
                         };
 
                         b.unobserve(x.target)
@@ -408,7 +429,7 @@ $(document).ready(() => {
                 })
             })
 
-            document.querySelectorAll('[data-url]').forEach(x => {
+            document.querySelectorAll('[data-img]').forEach(x => {
                 ll.observe(x)
             })
         })
@@ -522,7 +543,7 @@ $(document).ready(() => {
                         m.src = x.target.dataset.url;
                         m.onload = () => {
                             x.target.setAttribute('style', 'background-image: url(\'' + x.target.dataset.url + '\')');
-                            x.target.removeAttribute('data-url')
+                            x.target.removeAttribute('data-img')
                         };
 
                         b.unobserve(x.target)
@@ -530,7 +551,7 @@ $(document).ready(() => {
                 })
             })
 
-            document.querySelectorAll('[data-url]').forEach(x => {
+            document.querySelectorAll('[data-img]').forEach(x => {
                 ll.observe(x)
             })
         })
