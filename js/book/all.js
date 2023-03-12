@@ -93,11 +93,10 @@ $(document).ready(() => {
                 x.target.src = x.target.dataset.vid;
                 let t = setInterval(() => {
                     if (x.target.currentTime > 0) {
-                        x.target.removeAttribute('data-vid');
-
-                        clearInterval(t)
+                        clearInterval(t);
+                        x.target.removeAttribute('data-vid')
                     }
-                }, 1000)
+                }, 500)
 
                 b.unobserve(x.target)
             }
