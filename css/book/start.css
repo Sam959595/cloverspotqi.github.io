@@ -16,7 +16,7 @@ section.a {
     opacity: 0;
     pointer-events: none;
 
-    z-index: 2;
+    z-index: 1;
     position: fixed;
     inset: 0;
 
@@ -150,6 +150,8 @@ section.e .v {
     position: relative
 }
 section.e video {
+    width: 100%;
+    
     aspect-ratio: 1/1.4;
     object-fit: cover;
 
