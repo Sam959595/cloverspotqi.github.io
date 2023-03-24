@@ -2,22 +2,13 @@ document.addEventListener('dblclick', () => {
     $('section.ee')[0].style.cssText = 'pointer-events: auto; opacity: 1'
 })
 
-$(window).ready(() => {
-    let aa = 'ontouchstart' in window
-
-    if (aa === true) {
-        window.addEventListener('touchmove', () => {
-            $('section.ee')[0].removeAttribute('style')
-        })
-    } else {
-        window.addEventListener('scroll', () => {
-            $('section.ee')[0].removeAttribute('style')
-        })
-    }
+window.addEventListener('touchmove', () => {
+    $('section.ee')[0].removeAttribute('style')
 })
 
 //
 
+// size text
 window.addEventListener('change', () => {
     let vv = $('section.ee select:first-child').val(),
         nn = $('section.vv')[0]
@@ -36,6 +27,7 @@ window.addEventListener('change', () => {
     }
 })
 
+// style font
 window.addEventListener('change', () => {
     let vv = $('section.ee select:nth-child(2)').val(),
         nn = $('section.vv')[0]
@@ -51,6 +43,7 @@ window.addEventListener('change', () => {
     }
 })
 
+// background
 window.addEventListener('change', () => {
     let vv = $('section.ee select:last-child').val(),
         nn = $('body')
@@ -69,33 +62,6 @@ window.addEventListener('change', () => {
 })
 
 //
-
-$(document).ready(() => {
-    let ll = new IntersectionObserver(x => {
-        x.forEach(xx => {
-            if (xx.isIntersecting) {
-                $('section.bb')[0].style.visibility = 'visible';
-
-                setTimeout(() => {
-                    $('section.bb')[0].style.opacity = '1';
-
-                    setTimeout(() => {
-                        $('section.bb svg')[0].style.transform = 'scale(1)';
-
-                        setTimeout(() => {
-                            $('section.bb svg')[0].style.fill = 'var(--gray)';
-                        }, 2000)
-                    }, 1000)
-                }, 800)
-
-                ll.unobserve($('#rr')[0])
-            }
-        }
-        )
-    })
-
-    ll.observe($('#rr')[0])
-})
 
 $(document).ready(() => {
     let a = document.querySelectorAll('u'),
@@ -122,4 +88,41 @@ $(document).ready(() => {
             })
         })
     })
+})
+
+//
+
+$(document).ready(() => {
+    let ll = new IntersectionObserver(x => {
+        x.forEach(xx => {
+            if (xx.isIntersecting) {
+                $('section.bb')[0].style.visibility = 'visible';
+
+                setTimeout(() => {
+                    $('section.bb')[0].style.opacity = '1';
+
+                    setTimeout(() => {
+                        $('section.bb svg')[0].style.transform = 'scale(1)';
+
+                        setTimeout(() => {
+                            $('section.bb svg')[0].style.fill = 'var(--gray)';
+
+                            setTimeout(() => {
+                                $('section.bb')[0].style.opacity = '0';
+
+                                setTimeout(() => {
+                                    $('section.bb')[0].remove()
+                                }, 1000)
+                            }, 5000)
+                        }, 2000)
+                    }, 1000)
+                }, 800)
+
+                ll.unobserve($('#rr')[0])
+            }
+        }
+        )
+    })
+
+    ll.observe($('#rr')[0])
 })
