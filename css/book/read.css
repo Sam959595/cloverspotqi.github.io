@@ -51,31 +51,37 @@ section.ee {
     position: fixed;
     inset: auto 0 0 auto;
 
-    margin: 0 .8em 5cm 0;
+    margin: 0 1.5em 5cm 0;
 
-    border-radius: 13px;
+    border-radius: 16px;
 
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    row-gap: 1px;
+    row-gap: 5px;
 
-    background-color: inherit;
+    background-color: #0000003b;
 
-    overflow: hidden;
+    box-shadow: 0 0 50px 0 #00000080;
 
     transition: opacity .5s
 }
 
 section.ee select {
+    border-radius: 16px;
+
+    padding: 1em 2em;
+
     flex-direction: column;
+
     text-align: -webkit-center;
+    font: 500 14px system-ui;
 
-    padding: 1.5em 3em;
-
-    font: 600 12px system-ui;
-
-    background-color: var(--soft);
+    background-color: var(--tab-3);
     color: var(--gray)
+}
+
+section.ee select:focus {
+    -webkit-filter: brightness(.9)
 }
 
 /* vv */
@@ -102,7 +108,7 @@ section.vv h6::first-letter {
 }
 
 section.vv h6 {
-    margin-bottom: .5em;
+    margin-bottom: .8em;
 
     font: 20px/1.7 ui-serif;
     letter-spacing: .2px;
@@ -171,6 +177,22 @@ section.vv u {
     color: var(--text-5) !important
 }
 
+.rrr select {
+    background-color: var(--tab) !important
+}
+
+.ttt select {
+    background-color: var(--tab-2) !important
+}
+
+.kkk select {
+    background-color: var(--tab-4) !important
+}
+
+.qqq select {
+    background-color: var(--tab-5) !important
+}
+
 /* mm */
 
 section.mm {
@@ -212,6 +234,12 @@ section.mm {
         --text-4: #222;
         --text-5: #111;
 
+        --tab: white;
+        --tab-2: #e0dacc;
+        --tab-3: #eeeded;
+        --tab-4: #ddd;
+        --tab-5: #f6efe5;
+
         --link: #007aff;
 
         --orange: #e08600;
@@ -239,6 +267,12 @@ section.mm {
         --text-3: #eee;
         --text-4: #f2f2f2;
         --text-5: #eee;
+
+        --tab: black;
+        --tab-2: #43403e;
+        --tab-3: #3a3c41;
+        --tab-4: #3d3d44;
+        --tab-5: #4b4b51;
 
         --link: #0a84ff;
 
