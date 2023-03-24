@@ -64,10 +64,6 @@ progress {
 	-webkit-appearance: none
 }
 
-select:focus {
-	opacity: .5
-}
-
 input,
 button,
 select,
