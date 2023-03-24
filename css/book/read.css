@@ -14,15 +14,13 @@ section.bb {
     position: fixed;
     inset: 0 0 auto;
 
-    padding: 1em 1cm 3cm;
+    padding: 1em 1cm;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     background-color: inherit;
-
-    mask: linear-gradient(black 40%, transparent 90%);
 
     transition: opacity 1s ease
 }
@@ -38,14 +36,12 @@ section.bb h2 {
 section.bb svg {
     transform: scale(0);
 
-    transition: transform 1s ease, fill 2s ease
+    transition: transform 2s ease, fill 2s ease
 }
-
 
 img {
     animation: x 10s linear infinite
 }
-
 @keyframes x {
     0% {
         -webkit-filter: brightness(1)
