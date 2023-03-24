@@ -14,7 +14,7 @@ section.bb {
     position: fixed;
     inset: 0 0 auto;
 
-    padding: 1em 1cm;
+    padding: 1cm;
 
     display: flex;
     align-items: center;
@@ -36,11 +36,11 @@ section.bb h2 {
 section.bb svg {
     transform: scale(0);
 
-    transition: transform 2s ease, fill 2s ease
+    transition: transform 1.5s ease, fill 2s ease
 }
 
 img {
-    animation: x 10s linear infinite
+    animation: x 10s infinite
 }
 @keyframes x {
     0% {
@@ -125,7 +125,7 @@ section.ee select {
     flex-direction: column;
 
     text-align: -webkit-center;
-    font: 500 14px system-ui;
+    font: 600 14px system-ui;
 
     background-color: var(--tab-3);
     color: var(--gray)
@@ -145,7 +145,7 @@ section.vv h5 {
     margin-block: 1em 3em;
 
     text-align: center;
-    font: 20px/1.7 ui-serif;
+    font: 700 20px/1.7 ui-serif;
 
     color: var(--text-3)
 }
