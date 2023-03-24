@@ -59,9 +59,9 @@ section.ee {
     grid-template-rows: repeat(3, 1fr);
     row-gap: 5px;
 
-    background-color: #0000003b;
+    background-color: var(--shaw);
 
-    box-shadow: 0 0 50px 0 #00000080;
+    box-shadow: 0 0 50px 0 var(--shaw-2);
 
     transition: opacity .5s
 }
@@ -234,6 +234,9 @@ section.mm {
         --text-4: #222;
         --text-5: #111;
 
+        --shaw: #00000017;
+        --shaw-2: #0000002d;
+
         --tab: white;
         --tab-2: #e0dacc;
         --tab-3: #eeeded;
@@ -268,8 +271,11 @@ section.mm {
         --text-4: #f2f2f2;
         --text-5: #eee;
 
+        --shaw: #0000003b;
+        --shaw-2: #00000080;
+
         --tab: black;
-        --tab-2: #43403e;
+        --tab-2: #484037;
         --tab-3: #3a3c41;
         --tab-4: #3d3d44;
         --tab-5: #4b4b51;
