@@ -1,7 +1,58 @@
 /* body */
 
 body {
+    touch-action: pan-y;
+
     background-color: var(--canvas-3)
+}
+
+/* aa */
+
+section.aa {
+    z-index: 1;
+
+    opacity: 1;
+    position: fixed;
+    inset: 0;
+
+    padding: 2cm 1cm;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    background-color: inherit;
+
+    transition: opacity 2s ease
+}
+
+section.aa h1 {
+    text-align: center;
+    font: 500 17px system-ui
+}
+
+section.aa a {
+    margin-inline: auto;
+
+    display: block;
+
+    text-align: center
+}
+section.aa a:first-child {
+    margin-block: 2em;
+
+    font: 600 14px system-ui
+}
+section.aa a:last-child {
+    width: 300px;
+
+    border-radius: 18px;
+
+    padding: 1em 3em;
+    
+    font: 600 17px system-ui;
+
+    background-color: var(--tab-3)
 }
 
 /* bb */
