@@ -64,6 +64,8 @@ window.addEventListener('change', () => {
 //
 
 $(document).ready(() => {
+
+    // notes
     let a = document.querySelectorAll('u'),
         m = document.querySelectorAll('.mm');
 
@@ -88,16 +90,13 @@ $(document).ready(() => {
             })
         })
     })
-})
 
-//
-
-$(document).ready(() => {
-    let ll = new IntersectionObserver(x => {
+    // last book
+    new IntersectionObserver( (x, e) => {
         x.forEach(xx => {
             if (xx.isIntersecting) {
+                e.unobserve(xx.target);
                 $('section.bb')[0].style.visibility = 'visible';
-
                 setTimeout(() => {
                     $('section.bb')[0].style.opacity = '1';
 
@@ -117,12 +116,19 @@ $(document).ready(() => {
                         }, 2000)
                     }, 1000)
                 }, 800)
-
-                ll.unobserve($('#rr')[0])
             }
-        }
-        )
-    })
+        })
+    }).observe($('#rr')[0])
 
-    ll.observe($('#rr')[0])
+
+    $('section.aa a:last-child').click(() => {
+        $('audio')[0].volume = 0.3;
+        $('audio')[0].play();
+
+        $('section.aa')[0].style.opacity = '0';
+
+        setTimeout(() => {
+            $('section.aa')[0].remove()
+        }, 2000)
+    })
 })
