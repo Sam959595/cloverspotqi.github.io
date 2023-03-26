@@ -105,7 +105,7 @@ section.pp svg {
 /* ss */
 
 section.ss svg {
-    margin: 10px 20px 0 auto;
+    margin: 20px 20px 0 auto;
 
     display: block
 }
@@ -194,7 +194,7 @@ section.ee {
     background-color: var(--gray-5)
 }
 section.ee h6 {
-    font: 14px/1.4 system-ui
+    font: 500 14px/1.4 system-ui
 }
 
 /* e */
