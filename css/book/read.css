@@ -3,56 +3,7 @@
 body {
     touch-action: pan-y;
 
-    background-color: var(--canvas-3)
-}
-
-/* aa */
-
-section.aa {
-    z-index: 1;
-
-    opacity: 1;
-    position: fixed;
-    inset: 0;
-
-    padding: 2cm 1cm;
-
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-
-    background-color: inherit;
-
-    transition: opacity 2s ease
-}
-
-section.aa h1 {
-    text-align: center;
-    font: 500 17px system-ui
-}
-
-section.aa a {
-    margin-inline: auto;
-
-    display: block;
-
-    text-align: center
-}
-section.aa a:first-child {
-    margin-block: 2em;
-
-    font: 600 14px system-ui
-}
-section.aa a:last-child {
-    width: 300px;
-
-    border-radius: 18px;
-
-    padding: 1em 3em;
-    
-    font: 600 17px system-ui;
-
-    background-color: var(--tab-3)
+    background-color: var(--canvas-5)
 }
 
 /* bb */
@@ -178,7 +129,7 @@ section.ee select {
     text-align: -webkit-center;
     font: 600 14px system-ui;
 
-    background-color: var(--tab-3);
+    background-color: var(--tab-5);
     color: var(--gray)
 }
 
@@ -196,9 +147,7 @@ section.vv h5 {
     margin-block: 1em 3em;
 
     text-align: center;
-    font: 700 20px/1.7 ui-serif;
-
-    color: var(--text-3)
+    font: 700 20px/1.7 system-ui
 }
 
 section.vv h5~h5 {
@@ -212,11 +161,13 @@ section.vv h6::first-letter {
 section.vv h6 {
     margin-bottom: .8em;
 
-    font: 20px/1.7 ui-serif;
+    font: 20px/1.7 system-ui;
     letter-spacing: .2px;
-    text-align: justify;
+    text-align: justify
+}
 
-    color: var(--text-3)
+section.vv :where(h5, h6) {
+    color: var(--text-5)
 }
 
 section.vv u {
@@ -225,6 +176,72 @@ section.vv u {
     text-underline-offset: 2px;
     text-decoration-thickness: 1.2px
 }
+
+/* back */
+
+.rrr {
+    background-color: var(--canvas) !important
+}
+
+.ttt {
+    background-color: var(--canvas-2) !important
+}
+
+.kkk {
+    background-color: var(--canvas-3) !important
+}
+
+.qqq {
+    background-color: var(--canvas-4) !important
+}
+
+/* text */
+
+.rrr :where(h5, h6) {
+    color: var(--text) !important
+}
+
+.ttt :where(h5, h6) {
+    color: var(--text-2) !important
+}
+
+.kkk :where(h5, h6) {
+    color: var(--text-3) !important
+}
+
+.qqq :where(h5, h6) {
+    color: var(--text-4) !important
+}
+
+/* shaw */
+
+.rrr select {
+    background-color: var(--tab) !important
+}
+
+.ttt select {
+    background-color: var(--tab-2) !important
+}
+
+.kkk select {
+    background-color: var(--tab-3) !important
+}
+
+.qqq select {
+    background-color: var(--tab-4) !important
+}
+
+/* font */
+
+.zzz :where(h5, h6) {
+    font-family: georgia !important
+}
+
+.sss :where(h5, h6) {
+    font-family: ui-serif !important
+}
+
+/* size */
 
 .y :where(h5, h6) {
     font-size: 23px !important;
@@ -237,62 +254,6 @@ section.vv u {
 
 .yyy :where(h5, h6) {
     font-size: 18px !important
-}
-
-.sss :where(h5, h6) {
-    font-family: system-ui !important
-}
-
-.zzz :where(h5, h6) {
-    font-family: georgia !important
-}
-
-.rrr {
-    background-color: var(--canvas) !important
-}
-
-.ttt {
-    background-color: var(--canvas-2) !important
-}
-
-.kkk {
-    background-color: var(--canvas-4) !important
-}
-
-.qqq {
-    background-color: var(--canvas-5) !important
-}
-
-.rrr :where(h5, h6) {
-    color: var(--text) !important
-}
-
-.ttt :where(h5, h6) {
-    color: var(--text-2) !important
-}
-
-.kkk :where(h5, h6) {
-    color: var(--text-4) !important
-}
-
-.qqq :where(h5, h6) {
-    color: var(--text-5) !important
-}
-
-.rrr select {
-    background-color: var(--tab) !important
-}
-
-.ttt select {
-    background-color: var(--tab-2) !important
-}
-
-.kkk select {
-    background-color: var(--tab-4) !important
-}
-
-.qqq select {
-    background-color: var(--tab-5) !important
 }
 
 /* mm */
@@ -324,26 +285,26 @@ section.mm {
 
         --gray: #1d1d1f;
 
-        --canvas: white;
-        --canvas-2: #e0dacc;
+        --canvas: #e0dacc;
+        --canvas-2: #f6efe5;
         --canvas-3: #eeeded;
         --canvas-4: #ddd;
-        --canvas-5: #f6efe5;
+        --canvas-5: white;
 
-        --text: #1e1e1e;
-        --text-2: #3d2a1c;
+        --text: #3d2a1c;
+        --text-2: #111;
         --text-3: #111;
         --text-4: #222;
-        --text-5: #111;
+        --text-5: #1e1e1e;
 
         --shaw: #00000017;
         --shaw-2: #0000002d;
 
-        --tab: white;
-        --tab-2: #e0dacc;
+        --tab: #e0dacc;
+        --tab-2: #f6efe5;
         --tab-3: #eeeded;
         --tab-4: #ddd;
-        --tab-5: #f6efe5;
+        --tab-5: white;
 
         --link: #007aff;
 
@@ -361,26 +322,26 @@ section.mm {
 
         --gray: #f5f5f7;
 
-        --canvas: black;
-        --canvas-2: #26221d;
+        --canvas: #26221d;
+        --canvas-2: #353539;
         --canvas-3: #222326;
         --canvas-4: #1a1a1c;
-        --canvas-5: #353539;
-
-        --text: #8d8d93;
-        --text-2: #d6caba;
+        --canvas-5: black;
+        
+        --text: #d6caba;
+        --text-2: #eee;
         --text-3: #eee;
         --text-4: #f2f2f2;
-        --text-5: #eee;
+        --text-5: #8d8d93;
 
         --shaw: #0000003b;
         --shaw-2: #00000080;
 
-        --tab: #1c1c20;
-        --tab-2: #494540;
+        --tab: #494540;
+        --tab-2: #585862;
         --tab-3: #3a3c41;
         --tab-4: #323239;
-        --tab-5: #585862;
+        --tab-5: #1c1c20;
 
         --link: #0a84ff;
 
