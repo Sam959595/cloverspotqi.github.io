@@ -1,24 +1,20 @@
-// all, lazy load image url(a)
 $(document).ready(() => {
-    let ll = new IntersectionObserver((a, b) => {
-        a.forEach(x => {
-            if (x.isIntersecting) {
-                let mm = new Image();
-                mm.src = x.target.dataset.url;
-                mm.onload = () => {
-                    x.target.setAttribute('style', 'background-image: url(\'' + x.target.dataset.url + '\')');
-                    x.target.removeAttribute('data-url')
-                };
 
-                b.unobserve(x.target)
-            }
-        })
-    }, {
-        threshold: 0
-    });
-
-    document.querySelectorAll('[data-url]').forEach(a => {
-        ll.observe(a)
+    // img load
+    document.querySelectorAll('[data-img]').forEach(x => {
+        new IntersectionObserver((a, b) => {
+            a.forEach(x => {
+                if (x.isIntersecting) {
+                    b.unobserve(x.target);
+                    let m = new Image();
+                    m.src = x.target.dataset.img;
+                    m.onload = () => {
+                        x.target.setAttribute('style', 'background-image: url(\'' + x.target.dataset.img + '\')');
+                        x.target.removeAttribute('data-img')
+                    }
+                }
+            })
+        }).observe(x)
     })
 })
 
