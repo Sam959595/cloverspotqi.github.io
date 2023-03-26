@@ -8,22 +8,21 @@ window.addEventListener('touchmove', () => {
 
 //
 
-// size text
+// background
 window.addEventListener('change', () => {
     let vv = $('section.ee select:first-child').val(),
-        nn = $('section.vv')[0]
+        nn = $('body')
 
     if (vv == 1) {
-        nn.classList.add('y')
-        nn.classList.remove('yy', 'yyy')
+        nn.attr('class', 'rrr')
     } else if (vv == 2) {
-        nn.classList.add('yy')
-        nn.classList.remove('y', 'yyy')
+        nn.attr('class', 'ttt')
     } else if (vv == 3) {
-        nn.classList.remove('yy', 'y', 'yyy')
+        nn.attr('class', 'kkk')
     } else if (vv == 4) {
-        nn.classList.add('yyy')
-        nn.classList.remove('yy', 'y')
+        nn.attr('class', 'qqq')
+    } else if (vv == 5) {
+        nn[0].removeAttribute('class')
     }
 })
 
@@ -43,21 +42,22 @@ window.addEventListener('change', () => {
     }
 })
 
-// background
+// size text
 window.addEventListener('change', () => {
     let vv = $('section.ee select:last-child').val(),
-        nn = $('body')
+        nn = $('section.vv')[0]
 
     if (vv == 1) {
-        nn.attr('class', 'rrr')
+        nn.classList.add('y')
+        nn.classList.remove('yy', 'yyy')
     } else if (vv == 2) {
-        nn.attr('class', 'ttt')
+        nn.classList.add('yy')
+        nn.classList.remove('y', 'yyy')
     } else if (vv == 3) {
-        nn[0].removeAttribute('class')
+        nn.classList.remove('yy', 'y', 'yyy')
     } else if (vv == 4) {
-        nn.attr('class', 'kkk')
-    } else if (vv == 5) {
-        nn.attr('class', 'qqq')
+        nn.classList.add('yyy')
+        nn.classList.remove('yy', 'y')
     }
 })
 
@@ -122,7 +122,7 @@ $(document).ready(() => {
 
 
     $('section.aa a:last-child').click(() => {
-        $('audio')[0].volume = 0.3;
+        $('audio')[0].volume = .9;
         $('audio')[0].play();
 
         $('section.aa')[0].style.opacity = '0';
