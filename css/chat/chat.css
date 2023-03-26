@@ -86,7 +86,7 @@ section.bb .vvv {
 section.bb .yyy {
     margin-left: auto;
 
-    background-color: var(--blue);
+    background-color: var(--link);
     color: white
 }
 
@@ -138,7 +138,7 @@ section.nn button {
     font: 600 14px system-ui;
 
     background: none;
-    color: var(--blue)
+    color: var(--link)
 }
 
 .qqq {
@@ -171,7 +171,7 @@ section.nn button {
         --gray-19: #e8e8ed80;
         --gray-20: #00000080;
 
-        --blue: #007aff;
+        --link: #007aff;
 
         --red: #ff2d55;
 
@@ -205,7 +205,7 @@ section.nn button {
         --gray-19: #212125ba;
         --gray-20: #ffffff80;
 
-        --blue: #0a84ff;
+        --link: #0a84ff;
 
         --red: #fb5c74;
 
