@@ -17,14 +17,6 @@
 </head>
 
 <body>
-    <section class="aa">
-        <h1>Данная книга использует звуковое сопровождение. В противном случае, действия будут принудительно отклонены.</h1>
-        <div>
-            <a href="#">Отклонить условия</a>
-            <a href="#">Принять</a>
-        </div>
-    </section>
-
     <audio preload="auto" src="https://zvukipro.com/uploads/files/2019-08/1566459046_60_dark_and_stormy.mp3" loop></audio>
 
     <section class="bb">
@@ -34,6 +26,22 @@
     
     <section class="ee">
         <select>
+            <optgroup label="Фон">
+                <option value="1">Тёплый</option>
+                <option value="2">Наложение</option>
+                <option value="3">Умеренный</option>
+                <option value="4">Тёмный</option>
+                <option value="5" selected>Без эффектов</option>
+            </optgroup>
+        </select>
+        <select>
+            <optgroup label="Шрифт">
+                <option value="1">Узловатый</option>
+                <option value="2">С засечками</option>
+                <option value="3" selected>Без засечек</option>
+            </optgroup>
+        </select>
+        <select>
             <optgroup label="Текст">
                 <option value="1">Контрастный</option>
                 <option value="2">Крупный</option>
@@ -41,25 +49,9 @@
                 <option value="4">Мелкий</option>
             </optgroup>
         </select>
-        <select>
-            <optgroup label="Шрифт">
-                <option value="1">Узловатый</option>
-                <option value="2">Без засечек</option>
-                <option value="3" selected>С засечками</option>
-            </optgroup>
-        </select>
-        <select>
-            <optgroup label="Фон">
-                <option value="1">Без эффектов</option>
-                <option value="2">Тёплый</option>
-                <option value="3" selected>Умеренный</option>
-                <option value="4">Тёмный</option>
-                <option value="5">Наложение</option>
-            </optgroup>
-        </select>
     </section>
 
-    <img style="width: 100%; display: block; margin-top: 1cm;" src="https://i.postimg.cc/Mpvgh9SS/1-3x.png">
+    <img style="pointer-events: none; width: 100%; display: block; margin-top: 1cm;" src="https://i.postimg.cc/Mpvgh9SS/1-3x.png">
 
     <section class="vv">
         <h5>ГРОЗА</h5>
