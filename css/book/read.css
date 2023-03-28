@@ -9,6 +9,7 @@ body {
 /* аа */
 
 section.aa {
+    touch-action: none;
     z-index: 2;
     opacity: 1;
     position: fixed;
