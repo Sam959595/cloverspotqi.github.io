@@ -24,7 +24,7 @@ section.bb {
 
     -webkit-backdrop-filter: saturate(180%) blur(17px);
 
-    background-color: #1d1d1db8;
+    background-color: #1d1d1da6;
 
     transition: opacity 1s ease
 }
