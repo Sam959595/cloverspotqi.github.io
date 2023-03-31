@@ -14,30 +14,33 @@ section.bb {
     opacity: 0;
 
     position: fixed;
-    inset: auto 0 0;
+    inset: 0;
 
-    padding: .5cm 1cm max(.5cm, env(safe-area-inset-bottom));
+    width: 200px;
+    height: 200px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin: auto;
 
-    -webkit-backdrop-filter: saturate(180%) blur(17px);
+    border-radius: 20px;
 
-    background-color: #1d1d1da6;
+    text-align: center;
+
+    -webkit-backdrop-filter: blur(17px);
+
+    background-color: var(--soft);
 
     transition: opacity 1s ease
 }
 
 section.bb h2 {
-    margin-right: 1em;
+    margin-top: .4cm;
 
-    width: fit-content;
-
-    font: 500 14px system-ui
+    font: 600 15px system-ui
 }
 
 section.bb svg {
+    margin-top: 50px;
+
     transform: scale(0);
 
     transition: transform 1.5s ease, fill 2s ease
@@ -215,7 +218,7 @@ section.mm {
 
     display: none;
 
-    text-align: right;
+    text-align: center;
 
     background-color: inherit;
     color: var(--orange);
@@ -227,7 +230,7 @@ section.mm {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --soft: #00000015;
+        --soft: #dadada90;
 
         --gray-a: white;
         --gray-b: black;
@@ -264,7 +267,7 @@ section.mm {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --soft: #ffffff10;
+        --soft: #1d1d1d90;
 
         --gray-a: black;
         --gray-b: white;
