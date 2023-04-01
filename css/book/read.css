@@ -129,83 +129,83 @@ section.vv u {
     text-decoration-thickness: 1.2px
 }
 
+/* shaw */
+
+body.rrr select {
+    background-color: var(--tab)
+}
+
+body.ttt select {
+    background-color: var(--tab-2)
+}
+
+body.kkk select {
+    background-color: var(--tab-3)
+}
+
+body.qqq select {
+    background-color: var(--tab-4)
+}
+
 /* back */
 
 .rrr {
-    background-color: var(--canvas) !important
+    background-color: var(--canvas)
 }
 
 .ttt {
-    background-color: var(--canvas-2) !important
+    background-color: var(--canvas-2)
 }
 
 .kkk {
-    background-color: var(--canvas-3) !important
+    background-color: var(--canvas-3)
 }
 
 .qqq {
-    background-color: var(--canvas-4) !important
+    background-color: var(--canvas-4)
 }
 
 /* text */
 
-.rrr :where(h5, h6) {
-    color: var(--text) !important
+body.rrr :where(h5, h6) {
+    color: var(--text)
 }
 
-.ttt :where(h5, h6) {
-    color: var(--text-2) !important
+body.ttt :where(h5, h6) {
+    color: var(--text-2)
 }
 
-.kkk :where(h5, h6) {
-    color: var(--text-3) !important
+body.kkk :where(h5, h6) {
+    color: var(--text-3)
 }
 
-.qqq :where(h5, h6) {
-    color: var(--text-4) !important
-}
-
-/* shaw */
-
-.rrr select {
-    background-color: var(--tab) !important
-}
-
-.ttt select {
-    background-color: var(--tab-2) !important
-}
-
-.kkk select {
-    background-color: var(--tab-3) !important
-}
-
-.qqq select {
-    background-color: var(--tab-4) !important
+body.qqq :where(h5, h6) {
+    color: var(--text-4)
 }
 
 /* font */
 
-.zzz :where(h5, h6) {
-    font-family: georgia !important
+section.vv.zzz :where(h5, h6) {
+    font-family: georgia
 }
 
-.sss :where(h5, h6) {
-    font-family: ui-serif !important
+section.vv.sss :where(h5, h6) {
+    font-family: ui-serif
 }
 
 /* size */
 
-.y :where(h5, h6) {
-    font-size: 23px !important;
-    font-weight: 600 !important
+section.vv.y :where(h5, h6) {
+    font-size: 23px;
+    font-weight: 600
 }
 
-.yy :where(h5, h6) {
-    font-size: 22px !important
+section.vv.yy :where(h5, h6) {
+    font-size: 22px
 }
 
-.yyy :where(h5, h6) {
-    font-size: 18px !important
+section.vv.yyy :where(h5, h6) {
+    font-size: 18px
 }
 
 /* mm */
