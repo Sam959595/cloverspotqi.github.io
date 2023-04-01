@@ -69,19 +69,20 @@ $(document).ready(() => {
         }
     })
 
-    // double-tab for like post
-    $('section.e li .a').dblclick( () => {
-        if ($('section.e li')[0].querySelector('span') == null) {
-            let c = document.createElement('span');
-            $('section.e li div.a')[0].appendChild(c);
-            setTimeout(() => {
-                $('section.e li span')[0].style.opacity = '0';
-
+    //double-tab for like post
+    document.querySelectorAll('section.e div.a').forEach(x => {
+        x.addEventListener('dblclick', x => {
+            if (x.target.querySelector('span') == null) {
+                let c = document.createElement('span');
+                x.target.appendChild(c);
                 setTimeout(() => {
-                    $('section.e li span')[0].remove()
-                }, 200)
-            }, 900)
-        }
+                    x.target.querySelector('span').style.opacity = '0';
+                    setTimeout(() => {
+                        x.target.querySelector('span').remove()
+                    }, 200)
+                }, 900)
+            }
+        })
     })
 
     // sign in
