@@ -160,7 +160,7 @@ section.mm {
     margin-inline: 15px;
     padding: 20px;
 
-    border-radius: 15px;
+    border-radius: 12px;
 
     background-color: var(--gray-5)
 }
@@ -189,7 +189,7 @@ section.ee {
     margin: 10px 15px;
     padding: 20px;
 
-    border-radius: 15px;
+    border-radius: 12px;
 
     background-color: var(--gray-5)
 }
@@ -208,7 +208,7 @@ section.e ul {
 }
 
 section.e li {
-    border-radius: 15px;
+    border-radius: 12px;
 
     contain: paint;
     
