@@ -100,7 +100,7 @@ section.c span {
 /* e */
 
 section.e ul {
-    margin: 15px 15px max(15px, env(safe-area-inset-bottom));
+    margin: 0 10px max(10px, env(safe-area-inset-bottom));
 
     display: grid;
     grid-auto-flow: row;
