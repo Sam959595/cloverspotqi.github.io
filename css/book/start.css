@@ -150,7 +150,9 @@ section.e .v {
     position: relative
 }
 section.e video {
-    width: 100%;
+    pointer-events: none;
+
+    width: -webkit-fill-available;
     
     aspect-ratio: 1/1.4;
     object-fit: cover;
@@ -199,10 +201,10 @@ section.e .f h3 {
     -webkit-box-orient: vertical;
     overflow: hidden
 }
-section.e .f a {
+section.e .g {
     display: inherit
 }
-section.e .f div {
+section.e .g div {
     width: 20px;
     height: 20px;
 
@@ -210,7 +212,7 @@ section.e .f div {
 
     background: center/cover
 }
-section.e .f div:not(:last-child) {
+section.e .g div:not(:last-child) {
     margin-right: -5px;
 
     clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
