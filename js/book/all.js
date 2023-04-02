@@ -70,7 +70,7 @@ $(document).ready(() => {
     })
 
     //double-tab for like post
-    document.querySelectorAll('section.e div.a').forEach(x => {
+    document.querySelectorAll('section.e div.v, section.e div.a').forEach(x => {
         x.addEventListener('dblclick', x => {
             if (x.target.querySelector('span') == null) {
                 let c = document.createElement('span');
