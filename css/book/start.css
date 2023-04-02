@@ -220,18 +220,36 @@ section.e .g div:not(:last-child) {
 }
 
 section.e .h {
-    padding: 15px 1em;
+    padding: 1em;
 
-    display: block;
-
-    text-align: center;
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
 
     background-color: var(--gray-3)
 }
-section.e .h h3 {
-    font-weight: 700;
+section.e .h h2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 
-    color: var(--link)
+    font-size: 13px
+}
+section.e .h u {
+    opacity: .5;
+    
+    font-weight: 600
+}
+section.e .h div:last-child {
+    width: 50px;
+    height: 80px;
+
+    aspect-ratio: 1;
+    
+    border-radius: 3px;
+
+    background-size: cover
 }
 
 @keyframes x {
