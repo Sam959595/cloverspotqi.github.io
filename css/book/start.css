@@ -141,7 +141,7 @@ section.e .d svg {
 section.e .a {
     position: relative;
 
-    aspect-ratio: 1/1.4;
+    aspect-ratio: 1/1.3;
 
     background: center/cover
 }
@@ -154,24 +154,10 @@ section.e video {
 
     width: -webkit-fill-available;
     
-    aspect-ratio: 1/1.4;
+    aspect-ratio: 1/1.5;
     object-fit: cover;
 
     display: block
-}
-
-section.e :where(.a, .v) a {
-    position: absolute;
-    inset: 0;
-
-    width: 60px;
-    height: 60px;
-
-    border-radius: 50%;
-
-    padding: 15px;
-
-    background-color: white
 }
 
 section.e .k {
@@ -309,18 +295,11 @@ section.f p {
 
         --gray: #1d1d1f;
         --gray-2: #8e8e93;
-        --gray-3: #eee;
+        --gray-3: #eaeaee;
         --gray-4: #c0c0c4;
         --gray-5: #f2f2f6;
 
         --link: #007aff;
-
-        --blue: #3a8fff;
-        --red: #ff2d55;
-        --pink: #ff9cce;
-        --violet: #9283ff;
-        --green: #31c692;
-        --orange: #fd9900;
     }
 }
 
@@ -342,12 +321,5 @@ section.f p {
         --gray-5: #121212;
 
         --link: #0a84ff;
-
-        --blue: #3a8fff;
-        --red: #ff367c;
-        --pink: #ec55df;
-        --violet: #9283ff;
-        --green: #77ffc6;
-        --orange: #ff9f00;
     }
 }
