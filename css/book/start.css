@@ -1,10 +1,12 @@
 /* img */
 
-[data-img], video[data-vid] {
+[data-img],
+video[data-vid] {
     opacity: 0
 }
 
-[style], video {
+[style|=background],
+video {
     opacity: 1;
 
     transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
