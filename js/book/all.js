@@ -70,17 +70,14 @@ $(document).ready(() => {
     })
 
     //double-tab for like post
-    document.querySelectorAll('section.e div.v, section.e div.a').forEach(x => {
+    document.querySelectorAll('section.e div:where(.a, .v)').forEach(x => {
         x.addEventListener('dblclick', x => {
             if (x.target.querySelector('span') == null) {
                 let c = document.createElement('span');
                 x.target.appendChild(c);
                 setTimeout(() => {
-                    x.target.querySelector('span').style.opacity = '0';
-                    setTimeout(() => {
-                        x.target.querySelector('span').remove()
-                    }, 200)
-                }, 900)
+                    x.target.querySelector('span').remove()
+                }, 1200)
             }
         })
     })
