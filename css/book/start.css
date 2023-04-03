@@ -258,17 +258,27 @@ section.e .h div:last-child {
         transform: scale(0)
     }
 
-    30% {
+    15% {
         opacity: 1;
         transform: scale(1.15)
     }
 
-    60% {
+    30% {
         transform: scale(.95)
     }
 
-    100% {
+    50% {
         transform: scale(1)
+    }
+
+    80% {
+        opacity: 1;
+        transform: scale(1)
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0)
     }
 }
 
@@ -285,9 +295,7 @@ section.e span {
 
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z'/%3E%3C/svg%3E") no-repeat;
 
-    animation: x .5s cubic-bezier(0.29, 0.27, 0.49, 1.07);
-
-    transition: opacity .2s
+    animation: x 1.2s ease
 }
 
 /* f */
