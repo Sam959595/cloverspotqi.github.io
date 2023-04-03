@@ -220,7 +220,7 @@ section.e .g div:not(:last-child) {
 }
 
 section.e .h {
-    padding: 1em;
+    padding: 2em;
 
     display: flex;
     align-items: center;
@@ -234,12 +234,12 @@ section.e .h h2 {
     -webkit-box-orient: vertical;
     overflow: hidden;
 
-    font-size: 13px
+    font: 500 13px system-ui
 }
 section.e .h u {
     opacity: .5;
     
-    font-weight: 600
+    font-weight: 700
 }
 section.e .h div:last-child {
     width: 50px;
