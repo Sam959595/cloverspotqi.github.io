@@ -77,7 +77,7 @@ $(document).ready(() => {
                 x.target.appendChild(c);
                 setTimeout(() => {
                     x.target.querySelector('span').remove()
-                }, 1200)
+                }, 1000)
             }
         })
     })
