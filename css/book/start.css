@@ -220,7 +220,7 @@ section.e .g div:not(:last-child) {
 }
 
 section.e .h {
-    padding: 2em;
+    padding: 1.5em;
 
     display: flex;
     align-items: center;
@@ -228,20 +228,24 @@ section.e .h {
 
     background-color: var(--gray-3)
 }
+
 section.e .h h2 {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 
-    font: 500 13px system-ui
+    font: 500 13px system-ui;
+
+    color: var(--link)
 }
 section.e .h u {
     opacity: .5;
     
     font-weight: 700
 }
-section.e .h div:last-child {
+
+section.e .h div {
     width: 50px;
     height: 80px;
 
@@ -295,7 +299,7 @@ section.e span {
 
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z'/%3E%3C/svg%3E") no-repeat;
 
-    animation: x 1.2s ease
+    animation: x 1s ease
 }
 
 /* f */
