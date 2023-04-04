@@ -1,13 +1,5 @@
 $(document).ready(() => {
 
-    // nav toggle tab
-    $('section.c')[0].querySelectorAll('li').forEach(x => {
-        x.addEventListener('click', () => {
-            $('section.c .hhh')[0].classList.remove('hhh');
-            x.classList.add('hhh')
-        })
-    })
-
     // img load
     document.querySelectorAll('[data-img]').forEach(x => {
         new IntersectionObserver((a, b) => {
@@ -48,9 +40,13 @@ $(document).ready(() => {
         new IntersectionObserver(a => {
             a.forEach(x => {
                 if (x.isIntersecting) {
-                    x.target.play()
+                    x.target.play();
+
+                    $('section.e>svg')[0].style.cssText = 'opacity: 1; pointer-events: initial'
                 } else {
-                    x.target.pause()
+                    x.target.pause();
+
+                    $('section.e>svg')[0].removeAttribute('style')
                 }
             })
         }, {
@@ -59,13 +55,13 @@ $(document).ready(() => {
     })
 
     // video toggle sound
-    $('section.e .d svg')[0].addEventListener('click', () => {
+    $('section.e>svg')[0].addEventListener('click', () => {
         if ($('video').prop('muted')) {
             $('video').prop('muted', false);
-            $('section.e .d path')[0].setAttribute('fill', 'var(--gray-2)')
+            $('section.e>svg')[0].setAttribute('fill', 'var(--gray-b)')
         } else {
             $('video').prop('muted', true);
-            $('section.e .d path')[0].setAttribute('fill', 'var(--gray-4)')
+            $('section.e>svg')[0].setAttribute('fill', 'var(--gray-4)')
         }
     })
 
@@ -89,5 +85,13 @@ $(document).ready(() => {
         setTimeout(() => {
             $('section.a')[0].style.cssText = '';
         }, 20000)
+    })
+
+    // nav toggle tab
+    $('section.c')[0].querySelectorAll('li').forEach(x => {
+        x.addEventListener('click', () => {
+            $('section.c .hhh')[0].classList.remove('hhh');
+            x.classList.add('hhh')
+        })
     })
 })
