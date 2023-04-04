@@ -154,7 +154,7 @@ section.e p {
 section.e h5 {
     margin-top: 1em;
 
-    font-size: 13px
+    font-size: 14px
 }
 
 section.e :where(.d, .f) {
