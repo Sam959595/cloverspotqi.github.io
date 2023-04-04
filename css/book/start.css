@@ -112,13 +112,11 @@ section.e ul {
 section.e li {
     border-radius: 12px;
 
-    contain: paint;
-
     background-color: var(--gray-5)
 }
 
 section.e .c {
-    margin: 1em
+    margin: 12px
 }
 
 section.e p {
@@ -126,7 +124,7 @@ section.e p {
 }
 
 section.e h5 {
-    margin-top: 1em;
+    margin-top: 12px;
 
     font-size: 14px
 }
@@ -169,7 +167,7 @@ section.e video {
 
 section.e .k {
     display: inherit;
-    column-gap: .5em
+    column-gap: 6px
 }
 
 section.e :where(h6, time) {
@@ -190,7 +188,7 @@ section.e h3 {
 }
 
 section.e .c>h3 {
-    margin-block: 1em
+    margin-block: 12px
 }
 
 section.e .f h3 {
@@ -220,11 +218,13 @@ section.e .g div:not(:last-child) {
 }
 
 section.e .h {
-    padding: 1.5em;
+    border-radius: 0 0 12px 12px;
+
+    padding: 18px;
 
     display: flex;
     align-items: center;
-    column-gap: 1em;
+    column-gap: 12px;
 
     background-color: var(--gray-3)
 }
@@ -301,7 +301,7 @@ section.e span {
 }
 
 section.e .s {
-    margin: 1em 2em 1em 0;
+    margin: 12px 24px 12px 0;
 
     display: flex;
     justify-content: space-around
