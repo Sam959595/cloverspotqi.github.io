@@ -310,7 +310,7 @@ section.e>svg {
 
     -webkit-backdrop-filter: blur(17px);
 
-    background-color: var(--soft-3);
+    background-color: var(--soft-4);
 
     transition: opacity .4s
 }
