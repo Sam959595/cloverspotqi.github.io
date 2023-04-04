@@ -117,6 +117,32 @@ section.e li {
     background-color: var(--gray-5)
 }
 
+section.e .s {
+    margin: 1em 2em 1em 0;
+
+    display: flex;
+    justify-content: space-around
+}
+section.e .s p {
+    display: inherit;
+    align-items: center;
+
+    font: 600 15px ui-rounded;
+
+    color: var(--gray-4)
+}
+section.e .s p svg {
+    margin-right: .8em
+}
+section.e .s a {
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
+
+    background-size: cover
+}
+
 section.e .c {
     margin: 1em
 }
@@ -231,23 +257,21 @@ section.e .h {
 
     background-color: var(--gray-3)
 }
-
 section.e .h h2 {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 
-    font: 500 13px system-ui;
-
-    color: var(--link)
+    font: 500 13px system-ui
 }
 section.e .h u {
     opacity: .5;
     
-    font-weight: 700
-}
+    font-weight: 700;
 
+    color: var(--link)
+}
 section.e .h div {
     width: 80px;
     height: 80px;
