@@ -1,10 +1,12 @@
 /* img */
 
-[data-img], video[data-vid] {
+[data-img],
+video[data-vid] {
     opacity: 0
 }
 
-[style], video {
+[style|=background],
+video {
     opacity: 1;
 
     transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
@@ -194,7 +196,7 @@ section.ee {
     background-color: var(--gray-5)
 }
 section.ee h6 {
-    font: 500 14px/1.4 system-ui
+    font: 14px/1.4 system-ui
 }
 
 /* e */
@@ -354,7 +356,7 @@ section.e span {
 @media screen and (prefers-color-scheme: light) {
     :root {
         --soft: #f2f2f6aa;
-        --soft-2: #00000008;
+        --soft-2: #eaeaee;
 
         --gray-a: white;
         --gray-b: black;
@@ -380,7 +382,7 @@ section.e span {
 @media screen and (prefers-color-scheme: dark) {
     :root {
         --soft: #121212aa;
-        --soft-2: #ffffff08;
+        --soft-2: #191919;
 
         --gray-a: black;
         --gray-b: white;
