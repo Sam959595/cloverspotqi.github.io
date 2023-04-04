@@ -61,7 +61,7 @@ $(document).ready(() => {
             $('section.e>svg')[0].setAttribute('fill', 'var(--gray-b)')
         } else {
             $('video').prop('muted', true);
-            $('section.e>svg')[0].setAttribute('fill', 'var(--gray-4)')
+            $('section.e>svg')[0].setAttribute('fill', 'var(--soft-4)')
         }
     })
 
