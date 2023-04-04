@@ -136,12 +136,6 @@ section.e :where(.d, .f) {
     column-gap: 10px
 }
 
-section.e .d svg {
-    border-radius: 50%;
-
-    background-color: var(--soft-3)
-}
-
 section.e .a {
     position: relative;
 
@@ -300,6 +294,27 @@ section.e span {
     animation: x 1s ease
 }
 
+section.e>svg {
+    opacity: 0;
+    pointer-events: none;
+
+    z-index: 1;
+    position: fixed;
+    inset: 0 auto auto 0;
+
+    margin: 2em;
+
+    border-radius: 50%;
+
+    padding: 2px;
+
+    -webkit-backdrop-filter: blur(17px);
+
+    background-color: var(--soft-3);
+
+    transition: opacity .4s ease
+}
+
 section.e .s {
     margin: 12px 24px 12px 0;
 
@@ -401,7 +416,7 @@ section.f p {
 
         --soft: #0000008c;
         --soft-2: #ffffff8c;
-        --soft-3: #ffffff08;
+        --soft-3: #33333370;
 
         --gray-a: black;
         --gray-b: white;
