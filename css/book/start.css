@@ -53,10 +53,10 @@ section.a h1 a {
 /* b */
 
 section.b a {
-    margin: 35px 35px 0 auto;
+    margin: 15px 27px 15px auto;
 
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
 
     border-radius: 50%;
 
@@ -150,6 +150,9 @@ section.e .a {
     aspect-ratio: 1/1.4;
 
     background: center/cover
+}
+section.e .hh {
+    aspect-ratio: 1.6/1
 }
 
 section.e .v {
@@ -246,12 +249,12 @@ section.e .h u {
 }
 
 section.e .h div {
-    width: 50px;
+    width: 80px;
     height: 80px;
 
     aspect-ratio: 1;
     
-    border-radius: 3px;
+    border-radius: 8px;
 
     background-size: cover
 }
