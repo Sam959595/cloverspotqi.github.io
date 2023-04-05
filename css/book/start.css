@@ -101,6 +101,25 @@ section.c span {
 
 /* e */
 
+section.e>svg {
+    opacity: 0;
+    pointer-events: none;
+
+    z-index: 1;
+    position: fixed;
+    inset: 0 auto auto 0;
+
+    margin: 2em;
+
+    border-radius: 50%;
+
+    -webkit-backdrop-filter: blur(17px);
+
+    background-color: var(--soft-3);
+
+    transition: opacity .4s
+}
+
 section.e ul {
     margin: 0 15px max(15px, env(safe-area-inset-bottom));
 
@@ -291,29 +310,10 @@ section.e span {
 
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z'/%3E%3C/svg%3E") no-repeat;
 
-    animation: x 1s ease
+    animation: x 1s
 }
 
-section.e>svg {
-    opacity: 0;
-    pointer-events: none;
-
-    z-index: 1;
-    position: fixed;
-    inset: 0 auto auto 0;
-
-    margin: 2em;
-
-    border-radius: 50%;
-
-    padding: 2px;
-
-    -webkit-backdrop-filter: blur(17px);
-
-    background-color: var(--soft-3);
-
-    transition: opacity .4s ease
-}
+/* ssss */
 
 section.e .s {
     margin: 12px 24px 12px 0;
@@ -330,7 +330,7 @@ section.e .s p {
     color: var(--gray-4)
 }
 section.e .s p svg {
-    margin-right: .8em
+    margin-right: 6px
 }
 section.e .s a {
     width: 22px;
