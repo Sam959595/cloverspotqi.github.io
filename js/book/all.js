@@ -51,17 +51,15 @@ $(document).ready(() => {
     })
 
     // video observer hide/visit svg
-    document.querySelectorAll('video').forEach(x => {
-        new IntersectionObserver(x => {
-            x.forEach(x => {
-                if (x.isIntersecting) {
-                    $('section.e>svg')[0].style.cssText = 'opacity: 1; pointer-events: initial'
-                } else {
-                    $('section.e>svg')[0].removeAttribute('style')
-                }
-            })
-        }).observe(x)
-    })
+    new IntersectionObserver(x => {
+        x.forEach(x => {
+            if (x.isIntersecting) {
+                $('section.e>svg')[0].style.cssText = 'opacity: 1; pointer-events: initial'
+            } else {
+                $('section.e>svg')[0].removeAttribute('style')
+            }
+        })
+    }).observe(document.querySelector('video'))
 
     // video toggle sound
     $('section.e>svg')[0].addEventListener('click', () => {
