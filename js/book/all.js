@@ -41,11 +41,9 @@ $(document).ready(() => {
             a.forEach(x => {
                 if (x.isIntersecting) {
                     x.target.play();
-
                     $('section.e>svg')[0].style.cssText = 'opacity: 1; pointer-events: initial'
                 } else {
                     x.target.pause();
-
                     $('section.e>svg')[0].removeAttribute('style')
                 }
             })
@@ -58,10 +56,10 @@ $(document).ready(() => {
     $('section.e>svg')[0].addEventListener('click', () => {
         if ($('video').prop('muted')) {
             $('video').prop('muted', false);
-            $('section.e>svg')[0].setAttribute('fill', 'var(--gray-b)')
+            $('section.e>svg path')[0].setAttribute('stroke', 'white')
         } else {
             $('video').prop('muted', true);
-            $('section.e>svg')[0].setAttribute('fill', 'var(--soft-4)')
+            $('section.e>svg path')[0].setAttribute('stroke', 'var(--soft-4)')
         }
     })
 
