@@ -35,7 +35,7 @@ $(document).ready(() => {
         }).observe(x)
     })
 
-    // video observer play/stop
+    // video observer play/pause
     document.querySelectorAll('video').forEach(x => {
         new IntersectionObserver(a => {
             a.forEach(x => {
@@ -64,6 +64,12 @@ $(document).ready(() => {
             $('section.e>svg')[0].setAttribute('fill', 'var(--soft-4)')
         }
     })
+
+    // video pause if exit tab
+    window.onblur = () => {
+        $('video').prop('muted', true);
+        $('section.e>svg')[0].setAttribute('fill', 'var(--soft-4)')
+    }
 
     //double-tab for like post
     document.querySelectorAll('section.e div:where(.a, .v)').forEach(x => {
