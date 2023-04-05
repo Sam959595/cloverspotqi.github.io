@@ -66,7 +66,7 @@ $(document).ready(() => {
     // video pause if exit tab
     window.onblur = () => {
         $('video').prop('muted', true);
-        $('section.e>svg')[0].setAttribute('fill', 'var(--soft-4)')
+        $('section.e>svg')[0].setAttribute('stroke', 'var(--soft-4)')
     }
 
     //double-tab for like post
