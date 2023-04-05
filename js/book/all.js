@@ -37,18 +37,29 @@ $(document).ready(() => {
 
     // video observer play/pause
     document.querySelectorAll('video').forEach(x => {
-        new IntersectionObserver(a => {
-            a.forEach(x => {
+        new IntersectionObserver(x => {
+            x.forEach(x => {
                 if (x.isIntersecting) {
-                    x.target.play();
-                    $('section.e>svg')[0].style.cssText = 'opacity: 1; pointer-events: initial'
+                    x.target.play()
                 } else {
-                    x.target.pause();
-                    $('section.e>svg')[0].removeAttribute('style')
+                    x.target.pause()
                 }
             })
         }, {
             threshold: .6
+        }).observe(x)
+    })
+
+    // video observer hide/visit svg
+    document.querySelectorAll('video').forEach(x => {
+        new IntersectionObserver(x => {
+            x.forEach(x => {
+                if (x.isIntersecting) {
+                    $('section.e>svg')[0].style.cssText = 'opacity: 1; pointer-events: initial'
+                } else {
+                    $('section.e>svg')[0].removeAttribute('style')
+                }
+            })
         }).observe(x)
     })
 
