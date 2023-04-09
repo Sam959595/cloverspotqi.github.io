@@ -143,8 +143,6 @@ section.e p {
 }
 
 section.e h5 {
-    margin-top: 12px;
-
     font-size: 14px
 }
 
@@ -180,6 +178,7 @@ section.e video {
 
 section.e .k {
     display: inherit;
+    align-items: inherit;
     column-gap: 6px
 }
 
