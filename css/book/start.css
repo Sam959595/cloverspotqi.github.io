@@ -237,34 +237,23 @@ section.e .h {
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
     column-gap: 12px;
 
     background-color: var(--gray-3)
 }
 section.e .h h2 {
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 
-    font: 500 13px system-ui
-}
-section.e .h u {
-    opacity: .5;
-    
-    font-weight: 700;
+    font: 500 13px system-ui;
 
     color: var(--link)
 }
-section.e .h div {
-    width: 80px;
-    height: 80px;
-
-    aspect-ratio: 1;
-    
-    border-radius: 8px;
-
-    background-size: cover
+section.e .h h4 {
+    font-size: 32px
 }
 
 @keyframes x {
@@ -311,37 +300,6 @@ section.e span {
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z'/%3E%3C/svg%3E") no-repeat;
 
     animation: x 1s
-}
-
-/* ssss */
-
-section.e .s {
-    margin: 12px 24px 12px 0;
-
-    display: flex;
-    justify-content: space-around
-}
-section.e .s p {
-    display: inherit;
-    align-items: center;
-
-    font: 600 15px ui-rounded;
-
-    color: var(--gray-4)
-}
-section.e .s p svg {
-    margin-right: 6px
-}
-section.e .s a {
-    width: 22px;
-    height: 22px;
-
-    border-radius: 50%;
-
-    background-size: cover
-}
-section.e li.j :where(.a, video) {
-    aspect-ratio: 1.6/1
 }
 
 /* f */
