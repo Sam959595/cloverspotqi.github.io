@@ -156,9 +156,15 @@ section.e :where(.d, .f) {
 section.e .a {
     position: relative;
 
-    aspect-ratio: 1/1.4;
+    aspect-ratio: 1/1.34;
 
     background: center/cover
+}
+section.e .a.l {
+    aspect-ratio: 1/1.5
+}
+section.e .a.s {
+    aspect-ratio: 1.6/1
 }
 
 section.e .v {
