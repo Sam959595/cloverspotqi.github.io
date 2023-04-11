@@ -149,6 +149,10 @@ body.qqq select {
 
 /* back */
 
+.mmm {
+    background-color: var(--canvas-0)
+}
+
 .rrr {
     background-color: var(--canvas)
 }
@@ -166,6 +170,10 @@ body.qqq select {
 }
 
 /* text */
+
+body.mmm :where(h5, h6) {
+    color: var(--text-0)
+}
 
 body.rrr :where(h5, h6) {
     color: var(--text)
@@ -237,12 +245,14 @@ section.mm {
 
         --gray: #1d1d1f;
 
+        --canvas-0: #009688;
         --canvas: #e0dacc;
         --canvas-2: #f6efe5;
         --canvas-3: #eeeded;
         --canvas-4: #ddd;
         --canvas-5: white;
 
+        --text-0: #bbfeff;
         --text: #3d2a1c;
         --text-2: #111;
         --text-3: #111;
@@ -252,7 +262,7 @@ section.mm {
         --shaw: #00000017;
         --shaw-2: #0000002d;
 
-        --tab: #e0dacc;
+        --tab: #f1efe7;
         --tab-2: #f6efe5;
         --tab-3: #eeeded;
         --tab-4: #ddd;
@@ -274,12 +284,14 @@ section.mm {
 
         --gray: #f5f5f7;
 
+        --canvas-0: #584d47;
         --canvas: #26221d;
         --canvas-2: #353539;
         --canvas-3: #222326;
         --canvas-4: #1a1a1c;
         --canvas-5: black;
 
+        --text-0: #fdd3bf;
         --text: #d6caba;
         --text-2: #eee;
         --text-3: #eee;
