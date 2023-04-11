@@ -82,7 +82,7 @@ section.c ul svg {
     fill: var(--gray-4)
 }
 
-.hhh svg {
+.f svg {
     fill: var(--gray-b) !important
 }
 
@@ -153,17 +153,20 @@ section.e :where(.d, .f) {
     column-gap: 10px
 }
 
-section.e .a {
+section.e .i {
     position: relative;
 
     aspect-ratio: 1/1.34;
 
     background: center/cover
 }
-section.e .a.l {
+section.e .i.v {
     aspect-ratio: 1/1.5
 }
-section.e .a.s {
+section.e .i.s {
+    aspect-ratio: 1
+}
+section.e .i.h {
     aspect-ratio: 1.6/1
 }
 
@@ -235,7 +238,7 @@ section.e .g div:not(:last-child) {
     clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
 }
 
-section.e .h {
+section.e .a {
     border-radius: 0 0 12px 12px;
 
     padding: 18px;
@@ -247,7 +250,7 @@ section.e .h {
 
     background-color: var(--gray-3)
 }
-section.e .h h2 {
+section.e .a h2 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -257,7 +260,7 @@ section.e .h h2 {
 
     color: var(--link)
 }
-section.e .h h4 {
+section.e .a h4 {
     font-size: 32px
 }
 
