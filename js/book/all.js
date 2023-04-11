@@ -40,26 +40,17 @@ $(document).ready(() => {
         new IntersectionObserver(x => {
             x.forEach(x => {
                 if (x.isIntersecting) {
-                    x.target.play()
+                    x.target.play();
+                    $('section.e>svg')[0].style.cssText = 'opacity: 1; pointer-events: initial'
                 } else {
-                    x.target.pause()
+                    x.target.pause();
+                    $('section.e>svg')[0].removeAttribute('style')
                 }
             })
         }, {
             threshold: .6
         }).observe(x)
     })
-
-    // video observer hide/visit svg
-    new IntersectionObserver(x => {
-        x.forEach(x => {
-            if (x.isIntersecting) {
-                $('section.e>svg')[0].style.cssText = 'opacity: 1; pointer-events: initial'
-            } else {
-                $('section.e>svg')[0].removeAttribute('style')
-            }
-        })
-    }).observe(document.querySelector('video'))
 
     // video toggle sound
     $('section.e>svg')[0].addEventListener('click', () => {
@@ -79,7 +70,7 @@ $(document).ready(() => {
     }
 
     //double-tab for like post
-    document.querySelectorAll('section.e div:where(.a, .v)').forEach(x => {
+    document.querySelectorAll('section.e div:where(.i, .v)').forEach(x => {
         x.addEventListener('dblclick', x => {
             if (x.target.querySelector('span') == null) {
                 let c = document.createElement('span');
@@ -103,8 +94,8 @@ $(document).ready(() => {
     // nav toggle tab
     $('section.c')[0].querySelectorAll('li').forEach(x => {
         x.addEventListener('click', () => {
-            $('section.c .hhh')[0].classList.remove('hhh');
-            x.classList.add('hhh')
+            $('section.c .f')[0].removeAttribute('class')
+            x.classList.add('f')
         })
     })
 })
