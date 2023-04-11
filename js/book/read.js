@@ -13,7 +13,9 @@ window.addEventListener('change', () => {
     let vv = $('section.ee select:first-child').val(),
         nn = $('body')
 
-    if (vv == 1) {
+    if (vv == 0) {
+        nn.attr('class', 'mmm')
+    } else if (vv == 1) {
         nn.attr('class', 'rrr')
     } else if (vv == 2) {
         nn.attr('class', 'ttt')
@@ -122,7 +124,7 @@ $(document).ready(() => {
 
 
     $('section.aa a:last-child').click(() => {
-        $('audio')[0].volume = .9;
+        $('audio')[0].volume = .5;
         $('audio')[0].play();
 
         $('section.aa')[0].style.opacity = '0';
@@ -130,5 +132,13 @@ $(document).ready(() => {
         setTimeout(() => {
             $('section.aa')[0].remove()
         }, 2000)
+
+        let a = new AudioContext(),
+            c = a.createGain();
+            c.connect(a.destination);
+
+        $('audio')[0].c.cancelScheduledValues(a.currentTime);
+        $('audio')[0].c.setValueAtTime(a.c.value, a.currentTime);
+        $('audio')[0].c.exponentialRampToValueAtTime(0.01, a.currentTime + 2);
     })
 })
