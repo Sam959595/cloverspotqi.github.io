@@ -128,7 +128,7 @@ section.e>svg {
 }
 
 section.e ul {
-    margin: 57px 15px max(15px, env(safe-area-inset-bottom));
+    margin: 57px 0 max(15px, env(safe-area-inset-bottom));
 
     display: grid;
     grid-auto-flow: row;
@@ -136,8 +136,6 @@ section.e ul {
 }
 
 section.e li {
-    border-radius: 12px;
-
     background-color: var(--gray-5)
 }
 
