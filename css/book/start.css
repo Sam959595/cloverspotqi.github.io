@@ -136,6 +136,8 @@ section.e ul {
 }
 
 section.e li {
+    border-radius: 12px;
+
     background-color: var(--gray-5)
 }
 
