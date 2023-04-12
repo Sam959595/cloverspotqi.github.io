@@ -146,7 +146,7 @@ section.e .c {
 }
 
 section.e p {
-    font-weight: 700
+    font: 600 11px system-ui
 }
 
 section.e h5 {
