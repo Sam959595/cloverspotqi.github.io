@@ -50,26 +50,22 @@ section.a h1 a {
     color: var(--gray-b)
 }
 
-/* b */
-
-section.b a {
-    margin: 15px 27px 15px auto;
-
-    width: 28px;
-    height: 28px;
-
-    border-radius: 50%;
-
-    display: block;
-
-    background-size: cover
-}
-
 /* c */
 
-section.c ul {
-    margin-block: 1cm;
+section.c {
+    z-index: 1;
 
+    position: fixed;
+    inset: 0 0 auto;
+
+    padding-block: 1em;
+
+    -webkit-backdrop-filter: blur(20px);
+
+    background-image: linear-gradient(var(--gray-a), var(--soft))
+}
+
+section.c ul {
     display: grid;
     grid-auto-flow: column;
     justify-items: center;
@@ -84,6 +80,17 @@ section.c ul svg {
 
 .f svg {
     fill: var(--gray-b) !important
+}
+
+section.c a {
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50%;
+
+    display: block;
+
+    background-size: cover
 }
 
 section.c span {
@@ -109,7 +116,7 @@ section.e>svg {
     position: fixed;
     inset: 0 auto auto 0;
 
-    margin: 2em;
+    margin: 6em 0 0 2em;
 
     border-radius: 50%;
 
@@ -121,7 +128,7 @@ section.e>svg {
 }
 
 section.e ul {
-    margin: 0 15px max(15px, env(safe-area-inset-bottom));
+    margin: 70px 15px max(15px, env(safe-area-inset-bottom));
 
     display: grid;
     grid-auto-flow: row;
@@ -192,7 +199,7 @@ section.e .k {
 }
 
 section.e :where(h6, time) {
-    font-weight: 600
+    font-weight: 700
 }
 
 section.e .d a {
