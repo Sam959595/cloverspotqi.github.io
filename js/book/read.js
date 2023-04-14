@@ -13,7 +13,11 @@ window.addEventListener('change', () => {
     let vv = $('section.ee select:first-child').val(),
         nn = $('body')
 
-    if (vv == 0) {
+    if (vv == 6) {
+        nn.attr('class', 'uuu')
+    } else if (vv == 7) {
+        nn.attr('class', 'ccc')
+    } else if (vv == 8) {
         nn.attr('class', 'mmm')
     } else if (vv == 1) {
         nn.attr('class', 'rrr')
@@ -94,7 +98,7 @@ $(document).ready(() => {
     })
 
     // last book
-    new IntersectionObserver( (x, e) => {
+    new IntersectionObserver((x, e) => {
         x.forEach(xx => {
             if (xx.isIntersecting) {
                 e.unobserve(xx.target);
@@ -135,7 +139,7 @@ $(document).ready(() => {
 
         let a = new AudioContext(),
             c = a.createGain();
-            c.connect(a.destination);
+        c.connect(a.destination);
 
         $('audio')[0].c.cancelScheduledValues(a.currentTime);
         $('audio')[0].c.setValueAtTime(a.c.value, a.currentTime);
