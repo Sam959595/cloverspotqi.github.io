@@ -64,9 +64,9 @@ section.ee {
     grid-template-rows: repeat(3, 1fr);
     row-gap: 5px;
 
-    background-color: var(--shaw);
+    background-color: #00000014;
 
-    box-shadow: 0 0 50px 0 var(--shaw-2);
+    box-shadow: 0 0 50px 0 #0000002d;
 
     transition: opacity .5s
 }
@@ -129,7 +129,22 @@ section.vv u {
     text-decoration-thickness: 1.2px
 }
 
-/* shaw */
+/* tab */
+
+body.uuu select {
+    background-color: #4c6c75;
+    color: white
+}
+
+body.ccc select {
+    background-color: #354258;
+    color: white
+}
+
+body.mmm select {
+    background-color: #756a64;
+    color: white
+}
 
 body.rrr select {
     background-color: var(--tab)
@@ -147,10 +162,18 @@ body.qqq select {
     background-color: var(--tab-4)
 }
 
-/* back */
+/* background */
+
+.uuu {
+    background-color: #305762
+}
+
+.ccc {
+    background-color: #1a2434
+}
 
 .mmm {
-    background-color: var(--canvas-0)
+    background-color: #584d47
 }
 
 .rrr {
@@ -171,8 +194,16 @@ body.qqq select {
 
 /* text */
 
+body.uuu :where(h5, h6) {
+    color: #e4ffff
+}
+
+body.ccc :where(h5, h6) {
+    color: #b4cce7
+}
+
 body.mmm :where(h5, h6) {
-    color: var(--text-0)
+    color: #ffede4
 }
 
 body.rrr :where(h5, h6) {
@@ -245,22 +276,17 @@ section.mm {
 
         --gray: #1d1d1f;
 
-        --canvas-0: #305762;
         --canvas: #e0dacc;
         --canvas-2: #f6efe5;
         --canvas-3: #eeeded;
         --canvas-4: #ddd;
         --canvas-5: white;
 
-        --text-0: #e4ffff;
         --text: #3d2a1c;
         --text-2: #111;
         --text-3: #111;
         --text-4: #222;
         --text-5: #1e1e1e;
-
-        --shaw: #00000017;
-        --shaw-2: #0000002d;
 
         --tab: #f1efe7;
         --tab-2: #f6efe5;
@@ -284,22 +310,17 @@ section.mm {
 
         --gray: #f5f5f7;
 
-        --canvas-0: #584d47;
-        --canvas: #24201d;
+        --canvas: #24211f;
         --canvas-2: #353539;
         --canvas-3: #222326;
         --canvas-4: #1a1a1c;
         --canvas-5: black;
 
-        --text-0: #ffede4;
         --text: #d6caba;
         --text-2: #eee;
         --text-3: #eee;
         --text-4: #f2f2f2;
         --text-5: #8d8d93;
-
-        --shaw: #0000003b;
-        --shaw-2: #00000080;
 
         --tab: #494540;
         --tab-2: #585862;
