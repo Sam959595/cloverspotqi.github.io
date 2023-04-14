@@ -153,6 +153,7 @@ section.e h5 {
 
 section.e .f {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     column-gap: 10px
 }
@@ -189,10 +190,10 @@ section.e video {
     display: block
 }
 
-section.e :where(h6, time) {
+section.e h3, section.e time {
     font-weight: 700;
 
-    color: white
+    text-shadow: 0 0 5px #00000050
 }
 
 section.e h3 {
@@ -203,7 +204,7 @@ section.e .c>h3 {
     margin-block: 12px
 }
 
-section.e .f h3 {
+section.e h3 {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -232,19 +233,15 @@ section.e .g div:not(:last-child) {
 }
 
 section.e .a {
-    padding: 18px;
+    padding: 12px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    column-gap: 12px;
-
-    background-color: var(--gray-3)
+    column-gap: 12px
 }
 section.e .a h2 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
     overflow: hidden;
 
     font: 500 13px system-ui;
@@ -309,9 +306,7 @@ section.e .j .c {
 
     display: flex;
     flex-flow: column;
-    justify-content: end;
-
-    background-image: linear-gradient(transparent 50%, #00000030)
+    justify-content: end
 }
 
 section.e .n>* {
