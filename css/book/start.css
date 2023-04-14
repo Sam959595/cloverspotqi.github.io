@@ -58,7 +58,7 @@ section.c {
     position: fixed;
     inset: 0 0 auto;
 
-    padding-block: .8em;
+    padding-block: 10px;
 
     -webkit-backdrop-filter: blur(20px);
 
@@ -132,12 +132,12 @@ section.e ul {
 
     display: grid;
     grid-auto-flow: row;
-    row-gap: 10px
+    row-gap: 50px
 }
 
-section.e li {
+/* section.e li {
     background-color: var(--gray-5)
-}
+} */
 
 section.e .c {
     margin: 12px
@@ -369,7 +369,7 @@ section.f p {
     :root {
         --mod: plus-darker;
 
-        --soft: #ffffff8c;
+        --soft: #ffffffcc;
         --soft-2: #0000008c;
         --soft-3: #cccccc60;
         --soft-4: #00000020;
