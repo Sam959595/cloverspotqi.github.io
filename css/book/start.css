@@ -153,7 +153,6 @@ section.e h5 {
 
 section.e .f {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     column-gap: 10px
 }
@@ -191,7 +190,9 @@ section.e video {
 }
 
 section.e :where(h6, time) {
-    font-weight: 700
+    font-weight: 700;
+
+    color: white
 }
 
 section.e h3 {
@@ -206,7 +207,9 @@ section.e .f h3 {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
-    overflow: hidden
+    overflow: hidden;
+
+    color: white
 }
 
 section.e .g {
@@ -222,14 +225,10 @@ section.e .g div {
     background: center/cover
 }
 
-section.e .g div:nth-child(-n+2) {
+section.e .g div:not(:last-child) {
     margin-right: -5px;
 
     clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
-}
-
-section.e .g div.q {
-    margin-left: -5px
 }
 
 section.e .a {
@@ -313,6 +312,12 @@ section.e .j .c {
     justify-content: end;
 
     background-image: linear-gradient(transparent 50%, #00000030)
+}
+
+section.e .n>* {
+    position: absolute;
+
+    transition: opacity 1s
 }
 
 /* f */
