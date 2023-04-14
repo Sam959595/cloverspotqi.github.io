@@ -169,7 +169,7 @@ body.qqq select {
 }
 
 .ccc {
-    background-color: #1a2434
+    background-color: #1c283a
 }
 
 .mmm {
@@ -199,7 +199,7 @@ body.uuu :where(h5, h6) {
 }
 
 body.ccc :where(h5, h6) {
-    color: #b4cce7
+    color: #e1ecfc
 }
 
 body.mmm :where(h5, h6) {
