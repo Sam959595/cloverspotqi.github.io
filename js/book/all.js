@@ -98,4 +98,27 @@ $(document).ready(() => {
             x.classList.add('f')
         })
     })
+
+    document.querySelectorAll('section.e .n').forEach(x => {
+        new IntersectionObserver(x => {
+            let t;
+            x.forEach(x => {
+                if (x.isIntersecting) {
+                    setInterval(() => {
+                        if (x.target.firstElementChild.disabled === false) {
+                            x.target.firstElementChild.disabled = true;
+                            x.target.firstElementChild.style.opacity = '0';
+                            x.target.lastElementChild.style.opacity = '1'
+                        } else {
+                            x.target.firstElementChild.disabled = false;
+                            x.target.firstElementChild.style.opacity = '1';
+                            x.target.lastElementChild.style.opacity = '0'
+                        }
+                    }, 8000)
+                } else {
+                    clearInterval(t)
+                }
+            })
+        }).observe(x)
+    })
 })
