@@ -114,9 +114,9 @@ section.e>svg {
 
     z-index: 1;
     position: fixed;
-    inset: 0 auto auto 0;
+    inset: auto auto 0 0;
 
-    margin: 6em 0 0 2em;
+    margin: 2em;
 
     border-radius: 50%;
 
@@ -391,7 +391,7 @@ section.f p {
     :root {
         --mod: plus-lighter;
 
-        --soft: #0000008c;
+        --soft: #000000aa;
         --soft-2: #ffffff8c;
         --soft-3: #33333370;
         --soft-4: #ffffff20;
