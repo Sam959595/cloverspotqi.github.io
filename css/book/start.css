@@ -167,10 +167,16 @@ section.e .d {
 
     scroll-snap-type: x mandatory
 }
-section.e .d img {
-    width: calc(100vw - 12px);
+section.e .d :where(img, video) {
+    width: inherit;
 
     scroll-snap-align: center
+}
+section.e .m svg {
+    margin: 1em;
+
+    position: absolute;
+    inset: 0 0 auto auto
 }
 
 section.e video {
@@ -257,9 +263,9 @@ section.e span {
     margin: auto;
 
     width: 80px;
-    height: 80px;
+    height: 74px;
 
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z'/%3E%3C/svg%3E") no-repeat;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 46' fill='white'%3E%3Cpath d='M0,15.1328617 C0,25.8061035 8.9879047,36.3039237 23.1620727,45.323542 C23.7159215,45.6492638 24.4712871,46 25,46 C25.5287129,46 26.283971,45.6492638 26.812684,45.323542 C41.0119879,36.3039237 50,25.8061035 50,15.1328617 C50,6.26365056 43.8820977,0 35.7249662,0 C31.0422798,0 27.2658818,2.20479559 25,5.58708565 C22.7341182,2.22981 18.9324769,0 14.2749264,0 C6.11790234,0 0,6.26365056 0,15.1328617 Z'/%3E%3C/svg%3E") no-repeat;
 
     animation: x 1s
 }
