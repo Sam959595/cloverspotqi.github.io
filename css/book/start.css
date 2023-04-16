@@ -124,7 +124,7 @@ section.e>svg {
 }
 
 section.e>ul {
-    margin-block: 58px max(15px, env(safe-area-inset-bottom));
+    margin-block: 48px max(15px, env(safe-area-inset-bottom));
 
     display: grid;
     grid-auto-flow: row;
@@ -160,7 +160,6 @@ section.e .d {
     width: 100vw;
 
     display: grid;
-    grid-auto-columns: max-content;
     grid-auto-flow: column;
 
     overflow-x: scroll;
@@ -170,7 +169,7 @@ section.e .d {
 section.e .d :where(img, video) {
     width: inherit;
 
-    scroll-snap-align: center
+    scroll-snap-align: start
 }
 section.e .m svg {
     margin: 1em;
