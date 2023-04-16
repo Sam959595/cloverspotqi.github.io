@@ -1,11 +1,11 @@
-/* img */
+/* media */
 
-[data-img],
-video[data-vid] {
+[data-i],
+[data-v] {
     opacity: 0
 }
 
-[style|=background],
+img,
 video {
     opacity: 1;
 
@@ -82,15 +82,11 @@ section.c ul svg {
     fill: var(--gray-b) !important
 }
 
-section.c a {
+section.c img {
     width: 28px;
     height: 28px;
 
-    border-radius: 50%;
-
-    display: block;
-
-    background-size: cover
+    border-radius: 50%
 }
 
 section.c span {
@@ -127,7 +123,7 @@ section.e>svg {
     transition: opacity .4s
 }
 
-section.e ul {
+section.e>ul {
     margin-block: 58px max(15px, env(safe-area-inset-bottom));
 
     display: grid;
@@ -149,36 +145,52 @@ section.e h6 {
     font-size: 13px
 }
 
-section.e :where(.i, .v) {
+section.e .m {
     position: relative
 }
 
-section.e .i {
-    aspect-ratio: 1/1.34;
+section.e img {
+    width: -webkit-fill-available;
 
-    background: center/cover
+    aspect-ratio: 1/1.34;
+    object-fit: cover
+}
+
+section.e .d {
+    width: 100vw;
+
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+
+    overflow-x: scroll;
+
+    scroll-snap-type: x mandatory
+}
+section.e .d img {
+    width: calc(100vw - 12px);
+
+    scroll-snap-align: center
 }
 
 section.e video {
-    pointer-events: none;
-
     width: -webkit-fill-available;
 
-    aspect-ratio: 1/1.5;
+    aspect-ratio: 1/1.34;
     object-fit: cover;
 
     display: block
 }
 
-section.e .i.u {
+section.e .v :where(img, video) {
     aspect-ratio: 1/1.5
 }
 
-section.e :where(.i.s, video.s) {
+section.e .s :where(img, video) {
     aspect-ratio: 1
 }
 
-section.e :where(.i.h, video.h) {
+section.e .h :where(img, video) {
     aspect-ratio: 1.6/1
 }
 
@@ -193,16 +205,14 @@ section.e .g {
     display: inherit
 }
 
-section.e :where(.g div, .j) {
+section.e .c img {
     width: 20px;
     height: 20px;
 
-    border-radius: 50%;
-
-    background: center/cover
+    border-radius: 50%
 }
 
-section.e .g div:not(:last-child) {
+section.e .g img:not(:last-child) {
     margin-right: -5px;
 
     clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
