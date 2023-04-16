@@ -80,6 +80,22 @@ document.querySelectorAll('section.e .m').forEach(x => {
     })
 })
 
+//current number img
+document.querySelectorAll('section.e .d').forEach(x => {
+    let w = window.innerWidth / 2;
+    
+    x.addEventListener('scroll', x => {
+        let l = x.target.scrollLeft,
+        k = x.target.nextElementSibling;
+        
+        if (l >= w) {
+            x.target.nextElementSibling.innerHTML = '2 / 2'
+        } else {
+            x.target.nextElementSibling.innerHTML = '1 / 2'
+        }
+    })
+})
+
 // sign in
 $('section.e :where(.a, .v) a').click(() => {
     $('section.a')[0].style.cssText = 'opacity: 1; pointer-events: initial';
