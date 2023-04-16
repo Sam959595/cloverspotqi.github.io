@@ -1,14 +1,14 @@
 // img load
-document.querySelectorAll('[data-img]').forEach(x => {
+document.querySelectorAll('img').forEach(x => {
     new IntersectionObserver((a, b) => {
         a.forEach(x => {
             if (x.isIntersecting) {
                 b.unobserve(x.target);
                 let m = new Image();
-                m.src = x.target.dataset.img;
+                m.src = x.target.dataset.i;
                 m.onload = () => {
-                    x.target.setAttribute('style', 'background-image: url(\'' + x.target.dataset.img + '\')');
-                    x.target.removeAttribute('data-img')
+                    x.target.src = x.target.dataset.i;
+                    x.target.removeAttribute('data-i')
                 }
             }
         })
@@ -21,11 +21,11 @@ document.querySelectorAll('video').forEach(x => {
         a.forEach(x => {
             if (x.isIntersecting) {
                 b.unobserve(x.target);
-                x.target.src = x.target.dataset.vid;
+                x.target.src = x.target.dataset.v;
                 let t = setInterval(() => {
                     if (x.target.currentTime > 0) {
                         clearInterval(t);
-                        x.target.removeAttribute('data-vid')
+                        x.target.removeAttribute('data-v')
                     }
                 }, 500)
             }
@@ -62,13 +62,13 @@ $('section.e>svg')[0].addEventListener('click', () => {
 })
 
 // video pause if exit tab
-// window.onblur = () => {
-//     $('video').prop('muted', true);
-//     $('section.e>svg path')[0].setAttribute('stroke', 'var(--soft-4)')
-// }
+window.onblur = () => {
+    $('video').prop('muted', true);
+    $('section.e>svg path')[0].setAttribute('stroke', 'var(--soft-4)')
+}
 
 //double-tab for like post
-document.querySelectorAll('section.e div:where(.i, .v)').forEach(x => {
+document.querySelectorAll('section.e .m').forEach(x => {
     x.addEventListener('dblclick', x => {
         if (x.target.querySelector('span') == null) {
             let c = document.createElement('span');
