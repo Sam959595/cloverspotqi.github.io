@@ -144,31 +144,19 @@ section.e h1 {
 }
 
 section.e h6 {
-    margin-block: 12px
+    margin-block: 12px;
+
+    font-size: 13px
+}
+
+section.e :where(.i, .v) {
+    position: relative
 }
 
 section.e .i {
-    position: relative;
-
     aspect-ratio: 1/1.34;
 
     background: center/cover
-}
-
-section.e .i.v {
-    aspect-ratio: 1/1.5
-}
-
-section.e .i.s {
-    aspect-ratio: 1
-}
-
-section.e .i.h {
-    aspect-ratio: 1.6/1
-}
-
-section.e li:has(video) .v {
-    position: relative
 }
 
 section.e video {
@@ -180,6 +168,18 @@ section.e video {
     object-fit: cover;
 
     display: block
+}
+
+section.e .i.u {
+    aspect-ratio: 1/1.5
+}
+
+section.e :where(.i.s, video.s) {
+    aspect-ratio: 1
+}
+
+section.e :where(.i.h, video.h) {
+    aspect-ratio: 1.6/1
 }
 
 section.e .f {
@@ -227,11 +227,7 @@ section.e :where(h5, time) {
         transform: scale(.95)
     }
 
-    50% {
-        transform: scale(1)
-    }
-
-    80% {
+    50%, 80% {
         opacity: 1;
         transform: scale(1)
     }
