@@ -90,10 +90,10 @@ time {
 	cursor: default
 }
 
-input[type=submit],
 a,
 button,
-select {
+select,
+input[type=submit] {
 	cursor: pointer
 }
 
@@ -121,6 +121,10 @@ select {
 
 img {
 	vertical-align: top
+}
+
+img, video {
+	pointer-events: none
 }
 
 body {
