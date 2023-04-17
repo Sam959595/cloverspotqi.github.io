@@ -4,11 +4,12 @@ document.querySelectorAll('img').forEach(x => {
         a.forEach(x => {
             if (x.isIntersecting) {
                 b.unobserve(x.target);
+                let a = x.target;
                 let m = new Image();
-                m.src = x.target.dataset.i;
+                m.src = a.dataset.i;
                 m.onload = () => {
-                    x.target.src = x.target.dataset.i;
-                    x.target.removeAttribute('data-i')
+                    a.src = a.dataset.i;
+                    a.removeAttribute('data-i')
                 }
             }
         })
@@ -70,11 +71,13 @@ window.onblur = () => {
 //double-tab for like post
 document.querySelectorAll('section.e .m').forEach(x => {
     x.addEventListener('dblclick', x => {
-        if (x.target.querySelector('span') == null) {
+        let a = x.target.closest('.m');
+
+        if (a.querySelector('span') == null) {
             let c = document.createElement('span');
-            x.target.appendChild(c);
+            a.appendChild(c);
             setTimeout(() => {
-                x.target.querySelector('span').remove()
+                a.querySelector('span').remove()
             }, 1000)
         }
     })
@@ -82,16 +85,14 @@ document.querySelectorAll('section.e .m').forEach(x => {
 
 //current number img
 document.querySelectorAll('section.e .d').forEach(x => {
-    let w = window.innerWidth / 2;
-    
     x.addEventListener('scroll', x => {
-        let l = x.target.scrollLeft,
-        k = x.target.nextElementSibling;
-        
-        if (l >= w) {
-            x.target.nextElementSibling.innerHTML = '2 / 2'
-        } else {
-            x.target.nextElementSibling.innerHTML = '1 / 2'
+        let a = x.target;
+        for (t=0; t<a.children.length; t++);
+
+        for (i=0; i<a.children.length; i++) {
+            if (a.children[i].offsetLeft == a.scrollLeft) {
+                a.nextElementSibling.innerHTML = i+1+' / '+t
+            }
         }
     })
 })
@@ -111,29 +112,4 @@ $('section.c')[0].querySelectorAll('li').forEach(x => {
         $('section.c .f')[0].removeAttribute('class')
         x.classList.add('f')
     })
-})
-
-document.querySelectorAll('section.e .n').forEach(x => {
-    new IntersectionObserver(x => {
-        let t;
-        x.forEach(x => {
-            if (x.isIntersecting) {
-                setInterval(() => {
-                    if (x.target.firstElementChild.disabled === false) {
-                        console.log('f');
-                        x.target.firstElementChild.disabled = true;
-                        x.target.firstElementChild.style.opacity = '0';
-                        x.target.lastElementChild.style.opacity = '1'
-                    } else {
-                        console.log('e');
-                        x.target.firstElementChild.disabled = false;
-                        x.target.firstElementChild.style.opacity = '1';
-                        x.target.lastElementChild.style.opacity = '0'
-                    }
-                }, 8000)
-            } else {
-                clearInterval(t)
-            }
-        })
-    }).observe(x)
 })
