@@ -1,16 +1,16 @@
 document.addEventListener('dblclick', () => {
-    $('section.ee')[0].style.cssText = 'pointer-events: auto; opacity: 1'
+    $('section.e')[0].style.cssText = 'pointer-events: auto; opacity: 1'
 })
 
 window.addEventListener('touchmove', () => {
-    $('section.ee')[0].removeAttribute('style')
+    $('section.e')[0].removeAttribute('style')
 })
 
 //
 
 // background
 window.addEventListener('change', () => {
-    let vv = $('section.ee select:first-child').val(),
+    let vv = $('section.e select:first-child').val(),
         nn = $('body')
 
     if (vv == 6) {
@@ -34,8 +34,8 @@ window.addEventListener('change', () => {
 
 // style font
 window.addEventListener('change', () => {
-    let vv = $('section.ee select:nth-child(2)').val(),
-        nn = $('section.vv')[0]
+    let vv = $('section.e select:nth-child(2)').val(),
+        nn = $('section.v')[0]
 
     if (vv == 1) {
         nn.classList.add('zzz')
@@ -50,8 +50,8 @@ window.addEventListener('change', () => {
 
 // size text
 window.addEventListener('change', () => {
-    let vv = $('section.ee select:last-child').val(),
-        nn = $('section.vv')[0]
+    let vv = $('section.e select:last-child').val(),
+        nn = $('section.v')[0]
 
     if (vv == 1) {
         nn.classList.add('y')
@@ -69,60 +69,54 @@ window.addEventListener('change', () => {
 
 //
 
-$(document).ready(() => {
+// notes
+document.querySelectorAll('u').forEach(x => {
+    x.addEventListener('click', e => {
+        document.querySelectorAll('.m').forEach(x => {
+            if (x.id === e.target.id) {
+                x.style.cssText = 'opacity: 0; display: block';
 
-    // notes
-    let a = document.querySelectorAll('u'),
-        m = document.querySelectorAll('.mm');
-
-    a.forEach(x => {
-        x.addEventListener('click', e => {
-            m.forEach(x => {
-                if (x.id === e.target.id) {
-                    x.style.cssText = 'opacity: 0; display: block';
-
-                    setTimeout(() => {
-                        x.style.opacity = '1';
-
-                        window.addEventListener('touchmove', () => {
-                            x.style.opacity = '0';
-
-                            setTimeout(() => {
-                                x.removeAttribute('style')
-                            }, 500)
-                        })
-                    })
-                }
-            })
-        })
-    })
-
-    // last book
-    new IntersectionObserver((x, e) => {
-        x.forEach(xx => {
-            if (xx.isIntersecting) {
-                e.unobserve(xx.target);
-                $('section.bb')[0].style.visibility = 'visible';
                 setTimeout(() => {
-                    $('section.bb')[0].style.opacity = '1';
+                    x.style.opacity = '1';
 
-                    setTimeout(() => {
-                        $('section.bb svg')[0].style.transform = 'scale(1)';
+                    window.addEventListener('touchmove', () => {
+                        x.style.opacity = '0';
 
                         setTimeout(() => {
-                            $('section.bb svg')[0].style.fill = 'var(--gray)';
-
-                            setTimeout(() => {
-                                $('section.bb')[0].style.opacity = '0';
-
-                                setTimeout(() => {
-                                    $('section.bb')[0].remove()
-                                }, 1000)
-                            }, 5000)
-                        }, 2000)
-                    }, 1000)
-                }, 800)
+                            x.removeAttribute('style')
+                        }, 500)
+                    })
+                })
             }
         })
-    }).observe($('#rr')[0])
+    })
 })
+
+// last book
+new IntersectionObserver((x, e) => {
+    x.forEach(xx => {
+        if (xx.isIntersecting) {
+            e.unobserve(xx.target);
+            $('section.b')[0].style.visibility = 'visible';
+            setTimeout(() => {
+                $('section.b')[0].style.opacity = '1';
+
+                setTimeout(() => {
+                    $('section.b svg')[0].style.transform = 'scale(1)';
+
+                    setTimeout(() => {
+                        $('section.b svg')[0].style.fill = 'var(--gray)';
+
+                        setTimeout(() => {
+                            $('section.b')[0].style.opacity = '0';
+
+                            setTimeout(() => {
+                                $('section.b')[0].remove()
+                            }, 1000)
+                        }, 5000)
+                    }, 2000)
+                }, 1000)
+            }, 800)
+        }
+    })
+}).observe($('#rr')[0])
