@@ -6,9 +6,9 @@ body {
     background-color: var(--canvas-5)
 }
 
-/* bb */
+/* b */
 
-section.bb {
+section.b {
     z-index: 1;
     visibility: hidden;
     opacity: 0;
@@ -32,13 +32,13 @@ section.bb {
     transition: opacity 1s ease
 }
 
-section.bb h2 {
+section.b h2 {
     margin-top: .4cm;
 
     font: 600 15px system-ui
 }
 
-section.bb svg {
+section.b svg {
     margin-top: 50px;
 
     transform: scale(0);
@@ -46,9 +46,9 @@ section.bb svg {
     transition: transform 1.5s ease, fill 2s ease
 }
 
-/* ee */
+/* e */
 
-section.ee {
+section.e {
     pointer-events: none;
     opacity: 0;
 
@@ -71,7 +71,7 @@ section.ee {
     transition: opacity .5s
 }
 
-section.ee select {
+section.e select {
     border-radius: 16px;
 
     padding: 1em 2em;
@@ -85,32 +85,32 @@ section.ee select {
     color: var(--gray)
 }
 
-section.ee select:focus {
+section.e select:focus {
     -webkit-filter: brightness(.9)
 }
 
-/* vv */
+/* v */
 
-section.vv {
+section.v {
     margin: 1cm 1cm max(1cm, env(safe-area-inset-bottom))
 }
 
-section.vv h5 {
+section.v h5 {
     margin-block: 1em 3em;
 
     text-align: center;
     font: 700 20px/1.7 system-ui
 }
 
-section.vv h5~h5 {
+section.v h5~h5 {
     margin-block: 13em 3em
 }
 
-section.vv h6::first-letter {
+section.v h6::first-letter {
     margin-left: 1cm
 }
 
-section.vv h6 {
+section.v h6 {
     margin-bottom: .8em;
 
     font: 20px/1.7 system-ui;
@@ -118,11 +118,11 @@ section.vv h6 {
     text-align: justify
 }
 
-section.vv :where(h5, h6) {
+section.v :where(h5, h6) {
     color: var(--text-5)
 }
 
-section.vv u {
+section.v u {
     -webkit-text-decoration: underline dotted var(--orange);
     text-decoration-skip: none;
     text-underline-offset: 2px;
@@ -132,8 +132,8 @@ section.vv u {
 /* tab */
 
 body.uuu select {
-    background-color: #4c6c75;
-    color: white
+    background-color: #a4acc4;
+    color: black
 }
 
 body.ccc select {
@@ -165,11 +165,11 @@ body.qqq select {
 /* background */
 
 .uuu {
-    background-color: #305762
+    background-color: #939ab1
 }
 
 .ccc {
-    background-color: #1c283a
+    background-color: #071221
 }
 
 .mmm {
@@ -195,7 +195,7 @@ body.qqq select {
 /* text */
 
 body.uuu :where(h5, h6) {
-    color: #e4ffff
+    color: #181a1d
 }
 
 body.ccc :where(h5, h6) {
@@ -224,32 +224,32 @@ body.qqq :where(h5, h6) {
 
 /* font */
 
-section.vv.zzz :where(h5, h6) {
+section.v.zzz :where(h5, h6) {
     font-family: georgia
 }
 
-section.vv.sss :where(h5, h6) {
+section.v.sss :where(h5, h6) {
     font-family: ui-serif
 }
 
 /* size */
 
-section.vv.y :where(h5, h6) {
+section.v.y :where(h5, h6) {
     font-size: 23px;
     font-weight: 600
 }
 
-section.vv.yy :where(h5, h6) {
+section.v.yy :where(h5, h6) {
     font-size: 22px
 }
 
-section.vv.yyy :where(h5, h6) {
+section.v.yyy :where(h5, h6) {
     font-size: 18px
 }
 
-/* mm */
+/* m */
 
-section.mm {
+section.m {
     position: fixed;
     inset: 0 0 auto;
 
