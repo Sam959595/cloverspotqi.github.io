@@ -171,11 +171,13 @@ section.e .d :where(img, video) {
 
     scroll-snap-align: start
 }
-section.e .m svg {
+section.e h4 {
     margin: 1em;
 
     position: absolute;
-    inset: 0 0 auto auto
+    inset: 0 0 auto auto;
+
+    color: white
 }
 
 section.e video {
