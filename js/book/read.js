@@ -72,7 +72,7 @@ window.addEventListener('change', () => {
 // notes
 document.querySelectorAll('u').forEach(x => {
     x.addEventListener('click', e => {
-        document.querySelectorAll('.m').forEach(x => {
+        document.querySelectorAll('section.m').forEach(x => {
             if (x.id === e.target.id) {
                 x.style.cssText = 'opacity: 0; display: block';
 
