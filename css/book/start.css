@@ -115,7 +115,9 @@ section.e h6 {
 }
 
 section.e .m {
-    position: relative
+    position: relative;
+
+    background-color: var(--gray-3);
 }
 
 section.e img {
@@ -299,6 +301,8 @@ section.f p {
 
         --soft: #ffffffcc;
         --soft-2: #cccccccc;
+        --soft-3: #cccccc60;
+        --soft-4: #00000020;
 
         --gray-a: white;
         --gray-b: black;
@@ -319,6 +323,8 @@ section.f p {
 
         --soft: #000000aa;
         --soft-2: #ffffff40;
+        --soft-3: #33333370;
+        --soft-4: #ffffff20;
 
         --gray-a: black;
         --gray-b: white;
