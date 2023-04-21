@@ -115,9 +115,7 @@ section.e h6 {
 }
 
 section.e .m {
-    position: relative;
-
-    background-color: var(--gray-3);
+    position: relative
 }
 
 section.e img {
