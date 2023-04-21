@@ -3,7 +3,47 @@
 body {
     touch-action: pan-y;
 
-    background-color: var(--canvas-5)
+    background-color: var(--canvas-4);
+
+    transition: background-color 1s
+}
+
+/* a */
+
+section.a {
+    opacity: 0;
+    pointer-events: none;
+
+    z-index: 1;
+    position: fixed;
+    inset: 0;
+
+    margin: 2cm auto;
+
+    width: 300px;
+    height: 70px;
+
+    -webkit-backdrop-filter: saturate(180%) blur(17px);
+
+    background-color: var(--soft);
+
+    clip-path: path("M30.3987859,-9.91740883e-16 L269.601214,9.91740883e-16 C278.765463,-6.91704411e-16 283.136497,1.16032014 287.210571,3.3391588 C291.284645,5.51799746 294.482003,8.71535463 296.660841,12.7894287 C298.83968,16.8635028 300,21.2345366 300,30.3987859 L300,39.6012141 C300,48.7654634 298.83968,53.1364972 296.660841,57.2105713 C294.482003,61.2846454 291.284645,64.4820025 287.210571,66.6608412 C283.136497,68.8396799 278.765463,70 269.601214,70 L30.3987859,70 C21.2345366,70 16.8635028,68.8396799 12.7894287,66.6608412 C8.71535463,64.4820025 5.51799746,61.2846454 3.3391588,57.2105713 C1.16032014,53.1364972 -1.47664867e-15,48.7654634 2.11716571e-15,39.6012141 L6.61160589e-16,30.3987859 C-4.61136274e-16,21.2345366 1.16032014,16.8635028 3.3391588,12.7894287 C5.51799746,8.71535463 8.71535463,5.51799746 12.7894287,3.3391588 C16.8635028,1.16032014 21.2345366,6.91704411e-16 30.3987859,-9.91740883e-16 Z")
+}
+
+section.a h1 {
+    margin: 2em;
+
+    text-align: center;
+    font: 600 11px system-ui;
+
+    mix-blend-mode: var(--mod);
+    will-change: transform;
+
+    color: var(--soft-2)
+}
+
+section.a h1 a {
+    color: var(--gray-b)
 }
 
 /* b */
@@ -81,7 +121,7 @@ section.e select {
     text-align: -webkit-center;
     font: 600 14px system-ui;
 
-    background-color: var(--tab-5);
+    background-color: var(--tab-4);
     color: var(--gray)
 }
 
@@ -119,7 +159,9 @@ section.v h6 {
 }
 
 section.v :where(h5, h6) {
-    color: var(--text-5)
+    color: var(--text-5);
+
+    transition: color 1s
 }
 
 section.v u {
@@ -154,12 +196,8 @@ body.ttt select {
     background-color: var(--tab-2)
 }
 
-body.kkk select {
-    background-color: var(--tab-3)
-}
-
 body.qqq select {
-    background-color: var(--tab-4)
+    background-color: var(--tab-3)
 }
 
 /* background */
@@ -184,12 +222,8 @@ body.qqq select {
     background-color: var(--canvas-2)
 }
 
-.kkk {
-    background-color: var(--canvas-3)
-}
-
 .qqq {
-    background-color: var(--canvas-4)
+    background-color: var(--canvas-3)
 }
 
 /* text */
@@ -212,10 +246,6 @@ body.rrr :where(h5, h6) {
 
 body.ttt :where(h5, h6) {
     color: var(--text-2)
-}
-
-body.kkk :where(h5, h6) {
-    color: var(--text-3)
 }
 
 body.qqq :where(h5, h6) {
@@ -269,7 +299,10 @@ section.m {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --soft: #dadada90;
+        --soft: #ffffffcc;
+        --soft-2: #0000008c;
+        --soft-3: #cccccc60;
+        --soft-4: #00000020;
 
         --gray-a: white;
         --gray-b: black;
@@ -277,10 +310,9 @@ section.m {
         --gray: #1d1d1f;
 
         --canvas: #e0dacc;
-        --canvas-2: #f6efe5;
-        --canvas-3: #eeeded;
-        --canvas-4: #ddd;
-        --canvas-5: white;
+        --canvas-2: #d0d0d0;
+        --canvas-3: #e7e7e7;
+        --canvas-4: white;
 
         --text: #3d2a1c;
         --text-2: #111;
@@ -289,10 +321,9 @@ section.m {
         --text-5: #1e1e1e;
 
         --tab: #f1efe7;
-        --tab-2: #f6efe5;
-        --tab-3: #eeeded;
-        --tab-4: #ddd;
-        --tab-5: white;
+        --tab-2: #ddd;
+        --tab-3: #eeebeb;
+        --tab-4: white;
 
         --link: #007aff;
 
@@ -303,7 +334,10 @@ section.m {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --soft: #1d1d1d90;
+        --soft: #000000aa;
+        --soft-2: #ffffff8c;
+        --soft-3: #33333370;
+        --soft-4: #ffffff20;
 
         --gray-a: black;
         --gray-b: white;
@@ -312,15 +346,13 @@ section.m {
 
         --canvas: #24211f;
         --canvas-2: #353539;
-        --canvas-3: #222326;
-        --canvas-4: #1a1a1c;
-        --canvas-5: black;
+        --canvas-3: #1a1a1c;
+        --canvas-4: black;
 
         --text: #d6caba;
         --text-2: #eee;
-        --text-3: #eee;
-        --text-4: #f2f2f2;
-        --text-5: #8d8d93;
+        --text-3: #f2f2f2;
+        --text-4: #8d8d93;
 
         --tab: #494540;
         --tab-2: #585862;
