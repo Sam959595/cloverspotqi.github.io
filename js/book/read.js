@@ -24,10 +24,8 @@ window.addEventListener('change', () => {
     } else if (vv == 2) {
         nn.attr('class', 'ttt')
     } else if (vv == 3) {
-        nn.attr('class', 'kkk')
-    } else if (vv == 4) {
         nn.attr('class', 'qqq')
-    } else if (vv == 5) {
+    } else if (vv == 4) {
         nn[0].removeAttribute('class')
     }
 })
