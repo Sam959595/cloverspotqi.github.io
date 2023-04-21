@@ -159,7 +159,7 @@ section.v h6 {
 }
 
 section.v :where(h5, h6) {
-    color: var(--text-5);
+    color: var(--text-4);
 
     transition: color 1s
 }
@@ -249,7 +249,7 @@ body.ttt :where(h5, h6) {
 }
 
 body.qqq :where(h5, h6) {
-    color: var(--text-4)
+    color: var(--text-3)
 }
 
 /* font */
@@ -317,8 +317,7 @@ section.m {
         --text: #3d2a1c;
         --text-2: #111;
         --text-3: #111;
-        --text-4: #222;
-        --text-5: #1e1e1e;
+        --text-4: #1e1e1e;
 
         --tab: #f1efe7;
         --tab-2: #ddd;
@@ -351,14 +350,13 @@ section.m {
 
         --text: #d6caba;
         --text-2: #eee;
-        --text-3: #f2f2f2;
+        --text-3: #eee;
         --text-4: #8d8d93;
 
         --tab: #494540;
         --tab-2: #585862;
-        --tab-3: #3a3c41;
-        --tab-4: #323239;
-        --tab-5: #1c1c20;
+        --tab-3: #323239;
+        --tab-4: #1c1c20;
 
         --link: #0a84ff;
 
