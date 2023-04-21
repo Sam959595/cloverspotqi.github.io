@@ -3,9 +3,7 @@
 body {
     touch-action: pan-y;
 
-    background-color: var(--canvas-4);
-
-    transition: background-color 1s
+    background-color: var(--canvas-4)
 }
 
 /* a */
@@ -159,9 +157,7 @@ section.v h6 {
 }
 
 section.v :where(h5, h6) {
-    color: var(--text-4);
-
-    transition: color 1s
+    color: var(--text-4)
 }
 
 section.v u {
