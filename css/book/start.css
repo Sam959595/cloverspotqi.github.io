@@ -24,7 +24,7 @@ section.c {
 
     -webkit-backdrop-filter: blur(20px);
 
-    background-image: linear-gradient(var(--gray-a), var(--soft))
+    background-color: var(--gray-a)
 }
 
 section.c ul {
@@ -122,7 +122,9 @@ section.e img {
     width: -webkit-fill-available;
 
     aspect-ratio: 1/1.34;
-    object-fit: cover
+    object-fit: cover;
+
+    display: block
 }
 
 section.e .d {
@@ -153,7 +155,9 @@ section.e h4 {
     position: absolute;
     inset: 0 0 auto auto;
 
-    color: white
+    color: white;
+
+    text-shadow: 0 0 10px black
 }
 
 section.e video {
@@ -202,7 +206,7 @@ section.e .g img:not(:last-child) {
 }
 
 section.e :where(h5, time) {
-    font: 700 13px system-ui
+    font: 600 13px system-ui
 }
 
 @keyframes x {
