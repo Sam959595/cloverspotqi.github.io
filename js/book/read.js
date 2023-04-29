@@ -99,7 +99,7 @@ new IntersectionObserver((x, e) => {
                     $('section.b svg')[0].style.transform = 'scale(1)';
 
                     setTimeout(() => {
-                        $('section.b svg')[0].style.fill = 'var(--gray)';
+                        $('section.b svg')[0].style.fill = 'currentColor';
 
                         setTimeout(() => {
                             $('section.b')[0].style.opacity = '0';
@@ -107,7 +107,7 @@ new IntersectionObserver((x, e) => {
                             setTimeout(() => {
                                 $('section.b')[0].remove()
                             }, 1000)
-                        }, 5000)
+                        }, 15000)
                     }, 2000)
                 }, 1000)
             }, 800)
