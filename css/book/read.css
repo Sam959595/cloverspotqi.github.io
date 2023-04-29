@@ -141,7 +141,7 @@ body.uuu :is(select, .b) {
 }
 
 body.ccc :is(select, .b) {
-    background-color: #354258;
+    background-color: #574d5b;
     color: white
 }
 
@@ -169,7 +169,7 @@ body.qqq :is(select, .b) {
 }
 
 .ccc {
-    background-color: #1c283a
+    background-color: #3d3441
 }
 
 .mmm {
@@ -195,7 +195,7 @@ body.uuu :where(h5, h6) {
 }
 
 body.ccc :where(h5, h6) {
-    color: white
+    color: #ffedfb
 }
 
 body.mmm :where(h5, h6) {
