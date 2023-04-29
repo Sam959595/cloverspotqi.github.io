@@ -131,7 +131,7 @@ section.e select:focus {
 /* v */
 
 section.v {
-    margin: 1cm 1cm max(1cm, env(safe-area-inset-bottom))
+    margin: 1cm 1cm max(5cm, env(safe-area-inset-bottom))
 }
 
 section.v h5 {
