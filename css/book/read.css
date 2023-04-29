@@ -6,44 +6,6 @@ body {
     background-color: var(--canvas-4)
 }
 
-/* a */
-
-section.a {
-    opacity: 0;
-    pointer-events: none;
-
-    z-index: 1;
-    position: fixed;
-    inset: 0;
-
-    margin: 2cm auto;
-
-    width: 300px;
-    height: 70px;
-
-    -webkit-backdrop-filter: saturate(180%) blur(17px);
-
-    background-color: var(--soft);
-
-    clip-path: path("M30.3987859,-9.91740883e-16 L269.601214,9.91740883e-16 C278.765463,-6.91704411e-16 283.136497,1.16032014 287.210571,3.3391588 C291.284645,5.51799746 294.482003,8.71535463 296.660841,12.7894287 C298.83968,16.8635028 300,21.2345366 300,30.3987859 L300,39.6012141 C300,48.7654634 298.83968,53.1364972 296.660841,57.2105713 C294.482003,61.2846454 291.284645,64.4820025 287.210571,66.6608412 C283.136497,68.8396799 278.765463,70 269.601214,70 L30.3987859,70 C21.2345366,70 16.8635028,68.8396799 12.7894287,66.6608412 C8.71535463,64.4820025 5.51799746,61.2846454 3.3391588,57.2105713 C1.16032014,53.1364972 -1.47664867e-15,48.7654634 2.11716571e-15,39.6012141 L6.61160589e-16,30.3987859 C-4.61136274e-16,21.2345366 1.16032014,16.8635028 3.3391588,12.7894287 C5.51799746,8.71535463 8.71535463,5.51799746 12.7894287,3.3391588 C16.8635028,1.16032014 21.2345366,6.91704411e-16 30.3987859,-9.91740883e-16 Z")
-}
-
-section.a h1 {
-    margin: 2em;
-
-    text-align: center;
-    font: 600 11px system-ui;
-
-    mix-blend-mode: var(--mod);
-    will-change: transform;
-
-    color: var(--soft-2)
-}
-
-section.a h1 a {
-    color: var(--gray-b)
-}
-
 /* b */
 
 section.b {
@@ -111,13 +73,16 @@ section.e {
 }
 
 section.e select {
+    width: 169px;
+
     border-radius: 16px;
 
     padding: 1em 2em;
 
-    flex-direction: column;
+    text-overflow: ellipsis;
+    overflow: hidden;
 
-    text-align: -webkit-center;
+    text-align-last: center;
     font: 600 14px system-ui;
 
     background-color: var(--tab-4);
@@ -171,7 +136,7 @@ section.v u {
 /* tab */
 
 body.uuu :is(select, .b) {
-    background-color: #a4acc4;
+    background-color: #d6e0ff;
     color: black
 }
 
@@ -200,7 +165,7 @@ body.qqq :is(select, .b) {
 /* background */
 
 .uuu {
-    background-color: #939ab1
+    background-color: #d2ddff
 }
 
 .ccc {
@@ -230,7 +195,7 @@ body.uuu :where(h5, h6) {
 }
 
 body.ccc :where(h5, h6) {
-    color: #e1ecfc
+    color: white
 }
 
 body.mmm :where(h5, h6) {
