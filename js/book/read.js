@@ -69,7 +69,7 @@ document.querySelectorAll('u').forEach(x => {
     x.addEventListener('click', e => {
         document.querySelectorAll('section.m').forEach(x => {
             if (x.id === e.target.id) {
-                x.style.cssText = 'display: block';
+                x.style.cssText = 'opacity: 0; display: block';
 
                 setTimeout(() => {
                     x.style.opacity = '1'
