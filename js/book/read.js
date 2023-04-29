@@ -1,3 +1,4 @@
+// tab nav
 document.addEventListener('dblclick', () => {
     $('section.e')[0].style.cssText = 'pointer-events: auto; opacity: 1'
 })
@@ -5,8 +6,6 @@ document.addEventListener('dblclick', () => {
 window.addEventListener('touchmove', () => {
     $('section.e')[0].removeAttribute('style')
 })
-
-//
 
 // background
 window.addEventListener('change', () => {
@@ -65,27 +64,24 @@ window.addEventListener('change', () => {
     }
 })
 
-//
-
 // notes
 document.querySelectorAll('u').forEach(x => {
     x.addEventListener('click', e => {
         document.querySelectorAll('section.m').forEach(x => {
             if (x.id === e.target.id) {
-                x.style.cssText = 'opacity: 0; display: block';
+                x.style.cssText = 'display: block';
 
                 setTimeout(() => {
-                    x.style.opacity = '1';
-
-                    window.addEventListener('touchmove', () => {
-                        x.style.opacity = '0';
-
-                        setTimeout(() => {
-                            x.removeAttribute('style')
-                        }, 500)
-                    })
-                })
+                    x.style.opacity = '1'
+                }, 0)
             }
+            window.addEventListener('touchmove', () => {
+                x.style.opacity = '0';
+
+                setTimeout(() => {
+                    x.removeAttribute('style')
+                }, 400)
+            })
         })
     })
 })
