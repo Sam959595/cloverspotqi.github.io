@@ -65,6 +65,7 @@ section.b {
     align-items: center;
 
     background-color: var(--tab-4);
+    color: var(--gray);
 
     box-shadow: 0 0 50px 0 #0000002d;
 
@@ -74,7 +75,8 @@ section.b {
 section.b h1 {
     margin-inline: 1em;
 
-    font: 600 15px system-ui
+    font: 600 15px system-ui;
+    color: inherit
 }
 
 section.b svg {
@@ -168,30 +170,30 @@ section.v u {
 
 /* tab */
 
-body.uuu select {
+body.uuu :is(select, .b) {
     background-color: #a4acc4;
     color: black
 }
 
-body.ccc select {
+body.ccc :is(select, .b) {
     background-color: #354258;
     color: white
 }
 
-body.mmm select {
+body.mmm :is(select, .b) {
     background-color: #756a64;
     color: white
 }
 
-body.rrr select {
+body.rrr :is(select, .b) {
     background-color: var(--tab)
 }
 
-body.ttt select {
+body.ttt :is(select, .b) {
     background-color: var(--tab-2)
 }
 
-body.qqq select {
+body.qqq :is(select, .b) {
     background-color: var(--tab-3)
 }
 
