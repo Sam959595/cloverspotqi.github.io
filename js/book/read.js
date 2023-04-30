@@ -96,19 +96,15 @@ new IntersectionObserver((x, e) => {
                 $('section.b')[0].style.opacity = '1';
 
                 setTimeout(() => {
-                    $('section.b svg')[0].style.transform = 'scale(1)';
+                    $('section.b h1:first-child')[0].style.animation = 'x 1s';
 
                     setTimeout(() => {
-                        $('section.b svg')[0].style.fill = 'currentColor';
+                        $('section.b')[0].style.opacity = '0';
 
                         setTimeout(() => {
-                            $('section.b')[0].style.opacity = '0';
-
-                            setTimeout(() => {
-                                $('section.b')[0].remove()
-                            }, 1000)
-                        }, 15000)
-                    }, 2000)
+                            $('section.b')[0].remove()
+                        }, 1000)
+                    }, 15000)
                 }, 1000)
             }, 800)
         }
