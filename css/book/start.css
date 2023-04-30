@@ -12,11 +12,83 @@ video {
     transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
 }
 
+/* body */
+
+body {
+    background-color: #5e606b;
+    /* background-color: #1c74d9; */
+
+    transition: background-color 1s
+}
+
+/* e */
+
+section.e {
+    margin-top: env(safe-area-inset-top);
+
+    height: 500px;
+
+    padding: 20px
+}
+
+section.e svg {
+    display: block
+}
+section.e svg path {
+    padding: 5px;
+    fill: white;
+}
+
+section.e .a {
+    display: flex;
+    column-gap: 5px;
+}
+
+section.e h1 {
+    margin-block: 20px;
+
+    font: 700 32px/1.04565 system-ui;
+
+    color: white
+}
+section.e h2 {
+    text-align: right;
+    font: 700 24px/1.08341 system-ui;
+
+    color: white
+}
+
+section.e .a>div {
+    flex-grow: 1;
+
+    height: 3px;
+
+    border-radius: 2px;
+
+    background-color: #ffffff50
+}
+
+section.e .a div div {
+    height: inherit;
+
+    border-radius: inherit;
+
+    background-color: white
+}
+
+section.e .n {
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* a */
 
 section.a ul {
     margin-block: 2cm;
-    padding-inline: 15px;
+    padding-inline: 20px;
 
     display: grid;
     grid-auto-columns: max-content;
@@ -26,17 +98,17 @@ section.a ul {
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
-    scroll-padding-left: 15px
+    scroll-padding-left: 20px
 }
 
 section.a li {
-    width: calc((100vw - 50px) / 3);
+    width: calc((100vw - 60px) / 3);
 
     scroll-snap-align: start
 }
 
 section.a a {
-    border-radius: 12px;
+    border-radius: 11px;
 
     padding: 10px;
 
