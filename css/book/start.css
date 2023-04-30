@@ -12,258 +12,70 @@ video {
     transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
 }
 
-/* c */
+/* a */
 
-section.c {
-    z-index: 1;
+section.a ul {
+    margin-block: 2cm;
+    padding-inline: 15px;
 
-    position: fixed;
-    inset: 0 0 auto;
-
-    padding-block: 10px;
-
-    -webkit-backdrop-filter: blur(20px);
-
-    background-color: var(--gray-a)
-}
-
-section.c ul {
     display: grid;
+    grid-auto-columns: max-content;
     grid-auto-flow: column;
-    justify-items: center;
-    column-gap: 4em
-}
-
-section.c li {
-    align-self: center
-}
-
-section.c ul svg {
-    display: block;
-
-    mix-blend-mode: var(--mod);
-    will-change: transform;
-
-    fill: var(--soft-2)
-}
-
-.f svg {
-    fill: var(--gray-b) !important
-}
-
-section.c img {
-    width: 28px;
-    height: 28px;
-
-    border-radius: 50%
-}
-
-section.c span {
-    margin: .8em auto 0;
-
-    width: 4px;
-    height: 4px;
-
-    display: block;
-
-    border-radius: 50%;
-
-    background-color: #fe0000
-}
-
-/* e */
-
-section.e>svg {
-    opacity: 0;
-    pointer-events: none;
-
-    z-index: 1;
-    position: fixed;
-    inset: auto auto 0 0;
-
-    margin: 2em;
-
-    border-radius: 50%;
-
-    -webkit-backdrop-filter: blur(17px);
-
-    background-color: var(--soft-3);
-
-    transition: opacity .4s
-}
-
-section.e>ul {
-    margin-block: 48px max(15px, env(safe-area-inset-bottom));
-
-    display: grid;
-    grid-auto-flow: row;
-    row-gap: 50px
-}
-
-section.e .c {
-    margin: 12px
-}
-
-section.e h1 {
-    font-size: 14px
-}
-
-section.e h6 {
-    margin-block: 12px;
-
-    font-size: 13px
-}
-
-section.e .m {
-    position: relative
-}
-
-section.e img {
-    width: -webkit-fill-available;
-
-    aspect-ratio: 1/1.34;
-    object-fit: cover;
-
-    display: block
-}
-
-section.e .d {
-    width: 100vw;
-
-    display: grid;
-    grid-auto-flow: column;
+    column-gap: 10px;
 
     overflow-x: scroll;
 
-    scroll-snap-type: x mandatory
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 15px
 }
 
-section.e .d :where(img, video) {
-    width: inherit;
+section.a li {
+    width: calc((100vw - 50px) / 3);
 
     scroll-snap-align: start
 }
 
-section.e .d a {
-    width: inherit;
-    height: inherit
+section.a a {
+    border-radius: 12px;
+
+    padding: 10px;
+
+    display: block;
+
+    text-align: center;
+
+    background-color: var(--gray-5)
 }
 
-section.e h4 {
-    margin: 12px;
-
-    position: absolute;
-    inset: 0 0 auto auto;
-
-    color: white;
-
-    text-shadow: 0 0 10px black
-}
-
-section.e video {
+section.a img {
     width: -webkit-fill-available;
 
-    aspect-ratio: 1/1.34;
+    border-radius: 50%;
+
+    aspect-ratio: 1;
     object-fit: cover;
 
-    display: block
+    display: block;
 }
 
-section.e .v :where(img, video) {
-    aspect-ratio: 1/1.5
-}
+section.a h1 {
+    margin-top: 10px;
 
-section.e .s :where(img, video) {
-    aspect-ratio: 1
-}
-
-section.e .h :where(img, video) {
-    aspect-ratio: 1.6/1
-}
-
-section.e .f {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: 10px
-}
-
-section.e .g {
-    display: inherit
-}
-
-section.e .c img {
-    width: 20px;
-    height: 20px;
-
-    border-radius: 50%
-}
-
-section.e .g img:not(:last-child) {
-    margin-right: -5px;
-
-    clip-path: path("M10,0 C12.2399275,0 14.3078476,0.736450727 15.9748365,1.98042818 C14.1294968,3.80371537 13,6.71711834 13,10 C13,13.2828817 14.1294968,16.1962846 15.9736639,18.0195079 C14.3078476,19.2635493 12.2399275,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z")
-}
-
-section.e :where(h5, time) {
-    font: 600 13px system-ui
-}
-
-@keyframes x {
-    0% {
-        opacity: 0;
-        transform: scale(0)
-    }
-
-    15% {
-        opacity: 1;
-        transform: scale(1.15)
-    }
-
-    30% {
-        transform: scale(.95)
-    }
-
-    50%,
-    80% {
-        opacity: 1;
-        transform: scale(1)
-    }
-
-    100% {
-        opacity: 0;
-        transform: scale(0)
-    }
-}
-
-section.e span {
-    pointer-events: none;
-
-    position: absolute;
-    inset: 0;
-
-    margin: auto;
-
-    width: 80px;
-    height: 74px;
-
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 46' fill='white'%3E%3Cpath d='M0,15.1328617 C0,25.8061035 8.9879047,36.3039237 23.1620727,45.323542 C23.7159215,45.6492638 24.4712871,46 25,46 C25.5287129,46 26.283971,45.6492638 26.812684,45.323542 C41.0119879,36.3039237 50,25.8061035 50,15.1328617 C50,6.26365056 43.8820977,0 35.7249662,0 C31.0422798,0 27.2658818,2.20479559 25,5.58708565 C22.7341182,2.22981 18.9324769,0 14.2749264,0 C6.11790234,0 0,6.26365056 0,15.1328617 Z'/%3E%3C/svg%3E") no-repeat;
-
-    animation: x 1s
+    font-weight: 600
 }
 
 /* f */
 
 section.f ul {
-    margin: 0 35px max(35px, env(safe-area-inset-bottom));
+    margin: 35px 35px max(35px, env(safe-area-inset-bottom));
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2em
 }
 
-section.f ul li a {
-    aspect-ratio: 1/1.6;
+section.f li a {
+    aspect-ratio: 1/1.53;
 
     border-radius: 2px;
 
@@ -271,7 +83,7 @@ section.f ul li a {
 
     background-size: cover;
 
-    box-shadow: 0 5px 10px #00000040
+    box-shadow: 0 0 10px #00000040
 }
 
 section.f h6 {
