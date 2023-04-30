@@ -35,16 +35,34 @@ section.b {
 }
 
 section.b h1 {
-    margin-inline: 1em;
-
-    font: 600 15px system-ui;
+    font: 600 14px system-ui;
     color: inherit
 }
 
-section.b svg {
-    transform: scale(0);
+@keyframes x {
+    0% {
+        transform: translateY(0)
+    }
 
-    transition: transform 1.5s ease, fill 2s ease
+    30% {
+        transform: translateY(3px)
+    }
+
+    50% {
+        transform: translateY(-2px)
+    }
+
+    70% {
+        transform: translateY(2px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+section.b h1:last-child {
+    margin-inline: .5em
 }
 
 /* e */
@@ -305,12 +323,12 @@ section.m {
 
         --canvas: #24211f;
         --canvas-2: #353539;
-        --canvas-3: #1a1a1c;
+        --canvas-3: #1c1c1e;
         --canvas-4: black;
 
         --text: #d6caba;
         --text-2: #eee;
-        --text-3: #eee;
+        --text-3: #f2f2f0;
         --text-4: #8d8d93;
 
         --tab: #494540;
