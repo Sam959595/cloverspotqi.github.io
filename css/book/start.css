@@ -15,8 +15,9 @@ video {
 /* body */
 
 body {
-    background-color: #5e606b;
+    /* background-color: #5e606b; */
     /* background-color: #1c74d9; */
+    background-color: #585d6b;
 
     transition: background-color 1s
 }
@@ -26,9 +27,7 @@ body {
 section.e {
     margin-top: env(safe-area-inset-top);
 
-    height: 500px;
-
-    padding: 20px
+    height: 600px;
 }
 
 section.e svg {
@@ -40,11 +39,13 @@ section.e svg path {
 }
 
 section.e .a {
+    padding: 20px;
+
     display: flex;
     column-gap: 5px;
 }
 
-section.e h1 {
+section.e>h1 {
     margin-block: 20px;
 
     font: 700 32px/1.04565 system-ui;
@@ -77,17 +78,57 @@ section.e .a div div {
 }
 
 section.e .n {
-    margin-top: 10px;
+    padding-inline: 20px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+section.e img {
+    width: -webkit-fill-available;
+    aspect-ratio: 1/1.3;
+    object-fit: cover;
+
+    border-radius: 0 0 15px 15px;
+}
+
+section.e ul {
+    margin-block: 100px;
+    padding-inline: 20px;
+
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    column-gap: 10px;
+
+    overflow-x: scroll;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 20px
+}
+
+section.e li {
+    width: 280px;
+
+    border-radius: 15px;
+
+    background-color: #fff;
+
+    scroll-snap-align: start
+}
+
+section.e li h1 {
+    height: 88px;
+    padding: 20px;
+    font: 900 semi-expanded 24px/1 system-ui;
+    color: white;
+}
+
 /* a */
 
 section.a ul {
-    margin-block: 2cm;
+    margin-block: 100px;
     padding-inline: 20px;
 
     display: grid;
@@ -122,18 +163,20 @@ section.a a {
 section.a img {
     width: -webkit-fill-available;
 
-    border-radius: 50%;
-
     aspect-ratio: 1;
-    object-fit: cover;
 
-    display: block;
+    border-radius: 50%
 }
 
 section.a h1 {
     margin-top: 10px;
 
     font-weight: 600
+}
+section.a p {
+    font: 500 11px ui-rounded;
+
+    color: var(--gray-4)
 }
 
 /* f */
@@ -183,20 +226,13 @@ section.f p {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --mod: plus-darker;
-
-        --soft: #ffffffcc;
-        --soft-2: #cccccccc;
-        --soft-3: #cccccc60;
-        --soft-4: #00000020;
-
         --gray-a: white;
         --gray-b: black;
 
         --gray: #1d1d1f;
         --gray-2: #8e8e93;
         --gray-3: #eaeaee;
-        --gray-4: #c0c0c4;
+        --gray-4: #afafb1;
         --gray-5: #f2f2f6;
 
         --link: #007aff;
@@ -205,20 +241,13 @@ section.f p {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --mod: plus-lighter;
-
-        --soft: #000000aa;
-        --soft-2: #ffffff40;
-        --soft-3: #33333370;
-        --soft-4: #ffffff20;
-
         --gray-a: black;
         --gray-b: white;
 
         --gray: #f5f5f7;
         --gray-2: #8e8e93;
         --gray-3: #0e0e0e;
-        --gray-4: #505052;
+        --gray-4: #77777b;
         --gray-5: #151517;
 
         --link: #0a84ff;
