@@ -17,7 +17,7 @@ video {
 body {
     /* background-color: #5e606b; */
     /* background-color: #1c74d9; */
-    background-color: #585d6b;
+    background-color: #e1dde4;
 
     transition: background-color 1s
 }
@@ -66,7 +66,7 @@ section.e .a>div {
 
     border-radius: 2px;
 
-    background-color: #ffffff50
+    background-color: #493e4a50
 }
 
 section.e .a div div {
@@ -74,7 +74,7 @@ section.e .a div div {
 
     border-radius: inherit;
 
-    background-color: white
+    background-color: #493e4a
 }
 
 section.e .n {
@@ -94,24 +94,24 @@ section.e img {
 }
 
 section.e ul {
-    margin-block: 100px;
-    padding-inline: 20px;
+    /* margin-block: 100px; */
+    /* padding-inline: 20px; */
 
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
-    column-gap: 10px;
+    /* column-gap: 10px; */
 
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
-    scroll-padding-left: 20px
+    /* scroll-padding-left: 20px */
 }
 
 section.e li {
-    width: 280px;
+    width: 100vw;
 
-    border-radius: 15px;
+    /* border-radius: 15px; */
 
     background-color: #fff;
 
