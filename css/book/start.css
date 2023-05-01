@@ -17,7 +17,7 @@ video {
 body {
     /* background-color: #5e606b; */
     /* background-color: #1c74d9; */
-    background-color: #e1dde4;
+    background-color: #4f4e5e;
 
     transition: background-color 1s
 }
@@ -39,7 +39,7 @@ section.e svg path {
 }
 
 section.e .a {
-    padding: 20px;
+    padding: 20px 20px 0;
 
     display: flex;
     column-gap: 5px;
@@ -66,7 +66,7 @@ section.e .a>div {
 
     border-radius: 2px;
 
-    background-color: #493e4a50
+    background-color: #ffffff50
 }
 
 section.e .a div div {
@@ -74,7 +74,7 @@ section.e .a div div {
 
     border-radius: inherit;
 
-    background-color: #493e4a
+    background-color: #ffffff
 }
 
 section.e .n {
@@ -90,7 +90,7 @@ section.e img {
     aspect-ratio: 1/1.3;
     object-fit: cover;
 
-    border-radius: 0 0 15px 15px;
+    /* border-radius: 0 0 15px 15px; */
 }
 
 section.e ul {
@@ -119,7 +119,7 @@ section.e li {
 }
 
 section.e li h1 {
-    height: 88px;
+    /* height: 88px; */
     padding: 20px;
     font: 900 semi-expanded 24px/1 system-ui;
     color: white;
