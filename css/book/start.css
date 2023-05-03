@@ -124,15 +124,12 @@ section.e li.a h3 {
     display: inherit;
     align-items: center;
     justify-content: right;
+    column-gap: 8px;
 
     white-space: nowrap;
     font: 800 17px ui-rounded;
 
     color: white
-}
-
-section.e li.a h3 svg {
-    margin-right: 10px
 }
 
 section.e img {
