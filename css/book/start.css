@@ -18,6 +18,7 @@ body {
     /* background-color: #5e606b; */
     /* background-color: #1c74d9; */
     background-color: #4E617A;
+    /* background-color: #630d2d; */
 
     transition: background-color 1s
 }
@@ -69,6 +70,12 @@ section.e li {
     width: 100vw
 }
 
+section.e li.a {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between
+}
+
 section.e li.a h1 {
     padding: 35px 20px 0;
 
@@ -78,7 +85,7 @@ section.e li.a h1 {
 }
 
 section.e li.a a {
-    margin: 2.2cm auto;
+    margin-inline: auto;
 
     width: 280px;
     aspect-ratio: 1/1.53;
@@ -97,7 +104,8 @@ section.e li.a .b {
 
     display: flex;
     align-items: end;
-    justify-content: space-between
+    justify-content: space-between;
+    column-gap: 20px
 }
 
 section.e li.a h2 {
@@ -112,8 +120,6 @@ section.e li.a h2 u {
 
 section.e li.a p {
     margin-top: .4em;
-
-    max-width: 200px;
 
     font-size: 14px;
 
