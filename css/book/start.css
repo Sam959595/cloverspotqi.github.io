@@ -67,7 +67,8 @@ section.e ul {
 }
 
 section.e li {
-    width: 100vw
+    width: 100vw;
+    height: 100vh;
 }
 
 section.e li.a {
@@ -77,6 +78,7 @@ section.e li.a {
 }
 
 section.e li.a h1 {
+    text-transform: uppercase;
     font: 900 semi-expanded 24px/1 system-ui;
 
     color: white
@@ -98,25 +100,28 @@ section.e li.a a {
 }
 
 section.e li.a .b {
-    margin: 35px 20px;
+    position: relative;
 
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    column-gap: 20px
+    margin: 35px 20px
+}
+
+section.e li.a .b>* {
+    position: absolute;
+    
+    transition: opacity .8s
 }
 
 section.e li.a .c {
     margin: 20px
 }
 
-section.e li.a h2 {
+section.e li.a h3 {
     font: 700 14px ui-rounded;
 
     color: white
 }
 
-section.e li.a h2 u {
+section.e li.a h3 u {
     margin-inline: .5em
 }
 
@@ -128,12 +133,13 @@ section.e li.a p {
     color: white
 }
 
-section.e li.a h3 {
-    display: inherit;
+section.e li.a h2 {
+    display: flex;
     align-items: center;
     column-gap: 8px;
 
-    font: 800 17px ui-rounded;
+    white-space: nowrap;
+    font: 900 24px/1 ui-rounded;
 
     color: white
 }
