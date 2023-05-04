@@ -67,8 +67,7 @@ section.e ul {
 }
 
 section.e li {
-    width: 100vw;
-    height: 100vh;
+    width: 100vw
 }
 
 section.e li.a {
