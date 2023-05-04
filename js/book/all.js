@@ -1,10 +1,25 @@
+// title switch
+h = () => {
+    let a = $('section.e li.a h1')[0],
+    b = $('section.e li.a h2')[0];
+
+    setTimeout(() => {
+        a.style.opacity = '0';
+        setTimeout(() => {
+            a.remove()
+        }, 800)
+        b.removeAttribute('style')
+    }, 5000)
+}
+h()
+
 // img load
 document.querySelectorAll('img').forEach(x => {
     new IntersectionObserver((a, b) => {
         a.forEach(x => {
+            let a = x.target;
             if (x.isIntersecting) {
-                b.unobserve(x.target);
-                let a = x.target;
+                b.unobserve(a);
                 let m = new Image();
                 m.src = a.dataset.i;
                 m.onload = () => {
@@ -20,13 +35,14 @@ document.querySelectorAll('img').forEach(x => {
 document.querySelectorAll('video').forEach(x => {
     new IntersectionObserver((a, b) => {
         a.forEach(x => {
+            let a = x.target;
             if (x.isIntersecting) {
-                b.unobserve(x.target);
-                x.target.src = x.target.dataset.v;
+                b.unobserve(a);
+                a.src = a.dataset.v;
                 let t = setInterval(() => {
-                    if (x.target.currentTime > 0) {
+                    if (a.currentTime > 0) {
                         clearInterval(t);
-                        x.target.removeAttribute('data-v')
+                        a.removeAttribute('data-v')
                     }
                 }, 500)
             }
@@ -85,11 +101,28 @@ document.querySelectorAll('section.e .m').forEach(x => {
 
 //current number img
 document.querySelectorAll('section.e .d').forEach(x => {
+    // x.addEventListener('scroll', x => {
+    //     let a = x.target;
+    //     for (i=0; i<a.children.length; i++) {
+    //         let l = a.children[i].offsetLeft, k = a.scrollLeft;
+    //         console.log(l, k, l - k);
+
+    //         if ((a.children[i].offsetLeft - a.scrollLeft) > 0) {
+    //             break
+    //         }
+    //     }
+    //     if (i > 0) {
+    //         a.nextElementSibling.innerHTML = i+' / 4'
+    //     }
+    // })
+
     x.addEventListener('scroll', x => {
         let a = x.target;
         for (t=0; t<a.children.length; t++);
-
         for (i=0; i<a.children.length; i++) {
+            let n = window.innerWidth / 2, k = (a.children[i].offsetLeft + n), j = a.scrollLeft;
+
+            // console.log(k, j);
             if (a.children[i].offsetLeft == a.scrollLeft) {
                 a.nextElementSibling.innerHTML = i+1+' / '+t
             }
