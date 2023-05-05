@@ -24,7 +24,6 @@ section.b {
     border-radius: 19px;
 
     display: flex;
-    align-items: center;
 
     background-color: var(--tab-4);
     color: var(--gray);
@@ -329,7 +328,7 @@ section.m {
         --text: #d6caba;
         --text-2: #eee;
         --text-3: #f2f2f0;
-        --text-4: #8d8d93;
+        --text-4: #b4b4be;
 
         --tab: #494540;
         --tab-2: #585862;
