@@ -98,15 +98,7 @@ section.e li.a a {
 }
 
 section.e li.a .b {
-    position: relative;
-
     margin: 35px 20px
-}
-
-section.e li.a .b>* {
-    position: absolute;
-    
-    transition: opacity .8s
 }
 
 section.e li.a .c {
@@ -128,18 +120,18 @@ section.e li.a p {
 
     font-size: 14px;
 
-    color: white
+    color: #ffffffdd
 }
 
 section.e li.a h2 {
-    display: flex;
-    align-items: center;
-    column-gap: 8px;
-
-    white-space: nowrap;
-    font: 900 24px/1 ui-rounded;
+    text-align: right;
+    font: 800 21px ui-rounded;
 
     color: white
+}
+
+section.e li.a h2 svg  {
+    margin-right: 8px
 }
 
 section.e img {
