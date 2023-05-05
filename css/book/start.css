@@ -98,7 +98,10 @@ section.e li.a a {
 }
 
 section.e li.a .b {
-    margin: 35px 20px
+    margin: 35px 20px 20px;
+
+    display: flex;
+    justify-content: space-between
 }
 
 section.e li.a .c {
@@ -120,17 +123,16 @@ section.e li.a p {
 
     font-size: 14px;
 
-    color: #ffffffdd
+    color: white
 }
 
 section.e li.a h2 {
-    text-align: right;
-    font: 800 21px ui-rounded;
+    font: 900 24px/1 ui-rounded;
 
     color: white
 }
 
-section.e li.a h2 svg  {
+section.e li.a h2 svg {
     margin-right: 8px
 }
 
