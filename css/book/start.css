@@ -20,7 +20,7 @@ body {
     background-color: #4E617A;
     /* background-color: #630d2d; */
     /* background-color: #4f1139; */
-    background-color: #7a97e2;
+    background-color: #4f5f8a;
 }
 
 /* n */
@@ -71,6 +71,8 @@ section.e li {
 }
 
 section.e li.a {
+    padding: 35px 20px 20px;
+
     display: flex;
     flex-flow: column;
     justify-content: space-between
@@ -86,8 +88,8 @@ section.e li.a h1 {
 section.e li.a a {
     margin-inline: auto;
 
-    width: 400px;
-    aspect-ratio: 1/1.4;
+    width: 300px;
+    aspect-ratio: 1/1.53;
 
     border-radius: 5px;
 
@@ -99,14 +101,8 @@ section.e li.a a {
 }
 
 section.e li.a .b {
-    margin: 35px 20px 20px;
-
     display: flex;
     justify-content: space-between
-}
-
-section.e li.a .c {
-    margin: 20px
 }
 
 section.e li.a h3 {
