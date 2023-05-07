@@ -20,7 +20,7 @@ body {
     background-color: #4E617A;
     /* background-color: #630d2d; */
     /* background-color: #4f1139; */
-    background-color: #6685ad;
+    background-color: #7a97e2;
 }
 
 /* n */
@@ -86,10 +86,10 @@ section.e li.a h1 {
 section.e li.a a {
     margin-inline: auto;
 
-    width: 280px;
-    aspect-ratio: 1/1.53;
+    width: 400px;
+    aspect-ratio: 1/1.4;
 
-    border-radius: 3px;
+    border-radius: 5px;
 
     display: block;
 
