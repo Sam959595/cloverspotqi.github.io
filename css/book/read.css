@@ -277,7 +277,7 @@ section.m {
     position: fixed;
     inset: 0 0 auto;
 
-    padding: 1em 1cm;
+    padding: calc(env(safe-area-inset-top) + 1em) 1cm 1em;
 
     display: none;
 
