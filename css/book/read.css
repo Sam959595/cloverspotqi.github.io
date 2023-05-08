@@ -9,12 +9,13 @@ body {
 /* k */
 
 section.k {
-    opacity: .8;
-
     position: fixed;
     inset: 0 0 auto;
 
     height: env(safe-area-inset-top);
+
+    -webkit-backdrop-filter: blur(17px);
+    -webkit-filter: opacity(.5);
 
     background-color: inherit
 }
