@@ -28,7 +28,8 @@ section.n {
     position: fixed;
     inset: 0 0 auto;
 
-    padding: env(safe-area-inset-top, 20px) 20px 20px;
+    margin-top: env(safe-area-inset-top);
+    padding: 20px;
 
     display: flex;
     column-gap: 5px;
@@ -64,16 +65,11 @@ section.e ul {
 }
 
 section.e li {
-    width: 100vw;
-    height: 100vh;
+    width: 100vw
 }
 
 section.e li.a {
-    padding: max(35px, env(safe-area-inset-top)) 20px env(safe-area-inset-bottom);
-
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between
+    background: center/cover
 }
 
 section.e li.a h1 {
@@ -83,24 +79,21 @@ section.e li.a h1 {
     color: white
 }
 
-section.e li.a a {
-    margin-inline: auto;
-
-    width: 300px;
-    aspect-ratio: 1/1.53;
-
-    border-radius: 5px;
-
-    display: block;
-
-    background: center/cover;
-
-    box-shadow: 0 0 10px #00000040
-}
-
 section.e li.a .b {
     display: flex;
     justify-content: space-between
+}
+
+section.e li.a .p {
+    height: 100vh;
+    
+    padding: calc(env(safe-area-inset-top) + 35px) 20px calc(env(safe-area-inset-bottom) + 20px);
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    background-color: #00000000
 }
 
 section.e li.a h3 {
