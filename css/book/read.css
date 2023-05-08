@@ -9,16 +9,16 @@ body {
 /* k */
 
 section.k {
-    opacity: .8;
-
     position: fixed;
     inset: 0 0 auto;
 
     height: env(safe-area-inset-top);
 
-    background-color: inherit;
+    -webkit-backdrop-filter: blur(10px);
 
-    mask: linear-gradient(black 40%, transparent)
+    background-color: #35353980;
+
+    mask: linear-gradient(black 50%, transparent)
 }
 
 /* b */
