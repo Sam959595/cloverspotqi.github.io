@@ -14,8 +14,8 @@ section.k {
 
     height: env(safe-area-inset-top);
 
-    -webkit-backdrop-filter: blur(17px);
     -webkit-filter: opacity(.5);
+    -webkit-backdrop-filter: blur(17px);
 
     background-color: inherit
 }
