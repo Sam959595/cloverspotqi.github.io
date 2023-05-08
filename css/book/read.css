@@ -6,6 +6,21 @@ body {
     background-color: var(--canvas-4)
 }
 
+/* k */
+
+section.k {
+    opacity: .8;
+
+    position: fixed;
+    inset: 0 0 auto;
+
+    height: env(safe-area-inset-top);
+
+    background-color: inherit;
+
+    mask: linear-gradient(black 40%, transparent)
+}
+
 /* b */
 
 section.b {
@@ -17,11 +32,11 @@ section.b {
     inset: 0 0 auto;
 
     margin: 1cm auto auto;
-    padding: .8em;
+    padding: 1.5em;
 
     width: fit-content;
 
-    border-radius: 19px;
+    border-radius: 15px;
 
     display: flex;
 
