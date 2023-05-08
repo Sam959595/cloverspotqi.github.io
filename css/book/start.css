@@ -19,7 +19,7 @@ body {
     /* background-color: #1c74d9; */
     /* background-color: #630d2d; */
     /* background-color: #4f1139; */
-    background-color: #5f6d87;
+    /* background-color: #5f6d87; */
 }
 
 /* n */
@@ -58,6 +58,8 @@ section.n span {
 /* e */
 
 section.e ul {
+    touch-action: none;
+    
     display: grid;
     grid-auto-flow: column;
 
@@ -93,7 +95,7 @@ section.e li.a .p {
     flex-flow: column;
     justify-content: space-between;
 
-    background-color: #00000000
+    background-color: #00000030
 }
 
 section.e li.a h3 {
@@ -110,8 +112,10 @@ section.e li.a p {
     margin-top: .4em;
 
     word-spacing: .4em;
-    font-size: 14px;
+    font-size: 14px
+}
 
+section.e li.a p a {
     color: white
 }
 
