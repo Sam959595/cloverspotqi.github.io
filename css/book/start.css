@@ -38,8 +38,6 @@ section.n div {
 
     border-radius: 2px;
 
-    -webkit-backdrop-filter: blur(5px);
-
     background-color: #ffffff50
 }
 
@@ -85,7 +83,7 @@ section.e li.a .p {
     flex-flow: column;
     justify-content: space-between;
 
-    background-color: #00000080
+    background-color: #00000090
 }
 
 section.e li.a .b {
@@ -100,18 +98,16 @@ section.e li.a .g {
 }
 
 section.e li.a .g h1 {
-    font: 800 semi-expanded 17px/1 system-ui;
+    font: 800 semi-expanded 21px/1 system-ui;
 
     color: white
 }
 section.e li.a .g h2 {
-    opacity: .5;
-    
     margin-top: .4em;
 
     font: 600 17px/1 system-ui;
 
-    color: white
+    color: #ccc
 }
 
 section.e li.a h3 {
