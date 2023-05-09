@@ -15,7 +15,7 @@ video {
 /* body */
 
 body {
-    background-color: black
+    /* background-color: black */
 }
 
 /* n */
@@ -28,7 +28,7 @@ section.n {
     padding: 20px;
 
     display: flex;
-    column-gap: 5px;
+    column-gap: 5px
 }
 
 section.n div {
@@ -55,33 +55,25 @@ section.n span {
 
 /* e */
 
-section.e ul {
-    /* touch-action: none; */
+section.e>ul {
+    touch-action: pan-x;
     
     display: grid;
     grid-auto-flow: column;
 
-    overflow-x: scroll
+    overflow-x: scroll;
+    overscroll-behavior-x: none;
+    scroll-snap-type: x mandatory
 }
 
-section.e li {
-    width: 100vw
+section.e ul.k>li {
+    width: 100vw;
+
+    scroll-snap-align: start
 }
 
 section.e li.a {
     background: center/cover
-}
-
-section.e li.a h1 {
-    text-transform: uppercase;
-    font: 900 semi-expanded 24px/1 system-ui;
-
-    color: white
-}
-
-section.e li.a .b {
-    display: flex;
-    justify-content: space-between
 }
 
 section.e li.a .p {
@@ -93,7 +85,33 @@ section.e li.a .p {
     flex-flow: column;
     justify-content: space-between;
 
-    background-color: #000000aa
+    background-color: #00000080
+}
+
+section.e li.a .b {
+    display: flex;
+    justify-content: space-between
+}
+
+section.e li.a .g {
+    margin-bottom: 2cm;
+
+    text-align: center
+}
+
+section.e li.a .g h1 {
+    font: 800 semi-expanded 17px/1 system-ui;
+
+    color: white
+}
+section.e li.a .g h2 {
+    opacity: .5;
+    
+    margin-top: .4em;
+
+    font: 600 17px/1 system-ui;
+
+    color: white
 }
 
 section.e li.a h3 {
@@ -135,11 +153,27 @@ section.e li.b img {
 
     border-radius: 18px;
 
-    display: block;
+    display: block
 }
 
 section.e li.b {
     margin-block: env(safe-area-inset-top) env(safe-area-inset-bottom)
+}
+
+section.e li.h {
+    padding: calc(env(safe-area-inset-top) + 35px) 20px calc(env(safe-area-inset-bottom) + 10px);
+}
+
+section.e li.h li {
+    display: flex;
+}
+section.e li.h img {
+    width: 30x;
+    height: 30px;
+
+    border-radius: 50%;
+
+    object-fit: contain
 }
 
 /* color */
