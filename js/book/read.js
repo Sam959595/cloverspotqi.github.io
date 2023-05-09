@@ -69,18 +69,20 @@ document.querySelectorAll('u').forEach(x => {
     x.addEventListener('click', e => {
         document.querySelectorAll('section.m').forEach(x => {
             if (x.id === e.target.id) {
-                x.style.cssText = 'opacity: 0; display: block';
+                x.style.cssText = 'opacity: 0; display: block; transition: opacity .4s';
 
                 setTimeout(() => {
                     x.style.opacity = '1'
                 }, 0)
             }
             window.addEventListener('touchmove', () => {
-                x.style.opacity = '0';
-
-                setTimeout(() => {
-                    x.removeAttribute('style')
-                }, 400)
+                if (x.hasAttribute('style')) {
+                    x.style.opacity = '0';
+            
+                    setTimeout(() => {
+                        x.removeAttribute('style')
+                    }, 400)
+                }
             })
         })
     })
