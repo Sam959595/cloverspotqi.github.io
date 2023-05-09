@@ -14,7 +14,7 @@ section.k {
 
     height: env(safe-area-inset-top);
 
-    -webkit-filter: opacity(.5);
+    filter: opacity(.5);
     -webkit-backdrop-filter: blur(17px);
 
     background-color: inherit
@@ -283,9 +283,7 @@ section.m {
     text-align: center;
 
     background-color: inherit;
-    color: var(--orange);
-
-    transition: opacity .4s
+    color: var(--orange)
 }
 
 /* color */
