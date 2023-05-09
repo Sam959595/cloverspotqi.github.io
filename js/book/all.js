@@ -1,18 +1,3 @@
-// title switch
-h = () => {
-    let a = $('section.e li.a h1')[0],
-    b = $('section.e li.a h2')[0];
-
-    setTimeout(() => {
-        a.style.opacity = '0';
-        setTimeout(() => {
-            a.remove()
-        }, 800)
-        b.removeAttribute('style')
-    }, 5000)
-}
-h()
-
 // img load
 document.querySelectorAll('img').forEach(x => {
     new IntersectionObserver((a, b) => {
