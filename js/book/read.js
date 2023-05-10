@@ -102,5 +102,6 @@ new IntersectionObserver((x, e) => {
                     }, 2000)
                 }, 15000)
             }, 5000)
+        }
     })
 }).observe($('#rr')[0])
