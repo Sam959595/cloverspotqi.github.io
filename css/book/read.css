@@ -3,7 +3,8 @@
 body {
     touch-action: pan-y;
 
-    background-color: var(--canvas-4)
+    background-color: var(--col-4);
+    color: var(--col-44)
 }
 
 /* k */
@@ -12,7 +13,7 @@ section.k {
     position: fixed;
     inset: 0 0 auto;
 
-    height: env(safe-area-inset-top);
+    height: calc(env(safe-area-inset-top) + 2cm);
 
     filter: opacity(.5);
     -webkit-backdrop-filter: blur(17px);
@@ -39,8 +40,8 @@ section.b {
 
     display: flex;
 
-    background-color: var(--tab-4);
-    color: var(--gray);
+    filter: brightness(1.2);
+    background-color: inherit;
 
     box-shadow: 0 0 50px 0 #0000002d;
 
@@ -116,36 +117,33 @@ section.e select {
     text-align-last: center;
     font: 600 14px system-ui;
 
-    background-color: var(--tab-4);
-    color: var(--gray)
+    filter: brightness(1.2);
+    background-color: var(--col-4);
+    color: var(--col-44)
 }
 
 section.e select:focus {
     -webkit-filter: brightness(.9)
 }
 
-/* v */
+/* t */
 
-section.v {
-    margin: 1cm 1cm max(5cm, env(safe-area-inset-bottom))
+section.t {
+    margin: calc(env(safe-area-inset-bottom) + 1cm) 1cm 6cm
 }
 
-section.v h5 {
-    margin-block: 1em 3em;
+section.t h5 {
+    margin-block: 13em 3em;
 
     text-align: center;
     font: 700 20px/1.7 system-ui
 }
 
-section.v h5~h5 {
-    margin-block: 13em 3em
-}
-
-section.v h6::first-letter {
+section.t h6::first-letter {
     margin-left: 1cm
 }
 
-section.v h6 {
+section.t h6 {
     margin-bottom: .8em;
 
     font: 20px/1.7 system-ui;
@@ -153,120 +151,35 @@ section.v h6 {
     text-align: justify
 }
 
-section.v :where(h5, h6) {
-    color: var(--text-4)
-}
-
-section.v u {
-    -webkit-text-decoration: underline dotted var(--orange);
+section.t u {
+    -webkit-text-decoration: underline dotted #ffa333;
     text-decoration-skip: none;
     text-underline-offset: 2px;
     text-decoration-thickness: 1.2px
 }
 
-/* tab */
-
-body.uuu :is(select, .b) {
-    background-color: #d6e0ff;
-    color: black
-}
-
-body.ccc :is(select, .b) {
-    background-color: #574d5b;
-    color: white
-}
-
-body.mmm :is(select, .b) {
-    background-color: #756a64;
-    color: white
-}
-
-body.rrr :is(select, .b) {
-    background-color: var(--tab)
-}
-
-body.ttt :is(select, .b) {
-    background-color: var(--tab-2)
-}
-
-body.qqq :is(select, .b) {
-    background-color: var(--tab-3)
-}
-
-/* background */
-
-.uuu {
-    background-color: #d2ddff
-}
-
-.ccc {
-    background-color: #3d3441
-}
-
-.mmm {
-    background-color: #584d47
-}
-
-.rrr {
-    background-color: var(--canvas)
-}
-
-.ttt {
-    background-color: var(--canvas-2)
-}
-
-.qqq {
-    background-color: var(--canvas-3)
-}
-
-/* text */
-
-body.uuu :where(h5, h6) {
-    color: #181a1d
-}
-
-body.ccc :where(h5, h6) {
-    color: #ffedfb
-}
-
-body.mmm :where(h5, h6) {
-    color: #ffede4
-}
-
-body.rrr :where(h5, h6) {
-    color: var(--text)
-}
-
-body.ttt :where(h5, h6) {
-    color: var(--text-2)
-}
-
-body.qqq :where(h5, h6) {
-    color: var(--text-3)
-}
-
 /* font */
 
-section.v.zzz :where(h5, h6) {
+section.t.zzz :where(h5, h6) {
     font-family: georgia
 }
 
-section.v.sss :where(h5, h6) {
+section.t.sss :where(h5, h6) {
     font-family: ui-serif
 }
 
 /* size */
 
-section.v.y :where(h5, h6) {
+section.t.y :where(h5, h6) {
     font-size: 23px;
     font-weight: 600
 }
 
-section.v.yy :where(h5, h6) {
+section.t.yy :where(h5, h6) {
     font-size: 22px
 }
 
-section.v.yyy :where(h5, h6) {
+section.t.yyy :where(h5, h6) {
     font-size: 18px
 }
 
@@ -283,73 +196,71 @@ section.m {
     text-align: center;
 
     background-color: inherit;
-    color: var(--orange)
+    color: #ffa333
+}
+
+body.a,
+body.a select {
+    background-color: #d2ddff;
+    color: #181a1d
+}
+
+body.b,
+body.b select {
+    background-color: #3d3441;
+    color: #ffedfb
+}
+
+body.c,
+body.c select {
+    background-color: #584d47;
+    color: #ffede4
+}
+
+body.d,
+body.d select {
+    background-color: var(--col-1);
+    color: var(--col-11)
+}
+
+body.i,
+body.i select {
+    background-color: var(--col-2);
+    color: var(--col-22)
+}
+
+body.f,
+body.f select {
+    background-color: var(--col-3);
+    color: var(--col-33)
 }
 
 /* color */
 
 @media (prefers-color-scheme: light) {
     :root {
-        --soft-2: #0000008c;
-        --soft-3: #cccccc60;
-        --soft-4: #00000020;
+        --col-1: #fffaf0;
+        --col-2: #d0d0d0;
+        --col-3: #eeeded;
+        --col-4: white;
 
-        --gray-a: white;
-        --gray-b: black;
-
-        --gray: #1d1d1f;
-
-        --canvas: #fffaf0;
-        --canvas-2: #d0d0d0;
-        --canvas-3: #eeeded;
-        --canvas-4: white;
-
-        --text: #3d2a1c;
-        --text-2: #111;
-        --text-3: #111;
-        --text-4: #1e1e1e;
-
-        --tab: #ebe5d7;
-        --tab-2: #ddd;
-        --tab-3: #eeebeb;
-        --tab-4: white;
-
-        --link: #007aff;
-
-        --orange: #e08600;
-        --green: #47b561;
+        --col-11: #3d2a1c;
+        --col-22: #111;
+        --col-33: #111;
+        --col-44: #1e1e1e;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --soft-2: #ffffff8c;
-        --soft-3: #33333370;
-        --soft-4: #ffffff20;
+        --col-1: #24211f;
+        --col-2: #353539;
+        --col-3: #1c1c1e;
+        --col-4: black;
 
-        --gray-a: black;
-        --gray-b: white;
-
-        --gray: #f5f5f7;
-
-        --canvas: #24211f;
-        --canvas-2: #353539;
-        --canvas-3: #1c1c1e;
-        --canvas-4: black;
-
-        --text: #d6caba;
-        --text-2: #eeeeff;
-        --text-3: #dbdbe9;
-        --text-4: #b4b4be;
-
-        --tab: #494540;
-        --tab-2: #585862;
-        --tab-3: #323239;
-        --tab-4: #1c1c20;
-
-        --link: #0a84ff;
-
-        --orange: #ffa333;
-        --green: #50dc71;
+        --col-11: #d6caba;
+        --col-22: #eeeeff;
+        --col-33: #dbdbe9;
+        --col-44: #b4b4be;
     }
 }
