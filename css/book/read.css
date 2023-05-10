@@ -13,7 +13,7 @@ section.k {
     position: fixed;
     inset: 0 0 auto;
 
-    height: calc(env(safe-area-inset-top) + 2cm);
+    height: env(safe-area-inset-top);
 
     filter: opacity(.5);
     -webkit-backdrop-filter: blur(17px);
@@ -146,9 +146,9 @@ section.t h6::first-letter {
 section.t h6 {
     margin-bottom: .8em;
 
+    text-align: justify;
     font: 20px/1.7 system-ui;
-    letter-spacing: .2px;
-    text-align: justify
+    letter-spacing: .2px
 }
 
 section.t u {
@@ -168,7 +168,7 @@ section.t.sss :where(h5, h6) {
     font-family: ui-serif
 }
 
-/* size */
+/* text */
 
 section.t.y :where(h5, h6) {
     font-size: 23px;
@@ -199,39 +199,61 @@ section.m {
     color: #ffa333
 }
 
+/* background */
+
 body.a,
 body.a select {
-    background-color: #d2ddff;
-    color: #181a1d
+    background-color: #d2ddff
 }
 
 body.b,
 body.b select {
-    background-color: #3d3441;
-    color: #ffedfb
+    background-color: #3d3441
 }
 
 body.c,
 body.c select {
-    background-color: #584d47;
-    color: #ffede4
+    background-color: #584d47
 }
 
 body.d,
 body.d select {
-    background-color: var(--col-1);
-    color: var(--col-11)
+    background-color: var(--col-1)
 }
 
 body.i,
 body.i select {
-    background-color: var(--col-2);
-    color: var(--col-22)
+    background-color: var(--col-2)
 }
 
 body.f,
 body.f select {
-    background-color: var(--col-3);
+    background-color: var(--col-3)
+}
+
+/* background */
+
+body.a section:where(.e, .t) {
+    color: #181a1d
+}
+
+body.b section:where(.e, .t) {
+    color: #ffedfb
+}
+
+body.c section:where(.e, .t) {
+    color: #ffede4
+}
+
+body.d section:where(.e, .t) {
+    color: var(--col-11)
+}
+
+body.i section:where(.e, .t) {
+    color: var(--col-22)
+}
+
+body.f section:where(.e, .t) {
     color: var(--col-33)
 }
 
