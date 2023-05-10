@@ -14,8 +14,8 @@ video {
 
 /* body */
 
-body {
-    /* background-color: black */
+html, body {
+    height: 100%
 }
 
 /* n */
@@ -53,9 +53,15 @@ section.n span {
 
 /* e */
 
+section.e {
+    height: calc(env(safe-area-inset-top) + 100%)
+}
+
 section.e>ul {
     touch-action: pan-x;
-    
+
+    height: 100%;
+
     display: grid;
     grid-auto-flow: column;
 
@@ -75,8 +81,8 @@ section.e li.a {
 }
 
 section.e li.a .p {
-    height: 100vh;
-    
+    height: 100%;
+
     padding: calc(env(safe-area-inset-top) + 35px) 20px calc(env(safe-area-inset-bottom) + 20px);
 
     display: flex;
@@ -105,7 +111,7 @@ section.e li.a .g h1 {
 section.e li.a .g h2 {
     margin-top: .4em;
 
-    font: 600 17px/1 system-ui;
+    font: 600 17px system-ui;
 
     color: #ccc
 }
