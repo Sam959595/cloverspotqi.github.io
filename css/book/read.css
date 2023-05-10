@@ -1,8 +1,6 @@
 /* body */
 
 body {
-    touch-action: pan-y;
-
     background-color: var(--col-4)
 }
 
