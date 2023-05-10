@@ -231,7 +231,7 @@ body.f select {
     background-color: var(--col-3)
 }
 
-/* background */
+/* text */
 
 body.a section:where(.e, .t) {
     color: #181a1d
