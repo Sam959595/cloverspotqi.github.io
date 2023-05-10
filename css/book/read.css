@@ -235,32 +235,32 @@ body.f select {
 
 /* - */
 
-body.a section:where(.b, .e, .t),
+body.a section:is(.b, .e, .t),
 body.a select {
     color: #181a1d
 }
 
-body.b section:where(.b, .e, .t),
+body.b section:is(.b, .e, .t),
 body.b select {
     color: #ffedfb
 }
 
-body.c section:where(.b, .e, .t),
+body.c section:is(.b, .e, .t),
 body.c select {
     color: #ffede4
 }
 
-body.d section:where(.b, .e, .t),
+body.d section:is(.b, .e, .t),
 body.d select {
     color: var(--col-11)
 }
 
-body.i section:where(.b, .e, .t),
+body.i section:is(.b, .e, .t),
 body.i select {
     color: var(--col-22)
 }
 
-body.f section:where(.b, .e, .t),
+body.f section:is(.b, .e, .t),
 body.f select {
     color: var(--col-33)
 }
