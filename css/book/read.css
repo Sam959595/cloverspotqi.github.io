@@ -3,8 +3,7 @@
 body {
     touch-action: pan-y;
 
-    background-color: var(--col-4);
-    color: var(--col-44)
+    background-color: var(--col-4)
 }
 
 /* k */
@@ -31,7 +30,7 @@ section.b {
     position: fixed;
     inset: 0 0 auto;
 
-    margin: 1cm auto auto;
+    margin: calc(env(safe-area-inset-top) + 1cm) auto auto;
     padding: 1.5em;
 
     width: fit-content;
@@ -42,6 +41,7 @@ section.b {
 
     filter: brightness(1.2);
     background-color: inherit;
+    color: var(--col-44);
 
     box-shadow: 0 0 50px 0 #0000002d;
 
@@ -97,6 +97,7 @@ section.e {
     row-gap: 5px;
 
     background-color: #00000015;
+    color: var(--col-44);
 
     box-shadow: 0 0 50px 0 #0000002d;
 
@@ -128,7 +129,9 @@ section.e select:focus {
 /* t */
 
 section.t {
-    margin: 2cm 1cm 6cm
+    margin: 2cm 1cm 6cm;
+
+    color: var(--col-44)
 }
 
 section.t h5 {
@@ -232,33 +235,39 @@ body.f select {
 
 /* - */
 
-body.a section:where(.e, .t),
-body.a select {
+body.a section.b,
+body.a select,
+body.a section:where(.e, .t) {
     color: #181a1d
 }
 
-body.b section:where(.e, .t),
-body.b select {
+body.b section.b,
+body.b select,
+body.b section:where(.e, .t) {
     color: #ffedfb
 }
 
-body.c section:where(.e, .t),
-body.c select {
+body.c section.b,
+body.c select,
+body.c section:where(.e, .t) {
     color: #ffede4
 }
 
-body.d section:where(.e, .t),
-body.d select {
+body.d section.b,
+body.d select,
+body.d section:where(.e, .t) {
     color: var(--col-11)
 }
 
-body.i section:where(.e, .t),
-body.i select {
+body.i section.b,
+body.i select,
+body.i section:where(.e, .t) {
     color: var(--col-22)
 }
 
-body.f section:where(.e, .t),
-body.f select {
+body.f section.b,
+body.f select,
+body.f section:where(.e, .t) {
     color: var(--col-33)
 }
 
