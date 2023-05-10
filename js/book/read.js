@@ -92,22 +92,15 @@ new IntersectionObserver((x, e) => {
     x.forEach(xx => {
         if (xx.isIntersecting) {
             e.unobserve(xx.target);
-            $('section.b')[0].style.visibility = 'visible';
+            $('section.b')[0].style.cssText = 'visibility: visible; opacity: 1';
+
             setTimeout(() => {
-                $('section.b')[0].style.opacity = '1';
+                $('section.b')[0].style.opacity = '0';
 
                 setTimeout(() => {
-                    $('section.b h1:first-child')[0].style.animation = 'x 1s';
-
-                    setTimeout(() => {
-                        $('section.b')[0].style.opacity = '0';
-
-                        setTimeout(() => {
-                            $('section.b')[0].remove()
-                        }, 1000)
-                    }, 15000)
-                }, 1000)
-            }, 800)
+                    $('section.b')[0].remove()
+                }, 2000)
+            }, 15000)
         }
     })
 }).observe($('#rr')[0])
