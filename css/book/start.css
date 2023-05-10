@@ -16,7 +16,8 @@ video {
 
 html,
 body {
-    height: 100%
+    height: 100%;
+    overscroll-behavior-y: none
 }
 
 /* n */
@@ -59,8 +60,6 @@ section.e {
 }
 
 section.e>ul {
-    touch-action: pan-x;
-
     height: 100%;
 
     display: grid;
@@ -152,6 +151,7 @@ section.e li.a h2 svg {
 section.e li.b img {
     width: -webkit-fill-available;
     height: 100%;
+
     aspect-ratio: 1/1.3;
     object-fit: cover;
 
