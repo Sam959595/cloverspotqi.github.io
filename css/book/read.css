@@ -128,7 +128,7 @@ section.e select:focus {
 /* t */
 
 section.t {
-    margin: calc(env(safe-area-inset-bottom) + 1cm) 1cm 6cm
+    margin: 2cm 1cm 6cm
 }
 
 section.t h5 {
