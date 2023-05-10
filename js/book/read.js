@@ -2,7 +2,6 @@
 document.addEventListener('dblclick', () => {
     $('section.e')[0].style.cssText = 'pointer-events: auto; opacity: 1'
 })
-
 window.addEventListener('touchmove', () => {
     $('section.e')[0].removeAttribute('style')
 })
@@ -13,17 +12,17 @@ window.addEventListener('change', () => {
         nn = $('body')
 
     if (vv == 6) {
-        nn.attr('class', 'uuu')
+        nn.attr('class', 'a')
     } else if (vv == 7) {
-        nn.attr('class', 'ccc')
+        nn.attr('class', 'b')
     } else if (vv == 8) {
-        nn.attr('class', 'mmm')
+        nn.attr('class', 'c')
     } else if (vv == 1) {
-        nn.attr('class', 'rrr')
+        nn.attr('class', 'd')
     } else if (vv == 2) {
-        nn.attr('class', 'ttt')
+        nn.attr('class', 'i')
     } else if (vv == 3) {
-        nn.attr('class', 'qqq')
+        nn.attr('class', 'f')
     } else if (vv == 4) {
         nn[0].removeAttribute('class')
     }
@@ -32,35 +31,35 @@ window.addEventListener('change', () => {
 // style font
 window.addEventListener('change', () => {
     let vv = $('section.e select:nth-child(2)').val(),
-        nn = $('section.v')[0]
+        nn = $('section.t')[0]
 
     if (vv == 1) {
-        nn.classList.add('zzz')
-        nn.classList.remove('sss')
+        nn.classList.add('a')
+        nn.classList.remove('v')
     } else if (vv == 2) {
-        nn.classList.add('sss')
-        nn.classList.remove('zzz')
+        nn.classList.add('v')
+        nn.classList.remove('a')
     } else if (vv == 3) {
-        nn.classList.remove('sss', 'zzz')
+        nn.classList.remove('v', 'a')
     }
 })
 
 // size text
 window.addEventListener('change', () => {
     let vv = $('section.e select:last-child').val(),
-        nn = $('section.v')[0]
+        nn = $('section.t')[0]
 
     if (vv == 1) {
         nn.classList.add('y')
-        nn.classList.remove('yy', 'yyy')
+        nn.classList.remove('s', 'r')
     } else if (vv == 2) {
-        nn.classList.add('yy')
-        nn.classList.remove('y', 'yyy')
+        nn.classList.add('s')
+        nn.classList.remove('y', 'r')
     } else if (vv == 3) {
-        nn.classList.remove('yy', 'y', 'yyy')
+        nn.classList.remove('s', 'y', 'r')
     } else if (vv == 4) {
-        nn.classList.add('yyy')
-        nn.classList.remove('yy', 'y')
+        nn.classList.add('r')
+        nn.classList.remove('s', 'y')
     }
 })
 
