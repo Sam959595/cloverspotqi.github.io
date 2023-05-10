@@ -49,8 +49,7 @@ section.b {
 }
 
 section.b h1 {
-    font: 600 14px system-ui;
-    color: inherit
+    font: 600 14px system-ui
 }
 
 @keyframes x {
@@ -271,7 +270,6 @@ body.f select {
         --col-2: #d0d0d0;
         --col-3: #eeeded;
         --col-4: white;
-
         --col-11: #3d2a1c;
         --col-22: #111;
         --col-33: #111;
@@ -285,7 +283,6 @@ body.f select {
         --col-2: #353539;
         --col-3: #1c1c1e;
         --col-4: black;
-
         --col-11: #d6caba;
         --col-22: #eeeeff;
         --col-33: #dbdbe9;
