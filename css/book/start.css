@@ -175,16 +175,27 @@ section.e li.h {
 }
 
 section.e li.h h1 {
-    font-size: 13px;
+    font-size: 13px
 }
 
-section.e li.h li {
+section.e li.h .a {
+    margin-top: 2px;
     display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1em;
+}
+section.e li.h span {
+    display: block;
+    font-weight: 600;
+
+    color: var(--gray-2);
 }
 
 section.e li.h img {
-    width: 30x;
-    height: 30px;
+    width: 20x;
+    height: 20px;
 
     border-radius: 50%;
 
