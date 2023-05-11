@@ -105,9 +105,18 @@ section.e select:focus {
 /* t */
 
 section.t {
-    margin: 2cm 1cm 6cm;
+    margin: calc(env(safe-area-inset-top) + 1cm) 1cm 6cm;
 
     color: var(--col-44)
+}
+
+section.t h1 {
+    max-width: 50%;
+
+    margin-left: auto;
+
+    text-align: right;
+    font: 800 semi-expanded 21px system-ui;
 }
 
 section.t h5 {
