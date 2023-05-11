@@ -90,7 +90,7 @@ section.e li.a .p {
     flex-flow: column;
     justify-content: space-between;
 
-    background-color: #00000090
+    background-color: #00000080
 }
 
 section.e li.a .b {
@@ -165,8 +165,17 @@ section.e li.b {
     margin-block: env(safe-area-inset-top) env(safe-area-inset-bottom)
 }
 
+section.e li.h ul {
+    display: grid;
+    row-gap: 2em;
+}
+
 section.e li.h {
     padding: calc(env(safe-area-inset-top) + 35px) 20px calc(env(safe-area-inset-bottom) + 10px);
+}
+
+section.e li.h h1 {
+    font-size: 13px;
 }
 
 section.e li.h li {
