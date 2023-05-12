@@ -81,11 +81,11 @@ section.e {
 }
 
 section.e select {
-    width: 169px;
+    width: 180px;
 
     border-radius: 16px;
 
-    padding: 1em;
+    padding: 1em 2em;
 
     text-overflow: ellipsis;
     overflow: hidden;
@@ -111,7 +111,7 @@ section.t {
 }
 
 section.t h1 {
-    max-width: 50%;
+    max-width: 60%;
 
     margin-left: auto;
 
@@ -123,7 +123,7 @@ section.t h5 {
     margin-block: 13em 3em;
 
     text-align: center;
-    font: 700 20px/1.7 system-ui
+    font: 800 20px/1.7 system-ui
 }
 
 section.t h6::first-letter {
@@ -155,10 +155,19 @@ section.t.v>* {
     font-family: ui-serif
 }
 
+/* interval */
+
+section.t.j h6 {
+    line-height: 1.4
+}
+
 /* text */
 
 section.t.y>* {
-    font-size: 23px;
+    font-size: 23px
+}
+
+section.t.y h6 {
     font-weight: 600
 }
 
@@ -186,7 +195,7 @@ section.m {
     color: #ffa333
 }
 
-/* - */
+/* background */
 
 body.a,
 body.a select {
@@ -218,7 +227,7 @@ body.f select {
     background-color: var(--col-3)
 }
 
-/* - */
+/* background text */
 
 body.a section:is(.b, .e, .t),
 body.a select {
