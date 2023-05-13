@@ -47,9 +47,13 @@ window.addEventListener('change', () => {
         nn = $('section.t')[0];
 
     if (vv == 1) {
-        nn.classList.add('j')
+        nn.classList.remove('f', 'j')
     } else if (vv == 2) {
+        nn.classList.add('f')
         nn.classList.remove('j')
+    } else if (vv == 3) {
+        nn.classList.add('j')
+        nn.classList.remove('f')
     }
 })
 
