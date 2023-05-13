@@ -41,7 +41,6 @@ section.b {
 
     font: 600 14px system-ui;
 
-    filter: brightness(1.2);
     background-color: inherit;
     color: var(--col-44);
 
@@ -93,7 +92,6 @@ section.e select {
     text-align-last: center;
     font: 600 14px system-ui;
 
-    filter: brightness(1.2);
     background-color: var(--col-4);
     color: var(--col-44)
 }
@@ -156,6 +154,10 @@ section.t.v>* {
 }
 
 /* interval */
+
+section.t.f h6 {
+    line-height: 1.5
+}
 
 section.t.j h6 {
     line-height: 1.3
