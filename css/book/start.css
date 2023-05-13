@@ -18,40 +18,9 @@ html,
 body {
     height: 100%;
 
-    overscroll-behavior: none
-}
+    overscroll-behavior: none;
 
-/* n */
-
-section.n {
-    position: fixed;
-    inset: 0 0 auto;
-
-    margin-top: env(safe-area-inset-top);
-    padding: 20px;
-
-    display: flex;
-    column-gap: 5px
-}
-
-section.n div {
-    flex-grow: 1;
-
-    height: 3px;
-
-    border-radius: 2px;
-
-    background-color: #ffffff50
-}
-
-section.n span {
-    height: inherit;
-
-    border-radius: inherit;
-
-    display: block;
-
-    background-color: white
+    /* background-color: #545c77 */
 }
 
 /* e */
@@ -84,16 +53,43 @@ section.e li.a {
 section.e li.a .p {
     height: 100%;
 
-    padding: calc(env(safe-area-inset-top) + 35px) 20px calc(env(safe-area-inset-bottom) + 20px);
+    padding: calc(env(safe-area-inset-top) + 20px) 20px calc(env(safe-area-inset-bottom) + 20px);
 
     display: flex;
     flex-flow: column;
     justify-content: space-between;
 
-    background-color: #3750a3
+    background-color: #2f2f71
+}
+
+section.e li.a div.n {
+    display: flex;
+    column-gap: 5px
+}
+
+section.e li.a div.n div {
+    flex-grow: 1;
+
+    height: 3px;
+
+    border-radius: 2px;
+
+    background-color: #ffffff50
+}
+
+section.e li.a div.n span {
+    height: inherit;
+
+    border-radius: inherit;
+
+    display: block;
+
+    background-color: white
 }
 
 section.e li.a .b {
+    margin-top: 12px;
+
     display: flex;
     justify-content: space-between
 }
