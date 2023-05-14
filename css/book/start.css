@@ -59,7 +59,8 @@ section.e li.a .p {
     flex-flow: column;
     justify-content: space-between;
 
-    background-color: #2f2f71
+    -webkit-backdrop-filter: blur(10px);
+    background-color: #00000080
 }
 
 section.e li.a div.n {
@@ -171,7 +172,7 @@ section.e li.h {
 }
 
 section.e li.h h1 {
-    font-size: 14px
+    font-size: 13px
 }
 
 section.e li.h .a {
