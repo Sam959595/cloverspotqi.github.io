@@ -80,9 +80,6 @@ section.e {
 }
 
 section.e div {
-    width: 270px;
-    height: 55px;
-
     border-radius: 20px;
 
     padding-inline: 1.5em;
@@ -91,13 +88,18 @@ section.e div {
     align-items: center;
     justify-content: space-between;
 
+    background-color: #252527;
+    color: white
+}
+
+section.e select {
+    width: 209px;
+    height: 55px;
+
     text-overflow: ellipsis;
     overflow: hidden;
 
-    font-size: 17px;
-
-    background-color: #252527;
-    color: #fff
+    font-size: 17px
 }
 
 section.e :is(h1, select:focus) {
