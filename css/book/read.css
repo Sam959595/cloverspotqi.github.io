@@ -63,7 +63,7 @@ section.e {
     position: fixed;
     inset: auto 0 0 auto;
 
-    margin: 0 1.5em 3cm 0;
+    margin: 0 1.5em max(1.5em, env(safe-area-inset-bottom)) 0;
 
     border-radius: 16px;
 
@@ -79,25 +79,29 @@ section.e {
     transition: opacity .4s
 }
 
-section.e select {
-    width: 180px;
+section.e div {
+    width: 270px;
+    height: 55px;
 
-    border-radius: 16px;
+    border-radius: 20px;
 
-    padding: 1.2em 2em;
+    padding-inline: 1.5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     text-overflow: ellipsis;
     overflow: hidden;
 
-    text-align-last: center;
-    font: 600 14px system-ui;
+    font-size: 17px;
 
-    background-color: var(--col-4);
-    color: var(--col-44)
+    background-color: #252527;
+    color: #fff
 }
 
-section.e select:focus {
-    -webkit-filter: brightness(.9)
+section.e :is(h1, select:focus) {
+    opacity: .5
 }
 
 /* t */
@@ -199,65 +203,79 @@ section.m {
 
 /* background */
 
-body.a,
-body.a select {
+body.a {
     background-color: #d2ddff
 }
 
-body.b,
-body.b select {
+body.b {
     background-color: #3d3441
 }
 
-body.c,
-body.c select {
+body.c {
     background-color: #584d47
 }
 
-body.d,
-body.d select {
+body.d {
     background-color: var(--col-1)
 }
 
-body.i,
-body.i select {
+body.i {
     background-color: var(--col-2)
 }
 
-body.f,
-body.f select {
+body.f {
     background-color: var(--col-3)
 }
 
-/* background text */
+/* tab */
 
-body.a section:is(.b, .e, .t),
-body.a select {
+body.a section.e div  {
+    background-color: color-mix(in srgb, white 50%, #d2ddff)
+}
+
+body.b section.e div {
+    background-color: color-mix(in srgb, white 50%, #d2ddff)
+}
+
+body.c section.e div {
+    background-color: color-mix(in srgb, white 50%, #d2ddff)
+}
+
+body.d section.e div {
+    background-color: color-mix(in srgb, white 50%, #d2ddff)
+}
+
+body.i section.e div {
+    background-color: color-mix(in srgb, white 50%, #d2ddff)
+}
+
+body.f section.e div {
+    background-color: color-mix(in srgb, white 50%, #d2ddff)
+}
+
+/* text color */
+
+body.a section.t {
     color: #181a1d
 }
 
-body.b section:is(.b, .e, .t),
-body.b select {
+body.b section.t {
     color: #ffedfb
 }
 
-body.c section:is(.b, .e, .t),
-body.c select {
+body.c section.t {
     color: #ffede4
 }
 
-body.d section:is(.b, .e, .t),
-body.d select {
+body.d section.t {
     color: var(--col-11)
 }
 
-body.i section:is(.b, .e, .t),
-body.i select {
+body.i section.t {
     color: var(--col-22)
 }
 
-body.f section:is(.b, .e, .t),
-body.f select {
+body.f section.t {
     color: var(--col-33)
 }
 
