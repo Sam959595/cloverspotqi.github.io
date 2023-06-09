@@ -101,7 +101,7 @@ section.e :is(h1, select:focus) {
 /* t */
 
 section.t {
-    margin: max(1cm, env(safe-area-inset-top)) 1cm 6cm;
+    margin: calc(env(safe-area-inset-top) + 1cm) 1cm 6cm;
 
     color: var(--col-44)
 }
