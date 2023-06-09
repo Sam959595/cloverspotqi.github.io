@@ -19,26 +19,25 @@ section.b {
     opacity: 0;
 
     position: fixed;
-    inset: auto 0 0;
+    inset: 0 0 auto;
 
-    margin: auto auto 1cm;
-    padding: 1.3em 1.7em;
+    padding: env(safe-area-inset-top) 1cm 2em;
 
-    width: fit-content;
+    border-bottom: 2px solid #77777720;
 
-    border-radius: 16px;
-
-    display: flex;
-    align-items: center;
-
-    font: 600 14px system-ui;
+    text-align: center;
 
     background-color: inherit;
-    color: inherit;
-
-    box-shadow: 0 0 50px 0 #0000002d;
+    color: white;
 
     transition: opacity 2s ease
+}
+
+section.b h1 {
+    font-size: 44px
+}
+section.b h2 {
+    font: 600 14px system-ui
 }
 
 section.b svg {
@@ -71,7 +70,7 @@ section.e {
 }
 
 section.e div {
-    border-radius: 19px;
+    border-radius: inherit;
 
     padding-inline: 1.5em;
 
@@ -178,22 +177,6 @@ section.t.r>* {
     font-size: 18px
 }
 
-/* m */
-
-section.m {
-    position: fixed;
-    inset: 0 0 auto;
-
-    padding: calc(env(safe-area-inset-top) + 1em) 1cm 1em;
-
-    display: none;
-
-    text-align: center;
-
-    background-color: inherit;
-    color: #ffa333
-}
-
 /* background */
 
 body.a {
@@ -273,6 +256,25 @@ body.i section.t {
 
 body.f section.t {
     color: var(--col-33)
+}
+
+/* m */
+
+section.m {
+    position: fixed;
+    inset: 0 0 auto;
+
+    padding: calc(env(safe-area-inset-top) + 1em) 1cm 1em;
+
+    border-bottom: 2px solid #77777720;
+
+    display: none;
+
+    text-align: center;
+    font-size: 14px;
+
+    background-color: inherit;
+    color: white
 }
 
 /* color */
