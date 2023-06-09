@@ -42,7 +42,7 @@ section.b {
     font: 600 14px system-ui;
 
     background-color: inherit;
-    color: white;
+    color: black;
 
     box-shadow: 0 0 50px 0 #0000002d;
 
@@ -90,7 +90,7 @@ section.e div {
 
     background-color: var(--col-01);
     color: var(--col-0)
-}1
+}
 
 section.e select {
     width: 209px;
