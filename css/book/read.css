@@ -57,10 +57,9 @@ section.e {
 
     margin: 0 1.5em max(1.5em, env(safe-area-inset-bottom)) 0;
 
-    border-radius: 16px;
+    border-radius: 19px;
 
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
     row-gap: 5px;
 
     background-color: #00000015;
