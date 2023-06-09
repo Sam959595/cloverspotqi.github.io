@@ -42,7 +42,7 @@ section.b {
     font: 600 14px system-ui;
 
     background-color: inherit;
-    color: var(--col-44);
+    color: white;
 
     box-shadow: 0 0 50px 0 #0000002d;
 
@@ -88,9 +88,9 @@ section.e div {
     align-items: center;
     justify-content: space-between;
 
-    background-color: #252527;
-    color: white
-}
+    background-color: var(--col-01);
+    color: var(--col-0)
+}1
 
 section.e select {
     width: 209px;
@@ -232,27 +232,30 @@ body.f {
 /* tab */
 
 body.a section.e div  {
-    background-color: color-mix(in srgb, white 50%, #d2ddff)
+    background-color: #d2ddff;
+    color: black
 }
 
 body.b section.e div {
-    background-color: color-mix(in srgb, white 50%, #d2ddff)
+    background-color: #5b4d60;
+    color: white
 }
 
 body.c section.e div {
-    background-color: color-mix(in srgb, white 50%, #d2ddff)
+    background-color: #695d57;
+    color: white
 }
 
 body.d section.e div {
-    background-color: color-mix(in srgb, white 50%, #d2ddff)
+    background-color: var(--col-10)
 }
 
 body.i section.e div {
-    background-color: color-mix(in srgb, white 50%, #d2ddff)
+    background-color: var(--col-20)
 }
 
 body.f section.e div {
-    background-color: color-mix(in srgb, white 50%, #d2ddff)
+    background-color: var(--col-30)
 }
 
 /* text color */
@@ -293,6 +296,11 @@ body.f section.t {
         --col-22: #111;
         --col-33: #111;
         --col-44: #1e1e1e;
+        --col-10: #fffaf0;
+        --col-20: #ececec;
+        --col-30: #f2f2f2;
+        --col-0: black;
+        --col-01: white;
     }
 }
 
@@ -306,5 +314,10 @@ body.f section.t {
         --col-22: #eeeeff;
         --col-33: #dbdbe9;
         --col-44: #b4b4be;
+        --col-10: #363432;
+        --col-20: #48484e;
+        --col-30: #3a3a3e;
+        --col-0: white;
+        --col-01: #212224;
     }
 }
