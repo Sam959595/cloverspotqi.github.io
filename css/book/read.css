@@ -21,14 +21,14 @@ section.b {
     position: fixed;
     inset: 0 0 auto;
 
-    padding: env(safe-area-inset-top) 1cm 2em;
+    padding: env(safe-area-inset-top) 1cm 1em;
 
     border-bottom: 2px solid #77777720;
 
     text-align: center;
 
     background-color: inherit;
-    color: white;
+    color: var(--col-0);
 
     transition: opacity 2s ease
 }
@@ -274,7 +274,7 @@ section.m {
     font-size: 14px;
 
     background-color: inherit;
-    color: white
+    color: var(--col-0)
 }
 
 /* color */
