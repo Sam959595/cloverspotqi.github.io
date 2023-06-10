@@ -16,28 +16,31 @@ section.k {
 
 section.b {
     visibility: hidden;
-    opacity: 0;
 
     position: fixed;
     inset: 0 0 auto;
 
-    padding: env(safe-area-inset-top) 1cm 1em;
+    padding: calc(env(safe-area-inset-top) + 1em) 1cm 1em;
 
     border-bottom: 2px solid #77777720;
 
-    text-align: center;
+    display: flex;
+    align-items: center;
+    column-gap: 2em;
 
     background-color: inherit;
     color: var(--col-0);
+    
+    transform: translateY(-144px);
 
-    transition: opacity 2s ease
+    transition: transform 2s cubic-bezier(0, 0.47, 0.41, 0.95)
 }
 
 section.b h1 {
     font-size: 44px
 }
 section.b h2 {
-    font: 600 14px system-ui
+    font: 500 14px system-ui
 }
 
 section.b svg {
@@ -305,7 +308,7 @@ section.m {
         --gray-a: black;
         --col-11: #d6caba;
         --col-22: #eeeeff;
-        --col-33: #dbdbe9;
+        --col-33: #f2f2f0;
         --col-44: #b4b4be;
         --col-10: #363432;
         --col-20: #48484e;
