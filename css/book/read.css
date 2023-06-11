@@ -30,15 +30,16 @@ section.b {
 
     background-color: inherit;
     color: var(--col-0);
-    
+
     transform: translateY(-144px);
 
-    transition: transform 2s cubic-bezier(0, 0.47, 0.41, 0.95)
+    transition: transform 3s cubic-bezier(0, 0.47, 0.41, 0.95)
 }
 
 section.b h1 {
     font-size: 44px
 }
+
 section.b h2 {
     font: 500 14px system-ui
 }
@@ -65,7 +66,6 @@ section.e {
     row-gap: 5px;
 
     background-color: #00000015;
-    color: var(--col-44);
 
     box-shadow: 0 0 50px 0 #0000002d;
 
@@ -104,7 +104,7 @@ section.e :is(h1, select:focus) {
 section.t {
     margin: calc(env(safe-area-inset-top) + 1cm) 1cm 6cm;
 
-    color: var(--col-44)
+    color: var(--col-a)
 }
 
 section.t h1 {
@@ -182,48 +182,29 @@ section.t.r>* {
 
 /* background */
 
-body.a {
-    background-color: #d2ddff
-}
-
-body.b {
-    background-color: #3d3441
-}
-
-body.c {
-    background-color: #584d47
-}
-
 body.d {
     background-color: var(--col-1)
 }
 
-body.i {
+body.c {
     background-color: var(--col-2)
 }
 
-body.f {
+body.b {
     background-color: var(--col-3)
+}
+
+body.f {
+    background-color: var(--col-4)
+}
+
+body.i {
+    background-color: var(--col-5)
 }
 
 /* tab */
 
-body.a section.e div  {
-    background-color: #d2ddff;
-    color: black
-}
-
-body.b section.e div {
-    background-color: #5b4d60;
-    color: white
-}
-
-body.c section.e div {
-    background-color: #695d57;
-    color: white
-}
-
-body.d section.e div {
+body.f section.e div {
     background-color: var(--col-10)
 }
 
@@ -231,25 +212,21 @@ body.i section.e div {
     background-color: var(--col-20)
 }
 
-body.f section.e div {
+body.d section.e div {
     background-color: var(--col-30)
+}
+
+body.c section.e div {
+    background-color: var(--col-40)
+}
+
+body.b section.e div {
+    background-color: var(--col-50)
 }
 
 /* text color */
 
-body.a section.t {
-    color: #181a1d
-}
-
-body.b section.t {
-    color: #ffedfb
-}
-
-body.c section.t {
-    color: #ffede4
-}
-
-body.d section.t {
+body.f section.t {
     color: var(--col-11)
 }
 
@@ -257,8 +234,16 @@ body.i section.t {
     color: var(--col-22)
 }
 
-body.f section.t {
+body.d section.t {
     color: var(--col-33)
+}
+
+body.c section.t {
+    color: var(--col-44)
+}
+
+body.b section.t {
+    color: var(--col-55)
 }
 
 /* m */
@@ -284,17 +269,23 @@ section.m {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --col-1: #fffaf0;
-        --col-2: #d0d0d0;
-        --col-3: #eeeded;
         --gray-a: white;
-        --col-11: #3d2a1c;
-        --col-22: #111;
-        --col-33: #111;
-        --col-44: #1e1e1e;
-        --col-10: #fffaf0;
+        --col-1: #fffaf0;
+        --col-2: #d2ddff;
+        --col-3: #e8daee;
+        --col-4: #eeeded;
+        --col-5: #d0d0d0;
+        --col-11: #111;
+        --col-22: #333;
+        --col-33: #3d2a1c;
+        --col-44: #181a1d;
+        --col-55: #3c343a;
+        --col-a: #1e1e1e;
+        --col-10: #f2f2f2;
         --col-20: #ececec;
-        --col-30: #f2f2f2;
+        --col-30: #fffaf0;
+        --col-40: #d2ddff;
+        --col-50: #f1e5f9;
         --col-0: black;
         --col-01: white;
     }
@@ -302,17 +293,23 @@ section.m {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --col-1: #24211f;
-        --col-2: #353539;
-        --col-3: #1c1c1e;
         --gray-a: black;
-        --col-11: #d6caba;
+        --col-1: #24211f;
+        --col-2: #584d47;
+        --col-3: #3d3441;
+        --col-4: #1c1c1e;
+        --col-5: #353539;
+        --col-11: #f2f2f0;
         --col-22: #eeeeff;
-        --col-33: #f2f2f0;
-        --col-44: #b4b4be;
-        --col-10: #363432;
+        --col-33: #d6caba;
+        --col-44: #ffede4;
+        --col-55: #ffedfb;
+        --col-a: #b4b4be;
+        --col-10: #3a3a3e;
         --col-20: #48484e;
-        --col-30: #3a3a3e;
+        --col-30: #363432;
+        --col-40: #695d57;
+        --col-50: #5b4d60;
         --col-0: white;
         --col-01: #212224;
     }
