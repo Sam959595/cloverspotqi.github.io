@@ -128,22 +128,10 @@ new IntersectionObserver((x, e) => {
 // }
 // h()
 
-h = () => {
-    window.scroll({
-        behavior: 'smooth'
-    })
-
-    j = () => {
-        b = $(window).scrollTop();
-
-        if ($(window).scrollTop() == $(document).height()) {
-            $(window).scrollTop(0)
-        } else {
-            $(window).scrollTop(b + 1)
-        }
+setInterval(() => {
+    if ($(window).scrollTop() == $(document).height()) {
+        $(window).scrollTop(0)
+    } else {
+        $(window).scrollTop($(window).scrollTop() + 1)
     }
-
-    setInterval(j, 30)
-}
-
-h()
+}, 70)
