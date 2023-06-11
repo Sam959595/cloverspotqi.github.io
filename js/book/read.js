@@ -63,18 +63,16 @@ window.addEventListener('change', () => {
         nn = $('body');
 
     if (vv == 6) {
-        nn.attr('class', 'a')
-    } else if (vv == 7) {
         nn.attr('class', 'b')
-    } else if (vv == 8) {
+    } else if (vv == 5) {
         nn.attr('class', 'c')
-    } else if (vv == 1) {
-        nn.attr('class', 'd')
-    } else if (vv == 2) {
-        nn.attr('class', 'i')
-    } else if (vv == 3) {
-        nn.attr('class', 'f')
     } else if (vv == 4) {
+        nn.attr('class', 'd')
+    } else if (vv == 3) {
+        nn.attr('class', 'i')
+    } else if (vv == 2) {
+        nn.attr('class', 'f')
+    } else if (vv == 1) {
         nn[0].removeAttribute('class')
     }
 })
