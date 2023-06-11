@@ -1,6 +1,6 @@
 // tab nav
 document.addEventListener('dblclick', () => {
-    $('section.e')[0].style.cssText = 'pointer-events: auto; opacity: 1'
+    $('section.e')[0].style = 'pointer-events: auto; opacity: 1'
 })
 window.addEventListener('touchmove', () => {
     $('section.e')[0].removeAttribute('style')
@@ -91,7 +91,7 @@ document.querySelectorAll('u').forEach(x => {
             window.addEventListener('touchmove', () => {
                 if (x.hasAttribute('style')) {
                     x.style.opacity = '0';
-            
+
                     setTimeout(() => {
                         x.removeAttribute('style')
                     }, 400)
@@ -107,8 +107,43 @@ new IntersectionObserver((x, e) => {
         if (xx.isIntersecting) {
             e.unobserve(xx.target);
             setTimeout(() => {
-                $('section.b')[0].style.cssText = 'visibility: visible; transform: translateY(0)'
+                $('section.b')[0].style = 'visibility: visible; transform: translateY(0)'
             }, 3000)
         }
     })
-}).observe($('#rr')[0])
+}).observe($('#rr')[0]);
+
+// h = () => {
+//     let a = $(document).height();
+//     let b = window.screenY;
+
+//     while (b <= a) {
+//         b++;
+//     }
+
+//     window.scroll({
+//         top: b,
+//         behavior: 'smooth'
+//     })
+// }
+// h()
+
+h = () => {
+    window.scroll({
+        behavior: 'smooth'
+    })
+
+    j = () => {
+        b = $(window).scrollTop();
+
+        if ($(window).scrollTop() == $(document).height()) {
+            $(window).scrollTop(0)
+        } else {
+            $(window).scrollTop(b + 1)
+        }
+    }
+
+    setInterval(j, 30)
+}
+
+h()
