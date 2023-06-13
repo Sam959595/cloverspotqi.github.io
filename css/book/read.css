@@ -10,7 +10,9 @@ section.k {
 
     height: env(safe-area-inset-top);
 
-    background-image: linear-gradient(transparent, var(--col-2), transparent);
+    background-color: inherit;
+
+    -webkit-mask-image: -webkit-linear-gradient(transparent, black, transparent)
 }
 
 /* b */
