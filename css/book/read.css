@@ -2,19 +2,6 @@ html {
     scroll-behavior: smooth
 }
 
-/* k */
-
-section.k {
-    position: fixed;
-    inset: 0 0 auto;
-
-    height: env(safe-area-inset-top);
-
-    background-color: inherit;
-
-    -webkit-mask-image: -webkit-linear-gradient(transparent, black, transparent)
-}
-
 /* b */
 
 section.b {
