@@ -77,7 +77,7 @@ section.e>ul>li {
 /* li a */
 
 section.e li.a {
-    padding-block: calc(env(safe-area-inset-top) + 35px) calc(env(safe-area-inset-bottom) + 20px);
+    padding: calc(env(safe-area-inset-top) + 35px) 20px calc(env(safe-area-inset-bottom) + 20px);
 
     display: flex;
     flex-flow: column;
@@ -87,8 +87,6 @@ section.e li.a {
 }
 
 section.e li.a .b {
-    margin-inline: 20px;
-
     display: inherit;
     justify-content: inherit
 }
@@ -97,7 +95,7 @@ section.e li.a h1 {
     font: 900 24px/1 ui-rounded
 }
 
-section.e li.a :where(h1, h3, h4, h5 a) {
+section.e li.a :where(h1, h3, h4) {
     color: white
 }
 
@@ -105,29 +103,19 @@ section.e li.a h1 svg {
     margin-right: 8px
 }
 
-section.e li.a ul.j {
-    padding-inline: 20px;
-
-    display: grid;
-    align-items: end;
-    grid-auto-flow: column;
-
-    overflow-x: scroll
-}
-
-section.e li.a ul.j li {
-    min-width: 300px
+section.e li.a .j {
+    text-align: center
 }
 
 section.e li.a h2 {
-    margin-bottom: .2em;
-
-    font: 700 19px ui-serif;
+    font: 700 21px ui-serif;
 
     color: #ffffffaa
 }
 
 section.e li.a h3 {
+    margin-block: .2em 1em;
+
     font: 900 semi-expanded 32px/1 system-ui
 }
 
@@ -137,13 +125,6 @@ section.e li.a h4 {
 
 section.e li.a h4 u {
     margin-inline: .5em
-}
-
-section.e li.a h5 {
-    margin-top: .4em;
-
-    word-spacing: .4em;
-    font-size: 14px
 }
 
 /* li b */
