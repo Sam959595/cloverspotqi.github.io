@@ -83,7 +83,9 @@ section.e li.a {
     flex-flow: column;
     justify-content: space-between;
 
-    background: center/cover
+    background: center/cover;
+
+    background-color: #2f4879
 }
 
 section.e li.a .b {
@@ -94,8 +96,10 @@ section.e li.a .b {
 }
 
 section.e li.a h1 {
-    font: 900 24px/1 ui-rounded;
+    font: 900 24px/1 ui-rounded
+}
 
+section.e li.a :where(h1, h3, h4, h5 a) {
     color: white
 }
 
@@ -118,25 +122,19 @@ section.e li.a ul.j li {
 }
 
 section.e li.a h2 {
-    margin-bottom: .4em;
+    margin-bottom: .2em;
 
-    font: 700 17px ui-serif;
-
-    filter: saturate(180%);
+    font: 700 19px ui-serif;
 
     color: #ffffffaa
 }
 
 section.e li.a h3 {
-    font: 800 semi-expanded 32px/1 system-ui;
-
-    color: white
+    font: 900 semi-expanded 32px/1 system-ui
 }
 
 section.e li.a h4 {
-    font: 700 14px ui-rounded;
-
-    color: white
+    font: 700 14px ui-rounded
 }
 
 section.e li.a h4 u {
@@ -150,15 +148,47 @@ section.e li.a h5 {
     font-size: 14px
 }
 
-section.e li.a h5 a {
+/* li b */
+
+section.e li.b {
+    margin-block: env(safe-area-inset-top) env(safe-area-inset-bottom)
+}
+
+section.e li.b .k {
+    height: calc(100% - 70px);
+
+    border-radius: 15px;
+
+    background-color: #5e61d6
+}
+
+section.e li.b .h {
+    margin: 20px;
+
+    display: flex;
+    justify-content: space-between
+}
+
+section.e li.b h1 {
+    font: 700 extra-condensed 24px/1 system-ui;
+
     color: white
+}
+
+section.e li.b .g {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    background-color: #aa3c3a
 }
 
 /* color */
 
 @media (prefers-color-scheme: light) {
     :root {
-        --gray-a: white;
+        --gray-a: black;
         --gray-b: black;
 
         --gray: #1d1d1f;
