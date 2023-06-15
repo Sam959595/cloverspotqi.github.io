@@ -83,9 +83,7 @@ section.e li.a {
     flex-flow: column;
     justify-content: space-between;
 
-    background: center/cover;
-
-    background-color: #2f4879
+    background: center/cover
 }
 
 section.e li.a .b {
@@ -151,15 +149,13 @@ section.e li.a h5 {
 /* li b */
 
 section.e li.b {
-    margin-block: env(safe-area-inset-top) env(safe-area-inset-bottom)
+    margin-bottom: env(safe-area-inset-bottom)
 }
 
 section.e li.b .k {
     height: calc(100% - 70px);
 
-    border-radius: 15px;
-
-    background-color: #5e61d6
+    border-radius: 12px
 }
 
 section.e li.b .h {
@@ -179,9 +175,7 @@ section.e li.b .g {
     width: 30px;
     height: 30px;
 
-    border-radius: 50%;
-
-    background-color: #aa3c3a
+    border-radius: 50%
 }
 
 /* color */
