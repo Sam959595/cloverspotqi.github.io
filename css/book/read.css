@@ -10,6 +10,8 @@ section.b {
     position: fixed;
     inset: 0 0 auto;
 
+    height: 60%;
+
     padding: calc(env(safe-area-inset-top) + 1em) 1cm 1em;
 
     border-bottom: 2px solid #77777720;
@@ -21,9 +23,9 @@ section.b {
     background-color: inherit;
     color: var(--col-0);
 
-    transform: translateY(-144px);
+    transform: translateY(-100%);
 
-    transition: transform 3s cubic-bezier(0, 0.47, 0.41, 0.95)
+    transition: transform 3s cubic-bezier(0.31, 0.57, 0.28, 0.96)
 }
 
 section.b h1 {
@@ -92,7 +94,7 @@ section.e :is(h1, select:focus) {
 /* t */
 
 section.t {
-    margin: calc(env(safe-area-inset-top) + 1cm) 1cm 6cm;
+    margin: calc(env(safe-area-inset-top) + 1cm) calc(env(safe-area-inset-right) + 1cm) 6cm calc(env(safe-area-inset-left) + 1cm);
 
     color: var(--col-a)
 }
@@ -298,7 +300,7 @@ section.m {
         --col-10: #3a3a3e;
         --col-20: #48484e;
         --col-30: #363432;
-        --col-40: #695d57;
+        --col-40: #756a64;
         --col-50: #5b4d60;
         --col-0: white;
         --col-01: #212224;
