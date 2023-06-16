@@ -108,7 +108,7 @@ section.e li.a .j {
 }
 
 section.e li.a h2 {
-    font: 700 21px ui-serif;
+    font: 500 21px ui-serif;
 
     color: #ffffffaa
 }
@@ -130,33 +130,49 @@ section.e li.a h4 u {
 /* li b */
 
 section.e li.b {
-    margin-bottom: env(safe-area-inset-bottom)
-}
+    height: 100%;
 
-section.e li.b .k {
-    height: calc(100% - 70px);
-
-    border-radius: 12px
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
 }
 
 section.e li.b .h {
-    margin: 20px;
+    margin: 20px 20px calc(env(safe-area-inset-bottom) + 20px);
 
-    display: flex;
-    justify-content: space-between
+    border-radius: 15px;
+    padding: 1em;
+    
+    background-color: white
 }
 
 section.e li.b h1 {
-    font: 700 extra-condensed 24px/1 system-ui;
+    font: 600 14px system-ui;
+}
+
+/* li h */
+
+section.e li.h {
+    padding: 160px 40px;
+
+    background-color: #191b21
+}
+
+section.e li.h h2 {
+    text-align: justify;
+    font: 500 21px system-ui;
 
     color: white
 }
 
-section.e li.b .g {
-    width: 30px;
-    height: 30px;
+section.e li.h h2::first-letter {
+    -webkit-initial-letter: 3;
 
-    border-radius: 50%
+    margin-right: .8em;
+
+    font-family: ui-serif;
+
+    color: #3dffd8
 }
 
 /* color */
