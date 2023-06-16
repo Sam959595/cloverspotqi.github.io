@@ -94,18 +94,9 @@ section.e :is(h1, select:focus) {
 /* t */
 
 section.t {
-    margin: calc(env(safe-area-inset-top) + 1cm) calc(env(safe-area-inset-right) + 1cm) 6cm calc(env(safe-area-inset-left) + 1cm);
+    margin: 6cm calc(env(safe-area-inset-right) + 1cm) 6cm calc(env(safe-area-inset-left) + 1cm);
 
     color: var(--col-a)
-}
-
-section.t h1 {
-    max-width: 60%;
-
-    margin-left: auto;
-
-    text-align: right;
-    font: 800 semi-expanded 21px system-ui;
 }
 
 section.t h5 {
@@ -115,8 +106,14 @@ section.t h5 {
     font: 800 20px/1.7 system-ui
 }
 
-section.t h6::first-letter {
+section.t h6:not(.f):first-letter {
     margin-left: 1cm
+}
+
+section.t .f:first-letter {
+    -webkit-initial-letter: 3;
+
+    margin-right: .8em
 }
 
 section.t h6 {
