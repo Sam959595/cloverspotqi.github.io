@@ -118,7 +118,7 @@ section.e li.a h3 {
 }
 
 section.e li.a h4 {
-    font: 700 14px ui-rounded
+    font: 700 15px ui-rounded
 }
 
 section.e li.a h4 u {
@@ -138,7 +138,7 @@ section.e li.b {
 }
 
 section.e li.b h1 {
-    font: 700 17px system-ui;
+    font: 590 17px system-ui;
 }
 
 /* li h */
@@ -148,6 +148,7 @@ section.e li.h {
 }
 
 section.e li.h .b {
+    z-index: 9;
     margin-bottom: 1cm;
     
     aspect-ratio: 1
