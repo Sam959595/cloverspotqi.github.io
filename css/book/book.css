@@ -58,7 +58,7 @@ section.n span {
 /* e */
 
 section.e {
-    height: calc(env(safe-area-inset-top) + 100%)
+    height: calc(100% + env(safe-area-inset-top))
 }
 
 section.e>ul {
@@ -81,9 +81,7 @@ section.e li.a {
 
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
-
-    background: center/cover
+    justify-content: space-between
 }
 
 section.e li.a .b {
@@ -132,47 +130,57 @@ section.e li.a h4 u {
 section.e li.b {
     height: 100%;
 
+    padding: calc(env(safe-area-inset-top) + 35px) calc(env(safe-area-inset-right) + 20px) calc(env(safe-area-inset-bottom) + 20px);
+
     display: flex;
     flex-flow: column;
-    justify-content: end;
-}
-
-section.e li.b .h {
-    margin: calc(env(safe-area-inset-bottom) + 20px) calc(env(safe-area-inset-right) + 20px);
-
-    border-radius: 15px;
-    padding: 1em;
-    
-    background-color: white
+    justify-content: space-between
 }
 
 section.e li.b h1 {
-    font: 600 14px system-ui;
+    font: 700 17px system-ui;
 }
 
 /* li h */
 
 section.e li.h {
-    padding: 160px 40px;
-
-    background-color: #191b21
+    overflow-y: scroll
 }
 
-section.e li.h h2 {
-    text-align: justify;
-    font: 500 21px system-ui;
+section.e li.h .b {
+    margin-bottom: 1cm;
+    
+    aspect-ratio: 1
+}
+
+section.e li.h h1 {
+    margin-bottom: 1cm;
+    margin-inline: 20px;
+
+    font: 700 28px system-ui;
 
     color: white
 }
 
-section.e li.h h2::first-letter {
-    -webkit-initial-letter: 3;
+section.e li.h h2 {
+    margin-bottom: 1cm;
+    margin-inline: 20px;
 
-    margin-right: .8em;
+    font: 590 17px system-ui;
 
-    font-family: ui-serif;
+    color: #8e8e9e
+}
 
-    color: #3dffd8
+section.e li.h u {
+    color: white
+}
+
+section.e li.h .n {
+    font-family: ui-serif
+}
+
+section.e li.h .t {
+    font-stretch: extra-condensed
 }
 
 /* color */
