@@ -8,7 +8,6 @@
 	-webkit-font-smoothing: antialiased;
 
 	font: 400 12px/1.33337 system-ui;
-	letter-spacing: 0;
 
 	-webkit-tap-highlight-color: transparent
 }
@@ -128,7 +127,7 @@ img, video {
 }
 
 body {
-	background-color: var(--gray-a)
+	background-color: var(--col-b)
 }
 
 h1,
@@ -140,18 +139,18 @@ h6,
 table,
 textarea,
 article {
-	color: var(--gray)
+	color: var(--col-h)
 }
 
 p,
 time {
-	color: var(--gray-2)
+	color: var(--col-p)
 }
 
 a,
 select,
 button {
-	color: var(--link)
+	color: var(--lnk)
 }
 
 ::-webkit-scrollbar {
