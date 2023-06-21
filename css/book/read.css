@@ -2,6 +2,17 @@ html {
     scroll-behavior: smooth
 }
 
+/* k */
+
+section.k {
+    position: fixed;
+    inset: 0 0 auto;
+
+    height: env(safe-area-inset-top);
+
+    background-image: linear-gradient(transparent, var(--col-b), transparent)
+}
+
 /* b */
 
 section.b {
@@ -171,24 +182,46 @@ section.t.r>* {
 
 /* background */
 
-body.d {
+body.f {
     background-color: var(--col-1)
 }
 
-body.c {
+body.i {
     background-color: var(--col-2)
 }
 
-body.b {
+body.d {
     background-color: var(--col-3)
 }
 
-body.f {
+body.c {
     background-color: var(--col-4)
 }
 
-body.i {
+body.b {
     background-color: var(--col-5)
+}
+
+/* bar */
+
+body.f section.k {
+    background-image: linear-gradient(transparent, var(--col-1), transparent)
+}
+
+body.i section.k {
+    background-image: linear-gradient(transparent, var(--col-2), transparent)
+}
+
+body.d section.k {
+    background-image: linear-gradient(transparent, var(--col-3), transparent)
+}
+
+body.c section.k {
+    background-image: linear-gradient(transparent, var(--col-4), transparent)
+}
+
+body.b section.k {
+    background-image: linear-gradient(transparent, var(--col-5), transparent)
 }
 
 /* tab */
@@ -258,48 +291,48 @@ section.m {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --gray-a: white;
-        --col-1: #fffaf0;
-        --col-2: #d2ddff;
-        --col-3: #e8daee;
-        --col-4: #eeeded;
-        --col-5: #d0d0d0;
+        --col-b: white;
+        --col-1: #eeeded;
+        --col-2: #d0d0d0;
+        --col-3: #fffaf0;
+        --col-4: #d2ddff;
+        --col-5: #e8daee;
+        --col-01: white;
         --col-11: #111;
         --col-22: #333;
         --col-33: #3d2a1c;
         --col-44: #181a1d;
         --col-55: #3c343a;
         --col-a: #1e1e1e;
+        --col-0: black;
         --col-10: #f2f2f2;
         --col-20: #ececec;
         --col-30: #fffaf0;
         --col-40: #d2ddff;
         --col-50: #f1e5f9;
-        --col-0: black;
-        --col-01: white;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --gray-a: black;
-        --col-1: #24211f;
-        --col-2: #584d47;
-        --col-3: #3d3441;
-        --col-4: #1c1c1e;
-        --col-5: #353539;
+        --col-b: black;
+        --col-1: #1c1c1e;
+        --col-2: #353539;
+        --col-3: #24211f;
+        --col-4: #584d47;
+        --col-5: #3d3441;
+        --col-01: #212224;
         --col-11: #f2f2f0;
         --col-22: #eeeeff;
         --col-33: #d6caba;
         --col-44: #ffede4;
         --col-55: #ffedfb;
         --col-a: #b4b4be;
+        --col-0: white;
         --col-10: #3a3a3e;
         --col-20: #48484e;
         --col-30: #363432;
         --col-40: #756a64;
         --col-50: #5b4d60;
-        --col-0: white;
-        --col-01: #212224;
     }
 }
