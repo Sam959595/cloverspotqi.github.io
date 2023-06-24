@@ -61,7 +61,7 @@ section.e {
     position: fixed;
     inset: auto 0 0 auto;
 
-    margin: 0 calc(env(safe-area-inset-right) + 1.5em) calc(env(safe-area-inset-bottom) + 1.5em) 0;
+    margin: 0 calc(env(safe-area-inset-right) + 20px) calc(env(safe-area-inset-bottom) + 20px) 0;
 
     border-radius: 19px;
 
@@ -293,20 +293,20 @@ section.m {
     :root {
         --col-b: white;
         --col-1: #eeeded;
-        --col-2: #d0d0d0;
+        --col-2: #e4cab3;
         --col-3: #fffaf0;
         --col-4: #d2ddff;
         --col-5: #e8daee;
         --col-01: white;
         --col-11: #111;
-        --col-22: #333;
+        --col-22: #111;
         --col-33: #3d2a1c;
         --col-44: #181a1d;
         --col-55: #3c343a;
         --col-a: #1e1e1e;
         --col-0: black;
         --col-10: #f2f2f2;
-        --col-20: #ececec;
+        --col-20: #fbe2cb;
         --col-30: #fffaf0;
         --col-40: #d2ddff;
         --col-50: #f1e5f9;
