@@ -8,9 +8,10 @@ section.k {
     position: fixed;
     inset: 0 0 auto;
 
-    opacity: .7;
-
     height: env(safe-area-inset-top);
+
+    -webkit-filter: opacity(.5);
+    -webkit-backdrop-filter: blur(17px);
 
     background: inherit
 }
