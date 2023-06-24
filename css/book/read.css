@@ -8,7 +8,7 @@ section.k {
     position: fixed;
     inset: 0 0 auto;
 
-    opacity: .7;
+    opacity: .9;
 
     height: env(safe-area-inset-top);
 
