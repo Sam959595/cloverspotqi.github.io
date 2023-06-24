@@ -36,7 +36,7 @@ section.b {
 }
 
 section.b h1 {
-    font: 590 14px system-ui
+    font: 590 15px system-ui
 }
 
 /* e */
@@ -258,7 +258,7 @@ section.m {
         --col-b: white;
         --col-1: #eeeded;
         --col-2: #fffaf0;
-        --col-3: #fff2e8;
+        --col-3: #eee3d9;
         --col-4: #d2ddff;
         --col-5: #e8daee;
         --col-01: white;
@@ -271,7 +271,7 @@ section.m {
         --col-0: black;
         --col-10: #f2f2f2;
         --col-20: #fffaf0;
-        --col-30: #fff9f4;
+        --col-30: #fef3e9;
         --col-40: #d2ddff;
         --col-50: #f1e5f9;
     }
