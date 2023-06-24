@@ -287,29 +287,27 @@ section.m {
     color: var(--col-0)
 }
 
-/* color */
-
 @media (prefers-color-scheme: light) {
     :root {
         --col-b: white;
         --col-1: #eeeded;
-        --col-2: #e4cab3;
-        --col-3: #fffaf0;
+        --col-2: #fffaf0;
+        --col-3: #ffecdd;
         --col-4: #d2ddff;
-        --col-5: #e8daee;
+        --col-5: #5b847f;
         --col-01: white;
         --col-11: #111;
         --col-22: #111;
         --col-33: #3d2a1c;
         --col-44: #181a1d;
-        --col-55: #3c343a;
+        --col-55: white;
         --col-a: #1e1e1e;
         --col-0: black;
         --col-10: #f2f2f2;
-        --col-20: #fbe2cb;
-        --col-30: #fffaf0;
+        --col-20: #fffaf0;
+        --col-30: #fff2e8;
         --col-40: #d2ddff;
-        --col-50: #f1e5f9;
+        --col-50: #87aca8;
     }
 }
 
