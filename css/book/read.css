@@ -21,15 +21,9 @@ section.b {
     position: fixed;
     inset: 0 0 auto;
 
-    height: 60%;
-
-    padding: calc(env(safe-area-inset-top) + 1em) 1cm 1em;
+    padding: calc(env(safe-area-inset-top) + 2em) 1cm 2em;
 
     border-bottom: 2px solid #77777720;
-
-    display: flex;
-    align-items: center;
-    column-gap: 2em;
 
     background-color: inherit;
     color: var(--col-0);
@@ -40,15 +34,7 @@ section.b {
 }
 
 section.b h1 {
-    font-size: 44px
-}
-
-section.b h2 {
-    font: 500 14px system-ui
-}
-
-section.b svg {
-    margin-right: .8em
+    font: 590 14px system-ui
 }
 
 /* e */
