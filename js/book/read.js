@@ -113,10 +113,10 @@ new IntersectionObserver((x, e) => {
     })
 }).observe($('#rr')[0]);
 
-setInterval(() => {
-    if ($('section.t').scrollTop() == $(document).height()) {
-        $(window).scrollTop(0)
-    } else {
-        $(window).scrollTop($(window).scrollTop() + 5)
-    }
-}, 100)
+// setInterval(() => {
+//     if ($('section.t').scrollTop() == $(document).height()) {
+//         $(window).scrollTop(0)
+//     } else {
+//         $(window).scrollTop($(window).scrollTop() + 5)
+//     }
+// }, 100)
