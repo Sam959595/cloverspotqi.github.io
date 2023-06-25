@@ -21,22 +21,52 @@ section.b {
     visibility: hidden;
 
     position: fixed;
-    inset: 0 0 auto;
+    inset: auto 0 0;
 
-    padding: calc(env(safe-area-inset-top) + 2em) 1cm 2em;
+    border-radius: 15px 15px 0 0;
 
-    border-bottom: 2px solid #77777720;
-
-    background-color: inherit;
+    background-color: #48484e;
     color: var(--col-0);
 
-    transform: translateY(-100%);
+    transform: translateY(100%);
 
     transition: transform 3s cubic-bezier(0.31, 0.57, 0.28, 0.96)
 }
 
+section.b .n {
+    margin: 2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+section.b .s {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    padding: 9px;
+
+    background-color: #ffffff20
+}
+
 section.b h1 {
-    font: 590 15px system-ui
+    font: 590 17px system-ui
+}
+
+section.b ul {
+    margin-bottom: calc(env(safe-area-inset-bottom) + 2em);
+
+    display: grid;
+    grid: auto / repeat(4, 1fr);
+    
+    text-align: center
+}
+
+section.b li {
+    font-size: 72px
 }
 
 /* e */
@@ -45,7 +75,6 @@ section.e {
     pointer-events: none;
     opacity: 0;
 
-    z-index: 1;
     position: fixed;
     inset: auto 0 0 auto;
 
