@@ -66,7 +66,7 @@ section.e {
 section.e div {
     border-radius: inherit;
 
-    padding-inline: 1.5em 2em;
+    padding-inline: 1.5em;
 
     display: flex;
     align-items: center;
