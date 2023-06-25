@@ -56,9 +56,9 @@ section.e {
     display: grid;
     row-gap: 5px;
 
-    background-color: #00000016;
+    background-color: #00000029;
 
-    box-shadow: 0 0 50px 0 #0000002d;
+    box-shadow: 0 0 80px 0 #00000052;
 
     transition: opacity .4s
 }
@@ -66,7 +66,7 @@ section.e {
 section.e div {
     border-radius: inherit;
 
-    padding-inline: 1.5em;
+    padding-inline: 1.5em 2em;
 
     display: flex;
     align-items: center;
@@ -77,13 +77,13 @@ section.e div {
 }
 
 section.e select {
-    width: 209px;
-    height: 55px;
+    width: 200px;
+    height: 52px;
 
     text-overflow: ellipsis;
     overflow: hidden;
 
-    font: 500 16px system-ui
+    font: 500 17px ui-rounded
 }
 
 section.e :is(h1, select:focus) {
