@@ -15,19 +15,6 @@ section.k {
     background: inherit
 }
 
-/* r */
-
-section.r {
-    position: fixed;
-    inset: auto 0 0;
-
-    opacity: .9;
-
-    height: env(safe-area-inset-bottom);
-
-    background: inherit
-}
-
 /* b */
 
 section.b {
