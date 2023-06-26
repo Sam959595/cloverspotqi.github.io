@@ -103,15 +103,21 @@ document.querySelectorAll('u').forEach(x => {
 
 // last book
 new IntersectionObserver((x, e) => {
-    x.forEach(xx => {
-        if (xx.isIntersecting) {
-            e.unobserve(xx.target);
+    x.forEach(x => {
+        if (x.isIntersecting) {
+            // e.unobserve(x.target);
             setTimeout(() => {
                 $('section.b')[0].style = 'visibility: visible; transform: translateY(0)'
-            }, 3000)
+            }, 3000);
         }
     })
-}).observe($('#rr')[0]);
+    $('section.b .s').click(() => {
+        $('section.b')[0].style.transform = '';
+        setTimeout(() => {
+            $('section.b')[0].style.visibility = ''
+        }, 2000)
+    })
+}).observe($('#rr')[0])
 
 // setInterval(() => {
 //     if ($('section.t').scrollTop() == $(document).height()) {
