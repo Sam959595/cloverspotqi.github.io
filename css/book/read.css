@@ -12,7 +12,9 @@ section.k {
 
     height: env(safe-area-inset-top);
 
-    background: inherit
+    background: inherit;
+
+    mask: linear-gradient(black 60%, transparent);
 }
 
 /* b */
