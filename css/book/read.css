@@ -42,14 +42,18 @@ section.b .n {
 }
 
 section.b .s {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
 
     border-radius: 50%;
 
     padding: 9px;
 
     background-color: #ffffff20
+}
+
+section.b svg {
+    display: block
 }
 
 section.b h1 {
@@ -59,8 +63,6 @@ section.b h1 {
 }
 
 section.b ul {
-    margin-bottom: calc(env(safe-area-inset-bottom) + 2em);
-
     display: grid;
     grid: auto / repeat(4, 1fr);
     
@@ -69,6 +71,22 @@ section.b ul {
 
 section.b li {
     font-size: 72px
+}
+
+section.b .g {
+    margin: 2em auto calc(env(safe-area-inset-bottom) + 2em);
+
+    display: flex;
+    column-gap: 1em
+}
+
+section.b .g div {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background-color: #ffffff30
 }
 
 /* e */
