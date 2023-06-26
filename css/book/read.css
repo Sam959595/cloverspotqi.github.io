@@ -52,7 +52,7 @@ section.b {
 
     transform: translateY(100%);
 
-    transition: transform 3s cubic-bezier(0.22, 0.68, 0.12, 0.99)
+    transition: transform 2s cubic-bezier(0.22, 0.68, 0.12, 0.99)
 }
 
 section.b .n {
