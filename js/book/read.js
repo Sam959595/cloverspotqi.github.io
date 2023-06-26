@@ -6,6 +6,17 @@ window.addEventListener('touchmove', () => {
     $('section.e')[0].removeAttribute('style')
 })
 
+// padding
+window.addEventListener('change', () => {
+    let vv = $('section.e div:nth-child(1) select').val(), nn = $('section.t')[0];
+
+    if (vv == 1) {
+        nn.classList.remove('w')
+    } else if (vv == 2) {
+        nn.classList.add('w')
+    }
+})
+
 // font
 window.addEventListener('change', () => {
     let vv = $('section.e div:nth-child(1) select').val(), nn = $('section.t')[0];
