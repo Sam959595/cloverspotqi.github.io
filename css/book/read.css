@@ -188,6 +188,12 @@ section.t u {
     text-decoration-thickness: 1.2px
 }
 
+/* padding */
+
+section.t.w {
+    margin-inline: calc(env(safe-area-inset-right) + 20px)
+}
+
 /* font */
 
 section.t.a>* {
@@ -196,16 +202,6 @@ section.t.a>* {
 
 section.t.v>* {
     font-family: ui-serif
-}
-
-/* interval */
-
-section.t.f h6 {
-    line-height: 1.5
-}
-
-section.t.j h6 {
-    line-height: 1.3
 }
 
 /* text */
@@ -224,6 +220,16 @@ section.t.s>* {
 
 section.t.r>* {
     font-size: 18px
+}
+
+/* interval */
+
+section.t.f h6 {
+    line-height: 1.5
+}
+
+section.t.j h6 {
+    line-height: 1.3
 }
 
 /* background */
