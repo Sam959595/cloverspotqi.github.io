@@ -112,9 +112,12 @@ new IntersectionObserver((x, e) => {
         }
     })
     $('section.b .s').click(() => {
+        $('section.b .s')[0].style.opacity = '.3';
+
         $('section.b')[0].style.transform = '';
         setTimeout(() => {
-            $('section.b')[0].style.visibility = ''
+            $('section.b')[0].removeAttribute('style');
+            $('section.b .s')[0].removeAttribute('style')
         }, 2000)
     })
 }).observe($('#rr')[0])
