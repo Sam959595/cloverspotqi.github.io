@@ -63,24 +63,29 @@ section.e {
 section.e div {
     border-radius: inherit;
 
-    padding-inline: 1.5em;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
     background-color: var(--col-01);
     color: var(--col-0)
 }
 
+section.e h1 {
+    opacity: .7;
+
+    margin-top: 1em;
+
+    text-align: center;
+    font-weight: 590
+}
+
 section.e select {
-    width: 200px;
-    height: 53px;
+    width: 220px;
+
+    padding: 0 1em 1em;
 
     text-overflow: ellipsis;
     overflow: hidden;
 
-    font: 500 17px system-ui
+    text-align-last: center;
+    font: 500 14px system-ui
 }
 
 section.e select:focus {
