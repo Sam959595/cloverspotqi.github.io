@@ -19,7 +19,7 @@ window.addEventListener('change', () => {
 
 // font
 window.addEventListener('change', () => {
-    let vv = $('section.e div:nth-child(1) select').val(), nn = $('section.t')[0];
+    let vv = $('section.e div:nth-child(2) select').val(), nn = $('section.t')[0];
 
     if (vv == 1) {
         nn.classList.add('a')
@@ -34,7 +34,7 @@ window.addEventListener('change', () => {
 
 // text
 window.addEventListener('change', () => {
-    let vv = $('section.e div:nth-child(2) select').val(), nn = $('section.t')[0];
+    let vv = $('section.e div:nth-child(3) select').val(), nn = $('section.t')[0];
 
     if (vv == 1) {
         nn.classList.add('y')
@@ -52,7 +52,7 @@ window.addEventListener('change', () => {
 
 // interval
 window.addEventListener('change', () => {
-    let vv = $('section.e div:nth-child(3) select').val(), nn = $('section.t')[0];
+    let vv = $('section.e div:nth-child(4) select').val(), nn = $('section.t')[0];
 
     if (vv == 1) {
         nn.classList.remove('f', 'j')
@@ -67,7 +67,7 @@ window.addEventListener('change', () => {
 
 // background
 window.addEventListener('change', () => {
-    let vv = $('section.e div:nth-child(4) select').val(), nn = $('body');
+    let vv = $('section.e div:nth-child(5) select').val(), nn = $('body');
 
     if (vv == 6) {
         nn.attr('class', 'b')
