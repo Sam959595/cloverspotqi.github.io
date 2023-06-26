@@ -52,7 +52,7 @@ section.b {
 
     transform: translateY(100%);
 
-    transition: transform 3s cubic-bezier(0.31, 0.57, 0.28, 0.96)
+    transition: transform 3s cubic-bezier(0.22, 0.68, 0.12, 0.99)
 }
 
 section.b .n {
@@ -79,8 +79,6 @@ section.b svg {
 }
 
 section.b h1 {
-    margin-left: 37%;
-
     font: 590 17px system-ui
 }
 
