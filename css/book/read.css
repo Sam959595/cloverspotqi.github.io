@@ -53,6 +53,8 @@ section.b .s {
 }
 
 section.b h1 {
+    margin-left: 37%;
+
     font: 590 17px system-ui
 }
 
@@ -115,7 +117,7 @@ section.e select {
     font: 500 17px system-ui
 }
 
-section.e :is(h1, select:focus) {
+section.e select:focus {
     opacity: .5
 }
 
