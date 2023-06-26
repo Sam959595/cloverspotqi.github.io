@@ -74,10 +74,6 @@ section.b .s {
     background-color: #ffffff20
 }
 
-section.b .s:active {
-    opacity: .5
-}
-
 section.b svg {
     display: block
 }
@@ -124,7 +120,7 @@ section.e {
 
     margin: 0 calc(env(safe-area-inset-right) + 20px) calc(env(safe-area-inset-bottom) + 20px) 0;
 
-    border-radius: 17px;
+    border-radius: 18px;
 
     display: grid;
     row-gap: 5px;
