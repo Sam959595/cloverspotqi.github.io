@@ -8,8 +8,7 @@ window.addEventListener('touchmove', () => {
 
 // font
 window.addEventListener('change', () => {
-    let vv = $('section.e div:nth-child(1) select').val(),
-        nn = $('section.t')[0];
+    let vv = $('section.e div:nth-child(1) select').val(), nn = $('section.t')[0];
 
     if (vv == 1) {
         nn.classList.add('a')
@@ -24,8 +23,7 @@ window.addEventListener('change', () => {
 
 // text
 window.addEventListener('change', () => {
-    let vv = $('section.e div:nth-child(2) select').val(),
-        nn = $('section.t')[0];
+    let vv = $('section.e div:nth-child(2) select').val(), nn = $('section.t')[0];
 
     if (vv == 1) {
         nn.classList.add('y')
@@ -43,8 +41,7 @@ window.addEventListener('change', () => {
 
 // interval
 window.addEventListener('change', () => {
-    let vv = $('section.e div:nth-child(3) select').val(),
-        nn = $('section.t')[0];
+    let vv = $('section.e div:nth-child(3) select').val(), nn = $('section.t')[0];
 
     if (vv == 1) {
         nn.classList.remove('f', 'j')
@@ -59,8 +56,7 @@ window.addEventListener('change', () => {
 
 // background
 window.addEventListener('change', () => {
-    let vv = $('section.e div:nth-child(4) select').val(),
-        nn = $('body');
+    let vv = $('section.e div:nth-child(4) select').val(), nn = $('body');
 
     if (vv == 6) {
         nn.attr('class', 'b')
@@ -82,7 +78,7 @@ document.querySelectorAll('u').forEach(x => {
     x.addEventListener('click', e => {
         document.querySelectorAll('section.m').forEach(x => {
             if (x.id === e.target.id) {
-                x.style.cssText = 'opacity: 0; display: block; transition: opacity .4s';
+                x.style = 'opacity: 0; display: block; transition: opacity .4s';
 
                 setTimeout(() => {
                     x.style.opacity = '1'
@@ -107,14 +103,14 @@ new IntersectionObserver((x, e) => {
         if (x.isIntersecting) {
             // e.unobserve(x.target);
             setTimeout(() => {
-                $('section.b')[0].style = 'visibility: visible; transform: translateY(0)'
+                $('section.b')[0].style = 'transform: translateY(0)'
             }, 3000);
         }
     })
     $('section.b .s').click(() => {
+        $('section.b')[0].style.transform = '';
         $('section.b .s')[0].style.opacity = '.3';
 
-        $('section.b')[0].style.transform = '';
         setTimeout(() => {
             $('section.b')[0].removeAttribute('style');
             $('section.b .s')[0].removeAttribute('style')
