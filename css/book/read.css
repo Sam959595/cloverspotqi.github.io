@@ -94,7 +94,7 @@ section.e h1 {
 
 section.b {
     visibility: hidden;
-    
+
     position: fixed;
     inset: auto 0 0;
 
@@ -152,7 +152,7 @@ section.b li {
     section.b {
         margin-inline: auto calc(env(safe-area-inset-right) + 20px);
 
-        width: 430px
+        width: 100vh
     }
 }
 
