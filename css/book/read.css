@@ -310,9 +310,16 @@ body.b section.t {
 
 section.m {
     position: fixed;
-    inset: auto 0 0;
+    inset: 0;
 
-    padding: 20px 1cm max(20px, env(safe-area-inset-bottom));
+    margin: auto;
+
+    width: 380px;
+    height: max-content;
+
+    border-radius: 15px;
+
+    padding: 20px;
 
     display: none;
 
