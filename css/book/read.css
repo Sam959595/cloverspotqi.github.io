@@ -93,6 +93,8 @@ section.e h1 {
 /* b */
 
 section.b {
+    visibility: hidden;
+    
     position: fixed;
     inset: auto 0 0;
 
