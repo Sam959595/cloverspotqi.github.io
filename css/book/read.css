@@ -312,21 +312,17 @@ section.m {
     position: fixed;
     inset: 0 0 auto;
 
-    margin: calc(env(safe-area-inset-top) + 20px) auto;
-
-    width: 390px;
-
-    border-radius: 15px;
-
-    padding: 20px;
+    padding: calc(env(safe-area-inset-top) + 10px) 1cm 40px;
 
     display: none;
 
     text-align: center;
     font-size: 15px;
 
-    background-color: var(--col-s);
-    color: var(--col-0)
+    background-color: inherit;
+    color: var(--col-0);
+
+    mask: linear-gradient(black 80%, transparent)
 }
 
 @media (prefers-color-scheme: light) {
