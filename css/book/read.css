@@ -46,7 +46,7 @@ section.e {
     position: fixed;
     inset: auto 0 0 auto;
 
-    margin: 0 calc(env(safe-area-inset-right) + 20px) 100px 0;
+    margin: 0 calc(env(safe-area-inset-right) + 20px) calc(env(safe-area-inset-bottom) + 20px) 0;
 
     border-radius: 18px;
 
@@ -63,33 +63,31 @@ section.e {
 section.e div {
     border-radius: inherit;
 
+    padding-inline: 1.5em;
+
+    display: flex;
+    align-items: center;
+
     background-color: var(--col-01);
     color: var(--col-0)
 }
 
-section.e h1 {
-    opacity: .7;
-
-    margin-top: 1em;
-
-    text-align: center;
-    font-weight: 590
-}
-
 section.e select {
-    width: 220px;
-
-    padding: 0 1em 1em;
+    width: 200px;
+    height: 53px;
 
     text-overflow: ellipsis;
     overflow: hidden;
 
-    text-align-last: center;
-    font: 500 14px system-ui
+    font: 500 17px system-ui
 }
 
 section.e select:focus {
     opacity: .5
+}
+
+section.e h1 {
+    font-size: 28px
 }
 
 /* b */
@@ -146,6 +144,14 @@ section.b ul {
 
 section.b li {
     font-size: 72px
+}
+
+@media (orientation: landscape) {
+    section.b {
+        margin-inline: auto calc(env(safe-area-inset-right) + 20px);
+
+        width: 430px
+    }
 }
 
 /* t */
