@@ -114,7 +114,7 @@ new IntersectionObserver((x, e) => {
         if (x.isIntersecting) {
             // e.unobserve(x.target);
             setTimeout(() => {
-                $('section.b')[0].style = 'transform: translateY(0)'
+                $('section.b')[0].style = 'visibility: visible; transform: translateY(0)'
             }, 3000);
         }
     })
