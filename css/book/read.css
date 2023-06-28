@@ -102,13 +102,13 @@ section.b .s {
 
     border-radius: 50%;
 
+    display: flex;
+
     background-color: var(--col-e)
 }
 
 section.b svg {
-    margin: 9px;
-
-    display: block
+    margin: auto
 }
 
 section.b h1 {
