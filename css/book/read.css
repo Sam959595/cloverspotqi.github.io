@@ -102,12 +102,12 @@ section.b .s {
 
     border-radius: 50%;
 
-    padding: 9px;
-
     background-color: var(--col-e)
 }
 
 section.b svg {
+    margin: 9px;
+
     display: block
 }
 
