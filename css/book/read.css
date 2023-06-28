@@ -106,7 +106,7 @@ section.b .s {
 }
 
 section.b svg {
-    margin: 9px 0 0 9px
+    margin: 9px
 }
 
 section.b h1 {
@@ -317,7 +317,7 @@ section.m {
         --col-b: white;
         --col-1: #eeeded;
         --col-2: #fffaf0;
-        --col-3: #eee3d9;
+        --col-3: #e2dbcf;
         --col-4: #d2ddff;
         --col-5: #e8daee;
         --col-01: white;
