@@ -18,43 +18,6 @@ html {
     overscroll-behavior-y: none
 }
 
-html,
-body {
-    height: 100%
-}
-
-/* n */
-
-section.n {
-    position: fixed;
-    inset: 0 0 auto;
-
-    margin: calc(env(safe-area-inset-top) + 20px) calc(env(safe-area-inset-right) + 20px);
-
-    display: flex;
-    column-gap: 5px
-}
-
-section.n div {
-    flex-grow: 1;
-
-    height: 3px;
-
-    border-radius: 2px;
-
-    background-color: #ffffff50
-}
-
-section.n span {
-    height: inherit;
-
-    border-radius: inherit;
-
-    display: block;
-
-    background-color: white
-}
-
 /* e */
 
 section.e {
@@ -65,39 +28,35 @@ section.e>ul {
     height: 100%;
 
     display: grid;
-    grid-auto-flow: column;
+    grid-auto-flow: row;
 
-    overflow-x: scroll
+    overflow-y: scroll
 }
 
 section.e>ul>li {
-    width: 100vw
+    width: 100vw;
+    height: 100vh
 }
 
 /* li a */
 
 section.e li.a {
-    padding: calc(env(safe-area-inset-top) + 35px) calc(env(safe-area-inset-right) + 20px) calc(env(safe-area-inset-bottom) + 20px);
+    padding: calc(env(safe-area-inset-top) + 20px) calc(env(safe-area-inset-right) + 20px) calc(env(safe-area-inset-bottom) + 20px);
 
     display: flex;
     flex-flow: column;
     justify-content: space-between
 }
 
-section.e li.a .b {
-    display: inherit;
-    justify-content: inherit
-}
-
 section.e li.a h1 {
-    font: 900 24px/1 ui-rounded
+    font: 590 21px system-ui
 }
 
 section.e li.a :where(h1, h3, h4) {
     color: white
 }
 
-section.e li.a h1 svg {
+section.e li.a .j h1 svg {
     margin-right: 8px
 }
 
@@ -105,40 +64,26 @@ section.e li.a .j {
     text-align: center
 }
 
-section.e li.a h2 {
+section.e li.a .j h2 {
+    opacity: .8;
+
     font: 500 21px ui-serif;
 
-    color: #ffffffaa
+    color: white
 }
 
-section.e li.a h3 {
+section.e li.a .j h3 {
     margin-block: .2em 1em;
 
     font: 900 semi-expanded 32px/1 system-ui
 }
 
-section.e li.a h4 {
+section.e li.a .j h4 {
     font: 700 14px ui-rounded
 }
 
-section.e li.a h4 u {
+section.e li.a .j h4 u {
     margin-inline: .5em
-}
-
-/* li b */
-
-section.e li.b {
-    height: 100%;
-
-    padding: calc(env(safe-area-inset-top) + 35px) calc(env(safe-area-inset-right) + 20px) calc(env(safe-area-inset-bottom) + 20px);
-
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between
-}
-
-section.e li.b h1 {
-    font: 590 17px system-ui;
 }
 
 /* li h */
