@@ -12,29 +12,7 @@ section.k {
 
     height: env(safe-area-inset-top);
 
-    background-image: linear-gradient(var(--col-b) 60%, transparent)
-}
-
-/* status */
-
-body.f section.k {
-    background-image: linear-gradient(var(--col-1) 60%, transparent)
-}
-
-body.i section.k {
-    background-image: linear-gradient(var(--col-2) 60%, transparent)
-}
-
-body.d section.k {
-    background-image: linear-gradient(var(--col-3) 60%, transparent)
-}
-
-body.c section.k {
-    background-image: linear-gradient(var(--col-4) 60%, transparent)
-}
-
-body.b section.k {
-    background-image: linear-gradient(var(--col-5) 60%, transparent)
+    background-color: inherit
 }
 
 /* e */
