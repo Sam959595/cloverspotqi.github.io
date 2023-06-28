@@ -86,6 +86,20 @@ section.e li.a .j h4 u {
     margin-inline: .5em
 }
 
+section.e li.a ul {
+    margin-bottom: .8em;
+
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    column-gap: 1em
+}
+section.e li.a li {
+    font: 800 21px ui-rounded;
+
+    color: white
+}
+
 /* li h */
 
 section.e li.h {
