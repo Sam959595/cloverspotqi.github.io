@@ -139,7 +139,7 @@ section.b h1 {
 
 section.b ul {
     display: grid;
-    grid: auto / repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     
     text-align: center
 }
@@ -153,6 +153,16 @@ section.b li {
         margin-inline: auto calc(env(safe-area-inset-right) + 20px);
 
         width: 100vh
+    }
+}
+
+@media (max-height: 400px) {
+    section.b {
+        padding-bottom: max(.8em, env(safe-area-inset-bottom))
+    }
+
+    section.b .n {
+        margin-bottom: .8em
     }
 }
 
@@ -205,6 +215,7 @@ section.t.w {
 /* font */
 
 section.t.a>* {
+    font-size-adjust: .5;
     font-family: georgia
 }
 
@@ -312,7 +323,7 @@ section.m {
     position: fixed;
     inset: 0 0 auto;
 
-    padding: calc(env(safe-area-inset-top) + 10px) 1cm 40px;
+    padding: calc(env(safe-area-inset-top) + 10px) 1cm 1cm;
 
     display: none;
 
