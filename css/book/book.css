@@ -38,22 +38,12 @@ section.e .j {
     text-align: center
 }
 
-section.e .j h2 {
-    opacity: .8;font: 500 21px ui-serif;
-
-    color: white
-}
-
-section.e .j h3 {
-    margin-block: .2em 1em
-}
-
 section.e .j h3.m {
     font: 900 semi-expanded 32px/1 system-ui
 }
 
 section.e .j h3.r {
-    font: 900 ultra-condensed 52px/1 system-ui
+    font: 900 ultra-condensed 52px/.8 system-ui
 }
 
 section.e .j h3.s {
@@ -62,6 +52,18 @@ section.e .j h3.s {
 
 section.e .j h3.t {
     font: 900 32px/1 ui-serif
+}
+
+section.e .j h2 {
+    opacity: .8;
+
+    margin-block: .5em 2em;
+    
+    font: 500 21px ui-serif;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+
+    color: white
 }
 
 section.e .j h4 {
@@ -74,7 +76,7 @@ section.e .j h4 u {
 
 section.e ul.g {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     column-gap: 1em
 }
 
