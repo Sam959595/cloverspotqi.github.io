@@ -21,26 +21,8 @@ html {
 /* e */
 
 section.e {
-    height: calc(100% + env(safe-area-inset-top))
-}
+    height: 100vh;
 
-section.e>ul {
-    height: 100%;
-
-    display: grid;
-    grid-auto-flow: row;
-
-    overflow-y: scroll
-}
-
-section.e>ul>li {
-    width: 100vw;
-    height: 100vh
-}
-
-/* li a */
-
-section.e li.a {
     padding: calc(env(safe-area-inset-top) + 20px) calc(env(safe-area-inset-right) + 20px) calc(env(safe-area-inset-bottom) + 20px);
 
     display: flex;
@@ -48,99 +30,73 @@ section.e li.a {
     justify-content: space-between
 }
 
-section.e li.a h1 {
-    font: 590 21px system-ui
-}
-
-section.e li.a :where(h1, h3, h4) {
+section.e :where(h1, h3, h4) {
     color: white
 }
 
-section.e li.a .j h1 svg {
-    margin-right: 8px
-}
-
-section.e li.a .j {
+section.e .j {
     text-align: center
 }
 
-section.e li.a .j h2 {
+section.e .j h2 {
     opacity: .8;
+
+    margin-bottom: .6rem;
 
     font: 500 21px ui-serif;
 
     color: white
 }
 
-section.e li.a .j h3 {
-    margin-block: .2em 1em;
-
+section.e .j h3 {
     font: 900 semi-expanded 32px/1 system-ui
 }
 
-section.e li.a .j h4 {
+section.e .j h4 {
     font: 700 14px ui-rounded
 }
 
-section.e li.a .j h4 u {
+section.e .j h4 u {
     margin-inline: .5em
 }
 
-section.e li.a ul {
-    margin-bottom: .8em;
-
-    display: grid;
-    grid-auto-columns: max-content;
-    grid-auto-flow: column;
+section.e ul.g {
+    display: flex;
+    justify-content: space-between;
     column-gap: 1em
 }
-section.e li.a li {
+
+section.e ul.g li {
     font: 800 21px ui-rounded;
 
     color: white
 }
 
-/* li h */
+section.e .k {
+    margin-block: 3rem;
 
-section.e li.h {
-    overflow-y: scroll
+    display: flex;
+    column-gap: 1em
 }
 
-section.e li.h .b {
-    z-index: 9;
-    margin-bottom: 1cm;
-    
-    aspect-ratio: 1
+section.e button {
+    width: -webkit-fill-available;
+
+    border-radius: 30px;
+
+    padding: 1em;
+
+    font: 700 17px system-ui;
+
+    background-color: white;
+    color: #111
 }
 
-section.e li.h h1 {
-    margin-bottom: 1cm;
-    margin-inline: 20px;
+section.e button:first-child {
+    -webkit-backdrop-filter: blur(17px);
 
-    font: 700 28px system-ui;
-
+    background-color: #ffffff43;
     color: white
-}
-
-section.e li.h h2 {
-    margin-bottom: 1cm;
-    margin-inline: 20px;
-
-    font: 590 17px system-ui;
-
-    color: #8e8e9e
-}
-
-section.e li.h u {
-    color: white
-}
-
-section.e li.h .n {
-    font-family: ui-serif
-}
-
-section.e li.h .t {
-    font-stretch: extra-condensed
 }
 
 /* color */
