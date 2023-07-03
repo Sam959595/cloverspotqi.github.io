@@ -39,17 +39,29 @@ section.e .j {
 }
 
 section.e .j h2 {
-    opacity: .8;
-
-    margin-bottom: .6rem;
-
-    font: 500 21px ui-serif;
+    opacity: .8;font: 500 21px ui-serif;
 
     color: white
 }
 
 section.e .j h3 {
+    margin-block: .2em 1em
+}
+
+section.e .j h3.m {
     font: 900 semi-expanded 32px/1 system-ui
+}
+
+section.e .j h3.r {
+    font: 900 ultra-condensed 52px/1 system-ui
+}
+
+section.e .j h3.s {
+    font: 900 42px/1 ui-rounded
+}
+
+section.e .j h3.t {
+    font: 900 32px/1 ui-serif
 }
 
 section.e .j h4 {
@@ -69,33 +81,6 @@ section.e ul.g {
 section.e ul.g li {
     font: 800 21px ui-rounded;
 
-    color: white
-}
-
-section.e .k {
-    margin-block: 3rem;
-
-    display: flex;
-    column-gap: 1em
-}
-
-section.e button {
-    width: -webkit-fill-available;
-
-    border-radius: 30px;
-
-    padding: 1em;
-
-    font: 700 17px system-ui;
-
-    background-color: white;
-    color: #111
-}
-
-section.e button:first-child {
-    -webkit-backdrop-filter: blur(17px);
-
-    background-color: #ffffff43;
     color: white
 }
 
