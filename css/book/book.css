@@ -20,11 +20,24 @@ html {
 
 /* e */
 
-section.e {
+section.e ul.l {
     height: 100vh;
 
-    padding: calc(env(safe-area-inset-top) + 20px) calc(env(safe-area-inset-right) + 20px) calc(env(safe-area-inset-bottom) + 20px);
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 
+    display: grid
+}
+
+section.e ul.l>li {
+    height: inherit;
+
+    scroll-snap-align: start;
+
+    padding: calc(env(safe-area-inset-top) + 20px) calc(env(safe-area-inset-right) + 20px) calc(env(safe-area-inset-bottom) + 20px)
+}
+
+section.e li.m {
     display: flex;
     flex-flow: column;
     justify-content: space-between
@@ -84,6 +97,11 @@ section.e ul.g li {
     font: 800 21px ui-rounded;
 
     color: white
+}
+
+section.e h1 {
+    text-align: center;
+    font: 590 21px/1.4 system-ui
 }
 
 /* color */
