@@ -12,21 +12,28 @@ video {
     transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
 }
 
+html, body {
+    overscroll-behavior-y: none
+}
+
 /* e */
 
-section.e ul.l {
-    height: 100vh;
+section.e {
+    overflow-y: hidden
+}
 
-    overscroll-behavior-y: none;
+section.e ul.l {
+    margin-top: env(safe-area-inset-top);
+
     overflow-y: scroll;
 
-    display: grid
+    height: calc(100vh - env(safe-area-inset-top))
 }
 
 section.e li.m {
-    height: inherit;
+    padding: 20px calc(20px + env(safe-area-inset-right)) calc(20px + env(safe-area-inset-bottom));
 
-    padding: calc(env(safe-area-inset-top) + 20px) calc(env(safe-area-inset-right) + 20px) calc(env(safe-area-inset-bottom) + 20px);
+    height: inherit;
 
     display: flex;
     flex-flow: column;
@@ -97,15 +104,15 @@ section.e .k {
     margin-block: 3rem;
 
     display: flex;
-    column-gap: 1em
+    justify-content: space-between
 }
 
 section.e button {
-    width: -webkit-fill-available;
+    width: 90px;
 
-    border-radius: 30px;
+    border-radius: 19px;
 
-    padding: 1em;
+    padding-block: .3em;
 
     font: 700 17px system-ui;
 
@@ -121,7 +128,7 @@ section.e button:first-child {
 }
 
 section.e .j h4 {
-    font: 700 14px ui-rounded
+    font: 600 14px ui-rounded
 }
 
 section.e .j h4 u {
@@ -149,7 +156,7 @@ section.e .s {
 section.e h5 {
     margin: 1cm;
 
-    font: 800 28px/1 cochin
+    font: 700 21px/1 system-ui
 }
 
 section.e .s ul {
@@ -162,7 +169,7 @@ section.e .s ul {
 
 section.e .s ul a {
     position: relative;
-    aspect-ratio: 1/1.5;
+    aspect-ratio: 1/1.6;
 
     border-radius: 2px;
 
