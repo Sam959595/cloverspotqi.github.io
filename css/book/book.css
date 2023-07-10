@@ -12,7 +12,7 @@ video {
     transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
 }
 
-html, body {
+html {
     overscroll-behavior-y: none
 }
 
@@ -23,15 +23,15 @@ section.e {
 }
 
 section.e ul.l {
-    margin-top: env(safe-area-inset-top);
-
     overflow-y: scroll;
 
-    height: calc(100vh - env(safe-area-inset-top))
+    margin-top: env(safe-area-inset-top);
+
+    height: calc(100vh - env(safe-area-inset-top) - 52px - env(safe-area-inset-bottom))
 }
 
 section.e li.m {
-    padding: 20px calc(20px + env(safe-area-inset-right)) calc(20px + env(safe-area-inset-bottom));
+    padding: 20px calc(20px + env(safe-area-inset-right));
 
     height: inherit;
 
@@ -58,10 +58,6 @@ section.e li.m li {
 
 section.e .j {
     text-align: center
-}
-
-section.e .j h3 {
-    margin-bottom: 11px
 }
 
 section.e .j h3.a {
@@ -93,6 +89,8 @@ section.e .j h3.e {
 section.e .j h2 {
     opacity: .8;
 
+    margin-block: 11px 40px;
+
     font: 500 21px ui-serif;
     letter-spacing: 10px;
     word-spacing: 10px;
@@ -100,35 +98,8 @@ section.e .j h2 {
     color: white
 }
 
-section.e .k {
-    margin-block: 3rem;
-
-    display: flex;
-    justify-content: space-between
-}
-
-section.e button {
-    width: 90px;
-
-    border-radius: 19px;
-
-    padding-block: .3em;
-
-    font: 700 17px system-ui;
-
-    background-color: white;
-    color: #111
-}
-
-section.e button:first-child {
-    -webkit-backdrop-filter: blur(17px);
-
-    background-color: #ffffff43;
-    color: white
-}
-
 section.e .j h4 {
-    font: 600 14px ui-rounded
+    font: 600 15px ui-rounded
 }
 
 section.e .j h4 u {
@@ -154,13 +125,13 @@ section.e .s {
 }
 
 section.e h5 {
-    margin: 1cm;
+    padding: 1cm;
 
     font: 700 21px/1 system-ui
 }
 
 section.e .s ul {
-    margin: 1cm;
+    margin-inline: 1cm;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -194,6 +165,30 @@ section.e .s ul a:before {
 
     background-size: inherit;
     background-image: url('https://i.postimg.cc/T2DVVz3h/g.jpg')
+}
+
+section.e .f {
+    height: calc(52px + env(safe-area-inset-bottom));
+
+    padding: 10px 20px;
+    
+    display: flex;
+    justify-content: end;
+
+    background-color: #00000080
+}
+
+section.e .f button {
+    height: 32px;
+
+    border-radius: 15px;
+
+    padding: .2em .8em;
+
+    font: 700 19px system-ui;
+
+    background-color: #ffffff40;
+    color: white
 }
 
 /* color */
