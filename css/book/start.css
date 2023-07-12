@@ -43,16 +43,18 @@ section.l {
 /* n */
 
 section.n {
-    margin: calc(20px + env(safe-area-inset-top)) 0 calc(20px + env(safe-area-inset-bottom)) 12px
+    margin: calc(20px + env(safe-area-inset-top)) 0 calc(20px + env(safe-area-inset-bottom))
 }
 
 section.n li {
     border-radius: 15px;
 
-    padding-top: 20px;
-
     display: flex;
     column-gap: 10px
+}
+
+section.n .h {
+    padding: 20px 0 20px 12px
 }
 
 section.n img {
@@ -68,23 +70,25 @@ section.n .f {
     margin: 10px auto;
 
     width: 2px;
-    height: calc(100% - 91px);
+    height: calc(100% - 90px);
 
     border-radius: 1px;
 
-    background-color: #333333
+    background-color: #333
+}
+
+section.n li+li .j {
+    border-top: .1px solid #333
 }
 
 section.n .j {
-    border-bottom: .1px solid #5c5c5c;
-
-    padding: 0 12px 20px 0
+    padding: 20px 12px 20px 0
 }
 
 section.n h1 {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 
-    font-weight: 510;
+    font-weight: 590;
     letter-spacing: .2px
 }
 
