@@ -1,3 +1,9 @@
 {
+    "name": "Chewing",
+    "icons": [
+        {
+            "src": "icon.jpg"
+        }
+    ],
     "display": "standalone"
 }
