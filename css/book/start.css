@@ -12,163 +12,95 @@ video {
     transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
 }
 
-/* body */
+/* k */
 
-html {
-    /* background-color: #5e606b; */
-    /* background-color: #1c74d9; */
-    /* background-color: #4E617A; */
-    /* background-color: #630d2d; */
-    /* background-color: #4f1139; */
-    overscroll-behavior-y: none
+section.k {
+    position: fixed;
+    inset: 0 0 auto;
+
+    height: env(safe-area-inset-top);
+
+    filter: opacity(.5);
+    -webkit-backdrop-filter: blur(15px);
+
+    background-color: inherit
 }
 
-/* e */
+/* l */
 
-section.e>ul {
-    height: 100vh;
-    
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+section.l {
+    position: fixed;
+    inset: auto 0 0;
 
-    display: grid;
-    grid-auto-flow: row
+    height: env(safe-area-inset-bottom);
+
+    filter: opacity(.5);
+    -webkit-backdrop-filter: blur(15px);
+
+    background-color: inherit
 }
 
-section.e>ul>li {
-    scroll-snap-align: start;
+/* n */
 
-    width: 100vw;
-    height: inherit;
-
-    padding: calc(env(safe-area-inset-top) + 20px) calc(env(safe-area-inset-right) + 20px) calc(env(safe-area-inset-bottom) + 20px)
+section.n {
+    margin: calc(20px + env(safe-area-inset-top)) 0 calc(20px + env(safe-area-inset-bottom)) 12px
 }
 
-section.e h5 {
-    font: 700 extra-condensed 32px/1 system-ui;
+section.n li {
+    border-radius: 15px;
 
-    color: white
-}
-
-section.e ul.j {
-    display: grid;
-    grid: auto/repeat(3, 1fr);
-    gap: 10px;
-
-    overflow-x: scroll;
-
-    scroll-snap-type: x mandatory;
-    scroll-padding-left: 20px
-}
-
-section.e ul.j li {
-    width: calc((100vw - 60px) / 3);
-
-    scroll-snap-align: start
-}
-
-section.e h2 {
-    font: 700 condensed 32px system-ui;
-
-    color: white
-}
-
-section.e ul.j a {
-    border-radius: 11px;
-
-    padding: 10px;
-
-    display: block;
-
-    text-align: center;
-
-    background-color: #141416
-}
-
-section.e ul.j img {
-    width: -webkit-fill-available;
-
-    aspect-ratio: 1;
-
-    border-radius: 50%
-}
-
-section.e ul.j h1 {
-    margin-top: 10px;
-
-    font-weight: 600;
-
-    color: white
-}
-section.e ul.j p {
-    font: 500 11px ui-rounded;
-
-    color: var(--gray-4)
-}
-
-section.e li.f {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-
-    background: center/cover
-}
-
-section.e li.f h1 {
-    font: 590 17px system-ui;
-
-    color: white
-}
-
-/* f */
-
-section.f ul {
-    margin: 35px 35px max(35px, env(safe-area-inset-bottom));
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2em
-}
-
-section.f li a {
-    aspect-ratio: 1/1.53;
-
-    border-radius: 2px;
+    padding-top: 20px;
 
     display: flex;
-
-    background-size: cover;
-
-    box-shadow: 0 0 10px #00000040
+    column-gap: 10px
 }
 
-section.f h6 {
-    margin: auto .8em .8em auto;
+section.n img {
+    width: 35px;
+    height: 35px;
 
-    font: 700 13px ui-rounded;
+    border-radius: 50%;
 
-    color: white;
-
-    text-shadow: 0 0 10px #00000080
+    display: block
 }
 
-section.f p {
-    margin-top: 1em;
+section.n .f {
+    margin: 10px auto;
 
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    width: 2px;
+    height: calc(100% - 91px);
 
-    font-size: 11px
+    border-radius: 1px;
+
+    background-color: #333333
+}
+
+section.n .j {
+    border-bottom: .1px solid #5c5c5c;
+
+    padding: 0 12px 20px 0
+}
+
+section.n h1 {
+    margin-bottom: 5px;
+
+    font-weight: 510;
+    letter-spacing: .2px
+}
+
+section.n :where(h1, h2) {
+    font-size: 15px;
+    line-height: 1.4;
+
+    color: var(--col-i)
 }
 
 /* color */
 
 @media (prefers-color-scheme: light) {
     :root {
-        --gray-a: black;
-        --gray-b: black;
+        --col-b: white;
+        --col-i: black;
 
         --gray: #1d1d1f;
         --gray-2: #8e8e93;
@@ -190,8 +122,8 @@ section.f p {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --gray-a: black;
-        --gray-b: white;
+        --col-b: black;
+        --col-i: white;
 
         --gray: #f5f5f7;
         --gray-2: #8e8e93;
