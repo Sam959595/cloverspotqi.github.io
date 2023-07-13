@@ -50,11 +50,11 @@ section.n li {
     border-radius: 15px;
 
     display: flex;
-    column-gap: 10px
+    column-gap: 8px
 }
 
 section.n .h {
-    padding: 20px 0 20px 12px
+    padding: 16px 0 12px 12px
 }
 
 section.n img {
@@ -79,7 +79,7 @@ section.n .f {
     margin: 10px auto;
 
     width: 2px;
-    height: calc(100% - 90px);
+    height: calc(100% - 91px);
 
     border-radius: 1px;
 
@@ -91,7 +91,7 @@ section.n li+li .j {
 }
 
 section.n .j {
-    padding: 20px 12px 20px 0
+    padding: 12px 12px 12px 0
 }
 
 section.n .d {
@@ -107,7 +107,7 @@ section.n h1 {
 }
 
 section.n :where(time, p) {
-    font-size: 15px
+    font-size: 14px
 }
 
 section.n :where(h1, h2) {
@@ -118,7 +118,7 @@ section.n :where(h1, h2) {
 }
 
 section.n p {
-    margin-block: 8px
+    margin-block: 9px
 }
 
 /* color */
