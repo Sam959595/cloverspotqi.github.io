@@ -57,7 +57,7 @@ section.n .h {
     padding: 16px 0 12px 12px
 }
 
-section.n img {
+section.n .h img {
     border-radius: 50%;
 
     display: block
@@ -95,13 +95,13 @@ section.n .j {
 }
 
 section.n .d {
+    margin-bottom: 4px;
+
     display: flex;
     justify-content: space-between
 }
 
 section.n h1 {
-    margin-bottom: 4px;
-
     font-weight: 590;
     letter-spacing: .2px
 }
@@ -115,6 +115,14 @@ section.n :where(h1, h2) {
     line-height: 1.4;
 
     color: var(--col-i)
+}
+
+section.n .v {
+    margin-block: 10px;
+
+    width: -webkit-fill-available;
+
+    border-radius: 8px
 }
 
 section.n p {
