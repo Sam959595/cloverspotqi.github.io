@@ -129,6 +129,25 @@ section.n .v {
     border-radius: 8px
 }
 
+section.n .e {
+    margin-block: 20px;
+
+    display: flex;
+    justify-content: end;
+    column-gap: 10px
+}
+
+section.n .e li {
+    border-radius: 20px;
+
+    padding: .3em .8em .3em .5em;
+
+    font: 700 15px ui-rounded;
+
+    background-color: var(--col-a);
+    color: var(--col-i)
+}
+
 section.n p {
     margin-block: 9px
 }
