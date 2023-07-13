@@ -47,8 +47,6 @@ section.n {
 }
 
 section.n li {
-    border-radius: 15px;
-
     display: flex;
     column-gap: 8px
 }
@@ -136,18 +134,20 @@ section.n .k {
 }
 
 section.n .e {
-    display: inherit;
-    column-gap: 10px
+    display: flex;
+    column-gap: 8px
 }
 
-section.n .e li {
-    border-radius: 20px;
+section.n .e div {
+    justify-self: end;
 
-    padding: .4em .8em .4em .5em;
+    border-radius: 15px;
+    border: 2px solid var(--col-c);
+
+    padding: 3px 12px 4px 6px;
 
     font: 700 14px ui-rounded;
 
-    background-color: var(--col-c);
     color: var(--col-i)
 }
 
