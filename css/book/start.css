@@ -144,7 +144,7 @@ section.n .e li {
 
     font: 700 15px ui-rounded;
 
-    background-color: var(--col-a);
+    background-color: var(--col-c);
     color: var(--col-i)
 }
 
@@ -158,9 +158,10 @@ section.n p {
     :root {
         --col-b: white;
         --col-i: black;
-        --col-p: #8e8e93;
+        --col-p: #afafb1;
 
-        --col-a: #dfdee8;
+        --col-a: #dddee8;
+        --col-c: #f2f2f6;
 
         --link: #007aff;
 
@@ -181,6 +182,7 @@ section.n p {
         --col-p: #77777b;
 
         --col-a: #222129;
+        --col-c: #1d1d1f;
 
         --link: #0a84ff;
 
