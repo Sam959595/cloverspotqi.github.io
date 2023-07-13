@@ -5,9 +5,8 @@
 	box-sizing: border-box;
 
 	-webkit-text-size-adjust: none;
-	-webkit-font-smoothing: antialiased;
 
-	font: 400 12px/1.33337 system-ui;
+	font: 400 12px/1.3 system-ui;
 
 	-webkit-tap-highlight-color: transparent
 }
@@ -119,7 +118,9 @@ select {
 }
 
 img {
-	vertical-align: top
+	vertical-align: top;
+
+	display: block
 }
 
 img, video {
