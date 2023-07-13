@@ -118,13 +118,13 @@ select {
 }
 
 img {
-	vertical-align: top;
-
-	display: block
+	vertical-align: top
 }
 
 img, video {
-	pointer-events: none
+	pointer-events: none;
+
+	display: block
 }
 
 body {
