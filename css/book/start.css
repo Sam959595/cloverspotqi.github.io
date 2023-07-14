@@ -114,17 +114,16 @@ section.n .e {
 
     display: flex;
     justify-content: end;
-    column-gap: 10px
+    column-gap: 8px
 }
 
 section.n .e div {
     border-radius: 15px;
+    border: 2px solid var(--col-a);
 
-    padding: .4em .8em .4em .5em;
+    padding: .2em .8em .3em .4em;
 
     font: 700 14px ui-rounded;
-
-    background-color: var(--col-c);
     color: var(--col-h)
 }
 
@@ -153,12 +152,12 @@ section.n .e div {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --col-b: #121216;
+        --col-b: #101010;
         --col-h: white;
         --col-p: #77777b;
 
         --col-a: #222129;
-        --col-c: black;
+        --col-c: #222129;
 
         --link: #0a84ff;
 
