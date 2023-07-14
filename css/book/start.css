@@ -153,12 +153,12 @@ section.n .e div {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --col-b: #0e0e0e;
+        --col-b: #121216;
         --col-h: white;
         --col-p: #77777b;
 
         --col-a: #222129;
-        --col-c: #1d1d1f;
+        --col-c: black;
 
         --link: #0a84ff;
 
