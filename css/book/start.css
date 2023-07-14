@@ -51,11 +51,11 @@ section.n .f {
     margin-block: 10px;
 
     width: 2px;
-    height: calc(100% - 120px);
+    height: calc(100% - 92px);
 
     border-radius: 1px;
 
-    background-image: linear-gradient(var(--col-a), var(--col-h))
+    background-color: var(--col-a)
 }
 
 section.n .g {
@@ -68,12 +68,6 @@ section.n .r {
 
 section.n .y {
     margin: -2px 0 0 6px
-}
-
-section.n h3 {
-    margin-bottom: 10px;
-
-    font: 590 15px ui-rounded
 }
 
 section.n li+li .j {
