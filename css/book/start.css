@@ -119,7 +119,7 @@ section.n .e {
 
 section.n .e div {
     border-radius: 15px;
-    border: 2px solid var(--col-a);
+    border: 2px solid var(--col-c);
 
     padding: .2em .8em .3em .4em;
 
@@ -156,8 +156,8 @@ section.n .e div {
         --col-h: white;
         --col-p: #77777b;
 
-        --col-a: #222129;
-        --col-c: #222129;
+        --col-a: #212121;
+        --col-c: #222;
 
         --link: #0a84ff;
 
