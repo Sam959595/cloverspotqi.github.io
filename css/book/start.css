@@ -40,10 +40,14 @@ section.n li {
 section.n .h {
     padding: 16px 0 16px 12px;
 
-    text-align: -webkit-center
+    display: flex;
+    align-items: center;
+    flex-flow: column
 }
 
 section.n .h img {
+    aspect-ratio: 1;
+
     border-radius: 50%
 }
 
@@ -51,7 +55,7 @@ section.n .f {
     margin-block: 10px;
 
     width: 2px;
-    height: calc(100% - 92px);
+    height: 100%;
 
     border-radius: 1px;
 
@@ -105,6 +109,9 @@ section.n .v {
     margin-block: 10px;
 
     width: -webkit-fill-available;
+
+    aspect-ratio: 1/1.4;
+    object-fit: cover;
 
     border-radius: 8px
 }
