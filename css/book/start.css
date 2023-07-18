@@ -12,9 +12,40 @@ video {
     transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
 }
 
+/* l */
+
+section.l {
+    z-index: 1;
+
+    position: fixed;
+    inset: 0;
+
+    display: none;
+    
+    -webkit-backdrop-filter: blur(10px);
+
+    background-color: #00000080
+}
+
+section.l .a {
+    margin: 0 40px 0 auto;
+    padding-block: 500px 40px;
+
+    overflow-y: scroll;
+
+    display: grid;
+    row-gap: 20px;
+}
+
+section.l .a div {
+    text-align: center;
+    font-size: 52px
+}
+
 /* k */
 
 section.k {
+    z-index: 1;
     position: fixed;
     inset: 0 0 auto;
 
@@ -33,13 +64,13 @@ section.n {
 }
 
 section.n li {
+    padding: 12px;
+
     display: flex;
     column-gap: 8px
 }
 
 section.n .h {
-    padding: 16px 0 16px 12px;
-
     display: flex;
     align-items: center;
     flex-flow: column
@@ -62,6 +93,16 @@ section.n .f {
     background-color: var(--col-a)
 }
 
+section.n h5 {
+    aspect-ratio: 1;
+
+    width: 16px;
+    
+    border-radius: 50%;
+
+    font: 700 8px/1.4 ui-rounded
+}
+
 section.n .g {
     margin-left: 20px
 }
@@ -74,12 +115,18 @@ section.n .y {
     margin: -2px 0 0 6px
 }
 
-section.n li+li .j {
-    border-top: .1px solid var(--col-a)
+section.n .q {
+    margin-right: 13px;
+
+    clip-path: path("M8 0c1.792 0 3.446.59 4.78 1.584C11.304 3.043 10.4 5.374 10.4 8c0 2.626.904 4.957 2.379 6.416A8 8 0 1 1 8 0Z")
 }
 
-section.n .j {
-    padding: 12px 12px 12px 0
+section.n .w {
+    margin: -16px -13px 0 0
+}
+
+section.n li+li {
+    border-top: .1px solid var(--col-c)
 }
 
 section.n .d {
@@ -108,30 +155,12 @@ section.n :where(h1, h2) {
 section.n .v {
     margin-block: 10px;
 
-    width: -webkit-fill-available;
+    width: 100%;
 
-    aspect-ratio: 1/1.4;
+    aspect-ratio: 1/1.5;
     object-fit: cover;
 
     border-radius: 8px
-}
-
-section.n .e {
-    margin-top: 12px;
-
-    display: flex;
-    justify-content: end;
-    column-gap: 8px
-}
-
-section.n .e div {
-    border-radius: 15px;
-    border: 2px solid var(--col-c);
-
-    padding: .2em .8em .3em .4em;
-
-    font: 700 14px ui-rounded;
-    color: var(--col-h)
 }
 
 /* color */
@@ -143,7 +172,7 @@ section.n .e div {
         --col-p: #afafb1;
 
         --col-a: #dddee8;
-        --col-c: #f2f2f6;
+        --col-c: #c5c6d0;
 
         --link: #007aff;
 
@@ -164,7 +193,7 @@ section.n .e div {
         --col-p: #77777b;
 
         --col-a: #212121;
-        --col-c: #222;
+        --col-c: #333;
 
         --link: #0a84ff;
 
