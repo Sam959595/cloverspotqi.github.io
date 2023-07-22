@@ -1,138 +1,88 @@
+img,
+video {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
+}
+
+/* html */
+
 html {
     overscroll-behavior-y: none
 }
 
-/* d */
+/* e */
 
-section.d {
-    margin-top: env(safe-area-inset-top);
-
-    overscroll-behavior-x: none;
-    overflow-x: scroll;
-
-    display: grid;
-    grid-template-columns: calc(100vw - 40px) 100vw;
-
-    scroll-snap-type: x mandatory
-}
-
-section.d>* {
-    scroll-snap-align: start
-}
-
-/* m */
-
-section.m {
-    padding: 30px
-}
-
-section.m p {
-    margin-bottom: 20px;
-
-    font: 700 semi-expanded 16px system-ui
-}
-
-section.m u {
-    font-size: 14px
-}
-
-section.m h1 {
-    font: 800 semi-expanded 44px/1 system-ui
-}
-
-section.m h1:first-child {
-    color: #46474c
-}
-
-section.m h1:last-child {
-    margin-top: 30px;
-    
-    color: #87898e
-}
-
-/* n */
-
-section.n {
-    padding: 40px 20px calc(40px + env(safe-area-inset-bottom));
+section.e {
+    padding: calc(8rem + env(safe-area-inset-top)) 3rem calc(1rem + env(safe-area-inset-bottom));
 
     height: 100vh;
 
-    overflow-y: scroll
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 }
 
-section.n input {
-    padding-bottom: 50px;
-
-    width: 100%;
-
-    font: 510 21px system-ui;
-
-    background-color: transparent;
-    color: var(--col-h)
-}
-section.n input::placeholder {
-    color: var(--col-p)
+section.e :where(h1, h2, h3, h4) {
+    color: white
 }
 
-section.n ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5rem 3rem
+section.e h1.a {
+    font: 900 semi-expanded 32px/1 system-ui
 }
 
-section.n li {
-    text-align: -webkit-center
+section.e h1.b {
+    text-transform: uppercase;
+    font: 900 ultra-condensed 44px/.8 system-ui
 }
 
-section.n img {
-    aspect-ratio: 1;
-
-    width: -webkit-fill-available;
-
-    object-fit: cover;
-    
-    border-radius: 50%;
-    border: 1px solid #ffffff10
+section.e h1.c {
+    font: 900 32px/1 ui-serif
 }
 
-section.n p {
-    margin-block: 10px 5px;
+section.e h1.d {
+    margin-bottom: 1rem;
 
-    font: 590 12px ui-rounded
+    text-transform: uppercase;
+    font: 900 7lvw/1 cochin;
+    letter-spacing: 2px
 }
 
-section.n h1 {
-    word-break: break-word;
-    font: 510 13px/1.2 system-ui
+section.e h1.e {
+    text-transform: capitalize;
+    font: 900 52px/1 signpainter
 }
 
-section.n h6 {
-    margin-block: 60px 50px;
+section.e h2 {
+    opacity: .8;
 
-    font: 510 21px system-ui;
+    margin-top: 2rem;
 
-    color: var(--col-p)
+    text-transform: uppercase;
+    font: 590 semi-expanded 16px system-ui;
+    letter-spacing: 2px;
+    word-spacing: 10px
 }
 
-section.n .b li {
-    text-align: -webkit-center
+section.e .n {
+    margin-inline: auto;
+
+    text-align: center
 }
 
-section.n .b img {
-    aspect-ratio: 1/1.6;
-
-    width: 60px;
-
-    object-fit: cover;
-    
-    border-radius: 5px;
-    border: 1px solid #ffffff10
+section.e h3 {
+    font: 510 16px system-ui
 }
 
-section.n .b h1 {
-    margin-top: 1rem;
+section.e h4 {
+    margin-block: 3px 20px;
 
-    font-size: 15px
+    font-size: 13px
+}
+
+section.e .k {
+    display: flex;
+    column-gap: 35px
 }
 
 /* color */
@@ -140,41 +90,29 @@ section.n .b h1 {
 @media (prefers-color-scheme: light) {
     :root {
         --col-b: white;
-        --col-h: black;
-        --col-p: #afafb1;
+        --col-h: #111;
 
-        --col-a: #dddee8;
-        --col-c: #c5c6d0;
+        --gray: #1d1d1f;
+        --gray-2: #8e8e93;
+        --gray-3: #eaeaee;
+        --gray-4: #afafb1;
+        --gray-5: #f2f2f6;
 
-        --link: #007aff;
-
-        --blue: #3a8fff;
-        --red: #ff2d55;
-        --pink: #ff9cce;
-        --violet: #9283ff;
-        --green: #31c692;
-        --orange: #fd9900;
-        --slate: #7c8696;
+        --lnk: #007aff;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --col-b: #101010;
+        --col-b: black;
         --col-h: white;
-        --col-p: #77777b;
 
-        --col-a: #212121;
-        --col-c: #333;
+        --gray: #f5f5f7;
+        --gray-2: #8e8e93;
+        --gray-3: #0e0e0e;
+        --gray-4: #77777b;
+        --gray-5: #151517;
 
-        --link: #0a84ff;
-
-        --blue: #3a8fff;
-        --red: #ff367c;
-        --pink: #ec55df;
-        --violet: #9283ff;
-        --green: #77ffc6;
-        --orange: #ff9f00;
-        --slate: #7c8696;
+        --lnk: #0a84ff;
     }
 }
