@@ -92,7 +92,7 @@ section.n .a img {
     object-fit: cover;
     
     border-radius: 50%;
-    border: 1px solid #ffffff10
+    border: 1px solid var(--col-l)
 }
 
 section.n .a p {
@@ -122,7 +122,7 @@ section.n .b img {
     object-fit: cover;
     
     border-radius: 5px;
-    border: 1px solid #ffffff10
+    border: 1px solid var(--col-l)
 }
 
 section.n .b h1 {
@@ -148,7 +148,9 @@ section.n .b p {
         --col-a: #dddee8;
         --col-c: #c5c6d0;
 
-        --link: #007aff;
+        --col-l: #00000010;
+
+        --lnk: #007aff;
 
         --blue: #3a8fff;
         --red: #ff2d55;
@@ -169,7 +171,9 @@ section.n .b p {
         --col-a: #212121;
         --col-c: #333;
 
-        --link: #0a84ff;
+        --col-l: #ffffff10;
+
+        --lnk: #0a84ff;
 
         --blue: #3a8fff;
         --red: #ff367c;
