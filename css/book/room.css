@@ -55,7 +55,7 @@ section.m h1:last-child {
 section.n {
     padding: 40px 20px calc(40px + env(safe-area-inset-bottom));
 
-    height: 100vh;
+    height: calc(100vh - env(safe-area-inset-top));
 
     overflow-y: scroll
 }
