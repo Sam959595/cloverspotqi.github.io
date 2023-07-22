@@ -1,3 +1,6 @@
+html {
+    overscroll-behavior-y: none
+}
 /* k */
 
 section.k {
@@ -13,10 +16,20 @@ section.k {
     background-color: inherit
 }
 
+/* d */
+
+section.d {
+    overscroll-behavior-x: none;
+    overflow-x: scroll;
+
+    display: grid;
+    grid-template-columns: calc(100vw - 40px) 100vw;
+}
+
 /* m */
 
 section.m {
-    margin: calc(30px + env(safe-area-inset-top)) 60px 60px 30px
+    margin: calc(30px + env(safe-area-inset-top)) 30px 30px
 }
 
 section.m p {
@@ -45,8 +58,12 @@ section.m h1:last-child {
 
 /* n */
 
+section.n {
+    margin: calc(30px + env(safe-area-inset-top)) 20px calc(20px + env(safe-area-inset-bottom))
+}
+
 section.n input {
-    padding: 30px;
+    padding-block: 30px;
 
     width: 100%;
 
@@ -60,8 +77,6 @@ section.n input::placeholder {
 }
 
 section.n ul {
-    margin: 40px 20px calc(20px + env(safe-area-inset-bottom));
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem 3rem
