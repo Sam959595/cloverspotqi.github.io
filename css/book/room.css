@@ -2,11 +2,24 @@ html {
     overscroll-behavior-y: none
 }
 
+/* k */
+
+section.k {
+    z-index: 1;
+    position: fixed;
+    inset: 0 0 auto;
+
+    height: env(safe-area-inset-top);
+
+    filter: opacity(.5);
+    -webkit-backdrop-filter: blur(15px);
+
+    background-color: inherit
+}
+
 /* d */
 
 section.d {
-    margin-top: env(safe-area-inset-top);
-
     overscroll-behavior-x: none;
     overflow-x: scroll;
 
@@ -16,17 +29,19 @@ section.d {
     scroll-snap-type: x mandatory
 }
 
-section.d>* {
+section.d>div {
+    overflow-y: scroll;
+
+    height: 100vh;
+
+    padding: calc(40px + env(safe-area-inset-top)) 20px calc(40px + env(safe-area-inset-bottom));
+    
     scroll-snap-align: start
 }
 
 /* m */
 
-section.m {
-    padding: 40px 20px
-}
-
-section.m h1 {
+section.d .m h1 {
     margin: 0 0 50px 10px;
 
     font: 510 21px system-ui;
@@ -34,17 +49,17 @@ section.m h1 {
     color: var(--col-p)
 }
 
-section.m ul {
+section.d .m ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem 3rem
 }
 
-section.m li {
+section.d .m li {
     text-align: -webkit-center
 }
 
-section.m img {
+section.d .m img {
     aspect-ratio: 1/1.6;
 
     width: 60px;
@@ -55,13 +70,13 @@ section.m img {
     border: 1px solid var(--col-l)
 }
 
-section.m h6 {
+section.d .m h6 {
     margin-top: 1rem;
 
     font-size: 13px
 }
 
-section.m p {
+section.d .m p {
     margin-top: 5px;
 
     font-weight: 510
@@ -69,15 +84,7 @@ section.m p {
 
 /* n */
 
-section.n {
-    padding: 40px 20px calc(40px + env(safe-area-inset-bottom));
-
-    height: calc(100vh - env(safe-area-inset-top));
-
-    overflow-y: scroll
-}
-
-section.n input {
+section.d .n input {
     padding-bottom: 50px;
 
     width: 100%;
@@ -87,21 +94,21 @@ section.n input {
     background-color: transparent;
     color: var(--col-h)
 }
-section.n input::placeholder {
+section.d .n input::placeholder {
     color: var(--col-p)
 }
 
-section.n ul {
+section.d .n ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem 3rem
 }
 
-section.n li {
+section.d .n li {
     text-align: -webkit-center
 }
 
-section.n img {
+section.d .n img {
     aspect-ratio: 1;
 
     width: -webkit-fill-available;
@@ -112,13 +119,13 @@ section.n img {
     border: 1px solid var(--col-l)
 }
 
-section.n p {
+section.d .n p {
     margin-block: 10px 5px;
 
     font-weight: 510
 }
 
-section.n h1 {
+section.d .n h1 {
     word-break: break-word;
     font: 510 13px/1.2 system-ui
 }
