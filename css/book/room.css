@@ -11,7 +11,7 @@ section.k {
 
     -webkit-backdrop-filter: blur(15px);
 
-    background-color: #10101080
+    background-color: var(--col-t)
 }
 
 section.k ul {
@@ -57,7 +57,7 @@ section.d>div {
 /* m */
 
 section.d .m h1 {
-    margin: 0 0 50px 10px;
+    margin: 10px 0 40px 10px;
 
     font: 510 21px system-ui;
 
@@ -141,9 +141,17 @@ section.d .n p {
     font-weight: 510
 }
 
-section.d .n h1 {
+section.d .n h6 {
     word-break: break-word;
     font: 510 13px/1.2 system-ui
+}
+
+section.d .n h1 {
+    margin-block: 50px 40px;
+
+    font: 510 21px system-ui;
+
+    color: var(--col-p)
 }
 
 /* color */
@@ -156,6 +164,7 @@ section.d .n h1 {
 
         --col-a: #dddee8;
         --col-c: #c5c6d0;
+        --col-t: #ffffffaa;
 
         --col-l: #00000010;
 
@@ -179,6 +188,7 @@ section.d .n h1 {
 
         --col-a: #212121;
         --col-c: #333;
+        --col-t: #101010aa;
 
         --col-l: #ffffff05;
 
