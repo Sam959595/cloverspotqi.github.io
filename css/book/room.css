@@ -9,12 +9,27 @@ section.k {
     position: fixed;
     inset: 0 0 auto;
 
-    height: env(safe-area-inset-top);
-
-    filter: opacity(.5);
     -webkit-backdrop-filter: blur(15px);
 
-    background-color: inherit
+    background-color: #10101080
+}
+
+section.k ul {
+    margin: calc(10px + env(safe-area-inset-top)) 30px 10px;
+
+    display: flex;
+    justify-content: space-between
+}
+
+section.k li {
+    font: 24px system-ui
+}
+
+section.k img {
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50%
 }
 
 /* d */
@@ -34,7 +49,7 @@ section.d>div {
 
     height: 100vh;
 
-    padding: calc(40px + env(safe-area-inset-top)) 20px calc(40px + env(safe-area-inset-bottom));
+    padding: calc(60px + env(safe-area-inset-top)) 20px calc(40px + env(safe-area-inset-bottom));
     
     scroll-snap-align: start
 }
@@ -85,7 +100,7 @@ section.d .m p {
 /* n */
 
 section.d .n input {
-    padding-bottom: 50px;
+    padding-block: 10px 40px;
 
     width: 100%;
 
@@ -94,6 +109,7 @@ section.d .n input {
     background-color: transparent;
     color: var(--col-h)
 }
+
 section.d .n input::placeholder {
     color: var(--col-p)
 }
