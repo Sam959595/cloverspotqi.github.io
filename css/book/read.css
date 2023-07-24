@@ -145,7 +145,11 @@ section.b li {
 /* t */
 
 section.t {
-    margin: 6cm calc(env(safe-area-inset-right) + 1cm);
+    overflow-y: scroll;
+    
+    height: 100vh;
+
+    padding: 3cm calc(env(safe-area-inset-right) + 1cm);
 
     color: var(--col-a)
 }
@@ -185,7 +189,7 @@ section.t u {
 /* padding */
 
 section.t.w {
-    margin-inline: calc(env(safe-area-inset-right) + 20px)
+    padding-inline: calc(env(safe-area-inset-right) + 20px)
 }
 
 /* font */
