@@ -1,6 +1,4 @@
 html {
-    overscroll-behavior-y: none;
-    
     scroll-behavior: smooth
 }
 
@@ -127,10 +125,6 @@ section.b h1 {
 /* t */
 
 section.t {
-    overflow-y: scroll;
-    
-    height: 100vh;
-
     padding: 3cm calc(env(safe-area-inset-right) + 1cm);
 
     color: var(--col-a)
