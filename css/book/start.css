@@ -12,6 +12,10 @@ video {
     transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
 }
 
+html {
+    overscroll-behavior-y: none
+}
+
 /* g */
 
 section.g {
