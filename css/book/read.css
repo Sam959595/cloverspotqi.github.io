@@ -106,10 +106,6 @@ section.b svg {
 }
 
 section.b h1 {
-    font: 590 17px system-ui
-}
-
-section.b h2 {
     margin-top: 1em;
 
     text-align: center;
