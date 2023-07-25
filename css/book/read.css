@@ -78,9 +78,9 @@ section.b {
     position: fixed;
     inset: auto 0 0;
 
-    border-radius: 15px 15px 0 0;
+    height: 100vh;
 
-    padding: 2em 2em calc(env(safe-area-inset-bottom) + 2cm);
+    padding: calc(env(safe-area-inset-top) + 2em) 2em calc(env(safe-area-inset-bottom) + 2cm);
 
     background-color: var(--col-s);
     color: var(--col-0);
@@ -91,7 +91,7 @@ section.b {
 }
 
 section.b .s {
-    margin-left: auto;
+    margin: 0 0 3cm auto;
     
     width: 30px;
     height: 30px;
@@ -106,33 +106,21 @@ section.b svg {
 }
 
 section.b h1 {
-    margin-top: 2cm;
-
     text-align: center;
     font: 590 32px system-ui
 }
 
 @media (orientation: landscape) {
     section.b {
-        margin-inline: auto calc(env(safe-area-inset-right) + 20px);
-        padding-bottom: calc(env(safe-area-inset-bottom) + 2em);
-
-        width: 100vh
+        padding-inline: calc(env(safe-area-inset-left) + 2cm)
     }
 
-    section.b h2 {
-        text-align: left;
-        font-size: 19px
-    }
-}
-
-@media (max-height: 400px) {
-    section.b {
-        padding-bottom: max(.8em, env(safe-area-inset-bottom))
+    section.b h1 {
+        font-size: 28px
     }
 
-    section.b .n {
-        margin-bottom: .8em
+    section.b .s {
+        margin-bottom: 1cm
     }
 }
 
