@@ -90,13 +90,9 @@ section.b {
     transition: transform 2s cubic-bezier(.19, .21, 0, 1)
 }
 
-section.b .n {
-    display: flex;
-    align-items: center;
-    justify-content: space-between
-}
-
 section.b .s {
+    margin-left: auto;
+    
     width: 30px;
     height: 30px;
 
@@ -114,7 +110,7 @@ section.b h1 {
 }
 
 section.b h2 {
-    margin-top: 2cm;
+    margin-top: 1em;
 
     text-align: center;
     font: 590 32px system-ui
@@ -129,10 +125,8 @@ section.b h2 {
     }
 
     section.b h2 {
-        margin-top: 1em;
-
         text-align: left;
-        font-size: 17px
+        font-size: 19px
     }
 }
 
