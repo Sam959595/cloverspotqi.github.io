@@ -80,7 +80,7 @@ section.b {
 
     border-radius: 15px 15px 0 0;
 
-    padding-block: 2em calc(env(safe-area-inset-bottom) + 2em);
+    padding: 2em 2em calc(env(safe-area-inset-bottom) + 2cm);
 
     background-color: var(--col-s);
     color: var(--col-0);
@@ -91,8 +91,6 @@ section.b {
 }
 
 section.b .n {
-    margin: 0 2em 2em;
-
     display: flex;
     align-items: center;
     justify-content: space-between
@@ -115,22 +113,26 @@ section.b h1 {
     font: 590 17px system-ui
 }
 
-section.b ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    
-    text-align: center
-}
+section.b h2 {
+    margin-top: 2cm;
 
-section.b li {
-    font-size: 72px
+    text-align: center;
+    font: 590 32px system-ui
 }
 
 @media (orientation: landscape) {
     section.b {
         margin-inline: auto calc(env(safe-area-inset-right) + 20px);
+        padding-bottom: calc(env(safe-area-inset-bottom) + 2em);
 
         width: 100vh
+    }
+
+    section.b h2 {
+        margin-top: 1em;
+
+        text-align: left;
+        font-size: 17px
     }
 }
 
