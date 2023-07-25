@@ -2,6 +2,7 @@
 document.addEventListener('dblclick', () => {
     $('section.e')[0].style = 'pointer-events: auto; opacity: 1'
 })
+
 window.addEventListener('touchmove', () => {
     $('section.e')[0].removeAttribute('style')
 })
@@ -108,31 +109,23 @@ document.querySelectorAll('u').forEach(x => {
     })
 })
 
-// last book
-new IntersectionObserver((x, e) => {
-    x.forEach(x => {
-        if (x.isIntersecting) {
-            // e.unobserve(x.target);
-            setTimeout(() => {
-                $('section.b')[0].style = 'visibility: visible; transform: translateY(0)'
-            }, 3000);
-        }
-    })
+// note
+window.onload = (() => {
+    setTimeout(() => {
+        $('section.t')[0].style.touchAction = 'none';
+        $('section.b')[0].style = 'visibility: visible; transform: translateY(0)'
+    }, 5000);
+
     $('section.b .s').click(() => {
+        $('section.t')[0].style.touchAction = '';
+        $('section.b')[0].style.pointerEvents = 'none';
         $('section.b')[0].style.transform = '';
         $('section.b .s')[0].style.opacity = '.3';
 
         setTimeout(() => {
             $('section.b')[0].removeAttribute('style');
-            $('section.b .s')[0].removeAttribute('style')
+            $('section.b .s')[0].removeAttribute('style');
+            $('section.b')[0].remove()
         }, 2000)
     })
-}).observe($('#rr')[0])
-
-// setInterval(() => {
-//     if ($('section.t').scrollTop() == $(document).height()) {
-//         $(window).scrollTop(0)
-//     } else {
-//         $(window).scrollTop($(window).scrollTop() + 5)
-//     }
-// }, 100)
+})
