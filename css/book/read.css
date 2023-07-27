@@ -125,7 +125,7 @@ section.b h1 {
 /* t */
 
 section.t {
-    margin: 3cm calc(env(safe-area-inset-right) + 1cm);
+    margin: 1cm calc(env(safe-area-inset-right) + 1cm);
 
     color: var(--col-a)
 }
@@ -273,18 +273,23 @@ body.b section.t {
     color: var(--col-55)
 }
 
-section.t button.a {
-    margin-block: 2cm 1cm
+/* d */
+
+section.d {
+    margin: 2cm auto calc(1cm + env(safe-area-inset-bottom));
+    padding-inline: 1cm;
+
+    max-width: 480px
 }
 
-section.t button.b {
-    margin-top: 10px
+section.d button.a {
+    margin-block: 1cm 10px
 }
 
-section.t button {
+section.d button {
     width: -webkit-fill-available;
 
-    border-radius: 18px;
+    border-radius: 15px;
 
     padding: 15px;
 
