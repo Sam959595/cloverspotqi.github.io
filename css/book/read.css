@@ -273,17 +273,20 @@ body.b section.t {
     color: var(--col-55)
 }
 
-section.t div {
-    display: flex;
-    column-gap: 1em
+section.t button.a {
+    margin-block: 2cm 1cm
+}
+
+section.t button.b {
+    margin-top: 10px
 }
 
 section.t button {
-    margin: 2cm auto;
+    width: -webkit-fill-available;
 
-    border-radius: 15px;
+    border-radius: 18px;
 
-    padding: 10px;
+    padding: 15px;
 
     display: block;
 
