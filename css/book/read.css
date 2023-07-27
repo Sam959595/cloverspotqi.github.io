@@ -125,7 +125,7 @@ section.b h1 {
 /* t */
 
 section.t {
-    padding: 3cm calc(env(safe-area-inset-right) + 1cm);
+    margin: 3cm calc(env(safe-area-inset-right) + 1cm);
 
     color: var(--col-a)
 }
@@ -165,7 +165,7 @@ section.t u {
 /* padding */
 
 section.t.w {
-    padding-inline: calc(env(safe-area-inset-right) + 20px)
+    margin-inline: calc(env(safe-area-inset-right) + 20px)
 }
 
 /* font */
@@ -273,23 +273,43 @@ body.b section.t {
     color: var(--col-55)
 }
 
+section.t div {
+    display: flex;
+    column-gap: 1em
+}
+
+section.t button {
+    margin: 2cm auto;
+
+    border-radius: 15px;
+
+    padding: 10px;
+
+    display: block;
+
+    font: 590 17px system-ui;
+
+    background-color: var(--col-0);
+    color: var(--col-b)
+}
+
 /* m */
 
 section.m {
     position: fixed;
-    inset: 0 0 auto;
+    inset: auto 0 0;
 
-    padding: calc(env(safe-area-inset-top) + 10px) 1cm 20px;
+    padding: 20px 1cm max(calc(env(safe-area-inset-bottom) + 10px), 20px);
 
     display: none;
 
     text-align: center;
     font-size: 15px;
 
-    border-bottom: .1px solid #83838350;
-
     background-color: inherit;
-    color: var(--col-0)
+    color: var(--col-0);
+
+    box-shadow: 0 0 20px #00000021
 }
 
 @media (prefers-color-scheme: light) {
