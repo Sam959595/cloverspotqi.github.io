@@ -91,7 +91,7 @@ section.n {
 }
 
 section.n ul {
-    margin-block: calc(12px + env(safe-area-inset-top)) calc(12px + env(safe-area-inset-bottom))
+    margin-block: calc(10px + env(safe-area-inset-top)) calc(10px + env(safe-area-inset-bottom))
 }
 
 section.n li {
@@ -105,21 +105,36 @@ section.n li+li {
 section.n .k {
     margin: 0 10px 2rem 0;
 
-    display: flex
+    display: flex;
+    align-items: start
 }
 
 section.n .k img {
+    margin: 5px 15px 0;
+
     border-radius: 50%
 }
 
+section.n .h {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+section.n h2 {
+    font: 590 15px system-ui;
+    letter-spacing: .2px
+}
+
 section.n .k h1 {
-    font-size: 15px
+    font-size: 15px;
+    line-height: 1.4
 }
 
 section.n .b {
     overflow-x: scroll;
 
-    padding-inline: 59px 10px;
+    padding-inline: 60px 10px;
 
     display: grid;
     grid-template-columns: max-content;
@@ -154,7 +169,7 @@ section.n .s img {
 }
 
 section.n .a h6 {
-    margin-left: -5px;
+    margin-left: -4px;
 
     aspect-ratio: 1;
 
@@ -236,7 +251,7 @@ section.n .m h5 {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --col-b: #1c1c1d;
+        --col-b: #101010;
         --col-h: white;
         --col-p: #77777b;
 
