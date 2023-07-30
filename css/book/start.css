@@ -120,7 +120,7 @@ section.n .k h1 {
 section.n .b {
     overflow-x: scroll;
 
-    padding-inline: 60px 10px;
+    padding-inline: 59px 14px;
 
     display: grid;
     grid-template-columns: max-content;
@@ -138,7 +138,7 @@ section.n .b img {
 }
 
 section.n .s {
-    margin: 2rem 10px 0 0;
+    margin: 2rem 14px 0 0;
 
     display: flex;
     align-items: start
