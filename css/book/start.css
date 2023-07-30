@@ -103,13 +103,12 @@ section.n li+li {
 }
 
 section.n .k {
-    margin: 0 10px 2rem 0
+    margin: 0 10px 2rem 0;
+
+    display: flex
 }
 
 section.n .k img {
-    width: 30px;
-    height: 30px;
-
     border-radius: 50%
 }
 
@@ -120,12 +119,12 @@ section.n .k h1 {
 section.n .b {
     overflow-x: scroll;
 
-    padding-inline: 59px 14px;
+    padding-inline: 59px 10px;
 
     display: grid;
     grid-template-columns: max-content;
     grid-auto-flow: column;
-    column-gap: 14px
+    column-gap: 10px
 }
 
 section.n .b img {
@@ -138,7 +137,7 @@ section.n .b img {
 }
 
 section.n .s {
-    margin: 2rem 14px 0 0;
+    margin: 2rem 10px 0 0;
 
     display: flex;
     align-items: start
@@ -237,7 +236,7 @@ section.n .m h5 {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --col-b: #101010;
+        --col-b: #1c1c1d;
         --col-h: white;
         --col-p: #77777b;
 
