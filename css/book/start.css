@@ -129,6 +129,7 @@ section.n .b {
 }
 
 section.n .b img {
+    object-fit: cover;
     aspect-ratio: 1/1.4;
 
     width: 240px;
