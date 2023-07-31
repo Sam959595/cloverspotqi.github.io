@@ -95,7 +95,7 @@ section.n ul {
 }
 
 section.n li {
-    padding-block: 10px 20px;
+    padding-block: 20px;
 }
 
 section.n li+li {
@@ -103,7 +103,7 @@ section.n li+li {
 }
 
 section.n .k {
-    margin: 0 10px 2rem 0;
+    margin: 0 10px 24px 0;
 
     display: flex;
     align-items: start
@@ -152,7 +152,7 @@ section.n .b img {
 }
 
 section.n .s {
-    margin: 2rem 10px 0 0;
+    margin: 24px 10px 0 0;
 
     display: flex;
     align-items: start
