@@ -110,7 +110,7 @@ section.n .k {
 }
 
 section.n .k img {
-    margin: 5px 10px 0;
+    margin: 5px 12px 0;
 
     border-radius: 50%
 }
@@ -134,7 +134,7 @@ section.n .k h1 {
 section.n .b {
     overflow-x: scroll;
 
-    padding-inline: 50px 10px;
+    padding-inline: 54px 10px;
 
     display: grid;
     grid-template-columns: max-content;
@@ -159,7 +159,7 @@ section.n .s {
 }
 
 section.n .s .a {
-    margin: 6px 11px 0;
+    margin: 6px 13px 0;
 
     display: inherit
 }
