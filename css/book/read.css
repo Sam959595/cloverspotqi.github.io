@@ -57,7 +57,7 @@ section.e select {
     text-overflow: ellipsis;
     overflow: hidden;
 
-    font: 500 17px system-ui
+    font: 510 17px system-ui
 }
 
 section.e select:focus {
@@ -66,6 +66,29 @@ section.e select:focus {
 
 section.e h1 {
     font-size: 28px
+}
+
+section.e .h {
+    margin-top: 10px;
+    padding-inline: 1em;
+
+    height: 53px
+}
+
+section.e h3 {
+    font-size: 21px
+}
+
+section.e h2 {
+    width: 192px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    text-align: center;
+    font: 510 15px system-ui
 }
 
 /* b */
@@ -125,7 +148,7 @@ section.b h1 {
 /* t */
 
 section.t {
-    margin: 1cm calc(env(safe-area-inset-right) + 1cm);
+    margin: 1cm calc(env(safe-area-inset-right) + 1cm) 4cm;
 
     color: var(--col-a)
 }
@@ -273,34 +296,6 @@ body.b section.t {
     color: var(--col-55)
 }
 
-/* d */
-
-section.d {
-    margin: 2cm auto calc(1cm + env(safe-area-inset-bottom));
-    padding-inline: 1cm;
-
-    max-width: 480px
-}
-
-section.d button.a {
-    margin-block: 1cm 10px
-}
-
-section.d button {
-    width: -webkit-fill-available;
-
-    border-radius: 15px;
-
-    padding: 15px;
-
-    display: block;
-
-    font: 590 17px system-ui;
-
-    background-color: var(--col-0);
-    color: var(--col-b)
-}
-
 /* m */
 
 section.m {
@@ -334,7 +329,6 @@ section.m {
         --col-33: #111;
         --col-44: #222;
         --col-55: #181a1d;
-        --col-a: #1e1e1e;
         --col-0: black;
         --col-10: #f2f2f2;
         --col-20: #fffaf0;
@@ -360,7 +354,6 @@ section.m {
         --col-33: #d6caba;
         --col-44: #ffede4;
         --col-55: white;
-        --col-a: #bbb;
         --col-0: white;
         --col-10: #3a3a3e;
         --col-20: #48484e;
