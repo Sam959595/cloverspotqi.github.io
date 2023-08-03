@@ -39,7 +39,7 @@ section.d {
     overflow-x: scroll;
 
     display: grid;
-    grid-template-columns: calc(100vw - 40px) 100vw;
+    grid-template-columns: repeat(2, 100vw);
 
     scroll-snap-type: x mandatory
 }
@@ -49,7 +49,7 @@ section.d>div {
 
     height: 100vh;
 
-    padding: calc(60px + env(safe-area-inset-top)) 20px calc(40px + env(safe-area-inset-bottom));
+    padding: calc(75px + env(safe-area-inset-top)) 20px calc(40px + env(safe-area-inset-bottom));
     
     scroll-snap-align: start
 }
@@ -65,9 +65,11 @@ section.d .m h1 {
 }
 
 section.d .m ul {
+    margin: 20px;
+    
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5rem 3rem
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem
 }
 
 section.d .m li {
@@ -77,11 +79,11 @@ section.d .m li {
 section.d .m img {
     aspect-ratio: 1/1.6;
 
-    width: 60px;
+    width: 100%;
 
     object-fit: cover;
     
-    border-radius: 5px;
+    border-radius: 15px;
     border: 1px solid var(--col-l)
 }
 
@@ -100,7 +102,7 @@ section.d .m p {
 /* n */
 
 section.d .n input {
-    padding-block: 10px 40px;
+    padding-block: 50px 40px;
 
     width: 100%;
 
@@ -131,8 +133,7 @@ section.d .n img {
 
     object-fit: cover;
     
-    border-radius: 50%;
-    border: 1px solid var(--col-l)
+    border-radius: 50%
 }
 
 section.d .n p {
