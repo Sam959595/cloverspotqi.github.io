@@ -81,8 +81,10 @@ section.e .h h1 {
     text-align: center
 }
 
-section.e .h h1:nth-child(2) {
-    border-inline: 3px solid #77777730
+section.e hr {
+    height: -webkit-fill-available;
+
+    border-left: 3px solid #77777730
 }
 
 /* b */
