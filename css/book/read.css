@@ -70,25 +70,19 @@ section.e h1 {
 
 section.e .h {
     margin-top: 10px;
-    padding-inline: 1em;
+    padding: 0;
 
     height: 53px
 }
 
-section.e h3 {
-    font-size: 21px
+section.e .h h1 {
+    width: -webkit-fill-available;
+
+    text-align: center
 }
 
-section.e h2 {
-    width: 192px;
-
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-
-    text-align: center;
-    font: 510 15px system-ui
+section.e .h h1:nth-child(2) {
+    border-inline: 3px solid #77777730
 }
 
 /* b */
@@ -105,6 +99,8 @@ section.b {
 
     background-color: var(--col-s);
     color: var(--col-0);
+
+    background: linear-gradient(#0a0a0bcc, #0a0a0bcc), center/contain url('https://i.gifer.com/RITe.gif');
 
     transform: translateY(100%);
 
