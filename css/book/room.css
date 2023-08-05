@@ -18,10 +18,13 @@ section.k ul {
     margin: calc(10px + env(safe-area-inset-top)) 30px 10px;
 
     display: flex;
+    align-items: center;
     justify-content: space-between
 }
 
 section.k li {
+    filter: opacity(.7) grayscale(1);
+
     font: 24px system-ui
 }
 
