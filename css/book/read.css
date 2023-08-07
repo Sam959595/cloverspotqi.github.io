@@ -68,8 +68,11 @@ section.e h1 {
     font-size: 28px
 }
 
+section.e .j {
+    margin-block: 5px
+}
+
 section.e .h {
-    margin-top: 10px;
     padding: 0;
 
     height: 53px
@@ -84,7 +87,7 @@ section.e .h h1 {
 section.e hr {
     height: -webkit-fill-available;
 
-    border-left: 3px solid #77777730
+    border-left: 3px solid #00000010
 }
 
 /* b */
