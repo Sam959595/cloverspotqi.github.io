@@ -308,9 +308,7 @@ section.m {
     font-size: 15px;
 
     background-color: inherit;
-    color: var(--col-0);
-
-    box-shadow: 0 0 20px #00000021
+    color: var(--col-0)
 }
 
 @media (prefers-color-scheme: light) {
