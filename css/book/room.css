@@ -139,15 +139,15 @@ section.d .n img {
     border-radius: 50%
 }
 
-section.d .n p {
-    margin-block: 10px 5px;
+section.d .n h6 {
+    margin-block: 20px 2px;
 
-    font-weight: 510
+    word-break: break-word;
+    line-height: 1.1;
 }
 
-section.d .n h6 {
-    word-break: break-word;
-    font: 510 13px/1.2 system-ui
+section.d .n p {
+    font-size: 11px 
 }
 
 section.d .n h1 {
@@ -173,14 +173,6 @@ section.d .n h1 {
         --col-l: #00000010;
 
         --lnk: #007aff;
-
-        --blue: #3a8fff;
-        --red: #ff2d55;
-        --pink: #ff9cce;
-        --violet: #9283ff;
-        --green: #31c692;
-        --orange: #fd9900;
-        --slate: #7c8696;
     }
 }
 
@@ -197,13 +189,5 @@ section.d .n h1 {
         --col-l: #ffffff05;
 
         --lnk: #0a84ff;
-
-        --blue: #3a8fff;
-        --red: #ff367c;
-        --pink: #ec55df;
-        --violet: #9283ff;
-        --green: #77ffc6;
-        --orange: #ff9f00;
-        --slate: #7c8696;
     }
 }
