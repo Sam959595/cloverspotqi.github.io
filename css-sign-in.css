@@ -5,7 +5,7 @@ html {
 /* a */
 
 section.a {
-    padding: 50% 1cm 0;
+    padding-top: 50%;
 
     height: 100vh;
 
@@ -19,13 +19,11 @@ section.a img {
 }
 
 section.a h1 {
-    margin-bottom: 2rem;
-
     font: 800 semi-expanded 44px/1 system-ui
 }
 
 section.a h2 {
-    margin-bottom: 2rem;
+    margin: auto;
 
     font: 510 17px system-ui
 }
