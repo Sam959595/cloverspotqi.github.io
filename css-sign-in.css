@@ -1,0 +1,85 @@
+html {
+    overscroll-behavior-y: none
+}
+
+/* a */
+
+section.a {
+    padding: 50% 1cm 0;
+
+    height: 100vh;
+
+    text-align: center;
+
+    /* background: linear-gradient(#0a0a0bcc, #0a0a0bcc), center/contain url('https://i.gifer.com/RITe.gif') */
+    background: linear-gradient(#00000090, black, #00000090), center/contain url('https://thumbs.gfycat.com/AffectionateDesertedGoa-size_restricted.gif')
+}
+
+section.a img {
+    width: -webkit-fill-available
+}
+
+section.a h1 {
+    margin-bottom: 2rem;
+
+    font: 800 semi-expanded 44px/1 system-ui
+}
+
+section.a h2 {
+    margin-bottom: 2rem;
+
+    font: 510 17px system-ui
+}
+
+/* l */
+
+section.l {
+    opacity: 0;
+
+    position: absolute;
+    inset: 0;
+
+    height: 100vh;
+
+    display: flex;
+
+    background-color: var(--col-b);
+
+    transition: opacity .4s ease
+}
+
+section.l h1 {
+    margin: auto;
+
+    font: 700 19px system-ui
+}
+
+/* color */
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --col-b: black;
+        --col-h: white;
+        --col-p: #afafb1;
+
+        --col-a: #dddee8;
+        --col-c: #c5c6d0;
+        --col-t: #eaeaf290;
+
+        --lnk: #007aff;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --col-b: black;
+        --col-h: white;
+        --col-p: #77777b;
+
+        --col-a: #212121;
+        --col-c: #333;
+        --col-t: #21212190;
+
+        --lnk: #0a84ff;
+    }
+}
