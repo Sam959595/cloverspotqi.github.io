@@ -140,10 +140,10 @@ section.d .n img {
 }
 
 section.d .n h6 {
-    margin-block: 10px 2px;
+    margin-top: 20px;
 
     word-break: break-word;
-    line-height: 1.1;
+    font: 13px/1.1 system-ui
 }
 
 section.d .n p {
