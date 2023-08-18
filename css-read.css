@@ -26,9 +26,8 @@ section.e {
 
     margin: 0 calc(env(safe-area-inset-right) + 20px) calc(env(safe-area-inset-bottom) + 20px);
 
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(6, 1fr);
+    display: flex;
+    justify-content: space-between;
     column-gap: 10px;
 
     transition: opacity .4s
