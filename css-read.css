@@ -60,10 +60,7 @@ section.e .h h2 {
 
 @media (orientation: landscape) {
     section.e select {
-        width: 45px;
-        height: 45px;
-
-        font: 510 19px system-ui
+        width: 55px
     }
 }
 
