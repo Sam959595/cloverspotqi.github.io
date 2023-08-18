@@ -2,59 +2,34 @@ html {
     overscroll-behavior-y: none
 }
 
-/* k */
-
-section.k {
-    z-index: 1;
-    position: fixed;
-    inset: 0 0 auto;
-
-    -webkit-backdrop-filter: blur(15px);
-
-    background-color: var(--col-t)
-}
-
-section.k ul {
-    margin: calc(10px + env(safe-area-inset-top)) 30px 10px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between
-}
-
-section.k li {
-    filter: opacity(.7) grayscale(1);
-
-    font: 24px system-ui
-}
-
-section.k img {
-    width: 28px;
-    height: 28px;
-
-    border-radius: 50%
+body {
+    background: linear-gradient(#0a0a0bcc, #0a0a0bcc), center/contain url('https://img.freepik.com/free-photo/black-grained-rough-pattern_1194-6822.jpg')
 }
 
 /* d */
 
 section.d {
-    overscroll-behavior-x: none;
+    margin-top: env(safe-area-inset-top);
+
+    overflow-y: scroll;
+
+    height: calc(100vh - env(safe-area-inset-top));
+
+    /* overscroll-behavior-x: none;
     overflow-x: scroll;
 
     display: grid;
     grid-template-columns: repeat(2, 100vw);
 
-    scroll-snap-type: x mandatory
+    scroll-snap-type: x mandatory */
 }
 
 section.d>div {
-    overflow-y: scroll;
+    /* overflow-y: scroll;
 
-    height: 100vh;
-
-    padding: calc(75px + env(safe-area-inset-top)) 30px calc(40px + env(safe-area-inset-bottom));
+    height: 100vh; */
     
-    scroll-snap-align: start
+    /* scroll-snap-align: start */
 }
 
 /* m */
@@ -68,25 +43,21 @@ section.d .m h1 {
 }
 
 section.d .m ul {
-    margin: 20px;
+    margin: 4cm 16px 2cm;
     
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem
-}
-
-section.d .m li {
-    text-align: -webkit-center
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem 10px
 }
 
 section.d .m img {
-    aspect-ratio: 1/1.6;
+    aspect-ratio: 1/1.7;
 
-    width: 100%;
+    width: calc((100vw - 52px) / 3);
 
     object-fit: cover;
     
-    border-radius: 15px;
+    border-radius: 12px;
     border: 1px solid var(--col-l)
 }
 
@@ -103,6 +74,10 @@ section.d .m p {
 }
 
 /* n */
+
+section.d .n {
+    padding: calc(75px + env(safe-area-inset-top)) 30px calc(40px + env(safe-area-inset-bottom))
+}
 
 section.d .n input {
     padding-block: 50px 40px;
@@ -178,13 +153,13 @@ section.d .n h1 {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --col-b: #101010;
+        --col-b: black;
         --col-h: white;
         --col-p: #77777b;
 
         --col-a: #212121;
         --col-c: #333;
-        --col-t: #101010aa;
+        --col-t: #000000aa;
 
         --col-l: #ffffff05;
 
