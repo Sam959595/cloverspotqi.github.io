@@ -9,7 +9,7 @@ window.addEventListener('touchmove', () => {
 
 // padding
 window.addEventListener('change', () => {
-    let vv = $('section.e div:nth-child(1) select').val(), nn = $('section.t')[0];
+    let vv = $('section.e select:nth-child(1)').val(), nn = $('section.t')[0];
 
     if (vv == 1) {
         nn.classList.remove('w')
@@ -20,7 +20,7 @@ window.addEventListener('change', () => {
 
 // font
 window.addEventListener('change', () => {
-    let vv = $('section.e div:nth-child(2) select').val(), nn = $('section.t')[0];
+    let vv = $('section.e select:nth-child(2)').val(), nn = $('section.t')[0];
 
     if (vv == 1) {
         nn.classList.add('a')
@@ -35,7 +35,7 @@ window.addEventListener('change', () => {
 
 // text
 window.addEventListener('change', () => {
-    let vv = $('section.e div:nth-child(3) select').val(), nn = $('section.t')[0];
+    let vv = $('section.e select:nth-child(3)').val(), nn = $('section.t')[0];
 
     if (vv == 1) {
         nn.classList.add('y')
@@ -53,7 +53,7 @@ window.addEventListener('change', () => {
 
 // interval
 window.addEventListener('change', () => {
-    let vv = $('section.e div:nth-child(4) select').val(), nn = $('section.t')[0];
+    let vv = $('section.e select:nth-child(4)').val(), nn = $('section.t')[0];
 
     if (vv == 1) {
         nn.classList.remove('f', 'j')
@@ -68,7 +68,7 @@ window.addEventListener('change', () => {
 
 // background
 window.addEventListener('change', () => {
-    let vv = $('section.e div:nth-child(5) select').val(), nn = $('body');
+    let vv = $('section.e select:nth-child(5)').val(), nn = $('body');
 
     if (vv == 6) {
         nn.attr('class', 'b')
@@ -110,14 +110,17 @@ document.querySelectorAll('u').forEach(x => {
 })
 
 // note
-window.onload = (() => {
+window.onload = () => {
     setTimeout(() => {
-        $('section.t')[0].style.touchAction = 'none';
+        window.addEventListener('touchmove', e => {
+            e.preventDefault()
+        })
         $('section.b')[0].style = 'visibility: visible; transform: translateY(0)'
     }, 5000);
 
     $('section.b .s').click(() => {
-        $('section.t')[0].style.touchAction = '';
+        // document.documentElement.removeAttribute('style');
+        // document.body.style = '';
         $('section.b')[0].style.pointerEvents = 'none';
         $('section.b')[0].style.transform = '';
         $('section.b .s')[0].style.opacity = '.3';
@@ -128,4 +131,4 @@ window.onload = (() => {
             $('section.b')[0].remove()
         }, 2000)
     })
-})
+}
