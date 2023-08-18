@@ -52,7 +52,7 @@ section.d>div {
 
     height: 100vh;
 
-    padding: calc(75px + env(safe-area-inset-top)) 20px calc(40px + env(safe-area-inset-bottom));
+    padding: calc(75px + env(safe-area-inset-top)) 30px calc(40px + env(safe-area-inset-bottom));
     
     scroll-snap-align: start
 }
@@ -121,8 +121,8 @@ section.d .n input::placeholder {
 
 section.d .n ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5rem 3rem
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem
 }
 
 section.d .n li {
@@ -132,7 +132,7 @@ section.d .n li {
 section.d .n img {
     aspect-ratio: 1;
 
-    width: -webkit-fill-available;
+    width: 120px;
 
     object-fit: cover;
     
