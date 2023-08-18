@@ -26,123 +26,45 @@ section.e {
 
     margin: 0 calc(env(safe-area-inset-right) + 20px) calc(env(safe-area-inset-bottom) + 20px) 0;
 
-    border-radius: 18px;
+    overflow-x: scroll;
 
     display: grid;
-    row-gap: 5px;
-
-    background-image: linear-gradient(#00000021, #00000029, #00000029, #00000021);
-
-    box-shadow: 0 0 80px 0 #00000052;
+    row-gap: 10px;
 
     transition: opacity .4s
 }
 
-section.e div {
-    border-radius: inherit;
-
-    padding-inline: 1.5em;
-
-    display: flex;
-    align-items: center;
-
-    background-color: var(--col-01);
-    color: var(--col-0)
-}
-
 section.e select {
-    width: 200px;
-    height: 53px;
+    width: 55px;
+    height: 55px;
 
-    text-overflow: ellipsis;
-    overflow: hidden;
-
-    font: 510 17px system-ui
-}
-
-section.e select:focus {
-    opacity: .5
-}
-
-section.e h1 {
-    font-size: 28px
-}
-
-section.e .j {
-    margin-block: 5px
-}
-
-section.e .h {
-    padding: 0;
-
-    height: 53px
-}
-
-section.e .h h1 {
-    width: -webkit-fill-available;
-
-    text-align: center
-}
-
-section.e hr {
-    height: -webkit-fill-available;
-
-    border-left: 3px solid #00000010
-}
-
-/* b */
-
-section.b {
-    visibility: hidden;
-
-    position: fixed;
-    inset: auto 0 0;
-
-    height: 100vh;
-
-    padding: calc(env(safe-area-inset-top) + 2em) 2em calc(env(safe-area-inset-bottom) + 2cm);
-
-    background-color: var(--col-s);
-    color: var(--col-0);
-
-    background: linear-gradient(#0a0a0bcc, #0a0a0bcc), center/contain url('https://i.gifer.com/RITe.gif');
-
-    transform: translateY(100%);
-
-    transition: transform 2s cubic-bezier(.19, .21, 0, 1)
-}
-
-section.b .s {
-    margin: 0 0 3cm auto;
-    
-    width: 30px;
-    height: 30px;
+    padding-left: 10px;
 
     border-radius: 50%;
 
-    background-color: var(--col-e)
-}
-
-section.b svg {
-    margin: 9px
-}
-
-section.b h1 {
     text-align: center;
-    font: 590 32px system-ui
+    font-size: 32px;
+
+    background-color: var(--col-01)
+}
+
+section.e select:focus {
+    filter: grayscale(1)
+}
+
+section.e .h h2 {
+    width: 232px;
+
+    text-align: center;
+    font: 510 15px system-ui
 }
 
 @media (orientation: landscape) {
-    section.b {
-        padding-inline: calc(env(safe-area-inset-left) + 2cm)
-    }
+    section.e select {
+        width: 45px;
+        height: 45px;
 
-    section.b h1 {
-        font-size: 28px
-    }
-
-    section.b .s {
-        margin-bottom: 1cm
+        font: 510 19px system-ui
     }
 }
 
@@ -158,7 +80,8 @@ section.t h5 {
     margin-block: 13em 3em;
 
     text-align: center;
-    font: 800 20px/1.7 system-ui
+    font: 800 20px/1.7 system-ui;
+    letter-spacing: .04em
 }
 
 section.t h6:not(.f):first-letter {
@@ -253,28 +176,6 @@ body.b {
     background-color: var(--col-5)
 }
 
-/* tab */
-
-body.f section.e div {
-    background-color: var(--col-10)
-}
-
-body.i section.e div {
-    background-color: var(--col-20)
-}
-
-body.d section.e div {
-    background-color: var(--col-30)
-}
-
-body.c section.e div {
-    background-color: var(--col-40)
-}
-
-body.b section.e div {
-    background-color: var(--col-50)
-}
-
 /* text color */
 
 body.f section.t {
@@ -322,7 +223,7 @@ section.m {
         --col-3: #e2dbcf;
         --col-4: #f4e9d4;
         --col-5: #d2ddff;
-        --col-01: white;
+        --col-01: #212224;
         --col-11: #111;
         --col-22: #3d2a1c;
         --col-33: #111;
@@ -330,11 +231,6 @@ section.m {
         --col-55: #181a1d;
         --col-a: #1e1e1e;
         --col-0: black;
-        --col-10: #f2f2f2;
-        --col-20: #fffaf0;
-        --col-30: #f5eee2;
-        --col-40: #fff6e5;
-        --col-50: #d2ddff;
         --col-s: #f5f5f7;
         --col-e: #e1e1e3;
     }
@@ -348,7 +244,7 @@ section.m {
         --col-3: #24211f;
         --col-4: #584d47;
         --col-5: #272a32;
-        --col-01: #212224;
+        --col-01: white;
         --col-11: #f2f2f0;
         --col-22: #f0f0f0;
         --col-33: #d6caba;
@@ -356,11 +252,6 @@ section.m {
         --col-55: white;
         --col-a: #bbb;
         --col-0: white;
-        --col-10: #3a3a3e;
-        --col-20: #48484e;
-        --col-30: #363432;
-        --col-40: #756a64;
-        --col-50: #3c4049;
         --col-s: #424247;
         --col-e: #53535a;
     }
