@@ -3,7 +3,33 @@ html {
 }
 
 body {
-    background: linear-gradient(#0a0a0bcc, #0a0a0bcc), center/contain url('https://img.freepik.com/free-photo/black-grained-rough-pattern_1194-6822.jpg')
+    /* background: linear-gradient(#0a0a0bcc, #0a0a0bcc), center/contain url('https://img.freepik.com/free-photo/black-grained-rough-pattern_1194-6822.jpg'); */
+    background: linear-gradient(#00000bcc, #00000bcc), center/contain url('https://img.freepik.com/premium-vector/colorful-summer-background_47435-356.jpg?w=1000');
+    /* background: linear-gradient(#0a0a0bcc, #0a0a0bcc), center/contain url('https://img.freepik.com/premium-vector/positive-word-quote-text-seamless-pattern-vector-doodle-cartoon-character-illustration-design-positive-quote-text-slogansmile-emoji-face-seamless-pattern-print-design-poster-tshirt-concept_92289-3463.jpg?w=2000'); */
+}
+
+/* l */
+
+section.l {
+    pointer-events: none;
+    opacity: 0;
+
+    position: absolute;
+    inset: 0;
+
+    height: 100vh;
+
+    display: flex;
+
+    background-color: var(--col-b);
+
+    transition: opacity .2s
+}
+
+section.l img {
+    margin: auto;
+
+    width: 120px
 }
 
 /* d */
@@ -125,14 +151,6 @@ section.d .n p {
     font-size: 11px 
 }
 
-section.d .n h1 {
-    margin-block: 50px 40px;
-
-    font: 510 21px system-ui;
-
-    color: var(--col-p)
-}
-
 /* color */
 
 @media (prefers-color-scheme: light) {
@@ -153,7 +171,7 @@ section.d .n h1 {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --col-b: black;
+        --col-b: #101010;
         --col-h: white;
         --col-p: #77777b;
 
