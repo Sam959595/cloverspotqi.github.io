@@ -1,19 +1,33 @@
-/* media */
-
-[data-i],
-[data-v] {
-    opacity: 0
-}
-
-img,
-video {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
-}
-
 html {
     overscroll-behavior-y: none
+}
+
+body {
+    /* background: linear-gradient(#0a0a0bcc, #0a0a0bcc), center/contain url('https://img.freepik.com/free-photo/black-grained-rough-pattern_1194-6822.jpg'); */
+}
+
+/* l */
+
+section.l {
+    pointer-events: none;
+    opacity: 0;
+
+    position: absolute;
+    inset: 0;
+
+    height: 100vh;
+
+    display: flex;
+
+    background-color: var(--col-b);
+
+    transition: opacity .2s
+}
+
+section.l img {
+    margin: auto;
+
+    width: 120px
 }
 
 /* k */
@@ -28,61 +42,116 @@ section.k {
     filter: opacity(.7);
     -webkit-backdrop-filter: blur(15px);
 
-    background-color: #14171a
+    background-color: var(--col-b)
+}
+
+/* d */
+
+section.d {
+    overscroll-behavior-x: none;
+    overflow-x: scroll;
+
+    display: grid;
+    grid-template-columns: repeat(2, 100vw);
+
+    scroll-snap-type: x mandatory
+}
+
+section.d>div {
+    overflow-y: scroll;
+
+    height: 100vh;
+    
+    scroll-snap-align: start
 }
 
 /* n */
 
-section.n {
-    overflow-y: scroll;
-
-    height: 100vh
+section.d .n {
+    padding: calc(5.7cm + env(safe-area-inset-top)) 30px calc(40px + env(safe-area-inset-bottom))
 }
 
-section.n ul {
-    margin: calc(20px + env(safe-area-inset-top)) 20px calc(20px + env(safe-area-inset-bottom));
-    
+section.d .n input {
+    padding-block: 50px 40px;
+
+    width: 100%;
+
+    font: 500 21px system-ui;
+
+    background-color: transparent;
+    color: var(--col-h)
+}
+
+section.d .n input::placeholder {
+    color: var(--col-p)
+}
+
+section.d .n ul {
     display: grid;
-    row-gap: 2rem
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem
 }
 
-section.n img.a {
-    aspect-ratio: 1/1.4;
-    object-fit: cover;
-
-    width: -webkit-fill-available;
-
-    border-radius: 10px
+section.d .n li {
+    text-align: -webkit-center
 }
 
-section.n div.m {
-    margin-block: 1rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 10px
-}
-
-section.n img.b {
+section.d .n img {
     aspect-ratio: 1;
 
-    width: 20px;
+    width: 120px;
 
+    object-fit: cover;
+    
     border-radius: 50%
 }
 
-section.n h2 {
-    font: 600 14px system-ui
+section.d .n h6 {
+    margin-top: 20px;
+
+    word-break: break-word;
+    font: 13px/1.1 system-ui
 }
 
-section.n h1 {
-    margin-top: 15px;
-
-    font: 15px/1.1 system-ui
+section.d .n p {
+    font-size: 11px 
 }
 
-/* col */
+/* m */
+
+section.d .m {
+    padding: calc(5.7cm + env(safe-area-inset-top)) 16px calc(40px + env(safe-area-inset-bottom))
+}
+
+section.d .m ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem 10px
+}
+
+section.d .m img {
+    aspect-ratio: 1/1.7;
+
+    width: calc((100vw - 52px) / 3);
+
+    object-fit: cover;
+    
+    border-radius: 12px;
+    border: 1px solid var(--col-l)
+}
+
+section.d .m h6 {
+    margin-top: 1rem;
+
+    text-align: center;
+    font: 600 13px ui-rounded
+}
+
+section.d .m p {
+    margin-top: 5px;
+
+    font-weight: 500
+}
 
 @media (prefers-color-scheme: light) {
     :root {
@@ -92,17 +161,11 @@ section.n h1 {
 
         --col-a: #dddee8;
         --col-c: #c5c6d0;
-        --col-t: #eaeaf290;
+        --col-t: #ffffffaa;
 
-        --link: #007aff;
+        --col-l: #00000010;
 
-        --blue: #3a8fff;
-        --red: #ff2d55;
-        --pink: #ff9cce;
-        --violet: #9283ff;
-        --green: #31c692;
-        --orange: #fd9900;
-        --slate: #7c8696;
+        --lnk: #007aff;
     }
 }
 
@@ -114,16 +177,10 @@ section.n h1 {
 
         --col-a: #212121;
         --col-c: #333;
-        --col-t: #21212190;
+        --col-t: #000000aa;
 
-        --link: #0a84ff;
+        --col-l: #ffffff05;
 
-        --blue: #3a8fff;
-        --red: #ff367c;
-        --pink: #ec55df;
-        --violet: #9283ff;
-        --green: #77ffc6;
-        --orange: #ff9f00;
-        --slate: #7c8696;
+        --lnk: #0a84ff;
     }
 }
