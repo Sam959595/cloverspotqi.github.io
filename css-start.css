@@ -16,37 +16,70 @@ html {
     overscroll-behavior-y: none
 }
 
-/* g */
+/* k */
+
+section.k {
+    z-index: 1;
+    position: fixed;
+    inset: 0 0 auto;
+
+    height: env(safe-area-inset-top);
+
+    filter: opacity(.7);
+    -webkit-backdrop-filter: blur(15px);
+
+    background-color: #14171a
+}
+
+/* n */
 
 section.n {
-    margin-top: env(safe-area-inset-top);
-
     overflow-y: scroll;
 
-    height: calc(100vh - env(safe-area-inset-top))
+    height: 100vh
 }
 
 section.n ul {
-    margin: 20px 20px calc(20px + env(safe-area-inset-top));
+    margin: calc(20px + env(safe-area-inset-top)) 20px calc(20px + env(safe-area-inset-bottom));
     
     display: grid;
-    row-gap: 1rem
+    row-gap: 2rem
 }
 
-section.n img {
+section.n img.a {
     aspect-ratio: 1/1.4;
     object-fit: cover;
 
     width: -webkit-fill-available;
 
-    border-radius: 9px
+    border-radius: 10px
+}
+
+section.n div.m {
+    margin-block: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px
+}
+
+section.n img.b {
+    aspect-ratio: 1;
+
+    width: 20px;
+
+    border-radius: 50%
+}
+
+section.n h2 {
+    font: 600 14px system-ui
 }
 
 section.n h1 {
     margin-top: 15px;
 
-    font: 700 28px/1.1 system-ui;
-    font-stretch: 80%
+    font: 15px/1.1 system-ui
 }
 
 /* col */
