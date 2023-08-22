@@ -2,49 +2,6 @@ html {
     overscroll-behavior-y: none
 }
 
-body {
-    /* background: linear-gradient(#0a0a0bcc, #0a0a0bcc), center/contain url('https://img.freepik.com/free-photo/black-grained-rough-pattern_1194-6822.jpg'); */
-}
-
-/* l */
-
-section.l {
-    pointer-events: none;
-    opacity: 0;
-
-    position: absolute;
-    inset: 0;
-
-    height: 100vh;
-
-    display: flex;
-
-    background-color: var(--col-b);
-
-    transition: opacity .2s
-}
-
-section.l img {
-    margin: auto;
-
-    width: 120px
-}
-
-/* k */
-
-section.k {
-    z-index: 1;
-    position: fixed;
-    inset: 0 0 auto;
-
-    height: env(safe-area-inset-top);
-
-    filter: opacity(.7);
-    -webkit-backdrop-filter: blur(15px);
-
-    background-color: var(--col-b)
-}
-
 /* d */
 
 section.d {
@@ -61,30 +18,20 @@ section.d>div {
     overflow-y: scroll;
 
     height: 100vh;
+
+    padding: 0 calc(16px + env(safe-area-inset-left)) calc(16px + env(safe-area-inset-bottom));
     
     scroll-snap-align: start
 }
 
+section.d h1 {
+    margin-block: calc(2cm + env(safe-area-inset-top)) 2cm;
+
+    text-align: center;
+    font: 700 28px system-ui
+}
+
 /* n */
-
-section.d .n {
-    padding: calc(5.7cm + env(safe-area-inset-top)) 30px calc(40px + env(safe-area-inset-bottom))
-}
-
-section.d .n input {
-    padding-block: 50px 40px;
-
-    width: 100%;
-
-    font: 500 21px system-ui;
-
-    background-color: transparent;
-    color: var(--col-h)
-}
-
-section.d .n input::placeholder {
-    color: var(--col-p)
-}
 
 section.d .n ul {
     display: grid;
@@ -119,10 +66,6 @@ section.d .n p {
 
 /* m */
 
-section.d .m {
-    padding: calc(5.7cm + env(safe-area-inset-top)) 16px calc(40px + env(safe-area-inset-bottom))
-}
-
 section.d .m ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -132,7 +75,7 @@ section.d .m ul {
 section.d .m img {
     aspect-ratio: 1/1.7;
 
-    width: calc((100vw - 52px) / 3);
+    width: -webkit-fill-available;
 
     object-fit: cover;
     
@@ -151,6 +94,44 @@ section.d .m p {
     margin-top: 5px;
 
     font-weight: 500
+}
+
+/* k */
+
+section.k {
+    position: fixed;
+    inset: 0 0 auto;
+
+    height: env(safe-area-inset-top);
+
+    filter: opacity(.7);
+    -webkit-backdrop-filter: blur(15px);
+
+    background-color: var(--col-b)
+}
+
+/* l */
+
+section.l {
+    pointer-events: none;
+    opacity: 1;
+
+    position: absolute;
+    inset: 0;
+
+    height: 100vh;
+
+    display: flex;
+
+    background-color: #ffffff;
+
+    transition: opacity .2s
+}
+
+section.l img {
+    margin: auto;
+
+    width: 30%
 }
 
 @media (prefers-color-scheme: light) {
