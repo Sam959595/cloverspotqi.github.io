@@ -19,7 +19,7 @@ section.d>div {
 
     height: 100vh;
 
-    padding: 0 calc(16px + env(safe-area-inset-left)) calc(16px + env(safe-area-inset-bottom));
+    padding: 0 calc(16px + env(safe-area-inset-left)) calc(1cm + env(safe-area-inset-bottom));
     
     scroll-snap-align: start
 }
@@ -28,7 +28,7 @@ section.d h1 {
     margin-block: calc(2cm + env(safe-area-inset-top)) 2cm;
 
     text-align: center;
-    font: 700 28px system-ui
+    font: 800 expanded 32px system-ui
 }
 
 /* n */
@@ -36,7 +36,7 @@ section.d h1 {
 section.d .n ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5rem
+    gap: 5rem 2rem
 }
 
 section.d .n li {
@@ -54,7 +54,7 @@ section.d .n img {
 }
 
 section.d .n h6 {
-    margin-top: 20px;
+    margin-block: 20px 3px;
 
     word-break: break-word;
     font: 13px/1.1 system-ui
