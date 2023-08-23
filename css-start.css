@@ -1,3 +1,7 @@
+html {
+    overscroll-behavior-y: none
+}
+
 /* media */
 
 [data-i],
@@ -10,25 +14,6 @@ video {
     opacity: 1;
 
     transition: opacity .4s cubic-bezier(0.4, 0, 0.25, 1)
-}
-
-html {
-    overscroll-behavior-y: none
-}
-
-/* k */
-
-section.k {
-    z-index: 1;
-    position: fixed;
-    inset: 0 0 auto;
-
-    height: env(safe-area-inset-top);
-
-    filter: opacity(.7);
-    -webkit-backdrop-filter: blur(15px);
-
-    background-color: #1c2327
 }
 
 /* n */
@@ -55,15 +40,6 @@ section.n img.a {
     border-radius: 10px
 }
 
-section.n div.m {
-    margin-block: 1rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 10px
-}
-
 section.n img.b {
     aspect-ratio: 1;
 
@@ -76,10 +52,72 @@ section.n h2 {
     font: 600 14px system-ui
 }
 
-section.n h1 {
-    margin-top: 15px;
+section.n .m {
+    margin-top: 2rem;
 
-    font: 15px/1.1 system-ui
+    display: flex;
+    column-gap: 5px
+}
+
+section.n .m h6 {
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+
+    text-align: center;
+    font-size: 9px
+}
+
+section.n .m h6 u {
+    margin-top: 3px;
+
+    display: block
+}
+
+section.n .m h5 {
+    margin-right: 1rem;
+
+    font: 700 13px ui-rounded
+}
+
+section.n .d {
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
+
+    padding-top: 6px;
+
+    text-align: center;
+
+    background-color: #ffffff10;
+}
+
+section.n li.k .l {
+    padding: 2rem;
+
+    border-radius: 10px;
+
+    background-color: var(--col-t);
+}
+
+section.n h1 {
+    font: 500 24px system-ui;
+}
+
+/* k */
+
+section.k {
+    position: fixed;
+    inset: 0 0 auto;
+
+    height: env(safe-area-inset-top);
+
+    filter: opacity(.7);
+    -webkit-backdrop-filter: blur(15px);
+
+    background-color: var(--col-b)
 }
 
 @media (prefers-color-scheme: light) {
@@ -90,7 +128,7 @@ section.n h1 {
 
         --col-a: #dddee8;
         --col-c: #c5c6d0;
-        --col-t: #eaeaf290;
+        --col-t: #f5f5f7;
 
         --link: #007aff;
 
@@ -106,13 +144,13 @@ section.n h1 {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --col-b: #101010;
+        --col-b: #1c1c1e;
         --col-h: white;
         --col-p: #77777b;
 
         --col-a: #212121;
         --col-c: #333;
-        --col-t: #21212190;
+        --col-t: #313135;
 
         --link: #0a84ff;
 
