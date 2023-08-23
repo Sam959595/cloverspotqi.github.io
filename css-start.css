@@ -37,7 +37,7 @@ section.n img.a {
 
     width: -webkit-fill-available;
 
-    border-radius: 10px
+    border-radius: 12px
 }
 
 section.n img.b {
@@ -56,6 +56,7 @@ section.n .m {
     margin-top: 2rem;
 
     display: flex;
+    justify-content: center;
     column-gap: 5px
 }
 
@@ -82,28 +83,18 @@ section.n .m h5 {
 }
 
 section.n .d {
-    width: 22px;
-    height: 22px;
+    width: 16px;
+    height: 16px;
 
     border-radius: 50%;
 
-    padding-top: 6px;
-
-    text-align: center;
+    padding: 4px 0 0 4px;
 
     background-color: #ffffff10;
 }
 
-section.n li.k .l {
-    padding: 2rem;
-
-    border-radius: 10px;
-
-    background-color: var(--col-t);
-}
-
 section.n h1 {
-    font: 500 24px system-ui;
+    font: 500 15px system-ui;
 }
 
 /* k */
