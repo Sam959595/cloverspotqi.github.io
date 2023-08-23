@@ -37,7 +37,7 @@ section.n img.a {
 
     width: -webkit-fill-available;
 
-    border-radius: 12px
+    border-radius: 0 0 12px 12px
 }
 
 section.n img.b {
@@ -52,8 +52,18 @@ section.n h2 {
     font: 600 14px system-ui
 }
 
+section.n .s {
+    border-radius: 12px 12px 0 0;
+
+    padding: 2rem
+}
+
+section.n h4 {
+    font: 600 21px system-ui
+}
+
 section.n .m {
-    margin-top: 2rem;
+    margin: 2rem 1rem 0;
 
     display: flex;
     justify-content: center;
@@ -91,6 +101,10 @@ section.n .d {
     padding: 4px 0 0 4px;
 
     background-color: #ffffff10;
+}
+
+section.n .d svg {
+    display: block
 }
 
 section.n h1 {
