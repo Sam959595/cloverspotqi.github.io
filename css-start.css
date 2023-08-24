@@ -76,9 +76,11 @@ section.n u {
     display: block
 }
 
-section.n h5 {
-    margin-right: 1rem;
+section.n h5:not(:last-child) {
+    margin-right: 1rem
+}
 
+section.n h5 {
     font: 700 13px ui-rounded
 }
 
@@ -90,7 +92,7 @@ section.n .d {
 
     padding: 4px 0 0 4px;
 
-    background-color: #ffffff20;
+    background-color: #ffffff20
 }
 
 section.n svg {
