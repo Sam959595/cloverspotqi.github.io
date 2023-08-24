@@ -56,10 +56,17 @@ section.n .e {
     position: absolute;
     inset: 0 0 auto;
 
-    padding: 1.5rem;
+    margin: 1.5rem;
 
     display: flex;
     align-items: center
+}
+
+section.n .g {
+    position: absolute;
+    inset: 0;
+
+    background-image: linear-gradient(#00000030, transparent)
 }
 
 section.n .e time {
@@ -73,7 +80,7 @@ section.n .e time {
 section.n .e h1 {
     margin-inline: 5px 1rem;
 
-    font: 600 13px system-ui;
+    font: 600 13px/.1 system-ui;
 
     color: white
 }
