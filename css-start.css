@@ -65,7 +65,7 @@ section.n .r {
 }
 
 section.n .r img {
-    width: calc(100vw - 68px);
+    width: calc(100vw - 70px);
 
     scroll-snap-align: center
 }
@@ -188,7 +188,7 @@ section.k {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --col-b: #1c1c1e;
+        --col-b: #101010;
         --col-h: white;
         --col-p: #77777b;
 
