@@ -45,6 +45,18 @@ section.n h4 {
     color: white
 }
 
+section.n .r {
+    width: calc(100vw - 40px);
+
+    display: grid;
+    grid-auto-flow: column;
+
+    overscroll-behavior-x: none;
+    overflow-x: scroll;
+
+    scroll-snap-type: x mandatory
+}
+
 section.n img.a {
     aspect-ratio: 1/1.4;
     object-fit: cover;
@@ -52,7 +64,15 @@ section.n img.a {
     width: 100%
 }
 
+section.n .r img {
+    width: calc(100vw - 68px);
+
+    scroll-snap-align: center
+}
+
 section.n .g {
+    pointer-events: none;
+    
     position: absolute;
     inset: 0;
 
