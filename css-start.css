@@ -40,9 +40,16 @@ section.n .i {
 section.n h4 {
     margin: 5rem 2rem;
 
-    font-size: 17px;
+    font: 21px/1.6 system-ui;
 
     color: white
+}
+
+section.n .i img {
+    aspect-ratio: 1/1.4;
+    object-fit: cover;
+
+    width: -webkit-fill-available
 }
 
 section.n .r {
@@ -55,13 +62,6 @@ section.n .r {
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory
-}
-
-section.n img.a {
-    aspect-ratio: 1/1.4;
-    object-fit: cover;
-
-    width: 100%
 }
 
 section.n .r img {
@@ -100,13 +100,14 @@ section.n .e time {
 section.n .e h1 {
     margin-inline: 5px 1rem;
 
-    font: 600 13px/.1 system-ui;
+    font: 600 13px system-ui;
 
     color: white
 }
 
-section.n img.b {
+section.n .e img {
     width: 20px;
+    height: 20px;
 
     border-radius: 50%
 }
