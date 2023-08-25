@@ -148,12 +148,6 @@ time {
 	color: var(--col-p)
 }
 
-a,
-select,
-button {
-	color: var(--lnk)
-}
-
 ::-webkit-scrollbar {
 	display: none
 }
