@@ -5,10 +5,10 @@ html {
 /* k */
 
 section.k {
+    opacity: .9;
+    
     position: fixed;
     inset: 0 0 auto;
-
-    opacity: .9;
 
     height: env(safe-area-inset-top);
 
@@ -90,7 +90,7 @@ section.t .f:first-letter {
 }
 
 section.t h6 {
-    margin-bottom: .8em;
+    margin-bottom: 1cm;
 
     text-align: justify;
     font: 370 20px/1.7 system-ui;
@@ -220,7 +220,7 @@ section.m {
         --col-5: #d2ddff;
         --col-01: #212224;
         --col-11: #111;
-        --col-22: #3d2a1c;
+        --col-22: #211700;
         --col-33: #111;
         --col-44: #222;
         --col-55: #181a1d;
