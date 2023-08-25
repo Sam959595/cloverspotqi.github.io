@@ -118,16 +118,20 @@ section.n svg {
 }
 
 section.n .k {
+    overflow: hidden;
+
     margin-top: 2rem;
 
     border-radius: 12px;
 
-    padding: 1.5rem;
-
     background-color: var(--col-t)
 }
 
-section.n .k div {
+section.n .k>div {
+    padding: 1.5rem
+}
+
+section.n .k div div {
     display: flex;
     align-items: center;
     column-gap: 1rem
@@ -151,15 +155,23 @@ section.n time {
 }
 
 section.n h3 {
-    margin-block: 1rem;
+    margin-top: 1rem;
 
     font-size: 15px
 }
 
 section.n .k a {
+    margin-top: 1rem;
+
+    display: block;
+
     font: 600 13px system-ui;
 
     color: var(--col-h)
+}
+
+section.n .l {
+    background-color: var(--col-a)
 }
 
 /* k */
@@ -181,7 +193,7 @@ section.k {
         --col-h: black;
         --col-p: #afafb1;
 
-        --col-a: #dddee8;
+        --col-a: #00000010;
         --col-c: #00000020;
         --col-t: #f5f5f7;
     }
@@ -193,7 +205,7 @@ section.k {
         --col-h: white;
         --col-p: #77777b;
 
-        --col-a: #212121;
+        --col-a: #00000030;
         --col-c: #ffffff20;
         --col-t: #1c1c1f;
     }
