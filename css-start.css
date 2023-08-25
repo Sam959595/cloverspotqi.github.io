@@ -76,7 +76,7 @@ section.n .g {
     position: absolute;
     inset: 0;
 
-    background-image: linear-gradient(#00000040, transparent)
+    background-image: linear-gradient(#00000040, #00000005)
 }
 
 section.n .e {
@@ -147,7 +147,7 @@ section.n .v time {
 section.n h3 {
     margin-block: 1rem;
 
-    font: 15px system-ui;
+    font-size: 15px
 }
 
 section.n .k a {
