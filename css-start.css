@@ -86,7 +86,8 @@ section.n .e {
     margin: 1.5rem;
 
     display: flex;
-    align-items: center
+    align-items: center;
+    column-gap: 1rem
 }
 
 section.n .e img {
@@ -97,8 +98,6 @@ section.n .e img {
 }
 
 section.n .e h1 {
-    margin-inline: 1rem 5px;
-
     font: 600 13px system-ui;
 
     color: white
@@ -110,6 +109,49 @@ section.n .e time {
     font: 500 13px system-ui;
 
     color: #ffffff70
+}
+
+section.n .k {
+    margin-top: 2rem;
+
+    border-radius: 12px;
+
+    padding: 1rem 2rem;
+
+    background-color: var(--col-t)
+}
+
+section.n .v {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem
+}
+
+section.n .v img {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%
+}
+
+section.n .v h2 {
+    font: 600 13px system-ui
+}
+
+section.n .v time {
+    margin-left: auto;
+
+    font: 500 13px system-ui
+}
+
+section.n h3 {
+    margin-block: 1rem;
+
+    font: 15px system-ui;
+}
+
+section.n .k a {
+    font: 600 13px system-ui
 }
 
 section.n .m {
@@ -152,7 +194,7 @@ section.n .d {
 
     padding: 4px 0 0 3px;
 
-    background-color: #ffffff20
+    background-color: var(--col-c)
 }
 
 section.n svg {
@@ -179,7 +221,7 @@ section.k {
         --col-p: #afafb1;
 
         --col-a: #dddee8;
-        --col-c: #c5c6d0;
+        --col-c: #00000020;
         --col-t: #f5f5f7;
 
         --lnk: #007aff;
@@ -193,8 +235,8 @@ section.k {
         --col-p: #77777b;
 
         --col-a: #212121;
-        --col-c: #333;
-        --col-t: #313135;
+        --col-c: #ffffff20;
+        --col-t: #1c1c1f;
 
         --lnk: #0a84ff;
     }
