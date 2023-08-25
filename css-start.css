@@ -151,7 +151,9 @@ section.n h3 {
 }
 
 section.n .k a {
-    font: 600 13px system-ui
+    font: 600 13px system-ui;
+
+    color: var(--col-h)
 }
 
 section.n .m {
@@ -223,8 +225,6 @@ section.k {
         --col-a: #dddee8;
         --col-c: #00000020;
         --col-t: #f5f5f7;
-
-        --lnk: #007aff;
     }
 }
 
@@ -237,7 +237,5 @@ section.k {
         --col-a: #212121;
         --col-c: #ffffff20;
         --col-t: #1c1c1f;
-
-        --lnk: #0a84ff;
     }
 }
