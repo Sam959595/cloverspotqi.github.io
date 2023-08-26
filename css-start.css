@@ -37,12 +37,21 @@ section.n .i {
     border-radius: 12px
 }
 
-section.n h4 {
+section.n h4.a {
     margin: 3rem;
 
     font: 21px/1.6 system-ui;
 
     color: white
+}
+
+section.n h4.b {
+    margin: 2rem;
+
+    text-transform: uppercase;
+    font: 700 24px system-ui;
+
+    color: #6ac5dd
 }
 
 section.n .i img {
