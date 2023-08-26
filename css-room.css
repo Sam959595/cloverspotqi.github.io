@@ -19,16 +19,15 @@ section.d>div {
 
     height: 100vh;
 
-    padding: 0 calc(16px + env(safe-area-inset-left)) calc(1cm + env(safe-area-inset-bottom));
-    
+    padding: calc(16px + env(safe-area-inset-top)) calc(16px + env(safe-area-inset-left)) calc(1cm + env(safe-area-inset-bottom));
+
     scroll-snap-align: start
 }
 
 section.d h1 {
-    margin-block: calc(2cm + env(safe-area-inset-top)) 2cm;
+    margin-bottom: 2rem;
 
-    text-align: center;
-    font: 800 expanded 32px system-ui
+    font: 700 33px system-ui
 }
 
 /* n */
@@ -99,13 +98,12 @@ section.d .m p {
 /* k */
 
 section.k {
+    opacity: .9;
+
     position: fixed;
     inset: 0 0 auto;
 
     height: env(safe-area-inset-top);
-
-    filter: opacity(.7);
-    -webkit-backdrop-filter: blur(15px);
 
     background-color: var(--col-b)
 }
@@ -123,7 +121,7 @@ section.l {
 
     display: flex;
 
-    background-color: #fcfefc;
+    background-color: var(--col-b);
 
     transition: opacity .2s
 }
@@ -145,8 +143,6 @@ section.l img {
         --col-t: #ffffffaa;
 
         --col-l: #00000010;
-
-        --lnk: #007aff;
     }
 }
 
@@ -161,7 +157,5 @@ section.l img {
         --col-t: #000000aa;
 
         --col-l: #ffffff05;
-
-        --lnk: #0a84ff;
     }
 }
