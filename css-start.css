@@ -145,7 +145,7 @@ section.n .k img {
 }
 
 section.n h2 {
-    font: 600 13px system-ui
+    font: 500 14px system-ui
 }
 
 section.n time {
@@ -193,7 +193,7 @@ section.k {
         --col-h: black;
         --col-p: #afafb1;
 
-        --col-a: #00000010;
+        --col-a: #00000008;
         --col-c: #00000020;
         --col-t: #f5f5f7;
     }
