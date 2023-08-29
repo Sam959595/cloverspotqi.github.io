@@ -21,14 +21,27 @@ video {
 section.n {
     overflow-y: scroll;
 
+    padding: calc(10px + env(safe-area-inset-top)) 0 calc(20px + env(safe-area-inset-bottom));
+
     height: 100vh
 }
 
+section.n h1 {
+    margin-bottom: 10px;
+
+    font: 800 expanded 32px system-ui
+}
+
 section.n ul {
-    margin: calc(20px + env(safe-area-inset-top)) 20px calc(20px + env(safe-area-inset-bottom));
-    
-    display: grid;
-    row-gap: 2rem
+    display: grid
+}
+
+section.n li {
+    padding: 20px
+}
+
+section.n li+li {
+    border-top: 10px solid var(--col-l)
 }
 
 section.n .i {
@@ -80,7 +93,7 @@ section.n .r img {
 }
 
 section.n .m {
-    margin: 2rem 1rem 0;
+    margin-top: 2rem;
 
     display: flex;
     justify-content: center;
@@ -205,6 +218,7 @@ section.k {
         --col-a: #00000008;
         --col-c: #00000020;
         --col-t: #f5f5f7;
+        --col-l: #f5f5f7;
     }
 }
 
@@ -217,5 +231,6 @@ section.k {
         --col-a: #00000030;
         --col-c: #ffffff20;
         --col-t: #1c1c1f;
+        --col-l: black;
     }
 }
