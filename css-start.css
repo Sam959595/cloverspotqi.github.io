@@ -21,14 +21,14 @@ video {
 section.n {
     overflow-y: scroll;
 
-    padding: calc(10px + env(safe-area-inset-top)) 0 calc(20px + env(safe-area-inset-bottom));
+    padding-block: calc(10px + env(safe-area-inset-top)) calc(10px + env(safe-area-inset-bottom));
 
     height: 100vh
 }
 
 section.n h1 {
-    margin-bottom: 10px;
-
+    margin-inline: 10px;
+    
     font: 800 expanded 32px system-ui
 }
 
@@ -92,8 +92,17 @@ section.n .r img {
     scroll-snap-align: center
 }
 
+section.n hr {
+    margin-inline: auto;
+
+    width: fit-content;
+    height: 20px;
+
+    border-left: 8px solid var(--col-c)
+}
+
 section.n .m {
-    margin-top: 2rem;
+    margin-block: 2rem;
 
     display: flex;
     justify-content: center;
@@ -141,8 +150,6 @@ section.n svg {
 
 section.n .k {
     overflow: hidden;
-
-    margin-top: 2rem;
 
     border-radius: 12px;
 
