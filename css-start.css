@@ -28,7 +28,7 @@ section.n {
 
 section.n>h1 {
     margin-inline: 20px;
-    
+
     font: 800 expanded 32px system-ui
 }
 
@@ -46,15 +46,19 @@ section.n .y {
     width: 100vw;
 
     padding-inline: 20px;
+    scroll-padding-left: 20px;
 
     display: grid;
     grid-auto-flow: column;
     column-gap: 10px;
-
-    overscroll-behavior-x: none;
+    
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory
+}
+
+section.n :where(.y img, .r>div) {
+    scroll-snap-align: start
 }
 
 section.n .y img {
@@ -192,11 +196,25 @@ section.n h3 {
     font-size: 15px
 }
 
+section.n .k a {
+    margin-top: 1rem;
+
+    display: block;
+
+    font: 600 13px system-ui;
+
+    color: var(--col-h)
+}
+
+section.n .l {
+    background-color: var(--col-a)
+}
+
 section.n h4.b {
     margin: 20px;
 
     border-radius: 12px;
-    
+
     padding: 20px;
 
     text-transform: uppercase;
