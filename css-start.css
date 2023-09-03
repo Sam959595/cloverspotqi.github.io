@@ -27,7 +27,7 @@ section.n {
 }
 
 section.n>h1 {
-    margin-inline: 10px;
+    margin-inline: 20px;
     
     font: 800 expanded 32px system-ui
 }
@@ -38,61 +38,6 @@ section.n ul {
 
 section.n li+li {
     border-top: 10px solid var(--col-l)
-}
-
-section.n h4.a {
-    margin: 3rem;
-
-    font: 21px/1.6 system-ui;
-
-    color: white
-}
-
-section.n h4.b {
-    margin: 2rem;
-
-    text-transform: uppercase;
-    font: 700 24px system-ui;
-
-    color: #6ac5dd
-}
-
-section.n .i {
-    margin: 20px
-}
-
-section.n .i img {
-    aspect-ratio: 1/1.4;
-    object-fit: cover;
-
-    width: calc(100vw - 40px);
-
-    border-radius: 12px
-}
-
-section.n .r {
-    margin-block: 20px;
-    
-    width: 100vw;
-
-    padding-inline: 20px;
-
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 10px;
-
-    overscroll-behavior-x: none;
-    overflow-x: scroll;
-
-    scroll-snap-type: x mandatory
-}
-
-section.n .r img {
-    width: calc(100vw - 40px);
-
-    border-radius: 12px;
-
-    scroll-snap-align: center
 }
 
 section.n .y {
@@ -112,23 +57,28 @@ section.n .y {
     scroll-snap-type: x mandatory
 }
 
-section.n .y div:first-child {
-    border-radius: 12px 0 0 12px
-}
-
-section.n .y div:last-child {
-    border-radius: 0 12px 12px 0
-}
-
 section.n .y img {
-    aspect-ratio: 1/1.6;
+    aspect-ratio: 1/1.4;
+    object-fit: cover;
 
-    width: 100%;
+    width: calc(100vw - 40px);
+
+    border-radius: 12px
 }
 
-section.n .y div div {
+section.n .r img {
+    aspect-ratio: 1/1.6
+}
+
+section.n .r>div {
+    position: relative
+}
+
+section.n .r div div {
     position: absolute;
     inset: auto 0 0;
+
+    border-radius: 0 0 12px 12px;
 
     padding: 2rem;
 
@@ -137,25 +87,17 @@ section.n .y div div {
     background-image: linear-gradient(transparent, #00000050 40%)
 }
 
-section.n .y>div {
-    contain: paint;
-
-    position: relative;
-
-    width: calc(100vw - 40px)
-}
-
-section.n .y h1 {
-    margin-top: .5rem;
-
-    font: 800 expanded 32px/1 system-ui;
+section.n .r p {
+    font: 800 expanded 14px system-ui;
+    letter-spacing: .5rem;
 
     color: white
 }
 
-section.n .y p {
-    font: 800 expanded 14px system-ui;
-    letter-spacing: .5rem;
+section.n .r h1 {
+    margin-top: .5rem;
+
+    font: 800 expanded 32px/1 system-ui;
 
     color: white
 }
@@ -250,18 +192,18 @@ section.n h3 {
     font-size: 15px
 }
 
-section.n .k a {
-    margin-top: 1rem;
+section.n h4.b {
+    margin: 20px;
 
-    display: block;
+    border-radius: 12px;
+    
+    padding: 20px;
 
-    font: 600 13px system-ui;
+    text-transform: uppercase;
+    font: 700 24px system-ui;
 
-    color: var(--col-h)
-}
-
-section.n .l {
-    background-color: var(--col-a)
+    background-color: var(--col-t);
+    color: #6ac5dd
 }
 
 /* k */
