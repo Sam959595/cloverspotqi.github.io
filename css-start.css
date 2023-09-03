@@ -36,18 +36,8 @@ section.n ul {
     display: grid
 }
 
-section.n li {
-    padding: 20px
-}
-
 section.n li+li {
     border-top: 10px solid var(--col-l)
-}
-
-section.n .i {
-    contain: paint;
-
-    border-radius: 12px
 }
 
 section.n h4.a {
@@ -67,18 +57,29 @@ section.n h4.b {
     color: #6ac5dd
 }
 
+section.n .i {
+    margin: 20px
+}
+
 section.n .i img {
     aspect-ratio: 1/1.4;
     object-fit: cover;
 
-    width: -webkit-fill-available
+    width: calc(100vw - 40px);
+
+    border-radius: 12px
 }
 
 section.n .r {
-    width: calc(100vw - 40px);
+    margin-block: 20px;
+    
+    width: 100vw;
+
+    padding-inline: 20px;
 
     display: grid;
     grid-auto-flow: column;
+    column-gap: 10px;
 
     overscroll-behavior-x: none;
     overflow-x: scroll;
@@ -87,35 +88,64 @@ section.n .r {
 }
 
 section.n .r img {
-    width: calc(100vw - 70px);
+    width: calc(100vw - 40px);
+
+    border-radius: 12px;
 
     scroll-snap-align: center
 }
 
-section.n .w {
-    margin-top: 20px
+section.n .y {
+    margin-block: 20px;
+
+    width: 100vw;
+
+    padding-inline: 20px;
+
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 10px;
+
+    overscroll-behavior-x: none;
+    overflow-x: scroll;
+
+    scroll-snap-type: x mandatory
 }
 
-section.n .w img {
+section.n .y div:first-child {
+    border-radius: 12px 0 0 12px
+}
+
+section.n .y div:last-child {
+    border-radius: 0 12px 12px 0
+}
+
+section.n .y img {
     aspect-ratio: 1/1.6;
 
-    width: calc(100vw - 40px)
+    width: 100%;
 }
 
-section.n .w .j {
+section.n .y div div {
     position: absolute;
     inset: auto 0 0;
 
     padding: 2rem;
 
-    text-align: center
+    text-align: center;
+
+    background-image: linear-gradient(transparent, #00000050 40%)
 }
 
-section.n .w>div {
-    position: relative
+section.n .y>div {
+    contain: paint;
+
+    position: relative;
+
+    width: calc(100vw - 40px)
 }
 
-section.n .w h1 {
+section.n .y h1 {
     margin-top: .5rem;
 
     font: 800 expanded 32px/1 system-ui;
@@ -123,7 +153,7 @@ section.n .w h1 {
     color: white
 }
 
-section.n .w p {
+section.n .y p {
     font: 800 expanded 14px system-ui;
     letter-spacing: .5rem;
 
@@ -131,7 +161,7 @@ section.n .w p {
 }
 
 section.n .m {
-    margin-block: 2rem;
+    margin: 20px;
 
     display: flex;
     justify-content: center;
@@ -179,6 +209,8 @@ section.n svg {
 
 section.n .k {
     overflow: hidden;
+
+    margin: 20px;
 
     border-radius: 12px;
 
