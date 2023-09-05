@@ -27,14 +27,16 @@ section.n {
 }
 
 section.n>h1 {
-    margin: 0 20px 20px;
+    margin-inline: 20px;
 
     font: 800 expanded 32px system-ui
 }
 
 section.n ul {
+    margin-block: 20px;
+
     display: grid;
-    row-gap: 40px
+    row-gap: 20px
 }
 
 section.n .y {
@@ -163,7 +165,7 @@ section.n h2 {
 }
 
 section.n h4.b {
-    margin: 20px;
+    margin-inline: 20px;
 
     border-radius: 12px;
 
