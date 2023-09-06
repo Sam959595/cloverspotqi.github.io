@@ -65,7 +65,7 @@ section.n .i {
 }
 
 section.n .p {
-    filter: brightness(60%)
+    filter: brightness(70%)
 }
 
 section.n .r .i {
@@ -120,6 +120,7 @@ section.n .m {
     margin-block: 2rem;
 
     display: flex;
+    align-items: center;
     justify-content: center;
     column-gap: 7px
 }
@@ -132,9 +133,9 @@ section.n .m img {
 }
 
 section.n u {
-    margin-top: 3px;
+    opacity: .3;
 
-    display: block
+    display: inline-block
 }
 
 section.n h5:not(:last-child) {
@@ -155,9 +156,7 @@ section.n .d {
 }
 
 section.n h2 {
-    font: 500 14px system-ui;
-
-    color: white
+    font: 500 14px system-ui
 }
 
 section.n h4.b {
