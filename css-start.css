@@ -167,7 +167,13 @@ section.n h4.b {
 }
 
 section.n .w img+img {
-    margin-left: -5px;
+    margin-left: -4px;
+}
+
+section.n time {
+    margin-right: 1rem;
+
+    font: 700 13px system-ui
 }
 
 /* k */
