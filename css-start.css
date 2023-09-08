@@ -33,11 +33,38 @@ section.n>h1 {
 }
 
 section.n ul {
-    display: grid
+    display: grid;
+    grid-auto-flow: row
 }
 
-section.n .y {
+section.n .i {
+    margin-inline: 20px
+}
+
+section.n :is(.t, .e, .c) {
+    object-fit: cover;
+
+    width: calc(100vw - 40px);
+
+    border-radius: 12px
+}
+
+section.n .t {
+    aspect-ratio: 1/1.6
+}
+
+section.n .e {
+    aspect-ratio: 1/1.4
+}
+
+section.n .c {
+    aspect-ratio: 1
+}
+
+section.n .s {
     width: 100vw;
+
+    overflow-x: scroll;
 
     padding-inline: 20px;
     scroll-padding-left: 20px;
@@ -46,77 +73,14 @@ section.n .y {
     grid-auto-flow: column;
     column-gap: 10px;
     
-    overflow-x: scroll;
-
     scroll-snap-type: x mandatory
 }
 
-section.n :where(.y img, .r>div) {
+section.n .s img {
     scroll-snap-align: start
 }
 
-section.n .i {
-    aspect-ratio: 1/1.4;
-    object-fit: cover;
-
-    width: calc(100vw - 40px);
-
-    border-radius: 12px
-}
-
-section.n .p {
-    filter: brightness(70%)
-}
-
-section.n .r .i {
-    aspect-ratio: 1/1.6
-}
-
-section.n .r>div {
-    position: relative
-}
-
-section.n .r>div>div {
-    position: absolute;
-    inset: auto 0 0;
-
-    border-radius: 0 0 12px 12px;
-
-    padding: 2rem;
-
-    text-align: center
-}
-
-section.n .r p {
-    font: 800 expanded 14px system-ui;
-    letter-spacing: .5rem;
-
-    color: white
-}
-
-section.n .r h1 {
-    margin-block: .5rem 1.5rem;
-
-    font: 800 expanded 32px/1 system-ui;
-
-    color: white
-}
-
-section.n .e {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 10px
-}
-
-section.n .e img {
-    width: 16px;
-    height: 16px;
-
-    border-radius: 50%
-}
-
-section.n .m {
+section.n .v {
     margin-block: 2rem;
 
     display: flex;
@@ -124,22 +88,20 @@ section.n .m {
     column-gap: 7px
 }
 
-section.n .m img {
+section.n .v img {
     width: 16px;
     height: 16px;
 
     border-radius: 50%
 }
 
-section.n h5:not(:last-child) {
-    margin-right: 1rem
+section.n time {
+    margin-right: 1rem;
+
+    font: 700 13px system-ui
 }
 
-section.n h5 {
-    font: 700 13px ui-rounded
-}
-
-section.n .d {
+section.n svg {
     width: 16px;
     height: 16px;
 
@@ -148,11 +110,23 @@ section.n .d {
     background-color: var(--col-c)
 }
 
-section.n h2 {
-    font: 500 14px system-ui
+section.n h6:not(:last-child) {
+    margin-right: 1rem
 }
 
-section.n h4.b {
+section.n h6 {
+    font: 700 13px ui-rounded
+}
+
+section.n .v div {
+    display: inherit
+}
+
+section.n .v div img+img {
+    margin-left: -4px
+}
+
+section.n li h1 {
     margin-inline: 20px;
 
     border-radius: 12px;
@@ -161,19 +135,9 @@ section.n h4.b {
 
     text-transform: uppercase;
     font: 700 24px system-ui;
-
+    
     background-color: var(--col-t);
     color: #6ac5dd
-}
-
-section.n .w img+img {
-    margin-left: -4px;
-}
-
-section.n time {
-    margin-right: 1rem;
-
-    font: 700 13px system-ui
 }
 
 /* k */
@@ -197,8 +161,8 @@ section.g {
 
     margin: 0 0 max(20px, env(safe-area-inset-bottom)) 20px;
     
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
 
     border-radius: 50%;
 
