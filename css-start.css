@@ -29,12 +29,16 @@ section.n {
 section.n>h1 {
     margin: 0 20px 20px;
 
-    font: 800 expanded 32px system-ui
+    font: 800 expanded 32px/1 system-ui
 }
 
 section.n ul {
     display: grid;
     grid-auto-flow: row
+}
+
+section.n li {
+    position: relative
 }
 
 section.n .i {
@@ -140,6 +144,24 @@ section.n li h1 {
     color: var(--col-f)
 }
 
+section.n .k {
+    position: absolute;
+    inset: 0 0 auto auto;
+
+    margin: 10px 30px auto;
+
+    width: fit-content;
+
+    padding: 3px 7px;
+
+    border-radius: 6px;
+
+    font-weight: 800;
+
+    background-color: white;
+    color: #777
+}
+
 /* k */
 
 section.k {
@@ -159,7 +181,7 @@ section.g {
     position: fixed;
     inset: auto auto 0 0;
 
-    margin: 0 0 max(20px, env(safe-area-inset-bottom)) 20px;
+    margin: 0 0 max(20px, env(safe-area-inset-bottom)) 25px;
     
     width: 40px;
     height: 40px;
