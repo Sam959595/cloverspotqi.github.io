@@ -146,9 +146,7 @@ section.n li h1 {
 
 section.n .k {
     position: absolute;
-    inset: 0 0 auto auto;
-
-    margin: 10px 30px auto;
+    inset: 10px 30px auto auto;
 
     width: fit-content;
 
