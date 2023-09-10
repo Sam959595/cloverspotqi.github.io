@@ -2,7 +2,7 @@
     "name": "Кря Кря",
     "icons": [
         {
-            "src": "/book/icon.jpg"
+            "src": "icon.jpg"
         }
     ],
     "display": "standalone",
