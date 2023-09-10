@@ -32,16 +32,16 @@ section.n>h1 {
     font: 800 33px/1 system-ui
 }
 
+section.n p {
+    margin: 0 20px 10px;
+
+    font: 600 15px system-ui
+}
+
 section.n>h2 {
     margin: 0 20px 20px;
 
-    border-radius: 12px;
-
-    padding: 20px;
-
-    font-size: 15px;
-
-    background-color: var(--col-t)
+    font-size: 15px
 }
 
 section.n ul {
