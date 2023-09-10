@@ -127,15 +127,6 @@ span {
     background-color: var(--col-c)
 }
 
-section.n svg {
-    width: 16px;
-    height: 16px;
-
-    border-radius: 50%;
-
-    background-color: var(--col-c)
-}
-
 section.n h6:not(:last-child) {
     margin-right: 1rem
 }
