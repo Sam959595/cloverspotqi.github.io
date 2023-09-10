@@ -161,8 +161,6 @@ section.n .k {
     position: absolute;
     inset: 10px 30px auto auto;
 
-    width: fit-content;
-
     padding: 3px 7px;
 
     border-radius: 6px;
