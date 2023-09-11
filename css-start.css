@@ -113,6 +113,8 @@ section.n .v img {
 }
 
 section.n hr {
+    margin-inline: 5px;
+
     width: 2rem;
 
     border-radius: 2px;
