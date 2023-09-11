@@ -112,13 +112,7 @@ section.n .v img {
     border-radius: 50%
 }
 
-section.n time {
-    font: 700 13px system-ui
-}
-
 section.n hr {
-    margin-inline: 5px;
-
     width: 2rem;
 
     border-radius: 2px;
@@ -138,7 +132,7 @@ section.n .v div img:not(:last-child) {
 }
 
 section.n h6:not(:last-child) {
-    margin-right: 1rem
+    margin-right: 2rem
 }
 
 section.n h6 {
