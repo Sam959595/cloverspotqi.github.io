@@ -113,19 +113,28 @@ section.n .v img {
 }
 
 section.n time {
-    margin-right: 1rem;
-
     font: 700 13px system-ui
 }
 
-span {
-    width: 18px;
-    height: 18px;
+section.n hr {
+    margin-inline: 5px;
+    
+    width: 20px;
 
-    border-radius: 50%;
+    border-radius: 2px;
+    border-top: 3px solid var(--col-c)
+}
 
-    background-image: var(--svg);
-    background-color: var(--col-c)
+section.n .v div {
+    display: inherit
+}
+
+section.n .v div img+img {
+    margin-left: -4px
+}
+
+section.n .v div img:not(:last-child) {
+    clip-path: path("M9 0a8.96 8.96 0 0 1 5.377 1.782C12.717 3.423 11.7 6.045 11.7 9s1.017 5.577 2.676 7.218A9 9 0 1 1 9 0Z")
 }
 
 section.n h6:not(:last-child) {
@@ -136,12 +145,14 @@ section.n h6 {
     font: 700 13px ui-rounded
 }
 
-section.n .v div {
-    display: inherit
-}
+span {
+    width: 18px;
+    height: 18px;
 
-section.n .v div img+img {
-    margin-left: -4px
+    border-radius: 50%;
+
+    background-image: var(--svg);
+    background-color: var(--col-c)
 }
 
 section.n li h1 {
