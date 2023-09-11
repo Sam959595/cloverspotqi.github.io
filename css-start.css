@@ -106,8 +106,8 @@ section.n .v {
 }
 
 section.n .v img {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
 
     border-radius: 50%
 }
@@ -119,8 +119,8 @@ section.n time {
 }
 
 span {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
 
     border-radius: 50%;
 
