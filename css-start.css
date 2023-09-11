@@ -118,8 +118,8 @@ section.n time {
 
 section.n hr {
     margin-inline: 5px;
-    
-    width: 20px;
+
+    width: 2rem;
 
     border-radius: 2px;
     border-top: 3px solid var(--col-c)
