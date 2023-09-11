@@ -100,13 +100,14 @@ section.n .v {
     margin-block: 2rem;
 
     display: flex;
+    align-items: center;
     justify-content: center;
     column-gap: 7px
 }
 
 section.n .v img {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
 
     border-radius: 50%
 }
@@ -118,8 +119,8 @@ section.n time {
 }
 
 span {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
 
     border-radius: 50%;
 
