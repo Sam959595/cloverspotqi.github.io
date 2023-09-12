@@ -108,20 +108,17 @@ section.n .v img {
     border-radius: 50%
 }
 
-section.n hr:not(.b) {
+section.n .v div {
+    display: inherit
+}
+
+section.n hr {
     margin-inline: 5px;
 
     width: 2rem;
 
     border-radius: 2px;
     border-top: 3px solid var(--col-c)
-}
-
-section.n hr.b {
-    width: .5rem;
-
-    border-radius: 2px;
-    border-top: 3px solid #3094ff
 }
 
 section.n hr.j {
@@ -132,17 +129,17 @@ section.n hr.q {
     border-color: #ef8049
 }
 
-section.n .v div.k {
-    margin-inline: 5px;
+section.n hr.b {
+    width: .5rem;
 
-    column-gap: 3px
+    border-color: #3094ff
 }
 
-section.n .v div {
-    display: inherit
+section.n .k {
+    margin-inline: 0
 }
 
-section.n .v div img+img {
+section.n .v img+img {
     margin-left: -4px
 }
 
