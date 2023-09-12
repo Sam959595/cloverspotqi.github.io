@@ -84,7 +84,7 @@ section.n .s {
     display: grid;
     grid-auto-flow: column;
     column-gap: 10px;
-    
+
     scroll-snap-type: x mandatory
 }
 
@@ -136,7 +136,7 @@ section.n hr.b {
 }
 
 section.n .k {
-    margin-inline: 0
+    margin-inline: -1px
 }
 
 section.n .v img+img {
@@ -161,8 +161,17 @@ span {
 
     border-radius: 50%;
 
-    background-image: var(--svg);
     background-color: var(--col-c)
+}
+
+span.f {
+    margin-right: 2rem;
+
+    background-image: var(--svg-p)
+}
+
+span.u {
+    background-image: var(--svg)
 }
 
 section.n li h1 {
@@ -197,7 +206,7 @@ section.k {
 section.g {
     position: fixed;
     inset: auto auto max(20px, env(safe-area-inset-bottom)) 25px;
-    
+
     width: 40px;
     height: 40px;
 
@@ -223,6 +232,7 @@ section.g {
         --col-k: #eaeaf290;
         --col-f: #53a2b5;
 
+        --svg-p: url('svg-l-p.svg');
         --svg: url('svg-l.svg');
     }
 }
@@ -239,6 +249,7 @@ section.g {
         --col-k: #21212190;
         --col-f: #6ac5dd;
 
+        --svg-p: url('svg-d-p.svg');
         --svg: url('svg-d.svg');
     }
 }
