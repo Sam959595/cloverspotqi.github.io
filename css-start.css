@@ -108,13 +108,34 @@ section.n .v img {
     border-radius: 50%
 }
 
-section.n hr {
+section.n hr:not(.b) {
     margin-inline: 5px;
 
     width: 2rem;
 
     border-radius: 2px;
     border-top: 3px solid var(--col-c)
+}
+
+section.n hr.b {
+    width: .5rem;
+
+    border-radius: 2px;
+    border-top: 3px solid #3094ff
+}
+
+section.n hr.j {
+    border-color: #40d27f
+}
+
+section.n hr.q {
+    border-color: #ef8049
+}
+
+section.n .v div.k {
+    margin-inline: 5px;
+
+    column-gap: 3px
 }
 
 section.n .v div {
@@ -159,25 +180,6 @@ section.n li h1 {
 
     background-color: var(--col-t);
     color: var(--col-f)
-}
-
-label {
-    margin-left: -10px;
-    
-    width: 18px;
-    height: 18px;
-
-    border-radius: 50%;
-
-    padding-top: 1px;
-
-    display: block;
-
-    text-align: center;
-    font: 700 13px ui-rounded;
-
-    background-color: #4198ff;
-    color: white
 }
 
 /* k */
