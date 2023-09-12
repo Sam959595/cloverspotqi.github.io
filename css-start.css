@@ -96,6 +96,14 @@ section.n a {
     position: relative
 }
 
+section.n a.q {
+    display: block
+}
+
+section.n a.q .k {
+    right: 30px
+}
+
 section.n .k {
     position: absolute;
     inset: 10px 10px auto auto;
