@@ -16,7 +16,7 @@ document.querySelectorAll('img').forEach(x => {
     }).observe(x)
 })
 
-document.querySelectorAll('video').click(x => {
+document.querySelectorAll('video').onclick(x => {
     x.forEach(x => {
         x.target.preventDefault()
     })
