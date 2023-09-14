@@ -16,6 +16,10 @@ document.querySelectorAll('img').forEach(x => {
     }).observe(x)
 })
 
+document.querySelectorAll('video').click(x => {
+    x.preventDefault()
+})
+
 // video load
 document.querySelectorAll('video').forEach(x => {
     new IntersectionObserver((a, b) => {
