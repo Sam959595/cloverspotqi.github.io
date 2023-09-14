@@ -18,7 +18,7 @@ document.querySelectorAll('img').forEach(x => {
 
 document.querySelectorAll('video').click(x => {
     x.forEach(x => {
-        x.preventDefault()
+        x.target.preventDefault()
     })
 })
 
