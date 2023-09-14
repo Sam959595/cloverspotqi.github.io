@@ -11,7 +11,6 @@ html {
 
 img,
 video {
-    pointer-events: none;
     opacity: 1;
 
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
@@ -228,7 +227,7 @@ section.h {
     opacity: 0;
 
     position: fixed;
-    inset: auto 25px max(20px, env(safe-area-inset-bottom)) auto;
+    inset: calc(10px + env(safe-area-inset-top)) 25px auto auto;
 
     width: 40px;
     height: 40px;
@@ -247,6 +246,9 @@ section.h {
 
 @media (prefers-color-scheme: light) {
     :root {
+        --svg-p: url('svg-l-p.svg');
+        --svg: url('svg-l.svg');
+
         --col-b: white;
         --col-h: black;
         --col-p: #afafb1;
@@ -256,14 +258,14 @@ section.h {
         --col-t: #f5f5f7;
         --col-k: #eaeaf290;
         --col-f: #53a2b5;
-
-        --svg-p: url('svg-l-p.svg');
-        --svg: url('svg-l.svg');
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --svg-p: url('svg-d-p.svg');
+        --svg: url('svg-d.svg');
+
         --col-b: #101010;
         --col-h: white;
         --col-p: #77777b;
@@ -273,8 +275,5 @@ section.h {
         --col-t: #1c1c1f;
         --col-k: #21212190;
         --col-f: #6ac5dd;
-
-        --svg-p: url('svg-d-p.svg');
-        --svg: url('svg-d.svg');
     }
 }
