@@ -11,6 +11,7 @@ html {
 
 img,
 video {
+    pointer-events: none;
     opacity: 1;
 
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
