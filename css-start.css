@@ -227,7 +227,7 @@ section.h {
     opacity: 0;
 
     position: fixed;
-    inset: calc(10px + env(safe-area-inset-top)) 25px auto auto;
+    inset: auto 25px max(20px, env(safe-area-inset-bottom)) auto;
 
     width: 40px;
     height: 40px;
