@@ -54,9 +54,9 @@ section.n .i {
 }
 
 section.n :is(.t, .e, .c) {
-    object-fit: cover;
-
     width: calc(100vw - 40px);
+    
+    object-fit: cover;
 
     border-radius: 12px
 }
@@ -88,7 +88,7 @@ section.n .s {
     scroll-snap-type: x mandatory
 }
 
-section.n .s img {
+section.n .s :is(img, video) {
     scroll-snap-align: start
 }
 
@@ -218,6 +218,30 @@ section.g {
 
     background-color: var(--col-k);
     color: var(--col-h)
+}
+
+/* h */
+
+section.h {
+    pointer-events: none;
+    opacity: 0;
+
+    position: fixed;
+    inset: auto 25px max(20px, env(safe-area-inset-bottom)) auto;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    padding: 11px 8px;
+
+    -webkit-backdrop-filter: blur(10px);
+
+    background-color: var(--col-k);
+    color: var(--col-h);
+
+    transition: opacity .4s
 }
 
 @media (prefers-color-scheme: light) {
