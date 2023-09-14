@@ -59,15 +59,15 @@ document.querySelectorAll('video').forEach(x => {
 $('section.h')[0].addEventListener('click', () => {
     if ($('video').prop('muted')) {
         $('video').prop('muted', false);
-        $('section.e>svg path')[0].setAttribute('stroke', 'white')
+        $('section.h svg')[0].setAttribute('opacity', '.4')
     } else {
         $('video').prop('muted', true);
-        $('section.e>svg path')[0].setAttribute('stroke', 'var(--soft-4)')
+        $('section.h svg')[0].setAttribute('opacity', '.1')
     }
 })
 
 // video pause if exit tab browser
 window.onblur = () => {
     $('video').prop('muted', true);
-    $('section.e>svg path')[0].setAttribute('stroke', 'var(--soft-4)')
+    $('section.h svg')[0].setAttribute('opacity', '.1')
 }
