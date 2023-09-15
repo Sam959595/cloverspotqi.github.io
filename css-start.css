@@ -93,7 +93,7 @@ section.n .s :is(img, video) {
 }
 
 section.n .v {
-    margin-block: 2rem;
+    margin-block: 24px;
 
     display: flex;
     align-items: center;
