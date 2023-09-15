@@ -217,6 +217,7 @@ section.m {
 
 @media (prefers-color-scheme: light) {
     :root {
+        --col-b: white;
         --col-0: black;
         --col-1: #eeeded;
         --col-2: #fffaf0;
@@ -235,6 +236,7 @@ section.m {
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --col-b: black;
         --col-0: white;
         --col-1: #1c1c1e;
         --col-2: #353539;
