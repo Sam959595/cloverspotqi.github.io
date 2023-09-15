@@ -35,13 +35,13 @@ section.n .w h1 {
 }
 
 section.n p {
-    margin-block: 10px;
+    margin-top: 10px;
 
     font: 600 15px system-ui
 }
 
-section.n .w h2 {
-    font-size: 15px
+section.n u {
+    color: var(--col-h)
 }
 
 section.n ul {
