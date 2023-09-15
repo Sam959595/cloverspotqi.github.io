@@ -45,7 +45,7 @@ document.querySelectorAll('video').forEach(x => {
 
                 setTimeout(() => {
                     $('section.h')[0].removeAttribute('style')
-                }, 10000)
+                }, 20000)
             } else {
                 x.target.pause()
             }
