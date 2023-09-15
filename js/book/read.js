@@ -93,7 +93,7 @@ document.querySelectorAll('u').forEach(x => {
                 x.style = 'opacity: 0; display: block; transition: opacity .4s';
 
                 setTimeout(() => {
-                    x.style.opacity = '.9'
+                    x.style.opacity = '1'
                 }, 0)
             }
             window.addEventListener('touchmove', () => {
