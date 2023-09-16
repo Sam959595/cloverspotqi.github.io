@@ -18,22 +18,22 @@ window.addEventListener('change', () => {
     }
 })
 
-// font
+// interval
 window.addEventListener('change', () => {
     let vv = $('section.e select:nth-child(2)').val(), nn = $('section.t')[0];
 
     if (vv == 1) {
-        nn.classList.add('a')
-        nn.classList.remove('v')
+        nn.classList.remove('f', 'j')
     } else if (vv == 2) {
-        nn.classList.add('v')
-        nn.classList.remove('a')
+        nn.classList.add('f')
+        nn.classList.remove('j')
     } else if (vv == 3) {
-        nn.classList.remove('v', 'a')
+        nn.classList.add('j')
+        nn.classList.remove('f')
     }
 })
 
-// text
+// text size
 window.addEventListener('change', () => {
     let vv = $('section.e select:nth-child(3)').val(), nn = $('section.t')[0];
 
@@ -51,24 +51,9 @@ window.addEventListener('change', () => {
     }
 })
 
-// interval
-window.addEventListener('change', () => {
-    let vv = $('section.e select:nth-child(4)').val(), nn = $('section.t')[0];
-
-    if (vv == 1) {
-        nn.classList.remove('f', 'j')
-    } else if (vv == 2) {
-        nn.classList.add('f')
-        nn.classList.remove('j')
-    } else if (vv == 3) {
-        nn.classList.add('j')
-        nn.classList.remove('f')
-    }
-})
-
 // background
 window.addEventListener('change', () => {
-    let vv = $('section.e select:nth-child(5)').val(), nn = $('body');
+    let vv = $('section.e select:nth-child(4)').val(), nn = $('body');
 
     if (vv == 6) {
         nn.attr('class', 'b')
@@ -82,6 +67,21 @@ window.addEventListener('change', () => {
         nn.attr('class', 'f')
     } else if (vv == 1) {
         nn[0].removeAttribute('class')
+    }
+})
+
+// font
+window.addEventListener('change', () => {
+    let vv = $('section.e select:nth-child(5)').val(), nn = $('section.t')[0];
+
+    if (vv == 1) {
+        nn.classList.add('a')
+        nn.classList.remove('v')
+    } else if (vv == 2) {
+        nn.classList.add('v')
+        nn.classList.remove('a')
+    } else if (vv == 3) {
+        nn.classList.remove('v', 'a')
     }
 })
 
