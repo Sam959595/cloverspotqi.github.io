@@ -53,7 +53,7 @@ section.n .i {
     margin-inline: 20px
 }
 
-section.n :is(.t, .e, .c) {
+section.n :is(.t, .e, .c, .y) {
     width: calc(100vw - 40px);
     
     object-fit: cover;
@@ -71,6 +71,10 @@ section.n .e {
 
 section.n .c {
     aspect-ratio: 1
+}
+
+section.n .y {
+    aspect-ratio: 1.9/1
 }
 
 section.n .s {
