@@ -32,7 +32,7 @@ section.t h6 {
     margin-bottom: 1cm;
 
     text-align: justify;
-    font: 20px/1.7 system-ui;
+    font: 370 20px/1.7 system-ui;
     letter-spacing: .2px
 }
 
@@ -184,7 +184,7 @@ section.e select {
     border-radius: 15px;
 
     text-align-last: center;
-    font: 600 17px system-ui;
+    font: 500 17px system-ui;
 
     background-color: var(--col-a);
     color: var(--col-0);
