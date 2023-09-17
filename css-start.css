@@ -112,8 +112,25 @@ section.n .v img {
     border-radius: 50%
 }
 
-section.n .v div {
-    display: inherit
+section.n label {
+    margin-right: 5px;
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%
+}
+
+section.n .j {
+    background-color: #40d27f
+}
+
+section.n .q {
+    background-color: #ef8049
+}
+
+section.n .b {
+    background-color: #3094ff
 }
 
 section.n hr {
@@ -125,22 +142,8 @@ section.n hr {
     border-top: 3px solid var(--col-c)
 }
 
-section.n hr.j {
-    border-color: #40d27f
-}
-
-section.n hr.q {
-    border-color: #ef8049
-}
-
-section.n hr.b {
-    width: .5rem;
-
-    border-color: #3094ff
-}
-
-section.n .k {
-    margin-inline: -2px
+section.n .v div {
+    display: inherit
 }
 
 section.n .v img+img {
