@@ -163,19 +163,19 @@ span {
     width: 18px;
     height: 18px;
 
-    border-radius: 50%;
-
-    background-color: var(--col-c)
+    border-radius: 50%
 }
 
 span.f {
     margin-right: 2rem;
 
-    background-image: var(--svg-p)
+    background-image: var(--svg);
+    background-color: var(--col-c)
 }
 
 span.u {
-    background-image: var(--svg)
+    background-image: url('svg.svg');
+    background-color: #ff3838
 }
 
 section.n li h1 {
@@ -250,8 +250,7 @@ section.h {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --svg-p: url('svg-l-p.svg');
-        --svg: url('svg-l.svg');
+        --svg: url('svg-l-p.svg');
 
         --col-b: white;
         --col-h: black;
@@ -267,8 +266,7 @@ section.h {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --svg-p: url('svg-d-p.svg');
-        --svg: url('svg-d.svg');
+        --svg: url('svg-d-p.svg');
 
         --col-b: #101010;
         --col-h: white;
