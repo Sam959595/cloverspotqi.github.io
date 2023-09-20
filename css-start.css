@@ -138,6 +138,7 @@ section.n .v div img:not(:last-child) {
 section.n h6 {
     padding-left: 7px;
 
+    word-spacing: 3px;
     font: 700 14px ui-rounded
 }
 
