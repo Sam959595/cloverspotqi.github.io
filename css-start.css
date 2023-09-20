@@ -145,21 +145,22 @@ section.n span {
     margin-left: 31px
 }
 
-section.n label {
+section.n h5 {
     width: 18px;
     height: 18px;
 
-    border-radius: 50%
+    border-radius: 50%;
+
+    padding-top: 2px;
+
+    text-align: center;
+    font-size: 10px;
+
+    background-color: #fcdada
 }
 
-section.n label.f {
-    background-image: var(--svg);
+section.n h5.j {
     background-color: var(--col-c)
-}
-
-section.n label.u {
-    background-image: url('svg.svg');
-    background-color: #3094ff
 }
 
 /* k */
@@ -220,8 +221,6 @@ section.h {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --svg: url('svg-l-p.svg');
-
         --col-b: white;
         --col-h: black;
         --col-p: #afafb1;
@@ -236,8 +235,6 @@ section.h {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --svg: url('svg-d-p.svg');
-
         --col-b: #101010;
         --col-h: white;
         --col-p: #77777b;
