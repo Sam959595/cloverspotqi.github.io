@@ -21,7 +21,7 @@ video {
 section.n {
     overflow-y: scroll;
 
-    padding-block: calc(10px + env(safe-area-inset-top)) calc(10px + env(safe-area-inset-bottom));
+    padding-block: calc(10px + env(safe-area-inset-top)) calc(40px + env(safe-area-inset-bottom));
 
     height: 100vh
 }
@@ -101,8 +101,7 @@ section.n .v {
 
     display: flex;
     align-items: center;
-    justify-content: center;
-    column-gap: 7px
+    justify-content: center
 }
 
 section.n .v img {
@@ -112,34 +111,16 @@ section.n .v img {
     border-radius: 50%
 }
 
-section.n label {
-    margin-right: 5px;
-
-    width: 5px;
-    height: 5px;
-
-    border-radius: 50%
-}
-
-section.n .j {
-    background-color: #40d27f
-}
-
-section.n .q {
-    background-color: #ef8049
-}
-
-section.n .b {
-    background-color: #3094ff
-}
-
 section.n hr {
-    margin-inline: 5px;
-
+    margin-inline: 12px;
     width: 2rem;
 
     border-radius: 2px;
     border-top: 3px solid var(--col-c)
+}
+
+section.n .v hr~*{
+    display: inherit
 }
 
 section.n .v div {
@@ -154,45 +135,31 @@ section.n .v div img:not(:last-child) {
     clip-path: path("M9 0a8.96 8.96 0 0 1 5.377 1.782C12.717 3.423 11.7 6.045 11.7 9s1.017 5.577 2.676 7.218A9 9 0 1 1 9 0Z")
 }
 
-section.n h6:not(:last-child) {
-    margin-right: 2rem
-}
-
 section.n h6 {
+    padding-left: 7px;
+
     font: 700 14px ui-rounded
 }
 
-span {
+section.n span {
+    margin-left: 31px
+}
+
+section.n label {
     width: 18px;
     height: 18px;
 
     border-radius: 50%
 }
 
-span.f {
-    margin-right: 2rem;
-
+section.n label.f {
     background-image: var(--svg);
     background-color: var(--col-c)
 }
 
-span.u {
+section.n label.u {
     background-image: url('svg.svg');
     background-color: #3094ff
-}
-
-section.n li h1 {
-    margin-inline: 20px;
-
-    border-radius: 12px;
-
-    padding: 20px;
-
-    text-transform: uppercase;
-    font: 700 24px system-ui;
-
-    background-color: var(--col-t);
-    color: var(--col-f)
 }
 
 /* k */
