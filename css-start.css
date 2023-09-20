@@ -224,12 +224,8 @@ section.h {
         --col-b: white;
         --col-h: black;
         --col-p: #afafb1;
-
-        --col-a: #00000008;
         --col-c: #00000020;
-        --col-t: #f5f5f7;
         --col-k: #eaeaf290;
-        --col-f: #53a2b5;
     }
 }
 
@@ -238,11 +234,7 @@ section.h {
         --col-b: #101010;
         --col-h: white;
         --col-p: #77777b;
-
-        --col-a: #00000030;
         --col-c: #ffffff20;
-        --col-t: #1c1c1f;
         --col-k: #21212190;
-        --col-f: #6ac5dd;
     }
 }
