@@ -113,6 +113,7 @@ section.n .v img {
 
 section.n hr {
     margin-inline: 12px;
+
     width: 2rem;
 
     border-radius: 2px;
@@ -138,12 +139,11 @@ section.n .v div img:not(:last-child) {
 section.n h6 {
     padding-left: 7px;
 
-    word-spacing: 3px;
     font: 700 14px ui-rounded
 }
 
 section.n span {
-    margin-left: 31px
+    margin-left: 3rem
 }
 
 section.n h5 {
@@ -152,12 +152,12 @@ section.n h5 {
 
     border-radius: 50%;
 
-    padding-top: 2px;
+    padding-top: 3px;
 
     text-align: center;
     font-size: 10px;
 
-    background-color: #fcdada
+    background-color: #ffc7c3
 }
 
 section.n h5.j {
