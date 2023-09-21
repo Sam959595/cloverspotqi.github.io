@@ -41,13 +41,10 @@ document.querySelectorAll('video').forEach(x => {
         x.forEach(x => {
             if (x.isIntersecting) {
                 x.target.play();
-                $('section.h')[0].style.cssText = 'opacity: 1; pointer-events: initial';
-
-                setTimeout(() => {
-                    $('section.h')[0].removeAttribute('style')
-                }, 20000)
+                $('section.h')[0].style.cssText = 'opacity: 1; pointer-events: initial'
             } else {
-                x.target.pause()
+                x.target.pause();
+                $('section.h')[0].removeAttribute('style')
             }
         })
     }, {
