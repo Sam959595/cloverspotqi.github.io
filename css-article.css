@@ -15,7 +15,7 @@ video {
 /* n */
 
 section.n {
-    margin-block: calc(4rem + env(safe-area-inset-top)) calc(20px + env(safe-area-inset-bottom))
+    margin-block: calc(5rem + env(safe-area-inset-top)) calc(20px + env(safe-area-inset-bottom))
 }
 
 section.n time {
@@ -30,16 +30,26 @@ section.n h1 {
     font: 800 expanded 32px/1 system-ui
 }
 
+section.n .a {
+    font: 800 40px/1 georgia
+}
+
 section.n article {
     margin: 30px;
 
     font: 370 19px/1.6 ui-serif
 }
 
-section.n article:first-letter {
+section.n .b:first-letter {
     -webkit-initial-letter: 3;
 
     margin-right: .8em
+}
+
+section.n img {
+    width: 100%;
+
+    aspect-ratio: 1.8/1
 }
 
 /* k */
@@ -68,7 +78,7 @@ section.k {
 @media (prefers-color-scheme: dark) {
     :root {
         --col-b: #101010;
-        --col-h: white;
+        --col-h: #eee;
         --col-p: #77777b;
         --col-c: #ffffff20;
         --col-k: #21212190;
