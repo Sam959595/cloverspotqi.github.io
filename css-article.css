@@ -15,7 +15,7 @@ video {
 /* n */
 
 section.n {
-    margin-block: calc(5rem + env(safe-area-inset-top)) calc(20px + env(safe-area-inset-bottom))
+    margin-block: calc(5rem + env(safe-area-inset-top)) calc(15rem + env(safe-area-inset-bottom))
 }
 
 section.n time {
@@ -68,7 +68,7 @@ section.k {
 @media (prefers-color-scheme: light) {
     :root {
         --col-b: white;
-        --col-h: black;
+        --col-h: #111;
         --col-p: #afafb1;
         --col-c: #00000020;
         --col-k: #eaeaf290;
@@ -78,7 +78,7 @@ section.k {
 @media (prefers-color-scheme: dark) {
     :root {
         --col-b: #101010;
-        --col-h: #eee;
+        --col-h: #ddd;
         --col-p: #77777b;
         --col-c: #ffffff20;
         --col-k: #21212190;
