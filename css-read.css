@@ -18,14 +18,8 @@ section.t h5 {
     letter-spacing: .04em
 }
 
-section.t h6:not(.f):first-letter {
+section.t h6:first-letter {
     margin-left: 1cm
-}
-
-section.t .f:first-letter {
-    -webkit-initial-letter: 3;
-
-    margin-right: .8em
 }
 
 section.t h6 {
@@ -40,7 +34,7 @@ section.t u {
     -webkit-text-decoration: underline dotted #ffa333;
     text-decoration-skip: none;
     text-underline-offset: 2px;
-    text-decoration-thickness: 1.2px
+    text-decoration-thickness: 2px
 }
 
 /* padding */
