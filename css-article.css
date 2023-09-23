@@ -37,7 +37,8 @@ section.n .a {
 section.n blockquote {
     margin: 30px;
 
-    font: italic 500 19px/1.3 system-ui;
+    text-align: right;
+    font: italic 500 19px/1.4 system-ui;
 
     color: var(--col-p)
 }
