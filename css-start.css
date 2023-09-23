@@ -147,21 +147,7 @@ section.n span {
 }
 
 section.n h5 {
-    width: 18px;
-    height: 18px;
-
-    border-radius: 50%;
-
-    padding-top: 3px;
-
-    text-align: center;
-    font-size: 10px;
-
-    background-color: #ffc7c3
-}
-
-section.n h5.j {
-    background-color: var(--col-c)
+    font-size: 14px
 }
 
 /* k */
