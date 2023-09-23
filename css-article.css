@@ -34,6 +34,14 @@ section.n .a {
     font: 800 40px/1 georgia
 }
 
+section.n blockquote {
+    margin: 30px;
+
+    font: italic 500 17px/1.4 ui-serif;
+
+    color: var(--col-p)
+}
+
 section.n article {
     margin: 30px;
 
