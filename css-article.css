@@ -15,22 +15,24 @@ video {
 /* n */
 
 section.n {
-    margin-block: calc(20px + env(safe-area-inset-top)) calc(20px + env(safe-area-inset-bottom))
-}
-
-section.n :is(time, h1, article) {
-    margin: 40px 20px
+    margin-block: calc(4rem + env(safe-area-inset-top)) calc(20px + env(safe-area-inset-bottom))
 }
 
 section.n time {
+    margin-inline: 30px;
+
     font: 800 15px system-ui
 }
 
 section.n h1 {
+    margin: 15px 30px 40px;
+
     font: 800 expanded 32px/1 system-ui
 }
 
 section.n article {
+    margin: 30px;
+
     font: 370 19px/1.6 ui-serif
 }
 
