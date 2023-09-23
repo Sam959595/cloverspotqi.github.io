@@ -49,6 +49,21 @@ section.n article {
     font: 370 19px/1.6 ui-serif
 }
 
+section.n a {
+    -webkit-text-decoration: underline dotted #3381ff;
+    text-decoration-skip: none;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
+    
+    color: inherit
+}
+
+section.n mark {
+    border-radius: 3px;
+
+    background-color: #ff45a280
+}
+
 section.n .b:first-letter {
     -webkit-initial-letter: 3;
 
@@ -59,6 +74,12 @@ section.n img {
     width: 100%;
 
     aspect-ratio: 1.8/1
+}
+
+section.n h2 {
+    margin: 30px;
+
+    font: 800 expanded 32px/1 system-ui
 }
 
 /* k */
