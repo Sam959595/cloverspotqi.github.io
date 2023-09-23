@@ -37,13 +37,13 @@ section.n .a {
 section.n blockquote {
     margin: 30px;
 
-    font: italic 500 17px/1.4 ui-serif;
+    font: italic 500 19px/1.2 system-ui;
 
     color: var(--col-p)
 }
 
 section.n article {
-    margin: 30px;
+    margin: 40px 30px;
 
     font: 370 19px/1.6 ui-serif
 }
