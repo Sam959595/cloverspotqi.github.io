@@ -142,6 +142,10 @@ section.n h6 {
     font: 700 14px ui-rounded
 }
 
+section.n .h {
+    color: #f2b427
+}
+
 section.n span {
     margin-left: 3rem
 }
