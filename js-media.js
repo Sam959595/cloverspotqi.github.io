@@ -1,15 +1,15 @@
 // tab
-let k = 0;
+let n = 0;
 $(window).scroll( () => {
-    let y = window.scrollY;
+    let s = window.scrollY;
 
-    if (y > k) {
+    if (s > n) {
         $('section.a')[0].style = 'pointer-events: none; opacity: 0'
     } else {
         $('section.a')[0].style = 'pointer-events: auto; opacity: 1'
     }
 
-    k = y <= 0 ? 0 : y
+    n = s <= 0 ? 0 : s
 })
 
 // img load
