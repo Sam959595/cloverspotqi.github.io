@@ -50,10 +50,10 @@ section.n article {
 }
 
 section.n a {
-    -webkit-text-decoration: underline dotted #3381ff;
+    -webkit-text-decoration: underline;
     text-decoration-skip: none;
-    text-underline-offset: 2px;
-    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
     
     color: inherit
 }
