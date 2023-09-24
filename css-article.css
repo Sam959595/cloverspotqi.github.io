@@ -15,7 +15,7 @@ video {
 /* n */
 
 section.n {
-    margin-block: calc(5rem + env(safe-area-inset-top)) calc(15rem + env(safe-area-inset-bottom))
+    margin-block: calc(10rem + env(safe-area-inset-top)) calc(15rem + env(safe-area-inset-bottom))
 }
 
 section.n time {
@@ -99,15 +99,17 @@ section.k {
 
 section.a {
     position: fixed;
-    inset: auto 0 0;
+    inset: 0 0 auto;
 
-    padding: 24px 24px max(calc(env(safe-area-inset-bottom) + 10px), 24px);
+    margin-top: env(safe-area-inset-top);
+
+    padding-block: 10px 20px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background-color: var(--col-b);
+    background-color: var(--col-k);
 
     transition: opacity .4s
 }
@@ -150,6 +152,10 @@ section.a h6 {
     font: 700 14px ui-rounded
 }
 
+section.a .h {
+    color: #f2b427
+}
+
 section.a span {
     margin-left: 3rem
 }
@@ -164,6 +170,7 @@ section.a h5 {
         --col-h: #111;
         --col-p: #afafb1;
         --col-c: #00000020;
+        --col-k: #ffffffe6;
     }
 }
 
@@ -173,5 +180,6 @@ section.a h5 {
         --col-h: #ddd;
         --col-p: #77777b;
         --col-c: #ffffff20;
+        --col-k: #101010e6;
     }
 }
