@@ -85,8 +85,6 @@ section.n h2 {
 /* k */
 
 section.k {
-    opacity: .9;
-
     position: fixed;
     inset: 0 0 auto;
 
@@ -98,6 +96,9 @@ section.k {
 /* a */
 
 section.a {
+    pointer-events: none;
+    opacity: 0;
+
     position: fixed;
     inset: 0 0 auto;
 
@@ -109,7 +110,7 @@ section.a {
     align-items: center;
     justify-content: center;
 
-    background-color: var(--col-k);
+    background-color: var(--col-b);
 
     transition: opacity .4s
 }
