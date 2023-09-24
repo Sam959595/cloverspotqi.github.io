@@ -9,7 +9,7 @@ $(window).scroll( () => {
         $('section.a')[0].style = 'pointer-events: auto; opacity: 1'
     }
 
-    n = s <= 0 ? 0 : s
+    n = s
 })
 
 // img load
