@@ -107,7 +107,7 @@ section.a {
     align-items: center;
     justify-content: center;
 
-    background-color: var(--col-k);
+    background-color: var(--col-b);
 
     transition: opacity .4s
 }
@@ -164,7 +164,6 @@ section.a h5 {
         --col-h: #111;
         --col-p: #afafb1;
         --col-c: #00000020;
-        --col-k: #ffffffe6;
     }
 }
 
@@ -174,6 +173,5 @@ section.a h5 {
         --col-h: #ddd;
         --col-p: #77777b;
         --col-c: #ffffff20;
-        --col-k: #101010e6;
     }
 }
