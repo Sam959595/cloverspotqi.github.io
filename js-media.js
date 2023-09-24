@@ -1,3 +1,17 @@
+// tab
+let k = 0;
+$(window).scroll( () => {
+    let y = window.scrollY;
+
+    if (y > k) {
+        $('section.a')[0].style = 'pointer-events: none; opacity: 0'
+    } else {
+        $('section.a')[0].style = 'pointer-events: auto; opacity: 1'
+    }
+
+    k = y <= 0 ? 0 : y
+})
+
 // img load
 document.querySelectorAll('img').forEach(x => {
     new IntersectionObserver((a, b) => {
