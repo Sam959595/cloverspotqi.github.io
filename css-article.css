@@ -35,7 +35,7 @@ section.n .a {
 }
 
 section.n blockquote {
-    margin: 30px;
+    margin: 35px 30px;
 
     text-align: right;
     font: italic 500 19px/1.4 system-ui
@@ -51,7 +51,7 @@ section.n a {
     -webkit-text-decoration: underline;
     text-underline-offset: 2px;
     text-decoration-thickness: 1px;
-    
+
     color: inherit
 }
 
@@ -69,6 +69,8 @@ section.n .b:first-letter {
 
 section.n img {
     width: 100%;
+
+    object-fit: cover;
 
     aspect-ratio: 1.8/1
 }
@@ -147,16 +149,18 @@ section.a h6 {
     font: 700 15px ui-rounded
 }
 
-section.a .h {
-    color: #f2b427
-}
-
 section.a span {
     margin-left: 3rem
 }
 
 section.a h5 {
+    filter: grayscale();
+
     font-size: 14px
+}
+
+section.a .p {
+    filter: none
 }
 
 @media (prefers-color-scheme: light) {
