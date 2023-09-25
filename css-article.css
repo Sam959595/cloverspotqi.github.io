@@ -84,6 +84,8 @@ section.n h2 {
 /* k */
 
 section.k {
+    opacity: .9;
+
     position: fixed;
     inset: 0 0 auto;
 
@@ -99,11 +101,9 @@ section.a {
     opacity: 0;
 
     position: fixed;
-    inset: 0 0 auto;
+    inset: auto 0 0;
 
-    margin-top: env(safe-area-inset-top);
-
-    padding-block: 10px 20px;
+    padding: 20px 1cm max(calc(env(safe-area-inset-bottom) + 10px), 20px);
 
     display: flex;
     align-items: center;
@@ -149,7 +149,7 @@ section.a div img:not(:last-child) {
 section.a h6 {
     padding-left: 8px;
 
-    font: 700 14px ui-rounded
+    font: 700 15px ui-rounded
 }
 
 section.a .h {
