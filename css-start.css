@@ -142,16 +142,18 @@ section.n h6 {
     font: 700 15px ui-rounded
 }
 
-section.n .h {
-    color: #f2b427
-}
-
 section.n span {
     margin-left: 3rem
 }
 
 section.n h5 {
+    filter: grayscale();
+
     font-size: 14px
+}
+
+section.n .p {
+    filter: none
 }
 
 /* k */
