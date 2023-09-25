@@ -61,7 +61,7 @@ section.n a {
 section.n mark {
     border-radius: 3px;
 
-    background-color: #ff45a280
+    background-color: var(--col-m)
 }
 
 section.n .b:first-letter {
@@ -171,7 +171,7 @@ section.a h5 {
         --col-h: #111;
         --col-p: #afafb1;
         --col-c: #00000020;
-        --col-k: #ffffffe6;
+        --col-m: #ffc7e3;
     }
 }
 
@@ -181,6 +181,6 @@ section.a h5 {
         --col-h: #ddd;
         --col-p: #77777b;
         --col-c: #ffffff20;
-        --col-k: #101010e6;
+        --col-m: #712449;
     }
 }
