@@ -41,7 +41,8 @@ time {
 	letter-spacing: inherit
 }
 
-b, mark {
+b,
+mark {
 	color: inherit
 }
 
@@ -110,7 +111,8 @@ img {
 	vertical-align: top
 }
 
-img, video {
+img,
+video {
 	pointer-events: none;
 
 	display: block
@@ -133,7 +135,8 @@ article {
 }
 
 p,
-time {
+time,
+blockquote {
 	color: var(--col-p)
 }
 
