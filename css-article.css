@@ -59,7 +59,7 @@ section.n a {
 }
 
 section.n mark {
-    border-radius: 3px;
+    border-radius: 4px;
 
     background-color: var(--col-m)
 }
@@ -177,10 +177,10 @@ section.a h5 {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --col-b: #101010;
+        --col-b: black;
         --col-h: #ddd;
         --col-p: #77777b;
         --col-c: #ffffff20;
-        --col-m: #712449;
+        --col-m: #4d2030;
     }
 }
