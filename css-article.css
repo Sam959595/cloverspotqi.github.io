@@ -75,6 +75,13 @@ section.n img {
     aspect-ratio: 1.8/1
 }
 
+section.n p {
+    margin: 20px 35px;
+
+    text-align: center;
+    font-size: 13px
+}
+
 section.n h2 {
     margin: 30px;
 
