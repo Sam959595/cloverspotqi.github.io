@@ -51,8 +51,7 @@ section.n article {
 
 section.n a {
     -webkit-text-decoration: underline;
-    text-decoration-skip: none;
-    text-underline-offset: 3px;
+    text-underline-offset: 2px;
     text-decoration-thickness: 1px;
     
     color: inherit
@@ -181,6 +180,6 @@ section.a h5 {
         --col-h: #ddd;
         --col-p: #77777b;
         --col-c: #ffffff20;
-        --col-m: #4d2030;
+        --col-m: #692940;
     }
 }
