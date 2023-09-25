@@ -38,12 +38,10 @@ section.n blockquote {
     margin: 30px;
 
     text-align: right;
-    font: italic 500 19px/1.4 system-ui;
-
-    color: var(--col-p)
+    font: italic 500 19px/1.4 system-ui
 }
 
-section.n article {
+section.n h3 {
     margin: 35px 30px;
 
     font: 370 19px/1.6 ui-serif
