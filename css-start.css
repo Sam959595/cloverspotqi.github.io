@@ -49,32 +49,14 @@ section.n ul {
     grid-auto-flow: row
 }
 
-section.n .i {
+section.n img:not(.s :is(img, video), .v img) {
     margin-inline: 20px
 }
 
-section.n :is(.t, .e, .c, .y) {
-    width: calc(100vw - 40px);
-
+section.n :is(img, video):not(.v img) {
     object-fit: cover;
 
     border-radius: 12px
-}
-
-section.n .t {
-    aspect-ratio: 1/1.6
-}
-
-section.n .e {
-    aspect-ratio: 1/1.4
-}
-
-section.n .c {
-    aspect-ratio: 1
-}
-
-section.n .y {
-    aspect-ratio: 1.8/1
 }
 
 section.n .s {
