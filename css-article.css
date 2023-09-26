@@ -14,12 +14,10 @@ video {
 
 /* n */
 
-section.n {
-    margin-block: calc(5rem + env(safe-area-inset-top)) calc(15rem + env(safe-area-inset-bottom))
-}
-
 section.n time {
-    margin-inline: 30px;
+    margin: calc(5rem + env(safe-area-inset-top)) 30px 0;
+
+    display: block;
 
     font: 700 15px system-ui
 }
@@ -84,6 +82,23 @@ section.n h2 {
     font: 800 expanded 32px/1 system-ui
 }
 
+/* b */
+
+section.b {
+    margin: 8rem auto calc(8rem + env(safe-area-inset-bottom));
+
+    width: fit-content;
+
+    border-radius: 15px;
+
+    padding: 1.3rem 2rem;
+
+    font: 600 17px system-ui;
+
+    background-color: var(--col-c);
+    color: var(--col-h)
+}
+
 /* k */
 
 section.k {
@@ -103,7 +118,7 @@ section.a {
     position: fixed;
     inset: auto 0 0;
 
-    padding: 20px 1cm max(calc(env(safe-area-inset-bottom) + 10px), 20px);
+    padding: 20px 1cm max(calc(10px + env(safe-area-inset-bottom)), 20px);
 
     display: flex;
     align-items: center;
