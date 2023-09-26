@@ -82,25 +82,6 @@ section.n h2 {
     font: 800 expanded 32px/1 system-ui
 }
 
-/* b */
-
-section.b a {
-    margin: 8rem auto calc(8rem + env(safe-area-inset-bottom));
-
-    width: fit-content;
-
-    border-radius: 13px;
-
-    padding: 1.2rem 2rem;
-
-    display: block;
-
-    font: 600 15px system-ui;
-
-    background-color: var(--col-k);
-    color: var(--col-h)
-}
-
 /* k */
 
 section.k {
@@ -153,11 +134,11 @@ section.a hr {
     border-top: 3px solid var(--col-c)
 }
 
-section.a hr~* {
-    display: inherit
+section.a .d {
+    width: 3px
 }
 
-section.a div {
+section.a :is(a, div, span) {
     display: inherit
 }
 
