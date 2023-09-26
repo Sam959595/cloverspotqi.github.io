@@ -137,21 +137,6 @@ section.a {
     transition: opacity .4s
 }
 
-/* section.a {
-    position: fixed;
-    inset: auto 0 0;
-
-    padding: 20px 30px max(calc(10px + env(safe-area-inset-bottom)), 20px);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: var(--col-b);
-
-    transition: opacity .4s
-} */
-
 section.a img {
     width: 18px;
     height: 18px;
