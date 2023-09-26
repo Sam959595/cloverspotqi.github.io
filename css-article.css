@@ -120,7 +120,13 @@ section.a {
     position: fixed;
     inset: auto 0 0;
 
-    padding: 20px 1cm max(calc(10px + env(safe-area-inset-bottom)), 20px);
+    margin: 0 auto max(calc(10px + env(safe-area-inset-bottom)), 20px);
+
+    width: fit-content;
+
+    border-radius: 29px;
+
+    padding: 20px 30px;
 
     display: flex;
     align-items: center;
