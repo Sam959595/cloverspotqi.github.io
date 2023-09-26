@@ -91,11 +91,11 @@ section.b a {
 
     border-radius: 15px;
 
-    padding: 1.3rem 2rem;
+    padding: 1.2rem 2rem;
 
     display: block;
 
-    font: 600 17px system-ui;
+    font: 600 15px system-ui;
 
     background-color: var(--col-c);
     color: var(--col-h)
