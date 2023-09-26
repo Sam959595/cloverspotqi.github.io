@@ -15,7 +15,7 @@ video {
 /* n */
 
 section.n time {
-    margin: calc(5rem + env(safe-area-inset-top)) 30px 0;
+    margin: calc(5rem + env(safe-area-inset-top)) 30px 15px;
 
     display: block;
 
@@ -23,7 +23,7 @@ section.n time {
 }
 
 section.n h1 {
-    margin: 15px 30px 40px;
+    margin-inline: 30px;
 
     font: 800 expanded 32px/1 system-ui
 }
@@ -45,6 +45,12 @@ section.n h3 {
     font: 370 19px/1.6 ui-serif
 }
 
+section.n .b:first-letter {
+    -webkit-initial-letter: 3;
+
+    margin-right: .8em
+}
+
 section.n a {
     -webkit-text-decoration: underline;
     text-underline-offset: 2px;
@@ -57,12 +63,6 @@ section.n mark {
     border-radius: 4px;
 
     background-color: var(--col-m)
-}
-
-section.n .b:first-letter {
-    -webkit-initial-letter: 3;
-
-    margin-right: .8em
 }
 
 section.n img {
@@ -82,23 +82,6 @@ section.n h2 {
     font: 800 expanded 32px/1 system-ui
 }
 
-/* b */
-
-section.b {
-    margin: 8rem auto calc(8rem + env(safe-area-inset-bottom));
-
-    width: fit-content;
-
-    border-radius: 15px;
-
-    padding: 1.3rem 2rem;
-
-    font: 600 17px system-ui;
-
-    background-color: var(--col-c);
-    color: var(--col-h)
-}
-
 /* k */
 
 section.k {
@@ -109,7 +92,7 @@ section.k {
 
     height: env(safe-area-inset-top);
 
-    background-color: var(--col-b)
+    background-color: inherit
 }
 
 /* a */
@@ -179,6 +162,20 @@ section.a h5 {
 
 section.a .p {
     filter: none
+}
+
+section.a h4 {
+    height: 18px;
+
+    border-radius: 10px;
+
+    padding-inline: .8rem;
+
+    text-align: center;
+    font: 700 14px system-ui;
+
+    background-color: #227afe;
+    color: white;
 }
 
 @media (prefers-color-scheme: light) {
