@@ -148,7 +148,7 @@ section.k {
 
     height: env(safe-area-inset-top);
 
-    background-color: var(--col-b)
+    background-color: inherit
 }
 
 /* g */
