@@ -32,6 +32,10 @@ section.n .a {
     font: 800 40px/1 georgia
 }
 
+section.n article {
+    margin-bottom: calc(15rem + env(safe-area-inset-bottom))
+}
+
 section.n blockquote {
     margin: 35px 30px;
 
