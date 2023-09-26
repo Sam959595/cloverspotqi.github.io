@@ -168,20 +168,6 @@ section.a .p {
     filter: none
 }
 
-section.a h4 {
-    height: 18px;
-
-    border-radius: 10px;
-
-    padding-inline: .8rem;
-
-    text-align: center;
-    font: 700 14px system-ui;
-
-    background-color: #227afe;
-    color: white;
-}
-
 @media (prefers-color-scheme: light) {
     :root {
         --col-b: white;
