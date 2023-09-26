@@ -32,10 +32,6 @@ section.n .a {
     font: 800 40px/1 georgia
 }
 
-section.n article {
-    margin-bottom: calc(15rem + env(safe-area-inset-bottom))
-}
-
 section.n blockquote {
     margin: 35px 30px;
 
@@ -55,6 +51,17 @@ section.n .b:first-letter {
     margin-right: .8em
 }
 
+section.n img {
+    object-fit: cover
+}
+
+section.n p {
+    margin: 20px 35px;
+
+    text-align: center;
+    font-size: 13px
+}
+
 section.n a {
     -webkit-text-decoration: underline;
     text-underline-offset: 2px;
@@ -69,21 +76,29 @@ section.n mark {
     background-color: var(--col-m)
 }
 
-section.n img {
-    object-fit: cover
-}
-
-section.n p {
-    margin: 20px 35px;
-
-    text-align: center;
-    font-size: 13px
-}
-
 section.n h2 {
     margin: 30px;
 
     font: 800 expanded 32px/1 system-ui
+}
+
+/* b */
+
+section.b a {
+    margin: 8rem auto calc(8rem + env(safe-area-inset-bottom));
+
+    width: fit-content;
+
+    border-radius: 15px;
+
+    padding: 1.3rem 2rem;
+
+    display: block;
+
+    font: 600 17px system-ui;
+
+    background-color: var(--col-c);
+    color: var(--col-h)
 }
 
 /* k */
