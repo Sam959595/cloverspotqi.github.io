@@ -54,8 +54,6 @@ section.n img:not(.s :is(img, video), .v img) {
 }
 
 section.n :is(img, video):not(.v img) {
-    object-fit: cover;
-
     border-radius: 12px
 }
 
