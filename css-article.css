@@ -55,10 +55,6 @@ section.n .b:first-letter {
     margin-right: .8em
 }
 
-section.n img {
-    object-fit: cover
-}
-
 section.n p {
     margin: 20px 35px;
 
