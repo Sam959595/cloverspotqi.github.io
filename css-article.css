@@ -28,6 +28,10 @@ section.n h1 {
     font: 800 expanded 32px/1 system-ui
 }
 
+section.n article {
+    margin-bottom: calc(5cm + env(safe-area-inset-bottom))
+}
+
 section.n .a {
     font: 800 40px/1 georgia
 }
@@ -103,19 +107,21 @@ section.a {
 
     margin: 0 auto max(calc(10px + env(safe-area-inset-bottom)), 20px);
 
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+
+    transition: opacity .4s
+}
+
+section.a>div {
     width: fit-content;
 
     border-radius: 29px;
 
     padding: 20px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     background-color: var(--col-k);
-
-    transition: opacity .4s
 }
 
 section.a img {
@@ -134,12 +140,8 @@ section.a hr {
     border-top: 3px solid var(--col-c)
 }
 
-section.a .d {
-    width: 3px
-}
-
-section.a :is(a, div, span) {
-    display: inherit
+section.a :is(a, div div, span) {
+    display: flex
 }
 
 section.a img+img {
@@ -154,10 +156,6 @@ section.a h6 {
     padding-left: 8px;
 
     font: 700 15px ui-rounded
-}
-
-section.a span {
-    margin-inline: 3rem 1rem
 }
 
 section.a h5 {
