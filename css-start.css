@@ -102,11 +102,7 @@ section.n hr {
     border-top: 3px solid var(--col-c)
 }
 
-section.n .v hr~* {
-    display: inherit
-}
-
-section.n .v div {
+section.n .v :is(a, div, span) {
     display: inherit
 }
 
