@@ -93,7 +93,7 @@ section.n div a {
 
     padding: 10px 15px;
 
-    font-size: 13px;
+    font: 500 13px system-ui;
 
     background-color: var(--col-k);
     color: var(--col-h)
