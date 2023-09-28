@@ -27,21 +27,40 @@ section.n {
 }
 
 section.n .w {
-    margin: 0 20px 20px
+    margin: 20px 20px 40px
+}
+
+section.n .w div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem
+}
+
+section.n .w img {
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%
 }
 
 section.n .w h1 {
-    font: 800 33px/1 system-ui
-}
-
-section.n p {
-    margin-top: 10px;
-
-    font: 600 15px system-ui
+    font: 700 17px/1 system-ui
 }
 
 section.n u {
-    color: var(--col-h)
+    color: var(--col-p)
+}
+
+section.n .w button {
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+
+    font-size: 14px;
+
+    background-color: var(--col-c)
 }
 
 section.n ul {
@@ -49,11 +68,11 @@ section.n ul {
     grid-auto-flow: row
 }
 
-section.n img:not(.s :is(img, video), .v img) {
+section.n ul img:not(.s :is(img, video), .v img) {
     margin-inline: 20px
 }
 
-section.n :is(img, video):not(.v img) {
+section.n ul :is(img, video):not(.v img) {
     border-radius: 12px
 }
 
