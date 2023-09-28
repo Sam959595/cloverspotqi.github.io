@@ -19,7 +19,7 @@ section.n time {
 
     display: block;
 
-    font: 700 15px system-ui
+    font: 600 15px system-ui
 }
 
 section.n h1 {
@@ -71,7 +71,7 @@ section.n a {
 }
 
 section.n mark {
-    border-radius: 4px;
+    border-radius: 5px;
 
     background-color: var(--col-m)
 }
