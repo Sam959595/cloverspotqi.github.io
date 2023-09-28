@@ -14,22 +14,20 @@ video {
 
 /* n */
 
-section.n time {
-    margin: calc(5rem + env(safe-area-inset-top)) 30px 15px;
+section.n {
+    margin-block: calc(5rem + env(safe-area-inset-top)) calc(5cm + env(safe-area-inset-bottom))
+}
 
-    display: block;
+section.n time {
+    margin-inline: 30px;
 
     font: 600 15px system-ui
 }
 
 section.n h1 {
-    margin-inline: 30px;
+    margin: 15px 30px;
 
     font: 800 expanded 32px/1 system-ui
-}
-
-section.n article {
-    margin-bottom: calc(5cm + env(safe-area-inset-bottom))
 }
 
 section.n .a {
@@ -62,7 +60,7 @@ section.n p {
     font-size: 13px
 }
 
-section.n a {
+section.n article a {
     -webkit-text-decoration: underline;
     text-underline-offset: 2px;
     text-decoration-thickness: 1px;
@@ -80,6 +78,25 @@ section.n h2 {
     margin: 30px;
 
     font: 800 expanded 32px/1 system-ui
+}
+
+section.n div {
+    margin: 35px 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px
+}
+
+section.n div a {
+    border-radius: 18px;
+
+    padding: 10px 15px;
+
+    font-size: 13px;
+
+    background-color: var(--col-k);
+    color: var(--col-h)
 }
 
 /* k */
