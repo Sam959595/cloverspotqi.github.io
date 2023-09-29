@@ -21,50 +21,35 @@ video {
 section.n {
     overflow-y: scroll;
 
-    padding-block: calc(10px + env(safe-area-inset-top)) calc(40px + env(safe-area-inset-bottom));
+    padding-block: env(safe-area-inset-top) calc(40px + env(safe-area-inset-bottom));
 
     height: 100vh
 }
 
-section.n .w {
-    margin: 20px 20px 40px
-}
-
-section.n .w div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 10px
-}
-
 section.n .w img {
-    width: 25px;
-    height: 25px;
+    margin: 30px auto 0;
 
-    border-radius: 50%
+    filter: var(--inv)
 }
 
-section.n .w h1 {
-    width: max-content;
+section.n button {
+    margin: 30px auto 40px;
 
-    font: 700 17px/1 system-ui
+    border-radius: 12px;
+
+    padding: 1rem 1.5rem;
+
+    display: block;
+
+    font: 700 14px system-ui;
+
+    background-color: var(--col-h);
+    color: var(--col-b)
 }
 
-section.n .w h2 {
-    font: 700 17px/1 system-ui;
-
-    color: var(--col-p)
-}
-
-section.n .w button {
-    width: 25px;
-    height: 25px;
-
-    border-radius: 50%;
-
-    font-size: 14px;
-
-    background-color: var(--col-c)
+section.n .a {
+    background-color: var(--col-k);
+    color: var(--col-h)
 }
 
 section.n ul {
@@ -213,6 +198,7 @@ section.h {
 
 @media (prefers-color-scheme: light) {
     :root {
+        --inv: invert();
         --col-b: white;
         --col-h: black;
         --col-p: #afafb1;
@@ -223,6 +209,7 @@ section.h {
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --inv: none;
         --col-b: #101010;
         --col-h: white;
         --col-p: #77777b;
