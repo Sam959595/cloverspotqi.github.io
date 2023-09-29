@@ -21,11 +21,11 @@ section.n {
 section.n time {
     margin-inline: 30px;
 
-    font: 600 15px system-ui
+    font: 800 15px system-ui
 }
 
 section.n h1 {
-    margin: 15px 30px;
+    margin: 10px 30px;
 
     font: 800 expanded 32px/1 system-ui
 }
@@ -69,7 +69,7 @@ section.n article a {
 }
 
 section.n mark {
-    border-radius: 5px;
+    border-radius: 4px;
 
     background-color: var(--col-m)
 }
