@@ -34,11 +34,11 @@ section.n button {
     font: 700 14px system-ui;
 
     background: none;
-    color: #3172ff
+    color: var(--col-h)
 }
 
 section.n u {
-    color: var(--col-h)
+    color: var(--col-p)
 }
 
 section.n .r {
@@ -64,7 +64,7 @@ section.n .w a {
     white-space: nowrap;
     font: 500 13px system-ui;
 
-    background-color: var(--col-k);
+    
     color: var(--col-h)
 }
 
@@ -217,6 +217,7 @@ section.h {
         --inv: invert();
         --col-b: white;
         --col-h: black;
+        --col-p: #afafb1;
         --col-c: #00000020;
         --col-k: #f2f2f2;
         --col-n: #eaeaf290;
@@ -228,6 +229,7 @@ section.h {
         --inv: none;
         --col-b: #101010;
         --col-h: white;
+        --col-p: #77777b;
         --col-c: #ffffff20;
         --col-k: #1c1c1c;
         --col-n: #21212190;
