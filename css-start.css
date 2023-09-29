@@ -34,7 +34,7 @@ section.n .w div {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 1rem
+    column-gap: 10px
 }
 
 section.n .w img {
@@ -45,10 +45,14 @@ section.n .w img {
 }
 
 section.n .w h1 {
+    width: max-content;
+
     font: 700 17px/1 system-ui
 }
 
-section.n u {
+section.n .w h2 {
+    font: 700 17px/1 system-ui;
+
     color: var(--col-p)
 }
 
