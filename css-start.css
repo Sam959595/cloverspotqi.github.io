@@ -52,7 +52,7 @@ section.n .r {
 section.n .w {
     overflow-x: scroll;
 
-    padding: 0 20px 25px;
+    padding: 0 32px 25px;
 
     display: flex;
     column-gap: 38px
