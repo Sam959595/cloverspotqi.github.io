@@ -35,8 +35,6 @@ section.n .w img {
 section.n .w div {
     overflow-x: scroll;
 
-    width: 100vw;
-
     padding: 20px;
 
     display: flex;
