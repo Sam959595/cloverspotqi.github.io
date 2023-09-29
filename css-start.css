@@ -21,13 +21,24 @@ video {
 section.n {
     overflow-y: scroll;
 
-    padding-block: env(safe-area-inset-top) calc(40px + env(safe-area-inset-bottom));
+    padding-block: calc(20px + env(safe-area-inset-top)) calc(40px + env(safe-area-inset-bottom));
 
     height: 100vh
 }
 
+section.n button {
+    margin-inline: auto;
+
+    display: block;
+
+    font: 700 14px system-ui;
+
+    background: none;
+    color: var(--col-h)
+}
+
 section.n .r {
-    margin: 30px auto 15px;
+    margin: 40px auto 20px;
 
     filter: var(--inv)
 }
