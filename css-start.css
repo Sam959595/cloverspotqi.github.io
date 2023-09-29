@@ -38,7 +38,7 @@ section.n button {
 }
 
 section.n .r {
-    margin: 40px auto 20px;
+    margin: 60px auto 40px;
 
     filter: var(--inv)
 }
