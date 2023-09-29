@@ -26,13 +26,13 @@ section.n {
     height: 100vh
 }
 
-section.n .w img {
+section.n .r {
     margin: 30px auto 15px;
 
     filter: var(--inv)
 }
 
-section.n .w div {
+section.n .w {
     overflow-x: scroll;
 
     padding: 20px;
@@ -41,25 +41,8 @@ section.n .w div {
     column-gap: 8px
 }
 
-section.n button {
-    border-radius: 18px;
-
-    padding: 10px 15px;
-
-    white-space: nowrap;
-    font: 500 13px system-ui;
-
-    background-color: var(--col-k);
-    color: var(--col-h)
-}
-
-section.n .a {
-    background-color: var(--col-k);
-    color: var(--col-h)
-}
-
 section.n .w a {
-    border-radius: 18px;
+    border-radius: 12px;
 
     padding: 10px 15px;
 
