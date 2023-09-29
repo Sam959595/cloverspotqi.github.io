@@ -85,17 +85,19 @@ section.n div {
 
     display: flex;
     flex-wrap: wrap;
-    gap: 8px
+    gap: 3rem
 }
 
 section.n div a {
     border-radius: 12px;
 
-    padding: 10px 15px;
-
     font: 500 13px system-ui;
 
-    background-color: var(--col-k);
+    -webkit-text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--col-c);
+
     color: var(--col-h)
 }
 
