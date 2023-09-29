@@ -27,27 +27,47 @@ section.n {
 }
 
 section.n .w img {
-    margin: 30px auto 0;
+    margin: 30px auto 15px;
 
     filter: var(--inv)
 }
 
+section.n .w div {
+    overflow-x: scroll;
+
+    width: 100vw;
+
+    padding: 20px 30px;
+
+    display: flex;
+    column-gap: 8px
+}
+
 section.n button {
-    margin: 30px auto 40px;
+    border-radius: 18px;
 
-    border-radius: 12px;
+    padding: 10px 15px;
 
-    padding: 1rem 1.5rem;
+    white-space: nowrap;
+    font: 500 13px system-ui;
 
-    display: block;
-
-    font: 700 14px system-ui;
-
-    background-color: var(--col-h);
-    color: var(--col-b)
+    background-color: var(--col-k);
+    color: var(--col-h)
 }
 
 section.n .a {
+    background-color: var(--col-k);
+    color: var(--col-h)
+}
+
+section.n .w a {
+    border-radius: 18px;
+
+    padding: 10px 15px;
+
+    white-space: nowrap;
+    font: 500 13px system-ui;
+
     background-color: var(--col-k);
     color: var(--col-h)
 }
