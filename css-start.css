@@ -223,7 +223,7 @@ section.h {
         --col-h: black;
         --col-p: #afafb1;
         --col-c: #00000020;
-        --col-k: #eaeaf290;
+        --col-k: #f2f2f2;
     }
 }
 
@@ -234,6 +234,6 @@ section.h {
         --col-h: white;
         --col-p: #77777b;
         --col-c: #ffffff20;
-        --col-k: #21212190;
+        --col-k: #1c1c1c;
     }
 }
