@@ -26,7 +26,7 @@ section.n {
     height: 100vh
 }
 
-section.n .y {
+section.n>div {
     margin-inline: auto;
 
     display: flex;
@@ -34,37 +34,29 @@ section.n .y {
     column-gap: 20px
 }
 
-section.n .y * {
+section.n>div * {
     font: 700 14px system-ui
 }
 
-section.n .r {
-    margin: 30px auto 20px;
+section.n>img {
+    margin: 30px auto;
 
     filter: var(--inv)
 }
 
-section.n h2 {
+section.n h1 {
     margin: 0 20px 50px;
 
     text-align: center;
     font: 500 16px system-ui
 }
 
-section.n .w {
-    overflow-x: scroll;
+section.n h1 a {
+    -webkit-text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
 
-    padding: 0 32px 20px;
-
-    display: flex;
-    column-gap: 3rem
-}
-
-section.n .w a {
-    white-space: nowrap;
-    font: 500 13px system-ui;
-
-    color: var(--col-h)
+    color: inherit
 }
 
 section.n ul {
