@@ -39,13 +39,13 @@ section.n .y * {
 }
 
 section.n .r {
-    margin: 50px auto 20px;
+    margin: 30px auto 20px;
 
     filter: var(--inv)
 }
 
 section.n h2 {
-    margin: 0 20px 40px;
+    margin: 0 20px 50px;
 
     text-align: center;
     font: 500 16px system-ui
