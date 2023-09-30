@@ -50,15 +50,14 @@ section.n u {
 }
 
 section.n .w {
-    padding: 0 32px 25px;
+    padding: 0 32px 30px;
 
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem 3rem
+    column-gap: 3rem
 }
 
 section.n .w a {
+    white-space: nowrap;
     font: 500 13px system-ui;
 
     -webkit-text-decoration: underline;
