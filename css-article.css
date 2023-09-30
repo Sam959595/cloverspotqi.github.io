@@ -21,7 +21,7 @@ section.n {
 section.n time {
     margin-inline: 30px;
 
-    font: 800 15px system-ui
+    font: 600 15px system-ui
 }
 
 section.n h1 {
@@ -85,12 +85,10 @@ section.n div {
 
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem
+    gap: 2rem 3rem
 }
 
 section.n div a {
-    border-radius: 12px;
-
     font: 500 13px system-ui;
 
     -webkit-text-decoration: underline;
