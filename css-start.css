@@ -21,7 +21,7 @@ video {
 section.n {
     overflow-y: scroll;
 
-    padding-block: calc(20px + env(safe-area-inset-top)) calc(40px + env(safe-area-inset-bottom));
+    padding-block: calc(10px + env(safe-area-inset-top)) calc(40px + env(safe-area-inset-bottom));
 
     height: 100vh
 }
@@ -39,7 +39,7 @@ section.n .y * {
 }
 
 section.n .r {
-    margin: 30px auto 50px;
+    margin: 50px auto;
 
     filter: var(--inv)
 }
