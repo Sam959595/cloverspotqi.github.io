@@ -21,38 +21,33 @@ video {
 section.n {
     overflow-y: scroll;
 
-    padding-block: calc(10px + env(safe-area-inset-top)) calc(40px + env(safe-area-inset-bottom));
+    padding-block: calc(20px + env(safe-area-inset-top)) calc(40px + env(safe-area-inset-bottom));
 
     height: 100vh
 }
 
-section.n .r {
+section.n .y {
     margin-inline: auto;
 
+    display: flex;
+    justify-content: center;
+    column-gap: 20px
+}
+
+section.n .y * {
+    font: 700 14px system-ui
+}
+
+section.n .r {
+    margin: 30px auto 50px;
+
     filter: var(--inv)
-}
-
-section.n button {
-    margin: 40px auto;
-
-    display: block;
-
-    font: 700 14px system-ui;
-
-    background: none;
-    color: var(--col-h)
-}
-
-section.n u {
-    padding-right: 20px;
-
-    color: var(--col-p)
 }
 
 section.n .w {
     overflow-x: scroll;
 
-    padding: 0 32px 30px;
+    padding: 0 32px 20px;
 
     display: flex;
     column-gap: 3rem
@@ -61,11 +56,6 @@ section.n .w {
 section.n .w a {
     white-space: nowrap;
     font: 500 13px system-ui;
-
-    -webkit-text-decoration: underline;
-    text-underline-offset: 7px;
-    text-decoration-thickness: 2px;
-    text-decoration-color: var(--col-c);
 
     color: var(--col-h)
 }
