@@ -21,7 +21,7 @@ video {
 section.n {
     overflow-y: scroll;
 
-    padding-block: calc(20px + env(safe-area-inset-top)) calc(40px + env(safe-area-inset-bottom));
+    padding-block: calc(30px + env(safe-area-inset-top)) calc(40px + env(safe-area-inset-bottom));
 
     height: 100vh
 }
@@ -44,14 +44,14 @@ section.n>img {
     filter: var(--inv)
 }
 
-section.n h1 {
+section.n>h1 {
     margin: 0 20px 50px;
 
     text-align: center;
     font: 500 16px system-ui
 }
 
-section.n h1 a {
+section.n>h1 a {
     -webkit-text-decoration: underline;
     text-underline-offset: 2px;
     text-decoration-thickness: 1px;
