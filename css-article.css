@@ -85,7 +85,7 @@ section.n div {
 
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem 3rem
+    gap: 3rem
 }
 
 section.n div a {
