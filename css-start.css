@@ -34,29 +34,18 @@ section.n>div {
     column-gap: 20px
 }
 
-section.n>div * {
-    font: 700 14px system-ui
+section.n>div p {
+    font: 700 15px ui-rounded
+}
+
+section.n>div h1 {
+    font: 700 15px system-ui
 }
 
 section.n>img {
-    margin: 30px auto;
+    margin: 30px auto 50px;
 
     filter: var(--inv)
-}
-
-section.n>h1 {
-    margin: 0 20px 50px;
-
-    text-align: center;
-    font: 500 16px system-ui
-}
-
-section.n>h1 a {
-    -webkit-text-decoration: underline;
-    text-underline-offset: 2px;
-    text-decoration-thickness: 1px;
-
-    color: inherit
 }
 
 section.n ul {
