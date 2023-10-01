@@ -27,14 +27,16 @@ section.n {
 }
 
 section.n>img {
-    margin: 5rem auto 2rem
+    margin: 5rem auto 2rem;
+
+    filter: var(--inv)
 }
 
 section.n h1 {
     margin: 0 4rem 8rem;
 
     text-align: center;
-    font: 500 16px system-ui
+    font-size: 16px
 }
 
 section.n ul {
@@ -183,6 +185,7 @@ section.h {
 
 @media (prefers-color-scheme: light) {
     :root {
+        --inv: invert();
         --col-b: white;
         --col-h: black;
         --col-p: #afafb1;
@@ -194,6 +197,7 @@ section.h {
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --inv: none;
         --col-b: #101010;
         --col-h: white;
         --col-p: #77777b;
