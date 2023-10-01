@@ -30,11 +30,8 @@ section.n time {
 section.n h1 {
     margin: 10px 30px;
 
+    word-break: break-word;
     font: 800 expanded 40px/1 system-ui
-}
-
-section.n .a {
-    font: 800 40px/1 georgia
 }
 
 section.n blockquote {
