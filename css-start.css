@@ -1,4 +1,5 @@
-html {
+html,
+section.n {
     overscroll-behavior-y: none
 }
 
@@ -21,21 +22,29 @@ video {
 section.n {
     overflow-y: scroll;
 
-    padding-block: env(safe-area-inset-top) calc(40px + env(safe-area-inset-bottom));
+    padding-block: 0 calc(40px + env(safe-area-inset-bottom));
 
     height: 100vh
 }
 
-section.n>div {
+section.n h1 {
     margin: 20px;
 
-    display: flex;
-    justify-content: center;
-    column-gap: 20px
+    text-align: center;
+    font: 800 17px system-ui;
 }
 
-section.n>div img {
-    border-radius: 12px
+section.n u {
+    margin-left: 10px;
+
+    color: var(--col-p)
+}
+
+section.n>img {
+    position: relative;
+    z-index: 1;
+    
+    margin-bottom: 20px
 }
 
 section.n ul {
