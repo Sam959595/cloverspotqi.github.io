@@ -21,31 +21,21 @@ video {
 section.n {
     overflow-y: scroll;
 
-    padding-block: calc(30px + env(safe-area-inset-top)) calc(40px + env(safe-area-inset-bottom));
+    padding-block: env(safe-area-inset-top) calc(40px + env(safe-area-inset-bottom));
 
     height: 100vh
 }
 
 section.n>div {
-    margin-inline: auto;
+    margin: 20px;
 
     display: flex;
     justify-content: center;
     column-gap: 20px
 }
 
-section.n>div p {
-    font: 700 15px ui-rounded
-}
-
-section.n>div h1 {
-    font: 700 15px system-ui
-}
-
-section.n>img {
-    margin: 30px auto 50px;
-
-    filter: var(--inv)
+section.n>div img {
+    border-radius: 12px
 }
 
 section.n ul {
@@ -194,7 +184,6 @@ section.h {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --inv: invert();
         --col-b: white;
         --col-h: black;
         --col-p: #afafb1;
@@ -206,7 +195,6 @@ section.h {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --inv: none;
         --col-b: #101010;
         --col-h: white;
         --col-p: #77777b;
