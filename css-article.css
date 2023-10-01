@@ -15,13 +15,16 @@ video {
 /* n */
 
 section.n {
-    margin-block: calc(5rem + env(safe-area-inset-top)) calc(5cm + env(safe-area-inset-bottom))
+    margin-block: calc(10px + env(safe-area-inset-top)) calc(5cm + env(safe-area-inset-bottom))
 }
 
 section.n time {
-    margin-inline: 30px;
+    margin: 0 30px 5rem;
 
-    font: 600 15px system-ui
+    display: block;
+
+    text-align: center;
+    font: 700 15px system-ui
 }
 
 section.n h1 {
