@@ -89,11 +89,11 @@ section.n div {
 }
 
 section.n div a {
-    font: 500 13px system-ui;
+    font: 700 13px system-ui;
 
     -webkit-text-decoration: underline;
-    text-underline-offset: 7px;
-    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 3px;
     text-decoration-color: var(--col-c);
 
     color: var(--col-h)
