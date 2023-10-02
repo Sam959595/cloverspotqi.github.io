@@ -12,6 +12,32 @@ section.n {
     height: 100vh
 }
 
+section.n p {
+    margin-top: 20px;
+
+    text-align: center;
+    font-size: 17px
+}
+
+section.n h2 {
+    margin-block: 5px 60px;
+
+    text-align: center;
+    font: 700 17px ui-rounded
+}
+
+section.n h1 {
+    margin: 20px;
+
+    text-align: center;
+    font: 800 21px system-ui
+}
+
+section.n ul {
+    display: grid;
+    grid-auto-flow: row
+}
+
 [data-i],
 [data-v] {
     opacity: 0
@@ -22,24 +48,6 @@ video {
     opacity: 1;
 
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
-}
-
-section.n>img {
-    margin: 5rem auto 2rem;
-
-    filter: var(--inv)
-}
-
-section.n h1 {
-    margin: 0 4rem 8rem;
-
-    text-align: center;
-    font-size: 16px
-}
-
-section.n ul {
-    display: grid;
-    grid-auto-flow: row
 }
 
 section.n ul img:not(.s :is(img, video), .v img) {
@@ -183,7 +191,6 @@ section.h {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --inv: invert();
         --col-b: white;
         --col-h: black;
         --col-p: #afafb1;
@@ -195,7 +202,6 @@ section.h {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --inv: none;
         --col-b: #101010;
         --col-h: white;
         --col-p: #77777b;
