@@ -35,22 +35,24 @@ section.n figcaption:last-child {
 }
 
 section.n time {
-    padding: 4px 8px;
+    padding: 4px 30px;
 
     display: block;
 
-    text-align: right;
-    font: 800 13px system-ui;
+    word-spacing: .5rem;
+    font: 800 15px system-ui;
+    letter-spacing: 1rem;
 
     background-image: linear-gradient(to right, #eadfd8, #776e69);
-    color: #32302e
+    color: #88796e
 }
 
 section.n h2 {
     margin-inline: 30px;
     
-    font: 900 expanded 19px system-ui;
-    line-height: 14px;
+    font: 900 expanded 24px system-ui;
+    letter-spacing: 2px;
+    line-height: 17px;
 
     background-image: linear-gradient(to right, #eadfd8, #776e69);
     background-clip: text;
