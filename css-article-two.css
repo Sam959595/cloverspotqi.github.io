@@ -14,7 +14,7 @@ section.n figure {
 }
 
 section.n figcaption {
-    height: 20px;
+    height: 2rem;
     display: block;
 }
 
@@ -30,12 +30,8 @@ section.n figcaption:nth-child(3) {
     background-color: #4e4845
 }
 
-section.n figcaption:nth-child(4) {
-    background-color: #3e3a37
-}
-
 section.n figcaption:last-child {
-    background-color: #32302e
+    background-color: transparent
 }
 
 section.n time {
@@ -50,14 +46,12 @@ section.n time {
 }
 
 section.n h2 {
-    margin: 30px;
+    padding-inline: 30px;
 
     border-bottom: 4px solid white;
-    border-image-source: linear-gradient(to right, #655d59, #776e69);
-    border-image-slice: 1;
-    border-image-outset: 2;
+    border-image: linear-gradient(to right, #eadfd8, #776e69) 1 / 2;
 
-    font: 800 expanded 17px/1 system-ui;
+    font: 900 expanded 24px/1 system-ui;
 
     background-image: linear-gradient(to right, #eadfd8, #3e3a37);
     background-clip: text;
