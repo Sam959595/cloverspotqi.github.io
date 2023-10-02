@@ -1,0 +1,229 @@
+body {
+    background-color: #32302e
+}
+
+/* n */
+
+section.n {
+    margin-block: calc(10px + env(safe-area-inset-top)) calc(5cm + env(safe-area-inset-bottom))
+}
+
+section.n figure {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+section.n figcaption {
+    height: 20px;
+    display: block;
+}
+
+section.n figcaption:first-child {
+    background-color: #776e69
+}
+
+section.n figcaption:nth-child(2) {
+    background-color: #655d59
+}
+
+section.n figcaption:nth-child(3) {
+    background-color: #4e4845
+}
+
+section.n figcaption:nth-child(4) {
+    background-color: #3e3a37
+}
+
+section.n figcaption:last-child {
+    background-color: #32302e
+}
+
+section.n time {
+    margin: 0 30px 5rem;
+
+    display: block;
+
+    text-align: center;
+    font: 600 15px system-ui;
+
+    color: #feffec
+}
+
+section.n h2 {
+    margin: 30px;
+
+    border-bottom: 6px solid white;
+    border-image-source: linear-gradient(to right, #655d59, #776e69);
+    border-image-slice: 1;
+    border-image-outset: 1;
+
+    font: 900 semi-expanded 17px/1 system-ui;
+
+    color: #fffffe
+}
+
+section.n h1 {
+    margin: 2rem 30px;
+
+    word-break: break-word;
+    font: 800 expanded 44px/1 georgia;
+
+    color: #fffffe
+}
+
+section.n blockquote {
+    margin: 35px 30px;
+
+    text-align: right;
+    font: italic 500 19px/1.4 system-ui
+}
+
+section.n h6 {
+    margin: 35px 30px;
+
+    font: 19px/1.6 "avenir next";
+
+    color: #fffffe
+}
+
+section.n .b:first-letter {
+    -webkit-initial-letter: 3;
+
+    margin-right: .8em
+}
+
+section.n p {
+    margin: 20px 35px;
+
+    text-align: center;
+    font-size: 13px
+}
+
+section.n article a {
+    -webkit-text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+
+    color: inherit
+}
+
+section.n mark {
+    border-radius: 5px;
+
+    background-color: var(--col-m)
+}
+
+section.n h5 {
+    margin: 30px;
+
+    font: 800 expanded 32px/1 system-ui
+}
+
+section.n div {
+    margin: 35px 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 3rem
+}
+
+section.n div a {
+    font: 700 13px system-ui;
+
+    color: var(--col-h)
+}
+
+[data-i] {
+    opacity: 0
+}
+
+img {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+}
+
+/* k */
+
+section.k {
+    opacity: .9;
+
+    position: fixed;
+    inset: 0 0 auto;
+
+    height: env(safe-area-inset-top);
+
+    background-color: inherit
+}
+
+/* a */
+
+section.a {
+    position: fixed;
+    inset: auto 0 0;
+
+    margin-bottom: max(calc(10px + env(safe-area-inset-bottom)), 20px);
+
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+
+    transition: opacity .4s
+}
+
+section.a>div {
+    border-radius: 29px;
+
+    padding: 20px;
+
+    background-color: var(--col-k)
+}
+
+section.a>div:first-child {
+    display: inherit;
+    align-items: center
+}
+
+section.a img {
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%
+}
+
+section.a hr {
+    margin-inline: 12px;
+
+    width: 2rem;
+
+    border-radius: 2px;
+    border-top: 3px solid var(--col-c)
+}
+
+section.a :is(a, div div, span) {
+    display: flex
+}
+
+section.a img+img {
+    margin-left: -4px
+}
+
+section.a div img:not(:last-child) {
+    clip-path: path("M9 0a8.96 8.96 0 0 1 5.377 1.782C12.717 3.423 11.7 6.045 11.7 9s1.017 5.577 2.676 7.218A9 9 0 1 1 9 0Z")
+}
+
+section.a h6 {
+    padding-left: 8px;
+
+    font: 700 15px ui-rounded
+}
+
+section.a h5 {
+    filter: grayscale();
+
+    font-size: 14px
+}
+
+section.a .p {
+    filter: none
+}
