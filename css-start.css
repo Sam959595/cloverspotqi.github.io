@@ -30,6 +30,10 @@ section.n h2 {
     font: 700 17px ui-rounded
 }
 
+section.n u {
+    color: #1cd432
+}
+
 section.n h1 {
     margin: 60px 20px 20px;
 
