@@ -35,23 +35,22 @@ section.n figcaption:last-child {
 }
 
 section.n time {
-    margin: 0 30px 5rem;
+    padding: 4px 10px;
 
     display: block;
 
-    text-align: center;
-    font: 600 15px system-ui;
+    text-align: right;
+    font: 800 13px system-ui;
 
-    color: #feffec
+    background-image: linear-gradient(to right, #eadfd8, #776e69);
+    color: #32302e
 }
 
 section.n h2 {
-    padding-inline: 30px;
-
-    border-bottom: 4px solid white;
-    border-image: linear-gradient(to right, #eadfd8, #776e69) 1 / 2;
-
-    font: 900 expanded 24px/1 system-ui;
+    margin-inline: 30px;
+    
+    font: 900 expanded 24px system-ui;
+    line-height: 17px;
 
     background-image: linear-gradient(to right, #eadfd8, #776e69);
     background-clip: text;
@@ -64,7 +63,7 @@ section.n h1 {
     word-break: break-word;
     font: 800 expanded 44px/1 georgia;
 
-    background-image: linear-gradient(133deg, #eee2d8 .5%, #817b76, #eee2d8 60%, #7f7166);
+    background-image: linear-gradient(133deg, #787470 .5%, #ffffff 20%, #787572 45%, #ededed);
     background-clip: text;
     -webkit-text-fill-color: transparent
 }
@@ -117,7 +116,7 @@ section.n h5 {
     font: 800 expanded 32px/1 system-ui
 }
 
-section.n div {
+section.n .k {
     margin: 35px 30px;
 
     display: flex;
@@ -125,7 +124,7 @@ section.n div {
     gap: 2rem 3rem
 }
 
-section.n div a {
+section.n .k a {
     font: 700 13px system-ui;
 
     color: var(--col-h)
