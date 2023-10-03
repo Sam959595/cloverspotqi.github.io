@@ -44,15 +44,19 @@ section.n span span {
 }
 
 section.n span span:first-child {
-    background-color: #776e69
+    background-color: #766e68
 }
 
 section.n span span:nth-child(2) {
-    background-color: #655d59
+    background-color: #979089
 }
 
 section.n span span:nth-child(3) {
-    background-color: #4e4845
+    background-color: #bfb6ae
+}
+
+section.n span span:last-child {
+    background-color: #eadfd8
 }
 
 section.n h1 {
