@@ -34,24 +34,24 @@ section.n h3 {
     color: #7a6d64
 }
 
-section.n figure {
+section.n>span {
     display: grid;
     grid-auto-flow: column
 }
 
-section.n figcaption {
+section.n span span {
     height: 1rem
 }
 
-section.n figcaption:first-child {
+section.n span span:first-child {
     background-color: #776e69
 }
 
-section.n figcaption:nth-child(2) {
+section.n span span:nth-child(2) {
     background-color: #655d59
 }
 
-section.n figcaption:nth-child(3) {
+section.n span span:nth-child(3) {
     background-color: #4e4845
 }
 
@@ -83,7 +83,7 @@ section.n h5 {
     color: #fffffe
 }
 
-section.n h6 {
+section.n p {
     margin: 35px 30px;
 
     font: 19px/1.6 "avenir next";
@@ -97,7 +97,7 @@ section.n .b:first-letter {
     margin-right: .8em
 }
 
-section.n p {
+section.n figcaption {
     margin: 20px 35px;
 
     text-align: center;
@@ -117,7 +117,7 @@ section.n article a {
 section.n mark {
     border-radius: 5px;
 
-    background-color: #605850
+    background-color: #70556b
 }
 
 section.n div {
