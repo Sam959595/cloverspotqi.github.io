@@ -1,17 +1,9 @@
-/* html {
+html {
     overscroll-behavior-y: none
-} */
+}
 
 body {
     background-color: #32302e
-}
-
-div.t {
-    height: 0px;
-
-    padding: -500px;
-
-    background-color: #c92f2f;
 }
 
 /* n */
