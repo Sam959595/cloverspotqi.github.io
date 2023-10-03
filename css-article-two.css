@@ -51,7 +51,7 @@ section.n h3 {
 
 section.n h2 {
     margin-inline: 30px;
-    
+
     text-align: justify;
     font: 900 expanded 24px system-ui;
     letter-spacing: 2px;
@@ -68,7 +68,7 @@ section.n h1 {
     word-break: break-word;
     font: 800 43px/1 georgia;
 
-    background-image: linear-gradient(to left, #787470, #ededed);
+    background-image: linear-gradient(to left, #958c83, #ffffff);
     background-clip: text;
     -webkit-text-fill-color: transparent
 }
@@ -77,7 +77,9 @@ section.n blockquote {
     margin: 35px 30px;
 
     text-align: right;
-    font: italic 500 19px/1.4 system-ui
+    font: italic 500 19px/1.4 system-ui;
+
+    color: #a19a93
 }
 
 section.n h6 {
@@ -98,7 +100,9 @@ section.n p {
     margin: 20px 35px;
 
     text-align: center;
-    font-size: 13px
+    font-size: 13px;
+
+    color: #a19a93;
 }
 
 section.n article a {
@@ -112,7 +116,7 @@ section.n article a {
 section.n mark {
     border-radius: 5px;
 
-    background-color: var(--col-m)
+    background-color: #65514c
 }
 
 section.n h5 {
@@ -132,7 +136,7 @@ section.n .k {
 section.n .k a {
     font: 700 13px system-ui;
 
-    color: var(--col-h)
+    color: white
 }
 
 [data-i] {
@@ -178,7 +182,7 @@ section.a>div {
 
     padding: 20px;
 
-    background-color: var(--col-k)
+    background-color: #4e4845
 }
 
 section.a>div:first-child {
@@ -199,7 +203,7 @@ section.a hr {
     width: 2rem;
 
     border-radius: 2px;
-    border-top: 3px solid var(--col-c)
+    border-top: 3px solid white
 }
 
 section.a :is(a, div div, span) {
