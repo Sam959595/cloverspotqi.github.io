@@ -135,7 +135,8 @@ textarea {
 
 p,
 time,
-blockquote {
+blockquote,
+figcaption {
 	color: var(--col-p)
 }
 
