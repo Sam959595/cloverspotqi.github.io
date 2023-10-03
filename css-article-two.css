@@ -1,5 +1,17 @@
+/* html {
+    overscroll-behavior-y: none
+} */
+
 body {
     background-color: #32302e
+}
+
+div.t {
+    height: 0px;
+
+    padding: -500px;
+
+    background-color: #c92f2f;
 }
 
 /* n */
@@ -14,7 +26,7 @@ section.n figure {
 }
 
 section.n figcaption {
-    height: 2rem;
+    height: 1rem;
     display: block;
 }
 
@@ -35,12 +47,12 @@ section.n figcaption:last-child {
 }
 
 section.n time {
-    padding: 4px 30px;
+    padding: 6px 30px;
 
     display: block;
 
     font: 800 15px system-ui;
-    letter-spacing: 1rem;
+    letter-spacing: .5rem;
     word-spacing: .5rem;
 
     background-image: linear-gradient(to right, #eadfd8, #776e69);
@@ -64,7 +76,7 @@ section.n h1 {
     margin: 35px 30px;
 
     word-break: break-word;
-    font: 800 expanded 44px/1 georgia;
+    font: 800 expanded 43px/1 georgia;
 
     background-image: linear-gradient(to left, #787470, #ededed);
     background-clip: text;
