@@ -1,17 +1,3 @@
-/* media */
-
-[data-i],
-[data-v] {
-    opacity: 0
-}
-
-img,
-video {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
-}
-
 /* n */
 
 section.n {
@@ -41,10 +27,12 @@ section.n blockquote {
     font: italic 500 19px/1.4 system-ui
 }
 
-section.n h3 {
+section.n p {
     margin: 35px 30px;
 
-    font: 370 19px/1.6 ui-serif
+    font: 370 19px/1.6 ui-serif;
+
+    color: var(--col-h)
 }
 
 section.n .b:first-letter {
@@ -53,7 +41,7 @@ section.n .b:first-letter {
     margin-right: .8em
 }
 
-section.n p {
+section.n figcaption {
     margin: 20px 35px;
 
     text-align: center;
@@ -92,6 +80,16 @@ section.n div a {
     font: 700 13px system-ui;
 
     color: var(--col-h)
+}
+
+[data-i] {
+    opacity: 0
+}
+
+img {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
 /* k */
