@@ -38,13 +38,11 @@ section.n figcaption:last-child {
     background-color: transparent
 }
 
-section.n time {
+section.n h3 {
     padding: 10px 30px;
 
-    display: block;
-
-    font: 800 15px system-ui;
-    letter-spacing: .4rem;
+    font: 800 semi-expanded 14px system-ui;
+    letter-spacing: .3rem;
     word-spacing: .5rem;
 
     background-image: linear-gradient(to right, #eadfd8, #776e69);
@@ -68,7 +66,7 @@ section.n h1 {
     margin: 35px 30px;
 
     word-break: break-word;
-    font: 800 expanded 43px/1 georgia;
+    font: 800 43px/1 georgia;
 
     background-image: linear-gradient(to left, #787470, #ededed);
     background-clip: text;
