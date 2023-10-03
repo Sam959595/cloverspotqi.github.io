@@ -9,17 +9,37 @@ body {
 /* n */
 
 section.n {
-    margin-block: 0 calc(5cm + env(safe-area-inset-bottom))
+    margin-bottom: calc(5cm + env(safe-area-inset-bottom))
+}
+
+[data-i] {
+    opacity: 0
+}
+
+img {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+}
+
+section.n h3 {
+    padding: 10px 30px;
+
+    font: 800 semi-expanded 14px system-ui;
+    letter-spacing: .3rem;
+    word-spacing: .5rem;
+
+    background-image: linear-gradient(to right, #eadfd8, #776e69);
+    color: #7a6d64
 }
 
 section.n figure {
     display: grid;
-    grid-auto-flow: column;
+    grid-auto-flow: column
 }
 
 section.n figcaption {
-    height: 1rem;
-    display: block;
+    height: 1rem
 }
 
 section.n figcaption:first-child {
@@ -34,41 +54,13 @@ section.n figcaption:nth-child(3) {
     background-color: #4e4845
 }
 
-section.n figcaption:last-child {
-    background-color: transparent
-}
-
-section.n h3 {
-    padding: 10px 30px;
-
-    font: 800 semi-expanded 14px system-ui;
-    letter-spacing: .3rem;
-    word-spacing: .5rem;
-
-    background-image: linear-gradient(to right, #eadfd8, #776e69);
-    color: #88796e
-}
-
-section.n h2 {
-    margin-inline: 30px;
-
-    text-align: justify;
-    font: 900 expanded 24px system-ui;
-    letter-spacing: 2px;
-    line-height: 17px;
-
-    background-image: linear-gradient(to right, #eadfd8, #776e69);
-    background-clip: text;
-    -webkit-text-fill-color: transparent
-}
-
 section.n h1 {
     margin: 35px 30px;
 
     word-break: break-word;
     font: 800 43px/1 georgia;
 
-    background-image: linear-gradient(to left, #958c83, #ffffff);
+    background-image: linear-gradient(to left, #958c83, white);
     background-clip: text;
     -webkit-text-fill-color: transparent
 }
@@ -80,6 +72,14 @@ section.n blockquote {
     font: italic 500 19px/1.4 system-ui;
 
     color: #a19a93
+}
+
+section.n h5 {
+    margin-inline: 30px;
+
+    font: 600 21px "avenir next";
+
+    color: #fffffe
 }
 
 section.n h6 {
@@ -116,16 +116,10 @@ section.n article a {
 section.n mark {
     border-radius: 5px;
 
-    background-color: #65514c
+    background-color: #605850
 }
 
-section.n h5 {
-    margin: 30px;
-
-    font: 800 expanded 32px/1 system-ui
-}
-
-section.n .k {
+section.n div {
     margin: 35px 30px;
 
     display: flex;
@@ -133,20 +127,10 @@ section.n .k {
     gap: 2rem 3rem
 }
 
-section.n .k a {
+section.n div a {
     font: 700 13px system-ui;
 
-    color: white
-}
-
-[data-i] {
-    opacity: 0
-}
-
-img {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+    color: #fffffe
 }
 
 /* k */
@@ -168,21 +152,15 @@ section.a {
     position: fixed;
     inset: auto 0 0;
 
-    margin-bottom: max(calc(10px + env(safe-area-inset-bottom)), 20px);
+    border-top: 2px solid #3f3d3b;
+
+    padding: 20px 30px max(calc(10px + env(safe-area-inset-bottom)), 20px);
 
     display: flex;
-    justify-content: center;
-    column-gap: 1rem;
+
+    background-color: inherit;
 
     transition: opacity .4s
-}
-
-section.a>div {
-    border-radius: 29px;
-
-    padding: 20px;
-
-    background-color: #4e4845
 }
 
 section.a>div:first-child {
