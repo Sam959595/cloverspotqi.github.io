@@ -47,12 +47,12 @@ section.n figcaption:last-child {
 }
 
 section.n time {
-    padding: 6px 30px;
+    padding: 10px 30px;
 
     display: block;
 
     font: 800 15px system-ui;
-    letter-spacing: .5rem;
+    letter-spacing: .4rem;
     word-spacing: .5rem;
 
     background-image: linear-gradient(to right, #eadfd8, #776e69);
