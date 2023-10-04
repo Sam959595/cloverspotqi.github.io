@@ -14,6 +14,7 @@ section.n h1 {
 section.n h2 {
     margin: 30px;
 
+    word-break: break-word;
     font: 800 expanded 32px/1 system-ui
 }
 
