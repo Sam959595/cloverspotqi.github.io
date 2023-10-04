@@ -96,6 +96,33 @@ section.k {
     background-color: inherit
 }
 
+/* j */
+
+section.j a {
+    pointer-events: none;
+    opacity: 0;
+
+    z-index: 1;
+
+    position: fixed;
+    inset: calc(10px + env(safe-area-inset-top)) 0 auto;
+
+    margin-inline: auto;
+
+    width: fit-content;
+
+    border-radius: 19px;
+
+    padding: 8px 16px;
+
+    font: 600 15px system-ui;
+
+    background-color: #32302e;
+    color: #ffffff80;
+
+    transition: opacity .4s
+}
+
 /* a */
 
 section.a {
