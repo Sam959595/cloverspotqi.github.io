@@ -1,4 +1,12 @@
-/* article */
+body {
+    background-color: #32302e
+}
+
+/* n */
+
+section.n {
+    margin-bottom: calc(5cm + env(safe-area-inset-bottom))
+}
 
 [data-i] {
     opacity: 0
@@ -10,50 +18,61 @@ img {
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
-article .a {
+section.n .a {
     position: relative;
     z-index: 1
 }
 
-article h1 {
-    margin: calc(5rem + env(safe-area-inset-top)) 30px 35px;
-
-    word-break: break-word;
-    font: 800 expanded 40px/1 system-ui
-}
-
-article:has(.a) h1 {
-    margin: 35px 30px
-}
-
-article h2 {
-    margin: 30px;
-
-    word-break: break-word;
-    font: 800 expanded 32px/1 system-ui
-}
-
-article h6 {
-    margin: 30px;
-
-    font: 800 21px/1.4 system-ui
-}
-
-article p {
+section.n h1 {
     margin: 35px 30px;
 
-    font: 370 19px/1.6 ui-serif;
+    word-break: break-word;
+    font: 800 43px/1 georgia;
 
-    color: var(--col-h)
+    color: #fffffe
 }
 
-article .b:first-letter {
+section.n blockquote {
+    margin: 35px 30px;
+
+    text-align: right;
+    font: italic 500 19px/1.4 system-ui;
+
+    color: #a19a93
+}
+
+section.n h5 {
+    margin: 35px 30px;
+
+    font: 600 21px "avenir next";
+
+    color: #fffffe
+}
+
+section.n p {
+    margin: 35px 30px;
+
+    font: 19px/1.6 "avenir next";
+
+    color: #fffffe
+}
+
+section.n .b:first-letter {
     -webkit-initial-letter: 3;
 
     margin-right: .8em
 }
 
-article a {
+section.n figcaption {
+    margin: 20px 35px;
+
+    text-align: center;
+    font-size: 13px;
+
+    color: #a19a93;
+}
+
+section.n article a {
     -webkit-text-decoration: underline;
     text-underline-offset: 2px;
     text-decoration-thickness: 1px;
@@ -61,40 +80,24 @@ article a {
     color: inherit
 }
 
-article figcaption {
-    margin: 20px 35px;
-
-    text-align: center;
-    font-size: 13px
-}
-
-article blockquote {
-    margin: 35px 30px;
-
-    text-align: right;
-    font: italic 500 19px/1.4 system-ui
-}
-
-article mark {
+section.n mark {
     border-radius: 5px;
 
-    background-color: var(--col-m)
+    background-color: #61605f
 }
 
-/* n */
-
-section.n {
-    margin: 35px 30px calc(5cm + env(safe-area-inset-bottom));
+section.n div {
+    margin: 35px 30px;
 
     display: flex;
     flex-wrap: wrap;
     gap: 2rem 3rem
 }
 
-section.n a {
+section.n div a {
     font: 700 13px system-ui;
 
-    color: var(--col-h)
+    color: #fffffe
 }
 
 /* k */
@@ -131,8 +134,8 @@ section.j a {
 
     font: 600 15px system-ui;
 
-    background-color: var(--col-k);
-    color: var(--col-p);
+    background-color: #32302e;
+    color: #ffffff80;
 
     transition: opacity .4s
 }
@@ -143,21 +146,20 @@ section.a {
     position: fixed;
     inset: auto 0 0;
 
-    border-top: 2px solid #88888810;
+    border-top: 2px solid #3f3d3b;
 
     padding: 20px 30px max(calc(10px + env(safe-area-inset-bottom)), 20px);
+
+    display: flex;
 
     background-color: inherit;
 
     transition: opacity .4s
 }
 
-section.a div {
-    display: flex
-}
-
-section.a .d {
-    column-gap: 10px
+section.a>div:first-child {
+    display: inherit;
+    align-items: center
 }
 
 section.a img {
@@ -167,66 +169,39 @@ section.a img {
     border-radius: 50%
 }
 
-section.a p {
-    font: 500 14px system-ui
+section.a hr {
+    margin-inline: 12px;
+
+    width: 2rem;
+
+    border-radius: 2px;
+    border-top: 3px solid white
 }
 
-section.a p a {
-    display: inline-block;
-
-    color: var(--col-h)
+section.a :is(a, div div, span) {
+    display: flex
 }
 
-section.a>div+div {
-    margin-top: 20px;
-
-    justify-content: space-around
-}
-
-section.a .b {
-    column-gap: 8px
-}
-
-section.a .c img:not(:last-child) {
-    clip-path: path("M9 0a8.96 8.96 0 0 1 5.377 1.782C12.717 3.423 11.7 6.045 11.7 9s1.017 5.577 2.676 7.218A9 9 0 1 1 9 0Z")
-}
-
-section.a .c img+img {
+section.a img+img {
     margin-left: -4px
 }
 
-section.a div span:last-child {
+section.a div img:not(:last-child) {
+    clip-path: path("M9 0a8.96 8.96 0 0 1 5.377 1.782C12.717 3.423 11.7 6.045 11.7 9s1.017 5.577 2.676 7.218A9 9 0 1 1 9 0Z")
+}
+
+section.a h6 {
+    padding-left: 8px;
+
     font: 700 15px ui-rounded
 }
 
-section.a div span:first-child {
+section.a h5 {
     filter: grayscale();
 
     font-size: 14px
 }
 
-section.a .a {
+section.a .p {
     filter: none
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --col-b: white;
-        --col-h: #111;
-        --col-p: #afafb1;
-        --col-c: #00000020;
-        --col-m: #ffdbed;
-        --col-k: #f2f2f2;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --col-b: #101010;
-        --col-h: #ddd;
-        --col-p: #77777b;
-        --col-c: #ffffff20;
-        --col-m: #692940;
-        --col-k: #1c1c1c;
-    }
 }
