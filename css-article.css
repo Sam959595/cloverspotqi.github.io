@@ -5,17 +5,22 @@ section.n {
 }
 
 section.n h1 {
-    margin: 10px 30px;
+    margin: 30px;
 
     word-break: break-word;
     font: 800 expanded 40px/1 system-ui
 }
 
-section.n blockquote {
-    margin: 35px 30px;
+section.n h2 {
+    margin: 30px;
 
-    text-align: right;
-    font: italic 500 19px/1.4 system-ui
+    font: 800 expanded 32px/1 system-ui
+}
+
+section.n h6 {
+    margin: 30px;
+
+    font: 800 21px/1.4 system-ui
 }
 
 section.n p {
@@ -32,13 +37,6 @@ section.n .b:first-letter {
     margin-right: .8em
 }
 
-section.n figcaption {
-    margin: 20px 35px;
-
-    text-align: center;
-    font-size: 13px
-}
-
 section.n article a {
     -webkit-text-decoration: underline;
     text-underline-offset: 2px;
@@ -47,16 +45,34 @@ section.n article a {
     color: inherit
 }
 
+[data-i] {
+    opacity: 0
+}
+
+img {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+}
+
+section.n figcaption {
+    margin: 20px 35px;
+
+    text-align: center;
+    font-size: 13px
+}
+
+section.n blockquote {
+    margin: 35px 30px;
+
+    text-align: right;
+    font: italic 500 19px/1.4 system-ui
+}
+
 section.n mark {
     border-radius: 5px;
 
     background-color: var(--col-m)
-}
-
-section.n h2 {
-    margin: 30px;
-
-    font: 800 expanded 32px/1 system-ui
 }
 
 section.n div {
@@ -71,16 +87,6 @@ section.n div a {
     font: 700 13px system-ui;
 
     color: var(--col-h)
-}
-
-[data-i] {
-    opacity: 0
-}
-
-img {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
 /* k */
