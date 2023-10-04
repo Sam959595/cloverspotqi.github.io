@@ -10,27 +10,18 @@ img {
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
-article .a {
-    position: relative;
-    z-index: 1
-}
-
 article h1 {
-    margin: calc(5rem + env(safe-area-inset-top)) 30px 35px;
+    margin: calc(30px + env(safe-area-inset-top)) 30px 35px;
 
     word-break: break-word;
-    font: 800 expanded 32px/1 system-ui
-}
-
-article:has(.a) h1 {
-    margin: 35px 30px
+    font: 700 32px/1 system-ui
 }
 
 article h2 {
     margin: 30px;
 
     word-break: break-word;
-    font: 800 expanded 32px/1 system-ui
+    font: 700 32px/1 system-ui
 }
 
 article h6 {
