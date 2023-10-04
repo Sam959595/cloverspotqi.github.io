@@ -117,8 +117,8 @@ section.j a {
 
     font: 600 15px system-ui;
 
-    background-color: #32302e;
-    color: #ffffff80;
+    background-color: var(--col-k);
+    color: var(--col-p);
 
     transition: opacity .4s
 }
