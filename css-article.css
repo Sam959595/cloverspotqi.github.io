@@ -1,7 +1,7 @@
 /* n */
 
 section.n {
-    margin-block: calc(30px + env(safe-area-inset-top)) calc(5cm + env(safe-area-inset-bottom))
+    margin-block: calc(5rem + env(safe-area-inset-top)) calc(5cm + env(safe-area-inset-bottom))
 }
 
 section.n h1 {
