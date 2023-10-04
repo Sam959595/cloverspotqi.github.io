@@ -3,13 +3,31 @@ let n = 0;
 $(window).scroll( () => {
     let s = window.scrollY;
 
-    if (s > n) {
+    if (s <= $(document).height() && s > n) {
         $('section.a')[0].style = 'pointer-events: none; opacity: 0'
     } else {
         $('section.a')[0].style = 'pointer-events: auto; opacity: 1'
     }
 
     n = s <= 0 ? 0 : s
+})
+
+// home button
+$(window).scroll( () => {
+    if (window.scrollY < -20) {
+        
+        let t = setInterval(() => {
+            if (window.scrollY < -20) {
+                $('section.j a')[0].style = 'pointer-events: auto; opacity: 1';
+
+                setTimeout(() => {
+                    $('section.j a')[0].style = 'pointer-events: none; opacity: 0'
+                }, 5000)
+            } else {
+                clearInterval(t)
+            }
+        }, 800)
+    }
 })
 
 // img load
