@@ -21,7 +21,7 @@ $(window).scroll( () => {
                 $('section.j a')[0].style = 'pointer-events: auto; opacity: 1';
 
                 setTimeout(() => {
-                    $('section.j a')[0].style = 'pointer-events: none; opacity: 0'
+                    $('section.j a')[0].removeAttribute('style')
                 }, 5000)
             } else {
                 clearInterval(t)
