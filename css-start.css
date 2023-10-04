@@ -27,7 +27,7 @@ section.n p {
 
 section.n h2 {
     text-align: center;
-    font: 700 17px ui-rounded
+    font: 800 17px ui-rounded
 }
 
 section.n u {
@@ -89,8 +89,16 @@ section.n .v {
     margin-block: 24px;
 
     display: flex;
-    align-items: center;
-    justify-content: center
+    justify-content: center;
+    column-gap: 3rem
+}
+
+section.n .v div {
+    display: flex
+}
+
+section.n .v .b {
+    column-gap: 8px
 }
 
 section.n .v img {
@@ -101,7 +109,7 @@ section.n .v img {
 }
 
 section.n hr {
-    margin-inline: 12px;
+    margin: 7.5px 4px;
 
     width: 2rem;
 
@@ -109,35 +117,25 @@ section.n hr {
     border-top: 3px solid var(--col-c)
 }
 
-section.n .v :is(a, div, span) {
-    display: inherit
-}
-
-section.n .v img+img {
-    margin-left: -4px
-}
-
-section.n .v div img:not(:last-child) {
+section.n .c img:not(:last-child) {
     clip-path: path("M9 0a8.96 8.96 0 0 1 5.377 1.782C12.717 3.423 11.7 6.045 11.7 9s1.017 5.577 2.676 7.218A9 9 0 1 1 9 0Z")
 }
 
-section.n h6 {
-    padding-left: 8px;
+section.n .c img+img {
+    margin-left: -4px
+}
 
+section.n div span:last-child {
     font: 700 15px ui-rounded
 }
 
-section.n span {
-    margin-left: 3rem
-}
-
-section.n h5 {
+section.n div span:first-child {
     filter: grayscale();
 
     font-size: 14px
 }
 
-section.n .p {
+section.n .a {
     filter: none
 }
 
