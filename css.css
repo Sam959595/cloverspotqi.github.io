@@ -113,7 +113,9 @@ img {
 
 img,
 video {
-	pointer-events: none
+	pointer-events: none;
+
+	display: block
 }
 
 body {
