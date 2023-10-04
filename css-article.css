@@ -1,30 +1,26 @@
-/* n */
+/* article */
 
-section.n {
-    margin-block: calc(5rem + env(safe-area-inset-top)) calc(5cm + env(safe-area-inset-bottom))
-}
-
-section.n h1 {
-    margin: 30px;
+article h1 {
+    margin: calc(5rem + env(safe-area-inset-top)) 30px 30px;
 
     word-break: break-word;
     font: 800 expanded 40px/1 system-ui
 }
 
-section.n h2 {
+article h2 {
     margin: 30px;
 
     word-break: break-word;
     font: 800 expanded 32px/1 system-ui
 }
 
-section.n h6 {
+article h6 {
     margin: 30px;
 
     font: 800 21px/1.4 system-ui
 }
 
-section.n p {
+article p {
     margin: 35px 30px;
 
     font: 370 19px/1.6 ui-serif;
@@ -32,13 +28,13 @@ section.n p {
     color: var(--col-h)
 }
 
-section.n .b:first-letter {
+article .b:first-letter {
     -webkit-initial-letter: 3;
 
     margin-right: .8em
 }
 
-section.n article a {
+article a {
     -webkit-text-decoration: underline;
     text-underline-offset: 2px;
     text-decoration-thickness: 1px;
@@ -56,35 +52,37 @@ img {
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
-section.n figcaption {
+article figcaption {
     margin: 20px 35px;
 
     text-align: center;
     font-size: 13px
 }
 
-section.n blockquote {
+article blockquote {
     margin: 35px 30px;
 
     text-align: right;
     font: italic 500 19px/1.4 system-ui
 }
 
-section.n mark {
+article mark {
     border-radius: 5px;
 
     background-color: var(--col-m)
 }
 
-section.n div {
-    margin: 35px 30px;
+/* n */
+
+section.n {
+    margin: 35px 30px calc(5cm + env(safe-area-inset-bottom));
 
     display: flex;
     flex-wrap: wrap;
     gap: 2rem 3rem
 }
 
-section.n div a {
+section.n a {
     font: 700 13px system-ui;
 
     color: var(--col-h)
