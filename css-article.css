@@ -153,8 +153,14 @@ section.a {
 }
 
 section.a div {
-    display: flex;
-    justify-content: space-between;
+    display: flex
+}
+
+section.a img {
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%
 }
 
 section.a p {
@@ -167,13 +173,35 @@ section.a p a {
     color: var(--col-h)
 }
 
-section.a h5 {
+section.a>div+div {
+    margin-top: 20px;
+
+    justify-content: space-around
+}
+
+section.a .b {
+    column-gap: 8px
+}
+
+section.a .c img:not(:last-child) {
+    clip-path: path("M9 0a8.96 8.96 0 0 1 5.377 1.782C12.717 3.423 11.7 6.045 11.7 9s1.017 5.577 2.676 7.218A9 9 0 1 1 9 0Z")
+}
+
+section.a .c img+img {
+    margin-left: -4px
+}
+
+section.a div span:last-child {
+    font: 700 15px ui-rounded
+}
+
+section.a div span:first-child {
     filter: grayscale();
 
     font-size: 14px
 }
 
-section.a .p {
+section.a .a {
     filter: none
 }
 
