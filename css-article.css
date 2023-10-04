@@ -1,16 +1,7 @@
 /* n */
 
 section.n {
-    margin-block: calc(10px + env(safe-area-inset-top)) calc(5cm + env(safe-area-inset-bottom))
-}
-
-section.n time {
-    margin: 0 30px 5rem;
-
-    display: block;
-
-    text-align: center;
-    font: 600 15px system-ui
+    margin-block: calc(30px + env(safe-area-inset-top)) calc(5cm + env(safe-area-inset-bottom))
 }
 
 section.n h1 {
