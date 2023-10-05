@@ -11,29 +11,36 @@ img {
 }
 
 article h1 {
-    margin: calc(30px + env(safe-area-inset-top)) 30px 35px;
+    margin: calc(30px + env(safe-area-inset-top)) 30px 30px;
 
     word-break: break-word;
-    font: 700 32px/1 system-ui
+    font: 700 extra-condensed 32px/1 system-ui
+}
+
+article span {
+    margin-inline: 30px;
+
+    font: 500 14px system-ui;
+
+    color: var(--col-p)
 }
 
 article h2 {
     margin: 30px;
 
-    word-break: break-word;
-    font: 700 32px/1 system-ui
+    font: 700 28px/1.4 system-ui
 }
 
 article h6 {
     margin: 30px;
 
-    font: 700 21px/1.4 system-ui
+    font: 700 extra-condensed 21px/1.4 system-ui
 }
 
 article p {
-    margin: 35px 30px;
+    margin: 30px;
 
-    font: 370 19px/1.6 ui-serif;
+    font: 17px/1.6 ui-serif;
 
     color: var(--col-h)
 }
@@ -53,14 +60,14 @@ article a {
 }
 
 article figcaption {
-    margin: 20px 35px;
+    margin: 20px;
 
     text-align: center;
     font-size: 13px
 }
 
 article blockquote {
-    margin: 35px 30px;
+    margin: 30px;
 
     text-align: right;
     font: italic 500 19px/1.4 system-ui
