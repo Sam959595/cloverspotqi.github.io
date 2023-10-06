@@ -14,13 +14,16 @@ article h1 {
     margin: calc(30px + env(safe-area-inset-top)) 30px 30px;
 
     word-break: break-word;
-    font: 700 32px/1.1 system-ui;
+    font: 700 extra-condensed 32px/1 system-ui;
     letter-spacing: .004em
 }
 
 article span {
     margin-inline: 30px;
 
+    display: block;
+
+    text-align: center;
     font: 500 14px system-ui;
 
     color: var(--col-p)
