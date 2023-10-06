@@ -45,7 +45,7 @@ article p {
 article .b:first-letter {
     -webkit-initial-letter: 2;
 
-    margin-right: .8em;
+    margin-right: .5em;
 
     font-weight: 700
 }
@@ -69,7 +69,7 @@ article blockquote {
     margin: 30px;
 
     text-align: right;
-    font: italic 500 19px/1.4 system-ui
+    font: italic 19px/1.4 system-ui
 }
 
 article mark {
