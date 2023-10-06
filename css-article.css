@@ -144,6 +144,10 @@ section.a {
 
     padding: 20px 30px max(calc(10px + env(safe-area-inset-bottom)), 20px);
 
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+
     background-color: inherit;
 
     transition: opacity .4s
@@ -163,16 +167,6 @@ section.a img {
     height: 18px;
 
     border-radius: 50%
-}
-
-section.a p {
-    font: 500 14px system-ui
-}
-
-section.a p a {
-    display: inline-block;
-
-    color: var(--col-h)
 }
 
 section.a>div+div {
