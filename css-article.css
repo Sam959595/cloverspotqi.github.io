@@ -14,7 +14,8 @@ article h1 {
     margin: calc(30px + env(safe-area-inset-top)) 30px 30px;
 
     word-break: break-word;
-    font: 700 extra-condensed 32px/1 system-ui
+    font: 700 32px/1.1 system-ui;
+    letter-spacing: .004em
 }
 
 article span {
@@ -25,30 +26,27 @@ article span {
     color: var(--col-p)
 }
 
-article h2 {
-    margin: 30px;
-
-    font: 700 28px/1.4 system-ui
-}
-
 article h6 {
     margin: 30px;
 
-    font: 700 extra-condensed 21px/1.4 system-ui
+    font: 700 21px/1.2 system-ui;
+    letter-spacing: .011em
 }
 
 article p {
     margin: 30px;
 
-    font: 17px/1.6 ui-serif;
+    font: 17px/1.6 system-ui;
 
     color: var(--col-h)
 }
 
 article .b:first-letter {
-    -webkit-initial-letter: 3;
+    -webkit-initial-letter: 2;
 
-    margin-right: .8em
+    margin-right: .8em;
+
+    font-weight: 700
 }
 
 article a {
