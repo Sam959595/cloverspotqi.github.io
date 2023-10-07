@@ -10,12 +10,8 @@ img {
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
-article {
-    margin-top: calc(30px + env(safe-area-inset-top))
-}
-
 article h1 {
-    margin: 30px;
+    margin: calc(30px + env(safe-area-inset-top)) 30px 30px;
 
     word-break: break-word;
     font: 800 extra-condensed 40px/1 system-ui
@@ -30,6 +26,12 @@ article span {
     font: 500 14px system-ui;
 
     color: var(--col-p)
+}
+
+article h5 {
+    margin: 30px;
+
+    font: 800 21px/1 system-ui
 }
 
 article h6 {
