@@ -14,7 +14,7 @@ article h1 {
     margin: calc(30px + env(safe-area-inset-top)) 30px 30px;
 
     word-break: break-word;
-    font: 800 extra-condensed 40px/1 system-ui
+    font: 700 extra-condensed 40px/1 system-ui
 }
 
 article span {
@@ -31,13 +31,13 @@ article span {
 article h5 {
     margin: 30px;
 
-    font: 800 21px/1.3 system-ui
+    font: 700 21px/1.3 system-ui
 }
 
 article h6 {
     margin: 30px;
 
-    font: 800 extra-condensed 28px/1 system-ui
+    font: 700 extra-condensed 28px/1 system-ui
 }
 
 article p {
@@ -222,7 +222,7 @@ section.a .a {
 @media (prefers-color-scheme: dark) {
     :root {
         --col-b: #101010;
-        --col-h: #ddd;
+        --col-h: white;
         --col-p: #77777b;
         --col-c: #ffffff20;
         --col-m: #692940;
