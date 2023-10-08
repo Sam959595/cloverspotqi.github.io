@@ -1,103 +1,143 @@
-/* article */
-
-[data-i] {
-    opacity: 0
-}
-
-img {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
-}
-
-article h1 {
-    margin: calc(30px + env(safe-area-inset-top)) 30px 30px;
-
-    word-break: break-word;
-    font: 800 extra-condensed 40px/1 system-ui
-}
-
-article span {
-    margin: 30px;
-
-    display: block;
-
-    text-align: center;
-    font: 500 14px system-ui;
-
-    color: var(--col-p)
-}
-
-article h5 {
-    margin: 30px;
-
-    font: 800 21px/1.3 system-ui
-}
-
-article h6 {
-    margin: 30px;
-
-    font: 800 extra-condensed 28px/1 system-ui
-}
-
-article p {
-    margin: 30px;
-
-    font: 17px/1.6 system-ui;
-
-    color: var(--col-h)
-}
-
-article .b:first-letter {
-    -webkit-initial-letter: 2;
-
-    margin-right: .6em;
-
-    font-weight: 700
-}
-
-article a {
-    -webkit-text-decoration: underline;
-    text-underline-offset: 2px;
-    text-decoration-thickness: 1px;
-
-    color: inherit
-}
-
-article figcaption {
-    margin: 20px;
-
-    text-align: center;
-    font-size: 13px
-}
-
-article blockquote {
-    margin: 30px;
-
-    text-align: right;
-    font: italic 19px/1.4 system-ui
-}
-
-article mark {
-    border-radius: 5px;
-
-    background-color: var(--col-m)
+html {
+    overscroll-behavior-y: none
 }
 
 /* n */
 
 section.n {
-    margin: 30px 30px calc(5cm + env(safe-area-inset-bottom));
+    overflow-y: scroll;
 
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem 3rem
+    padding-block: env(safe-area-inset-top) calc(40px + env(safe-area-inset-bottom));
+
+    height: 100vh
 }
 
-section.n a {
-    font: 700 13px system-ui;
+section.n p {
+    margin: 20px auto 5px;
 
-    color: var(--col-h)
+    max-width: 60%;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 17px
+}
+
+section.n h2 {
+    text-align: center;
+    font: 800 17px ui-rounded
+}
+
+section.n u {
+    color: #1cd432
+}
+
+section.n h1 {
+    margin: 60px 20px 20px;
+
+    text-align: center;
+    font: 800 21px system-ui
+}
+
+section.n ul {
+    display: grid;
+    grid-auto-flow: row
+}
+
+[data-i],
+[data-v] {
+    opacity: 0
+}
+
+img,
+video {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+}
+
+section.n ul img:not(.s :is(img, video), .v img) {
+    margin-inline: 20px
+}
+
+section.n ul :is(img, video):not(.v img) {
+    border-radius: 12px
+}
+
+section.n .s {
+    width: 100vw;
+
+    overflow-x: scroll;
+
+    padding-inline: 20px;
+    scroll-padding-left: 20px;
+
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 10px;
+
+    scroll-snap-type: x mandatory
+}
+
+section.n .s :is(img, video) {
+    scroll-snap-align: start
+}
+
+section.n .v {
+    margin-block: 24px;
+
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem
+}
+
+section.n .v div {
+    display: flex
+}
+
+section.n .v .b {
+    align-items: center;
+    column-gap: 8px
+}
+
+section.n .v img {
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%
+}
+
+section.n hr {
+    margin-inline: 4px;
+
+    width: 2rem;
+
+    border-radius: 2px;
+    border-top: 3px solid var(--col-c)
+}
+
+section.n .c img:not(:last-child) {
+    clip-path: path("M9 0a8.96 8.96 0 0 1 5.377 1.782C12.717 3.423 11.7 6.045 11.7 9s1.017 5.577 2.676 7.218A9 9 0 1 1 9 0Z")
+}
+
+section.n .c img+img {
+    margin-left: -4px
+}
+
+section.n div span:last-child {
+    font: 700 15px ui-rounded
+}
+
+section.n div span:first-child {
+    filter: grayscale();
+
+    font-size: 14px
+}
+
+section.n .a {
+    filter: none
 }
 
 /* k */
@@ -113,119 +153,67 @@ section.k {
     background-color: inherit
 }
 
-/* j */
+/* g */
 
-section.j a {
+section.g {
+    position: fixed;
+    inset: auto auto max(20px, env(safe-area-inset-bottom)) 25px;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    padding: 9px;
+
+    -webkit-backdrop-filter: blur(10px);
+
+    background-color: var(--col-n);
+    color: var(--col-h)
+}
+
+/* h */
+
+section.h {
     pointer-events: none;
     opacity: 0;
 
-    z-index: 1;
-
     position: fixed;
-    inset: calc(10px + env(safe-area-inset-top)) 0 auto;
+    inset: auto 25px max(20px, env(safe-area-inset-bottom)) auto;
 
-    margin-inline: auto;
+    width: 40px;
+    height: 40px;
 
-    width: fit-content;
+    border-radius: 50%;
 
-    border-radius: 19px;
+    padding: 11px 8px;
 
-    padding: 8px 16px;
+    -webkit-backdrop-filter: blur(10px);
 
-    font: 600 15px system-ui;
-
-    background-color: var(--col-k);
-    color: var(--col-p);
+    background-color: var(--col-n);
+    color: var(--col-h);
 
     transition: opacity .4s
-}
-
-/* a */
-
-section.a {
-    position: fixed;
-    inset: auto 0 0;
-
-    margin-bottom: max(calc(10px + env(safe-area-inset-bottom)), 20px);
-    
-    display: flex;
-    justify-content: center;
-    column-gap: 1rem;
-
-    transition: opacity .4s
-}
-
-section.a div {
-    display: flex
-}
-
-section.a .b {
-    border-radius: 29px;
-
-    padding: 20px;
-
-    align-items: center;
-    column-gap: 8px;
-
-    background-color: var(--col-k)
-}
-
-section.a img {
-    width: 18px;
-    height: 18px;
-
-    border-radius: 50%
-}
-
-section.a hr {
-    margin-inline: 4px;
-
-    width: 2rem;
-
-    border-radius: 2px;
-    border-top: 3px solid var(--col-c)
-}
-
-section.a .c img:not(:last-child) {
-    clip-path: path("M9 0a8.96 8.96 0 0 1 5.377 1.782C12.717 3.423 11.7 6.045 11.7 9s1.017 5.577 2.676 7.218A9 9 0 1 1 9 0Z")
-}
-
-section.a .c img+img {
-    margin-left: -4px
-}
-
-section.a div span:last-child {
-    font: 700 15px ui-rounded
-}
-
-section.a div span:first-child {
-    filter: grayscale();
-
-    font-size: 14px
-}
-
-section.a .a {
-    filter: none
 }
 
 @media (prefers-color-scheme: light) {
     :root {
         --col-b: white;
-        --col-h: #111;
+        --col-h: black;
         --col-p: #afafb1;
         --col-c: #00000020;
-        --col-m: #ffdbed;
         --col-k: #f2f2f2;
+        --col-n: #eaeaf290;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --col-b: #101010;
-        --col-h: #ddd;
+        --col-h: white;
         --col-p: #77777b;
         --col-c: #ffffff20;
-        --col-m: #692940;
         --col-k: #1c1c1c;
+        --col-n: #21212190;
     }
 }
