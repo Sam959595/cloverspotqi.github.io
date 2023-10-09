@@ -14,12 +14,12 @@ $(window).scroll( () => {
 
 // home button
 $(window).scroll( () => {
-    if (window.scrollY < -10) {
+    if (window.scrollY < -50) {
         
         let t = setInterval(() => {
-            if (window.scrollY < -10) {
+            if (window.scrollY < -50) {
                 $('section.j a')[0].style = 'opacity: 1';
-                $('article')[0].style = 'transition: padding-top .4s; padding-top: 24px'
+                $('article')[0].style = 'transition: padding-top .4s; padding-top: 34px'
                 setTimeout(() => {
                     $('section.j a')[0].removeAttribute('style');
                     $('article')[0].style = 'transition: padding-top .4s; padding-top: 0'
