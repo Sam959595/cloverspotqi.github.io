@@ -196,15 +196,15 @@ section.e select:focus {
         --col-0: black;
         --col-1: #eeeded;
         --col-2: #fffaf0;
-        --col-3: #f4e9d4;
-        --col-4: #e2dbcf;
-        --col-5: #d2ddff;
+        --col-3: #d2ddff;
+        --col-4: #f4e9d4;
+        --col-5: #e2dbcf;
         --col-00: #1e1e1e;
         --col-11: #111;
         --col-22: #211700;
-        --col-33: #222;
-        --col-44: #111;
-        --col-55: #181a1d;
+        --col-33: #181a1d;
+        --col-44: #222;
+        --col-55: #111;
         --col-a: #00000010;
     }
 }
@@ -215,15 +215,15 @@ section.e select:focus {
         --col-0: white;
         --col-1: #1c1c1e;
         --col-2: #2c2c2e;
-        --col-3: #1a1919;
-        --col-4: #32302e;
-        --col-5: #4a4a4d;
+        --col-3: #4a4a4d;
+        --col-4: #1a1919;
+        --col-5: #32302e;
         --col-00: #bbb;
         --col-11: #f2f2f0;
         --col-22: white;
-        --col-33: #c9bdbd;
-        --col-44: #fffffe;
-        --col-55: #ebebf4;
+        --col-33: #ebebf4;
+        --col-44: #c9bdbd;
+        --col-55: #fffffe;
         --col-a: #ffffff10;
     }
 }
