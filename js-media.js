@@ -14,14 +14,18 @@ $(window).scroll( () => {
 
 // home button
 $(window).scroll( () => {
-    if (window.scrollY < -20) {
+    if (window.scrollY < -10) {
         
         let t = setInterval(() => {
-            if (window.scrollY < -20) {
-                $('section.j a')[0].style = 'pointer-events: auto; opacity: 1';
-
+            if (window.scrollY < -10) {
+                $('section.j a')[0].style = 'opacity: 1';
+                $('article')[0].style = 'transition: padding-top .4s; padding-top: 24px'
                 setTimeout(() => {
-                    $('section.j a')[0].removeAttribute('style')
+                    $('section.j a')[0].removeAttribute('style');
+                    $('article')[0].style = 'transition: padding-top .4s; padding-top: 0'
+                    setTimeout(() => {
+                        $('article')[0].removeAttribute('style')
+                    }, 400)
                 }, 5000)
             } else {
                 clearInterval(t)
