@@ -47,10 +47,24 @@ section.n ul {
 }
 
 section.n h3 {
-    margin: 20px;
+    /* margin-inline: 20px; */
+
+    border-radius: 0 0 12px 12px;
+
+    padding: 20px;
 
     word-break: break-word;
     font: 700 extra-condensed 24px/1 system-ui
+}
+
+section.n li>a {
+    margin-inline: 20px;
+
+    border-radius: 12px;
+
+    display: block;
+
+    box-shadow: 0 0 10px #00000020
 }
 
 [data-i],
@@ -65,12 +79,16 @@ video {
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
-section.n ul img:not(.s :is(img, video), .v img) {
+/* section.n img:not(.s :is(img, video), .v img) {
     margin-inline: 20px
+} */
+
+section.n :is(img, video):not(.v img) {
+    border-radius: 12px
 }
 
-section.n ul :is(img, video):not(.v img) {
-    border-radius: 12px
+section.n li :has(h3) img:not(.v img) {
+    border-radius: 12px 12px 0 0
 }
 
 section.n .s {
