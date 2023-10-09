@@ -214,15 +214,15 @@ section.e select:focus {
         --col-b: black;
         --col-0: white;
         --col-1: #1c1c1e;
-        --col-2: #2c2f38;
+        --col-2: #1a1919;
         --col-3: #24211f;
-        --col-4: #584d47;
+        --col-4: #32302e;
         --col-5: #414658;
         --col-00: #bbb;
         --col-11: #f2f2f0;
-        --col-22: white;
+        --col-22: #babab0;
         --col-33: #d6caba;
-        --col-44: #ffede4;
+        --col-44: #fffffe;
         --col-55: white;
         --col-a: #ffffff10;
     }
