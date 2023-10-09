@@ -47,48 +47,47 @@ section.n ul {
 }
 
 section.n h3 {
-    /* margin-inline: 20px; */
-
-    border-radius: 0 0 12px 12px;
-
-    padding: 20px;
-
     word-break: break-word;
-    font: 700 extra-condensed 24px/1 system-ui
+    font: 700 extra-condensed 19px/1 system-ui
 }
 
-section.n li>a {
+section.n .k {
     margin-inline: 20px;
 
     border-radius: 12px;
 
-    display: block;
+    padding: 20px;
 
-    box-shadow: 0 0 10px #00000020
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+
+    box-shadow: 0 0 10px #00000015
 }
 
-[data-i],
-[data-v] {
+[data-i] {
     opacity: 0
 }
 
-img,
-video {
+img {
     opacity: 1;
 
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
-/* section.n img:not(.s :is(img, video), .v img) {
-    margin-inline: 20px
-} */
+section.n .y {
+    margin-inline: 20px;
 
-section.n :is(img, video):not(.v img) {
     border-radius: 12px
 }
 
-section.n li :has(h3) img:not(.v img) {
-    border-radius: 12px 12px 0 0
+section.n .h {
+    border-radius: 12px
+}
+
+section.n .t {
+    border-radius: 8px
 }
 
 section.n .s {
@@ -106,7 +105,7 @@ section.n .s {
     scroll-snap-type: x mandatory
 }
 
-section.n .s :is(img, video) {
+section.n .s img {
     scroll-snap-align: start
 }
 
