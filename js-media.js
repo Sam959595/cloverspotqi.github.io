@@ -14,15 +14,15 @@ $(window).scroll( () => {
 
 // home button
 $(window).scroll( () => {
-    if (window.scrollY < -50) {
+    if (window.scrollY < -10) {
         
         let t = setInterval(() => {
-            if (window.scrollY < -50) {
+            if (window.scrollY < -10) {
                 $('section.j a')[0].style = 'opacity: 1';
-                $('article')[0].style = 'transition: padding-top .4s; padding-top: 34px'
+                $('body')[0].style = 'transition: padding-top .4s; padding-top: 34px'
                 setTimeout(() => {
                     $('section.j a')[0].removeAttribute('style');
-                    $('article')[0].style = 'transition: padding-top .4s; padding-top: 0'
+                    $('body')[0].style = 'transition: padding-top .4s; padding-top: 0'
                     setTimeout(() => {
                         $('article')[0].removeAttribute('style')
                     }, 400)
