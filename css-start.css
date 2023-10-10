@@ -15,7 +15,7 @@ section.n {
 section.n>p {
     margin: 20px 20px 5px;
 
-    font-size: 17px
+    font: 600 15px system-ui
 }
 
 section.n .e {
@@ -49,7 +49,7 @@ section.n h3 {
     font: 700 extra-condensed 19px/1 system-ui
 }
 
-section.n p {
+section.n :is(.k, .r) p {
     font: 600 13px system-ui
 }
 
@@ -74,13 +74,7 @@ section.n .k {
     justify-content: space-between;
     column-gap: 15px;
 
-    background-color: var(--col-t);
-
-    transition: opacity .2s
-}
-
-section.n .k:active {
-    opacity: .5
+    background-color: var(--col-t)
 }
 
 [data-i] {
