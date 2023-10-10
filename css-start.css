@@ -50,7 +50,7 @@ section.n h3 {
 }
 
 section.n :is(.k, .r) p {
-    font: 600 13px system-ui
+    font: 500 13px system-ui
 }
 
 section.n .r {
