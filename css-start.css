@@ -12,12 +12,6 @@ section.n {
     height: 100vh
 }
 
-section.n>p {
-    margin: 20px 20px 5px;
-
-    font: 600 15px system-ui
-}
-
 section.n .e {
     margin: 0 20px 20px;
 
@@ -26,7 +20,7 @@ section.n .e {
 }
 
 section.n h1 {
-    font: 800 21px system-ui
+    font: 800 32px/1 system-ui
 }
 
 section.n h2 {
@@ -60,7 +54,7 @@ section.n .r {
 
     padding: 15px;
 
-    background-image: linear-gradient(to right, #232323, var(--col-t))
+    background-color: var(--col-t)
 }
 
 section.n .k {
