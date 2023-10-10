@@ -12,21 +12,17 @@ section.n {
     height: 100vh
 }
 
-section.n .e {
+section.n h1 {
     margin: 20px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between
-}
-
-section.n h1 {
     font: 900 28px/1 system-ui
 }
 
-section.n h2 {
-    white-space: nowrap;
-    font: 800 21px ui-rounded
+section.n>p {
+    margin: 20px;
+
+    text-align: center;
+    font: 700 14px ui-rounded
 }
 
 section.n .d {
