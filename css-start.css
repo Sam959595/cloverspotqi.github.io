@@ -13,17 +13,19 @@ section.n {
 }
 
 section.n .e {
-    margin: 0 20px 20px;
+    margin: 20px;
 
     display: flex;
+    align-items: center;
     justify-content: space-between
 }
 
 section.n h1 {
-    font: 800 32px/1 system-ui
+    font: 900 28px/1 system-ui
 }
 
 section.n h2 {
+    white-space: nowrap;
     font: 800 21px ui-rounded
 }
 
