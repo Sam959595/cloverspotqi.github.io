@@ -12,33 +12,29 @@ section.n {
     height: 100vh
 }
 
-section.n>p {
-    margin: 20px auto 5px;
+section.n .e {
+    margin: 20px 20px 0;
 
-    max-width: 60%;
+    display: flex;
+    justify-content: space-between
+}
 
-    overflow: hidden;
-
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    text-align: center;
-    font-size: 17px
+section.n h1 {
+    font: 800 21px system-ui
 }
 
 section.n h2 {
-    text-align: center;
-    font: 800 17px ui-rounded
+    font: 800 21px ui-rounded
+}
+
+section.n>p {
+    margin: 0 20px 20px;
+
+    font-size: 17px
 }
 
 section.n u {
     color: #1cd432
-}
-
-section.n h1 {
-    margin: 60px 20px 20px;
-
-    text-align: center;
-    font: 800 21px system-ui
 }
 
 section.n ul {
@@ -48,7 +44,7 @@ section.n ul {
 
 section.n h3 {
     height: 84px;
-    
+
     word-break: break-word;
     font: 700 extra-condensed 19px/1 system-ui
 }
