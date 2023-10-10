@@ -13,7 +13,7 @@ section.n {
 }
 
 section.n>p {
-    margin: 20px 20px 0;
+    margin: 20px 20px 5px;
 
     font-size: 17px
 }
@@ -74,7 +74,13 @@ section.n .k {
     justify-content: space-between;
     column-gap: 15px;
 
-    background-color: var(--col-t)
+    background-color: var(--col-t);
+
+    transition: opacity .2s
+}
+
+section.n .k:active {
+    opacity: .5
 }
 
 [data-i] {
