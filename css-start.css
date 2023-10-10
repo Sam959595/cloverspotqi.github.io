@@ -47,15 +47,13 @@ section.n ul {
 }
 
 section.n h3 {
-    height: 60px;
+    height: 84px;
     
     word-break: break-word;
     font: 700 extra-condensed 19px/1 system-ui
 }
 
 section.n p {
-    margin-top: 10px;
-
     font: 600 13px system-ui
 }
 
@@ -64,7 +62,7 @@ section.n .r {
 
     border-radius: 12px;
 
-    padding: 17px;
+    padding: 15px;
 
     background-color: var(--col-t)
 }
@@ -74,12 +72,11 @@ section.n .k {
 
     border-radius: 12px;
 
-    padding: 10px 10px 10px 17px;
+    padding: 15px;
 
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    column-gap: 20px;
+    column-gap: 15px;
 
     background-color: var(--col-t)
 }
