@@ -12,8 +12,14 @@ section.n {
     height: 100vh
 }
 
-section.n .e {
+section.n>p {
     margin: 20px 20px 0;
+
+    font-size: 17px
+}
+
+section.n .e {
+    margin: 0 20px 20px;
 
     display: flex;
     justify-content: space-between
@@ -25,12 +31,6 @@ section.n h1 {
 
 section.n h2 {
     font: 800 21px ui-rounded
-}
-
-section.n>p {
-    margin: 0 20px 20px;
-
-    font-size: 17px
 }
 
 section.n u {
