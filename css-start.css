@@ -1,150 +1,249 @@
-<body>
-    <section class="n">
-        <p>🦄 Все о том, что тебе нужно</p>
-        <h2><u>✓</u> 7.5K</h2>
-        <h1>On The Scene</h1>
-        <ul>
-            <li>
-                <a href="html-article-two.html">
-                    <div class="k">
-                        <div>
-                            <h3>How U-Studio, Oliver and Klondike got generation X to care again</h3>
-                            <p>1w ago</p>
-                        </div>
-                        <img width="100" height="100" class="t" data-i="https://miro.medium.com/v2/resize:fill:200:200/1*aDcuhrWX6Gqksa9TXmAHjw.png">
-                    </div>
-                </a>
-                <div class="v">
-                    <a href="#">
-                        <div class="b">
-                            <img data-i="https://miro.medium.com/v2/resize:fill:40:40/1*wRDUWNCULG3bapov6fkHDQ.png">
-                            <hr>
-                            <div class="c">
-                                <img data-i="https://miro.medium.com/v2/resize:fill:40:40/1*me1Ay-0GhYxjENk5Fp-Ykw.jpeg">
-                            </div>
-                            <span>1</span>
-                        </div>
-                    </a>
-                    <div class="b">
-                        <span>👏</span>
-                        <span>983</span>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <a href="html-article-two.html">
-                    <div class="k">
-                        <div>
-                            <h3>Even Tika the Iggy knows about TK Maxx’s great deals, according to new ad</h3>
-                            <p>4h ago</p>
-                        </div>
-                        <img width="100" height="100" class="t" data-i="https://miro.medium.com/v2/resize:fill:200:200/0*43abp5DDewmGZjeu">
-                    </div>
-                </a>
-                <div class="v">
-                    <a href="#">
-                        <div class="b">
-                            <img data-i="https://miro.medium.com/v2/resize:fill:40:40/1*dLgYnPhYXwg0ZXrp3KuPZw.jpeg">
-                            <hr>
-                            <div class="c">
-                                <img data-i="https://miro.medium.com/v2/resize:fill:96:96/1*3lY8-PODg4VBaEZSy9oF8w.jpeg">
-                                <img data-i="https://miro.medium.com/v2/resize:fill:40:40/0*AYyDFH0sy_fsocNG.jpeg">
-                            </div>
-                            <span>2</span>
-                        </div>
-                    </a>
-                    <div class="b">
-                        <span>👏</span>
-                        <span>4.7K</span>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <a href="html-article.html">
-                    <img width="388" height="388" class="y" data-i="https://thedrum-media.imgix.net/thedrum-prod/s3/2_1_0.jpg?w=500&ar=1:1&fit=crop&crop=faces,edges&auto=format&q=40&dpr=2">
-                </a>
-                <div class="v">
-                    <a href="#">
-                        <div class="b">
-                            <img data-i="https://miro.medium.com/v2/resize:fill:96:96/1*HZyt2h8WEcyakLCNPzAbQg.jpeg">
-                            <hr>
-                            <div class="c">
-                                <img data-i="https://miro.medium.com/v2/resize:fill:96:96/1*3lY8-PODg4VBaEZSy9oF8w.jpeg">
-                                <img data-i="https://miro.medium.com/v2/resize:fill:96:96/1*RP-5t4vZgWRu2aXod-ce6w.jpeg">
-                            </div>
-                            <span>2</span>
-                        </div>
-                    </a>
-                    <div class="b">
-                        <span>👏</span>
-                        <span>4.7K</span>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img width="388" height="388" class="y" data-i="https://i.scdn.co/image/ab67616d0000b27316a220aa80adcedd8ace4e0b">
-                <div class="v">
-                    <a href="#">
-                        <div class="b">
-                            <img data-i="https://miro.medium.com/v2/resize:fill:96:96/1*HZyt2h8WEcyakLCNPzAbQg.jpeg">
-                            <hr>
-                            <div class="c">
-                                <img data-i="https://miro.medium.com/v2/resize:fill:96:96/1*3lY8-PODg4VBaEZSy9oF8w.jpeg">
-                                <img data-i="https://miro.medium.com/v2/resize:fill:96:96/1*RP-5t4vZgWRu2aXod-ce6w.jpeg">
-                            </div>
-                            <span>2</span>
-                        </div>
-                    </a>
-                    <div class="b">
-                        <span>👏</span>
-                        <span>4.7K</span>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="s">
-                    <a href="#">
-                        <img width="388" height="388" class="h" data-i="https://i.scdn.co/image/ab67616d0000b27316a220aa80adcedd8ace4e0b">
-                    </a>
-                    <a href="#">
-                        <img width="388" height="388" class="h" data-i="https://thedrum-media.imgix.net/thedrum-user-assets-prod/s3/images/original/aantomy-of-an-ad-v2.jpeg?w=500&ar=1:1&fit=crop&crop=faces,edges&auto=format&q=40&dpr=2">
-                    </a>
-                    <a href="#">
-                        <img width="388" height="388" class="h" data-i="https://thedrum-media.imgix.net/thedrum-user-assets-prod/s3/images/original/every-third-person-is-a-gamer1661336498.jpeg?w=500&ar=1:1&fit=crop&crop=faces,edges&auto=format&q=40&dpr=2">
-                    </a>
-                </div>
-                <div class="v">
-                    <a href="#">
-                        <div class="b">
-                            <img data-i="https://miro.medium.com/v2/resize:fill:96:96/1*HZyt2h8WEcyakLCNPzAbQg.jpeg">
-                            <hr>
-                            <div class="c">
-                                <img data-i="https://miro.medium.com/v2/resize:fill:96:96/1*3lY8-PODg4VBaEZSy9oF8w.jpeg">
-                                <img data-i="https://miro.medium.com/v2/resize:fill:96:96/1*RP-5t4vZgWRu2aXod-ce6w.jpeg">
-                            </div>
-                            <span>2</span>
-                        </div>
-                    </a>
-                    <div class="b">
-                        <span>👏</span>
-                        <span>4.7K</span>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </section>
+html {
+    overscroll-behavior-y: none
+}
 
-    <section class="k"></section>
+/* n */
 
-    <section class="g">
-        <svg opacity=".4" viewBox="0 0 15 15" fill="currentcolor">
-            <path d="M.74 7.34c0 .26.1.48.28.67a.9.9 0 0 0 .66.27h5.13v5.13c0 .25.09.47.27.66a.9.9 0 0 0 .66.27.9.9 0 0 0 .67-.27.9.9 0 0 0 .28-.66V8.28h5.12a.9.9 0 0 0 .66-.27.9.9 0 0 0 .27-.67.9.9 0 0 0-.27-.66.9.9 0 0 0-.66-.28H8.69V1.28A.9.9 0 0 0 8.4.62a.9.9 0 0 0-.67-.28.9.9 0 0 0-.66.28.9.9 0 0 0-.27.66V6.4H1.68a.9.9 0 0 0-.66.28.9.9 0 0 0-.28.66Z"/>
-        </svg>
-    </section>
+section.n {
+    overflow-y: scroll;
 
-    <section class="h">
-        <svg opacity=".1" viewBox="0 0 20 15">
-            <path d="M2 7.515C2.986 9.838 4.308 11 5.967 11c2.489 0 3.197-1.969 4.04-3.485C10.85 5.998 11.462 4 14.019 4 15.724 4 17.051 5.172 18 7.515" stroke-width="2.25" stroke-linecap="round" fill="none" stroke="currentcolor"/>
-        </svg>
-    </section>
-</body>
+    padding-block: env(safe-area-inset-top) calc(40px + env(safe-area-inset-bottom));
+
+    height: 100vh
+}
+
+section.n>p {
+    margin: 20px auto 5px;
+
+    max-width: 60%;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 17px
+}
+
+section.n h2 {
+    text-align: center;
+    font: 800 17px ui-rounded
+}
+
+section.n u {
+    color: #1cd432
+}
+
+section.n h1 {
+    margin: 60px 20px 20px;
+
+    text-align: center;
+    font: 800 21px system-ui
+}
+
+section.n ul {
+    display: grid;
+    grid-auto-flow: row
+}
+
+section.n h3 {
+    word-break: break-word;
+    font: 700 extra-condensed 19px/1 system-ui
+}
+
+section.n p {
+    margin-top: 10px;
+    
+    font: 700 13px system-ui
+}
+
+section.n .k {
+    margin-inline: 20px;
+
+    border-radius: 12px;
+
+    padding: 10px 10px 10px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+
+    box-shadow: 0 0 10px #00000015
+}
+
+[data-i] {
+    opacity: 0
+}
+
+img {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+}
+
+section.n .y {
+    margin-inline: 20px;
+
+    border-radius: 12px
+}
+
+section.n .h {
+    border-radius: 12px
+}
+
+section.n .t {
+    border-radius: 8px
+}
+
+section.n .s {
+    width: 100vw;
+
+    overflow-x: scroll;
+
+    padding-inline: 20px;
+    scroll-padding-left: 20px;
+
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 10px;
+
+    scroll-snap-type: x mandatory
+}
+
+section.n .s img {
+    scroll-snap-align: start
+}
+
+section.n .v {
+    margin-block: 24px;
+
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem
+}
+
+section.n .v div {
+    display: flex
+}
+
+section.n .b {
+    align-items: center;
+    column-gap: 8px
+}
+
+section.n .v img {
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%
+}
+
+section.n hr {
+    margin-inline: 4px;
+
+    width: 2rem;
+
+    border-radius: 2px;
+    border-top: 3px solid var(--col-c)
+}
+
+section.n .c img:not(:last-child) {
+    clip-path: path("M9 0a8.96 8.96 0 0 1 5.377 1.782C12.717 3.423 11.7 6.045 11.7 9s1.017 5.577 2.676 7.218A9 9 0 1 1 9 0Z")
+}
+
+section.n .c img+img {
+    margin-left: -4px
+}
+
+section.n div span:last-child {
+    font: 700 15px ui-rounded
+}
+
+section.n div span:first-child {
+    filter: grayscale();
+
+    font-size: 14px
+}
+
+section.n .a {
+    filter: none
+}
+
+/* k */
+
+section.k {
+    opacity: .9;
+
+    position: fixed;
+    inset: 0 0 auto;
+
+    height: env(safe-area-inset-top);
+
+    background-color: inherit
+}
+
+/* g */
+
+section.g {
+    position: fixed;
+    inset: auto auto max(20px, env(safe-area-inset-bottom)) 25px;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    padding: 9px;
+
+    -webkit-backdrop-filter: blur(10px);
+
+    background-color: var(--col-n);
+    color: var(--col-h)
+}
+
+/* h */
+
+section.h {
+    pointer-events: none;
+    opacity: 0;
+
+    position: fixed;
+    inset: auto 25px max(20px, env(safe-area-inset-bottom)) auto;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    padding: 11px 8px;
+
+    -webkit-backdrop-filter: blur(10px);
+
+    background-color: var(--col-n);
+    color: var(--col-h);
+
+    transition: opacity .4s
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --col-b: white;
+        --col-h: black;
+        --col-p: #afafb1;
+        --col-c: #00000020;
+        --col-k: #f2f2f2;
+        --col-n: #eaeaf290;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --col-b: #101010;
+        --col-h: white;
+        --col-p: #77777b;
+        --col-c: #ffffff20;
+        --col-k: #1c1c1c;
+        --col-n: #21212190;
+    }
+}
