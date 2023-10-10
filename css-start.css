@@ -42,7 +42,15 @@ section.n h3 {
 }
 
 section.n :is(.k, .r) p {
-    font: 600 13px system-ui
+    font: 600 12px system-ui
+}
+
+section.n .b {
+    color: #ff2f49
+}
+
+section.n .c {
+    color: #ffa82f
 }
 
 section.n .r {
