@@ -15,6 +15,7 @@ section.n {
 section.n h1 {
     margin: 20px;
 
+    text-align: center;
     font: 900 28px/1 system-ui
 }
 
@@ -146,6 +147,10 @@ section.n .v img+img {
     margin-left: -4px
 }
 
+section.n h6 {
+    font: 700 15px ui-rounded
+}
+
 section.n h5 {
     filter: grayscale();
 
@@ -154,10 +159,6 @@ section.n h5 {
 
 section.n .a {
     filter: none
-}
-
-section.n h6 {
-    font: 700 15px ui-rounded
 }
 
 /* k */
