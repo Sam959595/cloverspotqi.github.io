@@ -78,10 +78,6 @@ button {
 	outline: none
 }
 
-hr {
-	border-top: .1px solid var(--gray-3)
-}
-
 sup,
 sub {
 	font-size: 9px
