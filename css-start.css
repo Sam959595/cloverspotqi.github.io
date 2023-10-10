@@ -19,8 +19,8 @@ section.n>p {
 
     overflow: hidden;
 
-    text-overflow: ellipsis;
     white-space: nowrap;
+    text-overflow: ellipsis;
     text-align: center;
     font-size: 17px
 }
@@ -47,14 +47,26 @@ section.n ul {
 }
 
 section.n h3 {
+    height: 60px;
+    
     word-break: break-word;
     font: 700 extra-condensed 19px/1 system-ui
 }
 
 section.n p {
     margin-top: 10px;
-    
-    font: 700 13px system-ui
+
+    font: 600 13px system-ui
+}
+
+section.n .r {
+    margin-inline: 20px;
+
+    border-radius: 12px;
+
+    padding: 17px;
+
+    border: 2px solid var(--col-t)
 }
 
 section.n .k {
@@ -62,14 +74,14 @@ section.n .k {
 
     border-radius: 12px;
 
-    padding: 10px 10px 10px 20px;
+    padding: 10px 10px 10px 17px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
     column-gap: 20px;
 
-    box-shadow: 0 0 10px #00000015
+    border: 2px solid var(--col-t)
 }
 
 [data-i] {
@@ -234,6 +246,7 @@ section.h {
         --col-c: #00000020;
         --col-k: #f2f2f2;
         --col-n: #eaeaf290;
+        --col-t: #f7f7f7;
     }
 }
 
@@ -245,5 +258,6 @@ section.h {
         --col-c: #ffffff20;
         --col-k: #1c1c1c;
         --col-n: #21212190;
+        --col-t: #151515;
     }
 }
