@@ -15,7 +15,6 @@ section.n {
 section.n h1 {
     margin: 20px;
 
-    text-align: center;
     font: 900 28px/1 system-ui
 }
 
@@ -222,7 +221,7 @@ section.h {
         --col-b: white;
         --col-h: black;
         --col-p: #afafb1;
-        --col-c: #00000020;
+        --col-c: #dfdfdf;
         --col-k: #f2f2f2;
         --col-n: #eaeaf290;
         --col-t: #f7f7f7;
@@ -234,7 +233,7 @@ section.h {
         --col-b: #101010;
         --col-h: white;
         --col-p: #77777b;
-        --col-c: #ffffff20;
+        --col-c: #2e2e2e;
         --col-k: #1c1c1c;
         --col-n: #21212190;
         --col-t: #151515;
