@@ -112,11 +112,8 @@ section.n .v {
     column-gap: 3rem
 }
 
-section.n .v div {
-    display: flex
-}
-
 section.n .b {
+    display: flex;
     align-items: center;
     column-gap: 8px
 }
@@ -137,6 +134,10 @@ section.n hr {
     border-top: 3px solid var(--col-c)
 }
 
+section.n .c {
+    display: inherit
+}
+
 section.n .c img:not(:last-child) {
     clip-path: path("M9 0a8.96 8.96 0 0 1 5.377 1.782C12.717 3.423 11.7 6.045 11.7 9s1.017 5.577 2.676 7.218A9 9 0 1 1 9 0Z")
 }
@@ -145,11 +146,11 @@ section.n .c img+img {
     margin-left: -4px
 }
 
-section.n div span:last-child {
+section.n span {
     font: 700 15px ui-rounded
 }
 
-section.n div span:first-child {
+section.n .h {
     filter: grayscale();
 
     font-size: 14px
