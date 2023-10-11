@@ -15,7 +15,7 @@ section.n {
 section.n h1 {
     margin: 20px;
 
-    font: 900 28px/1 system-ui
+    font: 900 32px/1 system-ui
 }
 
 section.n p {
@@ -177,7 +177,7 @@ section.n .s img {
 /* k */
 
 section.k {
-    opacity: .9;
+    opacity: .8;
 
     position: fixed;
     inset: 0 0 auto;
