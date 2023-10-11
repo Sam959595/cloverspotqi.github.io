@@ -2,6 +2,16 @@ html {
     overscroll-behavior-y: none
 }
 
+[data-i] {
+    opacity: 0
+}
+
+img {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+}
+
 /* d */
 
 section.d {
@@ -19,20 +29,22 @@ section.d>div {
 
     height: 100vh;
 
-    padding: calc(10px + env(safe-area-inset-top)) calc(16px + env(safe-area-inset-left)) calc(1cm + env(safe-area-inset-bottom));
+    padding-block: env(safe-area-inset-top) calc(1cm + env(safe-area-inset-bottom));
 
     scroll-snap-align: start
 }
 
 section.d h1 {
-    margin-bottom: 2rem;
+    margin: 20px;
 
-    font: 800 expanded 32px system-ui
+    font: 900 32px/1 system-ui
 }
 
 /* n */
 
 section.d .n ul {
+    margin: 16px;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem 2rem
@@ -43,20 +55,29 @@ section.d .n li {
 }
 
 section.d .n img {
-    aspect-ratio: 1;
-
-    width: 120px;
-
-    object-fit: cover;
-    
     border-radius: 50%
 }
 
-section.d .n h6 {
+section.d h6 {
     margin-block: 20px 3px;
 
+    max-width: 160px;
+
     word-break: break-word;
-    font: 13px/1.1 system-ui
+    font: 500 13px/1.1 system-ui
+}
+
+section.d h6 u {
+    margin-right: 5px;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    display: inline-block;
+
+    background-color: #007aff
 }
 
 /* m */
