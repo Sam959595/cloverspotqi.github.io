@@ -48,7 +48,7 @@ input {
 
     border-top: 2px solid #88888810;
 
-    padding: 20px;
+    padding: 20px 20px calc(20px + env(safe-area-inset-bottom));
 
     font: 500 17px system-ui;
 
