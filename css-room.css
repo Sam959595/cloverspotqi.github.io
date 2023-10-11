@@ -40,6 +40,26 @@ section.d h1 {
     font: 900 32px/1 system-ui
 }
 
+input {
+    position: absolute;
+    inset: auto 0 0;
+
+    width: -webkit-fill-available;
+
+    border-top: 2px solid #88888810;
+
+    padding: 20px;
+
+    font: 500 17px system-ui;
+
+    background-color: inherit;
+    color: var(--col-h)
+}
+
+input::placeholder {
+    color: var(--col-p)
+}
+
 /* n */
 
 section.d .n ul {
