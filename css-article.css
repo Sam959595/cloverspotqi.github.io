@@ -17,15 +17,13 @@ article h1 {
     font: 700 extra-condensed 38px/1 system-ui
 }
 
-article span {
+article time {
     margin: 30px;
 
     display: block;
 
     text-align: center;
-    font: 500 14px system-ui;
-
-    color: var(--col-p)
+    font: 500 14px system-ui
 }
 
 article u {
