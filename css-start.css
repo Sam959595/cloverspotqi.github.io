@@ -58,22 +58,26 @@ section.n h3 {
 }
 
 section.n .b {
-    color: #ff2f49
+    color: #ff2f50
 }
 
 section.n .c {
-    color: #ffa82f
+    color: #ffa80f
+}
+
+section.n .e {
+    color: #2f99ff
 }
 
 section.n time {
-    font: 500 13px system-ui
+    font: 600 13px system-ui
 }
 
 section.n time u {
     font-weight: 300
 }
 
-section.n .t {
+section.n .k img {
     border-radius: 8px
 }
 
@@ -143,7 +147,7 @@ section.n .a {
     filter: none
 }
 
-section.n .y {
+section.n .t img {
     margin-inline: 20px;
 
     border-radius: 12px
@@ -165,11 +169,9 @@ section.n .s {
 }
 
 section.n .s img {
-    scroll-snap-align: start
-}
+    border-radius: 12px;
 
-section.n .h {
-    border-radius: 12px
+    scroll-snap-align: start
 }
 
 /* k */
