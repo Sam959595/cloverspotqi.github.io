@@ -34,29 +34,6 @@ section.n ul {
     grid-auto-flow: row
 }
 
-section.n h3 {
-    height: 84px;
-
-    word-break: break-word;
-    font: 700 extra-condensed 21px/1 system-ui
-}
-
-section.n :is(.k, .r) p {
-    font: 600 13px system-ui
-}
-
-section.n :is(.k, .r) p u {
-    opacity: .3
-}
-
-section.n .b {
-    color: #ff2f49
-}
-
-section.n .c {
-    color: #ffa82f
-}
-
 section.n .r {
     margin-inline: 20px;
 
@@ -73,47 +50,31 @@ section.n .k {
     column-gap: 15px
 }
 
-[data-i] {
-    opacity: 0
+section.n h3 {
+    height: 84px;
+
+    word-break: break-word;
+    font: 700 extra-condensed 21px/1 system-ui
 }
 
-img {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+section.n .b {
+    color: #ff2f49
 }
 
-section.n .y {
-    margin-inline: 20px;
-
-    border-radius: 12px
+section.n .c {
+    color: #ffa82f
 }
 
-section.n .h {
-    border-radius: 12px
+section.n :is(.k, .r) p {
+    font: 600 13px system-ui
+}
+
+section.n :is(.k, .r) p u {
+    font-weight: 300
 }
 
 section.n .t {
     border-radius: 8px
-}
-
-section.n .s {
-    width: 100vw;
-
-    overflow-x: scroll;
-
-    padding-inline: 20px;
-    scroll-padding-left: 20px;
-
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 10px;
-
-    scroll-snap-type: x mandatory
-}
-
-section.n .s img {
-    scroll-snap-align: start
 }
 
 section.n .v {
@@ -128,6 +89,16 @@ section.n span {
     display: flex;
     align-items: center;
     column-gap: 8px
+}
+
+[data-i] {
+    opacity: 0
+}
+
+img {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
 section.n .v img {
@@ -170,6 +141,35 @@ section.n h5 {
 
 section.n .a {
     filter: none
+}
+
+section.n .y {
+    margin-inline: 20px;
+
+    border-radius: 12px
+}
+
+section.n .s {
+    width: 100vw;
+
+    overflow-x: scroll;
+
+    padding-inline: 20px;
+    scroll-padding-left: 20px;
+
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 10px;
+
+    scroll-snap-type: x mandatory
+}
+
+section.n .s img {
+    scroll-snap-align: start
+}
+
+section.n .h {
+    border-radius: 12px
 }
 
 /* k */
