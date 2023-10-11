@@ -146,9 +146,7 @@ section.j a {
 
 section.a {
     position: fixed;
-    inset: auto 0 0;
-
-    margin-bottom: max(calc(10px + env(safe-area-inset-bottom)), 20px);
+    inset: auto 0 max(calc(10px + env(safe-area-inset-bottom)), 20px);
 
     display: flex;
     justify-content: center;
