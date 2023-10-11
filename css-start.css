@@ -7,7 +7,7 @@ html {
 section.n {
     overflow-y: scroll;
 
-    padding-block: env(safe-area-inset-top) calc(1cm + env(safe-area-inset-bottom));
+    padding-block: env(safe-area-inset-top) calc(20px + env(safe-area-inset-bottom));
 
     height: 100vh
 }
@@ -177,7 +177,7 @@ section.n .s img {
 /* k */
 
 section.k {
-    opacity: .85;
+    opacity: .9;
 
     position: fixed;
     inset: 0 0 auto;
@@ -206,30 +206,6 @@ section.g {
     color: var(--col-h)
 }
 
-/* h */
-
-section.h {
-    pointer-events: none;
-    opacity: 0;
-
-    position: fixed;
-    inset: auto 25px max(20px, env(safe-area-inset-bottom)) auto;
-
-    width: 40px;
-    height: 40px;
-
-    border-radius: 50%;
-
-    padding: 11px 8px;
-
-    -webkit-backdrop-filter: blur(10px);
-
-    background-color: var(--col-n);
-    color: var(--col-h);
-
-    transition: opacity .4s
-}
-
 @media (prefers-color-scheme: light) {
     :root {
         --col-b: white;
@@ -237,7 +213,7 @@ section.h {
         --col-p: #afafb1;
         --col-c: #dfdfdf;
         --col-k: #f2f2f2;
-        --col-n: #eeeeee90;
+        --col-n: #dddddd90;
         --col-t: #f7f7f7;
     }
 }
