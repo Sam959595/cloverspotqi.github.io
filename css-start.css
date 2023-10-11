@@ -45,6 +45,10 @@ section.n :is(.k, .r) p {
     font: 600 13px system-ui
 }
 
+section.n :is(.k, .r) p u {
+    opacity: .3
+}
+
 section.n .b {
     color: #ff2f49
 }
