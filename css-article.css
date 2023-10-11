@@ -28,6 +28,10 @@ article span {
     color: var(--col-p)
 }
 
+article u {
+    font-weight: 300
+}
+
 article h5 {
     margin: 30px;
 
