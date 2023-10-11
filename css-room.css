@@ -1,5 +1,7 @@
 html {
-    overscroll-behavior-y: none
+    overscroll-behavior-y: none;
+
+    position: relative
 }
 
 [data-i] {
@@ -44,13 +46,15 @@ input {
     position: absolute;
     inset: auto 0 0;
 
-    width: -webkit-fill-available;
+    width: 100vw;
+
+    border-radius: 0;
 
     border-top: 2px solid #88888810;
 
     padding: 20px 20px calc(20px + env(safe-area-inset-bottom));
 
-    font: 500 17px system-ui;
+    font-size: 17px;
 
     background-color: inherit;
     color: var(--col-h)
