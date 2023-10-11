@@ -27,9 +27,9 @@ section.d {
 section.d>div {
     overflow-y: scroll;
 
-    height: calc(100vh - 64px - env(safe-area-inset-bottom));
+    height: 100vh;
     
-    padding-block: env(safe-area-inset-top) 20px;
+    padding-block: env(safe-area-inset-top) calc(84px + env(safe-area-inset-bottom));
 
     scroll-snap-align: start
 }
@@ -41,6 +41,9 @@ section.d h1 {
 }
 
 input {
+    position: fixed;
+    inset: auto 0 0;
+
     width: 100vw;
 
     border-radius: 0;
