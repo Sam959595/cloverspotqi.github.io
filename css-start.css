@@ -18,7 +18,7 @@ section.n h1 {
     font: 900 28px/1 system-ui
 }
 
-section.n>p {
+section.n p {
     margin: 20px;
 
     text-align: center;
@@ -65,11 +65,11 @@ section.n .c {
     color: #ffa82f
 }
 
-section.n :is(.k, .r) p {
+section.n time {
     font: 500 13px system-ui
 }
 
-section.n :is(.k, .r) p u {
+section.n time u {
     font-weight: 300
 }
 
