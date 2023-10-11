@@ -28,6 +28,8 @@ section.d>div {
     overflow-y: scroll;
 
     height: calc(100vh - 64px - env(safe-area-inset-bottom));
+    
+    padding-block: env(safe-area-inset-top) 20px;
 
     scroll-snap-align: start
 }
@@ -64,7 +66,7 @@ input:focus {
 /* n */
 
 section.d .n ul {
-    margin: 16px;
+    margin-inline: 16px;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
