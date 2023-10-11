@@ -1,7 +1,5 @@
 html {
-    overscroll-behavior-y: none;
-
-    position: relative
+    overscroll-behavior-y: none
 }
 
 [data-i] {
@@ -29,9 +27,7 @@ section.d {
 section.d>div {
     overflow-y: scroll;
 
-    height: 100vh;
-
-    padding-block: env(safe-area-inset-top) calc(1cm + env(safe-area-inset-bottom));
+    height: calc(100vh - 64px - env(safe-area-inset-bottom));
 
     scroll-snap-align: start
 }
@@ -43,9 +39,6 @@ section.d h1 {
 }
 
 input {
-    position: absolute;
-    inset: auto 0 0;
-
     width: 100vw;
 
     border-radius: 0;
