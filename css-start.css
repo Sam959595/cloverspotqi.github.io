@@ -244,12 +244,12 @@ section.h {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --col-b: #101010;
+        --col-b: black;
         --col-h: white;
         --col-p: #77777b;
         --col-c: #2e2e2e;
         --col-k: #1c1c1c;
         --col-n: #21212190;
-        --col-t: #151515;
+        --col-t: #101010;
     }
 }
