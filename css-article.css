@@ -214,7 +214,7 @@ section.a .a {
         --col-b: white;
         --col-h: #111;
         --col-p: #afafb1;
-        --col-c: #00000020;
+        --col-c: #dfdfdf;
         --col-m: #ffdbed;
         --col-k: #f2f2f2;
     }
@@ -225,7 +225,7 @@ section.a .a {
         --col-b: #101010;
         --col-h: white;
         --col-p: #77777b;
-        --col-c: #ffffff20;
+        --col-c: #2e2e2e;
         --col-m: #692940;
         --col-k: #1c1c1c;
     }
