@@ -126,7 +126,8 @@ span {
 p,
 time,
 blockquote,
-figcaption {
+figcaption,
+address {
 	color: var(--col-p)
 }
 
