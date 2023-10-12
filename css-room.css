@@ -28,7 +28,7 @@ img {
     overflow-y: scroll;
 
     height: 100vh;
-    
+
     padding-block: env(safe-area-inset-top) calc(84px + env(safe-area-inset-bottom));
 
     scroll-snap-align: start
@@ -195,9 +195,6 @@ img {
 }
 
 section.n .v img {
-    width: 18px;
-    height: 18px;
-
     border-radius: 50%
 }
 
@@ -214,7 +211,7 @@ section.n .v div {
     display: inherit
 }
 
-section.n div img:not(:last-child) {
+section.n .v div img:not(:last-child) {
     clip-path: path("M9 0a8.96 8.96 0 0 1 5.377 1.782C12.717 3.423 11.7 6.045 11.7 9s1.017 5.577 2.676 7.218A9 9 0 1 1 9 0Z")
 }
 
