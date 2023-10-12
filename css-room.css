@@ -14,7 +14,7 @@ img {
 
 /* d */
 
-section.d {
+.d {
     overscroll-behavior-x: none;
     overflow-x: scroll;
 
@@ -24,7 +24,7 @@ section.d {
     scroll-snap-type: x mandatory
 }
 
-section.d>div {
+.d>* {
     overflow-y: scroll;
 
     height: 100vh;
@@ -34,7 +34,7 @@ section.d>div {
     scroll-snap-align: start
 }
 
-section.d h1 {
+.d h1 {
     margin: 20px;
 
     font: 900 32px/1 system-ui
@@ -66,9 +66,8 @@ input:focus {
     padding-bottom: 20px
 }
 
-/* n */
-
-section.d .n ul {
+/* s */
+section.s ul {
     margin-inline: 16px;
 
     display: grid;
@@ -76,15 +75,15 @@ section.d .n ul {
     gap: 5rem 2rem
 }
 
-section.d .n li {
+section.s li {
     text-align: -webkit-center
 }
 
-section.d .n img {
+section.s img {
     border-radius: 50%
 }
 
-section.d h6 {
+section.s h6 {
     margin-block: 20px 3px;
 
     max-width: 160px;
@@ -93,7 +92,7 @@ section.d h6 {
     font: 500 13px/1.1 system-ui
 }
 
-section.d h6 u {
+section.s h6 u {
     margin-right: 5px;
 
     width: 10px;
@@ -106,15 +105,181 @@ section.d h6 u {
     background-color: #007aff
 }
 
+/* n */
+
+section.n {
+    overflow-y: scroll;
+
+    padding-block: env(safe-area-inset-top) calc(20px + env(safe-area-inset-bottom));
+
+    height: 100vh
+}
+
+section.n p {
+    margin: 20px;
+
+    text-align: center;
+    font: 700 14px ui-rounded
+}
+
+section.n .d {
+    color: #007aff
+}
+
+section.n ul {
+    display: grid;
+    grid-auto-flow: row
+}
+
+section.n .r {
+    margin-inline: 20px;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    background-color: var(--col-t)
+}
+
+section.n .k {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px
+}
+
+section.n h3 {
+    height: 84px;
+
+    word-break: break-word;
+    font: 700 extra-condensed 21px/1 system-ui
+}
+
+section.n .b {
+    color: #ff2f50
+}
+
+section.n .c {
+    color: #ffa80f
+}
+
+section.n .e {
+    color: #2f99ff
+}
+
+section.n time {
+    font: 600 13px system-ui
+}
+
+section.n time u {
+    font-weight: 300
+}
+
+section.n .k img {
+    border-radius: 8px
+}
+
+section.n .v {
+    margin-block: 24px;
+
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem
+}
+
+section.n span {
+    display: flex;
+    align-items: center;
+    column-gap: 8px
+}
+
+[data-i] {
+    opacity: 0
+}
+
+img {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+}
+
+section.n .v img {
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%
+}
+
+section.n hr {
+    margin-inline: 4px;
+
+    width: 2rem;
+
+    border-radius: 2px;
+    border-top: 3px solid var(--col-c)
+}
+
+section.n .v div {
+    display: inherit
+}
+
+section.n div img:not(:last-child) {
+    clip-path: path("M9 0a8.96 8.96 0 0 1 5.377 1.782C12.717 3.423 11.7 6.045 11.7 9s1.017 5.577 2.676 7.218A9 9 0 1 1 9 0Z")
+}
+
+section.n img+img {
+    margin-left: -4px
+}
+
+section.n h6 {
+    font: 700 15px ui-rounded
+}
+
+section.n h5 {
+    font-size: 14px
+}
+
+section.n .a {
+    filter: grayscale()
+}
+
+/* n */
+
+section.n .t img {
+    margin-inline: 20px;
+
+    border-radius: 12px
+}
+
+section.n .s {
+    width: 100vw;
+
+    overflow-x: scroll;
+
+    padding-inline: 20px;
+    scroll-padding-left: 20px;
+
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 10px;
+
+    scroll-snap-type: x mandatory
+}
+
+section.n .s img {
+    border-radius: 12px;
+
+    scroll-snap-align: start
+}
+
 /* m */
 
-section.d .m ul {
+section.s .m ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem 10px
 }
 
-section.d .m a {
+section.s .m a {
     contain: paint;
 
     border-radius: 12px;
@@ -122,7 +287,7 @@ section.d .m a {
     display: block
 }
 
-section.d .m img {
+section.s .m img {
     aspect-ratio: 1/1.7;
 
     width: -webkit-fill-available;
@@ -130,7 +295,7 @@ section.d .m img {
     object-fit: cover
 }
 
-section.d .m div {
+section.s .m div {
     position: absolute;
     inset: 0;
 
@@ -179,12 +344,10 @@ section.l img {
         --col-b: white;
         --col-h: black;
         --col-p: #afafb1;
-
-        --col-a: #dddee8;
-        --col-c: #c5c6d0;
-        --col-t: #ffffffaa;
-
-        --col-l: #00000010;
+        --col-c: #dfdfdf;
+        --col-k: #f2f2f2;
+        --col-n: #dddddd90;
+        --col-t: #f7f7f7;
     }
 }
 
@@ -193,11 +356,9 @@ section.l img {
         --col-b: #101010;
         --col-h: white;
         --col-p: #77777b;
-
-        --col-a: #212121;
-        --col-c: #333;
-        --col-t: #000000aa;
-
-        --col-l: #ffffff05;
+        --col-c: #222;
+        --col-k: #1c1c1c;
+        --col-n: #21212190;
+        --col-t: #252629;
     }
 }
