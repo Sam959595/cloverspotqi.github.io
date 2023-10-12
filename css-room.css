@@ -2,16 +2,6 @@ html {
     overscroll-behavior-y: none
 }
 
-[data-i] {
-    opacity: 0
-}
-
-img {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
-}
-
 /* d */
 
 .d {
@@ -40,43 +30,28 @@ img {
     font: 900 32px/1 system-ui
 }
 
-input {
-    position: fixed;
-    inset: auto 0 0;
-
-    width: 100vw;
-
-    border-radius: 0;
-
-    border-top: 2px solid #88888810;
-
-    padding: 20px 20px calc(20px + env(safe-area-inset-bottom));
-
-    font-size: 17px;
-
-    background-color: inherit;
-    color: var(--col-h)
-}
-
-input::placeholder {
-    color: var(--col-p)
-}
-
-input:focus {
-    padding-bottom: 20px
-}
-
 /* s */
+
 section.s ul {
     margin-inline: 16px;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5rem 2rem
+    gap: 3rem 2rem
 }
 
 section.s li {
     text-align: -webkit-center
+}
+
+[data-i] {
+    opacity: 0
+}
+
+img {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
 section.s img {
@@ -106,17 +81,6 @@ section.s h6 u {
 }
 
 /* n */
-
-section.n p {
-    margin: 20px;
-
-    text-align: center;
-    font: 700 14px ui-rounded
-}
-
-section.n .d {
-    color: #007aff
-}
 
 section.n ul {
     display: grid;
@@ -184,16 +148,6 @@ section.n span {
     column-gap: 8px
 }
 
-[data-i] {
-    opacity: 0
-}
-
-img {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
-}
-
 section.n .v img {
     border-radius: 50%
 }
@@ -231,8 +185,6 @@ section.n .a {
     filter: grayscale()
 }
 
-/* n */
-
 section.n .t img {
     margin-inline: 20px;
 
@@ -260,35 +212,32 @@ section.n .s img {
     scroll-snap-align: start
 }
 
-/* m */
+/* input */
 
-section.s .m ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5rem 10px
+input {
+    position: fixed;
+    inset: auto 0 0;
+
+    width: 100vw;
+
+    border-radius: 0;
+
+    border-top: 2px solid #88888810;
+
+    padding: 20px 20px calc(20px + env(safe-area-inset-bottom));
+
+    font-size: 17px;
+
+    background-color: inherit;
+    color: var(--col-h)
 }
 
-section.s .m a {
-    contain: paint;
-
-    border-radius: 12px;
-
-    display: block
+input::placeholder {
+    color: var(--col-p)
 }
 
-section.s .m img {
-    aspect-ratio: 1/1.7;
-
-    width: -webkit-fill-available;
-
-    object-fit: cover
-}
-
-section.s .m div {
-    position: absolute;
-    inset: 0;
-
-    background-color: #00000090
+input:focus {
+    padding-bottom: 20px
 }
 
 /* k */
