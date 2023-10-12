@@ -150,11 +150,10 @@ section.a {
 
     border-top: 2px solid #88888810;
 
-    padding: 20px 20px calc(20px + env(safe-area-inset-bottom));
+    padding: 20px 30px calc(20px + env(safe-area-inset-bottom));
 
     display: flex;
-    justify-content: center;
-    column-gap: 3rem;
+    justify-content: space-between;
 
     background-color: inherit;
 
