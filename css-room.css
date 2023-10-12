@@ -24,7 +24,7 @@ img {
     scroll-snap-type: x mandatory
 }
 
-.d>* {
+.d section {
     overflow-y: scroll;
 
     height: 100vh;
@@ -106,14 +106,6 @@ section.s h6 u {
 }
 
 /* n */
-
-section.n {
-    overflow-y: scroll;
-
-    padding-block: env(safe-area-inset-top) calc(20px + env(safe-area-inset-bottom));
-
-    height: 100vh
-}
 
 section.n p {
     margin: 20px;
@@ -359,6 +351,6 @@ section.l img {
         --col-c: #222;
         --col-k: #1c1c1c;
         --col-n: #21212190;
-        --col-t: #252629;
+        --col-t: black;
     }
 }
