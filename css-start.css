@@ -78,7 +78,9 @@ section.n address {
 }
 
 section.n .k img {
-    border-radius: 8px
+    border-radius: 8px;
+
+    box-shadow: 0 0 15px #00000030
 }
 
 section.n .v {
