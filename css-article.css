@@ -179,6 +179,10 @@ section.a hr {
     border-top: 3px solid var(--col-c)
 }
 
+section.a .b {
+    width: 3px
+}
+
 section.a div {
     display: inherit
 }
