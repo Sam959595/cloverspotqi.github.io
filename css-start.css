@@ -74,7 +74,7 @@ section.n .f {
 }
 
 section.n address {
-    font: 600 13px system-ui
+    font-weight: 600
 }
 
 section.n .k img {
