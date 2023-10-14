@@ -44,14 +44,8 @@ section.n .r {
     background-color: var(--col-t)
 }
 
-section.n .k {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 15px
-}
-
 section.n h3 {
-    height: 94px;
+    min-height: 94px;
 
     word-break: break-word;
     font: 700 extra-condensed 21px/1 system-ui
@@ -75,10 +69,6 @@ section.n .f {
 
 section.n address {
     font-weight: 600
-}
-
-section.n .k img {
-    border-radius: 8px
 }
 
 section.n .v {
