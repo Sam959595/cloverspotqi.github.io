@@ -155,7 +155,7 @@ section.n .v img {
 section.n hr {
     margin-inline: 4px;
 
-    width: 2rem;
+    width: 3px;
 
     border-radius: 2px;
     border-top: 3px solid var(--col-c)
@@ -294,7 +294,7 @@ section.l img {
         --col-b: #101010;
         --col-h: white;
         --col-p: #77777b;
-        --col-c: #222;
+        --col-c: #2e2e2e;
         --col-k: #1c1c1c;
         --col-n: #21212190;
         --col-t: black;
