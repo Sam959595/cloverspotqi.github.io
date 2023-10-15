@@ -22,7 +22,7 @@ section.n p {
     margin: 20px;
 
     text-align: center;
-    font: 700 14px ui-rounded
+    font: 700 15px ui-rounded
 }
 
 section.n .d {
@@ -65,7 +65,7 @@ section.n .k img {
     
     border-radius: 0 12px 12px 0;
 
-    mask-image: linear-gradient(to left, black 50%, transparent)
+    mask-image: linear-gradient(to left, black, transparent)
 }
 
 section.n h3 {
