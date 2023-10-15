@@ -50,10 +50,22 @@ section.n .k {
     column-gap: 30px
 }
 
+[data-i] {
+    opacity: 0
+}
+
+img {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+}
+
 section.n .k img {
     margin: -15px;
     
-    border-radius: 0 12px 12px 0
+    border-radius: 0 12px 12px 0;
+
+    mask-image: linear-gradient(to left, black 50%, transparent)
 }
 
 section.n h3 {
@@ -95,16 +107,6 @@ section.n span {
     display: flex;
     align-items: center;
     column-gap: 8px
-}
-
-[data-i] {
-    opacity: 0
-}
-
-img {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
 section.n .v img {
