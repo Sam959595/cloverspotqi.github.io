@@ -44,6 +44,18 @@ section.n .r {
     background-color: var(--col-t)
 }
 
+section.n .k {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px
+}
+
+section.n .k img {
+    margin: -15px;
+    
+    border-radius: 0 12px 12px 0
+}
+
 section.n h3 {
     min-height: 94px;
 
@@ -213,6 +225,6 @@ section.g {
         --col-c: #2e2e2e;
         --col-k: #1c1c1c;
         --col-n: #21212190;
-        --col-t: #141414;
+        --col-t: black;
     }
 }
