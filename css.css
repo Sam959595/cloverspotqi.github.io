@@ -96,10 +96,6 @@ select {
 	background: none
 }
 
-img {
-	vertical-align: top
-}
-
 img,
 video {
 	pointer-events: none;
