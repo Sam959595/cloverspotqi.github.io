@@ -69,7 +69,7 @@ section.n .k img {
 }
 
 section.n h3 {
-    min-height: 94px;
+    height: 84px;
 
     word-break: break-word;
     font: 700 extra-condensed 21px/1 system-ui
@@ -92,6 +92,8 @@ section.n .f {
 }
 
 section.n address {
+    margin-top: 10px;
+
     font-weight: 600
 }
 
@@ -227,6 +229,6 @@ section.g {
         --col-c: #2e2e2e;
         --col-k: #1c1c1c;
         --col-n: #21212190;
-        --col-t: #141414;
+        --col-t: #1a1a1d;
     }
 }
