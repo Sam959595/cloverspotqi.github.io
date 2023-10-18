@@ -115,13 +115,13 @@ h5,
 h6,
 table,
 textarea,
+blockquote,
 span {
 	color: var(--col-h)
 }
 
 p,
 time,
-blockquote,
 figcaption,
 address {
 	color: var(--col-p)
