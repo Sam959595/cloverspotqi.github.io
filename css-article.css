@@ -74,10 +74,10 @@ article figcaption {
 }
 
 article blockquote {
-    margin: 30px;
+    margin: 30px 30px 30px 60px;
 
     text-align: right;
-    font: italic 19px/1.4 ui-serif
+    font: italic 600 19px/1.4 ui-serif
 }
 
 article mark {
