@@ -45,15 +45,9 @@ section.n .r {
 
     border-radius: 12px;
 
-    padding: 15px;
+    padding: 30px;
 
     background-color: var(--col-t)
-}
-
-section.n .k {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 30px
 }
 
 [data-i] {
@@ -67,16 +61,15 @@ img {
 }
 
 section.n .k img {
-    margin: -15px;
-    
-    border-radius: 0 12px 12px 0
+    margin-block: 20px;
+    border-radius: 8px
 }
 
 section.n h3 {
-    height: 84px;
-
     word-break: break-word;
-    font: 700 extra-condensed 21px/1 system-ui
+    font: 700 32px/1 system-ui;
+
+    color: white
 }
 
 section.n .b {
@@ -96,9 +89,11 @@ section.n .f {
 }
 
 section.n address {
-    margin-top: 10px;
+    margin-bottom: 10px;
 
-    font-weight: 600
+    font-weight: 600;
+
+    color: #ffffff80;
 }
 
 section.n .v {
