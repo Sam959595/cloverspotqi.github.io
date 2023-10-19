@@ -100,7 +100,13 @@ section.n .r {
 section.n .k {
     display: flex;
     justify-content: space-between;
-    column-gap: 15px
+    column-gap: 30px
+}
+
+section.n .k img {
+    margin: -15px;
+
+    border-radius: 0 12px 12px 0
 }
 
 section.n h3 {
@@ -122,16 +128,14 @@ section.n .e {
     color: #2f99ff
 }
 
-section.n time {
-    font: 600 13px system-ui
+section.n .f {
+    color: #41d54b
 }
 
-section.n time u {
-    font-weight: 300
-}
+section.n address {
+    margin-top: 10px;
 
-section.n .k img {
-    border-radius: 8px
+    font-weight: 600
 }
 
 section.n .v {
@@ -155,7 +159,7 @@ section.n .v img {
 section.n hr {
     margin-inline: 4px;
 
-    width: 3px;
+    width: 2rem;
 
     border-radius: 2px;
     border-top: 3px solid var(--col-c)
@@ -169,7 +173,7 @@ section.n .v div img:not(:last-child) {
     clip-path: path("M9 0a8.96 8.96 0 0 1 5.377 1.782C12.717 3.423 11.7 6.045 11.7 9s1.017 5.577 2.676 7.218A9 9 0 1 1 9 0Z")
 }
 
-section.n img+img {
+section.n .v img+img {
     margin-left: -4px
 }
 
@@ -178,11 +182,13 @@ section.n h6 {
 }
 
 section.n h5 {
+    filter: grayscale();
+
     font-size: 14px
 }
 
 section.n .a {
-    filter: grayscale()
+    filter: none
 }
 
 section.n .t img {
