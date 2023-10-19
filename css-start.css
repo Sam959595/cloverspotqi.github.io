@@ -18,10 +18,16 @@ section.n h1 {
     font: 900 32px/1 system-ui
 }
 
+section.n h2 {
+    margin: 20px;
+
+    font: 14px system-ui;
+    color: var(--col-p)
+}
+
 section.n p {
     margin: 20px;
 
-    text-align: center;
     font: 700 15px ui-rounded
 }
 
