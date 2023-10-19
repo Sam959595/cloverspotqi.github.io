@@ -21,7 +21,7 @@ section.n h1 {
 section.n h2 {
     margin: 20px;
 
-    font: 14px system-ui;
+    font-size: 15px;
     color: var(--col-p)
 }
 
