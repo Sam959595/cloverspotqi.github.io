@@ -7,7 +7,7 @@ window.addEventListener('touchmove', () => {
     $('section.e')[0].removeAttribute('style')
 })
 
-// padding
+// margin-inline
 window.addEventListener('change', () => {
     let vv = $('section.e select:nth-child(1)').val(), nn = $('section.t')[0];
 
@@ -18,7 +18,7 @@ window.addEventListener('change', () => {
     }
 })
 
-// interval
+// line-height
 window.addEventListener('change', () => {
     let vv = $('section.e select:nth-child(2)').val(), nn = $('section.t')[0];
 
@@ -33,7 +33,7 @@ window.addEventListener('change', () => {
     }
 })
 
-// text size
+// font-size
 window.addEventListener('change', () => {
     let vv = $('section.e select:nth-child(3)').val(), nn = $('section.t')[0];
 
@@ -51,7 +51,7 @@ window.addEventListener('change', () => {
     }
 })
 
-// background
+// background-color
 window.addEventListener('change', () => {
     let vv = $('section.e select:nth-child(4)').val(), nn = $('body');
 
@@ -70,18 +70,21 @@ window.addEventListener('change', () => {
     }
 })
 
-// font
+// font-family
 window.addEventListener('change', () => {
     let vv = $('section.e select:nth-child(5)').val(), nn = $('section.t')[0];
 
     if (vv == 1) {
         nn.classList.add('a')
-        nn.classList.remove('v')
+        nn.classList.remove('v', 'u')
     } else if (vv == 2) {
         nn.classList.add('v')
-        nn.classList.remove('a')
+        nn.classList.remove('a', 'u')
     } else if (vv == 3) {
-        nn.classList.remove('v', 'a')
+        nn.classList.add('u')
+        nn.classList.remove('a', 'v')
+    } else if (vv == 4) {
+        nn.classList.remove('a', 'v', 'u')
     }
 })
 
