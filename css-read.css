@@ -11,11 +11,11 @@ section.t {
 }
 
 section.t h5 {
-    margin-block: 13em 3em;
+    margin-block: 10rem 3rem;
 
     text-align: center;
     font: 800 20px/1.7 system-ui;
-    letter-spacing: .04em
+    letter-spacing: .04rem
 }
 
 section.t h6:first-letter {
@@ -130,7 +130,7 @@ body.b section.t {
 
 section.k {
     opacity: .9;
-    
+
     position: fixed;
     inset: 0 0 auto;
 
