@@ -63,9 +63,7 @@ img {
 section.n .k img {
     margin: -15px;
     
-    border-radius: 0 12px 12px 0;
-
-    mask-image: linear-gradient(to left, black, transparent)
+    border-radius: 0 12px 12px 0
 }
 
 section.n h3 {
