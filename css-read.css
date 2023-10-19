@@ -26,7 +26,7 @@ section.t h6 {
     margin-bottom: 1cm;
 
     text-align: justify;
-    font: 370 20px/1.7 system-ui;
+    font: 20px/1.7 system-ui;
     letter-spacing: .2px
 }
 
@@ -51,7 +51,7 @@ section.t.a>* {
 }
 
 section.t.v>* {
-    font-family: ui-serif
+    font-family: avenir next
 }
 
 /* text */
