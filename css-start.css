@@ -67,7 +67,7 @@ section.n .k img {
 
 section.n h3 {
     word-break: break-word;
-    font: 700 32px/1 system-ui;
+    font: 700 extra-condensed 32px/1 system-ui;
 
     color: white
 }
@@ -91,7 +91,7 @@ section.n .f {
 section.n address {
     margin-bottom: 10px;
 
-    font-weight: 600;
+    font: 500 13px system-ui;
 
     color: #ffffff80;
 }
