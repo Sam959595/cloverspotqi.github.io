@@ -154,14 +154,13 @@ section.a {
     margin: 0 15px max(calc(15px + env(safe-area-inset-bottom)), 15px);
 
     border-radius: 18px;
-    border: 2px solid #88888810;
 
     padding: 15px 30px;
 
     display: flex;
     justify-content: space-between;
 
-    background-color: inherit;
+    background-color: var(--col-k);
 
     transition: opacity .4s
 }
