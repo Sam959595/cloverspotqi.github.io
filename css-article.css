@@ -76,9 +76,9 @@ article figcaption {
 article blockquote {
     margin: 30px 30px 30px 0;
 
-    border-left: 10px solid var(--col-h);
+    border-left: 5px solid var(--col-h);
 
-    padding-left: 20px;
+    padding-left: 25px;
 
     font: italic 17px/1.6 ui-serif
 }
