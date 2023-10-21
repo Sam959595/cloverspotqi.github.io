@@ -228,7 +228,7 @@ section.a .a {
 @media (prefers-color-scheme: dark) {
     :root {
         --col-b: #101010;
-        --col-h: white;
+        --col-h: #ddd;
         --col-p: #77777b;
         --col-c: #2e2e2e;
         --col-m: #692940;
