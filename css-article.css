@@ -1,20 +1,16 @@
 /* article */
 
-[data-i] {
-    opacity: 0
-}
-
-img {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
-}
-
 article h1 {
     margin: calc(30px + env(safe-area-inset-top)) 30px 30px;
 
     word-break: break-word;
     font: 700 extra-condensed 38px/1 system-ui
+}
+
+article h5 {
+    margin: 30px;
+
+    font: 700 21px/1.3 system-ui
 }
 
 article time {
@@ -30,10 +26,14 @@ article u {
     font-weight: 300
 }
 
-article h5 {
-    margin: 30px;
+[data-i] {
+    opacity: 0
+}
 
-    font: 700 21px/1.3 system-ui
+img {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
 article h6 {
