@@ -3,7 +3,7 @@
 article h1 {
     margin: calc(30px + env(safe-area-inset-top)) 30px 30px 0;
 
-    border-left: 10px solid transparent;
+    border-left: 10px solid;
 
     padding-left: 20px;
 
