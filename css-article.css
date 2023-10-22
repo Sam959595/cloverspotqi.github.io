@@ -168,9 +168,15 @@ section.a {
 }
 
 section.a span {
+    flex: 1 0 0;
+
     display: inherit;
     align-items: center;
     column-gap: 8px
+}
+
+section.a span:last-child {
+    justify-content: end
 }
 
 section.a img {
@@ -201,6 +207,17 @@ section.a h5 {
 
 section.a .a {
     filter: none
+}
+
+section.a p {
+    flex-grow: 1;
+
+    text-align: center;
+    font: 500 13px system-ui
+}
+
+section.a p a {
+    color: var(--col-h)
 }
 
 @media (prefers-color-scheme: light) {
