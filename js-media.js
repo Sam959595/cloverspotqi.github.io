@@ -1,6 +1,6 @@
 // tab
 let n = 0;
-$(window).scroll( () => {
+$(window).scroll(() => {
     let s = window.scrollY;
 
     if (s <= $(document).height() && s > n) {
@@ -12,26 +12,30 @@ $(window).scroll( () => {
     n = s <= 0 ? 0 : s
 })
 
-// home button
-$(window).scroll( () => {
-    if (window.scrollY < -50) {
-        
-        let t = setInterval(() => {
-            if (window.scrollY < -50) {
-                $('section.j a')[0].style = 'pointer-events: auto; opacity: 1';
-                $('body')[0].style = 'transition: padding-top .4s; padding-top: 34px'
-                setTimeout(() => {
-                    $('section.j a')[0].removeAttribute('style');
-                    $('body')[0].style = 'transition: padding-top .4s; padding-top: 0'
-                    setTimeout(() => {
-                        $('article')[0].removeAttribute('style')
-                    }, 400)
-                }, 5000)
-            } else {
-                clearInterval(t)
-            }
-        }, 800)
+// share
+$('article')[0].addEventListener('dblclick', () => {
+    if (navigator.share) {
+        navigator.share({
+            title: 'Quack Quack',
+            url: 'https://quack.com'
+        })
     }
+})
+
+// mark read
+$('section.a')[0].addEventListener('dblclick', () => {
+    $('article h1')[0].classList.contains('a') == true ? ($('article h1')[0].removeAttribute('class'), $('section.a p')[0].innerText = 'Удалено из прочесть позже') : ($('section.a p')[0].innerText = 'Добавлено в прочесть позже', $('article h1')[0].classList.add('a'));
+    setTimeout(() => {
+        $('section.a p')[0].innerText = ''
+    }, 3000)
+})
+
+// home button
+$('section.a')[0].addEventListener('click', () => {
+    $('section.a p')[0].innerHTML = '<a href="html-start.html">Вернуться в Circle</a>';
+    setTimeout(() => {
+        $('section.a p')[0].innerText = ''
+    }, 5000)
 })
 
 // img load
