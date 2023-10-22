@@ -8,9 +8,7 @@ article h1 {
     padding-left: 20px;
 
     word-break: break-word;
-    font: 700 extra-condensed 38px/1 system-ui;
-
-    transition: border-color .2s
+    font: 700 extra-condensed 38px/1 system-ui
 }
 
 article .a {
