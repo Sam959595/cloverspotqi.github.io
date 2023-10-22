@@ -58,14 +58,14 @@ article .b:first-letter {
     font-weight: 700
 }
 
-article p a {
+article a:not(time a) {
     -webkit-text-decoration: underline;
     text-underline-offset: 2px;
     text-decoration-thickness: 1px
 }
 
 article figcaption {
-    margin: 20px;
+    margin: 20px 30px;
 
     text-align: center;
     font-size: 13px
@@ -160,26 +160,13 @@ section.a {
 }
 
 section.a span {
-    display: flex;
+    display: inherit;
     align-items: center;
     column-gap: 8px
 }
 
 section.a img {
     border-radius: 50%
-}
-
-section.a hr {
-    margin-inline: 4px;
-
-    width: 2rem;
-
-    border-radius: 2px;
-    border-top: 3px solid var(--col-c)
-}
-
-section.a .b {
-    width: 3px
 }
 
 section.a div {
