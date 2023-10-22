@@ -151,16 +151,14 @@ section.a {
     position: fixed;
     inset: auto 0 0;
 
-    margin: 0 15px max(calc(15px + env(safe-area-inset-bottom)), 15px);
+    border-top: 2px solid #88888810;
 
-    border-radius: 24px;
-
-    padding: 15px 30px;
+    padding: 15px 30px max(calc(15px + env(safe-area-inset-bottom)), 15px);
 
     display: flex;
     justify-content: space-between;
 
-    background-color: var(--col-k);
+    background-color: inherit;
 
     transition: opacity .4s
 }
@@ -228,7 +226,7 @@ section.a .a {
 @media (prefers-color-scheme: dark) {
     :root {
         --col-b: #101010;
-        --col-h: #eee;
+        --col-h: white;
         --col-p: #77777b;
         --col-c: #2e2e2e;
         --col-m: #692940;
