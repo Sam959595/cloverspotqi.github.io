@@ -7,16 +7,22 @@ article h1 {
     font: 700 extra-condensed 38px/1 system-ui
 }
 
-article h5 {
+article .r {
+    margin-left: 0;
+
+    border-left: 8px solid #eb4343;
+
+    padding-left: 22px
+}
+
+article h6 {
     margin: 30px;
 
     font: 700 21px/1.3 system-ui
 }
 
-article time {
+article address {
     margin: 30px;
-
-    display: block;
 
     text-align: center;
     font: 500 14px system-ui
@@ -36,7 +42,7 @@ img {
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
-article h6 {
+article h5 {
     margin: 30px;
 
     font: 700 extra-condensed 28px/1 system-ui
@@ -58,7 +64,7 @@ article .b:first-letter {
     font-weight: 700
 }
 
-article a:not(time a) {
+article a:not(address a) {
     -webkit-text-decoration: underline;
     text-underline-offset: 2px;
     text-decoration-thickness: 1px
