@@ -41,11 +41,6 @@ time {
 	letter-spacing: inherit
 }
 
-b,
-mark {
-	color: inherit
-}
-
 a,
 u {
 	text-decoration: none
@@ -105,6 +100,12 @@ video {
 
 body {
 	background-color: var(--col-b)
+}
+
+a,
+b,
+mark {
+	color: inherit
 }
 
 h1,
