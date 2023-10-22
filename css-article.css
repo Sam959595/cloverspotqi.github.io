@@ -1,18 +1,20 @@
 /* article */
 
 article h1 {
-    margin: calc(30px + env(safe-area-inset-top)) 30px 30px;
+    margin: calc(30px + env(safe-area-inset-top)) 30px 30px 0;
+
+    border-left: 10px solid transparent;
+
+    padding-left: 20px;
 
     word-break: break-word;
-    font: 700 extra-condensed 38px/1 system-ui
+    font: 700 extra-condensed 38px/1 system-ui;
+
+    transition: border-color .2s
 }
 
-article .r {
-    margin-left: 0;
-
-    border-left: 8px solid #eb4343;
-
-    padding-left: 22px
+article .a {
+    border-color: #eb4343
 }
 
 article h6 {
