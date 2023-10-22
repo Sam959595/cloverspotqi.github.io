@@ -29,11 +29,3 @@ $('section.a')[0].addEventListener('dblclick', () => {
         $('section.a p')[0].innerText = ''
     }, 3000)
 })
-
-// home button
-$('section.a')[0].addEventListener('click', () => {
-    $('section.a p')[0].innerHTML = '<a href="html-start.html">Вернуться в Circle</a>';
-    setTimeout(() => {
-        $('section.a p')[0].innerText = ''
-    }, 5000)
-})
