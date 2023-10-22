@@ -58,12 +58,10 @@ article .b:first-letter {
     font-weight: 700
 }
 
-article a {
+article p a {
     -webkit-text-decoration: underline;
     text-underline-offset: 2px;
-    text-decoration-thickness: 1px;
-
-    color: inherit
+    text-decoration-thickness: 1px
 }
 
 article figcaption {
@@ -156,7 +154,7 @@ section.a {
     display: flex;
     justify-content: space-between;
 
-    background-color: color-mix(in srgb, var(--col-b), transparent 10%);
+    background-color: inherit;
 
     transition: opacity .4s
 }
