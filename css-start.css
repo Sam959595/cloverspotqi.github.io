@@ -101,7 +101,7 @@ section.n .v {
 
     display: flex;
     justify-content: center;
-    column-gap: 4rem
+    column-gap: 3rem
 }
 
 section.n span {
