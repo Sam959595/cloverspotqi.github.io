@@ -45,7 +45,7 @@ section.n .r {
 
     border-radius: 12px;
 
-    padding: 30px;
+    padding: 25px;
 
     background-color: var(--col-t)
 }
@@ -67,7 +67,7 @@ section.n .k img {
 
 section.n h3 {
     word-break: break-word;
-    font: 700 extra-condensed 32px/1 system-ui;
+    font: 700 extra-condensed 24px/1 system-ui;
 
     color: white
 }
@@ -101,7 +101,7 @@ section.n .v {
 
     display: flex;
     justify-content: center;
-    column-gap: 3rem
+    column-gap: 4rem
 }
 
 section.n span {
