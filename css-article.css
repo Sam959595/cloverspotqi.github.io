@@ -130,10 +130,6 @@ section.a {
     transition: opacity .4s
 }
 
-section.a span+span {
-    margin-left: auto
-}
-
 section.a span {
     display: inherit;
     align-items: center;
