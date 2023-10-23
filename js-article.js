@@ -13,7 +13,7 @@ $(window).scroll(() => {
 })
 
 // share
-$('article')[0].addEventListener('dblclick', () => {
+document.addEventListener('dblclick', () => {
     if (navigator.share) {
         navigator.share({
             title: 'Quack Quack',
@@ -22,12 +22,7 @@ $('article')[0].addEventListener('dblclick', () => {
     }
 })
 
-// mark read
-let x;
-$('section.a')[0].addEventListener('dblclick', () => {
-    clearTimeout(x)
-    $('article h1')[0].classList.contains('a') == true ? ($('article h1')[0].removeAttribute('class'), $('section.a p')[0].innerText = 'Удалено из прочесть позже') : ($('section.a p')[0].innerText = 'Добавлено в прочесть позже', $('article h1')[0].classList.add('a'));
-    x = setTimeout(() => {
-        $('section.a p')[0].innerText = ''
-    }, 3000)
+// bookmark
+$('svg')[0].addEventListener('click', () => {
+    $('svg path')[0].classList.contains('b') ? $('svg path')[0].classList.remove('b') : $('svg path')[0].classList.add('b')
 })
