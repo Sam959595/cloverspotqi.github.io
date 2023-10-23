@@ -130,10 +130,6 @@ section.a {
     transition: opacity .4s
 }
 
-section.a svg+span {
-    margin-left: auto
-}
-
 section.a span {
     display: inherit;
     align-items: center;
@@ -168,6 +164,10 @@ section.a h5 {
 
 section.a .a {
     filter: none
+}
+
+section.a svg {
+    margin-left: auto
 }
 
 @media (prefers-color-scheme: light) {
