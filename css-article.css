@@ -123,7 +123,7 @@ section.a {
     padding: 15px 30px max(calc(15px + env(safe-area-inset-bottom)), 15px);
 
     display: flex;
-    column-gap: 4rem;
+    column-gap: 5rem;
 
     background-color: inherit;
 
@@ -175,6 +175,7 @@ section.a svg {
         --col-b: white;
         --col-h: #111;
         --col-p: #afafb1;
+        --col-k: #f2f2f2;
         --col-m: #ffdbed;
     }
 }
@@ -184,6 +185,7 @@ section.a svg {
         --col-b: #101010;
         --col-h: white;
         --col-p: #77777b;
+        --col-k: #1c1c1c;
         --col-m: #692940;
     }
 }
