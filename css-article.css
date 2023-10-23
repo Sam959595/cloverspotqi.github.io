@@ -174,6 +174,10 @@ section.a svg {
     margin-left: auto
 }
 
+section.a .b {
+    fill: #eb5462
+}
+
 @media (prefers-color-scheme: light) {
     :root {
         --col-b: white;
