@@ -20,6 +20,10 @@ article address {
     font: 500 14px system-ui
 }
 
+article address a {
+    color: var(--col-k)
+}
+
 article u {
     font-weight: 300
 }
@@ -175,7 +179,7 @@ section.a svg {
         --col-b: white;
         --col-h: #111;
         --col-p: #afafb1;
-        --col-k: #f2f2f2;
+        --col-k: #7e7e7e;
         --col-m: #ffdbed;
     }
 }
@@ -185,7 +189,7 @@ section.a svg {
         --col-b: #101010;
         --col-h: white;
         --col-p: #77777b;
-        --col-k: #1c1c1c;
+        --col-k: #afafaf;
         --col-m: #692940;
     }
 }
