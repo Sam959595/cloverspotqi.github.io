@@ -123,11 +123,15 @@ section.a {
     padding: 15px 30px max(calc(15px + env(safe-area-inset-bottom)), 15px);
 
     display: flex;
-    column-gap: 5rem;
+    column-gap: 3rem;
 
     background-color: inherit;
 
     transition: opacity .4s
+}
+
+section.a span+span {
+    margin-left: auto
 }
 
 section.a span {
@@ -164,10 +168,6 @@ section.a h5 {
 
 section.a .a {
     filter: none
-}
-
-section.a svg {
-    margin-left: auto
 }
 
 @media (prefers-color-scheme: light) {
