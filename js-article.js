@@ -13,13 +13,18 @@ $(window).scroll(() => {
 })
 
 // share
-document.addEventListener('dblclick', () => {
+$('article')[0].addEventListener('dblclick', () => {
     if (navigator.share) {
         navigator.share({
             title: 'Quack Quack',
             url: 'https://quack.com'
         })
     }
+})
+
+// bookmark
+$('section.a span+span')[0].addEventListener('click', () => {
+    $('section.a span+span h5')[0].classList.contains('a') ? $('section.a span+span h5')[0].removeAttribute('class') : $('section.a span+span h5')[0].classList.add('a')
 })
 
 // bookmark
