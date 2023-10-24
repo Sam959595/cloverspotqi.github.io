@@ -24,5 +24,5 @@ document.addEventListener('dblclick', () => {
 
 // bookmark
 $('svg')[0].addEventListener('click', () => {
-    $('svg path')[0].classList.contains('b') ? $('svg path')[0].classList.remove('b') : $('svg path')[0].classList.add('b')
+    $('svg path')[0].classList.contains('b') ? $('svg path')[0].removeAttribute('class') : $('svg path')[0].classList.add('b')
 })
