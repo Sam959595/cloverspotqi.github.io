@@ -3,12 +3,8 @@ let n = 0;
 $(window).scroll(() => {
     let s = window.scrollY;
 
-    if (s <= $(document).height() && s > n) {
-        $('section.a')[0].style = 'pointer-events: none; opacity: 0'
-    } else {
-        $('section.a')[0].style = 'pointer-events: auto; opacity: 1'
-    }
-
+    s <= $(document).height() && s > n ? $('section.a')[0].style = 'pointer-events: none; opacity: 0' : $('section.a')[0].style = 'pointer-events: auto; opacity: 1';
+    
     n = s <= 0 ? 0 : s
 })
 
