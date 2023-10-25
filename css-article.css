@@ -94,7 +94,7 @@ article code {
 
     padding-inline: 5px;
     
-    font-family: ui-monospace;
+    font: 16px ui-monospace;
 
     background-color: #88888840;
     color: color-mix(in srgb, currentcolor, transparent 30%)
