@@ -36,7 +36,8 @@ q,
 em,
 select,
 span,
-time {
+time,
+code {
 	font: inherit;
 	letter-spacing: inherit
 }
