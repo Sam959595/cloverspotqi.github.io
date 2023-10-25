@@ -84,8 +84,6 @@ article blockquote {
 }
 
 article mark {
-    border-radius: 5px;
-
     background-color: var(--col-m)
 }
 
