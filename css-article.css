@@ -1,4 +1,24 @@
+/* n */
+
+section.n {
+    margin: calc(20px + env(safe-area-inset-top)) 30px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 3rem
+}
+
+section.n a {
+    font: 700 13px system-ui;
+
+    color: var(--col-h)
+}
+
 /* article */
+
+article {
+    margin-bottom: calc(78px + env(safe-area-inset-bottom))
+}
 
 article h1 {
     margin: 30px;
@@ -91,27 +111,11 @@ article code {
     border-radius: 5px;
 
     padding-inline: 5px;
-    
+
     font: 16px ui-monospace;
 
     background-color: #88888840;
     color: color-mix(in srgb, currentcolor, transparent 30%)
-}
-
-/* n */
-
-section.n {
-    margin: calc(20px + env(safe-area-inset-top)) 30px 0;
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem 3rem
-}
-
-section.n a {
-    font: 700 13px system-ui;
-
-    color: var(--col-h)
 }
 
 /* s */
@@ -158,6 +162,7 @@ section.s p {
 }
 
 section.s u {
+    line-height: 1.2px;
     font-size: 12px
 }
 
