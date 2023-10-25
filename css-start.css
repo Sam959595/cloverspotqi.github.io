@@ -55,6 +55,16 @@ section.n .k {
     column-gap: 30px
 }
 
+[data-i] {
+    opacity: 0
+}
+
+img {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+}
+
 section.n .k img {
     margin: -15px;
 
