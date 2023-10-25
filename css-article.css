@@ -1,7 +1,7 @@
 /* article */
 
 article h1 {
-    margin: calc(30px + env(safe-area-inset-top)) 30px 30px;
+    margin: 30px;
 
     word-break: break-word;
     font: 700 extra-condensed 38px/1 system-ui
@@ -103,7 +103,7 @@ article code {
 /* n */
 
 section.n {
-    margin: 30px;
+    margin: calc(30px + env(safe-area-inset-top)) 30px 30px;
 
     display: flex;
     flex-wrap: wrap;
