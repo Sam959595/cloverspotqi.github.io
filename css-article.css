@@ -116,6 +116,53 @@ section.n a {
     color: var(--col-h)
 }
 
+/* s */
+
+section.s {
+    pointer-events: none;
+    opacity: 0;
+
+    position: fixed;
+    inset: 0;
+
+    overflow-y: scroll;
+
+    background-color: inherit;
+
+    transition: opacity .4s
+}
+
+section.s ul {
+    margin: calc(30px + env(safe-area-inset-top)) 30px 30px;
+
+    display: grid;
+    row-gap: 3rem
+}
+
+section.s li {
+    display: flex;
+    align-items: start;
+    column-gap: 10px
+}
+
+section.s h1 {
+    font-size: 14px
+}
+
+section.s span {
+    font-weight: 600
+}
+
+section.s p {
+    margin-top: 10px;
+
+    font-size: 14px
+}
+
+section.s img {
+    border-radius: 50%
+}
+
 /* k */
 
 section.k {
