@@ -89,6 +89,17 @@ article mark {
     background-color: var(--col-m)
 }
 
+article code {
+    border-radius: 5px;
+
+    padding-inline: 5px;
+    
+    font-family: ui-monospace;
+
+    background-color: #88888840;
+    color: color-mix(in srgb, currentcolor, transparent 30%)
+}
+
 /* n */
 
 section.n {
