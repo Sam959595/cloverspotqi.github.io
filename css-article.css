@@ -103,7 +103,7 @@ article code {
 /* n */
 
 section.n {
-    margin: calc(30px + env(safe-area-inset-top)) 30px 30px;
+    margin: calc(20px + env(safe-area-inset-top)) 30px 0;
 
     display: flex;
     flex-wrap: wrap;
@@ -157,6 +157,10 @@ section.s p {
     margin-top: 10px;
 
     font-size: 14px
+}
+
+section.s u {
+    font-size: 12px
 }
 
 section.s img {
