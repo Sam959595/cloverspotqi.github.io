@@ -36,8 +36,7 @@ section.n .d {
 }
 
 section.n ul {
-    display: grid;
-    grid-auto-flow: row
+    display: grid
 }
 
 section.n .r {
@@ -45,31 +44,28 @@ section.n .r {
 
     border-radius: 12px;
 
-    padding: 25px;
+    padding: 15px;
 
     background-color: var(--col-t)
 }
 
-[data-i] {
-    opacity: 0
-}
-
-img {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+section.n .k {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px
 }
 
 section.n .k img {
-    margin-block: 20px;
-    border-radius: 8px
+    margin: -15px;
+
+    border-radius: 0 12px 12px 0
 }
 
 section.n h3 {
-    word-break: break-word;
-    font: 700 extra-condensed 24px/1 system-ui;
+    height: 84px;
 
-    color: white
+    word-break: break-word;
+    font: 700 extra-condensed 21px/1 system-ui
 }
 
 section.n .b {
@@ -89,11 +85,9 @@ section.n .f {
 }
 
 section.n address {
-    margin-bottom: 10px;
+    margin-top: 10px;
 
-    font: 500 13px system-ui;
-
-    color: #ffffff80;
+    font-weight: 600
 }
 
 section.n .v {
