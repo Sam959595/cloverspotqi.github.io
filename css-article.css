@@ -103,7 +103,7 @@ article code {
 /* n */
 
 section.n {
-    margin: 30px 30px calc(5cm + env(safe-area-inset-bottom));
+    margin: 30px;
 
     display: flex;
     flex-wrap: wrap;
@@ -146,7 +146,7 @@ section.s li {
 }
 
 section.s h1 {
-    font-size: 14px
+    font-size: 15px
 }
 
 section.s span {
