@@ -30,8 +30,7 @@ article h1 {
 article .a {
     -webkit-text-decoration: underline #eb5462;
     text-decoration-skip: none;
-    text-underline-offset: 2px;
-    text-decoration-thickness: 8px
+    text-decoration-thickness: 7px
 }
 
 article h3 {
