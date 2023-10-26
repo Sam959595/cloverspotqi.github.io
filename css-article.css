@@ -1,7 +1,7 @@
 /* n */
 
 section.n {
-    margin: calc(20px + env(safe-area-inset-top)) 30px 30px;
+    margin: calc(20px + env(safe-area-inset-top)) 30px 20px;
 
     display: flex;
     flex-wrap: wrap;
