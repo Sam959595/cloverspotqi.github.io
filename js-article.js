@@ -9,7 +9,7 @@ $(window).scroll(() => {
 })
 
 // share
-document.addEventListener('dblclick', () => {
+$('article')[0].addEventListener('dblclick', () => {
     if (navigator.share) {
         navigator.share({
             title: 'Quack Quack',
