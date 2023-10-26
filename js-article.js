@@ -23,14 +23,14 @@ $('section.a span:first-child').click(() => {
     $('section.s')[0].style = 'pointer-events: auto; opacity: 1'
 })
 
-// bookmark counter
+// counter
 $('section.a span+span').click(() => {
     let a = $('section.a span+span h6')[0].innerText;
     $('section.a span+span h6')[0].innerText = Number(a) + 1;
     $('section.a span+span h5')[0].classList.toggle('a')
 })
 
-// bookmark icon
-$('svg').click(() => {
-    $('svg path')[0].classList.toggle('b')
+// bookmark
+$('section.a')[0].addEventListener('dblclick', () => {
+    $('article h1')[0].classList.toggle('a')
 })
