@@ -27,6 +27,13 @@ article h1 {
     font: 700 extra-condensed 38px/1 system-ui
 }
 
+article .a {
+    -webkit-text-decoration: underline #eb5462;
+    text-decoration-skip: none;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 8px
+}
+
 article h3 {
     margin: 25px;
 
@@ -198,7 +205,7 @@ section.a {
     padding: 15px 25px max(calc(15px + env(safe-area-inset-bottom)), 15px);
 
     display: flex;
-    column-gap: 4rem;
+    justify-content: space-between;
 
     background-color: inherit;
 
@@ -239,14 +246,6 @@ section.a h5 {
 
 section.a .a {
     filter: none
-}
-
-section.a svg {
-    margin-left: auto
-}
-
-section.a .b {
-    fill: #eb5462
 }
 
 @media (prefers-color-scheme: light) {
