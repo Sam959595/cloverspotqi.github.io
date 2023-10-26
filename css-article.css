@@ -33,6 +33,12 @@ article h3 {
     font: 700 21px/1.3 system-ui
 }
 
+article h4 {
+    margin: 30px;
+
+    font: 700 19px/1.3 system-ui
+}
+
 article address {
     margin: 30px;
 
