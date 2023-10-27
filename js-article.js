@@ -9,7 +9,7 @@ $(window).scroll(() => {
 })
 
 // share
-$('article')[0].addEventListener('dblclick', () => {
+document.addEventListener('dblclick', () => {
     if (navigator.share) {
         navigator.share({
             title: 'Quack Quack',
@@ -24,13 +24,13 @@ $('section.a span:first-child').click(() => {
 })
 
 // counter
-$('section.a span+span').click(() => {
-    let a = $('section.a span+span h6')[0].innerText;
-    $('section.a span+span h6')[0].innerText = Number(a) + 1;
-    $('section.a span+span h5')[0].classList.toggle('a')
+$('section.a span:nth-child(2)').click(() => {
+    let a = $('section.a span:nth-child(2) h6')[0].innerText;
+    $('section.a span:nth-child(2) h6')[0].innerText = Number(a) + 1;
+    $('section.a span:nth-child(2) h5')[0].classList.toggle('a')
 })
 
 // bookmark
-$('section.a')[0].addEventListener('dblclick', () => {
-    $('article h1')[0].classList.toggle('a')
+$('section.a span:last-child').click(() => {
+    $('section.a span:last-child h5')[0].classList.toggle('a')
 })
