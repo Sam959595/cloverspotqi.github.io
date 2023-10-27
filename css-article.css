@@ -106,7 +106,7 @@ article blockquote {
 
     padding-left: 17px;
 
-    font: italic 17px/1.6 ui-serif
+    font: italic 18px/1.6 ui-serif
 }
 
 article mark {
@@ -142,9 +142,9 @@ section.a {
 }
 
 section.a span {
-    border-radius: 27px;
+    border-radius: 28px;
 
-    padding: 18px 23px;
+    padding: 19px 24px;
 
     display: inherit;
     align-items: center;
