@@ -72,7 +72,7 @@ article p {
     color: var(--col-c)
 }
 
-article .b:first-letter {
+article .a:first-letter {
     -webkit-initial-letter: 2;
 
     margin-right: .6em;
