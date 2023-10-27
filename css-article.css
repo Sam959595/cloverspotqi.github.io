@@ -17,7 +17,7 @@ section.n a {
 /* article */
 
 article {
-    margin-bottom: calc(78px + env(safe-area-inset-bottom))
+    margin-bottom: calc(5cm + env(safe-area-inset-bottom))
 }
 
 article h1 {
