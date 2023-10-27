@@ -75,7 +75,7 @@ article p {
 
     font: 17px/1.6 system-ui;
 
-    color: var(--col-h)
+    color: var(--col-c)
 }
 
 article .b:first-letter {
@@ -267,6 +267,7 @@ section.k {
     :root {
         --col-b: white;
         --col-h: #111;
+        --col-c: #111;
         --col-p: #afafb1;
         --col-m: #ffdbed;
         --col-t: #f7f7f7;
@@ -277,6 +278,7 @@ section.k {
     :root {
         --col-b: #101010;
         --col-h: white;
+        --col-c: #aaa;
         --col-p: #77777b;
         --col-m: #692940;
         --col-t: #1a1a1c;
