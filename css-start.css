@@ -193,22 +193,27 @@ section.k {
     background-color: inherit
 }
 
-/* g */
+/* s */
 
-section.g {
+section.s {
     position: fixed;
     inset: auto auto max(20px, env(safe-area-inset-bottom)) 25px;
 
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
 
     border-radius: 50%;
 
-    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    -webkit-backdrop-filter: blur(10px);
+    background-color: var(--col-k)
+}
 
-    background-color: var(--col-n);
+section.s h1 {
+    font-size: 14px;
+
     color: var(--col-h)
 }
 
@@ -219,7 +224,6 @@ section.g {
         --col-p: #afafb1;
         --col-c: #dfdfdf;
         --col-k: #f2f2f2;
-        --col-n: #dddddd90;
         --col-t: #f7f7f7;
     }
 }
@@ -230,8 +234,7 @@ section.g {
         --col-h: white;
         --col-p: #77777b;
         --col-c: #2e2e2e;
-        --col-k: #1c1c1c;
-        --col-n: #21212190;
+        --col-k: #1a1a1c;
         --col-t: #1a1a1c;
     }
 }
