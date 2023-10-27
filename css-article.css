@@ -1,7 +1,7 @@
 /* n */
 
 section.n {
-    margin: calc(30px + env(safe-area-inset-top)) 30px 0;
+    margin: calc(30px + env(safe-area-inset-top)) 25px 0;
 
     display: flex;
     flex-wrap: wrap;
@@ -21,26 +21,26 @@ article {
 }
 
 article h1 {
-    margin: 30px;
+    margin: 30px 25px;
 
     word-break: break-word;
     font: 700 extra-condensed 38px/1 system-ui
 }
 
 article h3 {
-    margin: 30px;
+    margin: 30px 25px;
 
     font: 700 21px/1.3 system-ui
 }
 
 article h4 {
-    margin: 30px;
+    margin: 25px;
 
     font: 700 19px/1.3 system-ui
 }
 
 article address {
-    margin: 30px;
+    margin: 30px 25px;
 
     text-align: center;
     font: 500 14px system-ui
@@ -65,13 +65,13 @@ img {
 }
 
 article h2 {
-    margin: 30px;
+    margin: 30px 25px;
 
     font: 700 extra-condensed 28px/1 system-ui
 }
 
 article p {
-    margin: 30px;
+    margin: 30px 25px;
 
     font: 17px/1.6 system-ui;
 
@@ -93,18 +93,18 @@ article a:not(address a) {
 }
 
 article figcaption {
-    margin: 20px 30px;
+    margin: 20px 25px;
 
     text-align: center;
     font-size: 13px
 }
 
 article blockquote {
-    margin: 30px 30px 30px 0;
+    margin: 30px 25px 30px 0;
 
     border-left: 8px solid var(--col-h);
 
-    padding-left: 22px;
+    padding-left: 17px;
 
     font: italic 18px/1.6 ui-serif
 }
@@ -140,9 +140,9 @@ section.a {
 }
 
 section.a span {
-    border-radius: 29px;
+    border-radius: 24px;
 
-    padding: 20px 25px;
+    padding: 15px 20px;
 
     display: inherit;
     align-items: center;
@@ -198,7 +198,7 @@ section.s {
 }
 
 section.s textarea {
-    margin: 30px;
+    margin: 25px;
 
     width: -webkit-fill-available;
 
@@ -214,10 +214,10 @@ section.s textarea::-webkit-input-placeholder {
 }
 
 section.s ul {
-    margin: calc(30px + env(safe-area-inset-top)) 30px 30px;
+    margin: calc(25px + env(safe-area-inset-top)) 25px 25px;
 
     display: grid;
-    row-gap: 30px
+    row-gap: 25px
 }
 
 section.s li {
