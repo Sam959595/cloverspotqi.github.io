@@ -45,14 +45,12 @@ article address {
     font: 500 13px system-ui
 }
 
-article u {
-    font-weight: 300
+article address a {
+    color: var(--col-h)
 }
 
-article a {
-    -webkit-text-decoration: underline;
-    text-underline-offset: 2px;
-    text-decoration-thickness: 1px
+article u {
+    font-weight: 300
 }
 
 [data-i] {
@@ -79,6 +77,12 @@ article .a:first-letter {
     margin-right: .6em;
 
     font-weight: 700
+}
+
+article :is(p, figcaption) a {
+    -webkit-text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px
 }
 
 article figcaption {
