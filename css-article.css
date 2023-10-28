@@ -1,23 +1,7 @@
-/* n */
-
-section.n {
-    margin: calc(30px + env(safe-area-inset-top)) 25px 0;
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem 3rem
-}
-
-section.n a {
-    font: 700 13px system-ui;
-
-    color: var(--col-h)
-}
-
 /* article */
 
 article {
-    margin-top: env(safe-area-inset-top)
+    margin-top: calc(25px + env(safe-area-inset-top))
 }
 
 article h1 {
@@ -120,6 +104,22 @@ article code {
 
     background-color: #88888840;
     color: color-mix(in srgb, currentcolor, transparent 30%)
+}
+
+/* n */
+
+section.n {
+    margin: calc(30px + env(safe-area-inset-top)) 25px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 3rem
+}
+
+section.n a {
+    font: 700 13px system-ui;
+
+    color: var(--col-h)
 }
 
 /* a */
