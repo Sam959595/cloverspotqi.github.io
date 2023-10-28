@@ -27,10 +27,16 @@ article h1 {
     font: 700 extra-condensed 38px/1 system-ui
 }
 
+article h2 {
+    margin: 30px 25px;
+
+    font: 700 24px/1.3 system-ui
+}
+
 article h3 {
     margin: 30px 25px;
 
-    font: 700 21px/1.3 system-ui
+    font: 19px/1.3 system-ui
 }
 
 article address {
@@ -56,12 +62,6 @@ img {
     opacity: 1;
 
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
-}
-
-article h2 {
-    margin: 30px 25px;
-
-    font: 700 24px/1.3 system-ui
 }
 
 article p {
