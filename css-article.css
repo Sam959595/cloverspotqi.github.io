@@ -1,7 +1,7 @@
 /* article */
 
 article {
-    margin-top: calc(25px + env(safe-area-inset-top))
+    margin-bottom: calc(5cm + env(safe-area-inset-bottom))
 }
 
 article h1 {
@@ -20,7 +20,7 @@ article h2 {
 article h3 {
     margin: 30px 25px;
 
-    font: 19px/1.3 system-ui
+    font: 500 19px/1.3 system-ui
 }
 
 article address {
@@ -109,7 +109,7 @@ article code {
 /* n */
 
 section.n {
-    margin: calc(30px + env(safe-area-inset-top)) 25px 0;
+    margin: calc(30px + env(safe-area-inset-top)) 25px 2cm;
 
     display: flex;
     flex-wrap: wrap;
