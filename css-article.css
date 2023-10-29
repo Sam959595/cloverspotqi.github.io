@@ -109,6 +109,8 @@ article code {
 /* n */
 
 section.n {
+    opacity: .8;
+
     margin: calc(30px + env(safe-area-inset-top)) 25px 2cm;
 
     display: flex;
@@ -117,7 +119,7 @@ section.n {
 }
 
 section.n a {
-    font: 700 13px system-ui;
+    font: 600 13px system-ui;
 
     color: var(--col-h)
 }
