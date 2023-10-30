@@ -5,7 +5,7 @@ html {
 /* t */
 
 section.t {
-    margin: 1cm calc(env(safe-area-inset-right) + 1cm) 4cm;
+    margin: 35px calc(env(safe-area-inset-right) + 35px) 4cm;
 
     color: var(--col-00)
 }
@@ -19,11 +19,11 @@ section.t h5 {
 }
 
 section.t h6:first-letter {
-    margin-left: 1cm
+    margin-left: 35px
 }
 
 section.t h6 {
-    margin-bottom: 1cm;
+    margin-bottom: 35px;
 
     text-align: justify;
     font: 20px/1.7 system-ui;
@@ -147,7 +147,7 @@ section.m {
 
     border-top: 2px solid #88888810;
 
-    padding: 20px 1cm max(calc(10px + env(safe-area-inset-bottom)), 20px);
+    padding: 20px 35px max(calc(10px + env(safe-area-inset-bottom)), 20px);
 
     display: none;
 
