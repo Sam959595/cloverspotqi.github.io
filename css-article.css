@@ -58,7 +58,7 @@ article p {
 article .a:first-letter {
     -webkit-initial-letter: 2;
 
-    margin-right: .6em;
+    margin-right: 10px;
 
     font-weight: 700
 }
@@ -108,8 +108,6 @@ article code {
 /* n */
 
 section.n {
-    opacity: .8;
-
     margin: calc(30px + env(safe-area-inset-top)) 25px 2cm;
 
     display: flex;
