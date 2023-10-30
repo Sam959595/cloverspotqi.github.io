@@ -1,3 +1,19 @@
+/* n */
+
+section.n {
+    margin: calc(30px + env(safe-area-inset-top)) 25px 2cm;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 3rem
+}
+
+section.n a {
+    font: 600 13px system-ui;
+
+    color: var(--col-h)
+}
+
 /* article */
 
 article {
@@ -5,7 +21,7 @@ article {
 }
 
 article h1 {
-    margin: 30px 25px 15px;
+    margin-inline: 25px;
 
     word-break: break-word;
     font: 700 extra-condensed 38px/1 system-ui
@@ -24,7 +40,7 @@ article h3 {
 }
 
 article address {
-    /* margin: 2cm 25px 30px; */
+    margin: 2cm 25px 30px;
 
     font: 500 14px system-ui
 }
@@ -65,6 +81,7 @@ article .a:first-letter {
 
 article :is(p, figcaption) a {
     -webkit-text-decoration: underline;
+    text-decoration-skip: none;
     text-underline-offset: 2px;
     text-decoration-thickness: 1px
 }
@@ -103,22 +120,6 @@ article code {
 
     background-color: #88888840;
     color: color-mix(in srgb, currentcolor, transparent 30%)
-}
-
-/* n */
-
-section.n {
-    margin: calc(30px + env(safe-area-inset-top)) 25px 2cm;
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem 3rem
-}
-
-section.n a {
-    font: 600 13px system-ui;
-
-    color: var(--col-h)
 }
 
 /* a */
