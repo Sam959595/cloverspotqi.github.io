@@ -180,9 +180,9 @@ section.m {
     color: var(--col-h)
 }
 
-/* s */
+/* p */
 
-section.s {
+section.p {
     position: fixed;
     inset: 0;
 
