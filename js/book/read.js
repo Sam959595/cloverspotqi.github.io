@@ -1,9 +1,5 @@
 // tab nav
-$('section.p div:first-child')[0].addEventListener('dblclick', () => {
-    $('section.n')[0].style = 'pointer-events: auto; opacity: 1'
-})
-
-$('section.p div:last-child')[0].addEventListener('dblclick', () => {
+document.addEventListener('dblclick', () => {
     $('section.e')[0].style = 'pointer-events: auto; opacity: 1'
 })
 
