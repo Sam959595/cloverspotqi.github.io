@@ -86,50 +86,6 @@ section.t.j h6 {
     line-height: 1.3
 }
 
-/* background-color */
-
-body.f {
-    background-color: var(--col-1)
-}
-
-body.i {
-    background-color: var(--col-2)
-}
-
-body.d {
-    background-color: var(--col-3)
-}
-
-body.c {
-    background-color: var(--col-4)
-}
-
-body.b {
-    background-color: var(--col-5)
-}
-
-/* color */
-
-body.f section.t {
-    color: var(--col-11)
-}
-
-body.i section.t {
-    color: var(--col-22)
-}
-
-body.d section.t {
-    color: var(--col-33)
-}
-
-body.c section.t {
-    color: var(--col-44)
-}
-
-body.b section.t {
-    color: var(--col-55)
-}
-
 /* d */
 
 section.d {
@@ -190,6 +146,46 @@ section.p {
     grid-auto-flow: column
 }
 
+/* e */
+
+section.e {
+    pointer-events: none;
+    opacity: 0;
+
+    position: fixed;
+    inset: auto 0 0;
+
+    border-top: 2px solid #88888810;
+
+    padding: 20px calc(20px + env(safe-area-inset-right)) calc(20px + env(safe-area-inset-bottom));
+
+    display: grid;
+    grid: repeat(3, 1fr)/repeat(2, 1fr);
+    gap: 10px;
+
+    background-color: inherit;
+
+    transition: opacity .2s
+}
+
+section.e select {
+    height: 50px;
+
+    border-radius: 15px;
+
+    text-align-last: center;
+    font: 500 17px system-ui;
+
+    background-color: color-mix(in srgb, var(--col-h), transparent 95%);
+    color: var(--col-h);
+
+    transition: opacity .4s
+}
+
+section.e select:focus {
+    opacity: .4
+}
+
 /* n */
 
 section.n {
@@ -203,7 +199,7 @@ section.n {
 
     background-color: inherit;
 
-    transition: opacity .4s
+    transition: opacity .2s
 }
 
 section.n ul {
@@ -230,7 +226,7 @@ section.n h1 {
 }
 
 section.n .a {
-    opacity: .5
+    opacity: .2
 }
 
 section.n span {
@@ -239,44 +235,48 @@ section.n span {
     font-size: 17px
 }
 
-/* e */
+/* background-color */
 
-section.e {
-    pointer-events: none;
-    opacity: 0;
-
-    position: fixed;
-    inset: auto 0 0;
-
-    border-top: 2px solid #88888810;
-
-    padding: 20px calc(20px + env(safe-area-inset-right)) calc(20px + env(safe-area-inset-bottom));
-
-    display: grid;
-    grid: repeat(3, 1fr)/repeat(2, 1fr);
-    gap: 10px;
-
-    background-color: inherit;
-
-    transition: opacity .4s
+body.f {
+    background-color: var(--col-1)
 }
 
-section.e select {
-    height: 50px;
-
-    border-radius: 15px;
-
-    text-align-last: center;
-    font: 500 17px system-ui;
-
-    background-color: color-mix(in srgb, var(--col-h), transparent 95%);
-    color: var(--col-h);
-
-    transition: opacity .4s
+body.i {
+    background-color: var(--col-2)
 }
 
-section.e select:focus {
-    opacity: .4
+body.d {
+    background-color: var(--col-3)
+}
+
+body.c {
+    background-color: var(--col-4)
+}
+
+body.b {
+    background-color: var(--col-5)
+}
+
+/* color */
+
+body.f section.t h6 {
+    color: var(--col-11)
+}
+
+body.i section.t h6 {
+    color: var(--col-22)
+}
+
+body.d section.t h6 {
+    color: var(--col-33)
+}
+
+body.c section.t h6 {
+    color: var(--col-44)
+}
+
+body.b section.t h6 {
+    color: var(--col-55)
 }
 
 @media (prefers-color-scheme: light) {
