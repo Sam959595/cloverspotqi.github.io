@@ -27,7 +27,7 @@ section.t h6 {
     font: 20px/1.7 system-ui;
     letter-spacing: .2px;
 
-    color: var(--col-x)
+    color: var(--col-hx)
 }
 
 section.t u {
@@ -145,9 +145,13 @@ section.e {
 
     margin: 0 35px max(calc(15px + env(safe-area-inset-bottom)), 15px);
 
+    border-radius: 29px;
+
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+
+    background-color: inherit;
 
     transition: opacity .4s
 }
@@ -162,14 +166,14 @@ section.e select {
     text-align-last: center;
     font: 700 15px system-ui;
 
-    background-color: #f2f2f2;
+    background-color: var(--col-c);
     color: var(--col-h);
 
-    transition: background-color .4s
+    transition: opacity .4s
 }
 
 section.e select:focus {
-    background-color: #dcdcdc
+    opacity: .4
 }
 
 /* n */
@@ -283,18 +287,19 @@ body.b section.t h6 {
 @media (prefers-color-scheme: light) {
     :root {
         --col-b: white;
-        --col-h: black;
+        --col-h: #111;
         --col-1: #eeeded;
         --col-2: #fffaf0;
         --col-3: #d2ddff;
         --col-4: #f4e9d4;
         --col-5: #e2dbcf;
-        --col-x: #1e1e1e;
+        --col-hx: #222;
         --col-1x: #111;
         --col-2x: #211700;
         --col-3x: #181a1d;
         --col-4x: #222;
         --col-5x: #111;
+        --col-c: #00000010;
     }
 }
 
@@ -307,11 +312,12 @@ body.b section.t h6 {
         --col-3: #53545d;
         --col-4: #1a1919;
         --col-5: #32302e;
-        --col-x: #bbb;
+        --col-hx: #bbb;
         --col-1x: #f2f2f0;
         --col-2x: white;
         --col-3x: #fcfcff;
         --col-4x: #bab8b3;
         --col-5x: #fffffe;
+        --col-c: #ffffff10;
     }
 }
