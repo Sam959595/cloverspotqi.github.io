@@ -184,19 +184,6 @@ section.n .s img {
     scroll-snap-align: start
 }
 
-/* k */
-
-section.k {
-    opacity: .9;
-
-    position: fixed;
-    inset: 0 0 auto;
-
-    height: env(safe-area-inset-top);
-
-    background-color: inherit
-}
-
 /* s */
 
 section.s {
@@ -219,6 +206,19 @@ section.s h1 {
     font-size: 14px;
 
     color: var(--col-h)
+}
+
+/* k */
+
+section.k {
+    opacity: .9;
+
+    position: fixed;
+    inset: 0 0 auto;
+
+    height: env(safe-area-inset-top);
+
+    background-color: inherit
 }
 
 @media (prefers-color-scheme: light) {
