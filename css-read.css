@@ -143,35 +143,33 @@ section.e {
     position: fixed;
     inset: auto 0 0;
 
-    border-top: 2px solid #88888810;
+    margin: 0 35px max(calc(15px + env(safe-area-inset-bottom)), 15px);
 
-    padding: 20px calc(20px + env(safe-area-inset-right)) calc(20px + env(safe-area-inset-bottom));
-
-    display: grid;
-    grid: repeat(3, 1fr)/repeat(2, 1fr);
-    gap: 10px;
-
-    background-color: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 
     transition: opacity .4s
 }
 
 section.e select {
-    height: 50px;
+    height: 56px;
 
-    border-radius: 15px;
+    border-radius: 25px;
+
+    flex-grow: 1;
 
     text-align-last: center;
-    font: 500 17px system-ui;
+    font: 700 15px system-ui;
 
-    background-color: color-mix(in srgb, var(--col-h), transparent 95%);
+    background-color: #f2f2f2;
     color: var(--col-h);
 
-    transition: opacity .4s
+    transition: background-color .4s
 }
 
 section.e select:focus {
-    opacity: .4
+    background-color: #dcdcdc
 }
 
 /* n */
