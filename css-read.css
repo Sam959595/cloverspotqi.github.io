@@ -2,10 +2,14 @@ html {
     scroll-behavior: smooth
 }
 
+body {
+    margin: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom)
+}
+
 /* t */
 
 section.t {
-    margin: 35px calc(env(safe-area-inset-right) + 35px) 4cm;
+    margin: 35px;
 
     color: var(--col-00)
 }
@@ -23,7 +27,7 @@ section.t h6:first-letter {
 }
 
 section.t h6 {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 
     text-align: justify;
     font: 20px/1.7 system-ui;
@@ -37,13 +41,13 @@ section.t u {
     text-decoration-thickness: 2px
 }
 
-/* padding */
+/* t, margin-inline */
 
 section.t.w {
-    margin-inline: calc(env(safe-area-inset-right) + 20px)
+    margin-inline: 20px
 }
 
-/* font */
+/* t, font-family */
 
 section.t.a>* {
     font-size-adjust: .5;
@@ -58,7 +62,7 @@ section.t.u>* {
     font-family: seravek
 }
 
-/* text */
+/* t, font-size */
 
 section.t.y>* {
     font-size: 24px
@@ -72,7 +76,7 @@ section.t.r>* {
     font-size: 18px
 }
 
-/* interval */
+/* t, line-height */
 
 section.t.f h6 {
     line-height: 1.5
@@ -82,7 +86,7 @@ section.t.j h6 {
     line-height: 1.3
 }
 
-/* background */
+/* background-color */
 
 body.f {
     background-color: var(--col-1)
@@ -104,7 +108,7 @@ body.b {
     background-color: var(--col-5)
 }
 
-/* text color */
+/* color */
 
 body.f section.t {
     color: var(--col-11)
@@ -124,6 +128,24 @@ body.c section.t {
 
 body.b section.t {
     color: var(--col-55)
+}
+
+/* d */
+
+section.d {
+    margin: 35px
+}
+
+section.d h2 {
+    opacity: .3;
+
+    margin-bottom: 5px;
+
+    font: 500 18px system-ui
+}
+
+section.d h1 {
+    font: 500 18px system-ui
 }
 
 /* k */
@@ -155,7 +177,65 @@ section.m {
     font-size: 15px;
 
     background-color: inherit;
-    color: var(--col-0)
+    color: var(--col-h)
+}
+
+/* s */
+
+section.s {
+    position: fixed;
+    inset: 0;
+
+    display: grid;
+    grid-auto-flow: column
+}
+
+/* n */
+
+section.n {
+    pointer-events: none;
+    opacity: 0;
+
+    position: fixed;
+    inset: 0;
+
+    overflow-y: scroll;
+
+    background-color: inherit;
+
+    transition: opacity .4s
+}
+
+section.n ul {
+    margin: calc(30px + env(safe-area-inset-top)) env(safe-area-inset-right) calc(20px + env(safe-area-inset-bottom)) calc(30px + env(safe-area-inset-left));
+
+    display: grid
+}
+
+section.n li {
+    padding: 25px 30px 25px 0;
+
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px
+}
+
+section.n li+li {
+    border-top: .5px solid color-mix(in srgb, var(--col-h), transparent 90%)
+}
+
+section.n h1 {
+    font: 500 18px system-ui
+}
+
+section.n .a {
+    opacity: .5
+}
+
+section.n span {
+    opacity: .2;
+
+    font: 18px system-ui
 }
 
 /* e */
@@ -188,8 +268,8 @@ section.e select {
     text-align-last: center;
     font: 500 17px system-ui;
 
-    background-color: var(--col-a);
-    color: var(--col-0);
+    background-color: color-mix(in srgb, var(--col-h), transparent 95%);
+    color: var(--col-h);
 
     transition: opacity .4s
 }
@@ -201,7 +281,7 @@ section.e select:focus {
 @media (prefers-color-scheme: light) {
     :root {
         --col-b: white;
-        --col-0: black;
+        --col-h: black;
         --col-1: #eeeded;
         --col-2: #fffaf0;
         --col-3: #d2ddff;
@@ -213,14 +293,13 @@ section.e select:focus {
         --col-33: #181a1d;
         --col-44: #222;
         --col-55: #111;
-        --col-a: #00000010;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --col-b: black;
-        --col-0: white;
+        --col-h: white;
         --col-1: #1c1c1e;
         --col-2: #2c2c31;
         --col-3: #53545d;
@@ -232,6 +311,5 @@ section.e select:focus {
         --col-33: #fcfcff;
         --col-44: #bab8b3;
         --col-55: #fffffe;
-        --col-a: #ffffff10;
     }
 }
