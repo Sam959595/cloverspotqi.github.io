@@ -31,9 +31,6 @@ section.t h6 {
 }
 
 section.t u {
-    z-index: 1;
-    position: relative;
-
     -webkit-text-decoration: underline dotted #ffa333;
     text-decoration-skip: none;
     text-underline-offset: 2px;
@@ -123,23 +120,12 @@ section.m {
     color: var(--col-h)
 }
 
-/* p */
-
-section.p {
-    position: fixed;
-    inset: 0;
-
-    display: grid;
-    grid-auto-flow: column
-}
-
 /* e */
 
 section.e {
     pointer-events: none;
     opacity: 0;
 
-    z-index: 1;
     position: fixed;
     inset: auto 0 0;
 
@@ -169,57 +155,7 @@ section.e select {
 }
 
 section.e select:focus {
-    color: color-mix(in srgb, currentcolor, transparent 70%)
-}
-
-/* n */
-
-section.n {
-    pointer-events: none;
-    opacity: 0;
-
-    z-index: 1;
-    position: fixed;
-    inset: 0;
-
-    overflow-y: scroll;
-
-    background-color: inherit;
-
-    transition: opacity .2s
-}
-
-section.n ul {
-    margin: calc(35px + env(safe-area-inset-top)) env(safe-area-inset-right) calc(35px + env(safe-area-inset-bottom)) calc(35px + env(safe-area-inset-left));
-
-    display: grid
-}
-
-section.n li {
-    padding: 25px 35px 25px 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    column-gap: 30px
-}
-
-section.n li+li {
-    border-top: 2px solid #88888810
-}
-
-section.n h1 {
-    font: 500 17px system-ui
-}
-
-section.n .a {
-    opacity: .3
-}
-
-section.n span {
-    opacity: .3;
-
-    font-size: 17px
+    color: color-mix(in srgb, var(--col-b), transparent 70%)
 }
 
 /* k */
@@ -227,7 +163,6 @@ section.n span {
 section.k {
     opacity: .9;
 
-    z-index: 1;
     position: fixed;
     inset: 0 0 auto;
 
