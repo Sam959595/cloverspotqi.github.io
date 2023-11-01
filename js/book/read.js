@@ -11,20 +11,9 @@ window.addEventListener('touchmove', () => {
     $('section.e')[0].removeAttribute('style')
 })
 
-// margin-inline
-window.addEventListener('change', () => {
-    let vv = $('section.e select:nth-child(1)').val(), nn = $('section.t')[0];
-
-    if (vv == 1) {
-        nn.classList.remove('w')
-    } else if (vv == 2) {
-        nn.classList.add('w')
-    }
-})
-
 // line-height
 window.addEventListener('change', () => {
-    let vv = $('section.e select:nth-child(2)').val(), nn = $('section.t')[0];
+    let vv = $('section.e select:nth-child(1)').val(), nn = $('section.t')[0];
 
     if (vv == 1) {
         nn.classList.remove('f', 'j')
@@ -34,6 +23,17 @@ window.addEventListener('change', () => {
     } else if (vv == 3) {
         nn.classList.add('j')
         nn.classList.remove('f')
+    }
+})
+
+// margin-inline
+window.addEventListener('change', () => {
+    let vv = $('section.e select:nth-child(2)').val(), nn = $('section.t')[0];
+
+    if (vv == 1) {
+        nn.classList.remove('w')
+    } else if (vv == 2) {
+        nn.classList.add('w')
     }
 })
 
