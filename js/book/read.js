@@ -4,7 +4,7 @@ $('section.p div:first-child')[0].addEventListener('dblclick', () => {
 })
 
 $('section.p div:last-child')[0].addEventListener('dblclick', () => {
-    $('section.e')[0].style = 'pointer-events: auto; opacity: 1';
+    $('section.e')[0].style = 'pointer-events: auto; opacity: 1'
 })
 
 window.addEventListener('touchmove', () => {
@@ -93,7 +93,7 @@ window.addEventListener('change', () => {
 })
 
 // notes
-document.querySelectorAll('u').forEach(x => {
+document.querySelectorAll('section.t u').forEach(x => {
     x.addEventListener('click', e => {
         document.querySelectorAll('section.m').forEach(x => {
             if (x.id === e.target.id) {
@@ -115,27 +115,3 @@ document.querySelectorAll('u').forEach(x => {
         })
     })
 })
-
-// note
-window.onload = () => {
-    setTimeout(() => {
-        window.addEventListener('touchmove', e => {
-            e.preventDefault()
-        })
-        $('section.b')[0].style = 'visibility: visible; transform: translateY(0)'
-    }, 5000);
-
-    $('section.b .s').click(() => {
-        // document.documentElement.removeAttribute('style');
-        // document.body.style = '';
-        $('section.b')[0].style.pointerEvents = 'none';
-        $('section.b')[0].style.transform = '';
-        $('section.b .s')[0].style.opacity = '.3';
-
-        setTimeout(() => {
-            $('section.b')[0].removeAttribute('style');
-            $('section.b .s')[0].removeAttribute('style');
-            $('section.b')[0].remove()
-        }, 2000)
-    })
-}
