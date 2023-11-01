@@ -1,6 +1,10 @@
 // tab nav
-document.addEventListener('dblclick', () => {
-    $('section.e')[0].style = 'pointer-events: auto; opacity: 1'
+$('section.s div:first-child')[0].addEventListener('dblclick', () => {
+    $('section.n')[0].style = 'pointer-events: auto; opacity: 1'
+})
+
+$('section.s div:last-child')[0].addEventListener('dblclick', () => {
+    $('section.e')[0].style = 'pointer-events: auto; opacity: 1';
 })
 
 window.addEventListener('touchmove', () => {
