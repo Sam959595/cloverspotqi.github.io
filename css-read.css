@@ -207,13 +207,13 @@ section.n {
 }
 
 section.n ul {
-    margin: calc(30px + env(safe-area-inset-top)) env(safe-area-inset-right) calc(20px + env(safe-area-inset-bottom)) calc(30px + env(safe-area-inset-left));
+    margin: calc(35px + env(safe-area-inset-top)) env(safe-area-inset-right) calc(35px + env(safe-area-inset-bottom)) calc(35px + env(safe-area-inset-left));
 
     display: grid
 }
 
 section.n li {
-    padding: 25px 30px 25px 0;
+    padding: 25px 35px 25px 0;
 
     display: flex;
     align-items: center;
