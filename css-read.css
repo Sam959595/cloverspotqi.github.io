@@ -103,19 +103,6 @@ section.d h1 {
     font: 500 18px system-ui
 }
 
-/* k */
-
-section.k {
-    opacity: .9;
-
-    position: fixed;
-    inset: 0 0 auto;
-
-    height: env(safe-area-inset-top);
-
-    background-color: inherit
-}
-
 /* m */
 
 section.m {
@@ -234,6 +221,20 @@ section.n span {
     opacity: .2;
 
     font-size: 17px
+}
+
+/* k */
+
+section.k {
+    opacity: .9;
+
+    z-index: 1;
+    position: fixed;
+    inset: 0 0 auto;
+
+    height: env(safe-area-inset-top);
+
+    background-color: inherit
 }
 
 /* background-color */
