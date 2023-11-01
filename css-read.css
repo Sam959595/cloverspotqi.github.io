@@ -2,14 +2,10 @@ html {
     scroll-behavior: smooth
 }
 
-body {
-    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom)
-}
-
 /* t */
 
 section.t {
-    margin: 35px
+    margin: calc(35px + env(safe-area-inset-top)) 35px 35px
 }
 
 section.t h5 {
@@ -25,7 +21,7 @@ section.t h6:first-letter {
 }
 
 section.t h6 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     text-align: justify;
     font: 20px/1.7 system-ui;
@@ -89,13 +85,13 @@ section.t.j h6 {
 /* d */
 
 section.d {
-    margin: 35px
+    margin: 35px 35px calc(35px + env(safe-area-inset-bottom))
 }
 
 section.d h2 {
     opacity: .3;
 
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 
     font: 500 18px system-ui
 }
@@ -140,7 +136,9 @@ section.m {
 
 section.p {
     position: fixed;
-    inset: 0;
+    inset: auto 0 0;
+
+    height: calc(100vh - 70%);
 
     display: grid;
     grid-auto-flow: column
