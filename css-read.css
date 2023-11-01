@@ -9,9 +9,7 @@ body {
 /* t */
 
 section.t {
-    margin: 35px;
-
-    color: var(--col-00)
+    margin: 35px
 }
 
 section.t h5 {
@@ -31,7 +29,9 @@ section.t h6 {
 
     text-align: justify;
     font: 20px/1.7 system-ui;
-    letter-spacing: .2px
+    letter-spacing: .2px;
+
+    color: var(--col-x)
 }
 
 section.t u {
@@ -260,23 +260,23 @@ body.b {
 /* color */
 
 body.f section.t h6 {
-    color: var(--col-11)
+    color: var(--col-1x)
 }
 
 body.i section.t h6 {
-    color: var(--col-22)
+    color: var(--col-2x)
 }
 
 body.d section.t h6 {
-    color: var(--col-33)
+    color: var(--col-3x)
 }
 
 body.c section.t h6 {
-    color: var(--col-44)
+    color: var(--col-4x)
 }
 
 body.b section.t h6 {
-    color: var(--col-55)
+    color: var(--col-5x)
 }
 
 @media (prefers-color-scheme: light) {
@@ -288,12 +288,12 @@ body.b section.t h6 {
         --col-3: #d2ddff;
         --col-4: #f4e9d4;
         --col-5: #e2dbcf;
-        --col-00: #1e1e1e;
-        --col-11: #111;
-        --col-22: #211700;
-        --col-33: #181a1d;
-        --col-44: #222;
-        --col-55: #111;
+        --col-x: #1e1e1e;
+        --col-1x: #111;
+        --col-2x: #211700;
+        --col-3x: #181a1d;
+        --col-4x: #222;
+        --col-5x: #111;
     }
 }
 
@@ -306,11 +306,11 @@ body.b section.t h6 {
         --col-3: #53545d;
         --col-4: #1a1919;
         --col-5: #32302e;
-        --col-00: #bbb;
-        --col-11: #f2f2f0;
-        --col-22: white;
-        --col-33: #fcfcff;
-        --col-44: #bab8b3;
-        --col-55: #fffffe;
+        --col-x: #bbb;
+        --col-1x: #f2f2f0;
+        --col-2x: white;
+        --col-3x: #fcfcff;
+        --col-4x: #bab8b3;
+        --col-5x: #fffffe;
     }
 }
