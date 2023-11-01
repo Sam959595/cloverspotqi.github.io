@@ -165,11 +165,11 @@ section.e select {
     background-color: var(--col-h);
     color: var(--col-b);
 
-    transition: opacity .4s
+    transition: color .4s
 }
 
 section.e select:focus {
-    opacity: .4
+    color: color-mix(in srgb, currentcolor, transparent 70%)
 }
 
 /* n */
