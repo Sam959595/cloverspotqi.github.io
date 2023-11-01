@@ -83,8 +83,7 @@ section.s h6 u {
 /* n */
 
 section.n ul {
-    display: grid;
-    grid-auto-flow: row
+    display: grid
 }
 
 section.n .r {
@@ -257,30 +256,6 @@ section.k {
     height: env(safe-area-inset-top);
 
     background-color: var(--col-b)
-}
-
-/* l */
-
-section.l {
-    pointer-events: none;
-    opacity: 0;
-
-    position: absolute;
-    inset: 0;
-
-    height: 100vh;
-
-    display: flex;
-
-    background-color: var(--col-b);
-
-    transition: opacity .2s
-}
-
-section.l img {
-    margin: auto;
-
-    width: 30%
 }
 
 @media (prefers-color-scheme: light) {
