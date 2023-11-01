@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    margin: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom)
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom)
 }
 
 /* t */
@@ -216,8 +216,9 @@ section.n li {
     padding: 25px 30px 25px 0;
 
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    column-gap: 10px
+    column-gap: 30px
 }
 
 section.n li+li {
@@ -225,7 +226,7 @@ section.n li+li {
 }
 
 section.n h1 {
-    font: 500 18px system-ui
+    font: 500 17px system-ui
 }
 
 section.n .a {
@@ -235,7 +236,7 @@ section.n .a {
 section.n span {
     opacity: .2;
 
-    font: 18px system-ui
+    font-size: 17px
 }
 
 /* e */
