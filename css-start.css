@@ -157,9 +157,11 @@ section.n .a {
     filter: none
 }
 
-section.n .t img {
-    margin-inline: 20px;
+section.n .t {
+    margin-inline: 20px
+}
 
+section.n :is(.t, .s) img {
     border-radius: 12px
 }
 
@@ -179,8 +181,6 @@ section.n .s {
 }
 
 section.n .s img {
-    border-radius: 12px;
-
     scroll-snap-align: start
 }
 
