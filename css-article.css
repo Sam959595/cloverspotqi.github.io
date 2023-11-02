@@ -1,15 +1,16 @@
 /* n */
 
 section.n {
-    margin: calc(30px + env(safe-area-inset-top)) 25px 2cm;
+    margin-block: calc(30px + env(safe-area-inset-top)) 2cm;
 
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 2rem 3rem
 }
 
 section.n a {
-    font: 600 13px system-ui;
+    font: 600 14px system-ui;
 
     color: var(--col-h)
 }
@@ -34,20 +35,9 @@ article h2 {
 }
 
 article h3 {
-    margin: 30px 25px;
+    margin: 20px 25px;
 
-    font: 700 24px/1.3 system-ui
-}
-
-article address {
-    margin: 2cm 25px 30px;
-
-    text-align: center;
-    font: 500 14px system-ui
-}
-
-article u {
-    font-weight: 300
+    font: 700 19px/1.3 system-ui
 }
 
 [data-i] {
