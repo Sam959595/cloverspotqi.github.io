@@ -249,15 +249,15 @@ body.b section.t h6 {
         --col-b: white;
         --col-h: #111;
         --col-1: #eeeded;
-        --col-2: #fffaf0;
-        --col-3: #d2ddff;
-        --col-4: #f4e9d4;
+        --col-2: #fefcf5;
+        --col-3: #d3dbe9;
+        --col-4: #e2d5c2;
         --col-5: #e2dbcf;
         --col-hx: #222;
         --col-1x: #111;
         --col-2x: #211700;
-        --col-3x: #181a1d;
-        --col-4x: #222;
+        --col-3x: #2b2f36;
+        --col-4x: #2f2d26;
         --col-5x: #111;
     }
 }
