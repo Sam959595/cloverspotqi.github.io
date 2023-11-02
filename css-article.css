@@ -42,11 +42,8 @@ article h3 {
 article address {
     margin: 2cm 25px 30px;
 
+    text-align: center;
     font: 500 14px system-ui
-}
-
-article address a {
-    color: var(--col-h)
 }
 
 article u {
@@ -79,7 +76,7 @@ article .a:first-letter {
     font-weight: 700
 }
 
-article :is(p, figcaption) a {
+article a {
     -webkit-text-decoration: underline;
     text-decoration-skip: none;
     text-underline-offset: 2px;
