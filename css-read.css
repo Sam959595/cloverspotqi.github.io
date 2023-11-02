@@ -29,13 +29,14 @@ section.t h3 {
     opacity: .8;
 
     text-align: center;
-    font: italic 21px/1.6 system-ui
+    font: italic 19px/1.6 system-ui
 }
 
 section.t h4 {
     margin-block: 3rem;
 
     text-align: center;
+    word-spacing: 10px;
     font: 600 21px system-ui
 }
 
