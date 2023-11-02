@@ -139,19 +139,19 @@ section.d h1 {
 
 section.m {
     position: fixed;
-    inset: auto 0 0;
+    inset: calc(20px + env(safe-area-inset-bottom)) 20px auto;
 
-    border-top: 2px solid #88888810;
+    border-radius: 28px;
 
-    padding: 20px 35px max(calc(10px + env(safe-area-inset-bottom)), 20px);
+    padding: 10px 24px;
 
     display: none;
 
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
 
-    background-color: inherit;
-    color: var(--col-h)
+    background-color: var(--col-h);
+    color: var(--col-b)
 }
 
 /* e */
