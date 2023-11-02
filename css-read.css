@@ -13,7 +13,7 @@ section.t h1 {
 
     text-align: center;
     word-break: break-word;
-    font: 600 28px/1.2 system-ui
+    font: 700 28px/1.2 system-ui
 }
 
 section.t h2 {
@@ -44,7 +44,7 @@ section.t h5 {
     margin-block: 10rem 3rem;
 
     text-align: center;
-    font: 800 20px/1.7 system-ui
+    font: 700 20px/1.6 system-ui
 }
 
 section.t h6:first-letter {
