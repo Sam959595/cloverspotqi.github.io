@@ -158,9 +158,7 @@ section.e {
     opacity: 0;
 
     position: fixed;
-    inset: auto 0 0;
-
-    margin: 0 20px max(calc(15px + env(safe-area-inset-bottom)), 15px);
+    inset: auto 20px max(calc(15px + env(safe-area-inset-bottom)), 15px);
 
     display: flex;
     flex-wrap: wrap;
