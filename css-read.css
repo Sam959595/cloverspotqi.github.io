@@ -116,20 +116,23 @@ section.t.j h6 {
 /* d */
 
 section.d {
-    margin: 35px 35px calc(35px + env(safe-area-inset-bottom));
-    padding-top: 35px;
+    margin: 35px 20px calc(35px + env(safe-area-inset-bottom));
 
-    border-top: 2px solid #88888810
+    border-radius: 28px;
+
+    padding: 10px 24px;
+
+    background-color: #88888810
 }
 
 section.d h2 {
     opacity: .3;
 
-    font: 500 17px system-ui
+    font: 700 15px system-ui
 }
 
 section.d h1 {
-    font: 500 17px system-ui
+    font: 700 15px system-ui
 }
 
 /* m */
