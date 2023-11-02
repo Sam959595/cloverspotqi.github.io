@@ -8,12 +8,42 @@ section.t {
     margin: calc(35px + env(safe-area-inset-top)) 35px 35px
 }
 
+section.t h1 {
+    margin-top: 10rem;
+
+    text-align: center;
+    word-break: break-word;
+    font: 600 28px/1.2 "academy engraved let"
+}
+
+section.t h2 {
+    opacity: .5;
+
+    margin-block: 2rem 25rem;
+
+    text-align: center;
+    font: 500 21px ui-serif
+}
+
+section.t h3 {
+    opacity: .8;
+
+    text-align: center;
+    font: italic 19px/1.6 george
+}
+
+section.t h4 {
+    margin-block: 3rem;
+
+    text-align: center;
+    font: 19px george
+}
+
 section.t h5 {
     margin-block: 10rem 3rem;
 
     text-align: center;
-    font: 800 20px/1.7 system-ui;
-    letter-spacing: .04rem
+    font: 800 20px/1.7 system-ui
 }
 
 section.t h6:first-letter {
