@@ -91,15 +91,15 @@ section.t.u>* {
 
 /* t, font-size */
 
-section.t.y>* {
+section.t.y h6 {
     font-size: 24px
 }
 
-section.t.s>* {
+section.t.s h6 {
     font-size: 22px
 }
 
-section.t.r>* {
+section.t.r h6 {
     font-size: 18px
 }
 
