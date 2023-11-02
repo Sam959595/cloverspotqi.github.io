@@ -62,7 +62,7 @@ section.t h6 {
 }
 
 section.t u {
-    -webkit-text-decoration: underline dotted #ffa333;
+    -webkit-text-decoration: underline dotted #fb484d;
     text-decoration-skip: none;
     text-underline-offset: 2px;
     text-decoration-thickness: 2px
