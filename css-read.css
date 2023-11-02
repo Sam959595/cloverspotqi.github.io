@@ -44,7 +44,7 @@ section.t h5 {
     margin-block: 10rem 3rem;
 
     text-align: center;
-    font: 700 20px/1.6 system-ui
+    font: 700 21px/1.6 system-ui
 }
 
 section.t h6:first-letter {
@@ -122,7 +122,7 @@ section.d {
 
     padding: 10px 24px;
 
-    background-color: #88888810
+    background-color: #88888820
 }
 
 section.d h2 {
