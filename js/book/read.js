@@ -7,24 +7,9 @@ window.addEventListener('touchmove', () => {
     $('section.e')[0].removeAttribute('style')
 })
 
-// line-height
-window.addEventListener('change', () => {
-    let vv = $('section.e select:nth-child(1)').val(), nn = $('section.t')[0];
-
-    if (vv == 1) {
-        nn.classList.remove('f', 'j')
-    } else if (vv == 2) {
-        nn.classList.add('f')
-        nn.classList.remove('j')
-    } else if (vv == 3) {
-        nn.classList.add('j')
-        nn.classList.remove('f')
-    }
-})
-
 // margin-inline
 window.addEventListener('change', () => {
-    let vv = $('section.e select:nth-child(2)').val(), nn = $('section.t')[0];
+    let vv = $('section.e select:nth-child(1)').val(), nn = $('section.t')[0];
 
     if (vv == 1) {
         nn.classList.remove('w')
@@ -35,7 +20,7 @@ window.addEventListener('change', () => {
 
 // font-size
 window.addEventListener('change', () => {
-    let vv = $('section.e select:nth-child(3)').val(), nn = $('section.t')[0];
+    let vv = $('section.e select:nth-child(2)').val(), nn = $('section.t')[0];
 
     if (vv == 1) {
         nn.classList.add('y')
@@ -53,7 +38,7 @@ window.addEventListener('change', () => {
 
 // background-color
 window.addEventListener('change', () => {
-    let vv = $('section.e select:nth-child(4)').val(), nn = $('body');
+    let vv = $('section.e select:nth-child(3)').val(), nn = $('body');
 
     if (vv == 6) {
         nn.attr('class', 'b')
@@ -67,6 +52,21 @@ window.addEventListener('change', () => {
         nn.attr('class', 'f')
     } else if (vv == 1) {
         nn[0].removeAttribute('class')
+    }
+})
+
+// line-height
+window.addEventListener('change', () => {
+    let vv = $('section.e select:nth-child(4)').val(), nn = $('section.t')[0];
+
+    if (vv == 1) {
+        nn.classList.remove('f', 'j')
+    } else if (vv == 2) {
+        nn.classList.add('f')
+        nn.classList.remove('j')
+    } else if (vv == 3) {
+        nn.classList.add('j')
+        nn.classList.remove('f')
     }
 })
 
