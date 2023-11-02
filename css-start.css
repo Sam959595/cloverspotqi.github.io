@@ -188,7 +188,7 @@ section.n .s img {
 
 section.s {
     position: fixed;
-    inset: auto auto max(25px, env(safe-area-inset-bottom)) 25px;
+    inset: auto auto calc(25px, env(safe-area-inset-bottom)) 25px;
 
     width: 44px;
     height: 44px;
