@@ -15,7 +15,8 @@ section.n {
 section.n h1 {
     margin: 20px;
 
-    font: 900 32px/1 system-ui
+    text-align: center;
+    font: 900 24px/1 system-ui
 }
 
 section.n h2 {
