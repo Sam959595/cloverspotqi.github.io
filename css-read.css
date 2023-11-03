@@ -116,7 +116,7 @@ section.t.j h6 {
 /* d */
 
 section.d {
-    margin: 20px 20px calc(20px + env(safe-area-inset-bottom));
+    margin: 20px 20px max(calc(15px + env(safe-area-inset-bottom)), 20px);
 
     border-radius: 28px;
 
