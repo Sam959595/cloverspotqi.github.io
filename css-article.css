@@ -69,8 +69,7 @@ article .a:first-letter {
 article a {
     -webkit-text-decoration: underline;
     text-decoration-skip: none;
-    text-underline-offset: 2px;
-    text-decoration-thickness: 1px
+    text-underline-offset: 2px
 }
 
 article figcaption {
