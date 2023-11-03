@@ -113,7 +113,7 @@ article code {
 
 section.a {
     position: fixed;
-    inset: auto 0 max(calc(15px + env(safe-area-inset-bottom)), 15px);
+    inset: auto 0 max(calc(15px + env(safe-area-inset-bottom)), 20px);
 
     display: flex;
     justify-content: center;
