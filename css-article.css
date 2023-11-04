@@ -1,12 +1,12 @@
 /* n */
 
 section.n {
-    margin-block: calc(30px + env(safe-area-inset-top)) 2cm;
+    margin: 2cm 25px;
 
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem 3rem
+    gap: 2rem
 }
 
 section.n a {
@@ -18,19 +18,21 @@ section.n a {
 /* article */
 
 article {
-    margin-bottom: calc(5cm + env(safe-area-inset-bottom))
+    margin-block: calc(25px + env(safe-area-inset-top)) calc(5cm + env(safe-area-inset-bottom))
 }
 
 article h1 {
     margin-inline: 25px;
 
     word-break: break-word;
+    text-align: center;
     font: 700 extra-condensed 38px/1 system-ui
 }
 
 article h2 {
     margin: 15px 25px;
 
+    text-align: center;
     font: 500 19px/1.3 system-ui
 }
 
