@@ -1,18 +1,35 @@
-* {
-	margin: 0;
-	padding: 0;
-
-	box-sizing: border-box;
-
-	-webkit-text-size-adjust: none;
-
-	font: 400 12px/1.3 system-ui;
-
-	-webkit-tap-highlight-color: transparent
+::-webkit-scrollbar {
+	display: none
 }
 
-*:not(input, textarea) {
-	-webkit-user-select: none
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0
+}
+
+body {
+	background-color: var(--col-b);
+
+	-webkit-user-select: none;
+	-webkit-text-size-adjust: none
+}
+
+ul {
+	list-style: none
+}
+
+img,
+video {
+	pointer-events: none;
+
+	display: block
 }
 
 a {
@@ -21,35 +38,9 @@ a {
 }
 
 a,
-strong,
-b,
-sup,
-sub,
-u,
-ins,
-del,
-i,
-s,
-mark,
-small,
-q,
-em,
-select,
 span,
-time,
-code {
-	font: inherit;
-	letter-spacing: inherit
-}
-
-a,
-u {
-	text-decoration: none
-}
-
-ul,
-ol {
-	list-style: none
+input {
+	-webkit-tap-highlight-color: transparent
 }
 
 input,
@@ -59,24 +50,63 @@ progress {
 	-webkit-appearance: none
 }
 
-input,
 button,
+input,
 select,
 textarea,
 hr {
 	border: none
 }
 
+button,
 input,
 select,
-textarea,
-button {
+textarea {
 	outline: none
 }
 
+select {
+	background: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+time,
+address,
+blockquote,
+textarea {
+	font: 400 12px/1.3 system-ui
+}
+
+a,
+u,
+b,
+strong,
+em,
+mark,
+code,
 sup,
-sub {
-	font-size: 9px
+sub,
+ins,
+del,
+i,
+s,
+q,
+small,
+select,
+span {
+	font: inherit;
+	letter-spacing: inherit
+}
+
+a,
+u {
+	text-decoration: none
 }
 
 b {
@@ -87,23 +117,12 @@ em {
 	font-style: italic
 }
 
-select {
-	background: none
-}
-
-img,
-video {
-	pointer-events: none;
-
-	display: block
-}
-
-body {
-	background-color: var(--col-b)
+sup,
+sub {
+	font-size: 9px
 }
 
 a,
-b,
 mark {
 	color: inherit
 }
@@ -114,10 +133,11 @@ h3,
 h4,
 h5,
 h6,
-table,
-textarea,
+span,
+time,
+address,
 blockquote,
-span {
+textarea {
 	color: var(--col-h)
 }
 
@@ -126,8 +146,4 @@ time,
 figcaption,
 address {
 	color: var(--col-p)
-}
-
-::-webkit-scrollbar {
-	display: none
 }
