@@ -5,6 +5,7 @@ html {
 /* n */
 
 section.n {
+    box-sizing: border-box;
     overflow-y: scroll;
 
     padding-block: env(safe-area-inset-top) env(safe-area-inset-bottom);
@@ -126,7 +127,7 @@ section.n .v img {
 section.n hr {
     margin-inline: 4px;
 
-    width: 2rem;
+    width: 24px;
 
     border-radius: 2px;
     border-top: 3px solid var(--col-c)
@@ -169,6 +170,7 @@ section.n :is(.t, .s) img {
 section.n .s {
     width: 100vw;
 
+    box-sizing: border-box;
     overflow-x: scroll;
 
     padding-inline: 20px;
