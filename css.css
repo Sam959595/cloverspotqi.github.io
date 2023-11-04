@@ -83,36 +83,12 @@ figcaption {
 }
 
 a,
-u,
-b,
-strong,
-em,
-mark,
-code,
-sup,
-sub,
-ins,
-del,
-i,
-s,
-q,
-small,
-select,
-span {
-	font: inherit
-}
-
-a,
 u {
 	text-decoration: none
 }
 
 b {
 	font-weight: 600
-}
-
-em {
-	font-style: italic
 }
 
 sup,
