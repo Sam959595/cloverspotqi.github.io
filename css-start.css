@@ -48,7 +48,7 @@ section.n .r {
 
     padding: 15px;
 
-    background-color: var(--col-t)
+    background-color: var(--col-k)
 }
 
 section.n .k {
@@ -231,7 +231,6 @@ section.k {
         --col-p: #afafb1;
         --col-c: #dfdfdf;
         --col-k: #f2f2f2;
-        --col-t: #f7f7f7;
     }
 }
 
@@ -242,6 +241,5 @@ section.k {
         --col-p: #77777b;
         --col-c: #2e2e2e;
         --col-k: #1a1a1c;
-        --col-t: #1a1a1c;
     }
 }
