@@ -99,7 +99,7 @@ section.n .f {
 section.n address {
     margin-top: 10px;
 
-    font-weight: 600
+    font: 600 13px system-ui
 }
 
 section.n address u {
