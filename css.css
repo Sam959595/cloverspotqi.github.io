@@ -38,7 +38,8 @@ a {
 
 a,
 span,
-input {
+input,
+select {
 	-webkit-tap-highlight-color: transparent
 }
 
