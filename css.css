@@ -117,8 +117,8 @@ textarea {
 
 p,
 time,
-figcaption,
-address {
+address,
+figcaption {
 	color: var(--col-p)
 }
 
