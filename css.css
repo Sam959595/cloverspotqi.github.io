@@ -9,9 +9,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-	margin: 0;
-	padding: 0
+h6,
+figure {
+	margin: 0
 }
 
 body {
@@ -22,6 +22,8 @@ body {
 }
 
 ul {
+	padding: 0;
+	
 	list-style: none
 }
 
@@ -79,7 +81,8 @@ span,
 time,
 address,
 blockquote,
-textarea {
+textarea,
+figcaption {
 	font: 400 12px/1.3 system-ui
 }
 
