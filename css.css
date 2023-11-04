@@ -1,7 +1,3 @@
-::-webkit-scrollbar {
-	display: none
-}
-
 body,
 h1,
 h2,
@@ -148,4 +144,8 @@ time,
 figcaption,
 address {
 	color: var(--col-p)
+}
+
+::-webkit-scrollbar {
+	display: none
 }
