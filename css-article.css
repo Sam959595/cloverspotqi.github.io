@@ -67,7 +67,7 @@ article .a:first-letter {
 }
 
 article a {
-    -webkit-text-decoration: underline;
+    text-decoration-line: underline;
     text-decoration-skip: none;
     text-underline-offset: 2px
 }
@@ -210,10 +210,6 @@ section.s li {
 
 section.s h1 {
     font-size: 15px
-}
-
-section.s span {
-    font-weight: 600
 }
 
 section.s p {
