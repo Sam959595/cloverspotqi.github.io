@@ -269,13 +269,13 @@ body.b section.t h6 {
     :root {
         --col-b: black;
         --col-h: white;
-        --col-1: #151515;
+        --col-1: #101010;
         --col-2: #2c2c31;
         --col-3: #53545d;
         --col-4: #1a1919;
         --col-5: #32302e;
         --col-hx: #bbb;
-        --col-1x: #ddd;
+        --col-1x: #77777b;
         --col-2x: white;
         --col-3x: #fcfcff;
         --col-4x: #bab8b3;
