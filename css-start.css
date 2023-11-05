@@ -191,7 +191,7 @@ section.n .s img {
 
 section.s {
     position: fixed;
-    inset: auto auto max(25px, env(safe-area-inset-bottom)) 25px;
+    inset: auto auto max(env(safe-area-inset-bottom), 25px) 25px;
 
     width: 45px;
     height: 45px;
