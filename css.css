@@ -26,8 +26,12 @@ ul {
 
 img,
 video {
-	pointer-events: none;
+	pointer-events: none
+}
 
+img,
+video,
+time {
 	display: block
 }
 
