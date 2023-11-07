@@ -74,7 +74,12 @@ section.n .k img {
 }
 
 section.n h3 {
-    height: 80px;
+    height: 82px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 
     word-break: break-word;
     font: 700 extra-condensed 20px/1 system-ui
@@ -97,7 +102,7 @@ section.n .f {
 }
 
 section.n time {
-    margin-top: 13px;
+    margin-top: 12px;
 
     font: 500 13px system-ui
 }
