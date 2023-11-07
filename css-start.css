@@ -74,7 +74,7 @@ section.n .k img {
 }
 
 section.n h3 {
-    height: 84px;
+    height: 80px;
 
     word-break: break-word;
     font: 700 extra-condensed 20px/1 system-ui
@@ -97,7 +97,7 @@ section.n .f {
 }
 
 section.n time {
-    margin-top: 10px;
+    margin-top: 13px;
 
     font: 500 13px system-ui
 }
