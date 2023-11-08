@@ -39,7 +39,8 @@ a {
 a,
 span,
 input,
-select {
+select,
+textarea {
 	-webkit-tap-highlight-color: transparent
 }
 
