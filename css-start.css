@@ -24,7 +24,7 @@ section.n h2 {
     margin: 20px;
 
     font-size: 15px;
-    color: var(--col-p)
+    color: var(--p)
 }
 
 section.n p {
@@ -48,7 +48,7 @@ section.n .r {
 
     padding: 15px;
 
-    background-color: var(--col-k)
+    background-color: var(--k)
 }
 
 section.n .k {
@@ -135,7 +135,7 @@ section.n hr {
     width: 24px;
 
     border-radius: 2px;
-    border-top: 3px solid var(--col-c)
+    border-top: 3px solid var(--c)
 }
 
 section.n .v div {
@@ -207,13 +207,13 @@ section.s {
     align-items: center;
     justify-content: center;
 
-    background-color: var(--col-k)
+    background-color: var(--k)
 }
 
 section.s h1 {
     font-size: 14px;
 
-    color: var(--col-h)
+    color: var(--h)
 }
 
 /* k */
@@ -231,20 +231,20 @@ section.k {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --col-b: white;
-        --col-h: black;
-        --col-p: #a3a3a4;
-        --col-c: #dfdfdf;
-        --col-k: #f2f2f2;
+        --b: white;
+        --h: black;
+        --p: #a3a3a4;
+        --c: #dfdfdf;
+        --k: #f2f2f2;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --col-b: #101010;
-        --col-h: white;
-        --col-p: #77777b;
-        --col-c: #2e2e2e;
-        --col-k: #1a1a1c;
+        --b: #101010;
+        --h: white;
+        --p: #77777b;
+        --c: #2e2e2e;
+        --k: #1a1a1c;
     }
 }
