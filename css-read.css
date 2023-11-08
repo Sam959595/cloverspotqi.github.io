@@ -58,7 +58,7 @@ section.t h6 {
     font: 20px/1.7 system-ui;
     letter-spacing: .2px;
 
-    color: var(--col-hx)
+    color: var(--col-h)
 }
 
 section.t u {
@@ -149,8 +149,8 @@ section.m {
     text-align: center;
     font: 700 14px/1.3 system-ui;
 
-    background-color: var(--col-h);
-    color: var(--col-b)
+    background-color: var(--h);
+    color: var(--b)
 }
 
 /* e */
@@ -180,14 +180,14 @@ section.e select {
     text-align-last: center;
     font: 700 15px system-ui;
 
-    background-color: var(--col-h);
-    color: var(--col-b);
+    background-color: var(--h);
+    color: var(--b);
 
     transition: color .4s
 }
 
 section.e select:focus {
-    color: color-mix(in srgb, var(--col-b), transparent 70%)
+    color: color-mix(in srgb, var(--b), transparent 70%)
 }
 
 /* k */
@@ -206,79 +206,79 @@ section.k {
 /* background-color */
 
 body.f {
-    background-color: var(--col-1)
+    background-color: var(--bac-1)
 }
 
 body.i {
-    background-color: var(--col-2)
+    background-color: var(--bac-2)
 }
 
 body.d {
-    background-color: var(--col-3)
+    background-color: var(--bac-3)
 }
 
 body.c {
-    background-color: var(--col-4)
+    background-color: var(--bac-4)
 }
 
 body.b {
-    background-color: var(--col-5)
+    background-color: var(--bac-5)
 }
 
 /* color */
 
 body.f section.t h6 {
-    color: var(--col-1x)
+    color: var(--col-1)
 }
 
 body.i section.t h6 {
-    color: var(--col-2x)
+    color: var(--col-2)
 }
 
 body.d section.t h6 {
-    color: var(--col-3x)
+    color: var(--col-3)
 }
 
 body.c section.t h6 {
-    color: var(--col-4x)
+    color: var(--col-4)
 }
 
 body.b section.t h6 {
-    color: var(--col-5x)
+    color: var(--col-5)
 }
 
 @media (prefers-color-scheme: light) {
     :root {
-        --col-b: white;
-        --col-h: #111;
-        --col-1: #eeeded;
-        --col-2: #fefcf5;
-        --col-3: #d3dbe9;
-        --col-4: #e2d5c2;
-        --col-5: #e2dbcf;
-        --col-hx: #222;
-        --col-1x: #111;
-        --col-2x: #211700;
-        --col-3x: #2b2f36;
-        --col-4x: #2f2d26;
-        --col-5x: #111;
+        --b: white;
+        --h: #111;
+        --bac-1: #eeeded;
+        --bac-2: #fefcf5;
+        --bac-3: #d3dbe9;
+        --bac-4: #e2d5c2;
+        --bac-5: #e2dbcf;
+        --col-h: #222;
+        --col-1: #111;
+        --col-2: #211700;
+        --col-3: #2b2f36;
+        --col-4: #2f2d26;
+        --col-5: #111;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --col-b: black;
-        --col-h: white;
-        --col-1: #101010;
-        --col-2: #2c2c31;
-        --col-3: #53545d;
-        --col-4: #1a1919;
-        --col-5: #32302e;
-        --col-hx: #bbb;
-        --col-1x: #ccc;
-        --col-2x: white;
-        --col-3x: #fcfcff;
-        --col-4x: #bab8b3;
-        --col-5x: #fffffe;
+        --b: black;
+        --h: white;
+        --bac-1: #101010;
+        --bac-2: #2c2c31;
+        --bac-3: #53545d;
+        --bac-4: #1a1919;
+        --bac-5: #32302e;
+        --col-h: #bbb;
+        --col-1: #ccc;
+        --col-2: white;
+        --col-3: #fcfcff;
+        --col-4: #bab8b3;
+        --col-5: #fffffe;
     }
 }
