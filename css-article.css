@@ -185,7 +185,7 @@ section.s textarea {
 
     padding: calc(25px + env(safe-area-inset-top)) 25px 25px;
 
-    font-size: 14px;
+    font-size: 15px;
 
     background: none
 }
@@ -204,7 +204,7 @@ section.s .c {
 }
 
 section.s .b {
-    margin: 25px 0 0 25px
+    margin: 25px 0 25px 25px
 }
 
 section.s .s {
@@ -217,7 +217,7 @@ section.s .s {
 }
 
 section.s h6 {
-    font-size: 14px
+    font-size: 15px
 }
 
 section.s b {
