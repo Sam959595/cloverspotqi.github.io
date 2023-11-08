@@ -179,13 +179,13 @@ section.s {
 }
 
 section.s textarea {
+    resize: none;
+    
     margin: calc(25px + env(safe-area-inset-top)) 25px 25px;
 
     width: -webkit-fill-available;
 
     padding: 0;
-
-    resize: none;
 
     font-size: 15px;
 
@@ -220,7 +220,7 @@ section.s h6 {
 }
 
 section.s b {
-    font-weight: 600
+    font-weight: 500
 }
 
 section.s .d {
