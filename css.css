@@ -26,12 +26,8 @@ ul {
 
 img,
 video {
-	pointer-events: none
-}
+	pointer-events: none;
 
-img,
-video,
-time {
 	display: block
 }
 
@@ -80,8 +76,6 @@ h4,
 h5,
 h6,
 p,
-span,
-time,
 address,
 blockquote,
 textarea,
@@ -111,7 +105,6 @@ textarea {
 }
 
 p,
-time,
 address,
 figcaption {
 	color: var(--p)
