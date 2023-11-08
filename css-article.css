@@ -1,99 +1,271 @@
-<body>
-    <section class="n">
-        <a href="#">⭐️ Favotive</a>
-        <a href="#">🕹️ Program Control</a>
-        <a href="#">❇️ CSS</a>
-        <a href="#">👤 Debbie Senesky</a>
-        <a href="html-start.html">🌀 Redesigning Design System</a>
-    </section>
+/* n */
 
-    <article>
-        <h1>Solving All CSS Layout Issues — any screen, any root font size, without JS</h1>
-        <h2>How to create a webpage that looks perfect on any device, no matter its screen width or the chosen root font size (no JS)</h2>
-        <figure>
-            <img width="428" height="300" data-i="https://images.unsplash.com/photo-1457327289196-f38b88d97147?auto=format&fit=crop&q=60&w=900&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDV8fHxlbnwwfHx8fHw%3D">
-            <figcaption><a href="https://www.thedrum.com/opinion/2023/09/19/netflix-cracks-down-password-sharing-its-ad-profiles-will-also-improve">Audience connection beyond the screen: the future of entertainment brand experiences</a> on <a href="https://www.thedrum.com/">The Drum</a></figcaption>
-        </figure>
-        <p class="a">Sometimes, we may encounter the ‘Objects are not valid as a React child. If you meant to render a collection of children, use an array instead’ error when we’re developing our React apps. Those insights were shared at Adobe Design Summit, the biennial, multi-day celebration of Adobe’s internal design culture. During the two-day virtual broadcast, we learned lessons from the bright and brilliant people who design and refine the Adobe tools and experiences that millions of people use <a href="html-read.html">every day</a>.</p>
-        <p>Every week, picks the top global campaigns from our Creative Works. You can submit your new work here.</p>
-        <p>You are sitting in the extreme Environment Microsystems Laboratory or the X Lab at Stanford University. And in this lab, we research tiny but tough electronics and materials for space exploration. To enable electronics to work on Venus, my group uses wide bandgap semiconductor materials.</p>
-        <blockquote><b>Debbie Senesky:</b> Venus is often called Earth's sister planet, but I would like to say that
-            it's Earth's evil twin because it actually has a very hellish environment. Surface temperatures are around
-            480 degrees Celsius. The surface pressures are roughly 90 times the pressure that we experience here on
-            Earth. And I imagine that it smells like rotten eggs and that's because of some of the sulfur compounds that
-            are present.
-        </blockquote>
-        <h3>How effective are tobacco warning labels?</h3>
-        <p>My name is <mark>Debbie Senesky</mark>, <code>ui-monospace</code> and I'm an <a href="#">Associate Professor</a> at Stanford University in the Aeronautics and <a href="#">Astronautics Department</a>.</p>
-    </article>
+section.n {
+    margin: calc(25px + env(safe-area-inset-top)) 25px 2cm;
 
-    <section class="a">
-        <span>
-            <div>
-                <img width="18" height="18" data-i="https://miro.medium.com/v2/resize:fill:48:48/1*gArZ1rwxj1U5hSVhi_pP8Q.jpeg">
-                <img width="18" height="18" data-i="https://miro.medium.com/v2/resize:fill:48:48/1*EetZyjDw-19wRRBzc6fSMA.png">
-                <img width="18" height="18" data-i="https://miro.medium.com/v2/resize:fill:48:48/1*_EOpN9iT5ReABD3LRaxrNg.jpeg">
-            </div>
-            <h6>18</h6>
-        </span>
-        <span>
-            <h5>👏</h5>
-            <h6>953</h6>
-        </span>
-        <span>
-            <h5>📌</h5>
-        </span>
-    </section>
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem
+}
 
-    <section class="s">
-        <textarea rows="1" placeholder="Sean Blaze"></textarea>
-        <ul class="a">
-            <li>
-                <div class="s">
-                    <div>
-                        <h1><b>seanblaze</b> venus is often called Earth's sister planet, but I would like to say
-                            that it's Earth's evil twin because it actually has a very hellish environment. Surface
-                            temperatures are around 480 degrees Celsius. The surface pressures are roughly 90 times the
-                            pressure that we experience here on Earth. And I imagine that it smells like rotten eggs and
-                            that's because of some of the sulfur compounds that are present</h1>
-                        <p><u>❤️</u> 97 likes • Reply</p>
-                    </div>
-                    <a href="#">
-                        <img width="25" height="25" data-i="https://miro.medium.com/v2/resize:fill:48:48/1*_EOpN9iT5ReABD3LRaxrNg.jpeg">
-                    </a>
-                </div>
-                <ul class="b">
-                    <li>
-                        <div class="s">
-                            <div>
-                                <h1><b>ghanblaze</b> the surface pressures are roughly 90 times the
-                                    pressure that we experience here on Earth. And I imagine that it smells like rotten eggs and
-                                    that's because of some of the sulfur compounds that are present</h1>
-                                <p><u>❤️</u> 97 likes • Reply</p>
-                            </div>
-                            <a href="#">
-                                <img width="25" height="25" data-i="https://miro.medium.com/v2/resize:fill:48:48/1*EetZyjDw-19wRRBzc6fSMA.png">
-                            </a>
-                        </div>
-                    </li>
-                    <span>Open 9 another comment</span>
-                </ul>
-            </li>
-            <li>
-                <div class="s">
-                    <div>
-                        <h1><b>nydrgggblaze</b> The surface pressures are roughly 90 times the
-                            pressure that we experience here on Earth. And I imagine that it smells like rotten eggs and
-                            that's because of some of the sulfur compounds that are present</h1>
-                        <p><u>❤️</u> 97 likes • Reply</p>
-                    </div>
-                    <a href="#">
-                        <img width="25" height="25" data-i="https://miro.medium.com/v2/resize:fill:48:48/1*EetZyjDw-19wRRBzc6fSMA.png">
-                    </a>
-                </div>
-            </li>
-        </ul>
-    </section>
+section.n a {
+    font: 600 14px system-ui;
 
-    <section class="k"></section>
-</body>
+    color: var(--h)
+}
+
+/* article */
+
+article {
+    margin-bottom: calc(5cm + env(safe-area-inset-bottom))
+}
+
+article h1 {
+    margin-inline: 25px;
+
+    word-break: break-word;
+    font: 700 extra-condensed 32px/1 system-ui
+}
+
+article h2 {
+    margin: 15px 25px 5cm;
+
+    font: 500 19px/1.3 system-ui
+}
+
+article h3 {
+    margin: 20px 25px;
+
+    font: 700 19px/1.3 system-ui
+}
+
+[data-i] {
+    opacity: 0
+}
+
+img {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+}
+
+article p {
+    margin: 30px 25px;
+
+    font: 17px/1.6 system-ui;
+
+    color: var(--c)
+}
+
+article .a:first-letter {
+    -webkit-initial-letter: 2;
+
+    margin-right: 10px;
+
+    font-weight: 700
+}
+
+article :is(p, figcaption) a {
+    text-decoration-line: underline;
+    text-decoration-skip: none;
+    text-underline-offset: 2px
+}
+
+article figcaption {
+    margin: 20px 25px;
+
+    text-align: center;
+    font-size: 13px
+}
+
+article blockquote {
+    margin: 30px 25px 30px 0;
+
+    border-left: 8px solid;
+
+    padding-left: 17px;
+
+    font: italic 18px/1.6 ui-serif;
+
+    color: var(--c)
+}
+
+article mark {
+    border-radius: 5px;
+
+    background-color: var(--m)
+}
+
+article code {
+    border-radius: 5px;
+
+    padding-inline: 5px;
+
+    font-family: ui-monospace;
+
+    background-color: #88888840;
+    color: color-mix(in srgb, currentcolor, transparent 30%)
+}
+
+/* a */
+
+section.a {
+    position: fixed;
+    inset: auto 0 max(calc(15px + env(safe-area-inset-bottom)), 20px);
+
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+
+    transition: opacity .4s
+}
+
+section.a span {
+    border-radius: 28px;
+
+    padding: 19px 24px;
+
+    display: inherit;
+    align-items: center;
+    column-gap: 8px;
+
+    background-color: var(--t)
+}
+
+section.a div {
+    display: inherit
+}
+
+section.a img {
+    border-radius: 50%
+}
+
+section.a div img:not(:last-child) {
+    clip-path: path("M9 0a8.96 8.96 0 0 1 5.377 1.782C12.717 3.423 11.7 6.045 11.7 9s1.017 5.577 2.676 7.218A9 9 0 1 1 9 0Z")
+}
+
+section.a img+img {
+    margin-left: -4px
+}
+
+section.a h6 {
+    font: 700 15px ui-rounded
+}
+
+section.a h5 {
+    filter: grayscale();
+
+    font-size: 14px
+}
+
+section.a .a {
+    filter: none
+}
+
+/* s */
+
+section.s {
+    pointer-events: none;
+    opacity: 0;
+
+    position: fixed;
+    inset: 0;
+
+    overflow-y: scroll;
+
+    background-color: inherit;
+
+    transition: opacity .2s
+}
+
+section.s textarea {
+    margin: 25px;
+
+    width: -webkit-fill-available;
+
+    resize: none;
+
+    font-size: 15px;
+
+    background: none
+}
+
+section.s textarea::-webkit-input-placeholder {
+    color: var(--p)
+}
+
+section.s ul {
+    display: grid;
+    row-gap: 25px
+}
+
+section.s .a {
+    margin: 0 25px 25px
+}
+
+section.s .b {
+    margin: 25px 0 25px 25px
+}
+
+section.s .s {
+    display: flex;
+    align-items: start;
+    column-gap: 10px
+}
+
+section.s h1 {
+    font-size: 15px
+}
+
+section.s p {
+    margin-top: 10px;
+
+    font: 500 13px system-ui
+}
+
+section.s u {
+    filter: grayscale()
+}
+
+section.s img {
+    border-radius: 50%
+}
+
+section.s span {
+    font: 600 15px system-ui
+}
+
+/* k */
+
+section.k {
+    opacity: .9;
+
+    position: fixed;
+    inset: 0 0 auto;
+
+    height: env(safe-area-inset-top);
+
+    background-color: inherit
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --b: white;
+        --h: #111;
+        --c: #111;
+        --p: #a3a3a4;
+        --m: #ffdbed;
+        --t: #f2f2f2;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --b: #101010;
+        --h: white;
+        --c: #ccc;
+        --p: #77777b;
+        --m: #692940;
+        --t: #1a1a1c;
+    }
+}
