@@ -12,7 +12,7 @@ figure {
 }
 
 body {
-	background-color: var(--col-b);
+	background-color: var(--b);
 
 	-webkit-user-select: none;
 	-webkit-text-size-adjust: none
@@ -80,6 +80,7 @@ h4,
 h5,
 h6,
 p,
+span,
 time,
 address,
 blockquote,
@@ -106,14 +107,14 @@ h5,
 h6,
 blockquote,
 textarea {
-	color: var(--col-h)
+	color: var(--h)
 }
 
 p,
 time,
 address,
 figcaption {
-	color: var(--col-p)
+	color: var(--p)
 }
 
 ::-webkit-scrollbar {
