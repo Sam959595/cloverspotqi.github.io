@@ -213,7 +213,7 @@ section.s .s {
     column-gap: 10px
 }
 
-section.s h1 {
+section.s h6 {
     font-size: 15px
 }
 
@@ -231,7 +231,7 @@ section.s img {
     border-radius: 50%
 }
 
-section.s span {
+section.s h1 {
     font: 600 15px system-ui
 }
 
