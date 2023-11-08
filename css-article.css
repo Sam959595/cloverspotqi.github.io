@@ -180,12 +180,10 @@ section.s {
 
 section.s textarea {
     resize: none;
-    
-    margin: calc(25px + env(safe-area-inset-top)) 25px 25px;
 
     width: -webkit-fill-available;
 
-    padding: 0;
+    padding: calc(25px + env(safe-area-inset-top)) 25px 25px;
 
     font-size: 15px;
 
