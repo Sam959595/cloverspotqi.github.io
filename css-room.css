@@ -93,7 +93,7 @@ section.n .r {
 
     padding: 15px;
 
-    background-color: var(--col-t)
+    background-color: var(--t)
 }
 
 section.n .k {
@@ -161,7 +161,7 @@ section.n hr {
     width: 2rem;
 
     border-radius: 2px;
-    border-top: 3px solid var(--col-c)
+    border-top: 3px solid var(--c)
 }
 
 section.n .v div {
@@ -234,11 +234,11 @@ input {
     font-size: 17px;
 
     background-color: inherit;
-    color: var(--col-h)
+    color: var(--h)
 }
 
 input::placeholder {
-    color: var(--col-p)
+    color: var(--p)
 }
 
 input:focus {
@@ -255,29 +255,29 @@ section.k {
 
     height: env(safe-area-inset-top);
 
-    background-color: var(--col-b)
+    background-color: var(--b)
 }
 
 @media (prefers-color-scheme: light) {
     :root {
-        --col-b: white;
-        --col-h: black;
-        --col-p: #afafb1;
-        --col-c: #dfdfdf;
-        --col-k: #f2f2f2;
-        --col-n: #dddddd90;
-        --col-t: #f7f7f7;
+        --b: white;
+        --h: black;
+        --p: #a3a3a4;
+        --c: #dfdfdf;
+        --k: #f2f2f2;
+        --n: #dddddd90;
+        --t: #f7f7f7;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --col-b: #101010;
-        --col-h: white;
-        --col-p: #77777b;
-        --col-c: #2e2e2e;
-        --col-k: #1c1c1c;
-        --col-n: #21212190;
-        --col-t: #1a1a1c;
+        --b: #101010;
+        --h: white;
+        --p: #77777b;
+        --c: #2e2e2e;
+        --k: #1c1c1c;
+        --n: #21212190;
+        --t: #1a1a1c;
     }
 }
