@@ -1,38 +1,35 @@
 /* n */
 
 section.n {
-    margin: 2cm 25px;
+    margin: calc(25px + env(safe-area-inset-top)) 25px 2cm;
 
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem
+    gap: 1rem 2rem
 }
 
 section.n a {
     font: 600 14px system-ui;
 
-    color: var(--col-h)
+    color: var(--h)
 }
 
 /* article */
 
 article {
-    margin-block: calc(25px + env(safe-area-inset-top)) calc(5cm + env(safe-area-inset-bottom))
+    margin-bottom: calc(5cm + env(safe-area-inset-bottom))
 }
 
 article h1 {
     margin-inline: 25px;
 
     word-break: break-word;
-    text-align: center;
-    font: 700 extra-condensed 38px/1 system-ui
+    font: 700 extra-condensed 32px/1 system-ui
 }
 
 article h2 {
-    margin: 15px 25px;
+    margin: 15px 25px 5cm;
 
-    text-align: center;
     font: 500 19px/1.3 system-ui
 }
 
@@ -57,7 +54,7 @@ article p {
 
     font: 17px/1.6 system-ui;
 
-    color: var(--col-c)
+    color: var(--c)
 }
 
 article .a:first-letter {
@@ -68,7 +65,7 @@ article .a:first-letter {
     font-weight: 700
 }
 
-article a {
+article :is(p, figcaption) a {
     text-decoration-line: underline;
     text-decoration-skip: none;
     text-underline-offset: 2px
@@ -90,13 +87,13 @@ article blockquote {
 
     font: italic 18px/1.6 ui-serif;
 
-    color: var(--col-c)
+    color: var(--c)
 }
 
 article mark {
     border-radius: 5px;
 
-    background-color: var(--col-m)
+    background-color: var(--m)
 }
 
 article code {
@@ -132,7 +129,7 @@ section.a span {
     align-items: center;
     column-gap: 8px;
 
-    background-color: var(--col-t)
+    background-color: var(--t)
 }
 
 section.a div {
@@ -182,7 +179,7 @@ section.s {
 }
 
 section.s textarea {
-    margin: 30px 25px;
+    margin: 25px;
 
     width: -webkit-fill-available;
 
@@ -194,17 +191,23 @@ section.s textarea {
 }
 
 section.s textarea::-webkit-input-placeholder {
-    color: var(--col-p)
+    color: var(--p)
 }
 
 section.s ul {
-    margin: calc(25px + env(safe-area-inset-top)) 25px 25px;
-
     display: grid;
     row-gap: 25px
 }
 
-section.s li {
+section.s .a {
+    margin: 0 25px 25px
+}
+
+section.s .b {
+    margin: 25px 0 25px 25px
+}
+
+section.s .s {
     display: flex;
     align-items: start;
     column-gap: 10px
@@ -228,6 +231,10 @@ section.s img {
     border-radius: 50%
 }
 
+section.s span {
+    font: 600 15px system-ui
+}
+
 /* k */
 
 section.k {
@@ -243,22 +250,22 @@ section.k {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --col-b: white;
-        --col-h: #111;
-        --col-c: #111;
-        --col-p: #afafb1;
-        --col-m: #ffdbed;
-        --col-t: #f2f2f2;
+        --b: white;
+        --h: #111;
+        --c: #111;
+        --p: #a3a3a4;
+        --m: #ffdbed;
+        --t: #f2f2f2;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --col-b: #101010;
-        --col-h: white;
-        --col-c: #ccc;
-        --col-p: #77777b;
-        --col-m: #692940;
-        --col-t: #1a1a1c;
+        --b: #101010;
+        --h: white;
+        --c: #ccc;
+        --p: #77777b;
+        --m: #692940;
+        --t: #1a1a1c;
     }
 }
