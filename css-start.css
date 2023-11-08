@@ -27,7 +27,7 @@ section.n h2 {
     color: var(--p)
 }
 
-section.n p {
+section.n h3 {
     margin: 20px;
 
     font: 700 17px ui-rounded
@@ -73,7 +73,7 @@ section.n .k img {
     border-radius: 0 12px 12px 0
 }
 
-section.n h3 {
+section.n h4 {
     height: 82px;
 
     display: -webkit-box;
@@ -101,13 +101,13 @@ section.n .f {
     color: #41d54b
 }
 
-section.n time {
+section.n p {
     margin-top: 11px;
 
     font: 500 13px system-ui
 }
 
-section.n time u {
+section.n p u {
     font-weight: 300
 }
 
