@@ -214,11 +214,15 @@ section.s .s {
 }
 
 section.s h6 {
-    font-size: 15px
+    font-size: 14px
 }
 
 section.s b {
     font-weight: 500
+}
+
+section.s h6 u {
+    color: var(--p)
 }
 
 section.s .d {
@@ -234,7 +238,7 @@ section.s p {
     font: 500 13px system-ui
 }
 
-section.s u {
+section.s p u {
     filter: grayscale()
 }
 
