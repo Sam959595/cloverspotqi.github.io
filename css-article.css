@@ -129,7 +129,7 @@ section.a span {
     align-items: center;
     column-gap: 8px;
 
-    background-color: var(--t)
+    background-color: var(--k)
 }
 
 section.a div {
@@ -261,6 +261,30 @@ section.s .k img:last-child {
     clip-path: path("M9 0A8.96 8.96 0 0 0 3.6 1.782C5.26 3.423 6.277 6.045 6.277 9s-1.017 5.577-2.676 7.218A9 9 0 1 0 9 0Z")
 }
 
+/* j */
+
+section.j {
+    position: fixed;
+    inset: auto auto max(env(safe-area-inset-bottom), 25px) 25px;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--k)
+}
+
+section.j h1 {
+    font-size: 14px;
+
+    color: var(--h)
+}
+
 /* k */
 
 section.k {
@@ -281,7 +305,7 @@ section.k {
         --c: #111;
         --p: #a3a3a4;
         --m: #ffdbed;
-        --t: #f2f2f2;
+        --k: #f2f2f2;
     }
 }
 
@@ -292,6 +316,6 @@ section.k {
         --c: #ccc;
         --p: #77777b;
         --m: #692940;
-        --t: #1a1a1c;
+        --k: #1a1a1c;
     }
 }
