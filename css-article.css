@@ -200,7 +200,7 @@ section.s ul {
 }
 
 section.s .c {
-    margin: 0 25px 25px
+    margin: 0 25px calc(25px + env(safe-area-inset-bottom))
 }
 
 section.s .b {
@@ -244,7 +244,7 @@ section.s img {
 }
 
 section.s h1 {
-    font: 500 13px system-ui
+    font: 600 13px system-ui
 }
 
 /* k */
