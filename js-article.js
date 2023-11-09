@@ -24,6 +24,12 @@ $('section.a span:first-child').click(() => {
     $('section.s')[0].style = 'pointer-events: auto; opacity: 1'
 })
 
+// exit comment
+$('section.j').click(() => {
+    $('body')[0].removeAttribute('style');
+    $('section.s')[0].removeAttribute('style')
+})
+
 // counter
 $('section.a span:nth-child(2)').click(() => {
     let a = $('section.a span:nth-child(2) h6')[0].innerText;
