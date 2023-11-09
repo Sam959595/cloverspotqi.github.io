@@ -20,7 +20,7 @@ document.addEventListener('dblclick', () => {
 
 // comment
 $('section.a span:first-child').click(() => {
-    $('body')[0].style.overflow = 'hidden';
+    $('body')[0].style = 'overflow: hidden; height: 100vh';
     $('section.s')[0].style = 'pointer-events: auto; opacity: 1'
 })
 
