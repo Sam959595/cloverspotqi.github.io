@@ -220,8 +220,10 @@ section.s h6 {
     font-size: 15px
 }
 
-section.s b {
-    font-weight: 500
+section.s u {
+    opacity: .3;
+
+    font-size: 13px
 }
 
 section.s .d {
@@ -245,6 +247,18 @@ section.s img {
 
 section.s h1 {
     font: 600 13px system-ui
+}
+
+section.s .k {
+    display: inherit
+}
+
+section.s .k img:first-child {
+    margin-right: -4px
+}
+
+section.s .k img:last-child {
+    clip-path: path("M9 0A8.96 8.96 0 0 0 3.6 1.782C5.26 3.423 6.277 6.045 6.277 9s-1.017 5.577-2.676 7.218A9 9 0 1 0 9 0Z")
 }
 
 /* k */
