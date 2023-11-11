@@ -9,7 +9,7 @@ section.n {
 }
 
 section.n a {
-    font: 600 14px system-ui;
+    font: 600 14px system-ui; 
 
     color: var(--h)
 }
