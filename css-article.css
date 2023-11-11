@@ -9,7 +9,7 @@ section.n {
 }
 
 section.n a {
-    font: 600 14px system-ui; 
+    font: 600 14px system-ui;
 
     color: var(--h)
 }
@@ -237,9 +237,9 @@ section.s h6 {
 }
 
 section.s u {
-    opacity: .3;
+    font-size: 13px;
 
-    font-size: 13px
+    color: color-mix(in srgb, var(--h), transparent 70%)
 }
 
 section.s .d {
