@@ -162,6 +162,19 @@ section.a .a {
     filter: none
 }
 
+/* k */
+
+section.k {
+    opacity: .9;
+
+    position: fixed;
+    inset: 0 0 auto;
+
+    height: env(safe-area-inset-top);
+
+    background-color: inherit
+}
+
 /* s */
 
 section.s {
@@ -179,6 +192,9 @@ section.s {
 }
 
 section.s textarea {
+    position: fixed;
+    inset: 0 0 auto;
+
     resize: none;
 
     width: -webkit-fill-available;
@@ -187,7 +203,7 @@ section.s textarea {
 
     font-size: 15px;
 
-    background: none
+    background-color: inherit
 }
 
 section.s textarea::-webkit-input-placeholder {
@@ -200,7 +216,7 @@ section.s ul {
 }
 
 section.s .c {
-    margin: 0 25px calc(25px + env(safe-area-inset-bottom))
+    margin: calc(69px + env(safe-area-inset-top)) 25px calc(25px + env(safe-area-inset-bottom))
 }
 
 section.s .b {
@@ -283,19 +299,6 @@ section.j h1 {
     font-size: 14px;
 
     color: var(--h)
-}
-
-/* k */
-
-section.k {
-    opacity: .9;
-
-    position: fixed;
-    inset: 0 0 auto;
-
-    height: env(safe-area-inset-top);
-
-    background-color: inherit
 }
 
 @media (prefers-color-scheme: light) {
