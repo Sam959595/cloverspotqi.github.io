@@ -191,23 +191,60 @@ section.s {
     transition: opacity .2s
 }
 
-section.s textarea {
+section.s .f {
     position: fixed;
     inset: 0 0 auto;
 
-    resize: none;
-
-    width: -webkit-fill-available;
-
     padding: calc(25px + env(safe-area-inset-top)) 25px 25px;
 
-    font-size: 15px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
 
     background-color: inherit
 }
 
+section.s textarea {
+    resize: none;
+
+    width: -webkit-fill-available;
+
+    padding: 0;
+
+    font-size: 15px;
+
+    background: none
+}
+
 section.s textarea::-webkit-input-placeholder {
     color: var(--p)
+}
+
+section.s span {
+    opacity: 0;
+
+    min-width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #007aff;
+
+    transition: opacity .2s
+}
+
+section.s h3 {
+    font: 700 14px system-ui
+}
+
+section.s .f img {
+    padding: 3px;
+
+    border: 2px solid #007aff
 }
 
 section.s ul {
@@ -232,7 +269,7 @@ section.s .s {
     column-gap: 10px
 }
 
-section.s h6 {
+section.s h1 {
     font-size: 15px
 }
 
@@ -261,7 +298,7 @@ section.s img {
     border-radius: 50%
 }
 
-section.s h1 {
+section.s h2 {
     font: 600 13px system-ui
 }
 
@@ -275,30 +312,6 @@ section.s .k img:first-child {
 
 section.s .k img:last-child {
     clip-path: path("M9 0A8.96 8.96 0 0 0 3.6 1.782C5.26 3.423 6.277 6.045 6.277 9s-1.017 5.577-2.676 7.218A9 9 0 1 0 9 0Z")
-}
-
-/* j */
-
-section.j {
-    position: fixed;
-    inset: auto auto max(env(safe-area-inset-bottom), 25px) 25px;
-
-    width: 45px;
-    height: 45px;
-
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: var(--k)
-}
-
-section.j h1 {
-    font-size: 14px;
-
-    color: var(--h)
 }
 
 @media (prefers-color-scheme: light) {
