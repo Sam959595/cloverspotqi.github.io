@@ -192,7 +192,7 @@ section.s {
 }
 
 section.s .f {
-    position: fixed;
+    position: sticky;
     inset: 0 0 auto;
 
     padding: calc(25px + env(safe-area-inset-top)) 25px 25px;
@@ -241,7 +241,11 @@ section.s h3 {
     font: 700 14px system-ui
 }
 
-section.s .f img {
+section.s .y {
+    padding: 5px
+}
+
+section.s .t {
     padding: 3px;
 
     border: 2px solid #007aff
@@ -253,7 +257,7 @@ section.s ul {
 }
 
 section.s .c {
-    margin: calc(69px + env(safe-area-inset-top)) 25px calc(25px + env(safe-area-inset-bottom))
+    margin: 0 25px calc(25px + env(safe-area-inset-bottom))
 }
 
 section.s .b {
