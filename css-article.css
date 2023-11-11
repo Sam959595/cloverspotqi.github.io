@@ -195,7 +195,7 @@ section.s .f {
     position: sticky;
     inset: 0 0 auto;
 
-    margin: calc(25px + env(safe-area-inset-top)) 20px 25px 25px;
+    padding: calc(25px + env(safe-area-inset-top)) 20px 25px 25px;
 
     display: flex;
     align-items: center;
