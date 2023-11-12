@@ -26,16 +26,16 @@ article h1 {
 
     text-align: center;
     word-break: break-word;
-    font: 700 28px/1.2 georgia
+    font: 700 28px/1.2 system-ui
 }
 
 article h2 {
-    opacity: .5;
+    opacity: .7;
 
     margin: 2rem 25px;
 
     text-align: center;
-    font: 500 19px/1.3 system-ui
+    font: 600 19px/1.3 system-ui
 }
 
 article h3 {
