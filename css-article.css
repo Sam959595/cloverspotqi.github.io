@@ -1,7 +1,7 @@
 /* n */
 
 section.n {
-    margin: 2cm 25px;
+    margin: 3cm 25px 1cm;
 
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +18,7 @@ section.n a {
 /* article */
 
 article {
-    margin-block: calc(10rem + env(safe-area-inset-top)) calc(8rem + env(safe-area-inset-bottom))
+    margin-block: calc(8rem + env(safe-area-inset-top)) calc(8rem + env(safe-area-inset-bottom))
 }
 
 article h1 {
