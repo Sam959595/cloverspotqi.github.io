@@ -35,7 +35,7 @@ article h2 {
     margin: 2rem 25px;
 
     text-align: center;
-    font: 600 19px/1.3 system-ui
+    font: 500 19px/1.3 system-ui
 }
 
 article h3 {
@@ -196,7 +196,7 @@ section.s {
     transition: opacity .2s
 }
 
-section.s .f {
+section.s .y {
     position: sticky;
     inset: 0 0 auto;
 
@@ -226,27 +226,16 @@ section.s textarea::-webkit-input-placeholder {
 }
 
 section.s span {
-    opacity: 0;
+    opacity: 1;
 
-    min-width: 25px;
-    height: 25px;
+    font: 600 14px system-ui;
 
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    background-color: #007aff;
+    color: #007aff;
 
     transition: opacity .2s
 }
 
-section.s h3 {
-    font: 700 14px system-ui
-}
-
-section.s .y {
+section.s .v {
     padding: 5px
 }
 
@@ -254,6 +243,12 @@ section.s .t {
     padding: 3px;
 
     border: 2px solid #007aff
+}
+
+section.s .e {
+    padding: 3px;
+
+    border: 2px solid #ff0026
 }
 
 section.s ul {
