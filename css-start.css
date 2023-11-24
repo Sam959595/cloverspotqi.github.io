@@ -194,7 +194,7 @@ section.n .s img {
 
 /* s */
 
-span.s {
+section.s {
     position: fixed;
     inset: auto auto max(env(safe-area-inset-bottom), 25px) 25px;
 
@@ -210,7 +210,7 @@ span.s {
     background-color: var(--k)
 }
 
-span.s h1 {
+section.s h1 {
     font-size: 14px;
 
     color: var(--h)
@@ -231,11 +231,11 @@ section.k {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --b: #f4f4f7;
+        --b: white;
         --h: black;
         --p: #a3a3a4;
         --c: #dfdfdf;
-        --k: white;
+        --k: #f2f2f2;
     }
 }
 
