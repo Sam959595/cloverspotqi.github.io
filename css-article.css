@@ -212,9 +212,9 @@ section.s .y {
 section.s textarea {
     resize: none;
 
-    width: -webkit-fill-available;
-
     padding: 0;
+
+    flex-grow: 1;
 
     font-size: 15px;
 
@@ -230,9 +230,13 @@ section.s span {
 
     font: 600 15px system-ui;
 
-    color: #007aff;
+    color: var(--h);
 
     transition: opacity .2s
+}
+
+section.s .p {
+    color: #007aff
 }
 
 section.s .v {
@@ -248,7 +252,7 @@ section.s .t {
 section.s .e {
     padding: 3px;
 
-    border: 2px solid #ff0026
+    border: 2px solid #ff4141
 }
 
 section.s ul {
