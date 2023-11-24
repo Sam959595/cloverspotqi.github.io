@@ -226,13 +226,9 @@ section.s textarea::-webkit-input-placeholder {
 }
 
 section.s span {
-    opacity: 1;
-
     font: 600 15px system-ui;
 
-    color: var(--h);
-
-    transition: opacity .2s
+    color: var(--h)
 }
 
 section.s .p {
