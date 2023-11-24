@@ -41,3 +41,10 @@ $('section.a span:nth-child(2)').click(() => {
 $('section.a span:last-child').click(() => {
     $('section.a span:last-child h5')[0].classList.toggle('a')
 })
+
+// textarea
+document.querySelectorAll('textarea').forEach(x => {
+    x.addEventListener('input', () => {
+        x.style.height = (x.scrollHeight) + 'px'
+    })
+})
