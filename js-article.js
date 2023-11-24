@@ -45,6 +45,7 @@ $('section.a span:last-child').click(() => {
 // textarea
 document.querySelectorAll('textarea').forEach(x => {
     x.addEventListener('input', () => {
+        x.style.height = 'auto';
         x.style.height = (x.scrollHeight) + 'px'
     })
 })
