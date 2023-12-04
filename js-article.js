@@ -24,8 +24,7 @@ $('section.a span:first-child').click(() => {
     $('section.s')[0].style = 'pointer-events: auto; opacity: 1'
 })
 
-// exit comment
-$('section.j').click(() => {
+$('section.s .y span').click(() => {
     $('body')[0].removeAttribute('style');
     $('section.s')[0].removeAttribute('style')
 })
@@ -46,6 +45,14 @@ $('section.a span:last-child').click(() => {
 document.querySelectorAll('textarea').forEach(x => {
     x.addEventListener('input', () => {
         x.style.height = 'auto';
-        x.style.height = (x.scrollHeight) + 'px'
+        x.style.height = (x.scrollHeight) + 'px';
+
+        let a = $('section.s .y div')[0];
+
+        if (x.value !== '') {
+            a.innerHTML = '<span class="p">Send</span>'
+        } else {
+            a.innerHTML = '<span>Close</span>'
+        }
     })
 })
