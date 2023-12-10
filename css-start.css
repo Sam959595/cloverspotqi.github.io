@@ -14,21 +14,21 @@ section.n {
 }
 
 section.n h1 {
-    margin: 20px;
+    margin: 20px 35px;
 
     text-align: center;
     font: 800 21px/1 system-ui
 }
 
 section.n h2 {
-    margin: 20px;
+    margin: 20px 35px;
 
     font-size: 15px;
     color: var(--p)
 }
 
 section.n h3 {
-    margin: 20px;
+    margin: 20px 35px;
 
     font: 700 17px ui-rounded
 }
