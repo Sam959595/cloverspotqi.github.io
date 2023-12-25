@@ -51,7 +51,7 @@ section.n .z {
 section.n .z li {
     border-radius: 10px;
 
-    font: 700 14px ui-rounded;
+    font: 600 15px system-ui;
     word-spacing: 5px;
 
     color: var(--h)
