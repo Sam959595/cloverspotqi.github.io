@@ -254,13 +254,13 @@ body.b section.t h6 {
         --bac-1: #eeeded;
         --bac-2: #fefcf5;
         --bac-3: #d3dbe9;
-        --bac-4: #e2d5c2;
+        --bac-4: #eee3cc;
         --bac-5: #e2dbcf;
         --col-h: #222;
         --col-1: #111;
         --col-2: #211700;
         --col-3: #2b2f36;
-        --col-4: #2f2d26;
+        --col-4: #32281e;
         --col-5: #111;
     }
 }
@@ -270,15 +270,15 @@ body.b section.t h6 {
         --b: black;
         --h: white;
         --bac-1: #1c1c1e;
-        --bac-2: #2c2c31;
+        --bac-2: #333;
         --bac-3: #53545d;
-        --bac-4: #1a1919;
+        --bac-4: #413b31;
         --bac-5: #32302e;
         --col-h: #bbb;
         --col-1: #ccc;
         --col-2: white;
         --col-3: #fcfcff;
-        --col-4: #bab8b3;
+        --col-4: #f7ecdd;
         --col-5: #fffffe;
     }
 }
