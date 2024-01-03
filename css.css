@@ -81,7 +81,8 @@ figcaption {
 }
 
 a,
-u {
+u,
+ins {
 	text-decoration: none
 }
 
