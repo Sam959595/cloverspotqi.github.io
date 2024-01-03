@@ -257,7 +257,7 @@ body.b section.t h6 {
         --bac-4: #eee3cc;
         --bac-5: #e2dbcf;
         --col-h: #222;
-        --col-1: #111;
+        --col-1: #1d1a1a;
         --col-2: #211700;
         --col-3: #2b2f36;
         --col-4: #32281e;
@@ -271,13 +271,13 @@ body.b section.t h6 {
         --h: white;
         --bac-1: #1c1c1e;
         --bac-2: #333;
-        --bac-3: #53545d;
+        --bac-3: #4a4a4d;
         --bac-4: #413b31;
         --bac-5: #32302e;
         --col-h: #bbb;
         --col-1: #ccc;
         --col-2: white;
-        --col-3: #fcfcff;
+        --col-3: #ebebf4;
         --col-4: #f7ecdd;
         --col-5: #fffffe;
     }
