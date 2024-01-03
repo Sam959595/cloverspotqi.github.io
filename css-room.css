@@ -101,7 +101,7 @@ section.n .k {
 
 section.n .k div {
     border-left: 7px solid;
-    border-image: repeating-linear-gradient(-45deg, #40a6ff, #40a6ff 3%, #ffc665 3%, #ffc665 6%, #ff7465 6%, #ff7465 9%) 10
+    border-image: repeating-linear-gradient(-45deg, #8870ff, #8870ff 4%, #ffc665 4%, #ffc665 8%, #ff9865 8%, #ff9865 12%) 10
 }
 
 section.n .r img {
