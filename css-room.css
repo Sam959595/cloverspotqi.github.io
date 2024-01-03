@@ -104,9 +104,11 @@ section.n .r div {
 }
 
 section.n h3 {
-    height: 84px;
+    margin-top: 5px;
 
-    font: 700 extra-condensed 17px/1 system-ui
+    height: 100px;
+
+    font: 700 extra-condensed 19px/1 system-ui
 }
 
 section.n ins {
