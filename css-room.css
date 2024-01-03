@@ -83,36 +83,36 @@ section.s h6 u {
 /* n */
 
 section.n ul {
-    display: grid
+    margin: 10px;
+
+    display: grid;
+    grid: masonry / repeat(2, auto);
+
+    gap: 10px
 }
 
 section.n .r {
-    margin-inline: 20px;
-
     border-radius: 12px;
-
-    padding: 15px;
 
     background-color: var(--t)
 }
 
-section.n .k {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 30px
+section.n .r img {
+    border-radius: 12px 12px 0 0
 }
 
-section.n .k img {
-    margin: -15px;
-
-    border-radius: 0 12px 12px 0
+section.n .r div {
+    padding: 10px
 }
 
 section.n h3 {
-    height: 84px;
+    margin-bottom: 20px;
 
-    word-break: break-word;
-    font: 700 extra-condensed 21px/1 system-ui
+    font: 700 extra-condensed 17px/1 system-ui
+}
+
+section.n em {
+    font-family: ui-serif
 }
 
 section.n .b {
@@ -131,12 +131,6 @@ section.n .f {
     color: #41d54b
 }
 
-section.n address {
-    margin-top: 10px;
-
-    font-weight: 600
-}
-
 section.n .v {
     margin-block: 24px;
 
@@ -146,33 +140,36 @@ section.n .v {
 }
 
 section.n span {
+    margin-block: 15px;
+
     display: flex;
     align-items: center;
+    justify-content: center;
     column-gap: 8px
 }
 
-section.n .v img {
+section.n span img {
     border-radius: 50%
 }
 
 section.n hr {
     margin-inline: 4px;
 
-    width: 2rem;
+    width: 24px;
 
     border-radius: 2px;
     border-top: 3px solid var(--c)
 }
 
-section.n .v div {
+section.n span div {
     display: inherit
 }
 
-section.n .v div img:not(:last-child) {
+section.n span div img:not(:last-child) {
     clip-path: path("M9 0a8.96 8.96 0 0 1 5.377 1.782C12.717 3.423 11.7 6.045 11.7 9s1.017 5.577 2.676 7.218A9 9 0 1 1 9 0Z")
 }
 
-section.n .v img+img {
+section.n span img+img {
     margin-left: -4px
 }
 
@@ -197,6 +194,8 @@ section.n .t img {
 }
 
 section.n .s {
+    box-sizing: border-box;
+
     width: 100vw;
 
     overflow-x: scroll;
