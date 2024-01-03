@@ -19,8 +19,6 @@ html {
 
     height: 100vh;
 
-    padding-block: env(safe-area-inset-top) calc(84px + env(safe-area-inset-bottom));
-
     scroll-snap-align: start
 }
 
@@ -88,7 +86,7 @@ section.n ul {
     display: grid;
     grid: masonry / repeat(2, auto);
 
-    gap: 10px
+    column-gap: 10px
 }
 
 section.n .r {
