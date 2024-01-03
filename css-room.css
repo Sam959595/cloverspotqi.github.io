@@ -104,6 +104,8 @@ section.n .r div {
 }
 
 section.n h3 {
+    margin-top: 5px;
+
     height: 100px;
 
     word-break: break-word;
@@ -127,17 +129,11 @@ section.n .e {
 }
 
 section.n .f {
-    color: #41d54b
+    color: #41d5ab
 }
 
 section.n p {
-    margin-top: 11px;
-
     font-weight: 500
-}
-
-section.n p u {
-    font-weight: 300
 }
 
 section.n .v {
