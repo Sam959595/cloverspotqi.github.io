@@ -84,7 +84,7 @@ section.n ul {
     margin-inline: 10px;
 
     display: grid;
-    grid: masonry / repeat(2, auto);
+    grid: masonry / repeat(2, 1fr);
 
     column-gap: 10px
 }
@@ -104,9 +104,14 @@ section.n .r div {
 }
 
 section.n h3 {
-    margin-top: 5px;
+    margin-block: 5px 22px;
 
-    height: 100px;
+    height: 78px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 
     word-break: break-word;
     font: 700 extra-condensed 19px/1 system-ui
@@ -133,7 +138,7 @@ section.n .f {
 }
 
 section.n p {
-    font-weight: 500
+    font: 500 13px system-ui
 }
 
 section.n .v {
