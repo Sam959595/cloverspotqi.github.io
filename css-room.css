@@ -9,7 +9,7 @@ html {
     overflow-x: scroll;
 
     display: grid;
-    grid-template-columns: repeat(2, 100vw);
+    grid: 100vh / repeat(2, 100vw);
 
     scroll-snap-type: x mandatory
 }
@@ -23,7 +23,7 @@ html {
 }
 
 .d h1 {
-    margin: 20px;
+    margin: calc(20px + env(safe-area-inset-top)) 20px 20px;
 
     font: 900 32px/1 system-ui
 }
