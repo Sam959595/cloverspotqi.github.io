@@ -81,7 +81,7 @@ section.s h6 u {
 /* n */
 
 section.n ul {
-    margin: 10px;
+    margin-inline: 10px;
 
     display: grid;
     grid: masonry / repeat(2, auto);
@@ -104,12 +104,12 @@ section.n .r div {
 }
 
 section.n h3 {
-    margin-bottom: 20px;
+    height: 84px;
 
     font: 700 extra-condensed 17px/1 system-ui
 }
 
-section.n em {
+section.n ins {
     font-family: ui-serif
 }
 
