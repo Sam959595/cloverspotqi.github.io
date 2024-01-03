@@ -41,6 +41,7 @@ section.n .z {
     margin-block: 25px;
     padding-inline: 35px;
 
+    display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
     column-gap: 3em;
@@ -57,13 +58,13 @@ section.n .z li {
     color: var(--h)
 }
 
-section.n ul {
+section.n .j {
+    margin-inline: 20px;
+
     display: grid
 }
 
 section.n .r {
-    margin-inline: 20px;
-
     border-radius: 12px;
 
     padding: 15px;
@@ -118,7 +119,7 @@ section.n .e {
 }
 
 section.n .f {
-    color: #41d54b
+    color: #41d5ab
 }
 
 section.n p {
@@ -185,10 +186,6 @@ section.n .a {
 }
 
 section.n .t {
-    margin-inline: 20px
-}
-
-section.n :is(.t, .s) img {
     border-radius: 12px
 }
 
