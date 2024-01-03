@@ -170,7 +170,7 @@ section.n .v {
 }
 
 section.n span {
-    margin-block: 20px;
+    margin-block: 20px 40px;
 
     display: flex;
     align-items: center;
