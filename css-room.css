@@ -99,13 +99,18 @@ section.n .k {
     overflow: hidden
 }
 
+/* section.n .k div {
+    border-right: 7px solid;
+    border-image: linear-gradient(to top, #ff617b 50%, #ff2f50 50%) 1
+} */
+
 section.n .k div {
     border-left: 7px solid;
     border-image: repeating-linear-gradient(-45deg, #8870ff, #8870ff 4%, #ffc665 4%, #ffc665 8%, #ff9865 8%, #ff9865 12%) 10
 }
 
 section.n .r img {
-    border-radius: 12px 12px 0 0
+    border-radius: 0 0 12px 12px
 }
 
 section.n .r div {
@@ -124,6 +129,12 @@ section.n h3 {
 
     word-break: break-word;
     font: 700 extra-condensed 19px/1 system-ui
+}
+
+section.n h2 {
+    margin-block: 5px 22px;
+
+    font-size: 15px
 }
 
 section.n ins {
