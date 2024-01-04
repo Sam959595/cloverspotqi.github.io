@@ -75,7 +75,14 @@ section.n .r {
 section.n .k {
     display: flex;
     justify-content: space-between;
-    column-gap: 30px
+
+    border-radius: 12px;
+
+    background-color: var(--k)
+}
+
+section.n .k div {
+    padding: 15px
 }
 
 [data-i] {
@@ -88,9 +95,18 @@ img {
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
-section.n .k img {
-    margin: -15px;
+section.n .g {
+    overflow: hidden
+}
 
+section.n .g div {
+    padding: 15px;
+
+    border-left: 7px solid;
+    border-image: repeating-linear-gradient(-45deg, #8870ff, #8870ff 4%, #ffc665 4%, #ffc665 8%, #ff9865 8%, #ff9865 12%) 10
+}
+
+section.n .k img {
     border-radius: 0 12px 12px 0
 }
 
@@ -178,7 +194,7 @@ section.n h6 {
 section.n h5 {
     filter: grayscale();
 
-    font-size: 14px
+    font-size: 15px
 }
 
 section.n .a {
