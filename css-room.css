@@ -185,7 +185,7 @@ section.n span img {
 section.n hr {
     margin-inline: 4px;
 
-    width: 20px;
+    width: 24px;
 
     border-radius: 2px;
     border-top: 3px solid var(--c)
