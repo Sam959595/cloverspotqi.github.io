@@ -59,7 +59,7 @@ section.n .z li {
 }
 
 section.n .j {
-    margin-inline: 20px;
+    margin: 0 20px calc(20px + env(safe-area-inset-bottom));
 
     display: grid
 }
@@ -144,8 +144,8 @@ section.n p {
     font: 500 13px system-ui
 }
 
-section.n p u {
-    font-weight: 300
+section.n p strong {
+    margin-right: 7px
 }
 
 section.n .v {
