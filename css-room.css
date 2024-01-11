@@ -31,7 +31,7 @@ html {
 /* s */
 
 section.s ul {
-    margin: 0 16px calc(16px + env(safe-area-inset-bottom));
+    margin: 0 16px calc(50px + env(safe-area-inset-bottom));
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -57,7 +57,7 @@ section.s img {
 }
 
 section.s h6 {
-    margin-block: 20px 3px;
+    margin-top: 20px;
 
     max-width: 160px;
 
