@@ -31,7 +31,7 @@ html {
 /* s */
 
 section.s ul {
-    margin-inline: 16px;
+    margin: 0 16px calc(16px + env(safe-area-inset-bottom));
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -81,7 +81,7 @@ section.s h6 u {
 /* n */
 
 section.n ul {
-    margin-inline: 10px;
+    margin: 0 10px calc(10px + env(safe-area-inset-bottom));
 
     display: grid;
     grid: masonry / repeat(2, 1fr);
