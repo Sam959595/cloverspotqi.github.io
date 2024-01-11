@@ -31,11 +31,11 @@ html {
 /* s */
 
 section.s ul {
-    margin: 0 16px calc(50px + env(safe-area-inset-bottom));
+    margin-bottom: calc(50px + env(safe-area-inset-bottom));
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem 2rem
+    row-gap: 3rem
 }
 
 section.s li {
