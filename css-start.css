@@ -13,6 +13,12 @@ section.n {
     height: 100vh
 }
 
+section.n .p {
+    margin: calc(4rem + env(safe-area-inset-top)) auto 2rem;
+
+    border-radius: 50%;
+}
+
 section.n h1 {
     margin: 20px 35px;
 
@@ -21,41 +27,14 @@ section.n h1 {
 }
 
 section.n h2 {
-    margin: 20px 35px;
+    margin: 3em 35px;
 
     font-size: 15px;
     color: var(--p)
 }
 
-section.n h3 {
-    margin: 20px 35px;
-
-    font: 700 17px ui-rounded
-}
-
 section.n .d {
     color: #007aff
-}
-
-section.n .z {
-    margin-block: 25px;
-    padding-inline: 35px;
-
-    display: grid;
-    grid-auto-columns: max-content;
-    grid-auto-flow: column;
-    column-gap: 3em;
-
-    overflow-x: scroll
-}
-
-section.n .z li {
-    border-radius: 10px;
-
-    font: 600 15px system-ui;
-    word-spacing: 5px;
-
-    color: var(--h)
 }
 
 section.n .j {
@@ -70,6 +49,22 @@ section.n .r {
     padding: 15px;
 
     background-color: var(--k)
+}
+
+section.n .g {
+    border-radius: 12px;
+
+    background-color: var(--k);
+
+    overflow: hidden
+}
+
+section.n .g div {
+    border-left: 8px solid #2f2f32
+}
+
+section.n .g p {
+    padding: 0 15px 15px
 }
 
 section.n .k {
@@ -95,22 +90,19 @@ img {
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
-section.n .g {
-    overflow: hidden
-}
-
-section.n .g div {
-    padding: 15px;
-
-    border-left: 7px solid;
-    border-image: repeating-linear-gradient(-45deg, #8870ff, #8870ff 4%, #ffc665 4%, #ffc665 8%, #ff9865 8%, #ff9865 12%) 10
-}
-
 section.n .k img {
     border-radius: 0 12px 12px 0
 }
 
+section.n h3 {
+    padding: 15px;
+
+    font-size: 15px
+}
+
 section.n h4 {
+    margin-bottom: 11px;
+
     height: 82px;
 
     display: -webkit-box;
@@ -135,12 +127,10 @@ section.n .e {
 }
 
 section.n .f {
-    color: #41d5ab
+    color: #56b88c
 }
 
 section.n p {
-    margin-top: 11px;
-
     font: 500 13px system-ui
 }
 
