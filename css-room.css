@@ -92,14 +92,8 @@ section.n .k {
     overflow: hidden
 }
 
-/* section.n .k div {
-    border-right: 7px solid;
-    border-image: linear-gradient(to top, #ff617b 50%, #ff2f50 50%) 1
-} */
-
 section.n .k div {
-    border-left: 7px solid;
-    border-image: repeating-linear-gradient(-45deg, #ff707e, #ff707e 4%, #ff2a40 4%, #ff2a40 8%) 10
+    border-left: 7px solid #2f2f32
 }
 
 section.n .r img {
