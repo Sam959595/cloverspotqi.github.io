@@ -49,7 +49,7 @@ section.n .d {
     color: #007aff
 }
 
-section.n .j {
+section.n ul {
     margin: 0 20px calc(20px + env(safe-area-inset-bottom));
 
     display: grid
