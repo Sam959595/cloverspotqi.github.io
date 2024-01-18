@@ -2,6 +2,18 @@ html {
     overscroll-behavior-y: none
 }
 
+/* img */
+
+[data-i] {
+    opacity: 0
+}
+
+img {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+}
+
 /* n */
 
 section.n {
@@ -76,16 +88,6 @@ section.n .k {
 
 section.n .k div {
     padding: 15px
-}
-
-[data-i] {
-    opacity: 0
-}
-
-img {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
 section.n .k img {
