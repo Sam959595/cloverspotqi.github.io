@@ -14,7 +14,7 @@ section.n {
 }
 
 section.n .p {
-    margin: calc(4rem + env(safe-area-inset-top)) auto 2rem;
+    margin: calc(2rem + env(safe-area-inset-top)) auto 4rem;
 
     border-radius: 50%;
 }
@@ -54,17 +54,15 @@ section.n .r {
 section.n .g {
     border-radius: 12px;
 
-    background-color: var(--k);
-
-    overflow: hidden
-}
-
-section.n .g div {
-    border-left: 8px solid #2f2f32
+    background-color: var(--k)
 }
 
 section.n .g p {
     padding: 15px 15px 0
+}
+
+section.n .g img {
+    border-radius: 0 0 12px 12px
 }
 
 section.n .k {
@@ -97,7 +95,13 @@ section.n .k img {
 section.n h3 {
     padding: 15px;
 
-    font-size: 15px
+    font: 15px/1.4 system-ui
+}
+
+section.n h3 a {
+    text-decoration-line: underline;
+    text-decoration-skip: none;
+    text-underline-offset: 2px
 }
 
 section.n h4 {
