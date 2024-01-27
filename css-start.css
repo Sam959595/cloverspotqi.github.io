@@ -91,6 +91,8 @@ section.n .k div {
 }
 
 section.n .k img {
+    object-fit: cover;
+
     border-radius: 0 12px 12px 0
 }
 
@@ -118,6 +120,10 @@ section.n h4 {
 
     word-break: break-word;
     font: 700 extra-condensed 20px/1 system-ui
+}
+
+section.n ins {
+    font-family: ui-serif
 }
 
 section.n .b {
@@ -259,7 +265,7 @@ section.k {
 }
 
 @media (prefers-color-scheme: light) {
-    section.n :is(.g, .r) {
+    section.n :is(.g, .r, .k) {
         box-shadow: 0 0 10px #00000012
     }
 
