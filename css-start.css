@@ -259,8 +259,12 @@ section.k {
 }
 
 @media (prefers-color-scheme: light) {
+    section.n :is(.g, .r) {
+        box-shadow: 0 0 10px #00000012
+    }
+
     :root {
-        --b: #f7f7f7;
+        --b: white;
         --h: black;
         --p: #a3a3a4;
         --c: #dfdfdf;
