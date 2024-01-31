@@ -39,7 +39,7 @@ section.n h1 {
 }
 
 section.n h2 {
-    margin: 3em 35px;
+    margin: 35px;
 
     font-size: 15px;
     color: var(--p)
@@ -265,12 +265,8 @@ section.k {
 }
 
 @media (prefers-color-scheme: light) {
-    section.n :is(.g, .r, .k) {
-        box-shadow: 0 0 10px #00000012
-    }
-
     :root {
-        --b: white;
+        --b: #f7f6f9;
         --h: black;
         --p: #a3a3a4;
         --c: #dfdfdf;
