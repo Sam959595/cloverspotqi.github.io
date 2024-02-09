@@ -35,7 +35,7 @@ section.n h1 {
     margin: 20px 35px;
 
     text-align: center;
-    font: 700 19px/1 ui-rounded
+    font: 800 19px/1 ui-rounded
 }
 
 section.n h2 {
@@ -266,7 +266,7 @@ section.k {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --b: #f7f6f9;
+        --b: white;
         --h: black;
         --p: #a3a3a4;
         --c: #dfdfdf;
@@ -276,10 +276,10 @@ section.k {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --b: #101010;
+        --b: black;
         --h: white;
         --p: #77777b;
         --c: #2e2e2e;
-        --k: #1a1a1c;
+        --k: #101011;
     }
 }
