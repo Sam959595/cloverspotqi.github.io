@@ -50,7 +50,7 @@ section.n .d {
 }
 
 section.n ul {
-    margin: 0 20px calc(20px + env(safe-area-inset-bottom));
+    margin: 0 16px calc(16px + env(safe-area-inset-bottom));
 
     display: grid
 }
