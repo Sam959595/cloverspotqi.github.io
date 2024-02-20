@@ -270,16 +270,16 @@ section.k {
         --h: black;
         --p: #a3a3a4;
         --c: #dfdfdf;
-        --k: white;
+        --k: #f7f7f7;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --b: black;
+        --b: #101010;
         --h: white;
         --p: #77777b;
         --c: #2e2e2e;
-        --k: #101011;
+        --k: #1a1a1c;
     }
 }
