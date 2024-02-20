@@ -151,7 +151,7 @@ section.n p strong {
 }
 
 section.n .v {
-    margin-block: 24px;
+    margin-block: 24px 40px;
 
     display: flex;
     justify-content: center;
