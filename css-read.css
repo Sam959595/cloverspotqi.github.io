@@ -203,7 +203,7 @@ section.k {
     background-color: inherit
 }
 
-/* background-color */
+/* bac */
 
 body.f {
     background-color: var(--bac-1)
@@ -225,7 +225,7 @@ body.b {
     background-color: var(--bac-5)
 }
 
-/* color */
+/* col */
 
 body.f section.t h6 {
     color: var(--col-1)
