@@ -65,8 +65,7 @@ section.n .r {
 
 section.n .g {
     border-radius: 12px;
-
-    background-color: var(--k)
+    border: 2px solid #ffffff10
 }
 
 section.n .g p {
