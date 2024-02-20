@@ -65,7 +65,8 @@ section.n .r {
 
 section.n .g {
     border-radius: 12px;
-    border: 2px solid #ffffff10
+
+    background-color: var(--k)
 }
 
 section.n .g p {
@@ -275,10 +276,10 @@ section.k {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --b: #101010;
+        --b: black;
         --h: white;
         --p: #77777b;
         --c: #2e2e2e;
-        --k: #1a1a1c;
+        --k: #101010;
     }
 }
