@@ -4,11 +4,11 @@ html {
 
 /* img */
 
-[data-i] {
+[data-i], [data-v] {
     opacity: 0
 }
 
-img {
+img, video {
     opacity: 1;
 
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
@@ -35,7 +35,7 @@ section.n h1 {
     margin: 20px 35px;
 
     text-align: center;
-    font: 800 19px/1 ui-rounded
+    font: 700 19px/1 ui-rounded
 }
 
 section.n h2 {
