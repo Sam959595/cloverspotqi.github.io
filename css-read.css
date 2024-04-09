@@ -5,7 +5,7 @@ html {
 /* t */
 
 section.t {
-    margin: calc(35px + env(safe-area-inset-top)) 35px 35px
+    margin: calc(35px + env(safe-area-inset-top)) 3rem 10rem
 }
 
 section.t h1 {
@@ -19,14 +19,14 @@ section.t h1 {
 section.t h2 {
     opacity: .5;
 
-    margin: 2rem 2rem 25rem;
+    margin-block: 2rem 25rem;
 
     text-align: right;
     font: 500 21px system-ui
 }
 
 section.t h3 {
-    margin-inline: 2rem;
+    margin-inline: 1rem;
 
     font: italic 19px/1.6 system-ui
 }
@@ -125,23 +125,28 @@ section.t.j p {
 /* d */
 
 section.d {
-    margin: 20px 20px max(calc(15px + env(safe-area-inset-bottom)), 20px);
+    margin-bottom: calc(calc(5rem + env(safe-area-inset-bottom)));
 
-    border-radius: 28px;
-
-    padding: 9px 24px;
-
-    background-color: #88888820
+    text-align: center
 }
 
 section.d h2 {
-    opacity: .3;
-
-    font: 700 15px system-ui
+    font: 700 21px/1.6 system-ui
 }
 
-section.d h1 {
-    font: 700 15px system-ui
+section.d a {
+    margin-top: 2rem;
+
+    border-radius: 25px;
+
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    font: 600 19px system-ui;
+
+    background-color: #88888820;
+    color: var(--h)
 }
 
 /* m */
