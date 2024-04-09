@@ -77,7 +77,7 @@ section.t u {
 
 /* t, margin-inline */
 
-section.t.w {
+section.w {
     margin-inline: 20px
 }
 
@@ -102,25 +102,25 @@ section.t.h>* {
 
 /* t, font-size */
 
-section.t.y p {
+section.y p {
     font-size: 24px
 }
 
-section.t.s p {
+section.s p {
     font-size: 22px
 }
 
-section.t.r p {
+section.r p {
     font-size: 18px
 }
 
 /* t, line-height */
 
-section.t.f p {
+section.f p {
     line-height: 1.5
 }
 
-section.t.j p {
+section.j p {
     line-height: 1.3
 }
 
