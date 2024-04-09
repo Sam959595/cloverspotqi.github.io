@@ -5,7 +5,7 @@ html {
 /* t */
 
 section.t {
-    margin: calc(10rem + env(safe-area-inset-top)) 3rem 10rem
+    margin: calc(7rem + env(safe-area-inset-top)) 3rem 10rem
 }
 
 section.t h1 {
