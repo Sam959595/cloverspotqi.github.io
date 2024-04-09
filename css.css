@@ -19,9 +19,12 @@ body {
 }
 
 ul {
-	padding: 0;
-
 	list-style: none
+}
+
+ul,
+select {
+	padding: 0
 }
 
 img,
