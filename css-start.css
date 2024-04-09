@@ -209,7 +209,7 @@ section.s h1 {
 /* k */
 
 section.k {
-    opacity: .8;
+    opacity: .9;
 
     position: fixed;
     inset: 0 0 auto;
@@ -231,10 +231,10 @@ section.k {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --b: black;
+        --b: #101010;
         --h: white;
         --p: #77777b;
         --c: #2e2e2e;
-        --k: #101010;
+        --k: #151515;
     }
 }
