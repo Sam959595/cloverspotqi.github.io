@@ -12,10 +12,10 @@ figure {
 }
 
 body {
-	background-color: var(--b);
-
 	-webkit-user-select: none;
-	-webkit-text-size-adjust: none
+	-webkit-text-size-adjust: none;
+
+	background-color: var(--b)
 }
 
 ul {
