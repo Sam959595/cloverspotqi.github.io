@@ -1,8 +1,6 @@
 body {
 	-webkit-user-select: none;
-	-webkit-text-size-adjust: none;
-
-	background-color: var(--b)
+	-webkit-text-size-adjust: none
 }
 
 body,
@@ -92,23 +90,6 @@ ins {
 a,
 mark {
 	color: inherit
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-blockquote,
-textarea {
-	color: var(--h)
-}
-
-p,
-address,
-figcaption {
-	color: var(--p)
 }
 
 ::-webkit-scrollbar {
