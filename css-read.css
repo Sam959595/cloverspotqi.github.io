@@ -12,7 +12,9 @@ section.t h1 {
     opacity: .5;
 
     text-align: center;
-    font: 500 24px system-ui
+    font: 500 24px system-ui;
+
+    color: var(--col-h)
 }
 
 section.t h2 {
@@ -20,13 +22,17 @@ section.t h2 {
 
     text-align: center;
     word-break: break-word;
-    font: 700 28px/1.2 system-ui
+    font: 700 28px/1.2 system-ui;
+
+    color: var(--col-h)
 }
 
 section.t h3 {
     margin-inline: 1rem;
 
-    font: italic 19px/1.6 system-ui
+    font: italic 19px/1.6 system-ui;
+
+    color: var(--col-h)
 }
 
 section.t h4 {
@@ -34,21 +40,27 @@ section.t h4 {
 
     text-align: center;
     word-spacing: 10px;
-    font: 600 28px system-ui
+    font: 600 28px system-ui;
+
+    color: var(--col-h)
 }
 
 section.t h5 {
     margin-block: 10rem 3rem;
 
     text-align: center;
-    font: 600 48px/1.6 system-ui
+    font: 600 48px/1.6 system-ui;
+
+    color: var(--col-h)
 }
 
 section.t h6 {
     margin-block: 10rem 3rem;
 
     text-align: center;
-    font: 700 21px/1.6 system-ui
+    font: 700 21px/1.6 system-ui;
+
+    color: var(--col-h)
 }
 
 section.t p:first-letter {
