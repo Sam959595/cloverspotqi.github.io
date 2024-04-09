@@ -19,14 +19,15 @@ section.t h1 {
 section.t h2 {
     opacity: .5;
 
-    margin-block: 2rem 25rem;
+    margin: 2rem 2rem 25rem;
 
-    text-align: center;
+    text-align: right;
     font: 500 21px system-ui
 }
 
 section.t h3 {
-    text-align: center;
+    margin-inline: 2rem;
+
     font: italic 19px/1.6 system-ui
 }
 
@@ -236,23 +237,23 @@ body.b {
 
 /* col */
 
-body.f section.t p {
+body.f section.t>* {
     color: var(--col-1)
 }
 
-body.i section.t p {
+body.i section.t>* {
     color: var(--col-2)
 }
 
-body.d section.t p {
+body.d section.t>* {
     color: var(--col-3)
 }
 
-body.c section.t p {
+body.c section.t>* {
     color: var(--col-4)
 }
 
-body.b section.t p {
+body.b section.t>* {
     color: var(--col-5)
 }
 
