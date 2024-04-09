@@ -11,7 +11,7 @@ body {
 section.t {
     margin: calc(7rem + env(safe-area-inset-top)) 2.8rem 10rem;
 
-    color: var(--col-h)
+    color: var(--col)
 }
 
 section.t h1 {
@@ -131,7 +131,7 @@ section.d {
 
     text-align: center;
 
-    color: var(--h)
+    color: var(--s)
 }
 
 section.d h2 {
@@ -167,7 +167,7 @@ section.m {
     text-align: center;
     font: 700 14px/1.3 system-ui;
 
-    background-color: var(--h);
+    background-color: var(--s);
     color: var(--b)
 }
 
@@ -198,7 +198,7 @@ section.e select {
     text-align-last: center;
     font: 700 15px system-ui;
 
-    background-color: var(--h);
+    background-color: var(--s);
     color: var(--b);
 
     transition: color .4s
@@ -268,13 +268,13 @@ body.b section.t {
 @media (prefers-color-scheme: light) {
     :root {
         --b: white;
-        --h: #111;
+        --s: #111;
         --bac-1: #eeeded;
         --bac-2: #fefcf5;
         --bac-3: #d3dbe9;
         --bac-4: #eee3cc;
         --bac-5: #e2dbcf;
-        --col-h: #222;
+        --col: #222;
         --col-1: #1d1a1a;
         --col-2: #211700;
         --col-3: #2b2f36;
@@ -286,13 +286,13 @@ body.b section.t {
 @media (prefers-color-scheme: dark) {
     :root {
         --b: black;
-        --h: white;
+        --s: white;
         --bac-1: #131313;
         --bac-2: #202020;
         --bac-3: #4a4a4d;
         --bac-4: #403936;
         --bac-5: #32302e;
-        --col-h: #bbb;
+        --col: #bbb;
         --col-1: #999;
         --col-2: #ccc;
         --col-3: #ebebf4;
