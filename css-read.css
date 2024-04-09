@@ -99,25 +99,25 @@ section.t.h>* {
 
 /* t, font-size */
 
-section.t.y h6 {
+section.t.y p {
     font-size: 24px
 }
 
-section.t.s h6 {
+section.t.s p {
     font-size: 22px
 }
 
-section.t.r h6 {
+section.t.r p {
     font-size: 18px
 }
 
 /* t, line-height */
 
-section.t.f h6 {
+section.t.f p {
     line-height: 1.5
 }
 
-section.t.j h6 {
+section.t.j p {
     line-height: 1.3
 }
 
@@ -236,23 +236,23 @@ body.b {
 
 /* col */
 
-body.f section.t h6 {
+body.f section.t p {
     color: var(--col-1)
 }
 
-body.i section.t h6 {
+body.i section.t p {
     color: var(--col-2)
 }
 
-body.d section.t h6 {
+body.d section.t p {
     color: var(--col-3)
 }
 
-body.c section.t h6 {
+body.c section.t p {
     color: var(--col-4)
 }
 
-body.b section.t h6 {
+body.b section.t p {
     color: var(--col-5)
 }
 
