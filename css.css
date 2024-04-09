@@ -1,3 +1,10 @@
+body {
+	-webkit-user-select: none;
+	-webkit-text-size-adjust: none;
+
+	background-color: var(--b)
+}
+
 body,
 h1,
 h2,
@@ -11,20 +18,13 @@ figure {
 	margin: 0
 }
 
-body {
-	-webkit-user-select: none;
-	-webkit-text-size-adjust: none;
-
-	background-color: var(--b)
+ul,
+select {
+	padding: 0
 }
 
 ul {
 	list-style: none
-}
-
-ul,
-select {
-	padding: 0
 }
 
 img,
