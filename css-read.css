@@ -26,8 +26,6 @@ section.t h2 {
 }
 
 section.t h3 {
-    opacity: .8;
-
     text-align: center;
     font: italic 19px/1.6 system-ui
 }
@@ -44,15 +42,22 @@ section.t h5 {
     margin-block: 10rem 3rem;
 
     text-align: center;
-    font: 700 21px/1.6 system-ui
-}
-
-section.t h6:first-letter {
-    margin-left: 35px
+    font: 600 32px/1.6 system-ui
 }
 
 section.t h6 {
-    margin-bottom: 20px;
+    margin-block: 10rem 3rem;
+
+    text-align: center;
+    font: 700 21px/1.6 system-ui
+}
+
+section.t p:first-letter {
+    margin-left: 35px
+}
+
+section.t p {
+    /* margin-bottom: 20px; */
 
     text-align: justify;
     font: 20px/1.7 system-ui;
@@ -86,6 +91,10 @@ section.t.v>* {
 
 section.t.u>* {
     font-family: seravek
+}
+
+section.t.h>* {
+    font-family: charter
 }
 
 /* t, font-size */
