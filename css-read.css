@@ -135,7 +135,7 @@ section.t.j p {
 /* d */
 
 section.d {
-    margin-bottom: calc(calc(13rem + env(safe-area-inset-bottom)));
+    margin-bottom: calc(13rem + env(safe-area-inset-bottom));
 
     text-align: center
 }
