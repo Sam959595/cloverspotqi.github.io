@@ -76,15 +76,18 @@ window.addEventListener('change', () => {
 
     if (vv == 1) {
         nn.classList.add('a')
-        nn.classList.remove('v', 'u')
+        nn.classList.remove('v', 'u', 'h')
     } else if (vv == 2) {
         nn.classList.add('v')
-        nn.classList.remove('a', 'u')
+        nn.classList.remove('a', 'u', 'h')
     } else if (vv == 3) {
         nn.classList.add('u')
-        nn.classList.remove('a', 'v')
+        nn.classList.remove('a', 'v', 'h')
     } else if (vv == 4) {
+        nn.classList.add('h')
         nn.classList.remove('a', 'v', 'u')
+    } else if (vv == 5) {
+        nn.classList.remove('a', 'v', 'u', 'h')
     }
 })
 
