@@ -125,7 +125,7 @@ section.t.j p {
 /* d */
 
 section.d {
-    margin-bottom: calc(calc(5rem + env(safe-area-inset-bottom)));
+    margin-bottom: calc(calc(7rem + env(safe-area-inset-bottom)));
 
     text-align: center
 }
@@ -135,7 +135,7 @@ section.d h2 {
 }
 
 section.d a {
-    margin-top: 4rem;
+    margin-top: 2rem;
 
     border-radius: 26px;
 
