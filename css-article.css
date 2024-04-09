@@ -1,3 +1,9 @@
+body {
+    background-color: var(--b);
+
+    color: var(--h)
+}
+
 /* article */
 
 article {
@@ -13,12 +19,12 @@ article h1 {
 }
 
 article h2 {
-    opacity: .7;
-
     margin: 2rem 25px 6rem;
 
     text-align: center;
-    font: 500 19px/1.3 system-ui
+    font: 500 19px/1.3 system-ui;
+
+    color: var(--c)
 }
 
 article h3 {
@@ -63,7 +69,9 @@ article figcaption {
     margin: 20px 25px;
 
     text-align: center;
-    font-size: 13px
+    font-size: 13px;
+
+    color: var(--p)
 }
 
 article blockquote {
@@ -274,7 +282,9 @@ section.s .d {
 section.s p {
     display: inline-block;
 
-    font: 600 13px system-ui
+    font: 600 13px system-ui;
+
+    color: var(--p)
 }
 
 section.s .a {
