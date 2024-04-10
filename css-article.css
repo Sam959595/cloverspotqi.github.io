@@ -159,6 +159,10 @@ section.a .a {
     filter: none
 }
 
+section.a .c {
+    color: #2f99ff
+}
+
 /* k */
 
 section.k {
