@@ -170,7 +170,8 @@ section.m {
     text-align: center;
     font: 700 14px/1.3 system-ui;
 
-    background-color: inherit
+    background-color: inherit;
+    color: var(--s)
 }
 
 /* e */
