@@ -163,7 +163,7 @@ section.m {
 
     border-bottom: 2px solid hsl(from var(--s) h s l / .02);
 
-    padding: calc(10px + env(safe-area-inset-bottom)) 24px 10px;
+    padding: calc(24px + env(safe-area-inset-bottom)) 24px 24px;
 
     display: none;
 
