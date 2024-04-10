@@ -20,9 +20,7 @@ article h1 {
 article h2 {
     margin: 2rem 25px 6rem;
 
-    font: 500 19px/1.4 system-ui;
-
-    color: var(--c)
+    font: 500 19px/1.4 system-ui
 }
 
 article h3 {
@@ -45,17 +43,7 @@ article p {
     margin: 30px 25px;
 
     font: 17px/1.6 system-ui;
-    letter-spacing: .2px;
-
-    color: var(--c)
-}
-
-article .a:first-letter {
-    -webkit-initial-letter: 2;
-
-    margin-right: 10px;
-
-    font-weight: 700
+    letter-spacing: .2px
 }
 
 article :is(p, figcaption) a {
@@ -99,7 +87,7 @@ article code {
     font-family: ui-monospace;
 
     background-color: #88888840;
-    color: color-mix(in srgb, currentcolor, transparent 30%)
+    color: hsl(from var(--h) h s l / .7)
 }
 
 /* a */
@@ -318,7 +306,6 @@ section.s .k img:last-child {
     :root {
         --b: white;
         --h: #111;
-        --c: #111;
         --p: #a3a3a4;
         --m: #ebe0ff;
         --k: #f2f2f2;
@@ -330,7 +317,6 @@ section.s .k img:last-child {
     :root {
         --b: #101010;
         --h: white;
-        --c: #f8f8f8;
         --p: #77777b;
         --m: #4d3e69;
         --k: #1a1a1c;
