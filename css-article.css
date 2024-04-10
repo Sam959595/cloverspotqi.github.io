@@ -47,6 +47,7 @@ article p {
     margin: 30px 25px;
 
     font: 17px/1.6 system-ui;
+    letter-spacing: .2px;
 
     color: var(--c)
 }
@@ -81,7 +82,7 @@ article blockquote {
 
     padding-left: 17px;
 
-    font: italic 18px/1.6 ui-serif;
+    font: 19px/1.6 ui-serif;
 
     color: var(--c)
 }
@@ -324,9 +325,9 @@ section.s .k img:last-child {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --b: #101010;
+        --b: #1c1c1e;
         --h: white;
-        --c: #ccc;
+        --c: #f8f8f8;
         --p: #77777b;
         --m: #692940;
         --k: #1a1a1c;
