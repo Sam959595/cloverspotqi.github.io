@@ -325,7 +325,7 @@ section.s .k img:last-child {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --b: #1c1c1e;
+        --b: #101010;
         --h: white;
         --c: #f8f8f8;
         --p: #77777b;
