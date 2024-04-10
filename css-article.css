@@ -82,7 +82,7 @@ article blockquote {
 
     padding-left: 17px;
 
-    font: 19px/1.6 ui-serif;
+    font: italic 19px/1.6 system-ui;
 
     color: var(--c)
 }
