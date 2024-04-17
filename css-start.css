@@ -56,7 +56,7 @@ section.n .d {
 }
 
 section.n ul {
-    margin: 0 16px calc(16px + env(safe-area-inset-bottom));
+    margin: 0 20px calc(16px + env(safe-area-inset-bottom));
 
     display: grid
 }
@@ -151,7 +151,7 @@ section.n .v img+img {
 }
 
 section.n h6 {
-    font: 700 15px ui-rounded
+    font: 600 15px ui-rounded
 }
 
 section.n h5 {
