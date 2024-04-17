@@ -79,16 +79,8 @@ section.s h6 {
 
 /* n */
 
-section.n {
-    padding-block: env(safe-area-inset-top) env(safe-area-inset-bottom)
-}
-
-section.n .d {
-    color: #007aff
-}
-
 section.n ul {
-    margin: 16px;
+    margin: calc(16px + env(safe-area-inset-top)) 16px calc(16px + env(safe-area-inset-bottom));
 
     display: grid;
     gap: 16px
