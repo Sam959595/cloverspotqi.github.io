@@ -79,41 +79,58 @@ section.s h6 {
 
 /* n */
 
+section.n {
+    padding-block: env(safe-area-inset-top) env(safe-area-inset-bottom)
+}
+
+section.n .d {
+    color: #007aff
+}
+
 section.n ul {
-    margin: 0 10px calc(10px + env(safe-area-inset-bottom));
+    margin: 16px;
 
     display: grid;
-    grid: masonry / repeat(2, 1fr);
-
-    column-gap: 10px
+    gap: 16px
 }
 
 section.n .r {
     border-radius: 12px;
 
+    padding: 15px;
+
     background-color: var(--t)
 }
 
 section.n .k {
-    overflow: hidden
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 12px;
+
+    background-color: var(--k)
 }
 
 section.n .k div {
-    border-left: 7px solid #2f2f32
+    padding: 15px
 }
 
-section.n .r img {
-    border-radius: 0 0 12px 12px
+section.n .k img {
+    object-fit: cover;
+
+    border-radius: 0 12px 12px 0
 }
 
-section.n .r div {
-    padding: 10px
+section.n h3 a {
+    text-decoration-line: underline;
+    text-decoration-skip: none;
+    text-underline-offset: 2px
 }
 
-section.n h3 {
-    margin-block: 5px 22px;
+section.n h4 {
+    margin-bottom: 11px;
 
-    height: 78px;
+    height: 82px;
 
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -121,13 +138,7 @@ section.n h3 {
     overflow: hidden;
 
     word-break: break-word;
-    font: 700 extra-condensed 19px/1 system-ui
-}
-
-section.n h2 {
-    margin-bottom: 30px;
-
-    font-size: 15px
+    font: 700 extra-condensed 20px/1 system-ui
 }
 
 section.n ins {
@@ -151,27 +162,16 @@ section.n .f {
 }
 
 section.n p {
-    font: 500 13px system-ui
+    font: 500 13px system-ui;
+
+    color: var(--p)
 }
 
-section.n .v {
-    margin-block: 24px;
-
-    display: flex;
-    justify-content: center;
-    column-gap: 3rem
+section.n p strong {
+    margin-right: 7px
 }
 
-section.n span {
-    margin-block: 24px 40px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 8px
-}
-
-section.n span img {
+section.n .v img {
     border-radius: 50%
 }
 
@@ -184,15 +184,15 @@ section.n hr {
     border-top: 3px solid var(--c)
 }
 
-section.n span div {
+section.n .v div {
     display: inherit
 }
 
-section.n span div img:not(:last-child) {
-    clip-path: path("M9 0a8.96 8.96 0 0 1 5.377 1.782C12.717 3.423 11.7 6.045 11.7 9s1.017 5.577 2.676 7.218A9 9 0 1 1 9 0Z")
+section.n .v div img:not(:last-child) {
+    clip-path: path("M10 0c2.15 0 4.25.7 5.98 1.98C14.13 3.8 13 6.72 13 10c0 3.28 1.13 6.2 2.97 8.02A10 10 0 1 1 10 0Z")
 }
 
-section.n span img+img {
+section.n .v img+img {
     margin-left: -4px
 }
 
@@ -200,27 +200,10 @@ section.n h6 {
     font: 700 15px ui-rounded
 }
 
-section.n h5 {
-    filter: grayscale();
-
-    font-size: 14px
-}
-
-section.n .a {
-    filter: none
-}
-
-section.n .t img {
-    margin-inline: 20px;
-
-    border-radius: 12px
-}
-
 section.n .s {
-    box-sizing: border-box;
-
     width: 100vw;
 
+    box-sizing: border-box;
     overflow-x: scroll;
 
     padding-inline: 20px;
@@ -234,8 +217,6 @@ section.n .s {
 }
 
 section.n .s img {
-    border-radius: 12px;
-
     scroll-snap-align: start
 }
 
