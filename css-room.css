@@ -100,7 +100,7 @@ section.n .k {
 
     border-radius: 12px;
 
-    background-color: var(--k)
+    background-color: var(--t)
 }
 
 section.n .k div {
@@ -259,7 +259,6 @@ section.k {
         --h: black;
         --p: #a3a3a4;
         --c: #dfdfdf;
-        --k: #f2f2f2;
         --n: #dddddd90;
         --t: #f7f7f7;
     }
@@ -271,7 +270,6 @@ section.k {
         --h: white;
         --p: #77777b;
         --c: #2e2e2e;
-        --k: #1c1c1c;
         --n: #21212190;
         --t: #1a1a1c;
     }
