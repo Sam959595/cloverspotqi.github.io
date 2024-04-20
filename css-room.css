@@ -159,7 +159,7 @@ section.n p {
     color: var(--p)
 }
 
-section.n p strong {
+section.n p :is(strong, svg) {
     margin-right: 7px
 }
 
