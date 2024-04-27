@@ -7,7 +7,7 @@ body {
 /* article */
 
 article {
-    margin-block: calc(7rem + env(safe-area-inset-top)) calc(8rem + env(safe-area-inset-bottom))
+    margin-block: calc(25px + env(safe-area-inset-top)) calc(8rem + env(safe-area-inset-bottom))
 }
 
 article h1 {
