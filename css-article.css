@@ -91,7 +91,7 @@ article blockquote {
 
 article mark {
     padding-block: 2px;
-    
+
     border-radius: 5px;
 
     background-color: var(--m)
@@ -106,6 +106,14 @@ article code {
 
     background-color: #88888840;
     color: hsl(from var(--h) h s l / .7)
+}
+
+.b {
+    margin: 30px 25px 30px 0;
+
+    border-left: 8px solid;
+
+    padding-left: 17px
 }
 
 /* a */
@@ -161,14 +169,6 @@ section.a h5 {
 
 section.a .a {
     filter: none
-}
-
-.b {
-    margin: 30px 25px 30px 0;
-
-    border-left: 8px solid;
-
-    padding-left: 17px
 }
 
 /* k */
