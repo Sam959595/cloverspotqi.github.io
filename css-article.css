@@ -29,12 +29,16 @@ section.n p {
     font: 600 14px ui-rounded
 }
 
+.c {
+    color: var(--q)
+}
+
 /* article */
 
-article h3 {
+article h1 {
     margin: 30px 25px;
 
-    font: 600 19px/1.4 system-ui
+    font: 19px/1.4 system-ui
 }
 
 [data-i] {
@@ -50,7 +54,7 @@ img {
 article p {
     margin: 30px 25px;
 
-    font: 17px/1.6 system-ui;
+    font: 17px/1.7 system-ui;
     letter-spacing: .2px
 }
 
@@ -86,6 +90,8 @@ article blockquote {
 }
 
 article mark {
+    padding-block: 2px;
+    
     border-radius: 5px;
 
     background-color: var(--m)
@@ -157,8 +163,12 @@ section.a .a {
     filter: none
 }
 
-.c {
-    color: var(--q)
+.b {
+    margin: 30px 25px 30px 0;
+
+    border-left: 8px solid;
+
+    padding-left: 17px
 }
 
 /* k */
