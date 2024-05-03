@@ -12,7 +12,7 @@ section.n {
 
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 20px
 }
 
 section.n img {
@@ -21,6 +21,12 @@ section.n img {
 
 section.n a {
     font: 500 15px system-ui
+}
+
+section.n p {
+    margin-top: 5px;
+
+    font: 600 13px ui-rounded
 }
 
 /* article */
@@ -46,6 +52,10 @@ article p {
 
     font: 17px/1.6 system-ui;
     letter-spacing: .2px
+}
+
+article em {
+    font-family: ui-serif
 }
 
 article :is(p, figcaption) a {
@@ -147,7 +157,7 @@ section.a .a {
     filter: none
 }
 
-section.a .c {
+.c {
     color: var(--q)
 }
 
