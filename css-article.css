@@ -90,7 +90,7 @@ article blockquote {
 }
 
 article mark {
-    padding-block: 2px;
+    padding-block: 4px;
 
     border-radius: 5px;
 
