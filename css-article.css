@@ -108,12 +108,6 @@ article code {
     color: hsl(from var(--h) h s l / .7)
 }
 
-article ul {
-    margin-left: 18px;
-
-    list-style: disc
-}
-
 /* a */
 
 section.a {
