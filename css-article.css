@@ -19,6 +19,10 @@ section.n img {
     border-radius: 50%
 }
 
+section.n div {
+    flex-grow: 1
+}
+
 section.n a {
     font: 500 15px system-ui
 }
@@ -27,6 +31,17 @@ section.n p {
     margin-top: 2px;
 
     font: 600 15px ui-rounded
+}
+
+section.n button {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    font-size: 21px;
+
+    background-color: var(--k)
 }
 
 .c {
@@ -146,7 +161,7 @@ section.a div img:not(:last-child) {
 }
 
 section.a img+img {
-    margin-left: -4px
+    margin-left: -5px
 }
 
 section.a h6 {
