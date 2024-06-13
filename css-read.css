@@ -61,8 +61,7 @@ section.t p:first-letter {
 
 section.t p {
     text-align: justify;
-    font: 20px/1.7 system-ui;
-    letter-spacing: .2px
+    font: 20px/1.7 system-ui
 }
 
 section.t u {
