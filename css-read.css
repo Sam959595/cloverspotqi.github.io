@@ -15,14 +15,12 @@ section.t {
 }
 
 section.t h1 {
-    opacity: .5;
-
     text-align: center;
     font: 500 24px system-ui
 }
 
 section.t h2 {
-    margin-block: 1rem 25rem;
+    margin-block: 1rem 35rem;
 
     text-align: center;
     word-break: break-word;
@@ -44,7 +42,7 @@ section.t h4 {
 }
 
 section.t h5 {
-    margin-block: 10rem 3rem;
+    margin-block: 30rem 3rem;
 
     text-align: center;
     font: 600 48px/1.6 system-ui
