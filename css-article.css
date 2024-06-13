@@ -189,7 +189,7 @@ section.k {
     position: fixed;
     inset: 0 0 auto;
 
-    height: env(safe-area-inset-top);
+    height: calc(20px + env(safe-area-inset-top));
 
     background-image: linear-gradient(hsl(from var(--b) h s l / .9) 50%, transparent)
 }
