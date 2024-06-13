@@ -191,7 +191,7 @@ section.k {
 
     height: env(safe-area-inset-top);
 
-    background-color: inherit
+    background-image: linear-gradient(hsl(from var(--b) h s l / .9) 50%, transparent)
 }
 
 /* s */
