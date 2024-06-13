@@ -1,184 +1,72 @@
-body {
-    padding-block: env(safe-area-inset-top) calc(7rem + env(safe-area-inset-bottom));
-
-    background-color: var(--b);
-    color: var(--h)
-}
-
-/* n */
-
-section.n {
-    margin: 25px;
-
-    display: flex;
-    align-items: center;
-    gap: 20px
-}
-
-section.n img {
-    border-radius: 50%
-}
-
-section.n div {
-    flex-grow: 1
-}
-
-section.n a {
-    font: 500 15px system-ui
-}
-
-section.n p {
-    margin-top: 2px;
-
-    font: 600 15px ui-rounded
-}
-
-section.n button {
-    width: 45px;
-    height: 45px;
-
-    border-radius: 50%;
-
-    font-size: 21px;
-
-    background-color: var(--k)
-}
-
-.c {
-    color: var(--q)
-}
-
-/* article */
-
-article h1 {
-    margin: 30px 25px;
-
-    font: 19px/1.4 system-ui
-}
-
-[data-i] {
-    opacity: 0
-}
-
-img {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
-}
-
-article p {
-    margin: 30px 25px;
-
-    font: 17px/1.7 system-ui;
-    letter-spacing: .2px
-}
-
-article em {
-    font-family: ui-serif
-}
-
-article :is(p, figcaption) a {
-    text-decoration-line: underline;
-    text-decoration-skip: none;
-    text-underline-offset: 2px
-}
-
-article figcaption {
-    margin: 20px 25px;
-
-    text-align: center;
-    font-size: 13px;
-
-    color: var(--p)
-}
-
-article blockquote {
-    margin: 30px 25px 30px 0;
-
-    border-left: 8px solid;
-
-    padding-left: 17px;
-
-    font: italic 19px/1.6 system-ui;
-
-    color: var(--q)
-}
-
-article mark {
-    padding-block: 2px;
-
-    border-radius: 5px;
-
-    background-color: var(--m)
-}
-
-article code {
-    border-radius: 5px;
-
-    padding-inline: 5px;
-
-    font-family: ui-monospace;
-
-    background-color: #88888840;
-    color: hsl(from var(--h) h s l / .7)
+html {
+    overscroll-behavior-y: none
 }
 
 /* a */
 
 section.a {
-    position: fixed;
-    inset: auto 0 0;
-    padding: 40px 0 max(calc(15px + env(safe-area-inset-bottom)), 20px);
+    padding: env(safe-area-inset-top) 20px env(safe-area-inset-bottom);
+
+    height: 100vh;
 
     display: flex;
-    justify-content: center;
-    column-gap: 8px;
-
-    background-image: linear-gradient(transparent, hsl(from var(--b) h s l / .7));
-
-    transition: opacity .4s
+    flex-flow: column;
+    justify-content: space-around;
+    text-align: center
 }
 
-section.a span {
-    border-radius: 28px;
-
-    padding: 19px 24px;
-
-    display: inherit;
-    align-items: center;
-    column-gap: 8px;
-
-    background-color: var(--k)
+section.a h2 {
+    font: 800 expanded 14px system-ui;
+    letter-spacing: .5rem
 }
 
-section.a div {
-    display: inherit
+section.a h1 {
+    margin-block: .5rem 1.5rem;
+
+    font: 800 expanded 32px/1 system-ui
+}
+
+section.a h3 {
+    font: 700 14px system-ui;
+
+    color: var(--col-p)
 }
 
 section.a img {
-    border-radius: 50%
+    object-fit: cover;
+    aspect-ratio: 1/1.4;
+
+    width: 100%;
+
+    border-radius: 12px
 }
 
-section.a div img:not(:last-child) {
-    clip-path: path("M9 0a8.96 8.96 0 0 1 5.377 1.782C12.717 3.423 11.7 6.045 11.7 9s1.017 5.577 2.676 7.218A9 9 0 1 1 9 0Z")
+section.a .n {
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem
 }
 
-section.a img+img {
-    margin-left: -5px
+section.a button {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    background-color: var(--col-t)
 }
 
-section.a h6 {
-    font: 700 15px ui-rounded
+section.a h4 {
+    font-size: 27px;
+
+    filter: grayscale(1)
 }
 
 section.a h5 {
-    filter: grayscale();
-
-    font-size: 14px
-}
-
-section.a .a {
-    filter: none
+    font: 800 24px ui-rounded
 }
 
 /* k */
@@ -191,167 +79,33 @@ section.k {
 
     height: env(safe-area-inset-top);
 
-    background-color: inherit
-}
-
-/* s */
-
-section.s {
-    pointer-events: none;
-    opacity: 0;
-
-    position: fixed;
-    inset: 0;
-
-    overflow-y: scroll;
-
-    background-color: inherit;
-
-    transition: opacity .2s
-}
-
-section.s .y {
-    position: sticky;
-    inset: 0 0 auto;
-
-    padding: calc(25px + env(safe-area-inset-top)) 20px 25px 25px;
-
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-
-    background-color: inherit
-}
-
-section.s textarea {
-    resize: none;
-
-    padding: 0;
-
-    flex-grow: 1;
-
-    font-size: 15px;
-
-    background: none
-}
-
-section.s textarea::-webkit-input-placeholder {
-    color: var(--p)
-}
-
-section.s span {
-    font: 600 15px system-ui;
-
-    color: var(--h)
-}
-
-section.s .p {
-    color: #007aff
-}
-
-section.s .v {
-    padding: 5px
-}
-
-section.s .t {
-    padding: 3px;
-
-    border: 2px solid #007aff
-}
-
-section.s .e {
-    padding: 3px;
-
-    border: 2px solid #ff4141
-}
-
-section.s ul {
-    display: grid;
-    row-gap: 25px
-}
-
-section.s .c {
-    margin: 0 25px calc(25px + env(safe-area-inset-bottom))
-}
-
-section.s .b {
-    margin: 25px 0 25px 25px
-}
-
-section.s .s {
-    margin-bottom: 10px;
-
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    column-gap: 10px
-}
-
-section.s h1 {
-    font-size: 15px
-}
-
-section.s u {
-    font-size: 13px;
-
-    color: color-mix(in srgb, var(--h), transparent 70%)
-}
-
-section.s .d {
-    display: flex;
-    justify-content: space-between
-}
-
-section.s p {
-    display: inline-block;
-
-    font: 600 13px system-ui;
-
-    color: var(--p)
-}
-
-section.s .a {
-    color: #ff4141
-}
-
-section.s img {
-    border-radius: 50%
-}
-
-section.s h2 {
-    font: 600 13px system-ui
-}
-
-section.s .k {
-    display: inherit
-}
-
-section.s .k img:first-child {
-    margin-right: -4px
-}
-
-section.s .k img:last-child {
-    clip-path: path("M9 0A8.96 8.96 0 0 0 3.6 1.782C5.26 3.423 6.277 6.045 6.277 9s-1.017 5.577-2.676 7.218A9 9 0 1 0 9 0Z")
+    background-color: var(--col-b)
 }
 
 @media (prefers-color-scheme: light) {
     :root {
-        --b: white;
-        --h: #111;
-        --p: #a3a3a4;
-        --m: #ebe0ff;
-        --k: #f2f2f2;
-        --q: #695098;
+        --col-b: white;
+        --col-h: black;
+        --col-p: #afafb1;
+
+        --col-a: #00000008;
+        --col-c: #00000020;
+        --col-t: #f5f5f7;
+        --col-k: #eaeaf290;
+        --col-f: #53a2b5;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --b: #101010;
-        --h: white;
-        --p: #77777b;
-        --m: #4d3e69;
-        --k: #1a1a1c;
-        --q: #c8abff;
+        --col-b: #101010;
+        --col-h: white;
+        --col-p: #77777b;
+
+        --col-a: #00000030;
+        --col-c: #ffffff20;
+        --col-t: #1c1c1f;
+        --col-k: #21212190;
+        --col-f: #6ac5dd;
     }
 }
