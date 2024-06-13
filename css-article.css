@@ -128,13 +128,13 @@ article code {
 section.a {
     position: fixed;
     inset: auto 0 0;
-    padding: 40px 0 max(calc(15px + env(safe-area-inset-bottom)), 20px);
+    padding-bottom: max(calc(15px + env(safe-area-inset-bottom)), 20px);
 
     display: flex;
     justify-content: center;
     column-gap: 8px;
 
-    background-image: linear-gradient(transparent, hsl(from var(--b) h s l / .7));
+    background-image: linear-gradient(transparent, hsl(from var(--b) h s l / .9));
 
     transition: opacity .4s
 }
@@ -189,9 +189,9 @@ section.k {
     position: fixed;
     inset: 0 0 auto;
 
-    height: calc(34px + 54px);
+    height: env(safe-area-inset-top);
 
-    background-image: linear-gradient(hsl(from var(--b) h s l / .9), transparent)
+    background-color: inherit
 }
 
 /* s */
