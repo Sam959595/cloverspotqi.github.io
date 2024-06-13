@@ -53,7 +53,7 @@ section.n button {
 article h1 {
     margin: 30px 25px;
 
-    font: 19px/1.4 system-ui
+    font: 500 22px/1.4 system-ui
 }
 
 [data-i] {
@@ -351,7 +351,7 @@ section.s .k img:last-child {
         --h: white;
         --p: #77777b;
         --m: #4d3e69;
-        --k: #1c1c1c;
+        --k: #1a1a1c;
         --q: #c8abff;
     }
 }
