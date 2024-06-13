@@ -52,7 +52,8 @@ section.t h6 {
     margin-block: 10rem 3rem;
 
     text-align: center;
-    font: 700 21px/1.6 system-ui
+    font: 700 21px/1.6 system-ui;
+    letter-spacing: .4px
 }
 
 section.t p:first-letter {
@@ -124,7 +125,7 @@ section.j p {
 /* d */
 
 section.d {
-    margin-bottom: calc(13rem + env(safe-area-inset-bottom));
+    margin-bottom: calc(10rem + env(safe-area-inset-bottom));
 
     text-align: center;
 
@@ -272,13 +273,13 @@ body.b section.t {
         --s: #111;
         --bac-1: #eeeded;
         --bac-2: #fefcf5;
-        --bac-3: #d3dbe9;
+        --bac-3: #f5f9ff;
         --bac-4: #eee3cc;
         --bac-5: #e2dbcf;
         --col: #222;
         --col-1: #1d1a1a;
         --col-2: #211700;
-        --col-3: #2b2f36;
+        --col-3: #313133;
         --col-4: #32281e;
         --col-5: #111;
     }
