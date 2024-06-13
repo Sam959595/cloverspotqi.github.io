@@ -128,13 +128,13 @@ article code {
 section.a {
     position: fixed;
     inset: auto 0 0;
-    padding-bottom: max(calc(15px + env(safe-area-inset-bottom)), 20px);
+    padding: 40px 0 max(calc(15px + env(safe-area-inset-bottom)), 20px);
 
     display: flex;
     justify-content: center;
     column-gap: 8px;
 
-    background-image: linear-gradient(transparent, hsl(from var(--b) h s l / .9));
+    background-image: linear-gradient(transparent, hsl(from var(--b) h s l / .7));
 
     transition: opacity .4s
 }
@@ -351,7 +351,7 @@ section.s .k img:last-child {
         --h: white;
         --p: #77777b;
         --m: #4d3e69;
-        --k: #1a1a1c;
+        --k: #1c1c1c;
         --q: #c8abff;
     }
 }
