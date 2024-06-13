@@ -52,8 +52,7 @@ section.t h6 {
     margin-block: 10rem 3rem;
 
     text-align: center;
-    font: 700 21px/1.6 system-ui;
-    letter-spacing: .4px
+    font: 700 21px/1.6 system-ui
 }
 
 section.t p:first-letter {
