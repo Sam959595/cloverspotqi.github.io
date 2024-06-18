@@ -147,7 +147,13 @@ section.a span {
     align-items: center;
     column-gap: 8px;
 
-    background-color: var(--k)
+    background-color: var(--k);
+
+    transition: background-color .05s
+}
+
+section.a span:active {
+    background-color: color-mix(in srgb, var(--k), black 20%)
 }
 
 section.a div {
@@ -159,7 +165,7 @@ section.a img {
 }
 
 section.a div img:not(:last-child) {
-    clip-path: path("M9 0a8.96 8.96 0 0 1 5.377 1.782C12.717 3.423 11.7 6.045 11.7 9s1.017 5.577 2.676 7.218A9 9 0 1 1 9 0Z")
+    clip-path: path("M10 0c2.15 0 4.25.7 5.98 1.98C14.13 3.8 13 6.72 13 10c0 3.28 1.13 6.2 2.97 8.02A10 10 0 1 1 10 0Z")
 }
 
 section.a img+img {
