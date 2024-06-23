@@ -23,25 +23,12 @@ section.n div {
     flex-grow: 1
 }
 
+section.n p {
+    color: var(--p)
+}
+
 section.n a {
     font: 500 15px system-ui
-}
-
-section.n p {
-    margin-top: 2px;
-
-    font: 600 15px ui-rounded
-}
-
-section.n button {
-    width: 45px;
-    height: 45px;
-
-    border-radius: 50%;
-
-    font-size: 21px;
-
-    background-color: var(--k)
 }
 
 .c {
@@ -147,13 +134,7 @@ section.a span {
     align-items: center;
     column-gap: 8px;
 
-    background-color: var(--k);
-
-    transition: background-color .05s
-}
-
-section.a span:active {
-    background-color: color-mix(in srgb, var(--k), black 20%)
+    background-color: var(--k)
 }
 
 section.a div {
