@@ -24,8 +24,8 @@ section.n div {
 }
 
 section.n p {
-    font-size: 13px;
-    
+    font: 500 13px system-ui;
+
     color: var(--p)
 }
 
