@@ -27,7 +27,8 @@ section.n p {
     color: var(--p)
 }
 
-section.n a {
+section.n div a {
+    word-wrap: anywhere;
     font: 500 15px system-ui
 }
 
@@ -200,6 +201,22 @@ section.s {
     transition: opacity .2s
 }
 
+section.s button {
+    position: fixed;
+    inset: auto 0 max(calc(15px + env(safe-area-inset-bottom)), 20px);
+
+    margin-inline: auto;
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    font-size: 14px;
+
+    background-color: var(--k)
+}
+
 section.s .y {
     position: sticky;
     inset: 0 0 auto;
@@ -260,8 +277,8 @@ section.s ul {
     row-gap: 25px
 }
 
-section.s .c {
-    margin: 0 25px calc(25px + env(safe-area-inset-bottom))
+section.s .m {
+    margin: 0 25px calc(25px + env(safe-area-inset-bottom)) 15px
 }
 
 section.s .b {
@@ -269,12 +286,10 @@ section.s .b {
 }
 
 section.s .s {
-    margin-bottom: 10px;
-
     display: flex;
     align-items: start;
     justify-content: space-between;
-    column-gap: 10px
+    column-gap: 15px
 }
 
 section.s h1 {
@@ -288,6 +303,8 @@ section.s u {
 }
 
 section.s .d {
+    margin: 10px 0 0 45px;
+
     display: flex;
     justify-content: space-between
 }
