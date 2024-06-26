@@ -221,7 +221,7 @@ section.s .y {
     position: sticky;
     inset: 0 0 auto;
 
-    padding: calc(25px + env(safe-area-inset-top)) 20px 25px 25px;
+    padding: calc(25px + env(safe-area-inset-top)) 25px 25px;
 
     display: flex;
     align-items: center;
@@ -258,7 +258,7 @@ section.s ul {
 }
 
 section.s .m {
-    margin: 0 25px calc(25px + env(safe-area-inset-bottom)) 15px
+    margin: 0 25px calc(25px + env(safe-area-inset-bottom)) 25px
 }
 
 section.s .b {
