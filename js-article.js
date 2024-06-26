@@ -19,7 +19,7 @@ $('article').dblclick(() => {
 })
 
 // comment
-$('section.a span:first-child').click(() => {
+$('section.a span:last-child').click(() => {
     $('body')[0].style = 'overflow: hidden; height: 100vh';
     $('section.s')[0].style = 'pointer-events: auto; opacity: 1'
 })
@@ -30,15 +30,15 @@ $('button').click(() => {
 })
 
 // counter
-$('section.a span:nth-child(2)').click(() => {
-    let a = $('section.a span:nth-child(2) h6')[0].innerText;
-    $('section.a span:nth-child(2) h6')[0].innerText = Number(a) + 1;
-    $('section.a span:nth-child(2) h5')[0].classList.toggle('a')
+$('section.a span:first-child').click(() => {
+    let a = $('section.a span:first-child h6')[0].innerText;
+    $('section.a span:first-child h6')[0].innerText = Number(a) + 1;
+    $('section.a span:first-child h5')[0].classList.toggle('a')
 })
 
 // bookmark
-$('section.a span:last-child').click(() => {
-    $('section.a span:last-child h5')[0].classList.toggle('a')
+$('section.a span:nth-child(2)').click(() => {
+    $('section.a span:nth-child(2) h5')[0].classList.toggle('a')
 })
 
 // textarea
