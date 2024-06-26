@@ -221,7 +221,7 @@ section.s .y {
     position: sticky;
     inset: 0 0 auto;
 
-    padding: calc(10px + env(safe-area-inset-top)) 25px 25px;
+    padding: calc(15px + env(safe-area-inset-top)) 25px 15px;
 
     display: flex;
     align-items: center;
