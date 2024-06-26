@@ -251,7 +251,7 @@ section.s textarea::-webkit-input-placeholder {
 section.s span {
     font: 600 15px system-ui;
 
-    color: var(--h)
+    color: var(--q)
 }
 
 section.s ul {
