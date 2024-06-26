@@ -4,7 +4,6 @@ html {
 
 body {
     background-color: var(--b);
-
     color: var(--h)
 }
 
@@ -149,7 +148,7 @@ section.n .v div img:not(:last-child) {
 }
 
 section.n .v img+img {
-    margin-left: -4px
+    margin-left: -5px
 }
 
 section.n h6 {
@@ -190,9 +189,9 @@ section.n .s img {
     scroll-snap-align: start
 }
 
-/* s */
+/* button */
 
-section.s {
+button {
     position: fixed;
     inset: auto 25px max(env(safe-area-inset-bottom), 25px) auto;
 
@@ -201,16 +200,9 @@ section.s {
 
     border-radius: 50%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: var(--k)
-}
-
-section.s h1 {
     font-size: 14px;
 
+    background-color: var(--k);
     color: var(--h)
 }
 
