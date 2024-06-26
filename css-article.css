@@ -260,7 +260,7 @@ section.s ul {
 }
 
 section.s .m {
-    margin: 0 25px calc(25px + env(safe-area-inset-bottom)) 25px
+    margin: 25px 25px calc(25px + env(safe-area-inset-bottom))
 }
 
 section.s .b {
