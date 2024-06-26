@@ -240,7 +240,8 @@ section.s textarea {
     font-size: 15px;
 
     background: none;
-    color: var(--h)
+    color: var(--h);
+    caret-color: var(--q)
 }
 
 section.s textarea::-webkit-input-placeholder {
