@@ -50,7 +50,7 @@ document.querySelectorAll('textarea').forEach(x => {
         let a = $('section.s span')[0];
 
         if (x.value !== '') {
-            a.innerHTML = '<span class="p">Отправить</span>'
+            a.innerHTML = '<span class="p">Отпра.</span>'
         } else {
             a.innerHTML = '<span></span>'
         }
