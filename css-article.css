@@ -298,7 +298,7 @@ section.s p {
 }
 
 section.s .a {
-    color: #ff4141
+    color: var(--q)
 }
 
 section.s img {
