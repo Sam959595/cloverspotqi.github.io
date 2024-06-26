@@ -239,7 +239,8 @@ section.s textarea {
 
     font-size: 15px;
 
-    background: none
+    background: none;
+    color: var(--h)
 }
 
 section.s textarea::-webkit-input-placeholder {
