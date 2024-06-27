@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: var(--b)
+    background-color: var(--bac)
 }
 
 /* t */
@@ -199,13 +199,13 @@ section.e select {
     font: 700 15px system-ui;
 
     background-color: var(--s);
-    color: var(--b);
+    color: var(--bac);
 
     transition: color .4s
 }
 
 section.e select:focus {
-    color: hsl(from var(--b) h s l / .3)
+    color: hsl(from var(--bac) h s l / .3)
 }
 
 /* k */
@@ -267,8 +267,7 @@ body.b section.t {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --b: white;
-        --s: #111;
+        --bac: white;
         --bac-1: #eeeded;
         --bac-2: #fefcf5;
         --bac-3: #f5f9ff;
@@ -280,13 +279,13 @@ body.b section.t {
         --col-3: #313133;
         --col-4: #32281e;
         --col-5: #111;
+        --s: #111;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --b: black;
-        --s: white;
+        --bac: black;
         --bac-1: #1c1c1e;
         --bac-2: #4a4a4d;
         --bac-3: #2c2f38;
@@ -298,5 +297,6 @@ body.b section.t {
         --col-3: white;
         --col-4: #fbf5e5;
         --col-5: #fffffe;
+        --s: white;
     }
 }
