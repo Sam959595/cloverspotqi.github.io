@@ -20,7 +20,7 @@ $('article').dblclick(() => {
 
 // comment
 $('section.a span:last-child').click(() => {
-    $('body')[0].style = 'overflow: hidden; height: 100vh';
+    $('body')[0].style = 'touch-action: none; overflow: hidden; height: 100vh';
     $('section.s')[0].style = 'pointer-events: auto; opacity: 1'
 })
 
