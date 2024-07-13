@@ -27,13 +27,18 @@ body {
     scroll-snap-align: start
 }
 
-.d h1 {
-    margin: calc(20px + env(safe-area-inset-top)) 20px 20px;
+/* s */
 
-    font: 900 32px/1 system-ui
+section.s .t {
+    margin: calc(10px + env(safe-area-inset-top)) 20px 20px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
-/* s */
+section.s h1 {
+    font: 900 32px/1 system-ui
+}
 
 section.s ul {
     margin-bottom: calc(50px + env(safe-area-inset-bottom));
@@ -219,34 +224,6 @@ section.n .s {
 
 section.n .s img {
     scroll-snap-align: start
-}
-
-/* input */
-
-input {
-    position: fixed;
-    inset: auto 0 0;
-
-    width: 100vw;
-
-    border-radius: 0;
-
-    border-top: 2px solid #88888810;
-
-    padding: 20px 20px calc(20px + env(safe-area-inset-bottom));
-
-    font-size: 17px;
-
-    background-color: inherit;
-    color: var(--h)
-}
-
-input::placeholder {
-    color: var(--p)
-}
-
-input:focus {
-    padding-bottom: 20px
 }
 
 /* k */
