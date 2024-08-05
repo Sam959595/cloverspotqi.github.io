@@ -29,14 +29,9 @@ body {
 
 /* s */
 
-section.s .t {
+section.s h1 {
     margin: calc(10px + env(safe-area-inset-top)) 20px 20px;
 
-    display: flex;
-    justify-content: space-between;
-}
-
-section.s h1 {
     font: 900 32px/1 system-ui
 }
 
@@ -92,6 +87,12 @@ section.s h6 {
 }
 
 /* n */
+
+section.n img {
+    margin: 4rem auto;
+
+    border-radius: 50%
+}
 
 section.n ul {
     margin: calc(16px + env(safe-area-inset-top)) 16px calc(16px + env(safe-area-inset-bottom));
