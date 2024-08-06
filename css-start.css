@@ -3,8 +3,9 @@ html {
 }
 
 body {
-    background-image: url('rain.gif');
-    background-color: #201f2b;
+    background-image: url('snow.gif'), url('https://ih1.redbubble.net/image.854233941.0260/flat,750x1000,075,f.u4.jpg');
+    background-size: 200px 400px, contain;
+    background-color: var(--b);
     color: var(--h)
 }
 
