@@ -4,7 +4,7 @@ html {
 
 body {
     background-image: url('https://img.clipart-library.com/2/clip-transparent-snow-falling-gif/clip-transparent-snow-falling-gif-1.gif');
-    background-color: #5b6b81;
+    background-color: var(--b);
     color: var(--h)
 }
 
@@ -222,7 +222,7 @@ section.k {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --b: white;
+        --b: #21272f;
         --h: black;
         --p: #a3a3a4;
         --c: #dfdfdf;
@@ -232,7 +232,7 @@ section.k {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --b: #101010;
+        --b: #0d1014;
         --h: white;
         --p: #77777b;
         --c: #2e2e2e;
