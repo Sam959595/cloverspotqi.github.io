@@ -4,7 +4,7 @@ html {
 
 body {
     will-change: background-image;
-    background-image: url('/book/snow.gif'), linear-gradient(#414d5aff, #bac6d9ff);
+    background-image: url('snow.gif'), linear-gradient(#414d5aff, #bac6d9ff);
     color: var(--h)
 }
 
