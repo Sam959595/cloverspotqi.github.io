@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: url('/rain.gif');
+    background-image: url('rain.gif');
     background-color: #201f2b;
     color: var(--h)
 }
