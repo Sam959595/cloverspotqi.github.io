@@ -3,8 +3,8 @@ html {
 }
 
 body {
-    will-change: background-image;
-    background-image: url('snow.gif'), linear-gradient(#414d5a, #bac6d9);
+    background-image: url('https://img.clipart-library.com/2/clip-transparent-snow-falling-gif/clip-transparent-snow-falling-gif-1.gif');
+    background-color: #5b6b81;
     color: var(--h)
 }
 
