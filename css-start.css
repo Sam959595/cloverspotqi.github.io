@@ -222,7 +222,7 @@ section.k {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --b: #21272f;
+        --b: #596473;
         --h: black;
         --p: #a3a3a4;
         --c: #dfdfdf;
@@ -232,7 +232,7 @@ section.k {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --b: #0d1014;
+        --b: #21272f;
         --h: white;
         --p: #77777b;
         --c: #2e2e2e;
