@@ -63,12 +63,12 @@ section.n .d {
 } */
 
 section.n ul {
-    margin: 0 5px calc(16px + env(safe-area-inset-bottom));
+    margin: 0 8px calc(16px + env(safe-area-inset-bottom));
 
     display: grid;
     grid: masonry / repeat(2, auto);
 
-    gap: 10px
+    gap: 8px
 }
 
 section.n .g {
