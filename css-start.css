@@ -56,10 +56,19 @@ section.n .d {
     color: #007aff
 }
 
-section.n ul {
+/* section.n ul {
     margin: 0 20px calc(16px + env(safe-area-inset-bottom));
 
     display: grid
+} */
+
+section.n ul {
+    margin: 0 5px calc(16px + env(safe-area-inset-bottom));
+
+    display: grid;
+    grid: masonry / repeat(2, auto);
+
+    gap: 10px
 }
 
 section.n .g {
@@ -73,7 +82,7 @@ section.n .g p {
 }
 
 section.n .g img {
-    border-radius: 0 0 12px 12px
+    border-radius: 12px 12px 0 0
 }
 
 section.n h3 {
