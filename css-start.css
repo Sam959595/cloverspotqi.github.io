@@ -16,6 +16,8 @@ body {
 
 img,
 video {
+    border-radius: 12px 12px 0 0;
+
     opacity: 1;
 
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
@@ -81,14 +83,10 @@ section.n .g p {
     padding: 15px 15px 0
 }
 
-section.n .g img {
-    border-radius: 12px 12px 0 0
-}
-
 section.n h3 {
-    padding: 15px;
+    padding: 10px;
 
-    font: 16px/1.4 system-ui
+    font: 500 14px/1.4 system-ui
 }
 
 section.n h3 a {
