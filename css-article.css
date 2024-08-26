@@ -10,15 +10,23 @@ section.n {
 
     display: flex;
     align-items: center;
-    gap: 20px
+    column-gap: 20px
 }
 
 section.n img {
     border-radius: 50%
 }
 
-section.n div {
-    flex-grow: 1
+section.n .a {
+    position: relative
+}
+
+section.n .a:after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    border: 2px solid #0000000d;
+    border-radius: 50%
 }
 
 section.n p {
@@ -27,9 +35,15 @@ section.n p {
     color: var(--p)
 }
 
-section.n div a {
+section.n h6 {
     word-wrap: anywhere;
-    font: 500 15px system-ui
+    font: 500 15px system-ui;
+
+    color: var(--p)
+}
+
+section.n a {
+    color: var(--h)
 }
 
 .c {
