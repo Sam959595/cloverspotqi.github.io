@@ -189,7 +189,7 @@ section.a .a {
 /* k */
 
 section.k {
-    opacity: .9;
+    opacity: .8;
 
     position: fixed;
     inset: 0 0 auto;
@@ -349,7 +349,7 @@ section.s .k img:last-child {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --b: #101010;
+        --b: black;
         --h: white;
         --p: #77777b;
         --m: #4d3e69;
