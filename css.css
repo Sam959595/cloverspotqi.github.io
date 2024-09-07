@@ -27,8 +27,6 @@ ul {
 
 img,
 video {
-	pointer-events: none;
-
 	display: block
 }
 
