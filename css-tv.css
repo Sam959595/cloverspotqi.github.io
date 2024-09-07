@@ -10,6 +10,7 @@ section.a {
 }
 
 section.a h1 {
+    word-break: break-all;
     font: 900 44px system-ui
 }
 
@@ -39,12 +40,12 @@ section.b .a h1 {
 /* c */
 
 section.c {
-    margin: 25px
+    margin: 25px 25px calc(50px + env(safe-area-inset-bottom))
 }
 
 section.c ul {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px 17px
 }
 
@@ -101,7 +102,7 @@ section.k {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --b: #131313;
+        --b: #111112;
         --h: white;
         --p: #77777b;
         --k: #1c1c1c;
