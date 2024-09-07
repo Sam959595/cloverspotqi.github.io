@@ -106,11 +106,9 @@ section.d div {
 
 section.e {
     position: fixed;
-    inset: auto 40px calc(40px + env(safe-area-inset-bottom)) auto;
+    inset: auto 15px calc(15px + env(safe-area-inset-bottom)) auto;
 
-    border: 10px solid var(--k);
-
-    border-radius: 23px
+    box-shadow: 0 0 30px #00000030
 }
 
 section.e video {
