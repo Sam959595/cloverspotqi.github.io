@@ -85,7 +85,7 @@ section.c p {
 /* d */
 
 section.d {
-    padding: 20px 40px max(calc(15px + env(safe-area-inset-bottom)), 20px);
+    padding: 20px 30px calc(15px + env(safe-area-inset-bottom));
 
     position: fixed;
     inset: auto 0 0;
@@ -94,16 +94,26 @@ section.d {
 }
 
 section.d div {
-    margin-left: auto;
+    width: 48px;
+    height: 48px;
 
-    padding: 10px;
-
-    border-radius: 23px;
+    border-radius: 50%;
 
     background-color: var(--k)
 }
 
-section.d video {
+/* e */
+
+section.e {
+    position: fixed;
+    inset: auto 40px calc(40px + env(safe-area-inset-bottom)) auto;
+
+    border: 10px solid var(--k);
+
+    border-radius: 23px
+}
+
+section.e video {
     object-fit: cover;
 
     border-radius: 14px
