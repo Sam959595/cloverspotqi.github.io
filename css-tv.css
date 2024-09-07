@@ -108,13 +108,15 @@ section.e {
     position: fixed;
     inset: auto 30px calc(15px + env(safe-area-inset-bottom)) auto;
 
-    box-shadow: 0 0 30px #00000030
+    border-radius: 14px;
+
+    box-shadow: 0 3px 30px #00000030
 }
 
 section.e video {
     object-fit: cover;
 
-    border-radius: 14px
+    border-radius: inherit
 }
 
 /* k */
