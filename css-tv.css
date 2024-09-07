@@ -1,0 +1,99 @@
+body {
+    background-color: var(--b);
+    color: var(--h)
+}
+
+/* n */
+
+section.n {
+    margin: calc(10px + env(safe-area-inset-top)) 25px 20px
+}
+
+section.n h1 {
+    font: 900 32px system-ui;
+}
+
+/* b */
+
+section.b ul {
+    padding-inline: 25px;
+
+    box-sizing: border-box;
+    overflow-x: scroll;
+
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    column-gap: 30px
+}
+
+section.b h2 {
+    font: 700 24px system-ui;
+
+    color: var(--p)
+}
+
+section.b .a h2 {
+    color: var(--h)
+}
+
+/* m */
+
+section.m {
+    margin: 25px
+}
+
+section.m ul {
+    margin-top: 1em;
+
+    box-sizing: border-box;
+    overflow-x: scroll;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px
+}
+
+section.m img {
+    width: 100%;
+    height: 100px;
+
+    object-fit: cover;
+
+    border-radius: 16px
+}
+
+/* k */
+
+section.k {
+    opacity: .9;
+
+    position: fixed;
+    inset: 0 0 auto;
+
+    height: env(safe-area-inset-top);
+
+    background-color: inherit
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --b: white;
+        --h: #111;
+        --p: #a3a3a4;
+        --m: #ebe0ff;
+        --k: #f2f2f2;
+        --q: #695098;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --b: #101010;
+        --h: white;
+        --p: #77777b;
+        --m: #4d3e69;
+        --k: #1c1c1c;
+        --q: #c8abff;
+    }
+}
