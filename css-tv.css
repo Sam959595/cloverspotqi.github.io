@@ -22,8 +22,7 @@ section.b {
     position: sticky;
     inset: env(safe-area-inset-top) 0 auto;
 
-    padding-block: 10px;
-    padding-inline: 25px;
+    padding: 10px 25px;
 
     overflow-x: scroll;
 
