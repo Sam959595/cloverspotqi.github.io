@@ -24,7 +24,7 @@ section.b {
 
     padding-block: 10px;
 
-    background-color: hsl(from var(--b) h s l / .7)
+    background-color: hsl(from var(--b) h s l / .9)
 }
 
 section.b ul {
@@ -126,7 +126,7 @@ section.k {
 
     height: env(safe-area-inset-top);
 
-    background-color: hsl(from var(--b) h s l / .7)
+    background-color: hsl(from var(--b) h s l / .9)
 }
 
 @media (prefers-color-scheme: light) {
