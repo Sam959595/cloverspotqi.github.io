@@ -34,13 +34,13 @@ section.b {
     background-color: hsl(from var(--b) h s l / .9)
 }
 
-section.b h1 {
+section.b span {
     font: 700 24px system-ui;
 
     color: var(--p)
 }
 
-section.b .a h1 {
+section.b .a {
     color: var(--h)
 }
 
