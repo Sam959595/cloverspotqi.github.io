@@ -6,12 +6,12 @@ body {
 /* a */
 
 section.a {
-    margin: calc(10px + env(safe-area-inset-top)) 25px 20px
+    margin: calc(10px + env(safe-area-inset-top)) 25px 10px
 }
 
 section.a h1 {
     word-break: break-all;
-    font: 900 44px system-ui
+    font: 900 19px system-ui
 }
 
 /* b */
@@ -54,7 +54,7 @@ section.c img {
 
     border-radius: 14px;
 
-    box-shadow: 0 5px 15px #0000003d
+    box-shadow: 0 5px 15px #00000030
 }
 
 section.c div {
