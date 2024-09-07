@@ -3,6 +3,8 @@ html {
 }
 
 body {
+    height: 100vh;
+
     background-color: var(--b);
     color: var(--h)
 }
@@ -26,7 +28,6 @@ video {
 /* n */
 
 section.n {
-    box-sizing: border-box;
     overflow-y: scroll;
 
     height: 100vh;
@@ -86,7 +87,7 @@ section.n .g p {
 section.n h3 {
     padding: 10px;
 
-    font: 500 14px/1.4 system-ui
+    font: 14px/1.4 system-ui
 }
 
 section.n h3 a {
