@@ -81,18 +81,27 @@ section.c p {
 /* d */
 
 section.d {
-    margin: 20px 20px calc(50px + env(safe-area-inset-bottom));
+    padding: 20px 20px max(calc(15px + env(safe-area-inset-bottom)), 20px);
 
     position: fixed;
-    inset: auto 0 0 auto
+    inset: auto 0 0;
+
+    background-image: linear-gradient(transparent, hsl(from var(--b) h s l / .7))
+}
+
+section.d div {
+    padding: 10px;
+
+    display: flex;
+
+    border-radius: 18px;
+    background-color: var(--k)
 }
 
 section.d video {
     object-fit: cover;
 
-    border-radius: 14px;
-
-    box-shadow: 0 0 50px 15px var(--b)
+    border-radius: 12px
 }
 
 /* k */
@@ -122,6 +131,6 @@ section.k {
         --b: #111112;
         --h: white;
         --p: #77777b;
-        --k: #1c1c1c;
+        --k: #1a1a1c;
     }
 }
