@@ -10,7 +10,7 @@ section.a {
 }
 
 section.a h1 {
-    font: 900 32px system-ui;
+    font: 900 44px system-ui
 }
 
 /* b */
@@ -18,7 +18,6 @@ section.a h1 {
 section.b ul {
     padding-inline: 25px;
 
-    box-sizing: border-box;
     overflow-x: scroll;
 
     display: grid;
@@ -44,13 +43,7 @@ section.c {
 }
 
 section.c ul {
-    margin-top: 1em;
-
-    box-sizing: border-box;
-    overflow-x: scroll;
-
     display: grid;
-    grid-auto-columns: max-content;
     grid-template-columns: repeat(2, auto);
     gap: 20px 17px
 }
@@ -70,12 +63,10 @@ section.c div {
 }
 
 section.c h1 {
-    font: 700 17px ui-rounded;
-
-    color: var(--p)
+    font: 700 17px ui-rounded
 }
 
-section.c h2 {
+section.c p {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -104,19 +95,15 @@ section.k {
         --b: white;
         --h: #111;
         --p: #a3a3a4;
-        --m: #ebe0ff;
         --k: #f2f2f2;
-        --q: #695098;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --b: #181819;
+        --b: #131313;
         --h: white;
         --p: #77777b;
-        --m: #4d3e69;
         --k: #1c1c1c;
-        --q: #c8abff;
     }
 }
