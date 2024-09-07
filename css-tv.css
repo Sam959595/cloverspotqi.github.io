@@ -103,18 +103,26 @@ section.d div {
 /* e */
 
 section.e {
+    transform: translateX(130%);
+
     position: fixed;
     inset: auto 30px calc(15px + env(safe-area-inset-bottom)) auto;
 
     border-radius: 14px;
 
-    box-shadow: 0 3px 30px #00000050
+    box-shadow: 0 3px 30px #00000050;
+
+    transition: transform 1s ease
 }
 
 section.e video {
     object-fit: cover;
 
     border-radius: inherit
+}
+
+section.e.t {
+    transform: translateX(0)
 }
 
 /* k */
