@@ -8,7 +8,7 @@ body {
 /* a */
 
 section.a {
-    margin: calc(10px + env(safe-area-inset-top)) 25px 0
+    margin: calc(10px + env(safe-area-inset-top)) 25px 10px
 }
 
 section.a h1 {
@@ -19,19 +19,14 @@ section.a h1 {
 /* b */
 
 section.b {
-    position: sticky;
-    inset: env(safe-area-inset-top) 0 auto;
-
-    padding: 10px 25px;
+    padding-inline: 25px;
 
     overflow-x: scroll;
 
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
-    column-gap: 30px;
-
-    background-color: hsl(from var(--b) h s l / .9)
+    column-gap: 30px
 }
 
 section.b span {
@@ -47,7 +42,7 @@ section.b .a {
 /* c */
 
 section.c {
-    margin: 15px 25px calc(50px + env(safe-area-inset-bottom))
+    margin: 25px 25px calc(50px + env(safe-area-inset-bottom))
 }
 
 section.c ul {
