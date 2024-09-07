@@ -3,13 +3,13 @@ body {
     color: var(--h)
 }
 
-/* n */
+/* a */
 
-section.n {
+section.a {
     margin: calc(10px + env(safe-area-inset-top)) 25px 20px
 }
 
-section.n h1 {
+section.a h1 {
     font: 900 32px system-ui;
 }
 
@@ -27,23 +27,23 @@ section.b ul {
     column-gap: 30px
 }
 
-section.b h2 {
+section.b h1 {
     font: 700 24px system-ui;
 
     color: var(--p)
 }
 
-section.b .a h2 {
+section.b .a h1 {
     color: var(--h)
 }
 
-/* m */
+/* c */
 
-section.m {
+section.c {
     margin: 25px
 }
 
-section.m ul {
+section.c ul {
     margin-top: 1em;
 
     box-sizing: border-box;
@@ -51,16 +51,21 @@ section.m ul {
 
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 20px
+    row-gap: 20px
 }
 
-section.m img {
-    width: 100%;
-    height: 100px;
-
+section.c img {
     object-fit: cover;
 
     border-radius: 16px
+}
+
+section.c h1 {
+    padding: 10px;
+
+    font: 500 12px system-ui;
+
+    color: var(--p)
 }
 
 /* k */
@@ -89,7 +94,7 @@ section.k {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --b: #101010;
+        --b: #181819;
         --h: white;
         --p: #77777b;
         --m: #4d3e69;
