@@ -20,7 +20,7 @@ section.a h1 {
 
 section.b {
     position: sticky;
-    inset: 0 0 auto;
+    inset: env(safe-area-inset-top) 0 auto;
 
     padding-block: 10px;
 
