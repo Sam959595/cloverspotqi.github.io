@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    
+
     background-color: var(--b);
     color: var(--h)
 }
@@ -8,15 +8,24 @@ body {
 /* a */
 
 section.a {
-    margin: calc(10px + env(safe-area-inset-top)) 25px 10px
+    margin: calc(10px + env(safe-area-inset-top)) 25px 0
 }
 
 section.a h1 {
     word-break: break-all;
-    font: 900 19px system-ui
+    font: 900 17px system-ui
 }
 
 /* b */
+
+section.b {
+    position: sticky;
+    inset: 0 0 auto;
+
+    padding-block: 10px;
+
+    background-color: hsl(from var(--b) h s l / .7)
+}
 
 section.b ul {
     padding-inline: 25px;
@@ -42,7 +51,7 @@ section.b .a h1 {
 /* c */
 
 section.c {
-    margin: 25px 25px calc(50px + env(safe-area-inset-bottom))
+    margin: 15px 25px calc(50px + env(safe-area-inset-bottom))
 }
 
 section.c ul {
@@ -112,14 +121,12 @@ section.d video {
 /* k */
 
 section.k {
-    opacity: .9;
-
     position: fixed;
     inset: 0 0 auto;
 
     height: env(safe-area-inset-top);
 
-    background-color: inherit
+    background-color: hsl(from var(--b) h s l / .7)
 }
 
 @media (prefers-color-scheme: light) {
