@@ -78,6 +78,23 @@ section.c p {
     color: var(--p)
 }
 
+/* d */
+
+section.d {
+    margin: 20px 20px calc(50px + env(safe-area-inset-bottom));
+
+    position: fixed;
+    inset: auto 0 0 auto
+}
+
+section.d video {
+    object-fit: cover;
+
+    border-radius: 14px;
+
+    box-shadow: 0 0 50px 15px var(--b)
+}
+
 /* k */
 
 section.k {
