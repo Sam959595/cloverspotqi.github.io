@@ -23,11 +23,6 @@ section.b {
     inset: env(safe-area-inset-top) 0 auto;
 
     padding-block: 10px;
-
-    background-color: hsl(from var(--b) h s l / .9)
-}
-
-section.b ul {
     padding-inline: 25px;
 
     overflow-x: scroll;
@@ -35,7 +30,9 @@ section.b ul {
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
-    column-gap: 30px
+    column-gap: 30px;
+
+    background-color: hsl(from var(--b) h s l / .9)
 }
 
 section.b h1 {
