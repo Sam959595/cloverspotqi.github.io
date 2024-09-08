@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    height: 100dvh;
+    height: 100vh;
 
     background-color: var(--b);
     color: var(--h)
@@ -30,7 +30,7 @@ video {
 section.n {
     overflow-y: scroll;
 
-    height: 100dvh;
+    height: 100vh;
 
     padding-block: env(safe-area-inset-top) env(safe-area-inset-bottom)
 }
