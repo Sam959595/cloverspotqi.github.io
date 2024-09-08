@@ -57,10 +57,26 @@ section.c ul {
     gap: 20px 17px
 }
 
+section.c a {
+    position: relative;
+
+    display: block
+}
+
+section.c a:after {
+    position: absolute;
+    inset: 0;
+    content: "";
+
+    border-radius: 16px;
+
+    border: 3px solid #ffffff0d
+}
+
 section.c img {
     object-fit: cover;
 
-    border-radius: 14px
+    border-radius: 16px
 }
 
 section.c div {
