@@ -1,8 +1,12 @@
 body {
-    height: 100vh;
-
     background-color: var(--b);
     color: var(--h)
+}
+
+/* w */
+
+section.w {
+    height: 100vh
 }
 
 /* a */
@@ -141,7 +145,7 @@ section.k {
         --b: white;
         --h: #111;
         --p: #a3a3a4;
-        --k: #f2f2f2;
+        --k: #ebe9e9;
     }
 }
 
