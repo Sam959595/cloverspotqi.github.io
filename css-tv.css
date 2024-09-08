@@ -6,7 +6,7 @@ body {
 /* w */
 
 section.w {
-    height: 100vh;
+    height: 100dvh;
 
     overflow-y: scroll
 }
