@@ -142,7 +142,9 @@ section.e {
 section.e video {
     object-fit: cover;
 
-    border-radius: inherit
+    border-radius: inherit;
+
+    background-color: black
 }
 
 section.e.t {
