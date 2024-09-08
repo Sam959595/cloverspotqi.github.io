@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    height: 100dvh;
+    height: 100vh;
     
     background-color: var(--b);
     color: var(--h)
@@ -16,7 +16,7 @@ body {
     overflow-x: scroll;
 
     display: grid;
-    grid: 100dvh / repeat(2, 100vw);
+    grid: 100vh / repeat(2, 100vw);
 
     scroll-snap-type: x mandatory
 }
@@ -24,7 +24,7 @@ body {
 .d section {
     overflow-y: scroll;
 
-    height: 100dvh;
+    height: 100vh;
 
     scroll-snap-align: start
 }
