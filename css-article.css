@@ -1,4 +1,6 @@
 body {
+    height: 100dvh;
+    
     background-color: var(--b);
     color: var(--h)
 }
@@ -189,7 +191,7 @@ section.a .a {
 /* k */
 
 section.k {
-    opacity: .8;
+    opacity: .9;
 
     position: fixed;
     inset: 0 0 auto;
@@ -349,7 +351,7 @@ section.s .k img:last-child {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --b: black;
+        --b: #101010;
         --h: white;
         --p: #77777b;
         --m: #4d3e69;
