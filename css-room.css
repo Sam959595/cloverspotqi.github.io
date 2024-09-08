@@ -3,6 +3,8 @@ html {
 }
 
 body {
+    height: 100dvh;
+    
     background-color: var(--b);
     color: var(--h)
 }
@@ -14,7 +16,7 @@ body {
     overflow-x: scroll;
 
     display: grid;
-    grid: 100vh / repeat(2, 100vw);
+    grid: 100dvh / repeat(2, 100vw);
 
     scroll-snap-type: x mandatory
 }
@@ -22,7 +24,7 @@ body {
 .d section {
     overflow-y: scroll;
 
-    height: 100vh;
+    height: 100dvh;
 
     scroll-snap-align: start
 }
@@ -88,7 +90,7 @@ section.s h6 {
 
 /* n */
 
-section.n img {
+section.n .g {
     margin: 4rem auto;
 
     border-radius: 50%
