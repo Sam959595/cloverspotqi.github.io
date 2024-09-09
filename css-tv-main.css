@@ -1,0 +1,148 @@
+body {
+    background-color: var(--b);
+    color: var(--h)
+}
+
+/* w */
+
+section.w {
+    height: 100vh;
+
+    overflow-y: scroll
+}
+
+/* a */
+
+section.a {
+    margin: calc(10px + env(safe-area-inset-top)) 25px 0
+}
+
+section.a h1 {
+    word-break: break-all;
+    font: 900 17px system-ui
+}
+
+/* b */
+
+section.b {
+    padding: 10px 25px 25px;
+
+    overflow-x: scroll;
+
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    column-gap: 30px
+}
+
+section.b span {
+    font: 700 24px system-ui;
+
+    color: var(--p)
+}
+
+section.b .a {
+    color: var(--h)
+}
+
+/* c */
+
+section.c {
+    margin: 0 25px calc(50px + env(safe-area-inset-bottom))
+}
+
+section.c ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 33px
+}
+
+section.c a {
+    position: relative;
+
+    display: block
+}
+
+section.c img {
+    object-fit: cover;
+
+    border-radius: 18px
+}
+
+section.c div {
+    position: absolute;
+
+    inset: auto -10px -10px auto;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+
+    box-shadow: 0 0 25px #00000035
+}
+
+section.c .v {
+    background-color: #ffdefd
+}
+
+section.c .n {
+    background-color: #cde7cf
+}
+
+/* d */
+
+section.d {
+    padding: 20px 30px calc(15px + env(safe-area-inset-bottom));
+
+    position: fixed;
+    inset: auto 0 0;
+
+    background-image: linear-gradient(transparent, hsl(from var(--b) h s l / .7))
+}
+
+section.d div {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    background-color: var(--k)
+}
+
+/* k */
+
+section.k {
+    position: fixed;
+    inset: 0 0 auto;
+
+    height: env(safe-area-inset-top);
+
+    background-color: hsl(from var(--b) h s l / .9)
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --b: white;
+        --h: #111;
+        --p: #a3a3a4;
+        --r: #0000000d;
+        --k: #f2f3f4;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --b: #111112;
+        --h: white;
+        --p: #77777b;
+        --r: #ffffff0d;
+        --k: #181819;
+    }
+}
