@@ -54,7 +54,7 @@ section.c {
 section.c ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px 33px
+    gap: 33px
 }
 
 section.c a {
@@ -64,9 +64,11 @@ section.c a {
 }
 
 section.c img {
-    object-fit: cover;
+    /* object-fit: cover; */
 
-    border-radius: 18px
+    border-radius: 18px;
+
+    box-shadow: 0 10px 25px #00000035
 }
 
 section.c div {
