@@ -5,6 +5,18 @@ body {
     color: var(--h)
 }
 
+/* img */
+
+[data-i] {
+    opacity: 0
+}
+
+img {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+}
+
 /* n */
 
 section.n {
@@ -59,29 +71,19 @@ article {
 }
 
 article h1 {
-    margin: 30px 25px;
+    margin: 30px 45px;
 
     font: 700 28px/1.4 system-ui
 }
 
 article h2 {
-    margin: 30px 25px;
+    margin: 30px 45px;
 
-    font: 500 20px/1.4 system-ui
-}
-
-[data-i] {
-    opacity: 0
-}
-
-img {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+    font: 600 20px/1.4 system-ui
 }
 
 article p {
-    margin: 30px 25px;
+    margin: 30px 45px;
 
     font: 17px/1.7 system-ui
 }
@@ -140,8 +142,12 @@ article ol p {
     margin-block: 10px
 }
 
-article ol {
+article ol.a {
     list-style: inside "・"
+}
+
+article ol.b {
+    list-style: inside decimal
 }
 
 /* a */
