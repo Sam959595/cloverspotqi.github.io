@@ -12,11 +12,13 @@ h5,
 h6,
 p,
 ul,
+ol,
 figure {
 	margin: 0
 }
 
 ul,
+ol,
 select {
 	padding: 0
 }
