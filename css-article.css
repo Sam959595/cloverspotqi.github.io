@@ -138,22 +138,16 @@ article code {
     color: hsl(from var(--h) h s l / .7)
 }
 
-article ol p {
-    margin-block: 10px
-}
-
-article ol {
-    font-family: system-ui
-}
-
 article ol.a {
-    margin-left: 10px;
-
     list-style-type: "• "
 }
 
-article ol.b {
-    margin-left: 25px
+article ol.a p {
+    margin: 10px 45px 10px 55px
+}
+
+article ol.b p {
+    margin: 10px 45px 10px 70px
 }
 
 /* a */
