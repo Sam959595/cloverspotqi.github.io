@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    
+
     background-color: var(--b);
     color: var(--h)
 }
@@ -61,7 +61,13 @@ article {
 article h1 {
     margin: 30px 25px;
 
-    font: 500 22px/1.4 system-ui
+    font: 700 28px/1.4 system-ui
+}
+
+article h2 {
+    margin: 30px 25px;
+
+    font: 500 20px/1.4 system-ui
 }
 
 [data-i] {
@@ -84,7 +90,7 @@ article em {
     font-family: ui-serif
 }
 
-article :is(p, figcaption) a {
+article a {
     text-decoration-line: underline;
     text-decoration-skip: none;
     text-underline-offset: 2px
@@ -128,6 +134,14 @@ article code {
 
     background-color: #88888840;
     color: hsl(from var(--h) h s l / .7)
+}
+
+article ol p {
+    margin-block: 10px
+}
+
+article ol {
+    list-style: inside "・"
 }
 
 /* a */
