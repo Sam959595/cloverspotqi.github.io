@@ -142,12 +142,18 @@ article ol p {
     margin-block: 10px
 }
 
+article ol {
+    font-family: system-ui
+}
+
 article ol.a {
-    list-style: inside "・"
+    margin-left: 10px;
+
+    list-style-type: "• "
 }
 
 article ol.b {
-    list-style: inside decimal
+    margin-left: 25px
 }
 
 /* a */
