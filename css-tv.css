@@ -97,7 +97,7 @@ section.c p {
     -webkit-box-orient: vertical;
     overflow: hidden;
 
-    font-weight: 500;
+    font: 500 12px system-ui;
 
     color: var(--p)
 }
@@ -177,6 +177,6 @@ section.k {
         --h: white;
         --p: #77777b;
         --r: #ffffff0d;
-        --k: #252526;
+        --k: #181819;
     }
 }
