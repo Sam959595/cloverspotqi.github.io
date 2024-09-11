@@ -164,16 +164,28 @@ section.a {
     transition: opacity .4s
 }
 
-section.a div {
-    border-radius: 50%;
-
+section.a .a {
     width: 48px;
     height: 48px;
 
     display: inherit;
     justify-content: center;
     align-items: center;
-    column-gap: 6px;
+
+    border-radius: 50%;
+
+    background-color: var(--k)
+}
+
+section.a .b {
+    height: 48px;
+
+    padding-inline: 20px;
+
+    display: inherit;
+    align-items: center;
+
+    border-radius: 24px;
 
     background-color: var(--k)
 }
@@ -184,7 +196,11 @@ section.a h1 {
     font-size: 22px
 }
 
-section.a .a {
+section.a h6 {
+    font: 600 14px ui-rounded
+}
+
+section.a .l {
     filter: none
 }
 
