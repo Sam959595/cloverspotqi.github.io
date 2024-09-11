@@ -349,11 +349,11 @@ section.s .k img:last-child {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --b: #101010;
+        --b: #1f1e22;
         --h: white;
         --p: #77777b;
         --m: #4d3e69;
-        --k: #242428;
+        --k: #302f34;
         --q: #c8abff;
     }
 }
