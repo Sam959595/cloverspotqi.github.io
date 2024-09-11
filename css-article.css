@@ -20,7 +20,7 @@ img {
 /* n */
 
 section.n {
-    margin: calc(10px + env(safe-area-inset-top)) 45px 25px;
+    margin: calc(25px + env(safe-area-inset-top)) 45px 25px;
 
     display: flex;
     align-items: center;
