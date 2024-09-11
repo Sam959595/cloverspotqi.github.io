@@ -114,7 +114,7 @@ article blockquote {
 
     font: italic 18px/1.5 'ui-serif';
 
-    color: var(--q)
+    color: var(--p)
 }
 
 article mark {
@@ -340,10 +340,10 @@ section.s .k img:last-child {
     :root {
         --b: white;
         --h: #111;
-        --p: #a3a3a4;
+        --p: #878787;
         --m: #ebe0ff;
         --k: #e7e7e7;
-        --q: #111;
+        --q: #695098;
     }
 }
 
@@ -351,9 +351,9 @@ section.s .k img:last-child {
     :root {
         --b: #1f1e22;
         --h: white;
-        --p: #77777b;
+        --p: #9a95aa;
         --m: #4d3e69;
         --k: #302f34;
-        --q: #9a95aa;
+        --q: #c8abff;
     }
 }
