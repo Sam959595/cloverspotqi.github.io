@@ -19,7 +19,8 @@ section.a {
 
 section.a h1 {
     word-break: break-all;
-    font: 900 17px system-ui
+    font: 900 17px system-ui;
+    letter-spacing: .2px
 }
 
 /* b */
@@ -37,6 +38,7 @@ section.b {
 
 section.b span {
     font: 700 24px system-ui;
+    letter-spacing: .2px;
 
     color: var(--p)
 }
