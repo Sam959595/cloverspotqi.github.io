@@ -112,7 +112,7 @@ article blockquote {
 
     padding-left: 13px;
 
-    font: italic 18px/1.5 'ui-serif';
+    font: italic 18px/1.5 ui-serif;
 
     color: var(--q)
 }
