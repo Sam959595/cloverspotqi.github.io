@@ -20,15 +20,11 @@ img {
 /* n */
 
 section.n {
-    margin: calc(10px + env(safe-area-inset-top)) 25px 25px;
+    margin: calc(10px + env(safe-area-inset-top)) 45px 25px;
 
     display: flex;
     align-items: center;
-    column-gap: 20px
-}
-
-section.n img {
-    border-radius: 50%
+    column-gap: 15px
 }
 
 section.n .a {
@@ -43,10 +39,8 @@ section.n .a:after {
     border-radius: 50%
 }
 
-section.n p {
-    font: 500 13px system-ui;
-
-    color: var(--p)
+section.n img {
+    border-radius: 50%
 }
 
 section.n h6 {
@@ -58,6 +52,12 @@ section.n h6 {
 
 section.n a {
     color: var(--h)
+}
+
+section.n p {
+    font: 500 13px system-ui;
+
+    color: var(--p)
 }
 
 /* article */
