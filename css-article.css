@@ -167,11 +167,13 @@ section.a {
 section.a span {
     border-radius: 24px;
 
-    padding: 14px 18px;
+    height: 48px;
+
+    padding-inline: 15px;
 
     display: inherit;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 6px;
 
     background-color: var(--k)
 }
@@ -193,13 +195,13 @@ section.a img+img {
 }
 
 section.a h6 {
-    font: 700 15px ui-rounded
+    font: 700 18px ui-rounded
 }
 
 section.a h5 {
     filter: grayscale();
 
-    font-size: 14px
+    font-size: 22px
 }
 
 section.a .a {
