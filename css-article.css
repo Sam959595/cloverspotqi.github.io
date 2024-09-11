@@ -108,17 +108,17 @@ article figcaption {
 article blockquote {
     margin: 30px 45px;
 
-    border-left: 5px solid;
+    border-left: 3px solid;
 
-    padding-left: 15px;
+    padding-left: 13px;
 
-    font: 500 18px/1.5 ui-serif;
+    font: italic 18px/1.5 'ui-serif';
 
     color: var(--q)
 }
 
 article mark {
-    border-radius: 5px;
+    border-radius: 7px;
 
     padding-block: 2px;
 
@@ -126,7 +126,7 @@ article mark {
 }
 
 article code {
-    border-radius: 5px;
+    border-radius: 7px;
 
     padding: 2px 8px;
 
