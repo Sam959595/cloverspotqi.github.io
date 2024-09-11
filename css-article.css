@@ -82,7 +82,8 @@ article p {
     margin: 30px 45px;
 
     font: 17px/1.5 system-ui;
-    word-spacing: 2px
+    letter-spacing: .1px;
+    word-spacing: 1px
 }
 
 article em {
