@@ -107,7 +107,7 @@ section.c p {
 /* d */
 
 section.d {
-    padding: 20px 30px calc(15px + env(safe-area-inset-bottom));
+    padding: 40px 30px calc(15px + env(safe-area-inset-bottom));
 
     position: fixed;
     inset: auto 0 0;
