@@ -106,7 +106,7 @@ article figcaption {
 }
 
 article blockquote {
-    margin: 30px 45px 30px;
+    margin: 30px 45px;
 
     border-left: 5px solid;
 
@@ -164,41 +164,21 @@ section.a {
     transition: opacity .4s
 }
 
-section.a span {
-    border-radius: 24px;
+section.a div {
+    border-radius: 50%;
 
+    width: 48px;
     height: 48px;
 
-    padding-inline: 15px;
-
     display: inherit;
+    justify-content: center;
     align-items: center;
     column-gap: 6px;
 
     background-color: var(--k)
 }
 
-section.a div {
-    display: inherit
-}
-
-section.a img {
-    border-radius: 50%
-}
-
-section.a div img:not(:last-child) {
-    clip-path: path("M10 0c2.15 0 4.25.7 5.98 1.98C14.13 3.8 13 6.72 13 10c0 3.28 1.13 6.2 2.97 8.02A10 10 0 1 1 10 0Z")
-}
-
-section.a img+img {
-    margin-left: -5px
-}
-
-section.a h6 {
-    font: 700 18px ui-rounded
-}
-
-section.a h5 {
+section.a h1 {
     filter: grayscale();
 
     font-size: 22px
