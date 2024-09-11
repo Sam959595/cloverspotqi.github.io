@@ -343,7 +343,7 @@ section.s .k img:last-child {
         --p: #a3a3a4;
         --m: #ebe0ff;
         --k: #e7e7e7;
-        --q: #695098;
+        --q: #111;
     }
 }
 
@@ -354,6 +354,6 @@ section.s .k img:last-child {
         --p: #77777b;
         --m: #4d3e69;
         --k: #302f34;
-        --q: #c8abff;
+        --q: #9a95aa;
     }
 }
