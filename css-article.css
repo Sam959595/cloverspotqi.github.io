@@ -106,21 +106,21 @@ article figcaption {
 }
 
 article blockquote {
-    margin: 30px 45px 30px 0;
+    margin: 30px 45px 30px;
 
-    border-left: 12px solid;
+    border-left: 5px solid;
 
-    padding-left: 33px;
+    padding-left: 15px;
 
-    font: 18px/1.5 ui-serif;
+    font: 500 18px/1.5 ui-serif;
 
     color: var(--q)
 }
 
 article mark {
-    padding-block: 2px;
-
     border-radius: 5px;
+
+    padding-block: 2px;
 
     background-color: var(--m)
 }
@@ -128,7 +128,7 @@ article mark {
 article code {
     border-radius: 5px;
 
-    padding-inline: 5px;
+    padding: 2px 8px;
 
     font-family: ui-monospace;
 
@@ -211,14 +211,12 @@ section.a .a {
 /* k */
 
 section.k {
-    opacity: .9;
-
     position: fixed;
     inset: 0 0 auto;
 
     height: env(safe-area-inset-top);
 
-    background-color: inherit
+    background-color: hsl(from var(--b) h s l / .9)
 }
 
 /* s */
