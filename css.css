@@ -80,9 +80,7 @@ address,
 blockquote,
 textarea,
 figcaption {
-	font-family: system-ui;
-	line-height: 1.3;
-	letter-spacing: .2px
+	font-family: system-ui, helvetica
 }
 
 a,
