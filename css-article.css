@@ -154,8 +154,7 @@ section.a {
     padding: 40px 30px calc(15px + env(safe-area-inset-bottom));
 
     display: flex;
-    justify-content: center;
-    column-gap: 8px;
+    justify-content: space-between;
 
     background-image: linear-gradient(transparent, hsl(from var(--b) h s l / .7));
 
