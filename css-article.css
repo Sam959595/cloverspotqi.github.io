@@ -108,13 +108,11 @@ article figcaption {
 article blockquote {
     margin: 30px 45px;
 
-    border-left: 3px solid;
+    border-left: 3px solid var(--p);
 
     padding-left: 13px;
 
-    font: italic 18px/1.5 ui-serif;
-
-    color: var(--q)
+    font: italic 18px/1.5 ui-serif
 }
 
 article mark {
@@ -197,7 +195,7 @@ section.a h1 {
 }
 
 section.a h6 {
-    font: 600 14px ui-rounded
+    font: 700 14px ui-rounded
 }
 
 section.a .l {
