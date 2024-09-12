@@ -20,7 +20,7 @@ img {
 /* n */
 
 section.n {
-    margin: calc(25px + env(safe-area-inset-top)) 45px 25px;
+    margin: calc(25px + env(safe-area-inset-top)) 40px 25px;
 
     display: flex;
     align-items: center;
@@ -67,19 +67,19 @@ article {
 }
 
 article h1 {
-    margin: 30px 45px;
+    margin: 30px 40px;
 
     font: 700 28px/1.2 system-ui
 }
 
 article h2 {
-    margin: 30px 45px;
+    margin: 30px 40px;
 
     font: 600 20px/1.4 system-ui
 }
 
 article p {
-    margin: 30px 45px;
+    margin: 30px 40px;
 
     font: 17px/1.5 system-ui;
     letter-spacing: .1px;
@@ -106,9 +106,9 @@ article figcaption {
 }
 
 article blockquote {
-    margin: 30px 45px;
+    margin: 30px 40px;
 
-    border-left: 3px solid hsl(from var(--h) h s l / .5);
+    border-left: 3px solid #88888840;
 
     padding-left: 13px;
 
@@ -139,11 +139,11 @@ article ol.a {
 }
 
 article ol.a p {
-    margin: 10px 45px 10px 60px
+    margin: 10px 40px 10px 60px
 }
 
 article ol.b p {
-    margin: 10px 45px 10px 70px
+    margin: 10px 40px 10px 70px
 }
 
 /* a */
@@ -347,7 +347,7 @@ section.s .k img:first-child {
 }
 
 section.s .k img:last-child {
-    clip-path: path("M9 0A8.96 8.96 0 0 0 3.6 1.782C5.26 3.423 6.277 6.045 6.277 9s-1.017 5.577-2.676 7.218A9 9 0 1 0 9 0Z")
+    clip-path: path("M9 0A8.96 8.96 0 0 0 3.6 1.782C5.26 3.423 6.277 6.040 6.277 9s-1.017 5.577-2.676 7.218A9 9 0 1 0 9 0Z")
 }
 
 @media (prefers-color-scheme: light) {
