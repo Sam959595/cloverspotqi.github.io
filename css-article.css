@@ -74,8 +74,10 @@ section.f ul {
     column-gap: 8px
 }
 
-section.f li {
+section.f li a {
     padding: 10px 15px;
+
+    display: block;
 
     font: 500 14px system-ui;
     letter-spacing: .2px;
