@@ -137,19 +137,19 @@ article blockquote {
 }
 
 article mark {
-    border-radius: 7px;
-
     padding-block: 2px;
+
+    border-radius: 5px;
 
     background-color: var(--m)
 }
 
 article code {
-    border-radius: 7px;
-
     padding: 2px 8px;
 
     font-family: ui-monospace;
+
+    border-radius: 5px;
 
     background-color: #88888840;
     color: hsl(from var(--h) h s l / .7)
