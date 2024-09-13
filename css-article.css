@@ -63,7 +63,6 @@ section.n p {
 /* f */
 
 section.f ul {
-    margin-block: 10px;
     padding-inline: 35px;
 
     overflow-x: scroll;
