@@ -60,6 +60,32 @@ section.n p {
     color: var(--p)
 }
 
+/* f */
+
+section.f ul {
+    margin-block: 10px;
+    padding-inline: 40px;
+
+    overflow-x: scroll;
+
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    column-gap: 8px
+}
+
+section.f li {
+    padding: 10px 15px;
+
+    font: 500 14px system-ui;
+    letter-spacing: .2px;
+
+    border-radius: 19px;
+
+    background-color: var(--k);
+    color: var(--p)
+}
+
 /* article */
 
 article {
@@ -68,12 +94,7 @@ article {
 
 article h1 {
     margin: 30px 40px;
-
-    font: 700 28px/1.2 system-ui
-}
-
-article h2 {
-    margin: 30px 40px;
+    scroll-margin-top: calc(25px + env(safe-area-inset-top));
 
     font: 600 20px/1.4 system-ui
 }
