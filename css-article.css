@@ -20,7 +20,7 @@ img {
 /* n */
 
 section.n {
-    margin: calc(25px + env(safe-area-inset-top)) 40px 25px;
+    margin: calc(25px + env(safe-area-inset-top)) 30px 15px 15px;
 
     display: flex;
     align-items: center;
@@ -64,7 +64,7 @@ section.n p {
 
 section.f ul {
     margin-block: 10px;
-    padding-inline: 40px;
+    padding-inline: 50px 30px;
 
     overflow-x: scroll;
 
@@ -95,14 +95,14 @@ article {
 }
 
 article h1 {
-    margin: 30px 40px;
+    margin: 30px 30px 30px 50px;
     scroll-margin-top: calc(25px + env(safe-area-inset-top));
 
     font: 600 20px/1.4 system-ui
 }
 
 article p {
-    margin: 30px 40px;
+    margin: 30px 30px 30px 50px;
 
     font: 17px/1.5 system-ui;
     letter-spacing: .1px;
@@ -129,7 +129,7 @@ article figcaption {
 }
 
 article blockquote {
-    margin: 30px 40px;
+    margin: 30px 30px 30px 50px;
 
     border-left: 3px solid #88888840;
 
@@ -162,11 +162,11 @@ article ol.a {
 }
 
 article ol.a p {
-    margin: 10px 40px 10px 60px
+    margin: 10px 30px 10px 70px
 }
 
 article ol.b p {
-    margin: 10px 40px 10px 70px
+    margin: 10px 30px 10px 80px
 }
 
 /* a */
