@@ -85,7 +85,7 @@ section.f li a {
     border-radius: 19px;
 
     background-color: var(--k);
-    color: var(--p)
+    color: var(--l)
 }
 
 /* article */
@@ -380,6 +380,7 @@ section.s .k img:last-child {
         --m: #ebe0ff;
         --k: #e7e7e7;
         --q: #111;
+        --l: #666;
     }
 }
 
@@ -391,5 +392,6 @@ section.s .k img:last-child {
         --m: #4d3e69;
         --k: #302f34;
         --q: #a2a0aa;
+        --l: #a2a0aa;
     }
 }
