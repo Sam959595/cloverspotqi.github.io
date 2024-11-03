@@ -13,7 +13,7 @@ body {
 /* t */
 
 section.t {
-    margin: calc(7rem + env(safe-area-inset-top)) 2.8rem 10rem;
+    margin: calc(5rem + env(safe-area-inset-top)) 2.8rem 10rem;
 
     color: var(--col)
 }
