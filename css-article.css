@@ -190,6 +190,10 @@ section.a {
     transition: opacity .4s
 }
 
+section.a .c {
+    width: 48px
+}
+
 section.a .a {
     width: 48px;
     height: 48px;
@@ -252,7 +256,8 @@ section.s {
 
     overflow-y: scroll;
 
-    background-color: inherit;
+    background-color: hsl(from var(--b) h s l / .9);
+    backdrop-filter: blur(10px);
 
     transition: opacity .2s
 }
@@ -281,9 +286,7 @@ section.s .y {
 
     display: flex;
     align-items: center;
-    column-gap: 10px;
-
-    background-color: inherit
+    column-gap: 10px
 }
 
 section.s textarea {
