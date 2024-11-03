@@ -82,7 +82,7 @@ section.w {
 
 /* font-family */
 
-section.a>* {
+section.t.a>* {
     font-size-adjust: .5;
     font-family: georgia
 }
