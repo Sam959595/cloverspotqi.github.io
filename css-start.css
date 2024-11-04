@@ -119,14 +119,13 @@ button {
 /* k */
 
 section.k {
-    opacity: .8;
-
     position: fixed;
     inset: 0 0 auto;
 
     height: env(safe-area-inset-top);
 
-    background-color: inherit
+    background-color: var(--e);
+    backdrop-filter: blur(10px)
 }
 
 @media (prefers-color-scheme: light) {
@@ -136,6 +135,7 @@ section.k {
         --p: #a3a3a4;
         --c: #dfdfdf;
         --k: white;
+        --e: #ffffffad;
     }
 }
 
@@ -146,5 +146,6 @@ section.k {
         --p: #77777b;
         --c: #2e2e2e;
         --k: #151515;
+        --e: #000000ad;
     }
 }
