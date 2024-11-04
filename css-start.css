@@ -68,7 +68,9 @@ section.n a {
 
     border-radius: 12px;
 
-    background-color: var(--k)
+    background-color: var(--k);
+
+    box-shadow: 0 0 10px #0000001a
 }
 
 section.n .m {
@@ -153,7 +155,7 @@ section.k {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --b: #f7f7f7;
+        --b: white;
         --h: black;
         --p: #a3a3a4;
         --c: #dfdfdf;
