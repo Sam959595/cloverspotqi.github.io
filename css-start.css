@@ -44,9 +44,7 @@ section.n a {
 
     border-radius: 12px;
 
-    background-color: var(--k);
-
-    box-shadow: 0 0 10px #0000001a
+    background-color: var(--k)
 }
 
 section.n a>img,
@@ -126,7 +124,7 @@ section.k {
         --h: black;
         --p: #a3a3a4;
         --c: #dfdfdf;
-        --k: white;
+        --k: #f0ecff;
         --e: #e7e7e7;
     }
 }
