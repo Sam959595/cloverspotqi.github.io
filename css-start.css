@@ -18,11 +18,31 @@ body {
 
 img,
 video {
-    border-radius: 15px 15px 0 0;
-
     opacity: 1;
 
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+}
+
+/* t */
+
+section.t .p {
+    margin: 2rem auto;
+
+    border-radius: 50%
+}
+
+section.t h1 {
+    margin: 20px 35px;
+
+    text-align: center;
+    font: 700 19px/1 ui-rounded
+}
+
+section.t h2 {
+    margin: 35px;
+
+    font-size: 15px;
+    color: var(--p)
 }
 
 /* n */
@@ -35,166 +55,69 @@ section.n {
     padding-block: env(safe-area-inset-top) env(safe-area-inset-bottom)
 }
 
-section.n .p {
-    margin: 2rem auto;
-
-    border-radius: 50%
-}
-
-section.n h1 {
-    margin: 20px 35px;
-
-    text-align: center;
-    font: 700 19px/1 ui-rounded
-}
-
-section.n h2 {
-    margin: 35px;
-
-    font-size: 15px;
-    color: var(--p)
-}
-
-section.n .d {
-    color: #007aff
-}
-
-/* section.n ul {
-    margin: 0 20px calc(16px + env(safe-area-inset-bottom));
-
-    display: grid
-} */
-
 section.n ul {
     margin: 0 8px calc(16px + env(safe-area-inset-bottom));
 
     display: grid;
-    grid: masonry / repeat(2, auto);
-
+    grid: masonry/repeat(2, auto);
     gap: 8px
 }
 
-section.n .g {
-    border-radius: 15px;
+section.n a {
+    display: block;
+
+    border-radius: 12px;
 
     background-color: var(--k)
 }
 
-section.n .g p {
-    padding: 15px 15px 0
+section.n .m {
+    border-radius: 12px 12px 0 0
 }
 
-section.n h3 {
-    padding: 10px;
-
-    font: 14px/1.4 system-ui
+section.n .h {
+    padding: 10px
 }
 
-section.n h3 a {
-    text-decoration-line: underline;
-    text-decoration-skip: none;
-    text-underline-offset: 2px
-}
-
-section.n ins {
-    font-family: ui-serif
-}
-
-section.n .b {
-    color: #ff2f50
-}
-
-section.n .c {
-    color: #ffa80f
-}
-
-section.n .e {
-    color: #2f99ff
-}
-
-section.n .f {
-    color: #56b88c
-}
-
-section.n p {
-    font: 500 13px system-ui
-}
-
-section.n .v {
-    margin-block: 24px 40px;
-
-    display: flex;
-    justify-content: center;
-    column-gap: 36px
-}
-
-section.n span {
+section.n .d {
     display: flex;
     align-items: center;
     column-gap: 10px
 }
 
-section.n .v img {
+section.n .a {
+    position: relative
+}
+
+section.n .a:after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    border: 2px solid #0000000d;
     border-radius: 50%
 }
 
-section.n hr {
-    margin-inline: 4px;
-
-    width: 24px;
-
-    border-radius: 2px;
-    border-top: 3px solid var(--c)
+section.n .a img {
+    border-radius: 50%
 }
 
-section.n .v div {
-    display: inherit
+section.n p {
+    font: 13px system-ui;
+
+    color: var(--p)
 }
 
-section.n .v div img:not(:last-child) {
-    clip-path: path("M10 0c2.15 0 4.25.7 5.98 1.98C14.13 3.8 13 6.72 13 10c0 3.28 1.13 6.2 2.97 8.02A10 10 0 1 1 10 0Z")
+section.n h1 {
+    margin-block: 10px;
+
+    word-break: break-word;
+    font: 700 14px/1.4 system-ui
 }
 
-section.n .v img+img {
-    margin-left: -5px
-}
+section.n h2 {
+    font: 700 14px/1.4 ui-rounded;
 
-section.n h6 {
-    font: 700 15px ui-rounded
-}
-
-section.n h5 {
-    filter: grayscale();
-
-    font-size: 16px
-}
-
-section.n .a {
-    filter: none
-}
-
-section.n .t {
-    border-radius: 12px
-}
-
-section.n .s {
-    width: 100vw;
-
-    box-sizing: border-box;
-    overflow-x: scroll;
-
-    padding-inline: 20px;
-    scroll-padding-left: 20px;
-
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 10px;
-
-    scroll-snap-type: x mandatory
-}
-
-section.n .s img {
-    scroll-snap-align: start
+    color: var(--p)
 }
 
 /* button */
@@ -239,7 +162,7 @@ section.k {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --b: #101010;
+        --b: black;
         --h: white;
         --p: #77777b;
         --c: #2e2e2e;
