@@ -115,6 +115,7 @@ section.n h1 {
 }
 
 section.n h2 {
+    text-align: right;
     font: 700 14px/1.4 ui-rounded;
 
     color: var(--p)
@@ -140,7 +141,7 @@ button {
 /* k */
 
 section.k {
-    opacity: .9;
+    opacity: .8;
 
     position: fixed;
     inset: 0 0 auto;
@@ -152,11 +153,11 @@ section.k {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --b: white;
+        --b: #f7f7f7;
         --h: black;
         --p: #a3a3a4;
         --c: #dfdfdf;
-        --k: #f7f7f7;
+        --k: white;
     }
 }
 
