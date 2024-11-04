@@ -103,16 +103,18 @@ section.n h2 {
 
 button {
     position: fixed;
-    inset: auto 25px max(env(safe-area-inset-bottom), 25px) auto;
+    inset: auto 0 max(env(safe-area-inset-bottom), calc(25px + env(safe-area-inset-bottom)));
+
+    margin-inline: auto;
 
     width: 45px;
     height: 45px;
 
     border-radius: 50%;
 
-    font-size: 14px;
+    font: 32px ui-rounded;
 
-    background-color: var(--k);
+    background-color: var(--e);
     color: var(--h)
 }
 
@@ -136,6 +138,7 @@ section.k {
         --p: #a3a3a4;
         --c: #dfdfdf;
         --k: white;
+        --e: #f7f7f7;
     }
 }
 
@@ -146,5 +149,6 @@ section.k {
         --p: #77777b;
         --c: #2e2e2e;
         --k: #151515;
+        --e: #1a1a1c;
     }
 }
