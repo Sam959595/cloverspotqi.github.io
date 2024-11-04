@@ -23,28 +23,6 @@ video {
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
-/* t */
-
-section.t .p {
-    margin: 2rem auto;
-
-    border-radius: 50%
-}
-
-section.t h1 {
-    margin: 20px 35px;
-
-    text-align: center;
-    font: 700 19px/1 ui-rounded
-}
-
-section.t h2 {
-    margin: 35px;
-
-    font-size: 15px;
-    color: var(--p)
-}
-
 /* n */
 
 section.n {
