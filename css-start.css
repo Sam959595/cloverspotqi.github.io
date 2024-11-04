@@ -120,11 +120,11 @@ section.k {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --b: white;
+        --b: #f0f0f0;
         --h: black;
         --p: #a3a3a4;
         --c: #dfdfdf;
-        --k: #f0ecff;
+        --k: white;
         --e: #e7e7e7;
     }
 }
