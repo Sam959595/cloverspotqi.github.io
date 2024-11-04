@@ -102,7 +102,7 @@ section.n .a img {
 }
 
 section.n p {
-    font: 13px system-ui;
+    font: 500 13px system-ui;
 
     color: var(--p)
 }
@@ -116,7 +116,7 @@ section.n h1 {
 
 section.n h2 {
     text-align: right;
-    font: 700 14px/1.4 ui-rounded;
+    font: 700 13px/1.4 ui-rounded;
 
     color: var(--p)
 }
