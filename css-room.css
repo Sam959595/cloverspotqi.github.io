@@ -14,18 +14,16 @@ body {
 .d {
     overscroll-behavior-x: none;
     overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 
     display: grid;
-    grid: 100vh / repeat(2, 100vw);
-
-    scroll-snap-type: x mandatory
+    grid: 100vh/repeat(2, 100vw)
 }
 
 .d section {
-    overflow-y: scroll;
-
     height: 100vh;
 
+    overflow-y: scroll;
     scroll-snap-align: start
 }
 
