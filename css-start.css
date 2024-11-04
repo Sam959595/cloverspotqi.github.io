@@ -26,9 +26,9 @@ video {
 /* n */
 
 section.n {
-    overflow-y: scroll;
-
-    height: 100vh
+    height: 100vh;
+    
+    overflow-y: scroll
 }
 
 section.n ul {
