@@ -28,13 +28,11 @@ video {
 section.n {
     overflow-y: scroll;
 
-    height: 100vh;
-
-    padding-block: env(safe-area-inset-top) env(safe-area-inset-bottom)
+    height: 100vh
 }
 
 section.n ul {
-    margin: 0 8px calc(16px + env(safe-area-inset-bottom));
+    margin: calc(10px + env(safe-area-inset-top)) 8px calc(16px + env(safe-area-inset-bottom));
 
     display: grid;
     grid: masonry/repeat(2, auto);
