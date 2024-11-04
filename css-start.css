@@ -103,7 +103,7 @@ section.n h2 {
 
 button {
     position: fixed;
-    inset: auto 0 max(env(safe-area-inset-bottom), calc(25px + env(safe-area-inset-bottom)));
+    inset: auto 0 max(env(safe-area-inset-bottom), calc(15px + env(safe-area-inset-bottom)));
 
     margin-inline: auto;
 
