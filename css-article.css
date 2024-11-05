@@ -191,12 +191,12 @@ section.a {
 }
 
 section.a .c {
-    width: 48px
+    width: 45px
 }
 
 section.a .a {
-    width: 48px;
-    height: 48px;
+    width: 45px;
+    height: 45px;
 
     display: inherit;
     justify-content: center;
@@ -208,9 +208,9 @@ section.a .a {
 }
 
 section.a .b {
-    height: 48px;
+    height: 45px;
 
-    padding-inline: 20px;
+    padding-inline: 17px;
 
     display: inherit;
     align-items: center;
