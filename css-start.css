@@ -102,8 +102,7 @@ button {
     display: flex;
     align-items: center;
 
-    background-color: var(--e);
-    color: var(--h)
+    background-color: var(--e)
 }
 
 /* k */
