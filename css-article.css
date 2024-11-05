@@ -190,20 +190,9 @@ section.a {
 }
 
 section.a .c {
-    width: 45px
-}
-
-section.a .a {
     width: 45px;
-    height: 45px;
 
-    display: inherit;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 50%;
-
-    background-color: var(--k)
+    background: none
 }
 
 section.a .b {
@@ -211,26 +200,30 @@ section.a .b {
 
     padding-inline: 17px;
 
-    display: inherit;
+    display: flex;
     align-items: center;
 
     border-radius: 24px;
 
+    font: 600 14px ui-rounded;
+
+    background-color: var(--k);
+    color: var(--h)
+}
+
+section.a .a {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    font-size: 16px;
+
     background-color: var(--k)
-}
-
-section.a h1 {
-    filter: grayscale();
-
-    font-size: 22px
-}
-
-section.a h6 {
-    font: 700 14px ui-rounded
-}
-
-section.a .l {
-    filter: none
 }
 
 /* k */
