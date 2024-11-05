@@ -230,14 +230,12 @@ section.n .s img {
 /* k */
 
 section.k {
-    opacity: .9;
-
     position: fixed;
     inset: 0 0 auto;
 
     height: env(safe-area-inset-top);
 
-    background-color: var(--b)
+    background-color: hsl(from var(--b) h s l / .8)
 }
 
 @media (prefers-color-scheme: light) {
