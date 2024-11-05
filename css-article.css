@@ -190,9 +190,7 @@ section.a {
 }
 
 section.a .c {
-    width: 45px;
-
-    background: none
+    width: 45px
 }
 
 section.a .b {
