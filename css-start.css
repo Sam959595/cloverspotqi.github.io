@@ -112,9 +112,9 @@ section.k {
     position: fixed;
     inset: 0 0 auto;
 
-    height: calc(80px + env(safe-area-inset-top));
+    height: env(safe-area-inset-top);
 
-    background-image: linear-gradient(hsl(from var(--b) h s l / .9), transparent)
+    background-color: hsl(from var(--b) h s l / .9)
 }
 
 @media (prefers-color-scheme: light) {
