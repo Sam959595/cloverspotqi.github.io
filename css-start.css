@@ -99,7 +99,8 @@ button {
 
     border-radius: 50%;
 
-    font: 32px ui-rounded;
+    display: flex;
+    align-items: center;
 
     background-color: var(--e);
     color: var(--h)
