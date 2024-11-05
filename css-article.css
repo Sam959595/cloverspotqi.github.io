@@ -234,7 +234,7 @@ section.k {
 
     height: env(safe-area-inset-top);
 
-    background-color: hsl(from var(--b) h s l / .9)
+    background-color: hsl(from var(--b) h s l / .8)
 }
 
 /* s */
