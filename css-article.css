@@ -44,7 +44,6 @@ section.n img {
 }
 
 section.n h6 {
-    flex-grow: 1;
     word-wrap: anywhere;
     font: 500 15px system-ui;
 
