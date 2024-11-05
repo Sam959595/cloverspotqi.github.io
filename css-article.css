@@ -246,8 +246,7 @@ section.s {
 
     overflow-y: scroll;
 
-    background-color: hsl(from var(--b) h s l / .9);
-    backdrop-filter: blur(10px);
+    background-color: var(--b);
 
     transition: opacity .2s
 }
