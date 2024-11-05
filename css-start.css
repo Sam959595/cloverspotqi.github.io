@@ -93,6 +93,7 @@ button {
     inset: auto 0 max(env(safe-area-inset-bottom), calc(15px + env(safe-area-inset-bottom)));
 
     margin-inline: auto;
+    padding: 5px;
 
     width: 45px;
     height: 45px;
