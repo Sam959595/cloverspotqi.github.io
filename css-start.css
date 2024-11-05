@@ -109,14 +109,12 @@ button {
 /* k */
 
 section.k {
-    opacity: .9;
-
     position: fixed;
     inset: 0 0 auto;
 
     height: env(safe-area-inset-top);
 
-    background-color: inherit
+    background-color: hsl(from var(--b) h s l / .9)
 }
 
 @media (prefers-color-scheme: light) {
