@@ -20,7 +20,7 @@ img {
 /* n */
 
 section.n {
-    margin: calc(15px + env(safe-area-inset-top)) 35px 25px;
+    margin: calc(15px + env(safe-area-inset-top)) 30px 25px;
 
     display: flex;
     align-items: center;
@@ -89,21 +89,17 @@ section.f li a {
 
 /* article */
 
-article {
-    padding-bottom: calc(7rem + env(safe-area-inset-bottom))
-}
-
 article h1 {
-    margin: 30px 35px;
+    margin: 30px;
     scroll-margin-top: calc(25px + env(safe-area-inset-top));
 
     font: 600 20px/1.4 system-ui
 }
 
 article p {
-    margin: 30px 35px;
+    margin: 30px;
 
-    font: 17px/1.5 system-ui;
+    font: 17px/1.6 system-ui;
     letter-spacing: .1px;
     word-spacing: 1px
 }
@@ -119,7 +115,7 @@ article a {
 }
 
 article figcaption {
-    margin: 20px 35px;
+    margin: 20px 30px;
 
     text-align: center;
     font-size: 13px;
@@ -128,7 +124,7 @@ article figcaption {
 }
 
 article blockquote {
-    margin: 30px 35px;
+    margin: 30px;
 
     border-left: 3px solid #88888840;
 
@@ -161,17 +157,34 @@ article ol.a {
 }
 
 article ol.a p {
-    margin: 10px 35px 10px 50px
+    margin: 10px 35px 10px 45px
 }
 
 article ol.b p {
-    margin: 10px 35px 10px 60px
+    margin: 10px 35px 10px 53px
 }
 
 article .m {
     vertical-align: super;
 
     font-size: 12px
+}
+
+/* g */
+
+section.g {
+    margin: 30px;
+    padding-bottom: calc(5cm + env(safe-area-inset-bottom))
+}
+
+section.g ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 3rem
+}
+
+section.g a {
+    font: 700 13px system-ui
 }
 
 /* a */
