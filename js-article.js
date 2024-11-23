@@ -13,8 +13,8 @@ $(window).scroll(() => {
 $('article').dblclick(() => {
     if (navigator.share) {
         navigator.share({
-            title: 'Quack Quack',
-            url: 'https://quack.com'
+            title: 'Apple планирует представить MacBook Pro без выемки к 2027 году',
+            url: 'https://puk.com'
         })
     }
 })
