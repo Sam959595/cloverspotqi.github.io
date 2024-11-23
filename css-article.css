@@ -5,18 +5,6 @@ body {
     color: var(--h)
 }
 
-/* img */
-
-[data-i] {
-    opacity: 0
-}
-
-img {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
-}
-
 /* n */
 
 section.n {
@@ -157,6 +145,10 @@ article code {
     color: hsl(from var(--h) h s l / .7)
 }
 
+article ol {
+    margin-block: 30px
+}
+
 article ol.a {
     list-style-type: "•  "
 }
@@ -179,10 +171,6 @@ article hr {
     margin: 30px;
 
     border-top: 2px solid var(--n)
-}
-
-article iframe {
-    margin-block: 30px
 }
 
 /* g */
@@ -236,6 +224,10 @@ section.a button {
 
     background-color: var(--k);
     color: var(--h)
+}
+
+section.a .a {
+    filter: grayscale(1);
 }
 
 /* k */
@@ -403,7 +395,7 @@ section.s .k img:last-child {
         --h: white;
         --p: #77777b;
         --m: #4d3e69;
-        --k: #2b2b2d;
+        --k: #2b2b2b;
         --q: #a2a0aa;
         --l: #878787;
         --n: #1a1a1c;
