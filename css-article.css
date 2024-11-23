@@ -5,6 +5,18 @@ body {
     color: var(--h)
 }
 
+/* img */
+
+[data-i] {
+    opacity: 0
+}
+
+img {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+}
+
 /* n */
 
 section.n {
@@ -168,6 +180,8 @@ article .m {
 }
 
 article hr {
+    margin: 30px;
+    
     border-top: 2px solid var(--n)
 }
 
