@@ -168,8 +168,6 @@ article .m {
 }
 
 article hr {
-    margin: 30px;
-
     border-top: 2px solid var(--n)
 }
 
