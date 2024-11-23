@@ -89,6 +89,11 @@ section.f li a {
 
 /* article */
 
+article img {
+    width: 100%;
+    height: auto
+}
+
 article h1 {
     margin: 30px;
     scroll-margin-top: calc(25px + env(safe-area-inset-top));
@@ -195,6 +200,10 @@ section.g ul {
 
 section.g a {
     font: 700 13px system-ui
+}
+
+section.g .a {
+    filter: saturate(0)
 }
 
 /* a */
