@@ -15,7 +15,7 @@ body {
 section.t {
     margin: calc(3rem + env(safe-area-inset-top)) 2.8rem 10rem;
 
-    color: light-dark(#111, #ccc)
+    color: light-dark(#111, #bbb)
 }
 
 section.t h1 {
