@@ -176,6 +176,10 @@ article hr {
     border-top: 2px solid var(--n)
 }
 
+article iframe {
+    margin-block: 30px
+}
+
 /* g */
 
 section.g {
