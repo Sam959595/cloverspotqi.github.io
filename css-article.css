@@ -81,7 +81,7 @@ section.f li a {
     font: 600 14px system-ui;
     letter-spacing: .2px;
 
-    border-radius: 19px;
+    border-radius: 11px;
 
     background-color: var(--n);
     color: var(--l)
@@ -170,6 +170,12 @@ article .m {
     font-size: 12px
 }
 
+article hr {
+    margin-inline: 30px;
+
+    border-top: 2px solid var(--n)
+}
+
 /* g */
 
 section.g {
@@ -195,18 +201,15 @@ section.a {
     padding: 35px 30px calc(15px + env(safe-area-inset-bottom));
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 10px;
 
     background-image: linear-gradient(transparent, hsl(from var(--b) h s l / .7));
 
     transition: opacity .4s
 }
 
-section.a .c {
-    width: 45px
-}
-
-section.a .b {
+section.a button {
     height: 45px;
 
     padding-inline: 17px;
@@ -220,23 +223,6 @@ section.a .b {
 
     background-color: var(--k);
     color: var(--h)
-}
-
-section.a .a {
-    width: 45px;
-    height: 45px;
-
-    padding-inline: 2px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 50%;
-
-    font-size: 16px;
-
-    background-color: var(--k)
 }
 
 /* k */
