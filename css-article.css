@@ -131,7 +131,7 @@ article figcaption {
 article blockquote {
     margin: 30px;
 
-    border-left: 3px solid #88888840;
+    border-left: 3px solid var(--n);
 
     padding-left: 13px;
 
