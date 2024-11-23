@@ -166,11 +166,11 @@ article ol.a {
 }
 
 article ol.a p {
-    margin: 10px 35px 10px 45px
+    margin: 10px 30px 10px 45px
 }
 
 article ol.b p {
-    margin: 10px 35px 10px 53px
+    margin: 10px 30px 10px 53px
 }
 
 article .m {
@@ -211,7 +211,7 @@ section.g .a {
 section.a {
     position: fixed;
     inset: auto 0 0;
-    padding: 35px 30px calc(15px + env(safe-area-inset-bottom));
+    padding-block: 35px calc(15px + env(safe-area-inset-bottom));
 
     display: flex;
     justify-content: center;
