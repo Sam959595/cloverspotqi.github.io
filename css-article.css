@@ -1,3 +1,33 @@
+html.lock,
+html.lock body {
+    box-sizing: border-box;
+    height: calc(var(--window-inner-height) - 1px);
+    overflow: hidden;
+}
+
+.modal {
+    display: none;
+}
+
+html.lock .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.85);
+    z-index: 1;
+}
+
+html.lock .measure {
+    height: 100%;
+    color: #fff;
+}
+
+
 body {
     background-color: var(--b);
     color: var(--h)
@@ -254,9 +284,6 @@ section.k {
 /* s */
 
 section.s {
-    pointer-events: none;
-    opacity: 0;
-
     position: fixed;
     inset: 0;
 
