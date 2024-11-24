@@ -185,6 +185,7 @@ document.documentElement.addEventListener('click', (e) => {
     else if (e.target.dataset.action==='close') {
 
         document.documentElement.classList.remove('lock');
+        window.removeEventListener('scroll')
     }
 })
     </script>
