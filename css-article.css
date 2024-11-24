@@ -183,8 +183,8 @@ article p code {
 
     border-radius: 5px;
 
-    background-color: #88888840;
-    color: light-dark(#a3a3a4, #77777b)
+    background-color: light-dark(#f4f4f4, #101011);
+    color: light-dark(#666, #acb2be)
 }
 
 article pre code {
