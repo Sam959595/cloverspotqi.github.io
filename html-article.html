@@ -74,7 +74,7 @@
                 <p><b>Десятичные дроби</b> — это такие дроби, которые можно записать через запятую. Например, <math class="m"><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>=</mo><mn>0,5</mn></math>.</p>
             </li>
         </ol>
-        <iframe style="width: -webkit-fill-available; aspect-ratio: 428/240; height: auto" width="428" height="240" src="https://www.youtube.com/embed/ceYm0eDw7tg?si=wfptZmHTTgjmZMvx" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- <iframe style="width: -webkit-fill-available; aspect-ratio: 428/240; height: auto" width="428" height="240" src="https://www.youtube.com/embed/ceYm0eDw7tg?si=wfptZmHTTgjmZMvx" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
         <p><mark>foregroundColor</mark><br><br><code>foregroundColor()</code>.</p>
     </article>
 
@@ -164,12 +164,6 @@
     </section>
     <script>
         // this syncs the window height
-const syncWindowHeight = () => {
-    document.documentElement.style.setProperty(
-        "--window-inner-height",
-        `${window.innerHeight}px`
-    );
-}
 
 // for iOS 15, prevents re-hiding of footer
 document.querySelector('.modal').addEventListener('pointermove', e => {
@@ -181,21 +175,16 @@ let scrollY;
 document.documentElement.addEventListener('click', (e) => {
 
     if (e.target.dataset.action==='open') {
-        
-        syncWindowHeight();
 
-        scrollY = window.scrollY;
+        window.addEventListener('scroll', e => {
+            e.preventDefault()
+        })
         document.documentElement.classList.add('lock');
-
-        window.addEventListener("resize", syncWindowHeight);
 
     }
     else if (e.target.dataset.action==='close') {
 
-        window.removeEventListener("resize", syncWindowHeight);
-
         document.documentElement.classList.remove('lock');
-        window.scrollTo(0, scrollY);
     }
 })
     </script>
