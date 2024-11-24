@@ -1,7 +1,7 @@
 html.lock,
 html.lock body {
     box-sizing: border-box;
-    height: calc(var(--window-inner-height) - 1px);
+    height: var(--window-inner-height);
     overflow: hidden;
 }
 
@@ -20,11 +20,6 @@ html.lock .modal {
     height: 100%;
     background: rgba(0,0,0,.85);
     z-index: 1;
-}
-
-html.lock .measure {
-    height: 100%;
-    color: #fff;
 }
 
 
