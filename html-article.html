@@ -74,9 +74,10 @@
                 <p><b>Десятичные дроби</b> — это такие дроби, которые можно записать через запятую. Например, <math class="m"><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>=</mo><mn>0,5</mn></math>.</p>
             </li>
         </ol>
-        <pre><code class="js">window<span class="a">.addEventListener</span>(<span class="a">'resize'</span>, () <span class="a">=></span> <span class="a">{</span>
-    measure<span class="b">.style</span><span class="b">.setProperty</span></span><span>('--height', `${window.innerHeight}px`);
-});</span></code></pre>
+        <pre><code class="js"><span class="c">// прослушивание события</span>
+window<span class="a">.addEventListener</span>(<span class="b">'resize'</span>, () <span class="f">=></span> {
+    measure<span class="a">.style</span><span class="a">.setProperty</span>(<span class="b">'--height'</span>, <span class="b">`</span><span class="l">${</span>window<span class="a">.innerHeight</span><span class="l">}</span><span class="b">px`</span>);
+});</code></pre>
         <!-- <iframe style="width: -webkit-fill-available; aspect-ratio: 428/240; height: auto" width="428" height="240" src="https://www.youtube.com/embed/ceYm0eDw7tg?si=wfptZmHTTgjmZMvx" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
         <p><mark>foregroundColor</mark>.</p>
     </article>
