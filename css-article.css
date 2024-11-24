@@ -49,19 +49,17 @@ section.n img {
 
 section.n h6 {
     word-wrap: anywhere;
-    font: 500 15px system-ui;
-
-    color: var(--p)
+    font: 500 15px system-ui
 }
 
-section.n a {
-    color: var(--h)
+section.n u {
+    color: light-dark(#a3a3a4, #77777b)
 }
 
 section.n p {
     font: 500 13px system-ui;
 
-    color: var(--p)
+    color: light-dark(#a3a3a4, #77777b)
 }
 
 /* f */
@@ -198,28 +196,28 @@ article pre code {
 
     font: 15px ui-monospace;
 
-    background-color: light-dark(#a3a3a4, #77777b);
-    color: light-dark(#000, #acb2be)
+    background-color: light-dark(#f4f4f4, #101011);
+    color: light-dark(#666, #acb2be)
 }
 
 article .js .a {
-    color: light-dark(#000, #82b996)
+    color: light-dark(#327d4d, #82b996)
 }
 
 article .js .b {
-    color: light-dark(#000, #f0c784)
+    color: light-dark(#cc8c1d, #f0c784)
 }
 
 article .js .f {
-    color: light-dark(#000, #f6acef)
+    color: light-dark(#b658ad, #f6acef)
 }
 
 article .js .c {
-    color: light-dark(#000, #5d636f)
+    color: light-dark(#aaa, #5d636f)
 }
 
 article .js .l {
-    color: light-dark(#000, #91c7e6)
+    color: light-dark(#4191c3, #91c7e6)
 }
 
 /* g */
@@ -254,7 +252,7 @@ section.a {
     justify-content: center;
     column-gap: 10px;
 
-    background-image: linear-gradient(transparent, light-dark(#000, #91c7e6));
+    background-image: linear-gradient(transparent, light-dark(#ffffffb3, #000000b3));
 
     transition: opacity .4s
 }
@@ -271,8 +269,8 @@ section.a button {
 
     font: 700 14px ui-rounded;
 
-    background-color: light-dark(#000, #f6acef);
-    color: light-dark(#000, #f6acef)
+    background-color: light-dark(#e7e7e7, #1b1b1b);
+    color: light-dark(#111, white)
 }
 
 section.a .a {
