@@ -1,6 +1,4 @@
 body {
-    height: 100vh;
-
     background-color: var(--b);
     color: var(--h)
 }
@@ -181,7 +179,7 @@ article .m {
 
 article hr {
     margin: 30px;
-    
+
     border-top: 2px solid var(--n)
 }
 
@@ -339,7 +337,7 @@ section.s .s {
 }
 
 section.s h1 {
-    font-size: 15px
+    font: 400 15px system-ui
 }
 
 section.s u {
