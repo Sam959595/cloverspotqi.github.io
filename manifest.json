@@ -5,6 +5,5 @@
             "src": "icon.jpg"
         }
     ],
-    "display": "standalone",
-    "orientation": "portrait"
+    "display": "standalone"
 }
