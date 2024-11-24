@@ -139,17 +139,6 @@ article mark {
     background-color: var(--m)
 }
 
-article code {
-    padding: 2px 6px;
-
-    font-family: ui-monospace;
-
-    border-radius: 5px;
-
-    background-color: #88888840;
-    color: hsl(from var(--h) h s l / .7)
-}
-
 article ol {
     margin-block: 30px
 }
@@ -176,6 +165,33 @@ article hr {
     margin: 30px;
 
     border-top: 2px solid var(--n)
+}
+
+article p code {
+    padding: 2px 6px;
+
+    font: 15px ui-monospace;
+
+    border-radius: 5px;
+
+    background-color: #88888840;
+    color: hsl(from var(--h) h s l / .7)
+}
+
+article pre code {
+    overflow-x: scroll;
+
+    padding: 30px;
+
+    display: block;
+
+    font: 14px ui-monospace;
+
+    background-color: var(--n)
+}
+
+article .js a {
+    color: #000
 }
 
 /* g */
