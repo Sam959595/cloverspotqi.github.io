@@ -19,18 +19,18 @@ $('article').dblclick(() => {
     }
 })
 
-// // comment
-// $('section.a button:last-child').click(() => {
-//     $('html')[0].style = 'box-sizing: border-box; height: 900px; overflow: hidden';
-//     $('body')[0].style = 'box-sizing: border-box; height: 900px; overflow: hidden';
-//     $('section.s')[0].style = 'pointer-events: auto; opacity: .7'
-// })
+// comment
+$('section.a button:last-child').click(() => {
+    $('html')[0].style = 'box-sizing: border-box; overflow: hidden';
+    $('body')[0].style = 'box-sizing: border-box; overflow: hidden';
+    $('section.s')[0].style = 'pointer-events: auto; opacity: 1'
+})
 
-// $('section.s button').click(() => {
-//     $('html')[0].removeAttribute('style');
-//     $('body')[0].removeAttribute('style');
-//     $('section.s')[0].removeAttribute('style')
-// })
+$('section.s button').click(() => {
+    $('html')[0].removeAttribute('style');
+    $('body')[0].removeAttribute('style');
+    $('section.s')[0].removeAttribute('style')
+})
 
 // counter
 $('section.a button:first-child').click(() => {
@@ -73,55 +73,55 @@ document.querySelectorAll('img').forEach(x => {
     }).observe(x)
 })
 
-// video load
-document.querySelectorAll('video').forEach(x => {
-    new IntersectionObserver((a, b) => {
-        a.forEach(x => {
-            let a = x.target;
-            if (x.isIntersecting) {
-                b.unobserve(a);
-                a.src = a.dataset.v;
-                let t = setInterval(() => {
-                    if (a.currentTime > 0) {
-                        clearInterval(t);
-                        a.removeAttribute('data-v')
-                    }
-                }, 500)
-            }
-        })
-    }).observe(x)
-})
+// // video load
+// document.querySelectorAll('video').forEach(x => {
+//     new IntersectionObserver((a, b) => {
+//         a.forEach(x => {
+//             let a = x.target;
+//             if (x.isIntersecting) {
+//                 b.unobserve(a);
+//                 a.src = a.dataset.v;
+//                 let t = setInterval(() => {
+//                     if (a.currentTime > 0) {
+//                         clearInterval(t);
+//                         a.removeAttribute('data-v')
+//                     }
+//                 }, 500)
+//             }
+//         })
+//     }).observe(x)
+// })
 
-// video observer play/pause
-document.querySelectorAll('video').forEach(x => {
-    new IntersectionObserver(x => {
-        x.forEach(x => {
-            if (x.isIntersecting) {
-                x.target.play();
-                $('section.h')[0].style.cssText = 'opacity: 1; pointer-events: initial'
-            } else {
-                x.target.pause();
-                $('section.h')[0].removeAttribute('style')
-            }
-        })
-    }, {
-        threshold: .2
-    }).observe(x)
-})
+// // video observer play/pause
+// document.querySelectorAll('video').forEach(x => {
+//     new IntersectionObserver(x => {
+//         x.forEach(x => {
+//             if (x.isIntersecting) {
+//                 x.target.play();
+//                 $('section.h')[0].style.cssText = 'opacity: 1; pointer-events: initial'
+//             } else {
+//                 x.target.pause();
+//                 $('section.h')[0].removeAttribute('style')
+//             }
+//         })
+//     }, {
+//         threshold: .2
+//     }).observe(x)
+// })
 
-// video toggle sound
-$('section.h')[0].addEventListener('click', () => {
-    if ($('video').prop('muted')) {
-        $('video').prop('muted', false);
-        $('section.h svg')[0].setAttribute('opacity', '.4')
-    } else {
-        $('video').prop('muted', true);
-        $('section.h svg')[0].setAttribute('opacity', '.1')
-    }
-})
+// // video toggle sound
+// $('section.h')[0].addEventListener('click', () => {
+//     if ($('video').prop('muted')) {
+//         $('video').prop('muted', false);
+//         $('section.h svg')[0].setAttribute('opacity', '.4')
+//     } else {
+//         $('video').prop('muted', true);
+//         $('section.h svg')[0].setAttribute('opacity', '.1')
+//     }
+// })
 
-// video pause if exit tab browser
-window.onblur = () => {
-    $('video').prop('muted', true);
-    $('section.h svg')[0].setAttribute('opacity', '.1')
-}
+// // video pause if exit tab browser
+// window.onblur = () => {
+//     $('video').prop('muted', true);
+//     $('section.h svg')[0].setAttribute('opacity', '.1')
+// }
