@@ -1,3 +1,10 @@
+body {
+    height: 100vh;
+
+    background-color: var(--b);
+    color: var(--h)
+}
+
 /* img */
 
 [data-i] {
