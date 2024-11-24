@@ -184,7 +184,7 @@ article p code {
     border-radius: 5px;
 
     background-color: light-dark(#f4f4f4, #101011);
-    color: light-dark(#666, #acb2be)
+    color: light-dark(#666, #b7babf)
 }
 
 article pre code {
@@ -197,7 +197,7 @@ article pre code {
     font: 15px ui-monospace;
 
     background-color: light-dark(#f4f4f4, #101011);
-    color: light-dark(#666, #acb2be)
+    color: light-dark(#666, #b7babf)
 }
 
 article .js .a {
@@ -213,7 +213,7 @@ article .js .f {
 }
 
 article .js .c {
-    color: light-dark(#aaa, #5d636f)
+    color: light-dark(#aaa, #65676a)
 }
 
 article .js .l {
