@@ -1,8 +1,12 @@
+:root {
+    color-scheme: light dark
+}
+
 body {
     height: 100vh;
 
-    background-color: var(--b);
-    color: var(--h)
+    background-color: light-dark(white, black);
+    color: light-dark(#111, white)
 }
 
 /* img */
@@ -83,8 +87,8 @@ section.f li a {
 
     border-radius: 11px;
 
-    background-color: var(--n);
-    color: var(--l)
+    background-color: light-dark(#f4f4f4, #101011);
+    color: light-dark(#777, #878787)
 }
 
 /* article */
@@ -125,7 +129,7 @@ article figcaption {
     text-align: center;
     font-size: 13px;
 
-    color: var(--p)
+    color: light-dark(#a3a3a4, #77777b)
 }
 
 article blockquote {
@@ -182,7 +186,7 @@ article p code {
     border-radius: 5px;
 
     background-color: #88888840;
-    color: hsl(from var(--h) h s l / .7)
+    color: light-dark(#a3a3a4, #77777b)
 }
 
 article pre code {
@@ -194,28 +198,28 @@ article pre code {
 
     font: 15px ui-monospace;
 
-    background-color: var(--n);
-    color: #acb2be
+    background-color: light-dark(#a3a3a4, #77777b);
+    color: light-dark(#000, #acb2be)
 }
 
 article .js .a {
-    color: #82b996
+    color: light-dark(#000, #82b996)
 }
 
 article .js .b {
-    color: #f0c784
+    color: light-dark(#000, #f0c784)
 }
 
 article .js .f {
-    color: #f6acef
+    color: light-dark(#000, #f6acef)
 }
 
 article .js .c {
-    color: #5d636f
+    color: light-dark(#000, #5d636f)
 }
 
 article .js .l {
-    color: #91c7e6
+    color: light-dark(#000, #91c7e6)
 }
 
 /* g */
@@ -250,7 +254,7 @@ section.a {
     justify-content: center;
     column-gap: 10px;
 
-    background-image: linear-gradient(transparent, hsl(from var(--b) h s l / .7));
+    background-image: linear-gradient(transparent, light-dark(#000, #91c7e6));
 
     transition: opacity .4s
 }
@@ -267,8 +271,8 @@ section.a button {
 
     font: 700 14px ui-rounded;
 
-    background-color: var(--k);
-    color: var(--h)
+    background-color: light-dark(#000, #f6acef);
+    color: light-dark(#000, #f6acef)
 }
 
 section.a .a {
@@ -283,7 +287,7 @@ section.k {
 
     height: env(safe-area-inset-top);
 
-    background-color: hsl(from var(--b) h s l / .9)
+    background-color: light-dark(#000, #f6acef)
 }
 
 /* s */
@@ -419,30 +423,4 @@ section.s .k img:first-child {
 
 section.s .k img:last-child {
     clip-path: path("M9 0A8.96 8.96 0 0 0 3.6 1.782C5.26 3.423 6.277 6.040 6.277 9s-1.017 5.577-2.676 7.218A9 9 0 1 0 9 0Z")
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --b: white;
-        --h: #111;
-        --p: #a3a3a4;
-        --m: #ebe0ff;
-        --k: #e7e7e7;
-        --q: #111;
-        --l: #777;
-        --n: #f4f4f4;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --b: black;
-        --h: white;
-        --p: #77777b;
-        --m: #4d3e69;
-        --k: #1b1b1b;
-        --q: #a2a0aa;
-        --l: #878787;
-        --n: #101011;
-    }
 }
