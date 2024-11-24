@@ -192,10 +192,10 @@ article pre code {
 
     display: block;
 
-    font: 14px ui-monospace;
+    font: 15px ui-monospace;
 
     background-color: var(--n);
-    color: hsl(from var(--h) h s l / .5)
+    color: #acb2be
 }
 
 article .js .a {
@@ -211,7 +211,7 @@ article .js .f {
 }
 
 article .js .c {
-    color: #3e4147
+    color: #5d636f
 }
 
 article .js .l {
@@ -283,7 +283,7 @@ section.k {
 
     height: env(safe-area-inset-top);
 
-    background-color: hsl(from var(--b) h s l / .8)
+    background-color: hsl(from var(--b) h s l / .9)
 }
 
 /* s */
