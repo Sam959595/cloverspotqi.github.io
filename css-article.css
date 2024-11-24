@@ -194,11 +194,28 @@ article pre code {
 
     font: 14px ui-monospace;
 
-    background-color: var(--n)
+    background-color: var(--n);
+    color: hsl(from var(--h) h s l / .5)
 }
 
-article .js a {
-    color: #000
+article .js .a {
+    color: #82b996
+}
+
+article .js .b {
+    color: #f0c784
+}
+
+article .js .f {
+    color: #f6acef
+}
+
+article .js .c {
+    color: #494949
+}
+
+article .js .l {
+    color: #91c7e6
 }
 
 /* g */
