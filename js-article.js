@@ -19,18 +19,18 @@ $('article').dblclick(() => {
     }
 })
 
-// comment
-$('section.a button:last-child').click(() => {
-    $('html')[0].style = 'box-sizing: border-box; height: 926px; overflow: hidden';
-    $('body')[0].style = 'box-sizing: border-box; height: 926px; overflow: hidden';
-    $('section.s')[0].style = 'pointer-events: auto; opacity: 1'
-})
+// // comment
+// $('section.a button:last-child').click(() => {
+//     $('html')[0].style = 'box-sizing: border-box; height: 900px; overflow: hidden';
+//     $('body')[0].style = 'box-sizing: border-box; height: 900px; overflow: hidden';
+//     $('section.s')[0].style = 'pointer-events: auto; opacity: .7'
+// })
 
-$('section.s button').click(() => {
-    $('html')[0].removeAttribute('style');
-    $('body')[0].removeAttribute('style');
-    $('section.s')[0].removeAttribute('style')
-})
+// $('section.s button').click(() => {
+//     $('html')[0].removeAttribute('style');
+//     $('body')[0].removeAttribute('style');
+//     $('section.s')[0].removeAttribute('style')
+// })
 
 // counter
 $('section.a button:first-child').click(() => {
