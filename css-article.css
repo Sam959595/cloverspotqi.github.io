@@ -285,7 +285,7 @@ section.k {
 
     height: env(safe-area-inset-top);
 
-    background-color: light-dark(#ffffffe6, #000000e6);
+    background-color: light-dark(#ffffffcc, #000000cc);
 }
 
 /* s */
