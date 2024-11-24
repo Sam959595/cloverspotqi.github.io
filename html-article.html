@@ -99,7 +99,7 @@
 
     <section class="k"></section>
 
-    <section class="s modal">
+    <section class="s">
         <button data-action="close">↩️</button>
         
         <div class="y" id="yy">
@@ -162,33 +162,6 @@
             </li>
         </ul>
     </section>
-    <script>
-        // this syncs the window height
-
-// for iOS 15, prevents re-hiding of footer
-document.querySelector('.modal').addEventListener('pointermove', e => {
-    e.preventDefault()
-})
-
-// this locks the body and remembers the scroll position
-let scrollY;
-document.documentElement.addEventListener('click', (e) => {
-
-    if (e.target.dataset.action==='open') {
-
-        window.addEventListener('scroll', e => {
-            e.preventDefault()
-        })
-        document.documentElement.classList.add('lock');
-
-    }
-    else if (e.target.dataset.action==='close') {
-
-        document.documentElement.classList.remove('lock');
-        window.removeEventListener('scroll')
-    }
-})
-    </script>
 </body>
     
 </html>
