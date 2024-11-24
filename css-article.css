@@ -133,7 +133,7 @@ article figcaption {
 article blockquote {
     margin: 30px;
 
-    border-left: 3px solid var(--n);
+    border-left: 3px solid light-dark(#f0f0f0, #161616);
 
     padding-left: 13px;
 
@@ -145,7 +145,7 @@ article mark {
 
     border-radius: 5px;
 
-    background-color: var(--m)
+    background-color: light-dark(#ebe0ff, #4d3e69)
 }
 
 article ol {
@@ -173,7 +173,7 @@ article .m {
 article hr {
     margin: 30px;
 
-    border-top: 2px solid var(--n)
+    border-top: 2px solid light-dark(#f0f0f0, #161616)
 }
 
 article p code {
