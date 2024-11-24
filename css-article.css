@@ -1,20 +1,3 @@
-
-
-.modal {
-    display: none;
-}
-
-html.lock .modal {
-    display: block;
-    opacity: .8;
-}
-
-
-body {
-    background-color: var(--b);
-    color: var(--h)
-}
-
 /* img */
 
 [data-i] {
@@ -266,6 +249,9 @@ section.k {
 /* s */
 
 section.s {
+    pointer-events: none;
+    opacity: 0;
+
     position: fixed;
     inset: 0;
 
