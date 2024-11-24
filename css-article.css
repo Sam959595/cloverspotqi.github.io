@@ -1,25 +1,12 @@
-html.lock,
-html.lock body {
-    box-sizing: border-box;
-    height: var(--window-inner-height);
-    overflow: hidden;
-}
+
 
 .modal {
     display: none;
 }
 
 html.lock .modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,.85);
-    z-index: 1;
+    display: block;
+    opacity: .8;
 }
 
 
