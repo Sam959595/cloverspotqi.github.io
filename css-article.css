@@ -1,12 +1,5 @@
 html {
-    height: 100vh;
-    overflow-y: scroll
-}
-
-main {
-    width: 100vw;
-    height: 100vh;
-    overflow-y: scroll
+    overscroll-behavior-y: none
 }
 
 body {
@@ -24,6 +17,14 @@ img {
     opacity: 1;
 
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+}
+
+/* a */
+
+section.a {
+    height: 100vh;
+
+    overflow-y: scroll
 }
 
 /* n */
