@@ -1,6 +1,9 @@
-body {
+html, body {
     height: 100vh;
+    overflow-y: scroll
+}
 
+body {
     background-color: light-dark(white, black);
     color: light-dark(#111, white)
 }
@@ -45,7 +48,7 @@ section.n img {
 
 section.n h6 {
     word-wrap: anywhere;
-    font: 500 15px system-ui
+    font: 600 15px system-ui
 }
 
 section.n u {
@@ -53,7 +56,7 @@ section.n u {
 }
 
 section.n p {
-    font: 500 13px system-ui;
+    font: 500 15px system-ui;
 
     color: light-dark(#a3a3a4, #77777b)
 }
@@ -279,7 +282,7 @@ section.k {
 
     height: env(safe-area-inset-top);
 
-    background-color: light-dark(#ffffffcc, #000000cc);
+    background-color: light-dark(#ffffffcc, #000000cc)
 }
 
 /* s */
