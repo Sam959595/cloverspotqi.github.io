@@ -8,13 +8,6 @@ body {
     color: light-dark(#111, white)
 }
 
-main {
-    height: 100vh;
-    overflow-y: scroll;
-
-    box-sizing: border-box;
-}
-
 /* img */
 
 [data-i] {
