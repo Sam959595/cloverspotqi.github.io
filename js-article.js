@@ -25,14 +25,11 @@ $('article').dblclick(() => {
 // comment
 $('section.a button:last-child').click(() => {
     $('html')[0].style = 'overflow: hidden';
-    $('article')[0].style = 'touch-action: none';
-    $('section.a')[0].style = 'touch-action: none';
     $('section.s')[0].style = 'pointer-events: auto; opacity: 1'
 })
 
 $('section.s button').click(() => {
     $('html')[0].removeAttribute('style');
-    $('body')[0].removeAttribute('style');
     $('section.s')[0].removeAttribute('style')
 })
 
