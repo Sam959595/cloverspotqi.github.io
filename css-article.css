@@ -3,6 +3,11 @@ html {
     overflow-y: scroll
 }
 
+main {
+    height: 100vh;
+    overflow-y: scroll
+}
+
 body {
     background-color: light-dark(white, black);
     color: light-dark(#111, white)
