@@ -1,9 +1,12 @@
 html {
+    -webkit-overflow-scrolling: auto;
     height: 100vh;
     overflow-y: scroll
 }
 
 body {
+    -webkit-overflow-scrolling: auto;
+
     background-color: light-dark(white, black);
     color: light-dark(#111, white)
 }
