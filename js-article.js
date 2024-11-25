@@ -24,8 +24,8 @@ $('article').dblclick(() => {
 
 // comment
 $('section.a button:last-child').click(() => {
-    $('html')[0].style = 'box-sizing: border-box; overflow: hidden';
-    $('body')[0].style = 'box-sizing: border-box; overflow: hidden';
+    $('html')[0].style = 'overflow: hidden';
+    $('article, section.a')[0].style = 'touch-active: none';
     $('section.s')[0].style = 'pointer-events: auto; opacity: 1'
 })
 
