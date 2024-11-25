@@ -245,9 +245,9 @@ section.g .a {
     filter: saturate(0)
 }
 
-/* a */
+/* b */
 
-section.a {
+section.b {
     position: fixed;
     inset: auto 0 0;
     padding-block: 35px calc(15px + env(safe-area-inset-bottom));
@@ -261,7 +261,7 @@ section.a {
     transition: opacity .4s
 }
 
-section.a button {
+section.b button {
     height: 45px;
 
     padding-inline: 17px;
@@ -277,7 +277,7 @@ section.a button {
     color: light-dark(#111, white)
 }
 
-section.a .a {
+section.b .a {
     filter: grayscale(1)
 }
 
