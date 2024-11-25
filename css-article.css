@@ -1,8 +1,12 @@
+:root {
+    color-scheme: light dark
+}
+
 body {
     height: 100vh;
 
-    background-color: var(--b);
-    color: var(--h)
+    background-color: light-dark(white, black);
+    color: light-dark(#111, white)
 }
 
 /* img */
@@ -49,13 +53,13 @@ section.n h6 {
 }
 
 section.n u {
-    color: var(--p)
+    color: light-dark(#a3a3a4, #77777b)
 }
 
 section.n p {
     font: 500 13px system-ui;
 
-    color: var(--p)
+    color: light-dark(#a3a3a4, #77777b)
 }
 
 /* f */
@@ -81,8 +85,8 @@ section.f li a {
 
     border-radius: 11px;
 
-    background-color: var(--q);
-    color: var(--p)
+    background-color: light-dark(#f4f4f4, #101011);
+    color: light-dark(#777, #878787)
 }
 
 /* article */
@@ -123,13 +127,13 @@ article figcaption {
     text-align: center;
     font-size: 13px;
 
-    color: var(--p)
+    color: light-dark(#a3a3a4, #77777b)
 }
 
 article blockquote {
     margin: 30px;
 
-    border-left: 3px solid var(--n);
+    border-left: 3px solid light-dark(#f0f0f0, #161616);
 
     padding-left: 13px;
 
@@ -139,7 +143,7 @@ article blockquote {
 article mark {
     padding-block: 2px;
 
-    background-color: var(--m)
+    background-color: light-dark(#ebe0ff, #4d3e69)
 }
 
 article ol {
@@ -167,7 +171,7 @@ article .m {
 article hr {
     margin: 30px;
 
-    border-top: 2px solid var(--k)
+    border-top: 2px solid light-dark(#f0f0f0, #161616)
 }
 
 article p code {
@@ -177,8 +181,8 @@ article p code {
 
     border-radius: 5px;
 
-    background-color: var(--q);
-    color: var(--l)
+    background-color: light-dark(#f4f4f4, #101011);
+    color: light-dark(#666, #b7babf)
 }
 
 article pre code {
@@ -190,28 +194,28 @@ article pre code {
 
     font: 15px ui-monospace;
 
-    background-color: var(--q);
-    color: var(--l)
+    background-color: light-dark(#f4f4f4, #101011);
+    color: light-dark(#666, #b7babf)
 }
 
 article .js .a {
-    color: var(--g)
+    color: light-dark(#327d4d, #82b996)
 }
 
 article .js .b {
-    color: var(--o)
+    color: light-dark(#cc8c1d, #f0c784)
 }
 
 article .js .f {
-    color: var(--s)
+    color: light-dark(#b658ad, #f6acef)
 }
 
 article .js .c {
-    color: var(--u)
+    color: light-dark(#aaa, #65676a)
 }
 
 article .js .l {
-    color: var(--v)
+    color: light-dark(#4191c3, #91c7e6)
 }
 
 /* g */
@@ -246,7 +250,7 @@ section.a {
     justify-content: center;
     column-gap: 10px;
 
-    background-image: linear-gradient(transparent, var(--t));
+    background-image: linear-gradient(transparent, light-dark(#ffffffb3, #000000b3));
 
     transition: opacity .4s
 }
@@ -263,8 +267,8 @@ section.a button {
 
     font: 700 14px ui-rounded;
 
-    background-color: var(--r);
-    color: var(--h)
+    background-color: light-dark(#e7e7e7, #1b1b1b);
+    color: light-dark(#111, white)
 }
 
 section.a .a {
@@ -279,7 +283,7 @@ section.k {
 
     height: env(safe-area-inset-top);
 
-    background-color: var(--e)
+    background-color: light-dark(#ffffffcc, #000000cc);
 }
 
 /* s */
@@ -415,46 +419,4 @@ section.s .k img:first-child {
 
 section.s .k img:last-child {
     clip-path: path("M9 0A8.96 8.96 0 0 0 3.6 1.782C5.26 3.423 6.277 6.040 6.277 9s-1.017 5.577-2.676 7.218A9 9 0 1 0 9 0Z")
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --b: white;
-        --h: #111;
-        --p: #a3a3a4;
-        --n: #f0f0f0;
-        --m: #ebe0ff;
-        --k: #f7f7f7;
-        --q: #f4f4f4;
-        --l: #666;
-        --g: #327d4d;
-        --o: #cc8c1d;
-        --s: #b658ad;
-        --u: #aaa;
-        --v: #4191c3;
-        --t: #ffffffb3;
-        --r: #e7e7e7;
-        --e: #ffffffcc;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --b: black;
-        --h: white;
-        --p: #77777b;
-        --n: #161616;
-        --m: #4d3e69;
-        --k: #111;
-        --q: #101011;
-        --l: #b7babf;
-        --g: #82b996;
-        --o: #f0c784;
-        --s: #f6acef;
-        --u: #65676a;
-        --v: #91c7e6;
-        --t: #000000b3;
-        --r: #1b1b1b;
-        --e: #000000cc;
-    }
 }
