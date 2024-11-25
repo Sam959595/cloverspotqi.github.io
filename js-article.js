@@ -7,9 +7,7 @@ $(window).scroll(() => {
     
     t > n && t <= w ? e.style = 'pointer-events: none; opacity: 0' : e.style = 'pointer-events: auto; opacity: 1';
     
-    n = t <= 0 ? 0 : t;
-
-    console.log(t);
+    n = t <= 0 ? 0 : t
 })
 
 // share
