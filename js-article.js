@@ -25,14 +25,12 @@ $('article').dblclick(() => {
 // comment
 $('section.a button:last-child').click(() => {
     $('html')[0].style = 'overflow: hidden';
-    $('section.s')[0].style = 'pointer-events: auto; opacity: 1';
-    $('main')[0].style = 'position: fixed'
+    $('section.s')[0].style = 'pointer-events: auto; opacity: 1'
 })
 
 $('section.s button').click(() => {
     $('html')[0].removeAttribute('style');
-    $('section.s')[0].removeAttribute('style');
-    $('main')[0].removeAttribute('style')
+    $('section.s')[0].removeAttribute('style')
 })
 
 // counter
