@@ -1,6 +1,8 @@
 body {
 	-webkit-user-select: none;
-	-webkit-text-size-adjust: none
+	-webkit-text-size-adjust: none;
+
+	font-family: system-ui
 }
 
 body,
@@ -66,21 +68,6 @@ input,
 select,
 textarea {
 	outline: none
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ol,
-address,
-blockquote,
-textarea,
-figcaption {
-	font-family: system-ui, helvetica
 }
 
 a,
