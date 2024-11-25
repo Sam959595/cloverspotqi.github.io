@@ -1,7 +1,3 @@
-:root {
-    color-scheme: light dark
-}
-
 body {
     height: 100vh;
 
@@ -419,4 +415,8 @@ section.s .k img:first-child {
 
 section.s .k img:last-child {
     clip-path: path("M9 0A8.96 8.96 0 0 0 3.6 1.782C5.26 3.423 6.277 6.040 6.277 9s-1.017 5.577-2.676 7.218A9 9 0 1 0 9 0Z")
+}
+
+:root {
+    color-scheme: light dark
 }
