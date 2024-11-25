@@ -1,3 +1,7 @@
+html {
+    overscroll-behavior-y: none
+}
+
 html, body {
     height: 100vh;
     overflow-y: scroll
