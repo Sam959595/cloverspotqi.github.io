@@ -3,9 +3,9 @@ let n = 0;
 $('body').scroll(() => {
     let t = $('body')[0].scrollTop,
     e = $('section.a')[0],
-    w = $(document).height();
+    w = window.innerHeight;
     
-    t > n ? e.style = 'pointer-events: none; opacity: 0' : e.style = 'pointer-events: auto; opacity: 1';
+    t > n && t <= w ? e.style = 'pointer-events: none; opacity: 0' : e.style = 'pointer-events: auto; opacity: 1';
     
     n = t <= 0 ? 0 : t
 })
