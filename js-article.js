@@ -3,7 +3,7 @@ let n = 0;
 $('body').scroll(() => {
     let t = $('body')[0].scrollTop,
     e = $('section.a')[0],
-    w = window.innerHeight;
+    w = $(document).height();
     
     t > n && t <= w ? e.style = 'pointer-events: none; opacity: 0' : e.style = 'pointer-events: auto; opacity: 1';
     
