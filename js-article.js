@@ -1,13 +1,15 @@
 // tab
 let n = 0;
-$('body').scroll(() => {
-    let t = $('body')[0].scrollTop,
+$(window).scroll(() => {
+    let t = $(window)[0].scrollY,
     e = $('section.a')[0],
     w = $(document).height();
     
     t > n && t <= w ? e.style = 'pointer-events: none; opacity: 0' : e.style = 'pointer-events: auto; opacity: 1';
     
-    n = t <= 0 ? 0 : t
+    n = t <= 0 ? 0 : t;
+
+    console.log(t);
 })
 
 // share
