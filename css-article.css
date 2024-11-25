@@ -7,7 +7,15 @@ body {
     color: light-dark(#111, white)
 }
 
-/* img */
+/* a */
+
+section.a {
+    height: 100vh;
+
+    overflow-y: scroll
+}
+
+/* n */
 
 [data-i] {
     opacity: 0
@@ -19,15 +27,7 @@ img {
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
-/* a */
-
-section.a {
-    height: 100vh;
-
-    overflow-y: scroll
-}
-
-/* n */
+/* - */
 
 section.n {
     margin: calc(15px + env(safe-area-inset-top)) 30px 25px;
