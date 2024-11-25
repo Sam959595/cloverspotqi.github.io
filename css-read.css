@@ -1,7 +1,3 @@
-:root {
-    color-scheme: light dark
-}
-
 html {
     scroll-behavior: smooth
 }
@@ -267,4 +263,8 @@ body.c section.t {
 
 body.b section.t {
     color: light-dark(#111, #fbf5e5)
+}
+
+:root {
+    color-scheme: light dark
 }
