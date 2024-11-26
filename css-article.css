@@ -270,6 +270,11 @@ section.b .a {
     filter: grayscale(1)
 }
 
+section.b.x {
+    pointer-events: none;
+    opacity: 0
+}
+
 /* k */
 
 section.k {
@@ -295,6 +300,11 @@ section.s {
     background-color: light-dark(white, black);
 
     transition: opacity .2s
+}
+
+section.s.x {
+    pointer-events: auto;
+    opacity: 1
 }
 
 section.s button {
