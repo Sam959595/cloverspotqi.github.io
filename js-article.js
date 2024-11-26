@@ -2,11 +2,11 @@
 let n = 0;
 $('section.a').scroll(() => {
     let t = $('section.a')[0].scrollTop,
-    e = $('section.b')[0],
-    w = $('section.a')[0].scrollHeight;
-    
+        e = $('section.b')[0],
+        w = $('section.a')[0].scrollHeight;
+
     t > n && t <= w ? e.style = 'pointer-events: none; opacity: 0' : e.style = 'pointer-events: auto; opacity: 1';
-    
+
     n = t <= 0 ? 0 : t
 })
 
@@ -21,13 +21,20 @@ $('article').dblclick(() => {
 })
 
 // comment
+let b = 0;
 $('section.b button:last-child').click(() => {
-    $('section.a')[0].style = 'position: fixed; overflow: auto';
+    b = window.scrollY;
+    document.body.style.top = `-${b}px`;
+    document.body.style.position = 'fixed';
+
     $('section.s')[0].style = 'pointer-events: auto; opacity: 1'
 })
 
+// comment delete
 $('section.s button').click(() => {
-    $('section.a')[0].removeAttribute('style');
+    document.body.removeAttribute('style');
+    window.scrollTo(0, b);
+
     $('section.s')[0].removeAttribute('style')
 })
 
