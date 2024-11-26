@@ -1,12 +1,12 @@
 // tab
 let n = 0;
-$('section.a').scroll(() => {
-    let t = $('section.a')[0].scrollTop,
-        e = $('section.b')[0],
-        w = $('section.a')[0].scrollHeight;
+$(window).scroll(() => {
+    let t = window.scrollY,
+        d = $(document).height(),
+        e = $('section.b')[0];
 
-    t > n && t <= w ? e.style = 'pointer-events: none; opacity: 0' : e.style = 'pointer-events: auto; opacity: 1';
-
+    t > n && t <= d ? e.style = 'pointer-events: none; opacity: 0' : e.style = 'pointer-events: auto; opacity: 1';
+    
     n = t <= 0 ? 0 : t
 })
 
