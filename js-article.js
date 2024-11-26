@@ -1,14 +1,14 @@
-// tab
-let n = 0;
-$(window).scroll(() => {
-    let t = window.scrollY,
-        d = $(document).height(),
-        e = $('section.b')[0];
+// // tab
+// let n = 0;
+// $(window).scroll(() => {
+//     let t = window.scrollY,
+//         d = $(document).height(),
+//         e = $('section.b')[0];
 
-    t > n && t <= d ? e.classList.add('x') : e.classList.remove('x');
+//     t > n && t <= d ? e.classList.add('x') : e.classList.remove('x');
     
-    n = t <= 0 ? 0 : t
-})
+//     n = t <= 0 ? 0 : t
+// })
 
 // share
 $('article').dblclick(() => {
@@ -20,7 +20,7 @@ $('article').dblclick(() => {
     }
 })
 
-// comment
+// comment btn
 let b = 0;
 $('section.b button:last-child').click(() => {
     b = window.scrollY;
@@ -30,13 +30,40 @@ $('section.b button:last-child').click(() => {
     $('section.s')[0].classList.add('x')
 })
 
-// comment delete
 $('section.s button').click(() => {
     document.body.removeAttribute('style');
     window.scrollTo(0, b);
 
     $('section.s')[0].classList.remove('x')
 })
+
+// tab
+let startY = null; // Координата начала движения
+
+document.addEventListener('pointerdown', (event) => {
+    console.log('down');
+    
+    startY = event.clientY; // Запоминаем начальную позицию по оси Y
+});
+
+document.addEventListener('pointermove', (event) => {
+    if (startY !== null) { // Проверяем, что начальная позиция задана
+        const deltaY = startY - event.clientY; // Вычисляем, насколько переместился палец
+        if (deltaY > 50) { // Если движение вверх превышает 100px
+            $('section.b')[0].classList.add('x');
+            console.log('Движение вверх на 10px!');
+            startY = null; // Сбрасываем начальную позицию, чтобы событие не повторялось
+        } else {
+            $('section.b')[0].classList.remove('x');
+        }
+    }
+    console.log('move');
+});
+
+document.addEventListener('pointerup', () => {
+    console.log('up');
+    startY = null; // Сбрасываем начальную позицию, если пользователь отпустил палец
+});
 
 // // counter
 // $('section.b button:first-child').click(() => {
@@ -45,39 +72,21 @@ $('section.s button').click(() => {
 //     $('section.b button:first-child')[0].classList.toggle('a')
 // })
 
-// textarea
-document.querySelectorAll('textarea').forEach(x => {
-    x.addEventListener('input', () => {
-        x.style.height = 'auto';
-        x.style.height = (x.scrollHeight) + 'px';
+// // textarea
+// document.querySelectorAll('textarea').forEach(x => {
+//     x.addEventListener('input', () => {
+//         x.style.height = 'auto';
+//         x.style.height = (x.scrollHeight) + 'px';
 
-        let a = $('section.s span')[0];
+//         let a = $('section.s span')[0];
 
-        if (x.value !== '') {
-            a.innerHTML = '💌'
-        } else {
-            a.innerHTML = ''
-        }
-    })
-})
-
-// img load
-document.querySelectorAll('img').forEach(x => {
-    new IntersectionObserver((a, b) => {
-        a.forEach(x => {
-            let a = x.target;
-            if (x.isIntersecting) {
-                b.unobserve(a);
-                let m = new Image();
-                m.src = a.dataset.i;
-                m.onload = () => {
-                    a.src = a.dataset.i;
-                    a.removeAttribute('data-i')
-                }
-            }
-        })
-    }).observe(x)
-})
+//         if (x.value !== '') {
+//             a.innerHTML = '💌'
+//         } else {
+//             a.innerHTML = ''
+//         }
+//     })
+// })
 
 // // video load
 // document.querySelectorAll('video').forEach(x => {
@@ -131,3 +140,21 @@ document.querySelectorAll('img').forEach(x => {
 //     $('video').prop('muted', true);
 //     $('section.h svg')[0].setAttribute('opacity', '.1')
 // }
+
+// img load
+document.querySelectorAll('img').forEach(x => {
+    new IntersectionObserver((a, b) => {
+        a.forEach(x => {
+            let a = x.target;
+            if (x.isIntersecting) {
+                b.unobserve(a);
+                let m = new Image();
+                m.src = a.dataset.i;
+                m.onload = () => {
+                    a.src = a.dataset.i;
+                    a.removeAttribute('data-i')
+                }
+            }
+        })
+    }).observe(x)
+})
