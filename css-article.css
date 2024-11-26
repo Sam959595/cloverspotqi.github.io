@@ -225,8 +225,7 @@ article .js .l {
 /* g */
 
 section.g {
-    margin: 30px;
-    padding-bottom: calc(5cm + env(safe-area-inset-bottom))
+    margin: 30px 30px 5cm
 }
 
 section.g ul {
@@ -237,10 +236,6 @@ section.g ul {
 
 section.g a {
     font: 700 13px system-ui
-}
-
-section.g .a {
-    filter: saturate(0)
 }
 
 /* b */
