@@ -1,9 +1,9 @@
 // tab
 let n = 0;
-$(window).scroll(() => {
-    let t = $(window)[0].scrollY,
-    e = $('section.a')[0],
-    w = $(document).height();
+$('section.a').scroll(() => {
+    let t = $('section.a')[0].scrollTop,
+    e = $('section.b')[0],
+    w = $('section.a')[0].scrollHeight;
     
     t > n && t <= w ? e.style = 'pointer-events: none; opacity: 0' : e.style = 'pointer-events: auto; opacity: 1';
     
@@ -21,7 +21,7 @@ $('article').dblclick(() => {
 })
 
 // comment
-$('section.a button:last-child').click(() => {
+$('section.b button:last-child').click(() => {
     $('html')[0].style = 'overflow: hidden';
     $('section.s')[0].style = 'pointer-events: auto; opacity: 1'
 })
@@ -31,12 +31,12 @@ $('section.s button').click(() => {
     $('section.s')[0].removeAttribute('style')
 })
 
-// counter
-$('section.a button:first-child').click(() => {
-    let a = $('section.a span:first-child h6')[0].innerText;
-    $('section.a button:first-child')[0].innerText = Number(a) + 1;
-    $('section.a button:first-child')[0].classList.toggle('a')
-})
+// // counter
+// $('section.b button:first-child').click(() => {
+//     let a = $('section.b span:first-child h6')[0].innerText;
+//     $('section.b button:first-child')[0].innerText = Number(a) + 1;
+//     $('section.b button:first-child')[0].classList.toggle('a')
+// })
 
 // textarea
 document.querySelectorAll('textarea').forEach(x => {
