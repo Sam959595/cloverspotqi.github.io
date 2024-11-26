@@ -5,7 +5,7 @@ $(window).scroll(() => {
         d = $(document).height(),
         e = $('section.b')[0];
 
-    t > n && t <= d ? e.style = 'pointer-events: none; opacity: 0' : e.style = 'pointer-events: auto; opacity: 1';
+    t > n && t <= d ? e.classList.add('x') : e.classList.remove('x');
     
     n = t <= 0 ? 0 : t
 })
@@ -27,7 +27,7 @@ $('section.b button:last-child').click(() => {
     document.body.style.top = `-${b}px`;
     document.body.style.position = 'fixed';
 
-    $('section.s')[0].style = 'pointer-events: auto; opacity: 1'
+    $('section.s')[0].classList.add('x')
 })
 
 // comment delete
@@ -35,7 +35,7 @@ $('section.s button').click(() => {
     document.body.removeAttribute('style');
     window.scrollTo(0, b);
 
-    $('section.s')[0].removeAttribute('style')
+    $('section.s')[0].classList.remove('x')
 })
 
 // // counter
