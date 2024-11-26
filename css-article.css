@@ -17,18 +17,6 @@ section.a {
 
 /* n */
 
-[data-i] {
-    opacity: 0
-}
-
-img {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
-}
-
-/* - */
-
 section.n {
     margin: calc(15px + env(safe-area-inset-top)) 30px 25px;
 
@@ -47,6 +35,16 @@ section.n .a:after {
     content: "";
     border: 2px solid #0000000d;
     border-radius: 50%
+}
+
+[data-i] {
+    opacity: 0
+}
+
+img {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
 section.n img {
