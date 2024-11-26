@@ -22,12 +22,12 @@ $('article').dblclick(() => {
 
 // comment
 $('section.b button:last-child').click(() => {
-    $('html')[0].style = 'overflow: hidden';
+    $('section.a')[0].style = 'position: fixed; overflow: auto';
     $('section.s')[0].style = 'pointer-events: auto; opacity: 1'
 })
 
 $('section.s button').click(() => {
-    $('html')[0].removeAttribute('style');
+    $('section.a')[0].removeAttribute('style');
     $('section.s')[0].removeAttribute('style')
 })
 
