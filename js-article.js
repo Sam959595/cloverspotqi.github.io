@@ -35,27 +35,25 @@ $('section.s button').click(() => {
 
 // tab
 let startY = null;
-let endY = null; // Координата начала движения
+let endY = null;
 
 document.addEventListener('touchstart', (event) => {
-    startY = event.touches[0].clientY;
-    console.log('click', startY);
+    startY = event.touches[0].clientY
 });
 
 document.addEventListener('touchend', (event) => {
     endY = event.changedTouches[0].clientY;
 
-    if (startY !== null) { // Проверяем, что начальная позиция задана
-        const deltaY = startY - endY; // Вычисляем, насколько переместился палец
-        if (deltaY > 15) { // Если движение вверх превышает 10px
-            console.log(startY + ' > 15 > ' + endY);
-            $('section.b')[0].classList.add('x'); // Сбрасываем начальную позицию, чтобы событие не повторялось
+    if (startY !== null) {
+        const deltaY = startY - endY;
+
+        if (deltaY > 15) {
+            $('section.b')[0].classList.add('x')
         } else if (deltaY < 5) {
-            console.log(startY + ' < 5 < ' + endY);
-            $('section.b')[0].classList.remove('x');
+            $('section.b')[0].classList.remove('x')
         }
     }
-    startY, endY = null;
+    startY, endY = null
 });
 
 // // counter
