@@ -57,7 +57,7 @@
         <pre><code class="js"><span class="f">let</span> previous = <span class="o">0</span>; <span class="c">// Положение предыдущей прокрутки</span>
 
 $(window)<span class="a">.scroll</span>( () <span class="f">=></span> {
-    <span class="f">let</span> scroll = window<span class="a">.scrollY</span>: <span class="c">// Получаем положение прокрутки по оси Y</span>
+    <span class="f">let</span> scroll = window<span class="a">.scrollY</span>: <span class="c">// Получаем текущее положение прокрутки по оси Y</span>
     
         scroll > previous <span class="f">?</span> <span class="l">true</span> <span class="f">:</span> <span class="l">false</span>; <span class="c">// Вычисляем, прокрутка больше предыдущего положения</span>
     }
