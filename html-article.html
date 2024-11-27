@@ -62,7 +62,7 @@ $(window)<span class="a">.scroll</span>( () <span class="f">=></span> {
         scroll > previous <span class="f">?</span> <span class="l">true</span> <span class="f">:</span> <span class="l">false</span>; <span class="c">// Вычисляем, прокрутка больше предыдущего положения</span>
     }
 
-    previous = scroll <= <span class="o">0</span> <span class="f">?</span> <span class="o">0</span> <span class="f">:</span> scroll; <span class="c">// Сохраняем положение и предотвращаем прокрутку за пределами страницы</span>
+    previous = scroll <= <span class="o">0</span> <span class="f">?</span> <span class="o">0</span> <span class="f">:</span> scroll; <span class="c">// Сохраняем положение в previous с предотвращением прокрутки за пределами страницы</span>
 });</code></pre>
         <hr>
         <h1 id="1">1. Строение дроби</h1>
