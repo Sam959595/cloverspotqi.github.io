@@ -199,11 +199,11 @@ article pre code {
 }
 
 article .js .a {
-    color: light-dark(#be5555, #cf8181)
+    color: light-dark(#327d4d, #82b996)
 }
 
 article .js .b {
-    color: light-dark(#327d4d, #82b996)
+    color: light-dark(#be5555, #cf8181)
 }
 
 article .js .f {
