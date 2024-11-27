@@ -1,14 +1,10 @@
-// // tab
-// let n = 0;
-// $(window).scroll(() => {
-//     let t = window.scrollY,
-//         d = $(document).height(),
-//         e = $('section.b')[0];
+// tab
+$(window).scroll(() => {
+    let t = window.scrollY,
+        d = $(document).height();
 
-//     t > n && t <= d ? e.classList.add('x') : e.classList.remove('x');
-    
-//     n = t <= 0 ? 0 : t
-// })
+    t == 0 || (t + window.innerHeight) == d ? $('section.b')[0].classList.remove('x') : false
+})
 
 // share
 $('article').dblclick(() => {
@@ -43,6 +39,7 @@ let endY = null; // Координата начала движения
 
 document.addEventListener('touchstart', (event) => {
     startY = event.touches[0].clientY;
+    console.log('click', startY);
 });
 
 document.addEventListener('touchend', (event) => {
@@ -51,8 +48,10 @@ document.addEventListener('touchend', (event) => {
     if (startY !== null) { // Проверяем, что начальная позиция задана
         const deltaY = startY - endY; // Вычисляем, насколько переместился палец
         if (deltaY > 15) { // Если движение вверх превышает 10px
+            console.log(startY + ' > 15 > ' + endY);
             $('section.b')[0].classList.add('x'); // Сбрасываем начальную позицию, чтобы событие не повторялось
         } else if (deltaY < 5) {
+            console.log(startY + ' < 5 < ' + endY);
             $('section.b')[0].classList.remove('x');
         }
     }
