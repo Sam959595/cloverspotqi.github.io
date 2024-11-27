@@ -38,31 +38,28 @@ $('section.s button').click(() => {
 })
 
 // tab
-let startY = null; // Координата начала движения
+let startY = null;
+let endY = null; // Координата начала движения
 
-document.addEventListener('pointerdown', (event) => {
-    console.log('down');
-    
-    startY = event.clientY; // Запоминаем начальную позицию по оси Y
+document.addEventListener('touchstart', (event) => {
+    startY = event.touches[0].clientY;
+    console.log('click', startY);
 });
 
-document.addEventListener('pointermove', (event) => {
+document.addEventListener('touchend', (event) => {
+    endY = event.changedTouches[0].clientY;
+
     if (startY !== null) { // Проверяем, что начальная позиция задана
-        const deltaY = startY - event.clientY; // Вычисляем, насколько переместился палец
-        if (deltaY > 50) { // Если движение вверх превышает 100px
-            $('section.b')[0].classList.add('x');
-            console.log('Движение вверх на 10px!');
-            startY = null; // Сбрасываем начальную позицию, чтобы событие не повторялось
+        const deltaY = startY - endY; // Вычисляем, насколько переместился палец
+        if (deltaY > 20) { // Если движение вверх превышает 10px
+            $('section.b')[0].classList.add('x'); // Сбрасываем начальную позицию, чтобы событие не повторялось
         } else {
             $('section.b')[0].classList.remove('x');
         }
     }
-    console.log('move');
-});
+    console.log('click up', endY);
 
-document.addEventListener('pointerup', () => {
-    console.log('up');
-    startY = null; // Сбрасываем начальную позицию, если пользователь отпустил палец
+    startY, endY = null;
 });
 
 // // counter
