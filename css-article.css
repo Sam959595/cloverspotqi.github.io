@@ -186,7 +186,7 @@ article p code {
 }
 
 article pre code {
-    overflow-x: scroll;
+    overflow-x: auto;
 
     padding: 30px;
 
