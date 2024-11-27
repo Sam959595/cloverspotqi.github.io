@@ -54,18 +54,18 @@
         <p>Согласно новым инсайдам, Apple намерена отказаться от выреза в будущих макбук уже к 2027 году, которые будут оснащены OLED-дисплеями в линейке Pro и как сообщает обозреватель с отсылкой на неизвестного источника, Apple уже может иметь поставщика для новых дисплеев. Такое решение было вызвано новыми критериями размеров экрана с толщеной рамок в 1.6 мм (для сравнения, толщина рамок iPhone 15 Pro имеет 1.55 мм), что является на целых 50% меньше нынешней линейки Pro в 3.4 мм. Следует отметить, что на демонстрационных снимках которые были представлены с инсайдом, такой подход Apple был бы совершенно абсурдным, так как на снимках отсутствовал важный элемент, а именно камера...</p>
         <p>Однако, это было не так, и камера там действительно есть <code>let</code>.</p>
         <p><mark>По словам Шона Холлистера из The Verge, Apple сейчас работает над внедрением камеры в нижней части панели для будущих мак</mark>. При этом оптическая система будет иметь правильный угол обзора, что позволит использовать камеру как прежде без каких-либо дополнительных манипуляций. Что же касается Face ID на данном моменте неизвестно. Есть предположение, что такая возможность может появиться не скоро и только в том случае, если Apple удастся оснастить датчики Face ID с технологией подэкранного модуля для последующих iPhone.</p>
-        <pre><code class="js"><span class="c">// показать или скрыть элемент</span>
-
-<span class="f">let</span> n = <span class="b">0</span>;
+        <pre><code class="js"><span class="f">let</span> prevent = <span class="o">0</span>; <span class="c">// Число которое больше или равно 0</span>
 
 $(window)<span class="a">.scroll</span>( () <span class="f">=></span> {
-    <span class="f">let</span> t = window<span class="a">.scrollY</span>,
-        d = $(document)<span class="a">.height()</span>;
+    <span class="f">let</span> scroll = window<span class="a">.scrollY</span>, <span class="c">// Получаем поцизию прокрутки по оси Y</span>
+        hide = console<span class="a">.log</span>(<span class="b">'hide'</span>);
+        show = console<span class="a">.log</span>(<span class="b">'show'</span>);
     
-        t > n && t <= d <span class="f">?</span> console.log(<span class="b">'hide'</span>) <span class="f">:</span> console.log(<span class="b">'show'</span>);
+        scroll > prevent && <span class="l">true</span> <span class="f">?</span> hide <span class="f">:</span> show; <span class="c">// Показать или скрыть элемент</span>
     }
 
-    n = t <= 0 <span class="f">?</span> 0 <span class="f">:</span> t</code></pre>
+    prevent = scroll <= 0 <span class="f">?</span> 0 <span class="f">:</span> scroll; <span class="c">// Показать или скрыть элемент</span>
+});</code></pre>
         <hr>
         <h1 id="1">1. Строение дроби</h1>
         <ol class="a">
