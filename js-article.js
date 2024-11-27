@@ -43,7 +43,6 @@ let endY = null; // Координата начала движения
 
 document.addEventListener('touchstart', (event) => {
     startY = event.touches[0].clientY;
-    console.log('click', startY);
 });
 
 document.addEventListener('touchend', (event) => {
@@ -51,15 +50,12 @@ document.addEventListener('touchend', (event) => {
 
     if (startY !== null) { // Проверяем, что начальная позиция задана
         const deltaY = startY - endY; // Вычисляем, насколько переместился палец
-        if (deltaY > 20) { // Если движение вверх превышает 10px
+        if (deltaY > 15) { // Если движение вверх превышает 10px
             $('section.b')[0].classList.add('x'); // Сбрасываем начальную позицию, чтобы событие не повторялось
-        } else {
+        } else if (deltaY < 5) {
             $('section.b')[0].classList.remove('x');
         }
     }
-    console.log('click up', endY);
-
-    startY, endY = null;
 });
 
 // // counter
