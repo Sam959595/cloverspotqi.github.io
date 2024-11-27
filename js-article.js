@@ -1,22 +1,14 @@
-// tab
+// tab show or hide
+let n = 0;
 $(window).scroll(() => {
     let t = window.scrollY,
-        d = $(document).height();
+        e = $('section.b')[0];
 
-    t == 0 || (t + window.innerHeight) == d ? $('section.b')[0].classList.remove('x') : false
-})
+    t > n ? e.classList.add('x') : e.classList.remove('x'); // hide_show
+    n = t <= 0 ? 0 : t
+});
 
-// share
-$('article').dblclick(() => {
-    if (navigator.share) {
-        navigator.share({
-            title: 'Apple планирует представить MacBook Pro без выемки к 2027 году',
-            url: 'https://puk.com'
-        })
-    }
-})
-
-// comment btn
+// prevent page up if open comments
 let b = 0;
 $('section.b button:last-child').click(() => {
     b = window.scrollY;
@@ -24,37 +16,37 @@ $('section.b button:last-child').click(() => {
     document.body.style.position = 'fixed';
 
     $('section.s')[0].classList.add('x')
-})
+});
 
 $('section.s button').click(() => {
     document.body.removeAttribute('style');
     window.scrollTo(0, b);
 
     $('section.s')[0].classList.remove('x')
-})
-
-// tab
-let startY = null;
-let endY = null;
-
-document.addEventListener('touchstart', (event) => {
-    startY = event.touches[0].clientY
 });
 
-document.addEventListener('touchend', (event) => {
-    endY = event.changedTouches[0].clientY;
+// // tab
+// let startY = null;
+// let endY = null;
 
-    if (startY !== null) {
-        const deltaY = startY - endY;
+// document.addEventListener('touchstart', (event) => {
+//     startY = event.touches[0].clientY
+// });
 
-        if (deltaY > 15) {
-            $('section.b')[0].classList.add('x')
-        } else if (deltaY < 5) {
-            $('section.b')[0].classList.remove('x')
-        }
-    }
-    startY, endY = null
-});
+// document.addEventListener('touchend', (event) => {
+//     endY = event.changedTouches[0].clientY;
+
+//     if (startY !== null) {
+//         const deltaY = startY - endY;
+
+//         if (deltaY > 15) {
+//             $('section.b')[0].classList.add('x')
+//         } else if (deltaY < 5) {
+//             $('section.b')[0].classList.remove('x')
+//         }
+//     }
+//     startY, endY = null
+// });
 
 // // counter
 // $('section.b button:first-child').click(() => {
@@ -148,4 +140,14 @@ document.querySelectorAll('img').forEach(x => {
             }
         })
     }).observe(x)
-})
+});
+
+// share
+$('article').dblclick(() => {
+    if (navigator.share) {
+        navigator.share({
+            title: 'Apple планирует представить MacBook Pro без выемки к 2027 году',
+            url: 'https://puk.com'
+        })
+    }
+});
