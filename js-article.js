@@ -56,6 +56,7 @@ document.addEventListener('touchend', (event) => {
             $('section.b')[0].classList.remove('x');
         }
     }
+    startY, endY = null;
 });
 
 // // counter
