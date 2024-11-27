@@ -199,11 +199,11 @@ article pre code {
 }
 
 article .js .a {
-    color: light-dark(#327d4d, #82b996)
+    color: light-dark(#be5555, #cf8181)
 }
 
 article .js .b {
-    color: light-dark(#cc8c1d, #f0c784)
+    color: light-dark(#327d4d, #82b996)
 }
 
 article .js .f {
@@ -216,6 +216,10 @@ article .js .c {
 
 article .js .l {
     color: light-dark(#4191c3, #91c7e6)
+}
+
+article .js .o {
+    color: light-dark(#cc8c1d, #f0c784)
 }
 
 /* g */
