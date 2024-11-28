@@ -252,7 +252,7 @@ section.b {
 
     background-image: linear-gradient(transparent, light-dark(#ffffffb3, #000000b3));
 
-    transition: .4s opacity .4s
+    transition: .4s opacity .2s
 }
 
 section.b button {
