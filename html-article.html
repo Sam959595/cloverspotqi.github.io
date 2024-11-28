@@ -38,25 +38,25 @@
     </section>
 
     <article>
-        <h1>Как создать элемент который меняет видимость при прокрутке страницы</h1>
-        <p>Для реализации действия, при которых нужно скрывать элемент при прокрутке страницы в зависимости от направления, можно использовать .</p>
         <figure>
             <img width="595" height="396" data-i="https://www.hubspot.com/hs-fs/hubfs/hide-scrollbar-css.jpg?width=595&height=400&name=hide-scrollbar-css.jpg">
-            <figcaption>Источник изображения <a href="https://blog.hubspot.com/website/hide-scrollbar-css">HubSpot</a></figcaption>
+            <!-- <figcaption>Источник изображения <a href="https://blog.hubspot.com/website/hide-scrollbar-css">HubSpot</a></figcaption> -->
         </figure>
+        <h1>Как скрыть или показать элемент при прокрутке страницы</h1>
+        <p>Для реализации действия, при котором нужно скрывать элемент при прокрутке страницы в зависимости от направления, можно использовать .</p>
         <blockquote>По моему мнению, ИИ действительно интересен. Думаю, он изменит мир.</blockquote>
         <p>Однако, это было не так, и камера там действительно есть <code>let</code>.</p>
         <p><mark>По словам Шона Холлистера из The Verge, Apple сейчас работает над внедрением камеры в нижней части панели для будущих мак</mark>. При этом оптическая система будет иметь правильный угол обзора, что позволит использовать камеру как прежде без каких-либо дополнительных манипуляций. Что же касается Face ID на данном моменте неизвестно. Есть предположение, что такая возможность может появиться не скоро и только в том случае, если Apple удастся оснастить датчики Face ID с технологией подэкранного модуля для последующих iPhone.</p>
         <h1 id="1">Пример</h1>
-        <pre><code class="js"><span class="f">let</span> previous = <span class="o">0</span>; <span class="c">// Положение предыдущей прокрутки</span>
+        <pre><code class="js"><span class="f">let</span> last = <span class="o">0</span>; <span class="c">// Положение последней прокрутки</span>
 
 $(window)<span class="a">.scroll</span>( () <span class="f">=></span> {
     <span class="f">let</span> scroll = window<span class="a">.scrollY</span>: <span class="c">// Получаем текущее положение прокрутки по оси Y</span>
     
-        scroll > previous <span class="f">?</span> <span class="l">true</span> <span class="f">:</span> <span class="l">false</span>; <span class="c">// Определяем, что прокрутка больше предыдущего положения</span>
+        scroll > last <span class="f">?</span> <span class="l">true</span> <span class="f">:</span> <span class="l">false</span>; <span class="c">// Определяем, что текущее положение прокрутки больше последней</span>
     }
 
-    previous = scroll <= <span class="o">0</span> <span class="f">?</span> <span class="o">0</span> <span class="f">:</span> scroll; <span class="c">// Сохраняем положение в previous с возвращением 0 если прокрутка за пределами страницы</span>
+    last = scroll <= <span class="o">0</span> <span class="f">?</span> <span class="o">0</span> <span class="f">:</span> scroll; <span class="c">// Сохраняем текущее положение в last с возвращением 0 если прокрутка за пределами страницы</span>
 });</code></pre>
 <h1 id="1">Объяснение</h1>
 <h1>1. Строение дроби</h1>
