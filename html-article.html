@@ -59,7 +59,7 @@
 $(window)<span class="a">.scroll</span>( () <span class="f">=></span> {
     <span class="f">let</span> scroll = window<span class="a">.scrollY</span>: <span class="c">// Получаем текущее положение прокрутки по оси Y</span>
     
-        scroll > previous <span class="f">?</span> <span class="l">true</span> <span class="f">:</span> <span class="l">false</span>; <span class="c">// Вычисляем, прокрутка больше предыдущего положения</span>
+        scroll > previous <span class="f">?</span> <span class="l">true</span> <span class="f">:</span> <span class="l">false</span>; <span class="c">// Определяем, что прокрутка больше предыдущего положения</span>
     }
 
     previous = scroll <= <span class="o">0</span> <span class="f">?</span> <span class="o">0</span> <span class="f">:</span> scroll; <span class="c">// Сохраняем положение в previous с предотвращением прокрутки за пределами страницы</span>
