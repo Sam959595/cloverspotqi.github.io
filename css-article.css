@@ -186,17 +186,17 @@ article p code {
     color: light-dark(#666, #b7babf)
 }
 
-article pre code {
+article pre {
     overflow-x: auto;
 
     padding: 30px;
 
-    display: block;
-
-    font: 14px ui-monospace;
-
     background-color: light-dark(#f4f4f4, #101011);
     color: light-dark(#666, #b7babf)
+}
+
+article pre code {
+    font: 14px ui-monospace
 }
 
 article .js .a {
@@ -267,7 +267,7 @@ section.b button {
 
     font: 700 14px ui-rounded;
 
-    background-color: light-dark(#e7e7e7, #1b1b1b);
+    background-color: light-dark(#8a8a8a, #1b1b1b);
     color: light-dark(#111, white)
 }
 
