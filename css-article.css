@@ -268,7 +268,7 @@ section.b button {
     font: 700 14px ui-rounded;
 
     background-color: light-dark(#e7e7e7, #1b1b1b);
-    color: light-dark(#626262, white)
+    color: light-dark(#626262, #6b6b6b)
 }
 
 section.b .a {
