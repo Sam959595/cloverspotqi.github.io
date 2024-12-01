@@ -20,9 +20,9 @@
 <body>
     <section class="n">
         <div class="a">
-            <img width="50" height="50" data-i="https://avatars.githubusercontent.com/u/105961100?s=96&v=4">
+            <img width="50" height="50" data-i="https://dub2.discourse-cdn.com/figma/user_avatar/forum.figma.com/gleb/96/192_2.png">
         </div>
-        <h6><a href="#">johnalast</a> <u>в</u> <a href="#">mentornews</a></h6>
+        <h6><a href="#">Manuel_Calero</a> <u>в</u> <a href="#">mentornews</a></h6>
         <p>26 сен</p>
     </section>
 
@@ -39,27 +39,34 @@
 
     <article>
         <figure>
-            <img width="595" height="396" data-i="https://www.hubspot.com/hs-fs/hubfs/hide-scrollbar-css.jpg?width=595&height=400&name=hide-scrollbar-css.jpg">
+            <img width="595" height="396"
+                data-i="https://europe1.discourse-cdn.com/figma/original/2X/6/66a9e5b2f646fb9a1dcad6cdcdbb8e6c7940642a.jpeg">
             <!-- <figcaption>Источник изображения <a href="https://blog.hubspot.com/website/hide-scrollbar-css">HubSpot</a></figcaption> -->
         </figure>
         <h1>Как скрыть или показать элемент при прокрутке страницы</h1>
-        <p>Для реализации действия, при котором нужно скрывать элемент при прокрутке страницы в зависимости от направления, можно использовать .</p>
+        <p>Для реализации действия, при котором нужно скрывать элемент при прокрутке страницы в зависимости от
+            направления, можно использовать свойство <code>.scrollY</code>.</p>
         <blockquote>По моему мнению, ИИ действительно интересен. Думаю, он изменит мир.</blockquote>
-        <p>Однако, это было не так, и камера там действительно есть <code>let</code>.</p>
-        <p><mark>По словам Шона Холлистера из The Verge, Apple сейчас работает над внедрением камеры в нижней части панели для будущих мак</mark>. При этом оптическая система будет иметь правильный угол обзора, что позволит использовать камеру как прежде без каких-либо дополнительных манипуляций. Что же касается Face ID на данном моменте неизвестно. Есть предположение, что такая возможность может появиться не скоро и только в том случае, если Apple удастся оснастить датчики Face ID с технологией подэкранного модуля для последующих iPhone.</p>
+        <p>Однако, это было не так, и камера там действительно есть <code>.bounding</code>.</p>
+        <p><mark>По словам Шона Холлистера из The Verge, Apple сейчас работает над внедрением камеры в нижней части
+                панели для будущих мак</mark>. При этом оптическая система будет иметь правильный угол обзора, что
+            позволит использовать камеру как прежде без каких-либо дополнительных манипуляций. Что же касается Face ID
+            на данном моменте неизвестно. Есть предположение, что такая возможность может появиться не скоро и только в
+            том случае, если Apple удастся оснастить датчики Face ID с технологией подэкранного модуля для последующих
+            iPhone.</p>
         <h1 id="1">Пример</h1>
-        <pre><code class="js"><span class="f">let</span> last = <span class="o">0</span>; <span class="c">// Положение последней прокрутки</span>
+        <pre class="js"><code><span class="f">let</span> last = <span class="o">0</span>; <span class="c">// Положение последней прокрутки</span>
 
 $(window)<span class="a">.scroll</span>( () <span class="f">=></span> {
     <span class="f">let</span> scroll = window<span class="a">.scrollY</span>: <span class="c">// Получаем текущее положение прокрутки по оси Y</span>
-    
+                
         scroll > last <span class="f">?</span> <span class="l">true</span> <span class="f">:</span> <span class="l">false</span>; <span class="c">// Определяем, что текущее положение прокрутки больше последней</span>
     }
-
+            
     last = scroll <= <span class="o">0</span> <span class="f">?</span> <span class="o">0</span> <span class="f">:</span> scroll; <span class="c">// Сохраняем текущее положение в last с возвращением 0 если прокрутка за пределами страницы</span>
 });</code></pre>
-<h1 id="1">Объяснение</h1>
-<h1>1. Строение дроби</h1>
+        <h1 id="1">Объяснение</h1>
+        <h1>1. Строение дроби</h1>
         <ol class="a">
             <li>
                 <p><b>Числитель</b> (верхнее число) показывает, сколько частей мы рассматриваем.</p>
@@ -72,10 +79,27 @@ $(window)<span class="a">.scroll</span>( () <span class="f">=></span> {
         <h1>2. Виды дробей</h1>
         <ol class="b">
             <li>
-                <p><b>Обыкновенные дроби</b> — это дроби вида <math class="m"><mfrac><mi>a</mi><mi>b</mi></mfrac></math>, где – <math><mi>a</mi></math> числитель, а <math><mi>b</mi></math> – знаменатель.</p>
+                <p><b>Обыкновенные дроби</b> — это дроби вида <math class="m">
+                        <mfrac>
+                            <mi>a</mi>
+                            <mi>b</mi>
+                        </mfrac>
+                    </math>, где – <math>
+                        <mi>a</mi>
+                    </math> числитель, а <math>
+                        <mi>b</mi>
+                    </math> – знаменатель.</p>
             </li>
             <li>
-                <p><b>Десятичные дроби</b> — это такие дроби, которые можно записать через запятую. Например, <math class="m"><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>=</mo><mn>0,5</mn></math>.</p>
+                <p><b>Десятичные дроби</b> — это такие дроби, которые можно записать через запятую. Например, <math
+                        class="m">
+                        <mfrac>
+                            <mn>1</mn>
+                            <mn>2</mn>
+                        </mfrac>
+                        <mo>=</mo>
+                        <mn>0,5</mn>
+                    </math>.</p>
             </li>
         </ol>
         <!-- <iframe style="width: 100%; aspect-ratio: 428/240; height: auto" width="428" height="240" src="https://www.youtube.com/embed/ceYm0eDw7tg?si=wfptZmHTTgjmZMvx" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
@@ -104,7 +128,7 @@ $(window)<span class="a">.scroll</span>( () <span class="f">=></span> {
 
     <section class="s">
         <button>↩️</button>
-        
+
         <div class="y" id="yy">
             <textarea rows="1" placeholder="Комментарий" maxlength="900"></textarea>
             <textarea rows="1" placeholder="Комментарий" maxlength="900"></textarea>
@@ -114,7 +138,8 @@ $(window)<span class="a">.scroll</span>( () <span class="f">=></span> {
             <li>
                 <div class="s">
                     <a href="#">
-                        <img width="25" height="25" data-i="https://miro.medium.com/v2/resize:fill:48:48/1*_EOpN9iT5ReABD3LRaxrNg.jpeg">
+                        <img width="25" height="25"
+                            data-i="https://miro.medium.com/v2/resize:fill:48:48/1*_EOpN9iT5ReABD3LRaxrNg.jpeg">
                     </a>
                     <h1>Поразительно как стримительно исчезает лимитрисии <u>3 ч</u></h1>
                 </div>
@@ -126,7 +151,8 @@ $(window)<span class="a">.scroll</span>( () <span class="f">=></span> {
                     <li>
                         <div class="s">
                             <a href="#">
-                                <img width="25" height="25" data-i="https://miro.medium.com/v2/resize:fill:40:40/1*me1Ay-0GhYxjENk5Fp-Ykw.jpeg">
+                                <img width="25" height="25"
+                                    data-i="https://miro.medium.com/v2/resize:fill:40:40/1*me1Ay-0GhYxjENk5Fp-Ykw.jpeg">
                             </a>
                             <h1>Странные известия преполагают странные последствия <u>4 мин</u></h1>
                         </div>
@@ -138,8 +164,10 @@ $(window)<span class="a">.scroll</span>( () <span class="f">=></span> {
                     <li>
                         <div class="s">
                             <a class="k" href="#">
-                                <img width="18" height="18" data-i="https://miro.medium.com/v2/resize:fill:40:40/1*wR2RdefmLxm24GY7d9ISbQ.jpeg">
-                                <img width="18" height="18" data-i="https://miro.medium.com/v2/resize:fill:40:40/1*me1Ay-0GhYxjENk5Fp-Ykw.jpeg">
+                                <img width="18" height="18"
+                                    data-i="https://miro.medium.com/v2/resize:fill:40:40/1*wR2RdefmLxm24GY7d9ISbQ.jpeg">
+                                <img width="18" height="18"
+                                    data-i="https://miro.medium.com/v2/resize:fill:40:40/1*me1Ay-0GhYxjENk5Fp-Ykw.jpeg">
                             </a>
                             <h1>Это неизбежно глоссарий <u>1 ч</u></h1>
                         </div>
@@ -154,7 +182,8 @@ $(window)<span class="a">.scroll</span>( () <span class="f">=></span> {
             <li>
                 <div class="s">
                     <a href="#">
-                        <img width="25" height="25" data-i="https://miro.medium.com/v2/resize:fill:48:48/1*_EOpN9iT5ReABD3LRaxrNg.jpeg">
+                        <img width="25" height="25"
+                            data-i="https://miro.medium.com/v2/resize:fill:48:48/1*_EOpN9iT5ReABD3LRaxrNg.jpeg">
                     </a>
                     <h1>Поразительно как стримительно исчезает лимитрисии <u>3 ч</u></h1>
                 </div>
