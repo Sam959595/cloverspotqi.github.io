@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: light-dark(white, black);
+    background-color: light-dark(white, #101010);
     color: light-dark(#111, white)
 }
 
@@ -82,7 +82,7 @@ section.f li a {
 
     border-radius: 11px;
 
-    background-color: light-dark(#f4f4f4, #101011);
+    background-color: light-dark(#f4f4f4, #181819);
     color: light-dark(#777, #878787)
 }
 
@@ -172,7 +172,7 @@ article .m {
 article hr {
     margin: 30px;
 
-    border-top: 2px solid light-dark(#f0f0f0, #161616)
+    border-top: 2px solid light-dark(#f0f0f0, #181818)
 }
 
 article p code {
@@ -182,7 +182,7 @@ article p code {
 
     border-radius: 5px;
 
-    background-color: light-dark(#f4f4f4, #101011);
+    background-color: light-dark(#f4f4f4, #181819);
     color: light-dark(#666, #b7babf)
 }
 
@@ -191,7 +191,7 @@ article pre {
 
     padding: 30px;
 
-    background-color: light-dark(#f4f4f4, #101011);
+    background-color: light-dark(#f4f4f4, #181819);
     color: light-dark(#666, #b7babf)
 }
 
@@ -250,7 +250,7 @@ section.b {
     justify-content: center;
     column-gap: 10px;
 
-    background-image: linear-gradient(transparent, light-dark(#ffffffb3, #000000b3));
+    background-image: linear-gradient(transparent, light-dark(#ffffffb3, #101010b3));
 
     transition: opacity .6s
 }
