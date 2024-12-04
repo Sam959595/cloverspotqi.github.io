@@ -45,7 +45,7 @@ section.n img {
 
 section.n h6 {
     word-wrap: anywhere;
-    font: 600 15px system-ui
+    font: 600 16px system-ui
 }
 
 section.n u {
@@ -302,32 +302,32 @@ section.s {
 
     overflow-y: scroll;
 
-    background-color: light-dark(white, black);
+    background-color: light-dark(white, #101010);
 
     transition: opacity .2s
 }
 
 section.s button {
     position: fixed;
-    inset: auto 0 max(calc(15px + env(safe-area-inset-bottom)), 20px);
+    inset: auto 0 calc(15px + env(safe-area-inset-bottom));
 
     margin-inline: auto;
 
     width: 58px;
-    height: 58px;
+    height: 45px;
 
-    border-radius: 50%;
+    border-radius: 24px;
 
-    font-size: 14px;
+    font: 700 14px ui-rounded;
 
-    background-color: var(--k)
+    background-color: light-dark(#e7e7e7, #1b1b1b)
 }
 
 section.s .y {
     position: sticky;
     inset: 0 0 auto;
 
-    padding: calc(15px + env(safe-area-inset-top)) 25px 15px;
+    margin-top: env(safe-area-inset-top);
 
     display: flex;
     align-items: center;
@@ -337,15 +337,15 @@ section.s .y {
 section.s textarea {
     resize: none;
 
-    padding: 0;
+    padding: 15px 25px;
 
     flex-grow: 1;
 
     font-size: 15px;
 
     background: none;
-    color: var(--h);
-    caret-color: var(--q)
+    color: light-dark(#a3a3a4, #77777b);
+    caret-color: light-dark(#8567be, #b790ff)
 }
 
 section.s textarea::-webkit-input-placeholder {
