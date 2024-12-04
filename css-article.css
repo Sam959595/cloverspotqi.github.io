@@ -344,12 +344,12 @@ section.s textarea {
     font-size: 15px;
 
     background: none;
-    color: light-dark(#a3a3a4, #77777b);
+    color: light-dark(#111, white);
     caret-color: light-dark(#8567be, #b790ff)
 }
 
 section.s textarea::-webkit-input-placeholder {
-    color: var(--p)
+    color: light-dark(#a3a3a4, #77777b)
 }
 
 section.s span {
