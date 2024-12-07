@@ -45,15 +45,11 @@ section.n img {
 
 section.n h6 {
     word-wrap: anywhere;
-    font: 600 16px system-ui
-}
-
-section.n u {
-    color: light-dark(#a3a3a4, #77777b)
+    font: 500 15px system-ui
 }
 
 section.n p {
-    font: 500 15px system-ui;
+    font: 500 14px system-ui;
 
     color: light-dark(#a3a3a4, #77777b)
 }
@@ -138,7 +134,7 @@ article blockquote {
 
     padding-left: 13px;
 
-    font: italic 18px/1.5 ui-serif
+    font: italic 17px/1.6 system-ui
 }
 
 article mark {
@@ -327,8 +323,6 @@ section.s .y {
     position: sticky;
     inset: 0 0 auto;
 
-    margin-top: env(safe-area-inset-top);
-
     display: flex;
     align-items: center;
     column-gap: 10px
@@ -337,13 +331,13 @@ section.s .y {
 section.s textarea {
     resize: none;
 
-    padding: 15px 25px;
+    padding: 25px 25px calc(25px + env(safe-area-inset-bottom));
 
     flex-grow: 1;
 
     font-size: 15px;
 
-    background: none;
+    background: light-dark(white, #101010);
     color: light-dark(#111, white);
     caret-color: light-dark(#8567be, #b790ff)
 }
@@ -364,7 +358,7 @@ section.s ul {
 }
 
 section.s .m {
-    margin: 25px 25px calc(25px + env(safe-area-inset-bottom))
+    margin: 0 25px calc(25px + env(safe-area-inset-bottom))
 }
 
 section.s .b {
