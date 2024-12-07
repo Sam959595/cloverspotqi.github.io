@@ -331,7 +331,7 @@ section.s .y {
 section.s textarea {
     resize: none;
 
-    padding: 25px 25px calc(25px + env(safe-area-inset-bottom));
+    padding: calc(25px + env(safe-area-inset-bottom)) 25px 25px;
 
     flex-grow: 1;
 
