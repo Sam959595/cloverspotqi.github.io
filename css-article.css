@@ -176,7 +176,7 @@ article .m {
 article hr {
     margin: 30px;
 
-    border-top: 2px solid light-dark(#f0f0f0, #181818)
+    border-top: 1px solid light-dark(#f0f0f0, #181818)
 }
 
 article p code {
