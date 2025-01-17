@@ -176,7 +176,7 @@ article .m {
 article hr {
     margin: 30px;
 
-    border-top: 1px solid light-dark(#f0f0f0, #181818)
+    border-top: 2px solid light-dark(#f0f0f0, #181818)
 }
 
 article p code {
@@ -241,9 +241,11 @@ section.g a {
 /* b */
 
 section.b {
+    pointer-events: none;
+
     position: fixed;
     inset: auto 0 0;
-    padding-block: 35px calc(15px + env(safe-area-inset-bottom));
+    padding-block: 2cm calc(15px + env(safe-area-inset-bottom));
 
     display: flex;
     justify-content: center;
@@ -255,6 +257,8 @@ section.b {
 }
 
 section.b button {
+    pointer-events: auto;
+
     height: 45px;
 
     padding-inline: 17px;
@@ -275,8 +279,11 @@ section.b .a {
 }
 
 section.b.x {
-    pointer-events: none;
     opacity: 0
+}
+
+section.b.x button {
+    pointer-events: none
 }
 
 /* k */
