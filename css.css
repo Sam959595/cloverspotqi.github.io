@@ -2,7 +2,9 @@ body {
 	-webkit-user-select: none;
 	-webkit-text-size-adjust: none;
 
-	font-family: system-ui
+	font-family: system-ui;
+
+	cursor: default
 }
 
 body,
