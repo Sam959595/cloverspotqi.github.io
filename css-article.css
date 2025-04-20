@@ -100,9 +100,11 @@ article h1 {
     font: 600 20px/1.4 system-ui
 }
 
-article p {
-    margin: 30px;
+article > p {
+    margin: 30px
+}
 
+article p {
     font: 17px/1.6 system-ui;
     letter-spacing: .1px;
     word-spacing: 1px
@@ -155,11 +157,11 @@ article ol.c {
     list-style-type: "✨  "
 }
 
-article ol.a p {
+article ol.a li {
     margin: 10px 30px 10px 45px
 }
 
-article ol.b p {
+article ol.b li {
     margin: 10px 30px 10px 53px
 }
 
