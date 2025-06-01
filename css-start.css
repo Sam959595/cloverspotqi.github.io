@@ -57,17 +57,22 @@ section.n ul {
     gap: 10px
 }
 
-section.n a {
-    padding: 15px 15px 30px;
-
+section.n li {
     border-radius: 20px;
+
+    background-color: light-dark(#f4f4f4, #181819)
+}
+
+section.n a {
+    box-sizing: border-box;
+    height: 100%;
+
+    padding: 15px 15px 30px;
 
     display: block;
 
     word-break: break-word;
-    font: 700 extra-condensed 20px/1 system-ui;
-
-    background-color: light-dark(#f4f4f4, #181819)
+    font: 700 extra-condensed 20px/1 system-ui
 }
 
 section.n .b {
