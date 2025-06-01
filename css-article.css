@@ -178,6 +178,16 @@ article .js .o {
     color: light-dark(#cc8c1d, #f0c784)
 }
 
+article aside {
+    margin: 20px;
+    padding: 15px 20px;
+
+    border-radius: 20px;
+
+    background-color: light-dark(#e7e7e7, #1b1b1b);
+    color: light-dark(#626262, #6b6b6b)
+}
+
 /* g */
 
 section.g {
@@ -210,19 +220,16 @@ section.b ul {
     transition: opacity .6s
 }
 
-section.b li {
+section.b a {
     pointer-events: auto;
 
-    height: 45px;
-
-    padding-inline: 15px 17px;
-
-    display: flex;
-    align-items: center;
+    padding: 14px 17px 14px 15px;
 
     border-radius: 24px;
 
-    font: 700 14px system-ui;
+    display: block;
+
+    font: 700 13px system-ui;
 
     background-color: light-dark(#e7e7e7, #1b1b1b);
     color: light-dark(#626262, #6b6b6b)
