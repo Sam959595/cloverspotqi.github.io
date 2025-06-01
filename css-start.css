@@ -3,63 +3,8 @@ html {
 }
 
 body {
-    background-color: light-dark(white, #101010);
-    color: light-dark(#111, white)
-}
-
-/* n */
-
-section.n {
-    box-sizing: border-box;
-    overflow-y: scroll;
-
-    padding-block: env(safe-area-inset-top) env(safe-area-inset-bottom);
-
-    height: 100vh
-}
-
-section.n h1 {
-    margin: 20px 35px;
-
-    text-align: center;
-    font: 800 21px/1 system-ui
-}
-
-section.n h2 {
-    margin: 20px 35px;
-
-    font-size: 15px;
-    color: var(--p)
-}
-
-section.n h3 {
-    margin: 20px 35px;
-
-    font: 700 17px ui-rounded
-}
-
-section.n .d {
-    color: #007aff
-}
-
-section.n ul {
-    display: grid
-}
-
-section.n .r {
-    margin-inline: 20px;
-
-    border-radius: 12px;
-
-    padding: 15px;
-
-    background-color: var(--k)
-}
-
-section.n .k {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 30px
+    background-color: light-dark(#fff, #101010);
+    color: light-dark(#111, #fff)
 }
 
 [data-i] {
@@ -72,22 +17,56 @@ img {
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
-section.n .k img {
-    margin: -15px;
+/* n */
 
-    border-radius: 0 12px 12px 0
+section.n {
+    box-sizing: border-box;
+    overflow-y: scroll;
+
+    padding-block: env(safe-area-inset-top) env(safe-area-inset-bottom);
+
+    width: 100vw;
+    height: 100vh
 }
 
-section.n h4 {
-    height: 82px;
+section.n input {
+    box-sizing: border-box;
 
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    margin: 20px 20px 10px;
+
+    width: calc(100vw - 40px);
+    height: 71px;
+
+    border-radius: 20px;
+
+    padding: 0 20px 1px;
+
+    text-overflow: ellipsis;
+    font-size: 16px;
+    letter-spacing: .2px;
+
+    background-color: light-dark(#e7e7e7, #1d1d1d);
+
+    caret-color: light-dark(#111, #fff)
+}
+
+section.n ul {
+    margin: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px
+}
+
+section.n li {
+    padding: 15px 15px 30px;
+
+    border-radius: 20px;
 
     word-break: break-word;
-    font: 700 extra-condensed 20px/1 system-ui
+    font: 700 extra-condensed 20px/1 system-ui;
+
+    background-color: light-dark(#e7e7e7, #1d1d1d)
 }
 
 section.n .b {
@@ -104,97 +83,6 @@ section.n .e {
 
 section.n .f {
     color: #41d54b
-}
-
-section.n p {
-    margin-top: 11px;
-
-    font: 500 13px system-ui
-}
-
-section.n p u {
-    font-weight: 300
-}
-
-section.n .v {
-    margin-block: 24px;
-
-    display: flex;
-    justify-content: center;
-    column-gap: 36px
-}
-
-section.n span {
-    display: flex;
-    align-items: center;
-    column-gap: 8px
-}
-
-section.n .v img {
-    border-radius: 50%
-}
-
-section.n hr {
-    margin-inline: 4px;
-
-    width: 24px;
-
-    border-radius: 2px;
-    border-top: 3px solid var(--c)
-}
-
-section.n .v div {
-    display: inherit
-}
-
-section.n .v div img:not(:last-child) {
-    clip-path: path("M9 0a8.96 8.96 0 0 1 5.377 1.782C12.717 3.423 11.7 6.045 11.7 9s1.017 5.577 2.676 7.218A9 9 0 1 1 9 0Z")
-}
-
-section.n .v img+img {
-    margin-left: -4px
-}
-
-section.n h6 {
-    font: 700 15px ui-rounded
-}
-
-section.n h5 {
-    filter: grayscale();
-
-    font-size: 14px
-}
-
-section.n .a {
-    filter: none
-}
-
-section.n .t {
-    margin-inline: 20px
-}
-
-section.n :is(.t, .s) img {
-    border-radius: 12px
-}
-
-section.n .s {
-    width: 100vw;
-
-    box-sizing: border-box;
-    overflow-x: scroll;
-
-    padding-inline: 20px;
-    scroll-padding-left: 20px;
-
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 10px;
-
-    scroll-snap-type: x mandatory
-}
-
-section.n .s img {
-    scroll-snap-align: start
 }
 
 /* s */
@@ -224,34 +112,12 @@ section.s h1 {
 /* k */
 
 section.k {
-    opacity: .9;
-
     position: fixed;
     inset: 0 0 auto;
 
     height: env(safe-area-inset-top);
 
-    background-color: inherit
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --b: white;
-        --h: black;
-        --p: #a3a3a4;
-        --c: #dfdfdf;
-        --k: #f2f2f2;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --b: #101010;
-        --h: white;
-        --p: #77777b;
-        --c: #2e2e2e;
-        --k: #1a1a1c;
-    }
+    background-color: light-dark(#ffffffcc, #101010cc)
 }
 
 :root {
