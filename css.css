@@ -17,6 +17,8 @@ h6,
 p,
 ul,
 ol,
+hr,
+pre,
 figure,
 blockquote {
 	margin: 0
@@ -74,8 +76,7 @@ textarea {
 }
 
 a,
-u,
-ins {
+u {
 	text-decoration: none
 }
 
@@ -84,6 +85,6 @@ mark {
 	color: inherit
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	display: none
-}
+} */
