@@ -1,57 +1,6 @@
-html {
-    height: 100vh
-}
-
 body {
-    background-color: light-dark(white, #101010);
-    color: light-dark(#111, white)
-}
-
-/* n */
-
-section.n {
-    padding: calc(15px + env(safe-area-inset-top)) 30px 25px;
-
-    display: flex;
-    align-items: center;
-    column-gap: 15px
-}
-
-section.n .a {
-    position: relative
-}
-
-section.n .a:after {
-    position: absolute;
-    inset: 0;
-    content: "";
-    border: 2px solid #0000000d;
-    border-radius: 50%
-}
-
-[data-i] {
-    opacity: 0
-}
-
-img {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
-}
-
-section.n img {
-    border-radius: 50%
-}
-
-section.n h6 {
-    word-wrap: anywhere;
-    font: 500 15px system-ui
-}
-
-section.n p {
-    font: 500 14px system-ui;
-
-    color: light-dark(#a3a3a4, #77777b)
+    background-color: light-dark(#fff, #101010);
+    color: light-dark(#111, #fff)
 }
 
 /* f */
@@ -85,7 +34,13 @@ section.f li a {
 /* article */
 
 article {
-    width: 100vw
+    box-sizing: border-box;
+    overflow-y: scroll;
+
+    width: 100vw;
+    height: 100vh;
+
+    padding-block: env(safe-area-inset-top) calc(5cm + env(safe-area-inset-bottom))
 }
 
 article img {
@@ -94,13 +49,13 @@ article img {
 }
 
 article h1 {
-    margin: 30px;
     scroll-margin-top: calc(25px + env(safe-area-inset-top));
+    margin: 30px;
 
     font: 600 20px/1.4 system-ui
 }
 
-article > p {
+article>p {
     margin: 30px
 }
 
@@ -242,15 +197,13 @@ section.g a {
 
 /* b */
 
-section.b {
-    pointer-events: none;
-
+section.b ul {
     position: fixed;
     inset: auto 0 0;
-    padding-block: 2cm calc(15px + env(safe-area-inset-bottom));
+
+    padding: 2cm 20px calc(15px + env(safe-area-inset-bottom));
 
     display: flex;
-    justify-content: center;
     column-gap: 10px;
 
     background-image: linear-gradient(transparent, light-dark(#ffffffb3, #101010b3));
@@ -258,12 +211,12 @@ section.b {
     transition: opacity .6s
 }
 
-section.b button {
+section.b li {
     pointer-events: auto;
 
     height: 45px;
 
-    padding-inline: 17px;
+    padding-inline: 15px 17px;
 
     display: flex;
     align-items: center;
@@ -274,18 +227,6 @@ section.b button {
 
     background-color: light-dark(#e7e7e7, #1b1b1b);
     color: light-dark(#626262, #6b6b6b)
-}
-
-section.b .a {
-    filter: grayscale(1)
-}
-
-section.b.x {
-    opacity: 0
-}
-
-section.b.x button {
-    pointer-events: none
 }
 
 /* k */
@@ -310,7 +251,7 @@ section.s {
 
     overflow-y: scroll;
 
-    background-color: light-dark(white, #101010);
+    background-color: light-dark(#fff, #101010);
 
     transition: opacity .2s
 }
@@ -349,8 +290,8 @@ section.s textarea {
 
     font-size: 15px;
 
-    background: light-dark(white, #101010);
-    color: light-dark(#111, white);
+    background: light-dark(#fff, #101010);
+    color: light-dark(#111, #fff);
     caret-color: light-dark(#8567be, #b790ff)
 }
 
@@ -435,6 +376,91 @@ section.s .k img:last-child {
 section.s.x {
     pointer-events: auto;
     opacity: 1
+}
+
+/* a */
+
+section.a ul {
+    overflow-x: scroll;
+
+    padding-inline: 23vw 7vw;
+
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    column-gap: 20px
+}
+
+section.a li {
+    width: 200px;
+    height: 350px;
+
+    padding: 20px;
+
+    border-radius: 18px;
+    border: 2px solid #1b1b1d;
+
+    transition: background-color .1s
+}
+
+section.a li:hover {
+    background-color: #101010
+}
+
+section.a div {
+    display: flex;
+    align-items: center;
+    column-gap: 15px
+}
+
+section.a span {
+    font: 600 12px system-ui;
+
+    color: #555
+}
+
+section.a img {
+    border-radius: 50%
+}
+
+section.a p {
+    margin-block: 20px 30px;
+
+    height: 250px;
+
+    font-size: 14px;
+    letter-spacing: .4px;
+    line-height: 1.7;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 11;
+    -webkit-box-orient: vertical;
+
+    color: #bbb;
+
+    -webkit-user-select: auto
+}
+
+section.a .r a {
+    color: #ff6c9f
+}
+
+section.a .p a {
+    color: #806cff
+}
+
+section.a .c a {
+    color: #6cffda
+}
+
+section.a .g a {
+    color: #95ff81
+}
+
+section.a .b a {
+    color: #81cbff
 }
 
 :root {
