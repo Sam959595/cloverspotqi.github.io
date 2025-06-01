@@ -186,6 +186,10 @@ article aside {
     color: light-dark(#626262, #6b6b6b)
 }
 
+article .e {
+    color: light-dark(#327d4d, #bcb1ff)
+}
+
 /* g */
 
 section.g {
