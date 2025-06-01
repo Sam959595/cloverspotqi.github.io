@@ -1,7 +1,3 @@
-html {
-    overscroll-behavior-y: none
-}
-
 body {
     background-color: light-dark(#fff, #101010);
     color: light-dark(#111, #fff)
@@ -38,12 +34,6 @@ section.f li a {
 /* article */
 
 article {
-    box-sizing: border-box;
-    overflow-y: scroll;
-
-    width: 100vw;
-    height: 100vh;
-
     padding-block: env(safe-area-inset-top) calc(5cm + env(safe-area-inset-bottom))
 }
 
