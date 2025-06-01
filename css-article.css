@@ -61,8 +61,7 @@ article>p {
 
 article p {
     font: 17px/1.6 system-ui;
-    letter-spacing: .1px;
-    word-spacing: 1px
+    letter-spacing: .2px
 }
 
 article em {
@@ -223,7 +222,7 @@ section.b li {
 
     border-radius: 24px;
 
-    font: 700 14px ui-rounded;
+    font: 700 14px system-ui;
 
     background-color: light-dark(#e7e7e7, #1b1b1b);
     color: light-dark(#626262, #6b6b6b)
