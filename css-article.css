@@ -191,7 +191,7 @@ article aside {
 /* g */
 
 section.g {
-    padding: 30px 30px 5cm
+    margin: 50px 30px
 }
 
 section.g ul {
@@ -201,6 +201,7 @@ section.g ul {
 }
 
 section.g a {
+    text-decoration: none;
     font: 700 13px system-ui
 }
 
@@ -215,15 +216,13 @@ section.b ul {
     display: flex;
     column-gap: 10px;
 
-    background-image: linear-gradient(transparent, light-dark(#ffffffb3, #101010b3));
-
-    transition: opacity .6s
+    background-image: linear-gradient(transparent, light-dark(#ffffffb3, #101010b3))
 }
 
 section.b a {
     pointer-events: auto;
 
-    padding: 14px 17px 14px 15px;
+    padding: 14px 17px 14px 13px;
 
     border-radius: 24px;
 
