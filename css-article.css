@@ -48,8 +48,12 @@ article img {
     height: auto
 }
 
+article h1,
+article b {
+    scroll-margin-top: calc(25px + env(safe-area-inset-top))
+}
+
 article h1 {
-    scroll-margin-top: calc(25px + env(safe-area-inset-top));
     margin: 30px;
 
     font: 600 20px/1.4 system-ui
