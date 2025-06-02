@@ -22,7 +22,7 @@ img {
 
 section.n {
     overflow-y: scroll;
-    height: calc(100vh - (100dvh - 100vh))
+    height: 100vh
 }
 
 section.n input {
