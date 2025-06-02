@@ -182,7 +182,7 @@ article aside {
 
     border-radius: 20px;
 
-    background-color: light-dark(#e7e7e7, #1b1b1b);
+    background-color: light-dark(#f4f4f4, #181819);
     color: light-dark(#626262, #6b6b6b)
 }
 
@@ -232,7 +232,7 @@ section.b a {
 
     font: 700 13px system-ui;
 
-    background-color: light-dark(#e7e7e7, #1b1b1b);
+    background-color: light-dark(#f4f4f4, #181819);
     color: light-dark(#626262, #6b6b6b)
 }
 
