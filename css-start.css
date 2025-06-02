@@ -29,13 +29,13 @@ section.n {
 }
 
 section.n input {
-    width: 100vw;
-    height: 71px;
+    box-sizing: border-box;
+    width: 100%;
 
     border-radius: 0;
     border-bottom: 2px solid light-dark(#111, #141414);
 
-    padding: 20px 40px 10px;
+    padding: 40px 40px 30px;
 
     text-overflow: ellipsis;
     font: 500 19px system-ui;
