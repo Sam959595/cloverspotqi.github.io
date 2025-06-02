@@ -100,7 +100,7 @@ article mark {
 
     padding-block: 2px;
 
-    background-color: light-dark(#ebe0ff, #4d3e69)
+    background-color: light-dark(#cddeff, #405786)
 }
 
 article ol {
@@ -187,13 +187,14 @@ article details {
 }
 
 article aside {
-    margin: 20px;
-    padding: 15px 20px;
+    padding: 30px;
 
-    border-radius: 20px;
+    background-color: light-dark(#f9f9f9, #181819);
+    color: light-dark(#626262, #999)
+}
 
-    background-color: light-dark(#f4f4f4, #181819);
-    color: light-dark(#626262, #6b6b6b)
+article aside p+p {
+    margin-top: 20px
 }
 
 /* g */
@@ -244,8 +245,8 @@ section.b a {
 
     font: 700 13px system-ui;
 
-    background-color: light-dark(#f4f4f4, #181819);
-    color: light-dark(#626262, #6b6b6b)
+    background-color: light-dark(#f4f4f4, #2c2d2e);
+    color: light-dark(#626262, #888)
 }
 
 /* k */
