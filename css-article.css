@@ -189,7 +189,7 @@ article details {
 article aside {
     padding: 30px;
 
-    background-color: light-dark(#f9f9f9, #181819);
+    background-color: light-dark(#f4f4f4, #181819);
     color: light-dark(#626262, #999)
 }
 
