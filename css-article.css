@@ -63,7 +63,7 @@ article p {
 }
 
 article em {
-    font-family: ui-serif
+    font: italic 18px/1.6 ui-serif
 }
 
 article a {
@@ -88,10 +88,12 @@ article blockquote {
 
     padding-left: 13px;
 
-    font: italic 17px/1.6 system-ui
+    font: 17px/1.6 system-ui
 }
 
 article mark {
+    border-radius: 5px;
+
     padding-block: 2px;
 
     background-color: light-dark(#ebe0ff, #4d3e69)
@@ -191,7 +193,7 @@ article aside {
 }
 
 article .e {
-    color: light-dark(#327d4d, #bcb1ff)
+    color: light-dark(#554c93, #bcb1ff)
 }
 
 /* g */
