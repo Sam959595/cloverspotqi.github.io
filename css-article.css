@@ -63,9 +63,7 @@ article p {
 }
 
 article .e {
-    font: 16px/1.7 monospace;
-
-    color: light-dark(#1d507d, #c7ddff)
+    font: 15px/1.7 monospace
 }
 
 article em {
