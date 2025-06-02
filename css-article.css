@@ -226,18 +226,24 @@ section.b {
     position: fixed;
     inset: auto 0 0;
 
-    background-color: light-dark(#ffffffb3, #1d1e1fcc)
+    border-top: 2px solid light-dark(#f0f0f0, #282828);
+
+    background-color: light-dark(#fff, #1d1e1f)
 }
 
 section.b ul {
     overflow-x: scroll;
 
-    width: 100vw;
+    padding: 15px 20px calc(15px + env(safe-area-inset-bottom));
 
-    padding: 15px 40px calc(15px + env(safe-area-inset-bottom));
-
-    display: flex;
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
     column-gap: 10px
+}
+
+section.b ul::-webkit-scrollbar {
+    display: none
 }
 
 section.b a {
