@@ -19,7 +19,7 @@ section.n {
     box-sizing: border-box;
     overflow-y: scroll;
 
-    height: 100dvh;
+    height: calc(100dvh + env(safe-area-inset-bottom));
 
     padding-block: env(safe-area-inset-top) env(safe-area-inset-bottom)
 }
