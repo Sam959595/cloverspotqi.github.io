@@ -71,6 +71,10 @@ article .e {
     font: 15px/1.7 monospace
 }
 
+article u {
+    color: light-dark(#cc8c1d, #f0c784)
+}
+
 article em {
     font: italic 18px/1.6 ui-serif
 }
