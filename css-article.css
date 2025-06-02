@@ -62,6 +62,12 @@ article p {
     letter-spacing: .2px
 }
 
+article .e {
+    font: 16px/1.7 monospace;
+
+    color: light-dark(#0d67b6, #c7ddff)
+}
+
 article em {
     font: italic 18px/1.6 ui-serif
 }
@@ -190,12 +196,6 @@ article aside {
 
     background-color: light-dark(#f4f4f4, #181819);
     color: light-dark(#626262, #6b6b6b)
-}
-
-article .e {
-    font-family: monospace;
-
-    color: light-dark(#0d67b6, #88b7ff)
 }
 
 /* g */
