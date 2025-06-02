@@ -20,12 +20,8 @@ img {
 /* n */
 
 section.n {
-    box-sizing: border-box;
-
     overflow-y: scroll;
-    height: calc(100dvh + env(safe-area-inset-bottom));
-
-    padding-block: env(safe-area-inset-top) env(safe-area-inset-bottom)
+    height: calc(100dvh + env(safe-area-inset-bottom))
 }
 
 section.n input {
@@ -35,7 +31,7 @@ section.n input {
     border-radius: 0;
     border-bottom: 2px solid light-dark(#f7f7f7, #141414);
 
-    padding: 40px 40px 30px;
+    padding: calc(40px + env(safe-area-inset-top)) 40px 30px;
 
     text-overflow: ellipsis;
     font: 500 19px system-ui;
@@ -114,13 +110,11 @@ section.s {
     align-items: center;
     justify-content: center;
 
-    background-color: var(--k)
+    background-color: light-dark(#ffffffcc, #101010cc)
 }
 
 section.s h1 {
-    font-size: 14px;
-
-    color: var(--h)
+    font-size: 14px
 }
 
 /* k */
