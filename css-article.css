@@ -42,8 +42,7 @@ article img {
     height: auto
 }
 
-article h1,
-article b {
+article h1 {
     scroll-margin-top: calc(25px + env(safe-area-inset-top))
 }
 
@@ -226,7 +225,7 @@ section.b {
     position: fixed;
     inset: auto 0 0;
 
-    border-top: 2px solid light-dark(#f0f0f0, #282828);
+    border-top: 2px solid light-dark(#f0f0f0, #222);
 
     background-color: light-dark(#fff, #1d1e1f)
 }
