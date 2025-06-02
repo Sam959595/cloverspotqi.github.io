@@ -23,9 +23,9 @@ section.n {
     box-sizing: border-box;
     overflow-y: scroll;
 
-    padding-block: env(safe-area-inset-top) env(safe-area-inset-bottom);
+    height: 100dvh;
 
-    height: 100vh
+    padding-block: env(safe-area-inset-top) env(safe-area-inset-bottom)
 }
 
 section.n input {
