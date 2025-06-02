@@ -191,14 +191,18 @@ article details {
     margin: 30px
 }
 
-article aside {
+article div {
     padding: 30px;
 
     background-color: light-dark(#f4f4f4, #181819);
     color: light-dark(#626262, #999)
 }
 
-article aside p+p {
+article div p {
+    font-size: 14px
+}
+
+article div p+p {
     margin-top: 20px
 }
 
