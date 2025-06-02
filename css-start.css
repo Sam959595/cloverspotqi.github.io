@@ -1,5 +1,6 @@
 html {
-    overscroll-behavior-y: none
+    overscroll-behavior-y: none;
+    height: 100dvh
 }
 
 body {
@@ -21,7 +22,7 @@ img {
 
 section.n {
     overflow-y: scroll;
-    height: 100dvh
+    height: calc(100vh - (100dvh - 100vh))
 }
 
 section.n input {
