@@ -217,7 +217,7 @@ section.b {
     position: fixed;
     inset: auto 0 0;
 
-    background-image: linear-gradient(transparent, light-dark(#ffffffb3, #101010cc))
+    background-color: light-dark(#ffffffb3, #101010cc)
 }
 
 section.b ul {
@@ -225,7 +225,7 @@ section.b ul {
 
     width: 100vw;
 
-    padding: 2cm 40px calc(15px + env(safe-area-inset-bottom));
+    padding: 15px 40px calc(15px + env(safe-area-inset-bottom));
 
     display: flex;
     column-gap: 10px
@@ -252,9 +252,9 @@ section.k {
     position: fixed;
     inset: 0 0 auto;
 
-    height: calc(20px + env(safe-area-inset-top));
+    height: env(safe-area-inset-top);
 
-    background-image: linear-gradient(light-dark(#ffffffb3, #101010cc) 60%, transparent)
+    background-color: light-dark(#ffffffb3, #101010cc)
 }
 
 /* s */
