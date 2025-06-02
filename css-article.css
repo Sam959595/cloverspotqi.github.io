@@ -65,7 +65,7 @@ article p {
 article .w {
     font: 12px system-ui;
 
-    color: light-dark(#999, #b4b4b4)
+    color: light-dark(#666, #b4b4b4)
 }
 
 article .e {
