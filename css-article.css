@@ -217,7 +217,7 @@ section.b {
     position: fixed;
     inset: auto 0 0;
 
-    background-image: linear-gradient(transparent, light-dark(#ffffffb3, #101010b3))
+    background-image: linear-gradient(transparent, light-dark(#ffffffb3, #101010cc))
 }
 
 section.b ul {
@@ -252,9 +252,9 @@ section.k {
     position: fixed;
     inset: 0 0 auto;
 
-    height: env(safe-area-inset-top);
+    height: calc(20px + env(safe-area-inset-top));
 
-    background-color: light-dark(#ffffffcc, #101010cc)
+    background-image: linear-gradient(light-dark(#ffffffb3, #101010cc) 60%, transparent)
 }
 
 /* s */
