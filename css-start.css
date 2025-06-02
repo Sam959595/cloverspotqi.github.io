@@ -1,7 +1,3 @@
-html {
-    overscroll-behavior-y: none
-}
-
 body {
     background-color: light-dark(#fff, #101010);
     color: light-dark(#111, #fff)
