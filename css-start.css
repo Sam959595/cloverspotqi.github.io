@@ -49,16 +49,23 @@ section.n input {
     caret-color: light-dark(#111, #fff)
 }
 
+section.n h1 {
+    margin: 30px 40px;
+
+    font: 600 15px system-ui;
+
+    color: light-dark(#999, #555)
+}
+
 section.n ul {
     margin: 20px;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px
+    row-gap: 10px
 }
 
 section.n li {
-    border-radius: 20px;
+    border-radius: 15px;
 
     background-color: light-dark(#f4f4f4, #181819)
 }
@@ -67,12 +74,12 @@ section.n a {
     box-sizing: border-box;
     height: 100%;
 
-    padding: 15px 15px 30px;
+    padding: 15px;
 
     display: block;
 
     word-break: break-word;
-    font: 700 extra-condensed 20px/1 system-ui
+    font: 600 17px/1 system-ui
 }
 
 section.n .b {
