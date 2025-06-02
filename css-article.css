@@ -1,5 +1,5 @@
 body {
-    background-color: light-dark(#fff, #101010);
+    background-color: light-dark(#fff, #1d1e1f);
     color: light-dark(#111, #fff)
 }
 
@@ -84,7 +84,7 @@ article figcaption {
 article blockquote {
     margin: 30px;
 
-    border-left: 3px solid light-dark(#f0f0f0, #161616);
+    border-left: 3px solid light-dark(#f0f0f0, #282828);
 
     padding-left: 13px;
 
@@ -132,7 +132,7 @@ article .m {
 article hr {
     margin: 30px;
 
-    border-top: 2px solid light-dark(#f0f0f0, #181818)
+    border-top: 2px solid light-dark(#f0f0f0, #282828)
 }
 
 article p code {
@@ -193,6 +193,8 @@ article aside {
 }
 
 article .e {
+    font-family: monospace;
+
     color: light-dark(#0d67b6, #88b7ff)
 }
 
@@ -219,7 +221,7 @@ section.b {
     position: fixed;
     inset: auto 0 0;
 
-    background-color: light-dark(#ffffffb3, #101010cc)
+    background-color: light-dark(#ffffffb3, #1d1e1fcc)
 }
 
 section.b ul {
@@ -256,7 +258,7 @@ section.k {
 
     height: env(safe-area-inset-top);
 
-    background-color: light-dark(#ffffffb3, #101010cc)
+    background-color: light-dark(#ffffffb3, #1d1e1fcc)
 }
 
 /* s */
@@ -270,7 +272,7 @@ section.s {
 
     overflow-y: scroll;
 
-    background-color: light-dark(#fff, #101010);
+    background-color: light-dark(#fff, #1d1e1f);
 
     transition: opacity .2s
 }
@@ -309,7 +311,7 @@ section.s textarea {
 
     font-size: 15px;
 
-    background: light-dark(#fff, #101010);
+    background: light-dark(#fff, #1d1e1f);
     color: light-dark(#111, #fff);
     caret-color: light-dark(#8567be, #b790ff)
 }
@@ -423,7 +425,7 @@ section.a li {
 }
 
 section.a li:hover {
-    background-color: #101010
+    background-color: #1d1e1f
 }
 
 section.a div {
