@@ -99,7 +99,7 @@ div.z .b a:hover:after {
 }
 
 div.z .b div {
-    margin: 15px;
+    margin: 17px 15px;
 
     display: flex;
     column-gap: 15px
@@ -112,7 +112,7 @@ div.z .b div img {
 div.z .b div img+img {
     margin-left: -19px;
 
-    clip-path: path("M16 0v16H3a9.66 9.66 0 0 0 4.18-8A9.66 9.66 0 0 0 3 0h13Z")
+    clip-path: path("M20 0v20H3.3a11.99 11.99 0 0 0 0-20H20Z")
 }
 
 div.z .b h1 {
@@ -121,7 +121,7 @@ div.z .b h1 {
     -webkit-box-orient: vertical;
     overflow: hidden;
 
-    font: 500 12px system-ui;
+    font: 500 14px system-ui;
     letter-spacing: .4px
 }
 
