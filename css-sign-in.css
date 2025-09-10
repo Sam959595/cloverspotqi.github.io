@@ -290,7 +290,7 @@ section.j {
     opacity: 1;
 
     position: fixed;
-    inset: 25px 5vw auto;
+    inset: calc(25px + env(safe-area-inset-top)) 5vw auto;
 
     display: flex;
     justify-content: space-between;
