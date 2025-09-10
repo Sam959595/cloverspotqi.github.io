@@ -20,9 +20,7 @@ div.z .a {
     position: sticky;
     inset: 36vh 0 auto;
 
-    margin: 0 auto;
-
-    width: 50vw;
+    margin-inline: 8vw;
 
     border-radius: 18px;
     outline: 3px solid #191919;
@@ -31,7 +29,6 @@ div.z .a {
 }
 
 div.z input {
-    width: inherit;
     height: 76px;
 
     padding: 0 20px 1px;
