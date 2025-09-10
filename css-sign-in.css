@@ -65,7 +65,8 @@ div.z svg:hover path {
 div.z .b {
     position: relative;
 
-    margin: 81vh 5vw 20vh;
+    margin: 81vh 0 20vh;
+    padding-inline: 5vw;
 
     display: grid;
     row-gap: 70px;
