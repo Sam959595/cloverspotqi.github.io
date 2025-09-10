@@ -61,7 +61,7 @@ div.z svg:hover path {
 div.z .b {
     position: relative;
 
-    margin: 81vh 5vw 40vh;
+    margin: 81vh 5vw 20vh;
 
     display: grid;
     row-gap: 70px;
@@ -112,7 +112,7 @@ div.z .b div img {
 div.z .b div img+img {
     margin-left: -19px;
 
-    clip-path: path("M20 0v20H3.3a11.99 11.99 0 0 0 0-20H20Z")
+    clip-path: path("M18 0v18H2.97a10.79 10.79 0 0 0 0-18H18Z")
 }
 
 div.z .b h1 {
