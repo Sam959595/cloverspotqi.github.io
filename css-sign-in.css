@@ -18,14 +18,18 @@ div.z {
 
 div.z .a {
     position: sticky;
-    inset: 36vh 0 auto;
-
-    margin-inline: 5vw;
-
-    border-radius: 22px;
-    border: 3px solid #191919;
+    inset: 20vh 0 auto;
 
     display: flex
+}
+
+div.z .a:after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    background-image: linear-gradient(#0d0d0d, #0d0d0d80, #0d0d0d)
 }
 
 div.z input {
