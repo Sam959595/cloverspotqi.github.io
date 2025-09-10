@@ -22,7 +22,7 @@ div.z .a {
 
     margin-inline: 5vw;
 
-    border-radius: 18px;
+    border-radius: 22px;
     border: 3px solid #191919;
 
     display: flex
@@ -43,6 +43,8 @@ div.z input {
 }
 
 div.z input::placeholder {
+    text-align: center;
+    
     color: #fff
 }
 
