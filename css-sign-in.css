@@ -20,16 +20,17 @@ div.z .a {
     position: sticky;
     inset: 36vh 0 auto;
 
-    margin-inline: 8vw;
+    margin-inline: 5vw;
 
     border-radius: 18px;
-    outline: 3px solid #191919;
+    border: 3px solid #191919;
 
     display: flex
 }
 
 div.z input {
-    height: 76px;
+    width: 100%;
+    height: 75px;
 
     padding: 0 20px 1px;
 
@@ -42,7 +43,7 @@ div.z input {
 }
 
 div.z input::placeholder {
-    color: #888
+    color: #fff
 }
 
 div.z svg {
