@@ -61,6 +61,8 @@ div.z .b {
 
     margin: 80vh 5vw 20vh;
 
+    border-radius: 22px;
+
     display: grid;
     row-gap: 70px;
 
