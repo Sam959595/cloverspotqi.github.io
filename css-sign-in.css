@@ -18,27 +18,21 @@ div.z {
 
 div.z .a {
     position: sticky;
-    inset: 0 0 auto;
+    inset: 30vh 0 auto;
 
     display: flex
 }
 
-div.z .a:after {
-    position: absolute;
-    inset: 0;
-
-    content: "";
-
-    background-image: linear-gradient(#0d0d0d, #0d0d0d80, #0d0d0d)
-}
-
 div.z input {
+    margin-inline: 5vw;
+
     width: 100%;
     height: 75px;
 
     padding: 0 20px 1px;
 
     border-radius: 15px;
+    outline: 3px solid #191919;
 
     font-size: 19px;
 
@@ -65,8 +59,7 @@ div.z svg:hover path {
 div.z .b {
     position: relative;
 
-    margin: 81vh 0 20vh;
-    padding: 5vw;
+    margin: 80vh 5vw 20vh;
 
     display: grid;
     row-gap: 70px;
