@@ -338,7 +338,7 @@ section.c img+img {
 section.c p {
     margin-inline: 8px 2px;
 
-    font: 500 13px/1.6 system-ui;
+    font: 600 13px/1.6 system-ui;
     letter-spacing: .2px;
 
     color: #777
@@ -430,7 +430,7 @@ section.q {
 /* - */
 
 section.e .d {
-    margin: 0 6vw 6vw
+    margin: 0 0 6vw
 }
 
 section.e .d img {
@@ -438,14 +438,6 @@ section.e .d img {
     height: auto;
 
     -webkit-user-drag: none
-}
-
-section.e .d li:first-child img {
-    border-radius: 15px 15px 0 0
-}
-
-section.e .d li:last-child img {
-    border-radius: 0 0 15px 15px
 }
 
 /* - */
@@ -468,7 +460,7 @@ section.e a {
 
 section.e>svg {
     position: fixed;
-    inset: 0 5vw auto auto;
+    inset: calc(-5px + env(safe-area-inset-top)) 0 auto auto;
 
     mix-blend-mode: difference;
 
@@ -480,10 +472,10 @@ section.e>svg:hover path {
 }
 
 section.e .i {
-    margin: 25px 6vw 35px;
+    margin: calc(25px + env(safe-area-inset-top)) 6vw 35px;
 
     display: flex;
-    justify-content: center
+    align-items: center
 }
 
 section.e .i div {
@@ -515,7 +507,9 @@ section.e img+img {
 }
 
 section.e h1 {
-    margin: 18px 17px 16px;
+    flex-grow: 1;
+
+    margin: 0 67px 0 17px;
 
     text-align: center;
     font: 400 13px system-ui;
