@@ -187,7 +187,7 @@ section.s {
 }
 
 section.v .a {
-    margin: 110px 0 50px;
+    margin: calc(110px + env(safe-area-inset-top)) 0 50px;
     padding-inline: 5vw;
 
     overflow-x: scroll;
@@ -219,7 +219,7 @@ section.v .a .e {
 }
 
 section.v .b {
-    margin: 0 8px 8px;
+    margin: 0 8px calc(8px + env(safe-area-inset-bottom));
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -437,7 +437,7 @@ section.q {
 /* - */
 
 section.e .d {
-    margin: 0 0 6vw
+    margin-bottom: calc(25px + env(safe-area-inset-bottom))
 }
 
 section.e .d img {
