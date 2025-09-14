@@ -187,10 +187,12 @@ section.s {
 }
 
 section.v .a {
-    margin: 110px auto 50px;
+    margin: 110px 0 50px;
+    padding-inline: 5vw;
+
+    overflow-x: scroll;
 
     display: flex;
-    justify-content: center;
     column-gap: 20px;
 
     font: 500 13px system-ui;
@@ -217,11 +219,11 @@ section.v .a .e {
 }
 
 section.v .b {
-    margin: 0 25vw 10vh;
+    margin: 0 8px 8px;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 14px
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px
 }
 
 section.v input {
@@ -244,7 +246,7 @@ section.v input::placeholder {
 }
 
 section.v .b li {
-    padding: 20px 20px 30px;
+    padding: 15px 10px 20px;
 
     border-radius: 22px;
 
