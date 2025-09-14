@@ -145,6 +145,7 @@ section.f a:hover {
 
 section.f {
     pointer-events: none;
+    opacity: 0;
 
     position: fixed;
     inset: 0 0 auto;
@@ -156,6 +157,10 @@ section.f {
     filter: blur(20px);
 
     transition: opacity .4s ease
+}
+
+section.g {
+    opacity: 1
 }
 
 /* v */
