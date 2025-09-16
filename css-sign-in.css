@@ -361,7 +361,7 @@ section.u img+img {
 
 section.b {
     position: fixed;
-    inset: auto 0 calc(15px + env(safe-area-inset-bottom));
+    inset: auto 0 calc(20px + env(safe-area-inset-bottom));
 
     width: max-content;
 
