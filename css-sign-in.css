@@ -361,9 +361,7 @@ section.u img+img {
 
 section.b {
     position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) 4vw auto 0;
-
-    width: max-content;
+    inset: calc(15px + env(safe-area-inset-top)) 5vw auto auto;
 
     margin-left: auto;
     padding: 10px;
@@ -371,7 +369,14 @@ section.b {
     border-radius: 50%;
     outline: 3px solid #ffffff0d;
 
-    background-color: #131313
+    background-color: #131313;
+
+    transition: opacity .4s ease
+}
+
+section.x {
+    pointer-events: none;
+    opacity: 0
 }
 
 section.b img {
