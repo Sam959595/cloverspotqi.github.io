@@ -57,3 +57,19 @@ sectionB.onclick = () => {
 sectionEQ.onclick = () => {
     sectionE.classList.remove('q')
 };
+
+let n = 0;
+const e = document.querySelector('div.z');
+const b = document.querySelector('section.b');
+
+e.addEventListener('scroll', () => {
+    let t = e.scrollTop;
+
+    if (t > n) {
+        b.classList.add('x'); // скроллим вниз
+    } else {
+        b.classList.remove('x'); // скроллим вверх
+    }
+
+    n = t <= 0 ? 0 : t;
+});
