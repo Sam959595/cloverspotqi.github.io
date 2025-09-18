@@ -57,6 +57,89 @@ div.z svg:hover path {
 
 /* - */
 
+div.z .n {
+    position: relative;
+
+    margin: 80vh 5vw 20vh;
+
+    border-radius: 22px;
+
+    display: grid;
+    row-gap: 70px;
+
+    background-color: #0d0d0d
+}
+
+div.z .n a {
+    position: relative;
+
+    display: block
+}
+
+div.z .n h2 {
+    padding-inline: 20px;
+
+    font: 600 20px system-ui;
+    letter-spacing: .4px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 11;
+    -webkit-box-orient: vertical;
+
+    color: #fff;
+
+    -webkit-user-select: auto
+}
+
+div.z .n a>img {
+    margin-top: 20px;
+    
+    width: 100%;
+    height: auto;
+
+    border-radius: 0 0 22px 22px
+}
+
+div.z .n a:after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    border-radius: 22px;
+    border: 3px solid #ffffff0d;
+
+    transition: background-color .2s
+}
+
+div.z .n div {
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 15px
+}
+
+div.z .n div img {
+    border-radius: 50%
+}
+
+div.z .n span {
+    font: 500 13px system-ui;
+
+    color: #555
+}
+
+div.z .n div img+img {
+    margin-left: -19px;
+
+    clip-path: path("M18 0v18H2.97a10.79 10.79 0 0 0 0-18H18Z")
+}
+
+/* - */
+
 div.z .b {
     position: relative;
 
@@ -81,19 +164,6 @@ div.z .b a img {
     height: auto;
 
     border-radius: 22px
-}
-
-div.z .b a h2 {
-    position: absolute;
-    inset: auto 0 0;
-
-    padding: 60px 20px 20px;
-
-    border-radius: 0 0 22px 22px;
-
-    font: 700 extra-condensed 20px/1 system-ui;
-
-    background-image: linear-gradient(#00000000, #000000aa)
 }
 
 div.z .b a:after {
@@ -394,7 +464,7 @@ section.e {
 
     overflow-y: scroll;
 
-    background-color: #0d0d0df7
+    background-color: #0d0d0d
 }
 
 section.q {
