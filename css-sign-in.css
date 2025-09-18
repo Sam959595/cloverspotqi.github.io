@@ -361,11 +361,11 @@ section.u img+img {
 
 section.b {
     position: fixed;
-    inset: auto 0 calc(20px + env(safe-area-inset-bottom));
+    inset: calc(15px + env(safe-area-inset-top)) 4vw auto 0;
 
     width: max-content;
 
-    margin-inline: auto;
+    margin-left: auto;
     padding: 10px;
 
     border-radius: 50%;
