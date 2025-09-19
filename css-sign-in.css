@@ -65,7 +65,7 @@ div.z .n {
     border-radius: 22px;
 
     display: grid;
-    row-gap: 70px;
+    row-gap: 5vw;
 
     background-color: #0d0d0d
 }
@@ -79,7 +79,7 @@ div.z .n a {
 div.z .n h2 {
     padding-inline: 20px;
 
-    font: 600 20px system-ui;
+    font: 500 20px system-ui;
     letter-spacing: .4px;
 
     overflow: hidden;
@@ -95,7 +95,7 @@ div.z .n h2 {
 
 div.z .n a>img {
     margin-top: 20px;
-    
+
     width: 100%;
     height: auto;
 
@@ -109,7 +109,7 @@ div.z .n a:after {
     content: "";
 
     border-radius: 22px;
-    border: 3px solid #ffffff0d;
+    border: 3px solid #ffffff0a;
 
     transition: background-color .2s
 }
@@ -127,7 +127,7 @@ div.z .n div img {
 }
 
 div.z .n span {
-    font: 500 13px system-ui;
+    font: 500 14px system-ui;
 
     color: #555
 }
