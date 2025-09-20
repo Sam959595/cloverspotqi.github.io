@@ -125,21 +125,6 @@ div.z .b h1 {
 /* f */
 
 section.f {
-    position: fixed;
-    inset: auto auto 4vw 5vw;
-
-    font-size: 12px;
-
-    color: #777
-}
-
-section.f a:hover {
-    text-decoration-line: underline;
-    text-decoration-skip: none;
-    text-underline-offset: 2px
-}
-
-section.f {
     pointer-events: none;
     opacity: 0;
 
