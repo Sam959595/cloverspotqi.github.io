@@ -57,89 +57,6 @@ div.z svg:hover path {
 
 /* - */
 
-div.z .n {
-    position: relative;
-
-    margin: 80vh 5vw 20vh;
-
-    border-radius: 22px;
-
-    display: grid;
-    row-gap: 5vw;
-
-    background-color: #0d0d0d
-}
-
-div.z .n a {
-    position: relative;
-
-    display: block
-}
-
-div.z .n h2 {
-    padding-inline: 20px;
-
-    font: 500 20px system-ui;
-    letter-spacing: .4px;
-
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 11;
-    -webkit-box-orient: vertical;
-
-    color: #fff;
-
-    -webkit-user-select: auto
-}
-
-div.z .n a>img {
-    margin-top: 20px;
-
-    width: 100%;
-    height: auto;
-
-    border-radius: 0 0 22px 22px
-}
-
-div.z .n a:after {
-    position: absolute;
-    inset: 0;
-
-    content: "";
-
-    border-radius: 22px;
-    border: 3px solid #ffffff0a;
-
-    transition: background-color .2s
-}
-
-div.z .n div {
-    padding: 20px;
-
-    display: flex;
-    align-items: center;
-    column-gap: 15px
-}
-
-div.z .n div img {
-    border-radius: 50%
-}
-
-div.z .n span {
-    font: 500 14px system-ui;
-
-    color: #555
-}
-
-div.z .n div img+img {
-    margin-left: -19px;
-
-    clip-path: path("M18 0v18H2.97a10.79 10.79 0 0 0 0-18H18Z")
-}
-
-/* - */
-
 div.z .b {
     position: relative;
 
@@ -255,7 +172,7 @@ section.v {
 
     height: 100vh;
 
-    background-color: #0d0d0df7;
+    background-color: #0d0d0d;
 
     transition: opacity .15s ease-out
 }
