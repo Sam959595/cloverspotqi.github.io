@@ -9,11 +9,6 @@ body {
 
 /* z */
 
-div.z {
-    overflow-y: scroll;
-    height: 100vh
-}
-
 /* p */
 
 div.z .a {
