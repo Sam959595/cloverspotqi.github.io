@@ -420,7 +420,7 @@ section.e .i {
 }
 
 section.e .i div {
-    padding: 15px;
+    padding: 21px 9px 9px;
 
     border-radius: 25px;
     outline: 3px solid #ffffff0d;
@@ -439,9 +439,9 @@ section.e .i img {
 }
 
 section.e .i img+img {
-    margin-left: -5px;
+    margin: -12px 0 0 -8px;
 
-    clip-path: path("M20 0v20H3a11.93 11.93 0 0 0 5.46-10C8.46 5.83 6.3 2.15 3 0h17Z")
+    clip-path: path("M20 0v20h-9.09A12.5 12.5 0 0 0 .01 9.09L0 0h20Z")
 }
 
 section.e svg {
