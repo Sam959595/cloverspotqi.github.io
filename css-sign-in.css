@@ -383,7 +383,7 @@ section.e h1 {
 /* - */
 
 section.e ul {
-    margin-bottom: calc(120px + env(safe-area-inset-bottom))
+    margin-bottom: 120px
 }
 
 section.e ul img {
@@ -413,7 +413,7 @@ section.e a {
 
 section.e .i {
     position: fixed;
-    inset: auto 35px calc(35px + env(safe-area-inset-bottom));
+    inset: auto 35px 35px;
 
     display: flex;
     justify-content: space-between
