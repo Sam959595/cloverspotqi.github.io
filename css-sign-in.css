@@ -18,9 +18,17 @@ div.z {
 
 div.z .a {
     position: sticky;
-    inset: 20vh 5vw auto;
+    inset: 20vh 12vw auto;
 
     width: fit-content
+}
+
+div.z .a h1 {
+    margin-bottom: 25px;
+
+    font: 600 17px system-ui;
+
+    color: #444
 }
 
 div.z .a li {
@@ -38,9 +46,7 @@ div.z .a li+li {
 div.z .b {
     position: relative;
 
-    margin: 70vh 5vw 20vh;
-
-    border-radius: 22px;
+    margin: 62vh 5vw 20vh;
 
     display: grid;
     row-gap: 70px;
