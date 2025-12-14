@@ -32,7 +32,8 @@ div.z .a h1 {
 }
 
 div.z .a li {
-    font: 600 24px system-ui;
+    font: 600 24px ui-rounded;
+    letter-spacing: .4px;
 
     color: #777
 }
