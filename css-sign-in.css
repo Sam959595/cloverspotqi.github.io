@@ -343,11 +343,10 @@ section.b {
 
     background-color: #131313;
 
-    transition: opacity .8s ease
+    transition: opacity .4s ease
 }
 
 section.x {
-    pointer-events: none;
     opacity: .5
 }
 
