@@ -419,19 +419,15 @@ section.e .i {
     justify-content: space-between
 }
 
-section.e .i div {
+section.e .i .a {
     padding: 21px 9px 9px;
 
-    border-radius: 25px;
     outline: 3px solid #ffffff0d;
+    border-radius: 25px;
 
     display: flex;
 
     background-color: #131313
-}
-
-section.e .i div:hover {
-    background-color: #191919
 }
 
 section.e .i img {
@@ -444,11 +440,15 @@ section.e .i img+img {
     clip-path: path("M20 0v20h-9.09A12.5 12.5 0 0 0 .01 9.09L0 0h20Z")
 }
 
-section.e svg {
-    border-radius: 50%;
+section.e .i .b {
     outline: 3px solid #ffffff0d;
+    border-radius: 50%;
 
     background-color: #131313
+}
+
+section.e svg {
+    display: block
 }
 
 /* - */
