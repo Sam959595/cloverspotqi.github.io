@@ -9,6 +9,11 @@ body {
 
 /* z */
 
+div.z {
+    overflow-y: scroll;
+    height: 100vh
+}
+
 /* p */
 
 div.z .a {
@@ -164,12 +169,12 @@ section.s {
 
 section.v .a {
     margin: calc(110px + env(safe-area-inset-top)) 0 50px;
-    padding-inline: 6vw;
+    padding-inline: 5vw;
 
     overflow-x: scroll;
 
     display: flex;
-    column-gap: 10px;
+    column-gap: 20px;
 
     font: 500 13px system-ui;
     letter-spacing: .2px
@@ -203,6 +208,7 @@ section.v .b {
 }
 
 section.v input {
+    width: inherit;
     height: 40px;
 
     padding: 0 14px;
@@ -413,7 +419,10 @@ section.e>svg:hover path {
 }
 
 section.e .i {
-    margin: calc(25px + env(safe-area-inset-top)) 6vw 35px
+    margin: calc(25px + env(safe-area-inset-top)) 6vw 35px;
+
+    display: flex;
+    align-items: center
 }
 
 section.e .i div {
@@ -445,6 +454,10 @@ section.e img+img {
 }
 
 section.e h1 {
+    flex-grow: 1;
+
+    margin: 0 67px 0 17px;
+
     text-align: center;
     font: 400 13px system-ui;
     letter-spacing: .2px
