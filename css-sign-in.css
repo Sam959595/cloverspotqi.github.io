@@ -423,7 +423,7 @@ section.e .i .a {
     padding: 21px 9px 9px;
 
     outline: 3px solid #ffffff0d;
-    border-radius: 25px;
+    border-radius: 50%;
 
     display: flex;
 
