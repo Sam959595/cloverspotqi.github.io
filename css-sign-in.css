@@ -343,12 +343,12 @@ section.b {
 
     background-color: #131313;
 
-    transition: opacity .4s ease
+    transition: opacity .8s ease
 }
 
 section.x {
     pointer-events: none;
-    opacity: 0
+    opacity: .5
 }
 
 section.b img {
