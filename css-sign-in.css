@@ -18,41 +18,19 @@ div.z {
 
 div.z .a {
     position: sticky;
-    inset: 40vh 0 auto;
+    inset: 20vh 5vw auto;
 
-    margin-inline: 5vw;
-
-    border-radius: 22px;
-    border: 3px solid #191919;
-
-    display: flex
+    width: fit-content
 }
 
-div.z input {
-    flex-grow: 1;
+div.z .a li {
+    font: 600 24px system-ui;
 
-    height: 75px;
-
-    padding: 0 20px 1px;
-
-    font-size: 19px;
-
-    background: none;
-    color: #fff
+    color: #777
 }
 
-div.z input::placeholder {
-    text-align: center;
-
-    color: #fff
-}
-
-div.z svg {
-    cursor: pointer
-}
-
-div.z svg:hover path {
-    stroke: #444
+div.z .a li+li {
+    margin-top: 25px
 }
 
 /* - */
@@ -60,7 +38,7 @@ div.z svg:hover path {
 div.z .b {
     position: relative;
 
-    margin: 80vh 5vw 20vh;
+    margin: 70vh 5vw 20vh;
 
     border-radius: 22px;
 
