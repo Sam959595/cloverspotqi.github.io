@@ -453,6 +453,17 @@ section.e svg {
 
 /* - */
 
+section.e .f {
+    position: fixed;
+    inset: 0 0 auto;
+
+    height: env(safe-area-inset-top);
+
+    background-color: #0d0d0d90
+}
+
+/* - */
+
 section.e .s {
     position: fixed;
     inset: 90px auto auto 32vw;
