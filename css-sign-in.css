@@ -18,28 +18,24 @@ div.z {
 
 div.z .a {
     position: sticky;
-    inset: 20vh 12vw auto;
+    inset: 20vh 0 auto;
 
-    width: fit-content
+    margin-inline: 12vw
 }
 
 div.z .a h1 {
-    margin-bottom: 25px;
-
     font: 600 17px system-ui;
 
     color: #444
 }
 
 div.z .a li {
+    margin-block: 25px;
+
     font: 600 24px ui-rounded;
     letter-spacing: .4px;
 
     color: #777
-}
-
-div.z .a li+li {
-    margin-top: 25px
 }
 
 /* - */
