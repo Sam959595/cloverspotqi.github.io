@@ -44,7 +44,7 @@ const sectionV = document.querySelector('section.v');
 
 const sectionB = document.querySelector('section.b');
 const sectionE = document.querySelector('section.e');
-const sectionEQ = document.querySelector('section.e>svg');
+const sectionEQ = document.querySelector('section.e .b');
 
 sectionC.onclick = () => {
     sectionV.classList.toggle('s')
@@ -58,9 +58,10 @@ sectionEQ.onclick = () => {
     sectionE.classList.remove('q')
 };
 
+// затенить бар
 let n = 0;
 const e = document.querySelector('div.z');
-const b = document.querySelector('section.b');
+const b = document.querySelector('section.j');
 
 e.addEventListener('scroll', () => {
     let t = e.scrollTop;
