@@ -257,7 +257,7 @@ section.j {
     opacity: 1;
 
     position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) 5vw auto;
+    inset: calc(15px + env(safe-area-inset-top)) 21vw auto;
 
     display: flex;
     justify-content: space-between;
@@ -305,12 +305,12 @@ section.c img+img {
 }
 
 section.c p {
-    margin: 2px 2px 0 8px;
+    margin: 1px 2px 0 8px;
 
-    font: 500 13px system-ui;
+    font: 500 14px system-ui;
     letter-spacing: .2px;
 
-    color: #777
+    color: #ccc
 }
 
 /* 2 obj */
@@ -371,6 +371,16 @@ section.b.s {
 
 section.b img {
     border-radius: 50%
+}
+
+/* - */
+
+section.j :is(svg, .b) {
+    transition: opacity .4s ease
+}
+
+section.x :is(svg, .b) {
+    opacity: .5
 }
 
 /* e */
