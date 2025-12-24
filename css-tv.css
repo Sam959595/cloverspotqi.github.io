@@ -47,7 +47,7 @@ div.z .b {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5vw;
+    gap: 15vw 5vw;
 
     background-color: #0d0d0d
 }
@@ -56,6 +56,11 @@ div.z .b a {
     position: relative;
 
     display: block
+}
+
+div.z .b li {
+    display: flex;
+    align-items: center
 }
 
 div.z .b a img {
@@ -73,11 +78,8 @@ div.z .b a:after {
 
     border-radius: 2px;
 
-    background: url('4.jpg') center/cover;
-
-    mix-blend-mode: multiply;
-
-    transition: background-color .2s
+    background-size: 100% 100%;
+    background-image: url('4.png')
 }
 
 div.z .b div {
@@ -379,11 +381,11 @@ section.b img {
 
 /* - */
 
-section.j :is(svg, .b) {
+section.j :is(svg g, .b) {
     transition: opacity .4s ease
 }
 
-section.x :is(svg, .b) {
+section.x :is(svg g, .b) {
     opacity: .3
 }
 
