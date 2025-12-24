@@ -375,11 +375,11 @@ section.b img {
 
 /* - */
 
-section.j :is(svg, .b) {
+section.j :is(svg g, .b) {
     transition: opacity .4s ease
 }
 
-section.x :is(svg, .b) {
+section.x :is(svg g, .b) {
     opacity: .3
 }
 
