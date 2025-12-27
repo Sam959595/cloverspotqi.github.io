@@ -7,380 +7,387 @@ body {
     color: #fff
 }
 
-/* z */
-
 div.z {
     overflow-y: scroll;
     height: 100vh
 }
 
-/* p */
+/* img */
 
-div.z .a {
-    position: sticky;
-    inset: 20vh 0 auto;
-
-    margin-inline: 12vw
+img[data-src] {
+    opacity: 0
 }
 
-div.z .a h1 {
-    font: 600 17px system-ui;
+img {
+    opacity: 1;
 
-    color: #444
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
-div.z .a li {
-    margin-block: 25px;
+/* k */
 
-    font: 600 24px ui-rounded;
-    letter-spacing: .4px;
+section.k {
+    margin: 30px calc(5vw - 10px) 40px;
 
-    color: #777
+    display: flex;
+    column-gap: 38px
 }
 
-/* - */
+section.k svg {
+    cursor: pointer
+}
 
-div.z .b {
-    position: relative;
+section.k svg:hover path {
+    stroke: #666
+}
 
-    margin: 62vh 5vw 20vh;
+/* t */
+
+section.t {
+    margin: 0 7vw 40px 23vw;
+
+    font-size: 14px;
+
+    color: #999
+}
+
+section.t {
+    margin-top: 100px
+}
+
+/* a */
+
+section.a ul {
+    overflow-x: scroll;
+
+    padding-inline: 23vw 7vw;
 
     display: grid;
-    row-gap: 70px;
-
-    background-color: #0d0d0d
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    column-gap: 20px
 }
 
-div.z .b a {
+section.a a {
     position: relative;
 
     display: block
 }
 
-div.z .b a img {
-    width: 100%;
-    height: auto;
-
-    border-radius: 22px
+section.a img {
+    border-radius: 25px
 }
 
-div.z .b a:after {
+section.a a:after {
     position: absolute;
     inset: 0;
 
     content: "";
 
-    border-radius: 22px;
+    border-radius: 25px;
     border: 2px solid #ffffff15;
 
     transition: background-color .2s
 }
 
-div.z .b div {
-    margin: 17px 20px;
-
-    display: flex;
-    column-gap: 15px
+section.a a:hover:after {
+    background-color: #00000020
 }
 
-div.z .b div img {
-    border-radius: 50%
+/* n */
+
+section.n ul {
+    overflow-x: scroll;
+
+    padding-inline: 23vw 7vw;
+
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    column-gap: 30px
 }
 
-div.z .b div img+img {
-    margin-left: -19px;
+section.n a {
+    position: relative;
 
-    clip-path: path("M18 0v18H2.97a10.79 10.79 0 0 0 0-18H18Z")
+    display: block
 }
 
-div.z .b h1 {
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+section.n img {
+    border-radius: 25px
+}
 
-    font: 500 14px system-ui;
+section.n a:after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    border-radius: 25px;
+    border: 2px solid #ffffff15;
+
+    transition: background-color .2s
+}
+
+section.n a:hover:after {
+    background-color: #00000020
+}
+
+section.n h1 {
+    margin: 15px;
+
+    font: 500 13px system-ui;
     letter-spacing: .4px
 }
 
-/* f */
+/* m */
 
-section.f {
-    pointer-events: none;
-    opacity: 0;
-
-    position: fixed;
-    inset: 0 0 auto;
-
-    height: 150px;
-
-    background-color: #0d0d0d99;
-
-    filter: blur(20px);
-
-    transition: opacity .4s ease
-}
-
-section.g {
-    opacity: 1
-}
-
-/* v */
-
-section.v {
-    pointer-events: none;
-    opacity: 0;
-
-    position: fixed;
-    inset: 0;
-
-    overflow-y: scroll;
-
-    height: 100vh;
-
-    background-color: #0d0d0d;
-
-    transition: opacity .15s ease-out
-}
-
-section.s {
-    pointer-events: auto;
-    opacity: 1
-}
-
-section.v .a {
-    margin: calc(110px + env(safe-area-inset-top)) 0 50px;
-    padding-inline: 5vw;
-
+section.m ul {
     overflow-x: scroll;
 
-    display: flex;
-    column-gap: 20px;
-
-    font: 500 13px system-ui;
-    letter-spacing: .2px
-}
-
-section.v .a li {
-    padding: 12px 14px;
-
-    border-radius: 20px;
-
-    color: #777;
-
-    cursor: pointer
-}
-
-section.v .a li:hover {
-    background-color: #19191980
-}
-
-section.v .a .e {
-    background-color: #191919;
-    color: #fff
-}
-
-section.v .b {
-    margin: 0 8px calc(8px + env(safe-area-inset-bottom));
+    padding-inline: 23vw 7vw;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    column-gap: 30px
 }
 
-section.v input {
-    width: inherit;
-    height: 40px;
-
-    padding: 0 14px;
-
-    border-radius: 20px;
-
-    font: 500 13px system-ui;
-    letter-spacing: .2px;
-
-    background-color: #191919;
-    color: #fff
-}
-
-section.v input::placeholder {
-    color: #777
-}
-
-section.v .b li {
-    padding: 15px 10px 20px;
-
-    border-radius: 22px;
-
-    text-align: right;
-
-    background-color: #191919;
-
-    cursor: pointer
-}
-
-section.v .b li:hover {
-    background-color: #1f1f1f
-}
-
-section.v img {
+section.m a {
     position: relative;
 
-    margin: 10px auto 30px;
-
-    border-radius: 50%
+    display: block
 }
 
-section.v .b div {
-    flex-grow: 1;
-
-    text-align: center
+section.m img {
+    border-radius: 25px
 }
 
-section.v .b h1 {
-    font: 400 13px system-ui;
-    letter-spacing: .2px
+section.m a:after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    border-radius: 25px;
+    border: 2px solid #ffffff15;
+
+    transition: background-color .2s
 }
 
-section.v p {
-    margin-top: 4px;
-
-    font-size: 12px;
-
-    color: #666
+section.m a:hover:after {
+    background-color: #00000020
 }
 
-/* j */
+section.m h1 {
+    margin: 15px;
 
-section.j {
-    pointer-events: none;
-    opacity: 1;
-
-    position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) 21vw auto;
-
-    display: flex;
-    justify-content: space-between;
-
-    transition: opacity .15s cubic-bezier(.16, 1, .3, 1)
-}
-
-body:has(section.e.q) section.j {
-    opacity: 0
+    font: 500 13px system-ui;
+    letter-spacing: .4px
 }
 
 /* c */
 
 section.c {
-    pointer-events: auto;
+    position: fixed;
+    inset: 25px 0 auto;
 
-    padding: 15px;
+    margin-inline: auto;
 
-    border-radius: 25px;
+    width: max-content;
+
+    border-radius: 16px;
     outline: 3px solid #ffffff0d;
 
     display: flex;
+    align-items: center;
+    column-gap: 10px;
 
-    background-color: #131313;
+    background-color: #0d0d0d;
+
+    color: #777;
+
+    transition: transform .8s cubic-bezier(.16, 1, .3, 1);
 
     cursor: pointer
 }
 
-section.c:hover {
-    background-color: #191919
-}
+section.c input {
+    width: 600px;
+    height: 50px;
 
-body:has(section.s) section.c {
-    background-color: #191919
-}
+    padding: 0 25px 1px;
 
-section.c img {
-    border-radius: 50%
-}
-
-section.c img+img {
-    margin-left: -5px;
-
-    clip-path: path("M20 0v20H3a11.93 11.93 0 0 0 5.46-10C8.46 5.83 6.3 2.15 3 0h17Z")
-}
-
-section.c p {
-    margin: 1px 2px 0 8px;
-
-    font: 500 14px system-ui;
+    font: 500 15px system-ui;
     letter-spacing: .2px;
 
+    background: none;
+    color: #fff
+}
+
+section.c input::placeholder {
     color: #777
 }
 
-/* 2 obj */
+/* i */
 
-section.u {
-    padding: 21px 9px 9px
-}
+section.i {
+    position: fixed;
+    inset: 25px auto auto 4vw;
 
-section.u img+img {
-    margin: -12px 0 0 -8px;
-
-    clip-path: path("M20 0v20h-9.09A12.5 12.5 0 0 0 .01 9.09L0 0h20Z")
+    font-size: 32px
 }
 
 /* b */
 
 section.b {
-    pointer-events: auto;
+    position: fixed;
+    inset: 25px 5vw auto auto;
 
     padding: 10px;
 
     border-radius: 50%;
     outline: 3px solid #ffffff0d;
 
-    background-color: #131313;
+    background-color: #0d0d0d;
 
-    cursor: pointer
+    cursor: pointer;
+
+    will-change: transition
+}
+
+@keyframes ss {
+    0% {
+        transform: translateX(0) scale(.1)
+    }
+
+    100% {
+        transform: translateX(37vw) scale(1)
+    }
+}
+
+section.b.s {
+    animation: ss 10s cubic-bezier(.16, 1, .3, 1)
 }
 
 section.b:hover {
     background-color: #191919
 }
 
-@keyframes x {
-    0% {
-        opacity: 0;
-        transform: scale(0)
-    }
-
-    30% {
-        opacity: 1;
-        transform: scale(1.5)
-    }
-
-    60% {
-        transform: scale(.9)
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1)
-    }
-}
-
-section.b.s {
-    animation: x 1s cubic-bezier(.16, 1, .3, 1)
-}
-
 section.b img {
     border-radius: 50%
 }
 
-/* - */
+/* f */
 
-section.j :is(svg g, .b) {
-    transition: opacity .4s ease
+section.f {
+    position: fixed;
+    inset: auto auto 4vw 5vw;
+
+    font-size: 12px;
+
+    color: #777
 }
 
-section.x :is(svg g, .b) {
-    opacity: .3
+section.f a:hover {
+    text-decoration-line: underline;
+    text-decoration-skip: none;
+    text-underline-offset: 2px
+}
+
+/* d */
+
+section.d {
+    pointer-events: none;
+    opacity: 0;
+
+    position: fixed;
+    inset: 0;
+
+    background-color: #0d0d0dde;
+
+    transition: opacity .15s ease-out
+}
+
+section.d .a {
+    margin: 20px auto;
+
+    width: max-content;
+    height: calc(100vh - 40px);
+
+    transform: scale(.9);
+    transform-origin: bottom;
+
+    transition: transform .3s ease-in
+}
+
+section.d.q .a {
+    transform: scale(1);
+
+    transition: transform .2s ease-out
+}
+
+section.d ul {
+    position: absolute;
+    inset: 0 0 auto;
+
+    padding: 20px;
+
+    display: flex;
+    column-gap: 5px
+}
+
+section.d li {
+    width: 100%;
+    height: 3px;
+
+    border-radius: 2px;
+
+    background-color: #ffffff30;
+
+    box-shadow: 0 0 10px #00000030
+}
+
+section.d li div {
+    height: inherit;
+
+    border-radius: inherit;
+
+    background-color: #fff
+}
+
+section.d img {
+    width: max-content;
+    height: 100%;
+
+    border-radius: 18px
+}
+
+section.d .b {
+    position: absolute;
+    inset: 0;
+
+    display: grid;
+    grid-template-columns: 70% 30%
+}
+
+section.d .b div:first-child {
+    cursor: w-resize
+}
+
+section.d .b div:last-child {
+    cursor: e-resize
+}
+
+section.d svg {
+    position: absolute;
+    inset: 0 -90px auto auto;
+
+    cursor: pointer
+}
+
+section.d svg:hover path {
+    stroke: #969696
 }
 
 /* e */
@@ -394,7 +401,9 @@ section.e {
 
     overflow-y: scroll;
 
-    background-color: #0d0d0d
+    background-color: #0d0d0dde;
+
+    transition: opacity .15s ease-out
 }
 
 section.q {
@@ -402,31 +411,38 @@ section.q {
     opacity: 1
 }
 
-/* - */
-
 section.e h1 {
-    margin: calc(25px + env(safe-area-inset-top)) 35px 35px;
+    margin: 30px 15vw 35px;
 
-    font: 700 17px system-ui;
+    text-align: center;
+    font: 400 13px system-ui;
     letter-spacing: .2px
 }
 
 /* - */
 
 section.e ul {
-    margin-bottom: 120px
+    margin-inline: 6vw
 }
 
-section.e ul img {
+section.e img {
     width: 100%;
     height: auto;
 
     -webkit-user-drag: none
 }
 
+section.e li:first-child img {
+    border-radius: 15px 15px 0 0
+}
+
+section.e li:last-child img {
+    border-radius: 0 0 15px 15px
+}
+
 /* - */
 
-section.e>p {
+section.e p {
     margin: 100px 15vw 110px;
 
     text-align: center;
@@ -442,88 +458,17 @@ section.e a {
     text-underline-offset: 3px
 }
 
-section.e .i {
-    position: fixed;
-    inset: auto 35px 35px;
-
-    display: flex;
-    justify-content: space-between
-}
-
-section.e .i .a {
-    padding: 21px 9px 9px;
-
-    outline: 3px solid #ffffff0d;
-    border-radius: 50%;
-
-    display: flex;
-
-    background-color: #131313
-}
-
-section.e .i img {
-    border-radius: 50%
-}
-
-section.e .i img+img {
-    margin: -12px 0 0 -8px;
-
-    clip-path: path("M20 0v20h-9.09A12.5 12.5 0 0 0 .01 9.09L0 0h20Z")
-}
-
-section.e .i .b {
-    outline: 3px solid #ffffff0d;
-    border-radius: 50%;
-
-    background-color: #131313
-}
-
 section.e svg {
-    display: block
-}
-
-/* - */
-
-section.e .f {
     position: fixed;
-    inset: 0 0 auto;
+    inset: 0 6vw auto auto;
 
-    height: env(safe-area-inset-top);
-
-    background-color: #0d0d0d90
-}
-
-/* - */
-
-section.e .s {
-    position: fixed;
-    inset: 90px auto auto 32vw;
-
-    border-radius: 27px;
-    outline: 3px solid #ffffff0d;
-
-    background-color: #191919;
-    color: #999
-}
-
-section.e .s li {
-    padding: 15px 40px 15px 30px;
-
-    font: 400 15px system-ui;
+    mix-blend-mode: difference;
 
     cursor: pointer
 }
 
-section.e .s li:first-child {
-    padding: 30px 40px 15px 30px
-}
-
-section.e .s li:last-child {
-    padding: 15px 40px 30px 30px
-}
-
-section.e .s li:hover {
-    color: #fff
+section.e svg:hover path {
+    stroke: #ffffff90
 }
 
 /* - */
@@ -550,6 +495,47 @@ section.w svg {
 
 section.w svg:hover {
     opacity: 1
+}
+
+/* r - prompt */
+
+section.r {
+    pointer-events: none;
+    opacity: 0;
+
+    position: fixed;
+    inset: auto 0 50px;
+
+    width: max-content;
+
+    margin-inline: auto;
+    padding: 17px 40px 20px 20px;
+
+    border-radius: 18px;
+
+    font-size: 14px;
+    line-height: 1.4;
+
+    background-color: #212121;
+    color: #999;
+
+    transition: opacity .5s ease 2s
+}
+
+section.r code {
+    width: 20px;
+
+    border-radius: 4px;
+
+    display: inline-block;
+
+    text-align: center;
+    line-height: 1.2;
+
+    background-color: #535353;
+    color: #c9c9c9;
+
+    box-shadow: 0 2px 0 #393939
 }
 
 /* l - load spinner */
@@ -584,18 +570,6 @@ section.l {
         opacity: 1;
         transform: scale(1.2)
     }
-}
-
-/* - */
-
-img[data-src] {
-    opacity: 0
-}
-
-img {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
 /* - */
