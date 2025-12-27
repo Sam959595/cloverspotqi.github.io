@@ -24,7 +24,8 @@ div.z .a {
 }
 
 div.z .a h1 {
-    font: 600 17px system-ui;
+    font: 700 21px system-ui;
+    letter-spacing: .4px;
 
     color: #444
 }
