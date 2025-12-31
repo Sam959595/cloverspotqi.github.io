@@ -60,7 +60,8 @@ div.z .b a {
 div.z .b li {
     display: grid;
     align-items: end;
-    grid-template-rows: 1fr 48px
+    justify-items: center;
+    grid-template-rows: 1fr 78px
 }
 
 div.z .b a img {
@@ -83,8 +84,6 @@ div.z .b a:after {
 }
 
 div.z .b div {
-    margin-top: 35px;
-
     border-radius: 30px;
 
     padding: 15px;
@@ -209,10 +208,6 @@ section.c {
     cursor: pointer
 }
 
-section.c:hover {
-    background-color: #191919
-}
-
 body:has(section.s) section.c {
     background-color: #191919
 }
@@ -261,10 +256,6 @@ section.b {
     background-color: #131313;
 
     cursor: pointer
-}
-
-section.b:hover {
-    background-color: #191919
 }
 
 @keyframes x {
@@ -445,10 +436,6 @@ section.e .s li:last-child {
     padding: 15px 40px 30px 30px
 }
 
-section.e .s li:hover {
-    color: #fff
-}
-
 /* - */
 
 section.w ul {
@@ -469,10 +456,6 @@ section.w li:last-child img {
 
 section.w svg {
     opacity: 0
-}
-
-section.w svg:hover {
-    opacity: 1
 }
 
 /* l - load spinner */
