@@ -183,7 +183,7 @@ section.j {
     opacity: 1;
 
     position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) 24vw auto;
+    inset: calc(15px + env(safe-area-inset-top)) 23vw auto;
 
     display: flex;
     justify-content: space-between;
@@ -200,7 +200,7 @@ body:has(section.e.q) section.j {
 section.c {
     pointer-events: auto;
 
-    padding: 22px 20px;
+    padding: 22px 20px 21px;
 
     border-radius: 25px;
     outline: 3px solid #ffffff0d;
@@ -218,8 +218,8 @@ body:has(section.s) section.c {
 }
 
 section.c div {
-    width: 6px;
-    height: 6px;
+    width: 7px;
+    height: 7px;
 
     border-radius: 50%;
 
