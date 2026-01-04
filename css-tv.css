@@ -206,6 +206,7 @@ section.c {
     outline: 3px solid #ffffff0d;
 
     display: flex;
+    column-gap: 10px;
 
     background-color: #131313;
 
@@ -216,12 +217,7 @@ body:has(section.s) section.c {
     background-color: #191919
 }
 
-section.c ul {
-    display: flex;
-    column-gap: 10px;
-}
-
-section.c li {
+section.c div {
     width: 6px;
     height: 6px;
 
