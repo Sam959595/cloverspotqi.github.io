@@ -1,5 +1,7 @@
-html {
-    overscroll-behavior: none
+@media (display-mode: standalone) {
+    html {
+        overscroll-behavior: none
+    }
 }
 
 body {
@@ -9,9 +11,11 @@ body {
 
 /* z */
 
-div.z {
-    overflow-y: scroll;
-    height: 100vh
+@media (display-mode: standalone) {
+    div.z {
+        overflow-y: scroll;
+        height: 100vh
+    }
 }
 
 /* p */
@@ -179,7 +183,7 @@ section.j {
     opacity: 1;
 
     position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) 21vw auto;
+    inset: calc(15px + env(safe-area-inset-top)) 24vw auto;
 
     display: flex;
     justify-content: space-between;
@@ -196,7 +200,7 @@ body:has(section.e.q) section.j {
 section.c {
     pointer-events: auto;
 
-    padding: 15px;
+    padding: 22px 20px;
 
     border-radius: 25px;
     outline: 3px solid #ffffff0d;
@@ -212,23 +216,22 @@ body:has(section.s) section.c {
     background-color: #191919
 }
 
-section.c img {
-    border-radius: 50%
+section.c ul {
+    display: flex;
+    column-gap: 10px;
 }
 
-section.c img+img {
-    margin-left: -5px;
+section.c li {
+    width: 6px;
+    height: 6px;
 
-    clip-path: path("M20 0v20H3a11.93 11.93 0 0 0 5.46-10C8.46 5.83 6.3 2.15 3 0h17Z")
+    border-radius: 50%;
+
+    background-color: #3b3b3b
 }
 
-section.c p {
-    margin: 1px 2px 0 8px;
-
-    font: 500 14px system-ui;
-    letter-spacing: .2px;
-
-    color: #777
+section.c .a {
+    background-color: #fff
 }
 
 /* 2 obj */
