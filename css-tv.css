@@ -63,9 +63,7 @@ div.z .b a {
 
 div.z .b li {
     display: grid;
-    align-items: end;
-    justify-items: center;
-    grid-template-rows: 1fr 78px
+    align-items: end
 }
 
 div.z .b a img {
