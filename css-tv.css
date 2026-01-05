@@ -20,12 +20,7 @@ body {
 
 /* p */
 
-div.z .a {
-    position: sticky;
-    inset: 20vh 0 auto;
 
-    margin-inline: 12vw
-}
 
 div.z .a h1 {
     font: 700 21px system-ui;
@@ -52,7 +47,7 @@ div.z .b {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15vw 6vw
+    gap: 20vw 6vw
 }
 
 div.z .b a {
@@ -62,7 +57,7 @@ div.z .b a {
 }
 
 div.z .b li {
-    display: grid;
+    display: flex;
     align-items: end
 }
 
