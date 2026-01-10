@@ -67,11 +67,15 @@ div.z .h .b img {
 }
 
 div.z .h .a {
-    padding: 30px;
+    padding: 40px;
 
     border-radius: 0 0 30px 30px;
 
-    background-color: #2a2a2a;
+    background-color: #191919;
+}
+
+div.z .h h1 {
+    font: 500 19px system-ui;
 }
 
 /* - */
