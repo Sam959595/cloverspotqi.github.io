@@ -152,6 +152,7 @@ section.v {
     height: 100vh;
 
     background-size: 100%;
+    background-position: center;
     background-color: #0d0d0d;
 
     transition: opacity .15s ease-out
@@ -170,7 +171,7 @@ section.v h1 {
 }
 
 section.v h2 {
-    margin-inline: 10vw;
+    margin: 5vw 10vw 10vw;
 
     font: 700 20px/1.2 system-ui;
     letter-spacing: .4px
