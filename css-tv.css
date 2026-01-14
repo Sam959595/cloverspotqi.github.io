@@ -21,61 +21,77 @@ body {
 /* - */
 
 div.z .h {
-    margin: 62vh 7vw 20vh;
+    margin: 15vh 7vw 20vh;
 
     display: grid;
+    row-gap: 30px
 }
 
-div.z .h .b {
-    padding: 60px 30px 0;
+div.z .h a {
+    position: relative;
 
-    border-radius: 30px 30px 0 0;
+    overflow: hidden;
+    border-radius: 30px;
 
-    background-color: #191919;
+    display: block
 }
 
-div.z .h .b ul {
-    display: flex;
-    align-items: end
+div.z .h a>img {
+    width: 100%;
+    height: auto
 }
 
-div.z .h .b li {
-    position: relative
-}
-
-div.z .h .b li:after {
+div.z .h a:after {
     position: absolute;
     inset: 0;
 
     content: "";
 
-    border-radius: 4px;
+    border-radius: 30px;
+    border: 3px solid #ffffff08;
 
-    background-size: 100% 100%;
-    background-image: url('4.png')
-}
-
-div.z .h .b li+li {
-    margin-left: -132px;
-}
-
-div.z .h .b img {
-    width: 200px;
-    height: auto;
-
-    border-radius: 4px
-}
-
-div.z .h .a {
-    padding: 40px;
-
-    border-radius: 0 0 30px 30px;
-
-    background-color: #191919;
+    transition: background-color .2s
 }
 
 div.z .h h1 {
-    font: 500 19px system-ui;
+    margin: 35px 35px 20px;
+
+    font: 500 19px system-ui
+}
+
+div.z .h p {
+    margin: 20px 35px 35px;
+
+    font: 500 17px system-ui;
+
+    color: #aaa
+}
+
+/* - */
+
+div.z .h div {
+    margin: 35px;
+
+    display: flex;
+    column-gap: 10px
+}
+
+div.z .h div img {
+    border-radius: 50%
+}
+
+div.z .h div img+img {
+    margin-left: -19px;
+
+    clip-path: path("M30 0v30H4.95a17.98 17.98 0 0 0 0-30z")
+}
+
+div.z .h h2 {
+    margin: 5px 0 0 10px;
+
+    font: 500 13px system-ui;
+
+    color: #555
 }
 
 /* - */
