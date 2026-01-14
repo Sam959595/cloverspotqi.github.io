@@ -24,7 +24,7 @@ div.z .h {
     margin: 15vh 7vw 20vh;
 
     display: grid;
-    row-gap: 30px
+    row-gap: 40px
 }
 
 div.z .h a {
@@ -70,10 +70,9 @@ div.z .h p {
 /* - */
 
 div.z .h div {
-    margin: 35px;
+    margin: 45px 35px 35px;
 
-    display: flex;
-    column-gap: 10px
+    display: flex
 }
 
 div.z .h div img {
@@ -81,13 +80,13 @@ div.z .h div img {
 }
 
 div.z .h div img+img {
-    margin-left: -19px;
+    margin: -11px 0 0 -19px;
 
-    clip-path: path("M30 0v30H4.95a17.98 17.98 0 0 0 0-30z")
+    clip-path: path("M15 0a15 15 0 0 1 6.65 28.45Q22 26.77 22 25A17 17 0 0 0 1.55 8.35 15 15 0 0 1 15 0")
 }
 
 div.z .h h2 {
-    margin: 5px 0 0 10px;
+    margin: 3px 0 0 20px;
 
     font: 500 13px system-ui;
 
