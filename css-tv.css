@@ -70,9 +70,10 @@ div.z .h p {
 /* - */
 
 div.z .h div {
-    margin: 45px 35px 35px;
+    margin: 17px 20px;
 
-    display: flex
+    display: flex;
+    column-gap: 15px
 }
 
 div.z .h div img {
@@ -80,17 +81,19 @@ div.z .h div img {
 }
 
 div.z .h div img+img {
-    margin: -11px 0 0 -19px;
+    margin-left: -19px;
 
-    clip-path: path("M15 0a15 15 0 0 1 6.65 28.45Q22 26.77 22 25A17 17 0 0 0 1.55 8.35 15 15 0 0 1 15 0")
+    clip-path: path("M18 0v18H2.97a10.79 10.79 0 0 0 0-18H18Z")
 }
 
-div.z .h h2 {
-    margin: 3px 0 0 20px;
+div.z .h h6 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 
-    font: 500 13px system-ui;
-
-    color: #555
+    font: 500 14px system-ui;
+    letter-spacing: .4px
 }
 
 /* - */
