@@ -54,15 +54,16 @@ div.z .h a:after {
 }
 
 div.z .h h1 {
-    margin: 35px 35px 20px;
+    margin: 30px 30px 20px;
 
     font: 500 19px system-ui
 }
 
 div.z .h p {
-    margin: 20px 35px 35px;
+    margin: 20px 30px 30px;
 
     font: 500 17px system-ui;
+    letter-spacing: .4px;
 
     color: #aaa
 }
@@ -97,6 +98,8 @@ div.z .h h6 {
 }
 
 div.z .h u {
+    margin-left: 5px;
+    
     color: #aaa
 }
 
@@ -254,7 +257,7 @@ body:has(section.e.q) section.j {
 section.c {
     pointer-events: auto;
 
-    padding: 21.5px 20px;
+    padding: 15px 20px;
 
     border-radius: 25px;
     outline: 3px solid #ffffff0d;
@@ -271,17 +274,11 @@ body:has(section.s) section.c {
     background-color: #191919
 }
 
-section.c div {
-    width: 7px;
-    height: 7px;
+section.c h1 {
+    font: 600 15px system-ui;
+    letter-spacing: .4px;
 
-    border-radius: 50%;
-
-    background-color: #3b3b3b
-}
-
-section.c .a {
-    background-color: #fff
+    color: #aaa
 }
 
 /* 2 obj */
