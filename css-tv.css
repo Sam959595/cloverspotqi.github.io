@@ -83,7 +83,7 @@ div.z .h div a {
     border-radius: 21px;
 
     display: flex;
-    column-gap: 8px;
+    column-gap: 6px;
 
     background-color: #151515
 }
@@ -93,9 +93,7 @@ div.z .h div img {
 }
 
 div.z .h h6 {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    margin-left: 2px;
 
     font: 500 14px system-ui;
     letter-spacing: .4px
