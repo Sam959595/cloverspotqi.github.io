@@ -94,9 +94,11 @@ div.z .h div img {
 
 div.z .h h6 {
     font: 500 14px system-ui;
-    letter-spacing: .4px;
+    letter-spacing: .4px
+}
 
-    color: #fff
+div.z .h div a+a h6 {
+    color: #aaa
 }
 
 /* - */
