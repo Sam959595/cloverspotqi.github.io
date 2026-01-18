@@ -54,13 +54,13 @@ div.z .h a:after {
 }
 
 div.z .h h1 {
-    margin: 30px 30px 20px;
+    margin: 30px;
 
     font: 500 19px system-ui
 }
 
 div.z .h p {
-    margin: 20px 30px 30px;
+    margin: 30px;
 
     font: 500 17px system-ui;
     letter-spacing: .4px;
@@ -70,11 +70,22 @@ div.z .h p {
 
 /* - */
 
-div.z .h div {
-    margin: 17px 20px;
+div.z .h .a {
+    margin: 17px;
 
     display: flex;
-    column-gap: 15px
+    column-gap: 10px
+}
+
+div.z .h .a div {
+    padding: 12px;
+
+    border-radius: 21px;
+
+    display: flex;
+    column-gap: 10px;
+
+    background-color: #151515
 }
 
 div.z .h div img {
@@ -94,12 +105,14 @@ div.z .h h6 {
     overflow: hidden;
 
     font: 500 14px system-ui;
-    letter-spacing: .4px
+    letter-spacing: .4px;
+
+    color: #aaa
 }
 
 div.z .h u {
     margin-left: 5px;
-    
+
     color: #aaa
 }
 
@@ -257,7 +270,7 @@ body:has(section.e.q) section.j {
 section.c {
     pointer-events: auto;
 
-    padding: 15px 20px;
+    padding: 21.5px 20px;
 
     border-radius: 25px;
     outline: 3px solid #ffffff0d;
@@ -274,11 +287,17 @@ body:has(section.s) section.c {
     background-color: #191919
 }
 
-section.c h1 {
-    font: 600 15px system-ui;
-    letter-spacing: .4px;
+section.c div {
+    width: 7px;
+    height: 7px;
 
-    color: #aaa
+    border-radius: 50%;
+
+    background-color: #3b3b3b
+}
+
+section.c .a {
+    background-color: #fff
 }
 
 /* 2 obj */
