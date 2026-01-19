@@ -102,7 +102,9 @@ div.z .h h6 {
     margin-left: 2px;
 
     font: 500 14px system-ui;
-    letter-spacing: .4px
+    letter-spacing: .4px;
+
+    color: #999
 }
 
 div.z .h time {
