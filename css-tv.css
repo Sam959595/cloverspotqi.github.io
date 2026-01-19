@@ -71,7 +71,13 @@ div.z .h p {
 /* - */
 
 div.z .h div {
+    overflow-x: scroll;
+
     margin: 17px;
+
+    width: calc(100vw - 14vw - 34px);
+
+    border-radius: 21px;
 
     display: flex;
     column-gap: 10px
@@ -96,18 +102,16 @@ div.z .h h6 {
     margin-left: 2px;
 
     font: 500 14px system-ui;
-    letter-spacing: .4px
+    letter-spacing: .4px;
+
+    color: #999
 }
 
 div.z .h time {
     font: 500 14px system-ui;
     letter-spacing: .4px;
 
-    color: #999
-}
-
-div.z .h div a+a h6 {
-    color: #999
+    color: #666
 }
 
 /* - */
