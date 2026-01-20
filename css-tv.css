@@ -20,6 +20,39 @@ body {
 
 /* - */
 
+div.z .y {
+    position: relative;
+
+    margin: 26vh 24vw 20vh;
+}
+
+div.z .y a {
+    position: relative;
+
+    display: block
+}
+
+div.z .y a img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 4px
+}
+
+div.z .y a:after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    border-radius: 4px;
+
+    background-size: 100% 100%;
+    background-image: url('4.png')
+}
+
+/* - */
+
 div.z .h {
     margin: 15vh 7vw 20vh;
 
@@ -75,7 +108,7 @@ div.z .h div {
 
     margin: 17px;
 
-    width: calc(100vw - 14vw - 34px);
+    width: calc(86vw - 34px);
 
     border-radius: 21px;
 
