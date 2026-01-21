@@ -21,9 +21,11 @@ body {
 /* - */
 
 div.z .y {
-    position: relative;
+    position: sticky;
 
-    margin: 26vh 24vw 20vh;
+    inset: 26vh 0 20vh;
+
+    margin-inline: 20vw
 }
 
 div.z .y a {
@@ -54,10 +56,14 @@ div.z .y a:after {
 /* - */
 
 div.z .h {
+    position: relative;
+    
     margin: 15vh 7vw 20vh;
 
     display: grid;
-    row-gap: 40px
+    row-gap: 40px;
+
+    background-color: #0d0d0d
 }
 
 div.z .h li>a {
