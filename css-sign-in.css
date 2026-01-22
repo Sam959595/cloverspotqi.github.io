@@ -20,27 +20,35 @@ body {
 
 /* p */
 
-div.z .a {
+div.z input {
     position: sticky;
-    inset: 20vh 0 auto;
+    inset: 34vh 0 auto;
 
-    margin-inline: 12vw
+    width: 100vw;
+
+    padding: 27px 12vw;
+
+    font: 700 40px system-ui;
+
+    display: block;
+
+    background: none;
+    color: #fff
 }
 
-div.z .a h1 {
-    font: 700 21px system-ui;
-    letter-spacing: .4px;
-
-    color: #444
-}
-
-div.z .a li {
-    margin-block: 25px;
-
-    font: 600 24px ui-rounded;
-    letter-spacing: .4px;
-
+div.z input::placeholder {
     color: #777
+}
+
+div.z input::-webkit-search-cancel-button {
+    appearance: none;
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-width='2.7' d='M18 2 2 18M2 2l16 16'/%3E%3C/svg%3E");
+
+    cursor: pointer
 }
 
 /* - */
@@ -262,7 +270,7 @@ section.j {
     opacity: 1;
 
     position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) 21vw auto;
+    inset: calc(15px + env(safe-area-inset-top)) 22vw auto;
 
     display: flex;
     justify-content: space-between;
