@@ -18,102 +18,182 @@ body {
     }
 }
 
-/* p */
-
-div.z input {
-    position: sticky;
-    inset: 34vh 0 auto;
-
-    width: 100vw;
-
-    padding: 27px 12vw;
-
-    font: 700 40px system-ui;
-
-    display: block;
-
-    background: none;
-    color: #fff
-}
-
-div.z input::placeholder {
-    color: #777
-}
-
-div.z input::-webkit-search-cancel-button {
-    appearance: none;
-
-    width: 20px;
-    height: 20px;
-
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-width='2.7' d='M18 2 2 18M2 2l16 16'/%3E%3C/svg%3E");
-
-    cursor: pointer
-}
-
 /* - */
 
-div.z .b {
-    position: relative;
+div.z .y {
+    position: sticky;
 
-    margin: 70vh 5vw 20vh;
+    inset: 26vh 0 20vh;
 
-    display: grid;
-    row-gap: 70px;
-
-    background-color: #0d0d0d
+    margin-inline: 20vw
 }
 
-div.z .b a {
+div.z .y a {
     position: relative;
 
     display: block
 }
 
-div.z .b a img {
+div.z .y a img {
     width: 100%;
     height: auto;
 
-    border-radius: 30px
+    border-radius: 4px
 }
 
-div.z .b a:after {
+div.z .y a:after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    border-radius: 4px;
+
+    background-size: 100% 100%;
+    background-image: url('4.png')
+}
+
+/* - */
+
+div.z .h {
+    position: relative;
+
+    margin: 45vh 7vw 20vh;
+
+    display: grid;
+    row-gap: 40px;
+
+    background-color: #0d0d0d
+}
+
+div.z .h li>a {
+    position: relative;
+
+    overflow: hidden;
+    border-radius: 30px;
+
+    display: block
+}
+
+div.z .h li>a img {
+    width: 100%;
+    height: auto
+}
+
+div.z .h li>a:after {
     position: absolute;
     inset: 0;
 
     content: "";
 
     border-radius: 30px;
-    border: 2px solid #ffffff15;
+    border: 3px solid #ffffff08;
 
     transition: background-color .2s
 }
 
-div.z .b div {
-    margin: 17px 20px;
+div.z .h h1 {
+    margin: 30px;
 
-    display: flex;
-    column-gap: 15px
+    font: 500 19px system-ui
 }
 
-div.z .b div img {
+div.z .h p {
+    margin: 30px;
+
+    font: 500 17px system-ui;
+    letter-spacing: .4px;
+
+    color: #aaa
+}
+
+/* - */
+
+div.z .h div {
+    overflow-x: scroll;
+
+    margin: 17px;
+
+    width: calc(86vw - 34px);
+
+    border-radius: 21px;
+
+    display: flex;
+    column-gap: 10px
+}
+
+div.z .h div a {
+    padding: 12px 15px 12px 12px;
+
+    border-radius: 21px;
+
+    display: flex;
+    column-gap: 6px;
+
+    background-color: #151515
+}
+
+div.z .h div img {
     border-radius: 50%
 }
 
-div.z .b div img+img {
-    margin-left: -19px;
-
-    clip-path: path("M18 0v18H2.97a10.79 10.79 0 0 0 0-18H18Z")
-}
-
-div.z .b h1 {
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+div.z .h h6 {
+    margin-left: 2px;
 
     font: 500 14px system-ui;
-    letter-spacing: .4px
+    letter-spacing: .4px;
+
+    color: #999
+}
+
+div.z .h time {
+    font: 500 14px system-ui;
+    letter-spacing: .4px;
+
+    color: #666
+}
+
+/* - */
+
+div.z ul.b {
+    position: relative;
+
+    margin: 62vh 7vw 20vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 46vh;
+    column-gap: 6vw
+}
+
+div.z ul.b a {
+    position: relative;
+
+    display: block
+}
+
+div.z ul.b li {
+    display: flex;
+    align-items: end
+}
+
+div.z ul.b a img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 4px
+}
+
+div.z ul.b a:after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    border-radius: 4px;
+
+    background-size: 100% 100%;
+    background-image: url('4.png')
 }
 
 /* f */
@@ -151,6 +231,8 @@ section.v {
 
     height: 100vh;
 
+    background-size: 100%;
+    background-position: center;
     background-color: #0d0d0d;
 
     transition: opacity .15s ease-out
@@ -161,106 +243,45 @@ section.s {
     opacity: 1
 }
 
-section.v .a {
-    margin: calc(110px + env(safe-area-inset-top)) 0 50px;
-    padding-inline: 5vw;
+section.v h1 {
+    margin: 60vh 10vw 5vw;
 
-    overflow-x: scroll;
+    font: 700 extra-condensed 47px/1 system-ui;
+    letter-spacing: .4px
+}
+
+section.v h2 {
+    margin: 5vw 10vw 10vw;
+
+    font: 700 20px/1.2 system-ui;
+    letter-spacing: .4px
+}
+
+section.v ul {
+    position: fixed;
+    inset: calc(15px + env(safe-area-inset-top)) 10vw auto;
 
     display: flex;
-    column-gap: 20px;
-
-    font: 500 13px system-ui;
-    letter-spacing: .2px
+    column-gap: 8px
 }
 
-section.v .a li {
-    padding: 12px 14px;
+section.v li {
+    width: 100%;
+    height: 4px;
 
-    border-radius: 20px;
+    border-radius: 2px;
 
-    color: #777;
+    background-color: #ffffff30;
 
-    cursor: pointer
+    box-shadow: 0 0 10px #00000030
 }
 
-section.v .a li:hover {
-    background-color: #19191980
-}
+section.v li div {
+    height: inherit;
 
-section.v .a .e {
-    background-color: #191919;
-    color: #fff
-}
+    border-radius: inherit;
 
-section.v .b {
-    margin: 0 8px calc(8px + env(safe-area-inset-bottom));
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px
-}
-
-section.v input {
-    width: inherit;
-    height: 40px;
-
-    padding: 0 14px;
-
-    border-radius: 20px;
-
-    font: 500 13px system-ui;
-    letter-spacing: .2px;
-
-    background-color: #191919;
-    color: #fff
-}
-
-section.v input::placeholder {
-    color: #777
-}
-
-section.v .b li {
-    padding: 15px 10px 20px;
-
-    border-radius: 22px;
-
-    text-align: right;
-
-    background-color: #191919;
-
-    cursor: pointer
-}
-
-section.v .b li:hover {
-    background-color: #1f1f1f
-}
-
-section.v img {
-    position: relative;
-
-    margin: 10px auto 30px;
-
-    border-radius: 50%
-}
-
-section.v .b div {
-    flex-grow: 1;
-
-    text-align: center
-}
-
-section.v .b h1 {
-    font: 400 13px system-ui;
-    letter-spacing: .2px
-}
-
-section.v p {
-    margin-top: 4px;
-
-    font-size: 12px;
-
-    color: #666
+    background-color: #fff
 }
 
 /* j */
@@ -270,7 +291,7 @@ section.j {
     opacity: 1;
 
     position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) 22vw auto;
+    inset: calc(15px + env(safe-area-inset-top)) 23vw auto;
 
     display: flex;
     justify-content: space-between;
@@ -287,43 +308,34 @@ body:has(section.e.q) section.j {
 section.c {
     pointer-events: auto;
 
-    padding: 15px;
+    padding: 21.5px 20px;
 
     border-radius: 25px;
     outline: 3px solid #ffffff0d;
 
     display: flex;
+    column-gap: 10px;
 
     background-color: #131313;
 
     cursor: pointer
 }
 
-section.c:hover {
-    background-color: #191919
-}
-
 body:has(section.s) section.c {
     background-color: #191919
 }
 
-section.c img {
-    border-radius: 50%
+section.c div {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background-color: #3b3b3b
 }
 
-section.c img+img {
-    margin-left: -5px;
-
-    clip-path: path("M20 0v20H3a11.93 11.93 0 0 0 5.46-10C8.46 5.83 6.3 2.15 3 0h17Z")
-}
-
-section.c p {
-    margin: 1px 2px 0 8px;
-
-    font: 500 14px system-ui;
-    letter-spacing: .2px;
-
-    color: #777
+section.c .a {
+    background-color: #fff
 }
 
 /* 2 obj */
@@ -351,10 +363,6 @@ section.b {
     background-color: #131313;
 
     cursor: pointer
-}
-
-section.b:hover {
-    background-color: #191919
 }
 
 @keyframes x {
@@ -535,10 +543,6 @@ section.e .s li:last-child {
     padding: 15px 40px 30px 30px
 }
 
-section.e .s li:hover {
-    color: #fff
-}
-
 /* - */
 
 section.w ul {
@@ -559,10 +563,6 @@ section.w li:last-child img {
 
 section.w svg {
     opacity: 0
-}
-
-section.w svg:hover {
-    opacity: 1
 }
 
 /* l - load spinner */
