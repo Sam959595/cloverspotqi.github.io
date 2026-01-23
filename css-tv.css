@@ -20,45 +20,16 @@ body {
 
 /* - */
 
-div.z .y {
-    position: sticky;
+div.z>h1 {
+    margin: 17vh 11vw 7vw;
 
-    inset: 26vh 0 20vh;
+    font: 800 27px system-ui;
 
-    margin-inline: 20vw
+    color: #999
 }
-
-div.z .y a {
-    position: relative;
-
-    display: block
-}
-
-div.z .y a img {
-    width: 100%;
-    height: auto;
-
-    border-radius: 4px
-}
-
-div.z .y a:after {
-    position: absolute;
-    inset: 0;
-
-    content: "";
-
-    border-radius: 4px;
-
-    background-size: 100% 100%;
-    background-image: url('4.png')
-}
-
-/* - */
 
 div.z .h {
-    position: relative;
-
-    margin: 45vh 7vw 20vh;
+    margin-inline: 7vw;
 
     display: grid;
     row-gap: 40px;
@@ -151,48 +122,6 @@ div.z .h time {
     letter-spacing: .4px;
 
     color: #666
-}
-
-/* - */
-
-div.z ul.b {
-    position: relative;
-
-    margin: 62vh 7vw 20vh;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px 6vw
-}
-
-div.z ul.b a {
-    position: relative;
-
-    display: block
-}
-
-div.z ul.b li {
-    display: flex;
-    align-items: end
-}
-
-div.z ul.b a img {
-    width: 100%;
-    height: auto;
-
-    border-radius: 4px
-}
-
-div.z ul.b a:after {
-    position: absolute;
-    inset: 0;
-
-    content: "";
-
-    border-radius: 4px;
-
-    background-size: 100% 100%;
-    background-image: url('4.png')
 }
 
 /* f */
