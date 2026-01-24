@@ -1,5 +1,7 @@
-html {
-    overscroll-behavior: none
+@media (display-mode: standalone) {
+    html {
+        overscroll-behavior: none
+    }
 }
 
 body {
@@ -9,22 +11,24 @@ body {
 
 /* z */
 
-div.z {
-    overflow-y: scroll;
-    height: 100vh
+@media (display-mode: standalone) {
+    div.z {
+        overflow-y: scroll;
+        height: 100vh
+    }
 }
+
+/* p */
 
 div.z input {
     position: sticky;
     inset: 34vh 0 auto;
 
-    margin: 0 auto;
+    width: 100vw;
 
-    width: 70vw;
+    padding: 27px 12vw;
 
-    padding: 27px 30px;
-
-    font: 700 60px system-ui;
+    font: 700 40px system-ui;
 
     display: block;
 
@@ -52,19 +56,12 @@ div.z input::-webkit-search-cancel-button {
 div.z .b {
     position: relative;
 
-    margin: 78vh 30px 20vh;
+    margin: 70vh 5vw 20vh;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 85px 30px;
+    row-gap: 70px;
 
     background-color: #0d0d0d
-}
-
-@media (min-width: 1500px) {
-    div.z .b {
-        grid-template-columns: repeat(5, 1fr)
-    }
 }
 
 div.z .b a {
@@ -92,12 +89,8 @@ div.z .b a:after {
     transition: background-color .2s
 }
 
-div.z .b a:hover:after {
-    background-color: #00000020
-}
-
 div.z .b div {
-    margin: 20px 15px;
+    margin: 17px 20px;
 
     display: flex;
     column-gap: 15px
@@ -110,7 +103,7 @@ div.z .b div img {
 div.z .b div img+img {
     margin-left: -19px;
 
-    clip-path: path("M16 0v16H3a9.66 9.66 0 0 0 4.18-8A9.66 9.66 0 0 0 3 0h13Z")
+    clip-path: path("M18 0v18H2.97a10.79 10.79 0 0 0 0-18H18Z")
 }
 
 div.z .b h1 {
@@ -119,30 +112,8 @@ div.z .b h1 {
     -webkit-box-orient: vertical;
     overflow: hidden;
 
-    font: 500 12px system-ui;
+    font: 500 14px system-ui;
     letter-spacing: .4px
-}
-
-div.z button {
-    margin: 0 auto 20vh;
-
-    padding: 18px;
-
-    border-radius: 27px;
-
-    display: block;
-
-    font: 500 15px system-ui;
-
-    background-color: #fff;
-    color: #111;
-
-    cursor: pointer
-}
-
-
-div.z button:hover {
-    background-color: #ddd
 }
 
 /* f */
@@ -154,29 +125,17 @@ section.f {
     position: fixed;
     inset: 0 0 auto;
 
-    height: 245px;
+    height: 150px;
 
-    background-image: linear-gradient(#00000070 40%, transparent);
+    background-color: #0d0d0d99;
+
+    filter: blur(20px);
 
     transition: opacity .4s ease
 }
 
 section.g {
     opacity: 1
-}
-
-/* r */
-
-section.r {
-    pointer-events: none;
-    opacity: 0;
-
-    position: fixed;
-    inset: 0;
-
-    background-color: #0d0d0d50;
-
-    transition: opacity .15s ease-out
 }
 
 /* v */
@@ -186,16 +145,13 @@ section.v {
     opacity: 0;
 
     position: fixed;
-    inset: 20px 30vw;
+    inset: 0;
 
     overflow-y: scroll;
 
-    height: calc(100vh - 40px);
+    height: 100vh;
 
-    border-radius: 40px;
-    outline: 3px solid #ffffff0d;
-
-    background-color: #131313;
+    background-color: #0d0d0d;
 
     transition: opacity .15s ease-out
 }
@@ -205,84 +161,96 @@ section.s {
     opacity: 1
 }
 
-/* - */
-
-section.v .t {
-    margin-top: 100px;
-    padding-inline: 25px;
+section.v .a {
+    margin: calc(110px + env(safe-area-inset-top)) 0 50px;
+    padding-inline: 5vw;
 
     overflow-x: scroll;
 
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: max-content;
-    column-gap: 10px
+    display: flex;
+    column-gap: 20px;
+
+    font: 500 13px system-ui;
+    letter-spacing: .2px
 }
 
-section.v .t div {
+section.v .a li {
+    padding: 12px 14px;
+
     border-radius: 20px;
 
-    padding: 12px 17px 12px 12px;
-
-    display: flex;
-    column-gap: 10px;
-
-    background-color: #181818;
+    color: #777;
 
     cursor: pointer
 }
 
-section.v .t img+img {
-    margin-left: -16px;
-
-    clip-path: path("M16 0v16H4.64a9.6 9.6 0 0 0 0-16z")
+section.v .a li:hover {
+    background-color: #19191980
 }
 
-section.v h6 {
-    font: 400 12px system-ui;
-    letter-spacing: .2px;
-
-    color: #444
+section.v .a .e {
+    background-color: #191919;
+    color: #fff
 }
 
-section.v u {
-    font-weight: 500;
-
-    color: #666
-}
-
-/* - */
-
-section.v ul {
-    margin: 25px;
+section.v .b {
+    margin: 0 8px calc(8px + env(safe-area-inset-bottom));
 
     display: grid;
-    row-gap: 14px
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px
 }
 
-section.v li {
-    padding: 15px 18px 15px 15px;
+section.v input {
+    width: inherit;
+    height: 40px;
+
+    padding: 0 14px;
+
+    border-radius: 20px;
+
+    font: 500 13px system-ui;
+    letter-spacing: .2px;
+
+    background-color: #191919;
+    color: #fff
+}
+
+section.v input::placeholder {
+    color: #777
+}
+
+section.v .b li {
+    padding: 15px 10px 20px;
 
     border-radius: 22px;
 
-    display: flex;
-    align-items: center;
-    column-gap: 20px;
+    text-align: right;
 
-    background-color: #1d1d1d;
+    background-color: #191919;
 
     cursor: pointer
 }
 
+section.v .b li:hover {
+    background-color: #1f1f1f
+}
+
 section.v img {
+    position: relative;
+
+    margin: 10px auto 30px;
+
     border-radius: 50%
 }
 
-section.v div {
-    flex-grow: 1
+section.v .b div {
+    flex-grow: 1;
+
+    text-align: center
 }
 
-section.v h1 {
+section.v .b h1 {
     font: 400 13px system-ui;
     letter-spacing: .2px
 }
@@ -295,75 +263,6 @@ section.v p {
     color: #666
 }
 
-section.v li svg {
-    padding: 10px;
-
-    border-radius: 50%;
-
-    background-color: #242424
-}
-
-/* - */
-
-section.v .k {
-    position: fixed;
-    inset: 45px calc(30vw + 25px) auto;
-
-    display: flex;
-    justify-content: space-between;
-    column-gap: 25px
-}
-
-section.v button {
-    width: 50px;
-    height: 50px;
-
-    padding: 0;
-
-    border-radius: 50%;
-    outline: 3px solid #ffffff0a;
-
-    background-color: #1d1d1d;
-
-    cursor: pointer
-}
-
-/* - */
-
-section.v input {
-    padding: 14px 20px;
-
-    width: 100%;
-
-    border-radius: 32px;
-    outline: 3px solid #ffffff0a;
-
-    font-size: 14px;
-    letter-spacing: .4px;
-
-    background-color: #1d1d1d;
-    color: #fff
-}
-
-section.v input::placeholder {
-    color: #999
-}
-
-section.v input::-webkit-search-cancel-button {
-    appearance: none;
-
-    width: 16px;
-    height: 16px;
-
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cg fill='none'%3E%3Cpath d='M0 0h16v16H0z'/%3E%3Cpath stroke='%23777' stroke-linecap='round' stroke-width='2' d='M13 3 3 13M3 3l10 10'/%3E%3C/g%3E%3C/svg%3E");
-
-    cursor: pointer
-}
-
-section.v :is(.t div, li, button):hover {
-    background-color: #1f1f1f
-}
-
 /* j */
 
 section.j {
@@ -371,7 +270,7 @@ section.j {
     opacity: 1;
 
     position: fixed;
-    inset: 34px 8vw auto;
+    inset: calc(15px + env(safe-area-inset-top)) 22vw auto;
 
     display: flex;
     justify-content: space-between;
@@ -487,53 +386,14 @@ section.b img {
     border-radius: 50%
 }
 
-/* o */
+/* - */
 
-section.o {
-    opacity: 1;
-
-    position: fixed;
-    inset: 34px 0 auto;
-
-    margin-inline: auto;
-    padding: 10px 10px 10px 20px;
-
-    width: max-content;
-
-    border-radius: 25px;
-    outline: 3px solid #ffffff0d;
-
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-
-    background-color: #131313;
-    color: #999
+section.j :is(svg g, .b) {
+    transition: opacity .4s ease
 }
 
-section.o h1 {
-    font: 500 14px system-ui;
-    letter-spacing: .2px
-}
-
-section.o button {
-    padding-inline: 10px;
-
-    height: 30px;
-
-    border-radius: 15px;
-
-    font: 500 12px system-ui;
-    letter-spacing: .2px;
-
-    background-color: #222;
-    color: #777;
-
-    cursor: pointer
-}
-
-section.o button:hover {
-    background-color: #2e2e2e
+section.x :is(svg g, .b) {
+    opacity: .3
 }
 
 /* e */
@@ -547,9 +407,7 @@ section.e {
 
     overflow-y: scroll;
 
-    background-color: #0d0d0dde;
-
-    transition: opacity .15s ease-out
+    background-color: #0d0d0d
 }
 
 section.q {
@@ -559,55 +417,47 @@ section.q {
 
 /* - */
 
-section.e .d {
-    position: relative;
+section.e h1 {
+    margin: calc(25px + env(safe-area-inset-top)) 35px 35px;
 
-    margin: 0 5vw 5vw
+    font: 700 17px system-ui;
+    letter-spacing: .2px
 }
 
-section.e .d:after {
-    position: absolute;
-    inset: 0;
+/* - */
 
-    content: "";
-
-    border: 2px solid #ffffff15;
-    border-radius: 30px
+section.e ul {
+    margin-bottom: 120px
 }
 
-section.e .d img {
+section.e ul img {
     width: 100%;
     height: auto;
 
     -webkit-user-drag: none
 }
 
-section.e .d li:first-child img {
-    border-radius: 30px 30px 0 0
-}
-
-section.e .d li:last-child img {
-    border-radius: 0 0 30px 30px
-}
-
 /* - */
 
-section.e h1 {
-    margin: 50px 14vw;
+section.e>p {
+    margin: 100px 15vw 110px;
 
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: .2px;
 
-    font: 600 17px system-ui;
-    letter-spacing: .2px
+    color: #999
 }
 
-/* - */
+section.e a {
+    text-decoration-line: underline;
+    text-decoration-skip: none;
+    text-underline-offset: 3px
+}
 
 section.e .i {
     position: fixed;
-    inset: 34px 8vw auto;
+    inset: auto 35px 35px;
 
     display: flex;
     justify-content: space-between
@@ -621,9 +471,7 @@ section.e .i .a {
 
     display: flex;
 
-    background-color: #131313;
-
-    cursor: pointer
+    background-color: #131313
 }
 
 section.e .i img {
@@ -640,17 +488,22 @@ section.e .i .b {
     outline: 3px solid #ffffff0d;
     border-radius: 50%;
 
-    background-color: #131313;
-
-    cursor: pointer
-}
-
-section.e .i :is(.a, .b):hover {
-    background-color: #191919
+    background-color: #131313
 }
 
 section.e svg {
     display: block
+}
+
+/* - */
+
+section.e .f {
+    position: fixed;
+    inset: 0 0 auto;
+
+    height: env(safe-area-inset-top);
+
+    background-color: #0d0d0d90
 }
 
 /* - */
@@ -688,22 +541,19 @@ section.e .s li:hover {
 
 /* - */
 
-section.w .d {
-    margin: 0;
-
-    border-radius: 0;
-    outline: none
+section.w ul {
+    margin-inline: 0
 }
 
-section.w .i {
+section.w :is(h1, p) {
     display: none
 }
 
-section.w .d li:first-child img {
+section.w li:first-child img {
     border-radius: 0
 }
 
-section.w .d li:last-child img {
+section.w li:last-child img {
     border-radius: 0
 }
 
@@ -713,67 +563,6 @@ section.w svg {
 
 section.w svg:hover {
     opacity: 1
-}
-
-/* m */
-
-section.m {
-    position: fixed;
-    inset: 0;
-
-    display: grid;
-    grid-template-columns: 40% 60%;
-
-    background-color: #0d0d0d
-}
-
-section.m h1 {
-    margin-top: 20vh;
-
-    text-align: center;
-    font: 900 38px system-ui
-}
-
-section.m u {
-    color: #aa7cff
-}
-
-section.m .a {
-    margin-block: 40vh 40px;
-
-    display: flex;
-    justify-content: center;
-    column-gap: 30px
-}
-
-section.m .a li {
-    border-radius: 50%;
-    border: 3px solid #262626;
-
-    background-color: #212121;
-
-    cursor: pointer
-}
-
-section.m li:hover {
-    background-color: #262626
-}
-
-section.m svg {
-    display: block
-}
-
-section.m p {
-    text-align: center;
-    font-size: 12px;
-
-    color: #555
-}
-
-section.m p a {
-    text-decoration-line: underline;
-    text-decoration-skip: none;
-    text-underline-offset: 2px
 }
 
 /* l - load spinner */
