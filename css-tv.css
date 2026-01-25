@@ -236,34 +236,14 @@ body:has(section.e.q) section.j {
 section.c {
     pointer-events: auto;
 
-    padding: 21.5px 20px;
-
     border-radius: 25px;
     outline: 3px solid #ffffff0d;
 
-    display: flex;
-    column-gap: 10px;
-
-    background-color: #131313;
-
-    cursor: pointer
+    background-color: #131313
 }
 
-body:has(section.s) section.c {
-    background-color: #191919
-}
-
-section.c div {
-    width: 7px;
-    height: 7px;
-
-    border-radius: 50%;
-
-    background-color: #3b3b3b
-}
-
-section.c .a {
-    background-color: #fff
+section.c svg {
+    display: block
 }
 
 /* 2 obj */
