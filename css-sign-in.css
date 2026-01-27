@@ -503,7 +503,9 @@ section.e .f {
 
     height: env(safe-area-inset-top);
 
-    background-color: #0d0d0d90
+    filter: blur(20px);
+
+    background-color: #0d0d0d99
 }
 
 /* - */
