@@ -23,7 +23,7 @@ body {
 div.z>h1 {
     margin: 17vh 11vw 7vw;
 
-    font: 800 27px system-ui;
+    font: 800 21px ui-rounded;
 
     color: #999
 }
@@ -148,29 +148,6 @@ section.g {
 
 /* v */
 
-section.v {
-    pointer-events: none;
-    opacity: 0;
-
-    position: fixed;
-    inset: 0;
-
-    overflow-y: scroll;
-
-    height: 100vh;
-
-    background-size: 100%;
-    background-position: center;
-    background-color: #0d0d0d;
-
-    transition: opacity .15s ease-out
-}
-
-section.s {
-    pointer-events: auto;
-    opacity: 1
-}
-
 section.v h1 {
     margin: 60vh 10vw 5vw;
 
@@ -186,30 +163,120 @@ section.v h2 {
 }
 
 section.v ul {
-    position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) 10vw auto;
+    pointer-events: none;
+    opacity: 0;
 
-    display: flex;
-    column-gap: 8px
+    position: fixed;
+    inset: 0;
+
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+
+    height: 100vh;
+
+    display: grid;
+
+    background-color: #0d0d0d;
+
+    transition: opacity .15s ease-out
+}
+
+section.s ul {
+    pointer-events: auto;
+    opacity: 1
 }
 
 section.v li {
-    width: 100%;
-    height: 4px;
-
-    border-radius: 2px;
-
-    background-color: #ffffff30;
-
-    box-shadow: 0 0 10px #00000030
+    scroll-snap-align: start
 }
 
-section.v li div {
-    height: inherit;
+section.v video {
+    width: 100vw;
+    height: 100vh;
 
-    border-radius: inherit;
+    object-fit: cover
+}
 
-    background-color: #fff
+section.v .a {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #00000080
+}
+
+/* - */
+
+section.v .i {
+    position: absolute;
+    inset: 0 0 auto auto;
+
+    padding: 40px;
+
+    animation: x 10s cubic-bezier(.25, 0, .25, 1) infinite;
+
+    will-change: transform;
+
+    cursor: pointer
+}
+
+@keyframes x {
+    0% {
+        transform: translate(0, 0) scale(1)
+    }
+
+    25% {
+        transform: translate(3px, -4px) scale(1.02)
+    }
+
+    50% {
+        transform: translate(-2px, 3px) scale(1)
+    }
+
+    75% {
+        transform: translate(4px, 2px) scale(1.015)
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1)
+    }
+}
+
+section.v .i img {
+    border-radius: 50%;
+    outline: 1px solid #ffffff08
+}
+
+/* - */
+
+section.v a {
+    margin: 20px;
+
+    width: 100px;
+
+    display: block
+}
+
+section.v a img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 4px
+}
+
+section.v a:after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    border-radius: 4px;
+
+    background-size: 100% 100%;
+    background-image: url('4.png')
 }
 
 /* j */
@@ -268,12 +335,10 @@ section.b {
     border-radius: 50%;
     outline: 3px solid #ffffff0d;
 
-    background-color: #131313;
-
-    cursor: pointer
+    background-color: #131313
 }
 
-@keyframes x {
+@keyframes sa {
     0% {
         opacity: 0;
         transform: scale(0)
@@ -295,7 +360,7 @@ section.b {
 }
 
 section.b.s {
-    animation: x 1s cubic-bezier(.16, 1, .3, 1)
+    animation: sa 1s cubic-bezier(.16, 1, .3, 1)
 }
 
 section.b img {
