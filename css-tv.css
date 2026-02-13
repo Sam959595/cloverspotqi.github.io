@@ -214,7 +214,7 @@ section.v .i {
     position: absolute;
     inset: 0 0 auto auto;
 
-    padding: 40px;
+    margin: calc(40px + env(safe-area-inset-bottom)) 40px 0;
 
     animation: x 10s cubic-bezier(.25, 0, .25, 1) infinite;
 
@@ -253,7 +253,9 @@ section.v .i img {
 /* - */
 
 section.v a {
-    margin: 20px;
+    position: relative;
+    
+    margin: 20px 20px calc(20px + env(safe-area-inset-bottom));
 
     width: 100px;
 
