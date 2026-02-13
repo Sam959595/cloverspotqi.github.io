@@ -10,7 +10,8 @@ body {
 /* z */
 
 div.z {
-    overflow-y: scroll;
+    overflow-x: scroll;
+    overscroll-behavior-x: none;
     scroll-snap-type: x mandatory;
 
     display: grid;
@@ -31,6 +32,8 @@ div.z>section {
 /* - */
 
 section.a {
+    position: relative;
+
     overflow-y: scroll;
 
     width: 100vw;
@@ -164,9 +167,7 @@ section.v ul {
     width: 100vw;
     height: 100vh;
 
-    display: grid;
-
-    background-color: #0d0d0d
+    display: grid
 }
 
 section.v li {
@@ -294,7 +295,7 @@ section.j {
     pointer-events: none;
     opacity: 1;
 
-    position: fixed;
+    position: absolute;
     inset: calc(15px + env(safe-area-inset-top)) 23vw auto;
 
     display: flex;
