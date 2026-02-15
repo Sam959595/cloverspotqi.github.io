@@ -67,7 +67,7 @@ section.f {
     position: fixed;
     inset: 0 0 auto;
 
-    height: 100px;
+    height: 150px;
 
     background-color: #0d0d0d99;
 
@@ -110,7 +110,7 @@ section.j div {
 }
 
 section.x div {
-    opacity: .3
+    opacity: .5
 }
 
 section.j h6 {
