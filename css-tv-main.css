@@ -104,7 +104,13 @@ section.j div {
     display: flex;
     column-gap: 5px;
 
-    background-color: #131313
+    background-color: #131313;
+
+    transition: opacity .4s ease
+}
+
+section.x div {
+    opacity: .3
 }
 
 section.j h6 {
