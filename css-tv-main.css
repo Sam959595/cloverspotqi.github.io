@@ -144,10 +144,11 @@ section.j {
     opacity: 1;
 
     position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) 20vw auto;
+    inset: calc(15px + env(safe-area-inset-top)) 0 auto;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 20px;
 
     transition: opacity .15s cubic-bezier(.16, 1, .3, 1)
 }
@@ -165,17 +166,13 @@ section.c {
 
     overflow-x: scroll;
 
-    width: 120px;
-
-    padding: 15px;
+    padding: 15px 20px;
 
     border-radius: 25px;
     outline: 3px solid #ffffff0d;
 
-    display: grid;
-    grid-auto-flow: column;
-    scroll-snap-type: x mandatory;
-    column-gap: 10px;
+    display: flex;
+    column-gap: 20px;
 
     font: 600 17px system-ui;
     letter-spacing: .2px;
@@ -184,10 +181,6 @@ section.c {
     color: #5d5d5d;
 
     cursor: pointer
-}
-
-section.c div {
-    scroll-snap-align: center
 }
 
 section.c .a {
