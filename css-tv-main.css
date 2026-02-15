@@ -20,7 +20,14 @@ body {
 
 /* - */
 
-ul.w {
+section.w {
+    overflow-y: scroll;
+
+    width: 100vw;
+    height: 100vh
+}
+
+section.w ul {
     margin-block: 20vh;
 
     display: grid;
@@ -29,9 +36,8 @@ ul.w {
     gap: 6px
 }
 
-ul.w img {
-    width: 100%;
-    height: auto
+section.w img {
+    width: 100%
 }
 
 /* - */
