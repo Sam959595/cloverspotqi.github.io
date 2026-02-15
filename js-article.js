@@ -1,153 +1,76 @@
-// tab show or hide
-let n = 0;
-$(window).scroll(() => {
-    let t = window.scrollY,
-        e = $('section.b')[0];
+// Маленькая утилита для удобства
+const $ = (selector, all = false) => all ? document.querySelectorAll(selector) : document.querySelector(selector);
 
-    t > n ? e.classList.add('x') : e.classList.remove('x'); // hide_show
-    n = t <= 0 ? 0 : t
+// DOM-элементы ищутся только один раз при загрузке страницы (а потом используются из памяти)
+const imgElements = $('img[data-src]', true);
+
+// Загрузка изображений lazy-load
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const img = entry.target;
+            const tempImg = new Image();
+            tempImg.src = img.dataset.src;
+            tempImg.onload = () => {
+                img.src = img.dataset.src;
+                img.removeAttribute('data-src');
+            };
+            observer.unobserve(img);
+        }
+    });
 });
 
-// prevent page up if open comments
-let b = 0;
-$('section.b button:last-child').click(() => {
-    b = window.scrollY;
-    document.body.style.top = `-${b}px`;
-    document.body.style.position = 'fixed';
-
-    $('section.s')[0].classList.add('x')
+imgElements.forEach(img => {
+    observer.observe(img);
 });
 
-$('section.s button').click(() => {
-    document.body.removeAttribute('style');
-    window.scrollTo(0, b);
+// Скролл
+const sectionF = document.querySelector('section.f');
+const sectionW = document.querySelector('section.w');
 
-    $('section.s')[0].classList.remove('x')
-});
+sectionW.addEventListener('scroll', () => {
+    let scrollY = sectionW.scrollTop;
 
-// // tab
-// let startY = null;
-// let endY = null;
-
-// document.addEventListener('touchstart', (event) => {
-//     startY = event.touches[0].clientY
-// });
-
-// document.addEventListener('touchend', (event) => {
-//     endY = event.changedTouches[0].clientY;
-
-//     if (startY !== null) {
-//         const deltaY = startY - endY;
-
-//         if (deltaY > 15) {
-//             $('section.b')[0].classList.add('x')
-//         } else if (deltaY < 5) {
-//             $('section.b')[0].classList.remove('x')
-//         }
-//     }
-//     startY, endY = null
-// });
-
-// // counter
-// $('section.b button:first-child').click(() => {
-//     let a = $('section.b span:first-child h6')[0].innerText;
-//     $('section.b button:first-child')[0].innerText = Number(a) + 1;
-//     $('section.b button:first-child')[0].classList.toggle('a')
-// })
-
-// // textarea
-// document.querySelectorAll('textarea').forEach(x => {
-//     x.addEventListener('input', () => {
-//         x.style.height = 'auto';
-//         x.style.height = (x.scrollHeight) + 'px';
-
-//         let a = $('section.s span')[0];
-
-//         if (x.value !== '') {
-//             a.innerHTML = '💌'
-//         } else {
-//             a.innerHTML = ''
-//         }
-//     })
-// })
-
-// // video load
-// document.querySelectorAll('video').forEach(x => {
-//     new IntersectionObserver((a, b) => {
-//         a.forEach(x => {
-//             let a = x.target;
-//             if (x.isIntersecting) {
-//                 b.unobserve(a);
-//                 a.src = a.dataset.v;
-//                 let t = setInterval(() => {
-//                     if (a.currentTime > 0) {
-//                         clearInterval(t);
-//                         a.removeAttribute('data-v')
-//                     }
-//                 }, 500)
-//             }
-//         })
-//     }).observe(x)
-// })
-
-// // video observer play/pause
-// document.querySelectorAll('video').forEach(x => {
-//     new IntersectionObserver(x => {
-//         x.forEach(x => {
-//             if (x.isIntersecting) {
-//                 x.target.play();
-//                 $('section.h')[0].style.cssText = 'opacity: 1; pointer-events: initial'
-//             } else {
-//                 x.target.pause();
-//                 $('section.h')[0].removeAttribute('style')
-//             }
-//         })
-//     }, {
-//         threshold: .2
-//     }).observe(x)
-// })
-
-// // video toggle sound
-// $('section.h')[0].addEventListener('click', () => {
-//     if ($('video').prop('muted')) {
-//         $('video').prop('muted', false);
-//         $('section.h svg')[0].setAttribute('opacity', '.4')
-//     } else {
-//         $('video').prop('muted', true);
-//         $('section.h svg')[0].setAttribute('opacity', '.1')
-//     }
-// })
-
-// // video pause if exit tab browser
-// window.onblur = () => {
-//     $('video').prop('muted', true);
-//     $('section.h svg')[0].setAttribute('opacity', '.1')
-// }
-
-// img load
-document.querySelectorAll('img').forEach(x => {
-    new IntersectionObserver((a, b) => {
-        a.forEach(x => {
-            let a = x.target;
-            if (x.isIntersecting) {
-                b.unobserve(a);
-                let m = new Image();
-                m.src = a.dataset.i;
-                m.onload = () => {
-                    a.src = a.dataset.i;
-                    a.removeAttribute('data-i')
-                }
-            }
-        })
-    }).observe(x)
-});
-
-// share
-$('article').dblclick(() => {
-    if (navigator.share) {
-        navigator.share({
-            title: 'Apple планирует представить MacBook Pro без выемки к 2027 году',
-            url: 'https://puk.com'
-        })
+    if (scrollY >= 200) {
+        sectionF.classList.add('g');
+    } else {
+        sectionF.classList.remove('g');
     }
 });
+
+// затенить бар
+let n = 0;
+const b = document.querySelector('section.j');
+const e = document.querySelector('section.w');
+
+e.addEventListener('scroll', () => {
+    let t = e.scrollTop;
+
+    if (t > n) {
+        b.classList.add('x'); // скроллим вниз
+    } else {
+        b.classList.remove('x'); // скроллим вверх
+    }
+
+    n = t <= 0 ? 0 : t;
+});
+
+// поиск бар
+const sectionC = document.querySelector('section.c');
+const sectionV = document.querySelector('section.v');
+
+const sectionB = document.querySelector('section.b');
+const sectionE = document.querySelector('section.e');
+const sectionEQ = document.querySelector('section.e .b');
+
+sectionC.onclick = () => {
+    sectionV.classList.toggle('s')
+};
+
+sectionB.onclick = () => {
+    sectionE.classList.add('q')
+};
+
+sectionEQ.onclick = () => {
+    sectionE.classList.remove('q')
+};
