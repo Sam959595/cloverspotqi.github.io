@@ -30,7 +30,7 @@ section.w {
 /* - */
 
 section.w div {
-    margin: calc(25px + env(safe-area-inset-top)) 8vw 0;
+    margin: calc(25px + env(safe-area-inset-top)) 8vw 13vh;
 
     display: flex;
     justify-content: space-between
@@ -46,7 +46,7 @@ section.w div img {
 /* - */
 
 section.w ul {
-    margin-block: 13vh;
+    margin-bottom: 13vh;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
