@@ -7,33 +7,9 @@ body {
     color: #fff
 }
 
-/* z */
-
-div.z {
-    overflow-x: scroll;
-    overscroll-behavior-x: none;
-    scroll-snap-type: x mandatory;
-
-    display: grid;
-    grid-auto-flow: column
-}
-
-@media (display-mode: standalone) {
-    div.z {
-        overflow-y: scroll;
-        height: 100vh
-    }
-}
-
-div.z>section {
-    scroll-snap-align: start
-}
-
 /* - */
 
 section.a {
-    position: relative;
-
     overflow-y: scroll;
 
     width: 100vw;
@@ -43,7 +19,7 @@ section.a {
 section.a h2 {
     margin: 17vh 11vw 7vw;
 
-    font: 800 21px ui-rounded;
+    font: 800 10vw ui-rounded;
 
     color: #999
 }
@@ -144,134 +120,11 @@ section.a time {
     color: #666
 }
 
-/* v */
-
-section.v h1 {
-    margin: 60vh 10vw 5vw;
-
-    font: 700 extra-condensed 47px/1 system-ui;
-    letter-spacing: .4px
-}
-
-section.v h2 {
-    margin: 5vw 10vw 10vw;
-
-    font: 700 20px/1.2 system-ui;
-    letter-spacing: .4px
-}
-
-section.v ul {
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-
-    width: 100vw;
-    height: 100vh;
-
-    display: grid
-}
-
-section.v li {
-    position: relative;
-
-    scroll-snap-align: start
-}
-
-section.v video {
-    width: 100vw;
-    height: 100vh;
-
-    object-fit: cover
-}
-
-section.v .a {
-    position: absolute;
-    inset: 0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    background-color: #00000050
-}
-
-/* - */
-
-section.v .i {
-    position: absolute;
-    inset: 0 0 auto auto;
-
-    margin: calc(40px + env(safe-area-inset-bottom)) 40px 0;
-
-    animation: x 10s cubic-bezier(.25, 0, .25, 1) infinite;
-
-    will-change: transform;
-
-    cursor: pointer
-}
-
-@keyframes x {
-    0% {
-        transform: translate(0, 0) scale(1)
-    }
-
-    25% {
-        transform: translate(3px, -4px) scale(1.02)
-    }
-
-    50% {
-        transform: translate(-2px, 3px) scale(1)
-    }
-
-    75% {
-        transform: translate(4px, 2px) scale(1.015)
-    }
-
-    100% {
-        transform: translate(0, 0) scale(1)
-    }
-}
-
-section.v .i img {
-    border-radius: 50%;
-    outline: 1px solid #ffffff08
-}
-
-/* - */
-
-section.v a {
-    position: relative;
-
-    margin: 30px 30px calc(20px + env(safe-area-inset-bottom));
-
-    width: 100px;
-
-    display: block
-}
-
-section.v a img {
-    width: 100%;
-    height: auto;
-
-    border-radius: 2px
-}
-
-section.v a:after {
-    position: absolute;
-    inset: 0;
-
-    content: "";
-
-    border-radius: 2px;
-
-    background-size: 100% 100%;
-    background-image: url('4.png')
-}
-
 /* f */
 
 section.f {
     pointer-events: none;
-    opacity: 0;
+    opacity: 1;
 
     position: fixed;
     inset: 0 0 auto;
@@ -292,11 +145,8 @@ section.g {
 /* j */
 
 section.j {
-    pointer-events: none;
-    opacity: 1;
-
-    position: absolute;
-    inset: calc(15px + env(safe-area-inset-top)) 23vw auto;
+    position: fixed;
+    inset: calc(15px + env(safe-area-inset-top)) 22vw auto;
 
     display: flex;
     justify-content: space-between;
