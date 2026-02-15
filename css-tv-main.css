@@ -74,7 +74,7 @@ section.j .a {
     display: flex;
     column-gap: 5px;
 
-    background-color: #131313;
+    background-color: #0d0d0d;
 
     transition: opacity .4s ease
 }
@@ -91,12 +91,12 @@ section.j h6 {
     font: 600 16px system-ui;
     letter-spacing: .2px;
 
-    color: #5d5d5d
+    color: #888
 }
 
 section.j .s {
-    background-color: #1b1b1b;
-    color: #888
+    background-color: #222;
+    color: #fff
 }
 
 /* - */
