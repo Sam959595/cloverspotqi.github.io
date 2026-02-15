@@ -44,7 +44,7 @@ section.w div img {
 section.w ul {
     position: relative;
 
-    margin-block: 10vh;
+    margin-block: 144px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
