@@ -30,7 +30,7 @@ section.w {
 /* - */
 
 section.w div {
-    margin: calc(25px + env(safe-area-inset-top)) 8vw 13vh;
+    margin: calc(25px + env(safe-area-inset-top)) 8vw 10vh;
 
     display: flex;
     justify-content: space-between
@@ -46,7 +46,7 @@ section.w div img {
 /* - */
 
 section.w ul {
-    margin-bottom: 13vh;
+    margin-bottom: 10vh;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -59,7 +59,71 @@ section.w img {
     height: auto
 }
 
+/* f */
+
+section.f {
+    pointer-events: none;
+
+    position: fixed;
+    inset: 0 0 auto;
+
+    height: 150px;
+
+    background-color: #0d0d0d99;
+
+    filter: blur(20px);
+
+    transition: opacity .4s ease
+}
+
+section.g {
+    opacity: 1
+}
+
+/* j */
+
+section.j {
+    pointer-events: none;
+    opacity: 1;
+
+    position: fixed;
+    inset: calc(15px + env(safe-area-inset-top)) 0 auto;
+
+    display: flex;
+    justify-content: center;
+    column-gap: 20px
+}
+
 /* - */
+
+section.j div {
+    padding: 5px;
+
+    border-radius: 25px;
+
+    display: flex;
+    column-gap: 5px;
+
+    background-color: #131313
+}
+
+section.j h6 {
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    font: 600 16px system-ui;
+    letter-spacing: .2px;
+
+    color: #5d5d5d
+}
+
+section.j .a {
+    background-color: #1b1b1b;
+    color: #fff
+}
+
+/* y */
 
 div.y a {
     position: relative;
@@ -133,75 +197,6 @@ ul.b a:after {
 
     background-size: 100% 100%;
     background-image: url('4.png')
-}
-
-/* f */
-
-section.f {
-    pointer-events: none;
-
-    position: fixed;
-    inset: 0 0 auto;
-
-    height: 150px;
-
-    background-color: #0d0d0d99;
-
-    filter: blur(20px);
-
-    transition: opacity .4s ease
-}
-
-section.g {
-    opacity: 1
-}
-
-/* j */
-
-section.j {
-    pointer-events: none;
-    opacity: 1;
-
-    position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) 0 auto;
-
-    display: flex;
-    justify-content: center;
-    column-gap: 20px
-}
-
-body:has(section.e.q) section.j {
-    opacity: 0
-}
-
-/* - */
-
-section.j div {
-    padding: 5px;
-
-    border-radius: 25px;
-    outline: 3px solid #ffffff0d;
-
-    display: flex;
-    column-gap: 10px;
-
-    background-color: #131313
-}
-
-section.j h6 {
-    padding: 10px 18px;
-
-    border-radius: 20px;
-
-    font: 600 17px system-ui;
-    letter-spacing: .2px;
-
-    color: #5d5d5d
-}
-
-section.j .a {
-    background-color: #1b1b1b;
-    color: #fff
 }
 
 /* v */
