@@ -76,7 +76,9 @@ section.j .a {
 
     background-color: #0d0d0d;
 
-    transition: opacity .4s ease
+    transition: opacity .4s ease;
+
+    will-change: opacity
 }
 
 section.x .a {
@@ -117,7 +119,9 @@ section.v {
     opacity: 0;
 
     position: fixed;
-    inset: 0
+    inset: 0;
+
+    background-color: #0d0d0d
 }
 
 section.s {
