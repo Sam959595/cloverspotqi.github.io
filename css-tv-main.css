@@ -30,7 +30,7 @@ section.w {
 /* - */
 
 section.w div {
-    margin: calc(15px + env(safe-area-inset-top)) 6vw 10vh;
+    margin: calc(15px + env(safe-area-inset-top)) 5vw 10vh;
 
     display: flex;
     justify-content: space-between
@@ -69,7 +69,7 @@ section.f {
     position: fixed;
     inset: 0 0 auto;
 
-    height: 150px;
+    height: 100px;
 
     background-color: #0d0d0d99;
 
