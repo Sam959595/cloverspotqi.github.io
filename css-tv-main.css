@@ -66,9 +66,7 @@ section.j {
 
 /* - */
 
-section.j div {
-    opacity: 1;
-
+section.j .a {
     padding: 5px;
 
     border-radius: 25px;
@@ -81,7 +79,7 @@ section.j div {
     transition: opacity .4s ease
 }
 
-section.x div {
+section.x .a {
     opacity: .5
 }
 
@@ -96,7 +94,7 @@ section.j h6 {
     color: #5d5d5d
 }
 
-section.j .a {
+section.j .s {
     background-color: #1b1b1b;
     color: #888
 }
@@ -364,7 +362,7 @@ img[data-src] {
     opacity: 0
 }
 
-img:not(section.j img) {
+img {
     opacity: 1;
 
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
