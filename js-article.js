@@ -32,7 +32,7 @@ const sectionF = document.querySelector('section.f');
 sectionW.addEventListener('scroll', () => {
     let scrollY = sectionW.scrollTop;
 
-    if (scrollY >= 150) {
+    if (scrollY >= 100) {
         sectionF.classList.add('g');
     } else {
         sectionF.classList.remove('g');
@@ -77,21 +77,8 @@ sectionW.addEventListener('scroll', () => {
 });
 
 // поиск бар
-// const sectionC = document.querySelector('section.c');
-// const sectionV = document.querySelector('section.v');
+const sectionV = document.querySelector('section.v');
 
-// const sectionB = document.querySelector('section.b');
-// const sectionE = document.querySelector('section.e');
-// const sectionEQ = document.querySelector('section.e .b');
-
-// sectionC.onclick = () => {
-//     sectionV.classList.toggle('s')
-// };
-
-// sectionB.onclick = () => {
-//     sectionE.classList.add('q')
-// };
-
-// sectionEQ.onclick = () => {
-//     sectionE.classList.remove('q')
-// };
+sectionW.onclick = () => {
+    sectionV.classList.toggle('s')
+};
