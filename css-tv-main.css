@@ -14,44 +14,18 @@ body {
 section.w {
     overflow-y: scroll;
 
-    width: 100vw;
     height: 100vh
 }
 
 /* - */
 
-section.w div {
-    position: sticky;
-    top: calc(15px + env(safe-area-inset-top));
-
-    margin-inline: 5vw;
-
-    display: flex;
-    justify-content: space-between
-}
-
-section.w div img {
-    padding: 10px;
-
-    width: 30px;
-    height: 30px;
-
-    border-radius: 50%
-}
-
-/* - */
-
 section.w ul {
-    position: relative;
-
-    margin-block: 144px;
+    margin-block: calc(150px + env(safe-area-inset-top)) calc(30px + env(safe-area-inset-bottom));
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: masonry;
-    gap: 6px;
-
-    background-color: #0d0d0d
+    gap: 6px
 }
 
 section.w img {
@@ -87,11 +61,10 @@ section.j {
     opacity: 1;
 
     position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) 0 auto;
+    inset: calc(15px + env(safe-area-inset-top)) 5vw auto;
 
     display: flex;
-    justify-content: center;
-    column-gap: 20px
+    justify-content: space-between
 }
 
 /* - */
@@ -127,6 +100,17 @@ section.j h6 {
 section.j .a {
     background-color: #1b1b1b;
     color: #888
+}
+
+/* - */
+
+section.j img {
+    padding: 10px;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%
 }
 
 /* v */
