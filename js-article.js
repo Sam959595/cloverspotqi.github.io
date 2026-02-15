@@ -32,7 +32,7 @@ const sectionF = document.querySelector('section.f');
 sectionW.addEventListener('scroll', () => {
     let scrollY = sectionW.scrollTop;
 
-    if (scrollY >= 200) {
+    if (scrollY >= 150) {
         sectionF.classList.add('g');
     } else {
         sectionF.classList.remove('g');
@@ -47,8 +47,6 @@ sectionW.addEventListener('scroll', () => {
     let t = sectionW.scrollTop;
 
     if (t > n) {
-        console.log("!!");
-        
         b.classList.add('x'); // скроллим вниз
     } else {
         b.classList.remove('x'); // скроллим вверх
@@ -59,7 +57,7 @@ sectionW.addEventListener('scroll', () => {
 
 // Скролл
 const bx = document.querySelector('section.j svg');
-const gx = document.querySelector('section.j img');
+const gx = document.querySelector('section.j .b');
 
 const maxScroll = 150; // сколько px = полная темнота
 
