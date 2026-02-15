@@ -144,7 +144,7 @@ section.j {
     opacity: 1;
 
     position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) 23vw auto;
+    inset: calc(15px + env(safe-area-inset-top)) 20vw auto;
 
     display: flex;
     justify-content: space-between;
@@ -159,36 +159,39 @@ body:has(section.e.q) section.j {
 /* c */
 
 section.c {
+    box-sizing: border-box;
+
     pointer-events: auto;
 
-    padding: 21.5px 20px;
+    overflow-x: scroll;
+
+    width: 120px;
+
+    padding: 15px;
 
     border-radius: 25px;
     outline: 3px solid #ffffff0d;
 
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    scroll-snap-type: x mandatory;
     column-gap: 10px;
 
+    font: 600 17px system-ui;
+    letter-spacing: .2px;
+
     background-color: #131313;
+    color: #5d5d5d;
 
     cursor: pointer
 }
 
-body:has(section.s) section.c {
-    background-color: #191919
-}
-
 section.c div {
-    width: 7px;
-    height: 7px;
-
-    border-radius: 50%;
-
-    background-color: #3b3b3b
+    scroll-snap-align: center
 }
 
 section.c .a {
-    background-color: #fff
+    color: #fff
 }
 
 /* 2 obj */
@@ -211,9 +214,7 @@ section.b {
     border-radius: 50%;
     outline: 3px solid #ffffff0d;
 
-    background-color: #1f322d;
-
-    box-shadow: 0 0 10px #fff inset;
+    background-color: #131313;
 
     cursor: pointer
 }
