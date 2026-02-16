@@ -23,9 +23,9 @@ body {
     section.w {
         overflow-y: scroll;
 
-        height: 100dvh;
+        height: calc(100dvh - 10px);
 
-        border-radius: 20px
+        border-radius: 25px
     }
 }
 
