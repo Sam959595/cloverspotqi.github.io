@@ -19,16 +19,6 @@ body {
     }
 }
 
-@media (display-mode: browser) {
-    section.w {
-        overflow-y: scroll;
-
-        height: calc(100dvh - 10px);
-
-        border-radius: 25px
-    }
-}
-
 /* - */
 
 section.w ul {
@@ -111,6 +101,14 @@ section.j button:not(.s) {
 
     background: none;
     color: #777
+}
+
+@media (display-mode: browser) {
+    section.j .s {
+        border-radius: 20px;
+
+        background-color: #fff
+    }
 }
 
 /* - */
