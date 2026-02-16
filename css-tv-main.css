@@ -105,6 +105,7 @@ section.j button:not(.s) {
 
 @media (display-mode: browser) {
     section.j .s {
+        border: none;
         border-radius: 20px;
 
         background-color: #fff
