@@ -11,10 +11,12 @@ body {
 
 /* w */
 
-section.w {
-    overflow-y: scroll;
+@media (display-mode: standalone) {
+    section.w {
+        overflow-y: scroll;
 
-    height: 100vh
+        height: 100vh
+    }
 }
 
 /* - */
