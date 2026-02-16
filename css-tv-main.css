@@ -1,383 +1,87 @@
-@media (display-mode: standalone) {
-    html {
-        overscroll-behavior: none
+// Маленькая утилита для удобства
+const $ = (selector, all = false) => all ? document.querySelectorAll(selector) : document.querySelector(selector);
+
+// DOM-элементы ищутся только один раз при загрузке страницы (а потом используются из памяти)
+const imgElements = $('img[data-src]', true);
+
+// Загрузка изображений lazy-load
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const img = entry.target;
+            const tempImg = new Image();
+            tempImg.src = img.dataset.src;
+            tempImg.onload = () => {
+                img.src = img.dataset.src;
+                img.removeAttribute('data-src');
+            };
+            observer.unobserve(img);
+        }
+    });
+});
+
+imgElements.forEach(img => {
+    observer.observe(img);
+});
+
+const sectionW = document.querySelector('section.w');
+
+// Скролл
+const sectionF = document.querySelector('section.f');
+
+sectionW.addEventListener('scroll', () => {
+    let scrollY = sectionW.scrollTop;
+
+    if (scrollY >= 100) {
+        sectionF.classList.add('g');
+    } else {
+        sectionF.classList.remove('g');
     }
-}
+});
 
-body {
-    background-color: #0d0d0d;
-    color: #fff
-}
+// затенить бар
+let n = 0;
+const b = document.querySelector('section.j');
 
-/* w */
+sectionW.addEventListener('scroll', () => {
+    let t = sectionW.scrollTop;
 
-section.w {
-    overflow-y: scroll;
-
-    height: 100vh
-}
-
-/* - */
-
-section.w ul {
-    margin-block: calc(150px + env(safe-area-inset-top)) calc(30px + env(safe-area-inset-bottom));
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: masonry;
-    gap: 6px
-}
-
-section.w img {
-    width: 100%;
-    height: auto
-}
-
-/* f */
-
-section.f {
-    opacity: 0;
-
-    position: fixed;
-    inset: 0 0 auto;
-
-    height: 150px;
-
-    background-color: #0d0d0d99;
-
-    filter: blur(20px);
-
-    transition: opacity .4s ease
-}
-
-section.g {
-    opacity: 1
-}
-
-/* j */
-
-section.j {
-    position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) 5vw auto;
-
-    display: flex;
-    justify-content: space-between
-}
-
-/* - */
-
-section.j .a {
-    padding: 5px;
-
-    border-radius: 25px;
-
-    display: flex;
-    column-gap: 5px;
-
-    background-color: #0d0d0d;
-
-    transition: opacity .4s ease;
-
-    will-change: opacity
-}
-
-section.x .a {
-    opacity: .5
-}
-
-section.j h6 {
-    padding: 10px 18px;
-
-    border-radius: 20px;
-
-    font: 600 16px system-ui;
-    letter-spacing: .2px;
-
-    color: #777
-}
-
-section.j .s {
-    background-color: #191919;
-    color: #ddd
-}
-
-/* - */
-
-section.j img {
-    padding: 10px;
-
-    width: 30px;
-    height: 30px;
-
-    border-radius: 50%
-}
-
-/* v */
-
-section.v {
-    pointer-events: none;
-    opacity: 0;
-
-    position: fixed;
-    inset: 0;
-
-    background-color: #0d0d0d
-}
-
-section.s {
-    pointer-events: auto;
-    opacity: 1
-}
-
-/* section.v h1 {
-    margin: 60vh 10vw 5vw;
-
-    font: 700 extra-condensed 47px/1 system-ui;
-    letter-spacing: .4px
-}
-
-section.v h2 {
-    margin: 5vw 10vw 10vw;
-
-    font: 700 20px/1.2 system-ui;
-    letter-spacing: .4px
-} */
-
-section.v ul {
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-
-    width: 100vw;
-    height: 100vh;
-
-    display: grid
-}
-
-section.v li {
-    position: relative;
-
-    scroll-snap-align: start
-}
-
-section.v video {
-    width: 100vw;
-    height: 100vh;
-
-    object-fit: cover
-}
-
-section.v .a {
-    position: absolute;
-    inset: 0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    background-color: #00000050
-}
-
-/* - */
-
-section.v .i {
-    position: absolute;
-    inset: 0 0 auto auto;
-
-    margin: calc(40px + env(safe-area-inset-bottom)) 40px 0;
-
-    animation: x 10s cubic-bezier(.25, 0, .25, 1) infinite;
-
-    will-change: transform;
-
-    cursor: pointer
-}
-
-@keyframes x {
-    0% {
-        transform: translate(0, 0) scale(1)
+    if (t > n) {
+        b.classList.add('x'); // скроллим вниз
+    } else {
+        b.classList.remove('x'); // скроллим вверх
     }
 
-    25% {
-        transform: translate(3px, -4px) scale(1.02)
-    }
+    n = t <= 0 ? 0 : t;
+});
 
-    50% {
-        transform: translate(-2px, 3px) scale(1)
-    }
+// Скролл
+const bx = document.querySelector('section.j svg');
+const gx = document.querySelector('section.j .b');
 
-    75% {
-        transform: translate(4px, 2px) scale(1.015)
-    }
+const maxScroll = 150; // сколько px = полная темнота
 
-    100% {
-        transform: translate(0, 0) scale(1)
-    }
-}
+sectionW.addEventListener('scroll', () => {
+    // получаем скоролл от вверха
+    const scrollY = sectionW.scrollTop;
 
-section.v .i img {
-    border-radius: 50%;
-    outline: 1px solid #ffffff08
-}
+    // прогресс от 1 до 0
+    let opacity = 1 - (scrollY / maxScroll);
 
-/* - */
+    // ограничиваем, чтобы не вылезало
+    opacity = Math.min(Math.max(opacity, 0), 1);
 
-section.v a {
-    position: relative;
+    // вешаем style на тег
+    bx.style.opacity = opacity;
+    gx.style.opacity = opacity;
+});
 
-    margin: 30px 30px calc(20px + env(safe-area-inset-bottom));
+// поиск бар
+const sectionWw = document.querySelectorAll('section.w img');
+const sectionV = document.querySelector('section.v');
 
-    width: 100px;
-
-    display: block
-}
-
-section.v a img {
-    width: 100%;
-    height: auto;
-
-    border-radius: 2px
-}
-
-section.v a:after {
-    position: absolute;
-    inset: 0;
-
-    content: "";
-
-    border-radius: 2px;
-
-    background-size: 100% 100%;
-    background-image: url('4.png')
-}
-
-/* l - load spinner */
-
-section.l {
-    pointer-events: none;
-
-    position: fixed;
-    inset: 0;
-
-    margin: auto;
-
-    width: 20px;
-    height: 20px;
-
-    border-radius: 50%;
-
-    background-color: #fff;
-
-    animation: load 1s infinite
-}
-
-@keyframes load {
-
-    0%,
-    100% {
-        opacity: .6;
-        transform: scale(.8)
-    }
-
-    50% {
-        opacity: 1;
-        transform: scale(1.2)
-    }
-}
-
-/* y */
-
-div.y a {
-    position: relative;
-
-    margin: 20vh 20vw;
-
-    display: block;
-
-    display: none
-}
-
-div.y a img {
-    width: 100%;
-    height: auto;
-
-    border-radius: 4px
-}
-
-div.y a:after {
-    position: absolute;
-    inset: 0;
-
-    content: "";
-
-    border-radius: 4px;
-
-    background-size: 100% 100%;
-    background-image: url('4.png')
-}
-
-/* - */
-
-ul.b {
-    position: relative;
-
-    margin: 10vh 7vw 20vh;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 46vh;
-    column-gap: 6vw;
-
-    display: none
-}
-
-ul.b a {
-    position: relative;
-
-    display: block
-}
-
-ul.b li {
-    display: flex;
-    align-items: end
-}
-
-ul.b a img {
-    width: 100%;
-    height: auto;
-
-    border-radius: 4px
-}
-
-ul.b a:after {
-    position: absolute;
-    inset: 0;
-
-    content: "";
-
-    border-radius: 4px;
-
-    background-size: 100% 100%;
-    background-image: url('4.png')
-}
-
-/* - */
-
-img[data-src] {
-    opacity: 0
-}
-
-img {
-    opacity: 1;
-
-    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
-}
-
-/* - */
-
-::selection {
-    background: #fff
-}
-
-::-webkit-scrollbar {
-    display: none
-}
+sectionWw.forEach(img => {
+    img.addEventListener('click', () => {
+        sectionV.classList.toggle('s');
+    });
+});
