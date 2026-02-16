@@ -39,6 +39,10 @@ video {
 	display: block
 }
 
+img {
+	-webkit-user-drag: none
+}
+
 a {
 	-webkit-touch-callout: none;
 	-webkit-user-drag: none
@@ -57,10 +61,9 @@ input,
 select,
 textarea,
 progress {
-	-webkit-appearance: none
+	appearance: none
 }
 
-button,
 input,
 select,
 textarea,
@@ -75,6 +78,10 @@ textarea {
 	outline: none
 }
 
+input {
+	box-sizing: border-box
+}
+
 a,
 u {
 	text-decoration: none
@@ -84,7 +91,3 @@ a,
 mark {
 	color: inherit
 }
-
-/* ::-webkit-scrollbar {
-	display: none
-} */
