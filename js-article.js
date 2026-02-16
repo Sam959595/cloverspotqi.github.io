@@ -77,8 +77,11 @@ sectionW.addEventListener('scroll', () => {
 });
 
 // поиск бар
+const sectionWw = document.querySelectorAll('section.w img');
 const sectionV = document.querySelector('section.v');
 
-sectionW.onclick = () => {
-    sectionV.classList.toggle('s')
-};
+sectionWw.forEach(img => {
+    img.addEventListener('click', () => {
+        sectionV.classList.toggle('s');
+    });
+});
