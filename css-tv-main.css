@@ -114,23 +114,6 @@ section.j img {
 
 /* v */
 
-section.v {
-    overscroll-behavior-y: none;
-
-    pointer-events: none;
-    opacity: 0;
-
-    position: fixed;
-    inset: 0;
-
-    background-color: #0d0d0d
-}
-
-section.s {
-    pointer-events: auto;
-    opacity: 1
-}
-
 /* section.v h1 {
     margin: 60vh 10vw 5vw;
 
@@ -146,13 +129,27 @@ section.v h2 {
 } */
 
 section.v ul {
+    pointer-events: none;
+    opacity: 0;
+
+    position: fixed;
+    inset: 0;
+
+    overscroll-behavior-y: none;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 
     width: 100vw;
     height: 100vh;
 
-    display: grid
+    display: grid;
+
+    background-color: #0d0d0d
+}
+
+section.s ul {
+    pointer-events: auto;
+    opacity: 1
 }
 
 section.v li {
