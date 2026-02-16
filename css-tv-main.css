@@ -19,6 +19,16 @@ body {
     }
 }
 
+@media (display-mode: browser) {
+    section.w {
+        overflow-y: scroll;
+
+        height: 100dvh;
+
+        border-radius: 20px
+    }
+}
+
 /* - */
 
 section.w ul {
@@ -98,9 +108,6 @@ section.j button {
 
 section.j button:not(.s) {
     border: none;
-
-    font: 600 16px system-ui;
-    letter-spacing: .2px;
 
     background: none;
     color: #777
