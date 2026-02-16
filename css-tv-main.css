@@ -90,18 +90,20 @@ section.x .a {
 section.j button {
     padding-inline: 18px;
 
+    font: 600 16px system-ui;
+    letter-spacing: .2px;
+
+    color: #111
+}
+
+section.j button:not(.s) {
     border: none;
 
     font: 600 16px system-ui;
     letter-spacing: .2px;
 
-    background-color: transparent;
-    color: #777
-}
-
-section.j .s {
     background: none;
-    color: #111
+    color: #777
 }
 
 /* - */
