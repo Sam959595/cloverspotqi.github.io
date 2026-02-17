@@ -97,6 +97,8 @@ section.j button {
 }
 
 section.j button:not(.s) {
+    padding-inline: 19px;
+
     border: none;
 
     background: none;
@@ -271,38 +273,31 @@ section.v a:after {
 }
 
 section.b ul {
-    margin: calc(150px + env(safe-area-inset-top)) 7vw calc(30px + env(safe-area-inset-bottom));
+    margin: calc(120px + env(safe-area-inset-top)) 7vw calc(30px + env(safe-area-inset-bottom));
 
     display: grid;
     row-gap: 40px
 }
 
 section.b ul li>a {
-    position: relative;
+    height: 700px;
 
-    overflow: hidden;
     border-radius: 30px;
 
-    display: block;
+    display: inline-block
+}
 
+section.b .d {
     background-image: linear-gradient(#4a5cf7, #352d94)
+}
+
+section.b .r {
+    background-image: linear-gradient(#764ec3, #802727)
 }
 
 section.b ul li>a img {
     width: 100%;
     height: auto
-}
-
-section.b ul li>a:after {
-    position: absolute;
-    inset: 0;
-
-    content: "";
-
-    border-radius: 30px;
-    border: 3px solid #ffffff08;
-
-    transition: background-color .2s
 }
 
 section.b h1 {
