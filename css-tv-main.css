@@ -88,8 +88,6 @@ section.x .a {
 }
 
 section.j h6 {
-    padding: 9px 18px;
-
     font: 600 16px system-ui;
     letter-spacing: .2px;
 
@@ -103,6 +101,12 @@ section.j .s {
 
 @media (display-mode: standalone) {
     section.j .s {
+        padding: 9px 18px
+    }
+
+    section.j .s {
+        padding: 9px 18px;
+
         width: 65px;
 
         clip-path: path("M0 20a20 20 0 0 0 1.77 8c.9 1.85 2.2 3.92 4.04 5.75a21 21 0 0 0 5.6 3.89c2.1.98 4.43 1.77 8.63 2.15q.72.07 6.75.21h47.42q4.6-.01 6.75-.2c4.2-.4 6.54-1.18 8.63-2.16 2.01-.95 4.1-2.4 5.6-3.89A21 21 0 0 0 99.23 28a20 20 0 0 0 1.77-8 20 20 0 0 0-1.77-8 21 21 0 0 0-4.04-5.75 21 21 0 0 0-5.6-3.89C87.5 1.38 85.16.6 80.96.21 78.8 0 74.2 0 74.2 0H26.79q-6.05.15-6.75.2c-4.2.4-6.54 1.18-8.63 2.16-2.01.95-4.1 2.4-5.6 3.89A21 21 0 0 0 1.77 12 20 20 0 0 0 0 20")
@@ -110,6 +114,10 @@ section.j .s {
 }
 
 @media (display-mode: browser) {
+    section.j .s {
+        padding: 10px 18px
+    }
+
     section.j .s {
         border-radius: 20px
     }
