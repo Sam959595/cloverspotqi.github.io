@@ -87,31 +87,18 @@ section.x .a {
     opacity: .5
 }
 
-section.j button {
-    padding-inline: 18px;
+section.j h6 {
+    padding: 6px 18px;
 
     font: 600 16px system-ui;
     letter-spacing: .2px;
 
-    color: #111
-}
-
-section.j button:not(.s) {
-    padding-inline: 19px;
-
-    border: none;
-
-    background: none;
     color: #777
 }
 
-@media (display-mode: browser) {
-    section.j .s {
-        border: none;
-        border-radius: 20px;
-
-        background-color: #fff
-    }
+section.j .s {
+    background-color: #fff;
+    color: #111
 }
 
 /* - */
