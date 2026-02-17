@@ -97,6 +97,8 @@ section.j h6 {
 }
 
 section.j .s {
+    border-radius: 20px;
+
     background-color: #fff;
     color: #111
 }
