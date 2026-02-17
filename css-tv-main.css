@@ -280,11 +280,25 @@ section.b ul {
 }
 
 section.b ul li>a {
-    height: 700px;
+    position: relative;
+
+    height: 600px;
 
     border-radius: 30px;
 
     display: inline-block
+}
+
+section.b ul li>a:after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    border-radius: 30px;
+    border: 3px solid #ffffff15;
+
+    transition: background-color .2s
 }
 
 section.b .d {
