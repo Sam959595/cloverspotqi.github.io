@@ -85,3 +85,27 @@ sectionWw.forEach(img => {
         sectionV.classList.toggle('s');
     });
 });
+
+// переключение вкладок
+const tabs = document.querySelectorAll('section.j .a h6');
+const sectionB = document.querySelector('section.b');
+
+tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+
+        // убрать активный класс у всех вкладок
+        tabs.forEach(t => t.classList.remove('s'));
+
+        // добавить активный класс текущей
+        tab.classList.add('s');
+
+        // переключение секций
+        if (index === 0) {
+            sectionW.style.display = "block";
+            sectionB.style.display = "none";
+        } else {
+            sectionW.style.display = "none";
+            sectionB.style.display = "block";
+        }
+    });
+});
