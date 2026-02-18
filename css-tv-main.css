@@ -118,12 +118,30 @@ section.j .s {
 /* - */
 
 section.j img {
-    padding: 10px;
+    margin: 10px;
 
     width: 30px;
     height: 30px;
 
     border-radius: 50%
+}
+
+section.j .e img {
+    clip-path: path("M19 3.5a7.5 7.5 0 0 0 11 6.6V30H0V0h19.9Q19 1.5 19 3.5")
+}
+
+section.j .e:after {
+    position: absolute;
+    inset: 10px 10px auto auto;
+
+    content: "";
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background-color: #dd4848
 }
 
 /* v */
