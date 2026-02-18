@@ -187,7 +187,7 @@ section.v .a {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: end;
 
     background-color: #00000050
 }
@@ -263,6 +263,31 @@ section.v a:after {
 
     background-size: 100% 100%;
     background-image: url('4.png')
+}
+
+section.v .k {
+    margin-inline: 30px
+}
+
+section.v .k h6 {
+    font: 500 15px system-ui;
+    letter-spacing: .2px
+}
+
+section.v .h {
+    margin: 30px 30px calc(20px + env(safe-area-inset-bottom));
+
+    width: max-content;
+
+    padding: 8px 12px;
+
+    border-radius: 18px;
+
+    background-color: #ffffff10
+}
+
+section.v .h h6 {
+    font: 500 15px system-ui
 }
 
 /* b */
