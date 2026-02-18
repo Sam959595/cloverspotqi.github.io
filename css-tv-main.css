@@ -106,7 +106,7 @@ section.j .s {
 /* - */
 
 section.j img {
-    margin: 10px;
+    padding: 10px;
 
     width: 30px;
     height: 30px;
@@ -114,13 +114,9 @@ section.j img {
     border-radius: 50%
 }
 
-section.j .e img {
-    clip-path: path("M19 3.5a7.5 7.5 0 0 0 11 6.6V30H0V0h19.9Q19 1.5 19 3.5")
-}
-
 section.j .e:after {
     position: absolute;
-    inset: 9px 9px auto auto;
+    inset: 21px -7px 0 auto;
 
     content: "";
 
