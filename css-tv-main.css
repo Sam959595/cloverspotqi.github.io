@@ -24,10 +24,12 @@ body {
 section.w ul {
     margin-block: calc(150px + env(safe-area-inset-top)) calc(30px + env(safe-area-inset-bottom));
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: masonry;
-    gap: 6px
+    column-count: 2;
+    column-gap: 6px;
+}
+
+section.w li {
+    margin-bottom: 6px;
 }
 
 section.w img {
@@ -288,7 +290,7 @@ section.v .h {
 }
 
 section.v .h h6 {
-    font: 500 15px system-ui;
+    font: 600 15px system-ui;
     letter-spacing: .4px
 }
 
