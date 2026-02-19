@@ -189,7 +189,7 @@ section.v .a {
     flex-direction: column;
     justify-content: end;
 
-    background-image: linear-gradient(#0005, transparent, transparent, #0008);
+    background-color: #0005
 }
 
 /* - */
@@ -275,7 +275,7 @@ section.v .k h6 {
 }
 
 section.v .h {
-    margin: 50px 30px 30px;
+    margin: 40px 30px;
     padding: 8px 14px;
 
     width: max-content;
