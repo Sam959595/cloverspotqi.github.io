@@ -25,13 +25,13 @@ section.w ul {
     margin-block: calc(150px + env(safe-area-inset-top)) calc(30px + env(safe-area-inset-bottom));
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 4px
+    grid-template-columns: 1fr 1fr;
+    gap: 6px
 }
 
 section.w img {
     width: 100%;
-    height: 300px;
+    height: 400px;
 
     object-fit: cover
 }
