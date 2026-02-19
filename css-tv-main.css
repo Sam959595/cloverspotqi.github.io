@@ -191,7 +191,7 @@ section.v .a {
     flex-direction: column;
     justify-content: end;
 
-    background-color: #0005
+    background-color: #000000c7
 }
 
 /* - */
@@ -232,14 +232,13 @@ section.v .i {
 }
 
 section.v .i h1 {
+    text-align: center;
     font-size: 50px;
 
     text-shadow: 0 0 20px #f00
 }
 
 section.v .i h2 {
-    margin-top: -42px;
-
     text-align: center;
     font: 700 20px ui-rounded;
 
