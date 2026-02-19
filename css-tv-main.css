@@ -24,17 +24,14 @@ body {
 section.w ul {
     margin-block: calc(150px + env(safe-area-inset-top)) calc(30px + env(safe-area-inset-bottom));
 
-    column-count: 2;
-    column-gap: 6px;
-}
-
-section.w li {
-    margin-bottom: 6px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px
 }
 
 section.w img {
     width: 100%;
-    height: auto
+    height: 100%
 }
 
 /* f */
