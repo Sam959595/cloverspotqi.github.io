@@ -160,8 +160,9 @@ section.v ul {
     height: 100vh;
 
     display: grid;
+    row-gap: 20px;
 
-    background-color: #0d0d0d
+    background-color: #000
 }
 
 section.s ul {
@@ -230,9 +231,19 @@ section.v .i {
     }
 }
 
-section.v .i img {
-    border-radius: 50%;
-    outline: 1px solid #ffffff08
+section.v .i h1 {
+    font-size: 50px;
+
+    text-shadow: 0 0 20px #f00
+}
+
+section.v .i h2 {
+    margin-top: -42px;
+
+    text-align: center;
+    font: 700 20px ui-rounded;
+
+    text-shadow: 0 0 20px #000
 }
 
 /* - */
