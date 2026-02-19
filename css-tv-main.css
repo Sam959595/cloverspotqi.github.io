@@ -276,11 +276,13 @@ section.v .k h6 {
 
 section.v .h {
     margin: 40px 30px;
-    padding: 8px 14px;
+    padding: 8px 12px 8px 10px;
 
     width: max-content;
 
     border-radius: 18px;
+
+    display: flex;
 
     background-color: #fff1
 }
