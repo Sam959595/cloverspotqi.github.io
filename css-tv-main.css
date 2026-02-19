@@ -211,23 +211,23 @@ section.v .i {
 
 @keyframes x {
     0% {
-        transform: translate(0, 0) scale(1)
+        transform: translate(0, 0) scale(1) rotate(-.5deg)
     }
 
     25% {
-        transform: translate(3px, -4px) scale(1.02)
+        transform: translate(3px, -4px) scale(1.02) rotate(2deg)
     }
 
     50% {
-        transform: translate(-2px, 3px) scale(1)
+        transform: translate(-2px, 3px) scale(1) rotate(5deg)
     }
 
     75% {
-        transform: translate(4px, 2px) scale(1.015)
+        transform: translate(4px, 2px) scale(1.015) rotate(-2deg)
     }
 
     100% {
-        transform: translate(0, 0) scale(1)
+        transform: translate(0, 0) scale(1) rotate(-.5deg)
     }
 }
 
@@ -240,9 +240,7 @@ section.v .i h1 {
 
 section.v .i h2 {
     text-align: center;
-    font: 700 20px ui-rounded;
-
-    text-shadow: 0 0 20px #000
+    font: 700 20px ui-rounded
 }
 
 /* - */
