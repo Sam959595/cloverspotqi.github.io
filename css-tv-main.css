@@ -189,7 +189,7 @@ section.v .a {
     flex-direction: column;
     justify-content: end;
 
-    background-color: #00000050
+    background-color: #0005
 }
 
 /* - */
@@ -270,12 +270,12 @@ section.v .k {
 }
 
 section.v .k h6 {
-    font: 500 15px system-ui;
+    font: 500 17px system-ui;
     letter-spacing: .2px
 }
 
 section.v .h {
-    margin: 30px 30px calc(20px + env(safe-area-inset-bottom));
+    margin: 30px 30px 60px;
 
     width: max-content;
 
@@ -283,11 +283,12 @@ section.v .h {
 
     border-radius: 18px;
 
-    background-color: #ffffff10
+    background-color: #fff1
 }
 
 section.v .h h6 {
-    font: 500 15px system-ui
+    font: 500 15px system-ui;
+    letter-spacing: .4px
 }
 
 /* b */
