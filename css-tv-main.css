@@ -231,7 +231,7 @@ section.v .k h6 {
     margin: calc(100px + env(safe-area-inset-bottom)) 0 0;
 
     text-align: center;
-    font: 500 18px/1.5 system-ui;
+    font: 500 19px/1.3 system-ui;
     letter-spacing: .2px
 }
 
@@ -269,7 +269,7 @@ section.v .i {
     position: absolute;
     inset: calc(40px + env(safe-area-inset-bottom)) 40px auto auto;
 
-    font-size: 50px;
+    font-size: 60px;
 
     text-shadow: 0 0 20px #f00;
 
