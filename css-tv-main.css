@@ -282,11 +282,11 @@ section.v .k h6 {
 }
 
 section.v .h {
-    padding: 8px 12px 8px 10px;
+    padding: 10px 14px 10px 13px;
 
     width: max-content;
 
-    border-radius: 18px;
+    border-radius: 19px;
 
     display: flex;
 
@@ -294,7 +294,7 @@ section.v .h {
 }
 
 section.v .h h6 {
-    font: 600 15px system-ui;
+    font: 600 15px ui-rounded;
     letter-spacing: .4px
 }
 
