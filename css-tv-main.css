@@ -189,13 +189,78 @@ section.v .a {
     position: absolute;
     inset: 0;
 
-    padding: calc(100px + env(safe-area-inset-bottom)) 30px 40px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     background-image: linear-gradient(#0009, #0002 30%, #0002 70%, #0009)
+}
+
+/* - */
+
+section.v .y a {
+    position: relative;
+
+    margin: 30px 30px calc(20px + env(safe-area-inset-bottom));
+
+    width: 100px;
+
+    display: block
+}
+
+section.v .y a img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 2px
+}
+
+section.v .y a:after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    border-radius: 2px;
+
+    background-size: 100% 100%;
+    background-image: url('4.png')
+}
+
+section.v .k h6 {
+    margin: calc(100px + env(safe-area-inset-bottom)) 0 0;
+
+    text-align: center;
+    font: 500 18px/1.5 system-ui;
+    letter-spacing: .2px
+}
+
+section.v .h {
+    margin: 40px 30px;
+    padding: 10px 14px 10px 13px;
+
+    width: max-content;
+
+    border-radius: 20px;
+
+    display: flex;
+    column-gap: 5px;
+
+    background-color: #0005
+}
+
+section.v .h h6 {
+    font: 600 16px ui-rounded;
+    letter-spacing: .4px
+}
+
+/* - */
+
+section.v>svg {
+    position: absolute;
+    inset: env(safe-area-inset-bottom) 0 auto;
+
+    margin-inline: auto
 }
 
 /* - */
@@ -233,70 +298,6 @@ section.v .i {
     100% {
         transform: translate(0, 0) scale(1) rotate(3deg)
     }
-}
-
-/* - */
-
-section.v .y a {
-    position: relative;
-
-    margin: 30px 30px calc(20px + env(safe-area-inset-bottom));
-
-    width: 100px;
-
-    display: block
-}
-
-section.v .y a img {
-    width: 100%;
-    height: auto;
-
-    border-radius: 2px
-}
-
-section.v .y a:after {
-    position: absolute;
-    inset: 0;
-
-    content: "";
-
-    border-radius: 2px;
-
-    background-size: 100% 100%;
-    background-image: url('4.png')
-}
-
-section.v .k h6 {
-    text-align: center;
-    font: 500 17px/1.5 system-ui;
-    letter-spacing: .2px
-}
-
-section.v .h {
-    padding: 10px 14px 10px 13px;
-
-    width: max-content;
-
-    border-radius: 20px;
-
-    display: flex;
-    column-gap: 5px;
-
-    background-color: #0005
-}
-
-section.v .h h6 {
-    font: 600 16px ui-rounded;
-    letter-spacing: .4px
-}
-
-/* - */
-
-section.v>svg {
-    position: absolute;
-    inset: env(safe-area-inset-bottom) 0 auto;
-
-    margin-inline: auto
 }
 
 /* b */
