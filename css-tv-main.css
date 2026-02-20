@@ -268,52 +268,34 @@ section.v .y a:after {
     background-image: url('4.png')
 }
 
+section.v .k {
+    border-radius: 46px;
+
+    padding: 10px 20px;
+
+    background-color: #fff1
+}
+
 section.v .k h6 {
-    font: 500 17px system-ui;
+    font: 500 14px system-ui;
     letter-spacing: .2px
 }
 
 section.v .h {
-    overflow-x: scroll;
+    padding: 8px 12px 8px 10px;
 
-    padding: 3px;
+    width: max-content;
 
-    border-radius: 21px;
-
-    display: flex;
-    column-gap: 10px
-}
-
-section.v .h a {
-    padding: 12px 15px 12px 12px;
-
-    border-radius: 21px;
-    outline: 3px solid #fff1;
+    border-radius: 18px;
 
     display: flex;
-    column-gap: 6px;
 
-    background-color: #ffffff08
-}
-
-section.v .h img {
-    border-radius: 50%
+    background-color: #fff1
 }
 
 section.v .h h6 {
-    margin-left: 2px;
-
-    font: 500 14px system-ui;
-    letter-spacing: .4px;
-
-    color: #999
-}
-
-section.v .h time {
-    font: 500 14px system-ui;
-    letter-spacing: .4px;
-
-    color: #666
+    font: 600 15px system-ui;
+    letter-spacing: .4px
 }
 
 /* - */
