@@ -289,12 +289,13 @@ section.v .h {
     border-radius: 19px;
 
     display: flex;
+    column-gap: 5px;
 
-    background-color: #fff1
+    background-color: #0005
 }
 
 section.v .h h6 {
-    font: 600 15px ui-rounded;
+    font: 600 16px ui-rounded;
     letter-spacing: .4px
 }
 
