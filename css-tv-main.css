@@ -145,13 +145,22 @@ section.v h2 {
     letter-spacing: .4px
 } */
 
-section.v ul {
+section.v {
     pointer-events: none;
     opacity: 0;
 
     position: fixed;
     inset: 0;
 
+    background-color: #000
+}
+
+section.s {
+    pointer-events: auto;
+    opacity: 1
+}
+
+section.v ul {
     overscroll-behavior-y: none;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
@@ -160,14 +169,7 @@ section.v ul {
     height: 100vh;
 
     display: grid;
-    row-gap: 20px;
-
-    background-color: #000
-}
-
-section.s ul {
-    pointer-events: auto;
-    opacity: 1
+    row-gap: 20px
 }
 
 section.v li {
@@ -191,7 +193,7 @@ section.v .a {
     flex-direction: column;
     justify-content: end;
 
-    background-image: linear-gradient(#0009, #0000 30%, #0000 70%, #0009)
+    background-image: linear-gradient(#0009, #0002 30%, #0002 70%, #0009)
 }
 
 /* - */
@@ -202,9 +204,11 @@ section.v .i {
 
     margin: calc(40px + env(safe-area-inset-bottom)) 40px 0;
 
-    animation: x 10s cubic-bezier(.25, 0, .25, 1) infinite;
+    font-size: 50px;
 
-    will-change: transform;
+    text-shadow: 0 0 20px #f00;
+
+    animation: x 10s cubic-bezier(.25, 0, .25, 1) infinite;
 
     cursor: pointer
 }
@@ -231,21 +235,9 @@ section.v .i {
     }
 }
 
-section.v .i h1 {
-    text-align: center;
-    font-size: 50px;
-
-    text-shadow: 0 0 20px #f00
-}
-
-section.v .i h2 {
-    text-align: center;
-    font: 700 20px ui-rounded
-}
-
 /* - */
 
-section.v a {
+section.v .y a {
     position: relative;
 
     margin: 30px 30px calc(20px + env(safe-area-inset-bottom));
@@ -255,14 +247,14 @@ section.v a {
     display: block
 }
 
-section.v a img {
+section.v .y a img {
     width: 100%;
     height: auto;
 
     border-radius: 2px
 }
 
-section.v a:after {
+section.v .y a:after {
     position: absolute;
     inset: 0;
 
@@ -284,21 +276,56 @@ section.v .k h6 {
 }
 
 section.v .h {
+    overflow-x: scroll;
+
     margin: 40px 30px;
-    padding: 8px 12px 8px 10px;
 
-    width: max-content;
+    width: calc(86vw - 34px);
 
-    border-radius: 18px;
+    border-radius: 21px;
 
     display: flex;
+    column-gap: 10px
+}
 
-    background-color: #fff1
+section.v .h a {
+    padding: 12px 15px 12px 12px;
+
+    border-radius: 21px;
+
+    display: flex;
+    column-gap: 6px;
+
+    background-color: #fff
+}
+
+section.v .h img {
+    border-radius: 50%
 }
 
 section.v .h h6 {
-    font: 600 15px system-ui;
-    letter-spacing: .4px
+    margin-left: 2px;
+
+    font: 500 14px system-ui;
+    letter-spacing: .4px;
+
+    color: #999
+}
+
+section.v .h time {
+    font: 500 14px system-ui;
+    letter-spacing: .4px;
+
+    color: #666
+}
+
+/* - */
+
+section.v>svg {
+    position: absolute;
+    inset: env(safe-area-inset-bottom) 0 auto;
+
+    margin-inline: auto
 }
 
 /* b */
