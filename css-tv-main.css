@@ -189,7 +189,7 @@ section.v .a {
     position: absolute;
     inset: 0;
 
-    padding: calc(70px + env(safe-area-inset-bottom)) 30px 40px;
+    padding: calc(100px + env(safe-area-inset-bottom)) 30px 40px;
 
     display: flex;
     flex-direction: column;
@@ -202,9 +202,7 @@ section.v .a {
 
 section.v .i {
     position: absolute;
-    inset: 0 0 auto auto;
-
-    margin: calc(40px + env(safe-area-inset-bottom)) 40px 0;
+    inset: calc(40px + env(safe-area-inset-bottom)) 40px auto auto;
 
     font-size: 50px;
 
@@ -268,16 +266,9 @@ section.v .y a:after {
     background-image: url('4.png')
 }
 
-section.v .k {
-    border-radius: 46px;
-
-    padding: 10px 20px;
-
-    background-color: #fff1
-}
-
 section.v .k h6 {
-    font: 500 14px system-ui;
+    text-align: center;
+    font: 500 17px/1.5 system-ui;
     letter-spacing: .2px
 }
 
@@ -286,7 +277,7 @@ section.v .h {
 
     width: max-content;
 
-    border-radius: 19px;
+    border-radius: 20px;
 
     display: flex;
     column-gap: 5px;
