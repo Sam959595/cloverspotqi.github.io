@@ -246,7 +246,7 @@ section.v .h {
     display: flex;
     column-gap: 5px;
 
-    background-color: #0005
+    background-color: #0003
 }
 
 section.v .h h6 {
@@ -269,7 +269,7 @@ section.v .i {
     position: absolute;
     inset: calc(40px + env(safe-area-inset-bottom)) 40px auto auto;
 
-    font-size: 60px;
+    font-size: 50px;
 
     text-shadow: 0 0 20px #f00;
 
