@@ -191,7 +191,7 @@ section.v .p {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: end;
 
     background-image: linear-gradient(#0009, #0002 30%, #0002 70%, #0009)
 }
@@ -227,11 +227,9 @@ section.v .y a:after {
     background-image: url('4.png')
 }
 
-section.v .k h6 {
-    margin: calc(80px + env(safe-area-inset-bottom)) 0 0;
-
+section.v .k {
     text-align: center;
-    font: 500 18px/1.3 ui-serif;
+    font: 500 18px/1.3 system-ui;
     letter-spacing: .2px
 }
 
@@ -360,7 +358,7 @@ section.v .i div {
 
 section.v .i img {
     border-radius: 50%;
-    outline: 1px solid #ffffff08
+    outline: 1px solid #fff1
 }
 
 section.v .i:is(.b, .c):after {
