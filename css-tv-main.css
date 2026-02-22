@@ -365,12 +365,11 @@ section.v .i img {
 
 section.v .i:is(.b, .c):after {
     position: absolute;
-    inset: 30px -7px 0 auto;
+    inset: 29px -5px 0 auto;
 
     content: "❤️";
 
-    font-size: 20px;
-    text-shadow: 0 0 10px #f00
+    font-size: 20px
 }
 
 /* b */
