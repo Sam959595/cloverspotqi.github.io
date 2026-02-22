@@ -267,7 +267,7 @@ section.v>svg {
 
 section.v .i.a {
     position: absolute;
-    inset: calc(60px + env(safe-area-inset-bottom)) auto auto 40px;
+    inset: calc(50px + env(safe-area-inset-bottom)) auto auto 40px;
 
     animation: a 10s cubic-bezier(.25, 0, .25, 1) infinite
 }
