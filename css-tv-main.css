@@ -296,7 +296,7 @@ section.v .i.a {
 
 section.v .i.b {
     position: absolute;
-    inset: calc(70px + env(safe-area-inset-bottom)) 130px auto auto;
+    inset: calc(60px + env(safe-area-inset-bottom)) 130px auto auto;
 
     animation: b 10s cubic-bezier(.25, 0, .25, 1) infinite
 }
