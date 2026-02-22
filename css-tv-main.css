@@ -185,7 +185,7 @@ section.v video {
     object-fit: cover
 }
 
-section.v .a {
+section.v .p {
     position: absolute;
     inset: 0;
 
@@ -265,39 +265,112 @@ section.v>svg {
 
 /* - */
 
-section.v .i {
+section.v .i.a {
     position: absolute;
-    inset: calc(40px + env(safe-area-inset-bottom)) 40px auto auto;
+    inset: calc(60px + env(safe-area-inset-bottom)) auto auto 40px;
 
-    font-size: 50px;
-
-    text-shadow: 0 0 20px #f00;
-
-    animation: x 10s cubic-bezier(.25, 0, .25, 1) infinite;
-
-    cursor: pointer
+    animation: a 10s cubic-bezier(.25, 0, .25, 1) infinite
 }
 
-@keyframes x {
+@keyframes a {
     0% {
-        transform: translate(0, 0) scale(1) rotate(3deg)
+        transform: translate(-2px, 3px) scale(1)
     }
 
     25% {
-        transform: translate(3px, -4px) scale(1.02) rotate(2deg)
+        transform: translate(4px, 2px) scale(1.015)
     }
 
     50% {
-        transform: translate(-2px, 3px) scale(1) rotate(3deg)
+        transform: translate(0, 0) scale(1)
     }
 
     75% {
-        transform: translate(4px, 2px) scale(1.015) rotate(2deg)
+        transform: translate(3px, -4px) scale(1.02)
     }
 
     100% {
-        transform: translate(0, 0) scale(1) rotate(3deg)
+        transform: translate(-2px, 3px) scale(1)
     }
+}
+
+section.v .i.b {
+    position: absolute;
+    inset: calc(70px + env(safe-area-inset-bottom)) 130px auto auto;
+
+    animation: b 10s cubic-bezier(.25, 0, .25, 1) infinite
+}
+
+@keyframes b {
+    0% {
+        transform: translate(3px, -4px) scale(1)
+    }
+
+    25% {
+        transform: translate(4px, 2px) scale(1.02)
+    }
+
+    50% {
+        transform: translate(-2px, 3px) scale(1)
+    }
+
+    75% {
+        transform: translate(0, 0) scale(1.015)
+    }
+
+    100% {
+        transform: translate(3px, -4px) scale(1)
+    }
+}
+
+section.v .i.c {
+    position: absolute;
+    inset: calc(40px + env(safe-area-inset-bottom)) 40px auto auto;
+
+    animation: c 10s cubic-bezier(.25, 0, .25, 1) infinite
+}
+
+@keyframes c {
+    0% {
+        transform: translate(0, 0) scale(1)
+    }
+
+    25% {
+        transform: translate(3px, -4px) scale(1.02)
+    }
+
+    50% {
+        transform: translate(-2px, 3px) scale(1)
+    }
+
+    75% {
+        transform: translate(4px, 2px) scale(1.015)
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1)
+    }
+}
+
+section.v .i div {
+    margin: -20px -40px 0 0;
+
+    font-size: 20px
+}
+
+section.v .i img {
+    border-radius: 50%;
+    outline: 1px solid #ffffff08
+}
+
+section.v .i:is(.b, .c):after {
+    position: absolute;
+    inset: 30px -7px 0 auto;
+
+    content: "❤️";
+
+    font-size: 20px;
+    text-shadow: 0 0 10px #f00
 }
 
 /* b */
