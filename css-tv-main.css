@@ -234,21 +234,14 @@ section.v .k {
 }
 
 section.v .h {
-    margin: 30px;
-    padding: 10px 14px 10px 13px;
-
-    width: max-content;
-
-    border-radius: 20px;
+    margin: 40px 45px;
 
     display: flex;
-    column-gap: 5px;
-
-    background-color: #0005
+    justify-content: space-between
 }
 
 section.v .h h6 {
-    font: 600 16px ui-rounded;
+    font: 600 19px ui-rounded;
     letter-spacing: .4px
 }
 
@@ -265,7 +258,7 @@ section.v>svg {
 
 section.v .i.a {
     position: absolute;
-    inset: calc(50px + env(safe-area-inset-bottom)) auto auto 40px;
+    inset: calc(40px + env(safe-area-inset-bottom)) auto auto 40px;
 
     animation: a 10s cubic-bezier(.25, 0, .25, 1) infinite
 }
@@ -294,7 +287,7 @@ section.v .i.a {
 
 section.v .i.b {
     position: absolute;
-    inset: calc(60px + env(safe-area-inset-bottom)) 130px auto auto;
+    inset: calc(50px + env(safe-area-inset-bottom)) 110px auto auto;
 
     animation: b 10s cubic-bezier(.25, 0, .25, 1) infinite
 }
@@ -323,7 +316,7 @@ section.v .i.b {
 
 section.v .i.c {
     position: absolute;
-    inset: calc(40px + env(safe-area-inset-bottom)) 40px auto auto;
+    inset: calc(30px + env(safe-area-inset-bottom)) 40px auto auto;
 
     animation: c 10s cubic-bezier(.25, 0, .25, 1) infinite
 }
