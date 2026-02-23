@@ -36,6 +36,10 @@ section.v .p {
     position: absolute;
     inset: 0;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     background-image: linear-gradient(#0008, #0002)
 }
 
