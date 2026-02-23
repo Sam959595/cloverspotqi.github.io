@@ -81,6 +81,11 @@ section.v .k {
 section.v .h {
     margin: 40px 45px;
 
+    display: flex;
+    justify-content: space-between
+}
+
+section.v .h span {
     font: 600 19px ui-rounded;
     letter-spacing: .4px;
 
