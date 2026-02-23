@@ -5,6 +5,10 @@ body {
 
 /* v */
 
+section.v {
+    position: relative
+}
+
 section.v ul {
     overscroll-behavior-y: none;
     overflow-y: scroll;
