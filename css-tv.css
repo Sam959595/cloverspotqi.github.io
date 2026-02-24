@@ -19,13 +19,13 @@ section.a {
 section.a h2 {
     margin: 17vh 11vw 7vw;
 
-    font: 800 10vw ui-rounded;
+    font: 700 7vw ui-rounded;
 
     color: #999
 }
 
 section.a ul {
-    margin-inline: 7vw;
+    margin: 0 7vw calc(7vw + env(safe-area-inset-bottom));
 
     display: grid;
     row-gap: 40px;
@@ -76,7 +76,7 @@ section.a p {
 
 /* - */
 
-section.a div {
+section.a ul div {
     overflow-x: scroll;
 
     margin: 17px;
@@ -89,7 +89,7 @@ section.a div {
     column-gap: 10px
 }
 
-section.a div a {
+section.a ul div a {
     padding: 12px 15px 12px 12px;
 
     border-radius: 21px;
@@ -100,7 +100,7 @@ section.a div a {
     background-color: #151515
 }
 
-section.a div img {
+section.a ul div img {
     border-radius: 50%
 }
 
@@ -146,7 +146,7 @@ section.g {
 
 section.j {
     position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) 22vw auto;
+    inset: calc(15px + env(safe-area-inset-top)) 24vw auto;
 
     display: flex;
     justify-content: space-between;
