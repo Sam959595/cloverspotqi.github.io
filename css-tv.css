@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: light-dark(#edecf6, #0d0d0d);
+    background-color: light-dark(#f0f0f0, #0d0d0d);
     color: light-dark(#111, #fff)
 }
 
@@ -21,7 +21,7 @@ section.a h2 {
 
     font: 800 7vw ui-rounded;
 
-    color: light-dark(#898890, #999)
+    color: light-dark(#777, #999)
 }
 
 section.a ul {
@@ -134,7 +134,7 @@ section.f {
 
     height: 150px;
 
-    background-color: light-dark(#edecf6, #0d0d0d99);
+    background-color: light-dark(#f0f0f0, #0d0d0d99);
 
     filter: blur(20px);
 
