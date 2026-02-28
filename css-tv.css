@@ -3,8 +3,8 @@ html {
 }
 
 body {
-    background-color: #0d0d0d;
-    color: #fff
+    background-color: light-dark(#edecf6, #0d0d0d);
+    color: light-dark(#111, #fff)
 }
 
 /* - */
@@ -21,16 +21,14 @@ section.a h2 {
 
     font: 800 7vw ui-rounded;
 
-    color: #999
+    color: light-dark(#898890, #999)
 }
 
 section.a ul {
     margin: 0 7vw calc(7vw + env(safe-area-inset-bottom));
 
     display: grid;
-    row-gap: 40px;
-
-    background-color: #0d0d0d
+    row-gap: 40px
 }
 
 section.a ul li>a {
@@ -39,7 +37,9 @@ section.a ul li>a {
     overflow: hidden;
     border-radius: 30px;
 
-    display: block
+    display: block;
+
+    background-color: light-dark(#fff, #0000)
 }
 
 section.a ul li>a img {
@@ -59,7 +59,7 @@ section.a ul li>a:after {
     content: "";
 
     border-radius: 30px;
-    border: 3px solid #ffffff08
+    border: 3px solid light-dark(#0000, #ffffff08)
 }
 
 section.a h1 {
@@ -74,7 +74,7 @@ section.a p {
     font: 500 17px system-ui;
     letter-spacing: .4px;
 
-    color: #aaa
+    color: light-dark(#888, #aaa)
 }
 
 /* - */
@@ -100,7 +100,7 @@ section.a ul div a {
     display: flex;
     column-gap: 6px;
 
-    background-color: #151515
+    background-color: light-dark(#fff, #151515)
 }
 
 section.a ul div img {
@@ -113,14 +113,14 @@ section.a h6 {
     font: 500 14px system-ui;
     letter-spacing: .4px;
 
-    color: #999
+    color: light-dark(#111, #999)
 }
 
 section.a time {
     font: 500 14px system-ui;
     letter-spacing: .4px;
 
-    color: #666
+    color: light-dark(#999, #666)
 }
 
 /* f */
@@ -134,7 +134,7 @@ section.f {
 
     height: 150px;
 
-    background-color: #0d0d0d99;
+    background-color: light-dark(#edecf6, #0d0d0d99);
 
     filter: blur(20px);
 
@@ -167,9 +167,9 @@ section.c {
     pointer-events: auto;
 
     border-radius: 25px;
-    outline: 3px solid #ffffff0d;
+    outline: 3px solid light-dark(#0000, #ffffff0d);
 
-    background-color: #131313
+    background-color: light-dark(#fff, #131313)
 }
 
 section.c svg {
@@ -196,9 +196,9 @@ section.b {
     padding: 10px;
 
     border-radius: 50%;
-    outline: 3px solid #ffffff0d;
+    outline: 3px solid light-dark(#0000, #ffffff0d);
 
-    background-color: #131313
+    background-color: light-dark(#fff, #131313)
 }
 
 section.b img {
@@ -225,4 +225,8 @@ img {
 
 ::-webkit-scrollbar {
     display: none
+}
+
+:root {
+    color-scheme: light dark
 }
