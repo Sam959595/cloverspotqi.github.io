@@ -1,5 +1,7 @@
-html {
-    overscroll-behavior: none
+@media (display-mode: standalone) {
+    html {
+        overscroll-behavior: none
+    }
 }
 
 body {
@@ -9,11 +11,14 @@ body {
 
 /* - */
 
-section.a {
-    overflow-y: scroll;
 
-    width: 100vw;
-    height: 100vh
+@media (display-mode: standalone) {
+    section.a {
+        overflow-y: scroll;
+
+        width: 100vw;
+        height: 100vh
+    }
 }
 
 section.a h2 {
