@@ -22,7 +22,7 @@ body {
 }
 
 section.a h2 {
-    margin: 17vh 11vw 7vw;
+    margin: 8vh 11vw 7vw;
 
     font: 800 7vw ui-rounded;
 
@@ -133,7 +133,7 @@ section.f {
     opacity: 1;
 
     position: fixed;
-    inset: 0 0 auto;
+    inset: auto 0 0;
 
     height: 120px;
 
@@ -152,7 +152,7 @@ section.g {
 
 section.j {
     position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) 24vw auto;
+    inset: auto 24vw calc(15px + env(safe-area-inset-bottom));
 
     display: flex;
     justify-content: space-between;
