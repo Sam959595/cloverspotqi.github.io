@@ -132,9 +132,9 @@ section.f {
     position: fixed;
     inset: 0 0 auto;
 
-    height: 150px;
+    height: 120px;
 
-    background-color: light-dark(#f0f0f0, #0d0d0d99);
+    background-color: light-dark(#f0f0f0b0, #0d0d0d99);
 
     filter: blur(20px);
 
