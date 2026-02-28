@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: light-dark(#f0f0f0, #0d0d0d);
+    background-color: light-dark(#fff, #0d0d0d);
     color: light-dark(#111, #fff)
 }
 
@@ -37,9 +37,7 @@ section.a ul li>a {
     overflow: hidden;
     border-radius: 30px;
 
-    display: block;
-
-    background-color: light-dark(#fff, #0000)
+    display: block
 }
 
 section.a ul li>a img {
@@ -59,7 +57,7 @@ section.a ul li>a:after {
     content: "";
 
     border-radius: 30px;
-    border: 3px solid light-dark(#0000, #ffffff08)
+    border: 3px solid light-dark(#0000000d, #ffffff08)
 }
 
 section.a h1 {
@@ -100,7 +98,7 @@ section.a ul div a {
     display: flex;
     column-gap: 6px;
 
-    background-color: light-dark(#fff, #151515)
+    background-color: light-dark(#f2f2f2, #151515)
 }
 
 section.a ul div img {
@@ -134,7 +132,7 @@ section.f {
 
     height: 120px;
 
-    background-color: light-dark(#f0f0f0b0, #0d0d0d99);
+    background-color: light-dark(#fff8, #0d0d0d99);
 
     filter: blur(20px);
 
@@ -169,7 +167,7 @@ section.c {
     border-radius: 25px;
     outline: 3px solid light-dark(#0000, #ffffff0d);
 
-    background-color: light-dark(#fff, #131313)
+    background-color: light-dark(#f2f2f2, #131313)
 }
 
 section.c svg {
@@ -198,7 +196,7 @@ section.b {
     border-radius: 50%;
     outline: 3px solid light-dark(#0000, #ffffff0d);
 
-    background-color: light-dark(#fff, #131313)
+    background-color: light-dark(#f2f2f2, #131313)
 }
 
 section.b img {
