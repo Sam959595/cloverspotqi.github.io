@@ -19,7 +19,7 @@ section.a {
 section.a h2 {
     margin: 17vh 11vw 7vw;
 
-    font: 700 7vw ui-rounded;
+    font: 800 7vw ui-rounded;
 
     color: #999
 }
@@ -47,6 +47,11 @@ section.a ul li>a img {
     height: auto
 }
 
+section.a ul li>a video {
+    width: 100%;
+    height: auto
+}
+
 section.a ul li>a:after {
     position: absolute;
     inset: 0;
@@ -54,9 +59,7 @@ section.a ul li>a:after {
     content: "";
 
     border-radius: 30px;
-    border: 3px solid #ffffff08;
-
-    transition: background-color .2s
+    border: 3px solid #ffffff08
 }
 
 section.a h1 {
