@@ -22,7 +22,7 @@ body {
 }
 
 section.a h2 {
-    margin: calc(6vw + env(safe-area-inset-top)) 11vw 7vw;
+    margin: calc(5vw + env(safe-area-inset-top)) 11vw 7vw;
 
     font: 800 7vw ui-rounded;
 
