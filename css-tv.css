@@ -33,7 +33,7 @@ section.a ul {
     margin: 0 7vw calc(7vw + env(safe-area-inset-bottom));
 
     display: grid;
-    row-gap: 57px
+    row-gap: 60px
 }
 
 section.a ul li>a {
@@ -162,7 +162,7 @@ section.g {
 
 section.j {
     position: fixed;
-    inset: auto 24vw calc(15px + env(safe-area-inset-bottom));
+    inset: auto 24vw 20px;
 
     display: flex;
     justify-content: space-between;
@@ -179,7 +179,10 @@ body:has(section.e.q) section.j {
 section.c {
     pointer-events: auto;
 
-    border-radius: 25px;
+    width: 300px;
+    height: 60px;
+
+    border-radius: 30px;
     outline: 3px solid light-dark(#0000, #ffffff0d);
 
     background-color: light-dark(#f2f2f2, #131313)
