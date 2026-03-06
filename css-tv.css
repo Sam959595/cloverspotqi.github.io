@@ -33,7 +33,7 @@ section.a ul {
     margin: 0 7vw calc(7vw + env(safe-area-inset-bottom));
 
     display: grid;
-    row-gap: 40px
+    row-gap: 57px
 }
 
 section.a ul li>a {
@@ -97,7 +97,7 @@ section.a u {
 section.a ul div {
     overflow-x: scroll;
 
-    margin: 17px;
+    margin: 17px 17px 0;
 
     width: calc(86vw - 34px);
 
