@@ -80,6 +80,14 @@ section.a p {
     color: light-dark(#888, #aaa)
 }
 
+section.a h5 {
+    margin: 30px;
+
+    font: 500 14px system-ui;
+
+    color: light-dark(#888, #aaa)
+}
+
 /* - */
 
 section.a ul div {
@@ -128,16 +136,18 @@ section.a time {
 
 /* f */
 
-section.f {
-    pointer-events: none;
-    opacity: 1;
+@media (display-mode: standalone) {
+    section.f {
+        pointer-events: none;
+        opacity: 1;
 
-    position: fixed;
-    inset: 0 0 auto;
+        position: fixed;
+        inset: 0 0 auto;
 
-    height: calc(env(safe-area-inset-top) * 2);
+        height: calc(env(safe-area-inset-top) * 2);
 
-    background-image: linear-gradient(light-dark(#fff, #0d0d0db0), #0000)
+        background-image: linear-gradient(light-dark(#fff, #0d0d0db0), #0000)
+    }
 }
 
 section.g {
