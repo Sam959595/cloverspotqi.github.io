@@ -88,6 +88,10 @@ section.a h5 {
     color: light-dark(#888, #aaa)
 }
 
+section.a u {
+    color: light-dark(#111, #fff)
+}
+
 /* - */
 
 section.a ul div {
