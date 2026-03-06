@@ -24,6 +24,13 @@ imgElements.forEach(img => {
     observer.observe(img);
 });
 
+// текущая дата
+
+const sectionH = document.querySelector('section.a h2');
+sectionH.textContent =
+new Intl.DateTimeFormat('ru-RU', { weekday:'short', day:'numeric', month:'long' })
+.format(new Date()).toUpperCase();
+
 // Скролл
 const sectionF = document.querySelector('section.f');
 const divZ = document.querySelector('div.z');
@@ -41,13 +48,20 @@ divZ.addEventListener('scroll', () => {
 // поиск бар
 const sectionC = document.querySelector('section.c');
 const sectionV = document.querySelector('section.v');
+const sectionR = document.querySelector('section.r');
 
 const sectionB = document.querySelector('section.b');
 const sectionE = document.querySelector('section.e');
-const sectionEQ = document.querySelector('section.e .b');
+const sectionEQ = document.querySelector('section.e>svg');
 
 sectionC.onclick = () => {
-    sectionV.classList.toggle('s')
+    sectionV.classList.add('s')
+    sectionR.classList.add('s')
+};
+
+sectionR.onclick = () => {
+    sectionV.classList.remove('s')
+    sectionR.classList.remove('s')
 };
 
 sectionB.onclick = () => {
@@ -57,20 +71,3 @@ sectionB.onclick = () => {
 sectionEQ.onclick = () => {
     sectionE.classList.remove('q')
 };
-
-// затенить бар
-let n = 0;
-const e = document.querySelector('div.z');
-const b = document.querySelector('section.j');
-
-e.addEventListener('scroll', () => {
-    let t = e.scrollTop;
-
-    if (t > n) {
-        b.classList.add('x'); // скроллим вниз
-    } else {
-        b.classList.remove('x'); // скроллим вверх
-    }
-
-    n = t <= 0 ? 0 : t;
-});
