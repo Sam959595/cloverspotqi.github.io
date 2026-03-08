@@ -77,7 +77,7 @@ section.a p {
     font: 500 17px system-ui;
     letter-spacing: .4px;
 
-    color: light-dark(#888, #aaa)
+    color: light-dark(#666, #aaa)
 }
 
 section.a h5 {
@@ -85,7 +85,7 @@ section.a h5 {
 
     font: 500 14px system-ui;
 
-    color: light-dark(#888, #aaa)
+    color: light-dark(#666, #aaa)
 }
 
 section.a u {
@@ -135,7 +135,7 @@ section.a time {
     font: 500 14px system-ui;
     letter-spacing: .4px;
 
-    color: light-dark(#888, #666)
+    color: light-dark(#666, #666)
 }
 
 /* f */
