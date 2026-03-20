@@ -1,0 +1,10 @@
+{
+    "name": "Puk",
+    "icons": [
+        {
+            "src": "icon.jpg"
+        }
+    ],
+    "display": "standalone",
+    "theme_color": "#0d0d0d"
+}
