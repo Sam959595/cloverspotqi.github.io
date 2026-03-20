@@ -2,7 +2,7 @@
     "name": "Puk",
     "icons": [
         {
-            "src": "icon_2.jpg"
+            "src": "icon_2.png"
         }
     ],
     "display": "standalone",
