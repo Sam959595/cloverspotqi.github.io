@@ -27,17 +27,14 @@ imgElements.forEach(img => {
 // текущая дата
 
 const sectionH = document.querySelector('section.a h2');
-sectionH.textContent =
-new Intl.DateTimeFormat('ru-RU', { weekday:'short', day:'numeric', month:'long' })
-.format(new Date()).toUpperCase();
-
-const sectionW = document.querySelector('section.w');
+sectionH.textContent = new Intl.DateTimeFormat('ru-RU', { weekday: 'short', day: 'numeric', month: 'long' }).format(new Date()).toUpperCase();
 
 // Скролл
+const sectionA = document.querySelector('section.a');
 const sectionF = document.querySelector('section.f');
 
-sectionW.addEventListener('scroll', () => {
-    let scrollY = sectionW.scrollTop;
+sectionA.addEventListener('scroll', () => {
+    let scrollY = sectionA.scrollTop;
 
     if (scrollY >= 100) {
         sectionF.classList.add('g');
@@ -50,8 +47,8 @@ sectionW.addEventListener('scroll', () => {
 let n = 0;
 const b = document.querySelector('section.j');
 
-sectionW.addEventListener('scroll', () => {
-    let t = sectionW.scrollTop;
+sectionA.addEventListener('scroll', () => {
+    let t = sectionA.scrollTop;
 
     if (t > n) {
         b.classList.add('x'); // скроллим вниз
@@ -68,9 +65,9 @@ const gx = document.querySelector('section.j .b');
 
 const maxScroll = 150; // сколько px = полная темнота
 
-sectionW.addEventListener('scroll', () => {
+sectionA.addEventListener('scroll', () => {
     // получаем скоролл от вверха
-    const scrollY = sectionW.scrollTop;
+    const scrollY = sectionA.scrollTop;
 
     // прогресс от 1 до 0
     let opacity = 1 - (scrollY / maxScroll);
@@ -84,10 +81,10 @@ sectionW.addEventListener('scroll', () => {
 });
 
 // поиск бар
-const sectionWw = document.querySelectorAll('section.w img');
+const sectionAw = document.querySelectorAll('section.w img');
 const sectionV = document.querySelector('section.v');
 
-sectionWw.forEach(img => {
+sectionAw.forEach(img => {
     img.addEventListener('click', () => {
         sectionV.classList.toggle('s');
     });
@@ -108,10 +105,10 @@ tabs.forEach((tab, index) => {
 
         // переключение секций
         if (index === 0) {
-            sectionW.style.display = "block";
+            sectionA.style.display = "block";
             sectionB.style.display = "none";
         } else {
-            sectionW.style.display = "none";
+            sectionA.style.display = "none";
             sectionB.style.display = "block";
         }
     });
