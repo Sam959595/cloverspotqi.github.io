@@ -145,7 +145,7 @@ section.a time {
 
         height: 140px;
 
-        background-color: #0d0d0d99;
+        background-color: light-dark(#ffffff99, #0d0d0d99);
 
         filter: blur(20px);
 
@@ -161,29 +161,33 @@ section.g {
 
 section.j {
     position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) 5vw auto;
+    inset: 20px 0 auto;
 
-    display: flex;
-    justify-content: space-between
-}
-
-/* - */
-
-section.j .a {
+    margin-inline: auto;
     padding: 5px;
+
+    width: max-content;
 
     border-radius: 25px;
 
     display: flex;
 
-    background-color: #0d0d0d;
+    background-color: light-dark(#fff, #0d0d0d);
 
     transition: opacity .4s ease;
 
     will-change: opacity
 }
 
-section.x .a {
+@media (display-mode: standalone) {
+    section.j {
+        inset: env(safe-area-inset-top) 0 auto
+    }
+}
+
+/* - */
+
+section.x {
     opacity: .5
 }
 
@@ -195,12 +199,12 @@ section.j h6 {
     font: 600 16px system-ui;
     letter-spacing: .2px;
 
-    color: #777
+    color: light-dark(#666, #666)
 }
 
 section.j .s {
-    background-color: #2f2f2f;
-    color: #fff
+    background-color: light-dark(#f2f2f2, #151515);
+    color: light-dark(#000, #fff)
 }
 
 /* - */
