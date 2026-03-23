@@ -1,94 +1,308 @@
-// Маленькая утилита для удобства
-const $ = (selector, all = false) => all ? document.querySelectorAll(selector) : document.querySelector(selector);
-
-// DOM-элементы ищутся только один раз при загрузке страницы (а потом используются из памяти)
-const imgElements = $('img[data-src]', true);
-
-// Загрузка изображений lazy-load
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const img = entry.target;
-            const tempImg = new Image();
-            tempImg.src = img.dataset.src;
-            tempImg.onload = () => {
-                img.src = img.dataset.src;
-                img.removeAttribute('data-src');
-            };
-            observer.unobserve(img);
-        }
-    });
-});
-
-imgElements.forEach(img => {
-    observer.observe(img);
-});
-
-// текущая дата
-
-const sectionH = document.querySelector('section.a h2');
-sectionH.textContent = new Intl.DateTimeFormat('ru-RU', { weekday: 'short', day: 'numeric', month: 'long' }).format(new Date()).toUpperCase();
-
-// Скролл
-const sectionA = document.querySelector('section.a');
-const sectionF = document.querySelector('section.f');
-
-sectionA.addEventListener('scroll', () => {
-    let scrollY = sectionA.scrollTop;
-
-    if (scrollY >= 100) {
-        sectionF.classList.add('g');
-    } else {
-        sectionF.classList.remove('g');
+@media (display-mode: standalone) {
+    html {
+        overscroll-behavior: none
     }
-});
+}
 
-// затенить бар
-let n = 0;
-const b = document.querySelector('section.j');
+body {
+    background-image: linear-gradient(light-dark(#f5f5f5, #0000), light-dark(#fff, #0000));
+    background-color: light-dark(#0000, #0d0d0d);
+    color: light-dark(#111, #fff)
+}
 
-sectionA.addEventListener('scroll', () => {
-    let t = sectionA.scrollTop;
+/* - */
 
-    if (t > n) {
-        b.classList.add('x'); // скроллим вниз
-    } else {
-        b.classList.remove('x'); // скроллим вверх
+
+@media (display-mode: standalone) {
+    section.a {
+        overflow-y: scroll;
+
+        width: 100vw;
+        height: 100vh
     }
+}
 
-    n = t <= 0 ? 0 : t;
-});
+section.a h2 {
+    margin: calc(5vw + env(safe-area-inset-top)) 11vw 7vw;
 
-// поиск бар
-const sectionAw = document.querySelectorAll('section.w img');
-const sectionV = document.querySelector('section.v');
+    font: 800 7vw ui-rounded;
 
-sectionAw.forEach(img => {
-    img.addEventListener('click', () => {
-        sectionV.classList.toggle('s');
-    });
-});
+    color: light-dark(#111, #999)
+}
 
-// переключение вкладок
-const tabs = document.querySelectorAll('section.j .a h6');
-const sectionB = document.querySelector('section.b');
+section.a ul {
+    margin: 0 7vw calc(7vw + env(safe-area-inset-bottom));
 
-tabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => {
+    display: grid;
+    row-gap: 60px
+}
 
-        // убрать активный класс у всех вкладок
-        tabs.forEach(t => t.classList.remove('s'));
+section.a ul li>a {
+    position: relative;
 
-        // добавить активный класс текущей
-        tab.classList.add('s');
+    overflow: hidden;
+    border-radius: 30px;
 
-        // переключение секций
-        if (index === 0) {
-            sectionA.style.display = "block";
-            sectionB.style.display = "none";
-        } else {
-            sectionA.style.display = "none";
-            sectionB.style.display = "block";
-        }
-    });
-});
+    display: block
+}
+
+section.a ul li>a img {
+    width: 100%;
+    height: auto
+}
+
+section.a ul li>a video {
+    width: 100%;
+    height: auto
+}
+
+section.a ul li>a:after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    border-radius: 30px;
+    border: 3px solid light-dark(#0000000d, #ffffff08)
+}
+
+section.a h1 {
+    margin: 30px;
+
+    font: 500 19px system-ui
+}
+
+section.a p {
+    margin: 30px;
+
+    font: 500 17px system-ui;
+    letter-spacing: .4px;
+
+    color: light-dark(#666, #aaa)
+}
+
+section.a h5 {
+    margin: 30px;
+
+    font: 500 14px system-ui;
+
+    color: light-dark(#666, #aaa)
+}
+
+/* - */
+
+section.a ul div {
+    overflow-x: scroll;
+
+    margin: 17px 17px 0;
+
+    width: calc(86vw - 34px);
+
+    border-radius: 21px;
+
+    display: flex;
+    column-gap: 10px
+}
+
+section.a ul div a {
+    padding: 12px 15px 12px 12px;
+
+    border-radius: 21px;
+
+    display: flex;
+    column-gap: 6px;
+
+    background-color: light-dark(#f2f2f2, #151515)
+}
+
+section.a ul div img {
+    border-radius: 50%
+}
+
+section.a h6 {
+    margin-left: 2px;
+
+    font: 500 14px system-ui;
+    letter-spacing: .4px;
+
+    color: light-dark(#111, #999)
+}
+
+section.a time {
+    font: 500 14px system-ui;
+    letter-spacing: .4px;
+
+    color: light-dark(#666, #666)
+}
+
+/* f */
+
+@media (display-mode: standalone) {
+    section.f {
+        opacity: 0;
+
+        position: fixed;
+        inset: 0 0 auto;
+
+        height: 140px;
+
+        background-image: linear-gradient(light-dark(#f5f5f5, #0000), light-dark(#fff, #0000));
+        background-color: light-dark(#0000, #0d0d0d99);
+
+        filter: blur(20px);
+
+        transition: opacity .4s ease
+    }
+}
+
+section.g {
+    opacity: 1
+}
+
+/* j */
+
+section.j {
+    position: fixed;
+    inset: 10px 0 auto;
+
+    margin-inline: auto;
+    padding: 5px;
+
+    width: max-content;
+
+    border-radius: 25px;
+
+    display: flex;
+
+    background-color: light-dark(#fff, #0d0d0d);
+
+    transition: opacity .4s ease;
+
+    will-change: opacity
+}
+
+@media (display-mode: standalone) {
+    section.j {
+        inset: env(safe-area-inset-top) 0 auto
+    }
+}
+
+/* - */
+
+section.x {
+    opacity: .5
+}
+
+section.j h6 {
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    font: 600 16px system-ui;
+    letter-spacing: .2px;
+
+    color: light-dark(#666, #666)
+}
+
+section.j .s {
+    background-color: light-dark(#f2f2f2, #151515);
+    color: light-dark(#000, #fff)
+}
+
+/* - */
+
+section.j img {
+    padding: 10px;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%
+}
+
+section.j .e:after {
+    position: absolute;
+    inset: 21px -7px 0 auto;
+
+    content: "";
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background-color: #dd4848
+}
+
+/* c */
+
+section.c {
+    pointer-events: auto;
+
+    width: 300px;
+    height: 60px;
+
+    border-radius: 30px;
+    outline: 3px solid light-dark(#0000, #ffffff0d);
+
+    background-color: light-dark(#f2f2f2, #131313)
+}
+
+section.c svg {
+    display: block
+}
+
+/* 2 obj */
+
+section.u {
+    padding: 21px 9px 9px
+}
+
+section.u img+img {
+    margin: -12px 0 0 -8px;
+
+    clip-path: path("M20 0v20h-9.09A12.5 12.5 0 0 0 .01 9.09L0 0h20Z")
+}
+
+/* b */
+
+section.b {
+    pointer-events: auto;
+
+    padding: 10px;
+
+    border-radius: 50%;
+    outline: 3px solid light-dark(#0000, #ffffff0d);
+
+    background-color: light-dark(#f2f2f2, #131313)
+}
+
+section.b img {
+    border-radius: 50%
+}
+
+/* - */
+
+img[data-src] {
+    opacity: 0
+}
+
+img {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+}
+
+/* - */
+
+::selection {
+    background: #fff
+}
+
+::-webkit-scrollbar {
+    display: none
+}
+
+:root {
+    color-scheme: light dark
+}
