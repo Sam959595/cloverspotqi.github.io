@@ -59,27 +59,6 @@ sectionA.addEventListener('scroll', () => {
     n = t <= 0 ? 0 : t;
 });
 
-// Скролл
-const bx = document.querySelector('section.j svg');
-const gx = document.querySelector('section.j .b');
-
-const maxScroll = 150; // сколько px = полная темнота
-
-sectionA.addEventListener('scroll', () => {
-    // получаем скоролл от вверха
-    const scrollY = sectionA.scrollTop;
-
-    // прогресс от 1 до 0
-    let opacity = 1 - (scrollY / maxScroll);
-
-    // ограничиваем, чтобы не вылезало
-    opacity = Math.min(Math.max(opacity, 0), 1);
-
-    // вешаем style на тег
-    bx.style.opacity = opacity;
-    gx.style.opacity = opacity;
-});
-
 // поиск бар
 const sectionAw = document.querySelectorAll('section.w img');
 const sectionV = document.querySelector('section.v');
