@@ -24,11 +24,6 @@ imgElements.forEach(img => {
     observer.observe(img);
 });
 
-// текущая дата
-
-const sectionH = document.querySelector('section.a h2');
-sectionH.textContent = new Intl.DateTimeFormat('ru-RU', { weekday: 'short', day: 'numeric', month: 'long' }).format(new Date()).toUpperCase();
-
 // Скролл
 const sectionA = document.querySelector('section.a');
 const sectionF = document.querySelector('section.f');
@@ -92,3 +87,8 @@ tabs.forEach((tab, index) => {
         }
     });
 });
+
+// текущая дата
+
+const sectionH = document.querySelector('section.a h2');
+sectionH.textContent = new Intl.DateTimeFormat('ru-RU', { weekday: 'short', day: 'numeric', month: 'long' }).format(new Date()).toUpperCase();
