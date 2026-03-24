@@ -171,7 +171,7 @@ section.j {
 
     display: flex;
 
-    background-color: light-dark(#f2f2f2, #0d0d0d);
+    background-color: light-dark(#fff, #0d0d0d);
 
     transition: opacity .4s ease;
 
@@ -202,7 +202,7 @@ section.j h6 {
 }
 
 section.j .s {
-    background-color: light-dark(#fff, #151515);
+    background-color: light-dark(#f2f2f2, #151515);
     color: light-dark(#000, #fff)
 }
 
