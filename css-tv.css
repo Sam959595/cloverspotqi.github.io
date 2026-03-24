@@ -142,9 +142,9 @@ section.a time {
         position: fixed;
         inset: 0 0 auto;
 
-        height: 140px;
+        height: 130px;
 
-        background-color: light-dark(#fffd, #0d0d0d99);
+        background-color: light-dark(#f5f5f5cc, #0d0d0d99);
 
         filter: blur(20px);
 
