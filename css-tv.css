@@ -29,7 +29,7 @@ section.a h2 {
 }
 
 section.a ul {
-    margin: 0 7vw calc(7vw + env(safe-area-inset-bottom));
+    margin: calc(70px + env(safe-area-inset-top)) 7vw calc(7vw + env(safe-area-inset-bottom));
 
     display: grid;
     row-gap: 60px
