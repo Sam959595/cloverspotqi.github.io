@@ -5,13 +5,11 @@
 }
 
 body {
-    background-image: linear-gradient(light-dark(#f5f5f5, #0000), light-dark(#fff, #0000));
-    background-color: light-dark(#0000, #0d0d0d);
+    background-color: light-dark(#fff, #0d0d0d);
     color: light-dark(#111, #fff)
 }
 
 /* - */
-
 
 @media (display-mode: standalone) {
     section.a {
@@ -146,7 +144,9 @@ section.a time {
 
         height: 140px;
 
-        background-image: linear-gradient(light-dark(#f5f5f5, #0d0d0d), light-dark(#fff, #0d0d0d99));
+        background-color: light-dark(#ffffff50, #0d0d0d99);
+
+        filter: blur(20px);
 
         transition: opacity .4s ease
     }
@@ -171,7 +171,7 @@ section.j {
 
     display: flex;
 
-    background-color: light-dark(#fff, #0d0d0d);
+    background-color: light-dark(#f2f2f2, #0d0d0d);
 
     transition: opacity .4s ease;
 
@@ -202,7 +202,7 @@ section.j h6 {
 }
 
 section.j .s {
-    background-color: light-dark(#f2f2f2, #151515);
+    background-color: light-dark(#fff, #151515);
     color: light-dark(#000, #fff)
 }
 
