@@ -144,7 +144,7 @@ section.a time {
 
         height: 140px;
 
-        background-color: light-dark(#ffffff50, #0d0d0d99);
+        background-color: light-dark(#fffd, #0d0d0d99);
 
         filter: blur(20px);
 
