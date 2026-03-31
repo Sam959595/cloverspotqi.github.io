@@ -70,15 +70,13 @@ section.c li {
     padding: 9px 13px;
 
     border-radius: 19px;
-
-    box-shadow: 0 0 20px #0001;
-
     border: 1px solid #0000;
-
-    background-image: linear-gradient(#f6f6f6, #f6f6f6), linear-gradient(to top left, #fff, #f6f6f6, #fff);
 
     background-origin: border-box;
     background-clip: padding-box, border-box;
+    background-image: linear-gradient(#f6f6f6, #f6f6f6), linear-gradient(to top left, #fff, #f6f6f6, #fff);
+
+    box-shadow: 0 0 20px #0001
 }
 
 section.c h1 {
