@@ -98,7 +98,9 @@ section.c li {
 
     border-radius: 19px;
 
-    box-shadow: 0 0 20px #0001
+    box-shadow: 0 0 20px #0001;
+
+    background-color: light-dark(#fff, #181818)
 }
 
 section.c h1 {
@@ -115,14 +117,14 @@ section.c h1 {
     }
 }
 
-@media (prefers-color-scheme: dark) {
-    section.c ul {
-        column-gap: 14px
-    }
+/* t */
 
-    section.c li {
-        outline: 3px solid #171717
-    }
+section.t {
+    margin: 10px 50px 0
+}
+
+section.t h1 {
+    font: 800 14px system-ui
 }
 
 /* b */
@@ -139,7 +141,10 @@ section.b ul {
 section.b li {
     border-radius: 20px;
 
-    box-shadow: 0 0 20px #0001
+    box-shadow: 0 0 20px #0001;
+
+    background-color: #fff;
+    color: #111
 }
 
 section.b img {
