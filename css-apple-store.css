@@ -5,8 +5,8 @@
 }
 
 body {
-    background-color: #fff;
-    color: #111
+    background-color: light-dark(#fff, #000);
+    color: light-dark(#111, #fff)
 }
 
 /* a */
@@ -23,17 +23,17 @@ body {
 
 section.a {
     position: fixed;
-    inset: 20px auto auto 30px
-}
+    inset: 20px auto auto 30px;
 
-section.a img {
     border-radius: 50%;
+
+    background-size: contain;
 
     box-shadow: 0 0 10px #0001
 }
 
 @media (max-width: 900px) {
-    section.a img {
+    section.a {
         width: 65px;
         height: 65px
     }
@@ -41,12 +41,87 @@ section.a img {
 
 @media (min-width: 900px) {
     section.a {
-        inset: 16px auto auto 25vw
-    }
+        inset: 16px auto auto 25vw;
 
-    section.a img {
         width: 37px;
         height: 37px
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    section.a {
+        background-image: url("1.png")
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    section.a {
+        background-image: url("2.png")
+    }
+}
+
+/* n */
+
+section.n {
+    padding: 50vh 30px 40px;
+
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("https://developer.apple.com/wwdc26/images/p1-rtzhlm/wwdc26-sf-motion-still-last-large-p1_2x.jpg");
+    background-color: #000;
+    color: #fff
+}
+
+section.n p {
+    margin-top: 30px;
+
+    font: 600 21px system-ui;
+
+    color: #999
+}
+
+/* c */
+
+section.c ul {
+    overflow-x: scroll;
+
+    /* margin-top: 115px; */
+    padding: 16px 30px;
+
+    display: flex;
+    column-gap: 10px
+}
+
+section.c li {
+    padding: 10px 14px;
+
+    border-radius: 19px;
+
+    box-shadow: 0 0 20px #0001
+}
+
+section.c h1 {
+    font: 700 14px system-ui;
+    letter-spacing: .2px
+}
+
+@media (min-width: 900px) {
+    section.c ul {
+        margin-top: 0;
+        padding: 16px 16vw;
+
+        justify-content: center
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    section.c ul {
+        column-gap: 14px
+    }
+
+    section.c li {
+        outline: 3px solid #171717
     }
 }
 
@@ -91,40 +166,6 @@ section.b h1 {
     }
 }
 
-/* c */
-
-section.c ul {
-    overflow-x: scroll;
-
-    margin-top: 115px;
-    padding: 16px 30px;
-
-    display: flex;
-    column-gap: 10px
-}
-
-section.c li {
-    padding: 10px 14px;
-
-    border-radius: 19px;
-
-    box-shadow: 0 0 20px #0001
-}
-
-section.c h1 {
-    font: 700 14px system-ui;
-    letter-spacing: .2px
-}
-
-@media (min-width: 900px) {
-    section.c ul {
-        margin-top: 0;
-        padding: 16px 16vw;
-
-        justify-content: center
-    }
-}
-
 /* - */
 
 img[data-src] {
@@ -145,4 +186,8 @@ img {
 
 ::-webkit-scrollbar {
     display: none
+}
+
+:root {
+    color-scheme: light dark
 }
