@@ -1,1 +1,70 @@
+@media (display-mode: standalone) {
+    html {
+        overscroll-behavior: none
+    }
+}
 
+body {
+    background-color: #fff;
+    color: #fff
+}
+
+/* a */
+
+@media (display-mode: standalone) {
+    section.a {
+        overflow-y: scroll;
+
+        height: 100vh
+    }
+}
+
+/* - */
+
+section.a {
+    position: fixed;
+    inset: 20px auto auto 20px
+}
+
+section.a svg {
+    filter: drop-shadow(0 0 10px #0008)
+}
+
+/* b */
+
+section.b ul {
+    overflow-x: scroll;
+
+    margin-top: 30vh;
+    padding-inline: 20px;
+
+    display: flex;
+    column-gap: 10px;
+}
+
+section.b img {
+    width: 100px;
+    height: auto
+}
+
+/* - */
+
+img[data-src] {
+    opacity: 0
+}
+
+img {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+}
+
+/* - */
+
+::selection {
+    background: #fff
+}
+
+::-webkit-scrollbar {
+    display: none
+}
