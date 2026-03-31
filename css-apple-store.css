@@ -23,11 +23,11 @@ body {
 
 section.a {
     position: fixed;
-    inset: 20px auto auto 20px
+    inset: 20px auto auto 30px
 }
 
 section.a svg {
-    filter: drop-shadow(0 0 10px #0008)
+    filter: drop-shadow(0 0 10px #0001)
 }
 
 /* b */
@@ -35,15 +35,23 @@ section.a svg {
 section.b ul {
     overflow-x: scroll;
 
-    margin-top: 30vh;
-    padding-inline: 20px;
+    margin-top: 15vh;
+    padding: 30px;
 
     display: flex;
-    column-gap: 10px;
+    column-gap: 10px
+}
+
+section.b li {
+    border-radius: 20px;
+
+    box-shadow: 0 0 20px #0001
 }
 
 section.b img {
-    width: 100px;
+    padding: 20px;
+
+    width: 50px;
     height: auto
 }
 
