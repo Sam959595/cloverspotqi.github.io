@@ -27,7 +27,9 @@ section.a {
 }
 
 section.a img {
-    filter: drop-shadow(0 0 10px #0001)
+    border-radius: 50%;
+
+    box-shadow: 0 0 10px #0001
 }
 
 @media (max-width: 900px) {
