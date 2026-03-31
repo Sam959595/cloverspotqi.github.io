@@ -43,6 +43,11 @@ section.b ul {
 
 section.b li {
     border-radius: 20px;
+    border: 1px solid #0000;
+
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    background-image: linear-gradient(#f6f6f6, #f6f6f6), linear-gradient(to top left, #fff, #f6f6f6, #fff);
 
     box-shadow: 0 0 20px #0001
 }
