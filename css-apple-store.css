@@ -11,16 +11,6 @@ body {
 
 /* a */
 
-@media (display-mode: standalone) {
-    section.a {
-        overflow-y: scroll;
-
-        height: 100vh
-    }
-}
-
-/* - */
-
 section.a {
     position: fixed;
     inset: 20px auto auto 30px;
@@ -57,6 +47,49 @@ section.a {
 @media (prefers-color-scheme: dark) {
     section.a {
         background-image: url("2.png")
+    }
+}
+
+@media (display-mode: standalone) {
+    section.a {
+        overflow-y: scroll;
+
+        height: 100vh
+    }
+}
+
+/* h */
+
+section.h {
+    position: fixed;
+    inset: 16px 25vw auto auto;
+
+    border-radius: 50%;
+
+    padding: 3.5px;
+
+    background-color: light-dark(#fff, #181818);
+
+    box-shadow: 0 0 10px #0001
+}
+
+section.h img {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%
+}
+
+@media (max-width: 900px) {
+    section.h {
+        inset: 20px 30px auto auto;
+
+        padding: 12.5px
+    }
+
+    section.h img {
+        width: 40px;
+        height: 40px
     }
 }
 
@@ -125,6 +158,33 @@ section.t {
 
 section.t h1 {
     font: 800 14px system-ui
+}
+
+/* k */
+
+section.k {
+    position: relative;
+
+    margin: 30px
+}
+
+section.k img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 40px
+}
+
+section.k:after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    border-radius: 40px;
+    border: 3px solid #ffffff15;
+
+    transition: background-color .2s
 }
 
 /* b */
