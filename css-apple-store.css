@@ -30,6 +30,24 @@ section.a svg {
     filter: drop-shadow(0 0 10px #0001)
 }
 
+@media (max-width: 900px) {
+    section.a img {
+        width: 65px;
+        height: 65px
+    }
+}
+
+@media (min-width: 900px) {
+    section.a {
+        inset: 16px auto auto 25vw
+    }
+
+    section.a img {
+        width: 37px;
+        height: 37px
+    }
+}
+
 /* b */
 
 section.b ul {
@@ -48,10 +66,27 @@ section.b li {
 }
 
 section.b img {
-    padding: 15px 25px;
+    width: 100px;
+    height: 120px;
 
-    width: 50px;
-    height: auto
+    object-fit: contain
+}
+
+section.b h1 {
+    margin: 15px;
+
+    font: 600 12px system-ui;
+}
+
+@media (min-width: 900px) {
+    section.b ul {
+        overflow-x: scroll;
+
+        padding: 50px 16vw;
+
+        display: flex;
+        column-gap: 10px
+    }
 }
 
 /* c */
@@ -75,7 +110,17 @@ section.c li {
 }
 
 section.c h1 {
-    font: 700 14px system-ui
+    font: 700 14px system-ui;
+    letter-spacing: .2px
+}
+
+@media (min-width: 900px) {
+    section.c ul {
+        margin-top: 0;
+        padding: 16px 16vw;
+
+        justify-content: center
+    }
 }
 
 /* - */
