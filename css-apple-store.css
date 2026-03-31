@@ -86,7 +86,7 @@ section.n p {
 section.c ul {
     overflow-x: scroll;
 
-    /* margin-top: 115px; */
+    margin-top: 115px;
     padding: 16px 30px;
 
     display: flex;
