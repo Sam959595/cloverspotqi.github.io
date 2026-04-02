@@ -61,21 +61,16 @@ section.g {
 
 section.j {
     position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) 5vw auto;
+    inset: calc(15px + env(safe-area-inset-top)) 0 auto;
 
-    display: flex;
-    justify-content: space-between
-}
+    margin-inline: auto;
 
-/* - */
-
-section.j .a {
-    padding: 5px;
+    width: max-content;
 
     border-radius: 25px;
 
     display: flex;
-    column-gap: 5px;
+    justify-content: center;
 
     background-color: #0d0d0d;
 
@@ -107,15 +102,12 @@ section.j .s {
 /* - */
 
 section.j img {
-    padding: 10px;
-
-    width: 30px;
-    height: 30px;
+    padding: 13.5px 13.5px 13.5px 10px;
 
     border-radius: 50%
 }
 
-section.j .e:after {
+/* section.j .e:after {
     position: absolute;
     inset: 21px -7px 0 auto;
 
@@ -127,7 +119,7 @@ section.j .e:after {
     border-radius: 50%;
 
     background-color: #dd4848
-}
+} */
 
 /* b */
 
@@ -319,7 +311,7 @@ ul.b {
     grid-auto-rows: 46vh;
     column-gap: 6vw;
 
-    display: none
+    /* display: none */
 }
 
 ul.b a {
