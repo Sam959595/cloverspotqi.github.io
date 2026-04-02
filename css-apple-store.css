@@ -5,16 +5,32 @@
 }
 
 body {
+    overscroll-behavior: none;
+
+    height: 100vh;
+
     background-color: light-dark(#fff, #000);
     color: light-dark(#111, #fff)
 }
 
-/* a */
+/* c */
 
-section.a {
-    position: fixed;
-    inset: 20px auto auto 30px;
+section.c {
+    display: flex;
+    column-gap: 47px;
 
+    justify-content: center
+}
+
+@media (min-width: 900px) {
+    section.c {
+        margin: 16px
+    }
+}
+
+/* - */
+
+section.c .e {
     border-radius: 50%;
 
     background-size: contain;
@@ -23,46 +39,101 @@ section.a {
 }
 
 @media (max-width: 900px) {
-    section.a {
+    section.c .e {
+        position: fixed;
+        inset: 20px auto auto 30px
+    }
+
+    section.c .e {
         width: 65px;
         height: 65px
     }
 }
 
 @media (min-width: 900px) {
-    section.a {
-        inset: 16px auto auto 25vw;
-
+    section.c .e {
         width: 37px;
         height: 37px
     }
 }
 
 @media (prefers-color-scheme: light) {
-    section.a {
+    section.c .e {
         background-image: url("1.png")
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    section.a {
+    section.c .e {
         background-image: url("2.png")
     }
 }
 
-@media (display-mode: standalone) {
-    section.a {
-        overflow-y: scroll;
+/* - */
 
-        height: 100vh
+section.c ul {
+    display: flex;
+    column-gap: 10px
+}
+
+section.c li {
+    padding: 10px 14px;
+
+    border-radius: 19px;
+
+    background-color: light-dark(#fff, #181818);
+
+    box-shadow: 0 0 20px #0001;
+
+    cursor: pointer
+}
+
+section.c li:hover,
+section.c .a {
+    background-color: light-dark(#ebebeb, #363636)
+}
+
+section.c h1 {
+    font: 700 14px system-ui;
+    letter-spacing: .2px
+}
+
+section.c li:last-child {
+    display: flex;
+    align-items: center;
+    column-gap: 3px
+}
+
+section.c li div {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background-color: light-dark(#b5b5b5, #555)
+}
+
+@media (max-width: 900px) {
+    section.c ul {
+        overflow-x: scroll;
+
+        margin-top: 115px;
+        padding: 16px 30px
     }
 }
 
-/* h */
+@media (min-width: 900px) and (prefers-color-scheme: dark) {
+    section.c h1 {
+        font-weight: 500;
+        letter-spacing: .8px
+    }
+}
 
-section.h {
-    position: fixed;
-    inset: 16px 25vw auto auto;
+/* - */
+
+section.c img {
+    width: 30px;
+    height: 30px;
 
     border-radius: 50%;
 
@@ -73,91 +144,11 @@ section.h {
     box-shadow: 0 0 10px #0001
 }
 
-section.h img {
-    width: 30px;
-    height: 30px;
-
-    border-radius: 50%
-}
-
 @media (max-width: 900px) {
-    section.h {
-        inset: 20px 30px auto auto;
-
-        padding: 12.5px
+    section.c img {
+        position: fixed;
+        inset: 20px 30px auto auto
     }
-
-    section.h img {
-        width: 40px;
-        height: 40px
-    }
-}
-
-/* n */
-
-section.n {
-    padding: 50vh 30px 40px;
-
-    background-position: top;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url("https://developer.apple.com/wwdc26/images/p1-rtzhlm/wwdc26-sf-motion-still-last-large-p1_2x.jpg");
-    background-color: #000;
-    color: #fff
-}
-
-section.n p {
-    margin-top: 30px;
-
-    font: 600 21px system-ui;
-
-    color: #999
-}
-
-/* c */
-
-section.c ul {
-    overflow-x: scroll;
-
-    margin-top: 115px;
-    padding: 16px 30px;
-
-    display: flex;
-    column-gap: 10px
-}
-
-section.c li {
-    padding: 10px 14px;
-
-    border-radius: 19px;
-
-    box-shadow: 0 0 20px #0001;
-
-    background-color: light-dark(#fff, #181818)
-}
-
-section.c h1 {
-    font: 700 14px system-ui;
-    letter-spacing: .2px
-}
-
-@media (min-width: 900px) {
-    section.c ul {
-        margin-top: 0;
-        padding: 16px 16vw;
-
-        justify-content: center
-    }
-}
-
-/* t */
-
-section.t {
-    margin: 10px 50px 0
-}
-
-section.t h1 {
-    font: 800 14px system-ui
 }
 
 /* k */
@@ -165,7 +156,11 @@ section.t h1 {
 section.k {
     position: relative;
 
-    margin: 30px
+    margin: 30px;
+
+    border-radius: 40px;
+
+    background-color: #000
 }
 
 section.k img {
@@ -185,6 +180,44 @@ section.k:after {
     border: 3px solid #ffffff15;
 
     transition: background-color .2s
+}
+
+/* - */
+
+section.k div {
+    position: absolute;
+    inset: 0;
+
+    padding: 80px;
+
+    color: #fff
+}
+
+section.k h2 {
+    font: 800 21px system-ui;
+    letter-spacing: .4px
+}
+
+section.k h1 {
+    margin-block: 5px 10px;
+
+    font: 800 32px system-ui;
+    letter-spacing: .4px
+}
+
+section.k p {
+    font: 600 17px system-ui;
+    letter-spacing: .4px;
+
+    color: #52a6fe
+}
+
+section.k h3 {
+    margin-top: 200px;
+
+    text-align: center;
+    font: 800 52px system-ui;
+    letter-spacing: .4px
 }
 
 /* b */
@@ -229,6 +262,37 @@ section.b h1 {
         display: flex;
         column-gap: 10px
     }
+}
+
+/* n */
+
+section.n {
+    padding: 50vh 30px 40px;
+
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("https://developer.apple.com/wwdc26/images/p1-rtzhlm/wwdc26-sf-motion-still-last-large-p1_2x.jpg");
+    background-color: #000;
+    color: #fff
+}
+
+section.n p {
+    margin-top: 30px;
+
+    font: 600 21px system-ui;
+
+    color: #999
+}
+
+/* t */
+
+section.t {
+    margin: 10px 50px 0
+}
+
+section.t h1 {
+    font: 800 14px system-ui
 }
 
 /* f */
