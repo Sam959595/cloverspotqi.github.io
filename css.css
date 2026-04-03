@@ -26,7 +26,8 @@ blockquote {
 
 ul,
 ol,
-select {
+select,
+textarea {
 	padding: 0
 }
 
@@ -78,7 +79,8 @@ textarea {
 	outline: none
 }
 
-input {
+input,
+textarea {
 	box-sizing: border-box
 }
 
