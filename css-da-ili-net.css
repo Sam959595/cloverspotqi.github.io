@@ -1,0 +1,400 @@
+@media (display-mode: standalone) {
+    html {
+        overscroll-behavior: none
+    }
+}
+
+body {
+    overscroll-behavior: none;
+
+    height: 100vh;
+
+    background-color: light-dark(#fff, #0d0d0d);
+    color: light-dark(#111, #fff)
+}
+
+/* w */
+
+section.w textarea {
+    resize: none;
+
+    margin-block: 140px 0;
+    padding-inline: 30px;
+
+    width: 100%;
+
+    font: 600 28px ui-rounded, system-ui
+}
+
+/* c */
+
+section.c {
+    display: flex;
+    column-gap: 47px;
+
+    justify-content: center
+}
+
+@media (min-width: 900px) {
+    section.c {
+        margin: 16px
+    }
+}
+
+/* - */
+
+section.c .e {
+    border-radius: 50%;
+
+    background-size: contain;
+
+    box-shadow: 0 0 10px #0001;
+
+    cursor: pointer
+}
+
+@media (max-width: 900px) {
+    section.c .e {
+        z-index: 1;
+        position: fixed;
+        inset: 20px auto auto 30px
+    }
+
+    section.c .e {
+        width: 65px;
+        height: 65px
+    }
+}
+
+@media (min-width: 900px) {
+    section.c .e {
+        width: 37px;
+        height: 37px
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    section.c .e {
+        background-image: url("1.png")
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    section.c .e {
+        background-image: url("2.png")
+    }
+}
+
+/* - */
+
+section.c ul {
+    display: flex;
+    column-gap: 10px
+}
+
+section.c li {
+    padding: 10px 14px;
+
+    border-radius: 19px;
+
+    background-color: light-dark(#fff, #181818);
+
+    box-shadow: 0 0 20px #0001;
+
+    cursor: pointer
+}
+
+section.c li:hover,
+section.c .a {
+    background-color: light-dark(#ebebeb, #363636)
+}
+
+section.c h1 {
+    font: 700 14px system-ui;
+    letter-spacing: .2px
+}
+
+section.c li:last-child {
+    display: flex;
+    align-items: center;
+    column-gap: 3px
+}
+
+section.c li div {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background-color: light-dark(#b5b5b5, #555)
+}
+
+@media (max-width: 900px) {
+    section.c ul {
+        overflow-x: scroll;
+
+        margin-top: 115px;
+        padding: 16px 30px
+    }
+}
+
+@media (min-width: 900px) and (prefers-color-scheme: dark) {
+    section.c h1 {
+        font-weight: 500;
+        letter-spacing: .8px
+    }
+}
+
+/* - */
+
+section.c img {
+    padding: 3.5px;
+
+    border-radius: 50%;
+
+    background-color: light-dark(#fff, #181818);
+
+    box-shadow: 0 0 10px #0001;
+
+    cursor: pointer
+}
+
+@media (max-width: 900px) {
+    section.c img {
+        position: absolute;
+        inset: 20px 30px auto auto;
+
+        width: 40px;
+        height: 40px
+    }
+}
+
+@media (min-width: 900px) {
+    section.c img {
+        width: 30px;
+        height: 30px
+    }
+}
+
+/* k */
+
+section.k {
+    position: relative;
+
+    margin: 30px;
+
+    border-radius: 40px;
+
+    background-color: #000
+}
+
+section.k img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 40px
+}
+
+section.k:after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    border-radius: 40px;
+    border: 3px solid #ffffff15;
+
+    transition: background-color .2s
+}
+
+/* - */
+
+section.k div {
+    position: absolute;
+    inset: 0;
+
+    padding: 120px;
+
+    color: #fff
+}
+
+section.k h2 {
+    font: 800 21px system-ui;
+    letter-spacing: .4px
+}
+
+section.k h1 {
+    margin-block: 5px 20px;
+
+    font: 800 32px system-ui;
+    letter-spacing: .4px
+}
+
+section.k p {
+    font: 600 17px system-ui;
+    letter-spacing: .4px;
+
+    color: #52a6fe
+}
+
+section.k h3 {
+    margin-top: 140px;
+
+    text-align: center;
+    font: 800 52px system-ui;
+    letter-spacing: .4px
+}
+
+/* b */
+
+section.b ul {
+    overflow-x: scroll;
+
+    padding: 16px 30px;
+
+    display: flex;
+    column-gap: 10px
+}
+
+section.b li {
+    padding: 10px 30px;
+
+    border-radius: 40px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+    background-color: light-dark(#fff, #181818);
+
+    box-shadow: 0 0 20px #0001;
+
+    cursor: pointer
+}
+
+section.b li:hover {
+    background-color: light-dark(#ebebeb, #363636)
+}
+
+section.b img {
+    width: auto;
+    height: 60px
+}
+
+section.b h1 {
+    text-wrap: nowrap;
+    font: 600 12px system-ui;
+}
+
+section.b p {
+    margin-top: 5px;
+
+    font: 600 11px system-ui;
+
+    color: #999
+}
+
+@media (min-width: 900px) {
+    section.b ul {
+        overflow-x: scroll;
+
+        display: flex;
+        justify-content: center;
+        column-gap: 10px
+    }
+}
+
+/* n */
+
+section.n {
+    padding: 50vh 30px 40px;
+
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("https://developer.apple.com/wwdc26/images/p1-rtzhlm/wwdc26-sf-motion-still-last-large-p1_2x.jpg");
+    background-color: #000;
+    color: #fff
+}
+
+section.n p {
+    margin-top: 30px;
+
+    font: 600 21px system-ui;
+
+    color: #999
+}
+
+/* t */
+
+section.t {
+    margin: 10px 50px 0
+}
+
+section.t h1 {
+    font: 800 14px system-ui
+}
+
+/* f */
+
+section.f {
+    opacity: 0;
+
+    position: fixed;
+    inset: 20px 20px auto;
+
+    padding: 20px;
+
+    border-radius: 38px;
+    outline: 3px solid light-dark(#f1f1f1, #121212);
+
+    display: flex;
+    column-gap: 15px;
+
+    background-color: light-dark(#f5f5f5, #0f0f0f);
+
+    transform: scale(.5);
+    transform-origin: top;
+
+    transition: opacity .2s ease, transform .5s cubic-bezier(.16, 1, .3, 1)
+}
+
+section.x {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity .5s ease, transform .8s cubic-bezier(.16, 1, .3, 1)
+}
+
+section.f h1 {
+    flex: 1;
+
+    font: 500 13px system-ui
+}
+
+/* - */
+
+img[data-src] {
+    opacity: 0
+}
+
+img {
+    opacity: 1;
+
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+}
+
+/* - */
+
+::selection {
+    background: #fff
+}
+
+::-webkit-scrollbar {
+    display: none
+}
+
+:root {
+    color-scheme: light dark
+}
