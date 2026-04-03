@@ -72,9 +72,7 @@ section.c li {
 
     border-radius: 30px;
 
-    background-color: light-dark(#fff, #181818);
-
-    box-shadow: 0 0 20px #0001;
+    background-color: light-dark(#f4f4f4, #181818);
 
     cursor: pointer
 }
