@@ -9,7 +9,7 @@ body {
 
     height: 100vh;
 
-    background-color: light-dark(#fff, #0d0d0d);
+    background-color: light-dark(#f6f6f6, #0d0d0d);
     color: light-dark(#111, #fff)
 }
 
@@ -83,8 +83,11 @@ section.c li {
     padding: 10px 14px;
 
     border-radius: 19px;
+    border: 1px solid #0000;
 
-    background-color: light-dark(#fff, #181818);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    background-image: linear-gradient(#f6f6f6, #f6f6f6), linear-gradient(to top left, #fff, #f6f6f6, #fff);
 
     box-shadow: 0 0 20px #0001;
 
@@ -247,12 +250,15 @@ section.b li {
     padding: 10px 30px;
 
     border-radius: 40px;
+    border: 1px solid #0000;
 
     display: flex;
     align-items: center;
     column-gap: 15px;
 
-    background-color: light-dark(#fff, #181818);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    background-image: linear-gradient(#f6f6f6, #f6f6f6), linear-gradient(to top left, #fff, #f6f6f6, #fff);
 
     box-shadow: 0 0 20px #0001;
 
