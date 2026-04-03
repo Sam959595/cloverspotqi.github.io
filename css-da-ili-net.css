@@ -36,7 +36,7 @@ section.w textarea::placeholder {
 section.w h1 {
     margin: 10px 40px;
 
-    font: 700 14px system-ui;
+    font: 600 16px system-ui;
 
     color: light-dark(#aaa, #666)
 }
@@ -85,7 +85,7 @@ section.c li:hover {
 
 section.c h1 {
     text-wrap: nowrap;
-    font: 600 15px system-ui;
+    font: 600 15px ui-rounded;
     letter-spacing: .2px
 }
 
