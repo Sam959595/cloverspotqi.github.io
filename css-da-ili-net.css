@@ -55,7 +55,6 @@ section.c .e {
 
 @media (max-width: 900px) {
     section.c .e {
-        z-index: 1;
         position: fixed;
         inset: 20px auto auto 30px
     }
@@ -110,6 +109,7 @@ section.c .a {
 }
 
 section.c h1 {
+    text-wrap: nowrap;
     font: 700 14px system-ui;
     letter-spacing: .2px
 }
@@ -133,7 +133,6 @@ section.c li div {
     section.c ul {
         overflow-x: scroll;
 
-        margin-top: 115px;
         padding: 16px 30px
     }
 }
@@ -368,9 +367,19 @@ section.x {
 }
 
 section.f h1 {
+    font-size: 24px
+}
+
+section.f h2 {
     flex: 1;
 
-    font: 500 13px system-ui
+    font: 700 22px ui-rounded, system-ui;
+
+    background-clip: text;
+    background-image: linear-gradient(to top right, #c27cff, #3278d5);
+    -webkit-text-fill-color: #0000;
+
+    text-shadow: 0 0 20px #9a69df
 }
 
 /* - */
