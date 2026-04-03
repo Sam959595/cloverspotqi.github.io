@@ -47,6 +47,7 @@ section.c .e {
     border-radius: 50%;
 
     background-size: contain;
+    background-image: url("12.png");
 
     box-shadow: 0 0 10px #0001;
 
@@ -69,18 +70,6 @@ section.c .e {
     section.c .e {
         width: 37px;
         height: 37px
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    section.c .e {
-        background-image: url("1.png")
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    section.c .e {
-        background-image: url("2.png")
     }
 }
 
