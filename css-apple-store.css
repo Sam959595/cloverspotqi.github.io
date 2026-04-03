@@ -252,12 +252,15 @@ section.b li {
     align-items: center;
     column-gap: 15px;
 
-    background-color: #fff;
-    color: #111;
+    background-color: light-dark(#fff, #181818);
 
     box-shadow: 0 0 20px #0001;
 
     cursor: pointer
+}
+
+section.b li:hover {
+    background-color: light-dark(#ebebeb, #363636)
 }
 
 section.b img {
