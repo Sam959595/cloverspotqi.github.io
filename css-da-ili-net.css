@@ -23,7 +23,14 @@ section.w textarea {
 
     width: 100%;
 
-    font: 600 28px ui-rounded, system-ui
+    font: 700 28px ui-rounded, system-ui;
+
+    background-color: #0000;
+    color: light-dark(#111, #fff)
+}
+
+section.w textarea::placeholder {
+    color: light-dark(#aaa, #666)
 }
 
 /* c */
