@@ -9,7 +9,7 @@ body {
 
     height: 100vh;
 
-    background-color: light-dark(#fff, #000);
+    background-color: light-dark(#fff, #0d0d0d);
     color: light-dark(#111, #fff)
 }
 
@@ -35,11 +35,14 @@ section.c .e {
 
     background-size: contain;
 
-    box-shadow: 0 0 10px #0001
+    box-shadow: 0 0 10px #0001;
+
+    cursor: pointer
 }
 
 @media (max-width: 900px) {
     section.c .e {
+        z-index: 1;
         position: fixed;
         inset: 20px auto auto 30px
     }
@@ -132,22 +135,31 @@ section.c li div {
 /* - */
 
 section.c img {
-    width: 30px;
-    height: 30px;
+    padding: 3.5px;
 
     border-radius: 50%;
 
-    padding: 3.5px;
-
     background-color: light-dark(#fff, #181818);
 
-    box-shadow: 0 0 10px #0001
+    box-shadow: 0 0 10px #0001;
+
+    cursor: pointer
 }
 
 @media (max-width: 900px) {
     section.c img {
-        position: fixed;
-        inset: 20px 30px auto auto
+        position: absolute;
+        inset: 20px 30px auto auto;
+
+        width: 40px;
+        height: 40px
+    }
+}
+
+@media (min-width: 900px) {
+    section.c img {
+        width: 30px;
+        height: 30px
     }
 }
 
@@ -188,7 +200,7 @@ section.k div {
     position: absolute;
     inset: 0;
 
-    padding: 80px;
+    padding: 120px;
 
     color: #fff
 }
@@ -199,7 +211,7 @@ section.k h2 {
 }
 
 section.k h1 {
-    margin-block: 5px 10px;
+    margin-block: 5px 20px;
 
     font: 800 32px system-ui;
     letter-spacing: .4px
@@ -213,7 +225,7 @@ section.k p {
 }
 
 section.k h3 {
-    margin-top: 200px;
+    margin-top: 140px;
 
     text-align: center;
     font: 800 52px system-ui;
