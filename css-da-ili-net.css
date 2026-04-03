@@ -41,24 +41,15 @@ section.w h1 {
     color: light-dark(#aaa, #666)
 }
 
-/* c */
+/* l */
 
-section.c {
-    display: flex;
-    column-gap: 47px;
+section.l {
+    position: fixed;
+    inset: 20px auto auto 30px;
 
-    justify-content: center
-}
+    width: 65px;
+    height: 65px;
 
-@media (min-width: 900px) {
-    section.c {
-        margin: 16px
-    }
-}
-
-/* - */
-
-section.c .e {
     border-radius: 50%;
 
     background-size: contain;
@@ -69,26 +60,7 @@ section.c .e {
     cursor: pointer
 }
 
-@media (max-width: 900px) {
-    section.c .e {
-        position: fixed;
-        inset: 20px auto auto 30px
-    }
-
-    section.c .e {
-        width: 65px;
-        height: 65px
-    }
-}
-
-@media (min-width: 900px) {
-    section.c .e {
-        width: 37px;
-        height: 37px
-    }
-}
-
-/* - */
+/* c */
 
 section.c ul {
     display: flex;
@@ -96,9 +68,9 @@ section.c ul {
 }
 
 section.c li {
-    padding: 10px 14px;
+    padding: 20px;
 
-    border-radius: 19px;
+    border-radius: 30px;
 
     background-color: light-dark(#fff, #181818);
 
@@ -113,7 +85,7 @@ section.c li:hover {
 
 section.c h1 {
     text-wrap: nowrap;
-    font: 700 14px system-ui;
+    font: 600 15px system-ui;
     letter-spacing: .2px
 }
 
@@ -129,37 +101,6 @@ section.c h1 {
     section.c h1 {
         font-weight: 500;
         letter-spacing: .8px
-    }
-}
-
-/* - */
-
-section.c img {
-    padding: 3.5px;
-
-    border-radius: 50%;
-
-    background-color: light-dark(#fff, #181818);
-
-    box-shadow: 0 0 10px #0001;
-
-    cursor: pointer
-}
-
-@media (max-width: 900px) {
-    section.c img {
-        position: absolute;
-        inset: 20px 30px auto auto;
-
-        width: 40px;
-        height: 40px
-    }
-}
-
-@media (min-width: 900px) {
-    section.c img {
-        width: 30px;
-        height: 30px
     }
 }
 
@@ -205,7 +146,7 @@ section.f h2 {
     font: 700 22px ui-rounded, system-ui;
 
     background-clip: text;
-    background-image: linear-gradient(to top right, #c27cff, #3278d5);
+    background-image: linear-gradient(to right, #c27cff, #3278d5);
     -webkit-text-fill-color: #0000;
 
     text-shadow: 0 0 20px #9a69df
