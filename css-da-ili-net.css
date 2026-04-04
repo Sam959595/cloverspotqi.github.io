@@ -23,7 +23,7 @@ section.w textarea {
 
     width: 100%;
 
-    font: 700 28px ui-rounded, system-ui;
+    font: 700 28px ui-rounded;
 
     background-color: #0000;
     color: light-dark(#111, #fff)
@@ -33,12 +33,34 @@ section.w textarea::placeholder {
     color: light-dark(#aaa, #666)
 }
 
+section.w h6 {
+    margin-inline: 40px;
+
+    font: 600 16px ui-rounded;
+
+    color: light-dark(#aaa, #424242)
+}
+
+section.w ul {
+    margin: 25px 30vw 200px 40px
+}
+
+section.w li {
+    margin-top: 40px
+}
+
 section.w h1 {
-    margin: 10px 40px;
+    font: 600 16px ui-rounded;
 
-    font: 600 16px system-ui;
+    color: #666
+}
 
-    color: light-dark(#aaa, #666)
+section.w p {
+    margin-top: 5px;
+
+    font: 600 14px ui-rounded;
+
+    color: light-dark(#909090, #4a4a4a)
 }
 
 /* l */
@@ -91,7 +113,7 @@ section.c h1 {
     section.c ul {
         overflow-x: scroll;
 
-        padding: 16px 30px
+        padding-inline: 30px
     }
 }
 
@@ -110,15 +132,12 @@ section.f {
     position: fixed;
     inset: 20px 20px auto;
 
-    padding: 20px;
+    padding: 20px 30px;
 
     border-radius: 38px;
-    outline: 3px solid light-dark(#f1f1f1, #121212);
+    outline: 3px solid light-dark(#f1f1f1, #2e2e2e);
 
-    display: flex;
-    column-gap: 15px;
-
-    background-color: light-dark(#f5f5f5, #0f0f0f);
+    background-color: light-dark(#f5f5f5, #212121);
 
     transform: scale(.5);
     transform-origin: top;
@@ -135,19 +154,8 @@ section.x {
 }
 
 section.f h1 {
-    font-size: 24px
-}
-
-section.f h2 {
-    flex: 1;
-
-    font: 700 22px ui-rounded, system-ui;
-
-    background-clip: text;
-    background-image: linear-gradient(to right, #c27cff, #3278d5);
-    -webkit-text-fill-color: #0000;
-
-    text-shadow: 0 0 20px #9a69df
+    white-space: nowrap;
+    font: 700 22px ui-rounded
 }
 
 /* - */
