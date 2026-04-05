@@ -31,6 +31,13 @@ section.t h1 {
     -webkit-text-fill-color: #0000
 }
 
+/* r */
+
+section.r {
+    position: absolute;
+    inset: 20px 40px auto auto;
+}
+
 /* w */
 
 section.w textarea {
