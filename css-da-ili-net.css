@@ -9,8 +9,26 @@ body {
 
     height: 100vh;
 
-    background-color: light-dark(#fff, #0d0d0d);
+    background-color: light-dark(#fff, #131417);
     color: light-dark(#111, #fff)
+}
+
+/* t */
+
+section.t {
+    margin: 30px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 20px
+}
+
+section.t h1 {
+    font: 600 21px ui-rounded;
+
+    background-clip: text;
+    background-image: linear-gradient(to right, #FF71A1, #fff);
+    -webkit-text-fill-color: #0000
 }
 
 /* w */
@@ -18,8 +36,7 @@ body {
 section.w textarea {
     resize: none;
 
-    margin-block: 140px 0;
-    padding-inline: 40px;
+    padding: 40px;
 
     width: 100%;
 
