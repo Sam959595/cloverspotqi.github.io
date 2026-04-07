@@ -99,9 +99,9 @@ section.w textarea::placeholder {
 section.w h6 {
     margin-inline: 40px;
 
-    font: 600 18px ui-rounded;
+    font: 700 28px ui-rounded;
 
-    color: #424242
+    color: #333
 }
 
 section.w ul {
