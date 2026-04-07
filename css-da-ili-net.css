@@ -1,16 +1,6 @@
-@media (display-mode: standalone) {
-    html {
-        overscroll-behavior: none
-    }
-}
-
 body {
-    overscroll-behavior: none;
-
-    height: 100vh;
-
-    background-color: light-dark(#fff, #131417);
-    color: light-dark(#111, #fff)
+    background-color: #000;
+    color: #fff
 }
 
 /* t */
@@ -51,20 +41,34 @@ section.w .a {
     will-change: transform
 }
 
+section.w .a img {
+    width: 90vw;
+    height: 90vw;
+
+    filter: blur(10px) saturate(150%);
+
+    animation: r 20s linear infinite;
+
+    will-change: transform
+}
+
 section.w .a h1 {
     position: absolute;
     inset: 0;
 
     margin: auto;
 
-    width: fit-content;
+    width: 300px;
     height: fit-content;
 
-    font: 700 28px ui-rounded;
+    text-align: center;
+    font: 700 38px ui-rounded;
 
     mix-blend-mode: overlay;
 
-    color: #fff
+    color: #fff;
+
+    text-shadow: 0 0 5px #fff
 }
 
 @keyframes x {
@@ -86,6 +90,16 @@ section.w .a h1 {
 
     100% {
         transform: translate(0, 0) scale(1)
+    }
+}
+
+@keyframes r {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
     }
 }
 
