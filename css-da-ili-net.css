@@ -3,34 +3,9 @@ body {
     color: #fff
 }
 
-/* t */
+/* a */
 
-section.t {
-    margin: 30px;
-
-    display: flex;
-    align-items: center;
-    column-gap: 20px
-}
-
-section.t h1 {
-    font: 600 21px ui-rounded;
-
-    background-clip: text;
-    background-image: linear-gradient(to right, #FF71A1, #fff);
-    -webkit-text-fill-color: #0000
-}
-
-/* r */
-
-section.r {
-    position: absolute;
-    inset: 20px 40px auto auto;
-}
-
-/* w */
-
-section.w .a {
+section.a {
     position: relative;
 
     display: flex;
@@ -41,7 +16,7 @@ section.w .a {
     will-change: transform
 }
 
-section.w .a img {
+section.a img {
     width: 90vw;
     height: 90vw;
 
@@ -52,7 +27,7 @@ section.w .a img {
     will-change: transform
 }
 
-section.w .a h1 {
+section.a h1 {
     position: absolute;
     inset: 0;
 
@@ -102,6 +77,8 @@ section.w .a h1 {
         transform: rotate(360deg)
     }
 }
+
+/* w */
 
 section.w textarea {
     resize: none;
