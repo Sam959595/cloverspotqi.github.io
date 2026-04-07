@@ -8,17 +8,14 @@ body {
 section.a {
     position: relative;
 
-    margin-top: 30px;
-
-    display: flex;
-    justify-content: center;
-
     animation: x 10s cubic-bezier(.25, 0, .25, 1) infinite;
 
     will-change: transform
 }
 
 section.a img {
+    margin: 5vw;
+
     width: 90vw;
     height: 90vw;
 
@@ -87,7 +84,7 @@ section.w textarea {
 
     padding: 40px;
 
-    width: 100%;
+    width: 100vw;
 
     font: 700 28px ui-rounded;
 
@@ -102,13 +99,13 @@ section.w textarea::placeholder {
 section.w h6 {
     margin-inline: 40px;
 
-    font: 600 16px ui-rounded;
+    font: 600 18px ui-rounded;
 
-    color: light-dark(#aaa, #424242)
+    color: #424242
 }
 
 section.w ul {
-    margin: 25px 30vw 200px 40px
+    margin: 25px 20vw 100px 40px
 }
 
 section.w li {
@@ -116,78 +113,21 @@ section.w li {
 }
 
 section.w h1 {
-    font: 600 16px ui-rounded;
+    font: 600 28px ui-rounded;
 
     color: #666
 }
 
 section.w p {
-    margin-top: 5px;
+    margin-top: 10px;
 
-    font: 600 14px ui-rounded;
+    font: 600 21px ui-rounded;
 
-    color: light-dark(#909090, #4a4a4a)
+    color: #fff
 }
 
-/* l */
-
-section.l {
-    position: fixed;
-    inset: 20px auto auto 30px;
-
-    width: 65px;
-    height: 65px;
-
-    border-radius: 50%;
-
-    background-size: contain;
-    background-image: url("12.png");
-
-    box-shadow: 0 0 10px #0001;
-
-    cursor: pointer
-}
-
-/* c */
-
-section.c ul {
-    display: flex;
-    column-gap: 10px
-}
-
-section.c li {
-    padding: 20px;
-
-    border-radius: 30px;
-
-    background-color: light-dark(#f4f4f4, #181818);
-
-    cursor: pointer
-}
-
-section.c li:hover {
-    background-color: light-dark(#ebebeb, #363636)
-}
-
-section.c h1 {
-    text-wrap: nowrap;
-    font: 600 15px ui-rounded;
-    letter-spacing: .2px
-}
-
-@media (max-width: 900px) {
-    section.c ul {
-        overflow-x: scroll;
-
-        padding-inline: 30px
-    }
-}
-
-@media (min-width: 900px) and (prefers-color-scheme: dark) {
-    section.c h1 {
-        font-weight: 500;
-        letter-spacing: .8px
-    }
+section.w .a {
+    color: #ff4e4e
 }
 
 /* f */
