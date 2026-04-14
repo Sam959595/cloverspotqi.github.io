@@ -87,7 +87,7 @@ section.a textarea {
 
     margin: auto;
 
-    width: 300px;
+    width: 100vw;
     height: fit-content;
 
     text-align: center;
