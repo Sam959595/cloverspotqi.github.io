@@ -10,7 +10,7 @@ section.a {
 
     animation: x 10s cubic-bezier(.25, 0, .25, 1) infinite;
 
-    will-change: transform
+    will-change: animation
 }
 
 section.a img {
@@ -23,7 +23,7 @@ section.a img {
 
     animation: r 20s linear infinite;
 
-    will-change: transform
+    will-change: animation
 }
 
 section.a h1 {
@@ -79,21 +79,30 @@ section.a h1 {
 
 /* w */
 
-section.w textarea {
+section.a textarea {
+    position: absolute;
+    inset: 0;
+
     resize: none;
 
-    padding: 40px;
+    margin: auto;
 
-    width: 100vw;
+    width: 300px;
+    height: fit-content;
 
-    font: 700 28px ui-rounded;
+    text-align: center;
+    font: 700 38px ui-rounded;
+
+    mix-blend-mode: overlay;
 
     background-color: #0000;
-    color: light-dark(#111, #fff)
+    color: #fff;
+
+    text-shadow: 0 0 5px #fff
 }
 
-section.w textarea::placeholder {
-    color: light-dark(#aaa, #666)
+section.a textarea::placeholder {
+    color: #fff
 }
 
 section.w h6 {
