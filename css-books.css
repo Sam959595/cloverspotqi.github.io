@@ -22,11 +22,11 @@ body {
 /* - */
 
 section.w ul {
-    margin-block: calc(150px + env(safe-area-inset-top)) calc(30px + env(safe-area-inset-bottom));
+    margin: calc(150px + env(safe-area-inset-top)) 20px calc(30px + env(safe-area-inset-bottom));
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6px
+    gap: 20px
 }
 
 section.w img {
@@ -79,37 +79,33 @@ section.j {
     will-change: opacity
 }
 
-section.x .a {
+section.x {
     opacity: .5
 }
 
-section.j h6 {
-    padding: 10px 18px;
-
-    border-radius: 20px;
-
-    font: 600 16px system-ui;
-    letter-spacing: .2px;
-
-    color: #777
+section.j svg.b {
+    fill: #fff
 }
 
-section.j .s {
-    background-color: #2f2f2f;
-    color: #fff
+section.j svg.b g {
+    stroke: #fff
+}
+
+section.j img.b {
+    filter: brightness(1.8)
 }
 
 /* - */
 
 section.j img {
-    margin: 14px;
+    padding: 14px;
 
     border-radius: 50%
 }
 
-/* section.j .e:after {
+section.j img:after {
     position: absolute;
-    inset: 21px -7px 0 auto;
+    inset: 0;
 
     content: "";
 
@@ -119,7 +115,7 @@ section.j img {
     border-radius: 50%;
 
     background-color: #dd4848
-} */
+}
 
 /* b */
 
