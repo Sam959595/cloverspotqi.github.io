@@ -102,7 +102,7 @@ section.j .s {
 /* - */
 
 section.j img {
-    padding: 13.5px 13.5px 13.5px 10px;
+    margin: 14px;
 
     border-radius: 50%
 }
