@@ -68,11 +68,11 @@ section.j {
     width: max-content;
 
     border-radius: 25px;
+    outline: 3px solid #ffffff05;
 
     display: flex;
-    justify-content: center;
 
-    background-color: #0d0d0d;
+    background-color: #121212;
 
     transition: opacity .4s ease;
 
