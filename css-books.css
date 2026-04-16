@@ -304,9 +304,8 @@ ul.b {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px 20px;
-
-    /* display: none */
+    grid-auto-rows: 350px;
+    column-gap: 20px
 }
 
 ul.b a {
