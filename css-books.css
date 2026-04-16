@@ -300,12 +300,11 @@ div.y a:after {
 ul.b {
     position: relative;
 
-    margin: 10vh 7vw 20vh;
+    margin: 10vh 30px 20vh;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 46vh;
-    column-gap: 6vw;
+    gap: 50px 20px;
 
     /* display: none */
 }
