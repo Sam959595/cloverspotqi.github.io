@@ -56,10 +56,9 @@ sectionW.addEventListener('scroll', () => {
 });
 
 // Скролл
-const bx = document.querySelector('section.j svg+svg');
-const gx = document.querySelector('section.j .b');
+const bx = document.querySelector('section.p');
 
-const maxScroll = 150; // сколько px = полная темнота
+const maxScroll = 100; // сколько px = полная темнота
 
 sectionW.addEventListener('scroll', () => {
     // получаем скоролл от вверха
@@ -73,7 +72,6 @@ sectionW.addEventListener('scroll', () => {
 
     // вешаем style на тег
     bx.style.opacity = opacity;
-    gx.style.opacity = opacity;
 });
 
 // поиск бар
