@@ -31,7 +31,7 @@ section.w ul {
 
 section.w img {
     width: 100%;
-    height: 400px;
+    height: auto;
 
     object-fit: cover
 }
