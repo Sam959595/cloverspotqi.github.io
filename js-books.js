@@ -1,10 +1,10 @@
-// Маленькая утилита для удобства
+// маленькая утилита для удобства
 const $ = (selector, all = false) => all ? document.querySelectorAll(selector) : document.querySelector(selector);
 
 // DOM-элементы ищутся только один раз при загрузке страницы (а потом используются из памяти)
 const imgElements = $('img[data-src]', true);
 
-// Загрузка изображений lazy-load
+// загрузка изображений lazy-load
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -26,7 +26,7 @@ imgElements.forEach(img => {
 
 const sectionW = document.querySelector('section.w');
 
-// Скролл
+// скролл
 const sectionF = document.querySelector('section.f');
 
 sectionW.addEventListener('scroll', () => {
@@ -55,7 +55,7 @@ sectionW.addEventListener('scroll', () => {
     n = t <= 0 ? 0 : t;
 });
 
-// Скролл
+// скролл
 const bx = document.querySelector('section.p');
 
 const maxScroll = 100; // сколько px = полная темнота
@@ -114,5 +114,5 @@ const grid = document.querySelector('section.w ul');
 new Masonry(grid, {
   itemSelector: 'li',
   columnWidth: 'li',
-  gutter: 10
+  gutter: 20
 });
