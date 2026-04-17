@@ -22,13 +22,13 @@ body {
 /* - */
 
 section.w ul {
-    margin: calc(150px + env(safe-area-inset-top)) 20px calc(30px + env(safe-area-inset-bottom))
+    margin: calc(150px + env(safe-area-inset-top)) 15px calc(30px + env(safe-area-inset-bottom))
 }
 
 section.w ul li {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
-    width: calc(50% - 10px)
+    width: calc(50% - 7.5px)
 }
 
 section.w img {
