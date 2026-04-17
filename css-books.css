@@ -43,9 +43,7 @@ section.w img {
 section.w div {
     padding: 50px 25px;
 
-    border: 1px solid #222;
-
-    background-color: #111
+    border: 1px solid #222
 }
 
 section.w h1 {
@@ -106,18 +104,20 @@ section.j svg+svg.b {
     stroke: #fff
 }
 
-section.j img.b {
+section.j div.b img {
     filter: brightness(1.8)
 }
 
 /* - */
 
-section.j img {
-    padding: 14px;
+section.j div {
+    padding: 14px
+}
 
+section.j img {
     border-radius: 50%;
 
-    background-color: #111
+    background-color: #222
 }
 
 section.j img:after {
