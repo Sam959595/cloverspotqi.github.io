@@ -36,6 +36,20 @@ section.w img {
     height: auto
 }
 
+/* - */
+
+section.w div {
+    padding: 50px 30px;
+
+    border: 1px solid #222;
+
+    background-color: #111
+}
+
+section.w h1 {
+    font: 400 16px/1.7 system-ui
+}
+
 /* f */
 
 section.f {
