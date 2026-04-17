@@ -102,7 +102,7 @@ section.j svg.b {
     fill: #fff
 }
 
-section.j svg.b {
+section.j svg+svg.b {
     stroke: #fff
 }
 
@@ -115,7 +115,9 @@ section.j img.b {
 section.j img {
     padding: 14px;
 
-    border-radius: 50%
+    border-radius: 50%;
+
+    background-color: #111
 }
 
 section.j img:after {
