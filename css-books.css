@@ -67,11 +67,7 @@ section.p {
 
 section.j {
     position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) 0 auto;
-
-    margin-inline: auto;
-
-    width: max-content;
+    inset: calc(15px + env(safe-area-inset-top)) calc(100vw / 2 - 75px) auto;
 
     display: flex;
 
