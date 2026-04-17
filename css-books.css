@@ -47,7 +47,6 @@ section.w div {
 }
 
 section.w h1 {
-    text-align: justify;
     font: 400 16px/1.6 ui-serif
 }
 
@@ -117,14 +116,14 @@ section.j img {
     border-radius: 50%
 }
 
-section.j img:after {
+section.j:after {
     position: absolute;
-    inset: 0;
+    inset: 23px 5px auto auto;
 
     content: "";
 
-    width: 7px;
-    height: 7px;
+    width: 5px;
+    height: 5px;
 
     border-radius: 50%;
 
