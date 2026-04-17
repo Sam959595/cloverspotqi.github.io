@@ -26,9 +26,9 @@ section.w ul {
 }
 
 section.w ul li {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
-    width: calc(50% - 10px)
+    width: calc(50% - 5px)
 }
 
 section.w img {
