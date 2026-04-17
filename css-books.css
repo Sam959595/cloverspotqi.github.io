@@ -43,10 +43,11 @@ section.w img {
 section.w div {
     padding: 50px 25px;
 
-    border: 1px solid #222
+    border: 1px solid #1c1c1c
 }
 
 section.w h1 {
+    text-align: justify;
     font: 400 16px/1.6 ui-serif
 }
 
