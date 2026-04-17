@@ -75,15 +75,12 @@ section.j {
     width: max-content;
 
     border-radius: 25px;
-    outline: 3px solid #ffffff05;
 
     display: flex;
 
-    background-color: #121212;
+    background-color: #0f0f0f;
 
-    transition: opacity .4s ease;
-
-    will-change: opacity
+    transition: opacity .4s ease
 }
 
 section.x {
@@ -91,11 +88,11 @@ section.x {
 }
 
 section.j svg.b {
-    fill: #eee
+    fill: #fff
 }
 
 section.j svg.b g {
-    stroke: #eee
+    stroke: #fff
 }
 
 section.j img.b {
