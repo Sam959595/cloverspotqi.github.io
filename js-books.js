@@ -107,3 +107,12 @@ tabs.forEach((tab, index) => {
         }
     });
 });
+
+// настройка сетки masonry.js
+const grid = document.querySelector('section.w ul');
+
+new Masonry(grid, {
+  itemSelector: 'li',
+  columnWidth: 'li',
+  gutter: 20
+});
