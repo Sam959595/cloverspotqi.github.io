@@ -89,7 +89,7 @@ const tabs = document.querySelectorAll('section.j .a');
 const sectionB = document.querySelector('section.b');
 
 tabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => {
+    tab.addEventListener('pointerdown', () => {
 
         // убрать активный класс у всех вкладок
         tabs.forEach(t => t.classList.remove('b'));
