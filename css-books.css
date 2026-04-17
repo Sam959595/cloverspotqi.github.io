@@ -118,14 +118,15 @@ section.j img {
 
 section.j:after {
     position: absolute;
-    inset: 23px 5px auto auto;
+    inset: 11px 11px auto auto;
 
     content: "";
 
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
 
     border-radius: 50%;
+    border: 3px solid #111;
 
     background-color: #dd4848
 }
