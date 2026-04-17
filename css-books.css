@@ -61,7 +61,7 @@ section.g {
 
 section.p {
     position: fixed;
-    inset: calc(30px + env(safe-area-inset-top)) 30px auto
+    inset: calc(29px + env(safe-area-inset-top)) 30px auto
 }
 
 /* j */
