@@ -114,5 +114,5 @@ const grid = document.querySelector('section.w ul');
 new Masonry(grid, {
   itemSelector: 'li',
   columnWidth: 'li',
-  gutter: 20
+  gutter: 15
 });
