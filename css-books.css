@@ -22,11 +22,13 @@ body {
 /* - */
 
 section.w ul {
-    margin: calc(150px + env(safe-area-inset-top)) 20px calc(30px + env(safe-area-inset-bottom));
+    margin: calc(150px + env(safe-area-inset-top)) 20px calc(30px + env(safe-area-inset-bottom))
+}
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px
+section.w ul li {
+    margin-bottom: 20px;
+
+    width: calc(50% - 10px)
 }
 
 section.w img {
@@ -46,7 +48,7 @@ section.f {
 
     height: 140px;
 
-    background-image: linear-gradient(#0d0d0d, #0d0d0d80, #0d0d0d00);
+    background-image: linear-gradient(#0007, #0008, #0000);
 
     transition: opacity .4s ease
 }
