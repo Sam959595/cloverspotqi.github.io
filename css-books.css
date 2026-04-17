@@ -28,7 +28,9 @@ section.w ul {
 section.w ul li {
     margin-bottom: 20px;
 
-    width: calc(50% - 10px)
+    width: calc(50% - 10px);
+
+    background-color: #111
 }
 
 section.w img {
