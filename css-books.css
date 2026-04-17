@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #0d0d0d;
+    background-color: #141414;
     color: #fff
 }
 
@@ -61,14 +61,7 @@ section.g {
 
 section.p {
     position: fixed;
-    inset: calc(28px + env(safe-area-inset-top)) 25px auto;
-
-    width: 25px;
-    height: 25px;
-
-    border-radius: 50%;
-
-    background-color: #151515
+    inset: calc(28px + env(safe-area-inset-top)) 25px auto
 }
 
 /* j */
@@ -86,7 +79,7 @@ section.j {
 
     display: flex;
 
-    background-color: #121212;
+    background-color: #191919;
 
     transition: opacity .4s ease;
 
