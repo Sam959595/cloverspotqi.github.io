@@ -58,6 +58,12 @@ section.w h6 {
     color: #aaa
 }
 
+@media (orientation: landscape) {
+    section.w ul {
+        margin-inline: calc(20px + env(safe-area-inset-left))
+    }
+}
+
 /* f */
 
 section.f {
@@ -78,11 +84,23 @@ section.g {
     opacity: 1
 }
 
+@media (orientation: landscape) {
+    section.f {
+        display: none
+    }
+}
+
 /* p */
 
 section.p {
     position: fixed;
     inset: calc(15px + env(safe-area-inset-top)) 20px auto
+}
+
+@media (orientation: landscape) {
+    section.p {
+        inset-inline: calc(14vw + env(safe-area-inset-left))
+    }
 }
 
 @media (display-mode: browser) {
@@ -364,19 +382,6 @@ ul.b a:after {
 
     background-size: 100% 100%;
     background-image: url('4.png')
-}
-
-/* h */
-
-section.h {
-    position: fixed;
-    inset: 0;
-
-    background-color: #0d0d0d
-}
-
-section.h img {
-    margin: auto
 }
 
 /* - */
