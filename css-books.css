@@ -41,13 +41,21 @@ section.w img {
 /* - */
 
 section.w div {
-    padding: 50px 25px;
-
     border: 1px solid #1c1c1c
 }
 
 section.w h1 {
+    margin: 50px 25px;
+
     font: 400 16px/1.6 ui-serif
+}
+
+section.w h6 {
+    margin: 25px;
+
+    font: 500 14px system-ui;
+
+    color: #aaa
 }
 
 /* f */
