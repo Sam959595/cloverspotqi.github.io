@@ -94,7 +94,7 @@ section.g {
 
 section.j {
     position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) 20px auto;
+    inset: calc(15px + env(safe-area-inset-top)) 0 auto;
 
     display: flex;
     justify-content: space-evenly
