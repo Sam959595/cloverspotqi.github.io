@@ -100,10 +100,6 @@ section.j {
     justify-content: space-evenly
 }
 
-section.x {
-    opacity: .5
-}
-
 /* - */
 
 section.j div {
@@ -116,10 +112,16 @@ section.j div {
     transition: opacity .4s ease
 }
 
+section.j .x {
+    opacity: .5
+}
+
 section.j img {
     padding: 14px;
 
-    border-radius: 50%
+    border-radius: 50%;
+
+    transition: none
 }
 
 /* - */
@@ -385,8 +387,6 @@ img[data-src] {
 }
 
 img {
-    opacity: 1;
-
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
