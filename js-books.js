@@ -41,7 +41,7 @@ sectionW.addEventListener('scroll', () => {
 
 // затенить бар
 let n = 0;
-const b = document.querySelector('section.j');
+const b = document.querySelector('section.j div');
 
 sectionW.addEventListener('scroll', () => {
     let t = sectionW.scrollTop;
@@ -56,7 +56,8 @@ sectionW.addEventListener('scroll', () => {
 });
 
 // скролл
-const bx = document.querySelector('section.p');
+const bx = document.querySelector('section.j>svg');
+const bc = document.querySelector('section.j img');
 
 const maxScroll = 100; // сколько px = полная темнота
 
@@ -72,6 +73,7 @@ sectionW.addEventListener('scroll', () => {
 
     // вешаем style на тег
     bx.style.opacity = opacity;
+    bc.style.opacity = opacity;
 });
 
 // поиск бар
