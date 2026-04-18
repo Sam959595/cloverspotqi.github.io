@@ -153,12 +153,6 @@ section.j img.b {
     background-color: #dd4848
 } */
 
-@media (orientation: landscape) {
-    section.j {
-        inset-inline: calc(20px + env(safe-area-inset-left))
-    }
-}
-
 /* b */
 
 @media (display-mode: standalone) {
