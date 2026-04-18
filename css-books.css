@@ -85,6 +85,12 @@ section.p {
     inset: calc(15px + env(safe-area-inset-top)) 20px auto
 }
 
+@media (display-mode: browser) {
+    section.p {
+        display: none
+    }
+}
+
 /* j */
 
 section.j {
@@ -358,6 +364,19 @@ ul.b a:after {
 
     background-size: 100% 100%;
     background-image: url('4.png')
+}
+
+/* h */
+
+section.h {
+    position: fixed;
+    inset: 0;
+
+    background-color: #0d0d0d
+}
+
+section.h img {
+    margin: auto
 }
 
 /* - */
