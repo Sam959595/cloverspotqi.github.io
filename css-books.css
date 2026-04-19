@@ -11,7 +11,7 @@ body {
 
 /* w */
 
-@media (display-mode: standalone) {
+@media (display-mode: standalone), (min-width: 900px) {
     section.w {
         overflow-y: scroll;
 
