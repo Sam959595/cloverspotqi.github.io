@@ -1,4 +1,5 @@
-@media (display-mode: standalone) {
+@media (display-mode: standalone),
+(min-width: 900px) {
     html {
         overscroll-behavior: none
     }
@@ -11,7 +12,8 @@ body {
 
 /* w */
 
-@media (display-mode: standalone), (min-width: 900px) {
+@media (display-mode: standalone),
+(min-width: 900px) {
     section.w {
         overflow-y: scroll;
 
@@ -58,9 +60,23 @@ section.w h6 {
     color: #aaa
 }
 
+/* - */
+
 @media (orientation: landscape) {
     section.w ul {
         margin-inline: calc(20px + env(safe-area-inset-left))
+    }
+}
+
+@media (min-width: 900px) {
+    section.w ul {
+        margin-inline: 40px
+    }
+
+    section.w ul li {
+        margin-bottom: 40px;
+
+        width: calc(20% - 32px)
     }
 }
 
@@ -108,7 +124,7 @@ section.j {
 
 /* - */
 
-section.j div {
+section.j .r {
     display: flex;
 
     background-color: #111;
@@ -122,12 +138,17 @@ section.j .x {
     opacity: .5
 }
 
+section.j .t {
+    position: relative;
+
+    padding: 7px
+}
+
 section.j img {
-    padding: 13px;
+    padding: 4px;
 
     border-radius: 50%;
-
-    transition: none
+    border: 2px solid #0000
 }
 
 /* - */
@@ -141,10 +162,10 @@ section.j svg+svg.b {
 }
 
 section.j img.b {
-    filter: brightness(1.8)
+    border-color: #fff
 }
 
-/* section.j:after {
+section.j .t:after {
     position: absolute;
     inset: 11px 11px auto auto;
 
@@ -157,7 +178,7 @@ section.j img.b {
     border: 3px solid #111;
 
     background-color: #dd4848
-} */
+}
 
 /* b */
 
