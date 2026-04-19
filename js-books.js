@@ -57,7 +57,7 @@ sectionW.addEventListener('scroll', () => {
 
 // скролл
 const bx = document.querySelector('section.j>svg');
-const bc = document.querySelector('section.j img');
+const bc = document.querySelector('section.j .t');
 
 const maxScroll = 100; // сколько px = полная темнота
 
@@ -113,8 +113,18 @@ tabs.forEach((tab, index) => {
 // настройка сетки masonry.js
 const grid = document.querySelector('section.w ul');
 
-new Masonry(grid, {
-  itemSelector: 'li',
-  columnWidth: 'li',
-  gutter: 20
+function getGutter() {
+    if (window.innerWidth > 900) return 40;
+    return 20;
+}
+
+let msnry = new Masonry(grid, {
+    itemSelector: 'li',
+    columnWidth: 'li',
+    gutter: getGutter()
+});
+
+window.addEventListener('resize', () => {
+    msnry.options.gutter = getGutter();
+    msnry.layout();
 });
