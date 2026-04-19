@@ -97,7 +97,13 @@ section.j {
     inset: calc(15px + env(safe-area-inset-top)) 0 auto;
 
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-around
+}
+
+@media (orientation: landscape) {
+    section.j {
+        justify-content: space-evenly
+    }
 }
 
 /* - */
