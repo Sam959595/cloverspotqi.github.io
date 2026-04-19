@@ -40,10 +40,6 @@ video {
 	display: block
 }
 
-img {
-	-webkit-user-drag: none
-}
-
 a,
 img {
 	-webkit-touch-callout: none;
