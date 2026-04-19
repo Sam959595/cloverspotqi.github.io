@@ -165,7 +165,7 @@ section.j .t.b img {
 
 section.j .t:after {
     position: absolute;
-    inset: 10px 10px auto auto;
+    inset: 22px -6px auto auto;
 
     content: "";
 
@@ -173,7 +173,6 @@ section.j .t:after {
     height: 6px;
 
     border-radius: 50%;
-    border: 3px solid #0d0d0d;
 
     background-color: #dd4848
 }
