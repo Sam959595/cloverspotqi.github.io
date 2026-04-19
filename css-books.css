@@ -141,14 +141,12 @@ section.j .x {
 section.j .t {
     position: relative;
 
-    padding: 7px
+    padding: 10px
 }
 
 section.j img {
-    padding: 4px;
-
     border-radius: 50%;
-    border: 2px solid #0000
+    border: 3px solid #0000
 }
 
 /* - */
@@ -161,7 +159,7 @@ section.j svg+svg.b {
     stroke: #fff
 }
 
-section.j img.b {
+section.j .t.b img {
     border-color: #fff
 }
 
