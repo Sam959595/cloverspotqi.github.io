@@ -70,7 +70,7 @@ section.w h6 {
 
 @media (min-width: 900px) {
     section.w ul {
-        margin-inline: 40px
+        margin-inline: calc(40px + env(safe-area-inset-left))
     }
 
     section.w ul li {
@@ -113,13 +113,7 @@ section.j {
     inset: calc(15px + env(safe-area-inset-top)) 0 auto;
 
     display: flex;
-    justify-content: space-around
-}
-
-@media (orientation: landscape) {
-    section.j {
-        justify-content: space-evenly
-    }
+    justify-content: space-evenly
 }
 
 /* - */
@@ -165,7 +159,7 @@ section.j .t.b img {
 
 section.j .t:after {
     position: absolute;
-    inset: 22px -6px auto auto;
+    inset: 22px -5px auto auto;
 
     content: "";
 
