@@ -1,5 +1,5 @@
 body {
-    background-color: #000;
+    background-color: #0d0d0d;
     color: #fff
 }
 
@@ -51,7 +51,7 @@ section.v .p {
     flex-direction: column;
     justify-content: space-between;
 
-    background-image: linear-gradient(#0008, #0002)
+    background-image: linear-gradient(#000b, #0000, #0002)
 }
 
 /* - */
