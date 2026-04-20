@@ -27,6 +27,13 @@ section.v li {
     scroll-snap-align: start
 }
 
+section.v li>img {
+    width: 100vw;
+    height: 100vh;
+
+    object-fit: cover
+}
+
 section.v video {
     width: 100vw;
     height: 100vh;
@@ -49,23 +56,14 @@ section.v .p {
 
 /* - */
 
-section.v .i {
-    position: relative;
+section.v .c {
+    position: absolute;
+    inset: calc(40px + env(safe-area-inset-top)) 180px auto auto;
 
-    margin: calc(30px + env(safe-area-inset-bottom)) 40px 0
+    animation: c 10s cubic-bezier(.25, 0, .25, 1) infinite
 }
 
-section.v .i div {
-    position: absolute
-}
-
-section.v .a {
-    top: 10px;
-
-    animation: a 10s cubic-bezier(.25, 0, .25, 1) infinite
-}
-
-@keyframes a {
+@keyframes c {
     0% {
         transform: translate(-2px, 3px) scale(1)
     }
@@ -88,7 +86,8 @@ section.v .a {
 }
 
 section.v .b {
-    inset: 20px 70px auto auto;
+    position: absolute;
+    inset: calc(50px + env(safe-area-inset-top)) 110px auto auto;
 
     animation: b 10s cubic-bezier(.25, 0, .25, 1) infinite
 }
@@ -115,13 +114,14 @@ section.v .b {
     }
 }
 
-section.v .c {
-    inset: 0 0 auto auto;
+section.v .a {
+    position: absolute;
+    inset: calc(30px + env(safe-area-inset-top)) 40px auto auto;
 
-    animation: c 10s cubic-bezier(.25, 0, .25, 1) infinite
+    animation: a 10s cubic-bezier(.25, 0, .25, 1) infinite
 }
 
-@keyframes c {
+@keyframes a {
     0% {
         transform: translate(0, 0) scale(1)
     }
@@ -143,12 +143,17 @@ section.v .c {
     }
 }
 
+section.v .i div {
+    border-radius: 50%;
+    background-color: #0003
+}
+
 section.v .i img {
     border-radius: 50%;
     outline: 1px solid #fff1
 }
 
-section.v :is(.b, .c):after {
+section.v .i div:after {
     position: absolute;
     inset: 29px -5px 0 auto;
 
@@ -223,8 +228,6 @@ img[data-src] {
 }
 
 img {
-    opacity: 1;
-
     transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
 }
 
