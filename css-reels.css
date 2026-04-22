@@ -1,221 +1,392 @@
+@media (display-mode: standalone),
+(min-width: 900px) {
+    html {
+        overscroll-behavior: none
+    }
+}
+
 body {
-    background-color: #0d0d0d;
+    background-color: #000;
     color: #fff
 }
 
-/* v */
+/* w */
 
-section.v {
-    position: relative
-}
+@media (display-mode: standalone),
+(min-width: 900px) {
+    section.w {
+        overflow-y: scroll;
 
-section.v ul {
-    overscroll-behavior-y: none;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-
-    width: 100vw;
-    height: 100vh;
-
-    display: grid;
-    row-gap: 20px
-}
-
-section.v li {
-    position: relative;
-
-    scroll-snap-align: start
-}
-
-section.v li>img {
-    width: 100vw;
-    height: 100vh;
-
-    object-fit: cover
-}
-
-section.v video {
-    width: 100vw;
-    height: 100vh;
-
-    object-fit: cover
+        height: 100vh
+    }
 }
 
 /* - */
 
-section.v .p {
-    position: absolute;
-    inset: 0;
+section.w ul {
+    margin: calc(150px + env(safe-area-inset-top)) 20px env(safe-area-inset-bottom)
+}
+
+section.w ul li {
+    margin-bottom: 20px;
+
+    width: calc(50% - 10px);
+
+    background-color: #111
+}
+
+section.w img {
+    width: 100%;
+    height: auto
+}
+
+/* - */
+
+section.w div {
+    border: 1px solid #1c1c1c
+}
+
+section.w h1 {
+    margin: 50px 25px;
+
+    font: 400 16px/1.6 ui-serif
+}
+
+section.w h6 {
+    margin: 20px 25px;
+
+    font: 500 14px system-ui;
+
+    color: #aaa
+}
+
+/* - */
+
+@media (orientation: landscape) {
+    section.w ul {
+        margin-inline: calc(20px + env(safe-area-inset-left))
+    }
+}
+
+@media (min-width: 900px) {
+    section.w ul {
+        margin-inline: calc(40px + env(safe-area-inset-left))
+    }
+
+    section.w ul li {
+        margin-bottom: 40px;
+
+        width: calc(20% - 32px)
+    }
+}
+
+/* f */
+
+section.f {
+    pointer-events: none;
+    opacity: 0;
+
+    position: fixed;
+    inset: 0 0 auto;
+
+    height: 250px;
+
+    background-image: linear-gradient(#0d0d0dee, #0d0d0d00);
+
+    transition: opacity .4s ease
+}
+
+section.g {
+    opacity: 1
+}
+
+@media (orientation: landscape) {
+    section.f {
+        display: none
+    }
+}
+
+/* j */
+
+section.j {
+    position: fixed;
+    inset: calc(15px + env(safe-area-inset-top)) 0 auto;
 
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    background-image: linear-gradient(#000b, #0000, #0002)
+    justify-content: space-evenly
 }
 
 /* - */
 
-section.v .c {
-    position: absolute;
-    inset: calc(40px + env(safe-area-inset-top)) 180px auto auto;
+section.j .r {
+    display: flex;
 
-    animation: c 10s cubic-bezier(.25, 0, .25, 1) infinite
+    background-color: #111;
+
+    clip-path: path('M33 50h-3.5c-3.1 0-5.8-.3-7-.5-4-.4-6.6-1.1-9-2.4A23.8 23.8 0 0 1 2 35a25 25 0 0 1 0-19.8A24 24 0 0 1 22.4.5 70 70 0 0 1 32.9 0h37.6c2.9.1 3.8.1 7 .5q4.7.3 9 2.4A23.3 23.3 0 0 1 98 15c.8 1.9 2.1 5 2.1 9.9s-1.3 8-2 10A23 23 0 0 1 86.6 47c-3 1.6-5.9 2-9 2.4q-3.3.4-7 .5H32.8');
+
+    transition: opacity .4s ease
 }
 
-@keyframes c {
-    0% {
-        transform: translate(-2px, 3px) scale(1)
-    }
-
-    25% {
-        transform: translate(4px, 2px) scale(1.015)
-    }
-
-    50% {
-        transform: translate(0, 0) scale(1)
-    }
-
-    75% {
-        transform: translate(3px, -4px) scale(1.02)
-    }
-
-    100% {
-        transform: translate(-2px, 3px) scale(1)
-    }
+section.j .x {
+    opacity: .5
 }
 
-section.v .b {
-    position: absolute;
-    inset: calc(50px + env(safe-area-inset-top)) 110px auto auto;
-
-    animation: b 10s cubic-bezier(.25, 0, .25, 1) infinite
-}
-
-@keyframes b {
-    0% {
-        transform: translate(3px, -4px) scale(1)
-    }
-
-    25% {
-        transform: translate(4px, 2px) scale(1.02)
-    }
-
-    50% {
-        transform: translate(-2px, 3px) scale(1)
-    }
-
-    75% {
-        transform: translate(0, 0) scale(1.015)
-    }
-
-    100% {
-        transform: translate(3px, -4px) scale(1)
-    }
-}
-
-section.v .a {
-    position: absolute;
-    inset: calc(30px + env(safe-area-inset-top)) 40px auto auto;
-
-    animation: a 10s cubic-bezier(.25, 0, .25, 1) infinite
-}
-
-@keyframes a {
-    0% {
-        transform: translate(0, 0) scale(1)
-    }
-
-    25% {
-        transform: translate(3px, -4px) scale(1.02)
-    }
-
-    50% {
-        transform: translate(-2px, 3px) scale(1)
-    }
-
-    75% {
-        transform: translate(4px, 2px) scale(1.015)
-    }
-
-    100% {
-        transform: translate(0, 0) scale(1)
-    }
-}
-
-section.v .i div {
-    border-radius: 50%;
-    background-color: #0003
-}
-
-section.v .i img {
-    border-radius: 50%;
-    outline: 1px solid #fff1
-}
-
-section.v .i div:after {
-    position: absolute;
-    inset: 29px -5px 0 auto;
-
-    content: "❤️";
-
-    font-size: 18px
-}
-
-/* - */
-
-section.v .t {
-    margin-top: auto
-}
-
-section.v h6 {
-    text-align: center;
-    font: 500 18px/1.3 system-ui;
-    letter-spacing: .2px
-}
-
-section.v p {
-    margin: 40px 45px;
-
-    font: 600 19px ui-rounded;
-    letter-spacing: .4px;
-
-    color: #fff
-}
-
-/* - */
-
-section.v>svg {
-    position: absolute;
-    inset: auto 45px 40px auto
-}
-
-/* - */
-
-section.v .y a {
+section.j .t {
     position: relative;
 
-    margin: 30px 30px calc(20px + env(safe-area-inset-bottom));
-
-    width: 100px;
-
-    display: block
+    padding: 10px
 }
 
-section.v .y a img {
-    width: 100%;
-    height: auto;
-
-    border-radius: 2px
+section.j img {
+    border-radius: 50%;
+    border: 3px solid #0000
 }
 
-section.v .y a:after {
+/* - */
+
+section.j svg.b {
+    fill: #fff
+}
+
+section.j svg+svg.b {
+    stroke: #fff
+}
+
+section.j .t.b img {
+    border-color: #fff
+}
+
+section.j .t:after {
+    position: absolute;
+    inset: 22px -5px auto auto;
+
+    content: "";
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background-color: #dd4848
+}
+
+/* b */
+
+@media (display-mode: standalone) {
+    section.b {
+        overflow-y: scroll;
+
+        height: 100vh
+    }
+}
+
+section.b ul {
+    margin: calc(120px + env(safe-area-inset-top)) 7vw calc(30px + env(safe-area-inset-bottom));
+
+    display: grid;
+    row-gap: 40px
+}
+
+section.b ul li>a {
+    position: relative;
+
+    height: 600px;
+
+    border-radius: 30px;
+
+    display: inline-block
+}
+
+section.b ul li>a:after {
     position: absolute;
     inset: 0;
 
     content: "";
 
-    border-radius: 2px;
+    border-radius: 30px;
+    border: 3px solid #ffffff15;
+
+    transition: background-color .2s
+}
+
+section.b .d {
+    background-image: linear-gradient(#4a5cf7, #352d94)
+}
+
+section.b .r {
+    background-image: linear-gradient(#764ec3, #802727)
+}
+
+section.b ul li>a img {
+    width: 100%;
+    height: auto
+}
+
+section.b h1 {
+    margin: 30px;
+
+    font: 500 19px system-ui
+}
+
+section.b p {
+    margin: 30px;
+
+    font: 500 17px system-ui;
+    letter-spacing: .4px;
+
+    color: #ffffff80
+}
+
+/* - */
+
+section.b div {
+    overflow-x: scroll;
+
+    margin: 17px;
+
+    width: calc(86vw - 34px);
+
+    border-radius: 21px;
+
+    display: flex;
+    column-gap: 10px
+}
+
+section.b div a {
+    padding: 12px 15px 12px 12px;
+
+    border-radius: 21px;
+
+    display: flex;
+    column-gap: 6px;
+
+    background-color: #151515
+}
+
+section.b div img {
+    border-radius: 50%
+}
+
+section.b h6 {
+    margin-left: 2px;
+
+    font: 500 14px system-ui;
+    letter-spacing: .4px;
+
+    color: #999
+}
+
+section.b time {
+    font: 500 14px system-ui;
+    letter-spacing: .4px;
+
+    color: #666
+}
+
+/* l - load spinner */
+
+section.l {
+    pointer-events: none;
+
+    position: fixed;
+    inset: 0;
+
+    margin: auto;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background-color: #fff;
+
+    animation: load 1s infinite
+}
+
+@keyframes load {
+
+    0%,
+    100% {
+        opacity: .6;
+        transform: scale(.8)
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2)
+    }
+}
+
+/* y */
+
+div.y a {
+    position: relative;
+
+    margin: 20vh 20vw;
+
+    display: block;
+
+    display: none
+}
+
+div.y a img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 4px
+}
+
+div.y a:after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    border-radius: 4px;
+
+    background-size: 100% 100%;
+    background-image: url('4.png')
+}
+
+/* - */
+
+ul.b {
+    position: relative;
+
+    margin: 10vh 30px 20vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 350px;
+    column-gap: 20px
+}
+
+ul.b a {
+    position: relative;
+
+    display: block
+}
+
+ul.b li {
+    display: flex;
+    align-items: end
+}
+
+ul.b a img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 4px
+}
+
+ul.b a:after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    border-radius: 4px;
 
     background-size: 100% 100%;
     background-image: url('4.png')
