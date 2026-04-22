@@ -46,7 +46,7 @@ section.v .k {
     display: grid;
     grid-template-columns: 70% 30%;
 
-    background-image: linear-gradient(#000b, #0000, #0002)
+    background-image: linear-gradient(#0008, #0000, #0002)
 }
 
 section.v .k div:first-child {
@@ -158,11 +158,11 @@ section.v :is(.a, .b, .c) img {
 
 section.v :is(.a, .b, .c):after {
     position: absolute;
-    inset: 29px -5px 0 auto;
+    inset: 25px -5px 0 auto;
 
     content: "❤️";
 
-    font-size: 18px
+    font-size: 25px
 }
 
 /* - */
@@ -174,18 +174,24 @@ section.v .g {
     padding: 40px;
 
     display: flex;
-    column-gap: 10px
+    justify-content: center;
+    column-gap: 20px
+}
+
+section.v .g a+a {
+    margin-left: -40px
+}
+
+section.v .g a:first-child {
+    position: relative
 }
 
 section.v .g a {
-    padding: 12px 15px 12px 12px;
+    padding: 3px;
 
-    border-radius: 21px;
+    border-radius: 50%;
 
-    display: flex;
-    column-gap: 6px;
-
-    background-color: #131313
+    background-color: #fff
 }
 
 section.v .g img {
@@ -193,9 +199,9 @@ section.v .g img {
 }
 
 section.v .g h6 {
-    margin-left: 2px;
+    margin-top: 10px;
 
-    font: 500 14px system-ui;
+    font: 500 17px system-ui;
     letter-spacing: .4px
 }
 
@@ -204,27 +210,6 @@ section.v .g time {
     letter-spacing: .4px;
 
     color: light-dark(#666, #666)
-}
-
-/* - */
-
-section.v .t {
-    margin-top: auto
-}
-
-section.v h6 {
-    text-align: center;
-    font: 500 18px/1.3 system-ui;
-    letter-spacing: .2px
-}
-
-section.v p {
-    margin: 40px 45px;
-
-    font: 600 19px ui-rounded;
-    letter-spacing: .4px;
-
-    color: #fff
 }
 
 /* - */
