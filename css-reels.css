@@ -5,10 +5,6 @@ body {
 
 /* v */
 
-section.v {
-    position: relative
-}
-
 section.v ul {
     overscroll-behavior-y: none;
     overflow-y: scroll;
@@ -229,13 +225,6 @@ section.v p {
     letter-spacing: .4px;
 
     color: #fff
-}
-
-/* - */
-
-section.v>svg {
-    position: absolute;
-    inset: auto 45px 40px auto
 }
 
 /* - */
