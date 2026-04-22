@@ -1,6 +1,6 @@
 body {
     background-color: #000;
-    color: #111
+    color: #fff
 }
 
 /* v */
@@ -175,7 +175,7 @@ section.v .g {
     position: absolute;
     inset: auto 0 0;
 
-    padding: 40px 60px;
+    padding: 40px;
 
     display: flex;
     column-gap: 10px
@@ -189,7 +189,7 @@ section.v .g a {
     display: flex;
     column-gap: 6px;
 
-    background-color: #fff
+    background-color: #131313
 }
 
 section.v .g img {
