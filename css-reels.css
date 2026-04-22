@@ -1,6 +1,6 @@
 body {
     background-color: #000;
-    color: #fff
+    color: #111
 }
 
 /* v */
@@ -43,80 +43,29 @@ section.v video {
 
 /* - */
 
-section.v .p {
+section.v .k {
     position: absolute;
     inset: 0;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 70% 30%;
 
     background-image: linear-gradient(#000b, #0000, #0002)
 }
 
+section.v .k div:first-child {
+    cursor: w-resize
+}
+
+section.v .k div:last-child {
+    cursor: e-resize
+}
+
 /* - */
-
-section.v .c {
-    position: absolute;
-    inset: calc(40px + env(safe-area-inset-top)) 180px auto auto;
-
-    animation: c 10s cubic-bezier(.25, 0, .25, 1) infinite
-}
-
-@keyframes c {
-    0% {
-        transform: translate(-2px, 3px) scale(1)
-    }
-
-    25% {
-        transform: translate(4px, 2px) scale(1.015)
-    }
-
-    50% {
-        transform: translate(0, 0) scale(1)
-    }
-
-    75% {
-        transform: translate(3px, -4px) scale(1.02)
-    }
-
-    100% {
-        transform: translate(-2px, 3px) scale(1)
-    }
-}
-
-section.v .b {
-    position: absolute;
-    inset: calc(50px + env(safe-area-inset-top)) 110px auto auto;
-
-    animation: b 10s cubic-bezier(.25, 0, .25, 1) infinite
-}
-
-@keyframes b {
-    0% {
-        transform: translate(3px, -4px) scale(1)
-    }
-
-    25% {
-        transform: translate(4px, 2px) scale(1.02)
-    }
-
-    50% {
-        transform: translate(-2px, 3px) scale(1)
-    }
-
-    75% {
-        transform: translate(0, 0) scale(1.015)
-    }
-
-    100% {
-        transform: translate(3px, -4px) scale(1)
-    }
-}
 
 section.v .a {
     position: absolute;
-    inset: calc(30px + env(safe-area-inset-top)) 40px auto auto;
+    inset: calc(20px + env(safe-area-inset-top)) 40px auto auto;
 
     animation: a 10s cubic-bezier(.25, 0, .25, 1) infinite
 }
@@ -143,23 +92,122 @@ section.v .a {
     }
 }
 
-section.v .i div {
+section.v .b {
+    position: absolute;
+    inset: calc(20px + env(safe-area-inset-top)) 130px auto auto;
+
+    animation: b 10s cubic-bezier(.25, 0, .25, 1) infinite
+}
+
+@keyframes b {
+    0% {
+        transform: translate(3px, -4px) scale(1)
+    }
+
+    25% {
+        transform: translate(4px, 2px) scale(1.02)
+    }
+
+    50% {
+        transform: translate(-2px, 3px) scale(1)
+    }
+
+    75% {
+        transform: translate(0, 0) scale(1.015)
+    }
+
+    100% {
+        transform: translate(3px, -4px) scale(1)
+    }
+}
+
+section.v .c {
+    position: absolute;
+    inset: calc(20px + env(safe-area-inset-top)) 220px auto auto;
+
+    animation: c 10s cubic-bezier(.25, 0, .25, 1) infinite
+}
+
+@keyframes c {
+    0% {
+        transform: translate(-2px, 3px) scale(1)
+    }
+
+    25% {
+        transform: translate(4px, 2px) scale(1.015)
+    }
+
+    50% {
+        transform: translate(0, 0) scale(1)
+    }
+
+    75% {
+        transform: translate(3px, -4px) scale(1.02)
+    }
+
+    100% {
+        transform: translate(-2px, 3px) scale(1)
+    }
+}
+
+section.v :is(.a, .b, .c) div {
     border-radius: 50%;
     background-color: #0003
 }
 
-section.v .i img {
+section.v :is(.a, .b, .c) img {
     border-radius: 50%;
     outline: 1px solid #fff1
 }
 
-section.v .i div:after {
+section.v :is(.a, .b, .c):after {
     position: absolute;
     inset: 29px -5px 0 auto;
 
     content: "❤️";
 
     font-size: 18px
+}
+
+/* - */
+
+section.v .g {
+    position: absolute;
+    inset: auto 0 0;
+
+    padding: 40px 60px;
+
+    display: flex;
+    column-gap: 10px
+}
+
+section.v .g a {
+    padding: 12px 15px 12px 12px;
+
+    border-radius: 21px;
+
+    display: flex;
+    column-gap: 6px;
+
+    background-color: #fff
+}
+
+section.v .g img {
+    border-radius: 50%
+}
+
+section.v .g h6 {
+    margin-left: 2px;
+
+    font: 500 14px system-ui;
+    letter-spacing: .4px
+}
+
+section.v .g time {
+    font: 500 14px system-ui;
+    letter-spacing: .4px;
+
+    color: light-dark(#666, #666)
 }
 
 /* - */
