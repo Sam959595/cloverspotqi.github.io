@@ -1,6 +1,5 @@
 body {
-    background-color: #000;
-    color: #fff
+    background-color: #000
 }
 
 /* v */
@@ -171,44 +170,46 @@ section.v .g {
     position: absolute;
     inset: auto 0 0;
 
-    padding: 40px;
-
-    display: flex;
-    column-gap: 20px
+    padding: 40px 30px
 }
 
-section.v .g a+a {
-    margin-left: -40px
-}
+section.v .g h1 {
+    text-align: center;
+    font: 500 16px system-ui;
+    letter-spacing: .4px;
 
-section.v .g a:first-child {
-    position: relative
+    color: #fff6
 }
 
 section.v .g a {
-    padding: 3px;
+    margin-bottom: 5px;
+    padding: 3px 7px;
 
-    border-radius: 50%;
+    border-radius: 15px;
+    border: 2px solid #0002;
 
-    background-color: #fff
+    display: inline-flex;
+
+    background-color: #0004;
+    color: #fff
 }
 
 section.v .g img {
+    margin-top: 3px;
+
     border-radius: 50%
 }
 
-section.v .g h6 {
-    margin-top: 10px;
-
-    font: 500 17px system-ui;
-    letter-spacing: .4px
+section.v .g img+img {
+    margin-left: -4px
 }
 
-section.v .g time {
-    font: 500 14px system-ui;
-    letter-spacing: .4px;
+section.v .g img:last-child {
+    margin-right: 5px
+}
 
-    color: light-dark(#666, #666)
+section.v .g img:not(:last-child) {
+    clip-path: path("M0 0v12h10.019a7.2 7.2 0 0 1-3.22-6 7.2 7.2 0 0 1 3.22-6z")
 }
 
 /* - */
@@ -253,10 +254,6 @@ img {
 }
 
 /* - */
-
-::selection {
-    background: #fff
-}
 
 ::-webkit-scrollbar {
     display: none
