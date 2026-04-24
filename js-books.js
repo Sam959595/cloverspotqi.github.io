@@ -115,7 +115,7 @@ const grid = document.querySelector('section.w ul');
 
 function getGutter() {
     if (window.innerWidth > 900) return 40;
-    return 10;
+    return 6;
 }
 
 let msnry = new Masonry(grid, {
