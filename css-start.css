@@ -64,18 +64,20 @@ section.a .i img {
 /* - */
 
 section.a .r li {
-    padding: 20px 30px
+    padding-inline: 30px
 }
 
 section.a .r li:active {
     background-color: light-dark(#eee, #333)
 }
 
-section.a .r li+li {
+section.a .r li+li h6 {
     border-top: 1px solid light-dark(#eee, #151515)
 }
 
 section.a .r h6 {
+    padding-top: 20px;
+
     font: 500 14px system-ui;
     letter-spacing: .2px;
 
@@ -93,13 +95,15 @@ section.a .r img {
 }
 
 section.a .r h3 {
-    margin-block: 10px;
+    padding-block: 10px;
 
     font: 500 17px system-ui;
     letter-spacing: .2px
 }
 
 section.a .r p {
+    padding-bottom: 20px;
+
     font: 500 14px system-ui;
     letter-spacing: .2px;
 
