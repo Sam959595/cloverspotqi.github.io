@@ -1,0 +1,10 @@
+{
+    "name": "Xiq",
+    "icons": [
+        {
+            "src": "7.png"
+        }
+    ],
+    "display": "standalone",
+    "theme_color": "#0d0d0d"
+}
