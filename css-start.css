@@ -6,7 +6,7 @@ body {
 /* a */
 
 section.a input {
-    margin-block: 150px 10px;
+    margin-block: calc(150px + env(safe-area-inset-top)) 10px;
     padding-inline: 30px;
 
     width: 100%;
@@ -21,19 +21,14 @@ section.a input {
 
 section.k {
     position: fixed;
-    inset: 10px 0 auto;
-
-    margin-inline: auto;
-    padding: 5px;
-
-    width: max-content;
-
-    border-radius: 25px;
+    inset: calc(15px + env(safe-area-inset-top)) calc(100vw / 2 - 75px) auto;
 
     display: flex;
+    justify-content: space-around;
 
     transition: opacity .4s ease;
 
+    border-radius: 25px;
     border: 1px solid #0000;
     background-origin: border-box;
 
@@ -43,6 +38,24 @@ section.k {
     box-shadow: 0 0 20px #0001;
 
     will-change: opacity
+}
+
+/* f */
+
+section.f img {
+    position: fixed;
+    inset: calc(15px + env(safe-area-inset-top)) 30px auto auto;
+
+    padding: 3.5px;
+
+    border-radius: 50%;
+    border: 1px solid #0000;
+    background-origin: border-box;
+
+    background-clip: padding-box, border-box;
+    background-image: linear-gradient(#f6f6f6, #f6f6f6), linear-gradient(to top left, #fff, #f6f6f6, #fff);
+
+    box-shadow: 0 0 20px #0001
 }
 
 /* - */
