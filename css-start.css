@@ -48,6 +48,10 @@ section.a .i {
     column-gap: 4px
 }
 
+section.a .i {
+    background-color: light-dark(#ddd, #111)
+}
+
 section.a .i img {
     width: auto;
     height: 120px
