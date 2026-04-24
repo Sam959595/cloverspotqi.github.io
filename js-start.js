@@ -1,3 +1,25 @@
+// загрузка изображений lazy-load
+const imgElements = document.querySelectorAll('img[data-src]');
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const img = entry.target;
+            const tempImg = new Image();
+            tempImg.src = img.dataset.src;
+            tempImg.onload = () => {
+                img.src = img.dataset.src;
+                img.removeAttribute('data-src');
+            };
+            observer.unobserve(img);
+        }
+    });
+});
+
+imgElements.forEach(img => {
+    observer.observe(img);
+});
+
 // скролл
 
 const sectionG = document.querySelector('section.g');
