@@ -24,13 +24,13 @@ body {
 /* - */
 
 section.w ul {
-    margin: calc(150px + env(safe-area-inset-top)) 20px env(safe-area-inset-bottom)
+    margin: calc(150px + env(safe-area-inset-top)) 0 env(safe-area-inset-bottom)
 }
 
 section.w ul li {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
-    width: calc(50% - 10px);
+    width: calc(50% - 5px);
 
     background-color: #111
 }
@@ -123,7 +123,7 @@ section.j .r {
 
     background-color: #111;
 
-    clip-path: path('M33 50h-3.5c-3.1 0-5.8-.3-7-.5-4-.4-6.6-1.1-9-2.4A23.8 23.8 0 0 1 2 35a25 25 0 0 1 0-19.8A24 24 0 0 1 22.4.5 70 70 0 0 1 32.9 0h37.6c2.9.1 3.8.1 7 .5q4.7.3 9 2.4A23.3 23.3 0 0 1 98 15c.8 1.9 2.1 5 2.1 9.9s-1.3 8-2 10A23 23 0 0 1 86.6 47c-3 1.6-5.9 2-9 2.4q-3.3.4-7 .5H32.8');
+    clip-path: path("M33 50h-3.5c-3.1 0-5.8-.3-7-.5-4-.4-6.6-1.1-9-2.4A23.8 23.8 0 0 1 2 35a25 25 0 0 1 0-19.8A24 24 0 0 1 22.4.5 70 70 0 0 1 32.9 0h37.6c2.9.1 3.8.1 7 .5q4.7.3 9 2.4A23.3 23.3 0 0 1 98 15c.8 1.9 2.1 5 2.1 9.9s-1.3 8-2 10A23 23 0 0 1 86.6 47c-3 1.6-5.9 2-9 2.4q-3.3.4-7 .5H32.8");
 
     transition: opacity .4s ease
 }
