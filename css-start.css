@@ -1,5 +1,5 @@
 body {
-    background-color: light-dark(#f6f6f6, #0d0d0d);
+    background-color: light-dark(#fff, #0d0d0d);
     color: light-dark(#111, #fff)
 }
 
@@ -36,41 +36,29 @@ section.a h2 {
 
 section.g {
     position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) auto auto 30px
+    inset: calc(15px + env(safe-area-inset-top)) auto auto 30px;
+
+    display: flex;
+}
+
+section.g img {
+    margin: 15px 0 0 -15px;
+
+    border-radius: 50%;
+    outline: 2px solid #fff
 }
 
 /* k */
 
 section.k {
     position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) calc(100vw / 2 - 75px) auto;
+    inset: calc(15px + env(safe-area-inset-top)) 30px auto auto;
 
     display: flex;
-    justify-content: space-around;
 
     transition: opacity .4s ease;
 
-    border-radius: 26px;
-    border: 1px solid #0000;
-
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    background-image: linear-gradient(#f6f6f6, #f6f6f6), linear-gradient(to top left, #fff, #f6f6f6, #fff);
-
-    box-shadow: 0 0 20px #0001;
-
     will-change: opacity
-}
-
-/* f */
-
-section.f img {
-    position: fixed;
-    inset: calc(15px + env(safe-area-inset-top)) 30px auto auto;
-
-    margin: 11px;
-
-    border-radius: 50%
 }
 
 /* - */
