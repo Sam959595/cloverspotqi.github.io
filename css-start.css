@@ -21,6 +21,10 @@ section.a input {
     background: none
 }
 
+section.a input::placeholder {
+    color: light-dark(#999, #666)
+}
+
 /* - */
 
 section.a h1 {
@@ -37,6 +41,10 @@ section.a h2 {
 
     font: 500 17px/1.5 system-ui;
     letter-spacing: .2px
+}
+
+section.a u {
+    font-weight: 600
 }
 
 /* - */
@@ -129,7 +137,8 @@ section.g img {
     margin: 15px 0 0 -15px;
 
     border-radius: 50%;
-    outline: 5px solid light-dark(#fff, #0d0d0d)
+
+    clip-path: path("M.62 22A16 16 0 0 0 5 11C5 6.74 3.33 2.87.62 0H22v22z")
 }
 
 /* k */
