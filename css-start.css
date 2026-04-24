@@ -1,132 +1,64 @@
-html {
-    overscroll-behavior-y: none;
-    height: 100dvh
-}
-
 body {
-    background-color: light-dark(#fff, #101010);
+    background-color: light-dark(#f6f6f6, #0d0d0d);
     color: light-dark(#111, #fff)
 }
 
-[data-i] {
-    opacity: 0
-}
+/* a */
 
-img {
-    opacity: 1;
+section.a input {
+    margin-block: 150px 10px;
+    padding-inline: 30px;
 
-    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
-}
-
-/* n */
-
-section.n {
-    overflow-y: scroll;
-    height: 100vh
-}
-
-section.n input {
-    box-sizing: border-box;
     width: 100%;
 
-    border-radius: 0;
-    border-bottom: 2px solid light-dark(#f7f7f7, #141414);
-
-    padding: calc(40px + env(safe-area-inset-top)) 40px 30px;
-
-    text-overflow: ellipsis;
-    font: 500 19px system-ui;
+    font: 500 17px system-ui;
     letter-spacing: .2px;
 
-    background-color: transparent;
-
-    caret-color: light-dark(#111, #fff)
-}
-
-section.n input::placeholder {
-    color: light-dark(#999, #555)
-}
-
-section.n h1 {
-    margin: 30px 40px;
-
-    font: 600 15px system-ui;
-
-    color: light-dark(#999, #555)
-}
-
-section.n ul {
-    margin: 20px;
-
-    display: grid;
-    row-gap: 10px
-}
-
-section.n li {
-    border-radius: 15px;
-
-    background-color: light-dark(#f4f4f4, #181819)
-}
-
-section.n a {
-    box-sizing: border-box;
-    height: 100%;
-
-    padding: 15px;
-
-    display: block;
-
-    word-break: break-word;
-    font: 600 17px/1 system-ui
-}
-
-section.n .b {
-    color: #ff2f50
-}
-
-section.n .c {
-    color: #ffa80f
-}
-
-section.n .e {
-    color: #2f99ff
-}
-
-section.n .f {
-    color: #41d54b
-}
-
-/* s */
-
-section.s {
-    position: fixed;
-    inset: auto auto max(env(safe-area-inset-bottom), 25px) 25px;
-
-    width: 45px;
-    height: 45px;
-
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: light-dark(#ffffffcc, #101010cc)
-}
-
-section.s h1 {
-    font-size: 14px
+    background: none
 }
 
 /* k */
 
 section.k {
     position: fixed;
-    inset: 0 0 auto;
+    inset: 10px 0 auto;
 
-    height: env(safe-area-inset-top);
+    margin-inline: auto;
+    padding: 5px;
 
-    background-color: light-dark(#ffffffcc, #101010cc)
+    width: max-content;
+
+    border-radius: 25px;
+
+    display: flex;
+
+    transition: opacity .4s ease;
+
+    border: 1px solid #0000;
+    background-origin: border-box;
+
+    background-clip: padding-box, border-box;
+    background-image: linear-gradient(#f6f6f6, #f6f6f6), linear-gradient(to top left, #fff, #f6f6f6, #fff);
+
+    box-shadow: 0 0 20px #0001;
+
+    will-change: opacity
+}
+
+/* - */
+
+[data-i] {
+    opacity: 0
+}
+
+img {
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+}
+
+/* - */
+
+::selection {
+    background: #ccc
 }
 
 :root {
