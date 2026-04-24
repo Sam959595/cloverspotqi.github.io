@@ -5,17 +5,9 @@ body {
 
 /* a */
 
-section.a h1 {
-    margin: calc(130px + env(safe-area-inset-top)) 30px 10px;
-
-    font: 500 14px system-ui;
-    letter-spacing: .2px;
-
-    color: light-dark(#999, #666)
-}
-
 section.a input {
-    padding-inline: 30px;
+    margin-top: calc(130px + env(safe-area-inset-top));
+    padding: 30px;
 
     width: 100%;
 
@@ -25,8 +17,17 @@ section.a input {
     background: none
 }
 
+section.a h1 {
+    margin-inline: 30px;
+
+    font: 500 14px system-ui;
+    letter-spacing: .2px;
+
+    color: light-dark(#999, #666)
+}
+
 section.a h2 {
-    margin: 30px;
+    margin: 10px 30px;
 
     font: 500 17px/1.4 system-ui;
     letter-spacing: .2px
