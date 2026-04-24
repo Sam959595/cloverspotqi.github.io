@@ -6,7 +6,7 @@ body {
 /* a */
 
 section.a input {
-    margin-top: calc(130px + env(safe-area-inset-top));
+    margin-top: calc(110px + env(safe-area-inset-top));
     padding: 30px;
 
     width: 100%;
