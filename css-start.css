@@ -33,7 +33,7 @@ section.a h1 {
 }
 
 section.a h2 {
-    margin: 10px 30px;
+    margin: 10px 40px 10px 30px;
 
     font: 500 17px/1.5 system-ui;
     letter-spacing: .2px
