@@ -103,7 +103,7 @@ section.a .r img {
 }
 
 section.a .r h3 {
-    margin-block: 10px;
+    margin-block: 20px 10px;
 
     font: 500 17px system-ui;
     letter-spacing: .2px
