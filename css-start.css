@@ -1,3 +1,7 @@
+html {
+    overscroll-behavior: none
+}
+
 body {
     background-color: light-dark(#fff, #0d0d0d);
     color: light-dark(#111, #fff)
@@ -29,8 +33,24 @@ section.a h1 {
 section.a h2 {
     margin: 10px 30px;
 
-    font: 500 17px/1.4 system-ui;
+    font: 500 17px/1.5 system-ui;
     letter-spacing: .2px
+}
+
+section.a .i {
+    overflow-x: scroll;
+
+    margin-block: 30px;
+
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    column-gap: 4px
+}
+
+section.a .i img {
+    width: auto;
+    height: 120px
 }
 
 /* g */
@@ -80,4 +100,8 @@ img {
 
 :root {
     color-scheme: light dark
+}
+
+::-webkit-scrollbar {
+    display: none
 }
