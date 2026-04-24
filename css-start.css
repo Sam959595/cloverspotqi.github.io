@@ -77,7 +77,7 @@ section.a .r a {
     display: block
 }
 
-section.a .r li:active {
+section.a .r li:hover {
     background-color: light-dark(#eee, #333)
 }
 
@@ -138,16 +138,12 @@ section.k {
     position: fixed;
     inset: calc(15px + env(safe-area-inset-top)) 30px auto auto;
 
-    display: flex;
-
-    transition: opacity .4s ease;
-
-    will-change: opacity
+    display: flex
 }
 
 /* - */
 
-[data-i] {
+img[data-src] {
     opacity: 0
 }
 
