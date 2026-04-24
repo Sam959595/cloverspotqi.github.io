@@ -49,7 +49,7 @@ section.a .i {
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
-    column-gap: 4px
+    column-gap: 3px
 }
 
 section.a .i li {
