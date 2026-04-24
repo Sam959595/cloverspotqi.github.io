@@ -179,7 +179,7 @@ section.v .g {
     border-radius: 23px;
 
     display: flex;
-    column-gap: 5px
+    column-gap: 8px
 }
 
 section.v .g a {
@@ -204,17 +204,17 @@ section.v .g img {
 }
 
 section.v .g img+img {
-    margin-left: -4px
+    margin-left: -5px
 }
 
 section.v .g img:not(:last-child) {
-    clip-path: path("M0 0v18h15.03a10.8 10.8 0 0 1 0-18z")
+    clip-path: path("M16.54 0a11.6 11.6 0 0 0 0 19H0V0z")
 }
 
 section.v .g span {
     white-space: nowrap;
     font: 500 16px system-ui;
-    letter-spacing: .4px
+    letter-spacing: .2px
 }
 
 /* - */
