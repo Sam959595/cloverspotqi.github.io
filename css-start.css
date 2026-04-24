@@ -48,8 +48,8 @@ section.a .i {
     column-gap: 4px
 }
 
-section.a .i {
-    background-color: light-dark(#ddd, #111)
+section.a .i li {
+    background-color: light-dark(#eee, #111)
 }
 
 section.a .i img {
