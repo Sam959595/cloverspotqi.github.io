@@ -63,6 +63,10 @@ section.a .i img {
 
 /* - */
 
+section.a .r {
+    margin-block: 50px
+}
+
 section.a .r li {
     padding-inline: 30px
 }
