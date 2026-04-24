@@ -5,8 +5,16 @@ body {
 
 /* a */
 
+section.a h1 {
+    margin: calc(130px + env(safe-area-inset-top)) 30px 10px;
+
+    font: 500 14px system-ui;
+    letter-spacing: .2px;
+
+    color: light-dark(#999, #666)
+}
+
 section.a input {
-    margin-block: calc(150px + env(safe-area-inset-top)) 10px;
     padding-inline: 30px;
 
     width: 100%;
@@ -15,6 +23,20 @@ section.a input {
     letter-spacing: .2px;
 
     background: none
+}
+
+section.a h2 {
+    margin: 30px;
+
+    font: 500 17px/1.4 system-ui;
+    letter-spacing: .2px
+}
+
+/* g */
+
+section.g {
+    position: fixed;
+    inset: calc(15px + env(safe-area-inset-top)) auto auto 30px
 }
 
 /* k */
@@ -46,16 +68,9 @@ section.f img {
     position: fixed;
     inset: calc(15px + env(safe-area-inset-top)) 30px auto auto;
 
-    padding: 3.5px;
+    margin: 11px;
 
-    border-radius: 50%;
-    border: 1px solid #0000;
-    background-origin: border-box;
-
-    background-clip: padding-box, border-box;
-    background-image: linear-gradient(#f6f6f6, #f6f6f6), linear-gradient(to top left, #fff, #f6f6f6, #fff);
-
-    box-shadow: 0 0 20px #0001
+    border-radius: 50%
 }
 
 /* - */
