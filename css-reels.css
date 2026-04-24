@@ -45,7 +45,7 @@ section.v .k {
     display: grid;
     grid-template-columns: 70% 30%;
 
-    background-image: linear-gradient(#0008, #0000, #0002)
+    background-image: linear-gradient(#000b, #0000, #0000, #0008)
 }
 
 section.v .k div:first-child {
@@ -170,42 +170,35 @@ section.v .g {
     position: absolute;
     inset: auto 0 0;
 
-    padding: 40px 30px
+    padding: 40px
 }
 
 section.v .g h1 {
     text-align: center;
-    font: 500 16px system-ui;
+    font: 500 16px/2 system-ui;
     letter-spacing: .4px;
 
     color: #fff6
 }
 
 section.v .g a {
-    margin-bottom: 5px;
     padding: 3px 7px;
 
     border-radius: 15px;
     border: 2px solid #0002;
-
-    display: inline-flex;
 
     background-color: #0004;
     color: #fff
 }
 
 section.v .g img {
-    margin-top: 3px;
+    border-radius: 50%;
 
-    border-radius: 50%
+    display: inline-block
 }
 
 section.v .g img+img {
     margin-left: -4px
-}
-
-section.v .g img:last-child {
-    margin-right: 5px
 }
 
 section.v .g img:not(:last-child) {
