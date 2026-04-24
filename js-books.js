@@ -101,8 +101,8 @@ tabs.forEach((tab, index) => {
 
         // переключение секций
         if (index === 0) {
-            sectionW.style.display = "block";
             sectionB.style.display = "none";
+            sectionW.style.display = "block";
         } else {
             sectionW.style.display = "none";
             sectionB.style.display = "block";
@@ -115,7 +115,7 @@ const grid = document.querySelector('section.w ul');
 
 function getGutter() {
     if (window.innerWidth > 900) return 40;
-    return 20;
+    return 10;
 }
 
 let msnry = new Masonry(grid, {
