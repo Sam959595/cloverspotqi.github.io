@@ -5,6 +5,5 @@
             "src": "12.png"
         }
     ],
-    "display": "standalone",
-    "theme_color": "#0d0d0d"
+    "display": "standalone"
 }
