@@ -62,10 +62,6 @@ section.a h2 {
     letter-spacing: .2px
 }
 
-section.a u {
-    font-weight: 600
-}
-
 /* - */
 
 section.a .i {
@@ -167,6 +163,15 @@ section.k {
     inset: calc(15px + env(safe-area-inset-top)) 30px auto auto;
 
     display: flex
+}
+
+/* b */
+
+section.b svg {
+    position: fixed;
+    inset: auto calc(100vw / 2 - 11px) 30px;
+
+    filter: drop-shadow(0 0 20px #000)
 }
 
 /* - */
