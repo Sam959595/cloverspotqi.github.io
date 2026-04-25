@@ -149,7 +149,7 @@ section.g {
 }
 
 section.g img {
-    margin: 15px 0 0 -15px;
+    margin: 14px 0 0 -14px;
 
     border-radius: 50%;
 
@@ -176,7 +176,7 @@ section.b svg {
 
     filter: drop-shadow(0 0 10px #0003);
 
-    transition: opacity .4s
+    transition: opacity .2s
 }
 
 section.x svg {
