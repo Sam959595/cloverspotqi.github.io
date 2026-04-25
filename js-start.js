@@ -21,7 +21,6 @@ imgElements.forEach(img => {
 });
 
 // скролл
-
 const sectionG = document.querySelector('section.g');
 const sectionK = document.querySelector('section.k');
 
@@ -40,4 +39,18 @@ window.addEventListener('scroll', () => {
     // вешаем style на тег
     sectionG.style.opacity = opacity;
     sectionK.style.opacity = opacity;
+});
+
+// кнопка вверх
+let scrollPosition = 0;
+const sectionB = document.querySelector('section.b');
+
+window.addEventListener('scroll', () => {
+    if (scrollY > scrollPosition) {
+        sectionB.classList.add('x'); // скроллим вниз
+    } else {
+        sectionB.classList.remove('x'); // скроллим вверх
+    }
+
+    scrollPosition = scrollY <= 0 ? 0 : scrollY;
 });
