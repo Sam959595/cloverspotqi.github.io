@@ -58,15 +58,12 @@ section.a h1 {
 section.a h2 {
     margin: 10px 40px 10px 30px;
 
-    font: 500 17px/1.5 system-ui;
+    font: 18px/1.5 system-ui;
     letter-spacing: .2px
 }
 
 section.a u {
-    text-decoration-line: underline;
-    text-decoration-skip: none;
-    text-underline-offset: 2px;
-    text-decoration-color: light-dark(#ddd, #333)
+    font-weight: 600
 }
 
 /* - */
