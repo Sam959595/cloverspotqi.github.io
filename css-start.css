@@ -169,7 +169,7 @@ section.k {
 
 section.b svg {
     position: fixed;
-    inset: auto calc(100vw / 2 - 11px) 30px;
+    inset: auto calc(100vw / 2 - 15px) 30px;
 
     filter: drop-shadow(0 0 10px #0003)
 }
