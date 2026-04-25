@@ -171,7 +171,7 @@ section.b svg {
     position: fixed;
     inset: auto calc(100vw / 2 - 11px) 30px;
 
-    filter: drop-shadow(0 0 20px #000)
+    filter: drop-shadow(0 0 10px #0003)
 }
 
 /* - */
