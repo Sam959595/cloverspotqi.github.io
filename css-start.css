@@ -34,7 +34,7 @@ section.a input::placeholder {
 
 @media (prefers-color-scheme: light) {
     section.a input::-webkit-search-cancel-button {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22'%3E%3Cpath stroke='%23bababa' stroke-linecap='round' stroke-width='2.5' d='M17 5 5 17M5 5l12 12'/%3E%3C/svg%3E")
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22'%3E%3Cpath stroke='%23ccc' stroke-linecap='round' stroke-width='2.5' d='M17 5 5 17M5 5l12 12'/%3E%3C/svg%3E")
     }
 }
 
@@ -63,7 +63,10 @@ section.a h2 {
 }
 
 section.a u {
-    font-weight: 700
+    text-decoration-line: underline;
+    text-decoration-skip: none;
+    text-underline-offset: 2px;
+    text-decoration-color: light-dark(#ddd, #333)
 }
 
 /* - */
