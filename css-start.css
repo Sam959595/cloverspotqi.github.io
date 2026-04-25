@@ -168,10 +168,20 @@ section.k {
 /* b */
 
 section.b svg {
+    pointer-events: none;
+    opacity: 0;
+
     position: fixed;
     inset: auto calc(100vw / 2 - 15px) 30px;
 
-    filter: drop-shadow(0 0 10px #0003)
+    filter: drop-shadow(0 0 10px #0003);
+
+    transition: opacity .4s
+}
+
+section.x svg {
+    pointer-events: auto;
+    opacity: 1
 }
 
 /* - */
