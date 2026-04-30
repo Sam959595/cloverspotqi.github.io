@@ -38,6 +38,37 @@ section.v video {
 
 /* - */
 
+section.v .d {
+    pointer-events: none;
+
+    position: absolute;
+    inset: calc(7px + env(safe-area-inset-top)) 40px auto;
+
+    display: flex;
+    column-gap: 5px
+}
+
+section.v .d div {
+    width: 100%;
+    height: 3px;
+
+    border-radius: 2px;
+
+    background-color: #ffffff30;
+
+    box-shadow: 0 0 10px #00000030
+}
+
+section.v .d div div {
+    height: inherit;
+
+    border-radius: inherit;
+
+    background-color: #fff
+}
+
+/* - */
+
 section.v .k {
     position: absolute;
     inset: 0;
@@ -60,7 +91,7 @@ section.v .k div:last-child {
 
 section.v .a {
     position: absolute;
-    inset: calc(20px + env(safe-area-inset-top)) 40px auto auto;
+    inset: calc(30px + env(safe-area-inset-top)) 40px auto auto;
 
     animation: a 10s cubic-bezier(.25, 0, .25, 1) infinite
 }
@@ -89,7 +120,7 @@ section.v .a {
 
 section.v .b {
     position: absolute;
-    inset: calc(20px + env(safe-area-inset-top)) 130px auto auto;
+    inset: calc(30px + env(safe-area-inset-top)) 130px auto auto;
 
     animation: b 10s cubic-bezier(.25, 0, .25, 1) infinite
 }
@@ -118,7 +149,7 @@ section.v .b {
 
 section.v .c {
     position: absolute;
-    inset: calc(20px + env(safe-area-inset-top)) 220px auto auto;
+    inset: calc(30px + env(safe-area-inset-top)) 220px auto auto;
 
     animation: c 10s cubic-bezier(.25, 0, .25, 1) infinite
 }
@@ -168,11 +199,9 @@ section.v :is(.a, .b, .c):after {
 
 section.v .g {
     position: absolute;
-    inset: auto 0 0;
+    inset: auto 40px 40px;
 
     overflow-x: scroll;
-
-    margin: 40px;
 
     width: calc(100vw - 80px);
 
