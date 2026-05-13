@@ -101,7 +101,7 @@ section.a .r div {
 }
 
 section.a .r a {
-    padding-block: 20px;
+    padding-block: 20px 25px;
 
     display: block
 }
