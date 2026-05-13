@@ -106,10 +106,6 @@ section.a .r a {
     display: block
 }
 
-section.a .r li:hover {
-    background-color: light-dark(#eee, #333)
-}
-
 section.a .r li+li a {
     border-top: 1px solid light-dark(#eee, #151515)
 }
