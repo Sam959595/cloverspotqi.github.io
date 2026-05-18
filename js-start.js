@@ -1,10 +1,10 @@
-// маленькая утилита для удобства
+// Маленькая утилита для удобства
 const $ = (selector, all = false) => all ? document.querySelectorAll(selector) : document.querySelector(selector);
 
 // DOM-элементы ищутся только один раз при загрузке страницы (а потом используются из памяти)
 const imgElements = $('img[data-src]', true);
 
-// загрузка изображений lazy-load
+// Загрузка изображений lazy-load
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -24,13 +24,12 @@ imgElements.forEach(img => {
     observer.observe(img);
 });
 
-const sectionW = document.querySelector('section.w');
-
-// скролл
+// Скролл
+const sectionA = document.querySelector('section.a');
 const sectionF = document.querySelector('section.f');
 
-sectionW.addEventListener('scroll', () => {
-    let scrollY = sectionW.scrollTop;
+sectionA.addEventListener('scroll', () => {
+    let scrollY = sectionA.scrollTop;
 
     if (scrollY >= 100) {
         sectionF.classList.add('g');
@@ -41,10 +40,10 @@ sectionW.addEventListener('scroll', () => {
 
 // затенить бар
 let n = 0;
-const b = document.querySelector('section.j div');
+const b = document.querySelector('section.j');
 
-sectionW.addEventListener('scroll', () => {
-    let t = sectionW.scrollTop;
+sectionA.addEventListener('scroll', () => {
+    let t = sectionA.scrollTop;
 
     if (t > n) {
         b.classList.add('x'); // скроллим вниз
@@ -55,92 +54,41 @@ sectionW.addEventListener('scroll', () => {
     n = t <= 0 ? 0 : t;
 });
 
-// скролл
-const bx = document.querySelector('section.j>svg');
-const bc = document.querySelector('section.j .t');
-
-const maxScroll = 100; // сколько px = полная темнота
-
-sectionW.addEventListener('scroll', () => {
-    // получаем скоролл от вверха
-    const scrollY = sectionW.scrollTop;
-
-    // прогресс от 1 до 0
-    let opacity = 1 - (scrollY / maxScroll);
-
-    // ограничиваем, чтобы не вылезало
-    opacity = Math.min(Math.max(opacity, 0), 1);
-
-    // вешаем style на тег
-    bx.style.opacity = opacity;
-    bc.style.opacity = opacity;
-});
-
 // поиск бар
-const sectionWw = document.querySelectorAll('section.w img');
+const sectionAw = document.querySelectorAll('section.w img');
 const sectionV = document.querySelector('section.v');
 
-sectionWw.forEach(img => {
+sectionAw.forEach(img => {
     img.addEventListener('click', () => {
         sectionV.classList.toggle('s');
     });
 });
 
 // переключение вкладок
-const tabs = document.querySelectorAll('section.j .a');
+const tabs = document.querySelectorAll('section.j .a h6');
 const sectionB = document.querySelector('section.b');
 
 tabs.forEach((tab, index) => {
-    tab.addEventListener('pointerdown', () => {
+    tab.addEventListener('click', () => {
 
         // убрать активный класс у всех вкладок
-        tabs.forEach(t => t.classList.remove('b'));
+        tabs.forEach(t => t.classList.remove('s'));
 
         // добавить активный класс текущей
-        tab.classList.add('b');
+        tab.classList.add('s');
 
         // переключение секций
         if (index === 0) {
+            sectionA.style.display = "block";
             sectionB.style.display = "none";
-            sectionW.style.display = "block";
         } else {
-            sectionW.style.display = "none";
+            sectionA.style.display = "none";
             sectionB.style.display = "block";
         }
     });
 });
 
-// настройка сетки masonry.js
-const grid = document.querySelector('section.w ul');
+// текущая дата
 
-const layoutButtons = document.querySelectorAll('section.r li');
-
-layoutButtons[0].addEventListener('click', () => {
-    sectionW.classList.add('m');
-
-    msnry.options.gutter = getGutter();
-    msnry.layout();
-});
-
-layoutButtons[1].addEventListener('click', () => {
-    sectionW.classList.remove('m');
-
-    msnry.options.gutter = getGutter();
-    msnry.layout();
-});
-
-function getGutter() {
-    if (window.innerWidth > 900) return 40;
-    return sectionW.classList.contains('m') ? 20 : 6;
-}
-
-let msnry = new Masonry(grid, {
-    itemSelector: 'li',
-    columnWidth: 'li',
-    gutter: getGutter()
-});
-
-window.addEventListener('resize', () => {
-    msnry.options.gutter = getGutter();
-    msnry.layout();
-});
+const sectionH = document.querySelector('section.a h2');
+sectionH.textContent = new Intl.DateTimeFormat('ru-RU', { weekday: 'short', day: 'numeric', month: 'long' }).format(new Date()).toUpperCase();
