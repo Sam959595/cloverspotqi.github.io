@@ -113,9 +113,25 @@ tabs.forEach((tab, index) => {
 // настройка сетки masonry.js
 const grid = document.querySelector('section.w ul');
 
+const layoutButtons = document.querySelectorAll('section.r li');
+
+layoutButtons[0].addEventListener('click', () => {
+    sectionW.classList.add('m');
+
+    msnry.options.gutter = getGutter();
+    msnry.layout();
+});
+
+layoutButtons[1].addEventListener('click', () => {
+    sectionW.classList.remove('m');
+
+    msnry.options.gutter = getGutter();
+    msnry.layout();
+});
+
 function getGutter() {
     if (window.innerWidth > 900) return 40;
-    return 6;
+    return sectionW.classList.contains('m') ? 20 : 6;
 }
 
 let msnry = new Masonry(grid, {
