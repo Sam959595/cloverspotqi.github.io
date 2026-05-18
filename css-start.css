@@ -25,6 +25,10 @@ section.a input::placeholder {
     color: light-dark(#999, #666)
 }
 
+body:has(section.a input:focus) section.a h2 {
+    opacity: 0;
+}
+
 /* section.a input::-webkit-search-cancel-button {
     appearance: none;
 
@@ -132,7 +136,7 @@ section.a .r h4 {
 }
 
 section.a .r h3 {
-    margin-block: 20px 10px;
+    margin-block: 20px 5px;
 
     font: 500 17px system-ui;
     letter-spacing: .2px
@@ -143,6 +147,15 @@ section.a .r p {
     letter-spacing: .2px;
 
     color: light-dark(#999, #666)
+}
+
+/* r */
+
+section.r {
+    position: fixed;
+    inset: calc(15px + env(safe-area-inset-top)) auto auto 30px;
+
+    background-color: light-dark(#fff, #0d0d0d)
 }
 
 /* g */
