@@ -1,6 +1,10 @@
-// загрузка изображений lazy-load
-const imgElements = document.querySelectorAll('img[data-src]');
+// маленькая утилита для удобства
+const $ = (selector, all = false) => all ? document.querySelectorAll(selector) : document.querySelector(selector);
 
+// DOM-элементы ищутся только один раз при загрузке страницы (а потом используются из памяти)
+const imgElements = $('img[data-src]', true);
+
+// загрузка изображений lazy-load
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -20,15 +24,46 @@ imgElements.forEach(img => {
     observer.observe(img);
 });
 
+const sectionW = document.querySelector('section.w');
+
 // скролл
-const sectionG = document.querySelector('section.g');
-const sectionK = document.querySelector('section.k');
+const sectionF = document.querySelector('section.f');
 
-const maxScroll = 80; // сколько px = полная темнота
+sectionW.addEventListener('scroll', () => {
+    let scrollY = sectionW.scrollTop;
 
-window.addEventListener('scroll', () => {
+    if (scrollY >= 100) {
+        sectionF.classList.add('g');
+    } else {
+        sectionF.classList.remove('g');
+    }
+});
+
+// затенить бар
+let n = 0;
+const b = document.querySelector('section.j div');
+
+sectionW.addEventListener('scroll', () => {
+    let t = sectionW.scrollTop;
+
+    if (t > n) {
+        b.classList.add('x'); // скроллим вниз
+    } else {
+        b.classList.remove('x'); // скроллим вверх
+    }
+
+    n = t <= 0 ? 0 : t;
+});
+
+// скролл
+const bx = document.querySelector('section.j>svg');
+const bc = document.querySelector('section.j .t');
+
+const maxScroll = 100; // сколько px = полная темнота
+
+sectionW.addEventListener('scroll', () => {
     // получаем скоролл от вверха
-    const scrollY = window.scrollY;
+    const scrollY = sectionW.scrollTop;
 
     // прогресс от 1 до 0
     let opacity = 1 - (scrollY / maxScroll);
@@ -37,17 +72,75 @@ window.addEventListener('scroll', () => {
     opacity = Math.min(Math.max(opacity, 0), 1);
 
     // вешаем style на тег
-    sectionG.style.opacity = opacity;
-    sectionK.style.opacity = opacity;
+    bx.style.opacity = opacity;
+    bc.style.opacity = opacity;
 });
 
-// кнопка вверх
+// поиск бар
+const sectionWw = document.querySelectorAll('section.w img');
+const sectionV = document.querySelector('section.v');
+
+sectionWw.forEach(img => {
+    img.addEventListener('click', () => {
+        sectionV.classList.toggle('s');
+    });
+});
+
+// переключение вкладок
+const tabs = document.querySelectorAll('section.j .a');
 const sectionB = document.querySelector('section.b');
 
-window.addEventListener('scroll', () => {
-    if (scrollY >= 500) {
-        sectionB.classList.add('x'); // скроллим вниз
-    } else {
-        sectionB.classList.remove('x'); // скроллим вверх
-    }
+tabs.forEach((tab, index) => {
+    tab.addEventListener('pointerdown', () => {
+
+        // убрать активный класс у всех вкладок
+        tabs.forEach(t => t.classList.remove('b'));
+
+        // добавить активный класс текущей
+        tab.classList.add('b');
+
+        // переключение секций
+        if (index === 0) {
+            sectionB.style.display = "none";
+            sectionW.style.display = "block";
+        } else {
+            sectionW.style.display = "none";
+            sectionB.style.display = "block";
+        }
+    });
+});
+
+// настройка сетки masonry.js
+const grid = document.querySelector('section.w ul');
+
+const layoutButtons = document.querySelectorAll('section.r li');
+
+layoutButtons[0].addEventListener('click', () => {
+    sectionW.classList.add('m');
+
+    msnry.options.gutter = getGutter();
+    msnry.layout();
+});
+
+layoutButtons[1].addEventListener('click', () => {
+    sectionW.classList.remove('m');
+
+    msnry.options.gutter = getGutter();
+    msnry.layout();
+});
+
+function getGutter() {
+    if (window.innerWidth > 900) return 40;
+    return sectionW.classList.contains('m') ? 20 : 6;
+}
+
+let msnry = new Masonry(grid, {
+    itemSelector: 'li',
+    columnWidth: 'li',
+    gutter: getGutter()
+});
+
+window.addEventListener('resize', () => {
+    msnry.options.gutter = getGutter();
+    msnry.layout();
 });
