@@ -40,6 +40,11 @@ section.w img {
     height: auto
 }
 
+section.w video {
+    width: 100%;
+    height: auto
+}
+
 section.m ul {
     margin-inline: 20px
 }
@@ -54,12 +59,6 @@ section.m ul li {
 
 section.w div {
     border: 1px solid #1c1c1c
-}
-
-section.w h1 {
-    margin: 50px 25px;
-
-    font: 400 16px/1.6 ui-serif
 }
 
 section.w h6 {
