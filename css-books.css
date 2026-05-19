@@ -421,7 +421,7 @@ section.r .a {
 
 section.r .b {
     position: absolute;
-    inset: calc(10px + env(safe-area-inset-top)) auto auto 60px;
+    inset: calc(10px + env(safe-area-inset-top)) auto auto 11vw;
 
     padding: 30px;
 
