@@ -403,18 +403,24 @@ ul.b a:after {
 /* - */
 
 section.r {
-    pointer-events: none;
-    opacity: 0;
-
     position: fixed;
     inset: 0;
 
-    background-color: #0d0d0d80;
+    pointer-events: none;
+    opacity: 0;
 
-    transition: opacity .2s, background-color .2s ease;
+    transition: opacity .2s
 }
 
-section.r div {
+section.r .a {
+    height: 100%;
+
+    background-color: #0d0d0d80;
+
+    transition: background-color .2s
+}
+
+section.r .b {
     position: absolute;
     inset: calc(10px + env(safe-area-inset-top)) auto auto 30px;
 
@@ -437,26 +443,26 @@ section.r h1 {
     color: #444
 }
 
-section.r .a {
+section.r .c {
     margin-block: 20px;
 
     display: flex;
     column-gap: 20px
 }
 
-section.r .a svg {
+section.r .c svg {
     display: block
 }
 
-section.r .b {
+section.r .d {
     margin-top: 10px
 }
 
-section.r .b li+li {
+section.r .d li+li {
     margin-top: 5px
 }
 
-section.r .b li {
+section.r .d li {
     font: 600 16px system-ui
 }
 
@@ -465,7 +471,7 @@ section.k {
     opacity: 1
 }
 
-section.k div {
+section.k .b {
     transform: scale(1)
 }
 
