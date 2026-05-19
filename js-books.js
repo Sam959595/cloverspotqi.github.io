@@ -113,17 +113,20 @@ tabs.forEach((tab, index) => {
 // настройка сетки masonry.js
 const grid = document.querySelector('section.w ul');
 
-const layoutButtons = document.querySelectorAll('section.r li');
+const layoutButtons = document.querySelectorAll('section.r .c li');
+const menu = document.querySelector('section.r');
+const backbtn = document.querySelector('section.r .a');
+const btnmenu = document.querySelector('section.j>svg');
 
 layoutButtons[0].addEventListener('click', () => {
-    sectionW.classList.add('m');
+    sectionW.classList.remove('m');
 
     msnry.options.gutter = getGutter();
     msnry.layout();
 });
 
 layoutButtons[1].addEventListener('click', () => {
-    sectionW.classList.remove('m');
+    sectionW.classList.add('m');
 
     msnry.options.gutter = getGutter();
     msnry.layout();
@@ -143,4 +146,12 @@ let msnry = new Masonry(grid, {
 window.addEventListener('resize', () => {
     msnry.options.gutter = getGutter();
     msnry.layout();
+});
+
+backbtn.addEventListener('click', () => {
+    menu.classList.remove('k');
+});
+
+btnmenu.addEventListener('click', () => {
+    menu.classList.add('k');
 });
