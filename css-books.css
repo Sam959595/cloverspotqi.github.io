@@ -133,7 +133,7 @@ section.j .r {
 
     background-color: #111;
 
-    clip-path: path("m32.93 50-3.44-.04a76 76 0 0 1-7.01-.44c-4-.44-6.59-1.14-9.07-2.4A22 22 0 0 1 7 42.44a24 24 0 0 1-4.95-7.52A25 25 0 0 1 0 24.99c0-4.38 1.03-7.39 2.05-9.9A24 24 0 0 1 7 7.54a22 22 0 0 1 6.41-4.7C16.15 1.5 18.81.84 22.48.48q3.98-.43 7.01-.44 3.04 0 3.44-.03h34.14q2.19 0 3.44.03c2.87.09 3.83.1 7.01.44s6.04.88 9.07 2.4A21 21 0 0 1 93 7.55a23 23 0 0 1 4.95 7.53 27 27 0 0 1 2.05 9.9 26 26 0 0 1-2.05 9.92A23 23 0 0 1 93 42.44a21 21 0 0 1-6.41 4.7c-2.96 1.52-5.9 2.02-9.07 2.39a74 74 0 0 1-7.01.43l-3.44.04z");
+    clip-path: path("M61.78 0c11 0 16.51 0 22.43 1.87A23.3 23.3 0 0 1 98.13 15.8 24 24 0 0 1 100 25c0 1 0 4.5-1.87 9.21A23.3 23.3 0 0 1 84.2 48.13C78.3 50 72.8 50 61.78 50H38.22c-11 0-16.51 0-22.43-1.87A23.3 23.3 0 0 1 1.87 34.2 24 24 0 0 1 0 25c0-1 0-4.5 1.87-9.21A23.3 23.3 0 0 1 15.8 1.87C21.7 0 27.2 0 38.22 0z");
 
     transition: opacity .4s ease
 }
@@ -178,7 +178,7 @@ section.j .a:after {
 
     border-radius: 50%;
 
-    background-color: #ff383c
+    background-color: #dd4848
 }
 
 /* b */
@@ -330,7 +330,7 @@ section.l {
 
 /* y */
 
-div.y a {
+/* div.y a {
     position: relative;
 
     margin: 20vh 20vw;
@@ -358,8 +358,6 @@ div.y a:after {
     background-size: 100% 100%;
     background-image: url('4.png')
 }
-
-/* - */
 
 ul.b {
     position: relative;
@@ -400,7 +398,7 @@ ul.b a:after {
 
     background-size: 100% 100%;
     background-image: url('4.png')
-}
+} */
 
 /* - */
 
@@ -408,18 +406,47 @@ section.r {
     position: fixed;
     inset: 0;
 
-    background-color: #0d0d0d40
+    background-color: #0d0d0dbb
 }
 
-section.r ul {
+section.r div {
     position: absolute;
-    inset: calc(70px + env(safe-area-inset-top)) auto auto 30px;
+    inset: calc(10px + env(safe-area-inset-top)) auto auto 30px;
 
     padding: 30px;
 
     border-radius: 25px;
 
     background-color: #111
+}
+
+section.r h1 {
+    font: 500 13px system-ui;
+
+    color: #444
+}
+
+section.r .a {
+    margin-block: 20px;
+
+    display: flex;
+    column-gap: 20px
+}
+
+section.r .a svg {
+    display: block
+}
+
+section.r .b {
+    margin-top: 10px
+}
+
+section.r .b li+li {
+    margin-top: 5px
+}
+
+section.r .b li {
+    font: 600 16px system-ui
 }
 
 /* - */
