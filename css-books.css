@@ -429,7 +429,7 @@ ul.b a:after {
         padding: 40px;
 
         background-size: 100%;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='428' height='322' viewBox='0 0 428 322'%3E%3Cpath fill='%23111' fill-rule='evenodd' d='M66.66 0h294.68c23.18 0 31.58 2.41 40.06 6.95a47.3 47.3 0 0 1 19.65 19.65c4.54 8.48 6.95 16.88 6.95 40.06V322H0V66.66C0 43.48 2.41 35.08 6.95 26.6A47.3 47.3 0 0 1 26.6 6.95C35.08 2.4 43.48 0 66.66 0'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='428' height='322' viewBox='0 0 428 322'%3E%3Cpath fill='%23111' fill-rule='evenodd' d='M66.66 0h294.68c23.18 0 31.58 2.41 40.06 6.95a47.3 47.3 0 0 1 19.65 19.65c4.54 8.48 6.95 16.88 6.95 40.06V322H0V66.66C0 43.48 2.41 35.08 6.95 26.6A47.3 47.3 0 0 1 26.6 6.95C35.08 2.4 43.48 0 66.66 0'/%3E%3C/svg%3E"), linear-gradient(#0000, #111 50%);
 
         transform: translateY(100%);
 
