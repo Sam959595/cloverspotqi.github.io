@@ -423,10 +423,6 @@ ul.b a:after {
         position: absolute;
         inset: auto 0 0;
 
-        box-sizing: border-box;
-
-        height: 322px;
-
         padding: 40px;
 
         background-size: 100%;
@@ -438,43 +434,39 @@ ul.b a:after {
     }
 
     section.r h1 {
+        margin-bottom: 20px;
+
         font: 500 13px system-ui;
 
         color: #444
     }
 
-    section.r .c {
-        margin-block: 20px;
+    section.r ul {
+        padding: 5px;
+
+        border-radius: 29px;
 
         display: flex;
-        column-gap: 20px
+
+        background-color: #181818
+    }
+
+    section.r li {
+        width: 100%;
+
+        padding: 15px;
+
+        border-radius: 29px;
+
+        text-align: center;
+        font: 600 14px ui-rounded
     }
 
     section.r .c svg {
         display: block
     }
 
-    section.r .d {
-        margin-top: 10px;
-
-        display: flex;
-        column-gap: 10px
-    }
-
-    section.r .d li {
-        width: 100%;
-
-        padding-block: 20px;
-
-        border-radius: 29px;
-
-        text-align: center;
-        font: 600 14px system-ui;
-
-        background-color: #222
-    }
-
-    section.r .d .e {
+    section.r .e {
         background-color: #fff;
         color: #111
     }
