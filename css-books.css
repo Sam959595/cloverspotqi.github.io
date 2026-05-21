@@ -406,16 +406,17 @@ ul.b a:after {
         position: fixed;
         inset: 0;
 
-        pointer-events: none;
-        opacity: 0;
-
-        transition: opacity .3s
+        pointer-events: none
     }
 
     section.r .a {
+        opacity: 0;
+
         height: 100%;
 
-        background-color: #0d0d0d80
+        background-color: #0d0d0d80;
+
+        transition: opacity .3s
     }
 
     section.r .b {
@@ -479,7 +480,10 @@ ul.b a:after {
     }
 
     section.k {
-        pointer-events: auto;
+        pointer-events: auto
+    }
+
+    section.k .a {
         opacity: 1
     }
 
