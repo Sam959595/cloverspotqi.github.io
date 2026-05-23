@@ -127,6 +127,18 @@ section.j {
 
 /* - */
 
+section.j>svg {
+    opacity: 1;
+
+    transition: opacity .3s;
+
+    will-change: opacity
+}
+
+section.j .c {
+    opacity: 0
+}
+
 section.j .r {
     display: flex;
 
@@ -459,7 +471,9 @@ ul.b a:after {
         border-radius: 29px;
 
         text-align: center;
-        font: 600 14px ui-rounded
+        font: 600 14px ui-rounded;
+
+        color: #666
     }
 
     section.r .c svg {
