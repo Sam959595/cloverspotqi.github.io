@@ -127,15 +127,11 @@ section.j {
 
 /* - */
 
-section.j>svg {
-    opacity: 1;
-
-    transition: opacity .3s;
-
-    will-change: opacity
+section.j>svg circle {
+    transition: opacity .2s ease
 }
 
-section.j .c {
+section.j .c circle {
     opacity: 0
 }
 
