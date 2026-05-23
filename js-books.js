@@ -1,190 +1,594 @@
-// маленькая утилита для удобства
-const $ = (selector, all = false) => all ? document.querySelectorAll(selector) : document.querySelector(selector);
-
-// DOM-элементы ищутся только один раз при загрузке страницы (а потом используются из памяти)
-const imgElements = $('img[data-src]', true);
-
-// загрузка изображений lazy-load
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const img = entry.target;
-            const tempImg = new Image();
-            tempImg.src = img.dataset.src;
-            tempImg.onload = () => {
-                img.src = img.dataset.src;
-                img.removeAttribute('data-src');
-            };
-            observer.unobserve(img);
-        }
-    });
-});
-
-imgElements.forEach(img => {
-    observer.observe(img);
-});
-
-const sectionW = document.querySelector('section.w');
-
-// скролл
-const sectionF = document.querySelector('section.f');
-
-sectionW.addEventListener('scroll', () => {
-    let scrollY = sectionW.scrollTop;
-
-    if (scrollY >= 100) {
-        sectionF.classList.add('g');
-    } else {
-        sectionF.classList.remove('g');
+@media (display-mode: standalone),
+(min-width: 900px) {
+    html {
+        overscroll-behavior: none
     }
-});
-
-// затенить бар
-let n = 0;
-const b = document.querySelector('section.j div');
-
-sectionW.addEventListener('scroll', () => {
-    let t = sectionW.scrollTop;
-
-    if (t > n) {
-        b.classList.add('x'); // скроллим вниз
-    } else {
-        b.classList.remove('x'); // скроллим вверх
-    }
-
-    n = t <= 0 ? 0 : t;
-});
-
-// скролл
-const bx = document.querySelector('section.j>svg');
-const bc = document.querySelector('section.j .t');
-
-const maxScroll = 100; // сколько px = полная темнота
-
-sectionW.addEventListener('scroll', () => {
-    // получаем скоролл от вверха
-    const scrollY = sectionW.scrollTop;
-
-    // прогресс от 1 до 0
-    let opacity = 1 - (scrollY / maxScroll);
-
-    // ограничиваем, чтобы не вылезало
-    opacity = Math.min(Math.max(opacity, 0), 1);
-
-    // вешаем style на тег
-    bx.style.opacity = opacity;
-    bc.style.opacity = opacity;
-});
-
-// поиск бар
-const sectionWw = document.querySelectorAll('section.w img');
-const sectionV = document.querySelector('section.v');
-
-sectionWw.forEach(img => {
-    img.addEventListener('click', () => {
-        sectionV.classList.toggle('s');
-    });
-});
-
-// переключение вкладок
-const tabs = document.querySelectorAll('section.j .a');
-const sectionB = document.querySelector('section.b');
-
-tabs.forEach((tab, index) => {
-    tab.addEventListener('pointerdown', () => {
-
-        // убрать активный класс у всех вкладок
-        tabs.forEach(t => t.classList.remove('b'));
-
-        // добавить активный класс текущей
-        tab.classList.add('b');
-
-        // переключение секций
-        if (index === 0) {
-            sectionB.style.display = "none";
-            sectionW.style.display = "block";
-        } else {
-            sectionW.style.display = "none";
-            sectionB.style.display = "block";
-        }
-    });
-});
-
-// подгрузка ссылок
-
-const list = document.querySelector('section.w ul');
-
-async function loadBooks() {
-
-    const response = await fetch('data.json');
-    const data = await response.json();
-    const shuffled = [...data].sort(() => Math.random() - 0.5);
-
-    const fragment = document.createDocumentFragment();
-
-    shuffled.forEach(item => {
-        const li = document.createElement('li');
-
-        li.innerHTML = `<a href="${item.src}"><img width="${item.width}" height="${item.height}" data-src="${item.img_src}"></a>`;
-
-        fragment.append(li);
-    });
-
-    list.append(fragment);
-
-    // Подключаем lazy-load к новым изображениям
-    $('img[data-src]', true).forEach(img => {
-        observer.observe(img)
-    });
-    
-    // Masonry
-    // настройка сетки masonry.js
-    const grid = document.querySelector('section.w ul');
-
-    const layoutButtons = document.querySelectorAll('section.r .c li');
-    const menu = document.querySelector('section.r');
-    const backbtn = document.querySelector('section.r .a');
-    const btnmenu = document.querySelector('section.j>svg');
-
-    layoutButtons[0].addEventListener('click', () => {
-        sectionW.classList.remove('m');
-
-        msnry.options.gutter = getGutter();
-        msnry.layout();
-    });
-
-    layoutButtons[1].addEventListener('click', () => {
-        sectionW.classList.add('m');
-
-        msnry.options.gutter = getGutter();
-        msnry.layout();
-    });
-
-    function getGutter() {
-        if (window.innerWidth > 900) return 40;
-        return sectionW.classList.contains('m') ? 20 : 6;
-    }
-
-    let msnry = new Masonry(grid, {
-        itemSelector: 'li',
-        columnWidth: 'li',
-        gutter: getGutter()
-    });
-
-    window.addEventListener('resize', () => {
-        msnry.options.gutter = getGutter();
-        msnry.layout();
-    });
-
-    backbtn.addEventListener('click', () => {
-        btnmenu.classList.remove('c');
-        menu.classList.remove('k');
-    });
-
-    btnmenu.addEventListener('click', () => {
-        btnmenu.classList.add('c');
-        menu.classList.add('k');
-    });
 }
 
-loadBooks();
+body {
+    background-color: #0d0d0d;
+    color: #fff
+}
+
+/* w */
+
+@media (display-mode: standalone),
+(min-width: 900px) {
+    section.w {
+        overflow-y: scroll;
+
+        height: 100vh
+    }
+}
+
+/* - */
+
+section.w ul {
+    margin: calc(150px + env(safe-area-inset-top)) 0 env(safe-area-inset-bottom)
+}
+
+section.w ul li {
+    margin-bottom: 6px;
+
+    width: calc(50% - 3px);
+
+    background-color: #111
+}
+
+section.w img {
+    width: 100%;
+    height: auto
+}
+
+section.w video {
+    width: 100%;
+    height: auto
+}
+
+section.m ul {
+    margin-inline: 20px
+}
+
+section.m ul li {
+    margin-bottom: 20px;
+
+    width: calc(50% - 10px)
+}
+
+/* - */
+
+section.w div {
+    border: 1px solid #1c1c1c
+}
+
+section.w h6 {
+    margin: 20px 25px;
+
+    font: 500 14px system-ui;
+
+    color: #aaa
+}
+
+/* - */
+
+@media (orientation: landscape) {
+    section.w ul {
+        margin-inline: calc(20px + env(safe-area-inset-left))
+    }
+}
+
+@media (min-width: 900px) {
+    section.w ul {
+        margin-inline: calc(40px + env(safe-area-inset-left))
+    }
+
+    section.w ul li {
+        margin-bottom: 40px;
+
+        width: calc(20% - 32px)
+    }
+}
+
+/* f */
+
+section.f {
+    pointer-events: none;
+    opacity: 0;
+
+    position: fixed;
+    inset: 0 0 auto;
+
+    height: 250px;
+
+    background-image: linear-gradient(#0d0d0dee, #0d0d0d00);
+
+    transition: opacity .4s ease
+}
+
+section.g {
+    opacity: 1
+}
+
+@media (orientation: landscape) {
+    section.f {
+        display: none
+    }
+}
+
+/* j */
+
+section.j {
+    position: fixed;
+    inset: calc(15px + env(safe-area-inset-top)) 0 auto;
+
+    display: flex;
+    justify-content: space-evenly
+}
+
+/* - */
+
+section.j>svg {
+    opacity: 1;
+
+    transition: opacity .3s;
+
+    will-change: opacity
+}
+
+section.j .c {
+    opacity: 0
+}
+
+section.j .r {
+    display: flex;
+
+    background-color: #111;
+
+    clip-path: path("M61.78 0c11 0 16.51 0 22.43 1.87A23.3 23.3 0 0 1 98.13 15.8 24 24 0 0 1 100 25c0 1 0 4.5-1.87 9.21A23.3 23.3 0 0 1 84.2 48.13C78.3 50 72.8 50 61.78 50H38.22c-11 0-16.51 0-22.43-1.87A23.3 23.3 0 0 1 1.87 34.2 24 24 0 0 1 0 25c0-1 0-4.5 1.87-9.21A23.3 23.3 0 0 1 15.8 1.87C21.7 0 27.2 0 38.22 0z");
+
+    transition: opacity .4s ease
+}
+
+section.j .x {
+    opacity: .5
+}
+
+section.j .t {
+    position: relative;
+
+    padding: 10px
+}
+
+section.j img {
+    border-radius: 50%;
+    border: 3px solid #0000
+}
+
+/* - */
+
+section.j svg.b {
+    fill: #fff
+}
+
+section.j svg+svg.b {
+    stroke: #fff
+}
+
+section.j .t.b img {
+    border-color: #fff
+}
+
+section.j .a:after {
+    position: absolute;
+    inset: 22px -5px auto auto;
+
+    content: "";
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background-color: #dd4848
+}
+
+/* b */
+
+@media (display-mode: standalone) {
+    section.b {
+        overflow-y: scroll;
+
+        height: 100vh
+    }
+}
+
+section.b ul {
+    margin: calc(120px + env(safe-area-inset-top)) 7vw calc(30px + env(safe-area-inset-bottom));
+
+    display: grid;
+    row-gap: 40px
+}
+
+section.b ul li>a {
+    position: relative;
+
+    height: 600px;
+
+    border-radius: 30px;
+
+    display: inline-block
+}
+
+section.b ul li>a:after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    border-radius: 30px;
+    border: 3px solid #ffffff15;
+
+    transition: background-color .2s
+}
+
+section.b .d {
+    background-image: linear-gradient(#4a5cf7, #352d94)
+}
+
+section.b .r {
+    background-image: linear-gradient(#764ec3, #802727)
+}
+
+section.b ul li>a img {
+    width: 100%;
+    height: auto
+}
+
+section.b h1 {
+    margin: 30px;
+
+    font: 500 19px system-ui
+}
+
+section.b p {
+    margin: 30px;
+
+    font: 500 17px system-ui;
+    letter-spacing: .4px;
+
+    color: #ffffff80
+}
+
+/* - */
+
+section.b div {
+    overflow-x: scroll;
+
+    margin: 17px;
+
+    width: calc(86vw - 34px);
+
+    border-radius: 21px;
+
+    display: flex;
+    column-gap: 10px
+}
+
+section.b div a {
+    padding: 12px 15px 12px 12px;
+
+    border-radius: 21px;
+
+    display: flex;
+    column-gap: 6px;
+
+    background-color: #151515
+}
+
+section.b div img {
+    border-radius: 50%
+}
+
+section.b h6 {
+    margin-left: 2px;
+
+    font: 500 14px system-ui;
+    letter-spacing: .4px;
+
+    color: #999
+}
+
+section.b time {
+    font: 500 14px system-ui;
+    letter-spacing: .4px;
+
+    color: #666
+}
+
+/* l - load spinner */
+
+section.l {
+    pointer-events: none;
+
+    position: fixed;
+    inset: 0;
+
+    margin: auto;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background-color: #fff;
+
+    animation: load 1s infinite
+}
+
+@keyframes load {
+
+    0%,
+    100% {
+        opacity: .6;
+        transform: scale(.8)
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2)
+    }
+}
+
+/* y */
+
+/* div.y a {
+    position: relative;
+
+    margin: 20vh 20vw;
+
+    display: block;
+
+    display: none
+}
+
+div.y a img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 4px
+}
+
+div.y a:after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    border-radius: 4px;
+
+    background-size: 100% 100%;
+    background-image: url('4.png')
+}
+
+ul.b {
+    position: relative;
+
+    margin: 10vh 30px 20vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 350px;
+    column-gap: 20px
+}
+
+ul.b a {
+    position: relative;
+
+    display: block
+}
+
+ul.b li {
+    display: flex;
+    align-items: end
+}
+
+ul.b a img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 4px
+}
+
+ul.b a:after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    border-radius: 4px;
+
+    background-size: 100% 100%;
+    background-image: url('4.png')
+} */
+
+/* - */
+
+@media (max-width: 900px) {
+    section.r {
+        position: fixed;
+        inset: 0;
+
+        pointer-events: none
+    }
+
+    section.r .a {
+        opacity: 0;
+
+        height: 100%;
+
+        background-color: #0d0d0d80;
+
+        transition: opacity .3s
+    }
+
+    section.r .b {
+        position: absolute;
+        inset: auto 0 0;
+
+        padding: 20px 40px 40px;
+
+        background-size: 100%;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='428' height='322' viewBox='0 0 428 322'%3E%3Cpath fill='%23111' fill-rule='evenodd' d='M66.66 0h294.68c23.18 0 31.58 2.41 40.06 6.95a47.3 47.3 0 0 1 19.65 19.65c4.54 8.48 6.95 16.88 6.95 40.06V322H0V66.66C0 43.48 2.41 35.08 6.95 26.6A47.3 47.3 0 0 1 26.6 6.95C35.08 2.4 43.48 0 66.66 0'/%3E%3C/svg%3E"), linear-gradient(#0000, #111 50%);
+
+        transform: translateY(100%);
+
+        transition: transform .25s cubic-bezier(.4, 0, .25, 1)
+    }
+
+    section.r h1 {
+        margin-block: 20px;
+
+        font: 500 13px system-ui;
+
+        color: #444
+    }
+
+    section.r ul {
+        padding: 5px;
+
+        border-radius: 29px;
+
+        display: flex;
+
+        background-color: #181818
+    }
+
+    section.r li {
+        width: 100%;
+
+        padding: 15px;
+
+        border-radius: 29px;
+
+        text-align: center;
+        font: 600 14px ui-rounded;
+
+        color: #666
+    }
+
+    section.r .c svg {
+        display: block
+    }
+
+    section.r .e {
+        background-color: #fff;
+        color: #111
+    }
+
+    section.k {
+        pointer-events: auto
+    }
+
+    section.k .a {
+        opacity: 1
+    }
+
+    section.k .b {
+        transform: translateY(0)
+    }
+}
+
+@media (min-width: 900px) {
+    section.r {
+        position: fixed;
+        inset: 0;
+
+        pointer-events: none;
+        opacity: 0;
+
+        transition: opacity .2s
+    }
+
+    section.r .a {
+        height: 100%;
+
+        background-color: #0d0d0d80;
+
+        transition: background-color .2s
+    }
+
+    section.r .b {
+        position: absolute;
+        inset: calc(10px + env(safe-area-inset-top)) auto auto 11vw;
+
+        padding: 30px;
+
+        border-radius: 25px;
+
+        background-color: #111;
+
+        transform: scale(.5);
+
+        transform-origin: top left;
+
+        transition: transform .3s ease
+    }
+
+    section.r h1 {
+        font: 500 13px system-ui;
+
+        color: #444
+    }
+
+    section.r .c {
+        margin-block: 20px;
+
+        display: flex;
+        column-gap: 20px
+    }
+
+    section.r .c svg {
+        display: block
+    }
+
+    section.r .d {
+        margin-top: 10px
+    }
+
+    section.r .d li+li {
+        margin-top: 5px
+    }
+
+    section.r .d li {
+        font: 600 16px system-ui
+    }
+
+    section.k {
+        pointer-events: auto;
+        opacity: 1
+    }
+
+    section.k .b {
+        transform: scale(1)
+    }
+}
+
+/* - */
+
+img[data-src] {
+    opacity: 0
+}
+
+img {
+    transition: opacity .4s cubic-bezier(.4, 0, .25, 1)
+}
+
+/* - */
+
+::selection {
+    background: #fff
+}
+
+::-webkit-scrollbar {
+    display: none
+}
