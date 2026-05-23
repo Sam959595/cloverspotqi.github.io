@@ -110,48 +110,81 @@ tabs.forEach((tab, index) => {
     });
 });
 
-// настройка сетки masonry.js
-const grid = document.querySelector('section.w ul');
+// подгрузка ссылок
 
-const layoutButtons = document.querySelectorAll('section.r .c li');
-const menu = document.querySelector('section.r');
-const backbtn = document.querySelector('section.r .a');
-const btnmenu = document.querySelector('section.j>svg');
+const list = document.querySelector('section.w ul');
 
-layoutButtons[0].addEventListener('click', () => {
-    sectionW.classList.remove('m');
+async function loadBooks() {
 
-    msnry.options.gutter = getGutter();
-    msnry.layout();
-});
+    const response = await fetch('data.json');
+    const data = await response.json();
+    const shuffled = [...data].sort(() => Math.random() - 0.5);
 
-layoutButtons[1].addEventListener('click', () => {
-    sectionW.classList.add('m');
+    const fragment = document.createDocumentFragment();
 
-    msnry.options.gutter = getGutter();
-    msnry.layout();
-});
+    shuffled.forEach(item => {
+        const li = document.createElement('li');
 
-function getGutter() {
-    if (window.innerWidth > 900) return 40;
-    return sectionW.classList.contains('m') ? 20 : 6;
+        li.innerHTML = `<a href="${item.src}"><img width="${item.width}" height="${item.height}" data-src="${item.img_src}"></a>`;
+
+        fragment.append(li);
+    });
+
+    list.append(fragment);
+
+    // Подключаем lazy-load к новым изображениям
+    $('img[data-src]', true).forEach(img => {
+        observer.observe(img)
+    });
+    
+    // Masonry
+    // настройка сетки masonry.js
+    const grid = document.querySelector('section.w ul');
+
+    const layoutButtons = document.querySelectorAll('section.r .c li');
+    const menu = document.querySelector('section.r');
+    const backbtn = document.querySelector('section.r .a');
+    const btnmenu = document.querySelector('section.j>svg');
+
+    layoutButtons[0].addEventListener('click', () => {
+        sectionW.classList.remove('m');
+
+        msnry.options.gutter = getGutter();
+        msnry.layout();
+    });
+
+    layoutButtons[1].addEventListener('click', () => {
+        sectionW.classList.add('m');
+
+        msnry.options.gutter = getGutter();
+        msnry.layout();
+    });
+
+    function getGutter() {
+        if (window.innerWidth > 900) return 40;
+        return sectionW.classList.contains('m') ? 20 : 6;
+    }
+
+    let msnry = new Masonry(grid, {
+        itemSelector: 'li',
+        columnWidth: 'li',
+        gutter: getGutter()
+    });
+
+    window.addEventListener('resize', () => {
+        msnry.options.gutter = getGutter();
+        msnry.layout();
+    });
+
+    backbtn.addEventListener('click', () => {
+        btnmenu.classList.remove('c');
+        menu.classList.remove('k');
+    });
+
+    btnmenu.addEventListener('click', () => {
+        btnmenu.classList.add('c');
+        menu.classList.add('k');
+    });
 }
 
-let msnry = new Masonry(grid, {
-    itemSelector: 'li',
-    columnWidth: 'li',
-    gutter: getGutter()
-});
-
-window.addEventListener('resize', () => {
-    msnry.options.gutter = getGutter();
-    msnry.layout();
-});
-
-backbtn.addEventListener('click', () => {
-    menu.classList.remove('k');
-});
-
-btnmenu.addEventListener('click', () => {
-    menu.classList.add('k');
-});
+loadBooks();
