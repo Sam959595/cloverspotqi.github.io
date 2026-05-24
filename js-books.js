@@ -136,7 +136,7 @@ async function loadBooks() {
     $('img[data-src]', true).forEach(img => {
         observer.observe(img)
     });
-    
+
     // Masonry
     // настройка сетки masonry.js
     const grid = document.querySelector('section.w ul');
@@ -144,7 +144,7 @@ async function loadBooks() {
     const layoutButtons = document.querySelectorAll('section.r .c li');
     const menu = document.querySelector('section.r');
     const backbtn = document.querySelector('section.r .a');
-    const btnmenu = document.querySelector('section.j>svg');
+    const btnmenu = document.querySelector('section.j .h');
 
     layoutButtons[0].addEventListener('click', () => {
         sectionW.classList.remove('m');
