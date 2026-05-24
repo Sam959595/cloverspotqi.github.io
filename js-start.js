@@ -1,10 +1,6 @@
-// Маленькая утилита для удобства
-const $ = (selector, all = false) => all ? document.querySelectorAll(selector) : document.querySelector(selector);
+// загрузка изображений lazy-load
+const imgElements = document.querySelectorAll('img[data-src]');
 
-// DOM-элементы ищутся только один раз при загрузке страницы (а потом используются из памяти)
-const imgElements = $('img[data-src]', true);
-
-// Загрузка изображений lazy-load
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -24,71 +20,34 @@ imgElements.forEach(img => {
     observer.observe(img);
 });
 
-// Скролл
-const sectionA = document.querySelector('section.a');
-const sectionF = document.querySelector('section.f');
+// скролл
+const sectionG = document.querySelector('section.g');
+const sectionK = document.querySelector('section.k');
 
-sectionA.addEventListener('scroll', () => {
-    let scrollY = sectionA.scrollTop;
+const maxScroll = 80; // сколько px = полная темнота
 
-    if (scrollY >= 100) {
-        sectionF.classList.add('g');
-    } else {
-        sectionF.classList.remove('g');
-    }
+window.addEventListener('scroll', () => {
+    // получаем скоролл от вверха
+    const scrollY = window.scrollY;
+
+    // прогресс от 1 до 0
+    let opacity = 1 - (scrollY / maxScroll);
+
+    // ограничиваем, чтобы не вылезало
+    opacity = Math.min(Math.max(opacity, 0), 1);
+
+    // вешаем style на тег
+    sectionG.style.opacity = opacity;
+    sectionK.style.opacity = opacity;
 });
 
-// затенить бар
-let n = 0;
-const b = document.querySelector('section.j');
-
-sectionA.addEventListener('scroll', () => {
-    let t = sectionA.scrollTop;
-
-    if (t > n) {
-        b.classList.add('x'); // скроллим вниз
-    } else {
-        b.classList.remove('x'); // скроллим вверх
-    }
-
-    n = t <= 0 ? 0 : t;
-});
-
-// поиск бар
-const sectionAw = document.querySelectorAll('section.w img');
-const sectionV = document.querySelector('section.v');
-
-sectionAw.forEach(img => {
-    img.addEventListener('click', () => {
-        sectionV.classList.toggle('s');
-    });
-});
-
-// переключение вкладок
-const tabs = document.querySelectorAll('section.j .a h6');
+// кнопка вверх
 const sectionB = document.querySelector('section.b');
 
-tabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => {
-
-        // убрать активный класс у всех вкладок
-        tabs.forEach(t => t.classList.remove('s'));
-
-        // добавить активный класс текущей
-        tab.classList.add('s');
-
-        // переключение секций
-        if (index === 0) {
-            sectionA.style.display = "block";
-            sectionB.style.display = "none";
-        } else {
-            sectionA.style.display = "none";
-            sectionB.style.display = "block";
-        }
-    });
+window.addEventListener('scroll', () => {
+    if (scrollY >= 500) {
+        sectionB.classList.add('x'); // скроллим вниз
+    } else {
+        sectionB.classList.remove('x'); // скроллим вверх
+    }
 });
-
-// текущая дата
-
-const sectionH = document.querySelector('section.a h2');
-sectionH.textContent = new Intl.DateTimeFormat('ru-RU', { weekday: 'short', day: 'numeric', month: 'long' }).format(new Date()).toUpperCase();
