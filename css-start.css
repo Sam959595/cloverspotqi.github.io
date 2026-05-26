@@ -25,10 +25,6 @@ section.a input::placeholder {
     color: light-dark(#999, #666)
 }
 
-body:has(section.a input:focus) section.a h2 {
-    opacity: 0;
-}
-
 /* section.a input::-webkit-search-cancel-button {
     appearance: none;
 
@@ -199,6 +195,45 @@ section.b svg {
 }
 
 section.x svg {
+    pointer-events: auto;
+    opacity: 1
+}
+
+/* h */
+
+section.h {
+    pointer-events: none;
+    opacity: 0;
+
+    position: absolute;
+    inset: 0;
+
+    padding: calc(102px + env(safe-area-inset-top)) 30px 50px;
+
+    font: 500 19px system-ui;
+    letter-spacing: .2px;
+
+    background-color: light-dark(#fff, #0d0d0d)
+}
+
+section.h li {
+    padding-block: 15px;
+
+    color: light-dark(#999, #666)
+}
+
+section.h u {
+    color: light-dark(#111, #fff)
+}
+
+body:has(section.a input:focus) section.a input {
+    margin-top: env(safe-area-inset-top);
+
+    z-index: 1;
+    position: relative
+}
+
+body:has(section.a input:focus) section.h {
     pointer-events: auto;
     opacity: 1
 }
