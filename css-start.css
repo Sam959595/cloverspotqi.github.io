@@ -62,6 +62,14 @@ section.a h2 {
     letter-spacing: .2px
 }
 
+section.a .d {
+    margin-inline: 20px;
+
+    display: flex;
+
+    cursor: pointer
+}
+
 /* - */
 
 section.a .i {
