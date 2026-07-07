@@ -63,11 +63,13 @@ section.a h2 {
 }
 
 section.a .d {
-    margin-inline: 20px;
+    margin-inline: 22px 30px;
 
-    display: flex;
+    display: flex
+}
 
-    cursor: pointer
+section.a .d svg:last-child {
+    margin-left: auto
 }
 
 /* - */
