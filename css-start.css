@@ -63,7 +63,7 @@ section.a h2 {
 }
 
 section.a .d {
-    margin-inline: 22px 30px;
+    margin-inline: 22px;
 
     display: flex
 }
@@ -77,21 +77,38 @@ section.a .d svg:last-child {
 section.a .i {
     overflow-x: scroll;
 
-    margin-block: 50px;
+    margin-block: 20px 15px;
+    padding-inline: 30px;
 
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: column;
-    column-gap: 3px
+    column-gap: 10px
 }
 
 section.a .i li {
+    position: relative;
+
+    border-radius: 20px;
+
     background-color: light-dark(#eee, #111)
+}
+
+section.a .i li:after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    border-radius: 20px;
+    border: 2px solid light-dark(#0001, #fff1)
 }
 
 section.a .i img {
     width: auto;
-    height: 120px
+    height: 120px;
+
+    border-radius: 20px
 }
 
 /* - */
