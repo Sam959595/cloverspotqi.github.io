@@ -19,12 +19,15 @@ section.v ul {
 section.v li {
     position: relative;
 
+    width: 100vw;
+    height: 100vh;
+
     scroll-snap-align: start
 }
 
 section.v li>img {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     object-fit: cover
 }
@@ -38,11 +41,38 @@ section.v video {
 
 /* - */
 
+section.v .e {
+    padding: 50px 50px;
+
+    background-color: #1d1d1d;
+    color: #b5b5b5
+}
+
+section.v .e h5 {
+    margin-bottom: 3rem;
+
+    text-align: center;
+    font: 600 48px/1.6 system-ui
+}
+
+section.v .e h6 {
+    margin-block: 10rem 3rem;
+
+    text-align: center;
+    font: 700 21px/1.6 system-ui
+}
+
+section.v .e p {
+    font: 20px/1.7 system-ui
+}
+
+/* - */
+
 section.v .d {
     pointer-events: none;
 
     position: absolute;
-    inset: calc(7px + env(safe-area-inset-top)) 40px auto;
+    inset: calc(13px + env(safe-area-inset-top)) 40px auto;
 
     display: flex;
     column-gap: 5px
@@ -76,7 +106,7 @@ section.v .k {
     display: grid;
     grid-template-columns: 70% 30%;
 
-    background-image: linear-gradient(#000b, #0000, #0000, #0008)
+    background-image: linear-gradient(#0008, #0000, #0000, #0008)
 }
 
 section.v .k div:first-child {
@@ -91,7 +121,7 @@ section.v .k div:last-child {
 
 section.v .a {
     position: absolute;
-    inset: calc(30px + env(safe-area-inset-top)) 40px auto auto;
+    inset: calc(36px + env(safe-area-inset-top)) 40px auto auto;
 
     animation: a 10s cubic-bezier(.25, 0, .25, 1) infinite
 }
@@ -120,7 +150,7 @@ section.v .a {
 
 section.v .b {
     position: absolute;
-    inset: calc(30px + env(safe-area-inset-top)) 130px auto auto;
+    inset: calc(36px + env(safe-area-inset-top)) 130px auto auto;
 
     animation: b 10s cubic-bezier(.25, 0, .25, 1) infinite
 }
@@ -149,7 +179,7 @@ section.v .b {
 
 section.v .c {
     position: absolute;
-    inset: calc(30px + env(safe-area-inset-top)) 220px auto auto;
+    inset: calc(36px + env(safe-area-inset-top)) 220px auto auto;
 
     animation: c 10s cubic-bezier(.25, 0, .25, 1) infinite
 }
@@ -199,51 +229,37 @@ section.v :is(.a, .b, .c):after {
 
 section.v .g {
     position: absolute;
-    inset: auto 40px 40px;
-
-    overflow-x: scroll;
-
-    width: calc(100vw - 80px);
-
-    border-radius: 23px;
-
-    display: flex;
-    column-gap: 8px
+    inset: auto 40px 40px
 }
 
-section.v .g a {
-    padding: 12px 15px 12px 12px;
-
-    border-radius: 23px;
-    border: 2px solid #fff1;
+section.v .g>div {
+    margin-bottom: 10px;
 
     display: flex;
-    column-gap: 8px;
+    justify-content: space-between
+}
 
-    background-color: #fff2;
+section.v .g div div {
+    display: flex;
+    align-items: center
+}
+
+section.v .g h6 {
+    font: 600 18px ui-rounded;
+    word-spacing: 10px;
+
     color: #fff
 }
 
-section.v .g div {
-    display: flex
-}
+section.v .g h1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
 
-section.v .g img {
-    border-radius: 50%
-}
+    font: 600 16px ui-rounded;
+    word-spacing: 10px;
 
-section.v .g img+img {
-    margin-left: -5px
-}
-
-section.v .g img:not(:last-child) {
-    clip-path: path("M16.54 0a11.6 11.6 0 0 0 0 19H0V0z")
-}
-
-section.v .g span {
-    white-space: nowrap;
-    font: 500 16px system-ui;
-    letter-spacing: .2px
+    color: #fff
 }
 
 /* - */
