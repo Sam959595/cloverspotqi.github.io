@@ -32,12 +32,12 @@ section.a h1 {
     position: absolute;
     inset: 0;
 
-    margin: auto;
+    margin: auto 50px;
     
     height: fit-content;
 
     text-align: center;
-    font: 700 50px ui-rounded;
+    font: 700 50px/1 ui-rounded;
 
     mix-blend-mode: overlay;
 
@@ -102,6 +102,33 @@ section.a .d {
     100% {
         transform: rotate(360deg)
     }
+}
+
+section.a textarea {
+    position: absolute;
+    inset: 0;
+
+    resize: none;
+
+    margin: auto;
+    padding-inline: 50px;
+
+    width: 100vw;
+    height: fit-content;
+
+    text-align: center;
+    font: 700 38px ui-rounded;
+
+    mix-blend-mode: overlay;
+
+    background-color: #0000;
+    color: #fff;
+
+    text-shadow: 0 0 5px #fff
+}
+
+section.a textarea::placeholder {
+    color: #fff
 }
 
 /* f */
