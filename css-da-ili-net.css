@@ -104,69 +104,6 @@ section.a .d {
     }
 }
 
-/* w */
-
-section.a textarea {
-    position: absolute;
-    inset: 0;
-
-    resize: none;
-
-    margin: auto;
-    padding-inline: 50px;
-
-    width: 100vw;
-    height: fit-content;
-
-    text-align: center;
-    font: 700 38px ui-rounded;
-
-    mix-blend-mode: overlay;
-
-    background-color: #0000;
-    color: #fff;
-
-    text-shadow: 0 0 5px #fff
-}
-
-section.a textarea::placeholder {
-    color: #fff
-}
-
-section.w h6 {
-    margin-inline: 40px;
-
-    font: 700 28px ui-rounded;
-
-    color: #333
-}
-
-section.w ul {
-    margin: 25px 20vw 100px 40px
-}
-
-section.w li {
-    margin-top: 40px
-}
-
-section.w h1 {
-    font: 600 28px ui-rounded;
-
-    color: #666
-}
-
-section.w p {
-    margin-top: 10px;
-
-    font: 600 21px ui-rounded;
-
-    color: #fff
-}
-
-section.w .a {
-    color: #ff4e4e
-}
-
 /* f */
 
 section.f {
