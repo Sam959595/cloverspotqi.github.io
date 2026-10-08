@@ -9,7 +9,9 @@ body {
 
 /* a */
 
-section.a input {
+section.a textarea {
+    resize: none;
+
     margin-top: calc(110px + env(safe-area-inset-top));
     padding: 30px 30px 50px;
 
@@ -21,7 +23,7 @@ section.a input {
     background: none
 }
 
-section.a input::placeholder {
+section.a textarea::placeholder {
     color: light-dark(#999, #666)
 }
 
@@ -211,12 +213,12 @@ section.k {
 section.k svg {
     border-radius: 50%;
 
-    background-color: light-dark(#f4f4f4, #333)
+    background-color: light-dark(#f4f4f4, #181818)
 }
 
 section.k .b {
-    background-color: light-dark(#ebe3f9, #333);
-    fill: light-dark(#603b8d, #333)
+    background-color: light-dark(#ebe3f9, #2e2b36);
+    fill: light-dark(#603b8d, #a582d0)
 }
 
 /* b */
