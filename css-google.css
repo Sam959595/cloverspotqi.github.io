@@ -113,18 +113,27 @@ section.a .i img {
     border-radius: 20px
 }
 
+section.a .i h5,
 section.a .i h6 {
-    margin-top: 20px;
-    padding: 10px;
+    width: 100px;
 
-    border-radius: 19px;
+    margin-inline: 10px;
 
-    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap
+}
 
+section.a .i h5 {
+    margin-top: 15px;
+
+    font: 600 14px system-ui
+}
+
+section.a .i h6 {
     font: 700 14px ui-rounded;
 
-    background-color: light-dark(#e2ecff, #2e3849);
-    color: light-dark(#5482d2, #9dc1ff)
+    color: light-dark(#999, #666)
 }
 
 /* - */
