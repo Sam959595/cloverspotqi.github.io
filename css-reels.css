@@ -121,7 +121,7 @@ section.v .k div:last-child {
 
 section.v .a {
     position: absolute;
-    inset: calc(36px + env(safe-area-inset-top)) 40px auto auto;
+    inset: calc(26px + env(safe-area-inset-top)) 40px auto auto;
 
     animation: a 10s cubic-bezier(.25, 0, .25, 1) infinite
 }
@@ -150,7 +150,7 @@ section.v .a {
 
 section.v .b {
     position: absolute;
-    inset: calc(36px + env(safe-area-inset-top)) 130px auto auto;
+    inset: calc(26px + env(safe-area-inset-top)) 130px auto auto;
 
     animation: b 10s cubic-bezier(.25, 0, .25, 1) infinite
 }
@@ -179,7 +179,7 @@ section.v .b {
 
 section.v .c {
     position: absolute;
-    inset: calc(36px + env(safe-area-inset-top)) 220px auto auto;
+    inset: calc(26px + env(safe-area-inset-top)) 220px auto auto;
 
     animation: c 10s cubic-bezier(.25, 0, .25, 1) infinite
 }
