@@ -217,8 +217,23 @@ section.k svg {
 }
 
 section.k .b {
+    background-color: light-dark(#ffdee4, #362528);
+    stroke: light-dark(#cf546a, #d46378)
+}
+
+section.k .bb {
     background-color: light-dark(#ebe3f9, #2e2b36);
-    fill: light-dark(#603b8d, #a582d0)
+    fill: light-dark(#603b8d, #d2affe)
+}
+
+section.k .bbb {
+    background-color: light-dark(#e2ecff, #2e3849);
+    stroke: light-dark(#5482d2, #9dc1ff)
+}
+
+section.k .bbbb {
+    background-color: light-dark(#ccecd6, #24372a);
+    stroke: light-dark(#4c9062, #8cffb0)
 }
 
 /* b */
