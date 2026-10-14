@@ -236,6 +236,10 @@ section.k .bbbb {
     stroke: light-dark(#4c9062, #8cffb0)
 }
 
+section.k .bbbb circle {
+    fill: light-dark(#4c9062, #8cffb0)
+}
+
 /* b */
 
 section.b svg {
