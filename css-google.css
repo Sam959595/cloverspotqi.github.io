@@ -13,7 +13,7 @@ section.a textarea {
     resize: none;
 
     margin-top: calc(110px + env(safe-area-inset-top));
-    padding: 30px 30px 50px;
+    padding: 30px;
 
     width: 100%;
 
@@ -92,18 +92,18 @@ section.a .i {
     column-gap: 10px
 }
 
-section.a .i li {
+section.a .i div {
     position: relative
 }
 
-section.a .i li:after {
+section.a .i div:after {
     position: absolute;
     inset: 0;
 
     content: "";
 
     border-radius: 20px;
-    border: 2px solid light-dark(#0001, #fff1)
+    background-color: light-dark(#0000000a, #0000)
 }
 
 section.a .i img {
@@ -111,6 +111,20 @@ section.a .i img {
     height: 120px;
 
     border-radius: 20px
+}
+
+section.a .i h6 {
+    margin-top: 20px;
+    padding: 10px;
+
+    border-radius: 19px;
+
+    display: inline-block;
+
+    font: 700 14px ui-rounded;
+
+    background-color: light-dark(#e2ecff, #2e3849);
+    color: light-dark(#5482d2, #9dc1ff)
 }
 
 /* - */
@@ -163,11 +177,21 @@ section.a .r h4 {
 section.a .r h3 {
     margin-block: 20px 5px;
 
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
     font: 500 17px system-ui;
     letter-spacing: .2px
 }
 
 section.a .r p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
     font: 500 14px system-ui;
     letter-spacing: .2px;
 
@@ -232,7 +256,7 @@ section.k .bbb {
 }
 
 section.k .bbbb {
-    background-color: light-dark(#ccecd6, #24372a);
+    background-color: light-dark(#ccecd6, #222b25);
     stroke: light-dark(#4c9062, #8cffb0)
 }
 
