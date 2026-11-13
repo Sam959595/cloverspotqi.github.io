@@ -25,12 +25,26 @@ section.v li {
     scroll-snap-align: start
 }
 
-section.v a img {
+section.v .e {
     position: absolute;
-    inset: auto 30px 110px auto;
+    inset: auto 30px 110px auto
+}
 
-    width: 120px;
-    height: auto;
+section.v .e:after {
+    position: absolute;
+    inset: 0;
+
+    content: "";
+
+    border-radius: 3px;
+
+    background-size: cover;
+    background-image: url("4.png")
+}
+
+section.v a img {
+    width: 140px;
+    height: 202px;
 
     border-radius: 3px
 }
@@ -54,33 +68,6 @@ section.v .f {
     inset: 0;
 
     background-image: linear-gradient(#0008, #0000, #0000, #0008)
-}
-
-/* - */
-
-section.v .e {
-    padding: 50px 50px;
-
-    background-color: #1d1d1d;
-    color: #b5b5b5
-}
-
-section.v .e h5 {
-    margin-bottom: 3rem;
-
-    text-align: center;
-    font: 600 48px/1.6 system-ui
-}
-
-section.v .e h6 {
-    margin-block: 10rem 3rem;
-
-    text-align: center;
-    font: 700 21px/1.6 system-ui
-}
-
-section.v .e p {
-    font: 20px/1.7 system-ui
 }
 
 /* - */
