@@ -67,58 +67,7 @@ section.v .f {
     position: absolute;
     inset: 0;
 
-    background-image: linear-gradient(#0008, #0000, #0000, #0008)
-}
-
-/* - */
-
-section.v .d {
-    pointer-events: none;
-
-    position: absolute;
-    inset: calc(13px + env(safe-area-inset-top)) 40px auto;
-
-    display: flex;
-    column-gap: 5px
-}
-
-section.v .d div {
-    width: 100%;
-    height: 3px;
-
-    border-radius: 2px;
-
-    background-color: #ffffff30;
-
-    box-shadow: 0 0 10px #00000030
-}
-
-section.v .d div div {
-    height: inherit;
-
-    border-radius: inherit;
-
-    background-color: #fff
-}
-
-/* - */
-
-section.v .k {
-    position: absolute;
-    inset: 0;
-
-    display: grid;
-    grid-template-columns: 70% 30%;
-
-    background-image: linear-gradient(#0008, #0000, #0000, #0008)
-}
-
-section.v .k div:first-child {
-    cursor: w-resize
-}
-
-section.v .k div:last-child {
-    cursor: e-resize
+    background-image: linear-gradient(#0008, #0000, #0008, #0008)
 }
 
 /* - */
