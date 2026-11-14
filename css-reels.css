@@ -27,7 +27,13 @@ section.v li {
 
 section.v .e {
     position: absolute;
-    inset: auto 30px 110px auto
+    inset: auto 30px 110px auto;
+
+    border-radius: 3px;
+
+    background-color: #000;
+
+    animation: a 10s cubic-bezier(.25, 0, .25, 1) infinite
 }
 
 section.v .e:after {
@@ -43,9 +49,6 @@ section.v .e:after {
 }
 
 section.v a img {
-    width: 140px;
-    height: 202px;
-
     border-radius: 3px
 }
 
