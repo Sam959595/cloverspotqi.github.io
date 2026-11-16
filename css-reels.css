@@ -27,7 +27,7 @@ section.v li {
 
 section.v .e {
     position: absolute;
-    inset: auto 30px 110px auto;
+    inset: auto 50px 100px auto;
 
     border-radius: 3px;
 
@@ -197,11 +197,11 @@ section.v :is(.a, .b, .c):after {
 
 section.v .l {
     position: absolute;
-    inset: auto 40px 30px;
+    inset: auto 40px 40px;
 
     display: flex;
     align-items: end;
-    column-gap: 20px
+    column-gap: 30px
 }
 
 section.v .l img {
